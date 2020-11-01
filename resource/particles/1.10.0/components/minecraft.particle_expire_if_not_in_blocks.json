@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.resource.particle.1.10.0.particle_expire_if_not_in_blocks",
+  "type": "array",
+  "title": "The particle expire if not in blocks component for 1.10.0",
+  "additionalProperties": false,
+  "items": {
+    "$ref": "../../../../general/blocks_identifiers.json",
+    "description": "TODO description",
+    "title": "TODO title"
+  },
+  "description": "TODO description"
+}

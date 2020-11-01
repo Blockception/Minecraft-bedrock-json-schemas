@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.is_hidden_when_invisible",
+  "type": "object",
+  "title": "Is hidden when invisible 1.8.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {},
+  "description": "TODO description"
+}

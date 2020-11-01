@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.default_look_angle",
+  "type": "object",
+  "title": "Default look angle 1.8.0",
+  "additionalProperties": false,
+  "description": "Sets this entity's default head rotation angle.",
+  "required": [],
+  "properties": {
+    "value": {
+      "type": "number",
+      "default": 0.0,
+      "description": "Angle in degrees",
+      "title": "TODO title"
+    }
+  }
+}

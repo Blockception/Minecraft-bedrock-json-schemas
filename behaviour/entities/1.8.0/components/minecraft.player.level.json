@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.player.level",
+  "additionalProperties": false,
+  "type": "object",
+  "title": "Player.level 1.8.0",
+  "description": "UNDOCUMENTATED",
+  "required": [],
+  "properties": {
+    "value": {
+      "type": "number",
+      "default": true,
+      "title": "Value",
+      "description": "UNDOCUMENTATED"
+    },
+    "max": {
+      "type": "number",
+      "default": true,
+      "title": "Maximum",
+      "description": "UNDOCUMENTATED"
+    }
+  }
+}

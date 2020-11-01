@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.filters.has_component",
+  "type": "object",
+  "title": "Filters has component 1.8.0",
+  "description": "Returns true when the subject entity contains the named component.",
+  "required": ["value"],
+  "properties": {
+    "test": {
+      "type": "string",
+      "title": "The test property",
+      "description": "Returns true when the subject entity contains the named component."
+    },
+    "operator": { "$ref": "types/base_operator.json" },
+    "subject": { "$ref": "types/base_subject.json" },
+    "value": {
+      "type": "string",
+      "description": "TODO description: value",
+      "title": "Value"
+    }
+  }
+}

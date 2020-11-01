@@ -1,0 +1,365 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.resource.model.1.8.0",
+  "type": "object",
+  "title": "The minecraft resourcepack model schema for 1.8.0",
+  "description": "TODO description",
+  "required": ["format_version"],
+  "properties": {
+    "debug": {
+      "type": "boolean",
+      "description": "TODO description",
+      "title": "TODO title"
+    },
+    "format_version": {
+      "title": "The 1.8.0 format_version",
+      "type": "string",
+      "pattern": "^1.8.0$",
+      "description": "A version that tells minecraft what type of data format can be expected when reading this file."
+    }
+  },
+  "propertyNames": {
+    "pattern": "(^geometry\\.[a-zA-Z0-9_.'\\-:]+|format_version)"
+  },
+  "additionalProperties": {
+    "additionalProperties": false,
+    "type": "object",
+    "description": "Geometry specification",
+    "title": "Geometry",
+    "properties": {
+      "bones": {
+        "type": "array",
+        "description": "The bones definitions",
+        "title": "Bones",
+        "items": {
+          "additionalProperties": false,
+          "type": "object",
+          "description": "The bone definition",
+          "title": "Bone",
+          "required": ["name"],
+          "properties": {
+            "bind_pose_rotation": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ]
+            },
+            "cubes": {
+              "type": "array",
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "properties": {
+                  "inflate": {
+                    "type": "number"
+                  },
+                  "mirror": {
+                    "type": "boolean"
+                  },
+                  "origin": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ]
+                  },
+                  "size": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ]
+                  },
+                  "uv": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "debug": {
+              "type": "boolean"
+            },
+            "inflate": {
+              "type": "number"
+            },
+            "locators": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                }
+              }
+            },
+            "mirror": {
+              "type": "boolean"
+            },
+            "name": {
+              "type": "string"
+            },
+            "neverRender": {
+              "type": "boolean"
+            },
+            "parent": {
+              "type": "string"
+            },
+            "pivot": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ]
+            },
+            "poly_mesh": {
+              "type": "object",
+              "required": ["polys"],
+              "title": "Poly mesh",
+              "description": "TODO",
+              "additionalProperties": false,
+              "properties": {
+                "normalized_uvs": {
+                  "title": "Normalized uvs",
+                  "description": "TODO",
+                  "type": "boolean"
+                },
+                "positions": {
+                  "title": "Positions",
+                  "description": "TODO",
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "number"
+                    }
+                  ]
+                },
+                "normals": {
+                  "title": "Normals",
+                  "description": "TODO",
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "number"
+                    }
+                  ]
+                },
+                "polys": {
+                  "title": "Polys",
+                  "description": "TODO",
+                  "type": "array",
+                  "items": {
+                    "type": "array",
+                    "minItems": 3,
+                    "maxItems": 4,
+                    "items": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "render_group_id": {
+              "title": "Render group id",
+              "description": "TODO",
+              "type": "integer",
+              "minimum": 0
+            },
+            "reset": {
+              "title": "Reset",
+              "description": "TODO",
+              "type": "boolean"
+            },
+            "rotation": {
+              "title": "Rotation",
+              "description": "TODO",
+              "type": "array",
+              "items": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ]
+            },
+            "texture_meshes": {
+              "type": "array",
+              "title": "Texture meshes",
+              "description": "TODO",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "texture": {
+                    "type": "string"
+                  },
+                  "local_pivot": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ]
+                  },
+                  "position": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ]
+                  },
+                  "rotation": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ]
+                  },
+                  "scale": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "cape": {
+        "title": "Cape",
+        "description": "TODO",
+        "type": "string"
+      },
+      "debug": {
+        "title": "Debug",
+        "description": "TODO",
+        "type": "boolean"
+      },
+      "texturewidth": {
+        "type": "integer",
+        "description": "TODO description: texturewidth",
+        "title": "Texturewidth"
+      },
+      "textureheight": {
+        "type": "integer",
+        "description": "TODO description: textureheight",
+        "title": "Textureheight"
+      },
+      "visible_bounds_width": {
+        "type": "number",
+        "description": "TODO description: visible bounds width",
+        "title": "Visible Bounds Width"
+      },
+      "visible_bounds_height": {
+        "type": "number",
+        "description": "TODO description: visible bounds height",
+        "title": "Visible Bounds Height"
+      },
+      "visible_bounds_offset": {
+        "type": "array",
+        "description": "TODO description: visible bounds offset",
+        "title": "Visible Bounds Offset",
+        "items": [
+          {
+            "type": "number"
+          },
+          {
+            "type": "number"
+          },
+          {
+            "type": "number"
+          }
+        ]
+      }
+    }
+  }
+}

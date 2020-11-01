@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.trail",
+  "description": "Defines the entity's trail to carry items.",
+  "type": "object",
+  "title": "Trail 1.8.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "block_type": {
+      "type": "string",
+      "default": "air",
+      "description": "The type of block you wish to be spawned by the entity as it move about the world. Solid blocks may not be spawned at an offset of (0,0,0).",
+      "title": "Block type"
+    },
+    "spawn_filter": {
+      "$ref": "../filters.json",
+      "description": "One or more conditions that must be met in order to cause the chosen block type to spawn.",
+      "title": "Spawn filter"
+    },
+    "spawn_offset": {
+      "type": "array",
+      "default": [0, 0, 0],
+      "description": "The distance from the entities current position to spawn the block. Capped at up to 16 blocks away. The X value is left/right(-/+), the Z value is backward/forward(-/+), the Y value is below/above(-/+).",
+      "title": "Spawn offset",
+      "items": [
+        {
+          "type": "number",
+          "title": "X"
+        },
+        {
+          "type": "number",
+          "title": "Y"
+        },
+        {
+          "type": "number",
+          "title": "Z"
+        }
+      ]
+    }
+  }
+}

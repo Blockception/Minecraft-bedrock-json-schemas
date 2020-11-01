@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.sleep",
+  "additionalProperties": false,
+  "description": "Allows mobs that own a bed to in a village to move to and sleep in it.",
+  "type": "object",
+  "title": "Behavior.sleep 1.8.0",
+  "required": [],
+  "properties": {
+    "priority": { "ref": "types/base_priority.json" },
+    "speed_multiplier": { "ref": "types/base_speed_multiplier.json" },
+    "cooldown_time": {
+      "type": "number",
+      "default": 0,
+      "description": "Time in seconds the mob has to wait before using the goal again",
+      "title": "Cooldown time"
+    },
+    "goal_radius": {
+      "type": "number",
+      "default": 0,
+      "description": "UNDOCUMANTED",
+      "title": "UNDOCUMANTED"
+    },
+    "sleep_collider_height": {
+      "type": "number",
+      "default": 1,
+      "description": "The height of the mob's collider while sleeping",
+      "title": "Sleep collider height"
+    },
+    "sleep_collider_width": {
+      "type": "number",
+      "default": 1,
+      "description": "The width of the mob's collider while sleeping",
+      "title": "Sleep collider width"
+    },
+    "sleep_y_offset": {
+      "type": "number",
+      "default": 1,
+      "description": "The y offset of the mob's collider while sleeping",
+      "title": "Sleep y offset"
+    },
+    "timeout_cooldown": {
+      "type": "number",
+      "default": 8,
+      "description": "The cooldown time in seconds before the goal can be reused after a internal failure or timeout condition",
+      "title": "Timeout cooldown"
+    }
+  }
+}

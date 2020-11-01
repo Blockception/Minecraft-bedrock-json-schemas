@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.celebrate",
+  "type": "object",
+  "title": "Behaviour.celebrate 1.8.0",
+  "description": "This allows the mob celebrate by jumping up and playing a sound periodically.",
+  "additionalProperties": false,
+  "properties": {
+    "priority": {
+      "ref": "types/base_priority.json"
+    },
+    "celebration_sound": {
+      "type": "string",
+      "default": "",
+      "description": "The sound to occasionally play.",
+      "title": "Celebration sound"
+    },
+    "duration": {
+      "type": "number",
+      "default": 1,
+      "description": "The duration of the celebration (in seconds).",
+      "title": "Duration"
+    },
+    "jump_interval": {
+      "type": "array",
+      "default": 0,
+      "description": "The range of time in seconds to randomly wait before jumping again.",
+      "title": "Jump interval",
+      "oneOf": [
+        {
+          "type": "array",
+          "items": [
+            {
+              "type": "number",
+              "title": "Maximum"
+            },
+            {
+              "type": "number",
+              "title": "Maximum"
+            }
+          ]
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "on_celebration_end_event": {
+      "$ref": "../types/trigger.json",
+      "description": "The event to trigger when the goal's duration expires.",
+      "title": "On celebration end event"
+    },
+    "sound_interval": {
+      "type": "array",
+      "default": 0,
+      "description": "The range of time in seconds to randomly wait before playing the sound again.",
+      "title": "Sound interval",
+      "oneOf": [
+        {
+          "type": "array",
+          "items": [
+            {
+              "type": "number",
+              "title": "Maximum"
+            },
+            {
+              "type": "number",
+              "title": "Maximum"
+            }
+          ]
+        },
+        {
+          "type": "number"
+        }
+      ]
+    }
+  }
+}

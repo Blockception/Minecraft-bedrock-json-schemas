@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.squid_flee",
+  "description": "Allows the squid to swim away. Can only be used by the Squid.",
+  "type": "object",
+  "title": "Behavior.squid_flee 1.8.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "types/base_priority.json" }
+  }
+}

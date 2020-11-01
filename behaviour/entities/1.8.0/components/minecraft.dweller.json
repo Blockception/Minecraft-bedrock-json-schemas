@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.dweller",
+  "type": "object",
+  "title": "Dweller 1.8.0",
+  "description": "UNDOCUMENTATED",
+  "additionalProperties": false,
+  "properties": {
+    "dwelling_type": {
+      "type": "string",
+      "title": "Dwelling type",
+      "description": "UNDOCUMENTATED"
+    },
+    "dweller_role": {
+      "type": "string",
+      "title": "Dwelling role",
+      "description": "UNDOCUMENTATED"
+    },
+    "update_interval_base": {
+      "type": "integer",
+      "title": "Update interval base",
+      "description": "UNDOCUMENTATED"
+    },
+    "update_interval_variant": {
+      "type": "integer",
+      "title": "Update interval variant",
+      "description": "UNDOCUMENTATED"
+    },
+    "preferred_profession": {
+      "type": "string",
+      "title": "Preferred profession",
+      "description": "UNDOCUMENTATED"
+    },
+    "can_find_poi": {
+      "type": "boolean",
+      "title": "Can find poi",
+      "description": "UNDOCUMENTATED"
+    },
+    "can_migrate": {
+      "type": "boolean",
+      "title": "Can migrate",
+      "description": "UNDOCUMENTATED"
+    },
+    "first_founding_reward": {
+      "type": "integer",
+      "title": "First founding reward",
+      "description": "UNDOCUMENTATED"
+    }
+  }
+}

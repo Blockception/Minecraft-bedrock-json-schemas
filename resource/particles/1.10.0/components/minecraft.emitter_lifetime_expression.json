@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.resource.particle.1.10.0.emitter_rate_manual",
+  "type": "object",
+  "title": "The emitter rate manual component for 1.10.0",
+  "additionalProperties": false,
+  "properties": {
+    "activation_expression": {
+      "$ref": "../../../../molang/1.8.0/number.json",
+      "description": "When the expression is non-zero, the emitter will emit particles. Evaluated every frame",
+      "title": "Activation Expression"
+    },
+    "expiration_expression": {
+      "$ref": "../../../../molang/1.8.0/number.json",
+      "description": "Emitter will expire if the expression is non-zero. Evaluated every frame",
+      "title": "Expiration Expression"
+    }
+  },
+  "description": "TODO description: "
+}

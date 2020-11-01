@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.resource.particle.1.10.0.emitter_shape_entity_aabb",
+  "type": "object",
+  "title": "The emitter shape entity aabb component for 1.10.0",
+  "additionalProperties": false,
+  "properties": {
+    "direction": {
+      "anyOf": [
+        {
+          "type": "string",
+          "enum": ["inwards", "outwards"],
+          "description": "TODO description: Todo",
+          "title": "Todo"
+        },
+        {
+          "type": "array",
+          "items": {
+            "minItems": 3,
+            "maxItems": 3,
+            "$ref": "../../../../molang/1.8.0/number.json",
+            "description": "TODO description: Todo",
+            "title": "Todo"
+          },
+          "description": "TODO description: Todo",
+          "title": "Todo"
+        }
+      ],
+      "description": "TODO description: direction",
+      "title": "Direction"
+    },
+    "offset": {
+      "type": "array",
+      "items": {
+        "minItems": 3,
+        "maxItems": 3,
+        "$ref": "../../../../molang/1.8.0/number.json",
+        "description": "TODO description: offset",
+        "title": "Offset"
+      },
+      "description": "TODO description",
+      "title": "TODO title"
+    }
+  },
+  "description": "TODO description: "
+}

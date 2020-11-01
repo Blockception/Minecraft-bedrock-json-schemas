@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.spawn_rules.1.8.0.minecraft.height_filter",
+  "title": "Height filter 1.8.0",
+  "description": "TODO",
+  "definitions": {
+    "herd": {
+      "type": "object",
+      "title": "Herd",
+      "description": "Herd",
+      "additionalProperties": false,
+      "properties": {
+        "min_size": {
+          "type": "integer",
+          "description": "TODO",
+          "title": "Min size"
+        },
+        "max_size": {
+          "type": "integer",
+          "description": "TODO",
+          "title": "Max size"
+        },
+        "event": { "type": "string", "description": "TODO", "title": "Event" },
+        "event_skip_count": {
+          "type": "integer",
+          "description": "TODO",
+          "title": "Event skip count"
+        }
+      }
+    }
+  },
+  "oneOf": [
+    { "type": "object", "$ref": "#/definitions/herd" },
+    { "type": "array", "items": { "$ref": "#/definitions/herd" } }
+  ]
+}

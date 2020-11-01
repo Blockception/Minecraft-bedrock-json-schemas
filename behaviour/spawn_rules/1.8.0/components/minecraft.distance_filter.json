@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.spawn_rules.1.8.0.minecraft.distance_filter",
+  "additionalProperties": false,
+  "type": "object",
+  "title": "Distance filter 1.8.0",
+  "description": "TODO",
+  "properties": {
+    "min": {
+      "type": "integer",
+      "description": "TODO",
+      "title": "Min"
+    },
+    "max": {
+      "type": "integer",
+      "description": "TODO",
+      "title": "Max"
+    }
+  }
+}

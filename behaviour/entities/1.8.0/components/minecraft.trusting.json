@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.trusting",
+  "type": "object",
+  "title": "Trusting 1.8.0",
+  "description": "Defines the rules for a mob to trust players.",
+  "required": [],
+  "additionalProperties": false,
+  "properties": {
+    "probability": {
+      "type": "number",
+      "default": 1,
+      "description": "The chance of the entity trusting with each item use between 0.0 and 1.0, where 1.0 is 100%",
+      "title": "TODO title"
+    },
+    "trust_event": { "$ref": "../types/event.json", "description": "Event to run when this entity becomes trusting", "title": "TODO title" },
+    "trust_items": {
+      "type": "array",
+      "description": "The list of items that can be used to get the entity to trust players",
+      "items": {
+        "$ref": "../../../../general/item/identifier.json"
+      },
+      "title": "TODO title"
+    }
+  }
+}

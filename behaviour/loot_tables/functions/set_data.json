@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.loot_tables.set_data",
+  "additionalProperties": false,
+  "description": "The function set_data",
+  "title": "Set data",
+  "properties": {
+    "function": {
+      "type": "string",
+      "const": "set_data",
+      "description": "TODO description",
+      "title": "TODO title"
+    },
+    "data": {
+      "title": "Data",
+      "oneOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "min": {
+              "type": "integer",
+              "title": "Minimum"
+            },
+            "max": {
+              "type": "integer",
+              "title": "Maximum"
+            }
+          }
+        }
+      ],
+      "description": "TODO description"
+    }
+  }
+}

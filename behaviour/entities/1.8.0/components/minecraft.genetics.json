@@ -1,0 +1,103 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.genetics",
+  "type": "object",
+  "title": "Genetics 1.8.0",
+  "additionalProperties": false,
+  "description": "Defines the way a mob's genes and alleles are passed on to it's offspring, and how those traits manifest in the child. Compatible parent genes are crossed together, the alleles are handed down from the parents to the child, and any matching genetic variants fire off JSON events to modify the child and express the traits.",
+  "required": [],
+  "properties": {
+    "mutation_rate": {
+      "type": "number",
+      "default": 0.03125,
+      "description": "Chance that an allele will be replaced with a random one instead of the parent's allele during birth.",
+      "title": "TODO title"
+    },
+    "genes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "description": "The list of genes that this entity has and will cross with a partner during breeding.",
+        "properties": {
+          "allele_range": {
+            "description": "The range of positive integer allele values for this gene. Spawned mobs will have a random number in this range assigned to them.",
+            "oneOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "properties": {
+                  "range_min": {
+                    "type": "integer",
+                    "default": 0,
+                    "description": "Lower bound of the allele values for this gene."
+                  },
+                  "range_max": {
+                    "type": "integer",
+                    "default": 0,
+                    "description": "Upper bound of the allele values for this gene."
+                  }
+                }
+              }
+            ]
+          },
+          "genetic_variants": {
+            "type": "array",
+            "description": "The list of genetic variants for this gene. These check for particular allele combinations and fire events when all of them are satisfied.",
+            "items": {
+              "properties": {
+                "birth_event": {
+                  "$ref": "../types/event.json",
+                  "description": "Event to run when this mob is created and matches the above allele conditions."
+                },
+                "both_allele": {
+                  "description": "If this value is non-negative, compare both the mob's main and hidden alleles with this value for a match with both. Can also be a range of integers.",
+                  "oneOf": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "object",
+                      "description": "UNDOCUMENTATED",
+                      "title": "UNDOCUMENTATED",
+                      "additionalProperties": false,
+                      "properties": {
+                        "range_min": {
+                          "type": "integer",
+                          "description": "UNDOCUMENTATED",
+                          "title": "UNDOCUMENTATED"
+                        },
+                        "range_max": {
+                          "type": "integer",
+                          "description": "UNDOCUMENTATED",
+                          "title": "UNDOCUMENTATED"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "either_allele": {
+                  "type": "integer",
+                  "default": -1,
+                  "description": "If this value is non-negative, compare both the mob's main and hidden alleles with this value for a match with either. Can also be a range of integers."
+                },
+                "hidden_allele": {
+                  "type": "integer",
+                  "default": -1,
+                  "description": "If this value is non-negative, compare the mob's hidden allele with this value for a match. Can also be a range of integers."
+                },
+                "main_allele": {
+                  "type": "integer",
+                  "default": -1,
+                  "description": "If this value is non-negative, compare the mob's main allele with this value for a match. Can also be a range of integers."
+                }
+              }
+            }
+          }
+        }
+      },
+      "description": "TODO description",
+      "title": "TODO title"
+    }
+  }
+}

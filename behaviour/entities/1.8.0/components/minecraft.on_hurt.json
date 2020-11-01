@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.on_hurt",
+  "description": "Adds a trigger to call when this entity takes damage.",
+  "type": "object",
+  "title": "On hurt 1.8.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "event": {
+      "type": "string",
+      "description": "The event to run when the conditions for this trigger are met",
+      "title": "TODO title"
+    },
+    "filters": { "$ref": "../filters.json", "description": "The list of conditions for this trigger", "title": "TODO title" },
+    "target": {
+      "type": "string",
+      "$ref": "../filters/types/base_subject.json",
+      "default": "self",
+      "description": "The target of the event",
+      "title": "TODO title"
+    }
+  }
+}

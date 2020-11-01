@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.16.0.minecraft.behavior.send_event",
+  "description": "Allows the mob to send an event to another mob.",
+  "type": "object",
+  "title": "Behavior.send_event 1.16.0",
+  "additionalProperties": false,
+  "required": [],
+  "definitions": {
+    "sequence": {
+      "type": "array",
+      "description": "List of events to send",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "base_delay": {
+            "type": "number",
+            "default": 0,
+            "description": "Amount of time in seconds before starting this step"
+          },
+          "event": {
+            "type": "string",
+            "default": "",
+            "description": "The event to send to the entity"
+          },
+          "sound_event": {
+            "type": "string",
+            "default": "",
+            "description": "The sound event to play when this step happens"
+          }
+        }
+      }
+    }
+  },
+  "properties": {
+    "priority": { "$ref": "types/base_priority.json" },
+    "cast_duration": {
+      "type": "number",
+      "description": "Time in seconds for the entire event sending process",
+      "title": "TODO title"
+    },
+    "event_choices": {
+      "type": "array",
+      "title": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTATED",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "title": "UNDOCUMENTATED",
+        "description": "UNDOCUMENTATED",
+        "properties": {
+          "min_activation_range": {
+            "type": "number",
+            "title": "UNDOCUMENTATED",
+            "description": "UNDOCUMENTATED"
+          },
+          "max_activation_range": {
+            "type": "number",
+            "title": "UNDOCUMENTATED",
+            "description": "UNDOCUMENTATED"
+          },
+          "cooldown_time": {
+            "type": "number",
+            "title": "UNDOCUMENTATED",
+            "description": "UNDOCUMENTATED"
+          },
+          "cast_duration": {
+            "type": "number",
+            "title": "UNDOCUMENTATED",
+            "description": "UNDOCUMENTATED"
+          },
+          "filters": {
+            "$ref": "../filters.json"
+          },
+          "particle_color": {
+            "type": "string",
+            "format": "color-hex",
+            "title": "UNDOCUMENTATED",
+            "description": "UNDOCUMENTATED"
+          },
+          "weight": {
+            "type": "integer",
+            "title": "UNDOCUMENTATED",
+            "description": "UNDOCUMENTATED"
+          },
+          "start_sound_event": {
+            "type": "string",
+            "title": "UNDOCUMENTATED",
+            "description": "UNDOCUMENTATED"
+          },
+          "sequence": {
+            "$ref": "#/definitions/sequence"
+          }
+        }
+      }
+    },
+    "sequence": { "$ref": "#/definitions/sequence", "description": "TODO description", "title": "TODO title" }
+  }
+}

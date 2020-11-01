@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.resource.particle.1.10.0.emitter_shape_disc",
+  "type": "object",
+  "title": "The emitter shape disc component for 1.10.0",
+  "additionalProperties": false,
+  "properties": {
+    "direction": {
+      "anyOf": [
+        {
+          "type": "string",
+          "enum": ["inwards", "outwards"]
+        },
+        {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "$ref": "../../../../molang/1.8.0/number.json"
+          }
+        }
+      ],
+      "description": "TODO description: direction",
+      "title": "Direction"
+    },
+    "radius": { "$ref": "../../../../molang/1.8.0/number.json", "description": "TODO description: radius", "title": "Radius" },
+    "offset": {
+      "type": "array",
+      "items": {
+        "minItems": 3,
+        "maxItems": 3,
+        "$ref": "../../../../molang/1.8.0/number.json",
+        "description": "TODO description: offset",
+        "title": "Offset"
+      },
+      "description": "TODO description",
+      "title": "TODO title"
+    },
+    "plane_normal": {
+      "title": "Plane normal",
+      "description": "Specifies the normal of the disc plane, the disc will be perpendicular to this direction",
+      "default": [0, 1, 0],
+      "oneOf": [
+        {
+          "type": "string",
+          "enum": ["x", "y", "z"]
+        },
+        {
+          "type": "array",
+          "items": [
+            {
+              "$ref": "../../../../molang/1.8.0/number.json"
+            },
+            {
+              "$ref": "../../../../molang/1.8.0/number.json"
+            },
+            {
+              "$ref": "../../../../molang/1.8.0/number.json"
+            }
+          ]
+        }
+      ]
+    },
+    "surface_only": {
+      "type": "boolean",
+      "description": "TODO description: surface only",
+      "title": "Surface Only"
+    }
+  },
+  "description": "TODO description: "
+}

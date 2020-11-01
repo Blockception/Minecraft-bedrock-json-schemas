@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.16.0.minecraft.hurt_on_condition",
+  "type": "object",
+  "title": "Hurt on condition 1.16.0",
+  "description": "Defines a set of conditions under which an entity should take damage.",
+  "additionalProperties": false,
+  "properties": {
+    "damage_conditions": {
+      "type": "array",
+      "title": "Damage conditions",
+      "description": "TODO",
+      "items": {
+        "type": "object",
+        "title": "Damage condition",
+        "description": "TODO",
+        "additionalProperties": false,
+        "properties": {
+          "filters": {
+            "$ref": "../filters.json"
+          },
+          "cause": {
+            "type": "string",
+            "title": "Cause",
+            "description": "Damage cause",
+            "enum": [
+              "anvil",
+              "attack",
+              "block_explosion",
+              "contact",
+              "drowning",
+              "entity_explosion",
+              "fall",
+              "falling_block",
+              "fatal",
+              "fire",
+              "fire_tick",
+              "fly_into_wall",
+              "lava",
+              "magic",
+              "none",
+              "override",
+              "piston",
+              "projectile",
+              "starve",
+              "suffocation",
+              "suicide",
+              "temperature",
+              "thorns",
+              "void",
+              "wither"
+            ]
+          },
+          "damage_per_tick": {
+            "type": "integer",
+            "title": "Damage per tick",
+            "description": "TODO"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.group_size",
+  "type": "object",
+  "title": "Group size 1.8.0",
+  "description": "Keeps track of entity group size in the given radius.",
+  "additionalProperties": false,
+  "properties": {
+    "filters": {
+      "$ref": "../filters.json",
+      "description": "The list of conditions that must be satisfied for other entities to be counted towards group size.",
+      "title": "Filters"
+    },
+    "radius": {
+      "type": "number",
+      "default": 16,
+      "description": "Radius from center of entity.",
+      "title": "Radius"
+    }
+  }
+}

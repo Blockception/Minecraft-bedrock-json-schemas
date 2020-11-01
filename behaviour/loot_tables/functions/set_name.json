@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.loot_tables.set_name",
+  "additionalProperties": false,
+  "description": "The function set_name",
+  "title": "Set name",
+  "properties": {
+    "function": {
+      "type": "string",
+      "const": "set_name",
+      "description": "TODO description",
+      "title": "TODO title"
+    },
+    "name": {
+      "type": "string",
+      "description": "TODO description",
+      "title": "TODO title"
+    }
+  }
+}

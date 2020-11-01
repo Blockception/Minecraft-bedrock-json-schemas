@@ -1,0 +1,6 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "Molang array of 3 numbers",
+  "description": "The minecraft molang definition that results in a 3 floats",
+  "anyOf": [{ "type": "string", "minLength": 0, "format": "molang" }]
+}

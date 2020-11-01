@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.mob_effect",
+  "type": "object",
+  "title": "Mob effect 1.8.0",
+  "description": "A component that applies a mob effect to entities that get within range.",
+  "additionalProperties": false,
+  "properties": {
+    "effect_range": {
+      "type": "number",
+      "default": 0.2,
+      "description": "How close a hostile entity must be to have the mob effect applied.",
+      "title": "Effect range"
+    },
+    "effect_time": {
+      "type": "integer",
+      "default": 10,
+      "description": "How long the applied mob effect lasts in seconds.",
+      "title": "Effect time"
+    },
+    "mob_effect": {
+      "type": "string",
+      "default": "",
+      "description": "The mob effect that is applied to entities that enter this entities effect range.",
+      "title": "Mob effect"
+    },
+    "entity_filter": { "$ref": "../filters.json", "title": "Entity filter", "description": "TODO" }
+  }
+}

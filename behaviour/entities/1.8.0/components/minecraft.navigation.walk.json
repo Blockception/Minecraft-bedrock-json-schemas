@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.navigation.walk",
+  "type": "object",
+  "title": "Navigation.walk.skip 1.8.0",
+  "additionalProperties": false,
+  "description": "Allows this entity to generate paths by walking around and jumping up and down a block like regular mobs.",
+  "required": [],
+  "properties": {
+    "avoid_damage_blocks": {
+      "type": "boolean",
+      "default": false,
+      "description": "Tells the pathfinder to avoid damaging blocks when finding a path",
+      "title": "TODO title"
+    },
+    "avoid_water": {
+      "type": "boolean",
+      "default": false,
+      "description": "Tells the pathfinder to avoid water when creating a path",
+      "title": "TODO title"
+    },
+    "avoid_portals": {
+      "type": "boolean",
+      "default": false,
+      "description": "Tells the pathfinder to avoid portals (like nether portals) when finding a path",
+      "title": "TODO title"
+    },
+    "avoid_sun": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether or not the pathfinder should avoid tiles that are exposed to the sun when creating paths",
+      "title": "TODO title"
+    },
+    "can_break_doors": {
+      "type": "boolean",
+      "default": false,
+      "description": "Tells the pathfinder that it can path through a closed door and break it",
+      "title": "TODO title"
+    },
+    "can_open_doors": {
+      "type": "boolean",
+      "default": false,
+      "description": "Tells the pathfinder that it can path through a closed door assuming the AI will open the door",
+      "title": "TODO title"
+    },
+    "can_pass_doors": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether a path can be created through a door",
+      "title": "TODO title"
+    },
+    "can_path_over_water": {
+      "type": "boolean",
+      "default": false,
+      "description": "Tells the pathfinder whether or not it can travel on the surface of the water",
+      "title": "TODO title"
+    },
+    "can_sink": {
+      "type": "boolean",
+      "default": true,
+      "description": "Tells the pathfinder whether or not it will be pulled down by gravity while in water",
+      "title": "TODO title"
+    },
+    "is_amphibious": {
+      "type": "boolean",
+      "default": true,
+      "description": "TODO Description",
+      "title": "TODO title"
+    }
+  }
+}

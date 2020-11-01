@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.filters.is_skin_id",
+  "type": "object",
+  "title": "Filters is skin id 1.8.0",
+  "description": "Returns true if the subject entity is the skin id number provided.",
+  "properties": {
+    "test": {
+      "type": "string",
+      "title": "The test property",
+      "description": "The test property"
+    },
+    "operator": { "$ref": "types/base_operator.json" },
+    "subject": { "$ref": "types/base_subject.json" },
+    "value": {
+      "type": "integer",
+      "description": "The altitude value to compare with",
+      "title": "Value"
+    }
+  }
+}

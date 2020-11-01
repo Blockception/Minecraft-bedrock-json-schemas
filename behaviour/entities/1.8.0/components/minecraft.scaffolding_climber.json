@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.scaffolding_climber",
+  "type": "object",
+  "title": "Scaffolding climber 1.8.0",
+  "description": "Allows the player to detect and manuever on the scaffolding block.",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {}
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.move_to_random_block",
+  "type": "object",
+  "title": "Behavior.move_to_random_block 1.8.0",
+  "description": "Allows mob to move towards a random block.",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "types/base_priority.json" },
+    "speed_multiplier": {
+      "ref": "types/base_speed_multiplier.json"
+    },
+    "block_distance": {
+      "type": "number",
+      "default": 16,
+      "description": "Defines the distance from the mob, in blocks, that the block to move to will be chosen.",
+      "title": "TODO title"
+    },
+    "within_radius": {
+      "type": "number",
+      "default": 0,
+      "description": "Defines the distance in blocks the mob has to be from the block for the movement to be finished.",
+      "title": "TODO title"
+    }
+  }
+}

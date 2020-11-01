@@ -1,0 +1,114 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.loot_tables",
+  "additionalProperties": false,
+  "description": "A minecraft loot table",
+  "title": "Loot Table",
+  "definitions": {
+    "pools_spec": {
+      "title": "Pools",
+      "description": "TODO description",
+      "type": "array",
+      "additionalProperties": false,
+      "items": {
+        "additionalProperties": false,
+        "title": "A single pool",
+        "type": "object",
+        "required": ["rolls"],
+        "properties": {
+          "rolls": {
+            "title": "Rolls",
+            "oneOf": [
+              {
+                "type": "integer",
+                "minimum": 0
+              },
+              {
+                "type": "object",
+                "required": ["min", "max"],
+                "properties": {
+                  "min": {
+                    "title": "Minimum",
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "max": {
+                    "title": "Minimum",
+                    "type": "number",
+                    "minimum": 1
+                  }
+                }
+              }
+            ]
+          },
+          "type": {
+            "title": "Type",
+            "type": "string"
+          },
+          "conditions": {
+            "title": "Conditions",
+            "description": "TODO",
+            "type": "array",
+            "items": {
+              "$ref": "./conditions.json"
+            }
+          },
+          "entries": {
+            "title": "Entries",
+            "type": "array",
+            "items": {
+              "additionalProperties": false,
+              "type": "object",
+              "required": ["type"],
+              "title": "Entry",
+              "properties": {
+                "type": {
+                  "title": "Type",
+                  "type": "string",
+                  "enum": ["item", "empty", "loot_table"]
+                },
+                "name": {
+                  "title": "Name",
+                  "type": "string",
+                  "description": "An item or loottable",
+                  "pattern": "^([\\w]+:|loot_tables/)"
+                },
+                "weight": {
+                  "title": "Weight",
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "functions": {
+                  "title": "Functions",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": ["function"],
+                    "title": "Function",
+                    "$ref": "./functions.json"
+                  }
+                },
+                "pools": {
+                  "$ref": "#/definitions/pools_spec"
+                },
+                "quality": {
+                  "title": "Quality",
+                  "description": "UNDOCUMANTED",
+                  "type": "integer"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "properties": {
+    "pools": { "$ref": "#/definitions/pools_spec", "description": "TODO description", "title": "TODO title" },
+    "type": {
+      "title": "Type",
+      "type": "string",
+      "description": "TODO description"
+    }
+  }
+}

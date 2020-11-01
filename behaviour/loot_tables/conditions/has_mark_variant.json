@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.condition.has_mark_variant",
+  "type": "object",
+  "additionalProperties": false,
+  "description": "Returns the condition true if the actor's mark variant is matched to the value.",
+  "title": "Has mark variant",
+  "properties": {
+    "condition": {
+      "type": "string",
+      "title": "Condition",
+      "description": "TODO"
+    },
+    "value": {
+      "type": "integer",
+      "default": "0",
+      "description": "Tests for the actor's mark variant (if it has one)",
+      "title": "Value"
+    }
+  }
+}

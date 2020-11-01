@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.resource.particle.1.10.0.particle_initialization",
+  "type": "object",
+  "title": "The particle initialization component for 1.10.0",
+  "additionalProperties": false,
+  "properties": {
+    "per_update_expression": {
+      "$ref": "../../../../molang/1.8.0/number.json",
+      "description": "TODO description: per update expression",
+      "title": "Per Update Expression"
+    },
+    "per_render_expression": {
+      "$ref": "../../../../molang/1.8.0/number.json",
+      "description": "TODO description: per render expression",
+      "title": "Per Render Expression"
+    }
+  },
+  "description": "TODO description: "
+}

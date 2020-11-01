@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.1.16.0.blocks",
+  "description": "Minecraft blocks 1.16.0",
+  "required": ["format_version", "minecraft:block"],
+  "title": "Block",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "format_version": {
+      "title": "The 1.16.0 format_version",
+      "type": "string",
+      "const": "1.16.0",
+      "description": "A version that tells minecraft what type of data format can be expected when reading this file."
+    },
+    "minecraft:block": {
+      "title": "Minecraft block definitions",
+      "description": "A custom block definition",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["description", "components"],
+      "properties": {
+        "description": {
+          "title": "Block description",
+          "description": "The description for this block",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["identifier"],
+          "properties": {
+            "identifier": {
+              "type": "string",
+              "description": "The identifier for this block. The name must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla block.",
+              "title": "Identifier",
+              "$ref": "../../../general/block/identifier.json"
+            },
+            "is_experimental": {
+              "type": "boolean",
+              "default": false,
+              "description": "If this block is experimental, it will only be registered if the world is marked as experimantal.",
+              "title": "Is experimental"
+            },
+            "register_to_creative_menu": {
+              "type": "boolean",
+              "default": false,
+              "description": "Whether or not to register this block to the creative inventory menu.",
+              "title": "Register to creative menu"
+            }
+          }
+        },
+        "components": {
+          "$ref": "../1.10.0/components.json"
+        }
+      }
+    }
+  }
+}

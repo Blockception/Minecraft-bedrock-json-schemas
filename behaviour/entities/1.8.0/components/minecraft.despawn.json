@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.despawn",
+  "type": "object",
+  "title": "Despawn 1.8.0",
+  "additionalProperties": false,
+  "description": "Despawns the associated Actor immediately or when the optional filter evaluates to true.",
+  "required": [],
+  "properties": {
+    "filters": {
+      "$ref": "../filters.json",
+      "description": "The list of conditions that must be satisfied before the Actor is despawned",
+      "title": "Filters"
+    },
+    "despawn_from_chance": {
+      "type": "boolean",
+      "default": true,
+      "description": "Determines if \"min_range_random_chance\" is used in the standard despawn rules",
+      "title": "Despawn from chance"
+    },
+    "despawn_from_inactivity": {
+      "type": "boolean",
+      "default": true,
+      "description": "Determines if the \"min_range_inactivity_timer\" is used in the standard despawn rules.",
+      "title": "Despawn from inactivity"
+    },
+    "despawn_from_distance": {
+      "type": "object",
+      "description": "UNDOCUMENTATED",
+      "title": "UNDOCUMENTATED",
+      "additionalProperties": false
+    },
+    "despawn_from_simulation_edge": {
+      "type": "boolean",
+      "default": true,
+      "description": "Determines if the mob is instantly despawned at the edge of simulation distance in the standard despawn rules.",
+      "title": "Despawn from simulation edge"
+    },
+    "min_range_inactivity_timer": {
+      "type": "integer",
+      "default": 30,
+      "description": "The amount of time in seconds that the mob must be inactive.",
+      "title": "Min range inactivity timer"
+    },
+    "min_range_random_chance": {
+      "type": "integer",
+      "default": 800,
+      "description": "A random chance between 1 and the given value.",
+      "title": "Min range random chance"
+    },
+    "remove_child_entities": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, all entities linked to this entity in a child relationship (eg. leashed) will also be despawned.",
+      "title": "Remove child entities"
+    }
+  }
+}

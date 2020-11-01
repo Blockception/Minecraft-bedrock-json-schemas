@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.raid_garden",
+  "description": "Allows the mob to eat/raid crops out of farms until they are full.",
+  "additionalProperties": false,
+  "type": "object",
+  "title": "Behavior.raid_garden 1.8.0",
+  "required": [],
+  "properties": {
+    "priority": { "ref": "types/base_priority.json" },
+    "speed_multiplier": { "ref": "types/base_speed_multiplier.json" },
+    "blocks": {
+      "type": "array",
+      "description": "Blocks that the mob is looking for to eat",
+      "items": {
+        "type": "string",
+        "title": "Block id",
+        "description": "A block identifier",
+        "pattern": "[0-9:a-z_]+"
+      },
+      "title": "TODO title"
+    },
+    "eat_delay": {
+      "type": "integer",
+      "default": 2,
+      "description": "Time in seconds between each time it eats",
+      "title": "TODO title"
+    },
+    "full_delay": {
+      "type": "integer",
+      "default": 100,
+      "description": "Amount of time in seconds before this mob wants to eat again",
+      "title": "TODO title"
+    },
+    "initial_eat_delay": {
+      "type": "integer",
+      "default": 0,
+      "description": "Time in seconds before starting to eat/raid once it arrives at it",
+      "title": "Initial eat delay"
+    },
+    "goal_radius": {
+      "type": "number",
+      "default": 0.5,
+      "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot",
+      "title": "TODO title"
+    },
+    "max_to_eat": {
+      "type": "integer",
+      "default": 6,
+      "description": "Maximum number of things this entity wants to eat",
+      "title": "TODO title"
+    },
+    "search_range": {
+      "type": "integer",
+      "default": 0,
+      "description": "Distance in blocks the mob will look for crops to eat",
+      "title": "TODO title"
+    },
+    "search_height": {
+      "type": "integer",
+      "default": 0,
+      "description": "UNDOCUMENTATED",
+      "title": "TODO title"
+    }
+  }
+}

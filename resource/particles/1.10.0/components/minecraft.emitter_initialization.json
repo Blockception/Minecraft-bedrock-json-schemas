@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.resource.particle.1.10.0.emitter_initialization",
+  "description": "This component allows the emitter to run some Molang at creation, primarily to populate any MoLang variables that get used later.",
+  "type": "object",
+  "title": "The emitter initialization component for 1.10.0",
+  "additionalProperties": false,
+  "properties": {
+    "creation_expression": {
+      "$ref": "../../../../molang/1.8.0/string.json",
+      "description": "This is run once at emitter startup.",
+      "title": "Creation Expression"
+    },
+    "per_update_expression": {
+      "$ref": "../../../../molang/1.8.0/string.json",
+      "description": "This is run once per emitter update.",
+      "title": "Per Update Expression"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.nearest_attackable_target",
+  "type": "object",
+  "title": "Behavior.nearest_attackable_target 1.8.0",
+  "description": "Allows the mob to check for and pursue the nearest valid target.",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "types/base_priority.json" },
+    "entity_types": {
+      "description": "List of entity types that this mob considers valid targets",
+      "$ref": "../types/entity_types.json",
+      "title": "TODO title"
+    },
+    "attack_interval": {
+      "type": "integer",
+      "default": 0,
+      "description": "Time in seconds between attacks",
+      "title": "TODO title"
+    },
+    "must_reach": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, only entities that this mob can path to can be selected as targets",
+      "title": "TODO title"
+    },
+    "must_see": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, only entities in this mob's viewing range can be selected as targets",
+      "title": "TODO title"
+    },
+    "must_see_forget_duration": {
+      "type": "number",
+      "default": 3,
+      "description": "Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more",
+      "title": "TODO title"
+    },
+    "persist_time": {
+      "type": "number",
+      "default": 0.0,
+      "description": "Time in seconds for a valid target to stay targeted when it becomes and invalid target.",
+      "title": "TODO title"
+    },
+    "reselect_targets": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, the target will change to the current closest entity whenever a different entity is closer",
+      "title": "TODO title"
+    },
+    "scan_interval": {
+      "type": "integer",
+      "default": 10,
+      "description": "How many ticks to wait between scanning for a target.",
+      "title": "TODO title"
+    },
+    "target_search_height": {
+      "type": "number",
+      "default": -1.0,
+      "description": "Height in blocks to search for a target mob. -1.0f means the height does not matter.",
+      "title": "TODO title"
+    },
+    "within_radius": {
+      "type": "number",
+      "default": 0,
+      "description": "Distance in blocks that the target can be within to launch an attack",
+      "title": "TODO title"
+    }
+  }
+}

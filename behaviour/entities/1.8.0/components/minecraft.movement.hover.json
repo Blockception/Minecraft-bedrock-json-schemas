@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.movement.hover",
+  "title": "Movement.hover 1.8.0",
+  "description": "This move control causes the mob to hover.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "max_turn": {
+      "type": "number",
+      "default": 30,
+      "description": "The maximum number in degrees the mob can turn per tick.",
+      "title": "Max turn"
+    }
+  }
+}

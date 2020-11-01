@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "Block definition",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "title": "Name",
+      "description": "The block id, for example: 'minecraft:air'",
+      "type": "string"
+    },
+    "states": {
+      "title": "States",
+      "description": "The block states",
+      "type": "object",
+      "additionalProperties": {
+        "title": "State",
+        "description": "A single state of a block",
+        "oneOf": [{ "type": "string" }, { "type": "boolean" }, { "type": "number" }]
+      }
+    }
+  }
+}

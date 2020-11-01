@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.1.12.0.recipe.item",
+  "description": "Recipe item 1.12.0",
+  "title": "Item",
+  "oneOf": [
+    { "type": "string", "title": "Item identifier" },
+    {
+      "additionalProperties": false,
+      "type": "object",
+      "required": ["item"],
+      "properties": {
+        "item": {
+          "type": "string",
+          "title": "Item identifier"
+        },
+        "data": {
+          "type": "integer",
+          "minimum": 0,
+          "title": "Item data value"
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 1,
+          "default": 1,
+          "title": "Count"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.eat_block",
+  "type": "object",
+  "title": "Behavior.eat_block 1.8.0",
+  "description": "UNDOCUMENTATED",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "types/base_priority.json" },
+    "on_eat": { "$ref": "../types/trigger.json", "description": "UNDOCUMENTATED", "title": "On Eat" },
+    "success_chance": {
+      "title": "Succes chance",
+      "description": "UNDOCUMENTATED",
+      "oneOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "string",
+          "title": "Molang"
+        }
+      ]
+    },
+    "time_until_eat": {
+      "title": "Time until eat",
+      "description": "UNDOCUMENTATED",
+      "type": "number"
+    },
+    "eat_and_replace_block_pairs": {
+      "type": "array",
+      "title": "Eat and replace block pairs",
+      "description": "UNDOCUMENTATED",
+      "items": {
+        "type": "object",
+        "title": "UNDOCUMENTATED",
+        "description": "UNDOCUMENTATED",
+        "properties": {
+          "eat_block": {
+            "type": "string",
+            "title": "UNDOCUMENTATED",
+            "description": "UNDOCUMENTATED"
+          },
+          "replace_block": {
+            "type": "string",
+            "title": "UNDOCUMENTATED",
+            "description": "UNDOCUMENTATED"
+          }
+        }
+      }
+    }
+  }
+}

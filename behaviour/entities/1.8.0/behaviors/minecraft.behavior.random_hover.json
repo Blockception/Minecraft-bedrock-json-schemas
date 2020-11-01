@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.random_hover",
+  "description": "Allows the mob to hover around randomly, close to the surface",
+  "type": "object",
+  "title": "Behavior.random_hover 1.8.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "ref": "types/base_priority.json" },
+    "speed_multiplier": { "ref": "types/base_speed_multiplier.json" },
+    "hover_height": {
+      "type": "array",
+      "description": "UNDOCUMENTATED",
+      "title": "Hover height",
+      "items": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "interval": {
+      "type": "integer",
+      "default": 120,
+      "description": "A random value to determine when to randomly move somewhere. This has a 1/interval chance to choose this goal",
+      "title": "Interval"
+    },
+    "xz_dist": {
+      "type": "integer",
+      "default": 10,
+      "description": "Distance in blocks on ground that the mob will look for a new spot to move to. Must be at least 1",
+      "title": "Xz dist"
+    },
+    "y_dist": {
+      "type": "integer",
+      "default": 7,
+      "description": "Distance in blocks that the mob will look up or down for a new spot to move to. Must be at least 1",
+      "title": "Y dist"
+    },
+    "y_offset": {
+      "type": "number",
+      "default": 0,
+      "description": "Height in blocks to add to the selected target position",
+      "title": "Y offset"
+    }
+  }
+}

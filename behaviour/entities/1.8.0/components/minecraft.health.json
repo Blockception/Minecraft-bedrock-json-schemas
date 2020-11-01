@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.health",
+  "description": "TODO",
+  "type": "object",
+  "title": "Health 1.8.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "value": { "$ref": "../types/range_number_type.json", "description": "TODO", "title": "TODO title" },
+    "max": {
+      "type": "integer",
+      "description": "TODO",
+      "title": "TODO title"
+    }
+  },
+  "dependencies": {
+    "max": ["value"]
+  }
+}

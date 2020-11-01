@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.sittable",
+  "description": "Defines the entity's 'sit' state.",
+  "type": "object",
+  "title": "Sittable 1.8.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "sit_event": { "$ref": "../types/event.json", "description": "Event to run when the entity enters the 'sit' state", "title": "TODO title" },
+    "stand_event": { "$ref": "../types/event.json", "description": "Event to run when the entity exits the 'sit' state", "title": "TODO title" }
+  }
+}

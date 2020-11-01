@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.16.0.minecraft.area_attack",
+  "type": "object",
+  "title": "Area attack 1.16.0",
+  "description": "A component that does damage to entities that get within range.",
+  "additionalProperties": false,
+  "properties": {
+    "damage_per_tick": {
+      "type": "integer",
+      "default": 2,
+      "description": "How much damage per tick is applied to entities that enter the damage range.",
+      "title": "Damage per tick"
+    },
+    "damage_range": {
+      "type": "number",
+      "default": 0.2,
+      "description": "How close a hostile entity must be to have the damage applied.",
+      "title": "Damage range"
+    },
+    "entity_filter": { "$ref": "../filters.json", "description": "Entity_filter", "title": "Minecraft Filter" },
+    "cause": {
+      "type": "string",
+      "description": "TODO",
+      "title": "Cause",
+      "enum": [
+        "anvil",
+        "attack",
+        "block_explosion",
+        "contact",
+        "drowning",
+        "entity_explosion",
+        "fall",
+        "falling_block",
+        "fatal",
+        "fire",
+        "fire_tick",
+        "fly_into_wall",
+        "lava",
+        "magic",
+        "none",
+        "override",
+        "piston",
+        "projectile",
+        "starve",
+        "suffocation",
+        "suicide",
+        "thorns",
+        "void",
+        "wither"
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.16.0.minecraft.behavior.nap",
+  "type": "object",
+  "title": "Behaviour.nap 1.16.0",
+  "description": "Allows the mob to move back into lava when on land.",
+  "additionalProperties": false,
+  "properties": {
+    "priority": { "ref": "types/base_priority.json" },
+    "speed_multiplier": { "ref": "types/base_speed_multiplier.json" },
+    "cooldown_max": {
+      "type": "number",
+      "default": 0,
+      "description": "Maximum time in seconds the mob has to wait before using the goal again",
+      "title": "Cooldown max"
+    },
+    "cooldown_min": {
+      "type": "number",
+      "default": 0,
+      "description": "Minimum time in seconds the mob has to wait before using the goal again",
+      "title": "Cooldown min"
+    },
+    "mob_detect_dist": {
+      "type": "number",
+      "default": 6,
+      "description": "The block distance in x and z that will be checked for mobs that this mob detects",
+      "title": "Mob detect dist"
+    },
+    "mob_detect_height": {
+      "type": "number",
+      "default": 6,
+      "description": "The block distance in y that will be checked for mobs that this mob detects",
+      "title": "Mob detect height"
+    },
+    "can_nap_filters": { "$ref": "../filters.json", "description": "UNDOCUMENTATED", "title": "Can nap filters" },
+    "wake_mob_exceptions": { "$ref": "../filters.json", "description": "UNDOCUMENTATED", "title": "Wake mob exceptions" }
+  }
+}

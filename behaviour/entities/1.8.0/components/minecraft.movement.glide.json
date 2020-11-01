@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.movement.glide",
+  "type": "object",
+  "title": "Movement.glide 1.8.0",
+  "description": "TODO description",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "start_speed": {
+      "type": "number",
+      "title": "Start speed",
+      "description": "UNDOCUMENTATED"
+    },
+    "speed_when_turning": {
+      "type": "number",
+      "title": "Speed when turning",
+      "description": "UNDOCUMENTATED"
+    }
+  }
+}

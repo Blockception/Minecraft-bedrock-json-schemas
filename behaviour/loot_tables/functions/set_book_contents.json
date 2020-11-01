@@ -1,0 +1,35 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.loot_tables.set_book_contents",
+  "additionalProperties": false,
+  "description": "The function set_book_contents",
+  "title": "Set book contents",
+  "required": ["function", "author", "title", "pages"],
+  "properties": {
+    "function": {
+      "type": "string",
+      "const": "set_book_contents",
+      "description": "TODO description",
+      "title": "TODO title"
+    },
+    "author": {
+      "type": "string",
+      "description": "TODO description",
+      "title": "TODO title"
+    },
+    "title": {
+      "type": "string",
+      "description": "TODO description",
+      "title": "TODO title"
+    },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "examples": ["Some text", "{\"rawtext\":[ {\"translate\":\"some.text\"}]}"]
+      },
+      "description": "TODO description",
+      "title": "TODO title"
+    }
+  }
+}

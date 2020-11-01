@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.movement.amphibious",
+  "type": "object",
+  "title": "Movement.amphibious 1.8.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "max_turn": {
+      "type": "number",
+      "default": 30,
+      "description": "The maximum number in degrees the mob can turn per tick.",
+      "title": "TODO title"
+    }
+  },
+  "description": "This move control allows the mob to swim in water and walk on land."
+}

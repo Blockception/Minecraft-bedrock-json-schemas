@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.resource.particle.1.10.0.emitter_rate_instant",
+  "type": "object",
+  "title": "The emitter rate instant component for 1.10.0",
+  "additionalProperties": false,
+  "properties": {
+    "num_particles": {
+      "$ref": "../../../../molang/1.8.0/number.json",
+      "description": "This many particles are emitted at once evaluated once per particle emitter loop.",
+      "title": "Num Particles",
+      "default": 10
+    }
+  },
+  "description": "TODO description: "
+}

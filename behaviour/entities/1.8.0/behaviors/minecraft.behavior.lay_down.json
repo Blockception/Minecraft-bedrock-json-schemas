@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.lay_down",
+  "description": "Allows mobs to lay down at times.",
+  "type": "object",
+  "title": "Behavior.lay_down 1.8.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "types/base_priority.json" },
+    "interval": {
+      "type": "integer",
+      "default": 120,
+      "description": "A random value to determine at what intervals something can occur. This has a 1/interval chance to choose this goal",
+      "title": "TODO title"
+    },
+    "random_stop_interval": {
+      "type": "integer",
+      "default": 120,
+      "description": "A random value in which the goal can use to pull out of the behavior. This is a 1/interval chance to play the sound",
+      "title": "TODO title"
+    }
+  }
+}

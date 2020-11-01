@@ -1,0 +1,8 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.components1.11.0",
+  "type": "object",
+  "title": "Entity 1.11.0",
+  "$ref": "../1.10.0/components.json",
+  "description": "TODO description"
+}

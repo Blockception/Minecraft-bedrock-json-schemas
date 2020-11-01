@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.spawn_rules.1.11.0.minecraft.player_in_village_filter",
+  "additionalProperties": false,
+  "type": "object",
+  "title": "Player in village filter 1.11.0",
+  "description": "TODO",
+  "properties": {
+    "distance": { "type": "integer", "title": "Distance", "description": "TODO" },
+    "village_border_tolerance": {
+      "type": "integer",
+      "title": "Village border tolerance",
+      "description": "TODO"
+    }
+  }
+}

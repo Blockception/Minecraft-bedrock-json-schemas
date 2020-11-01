@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.16.0.filters.weather_at_position",
+  "type": "object",
+  "title": "Filters weather at position 1.16.0",
+  "description": "Tests the current weather, at the actor's position, against a provided weather value.",
+  "required": ["value"],
+  "properties": {
+    "test": {
+      "type": "string",
+      "title": "Test",
+      "description": "The test property"
+    },
+    "operator": { "$ref": "types/base_operator.json" },
+    "subject": { "$ref": "types/base_subject.json" },
+    "value": {
+      "description": "The Family name to look for",
+      "type": "string",
+      "title": "Value"
+    }
+  }
+}

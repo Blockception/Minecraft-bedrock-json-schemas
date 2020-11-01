@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.stalk_and_pounce_on_target",
+  "description": "Allows the mob to stay at a certain level when in liquid.",
+  "type": "object",
+  "title": "Behavior.stalk_and_pounce_on_target 1.8.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": {
+      "ref": "types/base_priority.json"
+    },
+    "interest_time": {
+      "type": "number",
+      "default": 2,
+      "description": "The amount of time the mob will be interested before pouncing. This happens when the mob is within range of pouncing",
+      "title": "Interest time"
+    },
+    "leap_distance": {
+      "type": "number",
+      "default": 0.8,
+      "description": "The distance in blocks the mob jumps in the direction of its target",
+      "title": "Leap distance"
+    },
+    "leap_height": {
+      "type": "number",
+      "default": 0.9,
+      "description": "The height in blocks the mob jumps when leaping at its target",
+      "title": "Leap height"
+    },
+    "max_stalk_dist": {
+      "type": "number",
+      "default": 10,
+      "description": "The maximum distance away a target can be before the mob gives up on stalking",
+      "title": "Max stalk dist"
+    },
+    "pounce_max_dist": {
+      "type": "number",
+      "default": 5,
+      "description": "The maximum distance away from the target in blocks to begin pouncing at the target",
+      "title": "Pounce max dist"
+    },
+    "set_persistent": {
+      "type": "boolean",
+      "default": false,
+      "description": "Allows the actor to be set to persist upon targeting a player",
+      "title": "Set persistent"
+    },
+    "stalk_speed": {
+      "type": "number",
+      "default": 1.2,
+      "description": "The movement speed in which you stalk your target",
+      "title": "Stalk speed"
+    },
+    "strike_dist": {
+      "type": "number",
+      "default": 2,
+      "description": "The max distance away from the target when landing from the pounce that will still result in damaging the target",
+      "title": "Strike dist"
+    },
+    "stuck_time": {
+      "type": "number",
+      "default": 2,
+      "description": "The amount of time the mob will be stuck if they fail and land on a block they can be stuck on",
+      "title": "Stuck time"
+    }
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.resource.animation_controller1.10.0",
+  "type": "object",
+  "title": "The minecraft resourcepack animation controller 1.10.0",
+  "description": "TODO description",
+  "definitions": {
+    "animationspec": {
+      "anyOf": [
+        {
+          "title": "Animation Specification",
+          "description": "A single string that specifies which animation there are",
+          "type": "string"
+        },
+        {
+          "type": "object",
+          "title": "Animation Specification",
+          "description": "A object specification on how to transition",
+          "maxProperties": 1,
+          "minProperties": 1,
+          "additionalProperties": {
+            "$ref": "../../../molang/1.8.0/string.json"
+          }
+        }
+      ]
+    },
+    "particle_effect_spec": {
+      "additionalProperties": false,
+      "type": "object",
+      "required": ["effect"],
+      "properties": {
+        "bind_to_actor": {
+          "type": "boolean",
+          "title": "Bind to actor",
+          "description": "Set to false to have the effect spawned in the world without being bound to an actor (by default an effect is bound to the actor)."
+        },
+        "effect": {
+          "type": "string",
+          "title": "Effect",
+          "description": "The name of a particle effect that should be played"
+        },
+        "locator": {
+          "type": "string",
+          "title": "Locator",
+          "description": "The name of a locator on the actor where the effect should be located"
+        },
+        "pre_effect_script": {
+          "type": "string",
+          "title": "Pre effect script",
+          "description": "A molang script that will be run when the particle emitter is initialized"
+        }
+      }
+    },
+    "commands": {
+      "type": "string",
+      "description": "The event or commands to execute",
+      "pattern": "^(@s .+|/.+)$"
+    }
+  },
+  "required": ["format_version", "animation_controllers"],
+  "additionalProperties": false,
+  "properties": {
+    "format_version": {
+      "title": "The 1.10.0 format_version",
+      "type": "string",
+      "pattern": "^1.10.0$",
+      "description": "A version that tells minecraft what type of data format can be expected when reading this file."
+    },
+    "animation_controllers": {
+      "type": "object",
+      "title": "The animation controllers schema",
+      "description": "The animation controllers schema for 1.10.0",
+      "propertyNames": {
+        "pattern": "^controller\\.animation\\.[a-z\\.]+"
+      },
+      "additionalProperties": {
+        "additionalProperties": false,
+        "type": "object",
+        "title": "A animation controller",
+        "description": "A single animation controller 1.10.0",
+        "required": ["states"],
+        "minProperties": 1,
+        "properties": {
+          "states": {
+            "title": "The states definition",
+            "description": "The states of this animation controller",
+            "propertyNames": {
+              "pattern": "[a-z\\.]+"
+            },
+            "minProperties": 1,
+            "additionalProperties": {
+              "additionalProperties": false,
+              "title": "Animation state",
+              "description": "Animation state",
+              "type": "object",
+              "properties": {
+                "animations": {
+                  "title": "Animations definition",
+                  "description": "The animations definition for 1.10.0",
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/animationspec",
+                    "description": "TODO description: animations",
+                    "title": "Animations"
+                  }
+                },
+                "blend_transition": {
+                  "title": "Blend Transition",
+                  "oneOf": [
+                    {
+                      "type": "number",
+                      "description": "A short-hand version of blend_out that simply sets the amount of time to fade out if the animation is interrupted"
+                    },
+                    {
+                      "type": "object",
+                      "description": "Specifies the cross-fade time in seconds when transitioning to another state",
+                      "additionalProperties": {
+                        "type": "number",
+                        "description": "Mapping of time since the animation was canceled, to the blend value at that time. A default key of time=0 to a blend value of 1.0 is provided if any other key is set and a blend value at time=0 hasn't already been set."
+                      }
+                    }
+                  ]
+                },
+                "blend_via_shortest_path": {
+                  "description": "When blending a transition to another state, animate each euler axis through the shortest rotation, instead of by value",
+                  "type": "boolean",
+                  "title": "Blend Via Shortest Path"
+                },
+                "particle_effects": {
+                  "description": "The effects to be emitted",
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/particle_effect_spec",
+                    "description": "TODO description: particle effects",
+                    "title": "Particle Effects"
+                  },
+                  "title": "Particle Effects"
+                },
+                "sound_effects": {
+                  "type": "array",
+                  "description": "Collection of sounds to trigger on entry to this animation state.",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": ["effect"],
+                    "properties": {
+                      "effect": {
+                        "description": "Valid sound effect names should be listed in the entity's resource_definition json file.",
+                        "type": "string"
+                      }
+                    }
+                  }
+                },
+                "transitions": {
+                  "title": "Transition definition",
+                  "description": "The transition definition for 1.10.0",
+                  "minProperties": 1,
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/animationspec",
+                    "description": "TODO description: transitions",
+                    "title": "Transitions"
+                  }
+                },
+                "variables": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "additionalProperties": false,
+                    "type": "object",
+                    "required": ["input"],
+                    "properties": {
+                      "input": {
+                        "$ref": "../../../molang/1.8.0/number.json"
+                      },
+                      "remap_curve": {
+                        "additionalProperties": {
+                          "type": "number"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "initial_state": {
+            "type": "string",
+            "description": "TODO description: initial state",
+            "title": "Initial State"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.angry",
+  "type": "object",
+  "title": "Angry 1.8.0",
+  "description": "Adds a timer for the entity to grow up. It can be accelerated by giving the entity the items it likes as defined by feedItems.",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "broadcast_anger": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry",
+      "title": "Broadcast Anger"
+    },
+    "broadcast_filters": {
+      "$ref": "../filters.json",
+      "description": "Conditions that make this entry in the list valid",
+      "title": "Broadcast Filters"
+    },
+    "broadcast_range": {
+      "type": "integer",
+      "default": 20,
+      "description": "Distance in blocks within which other entities of the same entity definition will become angry",
+      "title": "Broadcast Range"
+    },
+    "broadcast_targets": {
+      "type": "array",
+      "description": "A list of entity families to broadcast anger to",
+      "items": {
+        "type": "string",
+        "description": "An entity family",
+        "pattern": "^.+$",
+        "title": "Broadcast Targets"
+      },
+      "title": "Broadcast Targets"
+    },
+    "calm_event": {
+      "$ref": "../types/event.json",
+      "description": "Event to run after the number of seconds specified in duration expires (when the entity stops being 'angry')",
+      "title": "Calm Event"
+    },
+    "duration": {
+      "type": "integer",
+      "default": 25,
+      "description": "The amount of time in seconds that the entity will be angry",
+      "title": "Duration"
+    },
+    "duration_delta": {
+      "type": "integer",
+      "default": 0,
+      "description": "Variance in seconds added to the duration [-delta, delta]",
+      "title": "Duration Delta"
+    },
+    "broadcastAnger": {
+      "type": "boolean",
+      "description": "TODO",
+      "title": "TODO"
+    },
+    "broadcastRange": {
+      "type": "integer",
+      "description": "TODO",
+      "title": "TODO"
+    }
+  }
+}

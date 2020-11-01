@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.balloonable",
+  "additionalProperties": false,
+  "type": "object",
+  "title": "Balloonable 1.8.0",
+  "required": [],
+  "properties": {
+    "mass": {
+      "type": "number",
+      "description": "TODO description: mass",
+      "title": "Mass"
+    }
+  },
+  "description": "TODO description: "
+}

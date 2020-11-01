@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.equipment",
+  "type": "object",
+  "title": "Equipment 1.8.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "table": {
+      "type": "string",
+      "pattern": ".*\\.json$",
+      "description": "TODO description: table",
+      "title": "Table"
+    },
+    "slot_drop_chance": {
+      "type": "array",
+      "title": "Slot drop chance",
+      "description": "A list of slots with the chance to drop an equipped item from that slot",
+      "items": {
+        "type": "object",
+        "title": "Slot drop chance",
+        "description": "UNDOCUMENTATED",
+        "additionalProperties": false,
+        "properties": {
+          "drop_chance": {
+            "type": "number",
+            "title": "Drop chance"
+          },
+          "slot": {
+            "type": "string",
+            "title": "Slot",
+            "pattern": "slot\\.[a-z\\.0-9]+"
+          }
+        }
+      }
+    }
+  },
+  "description": "TODO description: "
+}

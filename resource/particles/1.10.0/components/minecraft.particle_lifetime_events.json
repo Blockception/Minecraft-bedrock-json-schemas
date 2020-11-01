@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.resource.particle.1.10.0.particle_lifetime_events",
+  "type": "object",
+  "title": "The particle lifetime events component for 1.10.0",
+  "additionalProperties": false,
+  "properties": {
+    "creation_event": {
+      "title": "Creation event",
+      "description": "Fires when the particle is created",
+      "oneOf": [
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "custom_events": {
+      "title": "Custom events",
+      "description": "TODO, unclear structure :("
+    },
+    "expiration_event": {
+      "title": "Expiration event",
+      "description": "Fires when the particle expires (does not wait for particles to expire too)",
+      "oneOf": [
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "timeline": {
+      "propertyNames": {
+        "pattern": "[0-9]*.[0-9]*"
+      },
+      "description": "TODO description: timeline",
+      "title": "Timeline"
+    }
+  },
+  "description": "TODO description: "
+}

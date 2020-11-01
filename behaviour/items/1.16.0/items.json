@@ -1,0 +1,193 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.1.16.0.items",
+  "description": "Minecraft items 1.16.0",
+  "required": ["format_version", "minecraft:item"],
+  "title": "Item",
+  "properties": {
+    "format_version": {
+      "type": "string",
+      "description": "TODO description",
+      "title": "TODO title"
+    },
+    "minecraft:item": {
+      "additionalProperties": false,
+      "required": ["description"],
+      "type": "object",
+      "description": "TODO",
+      "properties": {
+        "description": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Description",
+          "description": "TODO",
+          "properties": {
+            "identifier": {
+              "title": "Identifier",
+              "type": "string",
+              "description": "TODO",
+              "$ref": "../../../general/item/identifier.json"
+            }
+          }
+        },
+        "components": {
+          "additionalProperties": false,
+          "type": "object",
+          "description": "The components of this item",
+          "properties": {
+            "minecraft:camera": {
+              "type": "object",
+              "description": "UNDOCUMANTED",
+              "title": "UNDOCUMANTED",
+              "properties": {
+                "black_bars_duration": {
+                  "type": "number",
+                  "description": "UNDOCUMANTED",
+                  "title": "UNDOCUMANTED"
+                },
+                "black_bars_screen_ratio": {
+                  "type": "number",
+                  "description": "UNDOCUMANTED",
+                  "title": "UNDOCUMANTED"
+                },
+                "shutter_duration": {
+                  "type": "number",
+                  "description": "UNDOCUMANTED",
+                  "title": "UNDOCUMANTED"
+                },
+                "picture_duration": {
+                  "type": "number",
+                  "description": "UNDOCUMANTED",
+                  "title": "UNDOCUMANTED"
+                },
+                "slide_away_duration": {
+                  "type": "number",
+                  "description": "UNDOCUMANTED",
+                  "title": "UNDOCUMANTED"
+                }
+              }
+            },
+            "minecraft:max_damage": {
+              "type": "integer",
+              "description": "Max damage item has, this is used like item max health."
+            },
+            "minecraft:hand_equipped": {
+              "type": "boolean",
+              "title": "Hand equipped",
+              "description": "Is this a hand equipped item."
+            },
+            "minecraft:stacked_by_data": {
+              "type": "boolean",
+              "description": "Stacked by data aux value or not?"
+            },
+            "minecraft:foil": {
+              "type": "boolean",
+              "description": "Foil or glint."
+            },
+            "minecraft:block": {
+              "type": "string",
+              "description": "Block name, leave blank for no block."
+            },
+            "minecraft:max_stack_size": {
+              "type": "integer",
+              "description": "Max stack size.",
+              "minimum": 0
+            },
+            "minecraft:use_duration": {
+              "type": "integer",
+              "description": "How long to use before item is done being used."
+            },
+            "minecraft:food": {
+              "type": "object",
+              "description": "Food settings of the item",
+              "properties": {
+                "nutrition": {
+                  "type": "integer",
+                  "description": "Nutrition amount."
+                },
+                "saturation_modifier": {
+                  "type": "string",
+                  "description": "Choose: poor, low, normal, good, max, supernatural.",
+                  "enum": ["poor", "low", "normal", "good", "max", "supernatural"]
+                },
+                "using_converts_to": {
+                  "type": "string",
+                  "description": "After using,  item converts it to this item.",
+                  "$ref": "../../../general/item/identifier.json"
+                },
+                "on_use_action": {
+                  "type": "string",
+                  "description": "'chorus_teleport' or 'none'.",
+                  "enum": ["chorus_teleport", "suspicious_stew_effect", "none"]
+                },
+                "on_use_range": {
+                  "$ref": "../../../general/array_3_number.json"
+                },
+                "cooldown_type": {
+                  "type": "string",
+                  "description": "'chorusfruit' or 'none'.",
+                  "enum": ["chorusfruit", "none"]
+                },
+                "cooldown_time": {
+                  "type": "integer",
+                  "description": "Cooldown time in ticks."
+                },
+                "can_always_eat": {
+                  "type": "boolean",
+                  "description": "Can always eat this item? true or false."
+                },
+                "effects": {
+                  "type": "array",
+                  "items": {
+                    "additionalProperties": false,
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "chance": {
+                        "type": "number"
+                      },
+                      "duration": {
+                        "type": "integer"
+                      },
+                      "amplifier": {
+                        "type": "integer"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "minecraft:seed": {
+              "additionalProperties": false,
+              "type": "object",
+              "properties": {
+                "crop_result": {
+                  "type": "string"
+                },
+                "plant_at": {
+                  "description": "Valid blocks you can plant this item at.",
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "$ref": "../../../general/blocks_item.json"
+                    },
+                    {
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "$ref": "../../../general/blocks_item.json"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "title": "TODO title"
+    }
+  }
+}

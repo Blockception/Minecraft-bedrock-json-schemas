@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.panic",
+  "description": "Allows the mob to enter the panic state, which makes it run around and away from the damage source that made it enter this state.",
+  "type": "object",
+  "title": "Behavior.panic 1.8.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "types/base_priority.json" },
+    "speed_multiplier": { "$ref": "types/base_speed_multiplier.json" },
+    "damage_sources": {
+      "type": "array",
+      "items": {
+        "$ref": "../../../../general/entity_damage.json"
+      },
+      "description": "The list of Entity Damage Sources that will cause this mob to panic",
+      "title": "TODO title"
+    },
+    "force": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, this mob will not stop panicking until it can't move anymore or the goal is removed from it",
+      "title": "TODO title"
+    },
+    "ignore_mob_damage": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, the mob will not panic in response to damage from other mobs. This overrides the damage types in \"damage_sources\"",
+      "title": "TODO title"
+    },
+    "prefer_water": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, the mob will prefer water over land",
+      "title": "TODO title"
+    },
+    "panic_sound": {
+      "type": "string",
+      "description": "UNDOCUMENTATED",
+      "title": "UNDOCUMENTATED"
+    },
+    "sound_interval": {
+      "type": "object",
+      "description": "UNDOCUMENTATED",
+      "title": "UNDOCUMENTATED",
+      "properties": {
+        "range_min": {
+          "type": "number",
+          "description": "UNDOCUMENTATED",
+          "title": "UNDOCUMENTATED"
+        },
+        "range_max": {
+          "type": "number",
+          "description": "UNDOCUMENTATED",
+          "title": "UNDOCUMENTATED"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

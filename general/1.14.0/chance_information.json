@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.general.1.14.0.chance_information",
+  "additionalProperties": false,
+  "type": "object",
+  "title": "TODO",
+  "description": "TODO",
+  "properties": {
+    "numerator": {
+      "type": "number",
+      "minimum": 1,
+      "description": "TODO description",
+      "title": "TODO title"
+    },
+    "denominator": {
+      "type": "number",
+      "minimum": 1,
+      "description": "TODO description",
+      "title": "TODO title"
+    }
+  }
+}

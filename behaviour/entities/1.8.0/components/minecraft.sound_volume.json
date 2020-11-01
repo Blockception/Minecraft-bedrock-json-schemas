@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.sound_volume",
+  "type": "object",
+  "title": "Sound volume 1.8.0",
+  "additionalProperties": false,
+  "description": "Sets the entity's base volume for sound effects.",
+  "required": [],
+  "properties": {
+    "value": {
+      "type": "number",
+      "default": 1.0,
+      "description": "The value of the volume the entity uses for sound effects",
+      "title": "TODO title"
+    }
+  }
+}

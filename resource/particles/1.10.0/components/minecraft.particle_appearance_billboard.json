@@ -1,0 +1,135 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.resource.particle.1.10.0.particle_appearance_billboard",
+  "type": "object",
+  "title": "The particle appearance billboard component for 1.10.0",
+  "additionalProperties": false,
+  "properties": {
+    "size": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "$ref": "../../../../molang/1.8.0/number.json",
+        "description": "TODO description: size",
+        "title": "Size"
+      },
+      "description": "TODO description: size",
+      "title": "Size"
+    },
+    "facing_camera_mode": {
+      "description": "Used to orient the billboard.",
+      "type": "string",
+      "enum": ["lookat_xyz", "lookat_y", "rotate_xyz", "rotate_y", "direction_x", "direction_y", "direction_z"],
+      "title": "Facing Camera Mode"
+    },
+    "uv": {
+      "additionalProperties": false,
+      "type": "object",
+      "properties": {
+        "texture_width": {
+          "type": "integer",
+          "description": "TODO description: texture width",
+          "title": "Texture Width"
+        },
+        "texture_height": {
+          "type": "integer",
+          "description": "TODO description: texture height",
+          "title": "Texture Height"
+        },
+        "flipbook": {
+          "additionalProperties": false,
+          "type": "object",
+          "required": ["max_frame"],
+          "properties": {
+            "base_UV": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 2,
+              "items": {
+                "$ref": "../../../../molang/1.8.0/number.json",
+                "description": "TODO description: base UV",
+                "title": "Base U V"
+              },
+              "description": "TODO description: base UV",
+              "title": "Base U V"
+            },
+            "size_UV": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 2,
+              "items": {
+                "$ref": "../../../../molang/1.8.0/number.json",
+                "description": "TODO description: size UV",
+                "title": "Size U V"
+              },
+              "description": "TODO description: size UV",
+              "title": "Size U V"
+            },
+            "step_UV": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 2,
+              "items": {
+                "$ref": "../../../../molang/1.8.0/number.json",
+                "description": "TODO description: step UV",
+                "title": "Step U V"
+              },
+              "description": "TODO description: step UV",
+              "title": "Step U V"
+            },
+            "frames_per_second": {
+              "$ref": "../../../../molang/1.8.0/number.json",
+              "description": "TODO description: frames per second",
+              "title": "Frames Per Second"
+            },
+            "max_frame": {
+              "$ref": "../../../../molang/1.8.0/number.json",
+              "description": "TODO description: max frame",
+              "title": "Max Frame"
+            },
+            "stretch_to_lifetime": {
+              "type": "boolean",
+              "description": "TODO description: stretch to lifetime",
+              "title": "Stretch To Lifetime"
+            },
+            "loop": {
+              "type": "boolean",
+              "description": "TODO description: loop",
+              "title": "Loop"
+            }
+          },
+          "description": "TODO description: flipbook",
+          "title": "Flipbook"
+        },
+        "uv": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "$ref": "../../../../molang/1.8.0/number.json",
+            "description": "TODO description: uv",
+            "title": "Uv"
+          },
+          "description": "TODO description: uv",
+          "title": "Uv"
+        },
+        "uv_size": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "$ref": "../../../../molang/1.8.0/number.json",
+            "description": "TODO description: uv size",
+            "title": "Uv Size"
+          },
+          "description": "TODO description: uv size",
+          "title": "Uv Size"
+        }
+      },
+      "description": "TODO description: uv",
+      "title": "Uv"
+    }
+  },
+  "description": "TODO description: "
+}

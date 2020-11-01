@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.resource.particle.1.10.0.emitter_lifetime_looping",
+  "type": "object",
+  "title": "The emitter lifetime looping component for 1.10.0",
+  "additionalProperties": false,
+  "properties": {
+    "active_time": {
+      "$ref": "../../../../molang/1.8.0/number.json",
+      "description": "Emitter will emit particles for this time per loop evaluated once per particle emitter loop",
+      "title": "Active Time"
+    },
+    "sleep_time": {
+      "$ref": "../../../../molang/1.8.0/number.json",
+      "description": "Emitter will pause emitting particles for this time per loop evaluated once per particle emitter loop",
+      "title": "Sleep Time"
+    }
+  },
+  "description": "TODO description: "
+}

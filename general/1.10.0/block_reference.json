@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.general.1.14.0.block_reference",
+  "additionalProperties": false,
+  "type": "object",
+  "title": "TODO",
+  "description": "TODO",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "TODO description",
+      "title": "TODO title"
+    },
+    "states": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "\\w*:?\\w+"
+      },
+      "additionalProperties": {
+        "oneOf": [
+          {
+            "type": "boolean"
+          },
+          {
+            "type": "integer"
+          },
+          {
+            "type": "string"
+          }
+        ]
+      },
+      "description": "TODO description",
+      "title": "TODO title"
+    }
+  }
+}

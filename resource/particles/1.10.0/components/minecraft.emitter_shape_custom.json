@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.resource.particle.1.10.0.emitter_shape_custom",
+  "type": "object",
+  "title": "The emitter shape custom component for 1.10.0",
+  "additionalProperties": false,
+  "properties": {
+    "direction": {
+      "type": "array",
+      "items": {
+        "minItems": 3,
+        "maxItems": 3,
+        "$ref": "../../../../molang/1.8.0/number.json",
+        "description": "TODO description: direction",
+        "title": "Direction"
+      },
+      "description": "TODO description: direction",
+      "title": "Direction"
+    },
+    "offset": {
+      "type": "array",
+      "items": {
+        "minItems": 3,
+        "maxItems": 3,
+        "$ref": "../../../../molang/1.8.0/number.json",
+        "description": "TODO description: offset",
+        "title": "Offset"
+      },
+      "description": "TODO description: offset",
+      "title": "Offset"
+    }
+  },
+  "description": "TODO description: "
+}

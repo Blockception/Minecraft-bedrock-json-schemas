@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.16.0.minecraft.behavior.stroll_towards_village",
+  "description": "Allows the mob to stay at a certain level when in liquid.",
+  "type": "object",
+  "title": "Behavior.stroll_towards_village 1.16.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": {
+      "ref": "types/base_priority.json"
+    },
+    "cooldown_time": {
+      "type": "number",
+      "default": 0,
+      "description": "Time in seconds the mob has to wait before using the goal again",
+      "title": "Cooldown time"
+    },
+    "goal_radius": {
+      "type": "number",
+      "default": 0.5,
+      "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot",
+      "title": "Goal radius"
+    },
+    "search_range": {
+      "type": "integer",
+      "default": 0,
+      "description": "The distance in blocks to search for points inside villages. If <= 0, find the closest village regardless of distance.",
+      "title": "Search range"
+    },
+    "speed_multiplier": {
+      "type": "number",
+      "default": 1,
+      "description": "Movement speed multiplier of the mob when using this AI Goal",
+      "title": "Speed multiplier"
+    },
+    "start_chance": {
+      "type": "number",
+      "default": 0.1,
+      "description": "This is the chance that the mob will start this goal, from 0 to 1",
+      "title": "Start chance"
+    }
+  }
+}

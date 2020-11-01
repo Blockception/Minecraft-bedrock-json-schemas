@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.type_family",
+  "type": "object",
+  "title": "Type family 1.8.0",
+  "additionalProperties": false,
+  "description": "Defines the families this entity belongs to.",
+  "required": ["family"],
+  "properties": {
+    "family": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "description": "Family name",
+        "title": "Family"
+      },
+      "description": "List of family names",
+      "title": "Family"
+    }
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.breedable",
+  "type": "object",
+  "title": "Breedable 1.8.0",
+  "additionalProperties": false,
+  "description": "Specifies the blocks that this entity can break as it moves around.",
+  "definitions": {
+    "breeds_with_spec": {
+      "type": "object",
+      "description": "An entity definitions that this entity can breed with.",
+      "additionalItems": false,
+      "required": [],
+      "properties": {
+        "baby_type": {
+          "type": "string",
+          "description": "The entity definition of this entity's babies.",
+          "title": "Baby Type"
+        },
+        "breed_event": {
+          "$ref": "../types/event.json",
+          "description": "Event to run when this entity breeds.",
+          "title": "Breed Event"
+        },
+        "mate_type": {
+          "type": "string",
+          "description": "The entity definition of this entity's mate.",
+          "title": "Mate Type"
+        }
+      }
+    }
+  },
+  "required": [],
+  "properties": {
+    "allow_sitting": {
+      "description": "If true, entities can breed while sitting.",
+      "type": "boolean",
+      "default": false,
+      "title": "Allow Sitting"
+    },
+    "blend_attributes": {
+      "description": "If true, the entities will blend their attributes in the offspring after they breed. For example, horses blend their health, movement, and jump_strength in their offspring.",
+      "type": "boolean",
+      "default": true,
+      "title": "Blend Attributes"
+    },
+    "breed_cooldown": {
+      "description": "Time in seconds before the Entity can breed again.",
+      "type": "number",
+      "default": 60.0,
+      "title": "Breed Cooldown"
+    },
+    "breed_items": {
+      "description": "The list of items that can be used to get the entity into the 'love' state",
+      "title": "Breed Items",
+      "oneOf": [
+        {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "An item that can be used to get the entity into the 'love' state",
+            "$ref": "../../../../general/item/identifier.json",
+            "title": "TODO title"
+          }
+        },
+        {
+          "type": "string",
+          "$ref": "../../../../general/item/identifier.json",
+          "title": "TODO title"
+        }
+      ]
+    },
+    "breeds_with": {
+      "description": "The list of entity definitions that this entity can breed with.",
+      "oneOf": [
+        {
+          "type": "object",
+          "$ref": "#/definitions/breeds_with_spec"
+        },
+        {
+          "uniqueItems": true,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "$ref": "#/definitions/breeds_with_spec"
+          }
+        }
+      ],
+      "title": "TODO title"
+    },
+    "causes_pregnancy": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, the entity will become pregnant instead of spawning a baby.",
+      "title": "Causes Pregnancy"
+    },
+    "deny_parents_variant": {
+      "type": "object",
+      "description": "Determines how likely the baby of parents with the same variant will deny that variant and take a random variant within the given range instead.",
+      "additionalProperties": false,
+      "properties": {
+        "chance": {
+          "type": "number",
+          "default": 0,
+          "description": "The percentage chance of denying the parents' variant.",
+          "title": "Chance"
+        },
+        "max_variant": {
+          "type": "integer",
+          "default": 0,
+          "description": "The inclusive maximum of the variant range.",
+          "title": "Max Variant"
+        },
+        "min_variant": {
+          "type": "integer",
+          "default": 0,
+          "description": "The inclusive minimum of the variant range.",
+          "title": "Min Variant"
+        }
+      },
+      "title": "Deny Parents Variant"
+    },
+    "environment_requirements": {
+      "type": "array",
+      "description": "The list of nearby block requirements to get the entity into the 'love' state.",
+      "items": {
+        "type": "object",
+        "description": "A nearby block requirements to get the entity into the 'love' state.",
+        "properties": {
+          "blocks": {
+            "type": "array",
+            "description": "The block types required nearby for the entity to breed.",
+            "items": {
+              "description": "A block type required nearby for the entity to breed.",
+              "type": "string",
+              "$ref": "../../../../general/blocks_item.json",
+              "title": "Blocks"
+            },
+            "title": "Blocks"
+          },
+          "count": {
+            "type": "number",
+            "description": "The number of the required block types nearby for the entity to breed.",
+            "title": "Count"
+          },
+          "radius": {
+            "type": "number",
+            "description": "How many blocks radius from the mob's center to search in for the required blocks. Bounded between 0 and 16.",
+            "minimum": 0,
+            "title": "Radius"
+          }
+        },
+        "title": "Environment Requirements"
+      },
+      "title": "Environment Requirements"
+    },
+    "extra_baby_chance": {
+      "type": "number",
+      "default": 0.0,
+      "description": "Chance that up to 16 babies will spawn between 0.0 and 1.0, where 1.0 is 100%.",
+      "minimum": 0.0,
+      "maximum": 1.0,
+      "title": "Extra Baby Chance"
+    },
+    "inherit_tamed": {
+      "description": "If true, the babies will be automatically tamed if its parents are",
+      "type": "boolean",
+      "default": true,
+      "title": "Inherit Tamed"
+    },
+    "love_filters": { "$ref": "../filters.json", "description": "The filters to run when attempting to fall in love.", "title": "Love Filters" },
+    "mutation_factor": {
+      "type": "object",
+      "description": "Determines how likely the babies are to NOT inherit one of their parent's variances. Values are between 0.0 and 1.0, with a higher number meaning more likely to mutate.",
+      "additionalProperties": false,
+      "properties": {
+        "color": {
+          "type": "number",
+          "default": 0,
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "The percentage chance of a mutation on the entity's color.",
+          "title": "Color"
+        },
+        "extra_variant": {
+          "type": "number",
+          "default": 0,
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "The percentage chance of a mutation on the entity's extra variant type.",
+          "title": "Extra Variant"
+        },
+        "variant": {
+          "type": "number",
+          "default": 0,
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "The percentage chance of a mutation on the entity's variant type.",
+          "title": "Variant"
+        }
+      },
+      "title": "Mutation Factor"
+    },
+    "require_tame": {
+      "type": "boolean",
+      "description": "If true, the entities need to be tamed first before they can breed.",
+      "default": true,
+      "title": "Require Tame"
+    }
+  }
+}

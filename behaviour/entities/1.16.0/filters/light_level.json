@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.16.0.filters.light_level",
+  "type": "object",
+  "title": "Filters light level 1.16.0",
+  "description": "Tests is the mob is outside of the specified light level range (0, 16).",
+  "required": ["value"],
+  "properties": {
+    "test": {
+      "type": "string",
+      "title": "Test",
+      "description": "The test property"
+    },
+    "operator": { "$ref": "types/base_operator.json" },
+    "subject": { "$ref": "types/base_subject.json" },
+    "value": {
+      "description": "An integer value.",
+      "type": "integer",
+      "title": "Value",
+      "minimum": 0,
+      "maximum": 16
+    }
+  }
+}
