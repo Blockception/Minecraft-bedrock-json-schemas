@@ -45,11 +45,7 @@
             "title": "Type",
             "type": "string",
             "description": "",
-            "enum": [
-              "loot_table",
-              "item",
-              "empty"
-            ]
+            "enum": ["loot_table", "item", "empty"]
           },
           "conditions": {
             "title": "Conditions",
@@ -115,9 +111,7 @@
       "title": "Type",
       "type": "string",
       "description": "TODO description",
-      "enum": [
-        "minecraft:chest"
-      ]
+      "enum": ["minecraft:chest"]
     }
   }
 }
