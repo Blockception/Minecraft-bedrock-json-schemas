@@ -176,45 +176,6 @@
               "description": "TODO description: scripts",
               "title": "Scripts",
               "properties": {
-                "animate": {
-                  "type": "array",
-                  "title": "Animate schema",
-                  "minItems": 1,
-                  "items": {
-                    "oneOf": [
-                      {
-                        "type": "string",
-                        "description": "TODO description: oneOf[0]",
-                        "title": "TODO title"
-                      },
-                      {
-                        "type": "object",
-                        "minProperties": 1,
-                        "additionalProperties": {
-                          "type": "string",
-                          "description": "TODO description: additionalProperties",
-                          "title": "TODO"
-                        },
-                        "description": "TODO description: oneOf[1]",
-                        "title": "TODO title"
-                      }
-                    ],
-                    "description": "TODO description: animate",
-                    "title": "Animate"
-                  },
-                  "description": "TODO description: animate"
-                },
-                "initialize": {
-                  "type": "array",
-                  "description": "TODO description: initialize",
-                  "title": "Initialize",
-                  "items": {
-                    "pattern": ";$",
-                    "$ref": "../../../molang/1.8.0/number.json",
-                    "description": "TODO description: initialize",
-                    "title": "Initialize"
-                  }
-                },
                 "pre_animation": {
                   "type": "array",
                   "description": "TODO description: pre aninamtion",
