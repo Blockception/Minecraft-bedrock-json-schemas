@@ -12,15 +12,10 @@
             "texture": "textures/particle/particle"
           }
         },
-        "curves": {
-
-        },
-        "components": {
-
-        }
+        "curves": {},
+        "components": {}
       }
     }
-
   ],
   "allOf": [
     {

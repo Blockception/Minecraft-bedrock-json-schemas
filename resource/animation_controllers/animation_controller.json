@@ -8,15 +8,11 @@
         "controller.animation.example": {
           "states": {
             "default": {
-              "transitions": [
-                { "state_1": "query.is_baby" }
-              ]
+              "transitions": [{ "state_1": "query.is_baby" }]
             },
             "state_1": {
               "animations": ["state_1"],
-              "transitions": [
-                { "default": "query.all_animations_finished" }
-              ]
+              "transitions": [{ "default": "query.all_animations_finished" }]
             }
           }
         }

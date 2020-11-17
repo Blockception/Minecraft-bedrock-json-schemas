@@ -4,7 +4,7 @@
   "examples": [
     {
       "example": {
-        "event_name" : "music.example",
+        "event_name": "music.example",
         "min_delay": 600,
         "max_delay": 1200
       }

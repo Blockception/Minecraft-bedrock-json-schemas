@@ -9,11 +9,7 @@
           "identifier": "minecraft:entity",
           "population_control": "ambient"
         },
-        "conditions": [
-          {
-            
-          }
-        ]
+        "conditions": [{}]
       }
     }
   ],

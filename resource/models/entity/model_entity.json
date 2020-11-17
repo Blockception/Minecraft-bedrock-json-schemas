@@ -3,19 +3,17 @@
   "$id": "blockception.minecraft.resource.model",
   "examples": [
     {
-      "format_version" : "1.12.0",
-      "minecraft:geometry" : [
+      "format_version": "1.12.0",
+      "minecraft:geometry": [
         {
-          "description" : {
-            "identifier" : "geometry.entity",
-            "texture_width" : 64.0,
-            "texture_height" : 64.0,
-            "visible_bounds_offset" : [ 0.0, 0.5, 0.0 ],
-            "visible_bounds_width" : 1.5
+          "description": {
+            "identifier": "geometry.entity",
+            "texture_width": 64.0,
+            "texture_height": 64.0,
+            "visible_bounds_offset": [0.0, 0.5, 0.0],
+            "visible_bounds_width": 1.5
           },
-          "bones" : {
-
-          }
+          "bones": {}
         }
       ]
     }

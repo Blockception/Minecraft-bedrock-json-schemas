@@ -8,9 +8,7 @@
         "animation.annie.idle": {
           "loop": true,
           "animation_length": 2.12,
-          "bones": {
-            
-          }
+          "bones": {}
         }
       }
     }

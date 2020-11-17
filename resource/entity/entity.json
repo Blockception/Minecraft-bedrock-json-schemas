@@ -14,17 +14,11 @@
           "geometry": {
             "default": "geometry.entity"
           },
-          "animations": {
-        
-          },      
-          "particle_effects": {
-        
-          },
-          "scripts": {
-        
-          },
-          "render_controllers": [ "controller.render.entity" ],
-        
+          "animations": {},
+          "particle_effects": {},
+          "scripts": {},
+          "render_controllers": ["controller.render.entity"],
+
           "spawn_egg": {
             "base_color": "#288483",
             "overlay_color": "#2B7135"

@@ -17,10 +17,8 @@
           "geometry": {
             "default": "geometry.item"
           },
-          "scripts": {
-
-          },
-          "render_controllers": [ "controller.render.item" ]
+          "scripts": {},
+          "render_controllers": ["controller.render.item"]
         }
       }
     }

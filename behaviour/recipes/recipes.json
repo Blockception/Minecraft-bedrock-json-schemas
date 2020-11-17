@@ -8,20 +8,16 @@
         "description": {
           "identifier": "minecraft:item"
         },
-    
-        "tags": [ "crafting_table" ],
-        "pattern": [
-    
-        ],
-        "key": {
-      
-        },
+
+        "tags": ["crafting_table"],
+        "pattern": [],
+        "key": {},
         "result": {
           "item": "minecraft:boat",
           "data": 4
         }
-      }  
-    }    
+      }
+    }
   ],
   "allOf": [
     {

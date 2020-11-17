@@ -60,7 +60,7 @@
         "add": {
           "title": "Add",
           "$ref": "#/definitions/addremove",
-          "description": "The components groups to be added to this entity"          
+          "description": "The components groups to be added to this entity"
         },
         "filters": {
           "$ref": "./filters.json"

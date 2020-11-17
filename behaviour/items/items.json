@@ -8,11 +8,9 @@
         "description": {
           "identifier": "namespace:item"
         },
-        "components": {
-          
-        }
+        "components": {}
       }
-    }    
+    }
   ],
   "allOf": [
     {

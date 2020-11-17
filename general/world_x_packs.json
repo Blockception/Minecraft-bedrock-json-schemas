@@ -4,9 +4,7 @@
   "type": "array",
   "title": "The minecraft world x pack schema",
   "description": "TODO description",
-  "examples": [
-    [{ "pack_id": "UUID", "version": [1, 0, 0] }]
-  ],
+  "examples": [[{ "pack_id": "UUID", "version": [1, 0, 0] }]],
   "definitions": {
     "uuidv4": { "$ref": "./UUIDV4.json" },
     "version": { "$ref": "./Version.json" }

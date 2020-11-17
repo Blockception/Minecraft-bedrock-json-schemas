@@ -8,9 +8,7 @@
         "description": {
           "identifier": "namespace:block"
         },
-        "components": {
-
-        }
+        "components": {}
       }
     }
   ],

@@ -15,14 +15,12 @@
                   "quantity": { "min": 16, "max": 24 }
                 }
               ],
-              "gives": [
-                { "item": "minecraft:emerald" }
-              ]
+              "gives": [{ "item": "minecraft:emerald" }]
             }
           ]
         }
       ]
-    }    
+    }
   ],
   "definitions": {
     "Item": {

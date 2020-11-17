@@ -10,15 +10,9 @@
           "is_spawnable": true,
           "is_summonable": true
         },
-        "component_groups": {
-      
-        },
-        "components": {
-      
-        },
-        "events": {
-      
-        }
+        "component_groups": {},
+        "components": {},
+        "events": {}
       }
     }
   ],
