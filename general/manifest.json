@@ -5,6 +5,25 @@
   "title": "The minecraft manifest schema",
   "description": "The minecraft manifest schema",
   "required": ["format_version", "header"],
+  "examples": [
+    {
+      "format_version": 2,
+      "header": {
+        "description": "pack.description",
+        "name": "pack.name",
+        "uuid": "UUID2",
+        "min_engine_version": [1, 16, 0],
+        "version": [1, 0, 0]
+      },
+      "modules": [
+        {
+          "type": "data",
+          "uuid": "UUID2",
+          "version": [1, 0, 0]
+        }
+      ]
+    }
+  ],
   "allOf": [
     {
       "if": {

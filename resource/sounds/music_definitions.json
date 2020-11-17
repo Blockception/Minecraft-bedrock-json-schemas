@@ -1,6 +1,15 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.music_definitions.json",
+  "examples": [
+    {
+      "example": {
+        "event_name" : "music.example",
+        "min_delay": 600,
+        "max_delay": 1200
+      }
+    }
+  ],
   "type": "object",
   "title": "The minecraft music definition file",
   "description": "The definition file of music of the resourcepack",

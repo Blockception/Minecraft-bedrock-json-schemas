@@ -3,6 +3,27 @@
   "$id": "blockception.minecraft.behaviour.trading",
   "type": "object",
   "additionalProperties": false,
+  "examples": [
+    {
+      "tiers": [
+        {
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:coal:0",
+                  "quantity": { "min": 16, "max": 24 }
+                }
+              ],
+              "gives": [
+                { "item": "minecraft:emerald" }
+              ]
+            }
+          ]
+        }
+      ]
+    }    
+  ],
   "definitions": {
     "Item": {
       "title": "Item",

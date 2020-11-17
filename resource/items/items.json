@@ -1,6 +1,21 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.resource.items",
+  "examples": [
+    {
+      "format_version": "1.10.0",
+      "minecraft:item": {
+        "description": {
+          "identifier": "blockception:item",
+          "category": "Equipment"
+        },
+        "components": {
+          "minecraft:icon": "item",
+          "minecraft:render_offsets": "apple"
+        }
+      }
+    }
+  ],
   "allOf": [
     {
       "if": { "properties": { "format_version": { "type": "string", "const": "1.10" } } },

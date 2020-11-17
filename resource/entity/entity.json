@@ -1,6 +1,38 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.resource.entity",
+  "examples": [
+    {
+      "format_version": "1.10.0",
+      "minecraft:client_entity": {
+        "description": {
+          "identifier": "minecraft:entity",
+          "materials": { "default": "entity_custom" },
+          "textures": {
+            "default": "textures/entity/custom/entity"
+          },
+          "geometry": {
+            "default": "geometry.entity"
+          },
+          "animations": {
+        
+          },      
+          "particle_effects": {
+        
+          },
+          "scripts": {
+        
+          },
+          "render_controllers": [ "controller.render.entity" ],
+        
+          "spawn_egg": {
+            "base_color": "#288483",
+            "overlay_color": "#2B7135"
+          }
+        }
+      }
+    }
+  ],
   "allOf": [
     {
       "if": { "properties": { "format_version": { "type": "string", "const": "1.8.0" } } },

@@ -1,6 +1,16 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.animations",
+  "examples": [
+    {
+      "format_version": "1.10.0",
+      "animations": {
+        "animation.example": {
+    
+        }
+      }
+    }    
+  ],
   "allOf": [
     {
       "if": { "properties": { "format_version": { "type": "string", "const": "1.8.0" } } },

@@ -1,6 +1,30 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.resource.attachables",
+  "examples": [
+    {
+      "format_version": "1.10.0",
+      "minecraft:attachable": {
+        "description": {
+          "identifier": "minecraft:item",
+          "materials": {
+            "default": "entity_alphatest",
+            "enchanted": "entity_alphatest_glint"
+          },
+          "textures": {
+            "default": "textures/items/item"
+          },
+          "geometry": {
+            "default": "geometry.item"
+          },
+          "scripts": {
+
+          },
+          "render_controllers": [ "controller.render.item" ]
+        }
+      }
+    }
+  ],
   "allOf": [
     {
       "if": { "properties": { "format_version": { "type": "string", "const": "1.8.0" } } },

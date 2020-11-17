@@ -1,6 +1,28 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.recipes",
+  "examples": [
+    {
+      "format_version": "1.12.0",
+      "minecraft:recipe_shaped": {
+        "description": {
+          "identifier": "minecraft:item"
+        },
+    
+        "tags": [ "crafting_table" ],
+        "pattern": [
+    
+        ],
+        "key": {
+      
+        },
+        "result": {
+          "item": "minecraft:boat",
+          "data": 4
+        }
+      }  
+    }    
+  ],
   "allOf": [
     {
       "if": { "properties": { "format_version": { "type": "string", "const": "1.12" } } },
