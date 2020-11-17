@@ -120,9 +120,14 @@
                   "minProperties": 1,
                   "type": "array",
                   "items": {
-                    "$ref": "#/definitions/animationspec",
-                    "description": "TODO description: transitions",
-                    "title": "Transitions"
+                    "title": "Transitions",
+                    "description": "A object specification on how to transition",
+                    "type": "object",
+                    "maxProperties": 1,
+                    "minProperties": 1,
+                    "additionalProperties": {
+                      "$ref": "../../../molang/1.8.0/string.json"
+                    }
                   }
                 }
               }
