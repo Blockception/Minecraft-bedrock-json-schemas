@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.16.100.minecraft.scheduler",
+  "description": "Defines a list of items the mob wants to share or pick up. Each item must have the following parameters:",
+  "type": "object",
+  "title": "Scheduler 1.16.100",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "min_delay_secs": {
+      "type": "integer",
+      "description": "UNDOCUMENTATED",
+      "title": "UNDOCUMENTATED",
+      "minimum": 0
+    },
+    "max_delay_secs": {
+      "type": "integer",
+      "description": "UNDOCUMENTATED",
+      "title": "UNDOCUMENTATED",
+      "minimum": 0
+    },
+    "scheduled_events": {
+      "type": "array",
+      "description": "The list of triggers that fire when the conditions match the given filter criteria. If any filter criteria overlap the first defined event will be picked.",
+      "title": "Scheduled events",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "description": "UNDOCUMENTATED",
+        "title": "UNDOCUMENTATED",
+        "properties": {
+          "filters": {
+            "$ref": "../filters.json"
+          },
+          "event": {
+            "$ref": "../types/event.json"
+          }
+        }
+      }
+    }
+  }
+}

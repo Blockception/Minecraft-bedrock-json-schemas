@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.16.100.minecraft.behavior.avoid_block",
+  "type": "object",
+  "title": "Behaviour.avoid_block 1.16.100",
+  "description": "UNDOCUMENTATED",
+  "additionalProperties": false,
+  "properties": {
+    "priority": {
+      "ref": "types/base_priority.json"
+    },
+    "tick_interval": {
+      "type": "integer",
+      "title": "Tick interval",
+      "description": "UNDOCUMENTATED"
+    },
+    "search_range": {
+      "type": "integer",
+      "title": "Search range",
+      "description": "UNDOCUMENTATED"
+    },
+    "search_height": {
+      "type": "integer",
+      "title": "Search height",
+      "description": "UNDOCUMENTATED"
+    },
+    "sprint_speed_modifier": {
+      "type": "number",
+      "title": "Sprint speed modifier",
+      "description": "UNDOCUMENTATED"
+    },
+    "target_selection_method": {
+      "type": "string",
+      "title": "Target selection method",
+      "description": "UNDOCUMENTATED"
+    },
+    "target_blocks": {
+      "type": "array",
+      "title": "Target blocks",
+      "description": "UNDOCUMENTATED",
+      "items": {
+        "type": "string",
+        "title": "Block ID",
+        "description": "UNDOCUMENTATED"
+      }
+    },
+    "avoid_block_sound": {
+      "type": "string",
+      "title": "Avoid block sound",
+      "description": "UNDOCUMENTATED"
+    },
+    "walk_speed_modifier": {
+      "type": "number",
+      "title": "Walk speed modifier",
+      "description": "UNDOCUMENTATED"
+    },
+    "on_escape": {
+      "type": "array",
+      "title": "Walk speed modifier",
+      "description": "UNDOCUMENTATED",
+      "items": {
+        "$ref": "../types/event.json"
+      }
+    },
+    "sound_interval": {
+      "default": 0,
+      "description": "The range of time in seconds to randomly wait before playing the sound again.",
+      "title": "Sound interval",
+      "oneOf": [
+        {
+          "type": "array",
+          "items": [
+            {
+              "type": "number",
+              "title": "Maximum"
+            },
+            {
+              "type": "number",
+              "title": "Maximum"
+            }
+          ]
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "range_min": {
+              "type": "number"
+            },
+            "range_max": {
+              "type": "number"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.16.100.minecraft.navigation.fly",
+  "title": "Navigation.fly 1.16.100",
+  "description": "Allows this entity to generate paths in the air like the vanilla Bees do. Keeps them from falling out of the skies and doing predictive movement.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "avoid_portals": {
+      "type": "boolean",
+      "default": false,
+      "description": "Tells the pathfinder to avoid portals (like nether portals) when finding a path",
+      "title": "Avoid portals"
+    },
+    "avoid_damage_blocks": {
+      "type": "boolean",
+      "title": "Avoid damage blocks",
+      "description": "UNDOCUMENTATED"
+    },
+    "avoid_sun": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether or not the pathfinder should avoid tiles that are exposed to the sun when creating paths",
+      "title": "Avoid sun"
+    },
+    "avoid_water": {
+      "type": "boolean",
+      "default": false,
+      "description": "Tells the pathfinder to avoid water when creating a path",
+      "title": "Avoid water"
+    },
+    "can_break_doors": {
+      "type": "boolean",
+      "default": false,
+      "description": "Tells the pathfinder that it can path through a closed door and break it",
+      "title": "Can break doors"
+    },
+    "can_float": {
+      "type": "boolean",
+      "default": false,
+      "description": "UNDOCUMENTATED",
+      "title": "Can float"
+    },
+    "can_open_doors": {
+      "type": "boolean",
+      "default": false,
+      "description": "Tells the pathfinder that it can path through a closed door assuming the AI will open the door",
+      "title": "Can open doors"
+    },
+    "can_open_iron_doors": {
+      "type": "boolean",
+      "default": false,
+      "description": "Tells the pathfinder that it can path through a closed iron door assuming the AI will open the door",
+      "title": "Can open iron doors"
+    },
+    "can_pass_doors": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether a path can be created through a door",
+      "title": "Can pass doors"
+    },
+    "can_path_from_air": {
+      "type": "boolean",
+      "default": false,
+      "description": "Tells the pathfinder that it can start pathing when in the air",
+      "title": "Can path from air"
+    },
+    "can_path_over_lava": {
+      "type": "boolean",
+      "default": false,
+      "description": "Tells the pathfinder whether or not it can travel on the surface of the lava",
+      "title": "Can path over lava"
+    },
+    "can_path_over_water": {
+      "type": "boolean",
+      "default": false,
+      "description": "Tells the pathfinder whether or not it can travel on the surface of the water",
+      "title": "Can path over water"
+    },
+    "can_sink": {
+      "type": "boolean",
+      "default": true,
+      "description": "Tells the pathfinder whether or not it will be pulled down by gravity while in water",
+      "title": "Can sink"
+    },
+    "can_walk_in_lava": {
+      "type": "boolean",
+      "default": false,
+      "description": "Tells the pathfinder whether or not it can travel in lava like walking on ground",
+      "title": "Can walk in lava"
+    },
+    "is_amphibious": {
+      "type": "boolean",
+      "default": false,
+      "description": "UNDOCUMENTATED",
+      "title": "Is amphibious"
+    }
+  }
+}

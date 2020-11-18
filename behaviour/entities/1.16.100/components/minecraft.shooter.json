@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.16.100.minecraft.shooter",
+  "description": "Defines the entity's ranged attack behavior.",
+  "type": "object",
+  "title": "Shooter 1.16.100",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "aux_val": {
+      "type": "integer",
+      "title": "Aux val",
+      "default": -1,
+      "description": "ID of the Potion effect to be applied on hit"
+    },
+    "def": {
+      "title": "Def",
+      "type": "string",
+      "description": "Actor definition to use as projectile for the ranged attack. The actor definition must have the projectile component to be able to be shot as a projectile"
+    },
+    "type": {
+      "title": "Type",
+      "type": "string",
+      "description": "UNDOCUMENTATED"
+    }
+  }
+}

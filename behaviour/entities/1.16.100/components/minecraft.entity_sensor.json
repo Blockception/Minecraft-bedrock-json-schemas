@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.16.100.minecraft.entity_sensor",
+  "type": "object",
+  "title": "Entity sensor 1.16.100",
+  "description": "A component that fires an event when a set of conditions are met by other entities within the defined range.",
+  "additionalProperties": false,
+  "properties": {
+    "maximum_count": {
+      "type": "integer",
+      "default": -1,
+      "description": "The maximum number of entities that must pass the filter conditions for the event to send.",
+      "title": "Maximum count"
+    },
+    "minimum_count": {
+      "type": "integer",
+      "default": 1,
+      "description": "The minimum number of entities that must pass the filter conditions for the event to send.",
+      "title": "Minimum count"
+    },
+    "relative_range": {
+      "type": "boolean",
+      "default": true,
+      "description": "If true the sensor range is additive on top of the entity's size.",
+      "title": "Relative range"
+    },
+    "require_all": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true requires all nearby entities to pass the filter conditions for the event to send.",
+      "title": "Require all"
+    },
+    "sensor_range": {
+      "type": "number",
+      "default": 10,
+      "description": "The maximum distance another entity can be from this and have the filters checked against it.",
+      "title": "Sensor range"
+    },
+    "event_filters": { "$ref": "../filters.json" },
+    "event": { "$ref": "../types/event.json" }
+  }
+}

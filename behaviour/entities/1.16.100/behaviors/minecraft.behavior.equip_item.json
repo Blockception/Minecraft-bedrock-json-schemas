@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.16.100.minecraft.behavior.equip_item",
+  "type": "object",
+  "title": "Behaviour.equip_item 1.16.100",
+  "description": "UNDOCUMENTATED",
+  "additionalProperties": false,
+  "properties": {
+    "priority": {
+      "ref": "types/base_priority.json"
+    }
+  }
+}

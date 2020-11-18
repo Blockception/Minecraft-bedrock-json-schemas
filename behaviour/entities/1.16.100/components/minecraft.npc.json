@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.16.100.minecraft.npc",
+  "type": "object",
+  "title": "Npc 1.16.100",
+  "description": "A component that applies a mob effect to entities that get within range.",
+  "additionalProperties": false,
+  "definitions": {
+    "rangeXYZ": {
+      "type": "array",
+      "items": [
+        { "type": "number", "title": "X" },
+        { "type": "number", "title": "Y" },
+        { "type": "number", "title": "Z" }
+      ]
+    }
+  },
+  "properties": {
+    "npc_data": {
+      "type": "object",
+      "title": "Npc data",
+      "description": "UNDOCUMENTATED",
+      "additionalProperties": false,
+      "properties": {
+        "portrait_offsets": {
+          "type": "object",
+          "title": "Portrait offsets",
+          "description": "UNDOCUMENTATED",
+          "additionalProperties": false,
+          "properties": {
+            "translate": {
+              "$ref": "#/definitions/rangeXYZ",
+              "title": "Translate",
+              "description": "UNDOCUMENTATED"
+            },
+            "scale": {
+              "$ref": "#/definitions/rangeXYZ",
+              "title": "Scale",
+              "description": "UNDOCUMENTATED"
+            }
+          }
+        },
+        "picker_offsets": {
+          "type": "object",
+          "title": "Picker offsets",
+          "description": "UNDOCUMENTATED",
+          "additionalProperties": false,
+          "properties": {
+            "translate": {
+              "$ref": "#/definitions/rangeXYZ",
+              "title": "Translate",
+              "description": "UNDOCUMENTATED"
+            },
+            "scale": {
+              "$ref": "#/definitions/rangeXYZ",
+              "title": "Scale",
+              "description": "UNDOCUMENTATED"
+            }
+          }
+        },
+        "skin_list": {
+          "type": "array",
+          "title": "Skin list",
+          "description": "UNDOCUMENTATED",
+          "items": {
+            "type": "object",
+            "title": "Skin",
+            "description": "UNDOCUMENTATED",
+            "additionalProperties": false,
+            "properties": {
+              "variant": {
+                "title": "Variant",
+                "description": "UNDOCUMENTATED",
+                "type": "integer",
+                "minimum": 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

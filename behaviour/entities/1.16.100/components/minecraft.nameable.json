@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.16.100.minecraft.nameable",
+  "type": "object",
+  "title": "Nameable 1.16.100",
+  "additionalProperties": false,
+  "description": "Allows this entity to be named (e.g. using a name tag).",
+  "required": [],
+  "definitions": {
+    "name_action": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Describes the special names for this entity and the events to call when the entity acquires those names",
+      "title": "Name action",
+      "properties": {
+        "name_filter": {
+          "type": "string",
+          "default": "",
+          "description": "List of special names that will cause the events defined in 'on_named' to fire",
+          "title": "Name filter"
+        },
+        "on_named": {
+          "$ref": "../types/event.json",
+          "description": "Event to be called when this entity acquires the name specified in 'name_filter'",
+          "title": "On named"
+        }
+      }
+    }
+  },
+  "properties": {
+    "allow_name_tag_renaming": {
+      "type": "boolean",
+      "default": true,
+      "description": "If true, this entity can be renamed with name tags",
+      "title": "Allow name tag renaming"
+    },
+    "always_show": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, the name will always be shown",
+      "title": "Always show"
+    },
+    "default_trigger": { "$ref": "../types/trigger.json", "description": "Trigger to run when the entity gets named", "title": "Default trigger" },
+    "name_actions": {
+      "oneOf": [
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/name_action"
+          }
+        },
+        {
+          "type": "object",
+          "$ref": "#/definitions/name_action"
+        }
+      ],
+      "description": "TODO description",
+      "title": "TODO title"
+    }
+  }
+}

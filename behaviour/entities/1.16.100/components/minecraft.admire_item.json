@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.entities.1.16.100.minecraft.admire_item",
+  "type": "object",
+  "title": "Admire item 1.16.100",
+  "description": "Causes the mob to ignore attackable targets for a given duration.",
+  "additionalProperties": false,
+  "properties": {
+    "cooldown_after_being_attacked": {
+      "type": "integer",
+      "default": 0,
+      "description": "Duration, in seconds, for which mob won't admire items if it was hurt",
+      "title": "Cooldown after being attacked"
+    },
+    "duration": {
+      "type": "integer",
+      "default": 10,
+      "description": "Duration, in seconds, that the mob is pacified.",
+      "title": "Duration"
+    }
+  }
+}
