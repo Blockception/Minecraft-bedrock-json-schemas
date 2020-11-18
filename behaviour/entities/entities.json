@@ -47,7 +47,7 @@
     },
     {
       "if": { "properties": { "format_version": { "type": "string", "const": "1.16.100" } } },
-      "then": { "$ref": "./1.16.0/entities.json" }
+      "then": { "$ref": "./1.16.100/entities.json" }
     }
   ]
 }
