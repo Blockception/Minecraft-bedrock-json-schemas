@@ -16,6 +16,11 @@
           "title": "Fog color",
           "description": "The color of the fog"
         },
+        "fog_identifier": {
+          "title": "Fog identifier",
+          "description": "The fog to be associated to this biome",
+          "$ref": "../general/fog/identifier.json"
+        },
         "water_fog_color": {
           "$ref": "#/definitions/colorhex",
           "title": "Water fog color",
