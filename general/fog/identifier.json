@@ -1,0 +1,8 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.fog.identifier",
+  "type": "string",
+  "title": "The minecraft fog identifier",
+  "description": "The minecraft fog identifier",
+  "pattern": "^[0-9a-zA-Z:_\\-]+$"
+}
