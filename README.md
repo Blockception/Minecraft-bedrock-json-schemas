@@ -22,6 +22,7 @@ The json validation schema files for Minecraft bedrock
 - [Animation Controllers](resource/animation_controllers/animation_controller.json)
 - [Entity](resource/entity/entities.json)
 - [Flipbook texture](resource/textures/flipbook_textures.json)
+- [Fog](resource/fog/fog.json)
 - [Item texture](resource/textures/item_texture.json)
 - [Items](resource/items/items.json)
 - [Materials](resource/materials/materials.json)
