@@ -4,6 +4,7 @@ The json validation schema files for Minecraft bedrock
 - [Minecraft-bedrock-json-schemas](#minecraft-bedrock-json-schemas)
 	- [Behaviour files](#behaviour-files)
 	- [Resource files](#resource-files)
+	- [Contributing](#contributing)
 
 ## Behaviour files
 - [Animations](behaviour/animations/animations.json)
@@ -32,3 +33,8 @@ The json validation schema files for Minecraft bedrock
 - [Render Controllers](resource/render_controllers/render_controllers.json)
 - [Sounds](resource/sounds/sound_definitions.json)
 - [Terrain texture](resource/textures/terrain_texture.json)
+
+## Contributing
+This project could more help in filling in descriptions, titles and giving snippets!
+
+Json validation can give snippets for sub items. as well as description, but this hasn't always been filled out!
