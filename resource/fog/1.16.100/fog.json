@@ -140,7 +140,7 @@
                 "type": "object",
                 "additionalProperties": false,
                 "properties": {
-									"absorption": {
+                  "absorption": {
                     "title": "Absorption",
                     "description": "How much of the light will be absorbed accross the RGB range",
                     "$ref": "#/definitions/colorHexOrArray"
