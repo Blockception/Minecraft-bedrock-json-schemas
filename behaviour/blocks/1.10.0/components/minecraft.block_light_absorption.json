@@ -4,5 +4,6 @@
   "additionalProperties": false,
   "type": "integer",
   "title": "Block light absorption 1.10.0",
-  "description": "The amount of light this block will absorb."
+  "description": "The amount of light this block will absorb.",
+  "default": 0
 }

@@ -4,5 +4,6 @@
   "additionalProperties": false,
   "type": "number",
   "title": "Explosion resistance 1.10.0",
-  "description": "Sets the explosion resistance for this block."
+  "description": "Sets the explosion resistance for this block.",
+  "default": 0.0
 }

@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.blocks.1.10.0.minecraft.unwalkable",
+  "title": "Unwalkable 1.10.0",
+  "description": "this component sets a block as unwalkable. Most mobs will not try to jump over it if the value is set to true",
+  "type": "boolean"
+}
