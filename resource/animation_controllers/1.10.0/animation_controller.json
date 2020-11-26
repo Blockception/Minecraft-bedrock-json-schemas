@@ -80,6 +80,22 @@
         "description": "A single animation controller 1.10.0",
         "required": ["states"],
         "minProperties": 1,
+        "examples": [
+          {
+            "controller.animation.some_name": {
+              "initial_state": "default",
+              "states": {
+                "default": {
+                  "transitions": [{ "state_1": "query.is_baby" }]
+                },
+                "state_1": {
+                  "animations": ["state_1"],
+                  "transitions": [{ "default": "query.all_animations_finished" }]
+                }
+              }
+            }
+          }
+        ],
         "properties": {
           "states": {
             "title": "The states definition",
@@ -156,10 +172,12 @@
                   "description": "The transition definition for 1.10.0",
                   "minProperties": 1,
                   "type": "array",
+                  "examples": [[{ "some_state": "query.is_sheared" }]],
                   "items": {
                     "$ref": "#/definitions/animationspec",
                     "description": "TODO description: transitions",
-                    "title": "Transitions"
+                    "title": "Transitions",
+                    "examples": [{ "some_state": "query.is_sheared" }]
                   }
                 },
                 "variables": {
