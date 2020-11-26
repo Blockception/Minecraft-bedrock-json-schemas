@@ -5,6 +5,6 @@
   "type": "string",
   "title": "Breathability 1.10.0",
   "description": "Property describing the breathability of this block and whether it is treated as a solid or as air.",
-  "enum": [ "solid", "air" ],
+  "enum": ["solid", "air"],
   "default": "solid"
 }

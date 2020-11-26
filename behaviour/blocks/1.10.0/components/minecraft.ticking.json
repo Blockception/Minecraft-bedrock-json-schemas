@@ -15,10 +15,7 @@
       "title": "Range",
       "description": "The Range between which the component will trigger his event.",
       "type": "array",
-      "items": [
-        { "type": "integer" },
-        { "type": "integer" }
-      ]
+      "items": [{ "type": "integer" }, { "type": "integer" }]
     },
     "on_tick": {
       "type": "object",

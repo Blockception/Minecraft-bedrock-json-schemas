@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "blockception.minecraft.behaviour.blocks.1.10.0.minecraft.material_instances",  
+  "$id": "blockception.minecraft.behaviour.blocks.1.10.0.minecraft.material_instances",
   "type": "object",
   "title": "Material instances 1.10.0",
   "description": "Maps face or material_instance names in a geometry file to an actual material instance. Material instance can either be a full material instance or a name to another already defined instance",
@@ -17,7 +17,7 @@
         },
         "face_dimming": {
           "title": "Face dimming",
-          "type": "boolean", 
+          "type": "boolean",
           "description": "UNDOCUMENTATED"
         },
         "render_method": {
