@@ -7,8 +7,8 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" },
-    "speed_multiplier": { "$ref": "types/base_speed_multiplier.json" },
+    "priority": { "$ref": "./types/base_priority.json" },
+    "speed_multiplier": { "$ref": "./types/base_speed_multiplier.json" },
     "timeout_cooldown": {
       "type": "number",
       "default": 8,

@@ -7,7 +7,7 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" },
+    "priority": { "$ref": "./types/base_priority.json" },
     "look_distance": {
       "type": "number",
       "default": 8.0,

@@ -7,7 +7,7 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" },
+    "priority": { "$ref": "./types/base_priority.json" },
     "angle_of_view_vertical": {
       "type": "integer",
       "default": 360,

@@ -6,6 +6,6 @@
   "title": "Behavior.dragonflaming 1.8.0",
   "description": "Allows the dragon to use its flame breath attack. Can only be used by the Ender Dragon.",
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" }
+    "priority": { "$ref": "./types/base_priority.json" }
   }
 }

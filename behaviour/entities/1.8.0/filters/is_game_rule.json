@@ -10,8 +10,8 @@
       "description": "The Game Rule to test.",
       "title": "Domain"
     },
-    "operator": { "$ref": "types/base_operator.json" },
-    "subject": { "$ref": "types/base_subject.json" },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
     "value": {
       "description": "Tests whether a named game rule is active.",
       "default": true,

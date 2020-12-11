@@ -11,8 +11,8 @@
       "title": "The test property",
       "description": "Returns true when the subject entity receives the named damage type."
     },
-    "operator": { "$ref": "types/base_operator.json" },
-    "subject": { "$ref": "types/base_subject.json" },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
     "value": {
       "type": "string",
       "description": "The Damage type to test",

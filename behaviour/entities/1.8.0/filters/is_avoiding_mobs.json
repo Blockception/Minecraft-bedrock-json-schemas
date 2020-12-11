@@ -10,8 +10,8 @@
       "title": "The test property",
       "description": "Returns true if the subject entity is fleeing from other mobs."
     },
-    "operator": { "$ref": "types/base_operator.json" },
-    "subject": { "$ref": "types/base_subject.json" },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
     "value": {
       "title": "Value",
       "description": "True or false.",

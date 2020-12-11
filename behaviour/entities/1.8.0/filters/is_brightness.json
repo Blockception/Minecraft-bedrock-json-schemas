@@ -11,8 +11,8 @@
       "title": "The test property",
       "description": "Tests the current brightness against a provided value in the range (0.0f, 1.0f)."
     },
-    "operator": { "$ref": "types/base_operator.json" },
-    "subject": { "$ref": "types/base_subject.json" },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
     "value": {
       "description": "The brightness value to compare with.",
       "type": "number",

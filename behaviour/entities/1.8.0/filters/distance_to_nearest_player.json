@@ -11,8 +11,8 @@
       "title": "The test property",
       "description": "Compares the distance to the nearest Player with a float value."
     },
-    "operator": { "$ref": "types/base_operator.json", "description": "(Optional) The comparison to apply with 'value'.", "title": "Operator" },
-    "subject": { "$ref": "types/base_subject.json", "description": "(Optional) The subject of this filter test.", "title": "Subject" },
+    "operator": { "$ref": "./types/base_operator.json", "description": "(Optional) The comparison to apply with 'value'.", "title": "Operator" },
+    "subject": { "$ref": "./types/base_subject.json", "description": "(Optional) The subject of this filter test.", "title": "Subject" },
     "value": {
       "type": "number",
       "description": "(Required) A floating point value.",

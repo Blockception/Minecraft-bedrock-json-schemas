@@ -6,6 +6,6 @@
   "title": "Behavior.dragonscanning 1.8.0",
   "description": "Allows the dragon to look around for a player to attack while in perch mode. Can only be used by the Ender Dragon.",
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" }
+    "priority": { "$ref": "./types/base_priority.json" }
   }
 }

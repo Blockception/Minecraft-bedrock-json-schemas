@@ -6,6 +6,6 @@
   "title": "Behavior.dragonstrafeplayer 1.8.0",
   "description": "Allows the dragon to fly around looking for a player and shoot fireballs at them. Can only be used by the Ender Dragon.",
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" }
+    "priority": { "$ref": "./types/base_priority.json" }
   }
 }

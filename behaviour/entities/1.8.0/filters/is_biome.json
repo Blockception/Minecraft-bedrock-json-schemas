@@ -11,8 +11,8 @@
       "title": "The test property",
       "description": "Tests whether the Subject is currently in the named biome."
     },
-    "operator": { "$ref": "types/base_operator.json" },
-    "subject": { "$ref": "types/base_subject.json" },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
     "value": {
       "description": "The Biome type to test",
       "type": "string",

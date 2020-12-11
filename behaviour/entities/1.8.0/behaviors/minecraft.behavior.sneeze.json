@@ -7,7 +7,7 @@
   "title": "Behavior.sneeze 1.8.0",
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" },
+    "priority": { "$ref": "./types/base_priority.json" },
     "cooldown_time": {
       "type": "number",
       "default": 0,

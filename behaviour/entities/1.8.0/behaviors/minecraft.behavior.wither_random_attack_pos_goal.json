@@ -7,6 +7,6 @@
   "title": "Behavior.wither_random_attack_pos_goal 1.8.0",
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" }
+    "priority": { "$ref": "./types/base_priority.json" }
   }
 }

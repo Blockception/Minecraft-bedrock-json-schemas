@@ -7,7 +7,7 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" },
+    "priority": { "$ref": "./types/base_priority.json" },
     "summon_choices": {
       "type": "array",
       "description": "List of spells for the mob to use to summon entities. Each spell has the following parameters:",

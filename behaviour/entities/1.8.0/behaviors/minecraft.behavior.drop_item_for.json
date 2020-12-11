@@ -6,8 +6,8 @@
   "title": "Behavior.drop_item_for 1.8.0",
   "description": "Allows the mob to drink potions based on specified environment conditions.",
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" },
-    "speed_multiplier": { "$ref": "types/base_speed_multiplier.json" },
+    "priority": { "$ref": "./types/base_priority.json" },
+    "speed_multiplier": { "$ref": "./types/base_speed_multiplier.json" },
     "entity_types": { "$ref": "../types/entity_types.json" },
     "drop_item_chance": {
       "type": "number",

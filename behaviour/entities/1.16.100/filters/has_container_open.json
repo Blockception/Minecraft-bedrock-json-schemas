@@ -10,8 +10,8 @@
       "title": "Test",
       "description": "The test property"
     },
-    "operator": { "$ref": "types/base_operator.json" },
-    "subject": { "$ref": "types/base_subject.json" },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
     "value": {
       "description": "True or false.",
       "oneOf": [

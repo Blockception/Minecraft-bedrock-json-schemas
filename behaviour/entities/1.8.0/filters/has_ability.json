@@ -11,8 +11,8 @@
       "title": "The test property",
       "description": "Returns true when the subject entity has the named ability."
     },
-    "operator": { "$ref": "types/base_operator.json" },
-    "subject": { "$ref": "types/base_subject.json" },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
     "value": {
       "type": "string",
       "description": "(Required) The Ability type to test",

@@ -15,19 +15,19 @@
   "allOf": [
     {
       "if": { "properties": { "format_version": { "type": "string", "const": "1.10" } } },
-      "then": { "$ref": "1.10.0/blocks.json" }
+      "then": { "$ref": "./1.10.0/blocks.json" }
     },
     {
       "if": { "properties": { "format_version": { "type": "string", "const": "1.10.0" } } },
-      "then": { "$ref": "1.10.0/blocks.json" }
+      "then": { "$ref": "./1.10.0/blocks.json" }
     },
     {
       "if": { "properties": { "format_version": { "type": "string", "const": "1.12.0" } } },
-      "then": { "$ref": "1.12.0/blocks.json" }
+      "then": { "$ref": "./1.12.0/blocks.json" }
     },
     {
       "if": { "properties": { "format_version": { "type": "string", "const": "1.16.0" } } },
-      "then": { "$ref": "1.16.0/blocks.json" }
+      "then": { "$ref": "./1.16.0/blocks.json" }
     }
   ]
 }

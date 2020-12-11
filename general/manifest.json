@@ -36,7 +36,7 @@
         }
       },
       "then": {
-        "$ref": "manifest/manifest.1.json"
+        "$ref": "./manifest/manifest.1.json"
       }
     },
     {
@@ -50,7 +50,7 @@
         }
       },
       "then": {
-        "$ref": "manifest/manifest.2.json"
+        "$ref": "./manifest/manifest.2.json"
       }
     }
   ]

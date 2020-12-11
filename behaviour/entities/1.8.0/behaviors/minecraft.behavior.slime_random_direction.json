@@ -7,7 +7,7 @@
   "title": "Behavior.slime_random_direction 1.8.0",
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" },
+    "priority": { "$ref": "./types/base_priority.json" },
     "add_random_time_range": {
       "type": "number",
       "title": "Add random time range",

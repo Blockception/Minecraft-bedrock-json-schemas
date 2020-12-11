@@ -11,8 +11,8 @@
       "title": "The test property",
       "description": "The test property"
     },
-    "operator": { "$ref": "types/base_operator.json" },
-    "subject": { "$ref": "types/base_subject.json" },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
     "value": {
       "description": "The Biome temperature value to compare with.",
       "type": "number",

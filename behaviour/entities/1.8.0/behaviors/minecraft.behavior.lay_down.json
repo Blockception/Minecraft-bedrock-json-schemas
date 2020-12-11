@@ -7,7 +7,7 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" },
+    "priority": { "$ref": "./types/base_priority.json" },
     "interval": {
       "type": "integer",
       "default": 120,

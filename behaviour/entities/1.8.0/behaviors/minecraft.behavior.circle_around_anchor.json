@@ -7,7 +7,7 @@
   "description": "Allows the mob to move in a circle around a point or a target.",
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" },
+    "priority": { "$ref": "./types/base_priority.json" },
     "speed_multiplier": {
       "type": "number",
       "default": 1.0,

@@ -6,7 +6,7 @@
   "title": "Behavior.controlled_by_player 1.8.0",
   "description": "Allows the mob to be controlled by the player.",
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" },
+    "priority": { "$ref": "./types/base_priority.json" },
     "mount_speed_multiplier": {
       "type": "number",
       "default": 1,

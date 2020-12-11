@@ -7,7 +7,7 @@
   "title": "Behavior.slime_attack 1.8.0",
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" },
+    "priority": { "$ref": "./types/base_priority.json" },
     "set_persistent": {
       "type": "boolean",
       "default": false,

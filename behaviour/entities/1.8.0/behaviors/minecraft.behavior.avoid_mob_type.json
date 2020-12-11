@@ -7,7 +7,7 @@
   "title": "Behavior.avoid_mob_type 1.8.0",
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" },
+    "priority": { "$ref": "./types/base_priority.json" },
     "max_dist": {
       "type": "number",
       "default": 0,

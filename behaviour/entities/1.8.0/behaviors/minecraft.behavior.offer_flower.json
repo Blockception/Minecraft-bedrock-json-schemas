@@ -7,6 +7,6 @@
   "description": "Allows the mob to offer the player a flower like the Iron Golem does.",
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" }
+    "priority": { "$ref": "./types/base_priority.json" }
   }
 }

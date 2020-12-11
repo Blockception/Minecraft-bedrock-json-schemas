@@ -7,7 +7,7 @@
   "description": "Allows the mob to target another mob that hurts them.",
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" },
+    "priority": { "$ref": "./types/base_priority.json" },
     "entity_types": { "$ref": "../types/entity_types.json", "description": "TODO description: entity types", "title": "Entity Types" },
     "alert_same_type": {
       "type": "boolean",

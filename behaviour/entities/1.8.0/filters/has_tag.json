@@ -11,8 +11,8 @@
       "title": "The test property",
       "description": "Returns true if the subject entity has the tag provided."
     },
-    "operator": { "$ref": "types/base_operator.json" },
-    "subject": { "$ref": "types/base_subject.json" },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
     "value": {
       "type": "string",
       "description": "The tag as a string",

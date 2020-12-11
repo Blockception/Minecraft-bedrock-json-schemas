@@ -7,7 +7,7 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" },
+    "priority": { "$ref": "./types/base_priority.json" },
     "cast_duration": {
       "type": "number",
       "description": "Time in seconds for the entire event sending process",

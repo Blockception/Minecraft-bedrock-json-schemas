@@ -7,7 +7,7 @@
   "title": "Behavior.vex_random_move 1.8.0",
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" },
+    "priority": { "$ref": "./types/base_priority.json" },
     "entity_types": {
       "$ref": "../types/entity_types.json",
       "description": "List of entities this mob can copy the owner from.",

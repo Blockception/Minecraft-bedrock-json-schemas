@@ -7,7 +7,7 @@
   "title": "Behavior.snacking 1.8.0",
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" },
+    "priority": { "$ref": "./types/base_priority.json" },
     "items": {
       "type": "array",
       "description": "Items that we are interested in snacking on",

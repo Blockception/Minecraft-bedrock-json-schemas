@@ -7,7 +7,7 @@
   "description": "UNDOCUMENTATED",
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" },
+    "priority": { "$ref": "./types/base_priority.json" },
     "tick_interval": {
       "type": "number",
       "title": "Tick interval",

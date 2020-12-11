@@ -11,8 +11,8 @@
       "title": "The test property",
       "description": "Tests whether the Subject has the specified mob effect."
     },
-    "operator": { "$ref": "types/base_operator.json" },
-    "subject": { "$ref": "types/base_subject.json" },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
     "value": {
       "type": "string",
       "description": "TODO description: value",

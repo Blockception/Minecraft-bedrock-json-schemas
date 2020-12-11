@@ -7,7 +7,7 @@
   "description": "Allows the mob to look at the player they are trading with.",
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" },
+    "priority": { "$ref": "./types/base_priority.json" },
     "look_distance": {
       "type": "number",
       "default": 8.0,

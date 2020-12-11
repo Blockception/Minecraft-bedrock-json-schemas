@@ -26,15 +26,15 @@
   "allOf": [
     {
       "if": { "properties": { "format_version": { "type": "string", "const": "1.8.0" } } },
-      "then": { "$ref": "1.8.0/attachables.json" }
+      "then": { "$ref": "./1.8.0/attachables.json" }
     },
     {
       "if": { "properties": { "format_version": { "type": "string", "const": "1.10" } } },
-      "then": { "$ref": "1.10.0/attachables.json" }
+      "then": { "$ref": "./1.10.0/attachables.json" }
     },
     {
       "if": { "properties": { "format_version": { "type": "string", "const": "1.10.0" } } },
-      "then": { "$ref": "1.10.0/attachables.json" }
+      "then": { "$ref": "./1.10.0/attachables.json" }
     }
   ]
 }

@@ -10,8 +10,8 @@
       "title": "The test property",
       "description": "Returns true when the subject entity is in lava."
     },
-    "operator": { "$ref": "types/base_operator.json" },
-    "subject": { "$ref": "types/base_subject.json" },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
     "value": {
       "title": "Value",
       "description": "True or false.",

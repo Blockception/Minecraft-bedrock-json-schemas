@@ -7,7 +7,7 @@
   "description": "Can only be used by the Ocelot. Allows it to perform the sneak and pounce attack.",
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" },
+    "priority": { "$ref": "./types/base_priority.json" },
     "walk_speed_multiplier": {
       "type": "number",
       "default": 1.0,
