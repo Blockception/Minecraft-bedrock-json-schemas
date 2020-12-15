@@ -6,7 +6,17 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "./types/base_priority.json" }
+    "priority": { "$ref": "./types/base_priority.json" },
+    "idle_time": {
+      "title": "TODO",
+      "description": "TODO Description",
+      "type": "number"
+    },
+    "success_rate": {
+      "title": "TODO",
+      "description": "TODO Description",
+      "type": "number"
+    }
   },
   "description": "TODO description"
 }

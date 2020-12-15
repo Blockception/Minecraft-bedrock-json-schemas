@@ -173,10 +173,12 @@
     "minecraft:trusting": { "$ref": "../1.8.0/components/minecraft.trusting.json" },
     "minecraft:type_family": { "$ref": "../1.8.0/components/minecraft.type_family.json" },
     "minecraft:variant": { "$ref": "../1.8.0/components/minecraft.variant.json" },
-    "minecraft:underwater_movement": { "$ref": "./components/minecraft.underwater_movement.json" },
+    "minecraft:underwater_movement": { "$ref": "../1.8.0/components/minecraft.underwater_movement.json" },
     "minecraft:walk_animation_speed": { "$ref": "../1.8.0/components/minecraft.walk_animation_speed.json" },
     "minecraft:wants_jockey": { "$ref": "./components/minecraft.wants_jockey.json" },
     "minecraft:water_movement": { "$ref": "../1.8.0/components/minecraft.water_movement.json" },
+
+    
     "minecraft:behavior.admire_item": { "$ref": "./behaviors/minecraft.behavior.admire_item.json" },
     "minecraft:behavior.avoid_block": { "$ref": "./behaviors/minecraft.behavior.avoid_block.json" },
     "minecraft:behavior.avoid_mob_type": { "$ref": "../1.8.0/behaviors/minecraft.behavior.avoid_mob_type.json" },
@@ -315,6 +317,7 @@
     "minecraft:behavior.swell": { "$ref": "../1.8.0/behaviors/minecraft.behavior.swell.json" },
     "minecraft:behavior.swim_wander": { "$ref": "../1.8.0/behaviors/minecraft.behavior.swim_wander.json" },
     "minecraft:behavior.swim_with_entity": { "$ref": "../1.8.0/behaviors/minecraft.behavior.swim_with_entity.json" },
+    "minecraft:behavior.swim_idle": { "$ref": "../1.8.0/behaviors/minecraft.behavior.swim_idle.json" },
     "minecraft:behavior.swoop_attack": { "$ref": "../1.8.0/behaviors/minecraft.behavior.swoop_attack.json" },
     "minecraft:behavior.take_flower": { "$ref": "../1.8.0/behaviors/minecraft.behavior.take_flower.json" },
     "minecraft:behavior.target_when_pushed": { "$ref": "../1.8.0/behaviors/minecraft.behavior.target_when_pushed.json" },
@@ -325,7 +328,6 @@
     "minecraft:behavior.vex_random_move": { "$ref": "../1.8.0/behaviors/minecraft.behavior.vex_random_move.json" },
     "minecraft:behavior.wither_random_attack_pos_goal": { "$ref": "../1.8.0/behaviors/minecraft.behavior.wither_random_attack_pos_goal.json" },
     "minecraft:behavior.wither_target_highest_damage": { "$ref": "../1.8.0/behaviors/minecraft.behavior.wither_target_highest_damage.json" },
-    "minecraft:behavior.swim_idle": { "$ref": "./behaviors/minecraft.behavior.swim_idle.json" },
     "minecraft:behavior.work": { "$ref": "../1.8.0/behaviors/minecraft.behavior.work.json" }
   }
 }

@@ -169,6 +169,7 @@
     "minecraft:trust": { "$ref": "../1.8.0/components/minecraft.trust.json" },
     "minecraft:trusting": { "$ref": "../1.8.0/components/minecraft.trusting.json" },
     "minecraft:type_family": { "$ref": "../1.8.0/components/minecraft.type_family.json" },
+    "minecraft:underwater_movement": { "$ref": "../1.8.0/components/minecraft.underwater_movement.json" },
     "minecraft:variant": { "$ref": "../1.8.0/components/minecraft.variant.json" },
     "minecraft:walk_animation_speed": { "$ref": "../1.8.0/components/minecraft.walk_animation_speed.json" },
     "minecraft:wants_jockey": { "$ref": "../1.8.0/components/minecraft.wants_jockey.json" },
