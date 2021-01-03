@@ -4,5 +4,5 @@
   "type": "string",
   "title": "The minecraft entity identifier 1.8.0",
   "description": "The minecraft entity identifier",
-  "pattern": "^[0-9a-zA-Z:_\\-]+$"
+  "pattern": "^[0-9a-zA-Z:_\\.\\-]+$"
 }
