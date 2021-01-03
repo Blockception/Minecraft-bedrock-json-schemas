@@ -3,6 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.minecraft:entity.1.16.0",
   "title": "Entity 1.16.0",
   "required": ["description"],
+  "additionalProperties": false,
   "dependencies": {
     "component_groups": ["events"]
   },

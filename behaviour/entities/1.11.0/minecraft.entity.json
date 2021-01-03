@@ -3,6 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.minecraft:entity",
   "title": "Entity 1.11.0",
   "required": ["description"],
+  "additionalProperties": false,
   "properties": {
     "description": {
       "required": ["identifier"],

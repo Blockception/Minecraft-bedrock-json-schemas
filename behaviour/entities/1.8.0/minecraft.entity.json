@@ -3,9 +3,8 @@
   "$id": "blockception.minecraft.behaviour.entities.minecraft:entity.1.8.0",
   "title": "Entity 1.8.0",
   "required": ["description"],
-  "dependencies": {
-    "component_groups": ["events"]
-  },
+  "dependencies": { "component_groups": ["events"] },
+  "additionalProperties": false,
   "properties": {
     "description": {
       "required": ["identifier"],
