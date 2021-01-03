@@ -25,9 +25,21 @@
             "identifier": {
               "title": "Identifier",
               "type": "string",
-              "description": "TODO",
+              "description": "The identifier for this item. The name must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla item.",
               "$ref": "../../../general/item/identifier.json"
-            }
+            },
+            "category": {
+              "type": "string",
+              "default": "",
+              "description": "The category for this item. Categories are used to control high level properties of how the item is integrated into the bedrock engine, such as whether it can be used in slash commands.",
+              "title": "category"
+            },
+            "is_experimental": {
+              "type": "boolean",
+              "default": false,
+              "description": "If this item is experimental, it will only be registered if the world is marked as experimental.",
+              "title": "is experimental"
+            }        
           }
         },
         "components": {
