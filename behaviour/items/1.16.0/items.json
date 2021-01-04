@@ -39,7 +39,7 @@
               "default": false,
               "description": "If this item is experimental, it will only be registered if the world is marked as experimental.",
               "title": "is experimental"
-            }        
+            }
           }
         },
         "components": {
