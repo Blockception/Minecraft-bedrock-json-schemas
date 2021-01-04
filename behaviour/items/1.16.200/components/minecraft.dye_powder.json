@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.1.16.200.items.minecraft:dye_powder",
+  "title": "Dye powder",
+  "description": "Dye powder, there are 16 kinds of dye.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["color"],
+  "properties": {
+    "color": {
+      "type": "string",
+      "title": "Color",
+      "description": "Defines what color the dye is.",
+      "enum": [
+        "brown",
+        "white",
+        "black",
+        "blue",
+        "cyan",
+        "gray",
+        "green",
+        "lightblue",
+        "silver",
+        "lime",
+        "magenta",
+        "pink",
+        "purple",
+        "red",
+        "yellow"
+      ]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.1.16.200.items.minecraft:",
+  "title": "minecraft:throwable",
+  "description": "Throwable item component. Throwable items, such as a snowball.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "do_swing_animation": {
+      "title": "Do swing animation",
+      "description": "Whether the item should use the swing animation when thrown. Default is set to false.",
+      "default": false,
+      "type": "boolean"
+    },
+    "launch_power_scale": {
+      "title": "Launch power scale",
+      "description": "The scale at which the power of the throw increases. Default is set to 1.0.",
+      "default": 1.0,
+      "type": "number"
+    },
+    "max_draw_duration": {
+      "title": "Max draw duration",
+      "description": "The maximum duration to draw a throwable item. Default is set to 0.0.",
+      "default": 0,
+      "type": "number"
+    },
+    "min_draw_duration": {
+      "title": "Min draw duration",
+      "description": "The minimum duration to draw a throwable item. Default is set to 0.0.",
+      "default": 0,
+      "type": "number"
+    },
+    "max_launch_power": {
+      "title": "Max launch power",
+      "description": "The maximum power to launch the throwable item. Default is set to 1.0.",
+      "default": 1.0,
+      "type": "number"
+    },
+    "scale_power_by_draw_duration": {
+      "title": "Scale power by draw duration",
+      "description": "Whether or not the power of the throw increases with duration charged. Default is set to false.",
+      "default": false,
+      "type": "boolean"
+    }
+  }
+}
