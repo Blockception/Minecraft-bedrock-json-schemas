@@ -13,29 +13,12 @@
     }
   ],
   "allOf": [
-    {
-      "if": { "properties": { "format_version": { "type": "string", "const": "1.10" } } },
-      "then": { "$ref": "./1.10.0/items.json" }
-    },
-    {
-      "if": { "properties": { "format_version": { "type": "string", "const": "1.10.0" } } },
-      "then": { "$ref": "./1.10.0/items.json" }
-    },
-    {
-      "if": { "properties": { "format_version": { "type": "string", "const": "1.14" } } },
-      "then": { "$ref": "./1.14.0/items.json" }
-    },
-    {
-      "if": { "properties": { "format_version": { "type": "string", "const": "1.14.0" } } },
-      "then": { "$ref": "./1.14.0/items.json" }
-    },
-    {
-      "if": { "properties": { "format_version": { "type": "string", "const": "1.16" } } },
-      "then": { "$ref": "./1.16.0/items.json" }
-    },
-    {
-      "if": { "properties": { "format_version": { "type": "string", "const": "1.16.0" } } },
-      "then": { "$ref": "./1.16.0/items.json" }
-    }
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.10" } } }, "then": { "$ref": "./1.10.0/items.json" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.10.0" } } }, "then": { "$ref": "./1.10.0/items.json" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.14" } } }, "then": { "$ref": "./1.14.0/items.json" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.14.0" } } }, "then": { "$ref": "./1.14.0/items.json" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.16" } } }, "then": { "$ref": "./1.16.0/items.json" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.16.0" } } }, "then": { "$ref": "./1.16.0/items.json" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.16.100" } } }, "then": { "$ref": "./1.16.100/items.json" } }
   ]
 }
