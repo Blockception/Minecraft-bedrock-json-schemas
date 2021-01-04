@@ -3,5 +3,10 @@
 		{
 			"path": "."
 		}
-	]
+	],
+	"extensions": {
+		"recommendations": [
+			"vscode-icons-team.vscode-icons"
+		]
+	}
 }

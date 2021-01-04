@@ -1,10 +1,21 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "blockception.minecraft.behaviour.1.16.100.items.minecraft:",
-  "title": "",
-  "description": "",
+  "$id": "blockception.minecraft.behaviour.1.16.100.items.minecraft:projectile",
+  "title": "Projectile",
+  "description": "Projectile item component. projectile items shoot out, like an arrow.",
   "type": "object",
   "additionalProperties": false,
-  "required": [""],
-  "properties": {}
+  "required": ["projectile_entity"],
+  "properties": {
+    "minimum_critical_power": {
+      "type": "number",
+      "title": "Minimum critical power",
+      "description": "How long you must charge a projectile for it to critically hit."
+    },
+    "projectile_entity": {
+      "title": "Projectile entity",
+      "description": "The entity to be fired as a projectile.",
+      "type": "string"
+    }
+  }
 }

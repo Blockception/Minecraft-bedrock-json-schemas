@@ -1,0 +1,13 @@
+{
+    "speed_multiplier": {
+        "prefix": "snippet.speed_multiplier",
+        "body": [
+            "\"priority\": { \"$ref\": \"types/base_priority.json\" },",
+            "\"speed_multiplier\": { \"$ref\": \"types/base_speed_multiplier.json\" },"
+        ]
+    },
+    "priority": {
+        "prefix": "snippet.priority",
+        "body": "\"priority\": { \"$ref\": \"types/base_priority.json\" },"
+    }
+}

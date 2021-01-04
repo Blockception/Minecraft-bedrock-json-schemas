@@ -1,10 +1,73 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "blockception.minecraft.behaviour.1.16.100.items.minecraft:",
-  "title": "",
-  "description": "",
+  "$id": "blockception.minecraft.behaviour.1.16.100.items.minecraft:shooter",
+  "title": "Shooter",
+  "description": "Shooter Item Component.",
   "type": "object",
   "additionalProperties": false,
-  "required": [""],
-  "properties": {}
+  "properties": {
+    "ammunition": {
+      "title": "Ammunition",
+      "description": "Ammunition",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "title": "UNDOCUMENTATED",
+        "description": "UNDOCUMENTATED",
+        "additionalProperties": false,
+        "properties": {
+          "item": {
+            "title": "Item",
+            "description": "UNDOCUMENTATED",
+            "type": "string"
+          },
+          "use_offhand": {
+            "title": "Use offhand",
+            "description": "UNDOCUMENTATED",
+            "type": "boolean"
+          },
+          "search_inventory": {
+            "title": "Search inventory",
+            "description": "UNDOCUMENTATED",
+            "type": "boolean"
+          },
+          "use_in_creative": {
+            "title": "Use in creative",
+            "description": "UNDOCUMENTATED",
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "charge_on_draw": {
+      "title": "Charge on draw",
+      "description": "Charge on draw? Default is set to false.",
+      "default": false,
+      "type": "boolean"
+    },
+    "launch_power_scale": {
+      "title": "Launch power scale",
+      "description": "Launch power scale. Default is set to 1.0.",
+      "default": 1.0,
+      "type": "number"
+    },
+    "max_draw_duration": {
+      "title": "Max draw duration",
+      "description": "Draw Duration. Default is set to 0.",
+      "default": 0,
+      "type": "number"
+    },
+    "max_launch_power": {
+      "title": "Max launch power",
+      "description": "Launch power. Default is set to 1.0.",
+      "default": 0,
+      "type": "number"
+    },
+    "scale_power_by_draw_duration": {
+      "title": "Scale power by draw duration",
+      "description": "Scale power by draw duration? Default is set to false.",
+      "default": false,
+      "type": "boolean"
+    }
+  }
 }
