@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.1.16.200.items.events.shoot",
+  "title": "Shoot",
+  "description": "UNDOCUMENTATED",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"type": {
+			"type": "string",
+			"title": "Type",
+			"description": "UNDOCUMENTATED",
+			"enum": [ "magic" ]
+		},
+		"amount": {
+			"type": "number",
+			"title": "Amount",
+			"description": "UNDOCUMENTATED"
+		}
+	}
+}

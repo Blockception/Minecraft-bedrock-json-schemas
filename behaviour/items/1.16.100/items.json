@@ -44,7 +44,9 @@
           }
         },
         "components": {
-          "additionalProperties": false,
+          "additionalProperties": {
+            "type": "object"
+          },
           "type": "object",
           "description": "The components of this item",
           "properties": {
@@ -69,6 +71,9 @@
             "minecraft:weapon": { "$ref": "./components/minecraft.weapon.json" },
             "minecraft:wearable": { "$ref": "./components/minecraft.wearable.json" }
           }
+        },
+        "events": {
+          "$ref": "./events.json"
         }
       }
     }

@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.items",
   "examples": [
     {
-      "format_version": "1.16.0",
+      "format_version": "1.16.200",
       "minecraft:item": {
         "description": {
           "identifier": "namespace:item"
