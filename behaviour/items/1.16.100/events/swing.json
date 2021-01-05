@@ -3,6 +3,6 @@
   "$id": "blockception.minecraft.behaviour.1.16.100.items.events.swing",
   "title": "Swing",
   "description": "UNDOCUMENTATED",
-	"type": "object",
-	"additionalProperties": false	
+  "type": "object",
+  "additionalProperties": false
 }

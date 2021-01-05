@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.1.16.100.items.events.transform_item",
   "title": "Transform item",
   "description": "UNDOCUMENTATED",
-	"type": "object",
+  "type": "object",
   "additionalProperties": false,
   "properties": {
     "transform": {

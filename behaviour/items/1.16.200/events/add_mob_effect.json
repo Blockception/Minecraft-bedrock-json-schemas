@@ -3,31 +3,29 @@
   "$id": "blockception.minecraft.behaviour.1.16.200.items.events.add_mob_effect",
   "title": "Add mob effect",
   "description": "UNDOCUMENTATED",
-	"type": "object",
-	"additionalProperties": false,
-	"properties": {
-		"effect": {
-			"type": "string",
-			"title": "Effect",
-			"description": "UNDOCUMENTATED"
-		},
-		"target": {
-			"type": "string",
-			"title": "Target",
-			"description": "UNDOCUMENTATED",
-			"enum": [
-				"holder"
-			]
-		},
-		"duration": {
-			"type": "number",
-			"title": "Duration",
-			"description": "UNDOCUMENTATED"
-		},
-		"amplifier": {
-			"type": "number",
-			"title": "Amplifier",
-			"description": "UNDOCUMENTATED"
-		}
-	}
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "effect": {
+      "type": "string",
+      "title": "Effect",
+      "description": "UNDOCUMENTATED"
+    },
+    "target": {
+      "type": "string",
+      "title": "Target",
+      "description": "UNDOCUMENTATED",
+      "enum": ["holder"]
+    },
+    "duration": {
+      "type": "number",
+      "title": "Duration",
+      "description": "UNDOCUMENTATED"
+    },
+    "amplifier": {
+      "type": "number",
+      "title": "Amplifier",
+      "description": "UNDOCUMENTATED"
+    }
+  }
 }
