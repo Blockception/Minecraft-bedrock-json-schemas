@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.blocks.1.16.100.minecraft.material_instances",
+  "type": "object",
+  "title": "Material instances 1.16.100",
+  "description": "Maps face or material_instance names in a geometry file to an actual material instance. Material instance can either be a full material instance or a name to another already defined instance",
+  "definitions": {
+    "material_instance": {
+      "title": "Material instance",
+      "description": "A single material instance",
+      "additionalProperties": false,
+      "properties": {
+        "ambient_occlusion": {
+          "title": "Ambient occlusion",
+          "type": "boolean",
+          "description": "UNDOCUMENTATED"
+        },
+        "face_dimming": {
+          "title": "Face dimming",
+          "type": "boolean",
+          "description": "UNDOCUMENTATED"
+        },
+        "render_method": {
+          "type": "string",
+          "title": "Render method",
+          "description": "TODO description",
+          "enum": ["blend", "opaque", "alpha_test"]
+        },
+        "texture": {
+          "type": "string",
+          "title": "Texture",
+          "description": "TODO description"
+        }
+      }
+    }
+  },
+  "properties": {
+    "*": {
+      "$ref": "#/definitions/material_instance"
+    }
+  },
+  "additionalProperties": {
+    "$ref": "#/definitions/material_instance"
+  }
+}

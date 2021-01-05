@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.blocks.1.16.100.minecraft.on_player_destroyed",
+  "type": "object",
+  "title": "On player destroyed 1.16.100",
+  "description": "Describes event for this block.",
+  "properties": {
+    "condition": {
+      "type": "string",
+      "default": "",
+      "description": "The condition of event to be executed on the block.",
+      "title": "condition"
+    },
+    "event": {
+      "type": "string",
+      "default": "",
+      "description": "The event executed on the block.",
+      "title": "event"
+    },
+    "target": {
+      "type": "string",
+      "default": "self",
+      "description": "The target of event executed on the block.",
+      "title": "target"
+    }
+  }
+}

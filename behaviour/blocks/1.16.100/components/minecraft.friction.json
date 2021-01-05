@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.blocks.1.16.100.minecraft.friction",
+  "additionalProperties": false,
+  "type": "number",
+  "title": "Friction 1.16.100",
+  "description": "Property describing the friction for this block. Friction effects an entities movements when it walks on the block.",
+  "default": 0.1
+}
