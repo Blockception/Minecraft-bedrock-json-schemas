@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.blocks.1.16.200.minecraft.on_step_on",
+  "type": "object",
+  "title": "On step on 1.16.200",
+  "description": "Describes event for this block.",
+  "properties": {
+    "condition": {
+      "type": "string",
+      "default": "",
+      "description": "The condition of event to be executed on the block.",
+      "title": "condition"
+    },
+    "event": {
+      "type": "string",
+      "default": "",
+      "description": "The event executed on the block.",
+      "title": "event"
+    },
+    "target": {
+      "type": "string",
+      "default": "self",
+      "description": "The target of event executed on the block.",
+      "title": "target"
+    }
+  }
+}

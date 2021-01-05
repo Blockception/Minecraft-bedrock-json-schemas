@@ -44,6 +44,19 @@
               "default": false,
               "description": "Whether or not to register this block to the creative inventory menu.",
               "title": "Register to creative menu"
+            },
+            "properties": {
+              "title": "properties",
+              "description": "UNDOCUMENATED",
+              "propertyNames": {
+                "pattern": "%([a-zA-Z0-9_]+:[a-zA-Z0-9_\\-]+)&"
+              },
+              "additionalProperties": {
+                "oneOf": [
+                  { "type": "array", "oneOf": [{ "type": "boolean" }, { "type": "number" }, { "type": "integer" }, { "type": "string" }] },
+                  { "type": "object" }
+                ]
+              }
             }
           }
         },
@@ -52,6 +65,14 @@
           "title": "Component",
           "description": "",
           "properties": {
+            "minecraft:on_fall_on": { "$ref": "./components/minecraft.on_fall_on.json" },
+            "minecraft:on_interact": { "$ref": "./components/minecraft.on_interact.json" },
+            "minecraft:on_placed": { "$ref": "./components/minecraft.on_placed.json" },
+            "minecraft:on_player_destroyed": { "$ref": "./components/minecraft.on_player_destroyed.json" },
+            "minecraft:on_player_placing": { "$ref": "./components/minecraft.on_player_placing.json" },
+            "minecraft:on_step_off": { "$ref": "./components/minecraft.on_step_off.json" },
+            "minecraft:on_step_on": { "$ref": "./components/minecraft.on_step_on.json" },
+
             "minecraft:block_light_absorption": { "$ref": "./components/minecraft.block_light_absorption.json" },
             "minecraft:block_light_emission": { "$ref": "./components/minecraft.block_light_emission.json" },
             "minecraft:breakonpush": { "$ref": "./components/minecraft.breakonpush.json" },
@@ -78,10 +99,7 @@
           }
         },
         "events": {
-          "type": "object",
-          "additionalProperties": {
-            
-          }
+          "$ref": "./events.json"
         }
       }
     }

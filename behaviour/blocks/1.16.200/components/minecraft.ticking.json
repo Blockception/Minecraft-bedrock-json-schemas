@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "blockception.minecraft.behaviour.blocks.1.10.0.minecraft.ticking",
-  "title": "Ticking 1.10.0",
+  "$id": "blockception.minecraft.behaviour.blocks.1.16.200.minecraft.ticking",
+  "title": "Ticking 1.16.200",
   "description": "Describes the component that will trigger an even at a regular interval between two values",
   "type": "object",
   "additionalProperties": false,
