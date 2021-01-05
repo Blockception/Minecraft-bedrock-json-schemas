@@ -3,31 +3,23 @@
   "$id": "blockception.minecraft.behaviour.blocks",
   "examples": [
     {
-      "format_version": "1.16.0",
+      "format_version": "1.16.200",
       "minecraft:block": {
         "description": {
-          "identifier": "namespace:block"
+          "identifier": "namespace:block",
+          "properties": {}
         },
-        "components": {}
+        "components": {},
+        "events": {}
       }
     }
   ],
   "allOf": [
-    {
-      "if": { "properties": { "format_version": { "type": "string", "const": "1.10" } } },
-      "then": { "$ref": "./1.10.0/blocks.json" }
-    },
-    {
-      "if": { "properties": { "format_version": { "type": "string", "const": "1.10.0" } } },
-      "then": { "$ref": "./1.10.0/blocks.json" }
-    },
-    {
-      "if": { "properties": { "format_version": { "type": "string", "const": "1.12.0" } } },
-      "then": { "$ref": "./1.12.0/blocks.json" }
-    },
-    {
-      "if": { "properties": { "format_version": { "type": "string", "const": "1.16.0" } } },
-      "then": { "$ref": "./1.16.0/blocks.json" }
-    }
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.10" } } }, "then": { "$ref": "./1.10.0/blocks.json" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.10.0" } } }, "then": { "$ref": "./1.10.0/blocks.json" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.12.0" } } }, "then": { "$ref": "./1.12.0/blocks.json" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.16.0" } } }, "then": { "$ref": "./1.16.0/blocks.json" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.16.100" } } }, "then": { "$ref": "./1.16.100/blocks.json" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.16.200" } } }, "then": { "$ref": "./1.16.200/blocks.json" } }
   ]
 }
