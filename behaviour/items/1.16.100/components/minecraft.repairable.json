@@ -34,7 +34,7 @@
           "repair_amount": {
             "title": "Repair amount",
             "description": "UNDOCUMENATED",
-            "$ref": "../../../../general/molang/1.8.0/number.json"
+            "$ref": "../../../../molang/1.8.0/number.json"
           }
         }
       }

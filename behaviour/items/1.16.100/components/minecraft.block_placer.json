@@ -15,7 +15,7 @@
         "tags": {
           "title": "Tags",
           "description": "Tags",
-          "$ref": "../../../../general/molang/1.8.0/string.json"
+          "$ref": "../../../../molang/1.8.0/string.json"
         }
       }
     }
