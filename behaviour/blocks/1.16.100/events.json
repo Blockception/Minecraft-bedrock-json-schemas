@@ -56,7 +56,22 @@
               }
             }
           }
-        }
+        },
+        "add_mob_effect": { "$ref": "./events/add_mob_effect.json" },
+        "damage": { "$ref": "./events/damage.json" },
+        "decrement_stack": { "$ref": "./events/decrement_stack.json" },
+        "die": { "$ref": "./events/die.json" },
+        "play_effect": { "$ref": "./events/play_effect.json" },
+        "play_sound": { "$ref": "./events/play_sound.json" },
+        "remove_mob_effect": { "$ref": "./events/remove_mob_effect.json" },
+        "run_command": { "$ref": "./events/run_command.json" },
+        "set_block": { "$ref": "./events/set_block.json" },
+        "set_block_at_pos": { "$ref": "./events/set_block_at_pos.json" },
+        "set_block_property": { "$ref": "./events/set_block_property.json" },
+        "spawn_loot": { "$ref": "./events/spawn_loot.json" },
+        "swing": { "$ref": "./events/swing.json" },
+        "teleport": { "$ref": "./events/teleport.json" },
+        "transform_item": { "$ref": "./events/transform_item.json" }
       }
     },
     "event_functions": {
@@ -64,21 +79,21 @@
       "description": "UNDOCUMENTATED",
       "type": "object",
       "properties": {
-        "add_mob_effect": { "$ref": "./events/add_mob_effect/json" },
-        "damage": { "$ref": "./events/damage/json" },
-        "decrement_stack": { "$ref": "./events/decrement_stack/json" },
-        "die": { "$ref": "./events/die/json" },
-        "play_effect": { "$ref": "./events/play_effect/json" },
-        "play_sound": { "$ref": "./events/play_sound/json" },
-        "remove_mob_effect": { "$ref": "./events/remove_mob_effect/json" },
-        "run_command": { "$ref": "./events/run_command/json" },
-        "set_block": { "$ref": "./events/set_block/json" },
-        "set_block_at_pos": { "$ref": "./events/set_block_at_pos/json" },
-        "set_block_property": { "$ref": "./events/set_block_property/json" },
-        "spawn_loot": { "$ref": "./events/spawn_loot/json" },
-        "swing": { "$ref": "./events/swing/json" },
-        "teleport": { "$ref": "./events/teleport/json" },
-        "transform_item": { "$ref": "./events/transform_item/json" }
+        "add_mob_effect": { "$ref": "./events/add_mob_effect.json" },
+        "damage": { "$ref": "./events/damage.json" },
+        "decrement_stack": { "$ref": "./events/decrement_stack.json" },
+        "die": { "$ref": "./events/die.json" },
+        "play_effect": { "$ref": "./events/play_effect.json" },
+        "play_sound": { "$ref": "./events/play_sound.json" },
+        "remove_mob_effect": { "$ref": "./events/remove_mob_effect.json" },
+        "run_command": { "$ref": "./events/run_command.json" },
+        "set_block": { "$ref": "./events/set_block.json" },
+        "set_block_at_pos": { "$ref": "./events/set_block_at_pos.json" },
+        "set_block_property": { "$ref": "./events/set_block_property.json" },
+        "spawn_loot": { "$ref": "./events/spawn_loot.json" },
+        "swing": { "$ref": "./events/swing.json" },
+        "teleport": { "$ref": "./events/teleport.json" },
+        "transform_item": { "$ref": "./events/transform_item.json" }
       }
     }
   }
