@@ -4,5 +4,5 @@
   "type": "string",
   "title": "The minecraft fog identifier",
   "description": "The minecraft fog identifier",
-  "pattern": "^[0-9a-zA-Z:_\\-]+$"
+  "pattern": "^[0-9a-zA-Z:_\\.\\-]+$"
 }

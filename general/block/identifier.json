@@ -4,5 +4,5 @@
   "type": "string",
   "title": "The minecraft block identifier 1.8.0",
   "description": "The minecraft block identifier",
-  "pattern": "^[0-9a-zA-Z:_\\-]+$"
+  "pattern": "^[0-9a-zA-Z:_\\.\\-]+$"
 }
