@@ -41,7 +41,7 @@
         "type": "object",
         "title": "Render controller",
         "description": "A single render_controller definition",
-        "required": ["geometry", "materials", "textures"],
+        "required": ["geometry", "materials"],
         "properties": {
           "arrays": {
             "additionalProperties": false,

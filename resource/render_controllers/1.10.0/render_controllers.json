@@ -38,7 +38,7 @@
         "additionalProperties": false,
         "type": "object",
         "description": "A single render_controller",
-        "required": ["geometry", "materials", "textures"],
+        "required": ["geometry", "materials"],
         "properties": {
           "arrays": {
             "additionalProperties": false,
