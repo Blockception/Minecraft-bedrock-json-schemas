@@ -190,12 +190,8 @@
             "description": "A single block sound definition",
             "additionalProperties": false,
             "properties": {
-              "volume": {
-                "$ref": "#/definitions/volume"
-              },
-              "pitch": {
-                "$ref": "#/definitions/pitch"
-              },
+              "volume": { "$ref": "#/definitions/volume" },
+              "pitch": { "$ref": "#/definitions/pitch" },
               "events": {
                 "type": "object",
                 "title": "Events",
@@ -206,17 +202,13 @@
                   "title": "Sound event definition",
                   "description": "A single sound event definition",
                   "oneOf": [
-                    {
-                      "type": "string"
-                    },
+                    { "type": "string" },
                     {
                       "type": "object",
                       "additionalProperties": false,
                       "minProperties": 1,
                       "properties": {
-                        "volume": {
-                          "$ref": "#/definitions/volume"
-                        },
+                        "volume": { "$ref": "#/definitions/volume" },
                         "sound": {
                           "type": "string",
                           "title": "Sound event",
@@ -227,9 +219,7 @@
                           "title": "Sound event",
                           "description": "The sound event described in sound_definitions.json"
                         },
-                        "pitch": {
-                          "$ref": "#/definitions/pitch"
-                        }
+                        "pitch": { "$ref": "#/definitions/pitch" }
                       }
                     }
                   ]
