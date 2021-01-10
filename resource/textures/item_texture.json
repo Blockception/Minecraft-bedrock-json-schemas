@@ -42,7 +42,7 @@
       "description": "TODO: add description",
       "type": "object",
       "propertyNames": {
-        "pattern": "^[\\w_\\-]+$"
+        "pattern": "^[\\w_\\-\\.]+$"
       },
       "additionalProperties": {
         "title": "Texture data",
