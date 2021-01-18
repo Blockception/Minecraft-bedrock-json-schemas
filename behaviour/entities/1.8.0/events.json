@@ -114,7 +114,7 @@
     "minecraft:entity_born": {
       "description": "Event called on an entity that is spawned through two entities breeding.",
       "$ref": "#/definitions/event_base",
-      "title": "Minecraft:entity Born"
+      "title": "Entity Born"
     },
     "minecraft:entity_spawned": {
       "description": "Event called on an entity that is placed in the level.",

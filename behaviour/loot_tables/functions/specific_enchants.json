@@ -58,12 +58,12 @@
         "level": {
           "title": "Level",
           "oneOf": [
-            { "type": "integer", "title": "level" },
+            { "type": "integer", "title": "Level" },
             {
               "type": "array",
               "items": [
-                { "type": "integer", "title": "min" },
-                { "type": "integer", "title": "max" }
+                { "type": "integer", "title": "Min" },
+                { "type": "integer", "title": "Max" }
               ]
             }
           ]

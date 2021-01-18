@@ -14,7 +14,7 @@
       "description": "A version that tells minecraft what type of data format can be expected when reading this file."
     },
     "minecraft:block": {
-      "title": "Minecraft block definitions",
+      "title": "Block definitions",
       "description": "A custom block definition",
       "type": "object",
       "additionalProperties": false,

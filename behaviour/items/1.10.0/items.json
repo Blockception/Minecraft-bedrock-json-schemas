@@ -141,16 +141,24 @@
                     "type": "object",
                     "properties": {
                       "name": {
-                        "type": "string"
+                        "type": "string",
+                        "description": "UNDOCUMANTED",
+                        "title": "UNDOCUMANTED"
                       },
                       "chance": {
-                        "type": "number"
+                        "type": "number",
+                        "description": "UNDOCUMANTED",
+                        "title": "UNDOCUMANTED"
                       },
                       "duration": {
-                        "type": "integer"
+                        "type": "integer",
+                        "description": "UNDOCUMANTED",
+                        "title": "UNDOCUMANTED"
                       },
                       "amplifier": {
-                        "type": "integer"
+                        "type": "integer",
+                        "description": "UNDOCUMANTED",
+                        "title": "UNDOCUMANTED"
                       }
                     }
                   }

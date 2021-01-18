@@ -24,7 +24,7 @@
     "block": {
       "type": "string",
       "description": "Set the placement block name for the planter item.",
-      "title": "protection"
+      "title": "Protection"
     },
     "use_on": {
       "description": "List of block descriptors that contain blocks that this item can be used on. If left empty, all blocks will be allowed.",

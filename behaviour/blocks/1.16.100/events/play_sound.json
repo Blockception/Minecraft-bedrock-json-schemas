@@ -10,13 +10,13 @@
       "type": "string",
       "default": "",
       "description": "The name of the sound to play.",
-      "title": "sound"
+      "title": "Sound"
     },
     "target": {
       "type": "object",
       "default": "self",
       "description": "The target context to execute against.",
-      "title": "target"
+      "title": "Target"
     }
   }
 }

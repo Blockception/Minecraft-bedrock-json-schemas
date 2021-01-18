@@ -3,13 +3,13 @@
   "$id": "blockception.minecraft.behaviour.1.16.200.block.events.set_block_property",
   "type": "object",
   "description": "Sets a block property on this block",
-  "title": "set_block_property 1.16.200",
+  "title": "Set block property 1.16.200",
   "additionalProperties": false,
   "properties": {
     "property": {
       "type": "string",
       "description": "Block property to set on the block.",
-      "title": "property"
+      "title": "Property"
     }
   }
 }

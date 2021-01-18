@@ -12,7 +12,7 @@
       "description": "List of blocks, with certain block states, that we are monitoring to see if the entity is inside.",
       "type": "array",
       "items": {
-        "title": "block",
+        "title": "Block",
         "description": "TODO",
         "type": "object",
         "additionalProperties": false,

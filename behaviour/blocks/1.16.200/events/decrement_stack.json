@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.1.16.200.block.events.decrement_stack",
   "type": "object",
   "description": "Decrement item stack.",
-  "title": "decrement_stack 1.16.200",
+  "title": "Decrement stack 1.16.200",
   "additionalProperties": false,
   "properties": {}
 }

@@ -18,7 +18,7 @@
       "description": "How close a hostile entity must be to have the damage applied.",
       "title": "Damage range"
     },
-    "entity_filter": { "$ref": "../filters.json", "description": "Entity_filter", "title": "Minecraft Filter" },
+    "entity_filter": { "$ref": "../filters.json", "description": "Entity_filter", "title": "Filter" },
     "cause": {
       "type": "string",
       "description": "TODO",

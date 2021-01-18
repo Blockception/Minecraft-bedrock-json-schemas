@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.1.16.100.block.events.swing",
   "type": "object",
   "description": "Event causes the actor to swing.",
-  "title": "swing",
+  "title": "Swing",
   "additionalProperties": false,
   "properties": {}
 }

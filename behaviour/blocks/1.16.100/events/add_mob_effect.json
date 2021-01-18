@@ -3,32 +3,32 @@
   "$id": "blockception.minecraft.behaviour.1.16.100.block.events.add_mob_effect",
   "type": "object",
   "description": "Apply mob effect to target.",
-  "title": "add mob effect",
+  "title": "Add mob effect",
   "additionalProperties": false,
   "properties": {
     "amplifier": {
       "type": "integer",
       "default": 0,
       "description": "The amplifier for the mob effect.",
-      "title": "amplifier"
+      "title": "Amplifier"
     },
     "duration": {
       "type": "number",
       "default": 0,
       "description": "The duration of the mob effect.",
-      "title": "duration"
+      "title": "Duration"
     },
     "effect": {
       "type": "string",
       "default": "",
       "description": "The mob effect to apply.",
-      "title": "effect"
+      "title": "Effect"
     },
     "target": {
       "type": "object",
       "default": "self",
       "description": "The target context to execute against.",
-      "title": "target"
+      "title": "Target"
     }
   }
 }

@@ -15,7 +15,7 @@
       "required": ["description"],
       "type": "object",
       "description": "TODO",
-      "title": "Minecraft item",
+      "title": "item",
       "properties": {
         "description": {
           "additionalProperties": false,
@@ -33,20 +33,18 @@
               "type": "string",
               "default": "",
               "description": "The category for this item. Categories are used to control high level properties of how the item is integrated into the bedrock engine, such as whether it can be used in slash commands.",
-              "title": "category"
+              "title": "Category"
             },
             "is_experimental": {
               "type": "boolean",
               "default": false,
               "description": "If this item is experimental, it will only be registered if the world is marked as experimental.",
-              "title": "is experimental"
+              "title": "Is experimental"
             }
           }
         },
         "components": {
-          "additionalProperties": {
-            "type": "object"
-          },
+          "additionalProperties": { "type": "object" },
           "type": "object",
           "description": "The components of this item",
           "properties": {

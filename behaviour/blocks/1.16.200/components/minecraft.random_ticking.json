@@ -41,13 +41,13 @@
       "type": "boolean",
       "default": true,
       "description": "Does the event loop",
-      "title": "looping"
+      "title": "Looping"
     },
     "range": {
       "type": "array",
       "default": [10, 10],
       "description": "The Range between which the component will trigger his event.",
-      "title": "range"
+      "title": "Range"
     }
   }
 }

@@ -3,14 +3,14 @@
   "$id": "blockception.minecraft.behaviour.1.16.100.block.events.set_block",
   "type": "object",
   "description": "Sets this block to another block type.",
-  "title": "set_block",
+  "title": "Set block",
   "additionalProperties": false,
   "properties": {
     "block_type": {
       "type": "string",
       "default": "",
       "description": "The type of block to set.",
-      "title": "block type"
+      "title": "Block type"
     }
   }
 }

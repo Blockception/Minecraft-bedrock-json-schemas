@@ -3,14 +3,14 @@
   "$id": "blockception.minecraft.behaviour.1.16.100.block.events.set_block_at_pos",
   "type": "object",
   "description": "Sets a block relative to this block to another block type.",
-  "title": "set_block_at_pos",
+  "title": "Set block at pos",
   "additionalProperties": false,
   "properties": {
     "block_offset": {
       "type": "array",
       "default": [0.0, 0.0, 0.0],
       "description": "The offset from the block's center.",
-      "title": "block offset",
+      "title": "Block offset",
       "items": [
         { "type": "number", "title": "X", "description": "The x offset from the block's center." },
         { "type": "number", "title": "Y", "description": "The y offset from the block's center." },
@@ -21,7 +21,7 @@
       "type": "string",
       "default": "",
       "description": "The type of block to set.",
-      "title": "block type"
+      "title": "Block type"
     }
   }
 }

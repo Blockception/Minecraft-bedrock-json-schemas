@@ -11,7 +11,7 @@
       "title": "TODO title"
     },
     "minecraft:item": {
-      "title": "Minecraft item",
+      "title": "Item",
       "description": "TODO",
       "required": ["description", "components"],
       "type": "object",
@@ -42,14 +42,14 @@
           "additionalProperties": false,
           "properties": {
             "minecraft:icon": {
-              "title": "Minecraft icon",
+              "title": "Icon",
               "description": "The texture defined in `textures/item_texture.json`",
               "type": "string"
             },
             "minecraft:render_offsets": {
               "type": "string",
               "description": "TODO",
-              "title": "Minecraft render offsets",
+              "title": "Render offsets",
               "enum": ["apple"]
             }
           }

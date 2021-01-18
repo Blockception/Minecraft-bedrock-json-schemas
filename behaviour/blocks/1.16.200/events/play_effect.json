@@ -3,26 +3,26 @@
   "$id": "blockception.minecraft.behaviour.1.16.200.block.events.play_effect",
   "type": "object",
   "description": "Spawns a particle effect relative to target position.",
-  "title": "play_effect 1.16.200",
+  "title": "Play effect 1.16.200",
   "additionalProperties": false,
   "properties": {
     "data": {
       "type": "integer",
       "default": 0,
       "description": "Particle data value.",
-      "title": "data"
+      "title": "Data"
     },
     "effect": {
       "type": "string",
       "default": "",
       "description": "The name of the particle effect to create.",
-      "title": "effect"
+      "title": "Effect"
     },
     "target": {
       "type": "object",
       "default": "self",
       "description": "The target context to execute against.",
-      "title": "target"
+      "title": "Target"
     }
   }
 }

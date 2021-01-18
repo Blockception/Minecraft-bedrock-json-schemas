@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.conditional_bandwidth_optimization",
   "additionalProperties": false,
   "type": "object",
-  "title": "conditional_bandwidth_optimization 1.8.0",
+  "title": "Conditional bandwidth optimization 1.8.0",
   "description": "Defines the Conditional Spatial Update Bandwidth Optimizations of this entity.",
   "properties": {
     "conditional_values": {

@@ -3,19 +3,19 @@
   "$id": "blockception.minecraft.behaviour.1.16.100.block.events.teleport",
   "type": "object",
   "description": "Teleport target randomly around destination point.",
-  "title": "teleport",
+  "title": "Teleport",
   "additionalProperties": false,
   "properties": {
     "avoid_water": {
       "type": "boolean",
       "default": true,
       "description": "Determines if the teleport avoids putting the target in water.",
-      "title": "avoid water"
+      "title": "Avoid water"
     },
     "destination": {
       "default": [0.0, 0.0, 0.0],
       "description": "Origin destination of the teleport.",
-      "title": "destination",
+      "title": "Destination",
       "items": [
         { "type": "number", "title": "X", "description": "The x offset from the block's center." },
         { "type": "number", "title": "Y", "description": "The y offset from the block's center." },
@@ -26,12 +26,12 @@
       "type": "boolean",
       "default": true,
       "description": "Determines if the teleport places the target on a block.",
-      "title": "land on block"
+      "title": "Land on block"
     },
     "max_range": {
       "default": [8.0, 8.0, 8.0],
       "description": "Max range the target can teleport relative to the origin destination.",
-      "title": "max range",
+      "title": "Max range",
       "items": [
         { "type": "number", "title": "X", "description": "The x offset from the block's center." },
         { "type": "number", "title": "Y", "description": "The y offset from the block's center." },
@@ -42,7 +42,7 @@
       "type": "string",
       "default": "self",
       "description": "The target context to execute against.",
-      "title": "target"
+      "title": "Target"
     }
   }
 }

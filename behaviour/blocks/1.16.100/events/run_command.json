@@ -9,7 +9,7 @@
     "command": {
       "default": "",
       "description": "Slash command to run.",
-      "title": "command",
+      "title": "Command",
       "oneof": [
         { "type": "string" },
         {
@@ -26,7 +26,7 @@
       "type": "string",
       "default": "self",
       "description": "The target context to execute against.",
-      "title": "target"
+      "title": "Target"
     }
   }
 }

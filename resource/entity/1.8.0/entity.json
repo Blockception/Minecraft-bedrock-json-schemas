@@ -16,7 +16,7 @@
     "minecraft:client_entity": {
       "type": "object",
       "additionalProperties": false,
-      "title": "Minecraft client entity",
+      "title": "Client entity",
       "description": "The definition of an entity's models, materials, textures, and animations",
       "properties": {
         "description": {
