@@ -363,18 +363,31 @@
           },
           "timeline": {
             "title": "Timeline",
-            "description": "TODO",
-            "oneOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "array",
-                "items": {
-                  "type": "string"
+            "description": "The time line",
+            "type": "object",
+            "propertyNames": {
+              "pattern": "^(\\d+.\\d+|\\d+)$"
+            },
+            "additionalProperties": {
+              "oneOf": [
+                {
+                  "type": "string",
+                  "title": "Molang",
+                  "description": "Variable definition",
+                  "pattern": "^(v|variable)\\..*=.*;$"
+                },
+                {
+                  "type": "array",
+                  "title": "Collection timelime items",
+                  "items": {
+                    "type": "string",
+                    "title": "Molang",
+                    "description": "Variable definition",
+                    "pattern": "^(v|variable)\\..*=.*;$"
+                  }
                 }
-              }
-            ]
+              ]
+            }
           }
         }
       }

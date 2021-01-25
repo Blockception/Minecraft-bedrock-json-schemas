@@ -94,6 +94,7 @@
             "additionalProperties": {
               "oneOf": [
                 {
+                  "type": "string",
                   "$ref": "#/definitions/commands"
                 },
                 {
