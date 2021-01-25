@@ -163,7 +163,7 @@
                   "title": "Initialize",
                   "items": {
                     "pattern": ";$",
-                    "$ref": "../../../molang/1.8.0/number.json",
+                    "$ref": "../../../molang/1.8.0/string.json",
                     "description": "TODO description: initialize",
                     "title": "Initialize"
                   }
@@ -174,7 +174,7 @@
                   "title": "Pre Animation",
                   "items": {
                     "pattern": ";$",
-                    "$ref": "../../../molang/1.8.0/number.json",
+                    "$ref": "../../../molang/1.8.0/string.json",
                     "description": "TODO description: pre aninamtion",
                     "title": "Pre Animation"
                   }

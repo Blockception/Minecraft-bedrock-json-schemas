@@ -54,7 +54,7 @@
           "description": "Curves are interpolation values, with inputs from 0 to 1, and outputs based on the curve. The result of the curve is a MoLang variable of the same name that can be referenced in MoLang in components. For each rendering frame for each particle, the curves are evaluated and the result is placed in a MoLang variable of the name of the curve.",
           "type": "object",
           "propertyNames": {
-            "pattern": "^variable\\.[a-zA-z0-9]+$"
+            "pattern": "^(v|variable)\\.[a-zA-z0-9]+$"
           },
           "additionalProperties": {
             "type": "object",
