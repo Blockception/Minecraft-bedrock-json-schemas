@@ -8,7 +8,7 @@
   "required": [],
   "properties": {
     "priority": {
-      "ref": "types/base_priority.json"
+      "$ref": "types/base_priority.json"
     },
     "entity_types": { "$ref": "../types/entity_types.json", "title": "Entity types", "description": "UNDOCUMENTATED" },
     "percent_chance": {

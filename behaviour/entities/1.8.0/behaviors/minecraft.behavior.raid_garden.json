@@ -7,8 +7,8 @@
   "title": "Behavior.raid_garden 1.8.0",
   "required": [],
   "properties": {
-    "priority": { "ref": "types/base_priority.json" },
-    "speed_multiplier": { "ref": "types/base_speed_multiplier.json" },
+    "priority": { "$ref": "types/base_priority.json" },
+    "speed_multiplier": { "$ref": "types/base_speed_multiplier.json" },
     "blocks": {
       "type": "array",
       "description": "Blocks that the mob is looking for to eat",

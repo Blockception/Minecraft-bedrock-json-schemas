@@ -8,7 +8,7 @@
   "required": [],
   "properties": {
     "priority": {
-      "ref": "types/base_priority.json"
+      "$ref": "types/base_priority.json"
     },
     "liquid_y_offset": {
       "type": "number",

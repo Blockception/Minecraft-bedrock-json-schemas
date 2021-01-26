@@ -40,7 +40,7 @@
   "required": [],
   "properties": {
     "priority": {
-      "ref": "types/base_priority.json"
+      "$ref": "types/base_priority.json"
     },
     "controlling_seat": {
       "type": "integer",

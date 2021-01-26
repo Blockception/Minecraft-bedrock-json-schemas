@@ -6,8 +6,8 @@
   "title": "Behavior.drop_item_for 1.16.0",
   "type": "object",
   "properties": {
-    "priority": { "ref": "types/base_priority.json" },
-    "speed_multiplier": { "ref": "types/base_speed_multiplier.json" },
+    "priority": { "$ref": "types/base_priority.json" },
+    "speed_multiplier": { "$ref": "types/base_speed_multiplier.json" },
     "cooldown": {
       "title": "Cooldown",
       "description": "UNDOCUMENTATED",

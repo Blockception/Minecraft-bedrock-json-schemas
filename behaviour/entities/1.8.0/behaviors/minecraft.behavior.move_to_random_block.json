@@ -9,7 +9,7 @@
   "properties": {
     "priority": { "$ref": "./types/base_priority.json" },
     "speed_multiplier": {
-      "ref": "types/base_speed_multiplier.json"
+      "$ref": "types/base_speed_multiplier.json"
     },
     "block_distance": {
       "type": "number",

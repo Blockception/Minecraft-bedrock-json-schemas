@@ -8,7 +8,7 @@
   "required": [],
   "properties": {
     "priority": {
-      "ref": "types/base_priority.json"
+      "$ref": "types/base_priority.json"
     },
     "speed_multiplier": { "$ref": "./types/base_speed_multiplier.json" },
     "search_range": {

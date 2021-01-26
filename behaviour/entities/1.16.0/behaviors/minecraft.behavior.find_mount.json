@@ -7,7 +7,7 @@
   "type": "object",
   "properties": {
     "priority": {
-      "ref": "types/base_priority.json"
+      "$ref": "types/base_priority.json"
     },
     "avoid_water": {
       "type": "boolean",
