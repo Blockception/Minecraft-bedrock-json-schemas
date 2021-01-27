@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.move_to_random_block",
   "type": "object",
-  "title": "Behavior.move_to_random_block 1.8.0",
+  "title": "Move to random block 1.8.0",
   "description": "Allows mob to move towards a random block.",
   "additionalProperties": false,
   "required": [],

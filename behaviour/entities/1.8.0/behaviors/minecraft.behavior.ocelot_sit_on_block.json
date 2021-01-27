@@ -4,7 +4,7 @@
   "additionalProperties": false,
   "description": "TODO description",
   "type": "object",
-  "title": "Behavior.ocelot_sit_on_block 1.8.0",
+  "title": "Ocelot sit on block 1.8.0",
   "required": [],
   "properties": {
     "priority": {

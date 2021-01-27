@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.16.0.minecraft.behavior.go_home",
   "additionalProperties": false,
   "description": "Allows the mob to move back to the position they were spawned.",
-  "title": "Behavior.go_home",
+  "title": "Go home",
   "type": "object",
   "definitions": {
     "on_home_spec": {

@@ -4,7 +4,7 @@
   "additionalProperties": false,
   "description": "Can only be used by Slimes and Magma Cubes. Controls their ability to float in water / lava.",
   "type": "object",
-  "title": "Behavior.slime_float 1.8.0",
+  "title": "Slime float 1.8.0",
   "required": [],
   "properties": {
     "priority": { "$ref": "types/base_priority.json" },

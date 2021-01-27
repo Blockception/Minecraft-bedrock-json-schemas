@@ -4,7 +4,7 @@
   "additionalProperties": false,
   "description": "Can only be used by Slimes and Magma Cubes. Allows the mob to continuously jump around like a slime.",
   "type": "object",
-  "title": "Behavior.slime_keep_on_jumping 1.8.0",
+  "title": "Slime keep on jumping 1.8.0",
   "required": [],
   "properties": {
     "priority": {

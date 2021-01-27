@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.skeleton_horse_trap",
   "description": "Allows Equine mobs to be Horse Traps and be triggered like them, spawning a lightning bolt and a bunch of horses when a player is nearby. Can only be used by Horses, Mules, Donkeys and Skeleton Horses.",
   "type": "object",
-  "title": "Behavior.skeleton_horse_trap 1.8.0",
+  "title": "Skeleton horse trap 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {

@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.send_event",
   "description": "Allows the mob to send an event to another mob.",
   "type": "object",
-  "title": "Behavior.send_event 1.8.0",
+  "title": "Send event 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {

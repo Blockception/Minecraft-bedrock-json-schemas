@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.find_underwater_treasure",
   "type": "object",
-  "title": "Behavior.find_underwater_treasure 1.8.0",
+  "title": "Find underwater treasure 1.8.0",
   "description": "Allows the mob to move towards the nearest underwater ruin or shipwreck.",
   "additionalProperties": false,
   "required": [],

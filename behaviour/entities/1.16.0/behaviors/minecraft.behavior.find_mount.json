@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.16.0.minecraft.behavior.find_mount",
   "additionalProperties": false,
   "description": "Allows the mob to look around for another mob to ride atop it.",
-  "title": "Behavior.find_mount 1.16.0",
+  "title": "Find mount 1.16.0",
   "type": "object",
   "properties": {
     "priority": {

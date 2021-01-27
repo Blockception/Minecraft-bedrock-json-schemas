@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.squid_move_away_from_ground",
   "description": "Allows the squid to move away from ground blocks and back to water. Can only be used by the Squid.",
   "type": "object",
-  "title": "Behavior.squid_move_away_from_ground 1.8.0",
+  "title": "Squid move away from ground 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {

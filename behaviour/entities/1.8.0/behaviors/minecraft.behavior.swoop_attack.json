@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.swoop_attack",
   "description": "Allows the mob to move to attack a target. The goal ends if it has a horizontal collision or gets hit. Built to be used with flying mobs.",
   "type": "object",
-  "title": "Behavior.swoop_attack 1.8.0",
+  "title": "Swoop attack 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {

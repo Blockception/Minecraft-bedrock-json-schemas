@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.move_indoors",
   "description": "Can only be used by Villagers. Allows them to seek shelter indoors.",
   "type": "object",
-  "title": "Behavior.move_indoors 1.8.0",
+  "title": "Move indoors 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {

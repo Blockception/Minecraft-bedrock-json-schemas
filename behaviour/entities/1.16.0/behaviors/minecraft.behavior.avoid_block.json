@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.16.0.minecraft.behavior.avoid_block",
   "type": "object",
-  "title": "Behaviour.avoid_block 1.16.0",
+  "title": "Avoid block 1.16.0",
   "description": "UNDOCUMENTATED",
   "additionalProperties": false,
   "properties": {

@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.celebrate",
   "type": "object",
-  "title": "Behaviour.celebrate 1.8.0",
+  "title": "Celebrate 1.8.0",
   "description": "This allows the mob celebrate by jumping up and playing a sound periodically.",
   "additionalProperties": false,
   "properties": {
@@ -30,19 +30,11 @@
         {
           "type": "array",
           "items": [
-            {
-              "type": "number",
-              "title": "Maximum"
-            },
-            {
-              "type": "number",
-              "title": "Maximum"
-            }
+            { "type": "number", "title": "Maximum" },
+            { "type": "number", "title": "Maximum" }
           ]
         },
-        {
-          "type": "number"
-        }
+        { "type": "number" }
       ]
     },
     "on_celebration_end_event": {
@@ -59,19 +51,11 @@
         {
           "type": "array",
           "items": [
-            {
-              "type": "number",
-              "title": "Maximum"
-            },
-            {
-              "type": "number",
-              "title": "Maximum"
-            }
+            { "type": "number", "title": "Maximum" },
+            { "type": "number", "title": "Maximum" }
           ]
         },
-        {
-          "type": "number"
-        }
+        { "type": "number" }
       ]
     }
   }

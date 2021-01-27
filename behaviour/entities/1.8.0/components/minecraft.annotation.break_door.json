@@ -4,7 +4,7 @@
   "additionalProperties": false,
   "description": "Allows the actor to break doors assuming that that flags set up for the component to use in navigation",
   "type": "object",
-  "title": "Annotation.break_door 1.8.0",
+  "title": "Annotation.break door 1.8.0",
   "required": [],
   "properties": {
     "break_time": {

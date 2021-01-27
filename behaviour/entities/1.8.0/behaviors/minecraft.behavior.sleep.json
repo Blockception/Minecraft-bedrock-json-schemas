@@ -4,7 +4,7 @@
   "additionalProperties": false,
   "description": "Allows mobs that own a bed to in a village to move to and sleep in it.",
   "type": "object",
-  "title": "Behavior.sleep 1.8.0",
+  "title": "Sleep 1.8.0",
   "required": [],
   "properties": {
     "priority": { "$ref": "types/base_priority.json" },

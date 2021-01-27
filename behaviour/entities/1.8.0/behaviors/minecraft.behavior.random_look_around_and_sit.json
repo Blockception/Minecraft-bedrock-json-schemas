@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.random_look_around_and_sit",
   "description": "Allows the mob to randomly sit and look around for a duration. Note: Must have a sitting animation set up to use this.",
   "type": "object",
-  "title": "Behavior.random_look_around_and_sit 1.8.0",
+  "title": "Random look around and sit 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {

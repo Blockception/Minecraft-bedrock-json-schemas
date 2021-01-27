@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.owner_hurt_target",
   "type": "object",
-  "title": "Behavior.owner_hurt_target 1.8.0",
+  "title": "Owner hurt target 1.8.0",
   "additionalProperties": false,
   "description": "Allows the mob to target a mob that is hurt by their owner.",
   "required": [],

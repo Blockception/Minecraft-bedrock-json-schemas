@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.pet_sleep_with_owner",
   "description": "Allows the pet mob to move onto a bed with it's owner while sleeping.",
   "type": "object",
-  "title": "Behavior.pet_sleep_with_owner 1.8.0",
+  "title": "pet sleep with owner 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {

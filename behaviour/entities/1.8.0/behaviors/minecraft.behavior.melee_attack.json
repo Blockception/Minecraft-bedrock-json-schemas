@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.melee_attack",
   "type": "object",
-  "title": "Behavior.melee_attack 1.8.0",
+  "title": "Melee attack 1.8.0",
   "description": "Allows the mob to use close combat melee attacks.",
   "additionalProperties": false,
   "required": [],

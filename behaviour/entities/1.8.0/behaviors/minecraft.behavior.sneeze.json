@@ -4,7 +4,7 @@
   "additionalProperties": false,
   "description": "Allows the mob to stop and sneeze possibly startling nearby mobs and dropping an item.",
   "type": "object",
-  "title": "Behavior.sneeze 1.8.0",
+  "title": "Sneeze 1.8.0",
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/base_priority.json" },

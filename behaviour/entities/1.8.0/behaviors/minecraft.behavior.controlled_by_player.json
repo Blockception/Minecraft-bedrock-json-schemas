@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.controlled_by_player",
   "additionalProperties": false,
   "type": "object",
-  "title": "Behavior.controlled_by_player 1.8.0",
+  "title": "Controlled by player 1.8.0",
   "description": "Allows the mob to be controlled by the player.",
   "properties": {
     "priority": { "$ref": "./types/base_priority.json" },

@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.silverfish_merge_with_stone",
   "description": "Allows the mob to go into stone blocks like Silverfish do. Currently it can only be used by Silverfish.",
   "type": "object",
-  "title": "Behavior.silverfish_merge_with_stone 1.8.0",
+  "title": "Silverfish merge with stone 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {

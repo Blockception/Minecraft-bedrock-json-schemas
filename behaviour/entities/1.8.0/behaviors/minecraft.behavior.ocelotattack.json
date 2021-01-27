@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.ocelotattack",
   "type": "object",
-  "title": "Behavior.ocelotattack 1.8.0",
+  "title": "Ocelotattack 1.8.0",
   "additionalProperties": false,
   "description": "Can only be used by the Ocelot. Allows it to perform the sneak and pounce attack.",
   "required": [],

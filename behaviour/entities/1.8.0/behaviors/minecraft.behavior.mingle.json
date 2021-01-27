@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.mingle",
   "description": "Allows an entity to go to the village bell and mingle with other entities.",
   "type": "object",
-  "title": "Behavior.mingle 1.8.0",
+  "title": "Mingle 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {

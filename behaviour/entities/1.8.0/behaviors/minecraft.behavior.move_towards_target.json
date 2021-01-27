@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.guardian_attack",
   "type": "object",
-  "title": "Behavior.guardian_attack 1.8.0",
+  "title": "Guardian attack 1.8.0",
   "additionalProperties": false,
   "description": "Allows mob to move towards its current target.",
   "required": [],

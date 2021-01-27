@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.leap_at_target",
   "description": "Allows monsters to jump at and attack their target. Can only be used by hostile mobs.",
   "type": "object",
-  "title": "Behavior.leap_at_target 1.8.0",
+  "title": "Leap at target 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {

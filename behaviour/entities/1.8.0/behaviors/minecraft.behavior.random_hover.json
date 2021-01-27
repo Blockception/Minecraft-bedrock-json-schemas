@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.random_hover",
   "description": "Allows the mob to hover around randomly, close to the surface",
   "type": "object",
-  "title": "Behavior.random_hover 1.8.0",
+  "title": "Random hover 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {

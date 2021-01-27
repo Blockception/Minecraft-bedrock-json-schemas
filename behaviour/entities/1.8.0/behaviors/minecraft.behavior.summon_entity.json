@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.stay_while_sitting",
   "description": "Allows the mob to attack the player by summoning other entities.",
-  "title": "Behavior.stay_while_sitting 1.8.0",
+  "title": "Stay while sitting 1.8.0",
   "type": "object",
   "additionalProperties": false,
   "required": [],

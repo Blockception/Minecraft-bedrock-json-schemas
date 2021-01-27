@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.swim_with_entity",
   "type": "object",
-  "title": "Behavior.swim_with_entity 1.8.0",
+  "title": "Swim with entity 1.8.0",
   "description": "UNDOCUMENTATED",
   "additionalProperties": false,
   "required": [],

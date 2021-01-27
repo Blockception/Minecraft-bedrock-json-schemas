@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.lay_down",
   "description": "Allows mobs to lay down at times.",
   "type": "object",
-  "title": "Behavior.lay_down 1.8.0",
+  "title": "Lay down 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {

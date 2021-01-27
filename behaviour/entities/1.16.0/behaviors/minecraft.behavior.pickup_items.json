@@ -4,7 +4,7 @@
   "description": "Allows the mob to pick up items on the ground.",
   "additionalProperties": false,
   "type": "object",
-  "title": "Behavior.pickup_items 1.16.0",
+  "title": "pickup items 1.16.0",
   "properties": {
     "priority": { "$ref": "types/base_priority.json" },
     "speed_multiplier": { "$ref": "types/base_speed_multiplier.json" },

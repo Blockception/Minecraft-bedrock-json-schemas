@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.random_swim",
   "type": "object",
-  "title": "Behavior.random_swim 1.8.0",
+  "title": "Random swim 1.8.0",
   "description": "Allows an entity to randomly move through water",
   "required": [],
   "properties": {

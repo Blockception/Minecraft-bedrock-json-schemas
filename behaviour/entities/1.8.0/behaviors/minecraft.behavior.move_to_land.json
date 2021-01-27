@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.move_to_land",
   "description": "Allows the mob to move back onto land when in water.",
   "type": "object",
-  "title": "Behavior.move_to_land 1.8.0",
+  "title": "Move to land 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {

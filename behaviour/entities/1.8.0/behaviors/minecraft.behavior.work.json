@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.work",
   "type": "object",
-  "title": "Behavior.work 1.8.0",
+  "title": "Work 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {

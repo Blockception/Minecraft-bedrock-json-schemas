@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.13.0.minecraft.behavior.stomp_turtle_egg",
   "description": "Allows this mob to stomp turtle eggs",
   "type": "object",
-  "title": "Behavior.stomp_turtle_egg 1.13.0",
+  "title": "Stomp turtle egg 1.13.0",
   "additionalProperties": false,
   "required": [],
   "properties": {

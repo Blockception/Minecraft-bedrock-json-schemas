@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.charge_held_item",
   "type": "object",
-  "title": "Behavior.charge_held_item 1.8.0",
+  "title": "Charge held item 1.8.0",
   "description": "Allows this mob to charge and use their held item.",
   "additionalProperties": false,
   "required": [],

@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.panic",
   "description": "Allows the mob to enter the panic state, which makes it run around and away from the damage source that made it enter this state.",
   "type": "object",
-  "title": "Behavior.panic 1.8.0",
+  "title": "panic 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {

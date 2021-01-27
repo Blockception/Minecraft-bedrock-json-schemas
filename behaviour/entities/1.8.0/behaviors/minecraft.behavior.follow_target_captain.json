@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.follow_target_captain",
   "type": "object",
-  "title": "Behavior.follow_target_captain 1.8.0",
+  "title": "Follow target captain 1.8.0",
   "description": "Allows mob to move towards its current target captain.",
   "additionalProperties": false,
   "required": [],

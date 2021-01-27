@@ -4,7 +4,7 @@
   "additionalProperties": false,
   "description": "Allows the mob to randomly look around.",
   "type": "object",
-  "title": "Behavior.random_look_around 1.8.0",
+  "title": "Random look around 1.8.0",
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/base_priority.json" },

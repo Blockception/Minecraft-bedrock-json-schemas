@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.trade_with_player",
   "description": "Allows the player to trade with this mob.",
   "type": "object",
-  "title": "Behavior.trade_with_player 1.8.0",
+  "title": "Trade with player 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {

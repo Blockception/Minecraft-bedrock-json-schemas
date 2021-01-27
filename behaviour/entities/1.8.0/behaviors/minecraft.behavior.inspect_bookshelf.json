@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.inspect_bookshelf",
   "type": "object",
-  "title": "Behavior.inspect_bookshelf 1.8.0",
+  "title": "Inspect bookshelf 1.8.0",
   "additionalProperties": false,
   "description": "Allows the mob to inspect bookshelves.",
   "required": [],

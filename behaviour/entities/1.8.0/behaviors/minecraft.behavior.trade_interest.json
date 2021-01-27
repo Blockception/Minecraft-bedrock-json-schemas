@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.swim_idle",
   "description": "Allows the mob to look at a player that is holding a tradable item.",
   "type": "object",
-  "title": "Behavior.swim_idle 1.8.0",
+  "title": "Swim idle 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {

@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.hold_ground",
   "type": "object",
-  "title": "Behaviour.hold_ground 1.8.0",
+  "title": "Hold ground 1.8.0",
   "description": "The mob freezes and looks at the mob they are targeting.",
   "additionalProperties": false,
   "properties": {

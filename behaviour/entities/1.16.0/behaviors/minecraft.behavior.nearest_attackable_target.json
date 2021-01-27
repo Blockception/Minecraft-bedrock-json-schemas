@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.16.0.minecraft.behavior.nearest_attackable_target",
   "type": "object",
-  "title": "Behavior.nearest_attackable_target 1.16.0",
+  "title": "Nearest attackable target 1.16.0",
   "description": "Allows the mob to check for and pursue the nearest valid target.",
   "additionalProperties": false,
   "required": [],

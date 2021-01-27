@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.flee_sun",
   "type": "object",
-  "title": "Behavior.flee_sun 1.8.0",
+  "title": "Flee sun 1.8.0",
   "description": "Allows the mob to run away from direct sunlight and seek shade.",
   "additionalProperties": false,
   "required": [],

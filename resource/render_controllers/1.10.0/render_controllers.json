@@ -25,7 +25,7 @@
   },
   "properties": {
     "format_version": {
-      "title": "The 1.10.0 format_version",
+      "title": "The 1.10.0 format version",
       "type": "string",
       "description": "A version that tells minecraft what type of data format can be expected when reading this file."
     },

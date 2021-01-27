@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.drop_item_for",
   "additionalProperties": false,
   "type": "object",
-  "title": "Behavior.drop_item_for 1.8.0",
+  "title": "Drop item for 1.8.0",
   "description": "Allows the mob to drink potions based on specified environment conditions.",
   "properties": {
     "priority": { "$ref": "./types/base_priority.json" },

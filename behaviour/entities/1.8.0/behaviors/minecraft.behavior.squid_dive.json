@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.squid_dive",
   "description": "Allows the squid to dive down in water. Can only be used by the Squid.",
   "type": "object",
-  "title": "Behavior.squid_dive 1.8.0",
+  "title": "Squid dive 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {

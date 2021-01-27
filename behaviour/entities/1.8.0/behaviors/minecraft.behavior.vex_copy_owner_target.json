@@ -4,7 +4,7 @@
   "description": "Allows the mob to target the same entity its owner is targeting.",
   "additionalProperties": false,
   "type": "object",
-  "title": "Behavior.vex_copy_owner_target 1.8.0",
+  "title": "Vex copy owner target 1.8.0",
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/base_priority.json" },

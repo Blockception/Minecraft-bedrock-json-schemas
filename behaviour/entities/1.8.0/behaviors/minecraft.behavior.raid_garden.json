@@ -4,7 +4,7 @@
   "description": "Allows the mob to eat/raid crops out of farms until they are full.",
   "additionalProperties": false,
   "type": "object",
-  "title": "Behavior.raid_garden 1.8.0",
+  "title": "Raid garden 1.8.0",
   "required": [],
   "properties": {
     "priority": { "$ref": "types/base_priority.json" },

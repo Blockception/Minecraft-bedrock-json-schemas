@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.look_at_player",
   "type": "object",
-  "title": "Behavior.look_at_player 1.8.0",
+  "title": "Look at player 1.8.0",
   "description": "Allows the mob to look at the player when the player is nearby.",
   "additionalProperties": false,
   "required": [],

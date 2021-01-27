@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.find_cover",
   "type": "object",
-  "title": "Behaviour.find_cover 1.8.0",
+  "title": "Find cover 1.8.0",
   "description": "Allows the mob to seek shade.",
   "additionalProperties": false,
   "properties": {

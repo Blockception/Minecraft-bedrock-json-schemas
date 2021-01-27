@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.take_flower",
   "description": "Can only be used by Villagers. Allows the mob to accept flowers from Iron Golems.",
   "type": "object",
-  "title": "Behavior.take_flower 1.8.0",
+  "title": "Take flower 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {

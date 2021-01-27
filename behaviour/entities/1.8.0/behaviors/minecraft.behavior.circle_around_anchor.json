@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.circle_around_anchor",
   "type": "object",
-  "title": "Behavior.circle_around_anchor 1.8.0",
+  "title": "Circle around anchor 1.8.0",
   "additionalProperties": false,
   "description": "Allows the mob to move in a circle around a point or a target.",
   "required": [],

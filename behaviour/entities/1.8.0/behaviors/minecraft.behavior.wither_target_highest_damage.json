@@ -4,7 +4,7 @@
   "description": "Allows the wither to launch random attacks. Can only be used by the Wither Boss.",
   "additionalProperties": false,
   "type": "object",
-  "title": "Behavior.wither_target_highest_damage 1.8.0",
+  "title": "Wither target highest damage 1.8.0",
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/base_priority.json" },

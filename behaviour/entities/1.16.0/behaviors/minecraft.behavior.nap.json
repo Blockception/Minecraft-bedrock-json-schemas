@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.16.0.minecraft.behavior.nap",
   "type": "object",
-  "title": "Behaviour.nap 1.16.0",
+  "title": "Nap 1.16.0",
   "description": "Allows the mob to move back into lava when on land.",
   "additionalProperties": false,
   "properties": {

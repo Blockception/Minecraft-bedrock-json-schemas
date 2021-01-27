@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.target_when_pushed",
   "description": "UNDOCUMENTATED",
   "type": "object",
-  "title": "Behavior.target_when_pushed 1.8.0",
+  "title": "Target when pushed 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {

@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.16.0.minecraft.behavior.knockback_roar",
   "description": "Allows the mob to perform a damaging knockback that affects all nearby entities.",
   "type": "object",
-  "title": "Behavior.knockback_roar 1.16.0",
+  "title": "Knockback roar 1.16.0",
   "additionalProperties": false,
   "required": [],
   "properties": {

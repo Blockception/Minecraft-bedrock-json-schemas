@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.16.0.minecraft.behavior.admire_item",
   "type": "object",
-  "title": "Behaviour.admire_item 1.16.0",
+  "title": "Admire item 1.16.0",
   "description": "Enables the mob to admire items that have been configured as admirable. Must be used in combination with the admire_item component.",
   "additionalProperties": false,
   "properties": {
