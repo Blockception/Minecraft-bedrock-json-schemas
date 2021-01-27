@@ -31,7 +31,6 @@
         "additionalProperties": false,
         "title": "A single pool",
         "type": "object",
-        "required": ["rolls"],
         "properties": {
           "rolls": {
             "title": "Rolls",
@@ -86,6 +85,11 @@
                   "type": "string",
                   "enum": ["item", "empty", "loot_table"]
                 },
+                "count": {
+                  "type": "integer",
+                  "title": "Count",
+                  "description": "The amount of the item"
+                },
                 "name": {
                   "title": "Name",
                   "type": "string",
@@ -115,6 +119,29 @@
                   "description": "UNDOCUMANTED",
                   "type": "integer"
                 }
+              }
+            }
+          },
+          "tiers": {
+            "title": "Tiers",
+            "description": "TODO description",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "bonus_chance": {
+                "title": "Bonus chance",
+                "description": "TODO description",
+                "type": "number"
+              },
+              "bonus_rolls": {
+                "title": "Bonus rolls",
+                "description": "TODO description",
+                "type": "integer"
+              },
+              "initial_range": {
+                "title": "Initial range",
+                "description": "TODO description",
+                "type": "integer"
               }
             }
           }

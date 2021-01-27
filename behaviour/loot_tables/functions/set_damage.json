@@ -13,18 +13,19 @@
     },
     "damage": {
       "oneOf": [
+        { "type": "integer" },
         {
-          "type": "integer"
+          "type": "object",
+          "properties": {
+            "min": { "type": "integer" },
+            "max": { "type": "integer" }
+          }
         },
         {
           "type": "object",
           "properties": {
-            "min": {
-              "type": "integer"
-            },
-            "max": {
-              "type": "integer"
-            }
+            "min": { "type": "number" },
+            "max": { "type": "number" }
           }
         }
       ],

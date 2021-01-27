@@ -17,6 +17,11 @@
       "description": "The default random chance if the level difficulty is not assigned.",
       "title": "Default chance"
     },
+    "max_chance": {
+      "title": "Max chance",
+      "type": "number",
+      "description": "UNDOCUMENATED"
+    },
     "easy": {
       "type": "number",
       "default": 0,
