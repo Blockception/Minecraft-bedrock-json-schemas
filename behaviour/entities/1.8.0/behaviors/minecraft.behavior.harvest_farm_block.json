@@ -7,11 +7,22 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": {
-      "$ref": "types/base_priority.json"
+    "priority": { "$ref": "types/base_priority.json" },
+    "speed_multiplier": { "$ref": "types/base_speed_multiplier.json" },
+    "max_seconds_before_search": {
+      "title": "UNDOCUMENTATED",
+      "description": "UNDOCUMENATED",
+      "type": "number"
     },
-    "speed_multiplier": {
-      "$ref": "types/base_speed_multiplier.json"
+    "search_cooldown_max_seconds": {
+      "title": "UNDOCUMENTATED",
+      "description": "UNDOCUMENATED",
+      "type": "number"
+    },
+    "seconds_until_new_task": {
+      "title": "UNDOCUMENTATED",
+      "description": "UNDOCUMENATED",
+      "type": "number"
     }
   }
 }

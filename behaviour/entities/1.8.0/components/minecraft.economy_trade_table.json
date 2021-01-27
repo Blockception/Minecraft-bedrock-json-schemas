@@ -4,44 +4,88 @@
   "type": "object",
   "title": "Economy trade table 1.8.0",
   "additionalProperties": false,
-  "description": "Allows the entity to power jump like the horse does in vanilla.",
+  "description": "Defines this entity's ability to trade with players.",
   "required": [],
   "properties": {
     "convert_trades_economy": {
       "type": "boolean",
       "default": false,
       "description": "Determines when the mob transforms, if the trades should be converted when the new mob has a economy_trade_table. When the trades are converted, the mob will generate a new trade list with their new trade table, but then it will try to convert any of the same trades over to have the same enchantments and user data. For example, if the original has a Emerald to Enchanted Iron Sword (Sharpness 1), and the new trade also has an Emerald for Enchanted Iron Sword, then the enchantment will be Sharpness 1.",
-      "title": "Convert Trades Economy"
+      "title": "convert trades economy"
+    },
+    "cured_discount": {
+      "type": "array",
+      "default": [-5, -20],
+      "description": "How much should the discount be modified by when the player has cured the Zombie Villager. Can be specified as a pair of numbers (low-tier trade discount and high-tier trade discount)",
+      "title": "cured discount",
+      "items": [
+        { "type": "integer", "title": "A", "description": "" },
+        { "type": "integer", "title": "B", "description": "" }
+      ]
     },
     "display_name": {
       "type": "string",
-      "default": 0,
+      "default": "",
       "description": "Name to be displayed while trading with this entity",
-      "title": "Display Name"
+      "title": "display name"
     },
     "hero_demand_discount": {
       "type": "integer",
       "default": -4,
-      "description": "How much should Demand be modified by when the player has the Hero of the Village mob effect",
-      "title": "Hero Demand Discount"
+      "description": "Used in legacy prices to determine how much should Demand be modified by when the player has the Hero of the Village mob effect",
+      "title": "hero demand discount"
+    },
+    "max_cured_discount": {
+      "type": "array",
+      "default": [-25, -63],
+      "description": "The max the discount can be modified by when the player has cured the Zombie Villager. Can be specified as a pair of numbers (low-tier trade discount and high-tier trade discount)",
+      "title": "max cured discount",
+      "items": [
+        { "type": "integer", "title": "A", "description": "" },
+        { "type": "integer", "title": "B", "description": "" }
+      ]
+    },
+    "max_nearby_cured_discount": {
+      "type": "integer",
+      "default": -200,
+      "description": "The max the discount can be modified by when the player has cured a nearby Zombie Villager",
+      "title": "max nearby cured discount"
+    },
+    "nearby_cured_discount": {
+      "type": "integer",
+      "default": -25,
+      "description": "How much should the discount be modified by when the player has cured a nearby Zombie Villager",
+      "title": "nearby cured discount"
     },
     "new_screen": {
       "type": "boolean",
       "default": false,
       "description": "Used to determine if trading with entity opens the new trade screen",
-      "title": "New Screen"
+      "title": "new screen"
     },
     "persist_trades": {
       "type": "boolean",
       "default": false,
       "description": "Determines if the trades should persist when the mob transforms. This makes it so that the next time the mob is transformed to something with a trade_table or economy_trade_table, then it keeps their trades.",
-      "title": "Persist Trades"
+      "title": "persist trades"
+    },
+    "show_trade_screen": {
+      "type": "boolean",
+      "default": true,
+      "description": "Show an in game trade screen when interacting with the mob.",
+      "title": "show trade screen"
     },
     "table": {
       "type": "string",
-      "default": 0,
+      "default": "",
       "description": "File path relative to the resource pack root for this entity's trades",
-      "title": "Table"
+      "title": "table"
+    },
+    "use_legacy_price_formula": {
+      "type": "boolean",
+      "default": false,
+      "description": "Determines whether the legacy formula is used to determines the trade prices.",
+      "title": "use legacy price formula"
     }
   }
 }

@@ -20,6 +20,56 @@
       "default": 0,
       "description": "The time the mob will stand around 'searching' for POIs",
       "title": "Wait time"
+    },
+    "next_xz": {
+      "title": "UNDOCUMENTATED",
+      "description": "UNDOCUMENATED",
+      "type": "integer"
+    },
+    "next_y": {
+      "title": "UNDOCUMENTATED",
+      "description": "UNDOCUMENATED",
+      "type": "integer"
+    },
+    "min_wait_time": {
+      "title": "UNDOCUMENTATED",
+      "description": "UNDOCUMENATED",
+      "type": "number"
+    },
+    "max_wait_time": {
+      "title": "UNDOCUMENTATED",
+      "description": "UNDOCUMENATED",
+      "type": "number"
+    },
+    "max_travel_time": {
+      "title": "UNDOCUMENTATED",
+      "description": "UNDOCUMENATED",
+      "type": "number"
+    },
+    "min_perimeter": {
+      "title": "UNDOCUMENTATED",
+      "description": "UNDOCUMENATED",
+      "type": "number"
+    },
+    "min_dist_from_target": {
+      "title": "UNDOCUMENTATED",
+      "description": "UNDOCUMENATED",
+      "type": "number"
+    },
+    "timer_ratio": {
+      "title": "UNDOCUMENTATED",
+      "description": "UNDOCUMENATED",
+      "type": "number"
+    },
+    "dist_from_boundary": {
+      "title": "UNDOCUMENTATED",
+      "description": "UNDOCUMENATED",
+      "type": "array",
+      "items": [
+        { "title": "UNDOCUMENTATED", "description": "UNDOCUMENATED", "type": "number" },
+        { "title": "UNDOCUMENTATED", "description": "UNDOCUMENATED", "type": "number" },
+        { "title": "UNDOCUMENTATED", "description": "UNDOCUMENATED", "type": "number" }
+      ]
     }
   }
 }

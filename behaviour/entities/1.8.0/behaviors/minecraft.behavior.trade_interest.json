@@ -1,9 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.swim_idle",
+  "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.trade_interest",
   "description": "Allows the mob to look at a player that is holding a tradable item.",
   "type": "object",
-  "title": "Swim idle 1.8.0",
+  "title": "Trade interest 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {
@@ -12,31 +12,31 @@
       "type": "number",
       "default": 2,
       "description": "The max time in seconds that the trader will hold an item before attempting to switch for a different item that takes the same trade",
-      "title": "TODO title"
+      "title": "Carried item switch time"
     },
     "cooldown": {
       "type": "number",
       "default": 2,
       "description": "The time in seconds before the trader can use this goal again",
-      "title": "TODO title"
+      "title": "Cooldown"
     },
     "interest_time": {
       "type": "number",
       "default": 45,
       "description": "The max time in seconds that the trader will be interested with showing it's trade items",
-      "title": "TODO title"
+      "title": "Interest_time"
     },
     "remove_item_time": {
       "type": "number",
       "default": 1,
       "description": "The max time in seconds that the trader will wait when you no longer have items to trade",
-      "title": "TODO title"
+      "title": "Remove item time"
     },
     "within_radius": {
       "type": "number",
       "default": 0,
       "description": "Distance in blocks this mob can be interested by a player holding an item they like",
-      "title": "TODO title"
+      "title": "Within radius"
     }
   }
 }
