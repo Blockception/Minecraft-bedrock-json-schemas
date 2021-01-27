@@ -31,18 +31,22 @@
       "properties": {
         "bind_to_actor": {
           "type": "boolean",
+          "title": "Bind to actor",
           "description": "Set to false to have the effect spawned in the world without being bound to an actor (by default an effect is bound to the actor)."
         },
         "effect": {
           "type": "string",
+          "title": "Effect",
           "description": "The name of a particle effect that should be played"
         },
         "locator": {
           "type": "string",
+          "title": "Locator",
           "description": "The name of a locator on the actor where the effect should be located"
         },
         "pre_effect_script": {
           "type": "string",
+          "title": "Pre effect script",
           "description": "A molang script that will be run when the particle emitter is initialized"
         }
       }
@@ -50,7 +54,11 @@
     "commands": {
       "type": "string",
       "description": "The event or commands to execute",
-      "pattern": "^(@s .+|/.+)$"
+      "oneOf": [
+        { "pattern": "^@s .+$", "title": "Event" },
+        { "pattern": "^/.+$", "title": "Command" },
+        { "pattern": "^.+;$", "title": "Molang" }
+      ]
     }
   },
   "required": ["format_version", "animation_controllers"],
