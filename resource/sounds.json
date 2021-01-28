@@ -214,11 +214,6 @@
                           "title": "Sound event",
                           "description": "The sound event described in sound_definitions.json"
                         },
-                        "sounds": {
-                          "type": "string",
-                          "title": "Sound event",
-                          "description": "The sound event described in sound_definitions.json"
-                        },
                         "pitch": { "$ref": "#/definitions/pitch" }
                       }
                     }
