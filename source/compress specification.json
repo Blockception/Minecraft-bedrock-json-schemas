@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Source": "./minecraft-validation.json",
-      "Destination": "../minecraft-validation.json"
-    },
-    {
       "Source": "./skinpacks/skins.json",
       "Destination": "../skinpacks/skins.json"
     },
