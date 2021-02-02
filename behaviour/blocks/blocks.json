@@ -1,1 +1,2018 @@
-﻿{"$schema":"http://json-schema.org/draft-07/schema","$id":"blockception.minecraft.behaviour.blocks","examples":[{"format_version":"1.16.200","minecraft:block":{"description":{"identifier":"namespace:block","properties":{}},"components":{},"events":{}}}],"allOf":[{"if":{"properties":{"format_version":{"type":"string","const":"1.10"}}},"then":{"$ref":"#/definitions/A"}},{"if":{"properties":{"format_version":{"type":"string","const":"1.10.0"}}},"then":{"$ref":"#/definitions/A"}},{"if":{"properties":{"format_version":{"type":"string","const":"1.12.0"}}},"then":{"$ref":"#/definitions/CH"}},{"if":{"properties":{"format_version":{"type":"string","const":"1.16.0"}}},"then":{"$ref":"#/definitions/CI"}},{"if":{"properties":{"format_version":{"type":"string","const":"1.16.100"}}},"then":{"$ref":"#/definitions/CJ"}},{"if":{"properties":{"format_version":{"type":"string","const":"1.16.200"}}},"then":{"$ref":"#/definitions/HG"}}],"definitions":{"B":{"type":"string","title":"The minecraft block identifier 1.8.0","description":"The minecraft block identifier","pattern":"^[0-9a-zA-Z:_\\.\\-]+$"},"D":{"additionalProperties":false,"type":"integer","title":"Block light absorption 1.10.0","description":"The amount of light this block will absorb.","default":0},"E":{"additionalProperties":false,"type":"number","title":"Block light emission 1.10.0","description":"The amount of light this block will emit in a range [0.0, 1.0].","minimum":0,"maximum":1,"default":0.0},"F":{"additionalProperties":false,"type":"boolean","title":"Break on push 1.10.0","description":"When pushed by a piston the block breaks."},"G":{"additionalProperties":false,"type":"string","title":"Breathability 1.10.0","description":"Property describing the breathability of this block and whether it is treated as a solid or as air.","enum":["solid","air"],"default":"solid"},"H":{"additionalProperties":false,"type":"number","title":"Destroy time 1.10.0","description":"Sets the destroy time property for the block. Greater numbers result in greater mining times."},"I":{"additionalProperties":false,"type":"string","title":"Display name 1.10.0","description":"Specifies the display name id for the block."},"J":{"additionalProperties":false,"title":"Entity collision 1.10.0","description":"Can only be set to false, it disables the collision of the block with entities.","oneOf":[{"type":"boolean","const":false},{"type":"object","additionalProperties":false,"properties":{"origin":{"type":"array","title":"Origin","description":"Minimal position Bounds of the collision box","default":[-8.0,0.0,-8.0],"items":[{"type":"number","title":"X","description":"The x offset"},{"type":"number","title":"Y","description":"The y offset"},{"type":"number","title":"Z","description":"The z offset"}]},"size":{"type":"array","title":"Size","description":"Size of each side of the box of the component","default":[16.0,16.0,16.0],"items":[{"type":"number","title":"X","description":"The x size"},{"type":"number","title":"Y","description":"The y size"},{"type":"number","title":"Z","description":"The z size"}]}}}]},"BA":{"additionalProperties":false,"type":"number","title":"Explosion resistance 1.10.0","description":"Sets the explosion resistance for this block.","default":0.0},"BB":{"additionalProperties":false,"type":"object","title":"Flammable 1.10.0","description":"Describes the flammable properties for this block.","additionalItems":false,"properties":{"burn_odds":{"type":"integer","default":0,"description":"How likely the block will be destroyed by flames when on fire.","title":"Burn odds"},"flame_odds":{"type":"integer","default":0,"description":"How likely the block will catch flame when next to a fire.","title":"Flame odds"}}},"BC":{"additionalProperties":false,"type":"number","title":"Friction 1.10.0","description":"Property describing the friction for this block. Friction effects an entities movements when it walks on the block.","default":0.1},"BD":{"additionalProperties":false,"type":"string","title":"Geometry 1.10.0","description":"The geometry definition name to use.","pattern":"^geometry\\.[a-zA-Z0-9_\\-\\.]+$"},"BE":{"additionalProperties":false,"type":"boolean","title":"Immovable 1.10.0","description":"An Immovable block cannot be pushed by pistons"},"BF":{"additionalProperties":false,"type":"string","title":"Loot 1.10.0","description":"The path of the loot table that this component will use when the block is destroyed.","pattern":"loot_tables/.*\\.json$"},"BG":{"additionalProperties":false,"type":"string","title":"Map color 1.10.0","description":"A color represented as a hex value. This will be the color rendered to a map.","format":"color-hex"},"BH_material_instance":{"title":"Material instance","description":"A single material instance","additionalProperties":false,"properties":{"ambient_occlusion":{"title":"Ambient occlusion","type":"boolean","description":"UNDOCUMENTATED"},"face_dimming":{"title":"Face dimming","type":"boolean","description":"UNDOCUMENTATED"},"render_method":{"type":"string","title":"Render method","description":"TODO description","enum":["blend","opaque","alpha_test"]},"texture":{"type":"string","title":"Texture","description":"TODO description"}}},"BH":{"type":"object","title":"Material instances 1.10.0","description":"Maps face or material_instance names in a geometry file to an actual material instance. Material instance can either be a full material instance or a name to another already defined instance","properties":{"*":{"$ref":"#/definitions/BH_material_instance"}},"additionalProperties":{"$ref":"#/definitions/BH_material_instance"}},"BI":{"type":"boolean","title":"Only piston push 1.10.0","description":"Blocks with those components won't stick to stickyPistons"},"BJ":{"title":"Pick collision 1.10.0","description":"Can only be set to false, it disables the collision of the block with entities","oneOf":[{"type":"boolean","const":false},{"type":"object","additionalProperties":false,"properties":{"origin":{"type":"array","title":"Origin","description":"Minimal position Bounds of the collision box","default":[-8.0,0.0,-8.0],"items":[{"type":"number","title":"X","description":"The x offset"},{"type":"number","title":"Y","description":"The y offset"},{"type":"number","title":"Z","description":"The z offset"}]},"size":{"type":"array","title":"Size","description":"Size of each side of the box of the component","default":[16.0,16.0,16.0],"items":[{"type":"number","title":"X","description":"The x size"},{"type":"number","title":"Y","description":"The y size"},{"type":"number","title":"Z","description":"The z size"}]}}}]},"CA":{"title":"Placement filter 1.10.0","description":"Sets rules for under what conditions the block can be placed/survive","type":"object","properties":{"conditions":{"title":"Conditions","description":"List of conditions where the block can be placed/survive","type":"array","items":{"type":"object","title":"Condition","description":"TODO","properties":{"allowed_faces":{"title":"Allowed faces","description":"List of any of the following strings: up, down, north, south, east, west, side, all","type":"array","items":{"type":"string","enum":["up","down","north","south","east","west","side","all"]}},"block_filter":{"title":"Block filter","description":"List of blocks (can use tags to specify them) that this block can be placed against in the allowed_faces direction","type":"array","items":{"type":"string","title":"Block identifier","description":"TODO"}}}}}}},"CB":{"title":"Prevents jumping 1.10.0","description":"This component makes it so actors can't jump when walking on this block","type":"boolean"},"CC":{"title":"Random ticking 1.10.0","description":"Describes the component that will trigger an even at a regular interval between two values","type":"object","additionalProperties":false,"properties":{"on_tick":{"title":"On tick","description":"Describes the component that will trigger an even at a regular interval between two values","type":"string","additionalProperties":false,"properties":{"condition":{"title":"Condition","type":"string","description":"The condition of event to be executed on the block. Molang"},"event":{"title":"Event","type":"string","description":"The type of event executed on the block."},"range":{"title":"Range","type":"array","items":[{"type":"integer"},{"type":"integer"}]},"target":{"title":"Target","description":"The target of event executed on the block.","type":"string","enum":["block","damager","other","parent","player","self","target"]}}}}},"CD":{"title":"Rotation 1.10.0","description":"This is the block's rotation around the center of the cube in degrees. The rotation order is x-y-z.","type":"array","additionalProperties":false,"items":[{"type":"number","title":"X"},{"type":"number","title":"Y"},{"type":"number","title":"Z"}]},"CE":{"title":"Ticking 1.10.0","description":"Describes the component that will trigger an even at a regular interval between two values","type":"object","additionalProperties":false,"properties":{"looping":{"type":"boolean","title":"Looping","description":"Does the event loop"},"range":{"title":"Range","description":"The Range between which the component will trigger his event.","type":"array","items":[{"type":"integer"},{"type":"integer"}]},"on_tick":{"type":"object","title":"On Tick","description":"Describes the component that will trigger an even at a regular interval between two values","condition":{"title":"Condition","type":"string","description":"The condition of event to be executed on the block. Molang"},"event":{"title":"Event","type":"string","description":"The type of event executed on the block."},"target":{"title":"Target","description":"The target of event executed on the block.","type":"string","enum":["block","damager","other","parent","player","self","target"]}}}},"CF":{"title":"Unit cube 1.10.0","description":"Specifies that a unit cube is to be used with tessellation.","type":"string"},"CG":{"title":"Unwalkable 1.10.0","description":"this component sets a block as unwalkable. Most mobs will not try to jump over it if the value is set to true","type":"boolean"},"C":{"title":"Components","description":"The components of that define this block","required":[],"type":"object","additionalProperties":false,"properties":{"minecraft:block_light_absorption":{"$ref":"#/definitions/D"},"minecraft:block_light_emission":{"$ref":"#/definitions/E"},"minecraft:breakonpush":{"$ref":"#/definitions/F"},"minecraft:breathability":{"$ref":"#/definitions/G"},"minecraft:destroy_time":{"$ref":"#/definitions/H"},"minecraft:display_name":{"$ref":"#/definitions/I"},"minecraft:entity_collision":{"$ref":"#/definitions/J"},"minecraft:explosion_resistance":{"$ref":"#/definitions/BA"},"minecraft:flammable":{"$ref":"#/definitions/BB"},"minecraft:friction":{"$ref":"#/definitions/BC"},"minecraft:geometry":{"$ref":"#/definitions/BD"},"minecraft:immovable":{"$ref":"#/definitions/BE"},"minecraft:loot":{"$ref":"#/definitions/BF"},"minecraft:map_color":{"$ref":"#/definitions/BG"},"minecraft:material_instances":{"$ref":"#/definitions/BH"},"minecraft:onlypistonpush":{"$ref":"#/definitions/BI"},"minecraft:pick_collision":{"$ref":"#/definitions/BJ"},"minecraft:placement_filter":{"$ref":"#/definitions/CA"},"minecraft:preventsjumping":{"$ref":"#/definitions/CB"},"minecraft:random_ticking":{"$ref":"#/definitions/CC"},"minecraft:rotation":{"$ref":"#/definitions/CD"},"minecraft:ticking":{"$ref":"#/definitions/CE"},"minecraft:unit_cube":{"$ref":"#/definitions/CF"},"minecraft:unwalkable":{"$ref":"#/definitions/CG"}}},"A":{"description":"Minecraft blocks 1.10.0","required":["format_version","minecraft:block"],"title":"Block","type":"object","additionalProperties":false,"properties":{"format_version":{"title":"The 1.10.0 format version","type":"string","const":"1.10.0","description":"A version that tells minecraft what type of data format can be expected when reading this file."},"minecraft:block":{"title":"Block definitions","description":"A custom block definition","type":"object","additionalProperties":false,"required":["description","components"],"properties":{"description":{"title":"Block description","description":"The description for this block","type":"object","additionalProperties":false,"required":["identifier"],"properties":{"identifier":{"type":"string","description":"The identifier for this block. The name must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla block.","title":"Identifier","$ref":"#/definitions/B"},"is_experimental":{"type":"boolean","default":false,"description":"If this block is experimental, it will only be registered if the world is marked as experimantal.","title":"Is experimental"},"register_to_creative_menu":{"type":"boolean","default":false,"description":"Whether or not to register this block to the creative inventory menu.","title":"Register to creative menu"}}},"components":{"$ref":"#/definitions/C"}}}}},"CH":{"description":"Minecraft blocks 1.12.0","required":["format_version","minecraft:block"],"title":"Block","type":"object","additionalProperties":false,"properties":{"format_version":{"title":"The 1.12.0 format version","type":"string","const":"1.12.0","description":"A version that tells minecraft what type of data format can be expected when reading this file."},"minecraft:block":{"title":"Block definitions","description":"A custom block definition","type":"object","additionalProperties":false,"required":["description","components"],"properties":{"description":{"title":"Block description","description":"The description for this block","type":"object","additionalProperties":false,"required":["identifier"],"properties":{"identifier":{"type":"string","description":"The identifier for this block. The name must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla block.","title":"Identifier","$ref":"#/definitions/B"},"is_experimental":{"type":"boolean","default":false,"description":"If this block is experimental, it will only be registered if the world is marked as experimantal.","title":"Is experimental"},"register_to_creative_menu":{"type":"boolean","default":false,"description":"Whether or not to register this block to the creative inventory menu.","title":"Register to creative menu"}}},"components":{"$ref":"#/definitions/C"}}}}},"CI":{"description":"Minecraft blocks 1.16.0","required":["format_version","minecraft:block"],"title":"Block","type":"object","additionalProperties":false,"properties":{"format_version":{"title":"The 1.16.0 format version","type":"string","const":"1.16.0","description":"A version that tells minecraft what type of data format can be expected when reading this file."},"minecraft:block":{"title":"Block definitions","description":"A custom block definition","type":"object","additionalProperties":false,"required":["description","components"],"properties":{"description":{"title":"Block description","description":"The description for this block","type":"object","additionalProperties":false,"required":["identifier"],"properties":{"identifier":{"type":"string","description":"The identifier for this block. The name must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla block.","title":"Identifier","$ref":"#/definitions/B"},"is_experimental":{"type":"boolean","default":false,"description":"If this block is experimental, it will only be registered if the world is marked as experimantal.","title":"Is experimental"},"register_to_creative_menu":{"type":"boolean","default":false,"description":"Whether or not to register this block to the creative inventory menu.","title":"Register to creative menu"}}},"components":{"$ref":"#/definitions/C"}}}}},"DA":{"type":"object","title":"On fall on","description":"Describes event for this block.","properties":{"condition":{"type":"string","default":"","description":"The condition of event to be executed on the block.","title":"Condition"},"event":{"type":"string","default":"","description":"The event executed on the block.","title":"Event"},"min_fall_distance":{"type":"number","default":0,"description":"The minimum distance in blocks that an actor needs to fall to trigger this event.","title":"Min fall distance"},"target":{"type":"string","default":"self","description":"The target of event executed on the block.","title":"Target"}}},"DB":{"type":"object","title":"On fall on","description":"Describes event for this block.","properties":{"condition":{"type":"string","default":"","description":"The condition of event to be executed on the block.","title":"Condition"},"event":{"type":"string","default":"","description":"The event executed on the block.","title":"Event"},"target":{"type":"string","default":"self","description":"The target of event executed on the block.","title":"Target"}}},"DC":{"type":"object","title":"On placed 1.16.100","description":"Describes event for this block.","properties":{"condition":{"type":"string","default":"","description":"The condition of event to be executed on the block.","title":"Condition"},"event":{"type":"string","default":"","description":"The event executed on the block.","title":"Event"},"target":{"type":"string","default":"self","description":"The target of event executed on the block.","title":"Target"}}},"DD":{"type":"object","title":"On player destroyed 1.16.100","description":"Describes event for this block.","properties":{"condition":{"type":"string","default":"","description":"The condition of event to be executed on the block.","title":"Condition"},"event":{"type":"string","default":"","description":"The event executed on the block.","title":"Event"},"target":{"type":"string","default":"self","description":"The target of event executed on the block.","title":"Target"}}},"DE":{"type":"object","title":"On player placing 1.16.100","description":"Describes event for this block.","properties":{"condition":{"type":"string","default":"","description":"The condition of event to be executed on the block.","title":"Condition"},"event":{"type":"string","default":"","description":"The event executed on the block.","title":"Event"},"target":{"type":"string","default":"self","description":"The target of event executed on the block.","title":"Target"}}},"DF":{"type":"object","title":"On step off 1.16.100","description":"Describes event for this block.","properties":{"condition":{"type":"string","default":"","description":"The condition of event to be executed on the block.","title":"Condition"},"event":{"type":"string","default":"","description":"The event executed on the block.","title":"Event"},"target":{"type":"string","default":"self","description":"The target of event executed on the block.","title":"Target"}}},"DG":{"type":"object","title":"On step on 1.16.100","description":"Describes event for this block.","properties":{"condition":{"type":"string","default":"","description":"The condition of event to be executed on the block.","title":"Condition"},"event":{"type":"string","default":"","description":"The event executed on the block.","title":"Event"},"target":{"type":"string","default":"self","description":"The target of event executed on the block.","title":"Target"}}},"DH":{"additionalProperties":false,"type":"integer","title":"Block light absorption 1.16.100","description":"The amount of light this block will absorb.","default":0},"DI":{"additionalProperties":false,"type":"number","title":"Block light emission 1.16.100","description":"The amount of light this block will emit in a range [0.0, 1.0].","minimum":0,"maximum":1,"default":0.0},"DJ":{"additionalProperties":false,"type":"boolean","title":"Break on push 1.16.100","description":"When pushed by a piston the block breaks."},"EA":{"additionalProperties":false,"type":"string","title":"Breathability 1.16.100","description":"Property describing the breathability of this block and whether it is treated as a solid or as air.","enum":["solid","air"],"default":"solid"},"EB":{"additionalProperties":false,"type":"number","title":"Destroy time 1.16.100","description":"Sets the destroy time property for the block. Greater numbers result in greater mining times."},"EC":{"additionalProperties":false,"type":"string","title":"Display name 1.16.100","description":"Specifies the display name id for the block."},"ED":{"additionalProperties":false,"title":"Entity collision 1.16.100","description":"Can only be set to false, it disables the collision of the block with entities.","oneOf":[{"type":"boolean","const":false},{"type":"object","additionalProperties":false,"properties":{"origin":{"type":"array","title":"Origin","description":"Minimal position Bounds of the collision box","default":[-8.0,0.0,-8.0],"items":[{"type":"number","title":"X","description":"The x offset"},{"type":"number","title":"Y","description":"The y offset"},{"type":"number","title":"Z","description":"The z offset"}]},"size":{"type":"array","title":"Size","description":"Size of each side of the box of the component","default":[16.0,16.0,16.0],"items":[{"type":"number","title":"X","description":"The x size"},{"type":"number","title":"Y","description":"The y size"},{"type":"number","title":"Z","description":"The z size"}]}}}]},"EE":{"additionalProperties":false,"type":"number","title":"Explosion resistance 1.16.100","description":"Sets the explosion resistance for this block.","default":0.0},"EF":{"additionalProperties":false,"type":"object","title":"Flammable 1.16.100","description":"Describes the flammable properties for this block.","additionalItems":false,"properties":{"burn_odds":{"type":"integer","default":0,"description":"How likely the block will be destroyed by flames when on fire.","title":"Burn odds"},"flame_odds":{"type":"integer","default":0,"description":"How likely the block will catch flame when next to a fire.","title":"Flame odds"}}},"EG":{"additionalProperties":false,"type":"number","title":"Friction 1.16.100","description":"Property describing the friction for this block. Friction effects an entities movements when it walks on the block.","default":0.1},"EH":{"additionalProperties":false,"type":"string","title":"Geometry 1.16.100","description":"The geometry definition name to use.","pattern":"^geometry\\.[a-zA-Z0-9_\\-\\.]+$"},"EI":{"additionalProperties":false,"type":"boolean","title":"Immovable 1.16.100","description":"An Immovable block cannot be pushed by pistons"},"EJ":{"additionalProperties":false,"type":"string","title":"Map color 1.16.100","description":"A color represented as a hex value. This will be the color rendered to a map.","format":"color-hex"},"FA_material_instance":{"title":"Material instance","description":"A single material instance","additionalProperties":false,"properties":{"ambient_occlusion":{"title":"Ambient occlusion","type":"boolean","description":"UNDOCUMENTATED"},"face_dimming":{"title":"Face dimming","type":"boolean","description":"UNDOCUMENTATED"},"render_method":{"type":"string","title":"Render method","description":"TODO description","enum":["blend","opaque","alpha_test"]},"texture":{"type":"string","title":"Texture","description":"TODO description"}}},"FA":{"type":"object","title":"Material instances 1.16.100","description":"Maps face or material_instance names in a geometry file to an actual material instance. Material instance can either be a full material instance or a name to another already defined instance","properties":{"*":{"$ref":"#/definitions/FA_material_instance"}},"additionalProperties":{"$ref":"#/definitions/FA_material_instance"}},"FB":{"type":"boolean","title":"Only piston push 1.16.100","description":"Blocks with those components won't stick to stickyPistons"},"FC":{"title":"Pick collision 1.16.100","description":"Can only be set to false, it disables the collision of the block with entities","oneOf":[{"type":"boolean","const":false},{"type":"object","additionalProperties":false,"properties":{"origin":{"type":"array","title":"Origin","description":"Minimal position Bounds of the collision box","default":[-8.0,0.0,-8.0],"items":[{"type":"number","title":"X","description":"The x offset"},{"type":"number","title":"Y","description":"The y offset"},{"type":"number","title":"Z","description":"The z offset"}]},"size":{"type":"array","title":"Size","description":"Size of each side of the box of the component","default":[16.0,16.0,16.0],"items":[{"type":"number","title":"X","description":"The x size"},{"type":"number","title":"Y","description":"The y size"},{"type":"number","title":"Z","description":"The z size"}]}}}]},"FD":{"title":"Placement filter 1.16.100","description":"Sets rules for under what conditions the block can be placed/survive","type":"object","properties":{"conditions":{"title":"Conditions","description":"List of conditions where the block can be placed/survive","type":"array","items":{"type":"object","title":"Condition","description":"TODO","properties":{"allowed_faces":{"title":"Allowed faces","description":"List of any of the following strings: up, down, north, south, east, west, side, all","type":"array","items":{"type":"string","enum":["up","down","north","south","east","west","side","all"]}},"block_filter":{"title":"Block filter","description":"List of blocks (can use tags to specify them) that this block can be placed against in the allowed_faces direction","type":"array","items":{"type":"string","title":"Block identifier","description":"TODO"}}}}}}},"FE":{"title":"Prevents jumping 1.16.100","description":"This component makes it so actors can't jump when walking on this block","type":"boolean"},"FF":{"title":"Random ticking 1.16.100","description":"Describes the component that will trigger an even at a regular interval between two values","type":"object","additionalProperties":false,"properties":{"on_tick":{"title":"On tick","description":"Describes the component that will trigger an even at a regular interval between two values","type":"string","additionalProperties":false,"properties":{"condition":{"title":"Condition","type":"string","default":"1","description":"The condition of event to be executed on the block. Molang"},"event":{"title":"Event","type":"string","default":"set_block_property","description":"The type of event executed on the block."},"range":{"title":"Range","type":"array","items":[{"type":"integer"},{"type":"integer"}]},"target":{"title":"Target","description":"The target of event executed on the block.","type":"string","enum":["block","damager","other","parent","player","self","target"]}}},"looping":{"type":"boolean","default":true,"description":"Does the event loop","title":"Looping"},"range":{"type":"array","default":[10,10],"description":"The Range between which the component will trigger his event.","title":"Range"}}},"FG":{"title":"Rotation 1.16.100","description":"This is the block's rotation around the center of the cube in degrees. The rotation order is x-y-z.","type":"array","additionalProperties":false,"items":[{"type":"number","title":"X"},{"type":"number","title":"Y"},{"type":"number","title":"Z"}]},"FH":{"title":"Ticking 1.16.100","description":"Describes the component that will trigger an even at a regular interval between two values","type":"object","additionalProperties":false,"properties":{"looping":{"type":"boolean","title":"Looping","description":"Does the event loop"},"range":{"title":"Range","description":"The Range between which the component will trigger his event.","type":"array","items":[{"type":"integer"},{"type":"integer"}]},"on_tick":{"type":"object","title":"On Tick","description":"Describes the component that will trigger an even at a regular interval between two values","condition":{"title":"Condition","type":"string","description":"The condition of event to be executed on the block. Molang"},"event":{"title":"Event","type":"string","description":"The type of event executed on the block."},"target":{"title":"Target","description":"The target of event executed on the block.","type":"string","enum":["block","damager","other","parent","player","self","target"]}}}},"FI":{"title":"Unit cube 1.16.100","description":"Specifies that a unit cube is to be used with tessellation.","type":"string"},"FJ":{"title":"Unwalkable 1.16.100","description":"this component sets a block as unwalkable. Most mobs will not try to jump over it if the value is set to true","type":"boolean"},"GA_event_base":{"title":"Event","description":"UNDOCUMENTATED","type":"object","additionalProperties":false,"$ref":"#/definitions/GA_event_functions","properties":{"sequence":{"title":"Sequence","description":"UNDOCUMENTATED","type":"array","items":{"title":"Sequence","description":"UNDOCUMENTATED","type":"object","$ref":"#/definitions/GA_event_functions"}},"randomize":{"title":"Randomize","description":"UNDOCUMENTATED","type":"array","items":{"title":"Randomize","description":"UNDOCUMENTATED","type":"object","$ref":"#/definitions/GA_event_functions","required":["weight"],"properties":{"weight":{"title":"Weight","description":"UNDOCUMENTATED","type":"integer","minimum":0}}}},"add_mob_effect":{"$ref":"#/definitions/GB"},"damage":{"$ref":"#/definitions/GC"},"decrement_stack":{"$ref":"#/definitions/GD"},"die":{"$ref":"#/definitions/GE"},"play_effect":{"$ref":"#/definitions/GF"},"play_sound":{"$ref":"#/definitions/GG"},"remove_mob_effect":{"$ref":"#/definitions/GH"},"run_command":{"$ref":"#/definitions/GI"},"set_block":{"$ref":"#/definitions/GJ"},"set_block_at_pos":{"$ref":"#/definitions/HA"},"set_block_property":{"$ref":"#/definitions/HB"},"spawn_loot":{"$ref":"#/definitions/HC"},"swing":{"$ref":"#/definitions/HD"},"teleport":{"$ref":"#/definitions/HE"},"transform_item":{"$ref":"#/definitions/HF"}}},"GA_event_functions":{"title":"Event","description":"UNDOCUMENTATED","type":"object","properties":{"add_mob_effect":{"$ref":"#/definitions/GB"},"damage":{"$ref":"#/definitions/GC"},"decrement_stack":{"$ref":"#/definitions/GD"},"die":{"$ref":"#/definitions/GE"},"play_effect":{"$ref":"#/definitions/GF"},"play_sound":{"$ref":"#/definitions/GG"},"remove_mob_effect":{"$ref":"#/definitions/GH"},"run_command":{"$ref":"#/definitions/GI"},"set_block":{"$ref":"#/definitions/GJ"},"set_block_at_pos":{"$ref":"#/definitions/HA"},"set_block_property":{"$ref":"#/definitions/HB"},"spawn_loot":{"$ref":"#/definitions/HC"},"swing":{"$ref":"#/definitions/HD"},"teleport":{"$ref":"#/definitions/HE"},"transform_item":{"$ref":"#/definitions/HF"}}},"GB":{"type":"object","description":"Apply mob effect to target.","title":"Add mob effect","additionalProperties":false,"properties":{"amplifier":{"type":"integer","default":0,"description":"The amplifier for the mob effect.","title":"Amplifier"},"duration":{"type":"number","default":0,"description":"The duration of the mob effect.","title":"Duration"},"effect":{"type":"string","default":"","description":"The mob effect to apply.","title":"Effect"},"target":{"type":"object","default":"self","description":"The target context to execute against.","title":"Target"}}},"GC":{"type":"object","description":"Deals damage to the target.","title":"Damage","additionalProperties":false,"properties":{"amount":{"type":"integer","default":0,"description":"The amount of damage to deal.","title":"Amount"},"target":{"type":"object","default":"self","description":"The target context to execute against.","title":"Target"},"type":{"type":"string","default":"","description":"The type of damage to deal.","title":"Type"}}},"GD":{"type":"object","description":"Decrement item stack.","title":"Decrement stack","additionalProperties":false,"properties":{}},"GE":{"type":"object","description":"Kill target. If target is self and this is run from a block then destroy the block.","title":"Die","additionalProperties":false,"properties":{"target":{"type":"object","default":"self","description":"The target context to execute against.","title":"Target"}}},"GF":{"type":"object","description":"Spawns a particle effect relative to target position.","title":"Play effect","additionalProperties":false,"properties":{"data":{"type":"integer","default":0,"description":"Particle data value.","title":"Data"},"effect":{"type":"string","default":"","description":"The name of the particle effect to create.","title":"Effect"},"target":{"type":"object","default":"self","description":"The target context to execute against.","title":"Target"}}},"GG":{"type":"object","description":"Play a sound relative to target position.","title":"Playsound","additionalProperties":false,"properties":{"sound":{"type":"string","default":"","description":"The name of the sound to play.","title":"Sound"},"target":{"type":"object","default":"self","description":"The target context to execute against.","title":"Target"}}},"GH":{"type":"object","description":"Removes mob effect from target.","title":"Remove mob effect","additionalProperties":false,"properties":{"effect":{"type":"string","default":"","description":"The mob effect to remove. Use 'all' to remove all mob effects from target.","title":"Effect"},"target":{"type":"string","default":"self","description":"The target context to execute against.","title":"Target"}}},"GI":{"type":"object","description":"Triggers a slash command or a list of slash commands.","title":"Run command","additionalProperties":false,"properties":{"command":{"default":"","description":"Slash command to run.","title":"Command","oneof":[{"type":"string"},{"type":"array","items":{"type":"string","title":"Command","description":"Slash command to run."}}]},"target":{"type":"string","default":"self","description":"The target context to execute against.","title":"Target"}}},"GJ":{"type":"object","description":"Sets this block to another block type.","title":"Set block","additionalProperties":false,"properties":{"block_type":{"type":"string","default":"","description":"The type of block to set.","title":"Block type"}}},"HA":{"type":"object","description":"Sets a block relative to this block to another block type.","title":"Set block at pos","additionalProperties":false,"properties":{"block_offset":{"type":"array","default":[0.0,0.0,0.0],"description":"The offset from the block's center.","title":"Block offset","items":[{"type":"number","title":"X","description":"The x offset from the block's center."},{"type":"number","title":"Y","description":"The y offset from the block's center."},{"type":"number","title":"Z","description":"The z offset from the block's center."}]},"block_type":{"type":"string","default":"","description":"The type of block to set.","title":"Block type"}}},"HB":{"type":"object","description":"Sets a block property on this block","title":"Set block property","additionalProperties":false,"properties":{"property":{"type":"string","description":"Block property to set on the block.","title":"Property"}}},"HC":{"type":"object","description":"Spawn loot from block.","title":"Spawn loot","required":["table"],"additionalProperties":false,"properties":{"table":{"type":"string","description":"File path, relative to the Behavior Pack's path, to the loot table file.","title":"Table"}}},"HD":{"type":"object","description":"Event causes the actor to swing.","title":"Swing","additionalProperties":false,"properties":{}},"HE":{"type":"object","description":"Teleport target randomly around destination point.","title":"Teleport","additionalProperties":false,"properties":{"avoid_water":{"type":"boolean","default":true,"description":"Determines if the teleport avoids putting the target in water.","title":"Avoid water"},"destination":{"default":[0.0,0.0,0.0],"description":"Origin destination of the teleport.","title":"Destination","items":[{"type":"number","title":"X","description":"The x offset from the block's center."},{"type":"number","title":"Y","description":"The y offset from the block's center."},{"type":"number","title":"Z","description":"The z offset from the block's center."}]},"land_on_block":{"type":"boolean","default":true,"description":"Determines if the teleport places the target on a block.","title":"Land on block"},"max_range":{"default":[8.0,8.0,8.0],"description":"Max range the target can teleport relative to the origin destination.","title":"Max range","items":[{"type":"number","title":"X","description":"The x offset from the block's center."},{"type":"number","title":"Y","description":"The y offset from the block's center."},{"type":"number","title":"Z","description":"The z offset from the block's center."}]},"target":{"type":"string","default":"self","description":"The target context to execute against.","title":"Target"}}},"HF":{"type":"object","description":"Transforms item into another item.","title":"Transform item 1.16.100","additionalProperties":false,"properties":{"transform":{"type":"string","description":"Name of the item it should transform into","title":"Transform"}}},"GA":{"title":"Events","description":"UNDOCUMENTATED","type":"object","properties":{"minecraft:on_interact":{"$ref":"#/definitions/GA_event_base"},"minecraft:on_step_on":{"$ref":"#/definitions/GA_event_base"},"minecraft:on_step_off":{"$ref":"#/definitions/GA_event_base"},"minecraft:on_fall_on":{"$ref":"#/definitions/GA_event_base"},"minecraft:on_placed":{"$ref":"#/definitions/GA_event_base"},"minecraft:on_player_placing":{"$ref":"#/definitions/GA_event_base"},"minecraft:on_player_destroyed":{"$ref":"#/definitions/GA_event_base"},"minecraft:ticking":{"$ref":"#/definitions/GA_event_base"},"minecraft:random_ticking":{"$ref":"#/definitions/GA_event_base"}},"additionalProperties":{"$ref":"#/definitions/GA_event_base"}},"CJ":{"description":"Minecraft blocks 1.16.100","required":["format_version","minecraft:block"],"title":"Block","type":"object","additionalProperties":false,"properties":{"format_version":{"title":"The 1.16.100 format version","type":"string","const":"1.16.100","description":"A version that tells minecraft what type of data format can be expected when reading this file."},"minecraft:block":{"title":"Block definitions","description":"A custom block definition","type":"object","additionalProperties":false,"required":["description","components"],"properties":{"description":{"title":"Block description","description":"The description for this block","type":"object","additionalProperties":false,"required":["identifier"],"properties":{"identifier":{"type":"string","description":"The identifier for this block. The name must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla block.","title":"Identifier","$ref":"#/definitions/B"},"is_experimental":{"type":"boolean","default":false,"description":"If this block is experimental, it will only be registered if the world is marked as experimantal.","title":"Is experimental"},"register_to_creative_menu":{"type":"boolean","default":false,"description":"Whether or not to register this block to the creative inventory menu.","title":"Register to creative menu"},"properties":{"title":"Properties","description":"UNDOCUMENATED","propertyNames":{"pattern":"%([a-zA-Z0-9_]+:[a-zA-Z0-9_\\-]+)&"},"additionalProperties":{"oneOf":[{"type":"array","oneOf":[{"type":"boolean"},{"type":"number"},{"type":"integer"},{"type":"string"}]},{"type":"object"}]}}}},"components":{"type":"object","title":"Component","description":"","properties":{"minecraft:on_fall_on":{"$ref":"#/definitions/DA"},"minecraft:on_interact":{"$ref":"#/definitions/DB"},"minecraft:on_placed":{"$ref":"#/definitions/DC"},"minecraft:on_player_destroyed":{"$ref":"#/definitions/DD"},"minecraft:on_player_placing":{"$ref":"#/definitions/DE"},"minecraft:on_step_off":{"$ref":"#/definitions/DF"},"minecraft:on_step_on":{"$ref":"#/definitions/DG"},"minecraft:block_light_absorption":{"$ref":"#/definitions/DH"},"minecraft:block_light_emission":{"$ref":"#/definitions/DI"},"minecraft:breakonpush":{"$ref":"#/definitions/DJ"},"minecraft:breathability":{"$ref":"#/definitions/EA"},"minecraft:destroy_time":{"$ref":"#/definitions/EB"},"minecraft:display_name":{"$ref":"#/definitions/EC"},"minecraft:entity_collision":{"$ref":"#/definitions/ED"},"minecraft:explosion_resistance":{"$ref":"#/definitions/EE"},"minecraft:flammable":{"$ref":"#/definitions/EF"},"minecraft:friction":{"$ref":"#/definitions/EG"},"minecraft:geometry":{"$ref":"#/definitions/EH"},"minecraft:immovable":{"$ref":"#/definitions/EI"},"minecraft:map_color":{"$ref":"#/definitions/EJ"},"minecraft:material_instances":{"$ref":"#/definitions/FA"},"minecraft:onlypistonpush":{"$ref":"#/definitions/FB"},"minecraft:pick_collision":{"$ref":"#/definitions/FC"},"minecraft:placement_filter":{"$ref":"#/definitions/FD"},"minecraft:preventsjumping":{"$ref":"#/definitions/FE"},"minecraft:random_ticking":{"$ref":"#/definitions/FF"},"minecraft:rotation":{"$ref":"#/definitions/FG"},"minecraft:ticking":{"$ref":"#/definitions/FH"},"minecraft:unit_cube":{"$ref":"#/definitions/FI"},"minecraft:unwalkable":{"$ref":"#/definitions/FJ"}}},"events":{"$ref":"#/definitions/GA"}}}}},"HH":{"type":"object","title":"On fall on","description":"Describes event for this block.","properties":{"condition":{"type":"string","default":"","description":"The condition of event to be executed on the block.","title":"Condition"},"event":{"type":"string","default":"","description":"The event executed on the block.","title":"Event"},"min_fall_distance":{"type":"number","default":0,"description":"The minimum distance in blocks that an actor needs to fall to trigger this event.","title":"Min fall distance"},"target":{"type":"string","default":"self","description":"The target of event executed on the block.","title":"Target"}}},"HI":{"type":"object","title":"On fall on","description":"Describes event for this block.","properties":{"condition":{"type":"string","default":"","description":"The condition of event to be executed on the block.","title":"Condition"},"event":{"type":"string","default":"","description":"The event executed on the block.","title":"Event"},"target":{"type":"string","default":"self","description":"The target of event executed on the block.","title":"Target"}}},"HJ":{"type":"object","title":"On placed 1.16.200","description":"Describes event for this block.","properties":{"condition":{"type":"string","default":"","description":"The condition of event to be executed on the block.","title":"Condition"},"event":{"type":"string","default":"","description":"The event executed on the block.","title":"Event"},"target":{"type":"string","default":"self","description":"The target of event executed on the block.","title":"Target"}}},"IA":{"type":"object","title":"On player destroyed 1.16.200","description":"Describes event for this block.","properties":{"condition":{"type":"string","default":"","description":"The condition of event to be executed on the block.","title":"Condition"},"event":{"type":"string","default":"","description":"The event executed on the block.","title":"Event"},"target":{"type":"string","default":"self","description":"The target of event executed on the block.","title":"Target"}}},"IB":{"type":"object","title":"On player placing 1.16.200","description":"Describes event for this block.","properties":{"condition":{"type":"string","default":"","description":"The condition of event to be executed on the block.","title":"Condition"},"event":{"type":"string","default":"","description":"The event executed on the block.","title":"Event"},"target":{"type":"string","default":"self","description":"The target of event executed on the block.","title":"Target"}}},"IC":{"type":"object","title":"On step off 1.16.200","description":"Describes event for this block.","properties":{"condition":{"type":"string","default":"","description":"The condition of event to be executed on the block.","title":"Condition"},"event":{"type":"string","default":"","description":"The event executed on the block.","title":"Event"},"target":{"type":"string","default":"self","description":"The target of event executed on the block.","title":"Target"}}},"ID":{"type":"object","title":"On step on 1.16.200","description":"Describes event for this block.","properties":{"condition":{"type":"string","default":"","description":"The condition of event to be executed on the block.","title":"Condition"},"event":{"type":"string","default":"","description":"The event executed on the block.","title":"Event"},"target":{"type":"string","default":"self","description":"The target of event executed on the block.","title":"Target"}}},"IE":{"additionalProperties":false,"type":"integer","title":"Block light absorption 1.16.200","description":"The amount of light this block will absorb.","default":0},"IF":{"additionalProperties":false,"type":"number","title":"Block light emission 1.16.200","description":"The amount of light this block will emit in a range [0.0, 1.0].","minimum":0,"maximum":1,"default":0.0},"IG":{"additionalProperties":false,"type":"boolean","title":"Break on push 1.16.200","description":"When pushed by a piston the block breaks."},"IH":{"additionalProperties":false,"type":"string","title":"Breathability 1.16.200","description":"Property describing the breathability of this block and whether it is treated as a solid or as air.","enum":["solid","air"],"default":"solid"},"II":{"additionalProperties":false,"type":"number","title":"Destroy time 1.16.200","description":"Sets the destroy time property for the block. Greater numbers result in greater mining times."},"IJ":{"additionalProperties":false,"type":"string","title":"Display name 1.16.200","description":"Specifies the display name id for the block."},"JA":{"additionalProperties":false,"title":"Entity collision 1.16.200","description":"Can only be set to false, it disables the collision of the block with entities.","oneOf":[{"type":"boolean","const":false},{"type":"object","additionalProperties":false,"properties":{"origin":{"type":"array","title":"Origin","description":"Minimal position Bounds of the collision box","default":[-8.0,0.0,-8.0],"items":[{"type":"number","title":"X","description":"The x offset"},{"type":"number","title":"Y","description":"The y offset"},{"type":"number","title":"Z","description":"The z offset"}]},"size":{"type":"array","title":"Size","description":"Size of each side of the box of the component","default":[16.0,16.0,16.0],"items":[{"type":"number","title":"X","description":"The x size"},{"type":"number","title":"Y","description":"The y size"},{"type":"number","title":"Z","description":"The z size"}]}}}]},"JB":{"additionalProperties":false,"type":"number","title":"Explosion resistance 1.16.200","description":"Sets the explosion resistance for this block.","default":0.0},"JC":{"additionalProperties":false,"type":"object","title":"Flammable 1.16.200","description":"Describes the flammable properties for this block.","additionalItems":false,"properties":{"burn_odds":{"type":"integer","default":0,"description":"How likely the block will be destroyed by flames when on fire.","title":"Burn odds"},"flame_odds":{"type":"integer","default":0,"description":"How likely the block will catch flame when next to a fire.","title":"Flame odds"}}},"JD":{"additionalProperties":false,"type":"number","title":"Friction 1.16.200","description":"Property describing the friction for this block. Friction effects an entities movements when it walks on the block.","default":0.1},"JE":{"additionalProperties":false,"type":"string","title":"Geometry 1.16.200","description":"The geometry definition name to use.","pattern":"^geometry\\.[a-zA-Z0-9_\\-\\.]+$"},"JF":{"additionalProperties":false,"type":"boolean","title":"Immovable 1.16.200","description":"An Immovable block cannot be pushed by pistons"},"JG":{"additionalProperties":false,"type":"string","title":"Map color 1.16.200","description":"A color represented as a hex value. This will be the color rendered to a map.","format":"color-hex"},"JH_material_instance":{"title":"Material instance","description":"A single material instance","additionalProperties":false,"properties":{"ambient_occlusion":{"title":"Ambient occlusion","type":"boolean","description":"UNDOCUMENTATED"},"face_dimming":{"title":"Face dimming","type":"boolean","description":"UNDOCUMENTATED"},"render_method":{"type":"string","title":"Render method","description":"TODO description","enum":["blend","opaque","alpha_test"]},"texture":{"type":"string","title":"Texture","description":"TODO description"}}},"JH":{"type":"object","title":"Material instances 1.16.200","description":"Maps face or material_instance names in a geometry file to an actual material instance. Material instance can either be a full material instance or a name to another already defined instance","properties":{"*":{"$ref":"#/definitions/JH_material_instance"}},"additionalProperties":{"$ref":"#/definitions/JH_material_instance"}},"JI":{"type":"boolean","title":"Only piston push 1.16.200","description":"Blocks with those components won't stick to stickyPistons"},"JJ":{"title":"Pick collision 1.16.200","description":"Can only be set to false, it disables the collision of the block with entities","oneOf":[{"type":"boolean","const":false},{"type":"object","additionalProperties":false,"properties":{"origin":{"type":"array","title":"Origin","description":"Minimal position Bounds of the collision box","default":[-8.0,0.0,-8.0],"items":[{"type":"number","title":"X","description":"The x offset"},{"type":"number","title":"Y","description":"The y offset"},{"type":"number","title":"Z","description":"The z offset"}]},"size":{"type":"array","title":"Size","description":"Size of each side of the box of the component","default":[16.0,16.0,16.0],"items":[{"type":"number","title":"X","description":"The x size"},{"type":"number","title":"Y","description":"The y size"},{"type":"number","title":"Z","description":"The z size"}]}}}]},"BAA":{"title":"Placement filter 1.16.200","description":"Sets rules for under what conditions the block can be placed/survive","type":"object","properties":{"conditions":{"title":"Conditions","description":"List of conditions where the block can be placed/survive","type":"array","items":{"type":"object","title":"Condition","description":"TODO","properties":{"allowed_faces":{"title":"Allowed faces","description":"List of any of the following strings: up, down, north, south, east, west, side, all","type":"array","items":{"type":"string","enum":["up","down","north","south","east","west","side","all"]}},"block_filter":{"title":"Block filter","description":"List of blocks (can use tags to specify them) that this block can be placed against in the allowed_faces direction","type":"array","items":{"type":"string","title":"Block identifier","description":"TODO"}}}}}}},"BAB":{"title":"Prevents jumping 1.16.200","description":"This component makes it so actors can't jump when walking on this block","type":"boolean"},"BAC":{"title":"Random ticking 1.16.200","description":"Describes the component that will trigger an even at a regular interval between two values","type":"object","additionalProperties":false,"properties":{"on_tick":{"title":"On tick","description":"Describes the component that will trigger an even at a regular interval between two values","type":"string","additionalProperties":false,"properties":{"condition":{"title":"Condition","type":"string","default":"1","description":"The condition of event to be executed on the block. Molang"},"event":{"title":"Event","type":"string","default":"set_block_property","description":"The type of event executed on the block."},"range":{"title":"Range","type":"array","items":[{"type":"integer"},{"type":"integer"}]},"target":{"title":"Target","description":"The target of event executed on the block.","type":"string","enum":["block","damager","other","parent","player","self","target"]}}},"looping":{"type":"boolean","default":true,"description":"Does the event loop","title":"Looping"},"range":{"type":"array","default":[10,10],"description":"The Range between which the component will trigger his event.","title":"Range"}}},"BAD":{"title":"Rotation 1.16.200","description":"This is the block's rotation around the center of the cube in degrees. The rotation order is x-y-z.","type":"array","additionalProperties":false,"items":[{"type":"number","title":"X"},{"type":"number","title":"Y"},{"type":"number","title":"Z"}]},"BAE":{"title":"Ticking 1.16.200","description":"Describes the component that will trigger an even at a regular interval between two values","type":"object","additionalProperties":false,"properties":{"looping":{"type":"boolean","title":"Looping","description":"Does the event loop"},"range":{"title":"Range","description":"The Range between which the component will trigger his event.","type":"array","items":[{"type":"integer"},{"type":"integer"}]},"on_tick":{"type":"object","title":"On Tick","description":"Describes the component that will trigger an even at a regular interval between two values","condition":{"title":"Condition","type":"string","description":"The condition of event to be executed on the block. Molang"},"event":{"title":"Event","type":"string","description":"The type of event executed on the block."},"target":{"title":"Target","description":"The target of event executed on the block.","type":"string","enum":["block","damager","other","parent","player","self","target"]}}}},"BAF":{"title":"Unit cube 1.16.200","description":"Specifies that a unit cube is to be used with tessellation.","type":"string"},"BAG":{"title":"Unwalkable 1.16.200","description":"this component sets a block as unwalkable. Most mobs will not try to jump over it if the value is set to true","type":"boolean"},"BAH_event_base":{"title":"Event","description":"UNDOCUMENTATED","type":"object","additionalProperties":false,"properties":{"sequence":{"title":"Sequence","description":"UNDOCUMENTATED","type":"array","items":{"title":"Sequence","description":"UNDOCUMENTATED","type":"object","$ref":"#/definitions/BAH_event_functions"}},"randomize":{"title":"Randomize","description":"UNDOCUMENTATED","type":"array","items":{"title":"Randomize","description":"UNDOCUMENTATED","type":"object","$ref":"#/definitions/BAH_event_functions","required":["weight"],"properties":{"weight":{"title":"Weight","description":"UNDOCUMENTATED","type":"integer","minimum":0}}}},"add_mob_effect":{"$ref":"#/definitions/BAI"},"damage":{"$ref":"#/definitions/BAJ"},"decrement_stack":{"$ref":"#/definitions/BBA"},"die":{"$ref":"#/definitions/BBB"},"play_effect":{"$ref":"#/definitions/BBC"},"play_sound":{"$ref":"#/definitions/BBD"},"remove_mob_effect":{"$ref":"#/definitions/BBE"},"run_command":{"$ref":"#/definitions/BBF"},"set_block":{"$ref":"#/definitions/BBG"},"set_block_at_pos":{"$ref":"#/definitions/BBH"},"set_block_property":{"$ref":"#/definitions/BBI"},"spawn_loot":{"$ref":"#/definitions/BBJ"},"swing":{"$ref":"#/definitions/BCA"},"teleport":{"$ref":"#/definitions/BCB"},"transform_item":{"$ref":"#/definitions/BCC"}}},"BAH_event_functions":{"title":"Event","description":"UNDOCUMENTATED","type":"object","properties":{"add_mob_effect":{"$ref":"#/definitions/BAI"},"damage":{"$ref":"#/definitions/BAJ"},"decrement_stack":{"$ref":"#/definitions/BBA"},"die":{"$ref":"#/definitions/BBB"},"play_effect":{"$ref":"#/definitions/BBC"},"play_sound":{"$ref":"#/definitions/BBD"},"remove_mob_effect":{"$ref":"#/definitions/BBE"},"run_command":{"$ref":"#/definitions/BBF"},"set_block":{"$ref":"#/definitions/BBG"},"set_block_at_pos":{"$ref":"#/definitions/BBH"},"set_block_property":{"$ref":"#/definitions/BBI"},"spawn_loot":{"$ref":"#/definitions/BBJ"},"swing":{"$ref":"#/definitions/BCA"},"teleport":{"$ref":"#/definitions/BCB"},"transform_item":{"$ref":"#/definitions/BCC"}}},"BAI":{"type":"object","description":"Apply mob effect to target.","title":"Add mob effect 1.16.200","additionalProperties":false,"properties":{"amplifier":{"type":"integer","default":0,"description":"The amplifier for the mob effect.","title":"Amplifier"},"duration":{"type":"number","default":0,"description":"The duration of the mob effect.","title":"Duration"},"effect":{"type":"string","default":"","description":"The mob effect to apply.","title":"Effect"},"target":{"type":"object","default":"self","description":"The target context to execute against.","title":"Target"}}},"BAJ":{"type":"object","description":"Deals damage to the target.","title":"Damage 1.16.200","additionalProperties":false,"properties":{"amount":{"type":"integer","default":0,"description":"The amount of damage to deal.","title":"Amount"},"target":{"type":"object","default":"self","description":"The target context to execute against.","title":"Target"},"type":{"type":"string","default":"","description":"The type of damage to deal.","title":"Type"}}},"BBA":{"type":"object","description":"Decrement item stack.","title":"Decrement stack 1.16.200","additionalProperties":false,"properties":{}},"BBB":{"type":"object","description":"Kill target. If target is self and this is run from a block then destroy the block.","title":"Die 1.16.200","additionalProperties":false,"properties":{"target":{"type":"object","default":"self","description":"The target context to execute against.","title":"Target"}}},"BBC":{"type":"object","description":"Spawns a particle effect relative to target position.","title":"Play effect 1.16.200","additionalProperties":false,"properties":{"data":{"type":"integer","default":0,"description":"Particle data value.","title":"Data"},"effect":{"type":"string","default":"","description":"The name of the particle effect to create.","title":"Effect"},"target":{"type":"object","default":"self","description":"The target context to execute against.","title":"Target"}}},"BBD":{"type":"object","description":"Play a sound relative to target position.","title":"Playsound 1.16.200","additionalProperties":false,"properties":{"sound":{"type":"string","default":"","description":"The name of the sound to play.","title":"Sound"},"target":{"type":"object","default":"self","description":"The target context to execute against.","title":"Target"}}},"BBE":{"type":"object","description":"Removes mob effect from target.","title":"Remove mob effect 1.16.200","additionalProperties":false,"properties":{"effect":{"type":"string","default":"","description":"The mob effect to remove. Use 'all' to remove all mob effects from target.","title":"Effect"},"target":{"type":"string","default":"self","description":"The target context to execute against.","title":"Target"}}},"BBF":{"type":"object","description":"Triggers a slash command or a list of slash commands.","title":"Run command 1.16.200","additionalProperties":false,"properties":{"command":{"default":"","description":"Slash command to run.","title":"Command","oneof":[{"type":"string"},{"type":"array","items":{"type":"string","title":"Command","description":"Slash command to run."}}]},"target":{"type":"string","default":"self","description":"The target context to execute against.","title":"Target"}}},"BBG":{"type":"object","description":"Sets this block to another block type.","title":"Set block 1.16.200","additionalProperties":false,"properties":{"block_type":{"type":"string","default":"","description":"The type of block to set.","title":"Block type"}}},"BBH":{"type":"object","description":"Sets a block relative to this block to another block type.","title":"Set block at pos 1.16.200","additionalProperties":false,"properties":{"block_offset":{"type":"array","default":[0.0,0.0,0.0],"description":"The offset from the block's center.","title":"Block offset","items":[{"type":"number","title":"X","description":"The x offset from the block's center."},{"type":"number","title":"Y","description":"The y offset from the block's center."},{"type":"number","title":"Z","description":"The z offset from the block's center."}]},"block_type":{"type":"string","default":"","description":"The type of block to set.","title":"Block type"}}},"BBI":{"type":"object","description":"Sets a block property on this block","title":"Set block property 1.16.200","additionalProperties":false,"properties":{"property":{"type":"string","description":"Block property to set on the block.","title":"Property"}}},"BBJ":{"type":"object","description":"Spawn loot from block.","title":"Spawn loot 1.16.200","required":["table"],"additionalProperties":false,"properties":{"table":{"type":"string","description":"File path, relative to the Behavior Pack's path, to the loot table file.","title":"Table"}}},"BCA":{"type":"object","description":"Event causes the actor to swing.","title":"Swing 1.16.200","additionalProperties":false,"properties":{}},"BCB":{"type":"object","description":"Teleport target randomly around destination point.","title":"Teleport 1.16.200","additionalProperties":false,"properties":{"avoid_water":{"type":"boolean","default":true,"description":"Determines if the teleport avoids putting the target in water.","title":"Avoid water"},"destination":{"default":[0.0,0.0,0.0],"description":"Origin destination of the teleport.","title":"Destination","items":[{"type":"number","title":"X","description":"The x offset from the block's center."},{"type":"number","title":"Y","description":"The y offset from the block's center."},{"type":"number","title":"Z","description":"The z offset from the block's center."}]},"land_on_block":{"type":"boolean","default":true,"description":"Determines if the teleport places the target on a block.","title":"Land on block"},"max_range":{"default":[8.0,8.0,8.0],"description":"Max range the target can teleport relative to the origin destination.","title":"Max range","items":[{"type":"number","title":"X","description":"The x offset from the block's center."},{"type":"number","title":"Y","description":"The y offset from the block's center."},{"type":"number","title":"Z","description":"The z offset from the block's center."}]},"target":{"type":"string","default":"self","description":"The target context to execute against.","title":"Target"}}},"BCC":{"type":"object","description":"Transforms item into another item.","title":"Transform item 1.16.200","additionalProperties":false,"properties":{"transform":{"type":"string","description":"Name of the item it should transform into","title":"Transform"}}},"BAH":{"title":"Events","description":"UNDOCUMENTATED","type":"object","properties":{"minecraft:on_interact":{"$ref":"#/definitions/BAH_event_base"},"minecraft:on_step_on":{"$ref":"#/definitions/BAH_event_base"},"minecraft:on_step_off":{"$ref":"#/definitions/BAH_event_base"},"minecraft:on_fall_on":{"$ref":"#/definitions/BAH_event_base"},"minecraft:on_placed":{"$ref":"#/definitions/BAH_event_base"},"minecraft:on_player_placing":{"$ref":"#/definitions/BAH_event_base"},"minecraft:on_player_destroyed":{"$ref":"#/definitions/BAH_event_base"},"minecraft:ticking":{"$ref":"#/definitions/BAH_event_base"},"minecraft:random_ticking":{"$ref":"#/definitions/BAH_event_base"}},"additionalProperties":{"oneOf":[{"$ref":"#/definitions/BAH_event_base"},{"$ref":"#/definitions/BAH_event_functions"}]}},"HG":{"description":"Minecraft blocks 1.16.200","required":["format_version","minecraft:block"],"title":"Block","type":"object","additionalProperties":false,"properties":{"format_version":{"title":"The 1.16.200 format version","type":"string","const":"1.16.200","description":"A version that tells minecraft what type of data format can be expected when reading this file."},"minecraft:block":{"title":"Block definitions","description":"A custom block definition","type":"object","additionalProperties":false,"required":["description","components"],"properties":{"description":{"title":"Block description","description":"The description for this block","type":"object","additionalProperties":false,"required":["identifier"],"properties":{"identifier":{"type":"string","description":"The identifier for this block. The name must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla block.","title":"Identifier","$ref":"#/definitions/B"},"is_experimental":{"type":"boolean","default":false,"description":"If this block is experimental, it will only be registered if the world is marked as experimantal.","title":"Is experimental"},"register_to_creative_menu":{"type":"boolean","default":false,"description":"Whether or not to register this block to the creative inventory menu.","title":"Register to creative menu"},"properties":{"title":"Properties","description":"UNDOCUMENATED","propertyNames":{"pattern":"%([a-zA-Z0-9_]+:[a-zA-Z0-9_\\-]+)&"},"additionalProperties":{"oneOf":[{"type":"array","oneOf":[{"type":"boolean"},{"type":"number"},{"type":"integer"},{"type":"string"}]},{"type":"object"}]}}}},"components":{"type":"object","title":"Component","description":"","properties":{"minecraft:on_fall_on":{"$ref":"#/definitions/HH"},"minecraft:on_interact":{"$ref":"#/definitions/HI"},"minecraft:on_placed":{"$ref":"#/definitions/HJ"},"minecraft:on_player_destroyed":{"$ref":"#/definitions/IA"},"minecraft:on_player_placing":{"$ref":"#/definitions/IB"},"minecraft:on_step_off":{"$ref":"#/definitions/IC"},"minecraft:on_step_on":{"$ref":"#/definitions/ID"},"minecraft:block_light_absorption":{"$ref":"#/definitions/IE"},"minecraft:block_light_emission":{"$ref":"#/definitions/IF"},"minecraft:breakonpush":{"$ref":"#/definitions/IG"},"minecraft:breathability":{"$ref":"#/definitions/IH"},"minecraft:destroy_time":{"$ref":"#/definitions/II"},"minecraft:display_name":{"$ref":"#/definitions/IJ"},"minecraft:entity_collision":{"$ref":"#/definitions/JA"},"minecraft:explosion_resistance":{"$ref":"#/definitions/JB"},"minecraft:flammable":{"$ref":"#/definitions/JC"},"minecraft:friction":{"$ref":"#/definitions/JD"},"minecraft:geometry":{"$ref":"#/definitions/JE"},"minecraft:immovable":{"$ref":"#/definitions/JF"},"minecraft:map_color":{"$ref":"#/definitions/JG"},"minecraft:material_instances":{"$ref":"#/definitions/JH"},"minecraft:onlypistonpush":{"$ref":"#/definitions/JI"},"minecraft:pick_collision":{"$ref":"#/definitions/JJ"},"minecraft:placement_filter":{"$ref":"#/definitions/BAA"},"minecraft:preventsjumping":{"$ref":"#/definitions/BAB"},"minecraft:random_ticking":{"$ref":"#/definitions/BAC"},"minecraft:rotation":{"$ref":"#/definitions/BAD"},"minecraft:ticking":{"$ref":"#/definitions/BAE"},"minecraft:unit_cube":{"$ref":"#/definitions/BAF"},"minecraft:unwalkable":{"$ref":"#/definitions/BAG"}}},"events":{"$ref":"#/definitions/BAH"}}}}}}}
+﻿{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.blocks",
+  "examples": [
+    {
+      "format_version": "1.16.200",
+      "minecraft:block": { "description": { "identifier": "namespace:block", "properties": {} }, "components": {}, "events": {} }
+    }
+  ],
+  "allOf": [
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.10" } } }, "then": { "$ref": "#/definitions/A" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.10.0" } } }, "then": { "$ref": "#/definitions/A" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.12.0" } } }, "then": { "$ref": "#/definitions/CH" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.16.0" } } }, "then": { "$ref": "#/definitions/CI" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.16.100" } } }, "then": { "$ref": "#/definitions/CJ" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.16.200" } } }, "then": { "$ref": "#/definitions/HG" } }
+  ],
+  "definitions": {
+    "B": {
+      "type": "string",
+      "title": "The minecraft block identifier 1.8.0",
+      "description": "The minecraft block identifier",
+      "pattern": "^[0-9a-zA-Z:_\\.\\-]+$"
+    },
+    "D": {
+      "additionalProperties": false,
+      "type": "integer",
+      "title": "Block light absorption 1.10.0",
+      "description": "The amount of light this block will absorb.",
+      "default": 0
+    },
+    "E": {
+      "additionalProperties": false,
+      "type": "number",
+      "title": "Block light emission 1.10.0",
+      "description": "The amount of light this block will emit in a range [0.0, 1.0].",
+      "minimum": 0,
+      "maximum": 1,
+      "default": 0.0
+    },
+    "F": {
+      "additionalProperties": false,
+      "type": "boolean",
+      "title": "Break on push 1.10.0",
+      "description": "When pushed by a piston the block breaks."
+    },
+    "G": {
+      "additionalProperties": false,
+      "type": "string",
+      "title": "Breathability 1.10.0",
+      "description": "Property describing the breathability of this block and whether it is treated as a solid or as air.",
+      "enum": ["solid", "air"],
+      "default": "solid"
+    },
+    "H": {
+      "additionalProperties": false,
+      "type": "number",
+      "title": "Destroy time 1.10.0",
+      "description": "Sets the destroy time property for the block. Greater numbers result in greater mining times."
+    },
+    "I": {
+      "additionalProperties": false,
+      "type": "string",
+      "title": "Display name 1.10.0",
+      "description": "Specifies the display name id for the block."
+    },
+    "J": {
+      "additionalProperties": false,
+      "title": "Entity collision 1.10.0",
+      "description": "Can only be set to false, it disables the collision of the block with entities.",
+      "oneOf": [
+        { "type": "boolean", "const": false },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "origin": {
+              "type": "array",
+              "title": "Origin",
+              "description": "Minimal position Bounds of the collision box",
+              "default": [-8.0, 0.0, -8.0],
+              "items": [
+                { "type": "number", "title": "X", "description": "The x offset" },
+                { "type": "number", "title": "Y", "description": "The y offset" },
+                { "type": "number", "title": "Z", "description": "The z offset" }
+              ]
+            },
+            "size": {
+              "type": "array",
+              "title": "Size",
+              "description": "Size of each side of the box of the component",
+              "default": [16.0, 16.0, 16.0],
+              "items": [
+                { "type": "number", "title": "X", "description": "The x size" },
+                { "type": "number", "title": "Y", "description": "The y size" },
+                { "type": "number", "title": "Z", "description": "The z size" }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "BA": {
+      "additionalProperties": false,
+      "type": "number",
+      "title": "Explosion resistance 1.10.0",
+      "description": "Sets the explosion resistance for this block.",
+      "default": 0.0
+    },
+    "BB": {
+      "additionalProperties": false,
+      "type": "object",
+      "title": "Flammable 1.10.0",
+      "description": "Describes the flammable properties for this block.",
+      "additionalItems": false,
+      "properties": {
+        "burn_odds": {
+          "type": "integer",
+          "default": 0,
+          "description": "How likely the block will be destroyed by flames when on fire.",
+          "title": "Burn odds"
+        },
+        "flame_odds": {
+          "type": "integer",
+          "default": 0,
+          "description": "How likely the block will catch flame when next to a fire.",
+          "title": "Flame odds"
+        }
+      }
+    },
+    "BC": {
+      "additionalProperties": false,
+      "type": "number",
+      "title": "Friction 1.10.0",
+      "description": "Property describing the friction for this block. Friction effects an entities movements when it walks on the block.",
+      "default": 0.1
+    },
+    "BD": {
+      "additionalProperties": false,
+      "type": "string",
+      "title": "Geometry 1.10.0",
+      "description": "The geometry definition name to use.",
+      "pattern": "^geometry\\.[a-zA-Z0-9_\\-\\.]+$"
+    },
+    "BE": {
+      "additionalProperties": false,
+      "type": "boolean",
+      "title": "Immovable 1.10.0",
+      "description": "An Immovable block cannot be pushed by pistons"
+    },
+    "BF": {
+      "additionalProperties": false,
+      "type": "string",
+      "title": "Loot 1.10.0",
+      "description": "The path of the loot table that this component will use when the block is destroyed.",
+      "pattern": "loot_tables/.*\\.json$"
+    },
+    "BG": {
+      "additionalProperties": false,
+      "type": "string",
+      "title": "Map color 1.10.0",
+      "description": "A color represented as a hex value. This will be the color rendered to a map.",
+      "format": "color-hex"
+    },
+    "BH_material_instance": {
+      "title": "Material instance",
+      "description": "A single material instance",
+      "additionalProperties": false,
+      "properties": {
+        "ambient_occlusion": { "title": "Ambient occlusion", "type": "boolean", "description": "UNDOCUMENTATED" },
+        "face_dimming": { "title": "Face dimming", "type": "boolean", "description": "UNDOCUMENTATED" },
+        "render_method": { "type": "string", "title": "Render method", "description": "TODO description", "enum": ["blend", "opaque", "alpha_test"] },
+        "texture": { "type": "string", "title": "Texture", "description": "TODO description" }
+      }
+    },
+    "BH": {
+      "type": "object",
+      "title": "Material instances 1.10.0",
+      "description": "Maps face or material_instance names in a geometry file to an actual material instance. Material instance can either be a full material instance or a name to another already defined instance",
+      "properties": { "*": { "$ref": "#/definitions/BH_material_instance" } },
+      "additionalProperties": { "$ref": "#/definitions/BH_material_instance" }
+    },
+    "BI": { "type": "boolean", "title": "Only piston push 1.10.0", "description": "Blocks with those components won't stick to stickyPistons" },
+    "BJ": {
+      "title": "Pick collision 1.10.0",
+      "description": "Can only be set to false, it disables the collision of the block with entities",
+      "oneOf": [
+        { "type": "boolean", "const": false },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "origin": {
+              "type": "array",
+              "title": "Origin",
+              "description": "Minimal position Bounds of the collision box",
+              "default": [-8.0, 0.0, -8.0],
+              "items": [
+                { "type": "number", "title": "X", "description": "The x offset" },
+                { "type": "number", "title": "Y", "description": "The y offset" },
+                { "type": "number", "title": "Z", "description": "The z offset" }
+              ]
+            },
+            "size": {
+              "type": "array",
+              "title": "Size",
+              "description": "Size of each side of the box of the component",
+              "default": [16.0, 16.0, 16.0],
+              "items": [
+                { "type": "number", "title": "X", "description": "The x size" },
+                { "type": "number", "title": "Y", "description": "The y size" },
+                { "type": "number", "title": "Z", "description": "The z size" }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "CA": {
+      "title": "Placement filter 1.10.0",
+      "description": "Sets rules for under what conditions the block can be placed/survive",
+      "type": "object",
+      "properties": {
+        "conditions": {
+          "title": "Conditions",
+          "description": "List of conditions where the block can be placed/survive",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "title": "Condition",
+            "description": "TODO",
+            "properties": {
+              "allowed_faces": {
+                "title": "Allowed faces",
+                "description": "List of any of the following strings: up, down, north, south, east, west, side, all",
+                "type": "array",
+                "items": { "type": "string", "enum": ["up", "down", "north", "south", "east", "west", "side", "all"] }
+              },
+              "block_filter": {
+                "title": "Block filter",
+                "description": "List of blocks (can use tags to specify them) that this block can be placed against in the allowed_faces direction",
+                "type": "array",
+                "items": { "type": "string", "title": "Block identifier", "description": "TODO" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "CB": {
+      "title": "Prevents jumping 1.10.0",
+      "description": "This component makes it so actors can't jump when walking on this block",
+      "type": "boolean"
+    },
+    "CC": {
+      "title": "Random ticking 1.10.0",
+      "description": "Describes the component that will trigger an even at a regular interval between two values",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "on_tick": {
+          "title": "On tick",
+          "description": "Describes the component that will trigger an even at a regular interval between two values",
+          "type": "string",
+          "additionalProperties": false,
+          "properties": {
+            "condition": { "title": "Condition", "type": "string", "description": "The condition of event to be executed on the block. Molang" },
+            "event": { "title": "Event", "type": "string", "description": "The type of event executed on the block." },
+            "range": { "title": "Range", "type": "array", "items": [{ "type": "integer" }, { "type": "integer" }] },
+            "target": {
+              "title": "Target",
+              "description": "The target of event executed on the block.",
+              "type": "string",
+              "enum": ["block", "damager", "other", "parent", "player", "self", "target"]
+            }
+          }
+        }
+      }
+    },
+    "CD": {
+      "title": "Rotation 1.10.0",
+      "description": "This is the block's rotation around the center of the cube in degrees. The rotation order is x-y-z.",
+      "type": "array",
+      "additionalProperties": false,
+      "items": [
+        { "type": "number", "title": "X" },
+        { "type": "number", "title": "Y" },
+        { "type": "number", "title": "Z" }
+      ]
+    },
+    "CE": {
+      "title": "Ticking 1.10.0",
+      "description": "Describes the component that will trigger an even at a regular interval between two values",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "looping": { "type": "boolean", "title": "Looping", "description": "Does the event loop" },
+        "range": {
+          "title": "Range",
+          "description": "The Range between which the component will trigger his event.",
+          "type": "array",
+          "items": [{ "type": "integer" }, { "type": "integer" }]
+        },
+        "on_tick": {
+          "type": "object",
+          "title": "On Tick",
+          "description": "Describes the component that will trigger an even at a regular interval between two values",
+          "condition": { "title": "Condition", "type": "string", "description": "The condition of event to be executed on the block. Molang" },
+          "event": { "title": "Event", "type": "string", "description": "The type of event executed on the block." },
+          "target": {
+            "title": "Target",
+            "description": "The target of event executed on the block.",
+            "type": "string",
+            "enum": ["block", "damager", "other", "parent", "player", "self", "target"]
+          }
+        }
+      }
+    },
+    "CF": { "title": "Unit cube 1.10.0", "description": "Specifies that a unit cube is to be used with tessellation.", "type": "string" },
+    "CG": {
+      "title": "Unwalkable 1.10.0",
+      "description": "this component sets a block as unwalkable. Most mobs will not try to jump over it if the value is set to true",
+      "type": "boolean"
+    },
+    "C": {
+      "title": "Components",
+      "description": "The components of that define this block",
+      "required": [],
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "minecraft:block_light_absorption": { "$ref": "#/definitions/D" },
+        "minecraft:block_light_emission": { "$ref": "#/definitions/E" },
+        "minecraft:breakonpush": { "$ref": "#/definitions/F" },
+        "minecraft:breathability": { "$ref": "#/definitions/G" },
+        "minecraft:destroy_time": { "$ref": "#/definitions/H" },
+        "minecraft:display_name": { "$ref": "#/definitions/I" },
+        "minecraft:entity_collision": { "$ref": "#/definitions/J" },
+        "minecraft:explosion_resistance": { "$ref": "#/definitions/BA" },
+        "minecraft:flammable": { "$ref": "#/definitions/BB" },
+        "minecraft:friction": { "$ref": "#/definitions/BC" },
+        "minecraft:geometry": { "$ref": "#/definitions/BD" },
+        "minecraft:immovable": { "$ref": "#/definitions/BE" },
+        "minecraft:loot": { "$ref": "#/definitions/BF" },
+        "minecraft:map_color": { "$ref": "#/definitions/BG" },
+        "minecraft:material_instances": { "$ref": "#/definitions/BH" },
+        "minecraft:onlypistonpush": { "$ref": "#/definitions/BI" },
+        "minecraft:pick_collision": { "$ref": "#/definitions/BJ" },
+        "minecraft:placement_filter": { "$ref": "#/definitions/CA" },
+        "minecraft:preventsjumping": { "$ref": "#/definitions/CB" },
+        "minecraft:random_ticking": { "$ref": "#/definitions/CC" },
+        "minecraft:rotation": { "$ref": "#/definitions/CD" },
+        "minecraft:ticking": { "$ref": "#/definitions/CE" },
+        "minecraft:unit_cube": { "$ref": "#/definitions/CF" },
+        "minecraft:unwalkable": { "$ref": "#/definitions/CG" }
+      }
+    },
+    "A": {
+      "description": "Minecraft blocks 1.10.0",
+      "required": ["format_version", "minecraft:block"],
+      "title": "Block",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "format_version": {
+          "title": "The 1.10.0 format version",
+          "type": "string",
+          "const": "1.10.0",
+          "description": "A version that tells minecraft what type of data format can be expected when reading this file."
+        },
+        "minecraft:block": {
+          "title": "Block definitions",
+          "description": "A custom block definition",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["description", "components"],
+          "properties": {
+            "description": {
+              "title": "Block description",
+              "description": "The description for this block",
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["identifier"],
+              "properties": {
+                "identifier": {
+                  "type": "string",
+                  "description": "The identifier for this block. The name must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla block.",
+                  "title": "Identifier",
+                  "$ref": "#/definitions/B"
+                },
+                "is_experimental": {
+                  "type": "boolean",
+                  "default": false,
+                  "description": "If this block is experimental, it will only be registered if the world is marked as experimantal.",
+                  "title": "Is experimental"
+                },
+                "register_to_creative_menu": {
+                  "type": "boolean",
+                  "default": false,
+                  "description": "Whether or not to register this block to the creative inventory menu.",
+                  "title": "Register to creative menu"
+                }
+              }
+            },
+            "components": { "$ref": "#/definitions/C" }
+          }
+        }
+      }
+    },
+    "CH": {
+      "description": "Minecraft blocks 1.12.0",
+      "required": ["format_version", "minecraft:block"],
+      "title": "Block",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "format_version": {
+          "title": "The 1.12.0 format version",
+          "type": "string",
+          "const": "1.12.0",
+          "description": "A version that tells minecraft what type of data format can be expected when reading this file."
+        },
+        "minecraft:block": {
+          "title": "Block definitions",
+          "description": "A custom block definition",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["description", "components"],
+          "properties": {
+            "description": {
+              "title": "Block description",
+              "description": "The description for this block",
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["identifier"],
+              "properties": {
+                "identifier": {
+                  "type": "string",
+                  "description": "The identifier for this block. The name must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla block.",
+                  "title": "Identifier",
+                  "$ref": "#/definitions/B"
+                },
+                "is_experimental": {
+                  "type": "boolean",
+                  "default": false,
+                  "description": "If this block is experimental, it will only be registered if the world is marked as experimantal.",
+                  "title": "Is experimental"
+                },
+                "register_to_creative_menu": {
+                  "type": "boolean",
+                  "default": false,
+                  "description": "Whether or not to register this block to the creative inventory menu.",
+                  "title": "Register to creative menu"
+                }
+              }
+            },
+            "components": { "$ref": "#/definitions/C" }
+          }
+        }
+      }
+    },
+    "CI": {
+      "description": "Minecraft blocks 1.16.0",
+      "required": ["format_version", "minecraft:block"],
+      "title": "Block",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "format_version": {
+          "title": "The 1.16.0 format version",
+          "type": "string",
+          "const": "1.16.0",
+          "description": "A version that tells minecraft what type of data format can be expected when reading this file."
+        },
+        "minecraft:block": {
+          "title": "Block definitions",
+          "description": "A custom block definition",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["description", "components"],
+          "properties": {
+            "description": {
+              "title": "Block description",
+              "description": "The description for this block",
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["identifier"],
+              "properties": {
+                "identifier": {
+                  "type": "string",
+                  "description": "The identifier for this block. The name must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla block.",
+                  "title": "Identifier",
+                  "$ref": "#/definitions/B"
+                },
+                "is_experimental": {
+                  "type": "boolean",
+                  "default": false,
+                  "description": "If this block is experimental, it will only be registered if the world is marked as experimantal.",
+                  "title": "Is experimental"
+                },
+                "register_to_creative_menu": {
+                  "type": "boolean",
+                  "default": false,
+                  "description": "Whether or not to register this block to the creative inventory menu.",
+                  "title": "Register to creative menu"
+                }
+              }
+            },
+            "components": { "$ref": "#/definitions/C" }
+          }
+        }
+      }
+    },
+    "DA": {
+      "type": "object",
+      "title": "On fall on",
+      "description": "Describes event for this block.",
+      "properties": {
+        "condition": { "type": "string", "default": "", "description": "The condition of event to be executed on the block.", "title": "Condition" },
+        "event": { "type": "string", "default": "", "description": "The event executed on the block.", "title": "Event" },
+        "min_fall_distance": {
+          "type": "number",
+          "default": 0,
+          "description": "The minimum distance in blocks that an actor needs to fall to trigger this event.",
+          "title": "Min fall distance"
+        },
+        "target": { "type": "string", "default": "self", "description": "The target of event executed on the block.", "title": "Target" }
+      }
+    },
+    "DB": {
+      "type": "object",
+      "title": "On fall on",
+      "description": "Describes event for this block.",
+      "properties": {
+        "condition": { "type": "string", "default": "", "description": "The condition of event to be executed on the block.", "title": "Condition" },
+        "event": { "type": "string", "default": "", "description": "The event executed on the block.", "title": "Event" },
+        "target": { "type": "string", "default": "self", "description": "The target of event executed on the block.", "title": "Target" }
+      }
+    },
+    "DC": {
+      "type": "object",
+      "title": "On placed 1.16.100",
+      "description": "Describes event for this block.",
+      "properties": {
+        "condition": { "type": "string", "default": "", "description": "The condition of event to be executed on the block.", "title": "Condition" },
+        "event": { "type": "string", "default": "", "description": "The event executed on the block.", "title": "Event" },
+        "target": { "type": "string", "default": "self", "description": "The target of event executed on the block.", "title": "Target" }
+      }
+    },
+    "DD": {
+      "type": "object",
+      "title": "On player destroyed 1.16.100",
+      "description": "Describes event for this block.",
+      "properties": {
+        "condition": { "type": "string", "default": "", "description": "The condition of event to be executed on the block.", "title": "Condition" },
+        "event": { "type": "string", "default": "", "description": "The event executed on the block.", "title": "Event" },
+        "target": { "type": "string", "default": "self", "description": "The target of event executed on the block.", "title": "Target" }
+      }
+    },
+    "DE": {
+      "type": "object",
+      "title": "On player placing 1.16.100",
+      "description": "Describes event for this block.",
+      "properties": {
+        "condition": { "type": "string", "default": "", "description": "The condition of event to be executed on the block.", "title": "Condition" },
+        "event": { "type": "string", "default": "", "description": "The event executed on the block.", "title": "Event" },
+        "target": { "type": "string", "default": "self", "description": "The target of event executed on the block.", "title": "Target" }
+      }
+    },
+    "DF": {
+      "type": "object",
+      "title": "On step off 1.16.100",
+      "description": "Describes event for this block.",
+      "properties": {
+        "condition": { "type": "string", "default": "", "description": "The condition of event to be executed on the block.", "title": "Condition" },
+        "event": { "type": "string", "default": "", "description": "The event executed on the block.", "title": "Event" },
+        "target": { "type": "string", "default": "self", "description": "The target of event executed on the block.", "title": "Target" }
+      }
+    },
+    "DG": {
+      "type": "object",
+      "title": "On step on 1.16.100",
+      "description": "Describes event for this block.",
+      "properties": {
+        "condition": { "type": "string", "default": "", "description": "The condition of event to be executed on the block.", "title": "Condition" },
+        "event": { "type": "string", "default": "", "description": "The event executed on the block.", "title": "Event" },
+        "target": { "type": "string", "default": "self", "description": "The target of event executed on the block.", "title": "Target" }
+      }
+    },
+    "DH": {
+      "additionalProperties": false,
+      "type": "integer",
+      "title": "Block light absorption 1.16.100",
+      "description": "The amount of light this block will absorb.",
+      "default": 0
+    },
+    "DI": {
+      "additionalProperties": false,
+      "type": "number",
+      "title": "Block light emission 1.16.100",
+      "description": "The amount of light this block will emit in a range [0.0, 1.0].",
+      "minimum": 0,
+      "maximum": 1,
+      "default": 0.0
+    },
+    "DJ": {
+      "additionalProperties": false,
+      "type": "boolean",
+      "title": "Break on push 1.16.100",
+      "description": "When pushed by a piston the block breaks."
+    },
+    "EA": {
+      "additionalProperties": false,
+      "type": "string",
+      "title": "Breathability 1.16.100",
+      "description": "Property describing the breathability of this block and whether it is treated as a solid or as air.",
+      "enum": ["solid", "air"],
+      "default": "solid"
+    },
+    "EB": {
+      "additionalProperties": false,
+      "type": "number",
+      "title": "Destroy time 1.16.100",
+      "description": "Sets the destroy time property for the block. Greater numbers result in greater mining times."
+    },
+    "EC": {
+      "additionalProperties": false,
+      "type": "string",
+      "title": "Display name 1.16.100",
+      "description": "Specifies the display name id for the block."
+    },
+    "ED": {
+      "additionalProperties": false,
+      "title": "Entity collision 1.16.100",
+      "description": "Can only be set to false, it disables the collision of the block with entities.",
+      "oneOf": [
+        { "type": "boolean", "const": false },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "origin": {
+              "type": "array",
+              "title": "Origin",
+              "description": "Minimal position Bounds of the collision box",
+              "default": [-8.0, 0.0, -8.0],
+              "items": [
+                { "type": "number", "title": "X", "description": "The x offset" },
+                { "type": "number", "title": "Y", "description": "The y offset" },
+                { "type": "number", "title": "Z", "description": "The z offset" }
+              ]
+            },
+            "size": {
+              "type": "array",
+              "title": "Size",
+              "description": "Size of each side of the box of the component",
+              "default": [16.0, 16.0, 16.0],
+              "items": [
+                { "type": "number", "title": "X", "description": "The x size" },
+                { "type": "number", "title": "Y", "description": "The y size" },
+                { "type": "number", "title": "Z", "description": "The z size" }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "EE": {
+      "additionalProperties": false,
+      "type": "number",
+      "title": "Explosion resistance 1.16.100",
+      "description": "Sets the explosion resistance for this block.",
+      "default": 0.0
+    },
+    "EF": {
+      "additionalProperties": false,
+      "type": "object",
+      "title": "Flammable 1.16.100",
+      "description": "Describes the flammable properties for this block.",
+      "additionalItems": false,
+      "properties": {
+        "burn_odds": {
+          "type": "integer",
+          "default": 0,
+          "description": "How likely the block will be destroyed by flames when on fire.",
+          "title": "Burn odds"
+        },
+        "flame_odds": {
+          "type": "integer",
+          "default": 0,
+          "description": "How likely the block will catch flame when next to a fire.",
+          "title": "Flame odds"
+        }
+      }
+    },
+    "EG": {
+      "additionalProperties": false,
+      "type": "number",
+      "title": "Friction 1.16.100",
+      "description": "Property describing the friction for this block. Friction effects an entities movements when it walks on the block.",
+      "default": 0.1
+    },
+    "EH": {
+      "additionalProperties": false,
+      "type": "string",
+      "title": "Geometry 1.16.100",
+      "description": "The geometry definition name to use.",
+      "pattern": "^geometry\\.[a-zA-Z0-9_\\-\\.]+$"
+    },
+    "EI": {
+      "additionalProperties": false,
+      "type": "boolean",
+      "title": "Immovable 1.16.100",
+      "description": "An Immovable block cannot be pushed by pistons"
+    },
+    "EJ": {
+      "additionalProperties": false,
+      "type": "string",
+      "title": "Map color 1.16.100",
+      "description": "A color represented as a hex value. This will be the color rendered to a map.",
+      "format": "color-hex"
+    },
+    "FA_material_instance": {
+      "title": "Material instance",
+      "description": "A single material instance",
+      "additionalProperties": false,
+      "properties": {
+        "ambient_occlusion": { "title": "Ambient occlusion", "type": "boolean", "description": "UNDOCUMENTATED" },
+        "face_dimming": { "title": "Face dimming", "type": "boolean", "description": "UNDOCUMENTATED" },
+        "render_method": { "type": "string", "title": "Render method", "description": "TODO description", "enum": ["blend", "opaque", "alpha_test"] },
+        "texture": { "type": "string", "title": "Texture", "description": "TODO description" }
+      }
+    },
+    "FA": {
+      "type": "object",
+      "title": "Material instances 1.16.100",
+      "description": "Maps face or material_instance names in a geometry file to an actual material instance. Material instance can either be a full material instance or a name to another already defined instance",
+      "properties": { "*": { "$ref": "#/definitions/FA_material_instance" } },
+      "additionalProperties": { "$ref": "#/definitions/FA_material_instance" }
+    },
+    "FB": { "type": "boolean", "title": "Only piston push 1.16.100", "description": "Blocks with those components won't stick to stickyPistons" },
+    "FC": {
+      "title": "Pick collision 1.16.100",
+      "description": "Can only be set to false, it disables the collision of the block with entities",
+      "oneOf": [
+        { "type": "boolean", "const": false },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "origin": {
+              "type": "array",
+              "title": "Origin",
+              "description": "Minimal position Bounds of the collision box",
+              "default": [-8.0, 0.0, -8.0],
+              "items": [
+                { "type": "number", "title": "X", "description": "The x offset" },
+                { "type": "number", "title": "Y", "description": "The y offset" },
+                { "type": "number", "title": "Z", "description": "The z offset" }
+              ]
+            },
+            "size": {
+              "type": "array",
+              "title": "Size",
+              "description": "Size of each side of the box of the component",
+              "default": [16.0, 16.0, 16.0],
+              "items": [
+                { "type": "number", "title": "X", "description": "The x size" },
+                { "type": "number", "title": "Y", "description": "The y size" },
+                { "type": "number", "title": "Z", "description": "The z size" }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "FD": {
+      "title": "Placement filter 1.16.100",
+      "description": "Sets rules for under what conditions the block can be placed/survive",
+      "type": "object",
+      "properties": {
+        "conditions": {
+          "title": "Conditions",
+          "description": "List of conditions where the block can be placed/survive",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "title": "Condition",
+            "description": "TODO",
+            "properties": {
+              "allowed_faces": {
+                "title": "Allowed faces",
+                "description": "List of any of the following strings: up, down, north, south, east, west, side, all",
+                "type": "array",
+                "items": { "type": "string", "enum": ["up", "down", "north", "south", "east", "west", "side", "all"] }
+              },
+              "block_filter": {
+                "title": "Block filter",
+                "description": "List of blocks (can use tags to specify them) that this block can be placed against in the allowed_faces direction",
+                "type": "array",
+                "items": { "type": "string", "title": "Block identifier", "description": "TODO" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "FE": {
+      "title": "Prevents jumping 1.16.100",
+      "description": "This component makes it so actors can't jump when walking on this block",
+      "type": "boolean"
+    },
+    "FF": {
+      "title": "Random ticking 1.16.100",
+      "description": "Describes the component that will trigger an even at a regular interval between two values",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "on_tick": {
+          "title": "On tick",
+          "description": "Describes the component that will trigger an even at a regular interval between two values",
+          "type": "string",
+          "additionalProperties": false,
+          "properties": {
+            "condition": {
+              "title": "Condition",
+              "type": "string",
+              "default": "1",
+              "description": "The condition of event to be executed on the block. Molang"
+            },
+            "event": {
+              "title": "Event",
+              "type": "string",
+              "default": "set_block_property",
+              "description": "The type of event executed on the block."
+            },
+            "range": { "title": "Range", "type": "array", "items": [{ "type": "integer" }, { "type": "integer" }] },
+            "target": {
+              "title": "Target",
+              "description": "The target of event executed on the block.",
+              "type": "string",
+              "enum": ["block", "damager", "other", "parent", "player", "self", "target"]
+            }
+          }
+        },
+        "looping": { "type": "boolean", "default": true, "description": "Does the event loop", "title": "Looping" },
+        "range": {
+          "type": "array",
+          "default": [10, 10],
+          "description": "The Range between which the component will trigger his event.",
+          "title": "Range"
+        }
+      }
+    },
+    "FG": {
+      "title": "Rotation 1.16.100",
+      "description": "This is the block's rotation around the center of the cube in degrees. The rotation order is x-y-z.",
+      "type": "array",
+      "additionalProperties": false,
+      "items": [
+        { "type": "number", "title": "X" },
+        { "type": "number", "title": "Y" },
+        { "type": "number", "title": "Z" }
+      ]
+    },
+    "FH": {
+      "title": "Ticking 1.16.100",
+      "description": "Describes the component that will trigger an even at a regular interval between two values",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "looping": { "type": "boolean", "title": "Looping", "description": "Does the event loop" },
+        "range": {
+          "title": "Range",
+          "description": "The Range between which the component will trigger his event.",
+          "type": "array",
+          "items": [{ "type": "integer" }, { "type": "integer" }]
+        },
+        "on_tick": {
+          "type": "object",
+          "title": "On Tick",
+          "description": "Describes the component that will trigger an even at a regular interval between two values",
+          "condition": { "title": "Condition", "type": "string", "description": "The condition of event to be executed on the block. Molang" },
+          "event": { "title": "Event", "type": "string", "description": "The type of event executed on the block." },
+          "target": {
+            "title": "Target",
+            "description": "The target of event executed on the block.",
+            "type": "string",
+            "enum": ["block", "damager", "other", "parent", "player", "self", "target"]
+          }
+        }
+      }
+    },
+    "FI": { "title": "Unit cube 1.16.100", "description": "Specifies that a unit cube is to be used with tessellation.", "type": "string" },
+    "FJ": {
+      "title": "Unwalkable 1.16.100",
+      "description": "this component sets a block as unwalkable. Most mobs will not try to jump over it if the value is set to true",
+      "type": "boolean"
+    },
+    "GA_event_base": {
+      "title": "Event",
+      "description": "UNDOCUMENTATED",
+      "type": "object",
+      "additionalProperties": false,
+      "$ref": "#/definitions/GA_event_functions",
+      "properties": {
+        "sequence": {
+          "title": "Sequence",
+          "description": "UNDOCUMENTATED",
+          "type": "array",
+          "items": { "title": "Sequence", "description": "UNDOCUMENTATED", "type": "object", "$ref": "#/definitions/GA_event_functions" }
+        },
+        "randomize": {
+          "title": "Randomize",
+          "description": "UNDOCUMENTATED",
+          "type": "array",
+          "items": {
+            "title": "Randomize",
+            "description": "UNDOCUMENTATED",
+            "type": "object",
+            "$ref": "#/definitions/GA_event_functions",
+            "required": ["weight"],
+            "properties": { "weight": { "title": "Weight", "description": "UNDOCUMENTATED", "type": "integer", "minimum": 0 } }
+          }
+        },
+        "add_mob_effect": { "$ref": "#/definitions/GB" },
+        "damage": { "$ref": "#/definitions/GC" },
+        "decrement_stack": { "$ref": "#/definitions/GD" },
+        "die": { "$ref": "#/definitions/GE" },
+        "play_effect": { "$ref": "#/definitions/GF" },
+        "play_sound": { "$ref": "#/definitions/GG" },
+        "remove_mob_effect": { "$ref": "#/definitions/GH" },
+        "run_command": { "$ref": "#/definitions/GI" },
+        "set_block": { "$ref": "#/definitions/GJ" },
+        "set_block_at_pos": { "$ref": "#/definitions/HA" },
+        "set_block_property": { "$ref": "#/definitions/HB" },
+        "spawn_loot": { "$ref": "#/definitions/HC" },
+        "swing": { "$ref": "#/definitions/HD" },
+        "teleport": { "$ref": "#/definitions/HE" },
+        "transform_item": { "$ref": "#/definitions/HF" }
+      }
+    },
+    "GA_event_functions": {
+      "title": "Event",
+      "description": "UNDOCUMENTATED",
+      "type": "object",
+      "properties": {
+        "add_mob_effect": { "$ref": "#/definitions/GB" },
+        "damage": { "$ref": "#/definitions/GC" },
+        "decrement_stack": { "$ref": "#/definitions/GD" },
+        "die": { "$ref": "#/definitions/GE" },
+        "play_effect": { "$ref": "#/definitions/GF" },
+        "play_sound": { "$ref": "#/definitions/GG" },
+        "remove_mob_effect": { "$ref": "#/definitions/GH" },
+        "run_command": { "$ref": "#/definitions/GI" },
+        "set_block": { "$ref": "#/definitions/GJ" },
+        "set_block_at_pos": { "$ref": "#/definitions/HA" },
+        "set_block_property": { "$ref": "#/definitions/HB" },
+        "spawn_loot": { "$ref": "#/definitions/HC" },
+        "swing": { "$ref": "#/definitions/HD" },
+        "teleport": { "$ref": "#/definitions/HE" },
+        "transform_item": { "$ref": "#/definitions/HF" }
+      }
+    },
+    "GB": {
+      "type": "object",
+      "description": "Apply mob effect to target.",
+      "title": "Add mob effect",
+      "additionalProperties": false,
+      "properties": {
+        "amplifier": { "type": "integer", "default": 0, "description": "The amplifier for the mob effect.", "title": "Amplifier" },
+        "duration": { "type": "number", "default": 0, "description": "The duration of the mob effect.", "title": "Duration" },
+        "effect": { "type": "string", "default": "", "description": "The mob effect to apply.", "title": "Effect" },
+        "target": { "type": "object", "default": "self", "description": "The target context to execute against.", "title": "Target" }
+      }
+    },
+    "GC": {
+      "type": "object",
+      "description": "Deals damage to the target.",
+      "title": "Damage",
+      "additionalProperties": false,
+      "properties": {
+        "amount": { "type": "integer", "default": 0, "description": "The amount of damage to deal.", "title": "Amount" },
+        "target": { "type": "object", "default": "self", "description": "The target context to execute against.", "title": "Target" },
+        "type": { "type": "string", "default": "", "description": "The type of damage to deal.", "title": "Type" }
+      }
+    },
+    "GD": { "type": "object", "description": "Decrement item stack.", "title": "Decrement stack", "additionalProperties": false, "properties": {} },
+    "GE": {
+      "type": "object",
+      "description": "Kill target. If target is self and this is run from a block then destroy the block.",
+      "title": "Die",
+      "additionalProperties": false,
+      "properties": { "target": { "type": "object", "default": "self", "description": "The target context to execute against.", "title": "Target" } }
+    },
+    "GF": {
+      "type": "object",
+      "description": "Spawns a particle effect relative to target position.",
+      "title": "Play effect",
+      "additionalProperties": false,
+      "properties": {
+        "data": { "type": "integer", "default": 0, "description": "Particle data value.", "title": "Data" },
+        "effect": { "type": "string", "default": "", "description": "The name of the particle effect to create.", "title": "Effect" },
+        "target": { "type": "object", "default": "self", "description": "The target context to execute against.", "title": "Target" }
+      }
+    },
+    "GG": {
+      "type": "object",
+      "description": "Play a sound relative to target position.",
+      "title": "Playsound",
+      "additionalProperties": false,
+      "properties": {
+        "sound": { "type": "string", "default": "", "description": "The name of the sound to play.", "title": "Sound" },
+        "target": { "type": "object", "default": "self", "description": "The target context to execute against.", "title": "Target" }
+      }
+    },
+    "GH": {
+      "type": "object",
+      "description": "Removes mob effect from target.",
+      "title": "Remove mob effect",
+      "additionalProperties": false,
+      "properties": {
+        "effect": {
+          "type": "string",
+          "default": "",
+          "description": "The mob effect to remove. Use 'all' to remove all mob effects from target.",
+          "title": "Effect"
+        },
+        "target": { "type": "string", "default": "self", "description": "The target context to execute against.", "title": "Target" }
+      }
+    },
+    "GI": {
+      "type": "object",
+      "description": "Triggers a slash command or a list of slash commands.",
+      "title": "Run command",
+      "additionalProperties": false,
+      "properties": {
+        "command": {
+          "default": "",
+          "description": "Slash command to run.",
+          "title": "Command",
+          "oneof": [
+            { "type": "string" },
+            { "type": "array", "items": { "type": "string", "title": "Command", "description": "Slash command to run." } }
+          ]
+        },
+        "target": { "type": "string", "default": "self", "description": "The target context to execute against.", "title": "Target" }
+      }
+    },
+    "GJ": {
+      "type": "object",
+      "description": "Sets this block to another block type.",
+      "title": "Set block",
+      "additionalProperties": false,
+      "properties": { "block_type": { "type": "string", "default": "", "description": "The type of block to set.", "title": "Block type" } }
+    },
+    "HA": {
+      "type": "object",
+      "description": "Sets a block relative to this block to another block type.",
+      "title": "Set block at pos",
+      "additionalProperties": false,
+      "properties": {
+        "block_offset": {
+          "type": "array",
+          "default": [0.0, 0.0, 0.0],
+          "description": "The offset from the block's center.",
+          "title": "Block offset",
+          "items": [
+            { "type": "number", "title": "X", "description": "The x offset from the block's center." },
+            { "type": "number", "title": "Y", "description": "The y offset from the block's center." },
+            { "type": "number", "title": "Z", "description": "The z offset from the block's center." }
+          ]
+        },
+        "block_type": { "type": "string", "default": "", "description": "The type of block to set.", "title": "Block type" }
+      }
+    },
+    "HB": {
+      "type": "object",
+      "description": "Sets a block property on this block",
+      "title": "Set block property",
+      "additionalProperties": false,
+      "properties": { "property": { "type": "string", "description": "Block property to set on the block.", "title": "Property" } }
+    },
+    "HC": {
+      "type": "object",
+      "description": "Spawn loot from block.",
+      "title": "Spawn loot",
+      "required": ["table"],
+      "additionalProperties": false,
+      "properties": {
+        "table": { "type": "string", "description": "File path, relative to the Behavior Pack's path, to the loot table file.", "title": "Table" }
+      }
+    },
+    "HD": { "type": "object", "description": "Event causes the actor to swing.", "title": "Swing", "additionalProperties": false, "properties": {} },
+    "HE": {
+      "type": "object",
+      "description": "Teleport target randomly around destination point.",
+      "title": "Teleport",
+      "additionalProperties": false,
+      "properties": {
+        "avoid_water": {
+          "type": "boolean",
+          "default": true,
+          "description": "Determines if the teleport avoids putting the target in water.",
+          "title": "Avoid water"
+        },
+        "destination": {
+          "default": [0.0, 0.0, 0.0],
+          "description": "Origin destination of the teleport.",
+          "title": "Destination",
+          "items": [
+            { "type": "number", "title": "X", "description": "The x offset from the block's center." },
+            { "type": "number", "title": "Y", "description": "The y offset from the block's center." },
+            { "type": "number", "title": "Z", "description": "The z offset from the block's center." }
+          ]
+        },
+        "land_on_block": {
+          "type": "boolean",
+          "default": true,
+          "description": "Determines if the teleport places the target on a block.",
+          "title": "Land on block"
+        },
+        "max_range": {
+          "default": [8.0, 8.0, 8.0],
+          "description": "Max range the target can teleport relative to the origin destination.",
+          "title": "Max range",
+          "items": [
+            { "type": "number", "title": "X", "description": "The x offset from the block's center." },
+            { "type": "number", "title": "Y", "description": "The y offset from the block's center." },
+            { "type": "number", "title": "Z", "description": "The z offset from the block's center." }
+          ]
+        },
+        "target": { "type": "string", "default": "self", "description": "The target context to execute against.", "title": "Target" }
+      }
+    },
+    "HF": {
+      "type": "object",
+      "description": "Transforms item into another item.",
+      "title": "Transform item 1.16.100",
+      "additionalProperties": false,
+      "properties": { "transform": { "type": "string", "description": "Name of the item it should transform into", "title": "Transform" } }
+    },
+    "GA": {
+      "title": "Events",
+      "description": "UNDOCUMENTATED",
+      "type": "object",
+      "properties": {
+        "minecraft:on_interact": { "$ref": "#/definitions/GA_event_base" },
+        "minecraft:on_step_on": { "$ref": "#/definitions/GA_event_base" },
+        "minecraft:on_step_off": { "$ref": "#/definitions/GA_event_base" },
+        "minecraft:on_fall_on": { "$ref": "#/definitions/GA_event_base" },
+        "minecraft:on_placed": { "$ref": "#/definitions/GA_event_base" },
+        "minecraft:on_player_placing": { "$ref": "#/definitions/GA_event_base" },
+        "minecraft:on_player_destroyed": { "$ref": "#/definitions/GA_event_base" },
+        "minecraft:ticking": { "$ref": "#/definitions/GA_event_base" },
+        "minecraft:random_ticking": { "$ref": "#/definitions/GA_event_base" }
+      },
+      "additionalProperties": { "$ref": "#/definitions/GA_event_base" }
+    },
+    "CJ": {
+      "description": "Minecraft blocks 1.16.100",
+      "required": ["format_version", "minecraft:block"],
+      "title": "Block",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "format_version": {
+          "title": "The 1.16.100 format version",
+          "type": "string",
+          "const": "1.16.100",
+          "description": "A version that tells minecraft what type of data format can be expected when reading this file."
+        },
+        "minecraft:block": {
+          "title": "Block definitions",
+          "description": "A custom block definition",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["description", "components"],
+          "properties": {
+            "description": {
+              "title": "Block description",
+              "description": "The description for this block",
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["identifier"],
+              "properties": {
+                "identifier": {
+                  "type": "string",
+                  "description": "The identifier for this block. The name must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla block.",
+                  "title": "Identifier",
+                  "$ref": "#/definitions/B"
+                },
+                "is_experimental": {
+                  "type": "boolean",
+                  "default": false,
+                  "description": "If this block is experimental, it will only be registered if the world is marked as experimantal.",
+                  "title": "Is experimental"
+                },
+                "register_to_creative_menu": {
+                  "type": "boolean",
+                  "default": false,
+                  "description": "Whether or not to register this block to the creative inventory menu.",
+                  "title": "Register to creative menu"
+                },
+                "properties": {
+                  "title": "Properties",
+                  "description": "UNDOCUMENATED",
+                  "propertyNames": { "pattern": "%([a-zA-Z0-9_]+:[a-zA-Z0-9_\\-]+)&" },
+                  "additionalProperties": {
+                    "oneOf": [
+                      { "type": "array", "oneOf": [{ "type": "boolean" }, { "type": "number" }, { "type": "integer" }, { "type": "string" }] },
+                      { "type": "object" }
+                    ]
+                  }
+                }
+              }
+            },
+            "components": {
+              "type": "object",
+              "title": "Component",
+              "description": "",
+              "properties": {
+                "minecraft:on_fall_on": { "$ref": "#/definitions/DA" },
+                "minecraft:on_interact": { "$ref": "#/definitions/DB" },
+                "minecraft:on_placed": { "$ref": "#/definitions/DC" },
+                "minecraft:on_player_destroyed": { "$ref": "#/definitions/DD" },
+                "minecraft:on_player_placing": { "$ref": "#/definitions/DE" },
+                "minecraft:on_step_off": { "$ref": "#/definitions/DF" },
+                "minecraft:on_step_on": { "$ref": "#/definitions/DG" },
+                "minecraft:block_light_absorption": { "$ref": "#/definitions/DH" },
+                "minecraft:block_light_emission": { "$ref": "#/definitions/DI" },
+                "minecraft:breakonpush": { "$ref": "#/definitions/DJ" },
+                "minecraft:breathability": { "$ref": "#/definitions/EA" },
+                "minecraft:destroy_time": { "$ref": "#/definitions/EB" },
+                "minecraft:display_name": { "$ref": "#/definitions/EC" },
+                "minecraft:entity_collision": { "$ref": "#/definitions/ED" },
+                "minecraft:explosion_resistance": { "$ref": "#/definitions/EE" },
+                "minecraft:flammable": { "$ref": "#/definitions/EF" },
+                "minecraft:friction": { "$ref": "#/definitions/EG" },
+                "minecraft:geometry": { "$ref": "#/definitions/EH" },
+                "minecraft:immovable": { "$ref": "#/definitions/EI" },
+                "minecraft:map_color": { "$ref": "#/definitions/EJ" },
+                "minecraft:material_instances": { "$ref": "#/definitions/FA" },
+                "minecraft:onlypistonpush": { "$ref": "#/definitions/FB" },
+                "minecraft:pick_collision": { "$ref": "#/definitions/FC" },
+                "minecraft:placement_filter": { "$ref": "#/definitions/FD" },
+                "minecraft:preventsjumping": { "$ref": "#/definitions/FE" },
+                "minecraft:random_ticking": { "$ref": "#/definitions/FF" },
+                "minecraft:rotation": { "$ref": "#/definitions/FG" },
+                "minecraft:ticking": { "$ref": "#/definitions/FH" },
+                "minecraft:unit_cube": { "$ref": "#/definitions/FI" },
+                "minecraft:unwalkable": { "$ref": "#/definitions/FJ" }
+              }
+            },
+            "events": { "$ref": "#/definitions/GA" }
+          }
+        }
+      }
+    },
+    "HH": {
+      "type": "object",
+      "title": "On fall on",
+      "description": "Describes event for this block.",
+      "properties": {
+        "condition": { "type": "string", "default": "", "description": "The condition of event to be executed on the block.", "title": "Condition" },
+        "event": { "type": "string", "default": "", "description": "The event executed on the block.", "title": "Event" },
+        "min_fall_distance": {
+          "type": "number",
+          "default": 0,
+          "description": "The minimum distance in blocks that an actor needs to fall to trigger this event.",
+          "title": "Min fall distance"
+        },
+        "target": { "type": "string", "default": "self", "description": "The target of event executed on the block.", "title": "Target" }
+      }
+    },
+    "HI": {
+      "type": "object",
+      "title": "On fall on",
+      "description": "Describes event for this block.",
+      "properties": {
+        "condition": { "type": "string", "default": "", "description": "The condition of event to be executed on the block.", "title": "Condition" },
+        "event": { "type": "string", "default": "", "description": "The event executed on the block.", "title": "Event" },
+        "target": { "type": "string", "default": "self", "description": "The target of event executed on the block.", "title": "Target" }
+      }
+    },
+    "HJ": {
+      "type": "object",
+      "title": "On placed 1.16.200",
+      "description": "Describes event for this block.",
+      "properties": {
+        "condition": { "type": "string", "default": "", "description": "The condition of event to be executed on the block.", "title": "Condition" },
+        "event": { "type": "string", "default": "", "description": "The event executed on the block.", "title": "Event" },
+        "target": { "type": "string", "default": "self", "description": "The target of event executed on the block.", "title": "Target" }
+      }
+    },
+    "IA": {
+      "type": "object",
+      "title": "On player destroyed 1.16.200",
+      "description": "Describes event for this block.",
+      "properties": {
+        "condition": { "type": "string", "default": "", "description": "The condition of event to be executed on the block.", "title": "Condition" },
+        "event": { "type": "string", "default": "", "description": "The event executed on the block.", "title": "Event" },
+        "target": { "type": "string", "default": "self", "description": "The target of event executed on the block.", "title": "Target" }
+      }
+    },
+    "IB": {
+      "type": "object",
+      "title": "On player placing 1.16.200",
+      "description": "Describes event for this block.",
+      "properties": {
+        "condition": { "type": "string", "default": "", "description": "The condition of event to be executed on the block.", "title": "Condition" },
+        "event": { "type": "string", "default": "", "description": "The event executed on the block.", "title": "Event" },
+        "target": { "type": "string", "default": "self", "description": "The target of event executed on the block.", "title": "Target" }
+      }
+    },
+    "IC": {
+      "type": "object",
+      "title": "On step off 1.16.200",
+      "description": "Describes event for this block.",
+      "properties": {
+        "condition": { "type": "string", "default": "", "description": "The condition of event to be executed on the block.", "title": "Condition" },
+        "event": { "type": "string", "default": "", "description": "The event executed on the block.", "title": "Event" },
+        "target": { "type": "string", "default": "self", "description": "The target of event executed on the block.", "title": "Target" }
+      }
+    },
+    "ID": {
+      "type": "object",
+      "title": "On step on 1.16.200",
+      "description": "Describes event for this block.",
+      "properties": {
+        "condition": { "type": "string", "default": "", "description": "The condition of event to be executed on the block.", "title": "Condition" },
+        "event": { "type": "string", "default": "", "description": "The event executed on the block.", "title": "Event" },
+        "target": { "type": "string", "default": "self", "description": "The target of event executed on the block.", "title": "Target" }
+      }
+    },
+    "IE": {
+      "additionalProperties": false,
+      "type": "integer",
+      "title": "Block light absorption 1.16.200",
+      "description": "The amount of light this block will absorb.",
+      "default": 0
+    },
+    "IF": {
+      "additionalProperties": false,
+      "type": "number",
+      "title": "Block light emission 1.16.200",
+      "description": "The amount of light this block will emit in a range [0.0, 1.0].",
+      "minimum": 0,
+      "maximum": 1,
+      "default": 0.0
+    },
+    "IG": {
+      "additionalProperties": false,
+      "type": "boolean",
+      "title": "Break on push 1.16.200",
+      "description": "When pushed by a piston the block breaks."
+    },
+    "IH": {
+      "additionalProperties": false,
+      "type": "string",
+      "title": "Breathability 1.16.200",
+      "description": "Property describing the breathability of this block and whether it is treated as a solid or as air.",
+      "enum": ["solid", "air"],
+      "default": "solid"
+    },
+    "II": {
+      "additionalProperties": false,
+      "type": "number",
+      "title": "Destroy time 1.16.200",
+      "description": "Sets the destroy time property for the block. Greater numbers result in greater mining times."
+    },
+    "IJ": {
+      "additionalProperties": false,
+      "type": "string",
+      "title": "Display name 1.16.200",
+      "description": "Specifies the display name id for the block."
+    },
+    "JA": {
+      "additionalProperties": false,
+      "title": "Entity collision 1.16.200",
+      "description": "Can only be set to false, it disables the collision of the block with entities.",
+      "oneOf": [
+        { "type": "boolean", "const": false },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "origin": {
+              "type": "array",
+              "title": "Origin",
+              "description": "Minimal position Bounds of the collision box",
+              "default": [-8.0, 0.0, -8.0],
+              "items": [
+                { "type": "number", "title": "X", "description": "The x offset" },
+                { "type": "number", "title": "Y", "description": "The y offset" },
+                { "type": "number", "title": "Z", "description": "The z offset" }
+              ]
+            },
+            "size": {
+              "type": "array",
+              "title": "Size",
+              "description": "Size of each side of the box of the component",
+              "default": [16.0, 16.0, 16.0],
+              "items": [
+                { "type": "number", "title": "X", "description": "The x size" },
+                { "type": "number", "title": "Y", "description": "The y size" },
+                { "type": "number", "title": "Z", "description": "The z size" }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "JB": {
+      "additionalProperties": false,
+      "type": "number",
+      "title": "Explosion resistance 1.16.200",
+      "description": "Sets the explosion resistance for this block.",
+      "default": 0.0
+    },
+    "JC": {
+      "additionalProperties": false,
+      "type": "object",
+      "title": "Flammable 1.16.200",
+      "description": "Describes the flammable properties for this block.",
+      "additionalItems": false,
+      "properties": {
+        "burn_odds": {
+          "type": "integer",
+          "default": 0,
+          "description": "How likely the block will be destroyed by flames when on fire.",
+          "title": "Burn odds"
+        },
+        "flame_odds": {
+          "type": "integer",
+          "default": 0,
+          "description": "How likely the block will catch flame when next to a fire.",
+          "title": "Flame odds"
+        }
+      }
+    },
+    "JD": {
+      "additionalProperties": false,
+      "type": "number",
+      "title": "Friction 1.16.200",
+      "description": "Property describing the friction for this block. Friction effects an entities movements when it walks on the block.",
+      "default": 0.1
+    },
+    "JE": {
+      "additionalProperties": false,
+      "type": "string",
+      "title": "Geometry 1.16.200",
+      "description": "The geometry definition name to use.",
+      "pattern": "^geometry\\.[a-zA-Z0-9_\\-\\.]+$"
+    },
+    "JF": {
+      "additionalProperties": false,
+      "type": "boolean",
+      "title": "Immovable 1.16.200",
+      "description": "An Immovable block cannot be pushed by pistons"
+    },
+    "JG": {
+      "additionalProperties": false,
+      "type": "string",
+      "title": "Map color 1.16.200",
+      "description": "A color represented as a hex value. This will be the color rendered to a map.",
+      "format": "color-hex"
+    },
+    "JH_material_instance": {
+      "title": "Material instance",
+      "description": "A single material instance",
+      "additionalProperties": false,
+      "properties": {
+        "ambient_occlusion": { "title": "Ambient occlusion", "type": "boolean", "description": "UNDOCUMENTATED" },
+        "face_dimming": { "title": "Face dimming", "type": "boolean", "description": "UNDOCUMENTATED" },
+        "render_method": { "type": "string", "title": "Render method", "description": "TODO description", "enum": ["blend", "opaque", "alpha_test"] },
+        "texture": { "type": "string", "title": "Texture", "description": "TODO description" }
+      }
+    },
+    "JH": {
+      "type": "object",
+      "title": "Material instances 1.16.200",
+      "description": "Maps face or material_instance names in a geometry file to an actual material instance. Material instance can either be a full material instance or a name to another already defined instance",
+      "properties": { "*": { "$ref": "#/definitions/JH_material_instance" } },
+      "additionalProperties": { "$ref": "#/definitions/JH_material_instance" }
+    },
+    "JI": { "type": "boolean", "title": "Only piston push 1.16.200", "description": "Blocks with those components won't stick to stickyPistons" },
+    "JJ": {
+      "title": "Pick collision 1.16.200",
+      "description": "Can only be set to false, it disables the collision of the block with entities",
+      "oneOf": [
+        { "type": "boolean", "const": false },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "origin": {
+              "type": "array",
+              "title": "Origin",
+              "description": "Minimal position Bounds of the collision box",
+              "default": [-8.0, 0.0, -8.0],
+              "items": [
+                { "type": "number", "title": "X", "description": "The x offset" },
+                { "type": "number", "title": "Y", "description": "The y offset" },
+                { "type": "number", "title": "Z", "description": "The z offset" }
+              ]
+            },
+            "size": {
+              "type": "array",
+              "title": "Size",
+              "description": "Size of each side of the box of the component",
+              "default": [16.0, 16.0, 16.0],
+              "items": [
+                { "type": "number", "title": "X", "description": "The x size" },
+                { "type": "number", "title": "Y", "description": "The y size" },
+                { "type": "number", "title": "Z", "description": "The z size" }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "BAA": {
+      "title": "Placement filter 1.16.200",
+      "description": "Sets rules for under what conditions the block can be placed/survive",
+      "type": "object",
+      "properties": {
+        "conditions": {
+          "title": "Conditions",
+          "description": "List of conditions where the block can be placed/survive",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "title": "Condition",
+            "description": "TODO",
+            "properties": {
+              "allowed_faces": {
+                "title": "Allowed faces",
+                "description": "List of any of the following strings: up, down, north, south, east, west, side, all",
+                "type": "array",
+                "items": { "type": "string", "enum": ["up", "down", "north", "south", "east", "west", "side", "all"] }
+              },
+              "block_filter": {
+                "title": "Block filter",
+                "description": "List of blocks (can use tags to specify them) that this block can be placed against in the allowed_faces direction",
+                "type": "array",
+                "items": { "type": "string", "title": "Block identifier", "description": "TODO" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "BAB": {
+      "title": "Prevents jumping 1.16.200",
+      "description": "This component makes it so actors can't jump when walking on this block",
+      "type": "boolean"
+    },
+    "BAC": {
+      "title": "Random ticking 1.16.200",
+      "description": "Describes the component that will trigger an even at a regular interval between two values",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "on_tick": {
+          "title": "On tick",
+          "description": "Describes the component that will trigger an even at a regular interval between two values",
+          "type": "string",
+          "additionalProperties": false,
+          "properties": {
+            "condition": {
+              "title": "Condition",
+              "type": "string",
+              "default": "1",
+              "description": "The condition of event to be executed on the block. Molang"
+            },
+            "event": {
+              "title": "Event",
+              "type": "string",
+              "default": "set_block_property",
+              "description": "The type of event executed on the block."
+            },
+            "range": { "title": "Range", "type": "array", "items": [{ "type": "integer" }, { "type": "integer" }] },
+            "target": {
+              "title": "Target",
+              "description": "The target of event executed on the block.",
+              "type": "string",
+              "enum": ["block", "damager", "other", "parent", "player", "self", "target"]
+            }
+          }
+        },
+        "looping": { "type": "boolean", "default": true, "description": "Does the event loop", "title": "Looping" },
+        "range": {
+          "type": "array",
+          "default": [10, 10],
+          "description": "The Range between which the component will trigger his event.",
+          "title": "Range"
+        }
+      }
+    },
+    "BAD": {
+      "title": "Rotation 1.16.200",
+      "description": "This is the block's rotation around the center of the cube in degrees. The rotation order is x-y-z.",
+      "type": "array",
+      "additionalProperties": false,
+      "items": [
+        { "type": "number", "title": "X" },
+        { "type": "number", "title": "Y" },
+        { "type": "number", "title": "Z" }
+      ]
+    },
+    "BAE": {
+      "title": "Ticking 1.16.200",
+      "description": "Describes the component that will trigger an even at a regular interval between two values",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "looping": { "type": "boolean", "title": "Looping", "description": "Does the event loop" },
+        "range": {
+          "title": "Range",
+          "description": "The Range between which the component will trigger his event.",
+          "type": "array",
+          "items": [{ "type": "integer" }, { "type": "integer" }]
+        },
+        "on_tick": {
+          "type": "object",
+          "title": "On Tick",
+          "description": "Describes the component that will trigger an even at a regular interval between two values",
+          "condition": { "title": "Condition", "type": "string", "description": "The condition of event to be executed on the block. Molang" },
+          "event": { "title": "Event", "type": "string", "description": "The type of event executed on the block." },
+          "target": {
+            "title": "Target",
+            "description": "The target of event executed on the block.",
+            "type": "string",
+            "enum": ["block", "damager", "other", "parent", "player", "self", "target"]
+          }
+        }
+      }
+    },
+    "BAF": { "title": "Unit cube 1.16.200", "description": "Specifies that a unit cube is to be used with tessellation.", "type": "string" },
+    "BAG": {
+      "title": "Unwalkable 1.16.200",
+      "description": "this component sets a block as unwalkable. Most mobs will not try to jump over it if the value is set to true",
+      "type": "boolean"
+    },
+    "BAH_event_base": {
+      "title": "Event",
+      "description": "UNDOCUMENTATED",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sequence": {
+          "title": "Sequence",
+          "description": "UNDOCUMENTATED",
+          "type": "array",
+          "items": { "title": "Sequence", "description": "UNDOCUMENTATED", "type": "object", "$ref": "#/definitions/BAH_event_functions" }
+        },
+        "randomize": {
+          "title": "Randomize",
+          "description": "UNDOCUMENTATED",
+          "type": "array",
+          "items": {
+            "title": "Randomize",
+            "description": "UNDOCUMENTATED",
+            "type": "object",
+            "$ref": "#/definitions/BAH_event_functions",
+            "required": ["weight"],
+            "properties": { "weight": { "title": "Weight", "description": "UNDOCUMENTATED", "type": "integer", "minimum": 0 } }
+          }
+        },
+        "add_mob_effect": { "$ref": "#/definitions/BAI" },
+        "damage": { "$ref": "#/definitions/BAJ" },
+        "decrement_stack": { "$ref": "#/definitions/BBA" },
+        "die": { "$ref": "#/definitions/BBB" },
+        "play_effect": { "$ref": "#/definitions/BBC" },
+        "play_sound": { "$ref": "#/definitions/BBD" },
+        "remove_mob_effect": { "$ref": "#/definitions/BBE" },
+        "run_command": { "$ref": "#/definitions/BBF" },
+        "set_block": { "$ref": "#/definitions/BBG" },
+        "set_block_at_pos": { "$ref": "#/definitions/BBH" },
+        "set_block_property": { "$ref": "#/definitions/BBI" },
+        "spawn_loot": { "$ref": "#/definitions/BBJ" },
+        "swing": { "$ref": "#/definitions/BCA" },
+        "teleport": { "$ref": "#/definitions/BCB" },
+        "transform_item": { "$ref": "#/definitions/BCC" }
+      }
+    },
+    "BAH_event_functions": {
+      "title": "Event",
+      "description": "UNDOCUMENTATED",
+      "type": "object",
+      "properties": {
+        "add_mob_effect": { "$ref": "#/definitions/BAI" },
+        "damage": { "$ref": "#/definitions/BAJ" },
+        "decrement_stack": { "$ref": "#/definitions/BBA" },
+        "die": { "$ref": "#/definitions/BBB" },
+        "play_effect": { "$ref": "#/definitions/BBC" },
+        "play_sound": { "$ref": "#/definitions/BBD" },
+        "remove_mob_effect": { "$ref": "#/definitions/BBE" },
+        "run_command": { "$ref": "#/definitions/BBF" },
+        "set_block": { "$ref": "#/definitions/BBG" },
+        "set_block_at_pos": { "$ref": "#/definitions/BBH" },
+        "set_block_property": { "$ref": "#/definitions/BBI" },
+        "spawn_loot": { "$ref": "#/definitions/BBJ" },
+        "swing": { "$ref": "#/definitions/BCA" },
+        "teleport": { "$ref": "#/definitions/BCB" },
+        "transform_item": { "$ref": "#/definitions/BCC" }
+      }
+    },
+    "BAI": {
+      "type": "object",
+      "description": "Apply mob effect to target.",
+      "title": "Add mob effect 1.16.200",
+      "additionalProperties": false,
+      "properties": {
+        "amplifier": { "type": "integer", "default": 0, "description": "The amplifier for the mob effect.", "title": "Amplifier" },
+        "duration": { "type": "number", "default": 0, "description": "The duration of the mob effect.", "title": "Duration" },
+        "effect": { "type": "string", "default": "", "description": "The mob effect to apply.", "title": "Effect" },
+        "target": { "type": "object", "default": "self", "description": "The target context to execute against.", "title": "Target" }
+      }
+    },
+    "BAJ": {
+      "type": "object",
+      "description": "Deals damage to the target.",
+      "title": "Damage 1.16.200",
+      "additionalProperties": false,
+      "properties": {
+        "amount": { "type": "integer", "default": 0, "description": "The amount of damage to deal.", "title": "Amount" },
+        "target": { "type": "object", "default": "self", "description": "The target context to execute against.", "title": "Target" },
+        "type": { "type": "string", "default": "", "description": "The type of damage to deal.", "title": "Type" }
+      }
+    },
+    "BBA": {
+      "type": "object",
+      "description": "Decrement item stack.",
+      "title": "Decrement stack 1.16.200",
+      "additionalProperties": false,
+      "properties": {}
+    },
+    "BBB": {
+      "type": "object",
+      "description": "Kill target. If target is self and this is run from a block then destroy the block.",
+      "title": "Die 1.16.200",
+      "additionalProperties": false,
+      "properties": { "target": { "type": "object", "default": "self", "description": "The target context to execute against.", "title": "Target" } }
+    },
+    "BBC": {
+      "type": "object",
+      "description": "Spawns a particle effect relative to target position.",
+      "title": "Play effect 1.16.200",
+      "additionalProperties": false,
+      "properties": {
+        "data": { "type": "integer", "default": 0, "description": "Particle data value.", "title": "Data" },
+        "effect": { "type": "string", "default": "", "description": "The name of the particle effect to create.", "title": "Effect" },
+        "target": { "type": "object", "default": "self", "description": "The target context to execute against.", "title": "Target" }
+      }
+    },
+    "BBD": {
+      "type": "object",
+      "description": "Play a sound relative to target position.",
+      "title": "Playsound 1.16.200",
+      "additionalProperties": false,
+      "properties": {
+        "sound": { "type": "string", "default": "", "description": "The name of the sound to play.", "title": "Sound" },
+        "target": { "type": "object", "default": "self", "description": "The target context to execute against.", "title": "Target" }
+      }
+    },
+    "BBE": {
+      "type": "object",
+      "description": "Removes mob effect from target.",
+      "title": "Remove mob effect 1.16.200",
+      "additionalProperties": false,
+      "properties": {
+        "effect": {
+          "type": "string",
+          "default": "",
+          "description": "The mob effect to remove. Use 'all' to remove all mob effects from target.",
+          "title": "Effect"
+        },
+        "target": { "type": "string", "default": "self", "description": "The target context to execute against.", "title": "Target" }
+      }
+    },
+    "BBF": {
+      "type": "object",
+      "description": "Triggers a slash command or a list of slash commands.",
+      "title": "Run command 1.16.200",
+      "additionalProperties": false,
+      "properties": {
+        "command": {
+          "default": "",
+          "description": "Slash command to run.",
+          "title": "Command",
+          "oneof": [
+            { "type": "string" },
+            { "type": "array", "items": { "type": "string", "title": "Command", "description": "Slash command to run." } }
+          ]
+        },
+        "target": { "type": "string", "default": "self", "description": "The target context to execute against.", "title": "Target" }
+      }
+    },
+    "BBG": {
+      "type": "object",
+      "description": "Sets this block to another block type.",
+      "title": "Set block 1.16.200",
+      "additionalProperties": false,
+      "properties": { "block_type": { "type": "string", "default": "", "description": "The type of block to set.", "title": "Block type" } }
+    },
+    "BBH": {
+      "type": "object",
+      "description": "Sets a block relative to this block to another block type.",
+      "title": "Set block at pos 1.16.200",
+      "additionalProperties": false,
+      "properties": {
+        "block_offset": {
+          "type": "array",
+          "default": [0.0, 0.0, 0.0],
+          "description": "The offset from the block's center.",
+          "title": "Block offset",
+          "items": [
+            { "type": "number", "title": "X", "description": "The x offset from the block's center." },
+            { "type": "number", "title": "Y", "description": "The y offset from the block's center." },
+            { "type": "number", "title": "Z", "description": "The z offset from the block's center." }
+          ]
+        },
+        "block_type": { "type": "string", "default": "", "description": "The type of block to set.", "title": "Block type" }
+      }
+    },
+    "BBI": {
+      "type": "object",
+      "description": "Sets a block property on this block",
+      "title": "Set block property 1.16.200",
+      "additionalProperties": false,
+      "properties": { "property": { "type": "string", "description": "Block property to set on the block.", "title": "Property" } }
+    },
+    "BBJ": {
+      "type": "object",
+      "description": "Spawn loot from block.",
+      "title": "Spawn loot 1.16.200",
+      "required": ["table"],
+      "additionalProperties": false,
+      "properties": {
+        "table": { "type": "string", "description": "File path, relative to the Behavior Pack's path, to the loot table file.", "title": "Table" }
+      }
+    },
+    "BCA": {
+      "type": "object",
+      "description": "Event causes the actor to swing.",
+      "title": "Swing 1.16.200",
+      "additionalProperties": false,
+      "properties": {}
+    },
+    "BCB": {
+      "type": "object",
+      "description": "Teleport target randomly around destination point.",
+      "title": "Teleport 1.16.200",
+      "additionalProperties": false,
+      "properties": {
+        "avoid_water": {
+          "type": "boolean",
+          "default": true,
+          "description": "Determines if the teleport avoids putting the target in water.",
+          "title": "Avoid water"
+        },
+        "destination": {
+          "default": [0.0, 0.0, 0.0],
+          "description": "Origin destination of the teleport.",
+          "title": "Destination",
+          "items": [
+            { "type": "number", "title": "X", "description": "The x offset from the block's center." },
+            { "type": "number", "title": "Y", "description": "The y offset from the block's center." },
+            { "type": "number", "title": "Z", "description": "The z offset from the block's center." }
+          ]
+        },
+        "land_on_block": {
+          "type": "boolean",
+          "default": true,
+          "description": "Determines if the teleport places the target on a block.",
+          "title": "Land on block"
+        },
+        "max_range": {
+          "default": [8.0, 8.0, 8.0],
+          "description": "Max range the target can teleport relative to the origin destination.",
+          "title": "Max range",
+          "items": [
+            { "type": "number", "title": "X", "description": "The x offset from the block's center." },
+            { "type": "number", "title": "Y", "description": "The y offset from the block's center." },
+            { "type": "number", "title": "Z", "description": "The z offset from the block's center." }
+          ]
+        },
+        "target": { "type": "string", "default": "self", "description": "The target context to execute against.", "title": "Target" }
+      }
+    },
+    "BCC": {
+      "type": "object",
+      "description": "Transforms item into another item.",
+      "title": "Transform item 1.16.200",
+      "additionalProperties": false,
+      "properties": { "transform": { "type": "string", "description": "Name of the item it should transform into", "title": "Transform" } }
+    },
+    "BAH": {
+      "title": "Events",
+      "description": "UNDOCUMENTATED",
+      "type": "object",
+      "properties": {
+        "minecraft:on_interact": { "$ref": "#/definitions/BAH_event_base" },
+        "minecraft:on_step_on": { "$ref": "#/definitions/BAH_event_base" },
+        "minecraft:on_step_off": { "$ref": "#/definitions/BAH_event_base" },
+        "minecraft:on_fall_on": { "$ref": "#/definitions/BAH_event_base" },
+        "minecraft:on_placed": { "$ref": "#/definitions/BAH_event_base" },
+        "minecraft:on_player_placing": { "$ref": "#/definitions/BAH_event_base" },
+        "minecraft:on_player_destroyed": { "$ref": "#/definitions/BAH_event_base" },
+        "minecraft:ticking": { "$ref": "#/definitions/BAH_event_base" },
+        "minecraft:random_ticking": { "$ref": "#/definitions/BAH_event_base" }
+      },
+      "additionalProperties": { "oneOf": [{ "$ref": "#/definitions/BAH_event_base" }, { "$ref": "#/definitions/BAH_event_functions" }] }
+    },
+    "HG": {
+      "description": "Minecraft blocks 1.16.200",
+      "required": ["format_version", "minecraft:block"],
+      "title": "Block",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "format_version": {
+          "title": "The 1.16.200 format version",
+          "type": "string",
+          "const": "1.16.200",
+          "description": "A version that tells minecraft what type of data format can be expected when reading this file."
+        },
+        "minecraft:block": {
+          "title": "Block definitions",
+          "description": "A custom block definition",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["description", "components"],
+          "properties": {
+            "description": {
+              "title": "Block description",
+              "description": "The description for this block",
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["identifier"],
+              "properties": {
+                "identifier": {
+                  "type": "string",
+                  "description": "The identifier for this block. The name must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla block.",
+                  "title": "Identifier",
+                  "$ref": "#/definitions/B"
+                },
+                "is_experimental": {
+                  "type": "boolean",
+                  "default": false,
+                  "description": "If this block is experimental, it will only be registered if the world is marked as experimantal.",
+                  "title": "Is experimental"
+                },
+                "register_to_creative_menu": {
+                  "type": "boolean",
+                  "default": false,
+                  "description": "Whether or not to register this block to the creative inventory menu.",
+                  "title": "Register to creative menu"
+                },
+                "properties": {
+                  "title": "Properties",
+                  "description": "UNDOCUMENATED",
+                  "propertyNames": { "pattern": "%([a-zA-Z0-9_]+:[a-zA-Z0-9_\\-]+)&" },
+                  "additionalProperties": {
+                    "oneOf": [
+                      { "type": "array", "oneOf": [{ "type": "boolean" }, { "type": "number" }, { "type": "integer" }, { "type": "string" }] },
+                      { "type": "object" }
+                    ]
+                  }
+                }
+              }
+            },
+            "components": {
+              "type": "object",
+              "title": "Component",
+              "description": "",
+              "properties": {
+                "minecraft:on_fall_on": { "$ref": "#/definitions/HH" },
+                "minecraft:on_interact": { "$ref": "#/definitions/HI" },
+                "minecraft:on_placed": { "$ref": "#/definitions/HJ" },
+                "minecraft:on_player_destroyed": { "$ref": "#/definitions/IA" },
+                "minecraft:on_player_placing": { "$ref": "#/definitions/IB" },
+                "minecraft:on_step_off": { "$ref": "#/definitions/IC" },
+                "minecraft:on_step_on": { "$ref": "#/definitions/ID" },
+                "minecraft:block_light_absorption": { "$ref": "#/definitions/IE" },
+                "minecraft:block_light_emission": { "$ref": "#/definitions/IF" },
+                "minecraft:breakonpush": { "$ref": "#/definitions/IG" },
+                "minecraft:breathability": { "$ref": "#/definitions/IH" },
+                "minecraft:destroy_time": { "$ref": "#/definitions/II" },
+                "minecraft:display_name": { "$ref": "#/definitions/IJ" },
+                "minecraft:entity_collision": { "$ref": "#/definitions/JA" },
+                "minecraft:explosion_resistance": { "$ref": "#/definitions/JB" },
+                "minecraft:flammable": { "$ref": "#/definitions/JC" },
+                "minecraft:friction": { "$ref": "#/definitions/JD" },
+                "minecraft:geometry": { "$ref": "#/definitions/JE" },
+                "minecraft:immovable": { "$ref": "#/definitions/JF" },
+                "minecraft:map_color": { "$ref": "#/definitions/JG" },
+                "minecraft:material_instances": { "$ref": "#/definitions/JH" },
+                "minecraft:onlypistonpush": { "$ref": "#/definitions/JI" },
+                "minecraft:pick_collision": { "$ref": "#/definitions/JJ" },
+                "minecraft:placement_filter": { "$ref": "#/definitions/BAA" },
+                "minecraft:preventsjumping": { "$ref": "#/definitions/BAB" },
+                "minecraft:random_ticking": { "$ref": "#/definitions/BAC" },
+                "minecraft:rotation": { "$ref": "#/definitions/BAD" },
+                "minecraft:ticking": { "$ref": "#/definitions/BAE" },
+                "minecraft:unit_cube": { "$ref": "#/definitions/BAF" },
+                "minecraft:unwalkable": { "$ref": "#/definitions/BAG" }
+              }
+            },
+            "events": { "$ref": "#/definitions/BAH" }
+          }
+        }
+      }
+    }
+  }
+}
