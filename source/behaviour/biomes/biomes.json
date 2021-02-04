@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "minecraft.behavior.biomes",
+  "type": "object",
+  "examples": [{ "plains": { "format_version": "1.12.0" } }],
+  "additionalProperties": {
+    "type": "object",
+    "title": "Biome",
+    "description": "A biome definition",
+    "allOf": [
+      {
+        "if": { "properties": { "format_version": { "type": "string", "const": "1.12.0" } } },
+        "then": { "$ref": "./1.12.0/biomes.json" }
+      }
+    ]
+  }
+}

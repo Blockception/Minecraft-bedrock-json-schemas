@@ -1,0 +1,18 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"$id": "minecraft.behavior.biomes.1.12.0",
+	"type": "object",
+	"title": "Biomes",
+	"description": "The definition of a biome",
+	"additionalProperties": {
+		"title": "Tag",
+		"type": "object",
+		"description": "Components with no namespace are treated as 'tags': any name consisting of alphanumeric characters, '.' and '_' is permitted; the tag is attached to the biome so that either code or data may check for its existence; tag components may not have member fields.",
+		"additionalProperties": false		
+	},
+	"properties": {
+		"minecraft:climate": { "$ref": "./components/minecraft.climate.json" },
+		"minecraft:forced_features": { "$ref": "./components/minecraft.forced_features.json" },
+		"minecraft:overworld_height": { "$ref": "./components/minecraft.overworld_height.json" }
+	}
+}

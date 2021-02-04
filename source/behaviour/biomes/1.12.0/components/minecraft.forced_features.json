@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "minecraft.behavior.biomes.1.12.0.components.minecraft.forced_features",
+  "title": "Forced features",
+  "description": "Force specific decorative features (trees, plants, etc.) to appear in this Biome, regardless of normal decoration rules.",
+  "type": "object",
+  "minProperties": 0,
+  "maxProperties": 2,
+  "additionalProperties": false,
+  "properties": {
+    
+  }
+}

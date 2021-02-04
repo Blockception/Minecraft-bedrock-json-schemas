@@ -105,6 +105,10 @@
       "Destination": "../behaviour/animations/animations.json"
     },
     {
+      "Source": "./behaviour/biomes/biomes.json",
+      "Destination": "../behaviour/biomes/biomes.json"
+    },
+    {
       "Source": "./behaviour/loot_tables/loot_tables.json",
       "Destination": "../behaviour/loot_tables/loot_tables.json"
     },
