@@ -5,9 +5,197 @@
   "description": "Force specific decorative features (trees, plants, etc.) to appear in this Biome, regardless of normal decoration rules.",
   "type": "object",
   "minProperties": 0,
-  "maxProperties": 2,
+  "maxProperties": 11,
   "additionalProperties": false,
+  "definitions": {
+    "coordinate": {
+      "oneOf": [
+        {
+          "type": "string",
+          "$ref": "../../../../molang/1.8.0/number.json",
+          "description": "Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below."
+        },
+        {
+          "type": "number",
+          "description": "Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below."
+        },
+        {
+          "type": "object",
+          "description": "Distribution for the coordinate (evaluated each iteration). Mutually exclusive with Molang expression above.",
+          "additionalProperties": false,
+          "required": ["distribution", "extent"],
+          "properties": {
+            "distribution": {
+              "title": "Distribution",
+              "description": "Type of distribution - uniform random, gaussian (centered in the range), or grid (either fixed-step or jittered)",
+              "type": "string",
+              "enum": ["uniform", "gaussian", "inverse_gaussian", "fixed_grid", "jittered_grid"]
+            },
+            "extent": {
+              "title": "Extent",
+              "description": "UNDOCUMENTATED",
+              "type": "array",
+              "items": [
+                { 
+                  "title": "Lower bound", 
+                  "description": "Lower bound (inclusive) of the scatter range, as an offset from the input point to scatter around",
+                  "$ref": "../../../../molang/1.8.0/number.json"
+                },
+                { 
+                  "title": "Upper bound", 
+                  "description": "Upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around",
+                  "$ref": "../../../../molang/1.8.0/number.json"
+                }
+              ]
+            },
+            "grid_offset": {
+              "title": "Step size",
+              "description": "When the distribution type is grid, defines the offset along this axis",
+              "type": "integer",
+              "minimum": 0
+            },
+            "step_size": {
+              "title": "Step size",
+              "description": "When the distribution type is grid, defines the distance between steps along this axis",
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        }
+      ]
+    },
+    "iteration": {
+      "title": "Iteration",
+      "description": "UNDOCUMENTED",
+      "additionalProperties": false,
+      "required": ["iterations", "places_feature", "identifier"],
+      "properties": {
+        "coordinate_eval_order": {
+          "title": "Coordinate eval order",
+          "description": "The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. If omitted, defaults to 'xzy'.",
+          "type": "string",
+          "enum": ["xyz", "xzy", "yxz", "yzx", "zxy", "zyx"]
+        },
+        "identifier": {
+          "title": "Identifier",
+          "description": "UNDOCUMANTED",
+          "type": "string"
+        },
+        "iterations": {
+          "title": "Iterations",
+          "description": "Number of scattered positions to generate",
+          "$ref": "../../../../molang/1.8.0/number.json"
+        },
+        "places_feature": {
+          "title": "Places feature",
+          "description": "UNDOCUMANTED",
+          "type": "string"
+        },
+        "scatter_chance": {
+          "title": "Scatter chance",
+          "oneOf": [
+            {
+              "type": "object",
+              "description": "Probability numerator / denominator that this scatter will occur.  Not evaluated each iteration; either no iterations will run, or all will.",
+              "additionalProperties": false,
+              "properties": {
+                "denominator": {
+                  "title": "Denominator",
+                  "description": "",
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "numerator": {
+                  "title": "Numerator",
+                  "description": "",
+                  "type": "integer",
+                  "minimum": 1
+                }
+              }
+            },
+            {
+              "type": "string",
+              "description": "Probability (0-100) that this scatter will occur.  Not evaluated each iteration; either no iterations will run, or all will.",
+              "$ref": "../../../../molang/1.8.0/number.json"
+            },
+            {
+              "type": "number",
+              "description": "Probability (0-100) that this scatter will occur.  Not evaluated each iteration; either no iterations will run, or all will."
+            }
+          ]
+        },
+        "x": { "title": "X", "$ref": "#/definitions/coordinate" },
+        "y": { "title": "X", "$ref": "#/definitions/coordinate" },
+        "z": { "title": "X", "$ref": "#/definitions/coordinate" }
+      }
+    }
+  },
   "properties": {
-    
+    "after_sky_pass": {
+      "title": "First pass",
+      "description": "UNDOCUMENTED",
+      "type": "array",
+      "items": { "$ref": "#/defintions/iteration" }
+    },
+    "after_surface_pass": {
+      "title": "First pass",
+      "description": "UNDOCUMENTED",
+      "type": "array",
+      "items": { "$ref": "#/defintions/iteration" }
+    },
+    "after_underground_pass": {
+      "title": "First pass",
+      "description": "UNDOCUMENTED",
+      "type": "array",
+      "items": { "$ref": "#/defintions/iteration" }
+    },
+    "before_sky_pass": {
+      "title": "First pass",
+      "description": "UNDOCUMENTED",
+      "type": "array",
+      "items": { "$ref": "#/defintions/iteration" }
+    },
+    "before_surface_pass": {
+      "title": "First pass",
+      "description": "UNDOCUMENTED",
+      "type": "array",
+      "items": { "$ref": "#/defintions/iteration" }
+    },
+    "before_underground_pass": {
+      "title": "First pass",
+      "description": "UNDOCUMENTED",
+      "type": "array",
+      "items": { "$ref": "#/defintions/iteration" }
+    },
+    "final_pass": {
+      "title": "First pass",
+      "description": "UNDOCUMENTED",
+      "type": "array",
+      "items": { "$ref": "#/defintions/iteration" }
+    },
+    "first_pass": {
+      "title": "First pass",
+      "description": "UNDOCUMENTED",
+      "type": "array",
+      "items": { "$ref": "#/defintions/iteration" }
+    },
+    "surface_pass": {
+      "title": "First pass",
+      "description": "UNDOCUMENTED",
+      "type": "array",
+      "items": { "$ref": "#/defintions/iteration" }
+    },
+    "sky_pass": {
+      "title": "First pass",
+      "description": "UNDOCUMENTED",
+      "type": "array",
+      "items": { "$ref": "#/defintions/iteration" }
+    },
+    "underground_pass": {
+      "title": "First pass",
+      "description": "UNDOCUMENTED",
+      "type": "array",
+      "items": { "$ref": "#/defintions/iteration" }
+    }
   }
 }

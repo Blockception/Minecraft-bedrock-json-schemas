@@ -1,0 +1,9 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"$id": "minecraft.behavior.biomes.1.12.0.components.minecraft.ignore_automatic_features",
+	"title": "Ignore automatic features",
+	"description": "No features will be automatically attached to this Biome, only features specified in the minecraft:forced_features component will appear.",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": { }
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "minecraft.behavior.biomes.1.12.0.components.minecraft.capped_surface",
+  "title": "Capped surface",
+  "description": "Generates surface on blocks with non-solid blocks above or below.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["floor_materials", "ceiling_materials", "sea_material", "foundation_material"],
+  "properties": {
+    "ceiling_materials": {
+      "title": "Ceiling materials",
+      "description": "Materials used for the surface ceiling.",
+      "minItems": 1,
+      "items": {
+        "title": "Block reference",
+        "description": "UNDOCUMENTATED",
+        "type": "string"
+      }
+    },
+    "floor_materials": {
+      "title": "Floor materials",
+      "description": "Materials used for the surface floor.",
+      "minItems": 1,
+      "items": {
+        "title": "Block reference",
+        "description": "UNDOCUMENTATED",
+        "type": "string"
+      }
+    },
+    "sea_material": {
+      "title": "Sea material",
+      "description": "Material used to replace air blocks below sea level.",
+			"type": "string"
+    },
+    "foundation_material": {
+      "title": "Foundation material",
+      "description": "Material used to repalce solid blocks that are not surface blocks.",
+			"type": "string"
+    },
+    "beach_material": {
+      "title": "Beach material",
+      "description": "Material used to decorate surface near sea level.",
+			"type": "string"
+    }
+  }
+}
