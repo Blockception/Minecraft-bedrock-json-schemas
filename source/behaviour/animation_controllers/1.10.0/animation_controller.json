@@ -113,9 +113,7 @@
                   "type": "array",
                   "description": "Events, commands or transitions to preform on entry of this state",
                   "title": "On entry",
-                  "items": {
-                    "$ref": "#/definitions/commands"
-                  }
+                  "items": { "$ref": "#/definitions/commands" }
                 },
                 "on_exit": {
                   "type": "array",

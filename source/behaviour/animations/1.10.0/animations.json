@@ -93,10 +93,7 @@
             },
             "additionalProperties": {
               "oneOf": [
-                {
-                  "type": "string",
-                  "$ref": "#/definitions/commands"
-                },
+                { "type": "string", "$ref": "#/definitions/commands" },
                 {
                   "type": "array",
                   "title": "Collection timelime items",

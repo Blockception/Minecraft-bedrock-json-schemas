@@ -309,6 +309,7 @@
               }
             ]
           },
+          
           "override_previous_animation": {
             "title": "Override previous animation",
             "description": "Reset bones in this animation to the default pose before applying this animation.",

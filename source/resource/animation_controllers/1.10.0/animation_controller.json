@@ -47,7 +47,8 @@
         "pre_effect_script": {
           "type": "string",
           "title": "Pre effect script",
-          "description": "A molang script that will be run when the particle emitter is initialized"
+          "description": "A molang script that will be run when the particle emitter is initialized",
+          "pattern": "^.+;$"
         }
       }
     },
@@ -197,6 +198,18 @@
                       }
                     }
                   }
+                },
+                "on_entry": {
+                  "title": "On Entry",
+                  "description": "UNDOCUMENTATED",
+                  "type": "array",
+                  "items": { "pattern": "^.+=.+;$", "title": "Molang", "description": "UNDOCUMENTATED", "type": "string" }
+                },
+                "on_exit": {
+                  "title": "On Exit",
+                  "description": "UNDOCUMENTATED",
+                  "type": "array",
+                  "items": { "pattern": "^.+=.+;$", "title": "Molang", "description": "UNDOCUMENTATED", "type": "string" }
                 }
               }
             }
