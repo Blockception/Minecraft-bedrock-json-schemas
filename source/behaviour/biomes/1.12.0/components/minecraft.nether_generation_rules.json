@@ -7,27 +7,27 @@
   "additionalProperties": false,
   "properties": {
     "target_temperature": {
-			"title": "Target temperature",
+      "title": "Target temperature",
       "description": "Temperature with which this biome should selected, relative to other biomes.",
       "type": "number"
     },
     "target_humidity": {
-			"title": "Target humidity",
+      "title": "Target humidity",
       "description": "Humidity with which this biome should selected, relative to other biomes.",
       "type": "number"
     },
     "target_altitude": {
-			"title": "Target altitude",
+      "title": "Target altitude",
       "description": "Altitude with which this biome should selected, relative to other biomes.",
       "type": "number"
     },
     "target_weirdness": {
-			"title": "Target weirdness",
+      "title": "Target weirdness",
       "description": "Weirdness with which this biome should selected, relative to other biomes.",
       "type": "number"
     },
     "weight": {
-			"title": "Weight",
+      "title": "Weight",
       "description": "Weight with which this biome should selected, relative to other biomes.",
       "type": "number"
     }

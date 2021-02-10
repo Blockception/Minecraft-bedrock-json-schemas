@@ -9,34 +9,34 @@
   "additionalProperties": false,
   "properties": {
     "top_material": {
-			"title": "Top material",
+      "title": "Top material",
       "description": "Controls the block type used for the surface of this biome.",
-			"string": "string"
+      "string": "string"
     },
     "mid_material": {
-			"title": "Mid material",
+      "title": "Mid material",
       "description": "Controls the block type used in a layer below the surface of this biome.",
-			"string": "string"
+      "string": "string"
     },
     "sea_floor_material": {
-			"title": "Sea floor material",
+      "title": "Sea floor material",
       "description": "Controls the block type used as a floor for bodies of water in this biome.",
-			"string": "boostringlean"
+      "string": "boostringlean"
     },
     "foundation_material": {
-			"title": "Foundation material",
+      "title": "Foundation material",
       "description": "Controls the block type used deep underground in this biome.",
-			"string": "string"
+      "string": "string"
     },
     "sea_material": {
-			"title": "Sea material",
+      "title": "Sea material",
       "description": "Controls the block type used for the bodies of water in this biome.",
-			"string": "string"
+      "string": "string"
     },
     "sea_floor_depth": {
-			"title": "Sea floor depth",
+      "title": "Sea floor depth",
       "description": "Controls how deep below the world water level the floor should occur.",
-			"type": "integer"
+      "type": "integer"
     }
   }
 }

@@ -1,51 +1,48 @@
 {
-	"$schema": "http://json-schema.org/draft-07/schema",
-	"$id": "minecraft.behavior.biomes.1.12.0.components.minecraft.climate",
-	"title": "Climate",
-	"description": "Describes temperature, humidity, precipitation, etc.  Biomes without this component will have default values.",
-	"type": "object",
-	"minProperties": 0,
-	"maxProperties": 7,
-	"additionalProperties": false,
-	"properties": {
-		"temperature" : {
-			"title": "Temperature",
-			"description": "UNDOCUMENATED",
-			"type": "number"
-		},
-		"downfall" : {
-			"title": "Downfall",
-			"description": "UNDOCUMENATED",
-			"type": "number"
-		},
-		"red_spores" : {
-			"title": "Red spores",
-			"description": "UNDOCUMENATED",
-			"type": "number"
-		},
-		"blue_spores" : {
-			"title": "Blue spores",
-			"description": "UNDOCUMENATED",
-			"type": "number"
-		},
-		"ash" : {
-			"title": "Ash",
-			"description": "UNDOCUMENATED",
-			"type": "number"
-		},
-		"white_ash" : {
-			"title": "White ash",
-			"description": "UNDOCUMENATED",
-			"type": "number"
-		},
-		"snow_accumulation": {
-			"title": "Snow accumulation",
-			"description": "UNDOCUMENATED",
-			"type": "array",
-			"items": [
-				{ "type": "number"},
-				{ "type": "number"}
-			]
-		}
-	}
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "minecraft.behavior.biomes.1.12.0.components.minecraft.climate",
+  "title": "Climate",
+  "description": "Describes temperature, humidity, precipitation, etc.  Biomes without this component will have default values.",
+  "type": "object",
+  "minProperties": 0,
+  "maxProperties": 7,
+  "additionalProperties": false,
+  "properties": {
+    "temperature": {
+      "title": "Temperature",
+      "description": "UNDOCUMENATED",
+      "type": "number"
+    },
+    "downfall": {
+      "title": "Downfall",
+      "description": "UNDOCUMENATED",
+      "type": "number"
+    },
+    "red_spores": {
+      "title": "Red spores",
+      "description": "UNDOCUMENATED",
+      "type": "number"
+    },
+    "blue_spores": {
+      "title": "Blue spores",
+      "description": "UNDOCUMENATED",
+      "type": "number"
+    },
+    "ash": {
+      "title": "Ash",
+      "description": "UNDOCUMENATED",
+      "type": "number"
+    },
+    "white_ash": {
+      "title": "White ash",
+      "description": "UNDOCUMENATED",
+      "type": "number"
+    },
+    "snow_accumulation": {
+      "title": "Snow accumulation",
+      "description": "UNDOCUMENATED",
+      "type": "array",
+      "items": [{ "type": "number" }, { "type": "number" }]
+    }
+  }
 }

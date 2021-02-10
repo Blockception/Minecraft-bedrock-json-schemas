@@ -36,13 +36,13 @@
               "description": "UNDOCUMENTATED",
               "type": "array",
               "items": [
-                { 
-                  "title": "Lower bound", 
+                {
+                  "title": "Lower bound",
                   "description": "Lower bound (inclusive) of the scatter range, as an offset from the input point to scatter around",
                   "$ref": "../../../../molang/1.8.0/number.json"
                 },
-                { 
-                  "title": "Upper bound", 
+                {
+                  "title": "Upper bound",
                   "description": "Upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around",
                   "$ref": "../../../../molang/1.8.0/number.json"
                 }
