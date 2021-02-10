@@ -317,16 +317,21 @@
           "particle_effects": {
             "title": "Particle effects",
             "description": "TODO",
-            "type": "object",
-            "propertyNames": {
-              "pattern": "^[\\d.]+$",
-              "examples": ["0.0", "1.0", "2.3"]
-            },
-            "additionalProperties": {
-              "title": "Timeline object",
-              "description": "A single point in time",
-              "$ref": "#/definitions/ParticleEffect"
-            }
+            "oneOf": [
+              { "$ref": "#/definitions/ParticleEffect" },
+              {
+                "type": "object",
+                "propertyNames": { "pattern": "^[\\d.]+$", "examples": ["0.0"] },
+                "additionalProperties": {
+                  "title": "Timeline object",
+                  "description": "A single point in time",
+                  "oneOf": [
+                    { "type": "object","$ref": "#/definitions/ParticleEffect" },
+                    { "type": "array", "items": { "$ref": "#/definitions/ParticleEffect" }}
+                  ]
+                }
+              }
+            ]
           },
           "start_delay": {
             "title": "Start delay",
