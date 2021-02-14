@@ -326,8 +326,8 @@
                   "title": "Timeline object",
                   "description": "A single point in time",
                   "oneOf": [
-                    { "type": "object","$ref": "#/definitions/ParticleEffect" },
-                    { "type": "array", "items": { "$ref": "#/definitions/ParticleEffect" }}
+                    { "type": "object", "$ref": "#/definitions/ParticleEffect" },
+                    { "type": "array", "items": { "$ref": "#/definitions/ParticleEffect" } }
                   ]
                 }
               }
