@@ -309,7 +309,11 @@
               }
             ]
           },
-
+          "loop_delay": {
+            "title": "Loop delay",
+            "description": "How long to wait in seconds before looping this animation. Note that this expression is evaluated after each loop and on looping animation only.",
+            "$ref": "../../../molang/1.8.0/number.json"
+          },
           "override_previous_animation": {
             "title": "Override previous animation",
             "description": "Reset bones in this animation to the default pose before applying this animation.",
@@ -343,12 +347,8 @@
             "title": "Sound effect",
             "description": "TODO",
             "type": "object",
-            "propertyNames": {
-              "pattern": "^[\\d.]+$"
-            },
-            "additionalProperties": {
-              "$ref": "#/definitions/SoundEffect"
-            }
+            "propertyNames": { "pattern": "^[\\d.]+$" },
+            "additionalProperties": { "$ref": "#/definitions/SoundEffect" }
           },
           "timeline": {
             "title": "Timeline",
