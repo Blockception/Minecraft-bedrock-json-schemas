@@ -37,6 +37,10 @@
       "title": "Sensor range"
     },
     "event_filters": { "$ref": "../filters.json" },
-    "event": { "$ref": "../types/event.json" }
+    "event": {
+      "title": "Event",
+      "description": "event",
+      "type": "string"
+    }
   }
 }
