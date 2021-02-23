@@ -9,27 +9,29 @@
   "definitions": {
     "uv": {
       "type": "array",
-      "minItems": 2,
-      "maxItems": 2,
-      "items": {
-        "type": "number"
-      }
+      "items": [
+        { "type": "number", "title": "X", "description": "The x component of the uv" },
+        { "type": "number", "title": "Y", "description": "The y component of the uv" }
+      ]
     },
     "direction_uv": {
       "additionalProperties": false,
       "type": "object",
       "properties": {
         "uv": {
+          "title": "Uv",
           "description": "Specifies the uv origin for the face. For this face, it is the upper-left corner, when looking at the face with y being up.",
           "$ref": "#/definitions/uv"
         },
         "uv_size": {
+          "title": "Uv size",
           "description": "The face maps this many texels from the uv origin. If not specified, the box dimensions are used instead.",
           "$ref": "#/definitions/uv"
         },
         "material_instance": {
           "type": "string",
-          "description": "TODO"
+          "title": "Material instance",
+          "description": "Specifies the UV's for the face that stretches"
         }
       }
     }
@@ -144,16 +146,28 @@
                       },
                       "pivot": {
                         "type": "array",
-                        "minItems": 3,
-                        "maxItems": 3,
                         "description": "If this field is specified, rotation of this cube occurs around this point, otherwise its rotation is around the center of the box. Note that in 1.12 this is flipped upside-down, but is fixed in 1.14.",
                         "title": "Pivot",
-                        "items": {
-                          "type": "number",
-                          "description": "If this field is specified, rotation of this cube occurs around this point, otherwise its rotation is around the center of the box. Note that in 1.12 this is flipped upside-down, but is fixed in 1.14."
-                        }
+                        "items": [
+                          {
+                            "type": "number",
+                            "title": "X",
+                            "description": "If this field is specified, rotation of this cube occurs around this point, otherwise its rotation is around the center of the box. Note that in 1.12 this is flipped upside-down, but is fixed in 1.14."
+                          },
+                          {
+                            "type": "number",
+                            "title": "Y",
+                            "description": "If this field is specified, rotation of this cube occurs around this point, otherwise its rotation is around the center of the box. Note that in 1.12 this is flipped upside-down, but is fixed in 1.14."
+                          },
+                          {
+                            "type": "number",
+                            "title": "Z",
+                            "description": "If this field is specified, rotation of this cube occurs around this point, otherwise its rotation is around the center of the box. Note that in 1.12 this is flipped upside-down, but is fixed in 1.14."
+                          }
+                        ]
                       },
                       "rotation": {
+                        "title": "Rotation",
                         "type": "array",
                         "minItems": 3,
                         "maxItems": 3,
@@ -163,15 +177,29 @@
                         }
                       },
                       "size": {
+                        "title": "Size",
                         "type": "array",
-                        "minItems": 3,
-                        "maxItems": 3,
-                        "items": {
-                          "type": "number",
-                          "description": "The cube extends this amount relative to its origin (in model space units)."
-                        }
+                        "description": "The cube extends this amount relative to its origin (in model space units).",
+                        "items": [
+                          {
+                            "type": "number",
+                            "title": "X",
+                            "description": "The cube extends this amount relative to its origin (in model space units)."
+                          },
+                          {
+                            "type": "number",
+                            "title": "Y",
+                            "description": "The cube extends this amount relative to its origin (in model space units)."
+                          },
+                          {
+                            "type": "number",
+                            "title": "Z",
+                            "description": "The cube extends this amount relative to its origin (in model space units)."
+                          }
+                        ]
                       },
                       "uv": {
+                        "title": "Uv",
                         "description": "This is an alternate per-face uv mapping which specifies each face of the cube. Omitting a face will cause that face to not get drawn.",
                         "oneOf": [
                           {
@@ -179,26 +207,32 @@
                             "type": "object",
                             "properties": {
                               "north": {
+                                "title": "North",
                                 "$ref": "#/definitions/direction_uv",
                                 "description": "Specifies the UV's for the face that stretches along the x and y axes, and faces the -z axis."
                               },
                               "south": {
+                                "title": "South",
                                 "$ref": "#/definitions/direction_uv",
                                 "description": "Specifies the UV's for the face that stretches along the x and y axes, and faces the z axis"
                               },
                               "east": {
+                                "title": "East",
                                 "$ref": "#/definitions/direction_uv",
                                 "description": "Specifies the UV's for the face that stretches along the z and y axes, and faces the x axis"
                               },
                               "west": {
+                                "title": "West",
                                 "$ref": "#/definitions/direction_uv",
                                 "description": "Specifies the UV's for the face that stretches along the z and y axes, and faces the -x axis"
                               },
                               "up": {
+                                "title": "Up",
                                 "$ref": "#/definitions/direction_uv",
                                 "description": "Specifies the UV's for the face that stretches along the x and z axes, and faces the y axis"
                               },
                               "down": {
+                                "title": "Down",
                                 "$ref": "#/definitions/direction_uv",
                                 "description": "Specifies the UV's for the face that stretches along the x and z axes, and faces the -y axis"
                               }
@@ -206,11 +240,10 @@
                           },
                           {
                             "type": "array",
-                            "minItems": 2,
-                            "maxItems": 2,
-                            "items": {
-                              "type": "number"
-                            }
+                            "items": [
+                              { "type": "number", "title": "X", "description": "The x component of the uv" },
+                              { "type": "number", "title": "Y", "description": "The y component of the uv" }
+                            ]
                           }
                         ]
                       }
