@@ -50,8 +50,7 @@
     },
     "commands": {
       "type": "string",
-      "description": "The event or commands to execute",
-      "pattern": "^(@s .+|/.+)$"
+      "description": "The event or commands to execute"
     }
   },
   "properties": {
