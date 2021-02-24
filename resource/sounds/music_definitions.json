@@ -1,1 +1,36 @@
-﻿{"$schema":"http://json-schema.org/draft-07/schema","$id":"blockception.minecraft.music_definitions.json","examples":[{"example":{"event_name":"music.example","min_delay":600,"max_delay":1200}}],"type":"object","title":"The minecraft music definition file","description":"The definition file of music of the resourcepack","definitions":{"music":{}},"propertyNames":{"examples":["creative","credits","end","endboss","game","hell","menu","nether","soulsand_valley","water"]},"additionalProperties":{"additionalProperties":false,"type":"object","description":"A music defintion","required":["event_name"],"properties":{"event_name":{"description":"The name of the minecraft music event","type":"string","examples":["music.game","music.game.creative","music.game.end","music.game.endboss","music.game.nether","music.game.credits","music.game.nether_wastes","music.menu"],"title":"Event Name"},"min_delay":{"type":"integer","description":"TODO description: min delay","title":"Min Delay"},"max_delay":{"type":"integer","description":"TODO description: max delay","title":"Max Delay"}},"title":"Music"}}
+﻿{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.music_definitions.json",
+  "examples": [{ "example": { "event_name": "music.example", "min_delay": 600, "max_delay": 1200 } }],
+  "type": "object",
+  "title": "The minecraft music definition file",
+  "description": "The definition file of music of the resourcepack",
+  "definitions": { "music": {} },
+  "propertyNames": { "examples": ["creative", "credits", "end", "endboss", "game", "hell", "menu", "nether", "soulsand_valley", "water"] },
+  "additionalProperties": {
+    "additionalProperties": false,
+    "type": "object",
+    "description": "A music defintion",
+    "required": ["event_name"],
+    "properties": {
+      "event_name": {
+        "description": "The name of the minecraft music event",
+        "type": "string",
+        "examples": [
+          "music.game",
+          "music.game.creative",
+          "music.game.end",
+          "music.game.endboss",
+          "music.game.nether",
+          "music.game.credits",
+          "music.game.nether_wastes",
+          "music.menu"
+        ],
+        "title": "Event Name"
+      },
+      "min_delay": { "type": "integer", "description": "TODO description: min delay", "title": "Min Delay" },
+      "max_delay": { "type": "integer", "description": "TODO description: max delay", "title": "Max Delay" }
+    },
+    "title": "Music"
+  }
+}
