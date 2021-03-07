@@ -7,12 +7,8 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "value": { "$ref": "../types/range_number_type.json", "description": "TODO", "title": "TODO title" },
-    "max": {
-      "type": "integer",
-      "description": "TODO",
-      "title": "TODO title"
-    }
+    "value": { "type": "integer", "description": "Current health of the entity", "title": "Value" },
+    "max": { "type": "integer", "description": "The maximum health the entity can heal", "title": "Maximum" }
   },
   "dependencies": {
     "max": ["value"]
