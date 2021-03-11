@@ -13,6 +13,7 @@
     "entity_attack",
     "entity_explosion",
     "fall",
+    "fatal",
     "falling_block",
     "fire",
     "fire_tick",
