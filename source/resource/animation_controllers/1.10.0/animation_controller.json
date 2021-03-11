@@ -101,9 +101,7 @@
           "states": {
             "title": "The states definition",
             "description": "The states of this animation controller",
-            "propertyNames": {
-              "pattern": "[a-z\\.]+"
-            },
+            "propertyNames": { "pattern": "[a-z\\.]+", "examples": ["default"] },
             "minProperties": 1,
             "additionalProperties": {
               "additionalProperties": false,
@@ -123,6 +121,7 @@
                 },
                 "blend_transition": {
                   "title": "Blend Transition",
+                  "description": "when transitioning away from this state, cross-fade over",
                   "oneOf": [
                     {
                       "type": "number",
@@ -189,10 +188,14 @@
                     "required": ["input"],
                     "properties": {
                       "input": {
+                        "title": "Input",
+                        "description": "",
                         "$ref": "../../../molang/1.8.0/number.json"
                       },
                       "remap_curve": {
+                        "title": "Remap curve",
                         "additionalProperties": {
+                          "propertyNames": { "pattern": "^([\\-\\+0-9]+|[\\-\\+0-9]+.[0-9]+)$" },
                           "type": "number"
                         }
                       }
