@@ -64,6 +64,7 @@
             "minecraft:on_use_on": { "$ref": "./components/minecraft.on_use_on.json" },
             "minecraft:projectile": { "$ref": "./components/minecraft.projectile.json" },
             "minecraft:repairable": { "$ref": "./components/minecraft.repairable.json" },
+            "minecraft:render_offsets": { "$ref": "./components/minecraft.render_offsets.json" },
             "minecraft:shooter": { "$ref": "./components/minecraft.shooter.json" },
             "minecraft:throwable": { "$ref": "./components/minecraft.throwable.json" },
             "minecraft:weapon": { "$ref": "./components/minecraft.weapon.json" },
