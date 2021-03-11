@@ -142,32 +142,32 @@
             "air": {
               "title": "Air",
               "description": "The fog settings when the camera is in the air.",
-              "$ref": "#/defintions/defaultFogSettings"
+              "$ref": "#/definitions/defaultFogSettings"
             },
             "weather": {
               "title": "Weather",
               "description": " The fog settings for when the camera is in the air with active weather (rain, snow, etc..).",
-              "$ref": "#/defintions/defaultFogSettings"
+              "$ref": "#/definitions/defaultFogSettings"
             },
             "water": {
               "title": "Water",
               "description": "The fog settings when the camera is in water.",
-              "$ref": "#/defintions/defaultFogSettings"
+              "$ref": "#/definitions/defaultFogSettings"
             },
             "lava": {
               "title": "Lava",
               "description": "The fog settings when the camera is in lava.",
-              "$ref": "#/defintions/defaultFogSettings"
+              "$ref": "#/definitions/defaultFogSettings"
             },
             "lava_resistance": {
               "title": "Lava resistance",
               "description": "The fog settings when the camera is in lava and the player has the lava resistance effect active.",
-              "$ref": "#/defintions/defaultFogSettings"
+              "$ref": "#/definitions/defaultFogSettings"
             },
             "powder_snow": {
               "title": "Powder snow",
               "description": "The fog settings when the camera is inside a Powder Snow block.",
-              "$ref": "#/defintions/defaultFogSettings"
+              "$ref": "#/definitions/defaultFogSettings"
             }
           }
         },
