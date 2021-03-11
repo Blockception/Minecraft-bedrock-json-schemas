@@ -1,1 +1,153 @@
-﻿{"$schema":"http://json-schema.org/draft-07/schema","$id":"blockception.minecraft.sound_definition.json","examples":[{"format_version":"1.14.0","sound_definitions":{"music.game":{"category":"music","sounds":[""]}}}],"allOf":[{"if":{"properties":{"format_version":{"type":"string"}}},"else":{"$ref":"#/definitions/A"}},{"if":{"properties":{"format_version":{"type":"string","const":"1.14.0"}}},"then":{"$ref":"#/definitions/B"}}],"definitions":{"A_SoundPath":{"$id":"SoundFilepath","type":"string","title":"The sound filepath schema","description":"The filepath to the sound, starts with 'sounds/'","pattern":"(^sounds/.*$|^$)","additionalItems":true},"A_SoundSpec":{"additionalItems":false,"type":"object","$id":"#/Sound","title":"Sound specification","required":["sounds"],"properties":{"category":{"type":"string","$id":"#/Sound/category","title":"Sound category","enum":["block","music","weather","ui","bucket","neutral","player","hostile","record"],"description":"TODO description: category"},"sounds":{"items":{"anyOf":[{"$id":"#/Sound/sounds/stringItem","type":"string","$ref":"#/definitions/A_SoundPath","description":"TODO description: Todo","title":"Todo"},{"additionalItems":false,"$id":"#/Sound/sounds/ObjectItem","type":"object","required":["name"],"properties":{"pitch":{"description":"The pitch of the audio, 1 is nomial","type":"number","minimum":0,"maximum":2,"title":"Pitch"},"volume":{"description":"The volume of the audio, 1 is nomial","type":"number","minimum":0,"maximum":2,"title":"Volume"},"load_on_low_memory":{"type":"boolean","description":"Marks if this audio should be loaded or not on low memory","title":"Load On Low Memory"},"stream":{"description":"If marked true then minecraft will stream the audio","type":"boolean","title":"Stream"},"name":{"$id":"#/Sound/sounds/stringItem","type":"string","$ref":"#/definitions/A_SoundPath","description":"TODO description: name","title":"Name"}},"description":"TODO description: Todo","title":"Todo"}],"description":"TODO description: sounds","title":"Sounds"},"description":"TODO description: sounds","title":"Sounds"}},"description":"TODO description: additionalProperties"},"A":{"type":"object","title":"The minecraft sound definition file, unknown version","description":"TODO description","additionalProperties":{"$ref":"#/definitions/A_SoundSpec"},"properties":{"format_version":{"type":"string","description":"A version that tells minecraft what type of data format can be expected when reading this file.","title":"Format Version"},"sound_definitions":{"type":"object","additionalProperties":{"$ref":"#/definitions/A_SoundSpec"},"description":"TODO description: sound definitions","title":"Sound Definitions"}}},"B_SoundPath":{"$id":"SoundFilepath","type":"string","title":"The sound filepath schema","description":"The filepath to the sound, starts with 'sounds/'","pattern":"(^sounds/.*$|^$)","additionalItems":true},"B_SoundSpec":{"additionalItems":false,"type":"object","$id":"#/Sound","title":"Sound specification","required":["sounds"],"properties":{"category":{"type":"string","$id":"#/Sound/category","title":"Sound category","enum":["ambient","block","music","weather","ui","bucket","neutral","player","hostile","record","bottle"],"description":"TODO description: category"},"sounds":{"items":{"anyOf":[{"$id":"#/Sound/sounds/stringItem","type":"string","$ref":"#/definitions/B_SoundPath","description":"TODO description: Todo","title":"Todo"},{"additionalItems":false,"$id":"#/Sound/sounds/ObjectItem","type":"object","required":["name"],"properties":{"pitch":{"description":"The pitch of the audio, 1 is nomial","type":"number","minimum":0,"maximum":2,"title":"Pitch"},"volume":{"description":"The volume of the audio, 1 is nomial","type":"number","minimum":0,"title":"Volume"},"load_on_low_memory":{"type":"boolean","description":"Marks if this audio should be loaded or not on low memory","title":"Load On Low Memory"},"stream":{"description":"If marked true then minecraft will stream the audio","type":"boolean","title":"Stream"},"name":{"$id":"#/Sound/sounds/stringItem","type":"string","$ref":"#/definitions/B_SoundPath","description":"TODO description: name","title":"Name"}},"description":"TODO description: Todo","title":"Todo"}],"description":"TODO description: sounds","title":"Sounds"},"description":"TODO description: sounds","title":"Sounds"}},"description":"TODO description: additionalProperties"},"B":{"type":"object","additionalItems":false,"title":"The minecraft sound definition file for 1.14.0","description":"TODO description","properties":{"format_version":{"type":"string","description":"A version that tells minecraft what type of data format can be expected when reading this file.","title":"Format Version"},"sound_definitions":{"type":"object","additionalProperties":{"$ref":"#/definitions/B_SoundSpec"},"description":"TODO description: sound definitions","title":"Sound Definitions"},"__use_legacy_max_distance":{"description":"TODO description: use legacy max distance","title":"Use Legacy Max Distance","type":"string","enum":["true","false"]}},"additionalProperties":false}}}
+﻿{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.sound_definition.json",
+  "examples": [{ "format_version": "1.14.0", "sound_definitions": { "music.game": { "category": "music", "sounds": [""] } } }],
+  "allOf": [
+    { "if": { "properties": { "format_version": { "type": "string" } } }, "else": { "$ref": "#/definitions/A" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.14.0" } } }, "then": { "$ref": "#/definitions/B" } }
+  ],
+  "definitions": {
+    "A_SoundPath": {
+      "$id": "SoundFilepath",
+      "type": "string",
+      "title": "The sound filepath schema",
+      "description": "The filepath to the sound, starts with 'sounds/'",
+      "pattern": "(^sounds/.*$|^$)",
+      "additionalItems": true
+    },
+    "A_SoundSpec": {
+      "additionalItems": false,
+      "type": "object",
+      "$id": "#/Sound",
+      "title": "Sound specification",
+      "required": ["sounds"],
+      "properties": {
+        "category": {
+          "type": "string",
+          "$id": "#/Sound/category",
+          "title": "Sound category",
+          "enum": ["block", "music", "weather", "ui", "bucket", "neutral", "player", "hostile", "record"],
+          "description": "TODO description: category"
+        },
+        "sounds": {
+          "items": {
+            "anyOf": [
+              { "$id": "#/Sound/sounds/stringItem", "type": "string", "$ref": "#/definitions/A_SoundPath", "description": "TODO description: Todo", "title": "Todo" },
+              {
+                "additionalItems": false,
+                "$id": "#/Sound/sounds/ObjectItem",
+                "type": "object",
+                "required": ["name"],
+                "properties": {
+                  "pitch": { "description": "The pitch of the audio, 1 is nomial", "type": "number", "minimum": 0, "maximum": 2, "title": "Pitch" },
+                  "volume": { "description": "The volume of the audio, 1 is nomial", "type": "number", "minimum": 0, "maximum": 2, "title": "Volume" },
+                  "load_on_low_memory": { "type": "boolean", "description": "Marks if this audio should be loaded or not on low memory", "title": "Load On Low Memory" },
+                  "stream": { "description": "If marked true then minecraft will stream the audio", "type": "boolean", "title": "Stream" },
+                  "name": { "$id": "#/Sound/sounds/stringItem", "type": "string", "$ref": "#/definitions/A_SoundPath", "description": "TODO description: name", "title": "Name" }
+                },
+                "description": "TODO description: Todo",
+                "title": "Todo"
+              }
+            ],
+            "description": "TODO description: sounds",
+            "title": "Sounds"
+          },
+          "description": "TODO description: sounds",
+          "title": "Sounds"
+        }
+      },
+      "description": "TODO description: additionalProperties"
+    },
+    "A": {
+      "type": "object",
+      "title": "The minecraft sound definition file, unknown version",
+      "description": "TODO description",
+      "additionalProperties": { "$ref": "#/definitions/A_SoundSpec" },
+      "properties": {
+        "format_version": {
+          "type": "string",
+          "description": "A version that tells minecraft what type of data format can be expected when reading this file.",
+          "title": "Format Version"
+        },
+        "sound_definitions": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/definitions/A_SoundSpec" },
+          "description": "TODO description: sound definitions",
+          "title": "Sound Definitions"
+        }
+      }
+    },
+    "B_SoundPath": {
+      "$id": "SoundFilepath",
+      "type": "string",
+      "title": "The sound filepath schema",
+      "description": "The filepath to the sound, starts with 'sounds/'",
+      "pattern": "(^sounds/.*$|^$)",
+      "additionalItems": true
+    },
+    "B_SoundSpec": {
+      "additionalItems": false,
+      "type": "object",
+      "$id": "#/Sound",
+      "title": "Sound specification",
+      "required": ["sounds"],
+      "properties": {
+        "category": {
+          "type": "string",
+          "$id": "#/Sound/category",
+          "title": "Sound category",
+          "enum": ["ambient", "block", "music", "weather", "ui", "bucket", "neutral", "player", "hostile", "record", "bottle"],
+          "description": "TODO description: category"
+        },
+        "sounds": {
+          "items": {
+            "anyOf": [
+              { "$id": "#/Sound/sounds/stringItem", "type": "string", "$ref": "#/definitions/B_SoundPath", "description": "TODO description: Todo", "title": "Todo" },
+              {
+                "additionalItems": false,
+                "$id": "#/Sound/sounds/ObjectItem",
+                "type": "object",
+                "required": ["name"],
+                "properties": {
+                  "pitch": { "description": "The pitch of the audio, 1 is nomial", "type": "number", "minimum": 0, "maximum": 2, "title": "Pitch" },
+                  "volume": { "description": "The volume of the audio, 1 is nomial", "type": "number", "minimum": 0, "title": "Volume" },
+                  "load_on_low_memory": { "type": "boolean", "description": "Marks if this audio should be loaded or not on low memory", "title": "Load On Low Memory" },
+                  "stream": { "description": "If marked true then minecraft will stream the audio", "type": "boolean", "title": "Stream" },
+                  "name": { "$id": "#/Sound/sounds/stringItem", "type": "string", "$ref": "#/definitions/B_SoundPath", "description": "TODO description: name", "title": "Name" }
+                },
+                "description": "TODO description: Todo",
+                "title": "Todo"
+              }
+            ],
+            "description": "TODO description: sounds",
+            "title": "Sounds"
+          },
+          "description": "TODO description: sounds",
+          "title": "Sounds"
+        }
+      },
+      "description": "TODO description: additionalProperties"
+    },
+    "B": {
+      "type": "object",
+      "additionalItems": false,
+      "title": "The minecraft sound definition file for 1.14.0",
+      "description": "TODO description",
+      "properties": {
+        "format_version": {
+          "type": "string",
+          "description": "A version that tells minecraft what type of data format can be expected when reading this file.",
+          "title": "Format Version"
+        },
+        "sound_definitions": {
+          "type": "object",
+          "additionalProperties": { "$ref": "#/definitions/B_SoundSpec" },
+          "description": "TODO description: sound definitions",
+          "title": "Sound Definitions"
+        },
+        "__use_legacy_max_distance": { "description": "TODO description: use legacy max distance", "title": "Use Legacy Max Distance", "type": "string", "enum": ["true", "false"] }
+      },
+      "additionalProperties": false
+    }
+  }
+}

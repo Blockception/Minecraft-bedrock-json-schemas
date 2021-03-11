@@ -1,1 +1,151 @@
-﻿{"$schema":"http://json-schema.org/draft-07/schema","$id":"blockception.minecraft.behaviour.animations","examples":[{"format_version":"1.10.0","animations":{"animation.example":{}}}],"allOf":[{"if":{"properties":{"format_version":{"type":"string","const":"1.8.0"}}},"then":{"$ref":"#/definitions/A"}},{"if":{"properties":{"format_version":{"type":"string","const":"1.10.0"}}},"then":{"$ref":"#/definitions/C"}}],"definitions":{"A_animationspec":{"anyOf":[{"title":"Animation Specification","description":"A single string that specifies which animation there are","type":"string"},{"type":"object","title":"Animation Specification","description":"A object specification on how to transition","maxProperties":1,"minProperties":1,"additionalProperties":{"$ref":"#/definitions/B"}}]},"A_particle_effect_spec":{"additionalProperties":false,"type":"object","required":["effect"],"properties":{"bind_to_actor":{"type":"boolean","description":"Set to false to have the effect spawned in the world without being bound to an actor (by default an effect is bound to the actor)."},"effect":{"type":"string","description":"The name of a particle effect that should be played"},"locator":{"type":"string","description":"The name of a locator on the actor where the effect should be located"},"pre_effect_script":{"type":"string","description":"A molang script that will be run when the particle emitter is initialized"}}},"A_commands":{"type":"string","description":"The event or commands to execute"},"B":{"type":"string","title":"Molang / string definition","description":"Molang definition","format":"molang"},"A":{"type":"object","title":"The minecraft behaviourpack animation 1.8.0","description":"TODO description","required":["format_version","animations"],"properties":{"format_version":{"title":"The 1.8.0 format version","type":"string","pattern":"^1.8.0$","description":"A version that tells minecraft what type of data format can be expected when reading this file."},"animations":{"title":"Animations schema","description":"The animation 1.8.0 specification","type":"object","propertyNames":{"pattern":"^animation\\.[a-z\\.]+"},"additionalProperties":{"type":"object","additionalProperties":false,"description":"TODO description: additionalItems","title":"Animation specification","properties":{"animation_length":{"type":"number","description":"TODO description: animation length","title":"Animation Length"},"loop":{"type":"boolean","description":"TODO description: loop","title":"Loop"},"timeline":{"title":"Timeline","description":"The time line","type":"object","propertyNames":{"pattern":"^(\\d+.\\d+|\\d+)$"},"additionalProperties":{"oneOf":[{"$ref":"#/definitions/A_commands"},{"type":"array","title":"Collection timelime items","items":{"$ref":"#/definitions/A_commands"}}]}}}}}},"additionalProperties":false},"C_animationspec":{"anyOf":[{"title":"Animation Specification","description":"A single string that specifies which animation there are","type":"string"},{"type":"object","title":"Animation Specification","description":"A object specification on how to transition","maxProperties":1,"minProperties":1,"additionalProperties":{"$ref":"#/definitions/B"}}]},"C_particle_effect_spec":{"additionalProperties":false,"type":"object","required":["effect"],"properties":{"bind_to_actor":{"type":"boolean","description":"Set to false to have the effect spawned in the world without being bound to an actor (by default an effect is bound to the actor)."},"effect":{"type":"string","description":"The name of a particle effect that should be played"},"locator":{"type":"string","description":"The name of a locator on the actor where the effect should be located"},"pre_effect_script":{"type":"string","description":"A molang script that will be run when the particle emitter is initialized"}}},"C_commands":{"type":"string","description":"The event or commands to execute"},"C":{"type":"object","title":"The minecraft behaviourpack animation 1.10.0","description":"TODO description","required":["format_version","animations"],"properties":{"format_version":{"title":"The 1.10.0 format version","type":"string","pattern":"^1.10.0$","description":"A version that tells minecraft what type of data format can be expected when reading this file."},"animations":{"title":"Animations schema","description":"The animation 1.10.0 specification","type":"object","propertyNames":{"pattern":"^animation\\.[a-z\\.]+"},"additionalProperties":{"type":"object","additionalProperties":false,"description":"TODO description: additionalItems","title":"Animation specification","properties":{"animation_length":{"type":"number","description":"TODO description: animation length","title":"Animation Length"},"loop":{"type":"boolean","description":"TODO description: loop","title":"Loop"},"timeline":{"title":"Timeline","description":"The time line","type":"object","propertyNames":{"pattern":"^(\\d+.\\d+|\\d+)$"},"additionalProperties":{"oneOf":[{"type":"string","$ref":"#/definitions/C_commands"},{"type":"array","title":"Collection timelime items","items":{"$ref":"#/definitions/C_commands"}}]}}}}}},"additionalProperties":false}}}
+﻿{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behaviour.animations",
+  "examples": [{ "format_version": "1.10.0", "animations": { "animation.example": {} } }],
+  "allOf": [
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.8.0" } } }, "then": { "$ref": "#/definitions/A" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.10.0" } } }, "then": { "$ref": "#/definitions/C" } }
+  ],
+  "definitions": {
+    "A_animationspec": {
+      "anyOf": [
+        { "title": "Animation Specification", "description": "A single string that specifies which animation there are", "type": "string" },
+        {
+          "type": "object",
+          "title": "Animation Specification",
+          "description": "A object specification on how to transition",
+          "maxProperties": 1,
+          "minProperties": 1,
+          "additionalProperties": { "$ref": "#/definitions/B" }
+        }
+      ]
+    },
+    "A_particle_effect_spec": {
+      "additionalProperties": false,
+      "type": "object",
+      "required": ["effect"],
+      "properties": {
+        "bind_to_actor": {
+          "type": "boolean",
+          "description": "Set to false to have the effect spawned in the world without being bound to an actor (by default an effect is bound to the actor)."
+        },
+        "effect": { "type": "string", "description": "The name of a particle effect that should be played" },
+        "locator": { "type": "string", "description": "The name of a locator on the actor where the effect should be located" },
+        "pre_effect_script": { "type": "string", "description": "A molang script that will be run when the particle emitter is initialized" }
+      }
+    },
+    "A_commands": { "type": "string", "description": "The event or commands to execute" },
+    "B": { "type": "string", "title": "Molang / string definition", "description": "Molang definition", "format": "molang" },
+    "A": {
+      "type": "object",
+      "title": "The minecraft behaviourpack animation 1.8.0",
+      "description": "TODO description",
+      "required": ["format_version", "animations"],
+      "properties": {
+        "format_version": {
+          "title": "The 1.8.0 format version",
+          "type": "string",
+          "pattern": "^1.8.0$",
+          "description": "A version that tells minecraft what type of data format can be expected when reading this file."
+        },
+        "animations": {
+          "title": "Animations schema",
+          "description": "The animation 1.8.0 specification",
+          "type": "object",
+          "propertyNames": { "pattern": "^animation\\.[a-z\\.]+" },
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "TODO description: additionalItems",
+            "title": "Animation specification",
+            "properties": {
+              "animation_length": { "type": "number", "description": "TODO description: animation length", "title": "Animation Length" },
+              "loop": { "type": "boolean", "description": "TODO description: loop", "title": "Loop" },
+              "timeline": {
+                "title": "Timeline",
+                "description": "The time line",
+                "type": "object",
+                "propertyNames": { "pattern": "^(\\d+.\\d+|\\d+)$" },
+                "additionalProperties": {
+                  "oneOf": [{ "$ref": "#/definitions/A_commands" }, { "type": "array", "title": "Collection timelime items", "items": { "$ref": "#/definitions/A_commands" } }]
+                }
+              }
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "C_animationspec": {
+      "anyOf": [
+        { "title": "Animation Specification", "description": "A single string that specifies which animation there are", "type": "string" },
+        {
+          "type": "object",
+          "title": "Animation Specification",
+          "description": "A object specification on how to transition",
+          "maxProperties": 1,
+          "minProperties": 1,
+          "additionalProperties": { "$ref": "#/definitions/B" }
+        }
+      ]
+    },
+    "C_particle_effect_spec": {
+      "additionalProperties": false,
+      "type": "object",
+      "required": ["effect"],
+      "properties": {
+        "bind_to_actor": {
+          "type": "boolean",
+          "description": "Set to false to have the effect spawned in the world without being bound to an actor (by default an effect is bound to the actor)."
+        },
+        "effect": { "type": "string", "description": "The name of a particle effect that should be played" },
+        "locator": { "type": "string", "description": "The name of a locator on the actor where the effect should be located" },
+        "pre_effect_script": { "type": "string", "description": "A molang script that will be run when the particle emitter is initialized" }
+      }
+    },
+    "C_commands": { "type": "string", "description": "The event or commands to execute" },
+    "C": {
+      "type": "object",
+      "title": "The minecraft behaviourpack animation 1.10.0",
+      "description": "TODO description",
+      "required": ["format_version", "animations"],
+      "properties": {
+        "format_version": {
+          "title": "The 1.10.0 format version",
+          "type": "string",
+          "pattern": "^1.10.0$",
+          "description": "A version that tells minecraft what type of data format can be expected when reading this file."
+        },
+        "animations": {
+          "title": "Animations schema",
+          "description": "The animation 1.10.0 specification",
+          "type": "object",
+          "propertyNames": { "pattern": "^animation\\.[a-z\\.]+" },
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "TODO description: additionalItems",
+            "title": "Animation specification",
+            "properties": {
+              "animation_length": { "type": "number", "description": "TODO description: animation length", "title": "Animation Length" },
+              "loop": { "type": "boolean", "description": "TODO description: loop", "title": "Loop" },
+              "timeline": {
+                "title": "Timeline",
+                "description": "The time line",
+                "type": "object",
+                "propertyNames": { "pattern": "^(\\d+.\\d+|\\d+)$" },
+                "additionalProperties": {
+                  "oneOf": [
+                    { "type": "string", "$ref": "#/definitions/C_commands" },
+                    { "type": "array", "title": "Collection timelime items", "items": { "$ref": "#/definitions/C_commands" } }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

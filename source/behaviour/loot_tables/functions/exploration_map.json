@@ -14,20 +14,7 @@
     "destination": {
       "type": "string",
       "description": "The destination value defines what type of treasure map they receive.",
-      "enum": [
-        "endcity",
-        "fortress",
-        "mineshaft",
-        "monument",
-        "ruins",
-        "stronghold",
-        "temple",
-        "village",
-        "mansion",
-        "shipwreck",
-        "buriedtreasure",
-        "pillageroutpost"
-      ],
+      "enum": ["endcity", "fortress", "mineshaft", "monument", "ruins", "stronghold", "temple", "village", "mansion", "shipwreck", "buriedtreasure", "pillageroutpost"],
       "title": "TODO title"
     }
   }

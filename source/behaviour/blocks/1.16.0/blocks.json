@@ -52,10 +52,7 @@
                 "pattern": "%([a-zA-Z0-9_]+:[a-zA-Z0-9_\\-]+)&"
               },
               "additionalProperties": {
-                "oneOf": [
-                  { "type": "array", "oneOf": [{ "type": "boolean" }, { "type": "number" }, { "type": "integer" }, { "type": "string" }] },
-                  { "type": "object" }
-                ]
+                "oneOf": [{ "type": "array", "oneOf": [{ "type": "boolean" }, { "type": "number" }, { "type": "integer" }, { "type": "string" }] }, { "type": "object" }]
               }
             }
           }
