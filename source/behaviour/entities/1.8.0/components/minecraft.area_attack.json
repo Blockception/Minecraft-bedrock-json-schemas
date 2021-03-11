@@ -23,32 +23,7 @@
       "type": "string",
       "description": "TODO",
       "title": "Cause",
-      "enum": [
-        "anvil",
-        "attack",
-        "block_explosion",
-        "contact",
-        "drowning",
-        "entity_explosion",
-        "fall",
-        "falling_block",
-        "fatal",
-        "fire",
-        "fire_tick",
-        "fly_into_wall",
-        "lava",
-        "magic",
-        "none",
-        "override",
-        "piston",
-        "projectile",
-        "starve",
-        "suffocation",
-        "suicide",
-        "thorns",
-        "void",
-        "wither"
-      ]
+      "$ref": "../../../../general/entity/damage_source.json"
     }
   }
 }

@@ -23,32 +23,7 @@
             "type": "string",
             "title": "Cause",
             "description": "Damage cause",
-            "enum": [
-              "anvil",
-              "attack",
-              "block_explosion",
-              "contact",
-              "drowning",
-              "entity_explosion",
-              "fall",
-              "falling_block",
-              "fatal",
-              "fire",
-              "fire_tick",
-              "fly_into_wall",
-              "lava",
-              "magic",
-              "none",
-              "override",
-              "piston",
-              "projectile",
-              "starve",
-              "suffocation",
-              "suicide",
-              "thorns",
-              "void",
-              "wither"
-            ]
+            "$ref": "../../../../general/entity/damage_source.json"
           },
           "damage_per_tick": {
             "type": "integer",
