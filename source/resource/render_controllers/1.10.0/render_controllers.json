@@ -193,6 +193,39 @@
             "description": "TODO description: textures",
             "title": "Textures"
           },
+          "uv_anim": {
+            "additionalProperties": false,
+            "type": "object",
+            "required": ["offset", "scale"],
+            "properties": {
+              "offset": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": {
+                  "$ref": "../../../molang/1.8.0/number.json",
+                  "description": "TODO description: offset",
+                  "title": "Offset"
+                },
+                "description": "TODO description: offset",
+                "title": "Offset"
+              },
+              "scale": {
+                "type": "array",
+                "description": "TODO description: scale",
+                "title": "Scale",
+                "minItems": 2,
+                "maxItems": 2,
+                "items": {
+                  "$ref": "../../../molang/1.8.0/number.json",
+                  "description": "TODO description: scale",
+                  "title": "Scale"
+                }
+              }
+            },
+            "description": "TODO description: uv anim",
+            "title": "Uv Anim"
+          },
           "part_visibility": {
             "type": "array",
             "minItems": 1,
