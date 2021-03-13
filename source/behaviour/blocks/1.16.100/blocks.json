@@ -60,7 +60,7 @@
                     "items": {
                       "title": "Property value",
                       "description": "The value of this property",
-                      "oneOf": [{ "type": "boolean" }, { "type": "number" }, { "type": "integer" }, { "type": "string" }]
+                      "anyOf": [{ "type": "boolean" }, { "type": "number" }, { "type": "integer" }, { "type": "string" }]
                     }
                   },
                   { "type": "object" }
