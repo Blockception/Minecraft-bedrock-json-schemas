@@ -52,7 +52,19 @@
                 "pattern": "^([a-zA-Z0-9_]+:[a-zA-Z0-9_\\-]+)$"
               },
               "additionalProperties": {
-                "oneOf": [{ "type": "array", "oneOf": [{ "type": "boolean" }, { "type": "number" }, { "type": "integer" }, { "type": "string" }] }, { "type": "object" }]
+                "title": "Property",
+                "description": "A block property",
+                "oneOf": [
+                  {
+                    "type": "array",
+                    "items": {
+                      "title": "Property value",
+                      "description": "The value of this property",
+                      "oneOf": [{ "type": "boolean" }, { "type": "number" }, { "type": "integer" }, { "type": "string" }]
+                    }
+                  },
+                  { "type": "object" }
+                ]
               }
             }
           }
