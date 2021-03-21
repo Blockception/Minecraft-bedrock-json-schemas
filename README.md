@@ -2,13 +2,38 @@
 The json validation schema files for Minecraft bedrock
 
 - [Minecraft-bedrock-json-schemas](#minecraft-bedrock-json-schemas)
+	- [Manual Usage](#manual-usage)
+		- [Vscode](#vscode)
+- [Contents](#contents)
 	- [Behaviour files](#behaviour-files)
 	- [Resource files](#resource-files)
 	- [Contributing](#contributing)
 
+## Manual Usage
+
+### Vscode
+
+- Copy the `vscode-settings.json` file into the `.vscode` folder in your project and rename it to: `settings.json`  
+OR
+- Copy the contents of `vscode-settings.json` into your `.code-workspace` file under the property settings:
+
+```json
+{
+	"folders": [ { "path": "." } ],
+	"settings": {
+		"json.schemas": [
+			...
+		]
+	}
+}
+```
+
+---
+# Contents
+
 ## Behaviour files
-- [Animations](behaviour/animations/animations.json)
 - [Animation Controllers](behaviour/animation_controllers/animation_controller.json)
+- [Animations](behaviour/animations/animations.json)
 - [Blocks](behaviour/blocks/blocks.json)
 - [Entities](behaviour/entities/entities.json)
 - [Items](behaviour/items/items.json)
@@ -21,6 +46,9 @@ The json validation schema files for Minecraft bedrock
 
 - [Animations](resource/animations/animations.json)
 - [Animation Controllers](resource/animation_controllers/animation_controller.json)
+- [Attachables](resource/attachables/attachables.json)
+- [Biomes client](resource/biomes_client.json)
+- [Blocks](resource/blocks.json)
 - [Entity](resource/entity/entities.json)
 - [Flipbook texture](resource/textures/flipbook_textures.json)
 - [Fog](resource/fog/fog.json)
@@ -33,6 +61,7 @@ The json validation schema files for Minecraft bedrock
 - [Render Controllers](resource/render_controllers/render_controllers.json)
 - [Sounds](resource/sounds/sound_definitions.json)
 - [Terrain texture](resource/textures/terrain_texture.json)
+- [Terrain list](resource/textures/texture_list.json)
 
 ## Contributing
 This project could more help in filling in descriptions, titles and giving snippets!
