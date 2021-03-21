@@ -1,141 +1,39 @@
 {
   "$schema": "https://raw.githubusercontent.com/DaanV2/JsonSchemaValidationCompressor.Net/master/Schema/Compression%20Schema.json",
   "Files": [
-    {
-      "Source": "./skinpacks/skins.json",
-      "Destination": "../skinpacks/skins.json"
-    },
-    {
-      "Source": "./language/language_names.json",
-      "Destination": "../language/language_names.json"
-    },
-    {
-      "Source": "./language/languages.json",
-      "Destination": "../language/languages.json"
-    },
-    {
-      "Source": "./general/manifest.json",
-      "Destination": "../general/manifest.json"
-    },
-    {
-      "Source": "./general/world_x_packs.json",
-      "Destination": "../general/world_x_packs.json"
-    },
-    {
-      "Source": "./resource/animation_controllers/animation_controller.json",
-      "Destination": "../resource/animation_controllers/animation_controller.json"
-    },
-    {
-      "Source": "./resource/animations/actor_animation.json",
-      "Destination": "../resource/animations/actor_animation.json"
-    },
-    {
-      "Source": "./resource/attachables/attachables.json",
-      "Destination": "../resource/attachables/attachables.json"
-    },
-    {
-      "Source": "./resource/biomes_client.json",
-      "Destination": "../resource/biomes_client.json"
-    },
-    {
-      "Source": "./resource/blocks.json",
-      "Destination": "../resource/blocks.json"
-    },
-    {
-      "Source": "./resource/entity/entity.json",
-      "Destination": "../resource/entity/entity.json"
-    },
-    {
-      "Source": "./resource/fog/fog.json",
-      "Destination": "../resource/fog/fog.json"
-    },
-    {
-      "Source": "./resource/textures/flipbook_textures.json",
-      "Destination": "../resource/textures/flipbook_textures.json"
-    },
-    {
-      "Source": "./resource/textures/item_texture.json",
-      "Destination": "../resource/textures/item_texture.json"
-    },
-    {
-      "Source": "./resource/textures/texture_list.json",
-      "Destination": "../resource/textures/texture_list.json"
-    },
-    {
-      "Source": "./resource/items/items.json",
-      "Destination": "../resource/items/items.json"
-    },
-    {
-      "Source": "./resource/models/entity/model_entity.json",
-      "Destination": "../resource/models/entity/model_entity.json"
-    },
-    {
-      "Source": "./resource/materials/materials.json",
-      "Destination": "../resource/materials/materials.json"
-    },
-    {
-      "Source": "./resource/sounds/music_definitions.json",
-      "Destination": "../resource/sounds/music_definitions.json"
-    },
-    {
-      "Source": "./resource/particles/particles.json",
-      "Destination": "../resource/particles/particles.json"
-    },
-    {
-      "Source": "./resource/render_controllers/render_controllers.json",
-      "Destination": "../resource/render_controllers/render_controllers.json"
-    },
-    {
-      "Source": "./resource/sounds/sound_definitions.json",
-      "Destination": "../resource/sounds/sound_definitions.json"
-    },
-    {
-      "Source": "./resource/sounds.json",
-      "Destination": "../resource/sounds.json"
-    },
-    {
-      "Source": "./resource/textures/terrain_texture.json",
-      "Destination": "../resource/textures/terrain_texture.json"
-    },
-    {
-      "Source": "./behaviour/animation_controllers/animation_controller.json",
-      "Destination": "../behaviour/animation_controllers/animation_controller.json"
-    },
-    {
-      "Source": "./behaviour/animations/animations.json",
-      "Destination": "../behaviour/animations/animations.json"
-    },
-    {
-      "Source": "./behaviour/biomes/biomes.json",
-      "Destination": "../behaviour/biomes/biomes.json"
-    },
-    {
-      "Source": "./behaviour/loot_tables/loot_tables.json",
-      "Destination": "../behaviour/loot_tables/loot_tables.json"
-    },
-    {
-      "Source": "./behaviour/blocks/blocks.json",
-      "Destination": "../behaviour/blocks/blocks.json"
-    },
-    {
-      "Source": "./behaviour/entities/entities.json",
-      "Destination": "../behaviour/entities/entities.json"
-    },
-    {
-      "Source": "./behaviour/items/items.json",
-      "Destination": "../behaviour/items/items.json"
-    },
-    {
-      "Source": "./behaviour/recipes/recipes.json",
-      "Destination": "../behaviour/recipes/recipes.json"
-    },
-    {
-      "Source": "./behaviour/spawn_rules/spawn_rules.json",
-      "Destination": "../behaviour/spawn_rules/spawn_rules.json"
-    },
-    {
-      "Source": "./behaviour/trading/trading.json",
-      "Destination": "../behaviour/trading/trading.json"
-    }
+    { "Source": "./skinpacks/skins.json", "Destination": "../skinpacks/skins.json" },
+    { "Source": "./language/language_names.json", "Destination": "../language/language_names.json" },
+    { "Source": "./language/languages.json", "Destination": "../language/languages.json" },
+    { "Source": "./general/manifest.json", "Destination": "../general/manifest.json" },
+    { "Source": "./general/world_x_packs.json", "Destination": "../general/world_x_packs.json" },
+    { "Source": "./resource/animation_controllers/animation_controller.json", "Destination": "../resource/animation_controllers/animation_controller.json" },
+    { "Source": "./resource/animations/actor_animation.json", "Destination": "../resource/animations/actor_animation.json" },
+    { "Source": "./resource/attachables/attachables.json", "Destination": "../resource/attachables/attachables.json" },
+    { "Source": "./resource/biomes_client.json", "Destination": "../resource/biomes_client.json" },
+    { "Source": "./resource/blocks.json", "Destination": "../resource/blocks.json" },
+    { "Source": "./resource/entity/entity.json", "Destination": "../resource/entity/entity.json" },
+    { "Source": "./resource/fog/fog.json", "Destination": "../resource/fog/fog.json" },
+    { "Source": "./resource/textures/flipbook_textures.json", "Destination": "../resource/textures/flipbook_textures.json" },
+    { "Source": "./resource/textures/item_texture.json", "Destination": "../resource/textures/item_texture.json" },
+    { "Source": "./resource/textures/texture_list.json", "Destination": "../resource/textures/texture_list.json" },
+    { "Source": "./resource/items/items.json", "Destination": "../resource/items/items.json" },
+    { "Source": "./resource/models/entity/model_entity.json", "Destination": "../resource/models/entity/model_entity.json" },
+    { "Source": "./resource/materials/materials.json", "Destination": "../resource/materials/materials.json" },
+    { "Source": "./resource/sounds/music_definitions.json", "Destination": "../resource/sounds/music_definitions.json" },
+    { "Source": "./resource/particles/particles.json", "Destination": "../resource/particles/particles.json" },
+    { "Source": "./resource/render_controllers/render_controllers.json", "Destination": "../resource/render_controllers/render_controllers.json" },
+    { "Source": "./resource/sounds/sound_definitions.json", "Destination": "../resource/sounds/sound_definitions.json" },
+    { "Source": "./resource/sounds.json", "Destination": "../resource/sounds.json" },
+    { "Source": "./resource/textures/terrain_texture.json", "Destination": "../resource/textures/terrain_texture.json" },
+    { "Source": "./behaviour/animation_controllers/animation_controller.json", "Destination": "../behaviour/animation_controllers/animation_controller.json" },
+    { "Source": "./behaviour/animations/animations.json", "Destination": "../behaviour/animations/animations.json" },
+    { "Source": "./behaviour/biomes/biomes.json", "Destination": "../behaviour/biomes/biomes.json" },
+    { "Source": "./behaviour/loot_tables/loot_tables.json", "Destination": "../behaviour/loot_tables/loot_tables.json" },
+    { "Source": "./behaviour/blocks/blocks.json", "Destination": "../behaviour/blocks/blocks.json" },
+    { "Source": "./behaviour/entities/entities.json", "Destination": "../behaviour/entities/entities.json" },
+    { "Source": "./behaviour/items/items.json", "Destination": "../behaviour/items/items.json" },
+    { "Source": "./behaviour/recipes/recipes.json", "Destination": "../behaviour/recipes/recipes.json" },
+    { "Source": "./behaviour/spawn_rules/spawn_rules.json", "Destination": "../behaviour/spawn_rules/spawn_rules.json" },
+    { "Source": "./behaviour/trading/trading.json", "Destination": "../behaviour/trading/trading.json" }
   ]
 }
