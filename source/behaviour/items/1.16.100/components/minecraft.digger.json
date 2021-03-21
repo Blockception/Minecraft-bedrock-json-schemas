@@ -7,54 +7,28 @@
   "additionalProperties": false,
   "required": ["destroy_speeds"],
   "properties": {
-    "use_efficiency": {
-      "title": "Use efficiency",
-      "type": "boolean",
-      "description": "Use efficiency? Default is set to false.",
-      "default": "false"
-    },
+    "use_efficiency": { "title": "Use Efficiency", "type": "boolean", "description": "Use efficiency? Default is set to false.", "default": "false" },
     "destroy_speeds": {
       "type": "array",
-      "title": "Destroy speeds",
+      "title": "Destroy Speeds",
       "description": "Destroy speed per block.",
       "items": {
-        "title": "Destroy speed",
+        "title": "Destroy Speed",
         "description": "Destroy speed per block.",
         "type": "object",
         "additionalProperties": false,
         "properties": {
-          "speed": {
-            "title": "Speed",
-            "description": "Speed",
-            "type": "number"
-          },
-          "on_dig": {
-            "type": "string",
-            "title": "On dig",
-            "description": "Trigger for when you dig a block that isn't listed in destroy_speeds"
-          },
+          "speed": { "title": "Speed", "description": "Speed", "type": "number" },
+          "on_dig": { "type": "string", "title": "On Dig", "description": "Trigger for when you dig a block that isn't listed in destroy_speeds" },
           "block": {
             "title": "Block",
             "oneOf": [
-              {
-                "type": "string",
-                "description": "The block identifier"
-              },
+              { "type": "string", "description": "The block identifier" },
               {
                 "type": "object",
                 "additionalProperties": false,
                 "description": "Block descriptor",
-                "properties": {
-                  "any_tag": {
-                    "type": "array",
-                    "title": "Any block tag",
-                    "description": "The block tag",
-                    "items": {
-                      "type": "string",
-                      "title": "Block tag"
-                    }
-                  }
-                }
+                "properties": { "any_tag": { "type": "array", "title": "Any Block Tag", "description": "The block tag", "items": { "type": "string", "title": "Block Tag" } } }
               }
             ]
           }

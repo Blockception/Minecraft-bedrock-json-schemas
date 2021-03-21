@@ -6,16 +6,7 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "type": {
-      "type": "string",
-      "title": "Type",
-      "description": "UNDOCUMENTATED",
-      "enum": ["magic"]
-    },
-    "amount": {
-      "type": "number",
-      "title": "Amount",
-      "description": "UNDOCUMENTATED"
-    }
+    "type": { "type": "string", "title": "Type", "description": "UNDOCUMENTATED", "enum": ["magic"] },
+    "amount": { "type": "number", "title": "Amount", "description": "UNDOCUMENTATED" }
   }
 }

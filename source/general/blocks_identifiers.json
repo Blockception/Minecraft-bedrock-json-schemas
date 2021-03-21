@@ -2,6 +2,6 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.general.1.8.0.blocks.item",
   "type": "string",
-  "title": "Block name",
+  "title": "Block Name",
   "description": "TODO description"
 }

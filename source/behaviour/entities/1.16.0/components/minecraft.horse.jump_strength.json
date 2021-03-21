@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.16.0.minecraft.horse.jump_strength",
   "type": "object",
-  "title": "Horse.jump strength 1.16.0",
+  "title": "Horse.jump Strength 1.16.0",
   "additionalProperties": false,
   "description": "UNDOCUMENTATED",
   "required": [],
@@ -10,23 +10,7 @@
     "value": {
       "description": "UNDOCUMENTATED",
       "title": "Value",
-      "oneOf": [
-        {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "range_min": {
-              "type": "number"
-            },
-            "range_max": {
-              "type": "number"
-            }
-          }
-        },
-        {
-          "type": "number"
-        }
-      ]
+      "oneOf": [{ "type": "object", "additionalProperties": false, "properties": { "range_min": { "type": "number" }, "range_max": { "type": "number" } } }, { "type": "number" }]
     }
   }
 }

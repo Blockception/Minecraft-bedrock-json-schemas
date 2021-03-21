@@ -15,9 +15,7 @@
     "minecraft:ticking": { "$ref": "#/definitions/event_base" },
     "minecraft:random_ticking": { "$ref": "#/definitions/event_base" }
   },
-  "additionalProperties": {
-    "oneOf": [{ "$ref": "#/definitions/event_base" }, { "$ref": "#/definitions/event_functions" }]
-  },
+  "additionalProperties": { "oneOf": [{ "$ref": "#/definitions/event_base" }, { "$ref": "#/definitions/event_functions" }] },
   "definitions": {
     "event_base": {
       "title": "Event",
@@ -29,12 +27,7 @@
           "title": "Sequence",
           "description": "UNDOCUMENTATED",
           "type": "array",
-          "items": {
-            "title": "Sequence",
-            "description": "UNDOCUMENTATED",
-            "type": "object",
-            "$ref": "#/definitions/event_functions"
-          }
+          "items": { "title": "Sequence", "description": "UNDOCUMENTATED", "type": "object", "$ref": "#/definitions/event_functions" }
         },
         "randomize": {
           "title": "Randomize",
@@ -46,14 +39,7 @@
             "type": "object",
             "$ref": "#/definitions/event_functions",
             "required": ["weight"],
-            "properties": {
-              "weight": {
-                "title": "Weight",
-                "description": "UNDOCUMENTATED",
-                "type": "integer",
-                "minimum": 0
-              }
-            }
+            "properties": { "weight": { "title": "Weight", "description": "UNDOCUMENTATED", "type": "integer", "minimum": 0 } }
           }
         },
         "add_mob_effect": { "$ref": "./events/add_mob_effect.json" },

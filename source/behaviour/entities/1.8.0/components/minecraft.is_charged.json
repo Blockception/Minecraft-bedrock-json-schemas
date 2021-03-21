@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.is_charged",
   "description": "Sets that this entity is charged.",
   "type": "object",
-  "title": "Is charged 1.8.0",
+  "title": "Is Charged 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {}

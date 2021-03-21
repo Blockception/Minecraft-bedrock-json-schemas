@@ -9,25 +9,13 @@
     "pitch": {
       "title": "Pitch",
       "oneOf": [
-        {
-          "default": 1,
-          "type": "number",
-          "description": "A defined pitch"
-        },
+        { "default": 1, "type": "number", "description": "A defined pitch" },
         {
           "description": "A random selection between a minimum and maximum",
           "type": "array",
           "items": [
-            {
-              "type": "number",
-              "minimum": 0,
-              "title": "Minimum"
-            },
-            {
-              "type": "number",
-              "minimum": 0,
-              "title": "Maximum"
-            }
+            { "type": "number", "minimum": 0, "title": "Minimum" },
+            { "type": "number", "minimum": 0, "title": "Maximum" }
           ]
         }
       ]
@@ -35,158 +23,97 @@
     "volume": {
       "title": "Volume",
       "oneOf": [
-        {
-          "default": 1,
-          "type": "number",
-          "description": "A defined volume"
-        },
+        { "default": 1, "type": "number", "description": "A defined volume" },
         {
           "description": "A random selection between a minimum and maximum",
           "type": "array",
           "items": [
-            {
-              "type": "number",
-              "minimum": 0,
-              "title": "Minimum"
-            },
-            {
-              "type": "number",
-              "minimum": 0,
-              "title": "Maximum"
-            }
+            { "type": "number", "minimum": 0, "title": "Minimum" },
+            { "type": "number", "minimum": 0, "title": "Maximum" }
           ]
         }
       ]
     },
     "sound_event": {
-      "title": "Sound event definition",
+      "title": "Sound Event ",
       "description": "A single sound event definition",
       "oneOf": [
-        {
-          "type": "string"
-        },
+        { "type": "string" },
         {
           "type": "object",
           "additionalProperties": false,
           "required": ["sound"],
           "properties": {
-            "volume": {
-              "$ref": "#/definitions/volume"
-            },
-            "sound": {
-              "type": "string",
-              "title": "Sound event",
-              "description": "The sound event described in sound_definitions.json"
-            },
-            "pitch": {
-              "$ref": "#/definitions/pitch"
-            }
+            "volume": { "$ref": "#/definitions/volume" },
+            "sound": { "type": "string", "title": "Sound Event", "description": "The sound event described in sound_definitions.json" },
+            "pitch": { "$ref": "#/definitions/pitch" }
           }
         }
       ]
     },
     "entity_event": {
       "type": "object",
-      "title": "Entity sound",
+      "title": "Entity Sound",
       "description": "Entity sound definitions",
       "properties": {
-        "volume": {
-          "$ref": "#/definitions/volume"
-        },
-        "pitch": {
-          "$ref": "#/definitions/pitch"
-        },
-        "events": {
-          "type": "object",
-          "title": "Events",
-          "propertyNames": {
-            "pattern": "[a-z\\._]+"
-          },
-          "additionalProperties": {
-            "$ref": "#/definitions/sound_event"
-          }
-        }
+        "volume": { "$ref": "#/definitions/volume" },
+        "pitch": { "$ref": "#/definitions/pitch" },
+        "events": { "type": "object", "title": "Events", "propertyNames": { "pattern": "[a-z\\._]+" }, "additionalProperties": { "$ref": "#/definitions/sound_event" } }
       }
     }
   },
   "properties": {
     "block_sounds": {
       "type": "object",
-      "title": "Block sounds",
+      "title": "Block Sounds",
       "description": "Block sound definitions",
       "additionalProperties": {
         "type": "object",
-        "title": "Block sound definition",
+        "title": "Block Sound ",
         "description": "A single block sound definition",
         "additionalProperties": false,
         "properties": {
-          "volume": {
-            "$ref": "#/definitions/volume"
-          },
-          "pitch": {
-            "$ref": "#/definitions/pitch"
-          },
+          "volume": { "$ref": "#/definitions/volume" },
+          "pitch": { "$ref": "#/definitions/pitch" },
           "events": {
             "type": "object",
             "title": "Events",
-            "propertyNames": {
-              "enum": ["default", "item.use.on", "break", "hit", "place", "power.on", "power.off"]
-            },
-            "additionalProperties": {
-              "$ref": "#/definitions/sound_event"
-            }
+            "propertyNames": { "enum": ["default", "item.use.on", "break", "hit", "place", "power.on", "power.off"] },
+            "additionalProperties": { "$ref": "#/definitions/sound_event" }
           }
         }
       }
     },
     "entity_sounds": {
       "type": "object",
-      "title": "Entity sounds",
+      "title": "Entity Sounds",
       "description": "Entity sounds definitions",
       "additionalProperties": false,
       "properties": {
-        "defaults": {
-          "$ref": "#/definitions/entity_event"
-        },
-        "entities": {
-          "type": "object",
-          "title": "Entities",
-          "description": "Entities definitions",
-          "additionalProperties": {
-            "$ref": "#/definitions/entity_event"
-          }
-        }
+        "defaults": { "$ref": "#/definitions/entity_event" },
+        "entities": { "type": "object", "title": "Entities", "description": "Entities definitions", "additionalProperties": { "$ref": "#/definitions/entity_event" } }
       }
     },
     "individual_event_sounds": {
       "type": "object",
-      "title": "Individual event sounds",
+      "title": "Individual Event Sounds",
       "description": "Individual event sounds definitions",
       "additionalProperties": false,
-      "properties": {
-        "events": {
-          "type": "object",
-          "title": "Events",
-          "description": "Events",
-          "additionalProperties": {
-            "$ref": "#/definitions/sound_event"
-          }
-        }
-      }
+      "properties": { "events": { "type": "object", "title": "Events", "description": "Events", "additionalProperties": { "$ref": "#/definitions/sound_event" } } }
     },
     "interactive_sounds": {
       "type": "object",
-      "title": "Interactive sounds",
+      "title": "Interactive Sounds",
       "description": "Interactive sounds definitions",
       "additionalProperties": false,
       "properties": {
         "block_sounds": {
           "type": "object",
-          "title": "Block sounds",
+          "title": "Block Sounds",
           "description": "Block sound definitions",
           "additionalProperties": {
             "type": "object",
-            "title": "Block sound definition",
+            "title": "Block Sound ",
             "description": "A single block sound definition",
             "additionalProperties": false,
             "properties": {
@@ -195,11 +122,9 @@
               "events": {
                 "type": "object",
                 "title": "Events",
-                "propertyNames": {
-                  "enum": ["default", "fall", "step", "hit", "jump", "land"]
-                },
+                "propertyNames": { "enum": ["default", "fall", "step", "hit", "jump", "land"] },
                 "additionalProperties": {
-                  "title": "Sound event definition",
+                  "title": "Sound Event ",
                   "description": "A single sound event definition",
                   "oneOf": [
                     { "type": "string" },
@@ -209,11 +134,7 @@
                       "minProperties": 1,
                       "properties": {
                         "volume": { "$ref": "#/definitions/volume" },
-                        "sound": {
-                          "type": "string",
-                          "title": "Sound event",
-                          "description": "The sound event described in sound_definitions.json"
-                        },
+                        "sound": { "type": "string", "title": "Sound Event", "description": "The sound event described in sound_definitions.json" },
                         "pitch": { "$ref": "#/definitions/pitch" }
                       }
                     }
@@ -225,7 +146,7 @@
         },
         "entity_sounds": {
           "type": "object",
-          "title": "Entity sounds",
+          "title": "Entity Sounds",
           "description": "Entity sound definitions",
           "additionalProperties": false,
           "properties": {
@@ -235,63 +156,42 @@
               "description": "Default sound definitions",
               "additionalProperties": {
                 "type": "object",
-                "title": "Entity sounds",
+                "title": "Entity Sounds",
                 "properties": {
                   "events": {
                     "type": "object",
-                    "title": "Entity events",
-                    "propertyNames": {
-                      "pattern": "[a-z0-9\\.]+"
-                    },
+                    "title": "Entity Events",
+                    "propertyNames": { "pattern": "[a-z0-9\\.]+" },
                     "additionalProperties": {
                       "type": "object",
                       "title": "Entity Event",
                       "description": "A single entity event",
-                      "additionalProperties": {
-                        "type": "string",
-                        "title": "A sound interaction"
-                      }
+                      "additionalProperties": { "type": "string", "title": "A Sound Interaction" }
                     }
                   }
                 }
               },
-              "properties": {
-                "volume": {
-                  "$ref": "#/definitions/volume"
-                },
-                "pitch": {
-                  "$ref": "#/definitions/pitch"
-                }
-              }
+              "properties": { "volume": { "$ref": "#/definitions/volume" }, "pitch": { "$ref": "#/definitions/pitch" } }
             },
             "entities": {
               "type": "object",
-              "title": "Entites sounds",
+              "title": "Entites Sounds",
               "description": "Entities sound definitions",
               "additionalProperties": {
                 "type": "object",
-                "title": "Entity sounds",
+                "title": "Entity Sounds",
                 "properties": {
-                  "volume": {
-                    "$ref": "#/definitions/volume"
-                  },
-                  "pitch": {
-                    "$ref": "#/definitions/pitch"
-                  },
+                  "volume": { "$ref": "#/definitions/volume" },
+                  "pitch": { "$ref": "#/definitions/pitch" },
                   "events": {
                     "type": "object",
-                    "title": "Entity events",
-                    "propertyNames": {
-                      "pattern": "[a-z0-9\\.]+"
-                    },
+                    "title": "Entity Events",
+                    "propertyNames": { "pattern": "[a-z0-9\\.]+" },
                     "additionalProperties": {
                       "type": "object",
                       "title": "Entity Event",
                       "description": "A single entity event",
-                      "additionalProperties": {
-                        "type": "string",
-                        "title": "A sound interaction"
-                      }
+                      "additionalProperties": { "type": "string", "title": "A Sound Interaction" }
                     }
                   }
                 }

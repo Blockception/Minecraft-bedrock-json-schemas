@@ -3,12 +3,8 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.restrict_sun",
   "description": "Allows the mob to automatically start avoiding the sun when its a clear day out.",
   "type": "object",
-  "title": "Restrict sun 1.8.0",
+  "title": "Restrict Sun 1.8.0",
   "additionalProperties": false,
   "required": [],
-  "properties": {
-    "priority": {
-      "$ref": "types/base_priority.json"
-    }
-  }
+  "properties": { "priority": { "$ref": "types/base_priority.json" } }
 }

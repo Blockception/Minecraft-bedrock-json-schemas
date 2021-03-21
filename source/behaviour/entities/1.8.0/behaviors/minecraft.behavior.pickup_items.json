@@ -4,7 +4,7 @@
   "description": "Allows the mob to pick up items on the ground.",
   "additionalProperties": false,
   "type": "object",
-  "title": "pickup items 1.8.0",
+  "title": "Pickup Items 1.8.0",
   "required": [],
   "properties": {
     "priority": { "$ref": "types/base_priority.json" },
@@ -13,19 +13,9 @@
       "type": "number",
       "default": 0.5,
       "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot",
-      "title": "TODO title"
+      "title": "TODO Title"
     },
-    "max_dist": {
-      "type": "number",
-      "default": 0,
-      "description": "Maximum distance this mob will look for items to pick up",
-      "title": "TODO title"
-    },
-    "track_target": {
-      "type": "boolean",
-      "default": false,
-      "description": "If true, this mob will chase after the target as long as it's a valid target",
-      "title": "TODO title"
-    }
+    "max_dist": { "type": "number", "default": 0, "description": "Maximum distance this mob will look for items to pick up", "title": "TODO Title" },
+    "track_target": { "type": "boolean", "default": false, "description": "If true, this mob will chase after the target as long as it's a valid target", "title": "TODO Title" }
   }
 }

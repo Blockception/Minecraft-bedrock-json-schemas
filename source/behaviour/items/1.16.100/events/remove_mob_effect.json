@@ -1,21 +1,12 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.1.16.100.items.events.remove_mob_effect",
-  "title": "Remove mob effect",
+  "title": "Remove Mob Effect",
   "description": "UNDOCUMENTATED",
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "effect": {
-      "type": "string",
-      "title": "Effect",
-      "description": "UNDOCUMENTATED"
-    },
-    "target": {
-      "type": "string",
-      "title": "Target",
-      "description": "UNDOCUMENTATED",
-      "enum": ["holder"]
-    }
+    "effect": { "type": "string", "title": "Effect", "description": "UNDOCUMENTATED" },
+    "target": { "type": "string", "title": "Target", "description": "UNDOCUMENTATED", "enum": ["holder"] }
   }
 }

@@ -13,38 +13,15 @@
         {
           "type": "array",
           "items": [
-            {
-              "type": "number",
-              "title": "Maximum"
-            },
-            {
-              "type": "number",
-              "title": "Maximum"
-            }
+            { "type": "number", "title": "Maximum" },
+            { "type": "number", "title": "Maximum" }
           ]
         },
-        {
-          "type": "number"
-        },
-        {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "range_min": {
-              "type": "number"
-            },
-            "range_max": {
-              "type": "number"
-            }
-          }
-        }
+        { "type": "number" },
+        { "type": "object", "additionalProperties": false, "properties": { "range_min": { "type": "number" }, "range_max": { "type": "number" } } }
       ]
     },
-    "max": {
-      "type": "number",
-      "title": "Maximum",
-      "description": "UNDOCUMENTATED"
-    }
+    "max": { "type": "number", "title": "Maximum", "description": "UNDOCUMENTATED" }
   },
   "description": "TODO description"
 }

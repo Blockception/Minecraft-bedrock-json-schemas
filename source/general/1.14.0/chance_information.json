@@ -6,17 +6,7 @@
   "title": "TODO",
   "description": "TODO",
   "properties": {
-    "numerator": {
-      "type": "number",
-      "minimum": 1,
-      "description": "TODO description",
-      "title": "TODO title"
-    },
-    "denominator": {
-      "type": "number",
-      "minimum": 1,
-      "description": "TODO description",
-      "title": "TODO title"
-    }
+    "numerator": { "type": "number", "minimum": 1, "description": "TODO description", "title": "TODO Title" },
+    "denominator": { "type": "number", "minimum": 1, "description": "TODO description", "title": "TODO Title" }
   }
 }

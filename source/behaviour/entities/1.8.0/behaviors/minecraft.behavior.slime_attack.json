@@ -4,15 +4,10 @@
   "additionalProperties": false,
   "description": "Can only be used by Slimes and Magma Cubes. Allows the mob to use a melee attack like the slime's.",
   "type": "object",
-  "title": "Slime attack 1.8.0",
+  "title": "Slime Attack 1.8.0",
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/base_priority.json" },
-    "set_persistent": {
-      "type": "boolean",
-      "default": false,
-      "description": "Allows the actor to be set to persist upon targeting a player",
-      "title": "TODO title"
-    }
+    "set_persistent": { "type": "boolean", "default": false, "description": "Allows the actor to be set to persist upon targeting a player", "title": "TODO Title" }
   }
 }

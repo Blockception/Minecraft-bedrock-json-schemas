@@ -3,10 +3,8 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.squid_out_of_water",
   "description": "Allows the squid to stick to the ground when outside water. Can only be used by the Squid.",
   "type": "object",
-  "title": "Squid out of water 1.8.0",
+  "title": "Squid Out Of Water 1.8.0",
   "additionalProperties": false,
   "required": [],
-  "properties": {
-    "priority": { "$ref": "./types/base_priority.json" }
-  }
+  "properties": { "priority": { "$ref": "./types/base_priority.json" } }
 }

@@ -42,11 +42,7 @@
     "type": "array",
     "description": "A language name identifier",
     "items": [
-      {
-        "type": "string",
-        "description": "A language identifier",
-        "pattern": "^[a-z]{2}_[A-Z]{2}$"
-      },
+      { "type": "string", "description": "A language identifier", "pattern": "^[a-z]{2}_[A-Z]{2}$" },
       { "type": "string", "description": "The name of the language" }
     ]
   }

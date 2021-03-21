@@ -6,12 +6,5 @@
   "title": "Jump.static 1.8.0",
   "additionalProperties": false,
   "required": [],
-  "properties": {
-    "jump_power": {
-      "type": "number",
-      "default": 0.42,
-      "description": "The initial vertical velocity for the jump",
-      "title": "TODO title"
-    }
-  }
+  "properties": { "jump_power": { "type": "number", "default": 0.42, "description": "The initial vertical velocity for the jump", "title": "TODO Title" } }
 }

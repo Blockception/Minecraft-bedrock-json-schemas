@@ -5,9 +5,5 @@
   "title": "Barter 1.16.0",
   "description": "Enables the mob to barter for items that have been configured as barter currency. Must be used in combination with the barter component",
   "additionalProperties": false,
-  "properties": {
-    "priority": {
-      "$ref": "types/base_priority.json"
-    }
-  }
+  "properties": { "priority": { "$ref": "types/base_priority.json" } }
 }

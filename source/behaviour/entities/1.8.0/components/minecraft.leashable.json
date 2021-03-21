@@ -11,37 +11,17 @@
       "type": "boolean",
       "default": false,
       "description": "If true, players can leash this entity even if it is already leashed to another mob",
-      "title": "TODO title"
+      "title": "TODO Title"
     },
-    "hard_distance": {
-      "type": "number",
-      "default": 6,
-      "description": "Distance in blocks at which the leash stiffens, restricting movement",
-      "title": "TODO title"
-    },
-    "max_distance": {
-      "type": "number",
-      "default": 10,
-      "description": "Distance in blocks at which the leash breaks",
-      "title": "TODO title"
-    },
-    "on_leash": {
-      "type": "string",
-      "default": "",
-      "description": "Event to call when this entity is leashed",
-      "title": "TODO title"
-    },
-    "on_unleash": {
-      "type": "string",
-      "default": "",
-      "description": "Event to call when this entity is unleashed",
-      "title": "TODO title"
-    },
+    "hard_distance": { "type": "number", "default": 6, "description": "Distance in blocks at which the leash stiffens, restricting movement", "title": "TODO Title" },
+    "max_distance": { "type": "number", "default": 10, "description": "Distance in blocks at which the leash breaks", "title": "TODO Title" },
+    "on_leash": { "type": "string", "default": "", "description": "Event to call when this entity is leashed", "title": "TODO Title" },
+    "on_unleash": { "type": "string", "default": "", "description": "Event to call when this entity is unleashed", "title": "TODO Title" },
     "soft_distance": {
       "type": "number",
       "default": 4,
       "description": "Distance in blocks at which the 'spring' effect starts acting to keep this entity close to the entity that leashed it",
-      "title": "TODO title"
+      "title": "TODO Title"
     }
   }
 }

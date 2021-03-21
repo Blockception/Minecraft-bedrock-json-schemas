@@ -7,15 +7,7 @@
   "additionalProperties": false,
   "required": ["category", "duration"],
   "properties": {
-    "category": {
-      "type": "string",
-      "description": "The type of cool down for this item.",
-      "title": "Category"
-    },
-    "duration": {
-      "description": "The duration of time this item will spend cooling down before becoming usable again.",
-      "title": "Duration",
-      "type": "number"
-    }
+    "category": { "type": "string", "description": "The type of cool down for this item.", "title": "Category" },
+    "duration": { "description": "The duration of time this item will spend cooling down before becoming usable again.", "title": "Duration", "type": "number" }
   }
 }

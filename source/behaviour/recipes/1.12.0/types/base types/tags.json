@@ -4,8 +4,5 @@
   "description": "Recipe tags 1.12.0",
   "title": "Tags",
   "type": "array",
-  "items": {
-    "type": "string",
-    "title": "Tag"
-  }
+  "items": { "type": "string", "title": "Tag" }
 }

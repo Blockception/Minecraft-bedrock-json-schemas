@@ -6,94 +6,40 @@
   "description": "This allows the mob celebrate by jumping up and playing a sound periodically.",
   "additionalProperties": false,
   "properties": {
-    "priority": {
-      "$ref": "types/base_priority.json"
-    },
-    "celebration_sound": {
-      "type": "string",
-      "default": "",
-      "description": "The sound to occasionally play.",
-      "title": "Celebration sound"
-    },
-    "duration": {
-      "type": "number",
-      "default": 1,
-      "description": "The duration of the celebration (in seconds).",
-      "title": "Duration"
-    },
+    "priority": { "$ref": "types/base_priority.json" },
+    "celebration_sound": { "type": "string", "default": "", "description": "The sound to occasionally play.", "title": "Celebration Sound" },
+    "duration": { "type": "number", "default": 1, "description": "The duration of the celebration (in seconds).", "title": "Duration" },
     "jump_interval": {
       "default": 0,
       "description": "The range of time in seconds to randomly wait before jumping again.",
-      "title": "Jump interval",
+      "title": "Jump Interval",
       "oneOf": [
         {
           "type": "array",
           "items": [
-            {
-              "type": "number",
-              "title": "Maximum"
-            },
-            {
-              "type": "number",
-              "title": "Maximum"
-            }
+            { "type": "number", "title": "Maximum" },
+            { "type": "number", "title": "Maximum" }
           ]
         },
-        {
-          "type": "number"
-        },
-        {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "range_min": {
-              "type": "number"
-            },
-            "range_max": {
-              "type": "number"
-            }
-          }
-        }
+        { "type": "number" },
+        { "type": "object", "additionalProperties": false, "properties": { "range_min": { "type": "number" }, "range_max": { "type": "number" } } }
       ]
     },
-    "on_celebration_end_event": {
-      "$ref": "../types/trigger.json",
-      "description": "The event to trigger when the goal's duration expires.",
-      "title": "On celebration end event"
-    },
+    "on_celebration_end_event": { "$ref": "../types/trigger.json", "description": "The event to trigger when the goal's duration expires.", "title": "On Celebration End Event" },
     "sound_interval": {
       "default": 0,
       "description": "The range of time in seconds to randomly wait before playing the sound again.",
-      "title": "Sound interval",
+      "title": "Sound Interval",
       "oneOf": [
         {
           "type": "array",
           "items": [
-            {
-              "type": "number",
-              "title": "Maximum"
-            },
-            {
-              "type": "number",
-              "title": "Maximum"
-            }
+            { "type": "number", "title": "Maximum" },
+            { "type": "number", "title": "Maximum" }
           ]
         },
-        {
-          "type": "number"
-        },
-        {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "range_min": {
-              "type": "number"
-            },
-            "range_max": {
-              "type": "number"
-            }
-          }
-        }
+        { "type": "number" },
+        { "type": "object", "additionalProperties": false, "properties": { "range_min": { "type": "number" }, "range_max": { "type": "number" } } }
       ]
     }
   }

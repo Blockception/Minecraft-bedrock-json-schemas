@@ -6,11 +6,5 @@
   "type": "object",
   "additionalProperties": false,
   "required": ["duration"],
-  "properties": {
-    "duration": {
-      "type": "number",
-      "title": "Duration",
-      "description": "How long in seconds will this fuel cook items for."
-    }
-  }
+  "properties": { "duration": { "type": "number", "title": "Duration", "description": "How long in seconds will this fuel cook items for." } }
 }

@@ -4,37 +4,17 @@
   "type": "object",
   "additionalProperties": false,
   "description": "Returns true if the actor properties defined were executed.",
-  "title": "Entity properties",
+  "title": "Entity Properties",
   "properties": {
-    "condition": {
-      "type": "string",
-      "title": "Condition",
-      "description": "TODO"
-    },
-    "entity": {
-      "type": "string",
-      "default": "this",
-      "description": "The entity to test. The value must be only \"this\".",
-      "title": "Entity"
-    },
+    "condition": { "type": "string", "title": "Condition", "description": "TODO" },
+    "entity": { "type": "string", "default": "this", "description": "The entity to test. The value must be only \"this\".", "title": "Entity" },
     "properties": {
       "type": "object",
       "default": {},
       "description": "The entity's properties. \"on_fire\", \"on_ground\" is used for now.",
       "title": "Properties",
       "additionalProperties": false,
-      "properties": {
-        "on_fire": {
-          "title": "On fire",
-          "description": "TODO",
-          "type": "boolean"
-        },
-        "on_ground": {
-          "title": "On fire",
-          "description": "TODO",
-          "type": "boolean"
-        }
-      }
+      "properties": { "on_fire": { "title": "On Fire", "description": "TODO", "type": "boolean" }, "on_ground": { "title": "On Fire", "description": "TODO", "type": "boolean" } }
     }
   }
 }

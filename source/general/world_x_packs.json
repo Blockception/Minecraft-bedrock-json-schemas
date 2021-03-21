@@ -2,26 +2,15 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.world_x_packs",
   "type": "array",
-  "title": "The minecraft world x pack schema",
+  "title": "World X Pack Schema",
   "description": "TODO description",
   "examples": [[{ "pack_id": "UUID", "version": [1, 0, 0] }]],
-  "definitions": {
-    "uuidv4": { "$ref": "./UUIDV4.json" },
-    "version": { "$ref": "./Version.json" }
-  },
+  "definitions": { "uuidv4": { "$ref": "./UUIDV4.json" }, "version": { "$ref": "./Version.json" } },
   "items": {
     "type": "object",
     "properties": {
-      "pack_id": {
-        "description": "The uuid of the pack to include",
-        "$ref": "#/definitions/uuidv4",
-        "title": "Pack Id"
-      },
-      "version": {
-        "description": "The version of the pack",
-        "$ref": "#/definitions/version",
-        "title": "Version"
-      }
+      "pack_id": { "description": "The uuid of the pack to include", "$ref": "#/definitions/uuidv4", "title": "Pack Id" },
+      "version": { "description": "The version of the pack", "$ref": "#/definitions/version", "title": "Version" }
     },
     "description": "TODO description: items",
     "title": "Items"

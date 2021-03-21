@@ -2,20 +2,12 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.knockback_resistance",
   "type": "object",
-  "title": "Knockback resistance 1.8.0",
+  "title": "Knockback Resistance 1.8.0",
   "additionalProperties": false,
   "description": "UNDOCUMENTATED",
   "required": [],
   "properties": {
-    "value": {
-      "type": "number",
-      "description": "UNDOCUMENTATED",
-      "title": "Value"
-    },
-    "max": {
-      "type": "number",
-      "description": "UNDOCUMENTATED",
-      "title": "Maximum"
-    }
+    "value": { "type": "number", "description": "UNDOCUMENTATED", "title": "Value" },
+    "max": { "type": "number", "description": "UNDOCUMENTATED", "title": "Maximum" }
   }
 }

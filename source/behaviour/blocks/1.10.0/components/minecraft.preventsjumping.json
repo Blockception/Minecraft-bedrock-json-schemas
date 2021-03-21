@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.blocks.1.10.0.minecraft.preventsjumping",
-  "title": "Prevents jumping 1.10.0",
+  "title": "Prevents Jumping 1.10.0",
   "description": "This component makes it so actors can't jump when walking on this block",
   "type": "boolean"
 }

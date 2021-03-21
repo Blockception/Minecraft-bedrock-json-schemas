@@ -9,27 +9,12 @@
   "properties": {
     "damage_chance": {
       "type": "object",
-      "title": "Damange chance",
+      "title": "Damange Chance",
       "description": "Damange chance",
       "additionalProperties": false,
       "required": ["min", "max"],
-      "properties": {
-        "min": {
-          "title": "Min",
-          "type": "integer",
-          "description": "The minimum"
-        },
-        "max": {
-          "title": "Max",
-          "type": "integer",
-          "description": "The minimum"
-        }
-      }
+      "properties": { "min": { "title": "Min", "type": "integer", "description": "The minimum" }, "max": { "title": "Max", "type": "integer", "description": "The minimum" } }
     },
-    "max_durability": {
-      "title": "Max durability",
-      "description": "Max durability is the amount of damage that this item can take before breaking.",
-      "type": "number"
-    }
+    "max_durability": { "title": "Max Durability", "description": "Max durability is the amount of damage that this item can take before breaking.", "type": "number" }
   }
 }

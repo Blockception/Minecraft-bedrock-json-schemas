@@ -7,12 +7,7 @@
   "required": [],
   "additionalProperties": false,
   "properties": {
-    "looping": {
-      "type": "boolean",
-      "default": true,
-      "description": "If true, the timer will restart every time after it fires",
-      "title": "Looping"
-    },
+    "looping": { "type": "boolean", "default": true, "description": "If true, the timer will restart every time after it fires", "title": "Looping" },
     "randomInterval": {
       "type": "boolean",
       "default": true,
@@ -27,44 +22,23 @@
           "type": "array",
           "default": [0.0, 0.0],
           "items": [
-            {
-              "type": "number",
-              "title": "A"
-            },
-            {
-              "type": "number",
-              "title": "B"
-            }
+            { "type": "number", "title": "A" },
+            { "type": "number", "title": "B" }
           ],
-          "title": "TODO title"
+          "title": "TODO Title"
         },
-        {
-          "type": "number",
-          "default": 0
-        }
+        { "type": "number", "default": 0 }
       ]
     },
-    "time_down_event": {
-      "description": "Event to fire when the time on the timer runs out",
-      "title": "TODO",
-      "$ref": "../types/event.json"
-    },
+    "time_down_event": { "description": "Event to fire when the time on the timer runs out", "title": "TODO", "$ref": "../types/event.json" },
     "random_time_choices": {
       "type": "array",
       "default": [],
       "description": "This is a list of objects, representing one value in seconds that can be picked before firing the event and an optional weight. Incompatible with time.",
       "items": {
         "properties": {
-          "weight": {
-            "type": "integer",
-            "description": "TODO description: weight",
-            "title": "Weight"
-          },
-          "value": {
-            "type": "integer",
-            "description": "TODO description: value",
-            "title": "Value"
-          }
+          "weight": { "type": "integer", "description": "TODO description: weight", "title": "Weight" },
+          "value": { "type": "integer", "description": "TODO description: value", "title": "Value" }
         },
         "description": "TODO description: random time choices",
         "title": "Random Time Choices"

@@ -5,13 +5,6 @@
   "title": "Movement.amphibious 1.8.0",
   "additionalProperties": false,
   "required": [],
-  "properties": {
-    "max_turn": {
-      "type": "number",
-      "default": 30,
-      "description": "The maximum number in degrees the mob can turn per tick.",
-      "title": "TODO title"
-    }
-  },
+  "properties": { "max_turn": { "type": "number", "default": 30, "description": "The maximum number in degrees the mob can turn per tick.", "title": "TODO Title" } },
   "description": "This move control allows the mob to swim in water and walk on land."
 }

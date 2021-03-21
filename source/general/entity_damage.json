@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.general.1.8.0.entity.damage",
   "type": "string",
-  "title": "Entity damage name",
+  "title": "Entity Damage Name",
   "enum": [
     "all",
     "anvil",

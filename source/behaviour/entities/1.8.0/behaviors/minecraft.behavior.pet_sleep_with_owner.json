@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.pet_sleep_with_owner",
   "description": "Allows the pet mob to move onto a bed with it's owner while sleeping.",
   "type": "object",
-  "title": "pet sleep with owner 1.8.0",
+  "title": "Pet Sleep With Owner 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {
@@ -13,19 +13,9 @@
       "type": "number",
       "default": 0.5,
       "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot",
-      "title": "TODO title"
+      "title": "TODO Title"
     },
-    "search_height": {
-      "type": "integer",
-      "default": 1,
-      "description": "Height in blocks from the owner the pet can be to sleep with owner.",
-      "title": "TODO title"
-    },
-    "search_range": {
-      "type": "integer",
-      "default": 0,
-      "description": "The distance in blocks from the owner the pet can be to sleep with owner.",
-      "title": "TODO title"
-    }
+    "search_height": { "type": "integer", "default": 1, "description": "Height in blocks from the owner the pet can be to sleep with owner.", "title": "TODO Title" },
+    "search_range": { "type": "integer", "default": 0, "description": "The distance in blocks from the owner the pet can be to sleep with owner.", "title": "TODO Title" }
   }
 }

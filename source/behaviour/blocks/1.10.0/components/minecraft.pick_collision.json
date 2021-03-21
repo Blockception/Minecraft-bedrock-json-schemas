@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.blocks.1.10.0.minecraft.pick_collision",
-  "title": "Pick collision 1.10.0",
+  "title": "Pick Collision 1.10.0",
   "description": "Can only be set to false, it disables the collision of the block with entities",
   "oneOf": [
     { "type": "boolean", "const": false },

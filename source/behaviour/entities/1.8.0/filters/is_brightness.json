@@ -2,23 +2,13 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.filters.is_brightness",
   "type": "object",
-  "title": "Filters is brightness 1.8.0",
+  "title": "Filters Is Brightness 1.8.0",
   "description": "Tests the current brightness against a provided value in the range (0.0f, 1.0f).",
   "required": ["value"],
   "properties": {
-    "test": {
-      "type": "string",
-      "title": "The test property",
-      "description": "Tests the current brightness against a provided value in the range (0.0f, 1.0f)."
-    },
+    "test": { "type": "string", "title": "Test Property", "description": "Tests the current brightness against a provided value in the range (0.0f, 1.0f)." },
     "operator": { "$ref": "./types/base_operator.json" },
     "subject": { "$ref": "./types/base_subject.json" },
-    "value": {
-      "description": "The brightness value to compare with.",
-      "type": "number",
-      "minimum": 0.0,
-      "maximum": 1.0,
-      "title": "Value"
-    }
+    "value": { "description": "The brightness value to compare with.", "type": "number", "minimum": 0.0, "maximum": 1.0, "title": "Value" }
   }
 }

@@ -3,22 +3,14 @@
   "$id": "blockception.minecraft.resource.particle.1.10.0.particle_appearance_tinting",
   "description": "Color fields are special, they can be either an RGB, or a \"#RRGGBB\" field (or RGBA or \"AARRGGBB\").  If RGB(A), the channels are from 0 to 1.  If the string \"#AARRGGBB\", then the values are hex from 00 to ff.",
   "type": "object",
-  "title": "The particle appearance tinting component for 1.10.0",
+  "title": "Particle Appearance Tinting Component For 1.10.0",
   "additionalProperties": false,
   "properties": {
     "color": {
       "title": "Color",
       "anyOf": [
-        {
-          "type": "array",
-          "description": "Direct color field",
-          "items": { "$ref": "../../../../molang/1.8.0/number.json" }
-        },
-        {
-          "type": "string",
-          "format": "color-hex",
-          "description": "Direct color field"
-        },
+        { "type": "array", "description": "Direct color field", "items": { "$ref": "../../../../molang/1.8.0/number.json" } },
+        { "type": "string", "format": "color-hex", "description": "Direct color field" },
         {
           "description": "Interpolation based color",
           "type": "object",
@@ -27,27 +19,12 @@
             "gradient": {
               "title": "Gradient",
               "oneOf": [
-                {
-                  "description": "An array of colors",
-                  "type": "array",
-                  "items": {
-                    "type": "string",
-                    "description": "Color",
-                    "title": "Color",
-                    "format": "color-hex"
-                  }
-                },
+                { "description": "An array of colors", "type": "array", "items": { "type": "string", "description": "Color", "title": "Color", "format": "color-hex" } },
                 {
                   "description": "An object of colors",
                   "type": "object",
-                  "propertyNames": {
-                    "pattern": "(^[\\-0-9]+$|^[\\-0-9]+\\.[\\-0-9]+$)"
-                  },
-                  "additionalProperties": {
-                    "type": "string",
-                    "description": "Color",
-                    "format": "color-hex"
-                  }
+                  "propertyNames": { "pattern": "(^[\\-0-9]+$|^[\\-0-9]+\\.[\\-0-9]+$)" },
+                  "additionalProperties": { "type": "string", "description": "Color", "format": "color-hex" }
                 },
                 {
                   "description": "An array of colors",
@@ -57,28 +34,15 @@
                     "minItems": 3,
                     "items": {
                       "oneOf": [
-                        {
-                          "type": "number",
-                          "description": "Color",
-                          "title": "Color",
-                          "minimum": 0,
-                          "maximum": 1
-                        },
-                        {
-                          "type": "string",
-                          "title": "Molang"
-                        }
+                        { "type": "number", "description": "Color", "title": "Color", "minimum": 0, "maximum": 1 },
+                        { "type": "string", "title": "Molang" }
                       ]
                     }
                   }
                 }
               ]
             },
-            "interpolant": {
-              "$ref": "../../../../molang/1.8.0/number.json",
-              "description": "TODO description: interpolant",
-              "title": "Interpolant"
-            }
+            "interpolant": { "$ref": "../../../../molang/1.8.0/number.json", "description": "TODO description: interpolant", "title": "Interpolant" }
           }
         }
       ],

@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.follow_target_captain",
   "type": "object",
-  "title": "Follow target captain 1.8.0",
+  "title": "Follow Target Captain 1.8.0",
   "description": "Allows mob to move towards its current target captain.",
   "additionalProperties": false,
   "required": [],
@@ -13,13 +13,13 @@
       "type": "number",
       "default": 0,
       "description": "Defines the distance in blocks the mob will stay from its target while following.",
-      "title": "TODO title"
+      "title": "TODO Title"
     },
     "within_radius": {
       "type": "number",
       "default": 0,
       "description": "Defines the maximum distance in blocks a mob can get from its target captain before giving up trying to follow it.",
-      "title": "TODO title"
+      "title": "TODO Title"
     }
   }
 }

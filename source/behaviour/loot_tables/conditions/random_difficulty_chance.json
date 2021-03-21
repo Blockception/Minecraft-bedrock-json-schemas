@@ -4,19 +4,10 @@
   "type": "object",
   "additionalProperties": false,
   "description": "Sets a random chance of the specified value based on the level difficulty.",
-  "title": "Random difficulty chance",
+  "title": "Random Difficulty Chance",
   "properties": {
-    "condition": {
-      "type": "string",
-      "title": "Condition",
-      "description": "TODO"
-    },
-    "default_chance": {
-      "type": "number",
-      "default": 0,
-      "description": "The default random chance if the level difficulty is not assigned.",
-      "title": "Default chance"
-    },
+    "condition": { "type": "string", "title": "Condition", "description": "TODO" },
+    "default_chance": { "type": "number", "default": 0, "description": "The default random chance if the level difficulty is not assigned.", "title": "Default Chance" },
     "easy": {
       "type": "number",
       "default": 0,

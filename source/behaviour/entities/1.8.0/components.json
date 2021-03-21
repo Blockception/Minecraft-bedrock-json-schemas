@@ -154,7 +154,6 @@
     "minecraft:walk_animation_speed": { "$ref": "./components/minecraft.walk_animation_speed.json" },
     "minecraft:wants_jockey": { "$ref": "./components/minecraft.wants_jockey.json" },
     "minecraft:water_movement": { "$ref": "./components/minecraft.water_movement.json" },
-
     "minecraft:behavior.hide": { "$ref": "./behaviors/minecraft.behavior.hide.json" },
     "minecraft:behavior.move_to_poi": { "$ref": "./behaviors/minecraft.behavior.move_to_poi.json" },
     "minecraft:behavior.scared": { "$ref": "./behaviors/minecraft.behavior.scared.json" },

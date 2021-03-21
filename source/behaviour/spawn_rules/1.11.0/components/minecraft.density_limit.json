@@ -3,18 +3,7 @@
   "$id": "blockception.minecraft.behaviour.spawn_rules.1.11.0.minecraft.density_limit",
   "additionalProperties": false,
   "type": "object",
-  "title": "Density limit 1.11.0",
+  "title": "Density Limit 1.11.0",
   "description": "TODO",
-  "properties": {
-    "surface": {
-      "type": "integer",
-      "description": "TODO",
-      "title": "Surface"
-    },
-    "underground": {
-      "type": "integer",
-      "description": "TODO",
-      "title": "Underground"
-    }
-  }
+  "properties": { "surface": { "type": "integer", "description": "TODO", "title": "Surface" }, "underground": { "type": "integer", "description": "TODO", "title": "Underground" } }
 }

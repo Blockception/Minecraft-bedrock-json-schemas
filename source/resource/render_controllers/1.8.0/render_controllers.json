@@ -9,37 +9,25 @@
   "definitions": {
     "color": {
       "anyOf": [
-        {
-          "type": "number",
-          "description": "A color definition as number, between 0 and 1",
-          "title": "Color number",
-          "minimum": 0,
-          "maximum": 1
-        },
-        {
-          "type": "string",
-          "description": "A color definition in molang, must result in a float between 0 and 1",
-          "title": "Molang color"
-        }
+        { "type": "number", "description": "A color definition as number, between 0 and 1", "title": "Color Number", "minimum": 0, "maximum": 1 },
+        { "type": "string", "description": "A color definition in molang, must result in a float between 0 and 1", "title": "Molang Color" }
       ]
     }
   },
   "properties": {
     "format_version": {
-      "title": "The 1.8.0 format version",
+      "title": "1.8.0 Format Version",
       "type": "string",
       "pattern": "^1.8.0$",
       "description": "A version that tells minecraft what type of data format can be expected when reading this file."
     },
     "render_controllers": {
       "type": "object",
-      "propertyNames": {
-        "pattern": "^controller\\.render\\.[a-z\\.]+"
-      },
+      "propertyNames": { "pattern": "^controller\\.render\\.[a-z\\.]+" },
       "additionalProperties": {
         "additionalProperties": false,
         "type": "object",
-        "title": "Render controller",
+        "title": "Render Controller",
         "description": "A single render_controller definition",
         "required": ["geometry", "materials"],
         "properties": {
@@ -52,17 +40,10 @@
               "geometries": {
                 "type": "object",
                 "minProperties": 1,
-                "propertyNames": {
-                  "pattern": "^[Aa]rray\\..+"
-                },
+                "propertyNames": { "pattern": "^[Aa]rray\\..+" },
                 "additionalProperties": {
                   "type": "array",
-                  "items": {
-                    "type": "string",
-                    "pattern": "^[Gg]eometry\\..+",
-                    "description": "TODO description: additionalProperties",
-                    "title": "TODO"
-                  },
+                  "items": { "type": "string", "pattern": "^[Gg]eometry\\..+", "description": "TODO description: additionalProperties", "title": "TODO" },
                   "description": "TODO description: additionalProperties",
                   "title": "TODO"
                 },
@@ -72,17 +53,10 @@
               "materials": {
                 "type": "object",
                 "minProperties": 1,
-                "propertyNames": {
-                  "pattern": "^[Aa]rray\\..+"
-                },
+                "propertyNames": { "pattern": "^[Aa]rray\\..+" },
                 "additionalProperties": {
                   "type": "array",
-                  "items": {
-                    "type": "string",
-                    "pattern": "^[Mm]aterial\\..+",
-                    "description": "TODO description: additionalProperties",
-                    "title": "TODO"
-                  },
+                  "items": { "type": "string", "pattern": "^[Mm]aterial\\..+", "description": "TODO description: additionalProperties", "title": "TODO" },
                   "description": "TODO description: additionalProperties",
                   "title": "TODO"
                 },
@@ -92,17 +66,10 @@
               "textures": {
                 "type": "object",
                 "minProperties": 1,
-                "propertyNames": {
-                  "pattern": "^[Aa]rray\\..+"
-                },
+                "propertyNames": { "pattern": "^[Aa]rray\\..+" },
                 "additionalProperties": {
                   "type": "array",
-                  "items": {
-                    "type": "string",
-                    "pattern": "^[Tt]exture\\..+",
-                    "description": "TODO description: additionalProperties",
-                    "title": "TODO"
-                  },
+                  "items": { "type": "string", "pattern": "^[Tt]exture\\..+", "description": "TODO description: additionalProperties", "title": "TODO" },
                   "description": "TODO description: additionalProperties",
                   "title": "TODO"
                 },
@@ -115,72 +82,36 @@
             "additionalProperties": false,
             "type": "object",
             "properties": {
-              "r": {
-                "$ref": "#/definitions/color"
-              },
-              "g": {
-                "$ref": "#/definitions/color"
-              },
-              "b": {
-                "$ref": "#/definitions/color"
-              },
-              "a": {
-                "$ref": "#/definitions/color"
-              }
+              "r": { "$ref": "#/definitions/color" },
+              "g": { "$ref": "#/definitions/color" },
+              "b": { "$ref": "#/definitions/color" },
+              "a": { "$ref": "#/definitions/color" }
             },
             "description": "TODO description: color",
             "title": "Color"
           },
-          "filter_lighting": {
-            "type": "boolean",
-            "description": "TODO description: filter lighting",
-            "title": "Filter Lighting"
-          },
-          "geometry": {
-            "type": "string",
-            "description": "TODO description: geometry",
-            "title": "Geometry"
-          },
-          "ignore_lighting": {
-            "type": "boolean",
-            "description": "TODO description: ignore lighting",
-            "title": "Ignore Lighting"
-          },
+          "filter_lighting": { "type": "boolean", "description": "TODO description: filter lighting", "title": "Filter Lighting" },
+          "geometry": { "type": "string", "description": "TODO description: geometry", "title": "Geometry" },
+          "ignore_lighting": { "type": "boolean", "description": "TODO description: ignore lighting", "title": "Ignore Lighting" },
           "is_hurt_color": {
             "additionalProperties": false,
             "type": "object",
             "properties": {
-              "r": {
-                "$ref": "#/definitions/color"
-              },
-              "g": {
-                "$ref": "#/definitions/color"
-              },
-              "b": {
-                "$ref": "#/definitions/color"
-              },
-              "a": {
-                "$ref": "#/definitions/color"
-              }
+              "r": { "$ref": "#/definitions/color" },
+              "g": { "$ref": "#/definitions/color" },
+              "b": { "$ref": "#/definitions/color" },
+              "a": { "$ref": "#/definitions/color" }
             },
             "description": "TODO description: is hurt color",
             "title": "Is Hurt Color"
           },
-          "light_color_multiplier": {
-            "$ref": "../../../molang/1.8.0/number.json",
-            "description": "TODO description: light color multiplier",
-            "title": "Light Color Multiplier"
-          },
+          "light_color_multiplier": { "$ref": "../../../molang/1.8.0/number.json", "description": "TODO description: light color multiplier", "title": "Light Color Multiplier" },
           "materials": {
             "type": "array",
             "minItems": 1,
             "items": {
               "type": "object",
-              "additionalProperties": {
-                "type": "string",
-                "description": "TODO description: additionalProperties",
-                "title": "TODO"
-              },
+              "additionalProperties": { "type": "string", "description": "TODO description: additionalProperties", "title": "TODO" },
               "description": "TODO description: materials",
               "title": "Materials"
             },
@@ -191,18 +122,10 @@
             "additionalProperties": false,
             "type": "object",
             "properties": {
-              "r": {
-                "$ref": "#/definitions/color"
-              },
-              "g": {
-                "$ref": "#/definitions/color"
-              },
-              "b": {
-                "$ref": "#/definitions/color"
-              },
-              "a": {
-                "$ref": "#/definitions/color"
-              }
+              "r": { "$ref": "#/definitions/color" },
+              "g": { "$ref": "#/definitions/color" },
+              "b": { "$ref": "#/definitions/color" },
+              "a": { "$ref": "#/definitions/color" }
             },
             "description": "TODO description: on fire color",
             "title": "On Fire Color"
@@ -211,18 +134,10 @@
             "additionalProperties": false,
             "type": "object",
             "properties": {
-              "r": {
-                "$ref": "#/definitions/color"
-              },
-              "g": {
-                "$ref": "#/definitions/color"
-              },
-              "b": {
-                "$ref": "#/definitions/color"
-              },
-              "a": {
-                "$ref": "#/definitions/color"
-              }
+              "r": { "$ref": "#/definitions/color" },
+              "g": { "$ref": "#/definitions/color" },
+              "b": { "$ref": "#/definitions/color" },
+              "a": { "$ref": "#/definitions/color" }
             },
             "description": "TODO description: overlay color",
             "title": "Overlay Color"
@@ -232,41 +147,23 @@
             "minItems": 1,
             "items": {
               "description": "A collection of object that describe which bones are hidden or not",
-              "title": "Part visibilty",
+              "title": "Part Visibilty",
               "type": "object",
               "minProperties": 1,
               "additionalProperties": {
-                "oneOf": [
-                  {
-                    "type": "string"
-                  },
-                  {
-                    "type": "boolean"
-                  },
-                  {
-                    "type": "number"
-                  }
-                ],
+                "oneOf": [{ "type": "string" }, { "type": "boolean" }, { "type": "number" }],
                 "description": "Describes which bones are visible or not, can be a string, boolean or number",
-                "title": "Part visibilty"
+                "title": "Part Visibilty"
               }
             },
             "description": "TODO description: part visibility",
             "title": "Part Visibility"
           },
-          "rebuild_animation_matrices": {
-            "type": "boolean",
-            "description": "TODO description: rebuild animation matrices",
-            "title": "Rebuild Animation Matrices"
-          },
+          "rebuild_animation_matrices": { "type": "boolean", "description": "TODO description: rebuild animation matrices", "title": "Rebuild Animation Matrices" },
           "textures": {
             "type": "array",
             "minItems": 1,
-            "items": {
-              "type": "string",
-              "description": "TODO description: textures",
-              "title": "Textures"
-            },
+            "items": { "type": "string", "description": "TODO description: textures", "title": "Textures" },
             "description": "TODO description: textures",
             "title": "Textures"
           },
@@ -279,11 +176,7 @@
                 "type": "array",
                 "minItems": 2,
                 "maxItems": 2,
-                "items": {
-                  "$ref": "../../../molang/1.8.0/number.json",
-                  "description": "TODO description: offset",
-                  "title": "Offset"
-                },
+                "items": { "$ref": "../../../molang/1.8.0/number.json", "description": "TODO description: offset", "title": "Offset" },
                 "description": "TODO description: offset",
                 "title": "Offset"
               },
@@ -293,11 +186,7 @@
                 "title": "Scale",
                 "minItems": 2,
                 "maxItems": 2,
-                "items": {
-                  "$ref": "../../../molang/1.8.0/number.json",
-                  "description": "TODO description: scale",
-                  "title": "Scale"
-                }
+                "items": { "$ref": "../../../molang/1.8.0/number.json", "description": "TODO description: scale", "title": "Scale" }
               }
             },
             "description": "TODO description: uv anim",

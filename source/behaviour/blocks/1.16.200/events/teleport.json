@@ -6,12 +6,7 @@
   "title": "Teleport 1.16.200",
   "additionalProperties": false,
   "properties": {
-    "avoid_water": {
-      "type": "boolean",
-      "default": true,
-      "description": "Determines if the teleport avoids putting the target in water.",
-      "title": "Avoid water"
-    },
+    "avoid_water": { "type": "boolean", "default": true, "description": "Determines if the teleport avoids putting the target in water.", "title": "Avoid Water" },
     "destination": {
       "default": [0.0, 0.0, 0.0],
       "description": "Origin destination of the teleport.",
@@ -22,27 +17,17 @@
         { "type": "number", "title": "Z", "description": "The z offset from the block's center." }
       ]
     },
-    "land_on_block": {
-      "type": "boolean",
-      "default": true,
-      "description": "Determines if the teleport places the target on a block.",
-      "title": "Land on block"
-    },
+    "land_on_block": { "type": "boolean", "default": true, "description": "Determines if the teleport places the target on a block.", "title": "Land On Block" },
     "max_range": {
       "default": [8.0, 8.0, 8.0],
       "description": "Max range the target can teleport relative to the origin destination.",
-      "title": "Max range",
+      "title": "Max Range",
       "items": [
         { "type": "number", "title": "X", "description": "The x offset from the block's center." },
         { "type": "number", "title": "Y", "description": "The y offset from the block's center." },
         { "type": "number", "title": "Z", "description": "The z offset from the block's center." }
       ]
     },
-    "target": {
-      "type": "string",
-      "default": "self",
-      "description": "The target context to execute against.",
-      "title": "Target"
-    }
+    "target": { "type": "string", "default": "self", "description": "The target context to execute against.", "title": "Target" }
   }
 }

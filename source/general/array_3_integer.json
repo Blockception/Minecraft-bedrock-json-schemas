@@ -2,13 +2,9 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "general.array.integer.3",
   "type": "array",
-  "title": "Array of 3 items",
+  "title": "Array Of 3 Items",
   "description": "An array of 3 integers",
   "minimum": 3,
   "maximum": 3,
-  "items": {
-    "type": "integer",
-    "description": "An integer",
-    "title": "TODO title"
-  }
+  "items": { "type": "integer", "description": "An integer", "title": "TODO Title" }
 }

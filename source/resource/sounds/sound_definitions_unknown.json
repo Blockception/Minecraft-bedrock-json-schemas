@@ -2,13 +2,13 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.sound_definition.json",
   "type": "object",
-  "title": "The minecraft sound definition file, unknown version",
+  "title": "Sound  File, Unknown Version",
   "description": "TODO description",
   "definitions": {
     "SoundPath": {
       "$id": "SoundFilepath",
       "type": "string",
-      "title": "The sound filepath schema",
+      "title": "Sound Filepath Schema",
       "description": "The filepath to the sound, starts with 'sounds/'",
       "pattern": "(^sounds/.*$|^$)",
       "additionalItems": true
@@ -17,63 +17,31 @@
       "additionalItems": false,
       "type": "object",
       "$id": "#/Sound",
-      "title": "Sound specification",
+      "title": "Sound ",
       "required": ["sounds"],
       "properties": {
         "category": {
           "type": "string",
           "$id": "#/Sound/category",
-          "title": "Sound category",
+          "title": "Sound Category",
           "enum": ["block", "music", "weather", "ui", "bucket", "neutral", "player", "hostile", "record"],
           "description": "TODO description: category"
         },
         "sounds": {
           "items": {
             "anyOf": [
-              {
-                "$id": "#/Sound/sounds/stringItem",
-                "type": "string",
-                "$ref": "#/definitions/SoundPath",
-                "description": "TODO description: Todo",
-                "title": "Todo"
-              },
+              { "$id": "#/Sound/sounds/stringItem", "type": "string", "$ref": "#/definitions/SoundPath", "description": "TODO description: Todo", "title": "Todo" },
               {
                 "additionalItems": false,
                 "$id": "#/Sound/sounds/ObjectItem",
                 "type": "object",
                 "required": ["name"],
                 "properties": {
-                  "pitch": {
-                    "description": "The pitch of the audio, 1 is nomial",
-                    "type": "number",
-                    "minimum": 0,
-                    "maximum": 2,
-                    "title": "Pitch"
-                  },
-                  "volume": {
-                    "description": "The volume of the audio, 1 is nomial",
-                    "type": "number",
-                    "minimum": 0,
-                    "maximum": 2,
-                    "title": "Volume"
-                  },
-                  "load_on_low_memory": {
-                    "type": "boolean",
-                    "description": "Marks if this audio should be loaded or not on low memory",
-                    "title": "Load On Low Memory"
-                  },
-                  "stream": {
-                    "description": "If marked true then minecraft will stream the audio",
-                    "type": "boolean",
-                    "title": "Stream"
-                  },
-                  "name": {
-                    "$id": "#/Sound/sounds/stringItem",
-                    "type": "string",
-                    "$ref": "#/definitions/SoundPath",
-                    "description": "TODO description: name",
-                    "title": "Name"
-                  }
+                  "pitch": { "description": "The pitch of the audio, 1 is nomial", "type": "number", "minimum": 0, "maximum": 2, "title": "Pitch" },
+                  "volume": { "description": "The volume of the audio, 1 is nomial", "type": "number", "minimum": 0, "maximum": 2, "title": "Volume" },
+                  "load_on_low_memory": { "type": "boolean", "description": "Marks if this audio should be loaded or not on low memory", "title": "Load On Low Memory" },
+                  "stream": { "description": "If marked true then minecraft will stream the audio", "type": "boolean", "title": "Stream" },
+                  "name": { "$id": "#/Sound/sounds/stringItem", "type": "string", "$ref": "#/definitions/SoundPath", "description": "TODO description: name", "title": "Name" }
                 },
                 "description": "TODO description: Todo",
                 "title": "Todo"
@@ -89,9 +57,7 @@
       "description": "TODO description: additionalProperties"
     }
   },
-  "additionalProperties": {
-    "$ref": "#/definitions/SoundSpec"
-  },
+  "additionalProperties": { "$ref": "#/definitions/SoundSpec" },
   "properties": {
     "format_version": {
       "type": "string",
@@ -100,9 +66,7 @@
     },
     "sound_definitions": {
       "type": "object",
-      "additionalProperties": {
-        "$ref": "#/definitions/SoundSpec"
-      },
+      "additionalProperties": { "$ref": "#/definitions/SoundSpec" },
       "description": "TODO description: sound definitions",
       "title": "Sound Definitions"
     }

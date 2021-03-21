@@ -11,19 +11,10 @@
     "items": {
       "type": "array",
       "description": "List of items that this mob likes",
-      "items": {
-        "type": "string",
-        "description": "TODO description: properties",
-        "title": "Properties"
-      },
+      "items": { "type": "string", "description": "TODO description: properties", "title": "Properties" },
       "title": "Properties"
     },
-    "look_distance": {
-      "type": "number",
-      "default": 8,
-      "description": "Distance in blocks the mob will beg from",
-      "title": "Look Distance"
-    },
+    "look_distance": { "type": "number", "default": 8, "description": "Distance in blocks the mob will beg from", "title": "Look Distance" },
     "look_time": {
       "description": "The range of time in seconds this mob will stare at the player holding a food they like, begging for it",
       "$ref": "../types/range_number_type.json",

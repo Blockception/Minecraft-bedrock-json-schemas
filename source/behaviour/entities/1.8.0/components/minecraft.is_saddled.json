@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.is_saddled",
   "description": "Sets that this entity is currently saddled.",
   "type": "object",
-  "title": "Is saddled 1.8.0",
+  "title": "Is Saddled 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {}

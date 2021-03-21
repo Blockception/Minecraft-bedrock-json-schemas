@@ -11,21 +11,9 @@
       "type": "array",
       "default": [0.0, 0.0],
       "description": "Delay after landing when using the slime move control.",
-      "title": "Jump delay",
-      "items": [
-        {
-          "type": "number"
-        },
-        {
-          "type": "number"
-        }
-      ]
+      "title": "Jump Delay",
+      "items": [{ "type": "number" }, { "type": "number" }]
     },
-    "max_turn": {
-      "type": "number",
-      "default": 30,
-      "description": "The maximum number in degrees the mob can turn per tick.",
-      "title": "Max turn"
-    }
+    "max_turn": { "type": "number", "default": 30, "description": "The maximum number in degrees the mob can turn per tick.", "title": "Max Turn" }
   }
 }

@@ -3,13 +3,6 @@
   "$id": "blockception.minecraft.behaviour.loot_tables.set_data_from_color_index",
   "additionalProperties": false,
   "description": "The function set_data_from_color_index",
-  "title": "Set data from color index",
-  "properties": {
-    "function": {
-      "type": "string",
-      "const": "set_data_from_color_index",
-      "description": "TODO description",
-      "title": "TODO title"
-    }
-  }
+  "title": "Set Data From Color Index",
+  "properties": { "function": { "type": "string", "const": "set_data_from_color_index", "description": "TODO description", "title": "TODO Title" } }
 }

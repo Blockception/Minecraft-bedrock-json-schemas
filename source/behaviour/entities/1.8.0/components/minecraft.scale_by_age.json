@@ -2,22 +2,12 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.scale_by_age",
   "type": "object",
-  "title": "Scale by age 1.8.0",
+  "title": "Scale By Age 1.8.0",
   "additionalProperties": false,
   "description": "Defines the entity's size interpolation based on the entity's age.",
   "required": [],
   "properties": {
-    "end_scale": {
-      "type": "number",
-      "default": 1,
-      "description": "Ending scale of the entity when it's fully grown",
-      "title": "TODO title"
-    },
-    "start_scale": {
-      "type": "number",
-      "default": 1,
-      "description": "Initial scale of the newborn entity",
-      "title": "TODO title"
-    }
+    "end_scale": { "type": "number", "default": 1, "description": "Ending scale of the entity when it's fully grown", "title": "TODO Title" },
+    "start_scale": { "type": "number", "default": 1, "description": "Initial scale of the newborn entity", "title": "TODO Title" }
   }
 }

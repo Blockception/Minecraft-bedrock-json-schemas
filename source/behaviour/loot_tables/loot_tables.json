@@ -29,48 +29,22 @@
       "additionalProperties": false,
       "items": {
         "additionalProperties": false,
-        "title": "A single pool",
+        "title": "A Single Pool",
         "type": "object",
         "properties": {
           "rolls": {
             "title": "Rolls",
             "oneOf": [
-              {
-                "type": "integer",
-                "minimum": 0
-              },
+              { "type": "integer", "minimum": 0 },
               {
                 "type": "object",
                 "required": ["min", "max"],
-                "properties": {
-                  "min": {
-                    "title": "Minimum",
-                    "type": "number",
-                    "minimum": 0
-                  },
-                  "max": {
-                    "title": "Minimum",
-                    "type": "number",
-                    "minimum": 1
-                  }
-                }
+                "properties": { "min": { "title": "Minimum", "type": "number", "minimum": 0 }, "max": { "title": "Minimum", "type": "number", "minimum": 1 } }
               }
             ]
           },
-          "type": {
-            "title": "Type",
-            "type": "string",
-            "description": "",
-            "enum": ["loot_table", "item", "empty"]
-          },
-          "conditions": {
-            "title": "Conditions",
-            "description": "TODO",
-            "type": "array",
-            "items": {
-              "$ref": "./conditions.json"
-            }
-          },
+          "type": { "title": "Type", "type": "string", "description": "", "enum": ["loot_table", "item", "empty"] },
+          "conditions": { "title": "Conditions", "description": "TODO", "type": "array", "items": { "$ref": "./conditions.json" } },
           "entries": {
             "title": "Entries",
             "type": "array",
@@ -80,45 +54,13 @@
               "required": ["type"],
               "title": "Entry",
               "properties": {
-                "type": {
-                  "title": "Type",
-                  "type": "string",
-                  "enum": ["item", "empty", "loot_table"]
-                },
-                "count": {
-                  "type": "integer",
-                  "title": "Count",
-                  "description": "The amount of the item"
-                },
-                "name": {
-                  "title": "Name",
-                  "type": "string",
-                  "description": "An item or loottable",
-                  "pattern": "^([\\w]+:|loot_tables/)"
-                },
-                "weight": {
-                  "title": "Weight",
-                  "type": "integer",
-                  "minimum": 1
-                },
-                "functions": {
-                  "title": "Functions",
-                  "type": "array",
-                  "items": {
-                    "type": "object",
-                    "required": ["function"],
-                    "title": "Function",
-                    "$ref": "./functions.json"
-                  }
-                },
-                "pools": {
-                  "$ref": "#/definitions/pools_spec"
-                },
-                "quality": {
-                  "title": "Quality",
-                  "description": "UNDOCUMANTED",
-                  "type": "integer"
-                }
+                "type": { "title": "Type", "type": "string", "enum": ["item", "empty", "loot_table"] },
+                "count": { "type": "integer", "title": "Count", "description": "The amount of the item" },
+                "name": { "title": "Name", "type": "string", "description": "An item or loottable", "pattern": "^([\\w]+:|loot_tables/)" },
+                "weight": { "title": "Weight", "type": "integer", "minimum": 1 },
+                "functions": { "title": "Functions", "type": "array", "items": { "type": "object", "required": ["function"], "title": "Function", "$ref": "./functions.json" } },
+                "pools": { "$ref": "#/definitions/pools_spec" },
+                "quality": { "title": "Quality", "description": "UNDOCUMANTED", "type": "integer" }
               }
             }
           },
@@ -128,21 +70,9 @@
             "type": "object",
             "additionalProperties": false,
             "properties": {
-              "bonus_chance": {
-                "title": "Bonus chance",
-                "description": "TODO description",
-                "type": "number"
-              },
-              "bonus_rolls": {
-                "title": "Bonus rolls",
-                "description": "TODO description",
-                "type": "integer"
-              },
-              "initial_range": {
-                "title": "Initial range",
-                "description": "TODO description",
-                "type": "integer"
-              }
+              "bonus_chance": { "title": "Bonus Chance", "description": "TODO description", "type": "number" },
+              "bonus_rolls": { "title": "Bonus Rolls", "description": "TODO description", "type": "integer" },
+              "initial_range": { "title": "Initial Range", "description": "TODO description", "type": "integer" }
             }
           }
         }
@@ -150,12 +80,7 @@
     }
   },
   "properties": {
-    "pools": { "$ref": "#/definitions/pools_spec", "description": "TODO description", "title": "TODO title" },
-    "type": {
-      "title": "Type",
-      "type": "string",
-      "description": "TODO description",
-      "enum": ["minecraft:chest"]
-    }
+    "pools": { "$ref": "#/definitions/pools_spec", "description": "TODO description", "title": "TODO Title" },
+    "type": { "title": "Type", "type": "string", "description": "TODO description", "enum": ["minecraft:chest"] }
   }
 }

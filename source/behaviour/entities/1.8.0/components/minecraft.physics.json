@@ -7,17 +7,7 @@
   "description": "Defines a dynamic type jump control that will change jump properties based on the speed modifier of the mob.",
   "required": [],
   "properties": {
-    "has_collision": {
-      "type": "boolean",
-      "default": true,
-      "description": "Whether or not the object collides with things.",
-      "title": "TODO title"
-    },
-    "has_gravity": {
-      "type": "boolean",
-      "default": true,
-      "description": "Whether or not the entity is affected by gravity.",
-      "title": "TODO title"
-    }
+    "has_collision": { "type": "boolean", "default": true, "description": "Whether or not the object collides with things.", "title": "TODO Title" },
+    "has_gravity": { "type": "boolean", "default": true, "description": "Whether or not the entity is affected by gravity.", "title": "TODO Title" }
   }
 }

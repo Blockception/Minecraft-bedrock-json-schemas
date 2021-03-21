@@ -13,11 +13,7 @@
       "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry",
       "title": "Broadcast Anger"
     },
-    "broadcast_filters": {
-      "$ref": "../filters.json",
-      "description": "Conditions that make this entry in the list valid",
-      "title": "Broadcast Filters"
-    },
+    "broadcast_filters": { "$ref": "../filters.json", "description": "Conditions that make this entry in the list valid", "title": "Broadcast Filters" },
     "broadcast_range": {
       "type": "integer",
       "default": 20,
@@ -27,12 +23,7 @@
     "broadcast_targets": {
       "type": "array",
       "description": "A list of entity families to broadcast anger to",
-      "items": {
-        "type": "string",
-        "description": "An entity family",
-        "pattern": "^.+$",
-        "title": "Broadcast Targets"
-      },
+      "items": { "type": "string", "description": "An entity family", "pattern": "^.+$", "title": "Broadcast Targets" },
       "title": "Broadcast Targets"
     },
     "calm_event": {
@@ -40,27 +31,9 @@
       "description": "Event to run after the number of seconds specified in duration expires (when the entity stops being 'angry')",
       "title": "Calm Event"
     },
-    "duration": {
-      "type": "integer",
-      "default": 25,
-      "description": "The amount of time in seconds that the entity will be angry",
-      "title": "Duration"
-    },
-    "duration_delta": {
-      "type": "integer",
-      "default": 0,
-      "description": "Variance in seconds added to the duration [-delta, delta]",
-      "title": "Duration Delta"
-    },
-    "broadcastAnger": {
-      "type": "boolean",
-      "description": "TODO",
-      "title": "TODO"
-    },
-    "broadcastRange": {
-      "type": "integer",
-      "description": "TODO",
-      "title": "TODO"
-    }
+    "duration": { "type": "integer", "default": 25, "description": "The amount of time in seconds that the entity will be angry", "title": "Duration" },
+    "duration_delta": { "type": "integer", "default": 0, "description": "Variance in seconds added to the duration [-delta, delta]", "title": "Duration Delta" },
+    "broadcastAnger": { "type": "boolean", "description": "TODO", "title": "TODO" },
+    "broadcastRange": { "type": "integer", "description": "TODO", "title": "TODO" }
   }
 }

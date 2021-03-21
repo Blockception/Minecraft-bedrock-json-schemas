@@ -7,26 +7,15 @@
       "animation_controllers": {
         "controller.animation.example": {
           "states": {
-            "default": {
-              "transitions": [{ "state_1": "query.is_baby" }]
-            },
-            "state_1": {
-              "animations": ["state_1"],
-              "transitions": [{ "default": "query.all_animations_finished" }]
-            }
+            "default": { "transitions": [{ "state_1": "query.is_baby" }] },
+            "state_1": { "animations": ["state_1"], "transitions": [{ "default": "query.all_animations_finished" }] }
           }
         }
       }
     }
   ],
   "allOf": [
-    {
-      "if": { "properties": { "format_version": { "type": "string", "const": "1.8.0" } } },
-      "then": { "$ref": "./1.8.0/animation_controller.json" }
-    },
-    {
-      "if": { "properties": { "format_version": { "type": "string", "const": "1.10.0" } } },
-      "then": { "$ref": "./1.10.0/animation_controller.json" }
-    }
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.8.0" } } }, "then": { "$ref": "./1.8.0/animation_controller.json" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.10.0" } } }, "then": { "$ref": "./1.10.0/animation_controller.json" } }
   ]
 }

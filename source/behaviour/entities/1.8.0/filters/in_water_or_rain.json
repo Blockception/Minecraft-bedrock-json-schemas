@@ -2,29 +2,18 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.filters.in_water_or_rain",
   "type": "object",
-  "title": "Filters in water or rain 1.8.0",
+  "title": "Filters In Water Or Rain 1.8.0",
   "description": "Returns true when the subject entity is in water or rain.",
   "properties": {
-    "test": {
-      "type": "string",
-      "title": "The test property",
-      "description": "Returns true when the subject entity is in water or rain."
-    },
+    "test": { "type": "string", "title": "Test Property", "description": "Returns true when the subject entity is in water or rain." },
     "operator": { "$ref": "./types/base_operator.json" },
     "subject": { "$ref": "./types/base_subject.json" },
     "value": {
       "title": "Value",
       "description": "True or false.",
       "oneOf": [
-        {
-          "type": "boolean",
-          "default": true
-        },
-        {
-          "type": "string",
-          "default": "true",
-          "enum": ["true", "false"]
-        }
+        { "type": "boolean", "default": true },
+        { "type": "string", "default": "true", "enum": ["true", "false"] }
       ]
     }
   }

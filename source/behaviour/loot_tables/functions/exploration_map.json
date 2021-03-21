@@ -3,19 +3,14 @@
   "$id": "blockception.minecraft.behaviour.loot_tables.exploration_map",
   "additionalProperties": false,
   "description": "The function exploration_map",
-  "title": "Exploration map",
+  "title": "Exploration Map",
   "properties": {
-    "function": {
-      "type": "string",
-      "const": "exploration_map",
-      "description": "TODO description",
-      "title": "TODO title"
-    },
+    "function": { "type": "string", "const": "exploration_map", "description": "TODO description", "title": "TODO Title" },
     "destination": {
       "type": "string",
       "description": "The destination value defines what type of treasure map they receive.",
       "enum": ["endcity", "fortress", "mineshaft", "monument", "ruins", "stronghold", "temple", "village", "mansion", "shipwreck", "buriedtreasure", "pillageroutpost"],
-      "title": "TODO title"
+      "title": "TODO Title"
     }
   }
 }

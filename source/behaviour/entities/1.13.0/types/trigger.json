@@ -6,11 +6,7 @@
   "description": "Trigger to fire",
   "minProperties": 1,
   "properties": {
-    "event": {
-      "type": "string",
-      "description": "Event",
-      "title": "The event to fire"
-    },
+    "event": { "type": "string", "description": "Event", "title": "Event To Fire" },
     "filters": { "$ref": "../filters.json", "description": "The filters to check to determine if the event should be fired", "title": "Filters" },
     "target": { "$ref": "../filters/types/base_subject.json", "description": "The entity to target", "title": "Target" }
   },

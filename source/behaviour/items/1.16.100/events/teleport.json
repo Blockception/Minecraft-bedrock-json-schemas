@@ -6,15 +6,10 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "target": {
-      "type": "string",
-      "title": "Target",
-      "description": "UNDOCUMENTATED",
-      "enum": ["holder"]
-    },
+    "target": { "type": "string", "title": "Target", "description": "UNDOCUMENTATED", "enum": ["holder"] },
     "max_range": {
       "type": "array",
-      "title": "Max range",
+      "title": "Max Range",
       "description": "UNDOCUMENTATED",
       "items": [
         { "type": "number", "title": "X", "description": "UNDOCUMENTATED" },

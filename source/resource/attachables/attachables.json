@@ -7,16 +7,9 @@
       "minecraft:attachable": {
         "description": {
           "identifier": "minecraft:item",
-          "materials": {
-            "default": "entity_alphatest",
-            "enchanted": "entity_alphatest_glint"
-          },
-          "textures": {
-            "default": "textures/items/item"
-          },
-          "geometry": {
-            "default": "geometry.item"
-          },
+          "materials": { "default": "entity_alphatest", "enchanted": "entity_alphatest_glint" },
+          "textures": { "default": "textures/items/item" },
+          "geometry": { "default": "geometry.item" },
           "scripts": {},
           "render_controllers": ["controller.render.item"]
         }
@@ -24,17 +17,8 @@
     }
   ],
   "allOf": [
-    {
-      "if": { "properties": { "format_version": { "type": "string", "const": "1.8.0" } } },
-      "then": { "$ref": "./1.8.0/attachables.json" }
-    },
-    {
-      "if": { "properties": { "format_version": { "type": "string", "const": "1.10" } } },
-      "then": { "$ref": "./1.10.0/attachables.json" }
-    },
-    {
-      "if": { "properties": { "format_version": { "type": "string", "const": "1.10.0" } } },
-      "then": { "$ref": "./1.10.0/attachables.json" }
-    }
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.8.0" } } }, "then": { "$ref": "./1.8.0/attachables.json" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.10" } } }, "then": { "$ref": "./1.10.0/attachables.json" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.10.0" } } }, "then": { "$ref": "./1.10.0/attachables.json" } }
   ]
 }

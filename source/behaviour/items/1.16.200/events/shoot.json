@@ -6,20 +6,8 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "angle_offset": {
-      "type": "number",
-      "title": "Angle offset",
-      "description": "UNDOCUMENTATED"
-    },
-    "launch_power": {
-      "type": "number",
-      "title": "Launch power",
-      "description": "UNDOCUMENTATED"
-    },
-    "projectile": {
-      "type": "string",
-      "title": "Projectile",
-      "description": "UNDOCUMENTATED"
-    }
+    "angle_offset": { "type": "number", "title": "Angle Offset", "description": "UNDOCUMENTATED" },
+    "launch_power": { "type": "number", "title": "Launch Power", "description": "UNDOCUMENTATED" },
+    "projectile": { "type": "string", "title": "Projectile", "description": "UNDOCUMENTATED" }
   }
 }

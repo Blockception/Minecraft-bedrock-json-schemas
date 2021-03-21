@@ -7,14 +7,7 @@
   "description": "The minecraft resourcepack model schema for 1.12.0",
   "required": ["format_version", "minecraft:geometry"],
   "definitions": {
-    "uv": {
-      "type": "array",
-      "minItems": 2,
-      "maxItems": 2,
-      "items": {
-        "type": "number"
-      }
-    },
+    "uv": { "type": "array", "minItems": 2, "maxItems": 2, "items": { "type": "number" } },
     "direction_uv": {
       "additionalProperties": false,
       "type": "object",
@@ -23,26 +16,15 @@
           "description": "Specifies the uv origin for the face. For this face, it is the upper-left corner, when looking at the face with y being up.",
           "$ref": "#/definitions/uv"
         },
-        "uv_size": {
-          "description": "The face maps this many texels from the uv origin. If not specified, the box dimensions are used instead.",
-          "$ref": "#/definitions/uv"
-        },
-        "material_instance": {
-          "type": "string",
-          "description": "TODO"
-        }
+        "uv_size": { "description": "The face maps this many texels from the uv origin. If not specified, the box dimensions are used instead.", "$ref": "#/definitions/uv" },
+        "material_instance": { "type": "string", "description": "TODO" }
       }
     }
   },
   "properties": {
-    "debug": {
-      "type": "boolean",
-      "default": false,
-      "description": "TODO description",
-      "title": "TODO title"
-    },
+    "debug": { "type": "boolean", "default": false, "description": "TODO description", "title": "TODO Title" },
     "format_version": {
-      "title": "The 1.12.0 format version",
+      "title": "1.12.0 Format Version",
       "type": "string",
       "pattern": "^1.12.0$",
       "description": "A version that tells minecraft what type of data format can be expected when reading this file."
@@ -72,36 +54,18 @@
                 "pattern": "^geometry\\.[a-zA-Z0-9_\\-\\.]+$",
                 "title": "Identifier"
               },
-              "texture_width": {
-                "type": "number",
-                "description": "Assumed width in texels of the texture that will be bound to this geometry.",
-                "title": "Texture Width"
-              },
-              "texture_height": {
-                "type": "number",
-                "description": "Assumed height in texels of the texture that will be bound to this geometry.",
-                "title": "Texture Height"
-              },
+              "texture_width": { "type": "number", "description": "Assumed width in texels of the texture that will be bound to this geometry.", "title": "Texture Width" },
+              "texture_height": { "type": "number", "description": "Assumed height in texels of the texture that will be bound to this geometry.", "title": "Texture Height" },
               "visible_bounds_offset": {
                 "description": "Offset of the visibility bounding box from the entity location point (in model space units).",
                 "title": "Visible Bounds Offset",
                 "type": "array",
                 "minItems": 3,
                 "maxItems": 3,
-                "items": {
-                  "type": "number"
-                }
+                "items": { "type": "number" }
               },
-              "visible_bounds_width": {
-                "type": "number",
-                "description": "Width of the visibility bounding box (in model space units).",
-                "title": "Visible Bounds Width"
-              },
-              "visible_bounds_height": {
-                "type": "number",
-                "description": "Height of the visible bounding box (in model space units).",
-                "title": "Visible Bounds Height"
-              }
+              "visible_bounds_width": { "type": "number", "description": "Width of the visibility bounding box (in model space units).", "title": "Visible Bounds Width" },
+              "visible_bounds_height": { "type": "number", "description": "Height of the visible bounding box (in model space units).", "title": "Visible Bounds Height" }
             }
           },
           "bones": {
@@ -113,10 +77,7 @@
               "description": "A bones specification",
               "required": ["name"],
               "properties": {
-                "average_normals": {
-                  "type": "object",
-                  "examples": [null]
-                },
+                "average_normals": { "type": "object", "examples": [null] },
                 "cubes": {
                   "type": "array",
                   "description": "This is the list of cubes associated with this bone.",
@@ -137,10 +98,7 @@
                         "type": "array",
                         "minItems": 3,
                         "maxItems": 3,
-                        "items": {
-                          "type": "number",
-                          "description": "This point declares the unrotated lower corner of cube (smallest x/y/z value in model space units)."
-                        }
+                        "items": { "type": "number", "description": "This point declares the unrotated lower corner of cube (smallest x/y/z value in model space units)." }
                       },
                       "pivot": {
                         "type": "array",
@@ -155,19 +113,13 @@
                         "type": "array",
                         "minItems": 3,
                         "maxItems": 3,
-                        "items": {
-                          "type": "number",
-                          "description": "The cube is rotated by this amount (in degrees, x-then-y-then-z order) around the pivot."
-                        }
+                        "items": { "type": "number", "description": "The cube is rotated by this amount (in degrees, x-then-y-then-z order) around the pivot." }
                       },
                       "size": {
                         "type": "array",
                         "minItems": 3,
                         "maxItems": 3,
-                        "items": {
-                          "type": "number",
-                          "description": "The cube extends this amount relative to its origin (in model space units)."
-                        }
+                        "items": { "type": "number", "description": "The cube extends this amount relative to its origin (in model space units)." }
                       },
                       "uv": {
                         "description": "This is an alternate per-face uv mapping which specifies each face of the cube. Omitting a face will cause that face to not get drawn.",
@@ -202,26 +154,14 @@
                               }
                             }
                           },
-                          {
-                            "type": "array",
-                            "minItems": 2,
-                            "maxItems": 2,
-                            "items": {
-                              "type": "number"
-                            }
-                          }
+                          { "type": "array", "minItems": 2, "maxItems": 2, "items": { "type": "number" } }
                         ]
                       }
                     }
                   }
                 },
-                "debug": {
-                  "type": "boolean"
-                },
-                "inflate": {
-                  "type": "number",
-                  "description": "Grow this box by this additive amount in all directions (in model space units)."
-                },
+                "debug": { "type": "boolean" },
+                "inflate": { "type": "number", "description": "Grow this box by this additive amount in all directions (in model space units)." },
                 "locators": {
                   "description": "This is a list of locators associated with this bone. A locator is a point in model space that tracks a particular bone as the bone animates (by maintaining it's relationship to the bone through the animation).",
                   "type": "object",
@@ -236,25 +176,16 @@
                             "minItems": 3,
                             "maxItems": 3,
                             "description": "Position of the locator in model space.",
-                            "items": {
-                              "type": "number",
-                              "description": "Position of the locator in model space."
-                            }
+                            "items": { "type": "number", "description": "Position of the locator in model space." }
                           },
                           "rotation": {
                             "type": "array",
                             "minItems": 3,
                             "maxItems": 3,
                             "description": "Rotation of the locator in model space.",
-                            "items": {
-                              "type": "number",
-                              "description": "Rotation of the locator in model space."
-                            }
+                            "items": { "type": "number", "description": "Rotation of the locator in model space." }
                           },
-                          "ignore_inherited_scale": {
-                            "type": "boolean",
-                            "description": "Discard scale inherited from parent bone."
-                          }
+                          "ignore_inherited_scale": { "type": "boolean", "description": "Discard scale inherited from parent bone." }
                         }
                       },
                       {
@@ -262,35 +193,20 @@
                         "minItems": 3,
                         "maxItems": 3,
                         "description": "This is a list of locators associated with this bone. A locator is a point in model space that tracks a particular bone as the bone animates (by maintaining it's relationship to the bone through the animation).",
-                        "items": {
-                          "type": "number",
-                          "description": "Position of the locator in model space."
-                        }
+                        "items": { "type": "number", "description": "Position of the locator in model space." }
                       }
                     ]
                   }
                 },
-                "mirror": {
-                  "type": "boolean",
-                  "description": "Mirrors the UV's of the unrotated cubes along the x axis, also causes the east/west faces to get flipped."
-                },
-                "name": {
-                  "type": "string",
-                  "description": "Animation files refer to this bone via this identifier."
-                },
-                "parent": {
-                  "type": "string",
-                  "description": "Bone that this bone is relative to. If the parent bone moves, this bone will move along with it."
-                },
+                "mirror": { "type": "boolean", "description": "Mirrors the UV's of the unrotated cubes along the x axis, also causes the east/west faces to get flipped." },
+                "name": { "type": "string", "description": "Animation files refer to this bone via this identifier." },
+                "parent": { "type": "string", "description": "Bone that this bone is relative to. If the parent bone moves, this bone will move along with it." },
                 "pivot": {
                   "type": "array",
                   "minItems": 3,
                   "maxItems": 3,
                   "description": "The bone pivots around this point (in model space units).",
-                  "items": {
-                    "type": "number",
-                    "description": "The bone pivots around this point (in model space units)."
-                  }
+                  "items": { "type": "number", "description": "The bone pivots around this point (in model space units)." }
                 },
                 "poly_mesh": {
                   "additionalProperties": false,
@@ -336,18 +252,9 @@
                               "minItems": 3,
                               "maxItems": 3,
                               "items": [
-                                {
-                                  "type": "number",
-                                  "description": "The index of the position"
-                                },
-                                {
-                                  "type": "number",
-                                  "description": "The index of the normal vertex"
-                                },
-                                {
-                                  "type": "number",
-                                  "description": "The index of the uv vertex"
-                                }
+                                { "type": "number", "description": "The index of the position" },
+                                { "type": "number", "description": "The index of the normal vertex" },
+                                { "type": "number", "description": "The index of the uv vertex" }
                               ]
                             }
                           }
@@ -382,19 +289,13 @@
                     }
                   }
                 },
-                "render_group_id": {
-                  "type": "integer",
-                  "minimum": 0
-                },
+                "render_group_id": { "type": "integer", "minimum": 0 },
                 "rotation": {
                   "type": "array",
                   "minItems": 3,
                   "maxItems": 3,
                   "description": "The bone pivots around this point (in model space units).",
-                  "items": {
-                    "type": "number",
-                    "description": "This is the initial rotation of the bone around the pivot, pre-animation (in degrees, x-then-y-then-z order)."
-                  }
+                  "items": { "type": "number", "description": "This is the initial rotation of the bone around the pivot, pre-animation (in degrees, x-then-y-then-z order)." }
                 },
                 "texture_meshes": {
                   "type": "array",
@@ -408,10 +309,7 @@
                         "description": "The pivot point on the texture (in *texture space* not entity or bone space) of the texture geometry",
                         "minItems": 3,
                         "maxItems": 3,
-                        "items": {
-                          "type": "number",
-                          "description": "The pivot point on the texture (in *texture space* not entity or bone space) of the texture geometry"
-                        }
+                        "items": { "type": "number", "description": "The pivot point on the texture (in *texture space* not entity or bone space) of the texture geometry" }
                       },
                       "position": {
                         "type": "array",
@@ -428,34 +326,23 @@
                         "description": "The rotation (in degrees) of the texture geometry relative to the offset",
                         "minItems": 3,
                         "maxItems": 3,
-                        "items": {
-                          "type": "number",
-                          "description": "The rotation (in degrees) of the texture geometry relative to the offset"
-                        }
+                        "items": { "type": "number", "description": "The rotation (in degrees) of the texture geometry relative to the offset" }
                       },
                       "scale": {
                         "type": "array",
                         "description": "The scale (in degrees) of the texture geometry relative to the offset",
                         "minItems": 3,
                         "maxItems": 3,
-                        "items": {
-                          "type": "number",
-                          "description": "The scale (in degrees) of the texture geometry relative to the offset"
-                        }
+                        "items": { "type": "number", "description": "The scale (in degrees) of the texture geometry relative to the offset" }
                       },
-                      "texture": {
-                        "type": "string",
-                        "description": "The friendly-named texture to use."
-                      }
+                      "texture": { "type": "string", "description": "The friendly-named texture to use." }
                     }
                   }
                 }
               }
             }
           },
-          "cape": {
-            "type": "string"
-          }
+          "cape": { "type": "string" }
         }
       }
     }

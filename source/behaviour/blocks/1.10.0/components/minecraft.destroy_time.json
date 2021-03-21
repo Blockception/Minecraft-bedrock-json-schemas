@@ -3,6 +3,6 @@
   "$id": "blockception.minecraft.behaviour.blocks.1.10.0.minecraft.destroy_time",
   "additionalProperties": false,
   "type": "number",
-  "title": "Destroy time 1.10.0",
+  "title": "Destroy Time 1.10.0",
   "description": "Sets the destroy time property for the block. Greater numbers result in greater mining times."
 }

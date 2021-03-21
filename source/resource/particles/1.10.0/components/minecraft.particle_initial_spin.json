@@ -1,16 +1,12 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.resource.particle.1.10.0.particle_initial_spin",
-  "title": "The particle initial spin component for 1.10.0",
+  "title": "Particle Initial Spin Component For 1.10.0",
   "description": "Starts the particle with a specified orientation and rotation rate.",
   "additionalProperties": false,
   "type": "object",
   "properties": {
     "rotation": { "$ref": "../../../../molang/1.8.0/number.json", "description": "Specifies the initial rotation in degrees", "title": "Rotation" },
-    "rotation_rate": {
-      "$ref": "../../../../molang/1.8.0/number.json",
-      "description": "Specifies the spin rate in degrees/second",
-      "title": "Rotation Rate"
-    }
+    "rotation_rate": { "$ref": "../../../../molang/1.8.0/number.json", "description": "Specifies the spin rate in degrees/second", "title": "Rotation Rate" }
   }
 }

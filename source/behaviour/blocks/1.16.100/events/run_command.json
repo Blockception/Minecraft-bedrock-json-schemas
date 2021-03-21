@@ -3,30 +3,15 @@
   "$id": "blockception.minecraft.behaviour.1.16.100.block.events.run_command",
   "type": "object",
   "description": "Triggers a slash command or a list of slash commands.",
-  "title": "Run command",
+  "title": "Run Command",
   "additionalProperties": false,
   "properties": {
     "command": {
       "default": "",
       "description": "Slash command to run.",
       "title": "Command",
-      "oneof": [
-        { "type": "string" },
-        {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "title": "Command",
-            "description": "Slash command to run."
-          }
-        }
-      ]
+      "oneof": [{ "type": "string" }, { "type": "array", "items": { "type": "string", "title": "Command", "description": "Slash command to run." } }]
     },
-    "target": {
-      "type": "string",
-      "default": "self",
-      "description": "The target context to execute against.",
-      "title": "Target"
-    }
+    "target": { "type": "string", "default": "self", "description": "The target context to execute against.", "title": "Target" }
   }
 }

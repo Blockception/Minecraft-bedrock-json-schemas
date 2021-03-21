@@ -3,75 +3,57 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.ranged_attack",
   "description": "Allows the mob to use ranged attacks like shooting arrows.",
   "type": "object",
-  "title": "Ranged attack 1.8.0",
+  "title": "Ranged Attack 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {
     "priority": { "$ref": "types/base_priority.json" },
     "speed_multiplier": { "$ref": "types/base_speed_multiplier.json" },
-    "attack_interval": {
-      "type": "number",
-      "default": 0,
-      "description": "UNDOCUMENTATED",
-      "title": "TODO title"
-    },
+    "attack_interval": { "type": "number", "default": 0, "description": "UNDOCUMENTATED", "title": "TODO Title" },
     "attack_interval_max": {
       "type": "number",
       "default": 0,
       "description": "Maximum amount of time in seconds the entity will wait after an attack before launching another",
-      "title": "TODO title"
+      "title": "TODO Title"
     },
     "attack_interval_min": {
       "type": "number",
       "default": 0,
       "description": "Minimum amount of time in seconds the entity will wait after an attack before launching another",
-      "title": "TODO title"
+      "title": "TODO Title"
     },
     "attack_radius": {
       "type": "number",
       "default": 0,
       "description": "Maximum distance the target can be for this mob to fire. If the target is further away, this mob will move first before firing",
-      "title": "TODO title"
+      "title": "TODO Title"
     },
     "burst_interval": {
       "type": "number",
       "default": 0,
       "description": "Amount of time in seconds between each individual shot when firing multiple shots per attack",
-      "title": "TODO title"
+      "title": "TODO Title"
     },
-    "burst_shots": {
-      "type": "integer",
-      "default": 1,
-      "description": "Number of shots fired every time the mob uses a charged attack",
-      "title": "TODO title"
-    },
+    "burst_shots": { "type": "integer", "default": 1, "description": "Number of shots fired every time the mob uses a charged attack", "title": "TODO Title" },
     "charge_charged_trigger": {
       "type": "number",
       "default": 0,
       "description": "The minimum amount of time in ticks the mob has to charge before firing a charged attack",
-      "title": "TODO title"
+      "title": "TODO Title"
     },
     "charge_shoot_trigger": {
       "type": "number",
       "default": 0,
       "description": "The minimum amount of time in ticks for the mob to start charging a charged shot. Must be greater than 0 to enable burst shots",
-      "title": "TODO title"
+      "title": "TODO Title"
     },
     "ranged_fov": {
       "type": "number",
       "default": 90,
       "description": "The allowable FOV the actor will use to determine if it can make a valid ranged attack",
-      "title": "TODO title"
+      "title": "TODO Title"
     },
-    "target_in_sight_time": {
-      "type": "number",
-      "title": "Target in sight time",
-      "description": "UNDOCUMENTATED"
-    },
-    "attack_radius_min": {
-      "type": "number",
-      "title": "Attack radius min",
-      "description": "UNDOCUMENTATED"
-    }
+    "target_in_sight_time": { "type": "number", "title": "Target In Sight Time", "description": "UNDOCUMENTATED" },
+    "attack_radius_min": { "type": "number", "title": "Attack Radius Min", "description": "UNDOCUMENTATED" }
   }
 }

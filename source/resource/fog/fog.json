@@ -2,10 +2,5 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.resource.fog",
   "examples": [],
-  "allOf": [
-    {
-      "if": { "properties": { "format_version": { "type": "string", "const": "1.16.100" } } },
-      "then": { "$ref": "./1.16.100/fog.json" }
-    }
-  ]
+  "allOf": [{ "if": { "properties": { "format_version": { "type": "string", "const": "1.16.100" } } }, "then": { "$ref": "./1.16.100/fog.json" } }]
 }

@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.resource.1.16.100.resource",
   "type": "object",
   "additionalProperties": false,
-  "title": "Fog specification",
+  "title": "Fog ",
   "description": "TODO",
   "definitions": {
     "colorHexOrArray": {
@@ -17,11 +17,7 @@
             { "type": "number", "minimum": 0, "maximum": 1, "title": "Blue" }
           ]
         },
-        {
-          "type": "string",
-          "format": "color-hex",
-          "pattern": "^\\#[0-9a-fA-F]{6}$"
-        }
+        { "type": "string", "format": "color-hex", "pattern": "^\\#[0-9a-fA-F]{6}$" }
       ]
     },
     "defaultFogSettings": {
@@ -31,25 +27,20 @@
       "examples": [{ "fog_start": 100, "fog_end": 200, "fog_color": "#056bd1", "render_distance_type": "render" }],
       "properties": {
         "fog_start": {
-          "title": "Fog start",
+          "title": "Fog Start",
           "description": "The distance from the player that the fog will begin to appear. 'fog_start' must be less than or equal to 'fog_end'.",
           "type": "number",
           "minimum": 0
         },
         "fog_end": {
-          "title": "Fog end",
+          "title": "Fog End",
           "description": "The distance from the player that the fog will become fully opaque. 'fog_end' must be greater than or equal to 'fog_start'.",
           "type": "number",
           "minimum": 0
         },
-        "fog_color": {
-          "title": "Fog color",
-          "description": "The color that the fog will take on.",
-          "type": "string",
-          "format": "color-hex"
-        },
+        "fog_color": { "title": "Fog Color", "description": "The color that the fog will take on.", "type": "string", "format": "color-hex" },
         "render_distance_type": {
-          "title": "Render distance type",
+          "title": "Render Distance Type",
           "description": "Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.",
           "type": "string",
           "enum": ["fixed", "render"]
@@ -63,58 +54,42 @@
       "examples": [{ "max_density": 0.25 }, { "max_density": 0.25, "max_density_height": 128, "zero_density_height": 20, "uniform": true }],
       "properties": {
         "max_density": {
-          "title": "Max density",
+          "title": "Max Density",
           "description": "The maximum amount of opaqueness that the ground fog will take on. A value from [0.0, 1.0].",
           "minimum": 0,
           "maximum": 1,
           "type": "number"
         },
         "max_density_height": {
-          "title": "Max density height",
+          "title": "Max Density Height",
           "description": "The height in blocks that the ground fog will become it's maximum density.",
           "minimum": 0,
           "maximum": 128,
           "type": "number"
         },
         "zero_density_height": {
-          "title": "Zero density height",
+          "title": "Zero Density Height",
           "description": "The height in blocks that the ground fog will be completely transparent and begin to appear. This value needs to be at least 1 higher than 'max_density_height'.",
           "minimum": 0,
           "maximum": 128,
           "type": "number"
         },
-        "uniform": {
-          "title": "Uniform",
-          "description": "When set to true, the density will be uniform across all heights.",
-          "type": "boolean"
-        }
+        "uniform": { "title": "Uniform", "description": "When set to true, the density will be uniform across all heights.", "type": "boolean" }
       }
     },
     "volumeMediaObject": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "absorption": {
-          "title": "Absorption",
-          "description": "Proportion of light that is absorbed (lost) per block.",
-          "$ref": "#/definitions/colorHexOrArray"
-        },
-        "scattering": {
-          "title": "Scattering",
-          "description": "Proportion of light that is scattered per block.",
-          "$ref": "#/definitions/colorHexOrArray"
-        }
+        "absorption": { "title": "Absorption", "description": "Proportion of light that is absorbed (lost) per block.", "$ref": "#/definitions/colorHexOrArray" },
+        "scattering": { "title": "Scattering", "description": "Proportion of light that is scattered per block.", "$ref": "#/definitions/colorHexOrArray" }
       }
     }
   },
   "properties": {
-    "format_version": {
-      "title": "Format version",
-      "description": "TODO: format_version",
-      "type": "string"
-    },
+    "format_version": { "title": "Format Version", "description": "TODO: format_version", "type": "string" },
     "minecraft:fog_settings": {
-      "title": "Fog settings",
+      "title": "Fog Settings",
       "description": "The definition of a single fog",
       "type": "object",
       "additionalProperties": false,
@@ -139,36 +114,20 @@
           "type": "object",
           "additionalProperties": false,
           "properties": {
-            "air": {
-              "title": "Air",
-              "description": "The fog settings when the camera is in the air.",
-              "$ref": "#/definitions/defaultFogSettings"
-            },
+            "air": { "title": "Air", "description": "The fog settings when the camera is in the air.", "$ref": "#/definitions/defaultFogSettings" },
             "weather": {
               "title": "Weather",
               "description": " The fog settings for when the camera is in the air with active weather (rain, snow, etc..).",
               "$ref": "#/definitions/defaultFogSettings"
             },
-            "water": {
-              "title": "Water",
-              "description": "The fog settings when the camera is in water.",
-              "$ref": "#/definitions/defaultFogSettings"
-            },
-            "lava": {
-              "title": "Lava",
-              "description": "The fog settings when the camera is in lava.",
-              "$ref": "#/definitions/defaultFogSettings"
-            },
+            "water": { "title": "Water", "description": "The fog settings when the camera is in water.", "$ref": "#/definitions/defaultFogSettings" },
+            "lava": { "title": "Lava", "description": "The fog settings when the camera is in lava.", "$ref": "#/definitions/defaultFogSettings" },
             "lava_resistance": {
-              "title": "Lava resistance",
+              "title": "Lava Resistance",
               "description": "The fog settings when the camera is in lava and the player has the lava resistance effect active.",
               "$ref": "#/definitions/defaultFogSettings"
             },
-            "powder_snow": {
-              "title": "Powder snow",
-              "description": "The fog settings when the camera is inside a Powder Snow block.",
-              "$ref": "#/definitions/defaultFogSettings"
-            }
+            "powder_snow": { "title": "Powder Snow", "description": "The fog settings when the camera is inside a Powder Snow block.", "$ref": "#/definitions/defaultFogSettings" }
           }
         },
         "volumetric": {
@@ -183,48 +142,24 @@
               "type": "object",
               "additionalProperties": false,
               "properties": {
-                "air": {
-                  "title": "Air",
-                  "description": "Fog density values as light passes through air blocks.",
-                  "$ref": "#/definitions/volumeDensityObject"
-                },
-                "water": {
-                  "title": "Water",
-                  "description": "Fog density values as light passes through water blocks.",
-                  "$ref": "#/definitions/volumeDensityObject"
-                },
-                "lava": {
-                  "title": "Lava",
-                  "description": "Fog density values as light passes through lava blocks.",
-                  "$ref": "#/definitions/volumeDensityObject"
-                },
+                "air": { "title": "Air", "description": "Fog density values as light passes through air blocks.", "$ref": "#/definitions/volumeDensityObject" },
+                "water": { "title": "Water", "description": "Fog density values as light passes through water blocks.", "$ref": "#/definitions/volumeDensityObject" },
+                "lava": { "title": "Lava", "description": "Fog density values as light passes through lava blocks.", "$ref": "#/definitions/volumeDensityObject" },
                 "lava_resistance": {
-                  "title": "Lava resistance",
+                  "title": "Lava Resistance",
                   "description": "Fog density values as light passes through lava blocks while the player has lava resistance.",
                   "$ref": "#/definitions/volumeDensityObject"
                 }
               }
             },
             "media_coefficients": {
-              "title": "Media coefficients",
+              "title": "Media Coefficients",
               "description": "The coefficient settings for the volumetric fog in different blocks.",
               "additionalProperties": false,
               "properties": {
-                "air": {
-                  "title": "Air",
-                  "description": "Fog coefficient values while light passes through air.",
-                  "$ref": "#/definitions/volumeMediaObject"
-                },
-                "water": {
-                  "title": "Water",
-                  "description": "Fog coefficient values while light passes through water.",
-                  "$ref": "#/definitions/volumeMediaObject"
-                },
-                "cloud": {
-                  "title": "Cloud",
-                  "description": "Fog coefficient values while light passes through clouds.",
-                  "$ref": "#/definitions/volumeMediaObject"
-                }
+                "air": { "title": "Air", "description": "Fog coefficient values while light passes through air.", "$ref": "#/definitions/volumeMediaObject" },
+                "water": { "title": "Water", "description": "Fog coefficient values while light passes through water.", "$ref": "#/definitions/volumeMediaObject" },
+                "cloud": { "title": "Cloud", "description": "Fog coefficient values while light passes through clouds.", "$ref": "#/definitions/volumeMediaObject" }
               }
             }
           }

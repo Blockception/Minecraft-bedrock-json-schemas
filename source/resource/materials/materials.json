@@ -95,48 +95,18 @@
         ]
       }
     },
-    "FailOperation": {
-      "type": "string",
-      "title": "Fail operation",
-      "description": "TODO",
-      "enum": ["Keep", "Replace"]
-    },
+    "FailOperation": { "type": "string", "title": "Fail Operation", "description": "TODO", "enum": ["Keep", "Replace"] },
     "FaceSpecification": {
       "type": "object",
       "title": "Face",
       "description": "TODO",
       "additionalProperties": false,
       "properties": {
-        "stencilDepthFailOp": {
-          "type": "string",
-          "title": "Stencil depth fail operation",
-          "description": "",
-          "$ref": "#/definitions/FailOperation"
-        },
-        "stencilFailOp": {
-          "type": "string",
-          "title": "Stencil fail operation",
-          "description": "",
-          "$ref": "#/definitions/FailOperation"
-        },
-        "stencilFunc": {
-          "type": "string",
-          "title": "Stencil function",
-          "description": "",
-          "enum": ["Always", "Equal", "NotEqual"]
-        },
-        "stencilPass": {
-          "type": "string",
-          "title": "Stencil pass",
-          "description": "",
-          "enum": ["Replace"]
-        },
-        "stencilPassOp": {
-          "type": "string",
-          "title": "Stencil depth fail operation",
-          "description": "",
-          "$ref": "#/definitions/FailOperation"
-        }
+        "stencilDepthFailOp": { "type": "string", "title": "Stencil Depth Fail Operation", "description": "", "$ref": "#/definitions/FailOperation" },
+        "stencilFailOp": { "type": "string", "title": "Stencil Fail Operation", "description": "", "$ref": "#/definitions/FailOperation" },
+        "stencilFunc": { "type": "string", "title": "Stencil Function", "description": "", "enum": ["Always", "Equal", "NotEqual"] },
+        "stencilPass": { "type": "string", "title": "Stencil Pass", "description": "", "enum": ["Replace"] },
+        "stencilPassOp": { "type": "string", "title": "Stencil Depth Fail Operation", "description": "", "$ref": "#/definitions/FailOperation" }
       }
     },
     "StatesSpecification": {
@@ -167,46 +137,26 @@
       "description": "TODO",
       "items": {
         "type": "object",
-        "title": "Sample state",
+        "title": "Sample State",
         "description": "TODO",
         "additionalProperties": false,
         "properties": {
-          "samplerIndex": {
-            "type": "integer",
-            "title": "Sample state",
-            "description": "TODO"
-          },
-          "textureFilter": {
-            "type": "string",
-            "title": "Texture filter",
-            "description": "TODO",
-            "enum": ["Point", "Bilinear", "TexelAA"]
-          },
-          "textureWrap": {
-            "type": "string",
-            "title": "Texture wrap",
-            "description": "TODO",
-            "enum": ["Repeat", "Clamp"]
-          }
+          "samplerIndex": { "type": "integer", "title": "Sample State", "description": "TODO" },
+          "textureFilter": { "type": "string", "title": "Texture Filter", "description": "TODO", "enum": ["Point", "Bilinear", "TexelAA"] },
+          "textureWrap": { "type": "string", "title": "Texture Wrap", "description": "TODO", "enum": ["Repeat", "Clamp"] }
         }
       }
     },
     "VertexFieldsSpecification": {
       "type": "array",
-      "title": "Vertex fields",
+      "title": "Vertex Fields",
       "description": "TODO",
       "items": {
         "type": "object",
-        "title": "Vertex field",
+        "title": "Vertex Field",
         "description": "TODO",
         "additionalProperties": false,
-        "properties": {
-          "field": {
-            "type": "string",
-            "title": "Vertex field",
-            "description": "TODO"
-          }
-        }
+        "properties": { "field": { "type": "string", "title": "Vertex Field", "description": "TODO" } }
       }
     },
     "VariantSpecification": {
@@ -217,14 +167,8 @@
         "type": "object",
         "title": "Variant",
         "description": "TODO",
-        "propertyNames": {
-          "enum": ["fading", "fog", "fog.underwater", "lit", "skinning", "skinning_color", "underlava", "underwater"]
-        },
-        "additionalProperties": {
-          "title": "Variant Item",
-          "description": "TODO",
-          "$ref": "#/definitions/VariantsItemSpecificaiton"
-        }
+        "propertyNames": { "enum": ["fading", "fog", "fog.underwater", "lit", "skinning", "skinning_color", "underlava", "underwater"] },
+        "additionalProperties": { "title": "Variant Item", "description": "TODO", "$ref": "#/definitions/VariantsItemSpecificaiton" }
       }
     },
     "VariantsItemSpecificaiton": {
@@ -233,31 +177,11 @@
       "description": "TODO",
       "additionalProperties": false,
       "properties": {
-        "+defines": {
-          "title": "Defines",
-          "description": "TODO, Add definitions???",
-          "$ref": "#/definitions/DefinesSpecification"
-        },
-        "vertexFields": {
-          "title": "Vertex fields",
-          "description": "TODO",
-          "$ref": "#/definitions/VertexFieldsSpecification"
-        },
-        "states": {
-          "title": "States",
-          "description": "TODO, start states???",
-          "$ref": "#/definitions/StatesSpecification"
-        },
-        "+states": {
-          "title": "States",
-          "description": "TODO, Add additional states???",
-          "$ref": "#/definitions/StatesSpecification"
-        },
-        "-states": {
-          "title": "States",
-          "description": "TODO, remove additional states???",
-          "$ref": "#/definitions/StatesSpecification"
-        }
+        "+defines": { "title": "Defines", "description": "TODO, Add definitions???", "$ref": "#/definitions/DefinesSpecification" },
+        "vertexFields": { "title": "Vertex Fields", "description": "TODO", "$ref": "#/definitions/VertexFieldsSpecification" },
+        "states": { "title": "States", "description": "TODO, start states???", "$ref": "#/definitions/StatesSpecification" },
+        "+states": { "title": "States", "description": "TODO, Add additional states???", "$ref": "#/definitions/StatesSpecification" },
+        "-states": { "title": "States", "description": "TODO, remove additional states???", "$ref": "#/definitions/StatesSpecification" }
       }
     }
   },
@@ -267,183 +191,48 @@
       "title": "Materials",
       "description": "TODO",
       "required": ["version"],
-      "properties": {
-        "version": {
-          "type": "string",
-          "const": "1.0.0",
-          "title": "Version",
-          "description": "TODO"
-        }
-      },
+      "properties": { "version": { "type": "string", "const": "1.0.0", "title": "Version", "description": "TODO" } },
       "additionalProperties": {
-        "title": "Material definitions",
+        "title": "Material Definitions",
         "description": "TODO",
         "additionalProperties": false,
         "properties": {
-          "alphaDst": {
-            "type": "string",
-            "title": "Alpha distance",
-            "description": "TODO",
-            "enum": ["DestColor", "OneMinusSrcAlpha"]
-          },
-          "backFace": {
-            "title": "Back face",
-            "description": "TODO",
-            "$ref": "#/definitions/FaceSpecification"
-          },
+          "alphaDst": { "type": "string", "title": "Alpha Distance", "description": "TODO", "enum": ["DestColor", "OneMinusSrcAlpha"] },
+          "backFace": { "title": "Back Face", "description": "TODO", "$ref": "#/definitions/FaceSpecification" },
           "blendDst": {
             "type": "string",
             "title": "Blend Distance",
             "description": "TODO",
             "enum": ["SourceAlpha", "OneMinusSrcAlpha", "OneMinusSrcColor", "SourceColor", "Zero", "One"]
           },
-          "blendSrc": {
-            "type": "string",
-            "title": "Blend source",
-            "description": "TODO",
-            "enum": ["DestColor", "One", "OneMinusDestColor", "SourceAlpha", "SourceColor"]
-          },
-          "defines": {
-            "title": "Defines",
-            "description": "TODO, sets or starts definitions???",
-            "$ref": "#/definitions/DefinesSpecification"
-          },
-          "+defines": {
-            "title": "Defines",
-            "description": "TODO, Add definitions???",
-            "$ref": "#/definitions/DefinesSpecification"
-          },
-          "-defines": {
-            "title": "Defines",
-            "description": "TODO, removes definitions???",
-            "$ref": "#/definitions/DefinesSpecification"
-          },
-          "depthBias": {
-            "type": "number",
-            "title": "Depth bias",
-            "description": "TODO"
-          },
-          "depthBiasOGL": {
-            "type": "number",
-            "title": "Depth bias OGL",
-            "description": "TODO"
-          },
-          "depthFunc": {
-            "type": "string",
-            "title": "Depth function",
-            "description": "TODO",
-            "enum": ["LessEqual", "Always", "Equal"]
-          },
-          "fragmentShader": {
-            "type": "string",
-            "title": "Fragment shader",
-            "description": "TODO",
-            "pattern": "^shaders/.*\\.fragment$"
-          },
-          "frontFace": {
-            "title": "Front face",
-            "description": "TODO",
-            "$ref": "#/definitions/FaceSpecification"
-          },
-          "isAnimatedTexture": {
-            "type": "integer",
-            "title": "Is animated texture",
-            "description": "TODO, think its a boolean value as a number, so 1 and 0????"
-          },
-          "msaaSupport": {
-            "type": "string",
-            "title": "MSAA support",
-            "description": "TODO",
-            "enum": ["Both", "MSAA"]
-          },
-          "primitiveMode": {
-            "type": "string",
-            "title": "Primitive mode",
-            "description": "TODO",
-            "enum": ["Line"]
-          },
-          "samplerStates": {
-            "title": "Sampler States",
-            "description": "TODO, set or start samplerStates???",
-            "$ref": "#/definitions/SamplerStatesSpecification"
-          },
-          "+samplerStates": {
-            "title": "Sampler States",
-            "description": "TODO, Add samplerStates???",
-            "$ref": "#/definitions/SamplerStatesSpecification"
-          },
-          "slopeScaledDepthBias": {
-            "type": "number",
-            "title": "Slope scaled depth bias",
-            "description": "TODO"
-          },
-          "slopeScaledDepthBiasOGL": {
-            "type": "number",
-            "title": "Slope scaled depth bias OGL",
-            "description": "TODO"
-          },
-          "states": {
-            "title": "States",
-            "description": "TODO, start states???",
-            "$ref": "#/definitions/StatesSpecification"
-          },
-          "+states": {
-            "title": "States",
-            "description": "TODO, Add additional states???",
-            "$ref": "#/definitions/StatesSpecification"
-          },
-          "-states": {
-            "title": "States",
-            "description": "TODO, remove additional states???",
-            "$ref": "#/definitions/StatesSpecification"
-          },
-          "stencilRef": {
-            "type": "integer",
-            "title": "Stencil Ref",
-            "description": "TODO"
-          },
-          "stencilRefOverride": {
-            "type": "integer",
-            "title": "Stencil ref override",
-            "description": "TODO"
-          },
-          "stencilReadMask": {
-            "type": "integer",
-            "title": "Stencil read mask",
-            "description": "TODO"
-          },
-          "stencilWriteMask": {
-            "type": "integer",
-            "title": "Stencil write mask",
-            "description": "TODO"
-          },
-          "variants": {
-            "title": "Variants",
-            "description": "TODO, sets the variants?",
-            "$ref": "#/definitions/VariantSpecification"
-          },
-          "+variants": {
-            "title": "Variants",
-            "description": "TODO, adds variants?",
-            "$ref": "#/definitions/VariantSpecification"
-          },
-          "vertexFields": {
-            "title": "Vertex fields",
-            "description": "TODO",
-            "$ref": "#/definitions/VertexFieldsSpecification"
-          },
-          "vertexShader": {
-            "type": "string",
-            "title": "Vertex shader",
-            "description": "TODO",
-            "pattern": "^shaders/.*\\.vertex$"
-          },
-          "vrGeometryShader": {
-            "type": "string",
-            "title": "VR geometry shader",
-            "description": "TODO",
-            "pattern": "^shaders/.*\\.geometry$"
-          }
+          "blendSrc": { "type": "string", "title": "Blend Source", "description": "TODO", "enum": ["DestColor", "One", "OneMinusDestColor", "SourceAlpha", "SourceColor"] },
+          "defines": { "title": "Defines", "description": "TODO, sets or starts definitions???", "$ref": "#/definitions/DefinesSpecification" },
+          "+defines": { "title": "Defines", "description": "TODO, Add definitions???", "$ref": "#/definitions/DefinesSpecification" },
+          "-defines": { "title": "Defines", "description": "TODO, removes definitions???", "$ref": "#/definitions/DefinesSpecification" },
+          "depthBias": { "type": "number", "title": "Depth Bias", "description": "TODO" },
+          "depthBiasOGL": { "type": "number", "title": "Depth Bias OGL", "description": "TODO" },
+          "depthFunc": { "type": "string", "title": "Depth Function", "description": "TODO", "enum": ["LessEqual", "Always", "Equal"] },
+          "fragmentShader": { "type": "string", "title": "Fragment Shader", "description": "TODO", "pattern": "^shaders/.*\\.fragment$" },
+          "frontFace": { "title": "Front Face", "description": "TODO", "$ref": "#/definitions/FaceSpecification" },
+          "isAnimatedTexture": { "type": "integer", "title": "Is Animated Texture", "description": "TODO, think its a boolean value as a number, so 1 and 0????" },
+          "msaaSupport": { "type": "string", "title": "MSAA Support", "description": "TODO", "enum": ["Both", "MSAA"] },
+          "primitiveMode": { "type": "string", "title": "Primitive Mode", "description": "TODO", "enum": ["Line"] },
+          "samplerStates": { "title": "Sampler States", "description": "TODO, set or start samplerStates???", "$ref": "#/definitions/SamplerStatesSpecification" },
+          "+samplerStates": { "title": "Sampler States", "description": "TODO, Add samplerStates???", "$ref": "#/definitions/SamplerStatesSpecification" },
+          "slopeScaledDepthBias": { "type": "number", "title": "Slope Scaled Depth Bias", "description": "TODO" },
+          "slopeScaledDepthBiasOGL": { "type": "number", "title": "Slope Scaled Depth Bias OGL", "description": "TODO" },
+          "states": { "title": "States", "description": "TODO, start states???", "$ref": "#/definitions/StatesSpecification" },
+          "+states": { "title": "States", "description": "TODO, Add additional states???", "$ref": "#/definitions/StatesSpecification" },
+          "-states": { "title": "States", "description": "TODO, remove additional states???", "$ref": "#/definitions/StatesSpecification" },
+          "stencilRef": { "type": "integer", "title": "Stencil Ref", "description": "TODO" },
+          "stencilRefOverride": { "type": "integer", "title": "Stencil Ref Override", "description": "TODO" },
+          "stencilReadMask": { "type": "integer", "title": "Stencil Read Mask", "description": "TODO" },
+          "stencilWriteMask": { "type": "integer", "title": "Stencil Write Mask", "description": "TODO" },
+          "variants": { "title": "Variants", "description": "TODO, sets the variants?", "$ref": "#/definitions/VariantSpecification" },
+          "+variants": { "title": "Variants", "description": "TODO, adds variants?", "$ref": "#/definitions/VariantSpecification" },
+          "vertexFields": { "title": "Vertex Fields", "description": "TODO", "$ref": "#/definitions/VertexFieldsSpecification" },
+          "vertexShader": { "type": "string", "title": "Vertex Shader", "description": "TODO", "pattern": "^shaders/.*\\.vertex$" },
+          "vrGeometryShader": { "type": "string", "title": "VR Geometry Shader", "description": "TODO", "pattern": "^shaders/.*\\.geometry$" }
         }
       }
     }

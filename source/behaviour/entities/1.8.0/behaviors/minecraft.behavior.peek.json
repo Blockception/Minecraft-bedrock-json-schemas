@@ -3,10 +3,8 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.peek",
   "description": "Allows the mob to peek out. This is what the shulker uses to look out of its shell.",
   "type": "object",
-  "title": "peek 1.8.0",
+  "title": "Peek 1.8.0",
   "additionalProperties": false,
   "required": [],
-  "properties": {
-    "priority": { "$ref": "./types/base_priority.json" }
-  }
+  "properties": { "priority": { "$ref": "./types/base_priority.json" } }
 }

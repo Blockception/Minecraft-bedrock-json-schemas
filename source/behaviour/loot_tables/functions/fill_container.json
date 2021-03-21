@@ -3,19 +3,9 @@
   "$id": "blockception.minecraft.behaviour.loot_tables.fill_container",
   "additionalProperties": false,
   "description": "The function fill_container",
-  "title": "Fill container",
+  "title": "Fill Container",
   "properties": {
-    "function": {
-      "type": "string",
-      "const": "fill_container",
-      "title": "Function",
-      "description": "TODO description"
-    },
-    "loot_table": {
-      "type": "string",
-      "title": "Loot table",
-      "pattern": "^loot_tables/.*\\.json$",
-      "description": "TODO description"
-    }
+    "function": { "type": "string", "const": "fill_container", "title": "Function", "description": "TODO description" },
+    "loot_table": { "type": "string", "title": "Loot Table", "pattern": "^loot_tables/.*\\.json$", "description": "TODO description" }
   }
 }

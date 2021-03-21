@@ -2,18 +2,14 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.resource.particle.1.10.0.particle_motion_parametric",
   "type": "object",
-  "title": "The particle motion parametric component for 1.10.0",
+  "title": "Particle Motion Parametric Component For 1.10.0",
   "additionalProperties": false,
   "properties": {
     "relative_position": {
       "type": "array",
       "minItems": 3,
       "maxItems": 3,
-      "items": {
-        "$ref": "../../../../molang/1.8.0/number.json",
-        "description": "TODO description: relative position",
-        "title": "Relative Position"
-      },
+      "items": { "$ref": "../../../../molang/1.8.0/number.json", "description": "TODO description: relative position", "title": "Relative Position" },
       "description": "TODO description: relative position",
       "title": "Relative Position"
     },

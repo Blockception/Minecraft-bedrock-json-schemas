@@ -7,17 +7,7 @@
   "description": "UNDOCUMENTATED",
   "required": [],
   "properties": {
-    "value": {
-      "type": "number",
-      "default": true,
-      "title": "Value",
-      "description": "UNDOCUMENTATED"
-    },
-    "max": {
-      "type": "number",
-      "default": true,
-      "title": "Maximum",
-      "description": "UNDOCUMENTATED"
-    }
+    "value": { "type": "number", "default": true, "title": "Value", "description": "UNDOCUMENTATED" },
+    "max": { "type": "number", "default": true, "title": "Maximum", "description": "UNDOCUMENTATED" }
   }
 }

@@ -5,26 +5,12 @@
     {
       "format_version": "1.10.0",
       "animation_controllers": {
-        "controller.animation.example": {
-          "initial_state": "default",
-          "states": {
-            "default": {
-              "transitions": [{ "state_1": "query.is_baby" }]
-            },
-            "state_1": {}
-          }
-        }
+        "controller.animation.example": { "initial_state": "default", "states": { "default": { "transitions": [{ "state_1": "query.is_baby" }] }, "state_1": {} } }
       }
     }
   ],
   "allOf": [
-    {
-      "if": { "properties": { "format_version": { "type": "string", "const": "1.8.0" } } },
-      "then": { "$ref": "./1.8.0/animation_controller.json" }
-    },
-    {
-      "if": { "properties": { "format_version": { "type": "string", "const": "1.10.0" } } },
-      "then": { "$ref": "./1.10.0/animation_controller.json" }
-    }
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.8.0" } } }, "then": { "$ref": "./1.8.0/animation_controller.json" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.10.0" } } }, "then": { "$ref": "./1.10.0/animation_controller.json" } }
   ]
 }

@@ -3,26 +3,14 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.swim_idle",
   "description": "Has the fish swim around when they can't pathfind",
   "type": "object",
-  "title": "Swim idle 1.8.0",
+  "title": "Swim Idle 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {
     "priority": { "$ref": "types/base_priority.json" },
     "speed_multiplier": { "$ref": "types/base_speed_multiplier.json" },
-    "interval": {
-      "type": "number",
-      "title": "Interval",
-      "description": "UNDOCUMENTATED"
-    },
-    "look_ahead": {
-      "type": "number",
-      "title": "Look ahead",
-      "description": "UNDOCUMENTATED"
-    },
-    "wander_time": {
-      "type": "number",
-      "title": "Wander time",
-      "description": "UNDOCUMENTATED"
-    }
+    "interval": { "type": "number", "title": "Interval", "description": "UNDOCUMENTATED" },
+    "look_ahead": { "type": "number", "title": "Look Ahead", "description": "UNDOCUMENTATED" },
+    "wander_time": { "type": "number", "title": "Wander Time", "description": "UNDOCUMENTATED" }
   }
 }

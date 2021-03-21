@@ -2,25 +2,19 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.resource.model.1.10.0",
   "type": "object",
-  "title": "The minecraft resourcepack model schema for 1.10.0",
+  "title": "Resourcepack Model Schema For 1.10.0",
   "description": "TODO description",
   "required": ["format_version"],
   "properties": {
-    "debug": {
-      "type": "boolean",
-      "description": "TODO description",
-      "title": "TODO title"
-    },
+    "debug": { "type": "boolean", "description": "TODO description", "title": "TODO Title" },
     "format_version": {
-      "title": "The 1.10.0 format version",
+      "title": "1.10.0 Format Version",
       "type": "string",
       "pattern": "^1.10.0$",
       "description": "A version that tells minecraft what type of data format can be expected when reading this file."
     }
   },
-  "propertyNames": {
-    "pattern": "(^geometry\\.[a-zA-Z0-9_.'\\-:]+|format_version)"
-  },
+  "propertyNames": { "pattern": "(^geometry\\.[a-zA-Z0-9_.'\\-:]+|format_version)" },
   "additionalProperties": {
     "additionalProperties": false,
     "type": "object",
@@ -38,303 +32,72 @@
           "title": "Bone",
           "required": ["name"],
           "properties": {
-            "bind_pose_rotation": {
-              "type": "array",
-              "items": [
-                {
-                  "type": "number"
-                },
-                {
-                  "type": "number"
-                },
-                {
-                  "type": "number"
-                }
-              ]
-            },
+            "bind_pose_rotation": { "type": "array", "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }] },
             "cubes": {
               "type": "array",
               "items": {
                 "additionalProperties": false,
                 "type": "object",
                 "properties": {
-                  "inflate": {
-                    "type": "number"
-                  },
-                  "mirror": {
-                    "type": "boolean"
-                  },
-                  "origin": {
-                    "type": "array",
-                    "items": [
-                      {
-                        "type": "number"
-                      },
-                      {
-                        "type": "number"
-                      },
-                      {
-                        "type": "number"
-                      }
-                    ]
-                  },
-                  "size": {
-                    "type": "array",
-                    "items": [
-                      {
-                        "type": "number"
-                      },
-                      {
-                        "type": "number"
-                      },
-                      {
-                        "type": "number"
-                      }
-                    ]
-                  },
-                  "uv": {
-                    "type": "array",
-                    "items": [
-                      {
-                        "type": "number"
-                      },
-                      {
-                        "type": "number"
-                      }
-                    ]
-                  }
+                  "inflate": { "type": "number" },
+                  "mirror": { "type": "boolean" },
+                  "origin": { "type": "array", "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }] },
+                  "size": { "type": "array", "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }] },
+                  "uv": { "type": "array", "items": [{ "type": "number" }, { "type": "number" }] }
                 }
               }
             },
-            "debug": {
-              "type": "boolean"
-            },
-            "inflate": {
-              "type": "number"
-            },
-            "locators": {
-              "type": "object",
-              "additionalProperties": {
-                "type": "array",
-                "items": {
-                  "type": "number"
-                }
-              }
-            },
-            "mirror": {
-              "type": "boolean"
-            },
-            "name": {
-              "type": "string"
-            },
-            "neverRender": {
-              "type": "boolean"
-            },
-            "parent": {
-              "type": "string"
-            },
-            "pivot": {
-              "type": "array",
-              "items": [
-                {
-                  "type": "number"
-                },
-                {
-                  "type": "number"
-                },
-                {
-                  "type": "number"
-                }
-              ]
-            },
+            "debug": { "type": "boolean" },
+            "inflate": { "type": "number" },
+            "locators": { "type": "object", "additionalProperties": { "type": "array", "items": { "type": "number" } } },
+            "mirror": { "type": "boolean" },
+            "name": { "type": "string" },
+            "neverRender": { "type": "boolean" },
+            "parent": { "type": "string" },
+            "pivot": { "type": "array", "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }] },
             "poly_mesh": {
               "type": "object",
               "required": ["polys"],
               "properties": {
-                "normalized_uvs": {
-                  "type": "boolean"
-                },
-                "positions": {
-                  "type": "array",
-                  "items": [
-                    {
-                      "type": "number"
-                    },
-                    {
-                      "type": "number"
-                    },
-                    {
-                      "type": "number"
-                    }
-                  ]
-                },
-                "normals": {
-                  "type": "array",
-                  "items": [
-                    {
-                      "type": "number"
-                    },
-                    {
-                      "type": "number"
-                    },
-                    {
-                      "type": "number"
-                    }
-                  ]
-                },
+                "normalized_uvs": { "type": "boolean" },
+                "positions": { "type": "array", "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }] },
+                "normals": { "type": "array", "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }] },
                 "polys": {
                   "type": "array",
-                  "items": {
-                    "type": "array",
-                    "minItems": 3,
-                    "maxItems": 4,
-                    "items": [
-                      {
-                        "type": "number"
-                      },
-                      {
-                        "type": "number"
-                      },
-                      {
-                        "type": "number"
-                      }
-                    ]
-                  }
+                  "items": { "type": "array", "minItems": 3, "maxItems": 4, "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }] }
                 }
               }
             },
-            "render_group_id": {
-              "type": "integer",
-              "minimum": 0
-            },
-            "reset": {
-              "type": "boolean"
-            },
-            "rotation": {
-              "type": "array",
-              "items": [
-                {
-                  "type": "number"
-                },
-                {
-                  "type": "number"
-                },
-                {
-                  "type": "number"
-                }
-              ]
-            },
+            "render_group_id": { "type": "integer", "minimum": 0 },
+            "reset": { "type": "boolean" },
+            "rotation": { "type": "array", "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }] },
             "texture_meshes": {
               "type": "array",
               "items": {
                 "type": "object",
                 "properties": {
-                  "texture": {
-                    "type": "string"
-                  },
-                  "local_pivot": {
-                    "type": "array",
-                    "items": [
-                      {
-                        "type": "number"
-                      },
-                      {
-                        "type": "number"
-                      },
-                      {
-                        "type": "number"
-                      }
-                    ]
-                  },
-                  "position": {
-                    "type": "array",
-                    "items": [
-                      {
-                        "type": "number"
-                      },
-                      {
-                        "type": "number"
-                      },
-                      {
-                        "type": "number"
-                      }
-                    ]
-                  },
-                  "rotation": {
-                    "type": "array",
-                    "items": [
-                      {
-                        "type": "number"
-                      },
-                      {
-                        "type": "number"
-                      },
-                      {
-                        "type": "number"
-                      }
-                    ]
-                  },
-                  "scale": {
-                    "type": "array",
-                    "items": [
-                      {
-                        "type": "number"
-                      },
-                      {
-                        "type": "number"
-                      },
-                      {
-                        "type": "number"
-                      }
-                    ]
-                  }
+                  "texture": { "type": "string" },
+                  "local_pivot": { "type": "array", "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }] },
+                  "position": { "type": "array", "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }] },
+                  "rotation": { "type": "array", "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }] },
+                  "scale": { "type": "array", "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }] }
                 }
               }
             }
           }
         }
       },
-      "cape": {
-        "type": "string"
-      },
-      "debug": {
-        "type": "boolean"
-      },
-      "texturewidth": {
-        "type": "integer",
-        "description": "TODO description: texturewidth",
-        "title": "Texturewidth"
-      },
-      "textureheight": {
-        "type": "integer",
-        "description": "TODO description: textureheight",
-        "title": "Textureheight"
-      },
-      "visible_bounds_width": {
-        "type": "number",
-        "description": "TODO description: visible bounds width",
-        "title": "Visible Bounds Width"
-      },
-      "visible_bounds_height": {
-        "type": "number",
-        "description": "TODO description: visible bounds height",
-        "title": "Visible Bounds Height"
-      },
+      "cape": { "type": "string" },
+      "debug": { "type": "boolean" },
+      "texturewidth": { "type": "integer", "description": "TODO description: texturewidth", "title": "Texturewidth" },
+      "textureheight": { "type": "integer", "description": "TODO description: textureheight", "title": "Textureheight" },
+      "visible_bounds_width": { "type": "number", "description": "TODO description: visible bounds width", "title": "Visible Bounds Width" },
+      "visible_bounds_height": { "type": "number", "description": "TODO description: visible bounds height", "title": "Visible Bounds Height" },
       "visible_bounds_offset": {
         "type": "array",
         "description": "TODO description: visible bounds offset",
         "title": "Visible Bounds Offset",
-        "items": [
-          {
-            "type": "number"
-          },
-          {
-            "type": "number"
-          },
-          {
-            "type": "number"
-          }
-        ]
+        "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
       }
     }
   }

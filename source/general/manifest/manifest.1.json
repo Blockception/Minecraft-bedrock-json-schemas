@@ -2,14 +2,11 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.manifest.1",
   "type": "object",
-  "title": "The minecraft manifest v1 schema",
+  "title": "Manifest V1 Schema",
   "description": "The manifest file contains all the basic information about the pack that Minecraft needs to identify it. The tables below contain all the components of the manifest, their individual properties, and what they mean.",
   "additionalProperties": false,
   "required": ["format_version", "header"],
-  "definitions": {
-    "uuidv4": { "$ref": "../UUIDV4.json" },
-    "version": { "$ref": "../Version.json" }
-  },
+  "definitions": { "uuidv4": { "$ref": "../UUIDV4.json" }, "version": { "$ref": "../Version.json" } },
   "properties": {
     "format_version": {
       "type": "number",
@@ -19,12 +16,7 @@
     "header": {
       "required": ["description", "name", "uuid", "version"],
       "properties": {
-        "name": {
-          "type": "string",
-          "default": 0,
-          "description": "This is the name of the pack as it appears within Minecraft",
-          "title": "Name"
-        },
+        "name": { "type": "string", "default": 0, "description": "This is the name of the pack as it appears within Minecraft", "title": "Name" },
         "description": {
           "type": "string",
           "default": 0,
@@ -37,27 +29,15 @@
           "description": "This is a special type of identifier that uniquely identifies this pack from any other pack. UUIDs are written in the format xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx where each x is a hexadecimal value (0-9 or a-f). We recommend using an online service to generate this and guarantee their uniqueness (just bing UUID Generator to find some)",
           "title": "Uuid"
         },
-        "version": {
-          "$ref": "#/definitions/version",
-          "description": "This is the version of your pack in the format [majorVersion, minorVersion, revision].",
-          "title": "Version"
-        },
+        "version": { "$ref": "#/definitions/version", "description": "This is the version of your pack in the format [majorVersion, minorVersion, revision].", "title": "Version" },
         "min_engine_version": {
           "type": "string",
           "$ref": "#/definitions/version",
           "description": "This is the minimum version of the game that this pack was written for. This helps the game identify whether any backwards compatibility is needed for your pack. You should always use the highest version currently available when creating packs",
           "title": "Min Engine Version"
         },
-        "lock_template_options": {
-          "type": "boolean",
-          "description": "TODO description: lock template options",
-          "title": "Lock Template Options"
-        },
-        "base_game_version": {
-          "$ref": "#/definitions/version",
-          "description": "TODO description: base game version",
-          "title": "Base Game Version"
-        }
+        "lock_template_options": { "type": "boolean", "description": "TODO description: lock template options", "title": "Lock Template Options" },
+        "base_game_version": { "$ref": "#/definitions/version", "description": "TODO description: base game version", "title": "Base Game Version" }
       },
       "description": "TODO description: header",
       "title": "Header"
@@ -130,30 +110,14 @@
           "description": "Allows HTML files in the pack to be used for custom UI, and scripts in the pack to call and manipulate custom UI",
           "title": "Experimental Custom Ui"
         },
-        "chemistry": {
-          "type": "boolean",
-          "description": "Allows the pack to add, change or replace Chemistry functionality",
-          "title": "Chemistry"
-        }
+        "chemistry": { "type": "boolean", "description": "Allows the pack to add, change or replace Chemistry functionality", "title": "Chemistry" }
       },
       "title": "Capabilities"
     },
     "metadata": {
-      "authors": {
-        "type": "string",
-        "description": "Name of the author(s) of the pack",
-        "title": "Authors"
-      },
-      "license": {
-        "type": "string",
-        "description": "The license of the pack",
-        "title": "License"
-      },
-      "url": {
-        "type": "string",
-        "description": "The home website of your pack",
-        "title": "Url"
-      },
+      "authors": { "type": "string", "description": "Name of the author(s) of the pack", "title": "Authors" },
+      "license": { "type": "string", "description": "The license of the pack", "title": "License" },
+      "url": { "type": "string", "description": "The home website of your pack", "title": "Url" },
       "description": "TODO description: metadata",
       "title": "Metadata"
     }

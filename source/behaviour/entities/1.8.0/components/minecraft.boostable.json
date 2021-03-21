@@ -7,17 +7,12 @@
   "description": "Defines the conditions and behavior of a rideable entity's boost",
   "required": [],
   "properties": {
-    "duration": {
-      "type": "number",
-      "default": 3,
-      "description": "Time in seconds for the boost",
-      "title": "TODO title"
-    },
+    "duration": { "type": "number", "default": 3, "description": "Time in seconds for the boost", "title": "TODO Title" },
     "speed_multiplier": {
       "type": "number",
       "default": 1,
       "description": "Factor by which the entity's normal speed increases. E.g. 2.0 means go twice as fast",
-      "title": "TODO title"
+      "title": "TODO Title"
     },
     "boost_items": {
       "type": "array",
@@ -25,25 +20,13 @@
         "type": "object",
         "description": "List of items that can be used to boost while riding this entity.",
         "properties": {
-          "damage": {
-            "type": "integer",
-            "default": 1,
-            "description": "This is the damage that the item will take each time it is used"
-          },
-          "item": {
-            "type": "string",
-            "$ref": "../../../../general/item/identifier.json",
-            "description": "Name of the item that can be used to boost"
-          },
-          "replaceItem": {
-            "type": "string",
-            "$ref": "../../../../general/item/identifier.json",
-            "description": "The item used to boost will become this item once it is used up"
-          }
+          "damage": { "type": "integer", "default": 1, "description": "This is the damage that the item will take each time it is used" },
+          "item": { "type": "string", "$ref": "../../../../general/item/identifier.json", "description": "Name of the item that can be used to boost" },
+          "replaceItem": { "type": "string", "$ref": "../../../../general/item/identifier.json", "description": "The item used to boost will become this item once it is used up" }
         }
       },
       "description": "TODO description",
-      "title": "TODO title"
+      "title": "TODO Title"
     }
   }
 }

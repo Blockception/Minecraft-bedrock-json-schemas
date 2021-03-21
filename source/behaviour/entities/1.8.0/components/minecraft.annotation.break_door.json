@@ -4,20 +4,15 @@
   "additionalProperties": false,
   "description": "Allows the actor to break doors assuming that that flags set up for the component to use in navigation",
   "type": "object",
-  "title": "Annotation.break door 1.8.0",
+  "title": "Annotation.break Door 1.8.0",
   "required": [],
   "properties": {
-    "break_time": {
-      "type": "number",
-      "default": 12,
-      "description": "The time in seconds required to break through doors.",
-      "title": "TODO title"
-    },
+    "break_time": { "type": "number", "default": 12, "description": "The time in seconds required to break through doors.", "title": "TODO Title" },
     "min_difficulty": {
       "type": "string",
       "default": "hard",
       "description": "The minimum difficulty that the world must be on for this entity to break doors.",
-      "title": "TODO title"
+      "title": "TODO Title"
     }
   }
 }

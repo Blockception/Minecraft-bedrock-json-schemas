@@ -2,35 +2,31 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.resource.1.10.0.attachables",
   "type": "object",
-  "title": "The minecraft resourcepack actor animation 1.10.0",
+  "title": "Resourcepack Actor Animation 1.10.0",
   "description": "TODO description",
   "required": ["format_version", "minecraft:attachable"],
   "properties": {
     "format_version": {
-      "title": "The 1.10.0 format version",
+      "title": "1.10.0 Format Version",
       "type": "string",
       "pattern": "^(1.10.0|1.10)$",
       "description": "A version that tells minecraft what type of data format can be expected when reading this file."
     },
     "minecraft:attachable": {
       "type": "object",
-      "title": "The attachables",
+      "title": "Attachables",
       "description": "The attachables definition",
       "required": ["description"],
       "properties": {
         "description": {
-          "title": "Description definition",
+          "title": "Description ",
           "type": "object",
           "required": ["identifier"],
           "additionalProperties": false,
           "properties": {
             "animations": {
               "type": "object",
-              "additionalProperties": {
-                "type": "string",
-                "description": "A single animation reference",
-                "title": "Animation"
-              },
+              "additionalProperties": { "type": "string", "description": "A single animation reference", "title": "Animation" },
               "description": "The collection of animations references",
               "title": "Animations"
             },
@@ -38,59 +34,27 @@
               "type": "array",
               "additionalProperties": {
                 "type": "object",
-                "additionalProperties": {
-                  "type": "string",
-                  "description": "A single Animation controller reference",
-                  "title": "Animation controller reference"
-                },
+                "additionalProperties": { "type": "string", "description": "A single Animation controller reference", "title": "Animation Controller Reference" },
                 "description": "A collection of animation controller references",
                 "title": "TODO"
               },
               "description": "The specification of animation controllers",
               "title": "Animation Controllers"
             },
-            "enable_attachables": {
-              "type": "boolean",
-              "description": "TODO description: enable attachables",
-              "title": "Enable Attachables"
-            },
+            "enable_attachables": { "type": "boolean", "description": "TODO description: enable attachables", "title": "Enable Attachables" },
             "geometry": {
-              "title": "Geometry definition",
+              "title": "Geometry ",
               "type": "object",
-              "propertyNames": {
-                "pattern": "[a-zA-Z0-9_\\.\\-]+"
-              },
+              "propertyNames": { "pattern": "[a-zA-Z0-9_\\.\\-]+" },
               "minProperties": 1,
-              "additionalProperties": {
-                "type": "string",
-                "description": "A single geometry reference",
-                "title": "Geometry"
-              },
+              "additionalProperties": { "type": "string", "description": "A single geometry reference", "title": "Geometry" },
               "description": "The geometry specification"
             },
-            "identifier": {
-              "type": "string",
-              "description": "TODO description: identifier",
-              "title": "Identifier",
-              "$ref": "../../../general/item/identifier.json"
-            },
-            "item": {
-              "type": "object",
-              "title": "Item",
-              "description": "TODO",
-              "additionalProperties": {
-                "type": "string",
-                "title": "TODO",
-                "description": "TODO"
-              }
-            },
+            "identifier": { "type": "string", "description": "TODO description: identifier", "title": "Identifier", "$ref": "../../../general/item/identifier.json" },
+            "item": { "type": "object", "title": "Item", "description": "TODO", "additionalProperties": { "type": "string", "title": "TODO", "description": "TODO" } },
             "materials": {
               "type": "object",
-              "additionalProperties": {
-                "type": "string",
-                "description": "A single material reference",
-                "title": "Material"
-              },
+              "additionalProperties": { "type": "string", "description": "A single material reference", "title": "Material" },
               "description": "A collection of material references",
               "title": "Materials"
             },
@@ -103,22 +67,14 @@
             "particle_effects": {
               "type": "object",
               "minProperties": 1,
-              "additionalProperties": {
-                "type": "string",
-                "description": "A single particle effect reference",
-                "title": "Particle effect"
-              },
+              "additionalProperties": { "type": "string", "description": "A single particle effect reference", "title": "Particle Effect" },
               "description": "A collection of particle effect references",
               "title": "Particle Effects"
             },
             "particle_emitters": {
               "type": "object",
               "minProperties": 1,
-              "additionalProperties": {
-                "type": "string",
-                "description": "TODO description: additionalProperties",
-                "title": "TODO"
-              },
+              "additionalProperties": { "type": "string", "description": "TODO description: additionalProperties", "title": "TODO" },
               "description": "TODO description: particle emitters",
               "title": "Particle Emitters"
             },
@@ -127,11 +83,7 @@
               "description": "TODO description: render controllers",
               "title": "Render Controllers",
               "minItems": 1,
-              "items": {
-                "type": "string",
-                "description": "TODO description: render controllers",
-                "title": "Render Controllers"
-              }
+              "items": { "type": "string", "description": "TODO description: render controllers", "title": "Render Controllers" }
             },
             "scripts": {
               "additionalProperties": false,
@@ -141,25 +93,17 @@
               "properties": {
                 "animate": {
                   "type": "array",
-                  "title": "Animate schema",
+                  "title": "Animate Schema",
                   "minItems": 1,
                   "items": {
                     "oneOf": [
-                      {
-                        "type": "string",
-                        "description": "TODO description: oneOf[0]",
-                        "title": "TODO title"
-                      },
+                      { "type": "string", "description": "TODO description: oneOf[0]", "title": "TODO Title" },
                       {
                         "type": "object",
                         "minProperties": 1,
-                        "additionalProperties": {
-                          "type": "string",
-                          "description": "TODO description: additionalProperties",
-                          "title": "TODO"
-                        },
+                        "additionalProperties": { "type": "string", "description": "TODO description: additionalProperties", "title": "TODO" },
                         "description": "TODO description: oneOf[1]",
-                        "title": "TODO title"
+                        "title": "TODO Title"
                       }
                     ],
                     "description": "TODO description: animate",
@@ -171,36 +115,16 @@
                   "type": "array",
                   "description": "TODO description: initialize",
                   "title": "Initialize",
-                  "items": {
-                    "pattern": ";$",
-                    "$ref": "../../../molang/1.8.0/number.json",
-                    "description": "TODO description: initialize",
-                    "title": "Initialize"
-                  }
+                  "items": { "pattern": ";$", "$ref": "../../../molang/1.8.0/number.json", "description": "TODO description: initialize", "title": "Initialize" }
                 },
                 "pre_animation": {
                   "type": "array",
                   "description": "TODO description: pre aninamtion",
                   "title": "Pre Animation",
-                  "items": {
-                    "pattern": ";$",
-                    "$ref": "../../../molang/1.8.0/number.json",
-                    "description": "TODO description: pre aninamtion",
-                    "title": "Pre Animation"
-                  }
+                  "items": { "pattern": ";$", "$ref": "../../../molang/1.8.0/number.json", "description": "TODO description: pre aninamtion", "title": "Pre Animation" }
                 },
-                "parent_setup": {
-                  "type": "string",
-                  "description": "TODO description: parent setup",
-                  "title": "Parent Setup",
-                  "$ref": "../../../molang/1.8.0/number.json"
-                },
-                "scale": {
-                  "type": "string",
-                  "description": "TODO description: scale",
-                  "title": "Scale",
-                  "$ref": "../../../molang/1.8.0/number.json"
-                }
+                "parent_setup": { "type": "string", "description": "TODO description: parent setup", "title": "Parent Setup", "$ref": "../../../molang/1.8.0/number.json" },
+                "scale": { "type": "string", "description": "TODO description: scale", "title": "Scale", "$ref": "../../../molang/1.8.0/number.json" }
               }
             },
             "sound_effects": {
@@ -208,52 +132,23 @@
               "description": "TODO description: sound effects",
               "title": "Sound Effects",
               "minItems": 1,
-              "items": {
-                "type": "string",
-                "description": "TODO description: sound effects",
-                "title": "Sound Effects"
-              }
+              "items": { "type": "string", "description": "TODO description: sound effects", "title": "Sound Effects" }
             },
             "spawn_egg": {
               "type": "object",
               "description": "TODO description: spawn egg",
               "title": "Spawn Egg",
-              "dependencies": {
-                "texture": ["texture_index"],
-                "texture_index": ["texture"],
-                "base_colour": ["overlay_color"],
-                "overlay_color": ["base_colour"]
-              },
+              "dependencies": { "texture": ["texture_index"], "texture_index": ["texture"], "base_colour": ["overlay_color"], "overlay_color": ["base_colour"] },
               "properties": {
-                "base_colour": {
-                  "type": "string",
-                  "description": "TODO description: base colour",
-                  "title": "Base Colour"
-                },
-                "overlay_color": {
-                  "type": "string",
-                  "description": "TODO description: overlay color",
-                  "title": "Overlay Color"
-                },
-                "texture": {
-                  "type": "string",
-                  "description": "TODO description: texture",
-                  "title": "Texture"
-                },
-                "texture_index": {
-                  "type": "integer",
-                  "description": "TODO description: texture index",
-                  "title": "Texture Index"
-                }
+                "base_colour": { "type": "string", "description": "TODO description: base colour", "title": "Base Colour" },
+                "overlay_color": { "type": "string", "description": "TODO description: overlay color", "title": "Overlay Color" },
+                "texture": { "type": "string", "description": "TODO description: texture", "title": "Texture" },
+                "texture_index": { "type": "integer", "description": "TODO description: texture index", "title": "Texture Index" }
               }
             },
             "textures": {
               "type": "object",
-              "additionalProperties": {
-                "type": "string",
-                "description": "TODO description: additionalProperties",
-                "title": "TODO"
-              },
+              "additionalProperties": { "type": "string", "description": "TODO description: additionalProperties", "title": "TODO" },
               "description": "TODO description: textures",
               "title": "Textures"
             }

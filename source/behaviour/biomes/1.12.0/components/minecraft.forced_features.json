@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "minecraft.behavior.biomes.1.12.0.components.minecraft.forced_features",
-  "title": "Forced features",
+  "title": "Forced Features",
   "description": "Force specific decorative features (trees, plants, etc.) to appear in this Biome, regardless of normal decoration rules.",
   "type": "object",
   "minProperties": 0,
@@ -37,25 +37,25 @@
               "type": "array",
               "items": [
                 {
-                  "title": "Lower bound",
+                  "title": "Lower Bound",
                   "description": "Lower bound (inclusive) of the scatter range, as an offset from the input point to scatter around",
                   "$ref": "../../../../molang/1.8.0/number.json"
                 },
                 {
-                  "title": "Upper bound",
+                  "title": "Upper Bound",
                   "description": "Upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around",
                   "$ref": "../../../../molang/1.8.0/number.json"
                 }
               ]
             },
             "grid_offset": {
-              "title": "Step size",
+              "title": "Step Size",
               "description": "When the distribution type is grid, defines the offset along this axis",
               "type": "integer",
               "minimum": 0
             },
             "step_size": {
-              "title": "Step size",
+              "title": "Step Size",
               "description": "When the distribution type is grid, defines the distance between steps along this axis",
               "type": "integer",
               "minimum": 1
@@ -71,7 +71,7 @@
       "required": ["iterations", "places_feature", "identifier"],
       "properties": {
         "coordinate_eval_order": {
-          "title": "Coordinate eval order",
+          "title": "Coordinate Eval Order",
           "description": "The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. If omitted, defaults to 'xzy'.",
           "type": "string",
           "enum": ["xyz", "xzy", "yxz", "yzx", "zxy", "zyx"]
@@ -87,12 +87,12 @@
           "$ref": "../../../../molang/1.8.0/number.json"
         },
         "places_feature": {
-          "title": "Places feature",
+          "title": "Places Feature",
           "description": "UNDOCUMANTED",
           "type": "string"
         },
         "scatter_chance": {
-          "title": "Scatter chance",
+          "title": "Scatter Chance",
           "oneOf": [
             {
               "type": "object",
@@ -124,78 +124,109 @@
             }
           ]
         },
-        "x": { "title": "X", "$ref": "#/definitions/coordinate" },
-        "y": { "title": "X", "$ref": "#/definitions/coordinate" },
-        "z": { "title": "X", "$ref": "#/definitions/coordinate" }
+        "x": {
+          "title": "X",
+          "$ref": "#/definitions/coordinate"
+        },
+        "y": {
+          "title": "X",
+          "$ref": "#/definitions/coordinate"
+        },
+        "z": {
+          "title": "X",
+          "$ref": "#/definitions/coordinate"
+        }
       }
     }
   },
   "properties": {
     "after_sky_pass": {
-      "title": "First pass",
+      "title": "First Pass",
       "description": "UNDOCUMENTED",
       "type": "array",
-      "items": { "$ref": "#/defintions/iteration" }
+      "items": {
+        "$ref": "#/defintions/iteration"
+      }
     },
     "after_surface_pass": {
-      "title": "First pass",
+      "title": "First Pass",
       "description": "UNDOCUMENTED",
       "type": "array",
-      "items": { "$ref": "#/defintions/iteration" }
+      "items": {
+        "$ref": "#/defintions/iteration"
+      }
     },
     "after_underground_pass": {
-      "title": "First pass",
+      "title": "First Pass",
       "description": "UNDOCUMENTED",
       "type": "array",
-      "items": { "$ref": "#/defintions/iteration" }
+      "items": {
+        "$ref": "#/defintions/iteration"
+      }
     },
     "before_sky_pass": {
-      "title": "First pass",
+      "title": "First Pass",
       "description": "UNDOCUMENTED",
       "type": "array",
-      "items": { "$ref": "#/defintions/iteration" }
+      "items": {
+        "$ref": "#/defintions/iteration"
+      }
     },
     "before_surface_pass": {
-      "title": "First pass",
+      "title": "First Pass",
       "description": "UNDOCUMENTED",
       "type": "array",
-      "items": { "$ref": "#/defintions/iteration" }
+      "items": {
+        "$ref": "#/defintions/iteration"
+      }
     },
     "before_underground_pass": {
-      "title": "First pass",
+      "title": "First Pass",
       "description": "UNDOCUMENTED",
       "type": "array",
-      "items": { "$ref": "#/defintions/iteration" }
+      "items": {
+        "$ref": "#/defintions/iteration"
+      }
     },
     "final_pass": {
-      "title": "First pass",
+      "title": "First Pass",
       "description": "UNDOCUMENTED",
       "type": "array",
-      "items": { "$ref": "#/defintions/iteration" }
+      "items": {
+        "$ref": "#/defintions/iteration"
+      }
     },
     "first_pass": {
-      "title": "First pass",
+      "title": "First Pass",
       "description": "UNDOCUMENTED",
       "type": "array",
-      "items": { "$ref": "#/defintions/iteration" }
+      "items": {
+        "$ref": "#/defintions/iteration"
+      }
     },
     "surface_pass": {
-      "title": "First pass",
+      "title": "First Pass",
       "description": "UNDOCUMENTED",
       "type": "array",
-      "items": { "$ref": "#/defintions/iteration" }
+      "items": {
+        "$ref": "#/defintions/iteration"
+      }
     },
     "sky_pass": {
-      "title": "First pass",
+      "title": "First Pass",
       "description": "UNDOCUMENTED",
       "type": "array",
-      "items": { "$ref": "#/defintions/iteration" }
+      "items": {
+        "$ref": "#/defintions/iteration"
+      }
     },
     "underground_pass": {
-      "title": "First pass",
+      "title": "First Pass",
       "description": "UNDOCUMENTED",
       "type": "array",
-      "items": { "$ref": "#/defintions/iteration" }
+      "items": {
+        "$ref": "#/defintions/iteration"
+      }
     }
   }
 }

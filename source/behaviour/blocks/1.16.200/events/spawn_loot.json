@@ -3,14 +3,8 @@
   "$id": "blockception.minecraft.behaviour.1.16.200.block.events.spawn_loot",
   "type": "object",
   "description": "Spawn loot from block.",
-  "title": "Spawn loot 1.16.200",
+  "title": "Spawn Loot 1.16.200",
   "required": ["table"],
   "additionalProperties": false,
-  "properties": {
-    "table": {
-      "type": "string",
-      "description": "File path, relative to the Behavior Pack's path, to the loot table file.",
-      "title": "Table"
-    }
-  }
+  "properties": { "table": { "type": "string", "description": "File path, relative to the Behavior Pack's path, to the loot table file.", "title": "Table" } }
 }

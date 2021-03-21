@@ -3,11 +3,11 @@
   "$id": "blockception.minecraft.behaviour.loot_tables.specific_enchants",
   "additionalProperties": false,
   "description": "The function specific_enchants",
-  "title": "Specific enchants",
+  "title": "Specific Enchants",
   "definitions": {
     "IDEnchant": {
       "type": "string",
-      "title": "ID enchantment",
+      "title": "ID Enchantment",
       "enum": [
         "aqua_affinity",
         "bane_of_arthropods",
@@ -52,9 +52,7 @@
       "title": "Enchantment",
       "additionalProperties": false,
       "properties": {
-        "id": {
-          "$ref": "#/definitions/IDEnchant"
-        },
+        "id": { "$ref": "#/definitions/IDEnchant" },
         "level": {
           "title": "Level",
           "oneOf": [
@@ -72,30 +70,14 @@
     }
   },
   "properties": {
-    "function": {
-      "type": "string",
-      "const": "specific_enchants",
-      "description": "Specific enchants",
-      "title": "Specific enchants"
-    },
+    "function": { "type": "string", "const": "specific_enchants", "description": "Specific enchants", "title": "Specific Enchants" },
     "enchants": {
       "title": "Enchants",
       "description": "A enchanting specification",
       "oneOf": [
-        {
-          "type": "string",
-          "$ref": "#/definitions/IDEnchant"
-        },
-        {
-          "type": "object",
-          "$ref": "#/definitions/Enchant"
-        },
-        {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/Enchant"
-          }
-        }
+        { "type": "string", "$ref": "#/definitions/IDEnchant" },
+        { "type": "object", "$ref": "#/definitions/Enchant" },
+        { "type": "array", "items": { "$ref": "#/definitions/Enchant" } }
       ]
     }
   }

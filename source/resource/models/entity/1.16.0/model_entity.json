@@ -24,27 +24,18 @@
           "$ref": "#/definitions/uv"
         },
         "uv_size": {
-          "title": "Uv size",
+          "title": "Uv Size",
           "description": "The face maps this many texels from the uv origin. If not specified, the box dimensions are used instead.",
           "$ref": "#/definitions/uv"
         },
-        "material_instance": {
-          "type": "string",
-          "title": "Material instance",
-          "description": "Specifies the UV's for the face that stretches"
-        }
+        "material_instance": { "type": "string", "title": "Material Instance", "description": "Specifies the UV's for the face that stretches" }
       }
     }
   },
   "properties": {
-    "debug": {
-      "title": "Debug",
-      "description": "TODO description",
-      "type": "boolean",
-      "default": false
-    },
+    "debug": { "title": "Debug", "description": "TODO description", "type": "boolean", "default": false },
     "format_version": {
-      "title": "The 1.16.0 format version",
+      "title": "1.16.0 Format Version",
       "type": "string",
       "pattern": "^1.16.0$",
       "description": "A version that tells minecraft what type of data format can be expected when reading this file."
@@ -74,36 +65,18 @@
                 "pattern": "^geometry\\.[a-zA-Z0-9_\\-\\.]+$",
                 "title": "Identifier"
               },
-              "texture_width": {
-                "type": "number",
-                "description": "Assumed width in texels of the texture that will be bound to this geometry.",
-                "title": "Texture Width"
-              },
-              "texture_height": {
-                "type": "number",
-                "description": "Assumed height in texels of the texture that will be bound to this geometry.",
-                "title": "Texture Height"
-              },
+              "texture_width": { "type": "number", "description": "Assumed width in texels of the texture that will be bound to this geometry.", "title": "Texture Width" },
+              "texture_height": { "type": "number", "description": "Assumed height in texels of the texture that will be bound to this geometry.", "title": "Texture Height" },
               "visible_bounds_offset": {
                 "title": "Visible Bounds Offset",
                 "description": "Offset of the visibility bounding box from the entity location point (in model space units).",
                 "type": "array",
                 "minItems": 3,
                 "maxItems": 3,
-                "items": {
-                  "type": "number"
-                }
+                "items": { "type": "number" }
               },
-              "visible_bounds_width": {
-                "type": "number",
-                "title": "Visible Bounds Width",
-                "description": "Width of the visibility bounding box (in model space units)."
-              },
-              "visible_bounds_height": {
-                "type": "number",
-                "title": "Visible Bounds Height",
-                "description": "Height of the visible bounding box (in model space units)."
-              }
+              "visible_bounds_width": { "type": "number", "title": "Visible Bounds Width", "description": "Width of the visibility bounding box (in model space units)." },
+              "visible_bounds_height": { "type": "number", "title": "Visible Bounds Height", "description": "Height of the visible bounding box (in model space units)." }
             }
           },
           "bones": {
@@ -142,10 +115,7 @@
                         "type": "array",
                         "minItems": 3,
                         "maxItems": 3,
-                        "items": {
-                          "type": "number",
-                          "description": "This point declares the unrotated lower corner of cube (smallest x/y/z value in model space units)."
-                        }
+                        "items": { "type": "number", "description": "This point declares the unrotated lower corner of cube (smallest x/y/z value in model space units)." }
                       },
                       "pivot": {
                         "type": "array",
@@ -174,31 +144,16 @@
                         "type": "array",
                         "minItems": 3,
                         "maxItems": 3,
-                        "items": {
-                          "type": "number",
-                          "description": "The cube is rotated by this amount (in degrees, x-then-y-then-z order) around the pivot."
-                        }
+                        "items": { "type": "number", "description": "The cube is rotated by this amount (in degrees, x-then-y-then-z order) around the pivot." }
                       },
                       "size": {
                         "title": "Size",
                         "type": "array",
                         "description": "The cube extends this amount relative to its origin (in model space units).",
                         "items": [
-                          {
-                            "type": "number",
-                            "title": "X",
-                            "description": "The cube extends this amount relative to its origin (in model space units)."
-                          },
-                          {
-                            "type": "number",
-                            "title": "Y",
-                            "description": "The cube extends this amount relative to its origin (in model space units)."
-                          },
-                          {
-                            "type": "number",
-                            "title": "Z",
-                            "description": "The cube extends this amount relative to its origin (in model space units)."
-                          }
+                          { "type": "number", "title": "X", "description": "The cube extends this amount relative to its origin (in model space units)." },
+                          { "type": "number", "title": "Y", "description": "The cube extends this amount relative to its origin (in model space units)." },
+                          { "type": "number", "title": "Z", "description": "The cube extends this amount relative to its origin (in model space units)." }
                         ]
                       },
                       "uv": {
@@ -253,13 +208,8 @@
                     }
                   }
                 },
-                "debug": {
-                  "type": "boolean"
-                },
-                "inflate": {
-                  "type": "number",
-                  "description": "Grow this box by this additive amount in all directions (in model space units)."
-                },
+                "debug": { "type": "boolean" },
+                "inflate": { "type": "number", "description": "Grow this box by this additive amount in all directions (in model space units)." },
                 "locators": {
                   "description": "This is a list of locators associated with this bone. A locator is a point in model space that tracks a particular bone as the bone animates (by maintaining it's relationship to the bone through the animation).",
                   "type": "object",
@@ -274,25 +224,16 @@
                             "minItems": 3,
                             "maxItems": 3,
                             "description": "Position of the locator in model space.",
-                            "items": {
-                              "type": "number",
-                              "description": "Position of the locator in model space."
-                            }
+                            "items": { "type": "number", "description": "Position of the locator in model space." }
                           },
                           "rotation": {
                             "type": "array",
                             "minItems": 3,
                             "maxItems": 3,
                             "description": "Rotation of the locator in model space.",
-                            "items": {
-                              "type": "number",
-                              "description": "Rotation of the locator in model space."
-                            }
+                            "items": { "type": "number", "description": "Rotation of the locator in model space." }
                           },
-                          "ignore_inherited_scale": {
-                            "type": "boolean",
-                            "description": "Discard scale inherited from parent bone."
-                          }
+                          "ignore_inherited_scale": { "type": "boolean", "description": "Discard scale inherited from parent bone." }
                         }
                       },
                       {
@@ -300,10 +241,7 @@
                         "minItems": 3,
                         "maxItems": 3,
                         "description": "This is a list of locators associated with this bone. A locator is a point in model space that tracks a particular bone as the bone animates (by maintaining it's relationship to the bone through the animation).",
-                        "items": {
-                          "type": "number",
-                          "description": "Position of the locator in model space."
-                        }
+                        "items": { "type": "number", "description": "Position of the locator in model space." }
                       }
                     ]
                   }
@@ -313,11 +251,7 @@
                   "title": "Mirror",
                   "description": "Mirrors the UV's of the unrotated cubes along the x axis, also causes the east/west faces to get flipped."
                 },
-                "name": {
-                  "type": "string",
-                  "title": "Name",
-                  "description": "Animation files refer to this bone via this identifier."
-                },
+                "name": { "type": "string", "title": "Name", "description": "Animation files refer to this bone via this identifier." },
                 "parent": {
                   "type": "string",
                   "title": "Parent",
@@ -377,18 +311,9 @@
                               "minItems": 3,
                               "maxItems": 3,
                               "items": [
-                                {
-                                  "type": "number",
-                                  "description": "The index of the position"
-                                },
-                                {
-                                  "type": "number",
-                                  "description": "The index of the normal vertex"
-                                },
-                                {
-                                  "type": "number",
-                                  "description": "The index of the uv vertex"
-                                }
+                                { "type": "number", "description": "The index of the position" },
+                                { "type": "number", "description": "The index of the normal vertex" },
+                                { "type": "number", "description": "The index of the uv vertex" }
                               ]
                             }
                           }
@@ -423,10 +348,7 @@
                     }
                   }
                 },
-                "render_group_id": {
-                  "type": "integer",
-                  "minimum": 0
-                },
+                "render_group_id": { "type": "integer", "minimum": 0 },
                 "rotation": {
                   "type": "array",
                   "title": "Rotation",
@@ -439,7 +361,7 @@
                 },
                 "texture_meshes": {
                   "type": "array",
-                  "title": "Texture meshes",
+                  "title": "Texture Meshes",
                   "description": "***EXPERIMENTAL*** Adds a mesh to the bone's geometry by converting texels in a texture into boxes",
                   "items": {
                     "type": "object",
@@ -451,10 +373,7 @@
                         "description": "The pivot point on the texture (in *texture space* not entity or bone space) of the texture geometry",
                         "minItems": 3,
                         "maxItems": 3,
-                        "items": {
-                          "type": "number",
-                          "description": "The pivot point on the texture (in *texture space* not entity or bone space) of the texture geometry"
-                        }
+                        "items": { "type": "number", "description": "The pivot point on the texture (in *texture space* not entity or bone space) of the texture geometry" }
                       },
                       "position": {
                         "type": "array",
@@ -471,36 +390,23 @@
                         "description": "The rotation (in degrees) of the texture geometry relative to the offset",
                         "minItems": 3,
                         "maxItems": 3,
-                        "items": {
-                          "type": "number",
-                          "description": "The rotation (in degrees) of the texture geometry relative to the offset"
-                        }
+                        "items": { "type": "number", "description": "The rotation (in degrees) of the texture geometry relative to the offset" }
                       },
                       "scale": {
                         "type": "array",
                         "description": "The scale (in degrees) of the texture geometry relative to the offset",
                         "minItems": 3,
                         "maxItems": 3,
-                        "items": {
-                          "type": "number",
-                          "description": "The scale (in degrees) of the texture geometry relative to the offset"
-                        }
+                        "items": { "type": "number", "description": "The scale (in degrees) of the texture geometry relative to the offset" }
                       },
-                      "texture": {
-                        "type": "string",
-                        "description": "The friendly-named texture to use."
-                      }
+                      "texture": { "type": "string", "description": "The friendly-named texture to use." }
                     }
                   }
                 }
               }
             }
           },
-          "cape": {
-            "title": "Cape",
-            "description": "UNDOCUMENTATED",
-            "type": "string"
-          }
+          "cape": { "title": "Cape", "description": "UNDOCUMENTATED", "type": "string" }
         }
       }
     }

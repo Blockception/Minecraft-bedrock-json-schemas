@@ -2,11 +2,9 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.enderman_take_block",
   "type": "object",
-  "title": "Enderman take block 1.8.0",
+  "title": "Enderman Take Block 1.8.0",
   "description": "Allows the enderman to take a block and carry it around. Can only be used by Endermen.",
   "additionalProperties": false,
   "required": [],
-  "properties": {
-    "priority": { "$ref": "./types/base_priority.json" }
-  }
+  "properties": { "priority": { "$ref": "./types/base_priority.json" } }
 }

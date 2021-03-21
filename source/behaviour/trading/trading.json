@@ -3,87 +3,36 @@
   "$id": "blockception.minecraft.behaviour.trading",
   "type": "object",
   "additionalProperties": false,
-  "examples": [
-    {
-      "tiers": [
-        {
-          "trades": [
-            {
-              "wants": [
-                {
-                  "item": "minecraft:coal:0",
-                  "quantity": { "min": 16, "max": 24 }
-                }
-              ],
-              "gives": [{ "item": "minecraft:emerald" }]
-            }
-          ]
-        }
-      ]
-    }
-  ],
+  "examples": [{ "tiers": [{ "trades": [{ "wants": [{ "item": "minecraft:coal:0", "quantity": { "min": 16, "max": 24 } }], "gives": [{ "item": "minecraft:emerald" }] }] }] }],
   "definitions": {
     "Item": {
       "title": "Item",
       "oneOf": [
-        {
-          "type": "string"
-        },
+        { "type": "string" },
         {
           "type": "object",
           "additionalProperties": false,
           "properties": {
-            "item": {
-              "type": "string",
-              "title": "Item identifier"
-            },
-            "price_multiplier": {
-              "type": "number",
-              "title": "Price multiplier"
-            },
+            "item": { "type": "string", "title": "Item Identifier" },
+            "price_multiplier": { "type": "number", "title": "Price Multiplier" },
             "quantity": {
               "title": "Quantity",
               "oneOf": [
-                {
-                  "type": "integer",
-                  "minimum": 1,
-                  "title": "Amount"
-                },
+                { "type": "integer", "minimum": 1, "title": "Amount" },
                 {
                   "type": "object",
                   "additionalProperties": false,
                   "required": ["min", "max"],
-                  "properties": {
-                    "min": {
-                      "type": "integer",
-                      "minimum": 1,
-                      "title": "Minimum"
-                    },
-                    "max": {
-                      "type": "integer",
-                      "minimum": 1,
-                      "title": "Maximum"
-                    }
-                  }
+                  "properties": { "min": { "type": "integer", "minimum": 1, "title": "Minimum" }, "max": { "type": "integer", "minimum": 1, "title": "Maximum" } }
                 }
               ]
             },
-            "functions": {
-              "$ref": "#/definitions/Functions"
-            }
+            "functions": { "$ref": "#/definitions/Functions" }
           }
         }
       ]
     },
-    "Functions": {
-      "title": "Functions",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "required": ["function"],
-        "$ref": "../loot_tables/functions.json"
-      }
-    },
+    "Functions": { "title": "Functions", "type": "array", "items": { "type": "object", "required": ["function"], "$ref": "../loot_tables/functions.json" } },
     "TradeArray": {
       "type": "array",
       "title": "Trades",
@@ -104,7 +53,7 @@
                   "type": "object",
                   "additionalProperties": false,
                   "properties": {
-                    "item": { "type": "string", "title": "Item identifier" },
+                    "item": { "type": "string", "title": "Item Identifier" },
                     "quantity": {
                       "title": "Quantity",
                       "oneOf": [
@@ -113,32 +62,12 @@
                           "type": "object",
                           "additionalProperties": false,
                           "required": ["min", "max"],
-                          "properties": {
-                            "min": {
-                              "type": "integer",
-                              "minimum": 1,
-                              "title": "Minimum"
-                            },
-                            "max": {
-                              "type": "integer",
-                              "minimum": 1,
-                              "title": "Maximum"
-                            }
-                          }
+                          "properties": { "min": { "type": "integer", "minimum": 1, "title": "Minimum" }, "max": { "type": "integer", "minimum": 1, "title": "Maximum" } }
                         }
                       ]
                     },
-                    "functions": {
-                      "$ref": "#/definitions/Functions"
-                    },
-                    "choice": {
-                      "title": "Choice",
-                      "description": "TODO",
-                      "type": "array",
-                      "items": {
-                        "$ref": "#/definitions/Item"
-                      }
-                    }
+                    "functions": { "$ref": "#/definitions/Functions" },
+                    "choice": { "title": "Choice", "description": "TODO", "type": "array", "items": { "$ref": "#/definitions/Item" } }
                   }
                 }
               ]
@@ -155,7 +84,7 @@
                   "type": "object",
                   "additionalProperties": false,
                   "properties": {
-                    "item": { "type": "string", "title": "Item identifier" },
+                    "item": { "type": "string", "title": "Item Identifier" },
                     "quantity": {
                       "title": "Quantity",
                       "oneOf": [
@@ -164,54 +93,21 @@
                           "type": "object",
                           "additionalProperties": false,
                           "required": ["min", "max"],
-                          "properties": {
-                            "min": {
-                              "type": "integer",
-                              "minimum": 1,
-                              "title": "Minimum"
-                            },
-                            "max": {
-                              "type": "integer",
-                              "minimum": 1,
-                              "title": "Maximum"
-                            }
-                          }
+                          "properties": { "min": { "type": "integer", "minimum": 1, "title": "Minimum" }, "max": { "type": "integer", "minimum": 1, "title": "Maximum" } }
                         }
                       ]
                     },
-                    "price_multiplier": {
-                      "title": "Price multiplier",
-                      "description": "TODO",
-                      "type": "number"
-                    },
-                    "functions": {
-                      "$ref": "#/definitions/Functions"
-                    },
-                    "choice": {
-                      "title": "Choice",
-                      "description": "TODO",
-                      "type": "array",
-                      "items": {
-                        "$ref": "#/definitions/Item"
-                      }
-                    }
+                    "price_multiplier": { "title": "Price Multiplier", "description": "TODO", "type": "number" },
+                    "functions": { "$ref": "#/definitions/Functions" },
+                    "choice": { "title": "Choice", "description": "TODO", "type": "array", "items": { "$ref": "#/definitions/Item" } }
                   }
                 }
               ]
             }
           },
-          "trader_exp": {
-            "type": "integer",
-            "title": "Trader experience"
-          },
-          "max_uses": {
-            "type": "integer",
-            "title": "Maximum uses"
-          },
-          "reward_exp": {
-            "type": "boolean",
-            "title": "Reward experience"
-          }
+          "trader_exp": { "type": "integer", "title": "Trader Experience" },
+          "max_uses": { "type": "integer", "title": "Maximum Uses" },
+          "reward_exp": { "type": "boolean", "title": "Reward Experience" }
         }
       }
     }
@@ -226,13 +122,8 @@
         "type": "object",
         "title": "Tier",
         "properties": {
-          "trades": {
-            "$ref": "#/definitions/TradeArray"
-          },
-          "total_exp_required": {
-            "title": "Total experience required",
-            "type": "integer"
-          },
+          "trades": { "$ref": "#/definitions/TradeArray" },
+          "total_exp_required": { "title": "Total Experience Required", "type": "integer" },
           "groups": {
             "type": "array",
             "title": "Groups",
@@ -241,15 +132,7 @@
               "type": "object",
               "title": "Group",
               "additionalProperties": false,
-              "properties": {
-                "num_to_select": {
-                  "title": "Number to select",
-                  "type": "integer"
-                },
-                "trades": {
-                  "$ref": "#/definitions/TradeArray"
-                }
-              }
+              "properties": { "num_to_select": { "title": "Number To Select", "type": "integer" }, "trades": { "$ref": "#/definitions/TradeArray" } }
             }
           }
         }
@@ -257,5 +140,5 @@
     }
   },
   "description": "TODO description",
-  "title": "TODO title"
+  "title": "TODO Title"
 }

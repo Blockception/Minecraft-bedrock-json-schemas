@@ -2,56 +2,18 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.manifest",
   "type": "object",
-  "title": "The minecraft manifest schema",
+  "title": "Manifest Schema",
   "description": "The minecraft manifest schema",
   "required": ["format_version", "header"],
   "examples": [
     {
       "format_version": 2,
-      "header": {
-        "description": "pack.description",
-        "name": "pack.name",
-        "uuid": "UUID2",
-        "min_engine_version": [1, 16, 0],
-        "version": [1, 0, 0]
-      },
-      "modules": [
-        {
-          "type": "data",
-          "uuid": "UUID2",
-          "version": [1, 0, 0]
-        }
-      ]
+      "header": { "description": "pack.description", "name": "pack.name", "uuid": "UUID2", "min_engine_version": [1, 16, 0], "version": [1, 0, 0] },
+      "modules": [{ "type": "data", "uuid": "UUID2", "version": [1, 0, 0] }]
     }
   ],
   "allOf": [
-    {
-      "if": {
-        "properties": {
-          "format_version": {
-            "const": 1,
-            "type": "number",
-            "title": "Format Version"
-          }
-        }
-      },
-      "then": {
-        "$ref": "./manifest/manifest.1.json"
-      }
-    },
-    {
-      "if": {
-        "properties": {
-          "format_version": {
-            "const": 2,
-            "type": "number",
-            "title": "Format Version"
-          }
-        }
-      },
-      "then": {
-        "$ref": "./manifest/manifest.2.json"
-      }
-    }
+    { "if": { "properties": { "format_version": { "const": 1, "type": "number", "title": "Format Version" } } }, "then": { "$ref": "./manifest/manifest.1.json" } },
+    { "if": { "properties": { "format_version": { "const": 2, "type": "number", "title": "Format Version" } } }, "then": { "$ref": "./manifest/manifest.2.json" } }
   ]
 }

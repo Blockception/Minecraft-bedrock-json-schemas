@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.random_stroll",
   "description": "Allows a mob to randomly stroll around.",
   "type": "object",
-  "title": "Random stroll 1.8.0",
+  "title": "Random Stroll 1.8.0",
   "required": [],
   "properties": {
     "priority": { "$ref": "types/base_priority.json" },
@@ -12,19 +12,19 @@
       "type": "integer",
       "default": 120,
       "description": "A random value to determine when to randomly move somewhere. This has a 1/interval chance to choose this goal",
-      "title": "TODO title"
+      "title": "TODO Title"
     },
     "xz_dist": {
       "type": "integer",
       "default": 10,
       "description": "Distance in blocks on ground that the mob will look for a new spot to move to. Must be at least 1",
-      "title": "TODO title"
+      "title": "TODO Title"
     },
     "y_dist": {
       "type": "integer",
       "default": 7,
       "description": "Distance in blocks that the mob will look up or down for a new spot to move to. Must be at least 1",
-      "title": "TODO title"
+      "title": "TODO Title"
     }
   },
   "additionalProperties": false

@@ -2,27 +2,17 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.16.0.filters.has_container_open",
   "type": "object",
-  "title": "Filters has container open 1.16.0",
+  "title": "Filters Has Container Open 1.16.0",
   "description": "Returns true when the subject Player entity has opened a container.",
   "properties": {
-    "test": {
-      "type": "string",
-      "title": "Test",
-      "description": "The test property"
-    },
+    "test": { "type": "string", "title": "Test", "description": "The test property" },
     "operator": { "$ref": "./types/base_operator.json" },
     "subject": { "$ref": "./types/base_subject.json" },
     "value": {
       "description": "True or false.",
       "oneOf": [
-        {
-          "type": "boolean",
-          "default": true
-        },
-        {
-          "type": "string",
-          "enum": ["true", "false"]
-        }
+        { "type": "boolean", "default": true },
+        { "type": "string", "enum": ["true", "false"] }
       ],
       "title": "Value"
     }

@@ -4,30 +4,15 @@
   "examples": [
     {
       "format_version": "1.8.0",
-      "render_controllers": {
-        "controller.render.example": {
-          "geometry": "Geometry.default",
-          "materials": [{ "*": "Material.default" }],
-          "textures": ["Texture.default"]
-        }
-      }
+      "render_controllers": { "controller.render.example": { "geometry": "Geometry.default", "materials": [{ "*": "Material.default" }], "textures": ["Texture.default"] } }
     }
   ],
   "type": "object",
   "title": "Render Controllers",
   "description": "TODO description",
   "allOf": [
-    {
-      "if": { "properties": { "format_version": { "type": "string", "const": "1.8.0" } } },
-      "then": { "$ref": "./1.8.0/render_controllers.json" }
-    },
-    {
-      "if": { "properties": { "format_version": { "type": "string", "const": "1.10" } } },
-      "then": { "$ref": "./1.10.0/render_controllers.json" }
-    },
-    {
-      "if": { "properties": { "format_version": { "type": "string", "const": "1.10.0" } } },
-      "then": { "$ref": "./1.10.0/render_controllers.json" }
-    }
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.8.0" } } }, "then": { "$ref": "./1.8.0/render_controllers.json" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.10" } } }, "then": { "$ref": "./1.10.0/render_controllers.json" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.10.0" } } }, "then": { "$ref": "./1.10.0/render_controllers.json" } }
   ]
 }

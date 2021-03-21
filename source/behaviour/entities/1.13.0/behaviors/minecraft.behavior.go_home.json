@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.13.0.minecraft.behavior.go_home",
   "type": "object",
-  "title": "Go home 1.13.0",
+  "title": "Go Home 1.13.0",
   "description": "Allows the mob to move back to the position they were spawned.",
   "additionalProperties": false,
   "required": [],
@@ -13,7 +13,7 @@
       "type": "number",
       "default": 0.5,
       "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot",
-      "title": "Goal radius"
+      "title": "Goal Radius"
     },
     "interval": {
       "type": "integer",
@@ -22,42 +22,14 @@
       "title": "Interval"
     },
     "on_home": {
-      "title": "On home",
+      "title": "On Home",
       "description": "Event to run when this mob gets home.",
-      "oneOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "object",
-          "$ref": "../types/trigger.json"
-        },
-        {
-          "type": "array",
-          "items": {
-            "$ref": "../types/trigger.json"
-          }
-        }
-      ]
+      "oneOf": [{ "type": "string" }, { "type": "object", "$ref": "../types/trigger.json" }, { "type": "array", "items": { "$ref": "../types/trigger.json" } }]
     },
     "on_failed": {
       "description": "Event to run when this mob gets home.",
-      "oneOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "object",
-          "$ref": "../types/trigger.json"
-        },
-        {
-          "type": "array",
-          "items": {
-            "$ref": "../types/trigger.json"
-          }
-        }
-      ],
-      "title": "On failed"
+      "oneOf": [{ "type": "string" }, { "type": "object", "$ref": "../types/trigger.json" }, { "type": "array", "items": { "$ref": "../types/trigger.json" } }],
+      "title": "On Failed"
     }
   }
 }

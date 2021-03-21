@@ -4,7 +4,7 @@
   "additionalProperties": false,
   "description": "Allows the actor to open doors assuming that that flags set up for the component to use in navigation",
   "type": "object",
-  "title": "Annotation.open door 1.8.0",
+  "title": "Annotation.open Door 1.8.0",
   "required": [],
   "properties": {}
 }

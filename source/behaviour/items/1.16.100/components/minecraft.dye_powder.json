@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.1.16.100.items.minecraft:dye_powder",
-  "title": "Dye powder",
+  "title": "Dye Powder",
   "description": "Dye powder, there are 16 kinds of dye.",
   "type": "object",
   "additionalProperties": false,

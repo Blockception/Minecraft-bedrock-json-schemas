@@ -4,7 +4,7 @@
   "additionalProperties": false,
   "description": "Allows the mob to randomly look around.",
   "type": "object",
-  "title": "Random look around 1.8.0",
+  "title": "Random Look Around 1.8.0",
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/base_priority.json" },
@@ -12,12 +12,8 @@
       "$ref": "../types/range_number_type.json",
       "default": [2, 4],
       "description": "The range of time in seconds the mob will stay looking in a random direction before looking elsewhere",
-      "title": "TODO title"
+      "title": "TODO Title"
     },
-    "look_distance": {
-      "type": "number",
-      "description": "UNDOCUMENTATED",
-      "title": "UNDOCUMENTATED"
-    }
+    "look_distance": { "type": "number", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" }
   }
 }

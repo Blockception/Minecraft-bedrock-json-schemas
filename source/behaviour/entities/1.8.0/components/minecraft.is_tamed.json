@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.is_tamed",
   "description": "Sets that this entity is currently tamed.",
   "type": "object",
-  "title": "Is tamed 1.8.0",
+  "title": "Is Tamed 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {}

@@ -3,11 +3,11 @@
   "$id": "blockception.minecraft.resource.particle.1.10.0.particle_lifetime_expression",
   "type": "object",
   "description": "TODO description: ",
-  "title": "The particle lifetime expression component for 1.10.0",
+  "title": "Particle Lifetime Expression Component For 1.10.0",
   "additionalProperties": false,
   "properties": {
     "expiration_expression": {
-      "title": "Expiration expression",
+      "title": "Expiration Expression",
       "description": "This expression makes the particle expire when true (non-zero), The float/expr is evaluated once per particle, evaluated every frame",
       "$ref": "../../../../molang/1.8.0/number.json"
     },

@@ -4,15 +4,11 @@
   "additionalProperties": false,
   "description": "Can only be used by Slimes and Magma Cubes. Controls their ability to float in water / lava.",
   "type": "object",
-  "title": "Slime float 1.8.0",
+  "title": "Slime Float 1.8.0",
   "required": [],
   "properties": {
     "priority": { "$ref": "types/base_priority.json" },
     "speed_multiplier": { "$ref": "types/base_speed_multiplier.json" },
-    "jump_chance_percentage": {
-      "type": "number",
-      "title": "Sink delta",
-      "description": "UNDOCUMENTATED"
-    }
+    "jump_chance_percentage": { "type": "number", "title": "Sink Delta", "description": "UNDOCUMENTATED" }
   }
 }

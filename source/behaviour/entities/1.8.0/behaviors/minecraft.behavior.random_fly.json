@@ -3,30 +3,23 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.random_fly",
   "description": "Allows a mob to randomly fly around",
   "type": "object",
-  "title": "Random fly 1.8.0",
+  "title": "Random Fly 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": {
-      "$ref": "types/base_priority.json"
-    },
-    "can_land_on_trees": {
-      "type": "boolean",
-      "default": true,
-      "description": "If true, the mob can stop flying and land on a tree instead of the ground",
-      "title": "TODO title"
-    },
+    "priority": { "$ref": "types/base_priority.json" },
+    "can_land_on_trees": { "type": "boolean", "default": true, "description": "If true, the mob can stop flying and land on a tree instead of the ground", "title": "TODO Title" },
     "xz_dist": {
       "type": "integer",
       "default": 10,
       "description": "Distance in blocks on ground that the mob will look for a new spot to move to. Must be at least 1",
-      "title": "TODO title"
+      "title": "TODO Title"
     },
     "y_dist": {
       "type": "integer",
       "default": 7,
       "description": "Distance in blocks that the mob will look up or down for a new spot to move to. Must be at least 1",
-      "title": "TODO title"
+      "title": "TODO Title"
     }
   }
 }

@@ -2,29 +2,18 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.filters.is_avoiding_mobs",
   "type": "object",
-  "title": "Filters is avoiding mobs 1.8.0",
+  "title": "Filters Is Avoiding Mobs 1.8.0",
   "description": "Returns true if the subject entity is fleeing from other mobs.",
   "properties": {
-    "test": {
-      "type": "string",
-      "title": "The test property",
-      "description": "Returns true if the subject entity is fleeing from other mobs."
-    },
+    "test": { "type": "string", "title": "Test Property", "description": "Returns true if the subject entity is fleeing from other mobs." },
     "operator": { "$ref": "./types/base_operator.json" },
     "subject": { "$ref": "./types/base_subject.json" },
     "value": {
       "title": "Value",
       "description": "True or false.",
       "oneOf": [
-        {
-          "type": "boolean",
-          "default": true
-        },
-        {
-          "type": "string",
-          "default": "true",
-          "enum": ["true", "false"]
-        }
+        { "type": "boolean", "default": true },
+        { "type": "string", "default": "true", "enum": ["true", "false"] }
       ]
     }
   }

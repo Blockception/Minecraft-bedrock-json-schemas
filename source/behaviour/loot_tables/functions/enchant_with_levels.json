@@ -3,42 +3,22 @@
   "$id": "blockception.minecraft.behaviour.loot_tables.enchant_with_levels",
   "additionalProperties": false,
   "description": "The function enchant_with_levels",
-  "title": "Enchant with levels",
+  "title": "Enchant With Levels",
   "properties": {
-    "function": {
-      "type": "string",
-      "const": "enchant_with_levels",
-      "description": "TODO description",
-      "title": "TODO title"
-    },
+    "function": { "type": "string", "const": "enchant_with_levels", "description": "TODO description", "title": "TODO Title" },
     "levels": {
       "title": "Levels",
       "oneOf": [
-        {
-          "type": "integer"
-        },
+        { "type": "integer" },
         {
           "type": "object",
           "additionalProperties": false,
           "required": ["min", "max"],
-          "properties": {
-            "min": {
-              "type": "integer",
-              "title": "Minimum"
-            },
-            "max": {
-              "type": "integer",
-              "title": "Maximum"
-            }
-          }
+          "properties": { "min": { "type": "integer", "title": "Minimum" }, "max": { "type": "integer", "title": "Maximum" } }
         }
       ],
       "description": "TODO description"
     },
-    "treasure": {
-      "type": "boolean",
-      "title": "Treasure",
-      "description": "TODO description"
-    }
+    "treasure": { "type": "boolean", "title": "Treasure", "description": "TODO description" }
   }
 }

@@ -1,15 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.1.16.100.items.events.transform_item",
-  "title": "Transform item",
+  "title": "Transform Item",
   "description": "UNDOCUMENTATED",
   "type": "object",
   "additionalProperties": false,
-  "properties": {
-    "transform": {
-      "title": "Transform",
-      "description": "UNDOCUMENTATED",
-      "type": "string"
-    }
-  }
+  "properties": { "transform": { "title": "Transform", "description": "UNDOCUMENTATED", "type": "string" } }
 }

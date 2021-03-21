@@ -6,17 +6,7 @@
   "title": "Playsound",
   "additionalProperties": false,
   "properties": {
-    "sound": {
-      "type": "string",
-      "default": "",
-      "description": "The name of the sound to play.",
-      "title": "Sound"
-    },
-    "target": {
-      "type": "object",
-      "default": "self",
-      "description": "The target context to execute against.",
-      "title": "Target"
-    }
+    "sound": { "type": "string", "default": "", "description": "The name of the sound to play.", "title": "Sound" },
+    "target": { "type": "object", "default": "self", "description": "The target context to execute against.", "title": "Target" }
   }
 }

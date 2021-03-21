@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.animation_controller.1.8.0",
   "type": "object",
-  "title": "The minecraft behaviourpack animation controller 1.8.0",
+  "title": "Animation Controller 1.8.0",
   "description": "TODO description",
   "definitions": {
     "animationspec": {
@@ -31,7 +31,7 @@
       "properties": {
         "bind_to_actor": {
           "type": "boolean",
-          "title": "Bind to actor",
+          "title": "Bind To Actor",
           "description": "Set to false to have the effect spawned in the world without being bound to an actor (by default an effect is bound to the actor)."
         },
         "effect": {
@@ -46,7 +46,7 @@
         },
         "pre_effect_script": {
           "type": "string",
-          "title": "Pre effect script",
+          "title": "Pre Effect Script",
           "description": "A molang script that will be run when the particle emitter is initialized"
         }
       }
@@ -55,9 +55,18 @@
       "type": "string",
       "description": "The event or commands to execute",
       "oneOf": [
-        { "pattern": "^@s .+$", "title": "Event" },
-        { "pattern": "^/.+$", "title": "Command" },
-        { "pattern": "^.+;$", "title": "Molang" }
+        {
+          "pattern": "^@s .+$",
+          "title": "Event"
+        },
+        {
+          "pattern": "^/.+$",
+          "title": "Command"
+        },
+        {
+          "pattern": "^.+;$",
+          "title": "Molang"
+        }
       ]
     }
   },
@@ -65,14 +74,14 @@
   "additionalProperties": false,
   "properties": {
     "format_version": {
-      "title": "The 1.8.0 format version",
+      "title": "1.8.0 Format Version",
       "type": "string",
       "pattern": "^1.8.0$",
       "description": "A version that tells minecraft what type of data format can be expected when reading this file."
     },
     "animation_controllers": {
       "type": "object",
-      "title": "The animation controllers schema",
+      "title": "Animation Controllers Schema",
       "description": "The animation controllers schema for 1.8.0",
       "propertyNames": {
         "pattern": "^controller\\.animation\\.[a-z\\.]+"
@@ -80,13 +89,13 @@
       "additionalProperties": {
         "additionalProperties": false,
         "type": "object",
-        "title": "A animation controller",
+        "title": "A Animation Controller",
         "description": "A single animation controller 1.8.0",
         "required": ["states"],
         "minProperties": 1,
         "properties": {
           "states": {
-            "title": "The states definition",
+            "title": "States ",
             "description": "The states of this animation controller",
             "propertyNames": {
               "pattern": "[a-z\\.]+"
@@ -94,12 +103,12 @@
             "minProperties": 1,
             "additionalProperties": {
               "additionalProperties": false,
-              "title": "Animation state",
+              "title": "Animation State",
               "description": "Animation state",
               "type": "object",
               "properties": {
                 "animations": {
-                  "title": "Animations definition",
+                  "title": "Animations ",
                   "description": "The animations definition for 1.8.0",
                   "type": "array",
                   "items": {
@@ -123,7 +132,7 @@
                   }
                 },
                 "transitions": {
-                  "title": "Transition definition",
+                  "title": "Transition ",
                   "description": "The transition definition for 1.8.0",
                   "minProperties": 1,
                   "type": "array",

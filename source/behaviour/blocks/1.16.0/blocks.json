@@ -8,20 +8,20 @@
   "additionalProperties": false,
   "properties": {
     "format_version": {
-      "title": "The 1.16.0 format version",
+      "title": "1.16.0 Format Version",
       "type": "string",
       "const": "1.16.0",
       "description": "A version that tells minecraft what type of data format can be expected when reading this file."
     },
     "minecraft:block": {
-      "title": "Block definitions",
+      "title": "Block Definitions",
       "description": "A custom block definition",
       "type": "object",
       "additionalProperties": false,
       "required": ["description", "components"],
       "properties": {
         "description": {
-          "title": "Block description",
+          "title": "Block Description",
           "description": "The description for this block",
           "type": "object",
           "additionalProperties": false,
@@ -37,20 +37,18 @@
               "type": "boolean",
               "default": false,
               "description": "If this block is experimental, it will only be registered if the world is marked as experimantal.",
-              "title": "Is experimental"
+              "title": "Is Experimental"
             },
             "register_to_creative_menu": {
               "type": "boolean",
               "default": false,
               "description": "Whether or not to register this block to the creative inventory menu.",
-              "title": "Register to creative menu"
+              "title": "Register To Creative Menu"
             },
             "properties": {
               "title": "Properties",
               "description": "UNDOCUMENATED",
-              "propertyNames": {
-                "pattern": "^([a-zA-Z0-9_]+:[a-zA-Z0-9_\\-]+)$"
-              },
+              "propertyNames": { "pattern": "^([a-zA-Z0-9_]+:[a-zA-Z0-9_\\-]+)$" },
               "additionalProperties": {
                 "title": "Property",
                 "description": "A block property",
@@ -58,7 +56,7 @@
                   {
                     "type": "array",
                     "items": {
-                      "title": "Property value",
+                      "title": "Property Value",
                       "description": "The value of this property",
                       "anyOf": [{ "type": "boolean" }, { "type": "number" }, { "type": "integer" }, { "type": "string" }]
                     }
@@ -69,9 +67,7 @@
             }
           }
         },
-        "components": {
-          "$ref": "../1.10.0/components.json"
-        }
+        "components": { "$ref": "../1.10.0/components.json" }
       }
     }
   }

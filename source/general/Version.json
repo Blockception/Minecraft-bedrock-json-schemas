@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "Version",
   "type": "array",
-  "title": "Version numbering",
+  "title": "Version Numbering",
   "description": "A version made of 3 numbers",
   "minItems": 3,
   "maxItems": 3,

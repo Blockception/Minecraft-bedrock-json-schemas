@@ -3,16 +3,12 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.send_event",
   "description": "Allows the mob to send an event to another mob.",
   "type": "object",
-  "title": "Send event 1.8.0",
+  "title": "Send Event 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/base_priority.json" },
-    "cast_duration": {
-      "type": "number",
-      "description": "Time in seconds for the entire event sending process",
-      "title": "TODO title"
-    },
+    "cast_duration": { "type": "number", "description": "Time in seconds for the entire event sending process", "title": "TODO Title" },
     "sequence": {
       "type": "array",
       "description": "List of events to send",
@@ -20,24 +16,12 @@
         "type": "object",
         "additionalProperties": false,
         "properties": {
-          "base_delay": {
-            "type": "number",
-            "default": 0,
-            "description": "Amount of time in seconds before starting this step"
-          },
-          "event": {
-            "type": "string",
-            "default": "",
-            "description": "The event to send to the entity"
-          },
-          "sound_event": {
-            "type": "string",
-            "default": "",
-            "description": "The sound event to play when this step happens"
-          }
+          "base_delay": { "type": "number", "default": 0, "description": "Amount of time in seconds before starting this step" },
+          "event": { "type": "string", "default": "", "description": "The event to send to the entity" },
+          "sound_event": { "type": "string", "default": "", "description": "The sound event to play when this step happens" }
         }
       },
-      "title": "TODO title"
+      "title": "TODO Title"
     }
   }
 }

@@ -10,7 +10,7 @@
     "format_version": {
       "type": "string",
       "description": "A version that tells minecraft what type of data format can be expected when reading this file.",
-      "title": "Format version"
+      "title": "Format Version"
     },
     "minecraft:recipe_furnace": { "$ref": "./types/furnace.json" },
     "minecraft:recipe_brewing_container": { "$ref": "./types/recipe_brewing_container.json" },

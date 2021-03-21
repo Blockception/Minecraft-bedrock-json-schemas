@@ -4,12 +4,7 @@
   "additionalProperties": false,
   "description": "TODO description",
   "type": "object",
-  "title": "Ocelot sit on block 1.8.0",
+  "title": "Ocelot Sit On Block 1.8.0",
   "required": [],
-  "properties": {
-    "priority": {
-      "$ref": "types/base_priority.json"
-    },
-    "speed_multiplier": { "$ref": "./types/base_speed_multiplier.json" }
-  }
+  "properties": { "priority": { "$ref": "types/base_priority.json" }, "speed_multiplier": { "$ref": "./types/base_speed_multiplier.json" } }
 }

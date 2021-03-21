@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.out_of_control",
   "type": "object",
-  "title": "Out of control",
+  "title": "Out Of Control",
   "additionalProperties": false,
   "description": "Defines the entity's 'out of control' state.",
   "required": [],

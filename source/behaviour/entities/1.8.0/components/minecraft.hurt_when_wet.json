@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.hurt_when_wet",
   "type": "object",
-  "title": "Hurt when wet 1.8.0",
+  "title": "Hurt When Wet 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {},

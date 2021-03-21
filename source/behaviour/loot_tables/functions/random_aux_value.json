@@ -3,26 +3,14 @@
   "$id": "blockception.minecraft.behaviour.loot_tables.random_aux_value",
   "additionalProperties": false,
   "description": "The function random_aux_value",
-  "title": "Random aux value",
+  "title": "Random Aux Value",
   "properties": {
-    "function": {
-      "type": "string",
-      "const": "random_aux_value",
-      "description": "TODO description",
-      "title": "TODO title"
-    },
+    "function": { "type": "string", "const": "random_aux_value", "description": "TODO description", "title": "TODO Title" },
     "values": {
       "type": "object",
-      "properties": {
-        "min": {
-          "type": "integer"
-        },
-        "max": {
-          "type": "integer"
-        }
-      },
+      "properties": { "min": { "type": "integer" }, "max": { "type": "integer" } },
       "description": "TODO description",
-      "title": "TODO title",
+      "title": "TODO Title",
       "additionalProperties": false
     }
   }

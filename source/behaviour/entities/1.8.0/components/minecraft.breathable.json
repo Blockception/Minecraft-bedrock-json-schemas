@@ -7,133 +7,45 @@
   "description": "Defines what blocks this entity can breathe in and gives them the ability to suffocate.",
   "required": [],
   "properties": {
-    "totalSupply": {
-      "type": "integer",
-      "default": 15,
-      "description": "Time in seconds the entity can hold its breath",
-      "title": "TODO title"
-    },
-    "total_supply": {
-      "type": "integer",
-      "default": 15,
-      "description": "Time in seconds the entity can hold its breath",
-      "title": "TODO title"
-    },
-    "suffocateTime": {
-      "type": "integer",
-      "default": -20,
-      "description": "Time in seconds between suffocation damage",
-      "title": "TODO title"
-    },
-    "suffocate_time": {
-      "type": "integer",
-      "default": -20,
-      "description": "Time in seconds between suffocation damage",
-      "title": "TODO title"
-    },
-    "inhaleTime": {
-      "type": "number",
-      "default": 0,
-      "description": "Time in seconds to recover breath to maximum",
-      "title": "TODO title"
-    },
-    "inhale_time": {
-      "type": "number",
-      "default": 0,
-      "description": "Time in seconds to recover breath to maximum",
-      "title": "TODO title"
-    },
-    "breathesAir": {
-      "type": "boolean",
-      "default": true,
-      "description": "If true, this entity can breathe in air",
-      "title": "TODO title"
-    },
-    "breathes_air": {
-      "type": "boolean",
-      "default": true,
-      "description": "If true, this entity can breathe in air",
-      "title": "TODO title"
-    },
-    "breathesWater": {
-      "type": "boolean",
-      "default": false,
-      "description": "If true, this entity can breathe in water",
-      "title": "TODO title"
-    },
-    "breathes_water": {
-      "type": "boolean",
-      "default": false,
-      "description": "If true, this entity can breathe in water",
-      "title": "TODO title"
-    },
-    "breathesLava": {
-      "type": "boolean",
-      "default": false,
-      "description": "If true, this entity can breathe in lava",
-      "title": "TODO title"
-    },
-    "breathes_lava": {
-      "type": "boolean",
-      "default": false,
-      "description": "If true, this entity can breathe in lava",
-      "title": "TODO title"
-    },
-    "breathesSolids": {
-      "type": "boolean",
-      "default": false,
-      "description": "If true, this entity can breathe in solid blocks",
-      "title": "TODO title"
-    },
-    "breathes_solids": {
-      "type": "boolean",
-      "default": false,
-      "description": "If true, this entity can breathe in solid blocks",
-      "title": "TODO title"
-    },
-    "generatesBubbles": {
-      "type": "boolean",
-      "default": true,
-      "description": "If true, this entity will have visible bubbles while in water",
-      "title": "TODO title"
-    },
-    "generates_bubbles": {
-      "type": "boolean",
-      "default": true,
-      "description": "If true, this entity will have visible bubbles while in water",
-      "title": "TODO title"
-    },
+    "totalSupply": { "type": "integer", "default": 15, "description": "Time in seconds the entity can hold its breath", "title": "TODO Title" },
+    "total_supply": { "type": "integer", "default": 15, "description": "Time in seconds the entity can hold its breath", "title": "TODO Title" },
+    "suffocateTime": { "type": "integer", "default": -20, "description": "Time in seconds between suffocation damage", "title": "TODO Title" },
+    "suffocate_time": { "type": "integer", "default": -20, "description": "Time in seconds between suffocation damage", "title": "TODO Title" },
+    "inhaleTime": { "type": "number", "default": 0, "description": "Time in seconds to recover breath to maximum", "title": "TODO Title" },
+    "inhale_time": { "type": "number", "default": 0, "description": "Time in seconds to recover breath to maximum", "title": "TODO Title" },
+    "breathesAir": { "type": "boolean", "default": true, "description": "If true, this entity can breathe in air", "title": "TODO Title" },
+    "breathes_air": { "type": "boolean", "default": true, "description": "If true, this entity can breathe in air", "title": "TODO Title" },
+    "breathesWater": { "type": "boolean", "default": false, "description": "If true, this entity can breathe in water", "title": "TODO Title" },
+    "breathes_water": { "type": "boolean", "default": false, "description": "If true, this entity can breathe in water", "title": "TODO Title" },
+    "breathesLava": { "type": "boolean", "default": false, "description": "If true, this entity can breathe in lava", "title": "TODO Title" },
+    "breathes_lava": { "type": "boolean", "default": false, "description": "If true, this entity can breathe in lava", "title": "TODO Title" },
+    "breathesSolids": { "type": "boolean", "default": false, "description": "If true, this entity can breathe in solid blocks", "title": "TODO Title" },
+    "breathes_solids": { "type": "boolean", "default": false, "description": "If true, this entity can breathe in solid blocks", "title": "TODO Title" },
+    "generatesBubbles": { "type": "boolean", "default": true, "description": "If true, this entity will have visible bubbles while in water", "title": "TODO Title" },
+    "generates_bubbles": { "type": "boolean", "default": true, "description": "If true, this entity will have visible bubbles while in water", "title": "TODO Title" },
     "breatheBlocks": {
       "type": "array",
       "description": "List of blocks this entity can breathe in, in addition to the above",
-      "items": {
-        "$ref": "../../../../general/blocks_identifiers.json"
-      },
-      "title": "TODO title"
+      "items": { "$ref": "../../../../general/blocks_identifiers.json" },
+      "title": "TODO Title"
     },
     "breathe_blocks": {
       "type": "array",
       "description": "List of blocks this entity can breathe in, in addition to the above",
-      "items": {
-        "$ref": "../../../../general/blocks_identifiers.json"
-      },
-      "title": "TODO title"
+      "items": { "$ref": "../../../../general/blocks_identifiers.json" },
+      "title": "TODO Title"
     },
     "nonBreatheBlocks": {
       "type": "array",
       "description": "List of blocks this entity can't breathe in, in addition to the above",
-      "items": {
-        "$ref": "../../../../general/blocks_identifiers.json"
-      },
-      "title": "TODO title"
+      "items": { "$ref": "../../../../general/blocks_identifiers.json" },
+      "title": "TODO Title"
     },
     "non_breathe_blocks": {
       "type": "array",
       "description": "List of blocks this entity can't breathe in, in addition to the above",
-      "items": {
-        "$ref": "../../../../general/blocks_identifiers.json"
-      },
-      "title": "TODO title"
+      "items": { "$ref": "../../../../general/blocks_identifiers.json" },
+      "title": "TODO Title"
     }
   }
 }

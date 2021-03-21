@@ -3,6 +3,6 @@
   "$id": "blockception.minecraft.behaviour.blocks.1.10.0.minecraft.display_name",
   "additionalProperties": false,
   "type": "string",
-  "title": "Display name 1.10.0",
+  "title": "Display Name 1.10.0",
   "description": "Specifies the display name id for the block."
 }

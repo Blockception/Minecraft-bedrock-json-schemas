@@ -2,21 +2,13 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.swim_idle",
   "type": "object",
-  "title": "Swim idle 1.8.0",
+  "title": "Swim Idle 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/base_priority.json" },
-    "idle_time": {
-      "title": "TODO",
-      "description": "TODO Description",
-      "type": "number"
-    },
-    "success_rate": {
-      "title": "TODO",
-      "description": "TODO Description",
-      "type": "number"
-    }
+    "idle_time": { "title": "TODO", "description": "TODO Description", "type": "number" },
+    "success_rate": { "title": "TODO", "description": "TODO Description", "type": "number" }
   },
   "description": "TODO description"
 }

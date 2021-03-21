@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.blocks.1.16.100.minecraft.entity_collision",
   "additionalProperties": false,
-  "title": "Entity collision 1.16.100",
+  "title": "Entity Collision 1.16.100",
   "description": "Can only be set to false, it disables the collision of the block with entities.",
   "oneOf": [
     { "type": "boolean", "const": false },

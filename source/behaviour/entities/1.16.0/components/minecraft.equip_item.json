@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.16.0.minecraft.equip_item",
   "type": "object",
-  "title": "Equip item 1.16.0",
+  "title": "Equip Item 1.16.0",
   "description": "The entity puts on the desired equipment.",
   "additionalProperties": false,
   "properties": {}

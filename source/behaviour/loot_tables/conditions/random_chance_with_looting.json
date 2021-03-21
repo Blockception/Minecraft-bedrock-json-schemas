@@ -4,24 +4,15 @@
   "type": "object",
   "additionalProperties": false,
   "description": "Sets a random chance of the specified value. Looting enchantment increase the random chance multiplier.",
-  "title": "Random chance with looting",
+  "title": "Random Chance With Looting",
   "properties": {
-    "condition": {
-      "type": "string",
-      "title": "Condition",
-      "description": "TODO"
-    },
-    "chance": {
-      "type": "number",
-      "default": 0,
-      "description": "The random chance of the value.",
-      "title": "Chance"
-    },
+    "condition": { "type": "string", "title": "Condition", "description": "TODO" },
+    "chance": { "type": "number", "default": 0, "description": "The random chance of the value.", "title": "Chance" },
     "looting_multiplier": {
       "type": "number",
       "default": 0,
       "description": "The multiplier for the chance if the target entity has the looting enchant that affects the actor.",
-      "title": "Looting multiplier"
+      "title": "Looting Multiplier"
     }
   }
 }

@@ -7,7 +7,7 @@
   "additionalProperties": false,
   "properties": {
     "restriction_radius": {
-      "title": "Restriction radius",
+      "title": "Restriction Radius",
       "description": "The radius that the entity will be restricted to in relation to its home",
       "type": "integer",
       "default": -1

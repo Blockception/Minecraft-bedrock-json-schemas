@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.resource.particle.1.10.0.emitter_rate_instant",
   "type": "object",
-  "title": "The emitter rate instant component for 1.10.0",
+  "title": "Emitter Rate Instant Component For 1.10.0",
   "additionalProperties": false,
   "properties": {
     "num_particles": {

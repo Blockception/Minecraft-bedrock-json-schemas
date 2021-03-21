@@ -3,10 +3,8 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.make_love",
   "description": "Allows the villager to look for a mate to spawn other villagers with. Can only be used by Villagers.",
   "type": "object",
-  "title": "Make love 1.8.0",
+  "title": "Make Love 1.8.0",
   "additionalProperties": false,
   "required": [],
-  "properties": {
-    "priority": { "$ref": "./types/base_priority.json" }
-  }
+  "properties": { "priority": { "$ref": "./types/base_priority.json" } }
 }

@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.type.range_number_type.1.13.0",
-  "title": "Range [a, b]",
+  "title": "Range [a, B]",
   "description": "A described range",
   "items": [
     { "type": "number", "title": "Range: A", "description": "The first value of the range" },

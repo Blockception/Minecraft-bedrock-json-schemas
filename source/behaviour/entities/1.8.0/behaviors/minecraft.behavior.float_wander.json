@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.float_wander",
   "type": "object",
-  "title": "Float wander 1.8.0",
+  "title": "Float Wander 1.8.0",
   "description": "Allows the mob to float around like the Ghast.",
   "additionalProperties": false,
   "required": [],
@@ -20,18 +20,8 @@
       "description": "Distance in blocks that the mob will look up or down for a new spot to move to. Must be at least 1",
       "title": "Y Dist"
     },
-    "y_offset": {
-      "type": "number",
-      "default": 0.0,
-      "description": "Height in blocks to add to the selected target position",
-      "title": "Y Offset"
-    },
-    "must_reach": {
-      "type": "boolean",
-      "default": false,
-      "description": "If true, the point has to be reachable to be a valid target",
-      "title": "Must Reach"
-    },
+    "y_offset": { "type": "number", "default": 0.0, "description": "Height in blocks to add to the selected target position", "title": "Y Offset" },
+    "must_reach": { "type": "boolean", "default": false, "description": "If true, the point has to be reachable to be a valid target", "title": "Must Reach" },
     "random_reselect": {
       "type": "boolean",
       "default": false,

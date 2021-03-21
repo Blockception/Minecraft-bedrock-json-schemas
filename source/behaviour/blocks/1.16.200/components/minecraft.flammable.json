@@ -7,17 +7,7 @@
   "description": "Describes the flammable properties for this block.",
   "additionalItems": false,
   "properties": {
-    "burn_odds": {
-      "type": "integer",
-      "default": 0,
-      "description": "How likely the block will be destroyed by flames when on fire.",
-      "title": "Burn odds"
-    },
-    "flame_odds": {
-      "type": "integer",
-      "default": 0,
-      "description": "How likely the block will catch flame when next to a fire.",
-      "title": "Flame odds"
-    }
+    "burn_odds": { "type": "integer", "default": 0, "description": "How likely the block will be destroyed by flames when on fire.", "title": "Burn Odds" },
+    "flame_odds": { "type": "integer", "default": 0, "description": "How likely the block will catch flame when next to a fire.", "title": "Flame Odds" }
   }
 }

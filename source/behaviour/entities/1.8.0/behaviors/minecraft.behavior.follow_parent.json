@@ -6,10 +6,5 @@
   "description": "Allows the mob to follow their parent around.",
   "additionalProperties": false,
   "required": [],
-  "properties": {
-    "priority": {
-      "$ref": "types/base_priority.json"
-    },
-    "speed_multiplier": { "$ref": "./types/base_speed_multiplier.json" }
-  }
+  "properties": { "priority": { "$ref": "types/base_priority.json" }, "speed_multiplier": { "$ref": "./types/base_speed_multiplier.json" } }
 }

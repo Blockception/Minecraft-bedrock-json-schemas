@@ -7,16 +7,12 @@
   "additionalProperties": false,
   "required": ["protection", "texture_type"],
   "properties": {
-    "protection": {
-      "type": "number",
-      "description": "How much protection does the armor item have.",
-      "title": "Protection"
-    },
+    "protection": { "type": "number", "description": "How much protection does the armor item have.", "title": "Protection" },
     "texture_type": {
       "type": "string",
       "default": "",
       "description": "Texture Type to apply for the armor. Note that Horse armor is restricted to leather, iron, gold, or diamond.",
-      "title": "Texture type"
+      "title": "Texture Type"
     }
   }
 }

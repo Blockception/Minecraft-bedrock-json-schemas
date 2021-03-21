@@ -5,11 +5,5 @@
   "type": "object",
   "title": "Weight 1.8.0",
   "description": "TODO",
-  "properties": {
-    "default": {
-      "type": "integer",
-      "description": "TODO",
-      "title": "Default"
-    }
-  }
+  "properties": { "default": { "type": "integer", "description": "TODO", "title": "Default" } }
 }

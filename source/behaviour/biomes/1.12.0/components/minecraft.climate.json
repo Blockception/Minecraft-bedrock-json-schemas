@@ -8,41 +8,24 @@
   "maxProperties": 7,
   "additionalProperties": false,
   "properties": {
-    "temperature": {
-      "title": "Temperature",
-      "description": "UNDOCUMENATED",
-      "type": "number"
-    },
-    "downfall": {
-      "title": "Downfall",
-      "description": "UNDOCUMENATED",
-      "type": "number"
-    },
-    "red_spores": {
-      "title": "Red spores",
-      "description": "UNDOCUMENATED",
-      "type": "number"
-    },
-    "blue_spores": {
-      "title": "Blue spores",
-      "description": "UNDOCUMENATED",
-      "type": "number"
-    },
-    "ash": {
-      "title": "Ash",
-      "description": "UNDOCUMENATED",
-      "type": "number"
-    },
-    "white_ash": {
-      "title": "White ash",
-      "description": "UNDOCUMENATED",
-      "type": "number"
-    },
+    "temperature": { "title": "Temperature", "description": "UNDOCUMENATED", "type": "number" },
+    "downfall": { "title": "Downfall", "description": "UNDOCUMENATED", "type": "number" },
+    "red_spores": { "title": "Red Spores", "description": "UNDOCUMENATED", "type": "number" },
+    "blue_spores": { "title": "Blue Spores", "description": "UNDOCUMENATED", "type": "number" },
+    "ash": { "title": "Ash", "description": "UNDOCUMENATED", "type": "number" },
+    "white_ash": { "title": "White Ash", "description": "UNDOCUMENATED", "type": "number" },
     "snow_accumulation": {
-      "title": "Snow accumulation",
+      "title": "Snow Accumulation",
       "description": "UNDOCUMENATED",
       "type": "array",
-      "items": [{ "type": "number" }, { "type": "number" }]
+      "items": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ]
     }
   }
 }

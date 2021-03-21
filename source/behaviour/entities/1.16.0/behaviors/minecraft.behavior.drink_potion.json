@@ -9,11 +9,7 @@
   "properties": {
     "priority": { "$ref": "./types/base_priority.json" },
     "speed_multiplier": { "$ref": "./types/base_speed_multiplier.json" },
-    "speed_modifier": {
-      "default": 0.0,
-      "description": "TODO description: speed modifier",
-      "title": "Speed Modifier"
-    },
+    "speed_modifier": { "default": 0.0, "description": "TODO description: speed modifier", "title": "Speed Modifier" },
     "potions": {
       "type": "array",
       "description": "A list of potions that this entity can drink.",
@@ -21,12 +17,7 @@
         "required": ["id", "chance", "filters"],
         "additionalProperties": false,
         "properties": {
-          "id": {
-            "type": "integer",
-            "default": -1,
-            "description": "The registry ID of the potion to use",
-            "title": "Id"
-          },
+          "id": { "type": "integer", "default": -1, "description": "The registry ID of the potion to use", "title": "Id" },
           "chance": {
             "type": "number",
             "default": 1.0,
@@ -35,11 +26,7 @@
             "description": "The percent chance (from 0.0 to 1.0) of this potion being selected when searching for a potion to use.",
             "title": "Chance"
           },
-          "filters": {
-            "description": "The filters to use when determining if this potion can be selected.",
-            "$ref": "../filters.json",
-            "title": "Filters"
-          }
+          "filters": { "description": "The filters to use when determining if this potion can be selected.", "$ref": "../filters.json", "title": "Filters" }
         },
         "description": "TODO description: potions",
         "title": "Potions"

@@ -7,15 +7,7 @@
   "additionalProperties": false,
   "required": ["projectile_entity"],
   "properties": {
-    "minimum_critical_power": {
-      "type": "number",
-      "title": "Minimum critical power",
-      "description": "How long you must charge a projectile for it to critically hit."
-    },
-    "projectile_entity": {
-      "title": "Projectile entity",
-      "description": "The entity to be fired as a projectile.",
-      "type": "string"
-    }
+    "minimum_critical_power": { "type": "number", "title": "Minimum Critical Power", "description": "How long you must charge a projectile for it to critically hit." },
+    "projectile_entity": { "title": "Projectile Entity", "description": "The entity to be fired as a projectile.", "type": "string" }
   }
 }

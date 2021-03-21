@@ -5,11 +5,7 @@
   "required": ["format_version", "minecraft:item"],
   "title": "Item",
   "properties": {
-    "format_version": {
-      "type": "string",
-      "description": "TODO description",
-      "title": "TODO title"
-    },
+    "format_version": { "type": "string", "description": "TODO description", "title": "TODO Title" },
     "minecraft:item": {
       "title": "Item",
       "description": "TODO",
@@ -24,16 +20,8 @@
           "type": "object",
           "additionalProperties": false,
           "properties": {
-            "identifier": {
-              "title": "Identifier",
-              "description": "TODO",
-              "$ref": "../../../general/item/identifier.json"
-            },
-            "category": {
-              "title": "Category",
-              "description": "TODO",
-              "type": "string"
-            }
+            "identifier": { "title": "Identifier", "description": "TODO", "$ref": "../../../general/item/identifier.json" },
+            "category": { "title": "Category", "description": "TODO", "type": "string" }
           }
         },
         "components": {
@@ -41,17 +29,8 @@
           "description": "TODO",
           "additionalProperties": false,
           "properties": {
-            "minecraft:icon": {
-              "title": "Icon",
-              "description": "The texture defined in `textures/item_texture.json`",
-              "type": "string"
-            },
-            "minecraft:render_offsets": {
-              "type": "string",
-              "description": "TODO",
-              "title": "Render offsets",
-              "enum": ["apple"]
-            }
+            "minecraft:icon": { "title": "Icon", "description": "The texture defined in `textures/item_texture.json`", "type": "string" },
+            "minecraft:render_offsets": { "type": "string", "description": "TODO", "title": "Render Offsets", "enum": ["apple"] }
           }
         }
       }

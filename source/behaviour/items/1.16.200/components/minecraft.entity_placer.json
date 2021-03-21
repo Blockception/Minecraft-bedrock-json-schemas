@@ -1,34 +1,24 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.1.16.200.items.minecraft:entity_placer",
-  "title": "Entity placer",
+  "title": "Entity Placer",
   "description": "Entity placer item component. You can specifiy allowed blocks that the item is restricted to.",
   "type": "object",
   "additionalProperties": false,
   "required": ["entity"],
   "properties": {
-    "entity": {
-      "type": "string",
-      "title": "Entity",
-      "description": "The entity to be placed in the world."
-    },
+    "entity": { "type": "string", "title": "Entity", "description": "The entity to be placed in the world." },
     "dispense_on": {
       "type": "array",
-      "title": "Dispense on",
+      "title": "Dispense On",
       "description": "List of block descriptors that contain blocks that this item can be dispensed on. If left empty, all blocks will be allowed.",
-      "items": {
-        "title": "UNDOCUMENTATED",
-        "description": "UNDOCUMENTATED"
-      }
+      "items": { "title": "UNDOCUMENTATED", "description": "UNDOCUMENTATED" }
     },
     "use_on": {
       "type": "array",
-      "title": "Use on",
+      "title": "Use On",
       "description": "List of block descriptors that contain blocks that this item can be used on. If left empty, all blocks will be allowed.",
-      "items": {
-        "title": "UNDOCUMENTATED",
-        "description": "UNDOCUMENTATED"
-      }
+      "items": { "title": "UNDOCUMENTATED", "description": "UNDOCUMENTATED" }
     }
   }
 }

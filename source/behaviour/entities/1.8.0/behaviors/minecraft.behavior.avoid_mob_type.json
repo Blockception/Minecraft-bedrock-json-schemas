@@ -4,22 +4,12 @@
   "additionalProperties": false,
   "description": "Allows this entity to avoid certain mob types.",
   "type": "object",
-  "title": "Avoid mob type 1.8.0",
+  "title": "Avoid Mob Type 1.8.0",
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/base_priority.json" },
-    "max_dist": {
-      "type": "number",
-      "default": 0,
-      "description": "Maximum distance to look for an entity",
-      "title": "Max Dist"
-    },
-    "max_flee": {
-      "type": "number",
-      "default": 0.5,
-      "description": "Distance in blocks within the mob considers it should stop fleeing.",
-      "title": "Max Flee"
-    },
+    "max_dist": { "type": "number", "default": 0, "description": "Maximum distance to look for an entity", "title": "Max Dist" },
+    "max_flee": { "type": "number", "default": 0.5, "description": "Distance in blocks within the mob considers it should stop fleeing.", "title": "Max Flee" },
     "walk_speed_multiplier": {
       "type": "number",
       "default": 1.0,
@@ -45,21 +35,13 @@
       "title": "Ignore Visibility"
     },
     "entity_types": { "$ref": "../types/entity_types.json", "description": "TODO description: entity types", "title": "Entity Types" },
-    "avoid_mob_sound": {
-      "title": "Avoid mob sound",
-      "description": "UNDOCUMENTATED",
-      "type": "string"
-    },
-    "remove_target": {
-      "title": "Remove target",
-      "description": "UNDOCUMENTATED",
-      "type": "boolean"
-    },
-    "on_escape_event": { "$ref": "../types/event.json", "title": "On escape event", "description": "UNDOCUMENTATED" },
+    "avoid_mob_sound": { "title": "Avoid Mob Sound", "description": "UNDOCUMENTATED", "type": "string" },
+    "remove_target": { "title": "Remove Target", "description": "UNDOCUMENTATED", "type": "boolean" },
+    "on_escape_event": { "$ref": "../types/event.json", "title": "On Escape Event", "description": "UNDOCUMENTATED" },
     "sound_interval": {
       "default": 0,
       "description": "UNDOCUMENTATED",
-      "title": "Sound interval",
+      "title": "Sound Interval",
       "oneOf": [
         {
           "type": "array",
@@ -69,14 +51,7 @@
           ]
         },
         { "type": "number" },
-        {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "range_min": { "type": "number" },
-            "range_max": { "type": "number" }
-          }
-        }
+        { "type": "object", "additionalProperties": false, "properties": { "range_min": { "type": "number" }, "range_max": { "type": "number" } } }
       ]
     }
   }

@@ -7,12 +7,7 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "duration": {
-      "type": "number",
-      "default": 1200.0,
-      "description": "Amount of time before the entity grows up, -1 for always a baby.",
-      "title": "Duration"
-    },
+    "duration": { "type": "number", "default": 1200.0, "description": "Amount of time before the entity grows up, -1 for always a baby.", "title": "Duration" },
     "feedItems": {
       "description": "List of items that can be fed to the entity. Includes 'item' for the item name and 'growth' to define how much time it grows up by",
       "items": {
@@ -20,23 +15,11 @@
           {
             "type": "object",
             "properties": {
-              "item": {
-                "type": "string",
-                "description": "The item name that can be used to feed",
-                "title": "Item",
-                "$ref": "../../../../general/item/identifier.json"
-              },
-              "growth": {
-                "type": "integer",
-                "description": "The amount that counts for aging",
-                "title": "Growth"
-              }
+              "item": { "type": "string", "description": "The item name that can be used to feed", "title": "Item", "$ref": "../../../../general/item/identifier.json" },
+              "growth": { "type": "integer", "description": "The amount that counts for aging", "title": "Growth" }
             }
           },
-          {
-            "type": "string",
-            "$ref": "../../../../general/item/identifier.json"
-          }
+          { "type": "string", "$ref": "../../../../general/item/identifier.json" }
         ],
         "description": "TODO description: feedItems",
         "title": "Feed Items"
@@ -46,33 +29,13 @@
     "drop_items": {
       "type": "array",
       "description": "List of items that the entity drops when it grows up.",
-      "items": {
-        "type": "string",
-        "description": "Item names",
-        "title": "Drop Items",
-        "$ref": "../../../../general/item/identifier.json"
-      },
+      "items": { "type": "string", "description": "Item names", "title": "Drop Items", "$ref": "../../../../general/item/identifier.json" },
       "title": "Drop Items"
     },
     "grow_up": {
       "description": "Event to run when this entity grows up",
-      "oneOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "object",
-          "properties": {
-            "event": {
-              "type": "string"
-            },
-            "target": {
-              "$ref": "../filters/types/base_subject.json"
-            }
-          }
-        }
-      ],
-      "title": "TODO title"
+      "oneOf": [{ "type": "string" }, { "type": "object", "properties": { "event": { "type": "string" }, "target": { "$ref": "../filters/types/base_subject.json" } } }],
+      "title": "TODO Title"
     }
   }
 }

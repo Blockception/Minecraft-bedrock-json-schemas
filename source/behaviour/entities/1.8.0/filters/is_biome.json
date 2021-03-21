@@ -2,15 +2,11 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.filters.is_biome",
   "type": "object",
-  "title": "Filters is biome 1.8.0",
+  "title": "Filters Is Biome 1.8.0",
   "description": "Tests whether the Subject is currently in the named biome.",
   "required": ["value"],
   "properties": {
-    "test": {
-      "type": "string",
-      "title": "The test property",
-      "description": "Tests whether the Subject is currently in the named biome."
-    },
+    "test": { "type": "string", "title": "Test Property", "description": "Tests whether the Subject is currently in the named biome." },
     "operator": { "$ref": "./types/base_operator.json" },
     "subject": { "$ref": "./types/base_subject.json" },
     "value": {

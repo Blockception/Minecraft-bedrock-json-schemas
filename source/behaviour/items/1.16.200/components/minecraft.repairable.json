@@ -6,13 +6,9 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "on_repaired": {
-      "title": "On repaired",
-      "description": "Event that is called when this item has been repaired.",
-      "type": "object"
-    },
+    "on_repaired": { "title": "On Repaired", "description": "Event that is called when this item has been repaired.", "type": "object" },
     "repair_items": {
-      "title": "Repair items",
+      "title": "Repair Items",
       "description": "Repair item entries.",
       "type": "array",
       "items": {
@@ -21,21 +17,8 @@
         "description": "UNDOCUMENATED",
         "additionalProperties": false,
         "properties": {
-          "items": {
-            "title": "Items",
-            "description": "UNDOCUMENATED",
-            "type": "array",
-            "items": {
-              "type": "string",
-              "title": "Item",
-              "description": "UNDOCUMENATED"
-            }
-          },
-          "repair_amount": {
-            "title": "Repair amount",
-            "description": "UNDOCUMENATED",
-            "$ref": "../../../../molang/1.8.0/number.json"
-          }
+          "items": { "title": "Items", "description": "UNDOCUMENATED", "type": "array", "items": { "type": "string", "title": "Item", "description": "UNDOCUMENATED" } },
+          "repair_amount": { "title": "Repair Amount", "description": "UNDOCUMENATED", "$ref": "../../../../molang/1.8.0/number.json" }
         }
       }
     }

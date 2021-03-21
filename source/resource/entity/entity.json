@@ -8,33 +8,19 @@
         "description": {
           "identifier": "minecraft:entity",
           "materials": { "default": "entity_custom" },
-          "textures": {
-            "default": "textures/entity/custom/entity"
-          },
-          "geometry": {
-            "default": "geometry.entity"
-          },
+          "textures": { "default": "textures/entity/custom/entity" },
+          "geometry": { "default": "geometry.entity" },
           "animations": {},
           "particle_effects": {},
           "scripts": {},
           "render_controllers": ["controller.render.entity"],
-
-          "spawn_egg": {
-            "base_color": "#288483",
-            "overlay_color": "#2B7135"
-          }
+          "spawn_egg": { "base_color": "#288483", "overlay_color": "#2B7135" }
         }
       }
     }
   ],
   "allOf": [
-    {
-      "if": { "properties": { "format_version": { "type": "string", "const": "1.8.0" } } },
-      "then": { "$ref": "./1.8.0/entity.json" }
-    },
-    {
-      "if": { "properties": { "format_version": { "type": "string", "const": "1.10.0" } } },
-      "then": { "$ref": "./1.10.0/entity.json" }
-    }
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.8.0" } } }, "then": { "$ref": "./1.8.0/entity.json" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.10.0" } } }, "then": { "$ref": "./1.10.0/entity.json" } }
   ]
 }

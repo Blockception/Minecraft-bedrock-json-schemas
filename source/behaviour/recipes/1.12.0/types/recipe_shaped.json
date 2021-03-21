@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.1.12.0.recipe.shaped",
   "description": "Represents a shaped crafting recipe for a crafting table. The key used in the pattern may be any single character except the 'space' character, which is reserved for empty slots in a recipe..",
-  "title": "Shaped recipe 1.12.0",
+  "title": "Shaped Recipe 1.12.0",
   "additionalProperties": false,
   "required": ["description"],
   "type": "object",
@@ -14,45 +14,22 @@
       "description": "Patten key character mapped to item names.",
       "title": "Key",
       "minProperties": 1,
-      "additionalProperties": {
-        "$ref": "./base types/item.json"
-      }
+      "additionalProperties": { "$ref": "./base types/item.json" }
     },
-    "group": {
-      "type": "string",
-      "title": "UNDOCUMENTATED",
-      "description": "UNDOCUMENTATED"
-    },
+    "group": { "type": "string", "title": "UNDOCUMENTATED", "description": "UNDOCUMENTATED" },
     "pattern": {
       "type": "array",
       "description": "Characters that represent a pattern to be defined by keys.",
       "title": "Pattern",
       "maxItems": 3,
       "minItems": 1,
-      "items": {
-        "type": "string",
-        "title": "Pattern"
-      }
+      "items": { "type": "string", "title": "Pattern" }
     },
-    "priority": {
-      "type": "integer",
-      "description": "Item used as output for the furnace recipe.",
-      "title": "Priority"
-    },
+    "priority": { "type": "integer", "description": "Item used as output for the furnace recipe.", "title": "Priority" },
     "result": {
       "description": "When input items match the pattern then these items are the result.",
       "title": "Result",
-      "oneOf": [
-        {
-          "$ref": "./base types/item.json"
-        },
-        {
-          "type": "array",
-          "items": {
-            "$ref": "./base types/item.json"
-          }
-        }
-      ]
+      "oneOf": [{ "$ref": "./base types/item.json" }, { "type": "array", "items": { "$ref": "./base types/item.json" } }]
     }
   }
 }

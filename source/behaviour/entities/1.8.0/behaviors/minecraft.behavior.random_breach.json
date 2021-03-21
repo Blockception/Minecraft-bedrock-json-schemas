@@ -3,35 +3,30 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.player_ride_tamed",
   "description": "Allows the mob to randomly break surface of the water.",
   "type": "object",
-  "title": "player ride tamed 1.8.0",
+  "title": "Player Ride Tamed 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {
     "priority": { "$ref": "types/base_priority.json" },
     "speed_multiplier": { "$ref": "types/base_speed_multiplier.json" },
-    "cooldown_time": {
-      "type": "number",
-      "default": 0,
-      "description": "Time in seconds the mob has to wait before using the goal again",
-      "title": "TODO title"
-    },
+    "cooldown_time": { "type": "number", "default": 0, "description": "Time in seconds the mob has to wait before using the goal again", "title": "TODO Title" },
     "interval": {
       "type": "integer",
       "default": 120,
       "description": "A random value to determine when to randomly move somewhere. This has a 1/interval chance to choose this goal",
-      "title": "TODO title"
+      "title": "TODO Title"
     },
     "xz_dist": {
       "type": "integer",
       "default": 10,
       "description": "Distance in blocks on ground that the mob will look for a new spot to move to. Must be at least 1",
-      "title": "TODO title"
+      "title": "TODO Title"
     },
     "y_dist": {
       "type": "integer",
       "default": 7,
       "description": "Distance in blocks that the mob will look up or down for a new spot to move to. Must be at least 1",
-      "title": "TODO title"
+      "title": "TODO Title"
     }
   }
 }

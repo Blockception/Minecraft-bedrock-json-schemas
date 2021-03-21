@@ -2,20 +2,9 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.follow_range",
   "type": "object",
-  "title": "Follow range 1.8.0",
+  "title": "Follow Range 1.8.0",
   "additionalProperties": false,
   "required": [],
-  "properties": {
-    "value": {
-      "type": "integer",
-      "description": "TODO",
-      "title": "Value"
-    },
-    "max": {
-      "type": "integer",
-      "description": "TODO",
-      "title": "Max"
-    }
-  },
+  "properties": { "value": { "type": "integer", "description": "TODO", "title": "Value" }, "max": { "type": "integer", "description": "TODO", "title": "Max" } },
   "description": "TODO description: "
 }

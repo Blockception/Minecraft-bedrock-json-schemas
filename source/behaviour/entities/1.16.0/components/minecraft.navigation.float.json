@@ -10,119 +10,75 @@
       "type": "boolean",
       "default": false,
       "description": "Tells the pathfinder to avoid blocks that cause damage when finding a path",
-      "title": "avoid damage blocks"
+      "title": "Avoid Damage Blocks"
     },
     "avoid_portals": {
       "type": "boolean",
       "default": false,
       "description": "Tells the pathfinder to avoid portals (like nether portals) when finding a path",
-      "title": "avoid portals"
+      "title": "Avoid Portals"
     },
     "avoid_sun": {
       "type": "boolean",
       "default": false,
       "description": "Whether or not the pathfinder should avoid tiles that are exposed to the sun when creating paths",
-      "title": "avoid sun"
+      "title": "Avoid Sun"
     },
-    "avoid_water": {
-      "type": "boolean",
-      "default": false,
-      "description": "Tells the pathfinder to avoid water when creating a path",
-      "title": "avoid water"
-    },
+    "avoid_water": { "type": "boolean", "default": false, "description": "Tells the pathfinder to avoid water when creating a path", "title": "Avoid Water" },
     "blocks_to_avoid": {
       "type": "array",
       "description": "Tells the pathfinder which blocks to avoid when creating a path",
-      "title": "blocks to avoid",
-      "items": {
-        "title": "Block",
-        "description": "UNDOCUMENTATED",
-        "$ref": "../../../../general/block/identifier.json"
-      }
+      "title": "Blocks To Avoid",
+      "items": { "title": "Block", "description": "UNDOCUMENTATED", "$ref": "../../../../general/block/identifier.json" }
     },
-    "can_breach": {
-      "type": "boolean",
-      "default": false,
-      "description": "Tells the pathfinder whether or not it can jump out of water (like a dolphin)",
-      "title": "can breach"
-    },
+    "can_breach": { "type": "boolean", "default": false, "description": "Tells the pathfinder whether or not it can jump out of water (like a dolphin)", "title": "Can Breach" },
     "can_break_doors": {
       "type": "boolean",
       "default": false,
       "description": "Tells the pathfinder that it can path through a closed door and break it",
-      "title": "can break doors"
+      "title": "Can Break Doors"
     },
-    "can_jump": {
-      "type": "boolean",
-      "default": true,
-      "description": "Tells the pathfinder whether or not it can jump up blocks",
-      "title": "can jump"
-    },
+    "can_jump": { "type": "boolean", "default": true, "description": "Tells the pathfinder whether or not it can jump up blocks", "title": "Can Jump" },
     "can_open_doors": {
       "type": "boolean",
       "default": false,
       "description": "Tells the pathfinder that it can path through a closed door assuming the AI will open the door",
-      "title": "can open doors"
+      "title": "Can Open Doors"
     },
     "can_open_iron_doors": {
       "type": "boolean",
       "default": false,
       "description": "Tells the pathfinder that it can path through a closed iron door assuming the AI will open the door",
-      "title": "can open iron doors"
+      "title": "Can Open Iron Doors"
     },
-    "can_pass_doors": {
-      "type": "boolean",
-      "default": true,
-      "description": "Whether a path can be created through a door",
-      "title": "can pass doors"
-    },
-    "can_path_from_air": {
-      "type": "boolean",
-      "default": false,
-      "description": "Tells the pathfinder that it can start pathing when in the air",
-      "title": "can path from air"
-    },
+    "can_pass_doors": { "type": "boolean", "default": true, "description": "Whether a path can be created through a door", "title": "Can Pass Doors" },
+    "can_path_from_air": { "type": "boolean", "default": false, "description": "Tells the pathfinder that it can start pathing when in the air", "title": "Can Path From Air" },
     "can_path_over_lava": {
       "type": "boolean",
       "default": false,
       "description": "Tells the pathfinder whether or not it can travel on the surface of the lava",
-      "title": "can path over lava"
+      "title": "Can Path Over Lava"
     },
     "can_path_over_water": {
       "type": "boolean",
       "default": false,
       "description": "Tells the pathfinder whether or not it can travel on the surface of the water",
-      "title": "can path over water"
+      "title": "Can Path Over Water"
     },
-    "can_sink": {
-      "type": "boolean",
-      "default": true,
-      "description": "Tells the pathfinder whether or not it will be pulled down by gravity while in water",
-      "title": "can sink"
-    },
+    "can_sink": { "type": "boolean", "default": true, "description": "Tells the pathfinder whether or not it will be pulled down by gravity while in water", "title": "Can Sink" },
     "can_swim": {
       "type": "boolean",
       "default": false,
       "description": "Tells the pathfinder whether or not it can path anywhere through water and plays swimming animation along that path",
-      "title": "can swim"
+      "title": "Can Swim"
     },
-    "can_walk": {
-      "type": "boolean",
-      "default": true,
-      "description": "Tells the pathfinder whether or not it can walk on the ground outside water",
-      "title": "can walk"
-    },
+    "can_walk": { "type": "boolean", "default": true, "description": "Tells the pathfinder whether or not it can walk on the ground outside water", "title": "Can Walk" },
     "can_walk_in_lava": {
       "type": "boolean",
       "default": false,
       "description": "Tells the pathfinder whether or not it can travel in lava like walking on ground",
-      "title": "can walk in lava"
+      "title": "Can Walk In Lava"
     },
-    "is_amphibious": {
-      "type": "boolean",
-      "default": false,
-      "description": "Tells the pathfinder whether or not it can walk on the ground underwater",
-      "title": "is amphibious"
-    }
+    "is_amphibious": { "type": "boolean", "default": false, "description": "Tells the pathfinder whether or not it can walk on the ground underwater", "title": "Is Amphibious" }
   }
 }

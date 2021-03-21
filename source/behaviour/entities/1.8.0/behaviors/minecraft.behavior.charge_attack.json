@@ -3,15 +3,8 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.charge_attack",
   "additionalProperties": false,
   "type": "object",
-  "title": "Charge attack 1.8.0",
+  "title": "Charge Attack 1.8.0",
   "description": "Allows the mob to attack its target by running at it.",
   "required": [],
-  "properties": {
-    "priority": {
-      "$ref": "types/base_priority.json"
-    },
-    "speed_multiplier": {
-      "$ref": "types/base_speed_multiplier.json"
-    }
-  }
+  "properties": { "priority": { "$ref": "types/base_priority.json" }, "speed_multiplier": { "$ref": "types/base_speed_multiplier.json" } }
 }

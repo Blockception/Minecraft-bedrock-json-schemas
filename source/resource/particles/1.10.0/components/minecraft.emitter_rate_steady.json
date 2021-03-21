@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.resource.particle.1.10.0.emitter_rate_steady",
   "type": "object",
-  "title": "The emitter rate steady component for 1.10.0",
+  "title": "Emitter Rate Steady Component For 1.10.0",
   "additionalProperties": false,
   "properties": {
     "max_particles": {

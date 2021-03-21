@@ -3,29 +3,14 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.look_at_entity",
   "description": "Allows the mob to look at nearby entities.",
   "type": "object",
-  "title": "Look at entity 1.8.0",
+  "title": "Look At Entity 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/base_priority.json" },
-    "look_distance": {
-      "type": "number",
-      "default": 8.0,
-      "description": "The distance in blocks from which the entity will look at",
-      "title": "Look Distance"
-    },
-    "probability": {
-      "type": "number",
-      "default": 0.02,
-      "description": "The probability of looking at the target. A value of 1.00 is 100%",
-      "title": "Probability"
-    },
-    "look_time": {
-      "$ref": "../types/range_number_type.json",
-      "default": [2, 4],
-      "description": "Time range to look at the entity",
-      "title": "Look Time"
-    },
+    "look_distance": { "type": "number", "default": 8.0, "description": "The distance in blocks from which the entity will look at", "title": "Look Distance" },
+    "probability": { "type": "number", "default": 0.02, "description": "The probability of looking at the target. A value of 1.00 is 100%", "title": "Probability" },
+    "look_time": { "$ref": "../types/range_number_type.json", "default": [2, 4], "description": "Time range to look at the entity", "title": "Look Time" },
     "angle_of_view_vertical": {
       "type": "integer",
       "default": 360,
@@ -38,10 +23,6 @@
       "description": "The angle in degrees that the mob can see in the Y-axis (up-down)",
       "title": "Angle Of View Horizontal"
     },
-    "filters": {
-      "description": "Filter to determine the conditions for this mob to look at the entity",
-      "$ref": "../filters.json",
-      "title": "Filters"
-    }
+    "filters": { "description": "Filter to determine the conditions for this mob to look at the entity", "$ref": "../filters.json", "title": "Filters" }
   }
 }

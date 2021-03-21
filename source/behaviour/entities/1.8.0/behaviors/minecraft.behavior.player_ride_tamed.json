@@ -3,10 +3,8 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.player_ride_tamed",
   "description": "Allows the mob to be ridden by the player after being tamed.",
   "type": "object",
-  "title": "player ride tamed 1.8.0",
+  "title": "Player Ride Tamed 1.8.0",
   "additionalProperties": false,
   "required": [],
-  "properties": {
-    "priority": { "$ref": "./types/base_priority.json" }
-  }
+  "properties": { "priority": { "$ref": "./types/base_priority.json" } }
 }

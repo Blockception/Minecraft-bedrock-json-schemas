@@ -3,20 +3,10 @@
   "$id": "blockception.minecraft.behaviour.1.16.100.block.events.remove_mob_effect",
   "type": "object",
   "description": "Removes mob effect from target.",
-  "title": "Remove mob effect",
+  "title": "Remove Mob Effect",
   "additionalProperties": false,
   "properties": {
-    "effect": {
-      "type": "string",
-      "default": "",
-      "description": "The mob effect to remove. Use 'all' to remove all mob effects from target.",
-      "title": "Effect"
-    },
-    "target": {
-      "type": "string",
-      "default": "self",
-      "description": "The target context to execute against.",
-      "title": "Target"
-    }
+    "effect": { "type": "string", "default": "", "description": "The mob effect to remove. Use 'all' to remove all mob effects from target.", "title": "Effect" },
+    "target": { "type": "string", "default": "self", "description": "The target context to execute against.", "title": "Target" }
   }
 }

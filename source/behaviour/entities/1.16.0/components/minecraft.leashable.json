@@ -10,27 +10,17 @@
       "type": "boolean",
       "default": false,
       "description": "If true, players can leash this entity even if it is already leashed to another mob.",
-      "title": "Can be stolen"
+      "title": "Can Be Stolen"
     },
-    "hard_distance": {
-      "type": "number",
-      "default": 6,
-      "description": "Distance in blocks at which the leash stiffens, restricting movement.",
-      "title": "Hard distance"
-    },
-    "max_distance": {
-      "type": "number",
-      "default": 10,
-      "description": "Distance in blocks at which the leash breaks.",
-      "title": "Max distance"
-    },
-    "on_leash": { "$ref": "../types/event.json", "description": "Event to call when this entity is leashed.", "title": "On leash" },
-    "on_unleash": { "$ref": "../types/event.json", "description": "Event to call when this entity is unleashed.", "title": "On unleash" },
+    "hard_distance": { "type": "number", "default": 6, "description": "Distance in blocks at which the leash stiffens, restricting movement.", "title": "Hard Distance" },
+    "max_distance": { "type": "number", "default": 10, "description": "Distance in blocks at which the leash breaks.", "title": "Max Distance" },
+    "on_leash": { "$ref": "../types/event.json", "description": "Event to call when this entity is leashed.", "title": "On Leash" },
+    "on_unleash": { "$ref": "../types/event.json", "description": "Event to call when this entity is unleashed.", "title": "On Unleash" },
     "soft_distance": {
       "type": "number",
       "default": 4,
       "description": "Distance in blocks at which the 'spring' effect starts acting to keep this entity close to the entity that leashed it.",
-      "title": "Soft distance"
+      "title": "Soft Distance"
     }
   }
 }

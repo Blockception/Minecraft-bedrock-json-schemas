@@ -5,5 +5,5 @@
   "default": 1.0,
   "description": "Movement speed multiplier of the mob when using this AI Goal.",
   "type": "number",
-  "title": "Speed multiplier"
+  "title": "Speed Multiplier"
 }

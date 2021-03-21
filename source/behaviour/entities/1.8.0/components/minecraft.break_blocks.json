@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.break_blocks",
   "type": "object",
-  "title": "Break blocks 1.8.0",
+  "title": "Break Blocks 1.8.0",
   "additionalProperties": false,
   "description": "Specifies the blocks that this entity can break as it moves around.",
   "required": [],
@@ -11,9 +11,7 @@
       "type": "array",
       "title": "Breakable Blocks",
       "description": "A list of the blocks that can be broken as this entity moves around",
-      "items": {
-        "$ref": "../../../../general/blocks_item.json"
-      }
+      "items": { "$ref": "../../../../general/blocks_item.json" }
     }
   }
 }

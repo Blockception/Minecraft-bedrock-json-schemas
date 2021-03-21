@@ -6,19 +6,15 @@
   "definitions": {
     "addremove": {
       "additionalProperties": false,
-      "title": "The add/remove schema",
+      "title": "Add/remove Schema",
       "description": "The components groups to add or remove",
       "type": "object",
       "properties": {
         "component_groups": {
-          "title": "The component groups schema",
+          "title": "Component Groups Schema",
           "description": "The components groups to add or remove",
           "type": "array",
-          "items": {
-            "type": "string",
-            "description": "TODO description: component groups",
-            "title": "Component Groups"
-          }
+          "items": { "type": "string", "description": "TODO description: component groups", "title": "Component Groups" }
         }
       }
     },
@@ -26,41 +22,17 @@
       "additionalProperties": false,
       "type": "object",
       "properties": {
-        "add": {
-          "$ref": "#/definitions/addremove",
-          "description": "TODO description: add",
-          "title": "Add"
-        },
-        "remove": {
-          "$ref": "#/definitions/addremove",
-          "description": "TODO description: remove",
-          "title": "Remove"
-        },
+        "add": { "$ref": "#/definitions/addremove", "description": "TODO description: add", "title": "Add" },
+        "remove": { "$ref": "#/definitions/addremove", "description": "TODO description: remove", "title": "Remove" },
         "randomize": {
           "type": "array",
           "items": {
             "required": ["weight"],
             "properties": {
-              "add": {
-                "$ref": "#/definitions/addremove",
-                "description": "TODO description: add",
-                "title": "Add"
-              },
-              "remove": {
-                "$ref": "#/definitions/addremove",
-                "description": "TODO description: remove",
-                "title": "Remove"
-              },
-              "trigger": {
-                "type": "string",
-                "description": "UNDOCUMENTATED",
-                "title": "UNDOCUMENTATED"
-              },
-              "weight": {
-                "type": "number",
-                "description": "TODO description: weight",
-                "title": "Weight"
-              }
+              "add": { "$ref": "#/definitions/addremove", "description": "TODO description: add", "title": "Add" },
+              "remove": { "$ref": "#/definitions/addremove", "description": "TODO description: remove", "title": "Remove" },
+              "trigger": { "type": "string", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
+              "weight": { "type": "number", "description": "TODO description: weight", "title": "Weight" }
             },
             "description": "TODO description: randomize",
             "title": "Randomize"
@@ -75,32 +47,16 @@
             "title": "Sequence",
             "type": "object",
             "properties": {
-              "add": {
-                "$ref": "#/definitions/addremove",
-                "description": "TODO description: add",
-                "title": "Add"
-              },
-              "remove": {
-                "$ref": "#/definitions/addremove",
-                "description": "TODO description: remove",
-                "title": "Remove"
-              },
-              "filters": {
-                "$ref": "./filters.json"
-              }
+              "add": { "$ref": "#/definitions/addremove", "description": "TODO description: add", "title": "Add" },
+              "remove": { "$ref": "#/definitions/addremove", "description": "TODO description: remove", "title": "Remove" },
+              "filters": { "$ref": "./filters.json" }
             }
           },
           "description": "A series of filters and components to be added",
           "title": "Sequences"
         },
-        "filters": {
-          "$ref": "./filters.json"
-        },
-        "trigger": {
-          "type": "string",
-          "description": "UNDOCUMENTATED",
-          "title": "UNDOCUMENTATED"
-        }
+        "filters": { "$ref": "./filters.json" },
+        "trigger": { "type": "string", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" }
       }
     }
   },
@@ -115,19 +71,9 @@
       "$ref": "#/definitions/event_base",
       "title": "Entity Born"
     },
-    "minecraft:entity_spawned": {
-      "description": "Event called on an entity that is placed in the level.",
-      "$ref": "#/definitions/event_base",
-      "title": "Entity Spawned"
-    },
-    "minecraft:on_prime": {
-      "description": "Event called on an entity whose fuse is lit and is ready to explode.",
-      "$ref": "#/definitions/event_base",
-      "title": "On Prime"
-    }
+    "minecraft:entity_spawned": { "description": "Event called on an entity that is placed in the level.", "$ref": "#/definitions/event_base", "title": "Entity Spawned" },
+    "minecraft:on_prime": { "description": "Event called on an entity whose fuse is lit and is ready to explode.", "$ref": "#/definitions/event_base", "title": "On Prime" }
   },
-  "additionalProperties": {
-    "$ref": "#/definitions/event_base"
-  },
+  "additionalProperties": { "$ref": "#/definitions/event_base" },
   "description": "TODO description: "
 }

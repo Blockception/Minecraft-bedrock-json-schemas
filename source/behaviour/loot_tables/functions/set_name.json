@@ -3,18 +3,9 @@
   "$id": "blockception.minecraft.behaviour.loot_tables.set_name",
   "additionalProperties": false,
   "description": "The function set_name",
-  "title": "Set name",
+  "title": "Set Name",
   "properties": {
-    "function": {
-      "type": "string",
-      "const": "set_name",
-      "description": "TODO description",
-      "title": "TODO title"
-    },
-    "name": {
-      "type": "string",
-      "description": "TODO description",
-      "title": "TODO title"
-    }
+    "function": { "type": "string", "const": "set_name", "description": "TODO description", "title": "TODO Title" },
+    "name": { "type": "string", "description": "TODO description", "title": "TODO Title" }
   }
 }

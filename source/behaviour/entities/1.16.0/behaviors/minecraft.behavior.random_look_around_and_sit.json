@@ -3,42 +3,25 @@
   "$id": "blockception.minecraft.behaviour.entities.1.16.0.minecraft.behavior.random_look_around_and_sit",
   "description": "Allows the mob to randomly sit and look around for a duration. Note: Must have a sitting animation set up to use this.",
   "type": "object",
-  "title": "Random look around and sit 1.16.0",
+  "title": "Random Look Around And Sit 1.16.0",
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": {
-      "$ref": "types/base_priority.json"
-    },
-    "max_look_count": {
-      "type": "integer",
-      "default": 2,
-      "description": "The max amount of unique looks a mob will have while looking around.",
-      "title": "Max look count"
-    },
+    "priority": { "$ref": "types/base_priority.json" },
+    "max_look_count": { "type": "integer", "default": 2, "description": "The max amount of unique looks a mob will have while looking around.", "title": "Max Look Count" },
     "max_look_time": {
       "type": "integer",
       "default": 40,
       "description": "The max amount of time (in ticks) a mob will stay looking at a direction while looking around.",
-      "title": "Max look time"
+      "title": "Max Look Time"
     },
-    "min_look_count": {
-      "type": "integer",
-      "default": 1,
-      "description": "The min amount of unique looks a mob will have while looking around.",
-      "title": "Min look count"
-    },
+    "min_look_count": { "type": "integer", "default": 1, "description": "The min amount of unique looks a mob will have while looking around.", "title": "Min Look Count" },
     "min_look_time": {
       "type": "integer",
       "default": 20,
       "description": "The min amount of time (in ticks) a mob will stay looking at a direction while looking around.",
-      "title": "Min look time"
+      "title": "Min Look Time"
     },
-    "probability": {
-      "type": "number",
-      "default": 0.02,
-      "description": "The probability of randomly looking around/sitting.",
-      "title": "Probability"
-    }
+    "probability": { "type": "number", "default": 0.02, "description": "The probability of randomly looking around/sitting.", "title": "Probability" }
   }
 }

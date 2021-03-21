@@ -3,13 +3,6 @@
   "$id": "blockception.minecraft.behaviour.loot_tables.trader_material_type",
   "additionalProperties": false,
   "description": "The function trader_material_type",
-  "title": "Trader material type",
-  "properties": {
-    "function": {
-      "type": "string",
-      "const": "trader_material_type",
-      "description": "TODO description",
-      "title": "TODO title"
-    }
-  }
+  "title": "Trader Material Type",
+  "properties": { "function": { "type": "string", "const": "trader_material_type", "description": "TODO description", "title": "TODO Title" } }
 }

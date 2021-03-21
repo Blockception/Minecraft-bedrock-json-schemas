@@ -7,15 +7,7 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "start_speed": {
-      "type": "number",
-      "title": "Start speed",
-      "description": "UNDOCUMENTATED"
-    },
-    "speed_when_turning": {
-      "type": "number",
-      "title": "Speed when turning",
-      "description": "UNDOCUMENTATED"
-    }
+    "start_speed": { "type": "number", "title": "Start Speed", "description": "UNDOCUMENTATED" },
+    "speed_when_turning": { "type": "number", "title": "Speed When Turning", "description": "UNDOCUMENTATED" }
   }
 }

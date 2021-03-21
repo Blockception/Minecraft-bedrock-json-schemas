@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.filters.1.8.0.base_subject",
-  "title": "Filters subject 1.8.0",
+  "title": "Filters Subject 1.8.0",
   "type": "string",
   "description": "The subject of this filter test.",
   "default": "self",

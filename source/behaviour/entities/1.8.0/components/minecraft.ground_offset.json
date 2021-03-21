@@ -2,16 +2,9 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.ground_offset",
   "type": "object",
-  "title": "Ground offset 1.8.0",
+  "title": "Ground Offset 1.8.0",
   "additionalProperties": false,
   "description": "Sets the offset from the ground that the entity is actually at.",
   "required": [],
-  "properties": {
-    "value": {
-      "type": "number",
-      "default": 0.0,
-      "description": "The value of the entity's offset from the terrain, in blocks",
-      "title": "TODO title"
-    }
-  }
+  "properties": { "value": { "type": "number", "default": 0.0, "description": "The value of the entity's offset from the terrain, in blocks", "title": "TODO Title" } }
 }

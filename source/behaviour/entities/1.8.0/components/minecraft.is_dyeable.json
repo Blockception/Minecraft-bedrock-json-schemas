@@ -3,14 +3,14 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.is_dyeable",
   "description": "Allows dyes to be used on this entity to change its color.",
   "type": "object",
-  "title": "Is dyeable 1.8.0",
+  "title": "Is Dyeable 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {
     "interact_text": {
       "type": "string",
       "description": "The text that will display when interacting with this entity with a dye when playing with Touch-screen controls",
-      "title": "TODO title"
+      "title": "TODO Title"
     }
   }
 }

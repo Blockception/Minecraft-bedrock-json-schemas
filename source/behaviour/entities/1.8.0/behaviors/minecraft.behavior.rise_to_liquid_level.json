@@ -3,27 +3,13 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.rise_to_liquid_level",
   "description": "Allows the mob to stay at a certain level when in liquid.",
   "type": "object",
-  "title": "Rise to liquid level 1.8.0",
+  "title": "Rise To Liquid Level 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": {
-      "$ref": "types/base_priority.json"
-    },
-    "liquid_y_offset": {
-      "type": "number",
-      "title": "Liquid y offset",
-      "description": "UNDOCUMENTATED"
-    },
-    "rise_delta": {
-      "type": "number",
-      "title": "Rise delta",
-      "description": "UNDOCUMENTATED"
-    },
-    "sink_delta": {
-      "type": "number",
-      "title": "Sink delta",
-      "description": "UNDOCUMENTATED"
-    }
+    "priority": { "$ref": "types/base_priority.json" },
+    "liquid_y_offset": { "type": "number", "title": "Liquid Y Offset", "description": "UNDOCUMENTATED" },
+    "rise_delta": { "type": "number", "title": "Rise Delta", "description": "UNDOCUMENTATED" },
+    "sink_delta": { "type": "number", "title": "Sink Delta", "description": "UNDOCUMENTATED" }
   }
 }

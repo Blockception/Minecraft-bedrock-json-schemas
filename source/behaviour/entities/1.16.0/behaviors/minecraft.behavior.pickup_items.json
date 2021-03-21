@@ -4,51 +4,31 @@
   "description": "Allows the mob to pick up items on the ground.",
   "additionalProperties": false,
   "type": "object",
-  "title": "pickup items 1.16.0",
+  "title": "Pickup Items 1.16.0",
   "properties": {
     "priority": { "$ref": "types/base_priority.json" },
     "speed_multiplier": { "$ref": "types/base_speed_multiplier.json" },
-    "can_pickup_any_item": {
-      "type": "boolean",
-      "default": false,
-      "description": "If true, the mob can pickup any item",
-      "title": "Can pickup any item"
-    },
+    "can_pickup_any_item": { "type": "boolean", "default": false, "description": "If true, the mob can pickup any item", "title": "Can Pickup Any Item" },
     "can_pickup_to_hand_or_equipment": {
       "type": "boolean",
       "default": true,
       "description": "If true, the mob can pickup items to its hand or armor slots",
-      "title": "Can pickup to hand or equipment"
+      "title": "Can Pickup To Hand Or Equipment"
     },
-    "cooldown_after_being_attacked": {
-      "type": "number",
-      "default": true,
-      "description": "UNDOCUMENTATED",
-      "title": "UNDOCUMENTATED"
-    },
+    "cooldown_after_being_attacked": { "type": "number", "default": true, "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
     "goal_radius": {
       "type": "number",
       "default": 0.5,
       "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot",
-      "title": "Goal radius"
+      "title": "Goal Radius"
     },
-    "max_dist": {
-      "type": "number",
-      "default": 0,
-      "description": "Maximum distance this mob will look for items to pick up",
-      "title": "Max dist"
-    },
+    "max_dist": { "type": "number", "default": 0, "description": "Maximum distance this mob will look for items to pick up", "title": "Max Dist" },
     "pickup_based_on_chance": {
       "type": "boolean",
       "default": false,
       "description": "If true, depending on the difficulty, there is a random chance that the mob may not be able to pickup items",
-      "title": "Pickup based on chance"
+      "title": "Pickup Based On Chance"
     },
-    "track_target": {
-      "type": "boolean",
-      "default": false,
-      "description": "If true, this mob will chase after the target as long as it's a valid target",
-      "title": "Track target"
-    }
+    "track_target": { "type": "boolean", "default": false, "description": "If true, this mob will chase after the target as long as it's a valid target", "title": "Track Target" }
   }
 }

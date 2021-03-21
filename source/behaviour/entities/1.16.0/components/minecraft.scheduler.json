@@ -7,35 +7,18 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "min_delay_secs": {
-      "type": "integer",
-      "description": "UNDOCUMENTATED",
-      "title": "UNDOCUMENTATED",
-      "minimum": 0
-    },
-    "max_delay_secs": {
-      "type": "integer",
-      "description": "UNDOCUMENTATED",
-      "title": "UNDOCUMENTATED",
-      "minimum": 0
-    },
+    "min_delay_secs": { "type": "integer", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED", "minimum": 0 },
+    "max_delay_secs": { "type": "integer", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED", "minimum": 0 },
     "scheduled_events": {
       "type": "array",
       "description": "The list of triggers that fire when the conditions match the given filter criteria. If any filter criteria overlap the first defined event will be picked.",
-      "title": "Scheduled events",
+      "title": "Scheduled Events",
       "items": {
         "additionalProperties": false,
         "type": "object",
         "description": "UNDOCUMENTATED",
         "title": "UNDOCUMENTATED",
-        "properties": {
-          "filters": {
-            "$ref": "../filters.json"
-          },
-          "event": {
-            "$ref": "../types/event.json"
-          }
-        }
+        "properties": { "filters": { "$ref": "../filters.json" }, "event": { "$ref": "../types/event.json" } }
       }
     }
   }

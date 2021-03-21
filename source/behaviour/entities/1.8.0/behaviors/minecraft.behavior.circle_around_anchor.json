@@ -2,18 +2,13 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.behavior.circle_around_anchor",
   "type": "object",
-  "title": "Circle around anchor 1.8.0",
+  "title": "Circle Around Anchor 1.8.0",
   "additionalProperties": false,
   "description": "Allows the mob to move in a circle around a point or a target.",
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/base_priority.json" },
-    "speed_multiplier": {
-      "type": "number",
-      "default": 1.0,
-      "description": "Movement speed multiplier of the mob when using this AI Goal",
-      "title": "Speed Multiplier"
-    },
+    "speed_multiplier": { "type": "number", "default": 1.0, "description": "Movement speed multiplier of the mob when using this AI Goal", "title": "Speed Multiplier" },
     "radius_range": {
       "$ref": "../types/range_number_type.json",
       "default": [5.0, 15.0],
@@ -50,25 +45,9 @@
       "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot",
       "title": "Goal Radius"
     },
-    "radius_change": {
-      "type": "number",
-      "title": "Radius change",
-      "description": "UNDOCUMENTATED"
-    },
-    "radius_adjustment_chance": {
-      "type": "number",
-      "title": "Radius adjustment chance",
-      "description": "UNDOCUMENTATED"
-    },
-    "height_adjustment_chance": {
-      "type": "number",
-      "title": "Height adjustment chance",
-      "description": "UNDOCUMENTATED"
-    },
-    "angle_change": {
-      "type": "number",
-      "title": "Angle change",
-      "description": "UNDOCUMENTATED"
-    }
+    "radius_change": { "type": "number", "title": "Radius Change", "description": "UNDOCUMENTATED" },
+    "radius_adjustment_chance": { "type": "number", "title": "Radius Adjustment Chance", "description": "UNDOCUMENTATED" },
+    "height_adjustment_chance": { "type": "number", "title": "Height Adjustment Chance", "description": "UNDOCUMENTATED" },
+    "angle_change": { "type": "number", "title": "Angle Change", "description": "UNDOCUMENTATED" }
   }
 }

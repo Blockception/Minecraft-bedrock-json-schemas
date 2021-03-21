@@ -2,22 +2,14 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.1.12.0.recipe.furnace",
   "description": "Represents a furnace recipe for a furnace.'Input' items will burn and transform into items specified in 'output'..",
-  "title": "Furnace recipe 1.12.0",
+  "title": "Furnace Recipe 1.12.0",
   "additionalProperties": false,
   "required": ["description"],
   "type": "object",
   "properties": {
     "description": { "$ref": "./base types/definition.json" },
     "tags": { "$ref": "./base types/tags.json" },
-    "input": {
-      "type": "string",
-      "description": "Items used as input for the furnace recipe.",
-      "title": "Input"
-    },
-    "output": {
-      "type": "string",
-      "description": "Items used as output for the furnace recipe.",
-      "title": "Output"
-    }
+    "input": { "type": "string", "description": "Items used as input for the furnace recipe.", "title": "Input" },
+    "output": { "type": "string", "description": "Items used as output for the furnace recipe.", "title": "Output" }
   }
 }

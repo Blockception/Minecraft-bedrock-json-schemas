@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.resource.particle.1.10.0.emitter_rate_manual",
   "type": "object",
-  "title": "The emitter rate manual component for 1.10.0",
+  "title": "Emitter Rate Manual Component For 1.10.0",
   "additionalProperties": false,
   "properties": {
     "activation_expression": {

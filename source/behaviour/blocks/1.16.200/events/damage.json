@@ -6,23 +6,8 @@
   "title": "Damage 1.16.200",
   "additionalProperties": false,
   "properties": {
-    "amount": {
-      "type": "integer",
-      "default": 0,
-      "description": "The amount of damage to deal.",
-      "title": "Amount"
-    },
-    "target": {
-      "type": "object",
-      "default": "self",
-      "description": "The target context to execute against.",
-      "title": "Target"
-    },
-    "type": {
-      "type": "string",
-      "default": "",
-      "description": "The type of damage to deal.",
-      "title": "Type"
-    }
+    "amount": { "type": "integer", "default": 0, "description": "The amount of damage to deal.", "title": "Amount" },
+    "target": { "type": "object", "default": "self", "description": "The target context to execute against.", "title": "Target" },
+    "type": { "type": "string", "default": "", "description": "The type of damage to deal.", "title": "Type" }
   }
 }

@@ -2,6 +2,6 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.blocks.1.10.0.minecraft.onlypistonpush",
   "type": "boolean",
-  "title": "Only piston push 1.10.0",
+  "title": "Only Piston Push 1.10.0",
   "description": "Blocks with those components won't stick to stickyPistons"
 }

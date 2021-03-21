@@ -1,20 +1,15 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.type.entity_types.1.13.0",
-  "title": "Entity types 1.13.0",
+  "title": "Entity Types 1.13.0",
   "type": "array",
   "items": {
     "description": "The entity type",
-    "title": "The entity type",
+    "title": "Entity Type",
     "type": "object",
     "properties": {
       "filters": { "type": "object", "$ref": "../filters.json" },
-      "max_dist": {
-        "type": "number",
-        "description": "Maximum distance this mob can be away to be a valid choice",
-        "default": 16,
-        "title": "Max Dist"
-      },
+      "max_dist": { "type": "number", "description": "Maximum distance this mob can be away to be a valid choice", "default": 16, "title": "Max Dist" },
       "walk_speed_multiplier": {
         "type": "number",
         "description": "Multiplier for the walking speed. A value of 1.0 means the speed is unchanged",
@@ -27,12 +22,7 @@
         "default": 16,
         "title": "Sprint Speed Multiplier"
       },
-      "must_see": {
-        "type": "boolean",
-        "description": "If true, the mob has to be visible to be a valid choice",
-        "default": false,
-        "title": "Must See"
-      },
+      "must_see": { "type": "boolean", "description": "If true, the mob has to be visible to be a valid choice", "default": false, "title": "Must See" },
       "must_see_forget_duration": {
         "type": "number",
         "description": "Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more",

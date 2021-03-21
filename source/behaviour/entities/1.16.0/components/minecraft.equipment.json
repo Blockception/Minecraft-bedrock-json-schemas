@@ -9,32 +9,19 @@
     "slot_drop_chance": {
       "type": "array",
       "description": "A list of slots with the chance to drop an equipped item from that slot",
-      "title": "Slot drop chance",
+      "title": "Slot Drop Chance",
       "items": {
         "additionalProperties": false,
-        "title": "Slot drop chance",
+        "title": "Slot Drop Chance",
         "description": "UNDOCUMENTATED",
         "type": "object",
         "properties": {
-          "drop_chance": {
-            "type": "number",
-            "title": "Drop chance",
-            "description": "UNDOCUMENTATED"
-          },
-          "slot": {
-            "type": "string",
-            "title": "Slot",
-            "description": "UNDOCUMENTATED"
-          }
+          "drop_chance": { "type": "number", "title": "Drop Chance", "description": "UNDOCUMENTATED" },
+          "slot": { "type": "string", "title": "Slot", "description": "UNDOCUMENTATED" }
         }
       }
     },
-    "table": {
-      "type": "string",
-      "pattern": ".*\\.json$",
-      "description": "TODO description: table",
-      "title": "Table"
-    }
+    "table": { "type": "string", "pattern": ".*\\.json$", "description": "TODO description: table", "title": "Table" }
   },
   "description": "TODO description: "
 }

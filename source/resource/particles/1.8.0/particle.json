@@ -18,27 +18,17 @@
           "additionalProperties": false,
           "type": "object",
           "properties": {
-            "identifier": {
-              "type": "string",
-              "description": "TODO description: identifier",
-              "title": "Identifier",
-              "$ref": "../../../general/particle/identifier.json"
-            }
+            "identifier": { "type": "string", "description": "TODO description: identifier", "title": "Identifier", "$ref": "../../../general/particle/identifier.json" }
           },
           "description": "TODO description: description",
           "title": "Description"
         },
-        "components": {
-          "additionalProperties": false,
-          "type": "object",
-          "description": "TODO description: components",
-          "title": "Components"
-        }
+        "components": { "additionalProperties": false, "type": "object", "description": "TODO description: components", "title": "Components" }
       },
       "description": "TODO description: particle effect",
       "title": "Particle Effect"
     }
   },
   "description": "TODO description: ",
-  "title": "TODO title"
+  "title": "TODO Title"
 }

@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "minecraft.behavior.biomes.1.12.0.components.minecraft.overworld_height",
-  "title": "Overworld height",
+  "title": "Overworld Height",
   "description": "Noise parameters used to drive terrain height in the Overworld.",
   "type": "object",
   "minProperties": 0,
@@ -9,13 +9,20 @@
   "additionalProperties": false,
   "properties": {
     "noise_params": {
-      "title": "Noise params",
+      "title": "Noise Params",
       "description": "UNDOCUMENATED",
       "type": "array",
-      "items": [{ "type": "number" }, { "type": "number" }]
+      "items": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ]
     },
     "noise_type": {
-      "title": "Noise type",
+      "title": "Noise Type",
       "description": "UNDOCUMENATED",
       "type": "string",
       "enum": [

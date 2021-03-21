@@ -2,21 +2,13 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.16.0.filters.random_chance",
   "type": "object",
-  "title": "Filters random chance 1.16.0",
+  "title": "Filters Random Chance 1.16.0",
   "description": "Returns true if the random chance rolls 0 out of a specified max range.",
   "required": ["value"],
   "properties": {
-    "test": {
-      "type": "string",
-      "title": "Test",
-      "description": "The test property"
-    },
+    "test": { "type": "string", "title": "Test", "description": "The test property" },
     "operator": { "$ref": "./types/base_operator.json" },
     "subject": { "$ref": "./types/base_subject.json" },
-    "value": {
-      "description": "An integer value.",
-      "type": "integer",
-      "title": "Value"
-    }
+    "value": { "description": "An integer value.", "type": "integer", "title": "Value" }
   }
 }

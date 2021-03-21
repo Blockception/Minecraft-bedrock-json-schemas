@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.resource.particle.1.10.0.emitter_shape_box",
   "type": "object",
-  "title": "The emitter shape box component for 1.10.0",
+  "title": "Emitter Shape Box Component For 1.10.0",
   "additionalProperties": false,
   "properties": {
     "direction": {
@@ -10,50 +10,24 @@
       "title": "Direction",
       "default": "outwards",
       "anyOf": [
-        {
-          "type": "string",
-          "enum": ["inwards", "outwards"]
-        },
-        {
-          "type": "array",
-          "minItems": 3,
-          "maxItems": 3,
-          "items": {
-            "$ref": "../../../../molang/1.8.0/number.json"
-          }
-        }
+        { "type": "string", "enum": ["inwards", "outwards"] },
+        { "type": "array", "minItems": 3, "maxItems": 3, "items": { "$ref": "../../../../molang/1.8.0/number.json" } }
       ]
     },
     "radius": { "$ref": "../../../../molang/1.8.0/number.json", "description": "TODO description: radius", "title": "Radius" },
     "offset": {
       "type": "array",
-      "items": {
-        "minItems": 3,
-        "maxItems": 3,
-        "$ref": "../../../../molang/1.8.0/number.json",
-        "description": "TODO description: offset",
-        "title": "Offset"
-      },
+      "items": { "minItems": 3, "maxItems": 3, "$ref": "../../../../molang/1.8.0/number.json", "description": "TODO description: offset", "title": "Offset" },
       "description": "TODO description",
-      "title": "TODO title"
+      "title": "TODO Title"
     },
     "half_dimensions": {
       "type": "array",
-      "items": {
-        "minItems": 3,
-        "maxItems": 3,
-        "$ref": "../../../../molang/1.8.0/number.json",
-        "description": "TODO description: half dimensions",
-        "title": "Half Dimensions"
-      },
+      "items": { "minItems": 3, "maxItems": 3, "$ref": "../../../../molang/1.8.0/number.json", "description": "TODO description: half dimensions", "title": "Half Dimensions" },
       "description": "TODO description: half dimensions",
       "title": "Half Dimensions"
     },
-    "surface_only": {
-      "type": "boolean",
-      "description": "TODO description: surface only",
-      "title": "Surface Only"
-    }
+    "surface_only": { "type": "boolean", "description": "TODO description: surface only", "title": "Surface Only" }
   },
   "description": "TODO description: "
 }

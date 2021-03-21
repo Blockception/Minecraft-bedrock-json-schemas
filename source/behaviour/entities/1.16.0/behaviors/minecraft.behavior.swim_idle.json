@@ -3,22 +3,12 @@
   "$id": "blockception.minecraft.behaviour.entities.1.16.0.minecraft.behavior.swim_idle",
   "description": "UNDOCUMENTATED",
   "type": "object",
-  "title": "Swim idle 1.16.0",
+  "title": "Swim Idle 1.16.0",
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": {
-      "$ref": "types/base_priority.json"
-    },
-    "idle_time": {
-      "type": "number",
-      "title": "Idle time",
-      "description": "UNDOCUMENTATED"
-    },
-    "success_rate": {
-      "type": "number",
-      "title": "Succes rate",
-      "description": "UNDOCUMENTATED"
-    }
+    "priority": { "$ref": "types/base_priority.json" },
+    "idle_time": { "type": "number", "title": "Idle Time", "description": "UNDOCUMENTATED" },
+    "success_rate": { "type": "number", "title": "Succes Rate", "description": "UNDOCUMENTATED" }
   }
 }

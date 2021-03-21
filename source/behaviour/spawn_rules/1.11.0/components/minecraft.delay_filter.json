@@ -3,20 +3,12 @@
   "$id": "blockception.minecraft.behaviour.spawn_rules.1.11.0.minecraft.Delay_filter",
   "additionalProperties": false,
   "type": "object",
-  "title": "Delay filter 1.11.0",
+  "title": "Delay Filter 1.11.0",
   "description": "TODO",
   "properties": {
     "min": { "type": "integer", "description": "TODO", "title": "Min" },
     "max": { "type": "integer", "description": "TODO", "title": "Max" },
-    "identifier": {
-      "type": "string",
-      "description": "TODO",
-      "title": "Identifier"
-    },
-    "spawn_chance": {
-      "title": "Spawn chance",
-      "description": "UNDOCUMENTATED",
-      "type": "number"
-    }
+    "identifier": { "type": "string", "description": "TODO", "title": "Identifier" },
+    "spawn_chance": { "title": "Spawn Chance", "description": "UNDOCUMENTATED", "type": "number" }
   }
 }

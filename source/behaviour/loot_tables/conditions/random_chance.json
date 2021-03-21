@@ -4,24 +4,10 @@
   "type": "object",
   "additionalProperties": false,
   "description": "Sets a random chance of the specified value.",
-  "title": "Random chance",
+  "title": "Random Chance",
   "properties": {
-    "condition": {
-      "type": "string",
-      "title": "Condition",
-      "description": "TODO"
-    },
-    "chance": {
-      "type": "number",
-      "default": 0,
-      "description": "TODO",
-      "title": "Chance"
-    },
-    "max_chance": {
-      "type": "number",
-      "default": 0,
-      "description": "The maximum random chance value allowed.",
-      "title": "Max chance"
-    }
+    "condition": { "type": "string", "title": "Condition", "description": "TODO" },
+    "chance": { "type": "number", "default": 0, "description": "TODO", "title": "Chance" },
+    "max_chance": { "type": "number", "default": 0, "description": "The maximum random chance value allowed.", "title": "Max Chance" }
   }
 }

@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behaviour.blocks.1.16.100.minecraft.block_light_emission",
   "additionalProperties": false,
   "type": "number",
-  "title": "Block light emission 1.16.100",
+  "title": "Block Light Emission 1.16.100",
   "description": "The amount of light this block will emit in a range [0.0, 1.0].",
   "minimum": 0,
   "maximum": 1,

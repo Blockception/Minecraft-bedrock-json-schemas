@@ -10,7 +10,5 @@
     "value": { "type": "integer", "description": "Current health of the entity", "title": "Value" },
     "max": { "type": "integer", "description": "The maximum health the entity can heal", "title": "Maximum" }
   },
-  "dependencies": {
-    "max": ["value"]
-  }
+  "dependencies": { "max": ["value"] }
 }

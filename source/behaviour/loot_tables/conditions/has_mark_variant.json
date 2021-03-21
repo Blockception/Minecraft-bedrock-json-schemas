@@ -4,18 +4,9 @@
   "type": "object",
   "additionalProperties": false,
   "description": "Returns the condition true if the actor's mark variant is matched to the value.",
-  "title": "Has mark variant",
+  "title": "Has Mark Variant",
   "properties": {
-    "condition": {
-      "type": "string",
-      "title": "Condition",
-      "description": "TODO"
-    },
-    "value": {
-      "type": "integer",
-      "default": "0",
-      "description": "Tests for the actor's mark variant (if it has one)",
-      "title": "Value"
-    }
+    "condition": { "type": "string", "title": "Condition", "description": "TODO" },
+    "value": { "type": "integer", "default": "0", "description": "Tests for the actor's mark variant (if it has one)", "title": "Value" }
   }
 }

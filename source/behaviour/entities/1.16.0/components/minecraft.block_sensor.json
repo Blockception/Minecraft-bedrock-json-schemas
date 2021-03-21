@@ -2,38 +2,21 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.16.0.minecraft.block_sensor",
   "type": "object",
-  "title": "Block sensor 1.16.0",
+  "title": "Block Sensor 1.16.0",
   "description": "Fires off a specified event when a block in the block list is broken within the sensor range.",
   "additionalProperties": false,
   "properties": {
-    "sensor_radius": {
-      "type": "integer",
-      "description": "TODO",
-      "title": "Sensor radius",
-      "minimum": 0
-    },
+    "sensor_radius": { "type": "integer", "description": "TODO", "title": "Sensor Radius", "minimum": 0 },
     "on_break": {
       "type": "array",
-      "title": "On break",
+      "title": "On Break",
       "items": {
         "type": "object",
-        "title": "On block broken",
+        "title": "On Block Broken",
         "additionalProperties": false,
         "properties": {
-          "block_list": {
-            "type": "array",
-            "title": "Block list",
-            "description": "TODO",
-            "items": {
-              "type": "string",
-              "title": "Block ID"
-            }
-          },
-          "on_block_broken": {
-            "type": "string",
-            "title": "On block broken",
-            "description": "On block broken"
-          }
+          "block_list": { "type": "array", "title": "Block List", "description": "TODO", "items": { "type": "string", "title": "Block ID" } },
+          "on_block_broken": { "type": "string", "title": "On Block Broken", "description": "On block broken" }
         }
       },
       "description": "TODO description"

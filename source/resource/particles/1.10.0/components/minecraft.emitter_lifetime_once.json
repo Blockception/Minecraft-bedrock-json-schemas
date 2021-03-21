@@ -2,14 +2,8 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.resource.particle.1.10.0.emitter_lifetime_once",
   "type": "object",
-  "title": "The emitter lifetime once component for 1.10.0",
+  "title": "Emitter Lifetime Once Component For 1.10.0",
   "additionalProperties": false,
-  "properties": {
-    "active_time": {
-      "$ref": "../../../../molang/1.8.0/number.json",
-      "description": "How long the particles emit for evaluated once",
-      "title": "Active Time"
-    }
-  },
+  "properties": { "active_time": { "$ref": "../../../../molang/1.8.0/number.json", "description": "How long the particles emit for evaluated once", "title": "Active Time" } },
   "description": "TODO description: "
 }

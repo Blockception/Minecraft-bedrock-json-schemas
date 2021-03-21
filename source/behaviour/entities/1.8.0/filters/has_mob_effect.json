@@ -2,21 +2,13 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.filters.has_mob_effect",
   "type": "object",
-  "title": "Filters has mob effect 1.8.0",
+  "title": "Filters Has Mob Effect 1.8.0",
   "description": "Tests whether the Subject has the specified mob effect.",
   "required": ["value"],
   "properties": {
-    "test": {
-      "type": "string",
-      "title": "The test property",
-      "description": "Tests whether the Subject has the specified mob effect."
-    },
+    "test": { "type": "string", "title": "Test Property", "description": "Tests whether the Subject has the specified mob effect." },
     "operator": { "$ref": "./types/base_operator.json" },
     "subject": { "$ref": "./types/base_subject.json" },
-    "value": {
-      "type": "string",
-      "description": "TODO description: value",
-      "title": "Value"
-    }
+    "value": { "type": "string", "description": "TODO description: value", "title": "Value" }
   }
 }

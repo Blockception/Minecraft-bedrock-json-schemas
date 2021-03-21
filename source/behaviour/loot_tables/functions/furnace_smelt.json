@@ -3,21 +3,9 @@
   "$id": "blockception.minecraft.behaviour.loot_tables.furnace_smelt",
   "additionalProperties": false,
   "description": "The function furnace_smelt",
-  "title": "Furnace smelt",
+  "title": "Furnace Smelt",
   "properties": {
-    "function": {
-      "type": "string",
-      "const": "furnace_smelt",
-      "description": "TODO description",
-      "title": "TODO title"
-    },
-    "conditions": {
-      "title": "Conditions",
-      "description": "TODO",
-      "type": "array",
-      "items": {
-        "$ref": "../conditions.json"
-      }
-    }
+    "function": { "type": "string", "const": "furnace_smelt", "description": "TODO description", "title": "TODO Title" },
+    "conditions": { "title": "Conditions", "description": "TODO", "type": "array", "items": { "$ref": "../conditions.json" } }
   }
 }

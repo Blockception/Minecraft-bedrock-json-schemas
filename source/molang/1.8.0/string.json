@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "molang.string.1.8.0",
   "type": "string",
-  "title": "Molang / string definition",
+  "title": "Molang / String ",
   "description": "Molang definition",
   "format": "molang"
 }

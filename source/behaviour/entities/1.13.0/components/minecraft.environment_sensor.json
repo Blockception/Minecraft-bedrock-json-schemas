@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.13.0.minecraft.environment_sensor",
-  "title": "Environment sensor 1.13.0",
+  "title": "Environment Sensor 1.13.0",
   "description": "Creates a trigger based on environment conditions.",
   "type": "object",
   "additionalProperties": false,
@@ -10,16 +10,8 @@
       "description": "The list of triggers that fire when the environment conditions match the given filter criteria.",
       "title": "Triggers",
       "anyOf": [
-        {
-          "type": "array",
-          "items": {
-            "$ref": "../types/trigger.json"
-          }
-        },
-        {
-          "type": "object",
-          "$ref": "../types/trigger.json"
-        }
+        { "type": "array", "items": { "$ref": "../types/trigger.json" } },
+        { "type": "object", "$ref": "../types/trigger.json" }
       ]
     }
   }

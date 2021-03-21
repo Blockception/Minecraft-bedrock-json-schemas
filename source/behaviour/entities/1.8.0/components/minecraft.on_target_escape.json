@@ -3,22 +3,12 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.on_target_escape",
   "description": "Adds a trigger to call when this entity loses the target it currently has.",
   "type": "object",
-  "title": "On target escape 1.8.0",
+  "title": "On Target Escape 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "event": {
-      "type": "string",
-      "description": "The event to run when the conditions for this trigger are met",
-      "title": "TODO title"
-    },
-    "filters": { "$ref": "../filters.json", "description": "The list of conditions for this trigger", "title": "TODO title" },
-    "target": {
-      "type": "string",
-      "$ref": "../filters/types/base_subject.json",
-      "default": "self",
-      "description": "The target of the event",
-      "title": "TODO title"
-    }
+    "event": { "type": "string", "description": "The event to run when the conditions for this trigger are met", "title": "TODO Title" },
+    "filters": { "$ref": "../filters.json", "description": "The list of conditions for this trigger", "title": "TODO Title" },
+    "target": { "type": "string", "$ref": "../filters/types/base_subject.json", "default": "self", "description": "The target of the event", "title": "TODO Title" }
   }
 }

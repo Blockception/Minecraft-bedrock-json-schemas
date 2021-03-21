@@ -3,21 +3,9 @@
   "$id": "blockception.minecraft.behaviour.loot_tables.set_lore",
   "additionalProperties": false,
   "description": "The function set_lore",
-  "title": "Set lore",
+  "title": "Set Lore",
   "properties": {
-    "function": {
-      "type": "string",
-      "const": "set_lore",
-      "description": "TODO description",
-      "title": "TODO title"
-    },
-    "lore": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      },
-      "description": "TODO description",
-      "title": "TODO title"
-    }
+    "function": { "type": "string", "const": "set_lore", "description": "TODO description", "title": "TODO Title" },
+    "lore": { "type": "array", "items": { "type": "string" }, "description": "TODO description", "title": "TODO Title" }
   }
 }

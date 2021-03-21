@@ -7,11 +7,6 @@
     "type": "object",
     "title": "Biome",
     "description": "A biome definition",
-    "allOf": [
-      {
-        "if": { "properties": { "format_version": { "type": "string", "const": "1.12.0" } } },
-        "then": { "$ref": "./1.12.0/biomes.json" }
-      }
-    ]
+    "allOf": [{ "if": { "properties": { "format_version": { "type": "string", "const": "1.12.0" } } }, "then": { "$ref": "./1.12.0/biomes.json" } }]
   }
 }

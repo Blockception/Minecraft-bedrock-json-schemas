@@ -5,13 +5,6 @@
   "title": "Loot 1.8.0",
   "additionalProperties": false,
   "required": [],
-  "properties": {
-    "table": {
-      "type": "string",
-      "pattern": ".*\\.json$",
-      "description": "TODO description: table",
-      "title": "Table"
-    }
-  },
+  "properties": { "table": { "type": "string", "pattern": ".*\\.json$", "description": "TODO description: table", "title": "Table" } },
   "description": "TODO description: "
 }

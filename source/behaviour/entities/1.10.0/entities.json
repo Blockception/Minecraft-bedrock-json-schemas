@@ -2,13 +2,13 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entity1.10.0",
   "type": "object",
-  "title": "The minecraft behaviour entity 1.10.0",
+  "title": "Behaviour Entity 1.10.0",
   "description": "TODO description",
   "additionalProperties": false,
   "required": ["format_version", "minecraft:entity"],
   "properties": {
     "format_version": {
-      "title": "The 1.10.0 format version",
+      "title": "1.10.0 Format Version",
       "type": "string",
       "const": "1.10.0",
       "description": "A version that tells minecraft what type of data format can be expected when reading this file."

@@ -4,25 +4,12 @@
   "title": "Event",
   "description": "Minecraft behaviour event 1.13.0",
   "oneOf": [
-    {
-      "type": "string",
-      "pattern": "^[a-zA-Z0-9_\\-:]+$",
-      "description": "The event to fire"
-    },
+    { "type": "string", "pattern": "^[a-zA-Z0-9_\\-:]+$", "description": "The event to fire" },
     {
       "type": "object",
       "properties": {
-        "event": {
-          "type": "string",
-          "pattern": "^[a-zA-Z0-9_\\-:]+$",
-          "description": "The event to fire",
-          "title": "Event"
-        },
-        "target": {
-          "type": "string",
-          "description": "The target of the event",
-          "enum": ["block", "damager", "other", "parent", "player", "self", "target", "baby"]
-        }
+        "event": { "type": "string", "pattern": "^[a-zA-Z0-9_\\-:]+$", "description": "The event to fire", "title": "Event" },
+        "target": { "type": "string", "description": "The target of the event", "enum": ["block", "damager", "other", "parent", "player", "self", "target", "baby"] }
       }
     }
   ]

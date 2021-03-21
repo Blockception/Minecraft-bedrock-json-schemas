@@ -2,14 +2,8 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.resource.particle.1.10.0.emitter_rate_manual",
   "type": "object",
-  "title": "The emitter rate manual component for 1.10.0",
+  "title": "Emitter Rate Manual Component For 1.10.0",
   "additionalProperties": false,
-  "properties": {
-    "max_particles": {
-      "$ref": "../../../../molang/1.8.0/number.json",
-      "description": "Evaluated once per particle emitted",
-      "title": "Max Particles"
-    }
-  },
+  "properties": { "max_particles": { "$ref": "../../../../molang/1.8.0/number.json", "description": "Evaluated once per particle emitted", "title": "Max Particles" } },
   "description": "TODO description: "
 }

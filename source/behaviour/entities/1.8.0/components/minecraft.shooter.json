@@ -7,21 +7,12 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "auxVal": {
-      "type": "integer",
-      "title": "Aux val",
-      "default": -1,
-      "description": "ID of the Potion effect to be applied on hit"
-    },
+    "auxVal": { "type": "integer", "title": "Aux Val", "default": -1, "description": "ID of the Potion effect to be applied on hit" },
     "def": {
       "title": "Def",
       "type": "string",
       "description": "Actor definition to use as projectile for the ranged attack. The actor definition must have the projectile component to be able to be shot as a projectile"
     },
-    "type": {
-      "title": "Type",
-      "type": "string",
-      "description": "TODO description"
-    }
+    "type": { "title": "Type", "type": "string", "description": "TODO description" }
   }
 }

@@ -3,15 +3,8 @@
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.water_movement",
   "description": "TODO description",
   "type": "object",
-  "title": "Water movement 1.8.0",
+  "title": "Water Movement 1.8.0",
   "additionalProperties": false,
   "required": [],
-  "properties": {
-    "drag_factor": {
-      "type": "number",
-      "default": 0.8,
-      "description": "Drag factor to determine movement speed when in water.",
-      "title": "TODO title"
-    }
-  }
+  "properties": { "drag_factor": { "type": "number", "default": 0.8, "description": "Drag factor to determine movement speed when in water.", "title": "TODO Title" } }
 }

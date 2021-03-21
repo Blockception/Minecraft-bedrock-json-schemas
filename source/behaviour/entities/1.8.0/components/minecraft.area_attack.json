@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.entities.1.8.0.minecraft.area_attack",
   "type": "object",
-  "title": "Area attack 1.8.0",
+  "title": "Area Attack 1.8.0",
   "description": "A component that does damage to entities that get within range.",
   "additionalProperties": false,
   "properties": {
@@ -10,20 +10,10 @@
       "type": "integer",
       "default": 2,
       "description": "How much damage per tick is applied to entities that enter the damage range.",
-      "title": "Damage per tick"
+      "title": "Damage Per Tick"
     },
-    "damage_range": {
-      "type": "number",
-      "default": 0.2,
-      "description": "How close a hostile entity must be to have the damage applied.",
-      "title": "Damage range"
-    },
+    "damage_range": { "type": "number", "default": 0.2, "description": "How close a hostile entity must be to have the damage applied.", "title": "Damage Range" },
     "entity_filter": { "$ref": "../filters.json", "description": "Entity_filter", "title": "Filter" },
-    "cause": {
-      "type": "string",
-      "description": "TODO",
-      "title": "Cause",
-      "$ref": "../../../../general/entity/damage_source.json"
-    }
+    "cause": { "type": "string", "description": "TODO", "title": "Cause", "$ref": "../../../../general/entity/damage_source.json" }
   }
 }

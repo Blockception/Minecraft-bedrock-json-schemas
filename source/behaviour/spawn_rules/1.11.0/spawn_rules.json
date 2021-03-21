@@ -2,19 +2,15 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behaviour.spawn_rules.1.11.0",
   "type": "object",
-  "title": "Spawn rules 1.11.0",
+  "title": "Spawn Rules 1.11.0",
   "description": "TODO",
   "additionalProperties": false,
   "required": ["format_version", "minecraft:spawn_rules"],
   "properties": {
-    "format_version": {
-      "const": "1.11.0",
-      "description": "TODO description",
-      "title": "TODO title"
-    },
+    "format_version": { "const": "1.11.0", "description": "TODO description", "title": "TODO Title" },
     "minecraft:spawn_rules": {
       "type": "object",
-      "title": "Spawn rules",
+      "title": "Spawn Rules",
       "description": "TODO",
       "additionalProperties": false,
       "properties": {
@@ -24,14 +20,10 @@
           "description": "TODO",
           "additionalProperties": false,
           "properties": {
-            "identifier": {
-              "title": "Identifier",
-              "description": "TODO",
-              "$ref": "../../../general/entity/identifier.json"
-            },
+            "identifier": { "title": "Identifier", "description": "TODO", "$ref": "../../../general/entity/identifier.json" },
             "population_control": {
               "type": "string",
-              "title": "Population control",
+              "title": "Population Control",
               "description": "TODO",
               "enum": ["ambient", "animal", "water_animal", "monster", "cat", "pillager"]
             }

@@ -8,43 +8,15 @@
   "properties": {
     "drop_items": {
       "description": "List of items that the entity drops when it grows up.",
-      "oneOf": [
-        {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        {
-          "type": "string"
-        }
-      ],
-      "title": "TODO title"
+      "oneOf": [{ "type": "array", "items": { "type": "string" } }, { "type": "string" }],
+      "title": "TODO Title"
     },
-    "duration": {
-      "type": "number",
-      "default": 1200,
-      "description": "Amount of time before the entity grows up, -1 for always a baby.",
-      "title": "TODO title"
-    },
+    "duration": { "type": "number", "default": 1200, "description": "Amount of time before the entity grows up, -1 for always a baby.", "title": "TODO Title" },
     "feed_items": {
       "description": "List of items that can be fed to the entity. Includes 'item' for the item name and 'growth' to define how much time it grows up by",
-      "oneOf": [
-        {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        {
-          "type": "string"
-        }
-      ],
-      "title": "TODO title"
+      "oneOf": [{ "type": "array", "items": { "type": "string" } }, { "type": "string" }],
+      "title": "TODO Title"
     },
-    "grow_up": {
-      "description": "Event to run when this entity grows up.",
-      "title": "TODO title"
-    }
+    "grow_up": { "description": "Event to run when this entity grows up.", "title": "TODO Title" }
   }
 }

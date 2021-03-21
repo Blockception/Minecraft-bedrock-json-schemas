@@ -6,12 +6,5 @@
   "title": "Player.saturation 1.8.0",
   "description": "UNDOCUMENTATED",
   "required": [],
-  "properties": {
-    "value": {
-      "type": "number",
-      "default": true,
-      "title": "Value",
-      "description": "UNDOCUMENTATED"
-    }
-  }
+  "properties": { "value": { "type": "number", "default": true, "title": "Value", "description": "UNDOCUMENTATED" } }
 }
