@@ -32,7 +32,7 @@ jobs:
       - name: Commit changes
         continue-on-error: true
         run: |
-          cd $GITHUB_WORKSPACE
+          cd ${{github.workspace}}
           git config --global user.email "Bot@Blockception.com"
           git config --global user.name "Blockception Bot"
           git add .
