@@ -26,6 +26,8 @@ jobs:
       - uses: actions/checkout@v2
 
       - uses: DaanV2/Json-Schema-Action-Compression@v0.1
+        with:
+          specificationFile: ${{github.workspace}}/source/compress specification.json
       
       - name: Commit changes
         continue-on-error: true
