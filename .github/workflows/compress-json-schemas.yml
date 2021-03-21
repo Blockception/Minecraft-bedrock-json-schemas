@@ -33,8 +33,8 @@ jobs:
         continue-on-error: true
         run: |
           cd $GITHUB_WORKSPACE
-          git config --global user.email "Blockception@example.com"
-          git config --global user.name "Blockception-Bot"
+          git config --global user.email "Bot@Blockception.com"
+          git config --global user.name "Blockception Bot"
           git add .
-          git commit -m "auto: Compressed json schemas"
+          git commit -m "auto: Generated typescript includes"
           git push
