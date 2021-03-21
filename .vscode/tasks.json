@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "Format workspace",
+      "command": "Powershell.exe -executionpolicy remotesigned -File ./scripts/format_documents.ps1",
+      "problemMatcher": "$tsc"
+    }
+  ]
+}
