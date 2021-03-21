@@ -27,7 +27,7 @@ jobs:
 
       - uses: DaanV2/Json-Schema-Action-Compression@v0.2
         with:
-          specificationFile: ${{github.workspace}}\source\compress specification.json
+          specificationFile: "${{github.workspace}}\\source\\compress specification.json"
       
       - name: Commit changes
         continue-on-error: true
