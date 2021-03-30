@@ -95,6 +95,7 @@
           "blend_weight": { "title": "Blend Weight", "description": "TODO", "$ref": "../../../molang/1.8.0/number.json" },
           "bones": {
             "title": "Bones",
+            "minProperties": 1,
             "description": "Defines how the bones in an animation move or transform",
             "type": "object",
             "additionalProperties": {
