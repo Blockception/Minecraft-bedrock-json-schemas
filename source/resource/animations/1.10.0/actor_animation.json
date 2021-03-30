@@ -97,6 +97,7 @@
             "title": "Bones",
             "description": "Defines how the bones in an animation move or transform",
             "type": "object",
+            "minProperties": 1,
             "additionalProperties": {
               "title": "Bone Transformation",
               "description": "The bone definition that declare how it transforms during animation",
