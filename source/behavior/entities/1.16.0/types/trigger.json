@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.type.trigger.1.16.0",
+  "title": "Trigger",
+  "type": "object",
+  "description": "Trigger to fire for 1.16.0",
+  "properties": {
+    "event": { "type": "string", "description": "Event", "title": "Event To Fire" },
+    "filters": { "$ref": "../filters.json", "description": "The filters to check to determine if the event should be fired", "title": "TODO Title" },
+    "target": { "$ref": "../filters/types/base_subject.json", "description": "The entity to target", "title": "Target" }
+  },
+  "additionalProperties": false
+}

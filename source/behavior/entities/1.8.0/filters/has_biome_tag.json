@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.filters.has_biome_tag",
+  "type": "object",
+  "title": "Filters Has Biome Tag 1.8.0",
+  "description": "Tests whether the biome the subject is in has the specified tag.",
+  "required": ["value"],
+  "properties": {
+    "test": { "type": "string", "title": "Test Property", "description": "Tests whether the biome the subject is in has the specified tag." },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
+    "value": { "description": "(Required) The tag to look for", "type": "string", "title": "Value" }
+  }
+}

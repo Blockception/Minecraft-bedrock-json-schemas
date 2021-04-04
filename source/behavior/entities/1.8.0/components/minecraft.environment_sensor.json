@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.environment_sensor",
+  "title": "Environment Sensor 1.8.0",
+  "additionalProperties": false,
+  "description": "Allows the entity to power jump like the horse does in vanilla.",
+  "definitions": {
+    "on_environement": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "TODO description: on environement",
+      "title": "On Environement",
+      "properties": {
+        "filters": { "$ref": "../filters.json", "description": "The filters to evualate for this environment sensor", "title": "Filters" },
+        "event": { "type": "string", "pattern": "^.+$", "description": "The event to trigger if the filters are true", "title": "Event" },
+        "target": { "description": "The target of the event", "$ref": "../filters/types/base_subject.json" }
+      }
+    }
+  },
+  "required": [],
+  "anyOf": [
+    { "type": "object", "$ref": "#/definitions/on_environement" },
+    {
+      "type": "array",
+      "items": { "oneOf": [{ "$ref": "#/definitions/on_environement" }, { "type": "object", "properties": { "on_environment": { "$ref": "#/definitions/on_environement" } } }] }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.1.16.200.items.minecraft:cooldown",
+  "title": "Cooldown",
+  "description": "Cool down time for a component. After you use an item it becomes unusable for the duration specified by the 'cool down time' setting in this component.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["category", "duration"],
+  "properties": {
+    "category": { "type": "string", "description": "The type of cool down for this item.", "title": "Category" },
+    "duration": { "description": "The duration of time this item will spend cooling down before becoming usable again.", "title": "Duration", "type": "number" }
+  }
+}

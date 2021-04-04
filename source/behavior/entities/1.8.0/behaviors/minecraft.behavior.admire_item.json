@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.admire_item",
+  "type": "object",
+  "title": "Admire Item 1.8.0",
+  "description": "Enables the mob to admire items that have been configured as admirable. Must be used in combination with the admire_item component.",
+  "additionalProperties": false,
+  "properties": {
+    "admire_item_sound": { "type": "string", "default": "", "description": "The sound event to play when admiring the item", "title": "Admire Item Sound" },
+    "sound_interval": {
+      "type": "array",
+      "default": 0,
+      "description": "The range of time in seconds to randomly wait before playing the sound again.",
+      "title": "Sound Interval",
+      "items": [
+        { "type": "number", "title": "Minimum" },
+        { "type": "number", "title": "Maximum" }
+      ]
+    }
+  }
+}

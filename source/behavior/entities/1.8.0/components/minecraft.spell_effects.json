@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.spell_effects",
+  "type": "object",
+  "title": "Spell Effects 1.8.0",
+  "additionalProperties": false,
+  "description": "Defines what mob effects to add and remove to the entity when adding this component.",
+  "required": [],
+  "properties": {
+    "add_effects": {
+      "type": "array",
+      "description": "List of effects to add to this entity after adding this component",
+      "items": {
+        "oneOf": [
+          { "type": "string" },
+          { "type": "object", "properties": { "effect": { "type": "string" }, "duration": { "type": "integer" }, "display_on_screen_animation": { "type": "boolean" } } }
+        ]
+      },
+      "title": "TODO Title"
+    },
+    "remove_effects": { "type": "string", "description": "List of identifiers of effects to be removed from this entity after adding this component", "title": "TODO Title" }
+  }
+}

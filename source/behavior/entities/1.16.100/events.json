@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.events.1.16.100",
+  "type": "object",
+  "title": "Entity 1.16.100",
+  "description": "TODO description: ",
+  "definitions": {
+    "addremove": {
+      "additionalProperties": false,
+      "title": "Add/remove Schema",
+      "description": "The components groups to add or remove",
+      "type": "object",
+      "properties": {
+        "component_groups": {
+          "title": "Component Groups Schema",
+          "description": "The components groups to add or remove",
+          "type": "array",
+          "items": { "type": "string", "description": "TODO description: component groups", "title": "Component Groups" }
+        }
+      }
+    },
+    "randomize": {
+      "title": "Randomize",
+      "description": "TODO description: randomize",
+      "type": "array",
+      "items": {
+        "required": ["weight"],
+        "properties": {
+          "add": { "$ref": "#/definitions/addremove", "description": "TODO description: add", "title": "Add" },
+          "remove": { "$ref": "#/definitions/addremove", "description": "TODO description: remove", "title": "Remove" },
+          "trigger": { "type": "string", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
+          "weight": { "type": "number", "description": "TODO description: weight", "title": "Weight" }
+        }
+      }
+    },
+    "event_base": {
+      "additionalProperties": false,
+      "type": "object",
+      "properties": {
+        "add": { "title": "Add", "$ref": "#/definitions/addremove", "description": "The components groups to be added to this entity" },
+        "filters": { "$ref": "./filters.json" },
+        "randomize": { "type": "array", "$ref": "#/definitions/randomize" },
+        "remove": { "title": "Remove", "description": "The components groups and all its components to be removed", "$ref": "#/definitions/addremove" },
+        "sequence": {
+          "description": "A series of filters and components to be added",
+          "title": "Sequences",
+          "type": "array",
+          "items": { "description": "TODO description: sequence", "title": "Sequence", "type": "object", "$ref": "#/definitions/event_base" }
+        },
+        "trigger": { "type": "string", "description": "The event to run", "title": "Trigger" }
+      }
+    }
+  },
+  "properties": {
+    "minecraft:entity_transformed": {
+      "description": "Event called on an entity that transforms into another entity.",
+      "$ref": "#/definitions/event_base",
+      "title": "Entity Transformed"
+    },
+    "minecraft:entity_born": {
+      "description": "Event called on an entity that is spawned through two entities breeding.",
+      "$ref": "#/definitions/event_base",
+      "title": "Entity Born"
+    },
+    "minecraft:entity_spawned": { "description": "Event called on an entity that is placed in the level.", "$ref": "#/definitions/event_base", "title": "Entity Spawned" },
+    "minecraft:on_prime": { "description": "Event called on an entity whose fuse is lit and is ready to explode.", "$ref": "#/definitions/event_base", "title": "On Prime" }
+  },
+  "additionalProperties": { "$ref": "#/definitions/event_base" }
+}

@@ -5,7 +5,7 @@ The json validation schema files for Minecraft bedrock
 	- [Manual Usage](#manual-usage)
 		- [Vscode](#vscode)
 - [Contents](#contents)
-	- [Behaviour files](#behaviour-files)
+	- [behavior files](#behavior-files)
 	- [Resource files](#resource-files)
 	- [Contributing](#contributing)
 
@@ -31,16 +31,16 @@ OR
 ---
 # Contents
 
-## Behaviour files
-- [Animation Controllers](behaviour/animation_controllers/animation_controller.json)
-- [Animations](behaviour/animations/animations.json)
-- [Blocks](behaviour/blocks/blocks.json)
-- [Entities](behaviour/entities/entities.json)
-- [Items](behaviour/items/items.json)
-- [Loot tables](behaviour/loot_tables/loot_tables.json)
-- [Recipes](behaviour/recipes/recipes.json)
-- [Spawn rules](behaviour/spawn_rules/spawn_rules.json)
-- [Trading](behaviour/trading/trading.json)
+## behavior files
+- [Animation Controllers](behavior/animation_controllers/animation_controller.json)
+- [Animations](behavior/animations/animations.json)
+- [Blocks](behavior/blocks/blocks.json)
+- [Entities](behavior/entities/entities.json)
+- [Items](behavior/items/items.json)
+- [Loot tables](behavior/loot_tables/loot_tables.json)
+- [Recipes](behavior/recipes/recipes.json)
+- [Spawn rules](behavior/spawn_rules/spawn_rules.json)
+- [Trading](behavior/trading/trading.json)
 
 ## Resource files
 

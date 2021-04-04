@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.attack_cooldown",
+  "type": "object",
+  "title": "Attack Cooldown 1.16.0",
+  "description": "Adds a cooldown to a mob. The intention of this cooldown is to be used to prevent the mob from attempting to aquire new attack targets.",
+  "additionalProperties": false,
+  "properties": {
+    "attack_cooldown_complete_event": {
+      "$ref": "../types/trigger.json",
+      "description": "Event to be runned when the cooldown is complete.",
+      "title": "Attack Cooldown Complete Event"
+    },
+    "attack_cooldown_time": {
+      "default": [0.0, 1.0],
+      "description": "Amount of time in seconds for the cooldown. Can be specified as a number or a pair of numbers (min and max).",
+      "title": "Attack Cooldown Time",
+      "oneOf": [
+        {
+          "type": "array",
+          "items": [
+            { "type": "number", "title": "Maximum" },
+            { "type": "number", "title": "Maximum" }
+          ]
+        },
+        { "type": "number" }
+      ]
+    }
+  }
+}

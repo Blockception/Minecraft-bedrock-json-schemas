@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.1.16.100.block.events.set_block_property",
+  "type": "object",
+  "description": "Sets a block property on this block",
+  "title": "Set Block Property",
+  "additionalProperties": false,
+  "properties": { "property": { "type": "string", "description": "Block property to set on the block.", "title": "Property" } }
+}

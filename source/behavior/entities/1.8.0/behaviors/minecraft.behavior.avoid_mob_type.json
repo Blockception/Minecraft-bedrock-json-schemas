@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.avoid_mob_type",
+  "additionalProperties": false,
+  "description": "Allows this entity to avoid certain mob types.",
+  "type": "object",
+  "title": "Avoid Mob Type 1.8.0",
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "./types/base_priority.json" },
+    "max_dist": { "type": "number", "default": 0, "description": "Maximum distance to look for an entity", "title": "Max Dist" },
+    "max_flee": { "type": "number", "default": 0.5, "description": "Distance in blocks within the mob considers it should stop fleeing.", "title": "Max Flee" },
+    "walk_speed_multiplier": {
+      "type": "number",
+      "default": 1.0,
+      "description": "Multiplier for walking speed. 1.0 means keep the regular speed, while higher numbers make the walking speed faster",
+      "title": "Walk Speed Multiplier"
+    },
+    "sprint_speed_multiplier": {
+      "type": "number",
+      "default": 1.0,
+      "description": "Multiplier for running speed. 1.0 means keep the regular speed, while higher numbers make the running speed faster",
+      "title": "Sprint Speed Multiplier"
+    },
+    "probability_per_strength": {
+      "type": "number",
+      "default": 1.0,
+      "description": "Determines how likely it is that this entity will stop avoiding another entity based on that entity's strength",
+      "title": "Probability Per Strength"
+    },
+    "ignore_visibility": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, visbility between this entity and the mob type will not be checked.",
+      "title": "Ignore Visibility"
+    },
+    "entity_types": { "$ref": "../types/entity_types.json", "description": "TODO description: entity types", "title": "Entity Types" },
+    "avoid_mob_sound": { "title": "Avoid Mob Sound", "description": "UNDOCUMENTATED", "type": "string" },
+    "remove_target": { "title": "Remove Target", "description": "UNDOCUMENTATED", "type": "boolean" },
+    "on_escape_event": { "$ref": "../types/event.json", "title": "On Escape Event", "description": "UNDOCUMENTATED" },
+    "sound_interval": {
+      "default": 0,
+      "description": "UNDOCUMENTATED",
+      "title": "Sound Interval",
+      "oneOf": [
+        {
+          "type": "array",
+          "items": [
+            { "type": "number", "title": "Maximum" },
+            { "type": "number", "title": "Maximum" }
+          ]
+        },
+        { "type": "number" },
+        { "type": "object", "additionalProperties": false, "properties": { "range_min": { "type": "number" }, "range_max": { "type": "number" } } }
+      ]
+    }
+  }
+}

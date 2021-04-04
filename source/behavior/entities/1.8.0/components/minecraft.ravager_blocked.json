@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.ravager_blocked",
+  "description": "Defines the ravager's response to their melee attack being blocked.",
+  "type": "object",
+  "title": "Ravager Blocked 1.8.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "knockback_strength": { "type": "number", "default": 3, "description": "The strength with which blocking entities should be knocked back", "title": "TODO Title" },
+    "reaction_choices": {
+      "type": "array",
+      "description": "A list of weighted responses to the melee attack being blocked",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "properties": {
+          "weight": { "type": "integer" },
+          "value": {
+            "additionalProperties": false,
+            "type": "object",
+            "properties": { "event": { "type": "string" }, "target": { "type": "string", "$ref": "../filters/types/base_subject.json" } }
+          }
+        }
+      },
+      "title": "TODO Title"
+    }
+  }
+}

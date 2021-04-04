@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.blocks.1.16.100.minecraft.geometry",
+  "additionalProperties": false,
+  "type": "string",
+  "title": "Geometry 1.16.100",
+  "description": "The geometry definition name to use.",
+  "pattern": "^geometry\\.[a-zA-Z0-9_\\-\\.]+$"
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.blocks.1.10.0.minecraft.random_ticking",
+  "title": "Random Ticking 1.10.0",
+  "description": "Describes the component that will trigger an even at a regular interval between two values",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "on_tick": {
+      "title": "On Tick",
+      "description": "Describes the component that will trigger an even at a regular interval between two values",
+      "type": "string",
+      "additionalProperties": false,
+      "properties": {
+        "condition": { "title": "Condition", "type": "string", "description": "The condition of event to be executed on the block. Molang" },
+        "event": { "title": "Event", "type": "string", "description": "The type of event executed on the block." },
+        "range": { "title": "Range", "type": "array", "items": [{ "type": "integer" }, { "type": "integer" }] },
+        "target": {
+          "title": "Target",
+          "description": "The target of event executed on the block.",
+          "type": "string",
+          "enum": ["block", "damager", "other", "parent", "player", "self", "target"]
+        }
+      }
+    }
+  }
+}

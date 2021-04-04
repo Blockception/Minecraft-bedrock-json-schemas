@@ -1,0 +1,8 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.loot_tables.random_dye",
+  "additionalProperties": false,
+  "description": "The function random_dye",
+  "title": "Trader Material Type",
+  "properties": { "function": { "type": "string", "const": "random_dye", "description": "TODO description", "title": "TODO Title" } }
+}

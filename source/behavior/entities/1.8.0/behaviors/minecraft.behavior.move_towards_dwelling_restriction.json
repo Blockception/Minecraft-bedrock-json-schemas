@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.move_towards_dwelling_restriction",
+  "type": "object",
+  "title": "Move Towards Dwelling Restriction 1.8.0",
+  "additionalProperties": false,
+  "description": "UNDOCUMENTATED, comes from cat",
+  "required": [],
+  "properties": { "priority": { "$ref": "types/base_priority.json" }, "speed_multiplier": { "$ref": "types/base_speed_multiplier.json" } }
+}

@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.1.16.100.items.minecraft:render_offsets",
+  "title": "Render Offsets",
+  "description": "Render offsets component: optional values can be given to offset the way the item is rendered.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "main_hand": { "title": "Main Hand", "description": "Right hand transform data.", "type": "string" },
+    "off_hand": { "title": "Off Hand", "description": "Left hand transform data.", "type": "string" }
+  }
+}

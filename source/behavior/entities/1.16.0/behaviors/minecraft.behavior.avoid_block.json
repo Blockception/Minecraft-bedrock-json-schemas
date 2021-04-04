@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.avoid_block",
+  "type": "object",
+  "title": "Avoid Block 1.16.0",
+  "description": "UNDOCUMENTATED",
+  "additionalProperties": false,
+  "properties": {
+    "priority": { "$ref": "types/base_priority.json" },
+    "tick_interval": { "type": "integer", "title": "Tick Interval", "description": "UNDOCUMENTATED" },
+    "search_range": { "type": "integer", "title": "Search Range", "description": "UNDOCUMENTATED" },
+    "search_height": { "type": "integer", "title": "Search Height", "description": "UNDOCUMENTATED" },
+    "sprint_speed_modifier": { "type": "number", "title": "Sprint Speed Modifier", "description": "UNDOCUMENTATED" },
+    "target_selection_method": { "type": "string", "title": "Target Selection Method", "description": "UNDOCUMENTATED" },
+    "target_blocks": {
+      "type": "array",
+      "title": "Target Blocks",
+      "description": "UNDOCUMENTATED",
+      "items": { "type": "string", "title": "Block ID", "description": "UNDOCUMENTATED" }
+    },
+    "avoid_block_sound": { "type": "string", "title": "Avoid Block Sound", "description": "UNDOCUMENTATED" },
+    "walk_speed_modifier": { "type": "number", "title": "Walk Speed Modifier", "description": "UNDOCUMENTATED" },
+    "on_escape": { "type": "array", "title": "Walk Speed Modifier", "description": "UNDOCUMENTATED", "items": { "$ref": "../types/event.json" } },
+    "sound_interval": {
+      "default": 0,
+      "description": "The range of time in seconds to randomly wait before playing the sound again.",
+      "title": "Sound Interval",
+      "oneOf": [
+        {
+          "type": "array",
+          "items": [
+            { "type": "number", "title": "Maximum" },
+            { "type": "number", "title": "Maximum" }
+          ]
+        },
+        { "type": "number" },
+        { "type": "object", "additionalProperties": false, "properties": { "range_min": { "type": "number" }, "range_max": { "type": "number" } } }
+      ]
+    }
+  }
+}

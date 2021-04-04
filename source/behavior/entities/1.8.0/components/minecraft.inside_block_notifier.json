@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.inside_block_notifier",
+  "type": "object",
+  "title": "Inside Block Notifier 1.8.0",
+  "additionalProperties": false,
+  "description": "Verifies whether the entity is inside any of the listed blocks.",
+  "required": [],
+  "properties": {
+    "block_list": {
+      "title": "Block List",
+      "description": "List of blocks, with certain block states, that we are monitoring to see if the entity is inside.",
+      "type": "array",
+      "items": {
+        "title": "Block",
+        "description": "TODO",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "block": { "$ref": "../../../../general/block_definition.json" },
+          "entered_block_event": { "title": "Entered Block Event", "description": "UNDOCUMENTATED", "$ref": "../types/event.json" },
+          "exited_block_event": { "title": "Exited Block Event", "description": "UNDOCUMENTATED", "$ref": "../types/event.json" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.explode",
+  "type": "object",
+  "title": "Explode 1.8.0",
+  "additionalProperties": false,
+  "description": "Defines how the entity explodes.",
+  "required": [],
+  "properties": {
+    "fuseLength": {
+      "$ref": "../types/range_number_type.json",
+      "default": [0.0, 0.0],
+      "description": "The range for the random amount of time the fuse will be lit before exploding, a negative value means the explosion will be immediate",
+      "title": "Fuse Length"
+    },
+    "power": { "type": "number", "default": 3, "description": "The radius of the explosion in blocks and the amount of damage the explosion deals", "title": "Power" },
+    "maxResistance": { "type": "number", "description": "A blocks explosion resistance will be capped at this value when an explosion occurs", "title": "Max Resistance" },
+    "fuseLit": { "type": "boolean", "default": false, "description": "If true, the fuse is already lit when this component is added to the entity", "title": "Fuse Lit" },
+    "causesFire": { "type": "boolean", "default": false, "description": "If true, blocks in the explosion radius will be set on fire", "title": "Causes Fire" },
+    "breaks_blocks": { "type": "boolean", "default": true, "description": "If true, the explosion will destroy blocks in the explosion radius", "title": "Breaks Blocks" },
+    "fireAffectedByGriefing": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, whether the explosion causes fire is affected by the mob griefing game rule",
+      "title": "Fire Affected By Griefing"
+    },
+    "destroyAffectedByGriefing": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, whether the explosion breaks blocks is affected by the mob griefing game rule",
+      "title": "Destroy Affected By Griefing"
+    }
+  }
+}

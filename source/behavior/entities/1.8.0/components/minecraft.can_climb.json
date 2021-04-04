@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.can_climb",
+  "type": "object",
+  "title": "Can Climb 1.8.0",
+  "additionalProperties": false,
+  "description": "Allows this entity to climb up ladders.",
+  "required": [],
+  "properties": {}
+}

@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.loot_tables.specific_enchants",
+  "additionalProperties": false,
+  "description": "The function specific_enchants",
+  "title": "Specific Enchants",
+  "definitions": {
+    "IDEnchant": {
+      "type": "string",
+      "title": "ID Enchantment",
+      "enum": [
+        "aqua_affinity",
+        "bane_of_arthropods",
+        "blast_protection",
+        "channeling",
+        "curse_of_binding",
+        "curse_of_vanishing",
+        "depth_strider",
+        "efficiency",
+        "feather_falling",
+        "fire_aspect",
+        "fire_protection",
+        "flame",
+        "fortune",
+        "frost_walker",
+        "impaling",
+        "infinity",
+        "knockback",
+        "looting",
+        "loyalty",
+        "luck_of_the_sea",
+        "lure",
+        "mending",
+        "multishot",
+        "piercing",
+        "projectile_protection",
+        "protection",
+        "punch",
+        "quick_charge",
+        "respiration",
+        "riptide",
+        "sharpness",
+        "silk_touch",
+        "smite",
+        "soul_speed",
+        "thorns",
+        "unbreaking"
+      ]
+    },
+    "Enchant": {
+      "type": "object",
+      "title": "Enchantment",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/definitions/IDEnchant" },
+        "level": {
+          "title": "Level",
+          "oneOf": [
+            { "type": "integer", "title": "Level" },
+            {
+              "type": "array",
+              "items": [
+                { "type": "integer", "title": "Min" },
+                { "type": "integer", "title": "Max" }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "properties": {
+    "function": { "type": "string", "const": "specific_enchants", "description": "Specific enchants", "title": "Specific Enchants" },
+    "enchants": {
+      "title": "Enchants",
+      "description": "A enchanting specification",
+      "oneOf": [
+        { "type": "string", "$ref": "#/definitions/IDEnchant" },
+        { "type": "object", "$ref": "#/definitions/Enchant" },
+        { "type": "array", "items": { "$ref": "#/definitions/Enchant" } }
+      ]
+    }
+  }
+}

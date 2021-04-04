@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.attack",
+  "type": "object",
+  "additionalProperties": false,
+  "title": "Attack 1.8.0",
+  "description": "Defines an entity's melee attack and any additional effects on it.",
+  "required": ["damage"],
+  "properties": {
+    "damage": {
+      "description": "Range of the random amount of damage the melee attack deals. A negative value can heal the entity instead of hurting it",
+      "$ref": "../types/range_number_type.json",
+      "title": "Damage"
+    },
+    "effect_name": {
+      "type": "string",
+      "description": "Identifier of the status ailment to apply to an entity attacked by this entity's melee attack",
+      "examples": ["wither", "hunger"],
+      "title": "Effect Name"
+    },
+    "effect_duration": { "type": "number", "description": "Duration in seconds of the status ailment applied to the damaged entity", "title": "Effect Duration" }
+  }
+}

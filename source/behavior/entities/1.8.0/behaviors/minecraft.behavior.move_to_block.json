@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.move_to_block",
+  "type": "object",
+  "title": "Move To Block 1.8.0",
+  "additionalProperties": false,
+  "description": "UNDOCUMENTATED",
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "./types/base_priority.json" },
+    "tick_interval": { "type": "number", "title": "Tick Interval", "description": "UNDOCUMENTATED" },
+    "start_chance": { "type": "number", "title": "Start Chance", "description": "UNDOCUMENTATED" },
+    "search_range": { "type": "number", "title": "Search Range", "description": "UNDOCUMENTATED" },
+    "search_height": { "type": "number", "title": "Search Height", "description": "UNDOCUMENTATED" },
+    "goal_radius": { "type": "number", "title": "Goal Radius", "description": "UNDOCUMENTATED" },
+    "stay_duration": { "type": "number", "title": "Stay Duration", "description": "UNDOCUMENTATED" },
+    "target_selection_method": { "type": "string", "title": "Target Selection Method", "description": "UNDOCUMENTATED" },
+    "target_offset": { "type": "array", "title": "Target Offset", "description": "UNDOCUMENTATED", "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }] },
+    "target_blocks": { "type": "array", "title": "Target Blocks", "description": "UNDOCUMENTATED", "items": { "type": "string" } },
+    "on_stay_completed": { "type": "array", "title": "On Stay Completed", "description": "UNDOCUMENTATED", "items": { "$ref": "../types/event.json" } },
+    "on_reach": { "type": "array", "title": "On Reach", "description": "UNDOCUMENTATED", "items": { "$ref": "../types/event.json" } }
+  }
+}

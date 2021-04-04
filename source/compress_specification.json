@@ -25,15 +25,15 @@
     { "Source": "./resource/sounds/sound_definitions.json", "Destination": "../resource/sounds/sound_definitions.json" },
     { "Source": "./resource/sounds.json", "Destination": "../resource/sounds.json" },
     { "Source": "./resource/textures/terrain_texture.json", "Destination": "../resource/textures/terrain_texture.json" },
-    { "Source": "./behaviour/animation_controllers/animation_controller.json", "Destination": "../behaviour/animation_controllers/animation_controller.json" },
-    { "Source": "./behaviour/animations/animations.json", "Destination": "../behaviour/animations/animations.json" },
-    { "Source": "./behaviour/biomes/biomes.json", "Destination": "../behaviour/biomes/biomes.json" },
-    { "Source": "./behaviour/loot_tables/loot_tables.json", "Destination": "../behaviour/loot_tables/loot_tables.json" },
-    { "Source": "./behaviour/blocks/blocks.json", "Destination": "../behaviour/blocks/blocks.json" },
-    { "Source": "./behaviour/entities/entities.json", "Destination": "../behaviour/entities/entities.json" },
-    { "Source": "./behaviour/items/items.json", "Destination": "../behaviour/items/items.json" },
-    { "Source": "./behaviour/recipes/recipes.json", "Destination": "../behaviour/recipes/recipes.json" },
-    { "Source": "./behaviour/spawn_rules/spawn_rules.json", "Destination": "../behaviour/spawn_rules/spawn_rules.json" },
-    { "Source": "./behaviour/trading/trading.json", "Destination": "../behaviour/trading/trading.json" }
+    { "Source": "./behavior/animation_controllers/animation_controller.json", "Destination": "../behavior/animation_controllers/animation_controller.json" },
+    { "Source": "./behavior/animations/animations.json", "Destination": "../behavior/animations/animations.json" },
+    { "Source": "./behavior/biomes/biomes.json", "Destination": "../behavior/biomes/biomes.json" },
+    { "Source": "./behavior/loot_tables/loot_tables.json", "Destination": "../behavior/loot_tables/loot_tables.json" },
+    { "Source": "./behavior/blocks/blocks.json", "Destination": "../behavior/blocks/blocks.json" },
+    { "Source": "./behavior/entities/entities.json", "Destination": "../behavior/entities/entities.json" },
+    { "Source": "./behavior/items/items.json", "Destination": "../behavior/items/items.json" },
+    { "Source": "./behavior/recipes/recipes.json", "Destination": "../behavior/recipes/recipes.json" },
+    { "Source": "./behavior/spawn_rules/spawn_rules.json", "Destination": "../behavior/spawn_rules/spawn_rules.json" },
+    { "Source": "./behavior/trading/trading.json", "Destination": "../behavior/trading/trading.json" }
   ]
 }

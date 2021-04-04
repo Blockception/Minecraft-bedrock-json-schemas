@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.charge_held_item",
+  "type": "object",
+  "title": "Charge Held Item 1.8.0",
+  "description": "Allows this mob to charge and use their held item.",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "./types/base_priority.json" },
+    "items": {
+      "type": "array",
+      "title": "Items",
+      "description": "The list of items that can be used to charge the held item.",
+      "items": { "type": "string", "description": "Items names to be used.", "title": "Item ID" }
+    }
+  }
+}

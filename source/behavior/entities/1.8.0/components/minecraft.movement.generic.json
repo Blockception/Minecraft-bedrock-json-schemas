@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.movement.generic",
+  "description": "This move control allows a mob to fly, swim, climb, etc.",
+  "type": "object",
+  "title": "Movement.generic 1.8.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": { "max_turn": { "type": "number", "default": 30, "description": "The maximum number in degrees the mob can turn per tick.", "title": "TODO Title" } }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.pickup_items",
+  "description": "Allows the mob to pick up items on the ground.",
+  "additionalProperties": false,
+  "type": "object",
+  "title": "Pickup Items 1.8.0",
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "types/base_priority.json" },
+    "speed_multiplier": { "$ref": "types/base_speed_multiplier.json" },
+    "goal_radius": {
+      "type": "number",
+      "default": 0.5,
+      "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot",
+      "title": "TODO Title"
+    },
+    "max_dist": { "type": "number", "default": 0, "description": "Maximum distance this mob will look for items to pick up", "title": "TODO Title" },
+    "track_target": { "type": "boolean", "default": false, "description": "If true, this mob will chase after the target as long as it's a valid target", "title": "TODO Title" }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.dragonflaming",
+  "additionalProperties": false,
+  "type": "object",
+  "title": "Dragonflaming 1.8.0",
+  "description": "Allows the dragon to use its flame breath attack. Can only be used by the Ender Dragon.",
+  "properties": { "priority": { "$ref": "./types/base_priority.json" } }
+}

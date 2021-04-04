@@ -1,0 +1,3 @@
+{
+  "json.schemas": [{ "fileMatch": ["source/**/*.json", "source/*.json"], "url": ".vscode/schema-validation.json" }]
+}

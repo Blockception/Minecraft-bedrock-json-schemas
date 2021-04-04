@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.move_indoors",
+  "description": "Can only be used by Villagers. Allows them to seek shelter indoors.",
+  "type": "object",
+  "title": "Move Indoors 1.8.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "./types/base_priority.json" },
+    "speed_multiplier": { "$ref": "./types/base_speed_multiplier.json" },
+    "timeout_cooldown": {
+      "type": "number",
+      "default": 8,
+      "description": "The cooldown time in seconds before the goal can be reused after a internal failure or timeout condition",
+      "title": "TODO Title"
+    }
+  }
+}

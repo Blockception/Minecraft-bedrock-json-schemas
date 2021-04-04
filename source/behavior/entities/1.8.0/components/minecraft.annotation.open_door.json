@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.annotation.open_door",
+  "additionalProperties": false,
+  "description": "Allows the actor to open doors assuming that that flags set up for the component to use in navigation",
+  "type": "object",
+  "title": "Annotation.open Door 1.8.0",
+  "required": [],
+  "properties": {}
+}

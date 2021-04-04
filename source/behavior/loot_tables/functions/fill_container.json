@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.loot_tables.fill_container",
+  "additionalProperties": false,
+  "description": "The function fill_container",
+  "title": "Fill Container",
+  "properties": {
+    "function": { "type": "string", "const": "fill_container", "title": "Function", "description": "TODO description" },
+    "loot_table": { "type": "string", "title": "Loot Table", "pattern": "^loot_tables/.*\\.json$", "description": "TODO description" }
+  }
+}

@@ -1,9 +1,0 @@
-{
-  "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "blockception.minecraft.behaviour.entities.filters.1.16.0.base_subject",
-  "title": "Subject 1.16.0",
-  "type": "string",
-  "description": "The subject of this filter test.",
-  "default": "self",
-  "enum": ["block", "damager", "other", "parent", "player", "self", "target"]
-}

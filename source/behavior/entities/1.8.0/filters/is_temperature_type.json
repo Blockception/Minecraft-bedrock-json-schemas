@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.filters.is_target",
+  "type": "object",
+  "title": "Filters Is Target 1.8.0",
+  "description": "Tests whether the current temperature is a given type.",
+  "required": ["value"],
+  "properties": {
+    "test": { "type": "string", "title": "Test Property", "description": "The test property" },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
+    "value": { "description": "The Biome temperature catagory to test", "type": "string", "enum": ["cold", "mild", "ocean", "warm"], "title": "Value" }
+  }
+}

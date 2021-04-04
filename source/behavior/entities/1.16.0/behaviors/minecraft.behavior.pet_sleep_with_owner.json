@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.pet_sleep_with_owner",
+  "description": "Allows the mob to be tempted by food they like.",
+  "type": "object",
+  "title": "Tempt 1.16.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "types/base_priority.json" },
+    "speed_multiplier": { "$ref": "types/base_speed_multiplier.json" },
+    "goal_radius": {
+      "type": "number",
+      "default": 0.5,
+      "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot",
+      "title": "Goal Radius"
+    },
+    "search_height": { "type": "integer", "default": 1, "description": "Height in blocks from the owner the pet can be to sleep with owner.", "title": "Search Height" },
+    "search_range": { "type": "integer", "default": 0, "description": "The distance in blocks from the owner the pet can be to sleep with owner.", "title": "Search Range" },
+    "search_radius": { "type": "integer", "default": 0, "description": "UNDOCUMENTATED", "title": "Search Radius" }
+  }
+}

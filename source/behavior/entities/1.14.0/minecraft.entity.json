@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.minecraft:entity",
+  "title": "Entity 1.14.0",
+  "required": ["description"],
+  "additionalProperties": false,
+  "properties": {
+    "description": {
+      "required": ["identifier"],
+      "title": "Description",
+      "description": "The description of the this entity",
+      "properties": {
+        "animations": {
+          "title": "Animations",
+          "description": "Sets the mapping of internal animation / animation controllers references to actual animations. This is a JSON Object of name/animation pairs",
+          "type": "object",
+          "additionalProperties": { "title": "Animation (controller)", "description": "The name of the animation controller / animation", "type": "string" }
+        },
+        "identifier": { "$ref": "../../../general/entity/identifier.json", "description": "Sets the identifier for this entity's description.", "title": "Identifier" },
+        "is_spawnable": { "type": "boolean", "title": "Is Spawnable", "description": "Sets whether or not this entity has a spawn egg in the creative ui." },
+        "is_summonable": {
+          "type": "boolean",
+          "title": "Is Summonable Property",
+          "description": "Sets whether or not we can summon this entity using commands such as /summon."
+        },
+        "is_experimental": {
+          "type": "boolean",
+          "title": "Is Experimental",
+          "description": "Sets whether or not this entity is experimental. Experimental entities are only enabled when the experimental toggle is enabled."
+        },
+        "runtime_identifier": {
+          "type": "string",
+          "title": "Runtime Identifier",
+          "description": "Sets the name for the Vanilla Minecraft identifier this entity will use to build itself from."
+        },
+        "scripts": {
+          "type": "object",
+          "title": "Scripts",
+          "description": "Sets the mapping of internal animation controller references to actual animation controller. This is a JSON Array of name/animation-controller pairs",
+          "properties": {
+            "animate": {
+              "type": "array",
+              "title": "Animate",
+              "description": "Tells minecraft to run which animation / animation controllers and under what conditions",
+              "items": {
+                "oneOf": [
+                  { "type": "string", "title": "Animation", "description": "The name of an animation controller referenced in animations" },
+                  { "type": "object", "title": "Conditional Animation", "description": "TODO", "additionalProperties": { "type": "string", "title": "Animation" } }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "component_groups": {
+      "title": "Component Groups",
+      "description": "Each group when add / remove the default components",
+      "uniqueItems": true,
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "./components.json",
+        "uniqueItems": true,
+        "description": "The components that are added as the foundation of the entity",
+        "title": "Component Schema"
+      }
+    },
+    "components": {
+      "$ref": "./components.json",
+      "uniqueItems": true,
+      "description": "The components that are added as the foundation of the entity",
+      "title": "Component Schema"
+    },
+    "events": {
+      "$ref": "./events.json",
+      "uniqueItems": true,
+      "description": "The events that the entity can run, these add or remove components_groups",
+      "title": "Events Schema"
+    }
+  }
+}

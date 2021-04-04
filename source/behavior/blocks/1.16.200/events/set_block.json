@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.1.16.200.block.events.set_block",
+  "type": "object",
+  "description": "Sets this block to another block type.",
+  "title": "Set Block 1.16.200",
+  "additionalProperties": false,
+  "properties": { "block_type": { "type": "string", "default": "", "description": "The type of block to set.", "title": "Block Type" } }
+}

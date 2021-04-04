@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.snacking",
+  "additionalProperties": false,
+  "description": "Allows the mob to take a load off and snack on food that it found nearby.",
+  "type": "object",
+  "title": "Snacking 1.8.0",
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "./types/base_priority.json" },
+    "items": { "type": "array", "description": "Items that we are interested in snacking on", "$ref": "../../../../general/item/identifier.json", "title": "TODO Title" },
+    "snacking_cooldown": { "type": "number", "default": 7.5, "description": "The cooldown time in seconds before the mob is able to snack again", "title": "TODO Title" },
+    "snacking_cooldown_min": { "type": "number", "default": 0.5, "description": "The minimum time in seconds before the mob is able to snack again", "title": "TODO Title" },
+    "snacking_stop_chance": { "type": "number", "default": 0.0017, "description": "This is the chance that the mob will stop snacking, from 0 to 1", "title": "TODO Title" }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.tempt",
+  "description": "Allows the mob to be tempted by food they like.",
+  "type": "object",
+  "title": "Tempt 1.16.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "types/base_priority.json" },
+    "speed_multiplier": { "$ref": "types/base_speed_multiplier.json" },
+    "can_get_scared": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, the mob can stop being tempted if the player moves too fast while close to this mob",
+      "title": "TODO Title"
+    },
+    "can_tempt_while_ridden": { "type": "boolean", "title": "Can Tempt While Ridden", "description": "UNDOCUMENTATED" },
+    "can_tempt_vertically": { "type": "boolean", "title": "Can Tempt Vertically", "description": "UNDOCUMENTATED" },
+    "items": { "type": "array", "description": "List of items this mob is tempted by", "items": { "$ref": "../../../../general/item/identifier.json" }, "title": "TODO Title" },
+    "within_radius": { "type": "number", "default": 0, "description": "Distance in blocks this mob can get tempted by a player holding an item they like", "title": "TODO Title" }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.condition.random_difficulty_chance",
+  "type": "object",
+  "additionalProperties": false,
+  "description": "Sets a random chance of the specified value based on the level difficulty.",
+  "title": "Random Difficulty Chance",
+  "properties": {
+    "condition": { "type": "string", "title": "Condition", "description": "TODO" },
+    "default_chance": { "type": "number", "default": 0, "description": "The default random chance if the level difficulty is not assigned.", "title": "Default Chance" },
+    "easy": {
+      "type": "number",
+      "default": 0,
+      "description": "The default random chance if the level difficulty is in easy. Omitting this field will set the value to \"default_chance\" field.",
+      "title": "Easy"
+    },
+    "hard": {
+      "type": "number",
+      "default": 0,
+      "description": "The default random chance if the level difficulty is in hard. Omitting this field will set the value to \"default_chance\" field.",
+      "title": "Hard"
+    },
+    "normal": {
+      "type": "number",
+      "default": 0,
+      "description": "The default random chance if the level difficulty is in normal. Omitting this field will set the value to \"default_chance\" field.",
+      "title": "Normal"
+    },
+    "peaceful": {
+      "type": "number",
+      "default": 0,
+      "description": "The default random chance if the level difficulty is in peaceful. Omitting this field will set the value to \"default_chance\" field.",
+      "title": "Peaceful"
+    }
+  }
+}

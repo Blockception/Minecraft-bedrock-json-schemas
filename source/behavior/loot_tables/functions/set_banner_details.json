@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.loot_tables.set_banner_details",
+  "additionalProperties": false,
+  "description": "The function set_banner_details",
+  "title": "Set Banner Details",
+  "properties": {
+    "function": { "type": "string", "const": "set_banner_details", "description": "TODO description", "title": "TODO Title" },
+    "type": { "type": "integer", "description": "TODO description", "title": "TODO Title" }
+  }
+}

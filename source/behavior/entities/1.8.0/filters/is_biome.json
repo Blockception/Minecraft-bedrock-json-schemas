@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.filters.is_biome",
+  "type": "object",
+  "title": "Filters Is Biome 1.8.0",
+  "description": "Tests whether the Subject is currently in the named biome.",
+  "required": ["value"],
+  "properties": {
+    "test": { "type": "string", "title": "Test Property", "description": "Tests whether the Subject is currently in the named biome." },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
+    "value": {
+      "description": "The Biome type to test",
+      "type": "string",
+      "enum": [
+        "beach",
+        "desert",
+        "extreme_hills",
+        "flat",
+        "forest",
+        "ice",
+        "jungle",
+        "mesa",
+        "mushroom_island",
+        "ocean",
+        "plain",
+        "river",
+        "savanna",
+        "stone_beach",
+        "swamp",
+        "taiga",
+        "the_end",
+        "the_nethe"
+      ],
+      "title": "Value"
+    }
+  }
+}

@@ -8,7 +8,7 @@
       "fileMatch": ["language_names.json"],
       "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/language/language_names.json"
     },
-    {      
+    {
       "fileMatch": ["languages.json"],
       "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/language/languages.json"
     },
@@ -116,7 +116,7 @@
         "*BP*/animation_controllers/*.json",
         "*bp*/animation_controllers/*.json"
       ],
-      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behaviour/animation_controllers/animation_controller.json"
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/animation_controllers/animation_controller.json"
     },
     {
       "fileMatch": [
@@ -126,11 +126,11 @@
         "*BP*/animations/*.json",
         "*bp*/animations/*.json"
       ],
-      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behaviour/animations/animations.json"
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/animations/animations.json"
     },
     {
       "fileMatch": ["behavior_packs/*/biomes/*.json", "*behavior*pack*/biomes/*.json", "*Behavior*Pack*/biomes/*.json", "*BP*/biomes/*.json", "*bp*/biomes/*.json"],
-      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behaviour/biomes/biomes.json"
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/biomes/biomes.json"
     },
     {
       "fileMatch": [
@@ -141,11 +141,11 @@
         "*bp*/loot_tables/*.json",
         "*.loot.json"
       ],
-      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behaviour/loot_tables/loot_tables.json"
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/loot_tables/loot_tables.json"
     },
     {
       "fileMatch": ["behavior_packs/*/blocks/*.json", "*behavior*pack*/blocks/*.json", "*Behavior*Pack*/blocks/*.json", "*BP*/blocks/*.json", "*bp*/blocks/*.json"],
-      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behaviour/blocks/blocks.json"
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/blocks/blocks.json"
     },
     {
       "fileMatch": [
@@ -156,19 +156,19 @@
         "*bp*/entities/*.json",
         "!*loot_tables*"
       ],
-      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behaviour/entities/entities.json"
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/entities/entities.json"
     },
     {
       "fileMatch": ["behavior_packs/*/items/*.json", "*behavior*pack*/items/*.json", "*Behavior*Pack*/items/*.json", "*BP*/items/*.json", "*bp*/items/*.json"],
-      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behaviour/items/items.json"
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/items/items.json"
     },
     {
       "fileMatch": ["recipes/*.json"],
-      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behaviour/recipes/recipes.json"
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/recipes/recipes.json"
     },
     {
       "fileMatch": ["spawn_rules/*.json"],
-      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behaviour/spawn_rules/spawn_rules.json"
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/spawn_rules/spawn_rules.json"
     },
     {
       "fileMatch": [
@@ -179,7 +179,7 @@
         "*bp*/trading/*.json",
         "*.trade.json"
       ],
-      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behaviour/trading/trading.json"
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/trading/trading.json"
     }
   ]
 }

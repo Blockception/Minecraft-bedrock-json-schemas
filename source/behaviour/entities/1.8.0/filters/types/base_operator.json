@@ -1,9 +1,0 @@
-{
-  "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "blockception.minecraft.behaviour.entities.filters.1.8.0.base_operator",
-  "title": "Filters Operator 1.8.0",
-  "type": "string",
-  "description": "The comparison to apply with 'value'.",
-  "default": "equals",
-  "enum": ["!=", "<", "<=", "<>", "=", "==", ">", ">=", "equals", "not"]
-}

@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.blocks.1.10.0.minecraft.entity_collision",
+  "additionalProperties": false,
+  "title": "Entity Collision 1.10.0",
+  "description": "Can only be set to false, it disables the collision of the block with entities.",
+  "oneOf": [
+    { "type": "boolean", "const": false },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "origin": {
+          "type": "array",
+          "title": "Origin",
+          "description": "Minimal position Bounds of the collision box",
+          "default": [-8.0, 0.0, -8.0],
+          "items": [
+            { "type": "number", "title": "X", "description": "The x offset" },
+            { "type": "number", "title": "Y", "description": "The y offset" },
+            { "type": "number", "title": "Z", "description": "The z offset" }
+          ]
+        },
+        "size": {
+          "type": "array",
+          "title": "Size",
+          "description": "Size of each side of the box of the component",
+          "default": [16.0, 16.0, 16.0],
+          "items": [
+            { "type": "number", "title": "X", "description": "The x size" },
+            { "type": "number", "title": "Y", "description": "The y size" },
+            { "type": "number", "title": "Z", "description": "The z size" }
+          ]
+        }
+      }
+    }
+  ]
+}

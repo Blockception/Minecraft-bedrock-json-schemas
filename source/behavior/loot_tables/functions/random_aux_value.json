@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.loot_tables.random_aux_value",
+  "additionalProperties": false,
+  "description": "The function random_aux_value",
+  "title": "Random Aux Value",
+  "properties": {
+    "function": { "type": "string", "const": "random_aux_value", "description": "TODO description", "title": "TODO Title" },
+    "values": {
+      "type": "object",
+      "properties": { "min": { "type": "integer" }, "max": { "type": "integer" } },
+      "description": "TODO description",
+      "title": "TODO Title",
+      "additionalProperties": false
+    }
+  }
+}

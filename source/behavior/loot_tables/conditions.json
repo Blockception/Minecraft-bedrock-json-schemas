@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.loot_tables.conditions",
+  "description": "A minecraft loot table condition",
+  "title": "Condition",
+  "allOf": [
+    { "if": { "properties": { "condition": { "type": "string", "const": "entity_properties" } } }, "then": { "$ref": "./conditions/entity_properties.json" } },
+    { "if": { "properties": { "condition": { "type": "string", "const": "has_mark_variant" } } }, "then": { "$ref": "./conditions/has_mark_variant.json" } },
+    { "if": { "properties": { "condition": { "type": "string", "const": "killed_by_player" } } }, "then": { "$ref": "./conditions/killed_by_player.json" } },
+    { "if": { "properties": { "condition": { "type": "string", "const": "killed_by_player_or_pets" } } }, "then": { "$ref": "./conditions/killed_by_player_or_pets.json" } },
+    { "if": { "properties": { "condition": { "type": "string", "const": "random_chance" } } }, "then": { "$ref": "./conditions/random_chance.json" } },
+    { "if": { "properties": { "condition": { "type": "string", "const": "random_chance_with_looting" } } }, "then": { "$ref": "./conditions/random_chance_with_looting.json" } },
+    { "if": { "properties": { "condition": { "type": "string", "const": "random_difficulty_chance" } } }, "then": { "$ref": "./conditions/random_difficulty_chance.json" } },
+    {
+      "if": { "properties": { "condition": { "type": "string", "const": "random_regional_difficulty_chance" } } },
+      "then": { "$ref": "./conditions/random_regional_difficulty_chance.json" }
+    }
+  ]
+}

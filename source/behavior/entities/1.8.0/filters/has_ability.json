@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.filters.has_ability",
+  "type": "object",
+  "title": "Filters Has Ability 1.8.0",
+  "description": "Returns true when the subject entity has the named ability.",
+  "required": ["value"],
+  "properties": {
+    "test": { "type": "string", "title": "Test Property", "description": "Returns true when the subject entity has the named ability." },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
+    "value": {
+      "type": "string",
+      "description": "(Required) The Ability type to test",
+      "enum": ["flySpeed", "flying", "instabuild", "invulnerable", "lightning", "mayfly", "mute", "noclip", "walkSpeed", "worldbuilder"],
+      "title": "Value"
+    }
+  }
+}

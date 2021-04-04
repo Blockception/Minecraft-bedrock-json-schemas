@@ -1,0 +1,8 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.blocks.1.16.200.minecraft.destroy_time",
+  "additionalProperties": false,
+  "type": "number",
+  "title": "Destroy Time 1.16.200",
+  "description": "Sets the destroy time property for the block. Greater numbers result in greater mining times."
+}

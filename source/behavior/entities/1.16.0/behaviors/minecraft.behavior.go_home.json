@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.go_home",
+  "additionalProperties": false,
+  "description": "Allows the mob to move back to the position they were spawned.",
+  "title": "Go Home",
+  "type": "object",
+  "definitions": {
+    "on_home_spec": {
+      "additionalProperties": false,
+      "type": "object",
+      "title": "On Home Event",
+      "description": "UNDOCUMENTATED",
+      "properties": {
+        "event": { "type": "string", "pattern": "^[a-zA-Z0-9_\\-:]+$", "description": "The event to fire", "title": "Event" },
+        "target": {
+          "type": "string",
+          "description": "The target of the event",
+          "title": "Target",
+          "enum": ["baby", "block", "damager", "other", "parent", "player", "self", "target"]
+        },
+        "filters": { "$ref": "../filters.json" }
+      }
+    }
+  },
+  "properties": {
+    "priority": { "$ref": "types/base_priority.json" },
+    "speed_multiplier": { "$ref": "types/base_speed_multiplier.json" },
+    "goal_radius": {
+      "type": "number",
+      "default": 0.5,
+      "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot",
+      "title": "Goal Radius"
+    },
+    "interval": {
+      "type": "integer",
+      "default": 120,
+      "description": "A random value to determine when to randomly move somewhere. This has a 1/interval chance to choose this goal",
+      "title": "Interval"
+    },
+    "on_home": {
+      "description": "Event to run when this mob gets home.",
+      "title": "On Home",
+      "oneOf": [
+        { "type": "string", "pattern": "^[a-zA-Z0-9_\\-:]+$" },
+        { "type": "object", "$ref": "#/definitions/on_home_spec" },
+        { "type": "array", "items": { "$ref": "#/definitions/on_home_spec" } }
+      ]
+    },
+    "on_failed": { "$ref": "../types/event.json", "title": "On Failed", "description": "UNDOCUMENTATED" }
+  }
+}

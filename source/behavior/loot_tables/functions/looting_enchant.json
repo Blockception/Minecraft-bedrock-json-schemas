@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.loot_tables.looting_enchant",
+  "additionalProperties": false,
+  "description": "The function looting_enchant",
+  "title": "Looting Enchant",
+  "properties": {
+    "function": { "type": "string", "const": "looting_enchant", "description": "TODO description", "title": "TODO Title" },
+    "count": {
+      "type": "object",
+      "properties": { "min": { "type": "integer" }, "max": { "type": "integer" } },
+      "description": "TODO description",
+      "title": "TODO Title",
+      "additionalProperties": false
+    }
+  }
+}

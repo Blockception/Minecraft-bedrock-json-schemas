@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.loot_tables.set_actor_id",
+  "additionalProperties": false,
+  "description": "The function set_actor_id",
+  "title": "Set Actor Id",
+  "properties": {
+    "function": { "type": "string", "const": "set_actor_id", "description": "TODO description", "title": "TODO Title" },
+    "id": { "type": "string", "description": "TODO description", "title": "TODO Title" }
+  }
+}
