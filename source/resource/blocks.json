@@ -31,14 +31,14 @@
   "additionalProperties": {
     "additionalProperties": false,
     "title": "Block",
-    "description": "TODO",
+    "description": "Block texture definition",
     "type": "object",
     "properties": {
       "brightness_gamma": { "type": "number", "title": "Brightness Gamma", "description": "TODO" },
       "carried_textures": { "$ref": "#/definitions/texture", "title": "Carried Textures", "description": "TODO" },
       "isotropic": {
         "title": "Isotropic",
-        "description": "TODO",
+        "description": "Marks if this block is isotropic or not, or which side are",
         "oneOf": [
           { "type": "boolean" },
           {
@@ -56,7 +56,7 @@
           }
         ]
       },
-      "sound": { "type": "string", "title": "Sound", "description": "TODO" },
+      "sound": { "type": "string", "title": "Sound", "description": "The sound definition of this block" },
       "textures": { "$ref": "#/definitions/texture", "title": "Sound", "description": "Textures" }
     }
   }

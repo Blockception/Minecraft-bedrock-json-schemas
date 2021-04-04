@@ -22,7 +22,7 @@
     "render_controllers": {
       "type": "object",
       "propertyNames": { "pattern": "^controller\\.render\\.[a-z\\.]+" },
-      "additionalProperties": {        
+      "additionalProperties": {
         "title": "Render Controller",
         "additionalProperties": false,
         "type": "object",
@@ -30,48 +30,64 @@
         "required": ["geometry", "materials"],
         "properties": {
           "arrays": {
-            "additionalProperties": false,
             "type": "object",
+            "title": "Arrays",
+            "additionalProperties": false,
+            "description": "A collection of definition of arrays",
             "properties": {
               "geometries": {
                 "type": "object",
                 "minProperties": 1,
+                "description": "A collection of Geometry array",
+                "title": "Geometries",
                 "additionalProperties": {
                   "type": "array",
-                  "items": { "type": "string", "pattern": "^[Gg]eometry\\..+", "description": "TODO description: additionalProperties", "title": "TODO" },
-                  "description": "TODO description: additionalProperties",
-                  "title": "TODO"
-                },
-                "description": "TODO description: geometries",
-                "title": "Geometries"
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[Gg]eometry\\..+",
+                    "description": "A geometry item, must be defined in the entity",
+                    "title": "Geometry reference"
+                  },
+                  "description": "A geometry array definition",
+                  "title": "Geometry array"
+                }
               },
               "materials": {
                 "type": "object",
                 "minProperties": 1,
+                "description": "A collection of materials array",
+                "title": "Materials",
                 "additionalProperties": {
                   "type": "array",
-                  "items": { "type": "string", "pattern": "^[Mm]aterial\\..+", "description": "TODO description: additionalProperties", "title": "TODO" },
-                  "description": "TODO description: additionalProperties",
-                  "title": "TODO"
-                },
-                "description": "TODO description: materials",
-                "title": "Materials"
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[Mm]aterial\\..+",
+                    "description": "A material item, must be defined in the entity",
+                    "title": "Material reference"
+                  },
+                  "description": "A material array definition",
+                  "title": "Material array"
+                }
               },
               "textures": {
                 "type": "object",
                 "minProperties": 1,
+                "description": "A collection of texture array",
+                "title": "Textures",
                 "additionalProperties": {
                   "type": "array",
                   "description": "Textures",
                   "title": "Texture",
-                  "items": { "type": "string", "pattern": "^[Tt]exture\\..+", "default": "texture.", "description": "An texture item", "title": "Texture" }
-                },
-                "description": "TODO description: textures",
-                "title": "Textures"
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[Tt]exture\\..+",
+                    "default": "texture.",
+                    "description": "An texture item",
+                    "title": "Texture"
+                  }
+                }
               }
-            },
-            "description": "TODO description: arrays",
-            "title": "Arrays"
+            }
           },
           "color": {
             "additionalProperties": false,
@@ -91,14 +107,14 @@
           "is_hurt_color": {
             "additionalProperties": false,
             "type": "object",
+            "description": "The color to overlay on the entity when hurt",
+            "title": "Is Hurt Color",
             "properties": {
-              "r": { "$ref": "#/definitions/color" },
-              "g": { "$ref": "#/definitions/color" },
-              "b": { "$ref": "#/definitions/color" },
-              "a": { "$ref": "#/definitions/color" }
-            },
-            "description": "TODO description: is hurt color",
-            "title": "Is Hurt Color"
+              "r": { "$ref": "#/definitions/color", "description": "The value of red", "title": "R" },
+              "g": { "$ref": "#/definitions/color", "description": "The value of green", "title": "G" },
+              "b": { "$ref": "#/definitions/color", "description": "The value of blue", "title": "B" },
+              "a": { "$ref": "#/definitions/color", "description": "The value of alpha", "title": "A" }
+            }
           },
           "materials": {
             "type": "array",
@@ -115,14 +131,14 @@
           "overlay_color": {
             "additionalProperties": false,
             "type": "object",
-            "properties": {
-              "r": { "$ref": "#/definitions/color", "description": "TODO description: r", "title": "R" },
-              "g": { "$ref": "#/definitions/color", "description": "TODO description: g", "title": "G" },
-              "b": { "$ref": "#/definitions/color", "description": "TODO description: b", "title": "B" },
-              "a": { "$ref": "#/definitions/color", "description": "TODO description: a", "title": "A" }
-            },
             "description": "TODO description: overlay color",
-            "title": "Overlay Color"
+            "title": "Overlay Color",
+            "properties": {
+              "r": { "$ref": "#/definitions/color", "description": "The value of red", "title": "R" },
+              "g": { "$ref": "#/definitions/color", "description": "The value of green", "title": "G" },
+              "b": { "$ref": "#/definitions/color", "description": "The value of blue", "title": "B" },
+              "a": { "$ref": "#/definitions/color", "description": "The value of alpha", "title": "A" }
+            }
           },
           "textures": {
             "type": "array",
@@ -168,7 +184,11 @@
             "description": "TODO description: part visibility",
             "title": "Part Visibility"
           },
-          "rebuild_animation_matrices": { "type": "boolean", "description": "TODO description: rebuild animation matrices", "title": "Rebuild Animation Matrices" }
+          "rebuild_animation_matrices": {
+            "type": "boolean",
+            "description": "TODO description: rebuild animation matrices",
+            "title": "Rebuild Animation Matrices"
+          }
         }
       },
       "description": "TODO description: render controllers",
