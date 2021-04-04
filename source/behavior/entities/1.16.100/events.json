@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behavior.entities.events.1.16.100",
   "type": "object",
   "title": "Entity 1.16.100",
-  "description": "TODO description: ",
+  "description": "TODO description:",
   "definitions": {
     "addremove": {
       "additionalProperties": false,

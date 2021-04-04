@@ -8,7 +8,7 @@
     "biomespec": {
       "additionalProperties": false,
       "description": "The specification of colors in a given biome",
-      "title": "Biome ",
+      "title": "Biome",
       "type": "object",
       "properties": {
         "fog_color": { "$ref": "#/definitions/colorhex", "title": "Fog Color", "description": "The color of the fog" },

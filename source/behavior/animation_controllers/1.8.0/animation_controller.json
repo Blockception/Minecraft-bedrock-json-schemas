@@ -12,7 +12,7 @@
         {
           "type": "object",
           "title": "Animation Specification",
-          "description": "A object specification on how to transition",
+          "description": "A object specification on when to animate",
           "maxProperties": 1,
           "minProperties": 1,
           "additionalProperties": {
@@ -86,11 +86,9 @@
         "minProperties": 1,
         "properties": {
           "states": {
-            "title": "States ",
+            "title": "States",
             "description": "The states of this animation controller",
-            "propertyNames": {
-              "pattern": "[a-z\\.]+"
-            },
+            "propertyNames": { "pattern": "[a-z\\.]+" },
             "minProperties": 1,
             "additionalProperties": {
               "additionalProperties": false,
@@ -99,13 +97,13 @@
               "type": "object",
               "properties": {
                 "animations": {
-                  "title": "Animations ",
+                  "title": "Animations",
                   "description": "The animations definition for 1.8.0",
                   "type": "array",
                   "items": {
                     "$ref": "#/definitions/animationspec",
-                    "description": "TODO description: animations",
-                    "title": "Animations"
+                    "description": "The animation key to play, defined in the entity",
+                    "title": "Animation"
                   }
                 },
                 "on_entry": {
@@ -123,23 +121,30 @@
                   }
                 },
                 "transitions": {
-                  "title": "Transition ",
+                  "title": "Transition",
                   "description": "The transition definition for 1.8.0",
                   "minProperties": 1,
                   "type": "array",
                   "items": {
-                    "$ref": "#/definitions/animationspec",
-                    "description": "TODO description: transitions",
-                    "title": "Transitions"
+                    "title": "Transition",
+                    "description": "A transition to another state",
+                    "type": "object",
+                    "examples": [ { "default": "query.is_chested" }],
+                    "additionalProperties": {
+                      "$ref": "../../../molang/1.8.0/string.json"
+                    },
+                    "minProperties": 1,
+                    "maxProperties": 1
                   }
                 }
               }
             }
           },
           "initial_state": {
-            "type": "string",
+            "title": "Initial State",
             "description": "The state to start with, if not specified state at position 0 in the array is used",
-            "title": "Initial State"
+            "type": "string",
+            "examples": ["default"]            
           }
         }
       }

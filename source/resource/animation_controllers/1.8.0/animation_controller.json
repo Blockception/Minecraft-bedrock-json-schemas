@@ -63,7 +63,7 @@
         "minProperties": 1,
         "properties": {
           "states": {
-            "title": "States ",
+            "title": "States",
             "description": "The states of this animation controller",
             "propertyNames": { "pattern": "[a-z\\.]+" },
             "minProperties": 1,
@@ -74,7 +74,7 @@
               "type": "object",
               "properties": {
                 "animations": {
-                  "title": "Animations ",
+                  "title": "Animations",
                   "description": "The animations definition for 1.10.0",
                   "type": "array",
                   "items": { "$ref": "#/definitions/animationspec", "description": "TODO description: animations", "title": "Animations" }
@@ -115,7 +115,7 @@
                   }
                 },
                 "transitions": {
-                  "title": "Transition ",
+                  "title": "Transition",
                   "description": "The transition definition for 1.8.0",
                   "minProperties": 1,
                   "type": "array",

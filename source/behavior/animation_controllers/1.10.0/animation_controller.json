@@ -64,7 +64,7 @@
   "required": ["format_version", "animation_controllers"],
   "additionalProperties": false,
   "title": "Animation Controller 1.10.0",
-  "description": "TODO description",
+  "description": "Animation controller for minecraft behavior 1.10.0",
   "properties": {
     "format_version": {
       "title": "1.10.0 Format Version",
@@ -88,7 +88,7 @@
         "minProperties": 1,
         "properties": {
           "states": {
-            "title": "States ",
+            "title": "States",
             "description": "The states of this animation controller",
             "propertyNames": {
               "pattern": "[a-z\\.]+"
@@ -101,12 +101,12 @@
               "type": "object",
               "properties": {
                 "animations": {
-                  "title": "Animations ",
+                  "title": "Animations",
                   "description": "The animations definition for 1.10.0",
                   "type": "array",
                   "items": {
                     "$ref": "#/definitions/animationspec",
-                    "description": "TODO description: animations",
+                    "description": "The key definition of an animation to play, defined in the entity",
                     "title": "Animations"
                   }
                 },

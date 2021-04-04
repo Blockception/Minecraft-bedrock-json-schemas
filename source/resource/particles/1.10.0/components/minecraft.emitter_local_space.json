@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.resource.particle.1.10.0.emitter_local_space",
   "type": "object",
   "title": "Emitter Local Space Component For 1.10.0",
-  "description": "TODO description: ",
+  "description": "TODO description:",
   "additionalProperties": false,
   "properties": {
     "position": { "type": "boolean", "description": "TODO description: position", "title": "Position" },

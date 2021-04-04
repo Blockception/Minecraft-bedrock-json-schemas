@@ -52,7 +52,7 @@
         "type": "object",
         "additionalProperties": false,
         "description": "TODO description: additionalItems",
-        "title": "Animation ",
+        "title": "Animation",
         "properties": {
           "animation_length": { "type": "number", "description": "TODO description: animation length", "title": "Animation Length" },
           "loop": { "type": "boolean", "description": "TODO description: loop", "title": "Loop" },

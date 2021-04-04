@@ -19,7 +19,7 @@
       "required": ["description"],
       "properties": {
         "description": {
-          "title": "Description ",
+          "title": "Description",
           "type": "object",
           "required": ["identifier"],
           "additionalProperties": false,
@@ -37,7 +37,7 @@
             },
             "enable_attachables": { "type": "boolean", "description": "TODO description: enable attachables", "title": "Enable Attachables" },
             "geometry": {
-              "title": "Geometry ",
+              "title": "Geometry",
               "description": "The reference to defined geometries in '<resource pack>/models/'",
               "type": "object",
               "propertyNames": { "pattern": "[a-zA-Z0-9_\\.\\-]+" },
@@ -138,7 +138,7 @@
                   "minProperties": 1,
                   "propertyNames": { "pattern": "variable.[a-zA-Z_][a-zA-Z0-9_]*" },
                   "additionalProperties": {
-                    "title": "Variable ",
+                    "title": "Variable",
                     "description": " If a variable is public, it can be read by other mobs. See the molang `->` operator for details.",
                     "type": "string",
                     "enum": ["public"]

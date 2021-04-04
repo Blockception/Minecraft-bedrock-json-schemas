@@ -17,7 +17,7 @@
       "title": "Skins",
       "description": "An array of item",
       "items": {
-        "title": "Skin ",
+        "title": "Skin",
         "description": "A single skin definition",
         "additionalProperties": false,
         "required": ["localization_name", "geometry", "texture", "type"],

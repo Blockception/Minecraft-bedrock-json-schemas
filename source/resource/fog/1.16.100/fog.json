@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.resource.1.16.100.resource",
   "type": "object",
   "additionalProperties": false,
-  "title": "Fog ",
+  "title": "Fog",
   "description": "TODO",
   "definitions": {
     "colorHexOrArray": {

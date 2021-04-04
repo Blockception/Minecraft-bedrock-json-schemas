@@ -19,7 +19,7 @@
       "required": ["description"],
       "properties": {
         "description": {
-          "title": "Description ",
+          "title": "Description",
           "type": "object",
           "required": ["identifier"],
           "additionalProperties": false,
@@ -43,7 +43,7 @@
             },
             "enable_attachables": { "type": "boolean", "description": "TODO description: enable attachables", "title": "Enable Attachables" },
             "geometry": {
-              "title": "Geometry ",
+              "title": "Geometry",
               "type": "object",
               "propertyNames": { "pattern": "[a-zA-Z0-9_\\.\\-]+" },
               "minProperties": 1,

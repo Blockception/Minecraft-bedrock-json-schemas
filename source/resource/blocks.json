@@ -30,7 +30,7 @@
   },
   "additionalProperties": {
     "additionalProperties": false,
-    "title": "Block ",
+    "title": "Block",
     "description": "TODO",
     "type": "object",
     "properties": {

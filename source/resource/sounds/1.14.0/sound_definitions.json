@@ -18,7 +18,7 @@
       "additionalItems": false,
       "type": "object",
       "$id": "#/Sound",
-      "title": "Sound ",
+      "title": "Sound",
       "required": ["sounds"],
       "properties": {
         "category": {
