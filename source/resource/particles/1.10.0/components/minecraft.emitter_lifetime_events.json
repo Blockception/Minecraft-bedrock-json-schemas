@@ -17,6 +17,7 @@
       "oneOf": [{ "type": "array", "items": { "type": "string" } }, { "type": "string" }]
     },
     "timeline": {
+      "title": "Timeline",
       "type": "object",
       "description": "A series of times, e.g. 0.0 or 1.0, that trigger the event, these get fired on every loop the emitter goes through, \"time\" is the time, e.g. one line might be: \"0.4\": \"event\"",
       "propertyNames": { "pattern": "^[\\d\\.]+$" },
@@ -24,8 +25,7 @@
         "title": "Timeline Object",
         "description": "A single point in time that executes commands/molang/events",
         "oneOf": [{ "type": "array", "items": { "type": "string" } }, { "type": "string" }]
-      },
-      "title": "TODO Title"
+      }
     },
     "travel_distance_events": {
       "title": "Travel Distance Events",
@@ -42,7 +42,11 @@
         "additionalProperties": false,
         "properties": {
           "distance": { "title": "Distance", "description": "TODO", "type": "number" },
-          "effects": { "title": "Effects", "description": "TODO", "oneOf": [{ "type": "array", "items": { "type": "string" } }, { "type": "string" }] }
+          "effects": {
+            "title": "Effects",
+            "description": "TODO",
+            "oneOf": [{ "type": "array", "items": { "type": "string" } }, { "type": "string" }]
+          }
         }
       }
     }

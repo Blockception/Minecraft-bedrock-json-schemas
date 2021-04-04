@@ -63,19 +63,39 @@
               "additionalProperties": false,
               "properties": {
                 "normalized_uvs": { "title": "Normalized Uvs", "description": "TODO", "type": "boolean" },
-                "positions": { "title": "Positions", "description": "TODO", "type": "array", "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }] },
-                "normals": { "title": "Normals", "description": "TODO", "type": "array", "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }] },
+                "positions": {
+                  "title": "Positions",
+                  "description": "TODO",
+                  "type": "array",
+                  "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
+                },
+                "normals": {
+                  "title": "Normals",
+                  "description": "TODO",
+                  "type": "array",
+                  "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
+                },
                 "polys": {
                   "title": "Polys",
                   "description": "TODO",
                   "type": "array",
-                  "items": { "type": "array", "minItems": 3, "maxItems": 4, "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }] }
+                  "items": {
+                    "type": "array",
+                    "minItems": 3,
+                    "maxItems": 4,
+                    "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
+                  }
                 }
               }
             },
             "render_group_id": { "title": "Render Group Id", "description": "TODO", "type": "integer", "minimum": 0 },
             "reset": { "title": "Reset", "description": "TODO", "type": "boolean" },
-            "rotation": { "title": "Rotation", "description": "TODO", "type": "array", "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }] },
+            "rotation": {
+              "title": "Rotation",
+              "description": "TODO",
+              "type": "array",
+              "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
+            },
             "texture_meshes": {
               "type": "array",
               "title": "Texture Meshes",
