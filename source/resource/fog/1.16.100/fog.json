@@ -87,7 +87,11 @@
     }
   },
   "properties": {
-    "format_version": { "title": "Format Version", "description": "TODO: format_version", "type": "string" },
+    "format_version": {
+      "title": "Format Version",
+      "description": "A version that tells minecraft what type of data format can be expected when reading this file.",
+      "type": "string"
+    },
     "minecraft:fog_settings": {
       "title": "Fog Settings",
       "description": "The definition of a single fog",

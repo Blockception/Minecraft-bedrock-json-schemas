@@ -1,36 +1,40 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.resource.1.10.0.items",
-  "description": "Minecraft items 1.10.0",
   "required": ["format_version", "minecraft:item"],
   "title": "Item",
+  "description": "Minecraft items 1.10.0",
   "properties": {
-    "format_version": { "type": "string", "description": "TODO description", "title": "TODO Title" },
+    "format_version": {
+      "title": "Format Version",
+      "description": "A version that tells minecraft what type of data format can be expected when reading this file.",
+      "type": "string"
+    },
     "minecraft:item": {
       "title": "Item",
-      "description": "TODO",
+      "description": "A resource pack definition of an item",
       "required": ["description", "components"],
       "type": "object",
       "additionalProperties": false,
       "properties": {
         "description": {
           "title": "Description",
-          "description": "TODO",
+          "description": "The description of an item",
           "required": ["identifier"],
           "type": "object",
           "additionalProperties": false,
           "properties": {
-            "identifier": { "title": "Identifier", "description": "TODO", "$ref": "../../../general/item/identifier.json" },
-            "category": { "title": "Category", "description": "TODO", "type": "string" }
+            "identifier": { "title": "Identifier", "description": "The item identifier", "$ref": "../../../general/item/identifier.json", "examples": ["namespace:example"] },
+            "category": { "title": "Category", "description": "The category this item belongs in", "type": "string" }
           }
         },
         "components": {
           "title": "Components",
-          "description": "TODO",
+          "description": "The components that describe this item",
           "additionalProperties": false,
           "properties": {
             "minecraft:icon": { "title": "Icon", "description": "The texture defined in `textures/item_texture.json`", "type": "string" },
-            "minecraft:render_offsets": { "type": "string", "description": "TODO", "title": "Render Offsets", "enum": ["apple"] }
+            "minecraft:render_offsets": { "type": "string", "description": "The render offset used for the item", "title": "Render Offsets", "enum": ["apple"] }
           }
         }
       }
