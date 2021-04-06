@@ -21,6 +21,7 @@
     { "if": { "properties": { "format_version": { "type": "string", "const": "1.13.0" } } }, "then": { "$ref": "./1.13.0/entities.json" } },
     { "if": { "properties": { "format_version": { "type": "string", "const": "1.14.0" } } }, "then": { "$ref": "./1.14.0/entities.json" } },
     { "if": { "properties": { "format_version": { "type": "string", "const": "1.16.0" } } }, "then": { "$ref": "./1.16.0/entities.json" } },
-    { "if": { "properties": { "format_version": { "type": "string", "const": "1.16.100" } } }, "then": { "$ref": "./1.16.100/entities.json" } }
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.16.100" } } }, "then": { "$ref": "./1.16.100/entities.json" } },
+    { "properties": { "format_version": { "$ref": "../../general/format_version.json" } } }
   ]
 }

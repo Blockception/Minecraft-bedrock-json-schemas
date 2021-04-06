@@ -17,6 +17,7 @@
     { "if": { "properties": { "format_version": { "type": "string", "const": "1.10.0" } } }, "then": { "$ref": "./1.10.0/model_entity.json" } },
     { "if": { "properties": { "format_version": { "type": "string", "const": "1.12.0" } } }, "then": { "$ref": "./1.12.0/model_entity.json" } },
     { "if": { "properties": { "format_version": { "type": "string", "const": "1.14.0" } } }, "then": { "$ref": "./1.14.0/model_entity.json" } },
-    { "if": { "properties": { "format_version": { "type": "string", "const": "1.16.0" } } }, "then": { "$ref": "./1.16.0/model_entity.json" } }
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.16.0" } } }, "then": { "$ref": "./1.16.0/model_entity.json" } },
+    { "properties": { "format_version": { "$ref": "../../general/format_version.json" } } }
   ]
 }

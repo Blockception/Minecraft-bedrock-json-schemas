@@ -8,6 +8,7 @@
     { "if": { "properties": { "format_version": { "type": "string", "const": "1.12.0" } } }, "then": { "$ref": "./1.12.0/blocks.json" } },
     { "if": { "properties": { "format_version": { "type": "string", "const": "1.16.0" } } }, "then": { "$ref": "./1.16.0/blocks.json" } },
     { "if": { "properties": { "format_version": { "type": "string", "const": "1.16.100" } } }, "then": { "$ref": "./1.16.100/blocks.json" } },
-    { "if": { "properties": { "format_version": { "type": "string", "const": "1.16.200" } } }, "then": { "$ref": "./1.16.200/blocks.json" } }
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.16.200" } } }, "then": { "$ref": "./1.16.200/blocks.json" } },
+    { "properties": { "format_version": { "$ref": "../../general/format_version.json" } } }
   ]
 }
