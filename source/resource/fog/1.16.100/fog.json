@@ -64,14 +64,14 @@
           "title": "Max Density Height",
           "description": "The height in blocks that the ground fog will become it's maximum density.",
           "minimum": 0,
-          "maximum": 320,
+          "maximum": 128,
           "type": "number"
         },
         "zero_density_height": {
           "title": "Zero Density Height",
           "description": "The height in blocks that the ground fog will be completely transparent and begin to appear. This value needs to be at least 1 higher than 'max_density_height'.",
           "minimum": 0,
-          "maximum": 320,
+          "maximum": 128,
           "type": "number"
         },
         "uniform": { "title": "Uniform", "description": "When set to true, the density will be uniform across all heights.", "type": "boolean" }
