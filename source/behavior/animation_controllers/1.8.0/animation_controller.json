@@ -129,7 +129,7 @@
                     "title": "Transition",
                     "description": "A transition to another state",
                     "type": "object",
-                    "examples": [ { "default": "query.is_chested" }],
+                    "examples": [{ "default": "query.is_chested" }],
                     "additionalProperties": {
                       "$ref": "../../../molang/1.8.0/string.json"
                     },
@@ -144,7 +144,7 @@
             "title": "Initial State",
             "description": "The state to start with, if not specified state at position 0 in the array is used",
             "type": "string",
-            "examples": ["default"]            
+            "examples": ["default"]
           }
         }
       }

@@ -23,11 +23,11 @@
     "colorhex": { "description": "The colouration of this object", "title": "Colorhex", "format": "color-hex" }
   },
   "properties": {
-    "biomes": {      
+    "biomes": {
       "type": "object",
       "title": "Biomes",
       "additionalProperties": false,
-      "description": "A collection of predefined biomes",      
+      "description": "A collection of predefined biomes",
       "properties": {
         "bamboo_jungle": { "$ref": "#/definitions/biomespec" },
         "bamboo_jungle_hills": { "$ref": "#/definitions/biomespec" },

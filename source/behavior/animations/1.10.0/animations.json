@@ -51,10 +51,14 @@
         "title": "Animation",
         "type": "object",
         "description": "A single animation definition for 1.10.0",
-        "additionalProperties": false,        
+        "additionalProperties": false,
         "properties": {
           "animation_length": { "type": "number", "description": "The time in seconds this animation will last", "title": "Animation Length" },
-          "loop": { "type": "boolean", "description": "Whenever this animation should loop once it reaches the end, will only happen if the animation is still active", "title": "Loop" },
+          "loop": {
+            "type": "boolean",
+            "description": "Whenever this animation should loop once it reaches the end, will only happen if the animation is still active",
+            "title": "Loop"
+          },
           "timeline": {
             "title": "Timeline",
             "description": "A timeline specification, property names are timestamps",
