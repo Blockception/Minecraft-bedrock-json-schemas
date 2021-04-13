@@ -33,7 +33,15 @@
         "pre_effect_script": { "type": "string", "description": "A molang script that will be run when the particle emitter is initialized" }
       }
     },
-    "commands": { "type": "string", "description": "The event or commands to execute" }
+    "commands": {
+      "type": "string",
+      "description": "The event or commands to execute",
+      "anyOf": [
+        { "pattern": "^.*=.*;$", "title": "Variable" },
+        { "pattern": "^/[a-z].*$", "title": "Minecraft command" },
+        { "pattern": "[A-Za-z][a-z]*\\.[a-z_0-9]*", "title": "Molang" }
+      ]
+    }
   },
   "properties": {
     "format_version": {
