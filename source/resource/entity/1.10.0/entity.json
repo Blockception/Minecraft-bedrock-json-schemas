@@ -25,9 +25,10 @@
           "additionalProperties": false,
           "properties": {
             "animations": {
-              "description": "The collection of animations and animations controllers",
               "title": "Animations",
+              "description": "The collection of animations and animations controllers",
               "type": "object",
+              "minProperties": 1,
               "additionalProperties": {
                 "type": "string",
                 "description": "A reference to an animation or animation controller",
