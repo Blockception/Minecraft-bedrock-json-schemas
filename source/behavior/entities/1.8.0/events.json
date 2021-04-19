@@ -23,15 +23,15 @@
       "additionalProperties": false,
       "type": "object",
       "properties": {
-        "add": { "$ref": "#/definitions/addremove", "description": "TODO description: add", "title": "Add" },
-        "remove": { "$ref": "#/definitions/addremove", "description": "TODO description: remove", "title": "Remove" },
+        "add": { "$ref": "#/definitions/addremove", "description": "What gets added when the event gets triggered", "title": "Add" },
+        "remove": { "$ref": "#/definitions/addremove", "description": "What gets removed when the event gets triggered", "title": "Remove" },
         "randomize": {
           "type": "array",
           "items": {
             "required": ["weight"],
             "properties": {
-              "add": { "$ref": "#/definitions/addremove", "description": "TODO description: add", "title": "Add" },
-              "remove": { "$ref": "#/definitions/addremove", "description": "TODO description: remove", "title": "Remove" },
+              "add": { "$ref": "#/definitions/addremove", "description": "What gets added when the event gets triggered", "title": "Add" },
+              "remove": { "$ref": "#/definitions/addremove", "description": "What gets removed when the event gets triggered", "title": "Remove" },
               "trigger": { "type": "string", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
               "weight": { "type": "number", "description": "TODO description: weight", "title": "Weight" }
             },
@@ -48,8 +48,8 @@
             "title": "Sequence",
             "type": "object",
             "properties": {
-              "add": { "$ref": "#/definitions/addremove", "description": "TODO description: add", "title": "Add" },
-              "remove": { "$ref": "#/definitions/addremove", "description": "TODO description: remove", "title": "Remove" },
+              "add": { "$ref": "#/definitions/addremove", "description": "What gets added when the event gets triggered", "title": "Add" },
+              "remove": { "$ref": "#/definitions/addremove", "description": "What gets removed when the event gets triggered", "title": "Remove" },
               "filters": { "$ref": "./filters.json" }
             }
           },

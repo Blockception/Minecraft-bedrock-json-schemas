@@ -2,7 +2,8 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities.events1.13.0",
   "type": "object",
-  "title": "Entity 1.13.0",
+  "title": "Events 1.13.0",
+  "description": "Events for entities 1.13.0",
   "definitions": {
     "addremove": {
       "additionalProperties": false,
@@ -14,7 +15,7 @@
           "title": "Component Groups Schema",
           "description": "The components groups to add or remove",
           "type": "array",
-          "items": { "type": "string", "description": "TODO description: component groups", "title": "Component Groups" }
+          "items": { "type": "string", "description": "A reference to a component group", "title": "Component Groups" }
         }
       }
     },
@@ -22,15 +23,15 @@
       "additionalProperties": false,
       "type": "object",
       "properties": {
-        "add": { "$ref": "#/definitions/addremove", "description": "TODO description: add", "title": "Add" },
-        "remove": { "$ref": "#/definitions/addremove", "description": "TODO description: remove", "title": "Remove" },
+        "add": { "$ref": "#/definitions/addremove", "description": "What gets added when the event gets triggered", "title": "Add" },
+        "remove": { "$ref": "#/definitions/addremove", "description": "What gets removed when the event gets triggered", "title": "Remove" },
         "randomize": {
           "type": "array",
           "items": {
             "required": ["weight"],
             "properties": {
-              "add": { "$ref": "#/definitions/addremove", "description": "TODO description: add", "title": "Add" },
-              "remove": { "$ref": "#/definitions/addremove", "description": "TODO description: remove", "title": "Remove" },
+              "add": { "$ref": "#/definitions/addremove", "description": "What gets added when the event gets triggered", "title": "Add" },
+              "remove": { "$ref": "#/definitions/addremove", "description": "What gets removed when the event gets triggered", "title": "Remove" },
               "trigger": { "type": "string", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
               "weight": { "type": "number", "description": "TODO description: weight", "title": "Weight" }
             },
@@ -47,8 +48,8 @@
             "title": "Sequence",
             "type": "object",
             "properties": {
-              "add": { "$ref": "#/definitions/addremove", "description": "TODO description: add", "title": "Add" },
-              "remove": { "$ref": "#/definitions/addremove", "description": "TODO description: remove", "title": "Remove" },
+              "add": { "$ref": "#/definitions/addremove", "description": "What gets added when the event gets triggered", "title": "Add" },
+              "remove": { "$ref": "#/definitions/addremove", "description": "What gets removed when the event gets triggered", "title": "Remove" },
               "filters": { "$ref": "./filters.json" }
             }
           },
@@ -74,6 +75,5 @@
     "minecraft:entity_spawned": { "description": "Event called on an entity that is placed in the level.", "$ref": "#/definitions/event_base", "title": "Entity Spawned" },
     "minecraft:on_prime": { "description": "Event called on an entity whose fuse is lit and is ready to explode.", "$ref": "#/definitions/event_base", "title": "On Prime" }
   },
-  "additionalProperties": { "$ref": "#/definitions/event_base" },
-  "description": "TODO description: "
+  "additionalProperties": { "$ref": "#/definitions/event_base" }
 }
