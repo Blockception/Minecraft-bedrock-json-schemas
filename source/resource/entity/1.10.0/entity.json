@@ -82,28 +82,31 @@
             "scripts": {
               "additionalProperties": false,
               "type": "object",
-              "description": "TODO description: scripts",
               "title": "Scripts",
+              "description": "TODO",
               "properties": {
                 "animate": {
                   "type": "array",
-                  "title": "Animate Schema",
+                  "title": "Animate",
+                  "description": "The array of items to animate",
                   "minItems": 1,
                   "items": {
                     "oneOf": [
-                      { "type": "string", "description": "TODO description: oneOf[0]", "title": "TODO Title" },
+                      { "type": "string", "description": "A single animation or animation controller to run", "title": "Animation (Controller)" },
                       {
                         "type": "object",
                         "minProperties": 1,
-                        "additionalProperties": { "type": "string", "description": "TODO description: additionalProperties", "title": "TODO" },
-                        "description": "TODO description: oneOf[1]",
-                        "title": "TODO Title"
+                        "maxProperties": 1,
+                        "title": "Animation (Controller) Condition",
+                        "description": "A single animation or animation controller to run on condition",
+                        "additionalProperties": {
+                          "type": "string",
+                          "description": "A molang condition",
+                          "title": "Molang"
+                        }
                       }
-                    ],
-                    "description": "TODO description: animate",
-                    "title": "Animate"
-                  },
-                  "description": "TODO description: animate"
+                    ]
+                  }
                 },
                 "initialize": {
                   "type": "array",
