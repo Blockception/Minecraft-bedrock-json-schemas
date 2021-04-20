@@ -35,7 +35,8 @@
       "anyOf": [
         { "pattern": "^.*=.*;$", "title": "Variable" },
         { "pattern": "^/[a-z].*$", "title": "Minecraft command" },
-        { "pattern": "[A-Za-z][a-z]*\\.[a-z_0-9]*", "title": "Molang" }
+        { "pattern": "[A-Za-z][a-z]*\\.[a-z_0-9]*", "title": "Molang" },
+        { "pattern": "^@s .*$", "title": "Event" }
       ]
     }
   },
