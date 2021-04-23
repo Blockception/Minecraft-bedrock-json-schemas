@@ -22,7 +22,8 @@
         "bind_to_actor": {
           "type": "boolean",
           "title": "Bind To Actor",
-          "description": "Set to false to have the effect spawned in the world without being bound to an actor (by default an effect is bound to the actor)."
+          "description": "Set to false to have the effect spawned in the world without being bound to an actor (by default an effect is bound to the actor).",
+          "const": false
         }
       }
     },

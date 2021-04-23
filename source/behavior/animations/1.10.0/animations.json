@@ -26,7 +26,8 @@
       "properties": {
         "bind_to_actor": {
           "type": "boolean",
-          "description": "Set to false to have the effect spawned in the world without being bound to an actor (by default an effect is bound to the actor)."
+          "description": "Set to false to have the effect spawned in the world without being bound to an actor (by default an effect is bound to the actor).",
+          "const": false
         },
         "effect": { "type": "string", "description": "The name of a particle effect that should be played" },
         "locator": { "type": "string", "description": "The name of a locator on the actor where the effect should be located" },
