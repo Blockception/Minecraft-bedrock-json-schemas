@@ -9,7 +9,7 @@
     "color": {
       "anyOf": [
         { "type": "number", "description": "A color definition as number, between 0 and 1", "minimum": 0, "maximum": 1, "title": "Color Number" },
-        { "type": "string", "description": "A color definition in molang", "title": "Molang Color" }
+        { "type": "string", "description": "A color definition in molang, between 0 and 1", "title": "Molang Color" }
       ]
     }
   },
@@ -21,7 +21,10 @@
     },
     "render_controllers": {
       "type": "object",
-      "propertyNames": { "pattern": "^controller\\.render\\.[a-z\\.]+" },
+      "propertyNames": {
+        "pattern": "^controller\\.render\\.[a-z\\.]+",
+        "examples": ["controller.render.example"]
+      },
       "additionalProperties": {
         "title": "Render Controller",
         "additionalProperties": false,
@@ -93,10 +96,10 @@
             "additionalProperties": false,
             "type": "object",
             "properties": {
-              "r": { "$ref": "#/definitions/color", "description": "TODO description: r", "title": "R" },
-              "g": { "$ref": "#/definitions/color", "description": "TODO description: g", "title": "G" },
-              "b": { "$ref": "#/definitions/color", "description": "TODO description: b", "title": "B" },
-              "a": { "$ref": "#/definitions/color", "description": "TODO description: a", "title": "A" }
+              "r": { "$ref": "#/definitions/color", "description": "The value of red, between 0 and 1", "title": "R" },
+              "g": { "$ref": "#/definitions/color", "description": "The value of green, between 0 and 1", "title": "G" },
+              "b": { "$ref": "#/definitions/color", "description": "The value of blue, between 0 and 1", "title": "B" },
+              "a": { "$ref": "#/definitions/color", "description": "The value of alpha, between 0 and 1", "title": "A" }
             },
             "description": "TODO description: color",
             "title": "Color"
@@ -110,10 +113,10 @@
             "description": "The color to overlay on the entity when hurt",
             "title": "Is Hurt Color",
             "properties": {
-              "r": { "$ref": "#/definitions/color", "description": "The value of red", "title": "R" },
-              "g": { "$ref": "#/definitions/color", "description": "The value of green", "title": "G" },
-              "b": { "$ref": "#/definitions/color", "description": "The value of blue", "title": "B" },
-              "a": { "$ref": "#/definitions/color", "description": "The value of alpha", "title": "A" }
+              "r": { "$ref": "#/definitions/color", "description": "The value of red, between 0 and 1", "title": "R" },
+              "g": { "$ref": "#/definitions/color", "description": "The value of green, between 0 and 1", "title": "G" },
+              "b": { "$ref": "#/definitions/color", "description": "The value of blue, between 0 and 1", "title": "B" },
+              "a": { "$ref": "#/definitions/color", "description": "The value of alpha, between 0 and 1", "title": "A" }
             }
           },
           "materials": {
@@ -134,10 +137,10 @@
             "description": "TODO description: overlay color",
             "title": "Overlay Color",
             "properties": {
-              "r": { "$ref": "#/definitions/color", "description": "The value of red", "title": "R" },
-              "g": { "$ref": "#/definitions/color", "description": "The value of green", "title": "G" },
-              "b": { "$ref": "#/definitions/color", "description": "The value of blue", "title": "B" },
-              "a": { "$ref": "#/definitions/color", "description": "The value of alpha", "title": "A" }
+              "r": { "$ref": "#/definitions/color", "description": "The value of red, between 0 and 1", "title": "R" },
+              "g": { "$ref": "#/definitions/color", "description": "The value of green, between 0 and 1", "title": "G" },
+              "b": { "$ref": "#/definitions/color", "description": "The value of blue, between 0 and 1", "title": "B" },
+              "a": { "$ref": "#/definitions/color", "description": "The value of alpha, between 0 and 1", "title": "A" }
             }
           },
           "textures": {

@@ -23,7 +23,7 @@
     },
     "render_controllers": {
       "type": "object",
-      "propertyNames": { "pattern": "^controller\\.render\\.[a-z\\.]+" },
+      "propertyNames": { "pattern": "^controller\\.render\\.[a-z\\.]+", "examples": ["controller.render.example"] },
       "additionalProperties": {
         "additionalProperties": false,
         "type": "object",
@@ -97,10 +97,10 @@
             "additionalProperties": false,
             "type": "object",
             "properties": {
-              "r": { "$ref": "#/definitions/color", "description": "The value of red", "title": "R" },
-              "g": { "$ref": "#/definitions/color", "description": "The value of green", "title": "G" },
-              "b": { "$ref": "#/definitions/color", "description": "The value of blue", "title": "B" },
-              "a": { "$ref": "#/definitions/color", "description": "The value of alpha", "title": "A" }
+              "r": { "$ref": "#/definitions/color", "description": "The value of red, must result in a float between 0 and 1", "title": "R" },
+              "g": { "$ref": "#/definitions/color", "description": "The value of green, must result in a float between 0 and 1", "title": "G" },
+              "b": { "$ref": "#/definitions/color", "description": "The value of blue, must result in a float between 0 and 1", "title": "B" },
+              "a": { "$ref": "#/definitions/color", "description": "The value of alpha, must result in a float between 0 and 1", "title": "A" }
             }
           },
           "filter_lighting": { "type": "boolean", "description": "TODO description: filter lighting", "title": "Filter Lighting" },
@@ -112,10 +112,10 @@
             "additionalProperties": false,
             "description": "The color that is overlay when hurt",
             "properties": {
-              "r": { "$ref": "#/definitions/color", "description": "The value of red", "title": "R" },
-              "g": { "$ref": "#/definitions/color", "description": "The value of green", "title": "G" },
-              "b": { "$ref": "#/definitions/color", "description": "The value of blue", "title": "B" },
-              "a": { "$ref": "#/definitions/color", "description": "The value of alpha", "title": "A" }
+              "r": { "$ref": "#/definitions/color", "description": "The value of red, must result in a float between 0 and 1", "title": "R" },
+              "g": { "$ref": "#/definitions/color", "description": "The value of green, must result in a float between 0 and 1", "title": "G" },
+              "b": { "$ref": "#/definitions/color", "description": "The value of blue, must result in a float between 0 and 1", "title": "B" },
+              "a": { "$ref": "#/definitions/color", "description": "The value of alpha, must result in a float between 0 and 1", "title": "A" }
             }
           },
           "light_color_multiplier": {
@@ -139,10 +139,10 @@
             "additionalProperties": false,
             "type": "object",
             "properties": {
-              "r": { "$ref": "#/definitions/color" },
-              "g": { "$ref": "#/definitions/color" },
-              "b": { "$ref": "#/definitions/color" },
-              "a": { "$ref": "#/definitions/color" }
+              "r": { "$ref": "#/definitions/color", "description": "The value of red, must result in a float between 0 and 1", "title": "R" },
+              "g": { "$ref": "#/definitions/color", "description": "The value of green, must result in a float between 0 and 1", "title": "G" },
+              "b": { "$ref": "#/definitions/color", "description": "The value of blue, must result in a float between 0 and 1", "title": "B" },
+              "a": { "$ref": "#/definitions/color", "description": "The value of alpha, must result in a float between 0 and 1", "title": "A" }
             },
             "description": "TODO description: on fire color",
             "title": "On Fire Color"
@@ -151,12 +151,12 @@
             "additionalProperties": false,
             "type": "object",
             "properties": {
-              "r": { "$ref": "#/definitions/color" },
-              "g": { "$ref": "#/definitions/color" },
-              "b": { "$ref": "#/definitions/color" },
-              "a": { "$ref": "#/definitions/color" }
+              "r": { "$ref": "#/definitions/color", "description": "The value of red, must result in a float between 0 and 1", "title": "R" },
+              "g": { "$ref": "#/definitions/color", "description": "The value of green, must result in a float between 0 and 1", "title": "G" },
+              "b": { "$ref": "#/definitions/color", "description": "The value of blue, must result in a float between 0 and 1", "title": "B" },
+              "a": { "$ref": "#/definitions/color", "description": "The value of alpha, must result in a float between 0 and 1", "title": "A" }
             },
-            "description": "TODO description: overlay color",
+            "description": "Overlays this color ontop of any rendering parts",
             "title": "Overlay Color"
           },
           "part_visibility": {
