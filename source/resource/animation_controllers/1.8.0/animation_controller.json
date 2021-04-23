@@ -54,7 +54,7 @@
       "type": "object",
       "title": "Animation Controllers Schema",
       "description": "The animation controllers schema for 1.8.0",
-      "propertyNames": { "pattern": "^controller\\.animation\\.[a-z\\.]+" },
+      "propertyNames": { "pattern": "^controller\\.animation\\.[a-z\\.]+", "examples": ["controller.animation.example", "controller.animation.example.foo"] },
       "additionalProperties": {
         "additionalProperties": false,
         "type": "object",
