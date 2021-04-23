@@ -5,5 +5,8 @@
   "type": "object",
   "title": "Density Limit 1.11.0",
   "description": "TODO",
-  "properties": { "surface": { "type": "integer", "description": "TODO", "title": "Surface" }, "underground": { "type": "integer", "description": "TODO", "title": "Underground" } }
+  "properties": {
+    "surface": { "type": "integer", "description": "This is the maximum number of mobs of this type spawnable on the surface", "title": "Surface" },
+    "underground": { "type": "integer", "description": "This is the maximum number of mobs of this type spawnable underground", "title": "Underground" }
+  }
 }

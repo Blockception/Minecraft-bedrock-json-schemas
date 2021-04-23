@@ -7,7 +7,7 @@
   "description": "TODO",
   "definitions": { "difficulty": { "type": "string", "enum": ["easy", "normal", "hard", "peaceful"] } },
   "properties": {
-    "min": { "$ref": "#/definitions/difficulty", "description": "TODO", "title": "Min" },
-    "max": { "$ref": "#/definitions/difficulty", "description": "TODO", "title": "Max" }
+    "min": { "$ref": "#/definitions/difficulty", "description": "This is the minimum difficulty level that a mob spawns", "title": "Min" },
+    "max": { "$ref": "#/definitions/difficulty", "description": "This is the maximum difficulty level that a mob spawns", "title": "Max" }
   }
 }

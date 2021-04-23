@@ -6,8 +6,13 @@
   "title": "Brightness Filter 1.8.0",
   "description": "TODO",
   "properties": {
-    "min": { "type": "integer", "description": "TODO", "title": "Min" },
-    "max": { "type": "integer", "description": "TODO", "title": "Max" },
-    "adjust_for_weather": { "type": "boolean", "description": "TODO", "title": "Max", "default": true }
+    "min": { "type": "integer", "description": "This is the minimum light level value that allows the mob to spawn", "title": "Min" },
+    "max": { "type": "integer", "description": "This is the maximum light level value that allows the mob to spawn", "title": "Max" },
+    "adjust_for_weather": {
+      "type": "boolean",
+      "description": "This determines if weather can affect the light level conditions that cause the mob to spawn (e.g. Allowing hostile mobs to spawn during the day when it rains.)",
+      "title": "Adjust for weather",
+      "default": true
+    }
   }
 }
