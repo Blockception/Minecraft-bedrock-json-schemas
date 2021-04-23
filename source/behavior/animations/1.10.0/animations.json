@@ -1,10 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.1.10.0.animations",
-  "type": "object",
-  "title": "Animation 1.10.0",
-  "description": "Animation for behavior for 1.10.0",
-  "required": ["format_version", "animations"],
   "definitions": {
     "animationspec": {
       "anyOf": [
@@ -45,6 +41,11 @@
       ]
     }
   },
+  "type": "object",
+  "title": "Animation 1.10.0",
+  "description": "Animation for behavior for 1.10.0",
+  "required": ["format_version", "animations"],
+  "additionalProperties": false,
   "properties": {
     "format_version": {
       "title": "1.10.0 Format Version",
@@ -62,6 +63,7 @@
         "type": "object",
         "description": "A single animation definition for 1.10.0",
         "additionalProperties": false,
+        "propertyNames": { "examples": ["animation.example.foo"] },
         "properties": {
           "animation_length": { "type": "number", "description": "The time in seconds this animation will last", "title": "Animation Length" },
           "loop": {
@@ -73,7 +75,7 @@
             "title": "Timeline",
             "description": "A timeline specification, property names are timestamps",
             "type": "object",
-            "propertyNames": { "pattern": "^(\\d+.\\d+|\\d+)$" },
+            "propertyNames": { "pattern": "^(\\d+.\\d+|\\d+)$", "examples": ["0.0", "1.0"] },
             "additionalProperties": {
               "oneOf": [
                 { "type": "string", "$ref": "#/definitions/commands" },
@@ -84,6 +86,5 @@
         }
       }
     }
-  },
-  "additionalProperties": false
+  }
 }

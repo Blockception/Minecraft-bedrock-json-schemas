@@ -54,23 +54,28 @@
       "description": "A version that tells minecraft what type of data format can be expected when reading this file."
     },
     "animations": {
-      "title": "Animations Schema",
+      "title": "Animations",
       "description": "The animation 1.8.0 specification",
       "type": "object",
       "propertyNames": { "pattern": "^animation\\.[a-z\\.]+" },
       "additionalProperties": {
-        "type": "object",
-        "additionalProperties": false,
-        "description": "TODO description: additionalItems",
         "title": "Animation",
+        "type": "object",
+        "description": "A single animation definition for 1.8.0",
+        "additionalProperties": false,
+        "propertyNames": { "examples": ["animation.example.foo"] },
         "properties": {
-          "animation_length": { "type": "number", "description": "TODO description: animation length", "title": "Animation Length" },
-          "loop": { "type": "boolean", "description": "TODO description: loop", "title": "Loop" },
+          "animation_length": { "type": "number", "description": "The time in seconds this animation will last", "title": "Animation Length" },
+          "loop": {
+            "type": "boolean",
+            "description": "Wheter or not to loop this animation",
+            "title": "Loop"
+          },
           "timeline": {
             "title": "Timeline",
-            "description": "The time line",
+            "description": "A timeline specification, property names are timestamps",
             "type": "object",
-            "propertyNames": { "pattern": "^(\\d+.\\d+|\\d+)$" },
+            "propertyNames": { "pattern": "^(\\d+.\\d+|\\d+)$", "examples": ["0.0", "1.0"] },
             "additionalProperties": {
               "oneOf": [{ "$ref": "#/definitions/commands" }, { "type": "array", "title": "Collection Timelime Items", "items": { "$ref": "#/definitions/commands" } }]
             }
