@@ -113,7 +113,7 @@
                     { "$ref": "../../../molang/1.8.0/arraynumber3.json" },
                     {
                       "type": "object",
-                      "propertyNames": { "pattern": "^[\\d.]+$" },
+                      "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$" },
                       "additionalProperties": {
                         "title": "Timeline Object",
                         "description": "A single point in time",
@@ -135,7 +135,7 @@
                     { "$ref": "../../../molang/1.8.0/arraynumber3.json" },
                     {
                       "type": "object",
-                      "propertyNames": { "pattern": "^[\\d.]+$" },
+                      "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$" },
                       "additionalProperties": {
                         "title": "Timeline Object",
                         "description": "A single point in time",
@@ -164,7 +164,7 @@
                     { "$ref": "#/definitions/ScaleV3" },
                     {
                       "type": "object",
-                      "propertyNames": { "pattern": "^[\\d.]+$" },
+                      "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$" },
                       "additionalProperties": {
                         "title": "Timeline Object",
                         "description": "A single point in time",
@@ -200,7 +200,7 @@
             "title": "Particle Effects",
             "description": "TODO",
             "type": "object",
-            "propertyNames": { "pattern": "^[\\d.]+$", "examples": ["0.0"] },
+            "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$", "examples": ["0.0"] },
             "additionalProperties": {
               "title": "Timeline Object",
               "description": "A single point in time",
@@ -219,14 +219,14 @@
             "title": "Sound Effect",
             "description": "TODO",
             "type": "object",
-            "propertyNames": { "pattern": "^[\\d.]+$" },
+            "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$" },
             "additionalProperties": { "$ref": "#/definitions/SoundEffect" }
           },
           "timeline": {
             "title": "Timeline",
             "description": "The time line",
             "type": "object",
-            "propertyNames": { "pattern": "^(\\d+.\\d+|\\d+)$" },
+            "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$" },
             "additionalProperties": {
               "oneOf": [
                 { "type": "string", "title": "Molang", "description": "Variable definition", "pattern": "^(v|variable)\\..*=.*;$" },

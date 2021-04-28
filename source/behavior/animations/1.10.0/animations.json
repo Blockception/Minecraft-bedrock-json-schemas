@@ -75,7 +75,7 @@
             "title": "Timeline",
             "description": "A timeline specification, property names are timestamps",
             "type": "object",
-            "propertyNames": { "pattern": "^(\\d+.\\d+|\\d+)$", "examples": ["0.0", "1.0"] },
+            "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$", "examples": ["0.0", "1.0"] },
             "additionalProperties": {
               "oneOf": [
                 { "type": "string", "$ref": "#/definitions/commands" },
