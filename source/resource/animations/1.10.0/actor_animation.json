@@ -220,7 +220,14 @@
             "description": "TODO",
             "type": "object",
             "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$" },
-            "additionalProperties": { "$ref": "#/definitions/SoundEffect" }
+            "additionalProperties": {
+              "title": "Timeline Object",
+              "description": "A single point in time",
+              "oneOf": [
+                { "type": "object", "$ref": "#/definitions/SoundEffect" },
+                { "type": "array", "items": { "$ref": "#/definitions/SoundEffect" } }
+              ]
+            }
           },
           "timeline": {
             "title": "Timeline",
