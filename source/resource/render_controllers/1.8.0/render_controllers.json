@@ -120,7 +120,7 @@
           },
           "light_color_multiplier": {
             "$ref": "../../../molang/1.8.0/number.json",
-            "description": "TODO description: light color multiplier",
+            "description": "The amount of light that blends into what is being rendered, lower values gives darker rendering, (1 = 100%)",
             "title": "Light Color Multiplier"
           },
           "materials": {
