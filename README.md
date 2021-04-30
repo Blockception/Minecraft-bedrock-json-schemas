@@ -1,20 +1,27 @@
 # Minecraft-bedrock-json-schemas
+
 The json validation schema files for Minecraft bedrock
 
 - [Minecraft-bedrock-json-schemas](#minecraft-bedrock-json-schemas)
+	- [Contributing](#contributing)
 	- [Manual Usage](#manual-usage)
 		- [Vscode](#vscode)
 - [Contents](#contents)
 	- [behavior files](#behavior-files)
 	- [Resource files](#resource-files)
-	- [Contributing](#contributing)
+	- [Contributing](#contributing-1)
+
+## Contributing
+
+Any changes to the schemas are to be done through the source files in the folder source. these get converted and compressed through an action into smaller schemas. On other matters
+follow the [Contribution guide](CONTRIBUTING.md)
 
 ## Manual Usage
 
 ### Vscode
 
 - Copy the `vscode-settings.json` file into the `.vscode` folder in your project and rename it to: `settings.json`  
-OR
+  OR
 - Copy the contents of `vscode-settings.json` into your `.code-workspace` file under the property settings:
 
 ```json
@@ -29,9 +36,11 @@ OR
 ```
 
 ---
+
 # Contents
 
 ## behavior files
+
 - [Animation Controllers](behavior/animation_controllers/animation_controller.json)
 - [Animations](behavior/animations/animations.json)
 - [Blocks](behavior/blocks/blocks.json)
@@ -64,6 +73,7 @@ OR
 - [Terrain list](resource/textures/texture_list.json)
 
 ## Contributing
+
 This project could more help in filling in descriptions, titles and giving snippets!
 
 Json validation can give snippets for sub items. as well as description, but this hasn't always been filled out!
