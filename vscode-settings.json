@@ -150,11 +150,15 @@
     {
       "fileMatch": [
         "behavior_packs/*/entities/*.json",
+        "behavior_packs/*/entities/**/*.json",
         "*behavior*pack*/entities/*.json",
+        "*behavior*pack*/entities/**/*.json",
         "*Behavior*Pack*/entities/*.json",
+        "*Behavior*Pack*/entities/**/*.json",
         "*BP*/entities/*.json",
+        "*BP*/entities/**/*.json",
         "*bp*/entities/*.json",
-        "!*loot_tables*"
+        "*bp*/entities/**/*.json"
       ],
       "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/entities/entities.json"
     },
