@@ -139,12 +139,12 @@
                 "should_update_bones_and_effects_offscreen": {
                   "title": "Should Update Bones And Effects Offscreen",
                   "description": "Bones and effects will still be updated if the entity is off screen if this expression returns anything other than 0.0.",
-                  "$ref": "../../../molang/1.8.0/string.json"
+                  "oneOf": [{ "type": "boolean" }, { "type": "string", "$ref": "../../../molang/1.8.0/string.json" }]
                 },
                 "should_update_effects_offscreen": {
                   "title": "Should Update Effects Offscreen",
                   "description": "Effects will still be updated if the entity is off screen if this expression or `should_update_bones_and_effects_offscreen` returns anything other than 0.0.",
-                  "$ref": "../../../molang/1.8.0/string.json"
+                  "oneOf": [{ "type": "boolean" }, { "type": "string", "$ref": "../../../molang/1.8.0/string.json" }]
                 },
                 "variables": {
                   "title": "Variables",
