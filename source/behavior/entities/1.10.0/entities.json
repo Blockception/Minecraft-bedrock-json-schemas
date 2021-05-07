@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entity1.10.0",
   "type": "object",
-  "title": "behavior Entity 1.10.0",
+  "title": "Behavior Entity 1.10.0",
   "description": "TODO description",
   "additionalProperties": false,
   "required": ["format_version", "minecraft:entity"],
