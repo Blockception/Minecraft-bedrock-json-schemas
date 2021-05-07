@@ -60,7 +60,7 @@
       "title": "Persist Trades"
     },
     "show_trade_screen": { "type": "boolean", "default": true, "description": "Show an in game trade screen when interacting with the mob.", "title": "Show Trade Screen" },
-    "table": { "type": "string", "default": "", "description": "File path relative to the resource pack root for this entity's trades", "title": "table" },
+    "table": { "type": "string", "default": "", "description": "File path relative to the resource pack root for this entity's trades", "title": "Table" },
     "use_legacy_price_formula": {
       "type": "boolean",
       "default": false,

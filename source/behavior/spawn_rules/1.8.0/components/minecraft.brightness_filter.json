@@ -11,7 +11,7 @@
     "adjust_for_weather": {
       "type": "boolean",
       "description": "This determines if weather can affect the light level conditions that cause the mob to spawn (e.g. Allowing hostile mobs to spawn during the day when it rains.)",
-      "title": "Adjust for weather",
+      "title": "Adjust For Weather",
       "default": true
     }
   }

@@ -48,10 +48,10 @@
                     "type": "string",
                     "pattern": "^[Gg]eometry\\..+",
                     "description": "A geometry item, must be defined in the entity",
-                    "title": "Geometry reference"
+                    "title": "Geometry"
                   },
                   "description": "A geometry array definition",
-                  "title": "Geometry array"
+                  "title": "Geometries"
                 }
               },
               "materials": {
@@ -65,10 +65,10 @@
                     "type": "string",
                     "pattern": "^[Mm]aterial\\..+",
                     "description": "A material item, must be defined in the entity",
-                    "title": "Material reference"
+                    "title": "Material"
                   },
                   "description": "A material array definition",
-                  "title": "Material array"
+                  "title": "Materials"
                 }
               },
               "textures": {
@@ -108,7 +108,7 @@
           "ignore_lighting": { "type": "boolean", "description": "TODO description: ignore lighting", "title": "Ignore Lighting" },
           "is_hurt_color": {
             "type": "object",
-            "title": "Is hurt color",
+            "title": "Is Hurt Color",
             "additionalProperties": false,
             "description": "The color that is overlay when hurt",
             "properties": {
