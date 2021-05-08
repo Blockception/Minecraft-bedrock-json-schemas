@@ -3,6 +3,6 @@
   "$id": "format_version",
   "title": "Format Version",
   "description": "A version that tells minecraft what type of data format can be expected when reading this file.",
-  "pattern": "^(1)\\.([1-9]+)\\.([1-9]+)$",
+  "pattern": "^(1)\\.([0-9]+)\\.([0-9]+)$",
   "type": "string"
 }
