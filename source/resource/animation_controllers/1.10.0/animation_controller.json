@@ -14,7 +14,12 @@
           "description": "A object specification on how to transition",
           "maxProperties": 1,
           "minProperties": 1,
-          "additionalProperties": { "$ref": "../../../molang/1.8.0/string.json" }
+          "additionalProperties": {
+            "oneOf": [
+              { "type": "string", "$ref": "../../../molang/1.8.0/string.json" },
+              { "type": "number", "description": "A blend weight" }
+            ]
+          }
         }
       ]
     },
@@ -89,7 +94,7 @@
                   "title": "Animations",
                   "description": "The animations definition for 1.10.0",
                   "type": "array",
-                  "items": { "$ref": "#/definitions/animationspec", "description": "TODO description: animations", "title": "Animations" }
+                  "items": { "$ref": "#/definitions/animationspec", "title": "Animations" }
                 },
                 "blend_transition": {
                   "title": "Blend Transition",

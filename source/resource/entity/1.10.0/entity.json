@@ -84,7 +84,7 @@
               "additionalProperties": false,
               "type": "object",
               "title": "Scripts",
-              "description": "TODO",
+              "description": "The place where variables, and animations / controller to be run is specified",
               "properties": {
                 "animate": {
                   "type": "array",
@@ -101,9 +101,10 @@
                         "title": "Animation (Controller) Condition",
                         "description": "A single animation or animation controller to run on condition",
                         "additionalProperties": {
-                          "type": "string",
-                          "description": "A molang condition",
-                          "title": "Molang"
+                          "oneOf": [
+                            { "type": "string", "description": "A molang condition", "title": "Molang" },
+                            { "type": "number", "description": "Blend weight", "title": "Blend weight" }
+                          ]
                         }
                       }
                     ]
