@@ -19,12 +19,15 @@
       "title": "Add Effects"
     },
     "remove_effects": {
-      "type": ["array", "string"],
-      "description": "List of identifiers of effects to be removed from this entity after adding this component", 
-      "items": {
-        "type": ["string"]
-      },
-      "title": "Remove Effects"
+      "title": "Remove Effects",
+      "description": "List of identifiers of effects to be removed from this entity after adding this component",
+      "oneOf": [
+        {
+          "type": "array",
+          "items": { "type": ["string"], "title": "Spell effect id", "description": "identifier of the effect to be removed from this entity after adding this component" }
+        },
+        { "type": "string" }
+      ]
     }
   }
 }
