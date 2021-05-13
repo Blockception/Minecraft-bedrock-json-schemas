@@ -5,6 +5,59 @@
   "description": "Render offsets component: optional values can be given to offset the way the item is rendered.",
   "type": "object",
   "additionalProperties": false,
+  "definitions": {
+    "offset_spec": {
+      "type": "object",
+      "title": "Offset",
+      "description": "",
+      "additionalProperties": false,
+      "properties": {
+        "first_person": {
+          "title": "First person",
+          "description": "",
+          "$ref": "#/definitions/mode"
+        },
+        "thrid_person": {
+          "title": "Thrid person",
+          "description": "",
+          "$ref": "#/definitions/mode"
+        }
+      }
+    },
+    "mode": {
+      "type": "object",
+      "title": "Mode",
+      "description": "",
+      "additionalProperties": false,
+      "properties": {
+        "position": {
+          "title": "Position",
+          "description": "The position transformation",
+          "$ref": "#/definitions/vec3"
+        },
+        "rotation": {
+          "title": "Rotation",
+          "description": "The rotation transformation",
+          "$ref": "#/definitions/vec3"
+        },
+        "scale": {
+          "title": "Scale",
+          "description": "The scale transformation",
+          "$ref": "#/definitions/vec3"
+        }
+      }
+    },
+    "vec3": {
+      "type": "array",
+      "title": "Vector",
+      "description": "X Y Z",
+      "items": [
+        { "title": "X", "description": "The X tranformation", "type": "number" },
+        { "title": "Y", "description": "The Y tranformation", "type": "number" },
+        { "title": "Z", "description": "The Z tranformation", "type": "number" }
+      ]
+    }
+  },
   "properties": {
     "main_hand": { "title": "Main Hand", "description": "Right hand transform data.", "type": "string" },
     "off_hand": { "title": "Off Hand", "description": "Left hand transform data.", "type": "string" }

@@ -10,7 +10,7 @@
     { "if": { "properties": { "format_version": { "type": "string", "const": "1.16" } } }, "then": { "$ref": "./1.16.0/items.json" } },
     { "if": { "properties": { "format_version": { "type": "string", "const": "1.16.0" } } }, "then": { "$ref": "./1.16.0/items.json" } },
     { "if": { "properties": { "format_version": { "type": "string", "const": "1.16.100" } } }, "then": { "$ref": "./1.16.100/items.json" } },
-    { "if": { "properties": { "format_version": { "type": "string", "const": "1.16.200" } } }, "then": { "$ref": "./1.16.100/items.json" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.16.200" } } }, "then": { "$ref": "./1.16.200/items.json" } },
     { "properties": { "format_version": { "$ref": "../../general/format_version.json" } } }
   ]
 }

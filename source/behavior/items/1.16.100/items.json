@@ -64,7 +64,9 @@
             "minecraft:shooter": { "$ref": "./components/minecraft.shooter.json" },
             "minecraft:throwable": { "$ref": "./components/minecraft.throwable.json" },
             "minecraft:weapon": { "$ref": "./components/minecraft.weapon.json" },
-            "minecraft:wearable": { "$ref": "./components/minecraft.wearable.json" }
+            "minecraft:wearable": { "$ref": "./components/minecraft.wearable.json" },
+
+            "minecraft:hand_equipped": { "type": "boolean", "title": "Hand Equipped", "description": "Is this a hand equipped item." }
           }
         },
         "events": { "$ref": "./events.json" }
