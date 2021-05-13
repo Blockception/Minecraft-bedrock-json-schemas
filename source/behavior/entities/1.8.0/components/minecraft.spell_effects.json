@@ -16,8 +16,15 @@
           { "type": "object", "properties": { "effect": { "type": "string" }, "duration": { "type": "integer" }, "display_on_screen_animation": { "type": "boolean" } } }
         ]
       },
-      "title": "TODO Title"
+      "title": "Add Effects"
     },
-    "remove_effects": { "type": "string", "description": "List of identifiers of effects to be removed from this entity after adding this component", "title": "TODO Title" }
+    "remove_effects": {
+      "type": ["array", "string"],
+      "description": "List of identifiers of effects to be removed from this entity after adding this component", 
+      "items": {
+        "type": ["string"]
+      },
+      "title": "Remove Effects"
+    }
   }
 }
