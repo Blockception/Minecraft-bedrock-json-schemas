@@ -27,7 +27,7 @@
           "type": "string",
           "$ref": "#/definitions/uuidv4",
           "description": "This is a special type of identifier that uniquely identifies this pack from any other pack. UUIDs are written in the format xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx where each x is a hexadecimal value (0-9 or a-f). We recommend using an online service to generate this and guarantee their uniqueness (just bing UUID Generator to find some)",
-          "title": "Uuid"
+          "title": "UUID"
         },
         "version": { "$ref": "#/definitions/version", "description": "This is the version of your pack in the format [majorVersion, minorVersion, revision].", "title": "Version" },
         "min_engine_version": {
@@ -48,6 +48,8 @@
       "items": {
         "additionalProperties": false,
         "type": "object",
+        "description": "TODO description: modules",
+        "title": "Modules",
         "required": ["type", "uuid", "version"],
         "properties": {
           "type": {
@@ -64,16 +66,14 @@
           "uuid": {
             "$ref": "#/definitions/uuidv4",
             "description": "This is a unique identifier for the module in the same format as the pack's UUID in the header. This should be different from the pack's UUID, and different for every module",
-            "title": "Uuid"
+            "title": "UUID"
           },
           "version": {
             "$ref": "#/definitions/version",
             "description": "This is the version of the module in the same format as the pack's version in the header. This can be used to further identify changes in your pack",
             "title": "Version"
           }
-        },
-        "description": "TODO description: modules",
-        "title": "Modules"
+        }
       },
       "description": "TODO description: modules"
     },
@@ -88,7 +88,7 @@
             "type": "string",
             "$ref": "#/definitions/uuidv4",
             "description": "This is the unique identifier of the pack that this pack depends on. It needs to be the exact same UUID that the pack has defined in the header section of it's manifest file",
-            "title": "Uuid"
+            "title": "UUID"
           },
           "version": {
             "$ref": "#/definitions/version",
@@ -115,7 +115,20 @@
       "title": "Capabilities"
     },
     "metadata": {
-      "authors": { "type": "string", "description": "Name of the author(s) of the pack", "title": "Authors" },
+      "authors": {
+        "title": "Authors",
+        "oneOf": [
+          {
+            "description": "Name of the author(s) of the pack",
+            "type": "array",
+            "items": { "type": "string", "title": "Name", "description": "Name of the author of the pack" }
+          },
+          {
+            "description": "Name of the author of the pack",
+            "type": "string"
+          }
+        ]
+      },
       "license": { "type": "string", "description": "The license of the pack", "title": "License" },
       "url": { "type": "string", "description": "The home website of your pack", "title": "Url" },
       "description": "TODO description: metadata",

@@ -8,7 +8,7 @@
   "definitions": {
     "uuidv4": {
       "type": "string",
-      "title": "A UUID V4",
+      "title": "An UUID V4",
       "description": "A valid uuid v4",
       "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$",
       "format": "uuid"
@@ -17,12 +17,13 @@
   },
   "properties": {
     "format_version": {
+      "title": "Format Version",
       "type": "number",
-      "description": "This defines the current version of the manifest. Don't change this unless you have a good reason to",
-      "title": "Format Version"
+      "description": "This defines the current version of the manifest. Don't change this unless you have a good reason to"
     },
     "capabilities": {
       "type": "array",
+      "title": "Capabilities",
       "description": "These are the different features that the pack makes use of that aren't necessarily enabled by default.",
       "properties": {
         "experimental_custom_ui": {
@@ -32,8 +33,7 @@
         },
         "chemistry": { "type": "boolean", "description": "Allows the pack to add, change or replace Chemistry functionality", "title": "Chemistry" },
         "raytraced": { "type": "boolean", "description": "TODO", "title": "Raytraced" }
-      },
-      "title": "Capabilities"
+      }
     },
     "dependencies": {
       "type": "array",
@@ -136,9 +136,18 @@
       "title": "Metadata",
       "properties": {
         "authors": {
-          "type": "array",
-          "description": "Name of the author(s) of the pack",
-          "items": { "type": "string", "title": "Name", "description": "Name of the author of the pack" }
+          "title": "Authors",
+          "oneOf": [
+            {
+              "description": "Name of the author(s) of the pack",
+              "type": "array",
+              "items": { "type": "string", "title": "Name", "description": "Name of the author of the pack" }
+            },
+            {
+              "description": "Name of the author of the pack",
+              "type": "string"
+            }
+          ]
         },
         "license": { "type": "string", "title": "License", "description": "The license of the pack" },
         "url": { "type": "string", "format": "uri", "title": "Url", "description": "The home website of your pack" }
