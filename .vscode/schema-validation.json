@@ -4,7 +4,9 @@
     "object_check": {
       "type": "object",
       "dependencies": {
-        "type": ["title"]
+        "type": ["title"],
+        "properties": ["type"],
+        "items": ["type"]
       },
       "additionalProperties": {
         "anyOf": [

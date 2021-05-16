@@ -22,7 +22,7 @@
       "description": "This defines the current version of the manifest. Don't change this unless you have a good reason to"
     },
     "capabilities": {
-      "type": "array",
+      "type": "object",
       "title": "Capabilities",
       "description": "These are the different features that the pack makes use of that aren't necessarily enabled by default.",
       "properties": {
