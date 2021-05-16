@@ -1,5 +1,7 @@
 # Minecraft-bedrock-json-schemas
 
+[![Compress Json Schemas](https://github.com/Blockception/Minecraft-bedrock-json-schemas/actions/workflows/compress-json-schemas.yml/badge.svg)](https://github.com/Blockception/Minecraft-bedrock-json-schemas/actions/workflows/compress-json-schemas.yml)
+
 The json validation schema files for Minecraft bedrock
 
 - [Minecraft-bedrock-json-schemas](#minecraft-bedrock-json-schemas)
