@@ -14,8 +14,18 @@
       "description": "The amount of time the mob will be interested before pouncing. This happens when the mob is within range of pouncing",
       "title": "Interest Time"
     },
-    "leap_distance": { "type": "number", "default": 0.8, "description": "The distance in blocks the mob jumps in the direction of its target", "title": "Leap Distance" },
-    "leap_height": { "type": "number", "default": 0.9, "description": "The height in blocks the mob jumps when leaping at its target", "title": "Leap Height" },
+    "leap_distance": {
+      "type": "number",
+      "default": 0.8,
+      "description": "The distance in blocks the mob jumps in the direction of its target",
+      "title": "Leap Distance"
+    },
+    "leap_height": {
+      "type": "number",
+      "default": 0.9,
+      "description": "The height in blocks the mob jumps when leaping at its target",
+      "title": "Leap Height"
+    },
     "max_stalk_dist": {
       "type": "number",
       "default": 10,
@@ -28,7 +38,12 @@
       "description": "The maximum distance away from the target in blocks to begin pouncing at the target",
       "title": "Pounce Max Dist"
     },
-    "set_persistent": { "type": "boolean", "default": false, "description": "Allows the actor to be set to persist upon targeting a player", "title": "Set Persistent" },
+    "set_persistent": {
+      "type": "boolean",
+      "default": false,
+      "description": "Allows the actor to be set to persist upon targeting a player",
+      "title": "Set Persistent"
+    },
     "stalk_speed": { "type": "number", "default": 1.2, "description": "The movement speed in which you stalk your target", "title": "Stalk Speed" },
     "strike_dist": {
       "type": "number",

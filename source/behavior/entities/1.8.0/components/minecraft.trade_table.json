@@ -14,7 +14,12 @@
       "title": "TODO Title"
     },
     "display_name": { "type": "string", "description": "Name to be displayed while trading with this entity.", "title": "TODO Title" },
-    "new_screen": { "type": "boolean", "default": false, "description": "Used to determine if trading with entity opens the new trade screen.", "title": "TODO Title" },
+    "new_screen": {
+      "type": "boolean",
+      "default": false,
+      "description": "Used to determine if trading with entity opens the new trade screen.",
+      "title": "TODO Title"
+    },
     "persist_trades": {
       "type": "boolean",
       "default": false,

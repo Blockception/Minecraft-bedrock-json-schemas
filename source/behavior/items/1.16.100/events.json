@@ -39,7 +39,12 @@
           "type": "object",
           "additionalProperties": false,
           "properties": {
-            "command": { "title": "Command", "description": "UNDOCUMENTATED", "type": "array", "items": { "type": "string", "title": "Command", "description": "UNDOCUMENTATED" } },
+            "command": {
+              "title": "Command",
+              "description": "UNDOCUMENTATED",
+              "type": "array",
+              "items": { "type": "string", "title": "Command", "description": "UNDOCUMENTATED" }
+            },
             "target": { "type": "string", "title": "Target", "description": "UNDOCUMENTATED", "enum": ["other"] }
           }
         }

@@ -6,5 +6,7 @@
   "title": "Spawn Loot",
   "required": ["table"],
   "additionalProperties": false,
-  "properties": { "table": { "type": "string", "description": "File path, relative to the Behavior Pack's path, to the loot table file.", "title": "Table" } }
+  "properties": {
+    "table": { "type": "string", "description": "File path, relative to the Behavior Pack's path, to the loot table file.", "title": "Table" }
+  }
 }

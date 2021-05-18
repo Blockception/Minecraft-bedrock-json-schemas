@@ -40,7 +40,11 @@
         "add": { "title": "Add", "$ref": "#/definitions/addremove", "description": "The components groups to be added to this entity" },
         "filters": { "$ref": "./filters.json" },
         "randomize": { "type": "array", "$ref": "#/definitions/randomize" },
-        "remove": { "title": "Remove", "description": "The components groups and all its components to be removed", "$ref": "#/definitions/addremove" },
+        "remove": {
+          "title": "Remove",
+          "description": "The components groups and all its components to be removed",
+          "$ref": "#/definitions/addremove"
+        },
         "sequence": {
           "description": "A series of filters and components to be added",
           "title": "Sequences",
@@ -62,8 +66,16 @@
       "$ref": "#/definitions/event_base",
       "title": "Entity Born"
     },
-    "minecraft:entity_spawned": { "description": "Event called on an entity that is placed in the level.", "$ref": "#/definitions/event_base", "title": "Entity Spawned" },
-    "minecraft:on_prime": { "description": "Event called on an entity whose fuse is lit and is ready to explode.", "$ref": "#/definitions/event_base", "title": "On Prime" }
+    "minecraft:entity_spawned": {
+      "description": "Event called on an entity that is placed in the level.",
+      "$ref": "#/definitions/event_base",
+      "title": "Entity Spawned"
+    },
+    "minecraft:on_prime": {
+      "description": "Event called on an entity whose fuse is lit and is ready to explode.",
+      "$ref": "#/definitions/event_base",
+      "title": "On Prime"
+    }
   },
   "additionalProperties": { "$ref": "#/definitions/event_base" }
 }

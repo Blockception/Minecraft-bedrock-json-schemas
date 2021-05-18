@@ -30,7 +30,13 @@
         "sounds": {
           "items": {
             "anyOf": [
-              { "$id": "#/Sound/sounds/stringItem", "type": "string", "$ref": "#/definitions/SoundPath", "description": "TODO description: Todo", "title": "Todo" },
+              {
+                "$id": "#/Sound/sounds/stringItem",
+                "type": "string",
+                "$ref": "#/definitions/SoundPath",
+                "description": "TODO description: Todo",
+                "title": "Todo"
+              },
               {
                 "additionalItems": false,
                 "$id": "#/Sound/sounds/ObjectItem",
@@ -38,10 +44,26 @@
                 "required": ["name"],
                 "properties": {
                   "pitch": { "description": "The pitch of the audio, 1 is nomial", "type": "number", "minimum": 0, "maximum": 2, "title": "Pitch" },
-                  "volume": { "description": "The volume of the audio, 1 is nomial", "type": "number", "minimum": 0, "maximum": 2, "title": "Volume" },
-                  "load_on_low_memory": { "type": "boolean", "description": "Marks if this audio should be loaded or not on low memory", "title": "Load On Low Memory" },
+                  "volume": {
+                    "description": "The volume of the audio, 1 is nomial",
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 2,
+                    "title": "Volume"
+                  },
+                  "load_on_low_memory": {
+                    "type": "boolean",
+                    "description": "Marks if this audio should be loaded or not on low memory",
+                    "title": "Load On Low Memory"
+                  },
                   "stream": { "description": "If marked true then minecraft will stream the audio", "type": "boolean", "title": "Stream" },
-                  "name": { "$id": "#/Sound/sounds/stringItem", "type": "string", "$ref": "#/definitions/SoundPath", "description": "TODO description: name", "title": "Name" }
+                  "name": {
+                    "$id": "#/Sound/sounds/stringItem",
+                    "type": "string",
+                    "$ref": "#/definitions/SoundPath",
+                    "description": "TODO description: name",
+                    "title": "Name"
+                  }
                 },
                 "description": "TODO description: Todo",
                 "title": "Todo"

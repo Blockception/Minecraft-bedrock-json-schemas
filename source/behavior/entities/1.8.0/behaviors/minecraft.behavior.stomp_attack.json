@@ -11,7 +11,12 @@
     "speed_multiplier": { "$ref": "types/base_speed_multiplier.json" },
     "attack_once": { "type": "boolean", "default": false, "description": "If true, this mob will attack only one time.", "title": "TODO Title" },
     "attack_types": { "type": "string", "default": "", "description": "Defines the entity types this mob will attack", "title": "TODO Title" },
-    "probability": { "type": "number", "default": 0.02, "description": "The probability of sneezing. A value of 1.00 is 100%", "title": "TODO Title" },
+    "probability": {
+      "type": "number",
+      "default": 0.02,
+      "description": "The probability of sneezing. A value of 1.00 is 100%",
+      "title": "TODO Title"
+    },
     "random_stop_interval": {
       "type": "integer",
       "default": 0,
@@ -24,9 +29,19 @@
       "description": "Multiplier for how far outside its box the mob can reach its target (this can be used to simulate a mob with longer arms by making this bigger)",
       "title": "TODO Title"
     },
-    "require_complete_path": { "type": "boolean", "default": false, "description": "If true, this goal will only trigger if the mob can reach its target.", "title": "TODO Title" },
+    "require_complete_path": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, this goal will only trigger if the mob can reach its target.",
+      "title": "TODO Title"
+    },
     "sound": { "type": "string", "description": "Sound to play when the sneeze occurs.", "title": "TODO Title" },
-    "track_target": { "type": "boolean", "default": false, "description": "If true, this mob will chase after the target as long as it's a valid target", "title": "TODO Title" },
+    "track_target": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, this mob will chase after the target as long as it's a valid target",
+      "title": "TODO Title"
+    },
     "stomp_range_multiplier": { "type": "number", "title": "Stomp Range Multiplier", "description": "UNDOCUMENTATED" },
     "no_damage_range_multiplier": { "type": "number", "title": "No Damage Range Multiplier", "description": "UNDOCUMENTATED" }
   }

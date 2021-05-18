@@ -18,7 +18,12 @@
         "properties": {
           "width": { "type": "number", "title": "Width", "description": "TODO" },
           "height": { "type": "number", "title": "Height", "description": "TODO" },
-          "pivot": { "type": "array", "title": "Pivot", "description": "TODO", "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }] }
+          "pivot": {
+            "type": "array",
+            "title": "Pivot",
+            "description": "TODO",
+            "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
+          }
         }
       }
     }

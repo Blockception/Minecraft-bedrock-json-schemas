@@ -19,7 +19,11 @@
             "gradient": {
               "title": "Gradient",
               "oneOf": [
-                { "description": "An array of colors", "type": "array", "items": { "type": "string", "description": "Color", "title": "Color", "format": "color-hex" } },
+                {
+                  "description": "An array of colors",
+                  "type": "array",
+                  "items": { "type": "string", "description": "Color", "title": "Color", "format": "color-hex" }
+                },
                 {
                   "description": "An object of colors",
                   "type": "object",

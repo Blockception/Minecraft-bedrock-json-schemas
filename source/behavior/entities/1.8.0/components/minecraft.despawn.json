@@ -7,7 +7,11 @@
   "description": "Despawns the associated Actor immediately or when the optional filter evaluates to true.",
   "required": [],
   "properties": {
-    "filters": { "$ref": "../filters.json", "description": "The list of conditions that must be satisfied before the Actor is despawned", "title": "Filters" },
+    "filters": {
+      "$ref": "../filters.json",
+      "description": "The list of conditions that must be satisfied before the Actor is despawned",
+      "title": "Filters"
+    },
     "despawn_from_chance": {
       "type": "boolean",
       "default": true,
@@ -33,7 +37,12 @@
       "description": "The amount of time in seconds that the mob must be inactive.",
       "title": "Min Range Inactivity Timer"
     },
-    "min_range_random_chance": { "type": "integer", "default": 800, "description": "A random chance between 1 and the given value.", "title": "Min Range Random Chance" },
+    "min_range_random_chance": {
+      "type": "integer",
+      "default": 800,
+      "description": "A random chance between 1 and the given value.",
+      "title": "Min Range Random Chance"
+    },
     "remove_child_entities": {
       "type": "boolean",
       "default": false,

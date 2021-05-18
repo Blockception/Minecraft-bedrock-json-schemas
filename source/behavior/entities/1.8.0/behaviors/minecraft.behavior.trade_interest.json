@@ -14,7 +14,12 @@
       "description": "The max time in seconds that the trader will hold an item before attempting to switch for a different item that takes the same trade",
       "title": "Carried Item Switch Time"
     },
-    "cooldown": { "type": "number", "default": 2, "description": "The time in seconds before the trader can use this goal again", "title": "Cooldown" },
+    "cooldown": {
+      "type": "number",
+      "default": 2,
+      "description": "The time in seconds before the trader can use this goal again",
+      "title": "Cooldown"
+    },
     "interest_time": {
       "type": "number",
       "default": 45,

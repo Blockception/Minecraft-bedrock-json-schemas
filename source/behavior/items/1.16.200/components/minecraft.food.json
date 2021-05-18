@@ -28,6 +28,10 @@
       "description": "Saturation Modifier is used in this formula: (nutrition * saturation_modifier * 2) when appling the saturation buff. Which happens when you eat the item.",
       "type": "number"
     },
-    "using_converts_to": { "title": "Using Converts To", "description": "When used, convert the *this* item to the one specified by 'using_converts_to'.", "type": "string" }
+    "using_converts_to": {
+      "title": "Using Converts To",
+      "description": "When used, convert the *this* item to the one specified by 'using_converts_to'.",
+      "type": "string"
+    }
   }
 }

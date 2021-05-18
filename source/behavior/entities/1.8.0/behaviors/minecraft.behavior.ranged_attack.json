@@ -34,7 +34,12 @@
       "description": "Amount of time in seconds between each individual shot when firing multiple shots per attack",
       "title": "TODO Title"
     },
-    "burst_shots": { "type": "integer", "default": 1, "description": "Number of shots fired every time the mob uses a charged attack", "title": "TODO Title" },
+    "burst_shots": {
+      "type": "integer",
+      "default": 1,
+      "description": "Number of shots fired every time the mob uses a charged attack",
+      "title": "TODO Title"
+    },
     "charge_charged_trigger": {
       "type": "number",
       "default": 0,

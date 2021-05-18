@@ -25,19 +25,44 @@
           "description": "Minimum amount of time to randomly wait in seconds before another entity is spawned.",
           "title": "Min Wait Time"
         },
-        "num_to_spawn": { "type": "integer", "default": 1, "description": "The number of entities of this type to spawn each time that this triggers.", "title": "Num To Spawn" },
-        "should_leash": { "type": "boolean", "default": false, "description": "If true, this the spawned entity will be leashed to the parent.", "title": "Should Leash" },
-        "single_use": { "type": "boolean", "default": false, "description": "If true, this component will only ever spawn the specified entity once.", "title": "Single Use" },
+        "num_to_spawn": {
+          "type": "integer",
+          "default": 1,
+          "description": "The number of entities of this type to spawn each time that this triggers.",
+          "title": "Num To Spawn"
+        },
+        "should_leash": {
+          "type": "boolean",
+          "default": false,
+          "description": "If true, this the spawned entity will be leashed to the parent.",
+          "title": "Should Leash"
+        },
+        "single_use": {
+          "type": "boolean",
+          "default": false,
+          "description": "If true, this component will only ever spawn the specified entity once.",
+          "title": "Single Use"
+        },
         "spawn_entity": {
           "type": "string",
           "default": "",
           "description": "Identifier of the entity to spawn, leave empty to spawn the item defined above instead.",
           "title": "Spawn Entity"
         },
-        "spawn_event": { "type": "string", "default": "minecraft:entity_born", "description": "Event to call when the entity is spawned.", "title": "Spawn Event" },
+        "spawn_event": {
+          "type": "string",
+          "default": "minecraft:entity_born",
+          "description": "Event to call when the entity is spawned.",
+          "title": "Spawn Event"
+        },
         "spawn_item": { "type": "string", "default": "egg", "description": "Item identifier of the item to spawn.", "title": "Spawn Item" },
         "spawn_method": { "type": "string", "default": "born", "description": "Method to use to spawn the entity.", "title": "Spawn Method" },
-        "spawn_sound": { "type": "string", "default": "plop", "description": "Identifier of the sound effect to play when the entity is spawned.", "title": "Spawn Sound" }
+        "spawn_sound": {
+          "type": "string",
+          "default": "plop",
+          "description": "Identifier of the sound effect to play when the entity is spawned.",
+          "title": "Spawn Sound"
+        }
       }
     }
   },

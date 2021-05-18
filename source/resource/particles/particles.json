@@ -5,7 +5,10 @@
     {
       "format_version": "1.10.0",
       "particle_effect": {
-        "description": { "identifier": "blockception:particle", "basic_render_parameters": { "material": "particles_alpha", "texture": "textures/particle/particle" } },
+        "description": {
+          "identifier": "blockception:particle",
+          "basic_render_parameters": { "material": "particles_alpha", "texture": "textures/particle/particle" }
+        },
         "curves": {},
         "components": {}
       }

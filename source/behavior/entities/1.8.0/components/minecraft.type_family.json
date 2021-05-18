@@ -7,6 +7,11 @@
   "description": "Defines the families this entity belongs to.",
   "required": ["family"],
   "properties": {
-    "family": { "type": "array", "items": { "type": "string", "description": "Family name", "title": "Family" }, "description": "List of family names", "title": "Family" }
+    "family": {
+      "type": "array",
+      "items": { "type": "string", "description": "Family name", "title": "Family" },
+      "description": "List of family names",
+      "title": "Family"
+    }
   }
 }

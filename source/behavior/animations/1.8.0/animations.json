@@ -77,7 +77,10 @@
             "type": "object",
             "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$", "examples": ["0.0", "1.0"] },
             "additionalProperties": {
-              "oneOf": [{ "$ref": "#/definitions/commands" }, { "type": "array", "title": "Collection Timelime Items", "items": { "$ref": "#/definitions/commands" } }]
+              "oneOf": [
+                { "$ref": "#/definitions/commands" },
+                { "type": "array", "title": "Collection Timelime Items", "items": { "$ref": "#/definitions/commands" } }
+              ]
             }
           }
         }

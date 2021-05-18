@@ -34,7 +34,10 @@
         "additionalProperties": false,
         "properties": {
           "textures": {
-            "oneOf": [{ "$ref": "#/definitions/texture" }, { "description": "A collection of textures", "type": "array", "items": { "$ref": "#/definitions/texture" } }]
+            "oneOf": [
+              { "$ref": "#/definitions/texture" },
+              { "description": "A collection of textures", "type": "array", "items": { "$ref": "#/definitions/texture" } }
+            ]
           }
         }
       }

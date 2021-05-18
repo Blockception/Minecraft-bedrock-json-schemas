@@ -205,7 +205,12 @@
             "description": "TODO",
             "enum": ["SourceAlpha", "OneMinusSrcAlpha", "OneMinusSrcColor", "SourceColor", "Zero", "One"]
           },
-          "blendSrc": { "type": "string", "title": "Blend Source", "description": "TODO", "enum": ["DestColor", "One", "OneMinusDestColor", "SourceAlpha", "SourceColor"] },
+          "blendSrc": {
+            "type": "string",
+            "title": "Blend Source",
+            "description": "TODO",
+            "enum": ["DestColor", "One", "OneMinusDestColor", "SourceAlpha", "SourceColor"]
+          },
           "defines": { "title": "Defines", "description": "TODO, sets or starts definitions???", "$ref": "#/definitions/DefinesSpecification" },
           "+defines": { "title": "Defines", "description": "TODO, Add definitions???", "$ref": "#/definitions/DefinesSpecification" },
           "-defines": { "title": "Defines", "description": "TODO, removes definitions???", "$ref": "#/definitions/DefinesSpecification" },
@@ -214,11 +219,23 @@
           "depthFunc": { "type": "string", "title": "Depth Function", "description": "TODO", "enum": ["LessEqual", "Always", "Equal"] },
           "fragmentShader": { "type": "string", "title": "Fragment Shader", "description": "TODO", "pattern": "^shaders/.*\\.fragment$" },
           "frontFace": { "title": "Front Face", "description": "TODO", "$ref": "#/definitions/FaceSpecification" },
-          "isAnimatedTexture": { "type": "integer", "title": "Is Animated Texture", "description": "TODO, think its a boolean value as a number, so 1 and 0????" },
+          "isAnimatedTexture": {
+            "type": "integer",
+            "title": "Is Animated Texture",
+            "description": "TODO, think its a boolean value as a number, so 1 and 0????"
+          },
           "msaaSupport": { "type": "string", "title": "MSAA Support", "description": "TODO", "enum": ["Both", "MSAA"] },
           "primitiveMode": { "type": "string", "title": "Primitive Mode", "description": "TODO", "enum": ["Line"] },
-          "samplerStates": { "title": "Sampler States", "description": "TODO, set or start samplerStates???", "$ref": "#/definitions/SamplerStatesSpecification" },
-          "+samplerStates": { "title": "Sampler States", "description": "TODO, Add samplerStates???", "$ref": "#/definitions/SamplerStatesSpecification" },
+          "samplerStates": {
+            "title": "Sampler States",
+            "description": "TODO, set or start samplerStates???",
+            "$ref": "#/definitions/SamplerStatesSpecification"
+          },
+          "+samplerStates": {
+            "title": "Sampler States",
+            "description": "TODO, Add samplerStates???",
+            "$ref": "#/definitions/SamplerStatesSpecification"
+          },
           "slopeScaledDepthBias": { "type": "number", "title": "Slope Scaled Depth Bias", "description": "TODO" },
           "slopeScaledDepthBiasOGL": { "type": "number", "title": "Slope Scaled Depth Bias OGL", "description": "TODO" },
           "states": { "title": "States", "description": "TODO, start states???", "$ref": "#/definitions/StatesSpecification" },

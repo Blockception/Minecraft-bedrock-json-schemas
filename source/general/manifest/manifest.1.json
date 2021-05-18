@@ -29,7 +29,11 @@
           "description": "This is a special type of identifier that uniquely identifies this pack from any other pack. UUIDs are written in the format xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx where each x is a hexadecimal value (0-9 or a-f). We recommend using an online service to generate this and guarantee their uniqueness (just bing UUID Generator to find some)",
           "title": "UUID"
         },
-        "version": { "$ref": "#/definitions/version", "description": "This is the version of your pack in the format [majorVersion, minorVersion, revision].", "title": "Version" },
+        "version": {
+          "$ref": "#/definitions/version",
+          "description": "This is the version of your pack in the format [majorVersion, minorVersion, revision].",
+          "title": "Version"
+        },
         "min_engine_version": {
           "type": "string",
           "$ref": "#/definitions/version",

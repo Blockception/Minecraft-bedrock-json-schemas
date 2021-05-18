@@ -5,6 +5,8 @@
   "title": "Movement.fly 1.8.0",
   "additionalProperties": false,
   "required": [],
-  "properties": { "max_turn": { "type": "number", "default": 30, "description": "The maximum number in degrees the mob can turn per tick.", "title": "TODO Title" } },
+  "properties": {
+    "max_turn": { "type": "number", "default": 30, "description": "The maximum number in degrees the mob can turn per tick.", "title": "TODO Title" }
+  },
   "description": "This move control causes the mob to fly."
 }

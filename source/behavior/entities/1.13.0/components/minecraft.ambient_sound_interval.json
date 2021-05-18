@@ -7,8 +7,23 @@
   "description": "Sets the entity's delay between playing its ambient sound.",
   "required": ["event_name"],
   "properties": {
-    "event_name": { "type": "string", "default": "ambient", "description": "Level sound event to be played as the ambient sound.", "title": "Event Name" },
-    "range": { "type": "number", "default": 16, "description": "Maximum time in seconds to randomly add to the ambient sound delay time.", "title": "Range" },
-    "value": { "type": "number", "default": 8, "description": "Minimum time in seconds before the entity plays its ambient sound again", "title": "Value" }
+    "event_name": {
+      "type": "string",
+      "default": "ambient",
+      "description": "Level sound event to be played as the ambient sound.",
+      "title": "Event Name"
+    },
+    "range": {
+      "type": "number",
+      "default": 16,
+      "description": "Maximum time in seconds to randomly add to the ambient sound delay time.",
+      "title": "Range"
+    },
+    "value": {
+      "type": "number",
+      "default": 8,
+      "description": "Minimum time in seconds before the entity plays its ambient sound again",
+      "title": "Value"
+    }
   }
 }

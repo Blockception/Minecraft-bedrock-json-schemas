@@ -81,8 +81,16 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "absorption": { "title": "Absorption", "description": "Proportion of light that is absorbed (lost) per block.", "$ref": "#/definitions/colorHexOrArray" },
-        "scattering": { "title": "Scattering", "description": "Proportion of light that is scattered per block.", "$ref": "#/definitions/colorHexOrArray" }
+        "absorption": {
+          "title": "Absorption",
+          "description": "Proportion of light that is absorbed (lost) per block.",
+          "$ref": "#/definitions/colorHexOrArray"
+        },
+        "scattering": {
+          "title": "Scattering",
+          "description": "Proportion of light that is scattered per block.",
+          "$ref": "#/definitions/colorHexOrArray"
+        }
       }
     }
   },
@@ -131,7 +139,11 @@
               "description": "The fog settings when the camera is in lava and the player has the lava resistance effect active.",
               "$ref": "#/definitions/defaultFogSettings"
             },
-            "powder_snow": { "title": "Powder Snow", "description": "The fog settings when the camera is inside a Powder Snow block.", "$ref": "#/definitions/defaultFogSettings" }
+            "powder_snow": {
+              "title": "Powder Snow",
+              "description": "The fog settings when the camera is inside a Powder Snow block.",
+              "$ref": "#/definitions/defaultFogSettings"
+            }
           }
         },
         "volumetric": {
@@ -146,9 +158,21 @@
               "type": "object",
               "additionalProperties": false,
               "properties": {
-                "air": { "title": "Air", "description": "Fog density values as light passes through air blocks.", "$ref": "#/definitions/volumeDensityObject" },
-                "water": { "title": "Water", "description": "Fog density values as light passes through water blocks.", "$ref": "#/definitions/volumeDensityObject" },
-                "lava": { "title": "Lava", "description": "Fog density values as light passes through lava blocks.", "$ref": "#/definitions/volumeDensityObject" },
+                "air": {
+                  "title": "Air",
+                  "description": "Fog density values as light passes through air blocks.",
+                  "$ref": "#/definitions/volumeDensityObject"
+                },
+                "water": {
+                  "title": "Water",
+                  "description": "Fog density values as light passes through water blocks.",
+                  "$ref": "#/definitions/volumeDensityObject"
+                },
+                "lava": {
+                  "title": "Lava",
+                  "description": "Fog density values as light passes through lava blocks.",
+                  "$ref": "#/definitions/volumeDensityObject"
+                },
                 "lava_resistance": {
                   "title": "Lava Resistance",
                   "description": "Fog density values as light passes through lava blocks while the player has lava resistance.",
@@ -161,9 +185,21 @@
               "description": "The coefficient settings for the volumetric fog in different blocks.",
               "additionalProperties": false,
               "properties": {
-                "air": { "title": "Air", "description": "Fog coefficient values while light passes through air.", "$ref": "#/definitions/volumeMediaObject" },
-                "water": { "title": "Water", "description": "Fog coefficient values while light passes through water.", "$ref": "#/definitions/volumeMediaObject" },
-                "cloud": { "title": "Cloud", "description": "Fog coefficient values while light passes through clouds.", "$ref": "#/definitions/volumeMediaObject" }
+                "air": {
+                  "title": "Air",
+                  "description": "Fog coefficient values while light passes through air.",
+                  "$ref": "#/definitions/volumeMediaObject"
+                },
+                "water": {
+                  "title": "Water",
+                  "description": "Fog coefficient values while light passes through water.",
+                  "$ref": "#/definitions/volumeMediaObject"
+                },
+                "cloud": {
+                  "title": "Cloud",
+                  "description": "Fog coefficient values while light passes through clouds.",
+                  "$ref": "#/definitions/volumeMediaObject"
+                }
               }
             }
           }

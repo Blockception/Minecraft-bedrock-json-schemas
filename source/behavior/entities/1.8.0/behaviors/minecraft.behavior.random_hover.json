@@ -9,7 +9,12 @@
   "properties": {
     "priority": { "$ref": "types/base_priority.json" },
     "speed_multiplier": { "$ref": "types/base_speed_multiplier.json" },
-    "hover_height": { "type": "array", "description": "UNDOCUMENTATED", "title": "Hover Height", "items": [{ "type": "number" }, { "type": "number" }] },
+    "hover_height": {
+      "type": "array",
+      "description": "UNDOCUMENTATED",
+      "title": "Hover Height",
+      "items": [{ "type": "number" }, { "type": "number" }]
+    },
     "interval": {
       "type": "integer",
       "default": 120,

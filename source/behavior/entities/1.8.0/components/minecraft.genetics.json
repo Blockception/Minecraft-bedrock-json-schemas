@@ -36,7 +36,10 @@
             "description": "The list of genetic variants for this gene. These check for particular allele combinations and fire events when all of them are satisfied.",
             "items": {
               "properties": {
-                "birth_event": { "$ref": "../types/event.json", "description": "Event to run when this mob is created and matches the above allele conditions." },
+                "birth_event": {
+                  "$ref": "../types/event.json",
+                  "description": "Event to run when this mob is created and matches the above allele conditions."
+                },
                 "both_allele": {
                   "description": "If this value is non-negative, compare both the mob's main and hidden alleles with this value for a match with both. Can also be a range of integers.",
                   "oneOf": [

@@ -5,5 +5,8 @@
   "type": "object",
   "title": "Distance Filter 1.11.0",
   "description": "TODO",
-  "properties": { "min": { "type": "integer", "description": "TODO", "title": "Min" }, "max": { "type": "integer", "description": "TODO", "title": "Max" } }
+  "properties": {
+    "min": { "type": "integer", "description": "TODO", "title": "Min" },
+    "max": { "type": "integer", "description": "TODO", "title": "Max" }
+  }
 }

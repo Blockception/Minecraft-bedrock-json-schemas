@@ -18,7 +18,12 @@
       "description": "The minimum number of entities that must pass the filter conditions for the event to send.",
       "title": "Minimum Count"
     },
-    "relative_range": { "type": "boolean", "default": true, "description": "If true the sensor range is additive on top of the entity's size.", "title": "Relative Range" },
+    "relative_range": {
+      "type": "boolean",
+      "default": true,
+      "description": "If true the sensor range is additive on top of the entity's size.",
+      "title": "Relative Range"
+    },
     "require_all": {
       "type": "boolean",
       "default": false,

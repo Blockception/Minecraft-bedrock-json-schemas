@@ -10,6 +10,9 @@
     "additionalProperties": false,
     "title": "TODO",
     "description": "TODO",
-    "properties": { "weight": { "type": "integer", "title": "Weight", "description": "TODO" }, "entity_type": { "type": "string", "title": "Entity Type", "description": "TODO" } }
+    "properties": {
+      "weight": { "type": "integer", "title": "Weight", "description": "TODO" },
+      "entity_type": { "type": "string", "title": "Entity Type", "description": "TODO" }
+    }
   }
 }

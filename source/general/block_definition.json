@@ -9,7 +9,11 @@
       "title": "States",
       "description": "The block states",
       "type": "object",
-      "additionalProperties": { "title": "State", "description": "A single state of a block", "oneOf": [{ "type": "string" }, { "type": "boolean" }, { "type": "number" }] }
+      "additionalProperties": {
+        "title": "State",
+        "description": "A single state of a block",
+        "oneOf": [{ "type": "string" }, { "type": "boolean" }, { "type": "number" }]
+      }
     }
   }
 }

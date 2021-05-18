@@ -9,7 +9,12 @@
   "properties": {
     "priority": { "$ref": "./types/base_priority.json" },
     "max_dist": { "type": "number", "default": 0, "description": "Maximum distance to look for an entity", "title": "Max Dist" },
-    "max_flee": { "type": "number", "default": 0.5, "description": "Distance in blocks within the mob considers it should stop fleeing.", "title": "Max Flee" },
+    "max_flee": {
+      "type": "number",
+      "default": 0.5,
+      "description": "Distance in blocks within the mob considers it should stop fleeing.",
+      "title": "Max Flee"
+    },
     "walk_speed_multiplier": {
       "type": "number",
       "default": 1.0,

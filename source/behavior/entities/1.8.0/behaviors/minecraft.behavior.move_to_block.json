@@ -15,9 +15,19 @@
     "goal_radius": { "type": "number", "title": "Goal Radius", "description": "UNDOCUMENTATED" },
     "stay_duration": { "type": "number", "title": "Stay Duration", "description": "UNDOCUMENTATED" },
     "target_selection_method": { "type": "string", "title": "Target Selection Method", "description": "UNDOCUMENTATED" },
-    "target_offset": { "type": "array", "title": "Target Offset", "description": "UNDOCUMENTATED", "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }] },
+    "target_offset": {
+      "type": "array",
+      "title": "Target Offset",
+      "description": "UNDOCUMENTATED",
+      "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
+    },
     "target_blocks": { "type": "array", "title": "Target Blocks", "description": "UNDOCUMENTATED", "items": { "type": "string" } },
-    "on_stay_completed": { "type": "array", "title": "On Stay Completed", "description": "UNDOCUMENTATED", "items": { "$ref": "../types/event.json" } },
+    "on_stay_completed": {
+      "type": "array",
+      "title": "On Stay Completed",
+      "description": "UNDOCUMENTATED",
+      "items": { "$ref": "../types/event.json" }
+    },
     "on_reach": { "type": "array", "title": "On Reach", "description": "UNDOCUMENTATED", "items": { "$ref": "../types/event.json" } }
   }
 }

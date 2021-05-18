@@ -54,7 +54,11 @@
               "description": "TODO description: step UV",
               "title": "Step U V"
             },
-            "frames_per_second": { "$ref": "../../../../molang/1.8.0/number.json", "description": "TODO description: frames per second", "title": "Frames Per Second" },
+            "frames_per_second": {
+              "$ref": "../../../../molang/1.8.0/number.json",
+              "description": "TODO description: frames per second",
+              "title": "Frames Per Second"
+            },
             "max_frame": { "$ref": "../../../../molang/1.8.0/number.json", "description": "TODO description: max frame", "title": "Max Frame" },
             "stretch_to_lifetime": { "type": "boolean", "description": "TODO description: stretch to lifetime", "title": "Stretch To Lifetime" },
             "loop": { "type": "boolean", "description": "TODO description: loop", "title": "Loop" }

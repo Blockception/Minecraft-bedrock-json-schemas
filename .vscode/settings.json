@@ -4,7 +4,7 @@
   "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
 
-  "prettier.printWidth": 180,
+  "prettier.printWidth": 150,
   "prettier.useTabs": false,
   "prettier.tabWidth": 2
 }

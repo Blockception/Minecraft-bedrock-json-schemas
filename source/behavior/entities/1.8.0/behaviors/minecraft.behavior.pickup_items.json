@@ -16,6 +16,11 @@
       "title": "TODO Title"
     },
     "max_dist": { "type": "number", "default": 0, "description": "Maximum distance this mob will look for items to pick up", "title": "TODO Title" },
-    "track_target": { "type": "boolean", "default": false, "description": "If true, this mob will chase after the target as long as it's a valid target", "title": "TODO Title" }
+    "track_target": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, this mob will chase after the target as long as it's a valid target",
+      "title": "TODO Title"
+    }
   }
 }

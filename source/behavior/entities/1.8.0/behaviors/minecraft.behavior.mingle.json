@@ -9,8 +9,18 @@
   "properties": {
     "priority": { "$ref": "types/base_priority.json" },
     "speed_multiplier": { "$ref": "types/base_speed_multiplier.json" },
-    "cooldown_time": { "type": "number", "default": 0, "description": "Time in seconds the mob has to wait before using the goal again", "title": "Cooldown Time" },
-    "duration": { "type": "number", "default": 1, "description": "Amount of time in seconds that the entity will chat with another entity", "title": "Duration" },
+    "cooldown_time": {
+      "type": "number",
+      "default": 0,
+      "description": "Time in seconds the mob has to wait before using the goal again",
+      "title": "Cooldown Time"
+    },
+    "duration": {
+      "type": "number",
+      "default": 1,
+      "description": "Amount of time in seconds that the entity will chat with another entity",
+      "title": "Duration"
+    },
     "mingle_distance": {
       "type": "number",
       "default": 2.0,
@@ -20,7 +30,10 @@
     "mingle_partner_type": {
       "description": "The entity type that this entity is allowed to mingle with",
       "title": "Mingle Partner Type",
-      "oneOf": [{ "type": "array", "items": { "description": "The entity type that this entity is allowed to mingle with", "type": "string" } }, { "type": "string" }]
+      "oneOf": [
+        { "type": "array", "items": { "description": "The entity type that this entity is allowed to mingle with", "type": "string" } },
+        { "type": "string" }
+      ]
     }
   }
 }

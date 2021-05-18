@@ -28,7 +28,14 @@
                 "type": "object",
                 "additionalProperties": false,
                 "description": "Block descriptor",
-                "properties": { "any_tag": { "type": "array", "title": "Any Block Tag", "description": "The block tag", "items": { "type": "string", "title": "Block Tag" } } }
+                "properties": {
+                  "any_tag": {
+                    "type": "array",
+                    "title": "Any Block Tag",
+                    "description": "The block tag",
+                    "items": { "type": "string", "title": "Block Tag" }
+                  }
+                }
               }
             ]
           }

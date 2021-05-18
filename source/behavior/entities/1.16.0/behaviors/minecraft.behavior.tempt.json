@@ -17,7 +17,17 @@
     },
     "can_tempt_while_ridden": { "type": "boolean", "title": "Can Tempt While Ridden", "description": "UNDOCUMENTATED" },
     "can_tempt_vertically": { "type": "boolean", "title": "Can Tempt Vertically", "description": "UNDOCUMENTATED" },
-    "items": { "type": "array", "description": "List of items this mob is tempted by", "items": { "$ref": "../../../../general/item/identifier.json" }, "title": "TODO Title" },
-    "within_radius": { "type": "number", "default": 0, "description": "Distance in blocks this mob can get tempted by a player holding an item they like", "title": "TODO Title" }
+    "items": {
+      "type": "array",
+      "description": "List of items this mob is tempted by",
+      "items": { "$ref": "../../../../general/item/identifier.json" },
+      "title": "TODO Title"
+    },
+    "within_radius": {
+      "type": "number",
+      "default": 0,
+      "description": "Distance in blocks this mob can get tempted by a player holding an item they like",
+      "title": "TODO Title"
+    }
   }
 }

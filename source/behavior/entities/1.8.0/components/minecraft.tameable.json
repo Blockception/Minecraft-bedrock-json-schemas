@@ -19,7 +19,10 @@
     "tame_items": {
       "title": "Tame Items",
       "description": "The list of items that can be used to tame this entity",
-      "oneOf": [{ "type": "array", "items": { "$ref": "../../../../general/item/identifier.json" } }, { "$ref": "../../../../general/item/identifier.json" }]
+      "oneOf": [
+        { "type": "array", "items": { "$ref": "../../../../general/item/identifier.json" } },
+        { "$ref": "../../../../general/item/identifier.json" }
+      ]
     }
   }
 }

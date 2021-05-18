@@ -8,6 +8,11 @@
   "properties": {
     "priority": { "$ref": "types/base_priority.json" },
     "speed_multiplier": { "$ref": "types/base_speed_multiplier.json" },
-    "cooldown_time": { "type": "number", "default": 0, "description": "Time in seconds the mob has to wait before using the goal again", "title": "Cooldown Time" }
+    "cooldown_time": {
+      "type": "number",
+      "default": 0,
+      "description": "Time in seconds the mob has to wait before using the goal again",
+      "title": "Cooldown Time"
+    }
   }
 }

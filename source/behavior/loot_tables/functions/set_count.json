@@ -8,7 +8,10 @@
     "function": { "type": "string", "const": "set_count", "title": "Function", "description": "TODO description" },
     "count": {
       "title": "Count",
-      "oneOf": [{ "type": "integer" }, { "type": "object", "properties": { "min": { "type": "integer", "title": "Minimum" }, "max": { "type": "integer", "title": "Maximum" } } }],
+      "oneOf": [
+        { "type": "integer" },
+        { "type": "object", "properties": { "min": { "type": "integer", "title": "Minimum" }, "max": { "type": "integer", "title": "Maximum" } } }
+      ],
       "description": "TODO description"
     }
   }

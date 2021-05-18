@@ -21,8 +21,16 @@
         "description": "List of items that can be used to boost while riding this entity.",
         "properties": {
           "damage": { "type": "integer", "default": 1, "description": "This is the damage that the item will take each time it is used" },
-          "item": { "type": "string", "$ref": "../../../../general/item/identifier.json", "description": "Name of the item that can be used to boost" },
-          "replaceItem": { "type": "string", "$ref": "../../../../general/item/identifier.json", "description": "The item used to boost will become this item once it is used up" }
+          "item": {
+            "type": "string",
+            "$ref": "../../../../general/item/identifier.json",
+            "description": "Name of the item that can be used to boost"
+          },
+          "replaceItem": {
+            "type": "string",
+            "$ref": "../../../../general/item/identifier.json",
+            "description": "The item used to boost will become this item once it is used up"
+          }
         }
       },
       "description": "TODO description",

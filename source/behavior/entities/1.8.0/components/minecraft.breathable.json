@@ -19,10 +19,30 @@
     "breathes_water": { "type": "boolean", "default": false, "description": "If true, this entity can breathe in water", "title": "TODO Title" },
     "breathesLava": { "type": "boolean", "default": false, "description": "If true, this entity can breathe in lava", "title": "TODO Title" },
     "breathes_lava": { "type": "boolean", "default": false, "description": "If true, this entity can breathe in lava", "title": "TODO Title" },
-    "breathesSolids": { "type": "boolean", "default": false, "description": "If true, this entity can breathe in solid blocks", "title": "TODO Title" },
-    "breathes_solids": { "type": "boolean", "default": false, "description": "If true, this entity can breathe in solid blocks", "title": "TODO Title" },
-    "generatesBubbles": { "type": "boolean", "default": true, "description": "If true, this entity will have visible bubbles while in water", "title": "TODO Title" },
-    "generates_bubbles": { "type": "boolean", "default": true, "description": "If true, this entity will have visible bubbles while in water", "title": "TODO Title" },
+    "breathesSolids": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, this entity can breathe in solid blocks",
+      "title": "TODO Title"
+    },
+    "breathes_solids": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, this entity can breathe in solid blocks",
+      "title": "TODO Title"
+    },
+    "generatesBubbles": {
+      "type": "boolean",
+      "default": true,
+      "description": "If true, this entity will have visible bubbles while in water",
+      "title": "TODO Title"
+    },
+    "generates_bubbles": {
+      "type": "boolean",
+      "default": true,
+      "description": "If true, this entity will have visible bubbles while in water",
+      "title": "TODO Title"
+    },
     "breatheBlocks": {
       "type": "array",
       "description": "List of blocks this entity can breathe in, in addition to the above",

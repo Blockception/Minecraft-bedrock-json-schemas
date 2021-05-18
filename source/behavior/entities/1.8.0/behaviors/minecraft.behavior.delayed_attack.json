@@ -11,7 +11,12 @@
     "attack_duration": { "type": "number", "default": 1, "description": "The duration of the attack animation in seconds", "title": "TODO Title" },
     "attack_once": { "type": "boolean", "default": false, "description": "If true, this mob will attack only one time.", "title": "TODO Title" },
     "attack_types": { "type": "string", "default": "", "description": "Defines the entity types this mob will attack", "title": "TODO Title" },
-    "hit_delay_pct": { "type": "number", "default": 1, "description": "The percentage of the attack_duration that must pass before the hit is made", "title": "TODO Title" },
+    "hit_delay_pct": {
+      "type": "number",
+      "default": 1,
+      "description": "The percentage of the attack_duration that must pass before the hit is made",
+      "title": "TODO Title"
+    },
     "random_stop_interval": {
       "type": "integer",
       "default": 0,
@@ -26,6 +31,11 @@
     },
     "require_complete_path": { "type": "boolean", "title": "Require Complet Path", "description": "UNDOCUMENATED" },
     "sound_event": { "type": "string", "description": "The sound event to play when the attack starts", "title": "TODO Title" },
-    "track_target": { "type": "boolean", "default": false, "description": "If true, this mob will chase after the target as long as it's a valid target", "title": "TODO Title" }
+    "track_target": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, this mob will chase after the target as long as it's a valid target",
+      "title": "TODO Title"
+    }
   }
 }

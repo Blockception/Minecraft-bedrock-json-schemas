@@ -6,5 +6,11 @@
   "type": "object",
   "additionalProperties": false,
   "required": ["protection"],
-  "properties": { "protection": { "title": "Protection", "description": "Amount of knockback resistance provided with the total maximum protection being 1.0", "type": "number" } }
+  "properties": {
+    "protection": {
+      "title": "Protection",
+      "description": "Amount of knockback resistance provided with the total maximum protection being 1.0",
+      "type": "number"
+    }
+  }
 }

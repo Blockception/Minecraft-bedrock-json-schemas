@@ -8,21 +8,48 @@
         {
           "propertyNames": { "enum": ["all_of", "any_of", "none_of"] },
           "properties": {
-            "all_of": { "title": "All Of", "description": "All tests in an 'all_of' group must pass in order for the group to pass.", "$ref": "#/definitions/groups_spec" },
-            "any_of": { "title": "Any Of", "description": "One or more tests in an 'any_of' group must pass in order for the group to pass.", "$ref": "#/definitions/groups_spec" },
-            "none_of": { "title": "None Of", "description": "All tests in a 'none_of' group must fail in order for the group to pass.", "$ref": "#/definitions/groups_spec" }
+            "all_of": {
+              "title": "All Of",
+              "description": "All tests in an 'all_of' group must pass in order for the group to pass.",
+              "$ref": "#/definitions/groups_spec"
+            },
+            "any_of": {
+              "title": "Any Of",
+              "description": "One or more tests in an 'any_of' group must pass in order for the group to pass.",
+              "$ref": "#/definitions/groups_spec"
+            },
+            "none_of": {
+              "title": "None Of",
+              "description": "All tests in a 'none_of' group must fail in order for the group to pass.",
+              "$ref": "#/definitions/groups_spec"
+            }
           }
         },
         {
           "required": ["test"],
           "properties": {
-            "all_of": { "title": "All Of", "description": "All tests in an 'all_of' group must pass in order for the group to pass.", "$ref": "#/definitions/groups_spec" },
-            "any_of": { "title": "Any Of", "description": "One or more tests in an 'any_of' group must pass in order for the group to pass.", "$ref": "#/definitions/groups_spec" },
-            "none_of": { "title": "None Of", "description": "All tests in a 'none_of' group must fail in order for the group to pass.", "$ref": "#/definitions/groups_spec" }
+            "all_of": {
+              "title": "All Of",
+              "description": "All tests in an 'all_of' group must pass in order for the group to pass.",
+              "$ref": "#/definitions/groups_spec"
+            },
+            "any_of": {
+              "title": "Any Of",
+              "description": "One or more tests in an 'any_of' group must pass in order for the group to pass.",
+              "$ref": "#/definitions/groups_spec"
+            },
+            "none_of": {
+              "title": "None Of",
+              "description": "All tests in a 'none_of' group must fail in order for the group to pass.",
+              "$ref": "#/definitions/groups_spec"
+            }
           },
           "allOf": [
             { "if": { "properties": { "test": { "const": "clock_time" } } }, "then": { "$ref": "./filters/clock_time.json" } },
-            { "if": { "properties": { "test": { "const": "distance_to_nearest_player" } } }, "then": { "$ref": "./filters/distance_to_nearest_player.json" } },
+            {
+              "if": { "properties": { "test": { "const": "distance_to_nearest_player" } } },
+              "then": { "$ref": "./filters/distance_to_nearest_player.json" }
+            },
             { "if": { "properties": { "test": { "const": "has_ability" } } }, "then": { "$ref": "./filters/has_ability.json" } },
             { "if": { "properties": { "test": { "const": "has_biome_tag" } } }, "then": { "$ref": "./filters/has_biome_tag.json" } },
             { "if": { "properties": { "test": { "const": "has_component" } } }, "then": { "$ref": "./filters/has_component.json" } },

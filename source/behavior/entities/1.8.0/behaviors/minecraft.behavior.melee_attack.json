@@ -16,7 +16,12 @@
       "description": "The allowable FOV the actor will use to determine if it can make a valid melee attack",
       "title": "Melee Fov"
     },
-    "track_target": { "type": "boolean", "default": false, "description": "If true, this mob will chase after the target as long as it's a valid target", "title": "Track Target" },
+    "track_target": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, this mob will chase after the target as long as it's a valid target",
+      "title": "Track Target"
+    },
     "attack_types": { "type": "string", "description": "Defines the entity types this mob will attack", "title": "Attack Types" },
     "random_stop_interval": {
       "type": "integer",

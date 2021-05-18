@@ -7,7 +7,17 @@
   "description": "Defines what can push an entity between other entities and pistons.",
   "required": [],
   "properties": {
-    "is_pushable": { "type": "boolean", "default": true, "description": "Whether the entity can be pushed by other entities.", "title": "TODO Title" },
-    "is_pushable_by_piston": { "type": "boolean", "default": true, "description": "Whether the entity can be pushed by pistons safely.", "title": "TODO Title" }
+    "is_pushable": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether the entity can be pushed by other entities.",
+      "title": "TODO Title"
+    },
+    "is_pushable_by_piston": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether the entity can be pushed by pistons safely.",
+      "title": "TODO Title"
+    }
   }
 }

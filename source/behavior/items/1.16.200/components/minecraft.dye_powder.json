@@ -11,7 +11,23 @@
       "type": "string",
       "title": "Color",
       "description": "Defines what color the dye is.",
-      "enum": ["brown", "white", "black", "blue", "cyan", "gray", "green", "lightblue", "silver", "lime", "magenta", "pink", "purple", "red", "yellow"]
+      "enum": [
+        "brown",
+        "white",
+        "black",
+        "blue",
+        "cyan",
+        "gray",
+        "green",
+        "lightblue",
+        "silver",
+        "lime",
+        "magenta",
+        "pink",
+        "purple",
+        "red",
+        "yellow"
+      ]
     }
   }
 }

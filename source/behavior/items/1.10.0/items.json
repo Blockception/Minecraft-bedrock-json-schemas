@@ -15,7 +15,9 @@
         "description": {
           "additionalProperties": false,
           "type": "object",
-          "properties": { "identifier": { "title": "Identifier", "type": "string", "description": "TODO", "$ref": "../../../general/item/identifier.json" } }
+          "properties": {
+            "identifier": { "title": "Identifier", "type": "string", "description": "TODO", "$ref": "../../../general/item/identifier.json" }
+          }
         },
         "components": {
           "additionalProperties": false,
@@ -51,8 +53,16 @@
                   "description": "Choose: poor, low, normal, good, max, supernatural.",
                   "enum": ["poor", "low", "normal", "good", "max", "supernatural"]
                 },
-                "using_converts_to": { "type": "string", "description": "After using,  item converts it to this item.", "$ref": "../../../general/item/identifier.json" },
-                "on_use_action": { "type": "string", "description": "'chorus_teleport' or 'none'.", "enum": ["chorus_teleport", "suspicious_stew_effect", "none"] },
+                "using_converts_to": {
+                  "type": "string",
+                  "description": "After using,  item converts it to this item.",
+                  "$ref": "../../../general/item/identifier.json"
+                },
+                "on_use_action": {
+                  "type": "string",
+                  "description": "'chorus_teleport' or 'none'.",
+                  "enum": ["chorus_teleport", "suspicious_stew_effect", "none"]
+                },
                 "on_use_range": { "$ref": "../../../general/array_3_number.json" },
                 "cooldown_type": { "type": "string", "description": "'chorusfruit' or 'none'.", "enum": ["chorusfruit", "none"] },
                 "cooldown_time": { "type": "integer", "description": "Cooldown time in ticks." },

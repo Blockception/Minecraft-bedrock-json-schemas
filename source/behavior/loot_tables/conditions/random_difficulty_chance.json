@@ -7,7 +7,12 @@
   "title": "Random Difficulty Chance",
   "properties": {
     "condition": { "type": "string", "title": "Condition", "description": "TODO" },
-    "default_chance": { "type": "number", "default": 0, "description": "The default random chance if the level difficulty is not assigned.", "title": "Default Chance" },
+    "default_chance": {
+      "type": "number",
+      "default": 0,
+      "description": "The default random chance if the level difficulty is not assigned.",
+      "title": "Default Chance"
+    },
     "easy": {
       "type": "number",
       "default": 0,

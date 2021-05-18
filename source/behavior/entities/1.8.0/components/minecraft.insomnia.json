@@ -7,6 +7,11 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "days_until_insomnia": { "type": "number", "default": 3, "description": "Number of days the mob has to stay up until the insomnia effect begins.", "title": "TODO Title" }
+    "days_until_insomnia": {
+      "type": "number",
+      "default": 3,
+      "description": "Number of days the mob has to stay up until the insomnia effect begins.",
+      "title": "TODO Title"
+    }
   }
 }

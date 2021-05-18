@@ -13,7 +13,11 @@
         "min_size": { "type": "integer", "description": "This is the minimum number of mobs that spawn in a herd", "title": "Min Size" },
         "max_size": { "type": "integer", "description": "This is the maximum number of mobs that spawn in a herd", "title": "Max Size" },
         "event": { "type": "string", "description": "This is an event that can be triggered from spawning", "title": "Event" },
-        "event_skip_count": { "type": "integer", "description": "This is the number of mobs spawned before the specified event is triggered", "title": "Event Skip Count" }
+        "event_skip_count": {
+          "type": "integer",
+          "description": "This is the number of mobs spawned before the specified event is triggered",
+          "title": "Event Skip Count"
+        }
       }
     }
   },

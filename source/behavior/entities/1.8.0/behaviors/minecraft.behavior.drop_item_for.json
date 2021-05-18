@@ -17,16 +17,29 @@
       "title": "TODO Title"
     },
     "loot_table": { "type": "string", "description": "Loot table to select items from.", "title": "TODO Title" },
-    "max_dist": { "type": "number", "description": "Maximum distance in blocks this mob will look for entities to drop an item for.", "title": "TODO Title" },
+    "max_dist": {
+      "type": "number",
+      "description": "Maximum distance in blocks this mob will look for entities to drop an item for.",
+      "title": "TODO Title"
+    },
     "offering_distance": {
       "type": "number",
       "default": 1.0,
       "description": "The distance in blocks the mob will try to be away from the entity when it drops the item.",
       "title": "TODO Title"
     },
-    "on_drop_attempt": { "$ref": "../types/event.json", "description": "Event to run when this mob attempts to drop an item.", "title": "TODO Title" },
+    "on_drop_attempt": {
+      "$ref": "../types/event.json",
+      "description": "Event to run when this mob attempts to drop an item.",
+      "title": "TODO Title"
+    },
     "search_height": { "type": "integer", "default": 1, "description": "Height in blocks from the target the mob can be.", "title": "TODO Title" },
-    "search_range": { "type": "integer", "default": 0, "description": "The distance in blocks from the target the mob can be.", "title": "TODO Title" },
+    "search_range": {
+      "type": "integer",
+      "default": 0,
+      "description": "The distance in blocks from the target the mob can be.",
+      "title": "TODO Title"
+    },
     "time_of_day_range": {
       "$ref": "../types/range_number_type.json",
       "default": [0.0, 1.0],

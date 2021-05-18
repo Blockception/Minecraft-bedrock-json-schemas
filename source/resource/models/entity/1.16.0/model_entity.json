@@ -65,8 +65,16 @@
                 "pattern": "^geometry\\.[a-zA-Z0-9_\\-\\.]+$",
                 "title": "Identifier"
               },
-              "texture_width": { "type": "number", "description": "Assumed width in texels of the texture that will be bound to this geometry.", "title": "Texture Width" },
-              "texture_height": { "type": "number", "description": "Assumed height in texels of the texture that will be bound to this geometry.", "title": "Texture Height" },
+              "texture_width": {
+                "type": "number",
+                "description": "Assumed width in texels of the texture that will be bound to this geometry.",
+                "title": "Texture Width"
+              },
+              "texture_height": {
+                "type": "number",
+                "description": "Assumed height in texels of the texture that will be bound to this geometry.",
+                "title": "Texture Height"
+              },
               "visible_bounds_offset": {
                 "title": "Visible Bounds Offset",
                 "description": "Offset of the visibility bounding box from the entity location point (in model space units).",
@@ -75,8 +83,16 @@
                 "maxItems": 3,
                 "items": { "type": "number" }
               },
-              "visible_bounds_width": { "type": "number", "title": "Visible Bounds Width", "description": "Width of the visibility bounding box (in model space units)." },
-              "visible_bounds_height": { "type": "number", "title": "Visible Bounds Height", "description": "Height of the visible bounding box (in model space units)." }
+              "visible_bounds_width": {
+                "type": "number",
+                "title": "Visible Bounds Width",
+                "description": "Width of the visibility bounding box (in model space units)."
+              },
+              "visible_bounds_height": {
+                "type": "number",
+                "title": "Visible Bounds Height",
+                "description": "Height of the visible bounding box (in model space units)."
+              }
             }
           },
           "bones": {
@@ -115,7 +131,10 @@
                         "type": "array",
                         "minItems": 3,
                         "maxItems": 3,
-                        "items": { "type": "number", "description": "This point declares the unrotated lower corner of cube (smallest x/y/z value in model space units)." }
+                        "items": {
+                          "type": "number",
+                          "description": "This point declares the unrotated lower corner of cube (smallest x/y/z value in model space units)."
+                        }
                       },
                       "pivot": {
                         "type": "array",
@@ -144,16 +163,31 @@
                         "type": "array",
                         "minItems": 3,
                         "maxItems": 3,
-                        "items": { "type": "number", "description": "The cube is rotated by this amount (in degrees, x-then-y-then-z order) around the pivot." }
+                        "items": {
+                          "type": "number",
+                          "description": "The cube is rotated by this amount (in degrees, x-then-y-then-z order) around the pivot."
+                        }
                       },
                       "size": {
                         "title": "Size",
                         "type": "array",
                         "description": "The cube extends this amount relative to its origin (in model space units).",
                         "items": [
-                          { "type": "number", "title": "X", "description": "The cube extends this amount relative to its origin (in model space units)." },
-                          { "type": "number", "title": "Y", "description": "The cube extends this amount relative to its origin (in model space units)." },
-                          { "type": "number", "title": "Z", "description": "The cube extends this amount relative to its origin (in model space units)." }
+                          {
+                            "type": "number",
+                            "title": "X",
+                            "description": "The cube extends this amount relative to its origin (in model space units)."
+                          },
+                          {
+                            "type": "number",
+                            "title": "Y",
+                            "description": "The cube extends this amount relative to its origin (in model space units)."
+                          },
+                          {
+                            "type": "number",
+                            "title": "Z",
+                            "description": "The cube extends this amount relative to its origin (in model space units)."
+                          }
                         ]
                       },
                       "uv": {
@@ -373,7 +407,10 @@
                         "description": "The pivot point on the texture (in *texture space* not entity or bone space) of the texture geometry",
                         "minItems": 3,
                         "maxItems": 3,
-                        "items": { "type": "number", "description": "The pivot point on the texture (in *texture space* not entity or bone space) of the texture geometry" }
+                        "items": {
+                          "type": "number",
+                          "description": "The pivot point on the texture (in *texture space* not entity or bone space) of the texture geometry"
+                        }
                       },
                       "position": {
                         "type": "array",

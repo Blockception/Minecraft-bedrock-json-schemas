@@ -8,7 +8,17 @@
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/base_priority.json" },
-    "start_distance": { "type": "number", "default": 10, "description": "This mob starts swelling when a target is at least this many blocks away", "title": "TODO Title" },
-    "stop_distance": { "type": "number", "default": 2, "description": "This mob stops swelling when a target has moved away at least this many blocks", "title": "TODO Title" }
+    "start_distance": {
+      "type": "number",
+      "default": 10,
+      "description": "This mob starts swelling when a target is at least this many blocks away",
+      "title": "TODO Title"
+    },
+    "stop_distance": {
+      "type": "number",
+      "default": 2,
+      "description": "This mob stops swelling when a target has moved away at least this many blocks",
+      "title": "TODO Title"
+    }
   }
 }

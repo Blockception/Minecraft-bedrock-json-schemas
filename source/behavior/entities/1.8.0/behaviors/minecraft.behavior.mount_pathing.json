@@ -9,7 +9,17 @@
   "properties": {
     "priority": { "$ref": "./types/base_priority.json" },
     "speed_multiplier": { "$ref": "./types/base_speed_multiplier.json" },
-    "target_dist": { "type": "number", "default": 0.0, "description": "The distance at which this mob wants to be away from its target", "title": "Target Dist" },
-    "track_target": { "type": "boolean", "default": false, "description": "If true, this mob will chase after the target as long as it's a valid target", "title": "Track Target" }
+    "target_dist": {
+      "type": "number",
+      "default": 0.0,
+      "description": "The distance at which this mob wants to be away from its target",
+      "title": "Target Dist"
+    },
+    "track_target": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, this mob will chase after the target as long as it's a valid target",
+      "title": "Track Target"
+    }
   }
 }

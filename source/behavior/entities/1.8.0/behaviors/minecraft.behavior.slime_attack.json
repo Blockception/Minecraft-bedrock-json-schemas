@@ -8,6 +8,11 @@
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/base_priority.json" },
-    "set_persistent": { "type": "boolean", "default": false, "description": "Allows the actor to be set to persist upon targeting a player", "title": "TODO Title" }
+    "set_persistent": {
+      "type": "boolean",
+      "default": false,
+      "description": "Allows the actor to be set to persist upon targeting a player",
+      "title": "TODO Title"
+    }
   }
 }

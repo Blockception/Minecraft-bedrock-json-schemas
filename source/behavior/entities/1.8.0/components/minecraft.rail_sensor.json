@@ -7,7 +7,12 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "check_block_types": { "type": "boolean", "default": false, "description": "If true, on tick this entity will trigger its on_deactivate behavior", "title": "TODO Title" },
+    "check_block_types": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, on tick this entity will trigger its on_deactivate behavior",
+      "title": "TODO Title"
+    },
     "eject_on_activate": {
       "type": "boolean",
       "default": true,

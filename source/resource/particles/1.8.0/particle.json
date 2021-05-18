@@ -18,7 +18,12 @@
           "additionalProperties": false,
           "type": "object",
           "properties": {
-            "identifier": { "type": "string", "description": "TODO description: identifier", "title": "Identifier", "$ref": "../../../general/particle/identifier.json" }
+            "identifier": {
+              "type": "string",
+              "description": "TODO description: identifier",
+              "title": "Identifier",
+              "$ref": "../../../general/particle/identifier.json"
+            }
           },
           "description": "TODO description: description",
           "title": "Description"

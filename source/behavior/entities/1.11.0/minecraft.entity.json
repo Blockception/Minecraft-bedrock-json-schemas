@@ -14,10 +14,22 @@
           "title": "Animations",
           "description": "Sets the mapping of internal animation / animation controllers references to actual animations. This is a JSON Object of name/animation pairs",
           "type": "object",
-          "additionalProperties": { "title": "Animation (controller)", "description": "The name of the animation controller / animation", "type": "string" }
+          "additionalProperties": {
+            "title": "Animation (controller)",
+            "description": "The name of the animation controller / animation",
+            "type": "string"
+          }
         },
-        "identifier": { "$ref": "../../../general/entity/identifier.json", "description": "Sets the identifier for this entity's description.", "title": "Identifier" },
-        "is_spawnable": { "type": "boolean", "title": "Is Spawnable", "description": "Sets whether or not this entity has a spawn egg in the creative ui." },
+        "identifier": {
+          "$ref": "../../../general/entity/identifier.json",
+          "description": "Sets the identifier for this entity's description.",
+          "title": "Identifier"
+        },
+        "is_spawnable": {
+          "type": "boolean",
+          "title": "Is Spawnable",
+          "description": "Sets whether or not this entity has a spawn egg in the creative ui."
+        },
         "is_summonable": {
           "type": "boolean",
           "title": "Is Summonable Property",
@@ -45,7 +57,12 @@
               "items": {
                 "oneOf": [
                   { "type": "string", "title": "Animation", "description": "The name of an animation controller referenced in animations" },
-                  { "type": "object", "title": "Conditional Animation", "description": "TODO", "additionalProperties": { "type": "string", "title": "Animation" } }
+                  {
+                    "type": "object",
+                    "title": "Conditional Animation",
+                    "description": "TODO",
+                    "additionalProperties": { "type": "string", "title": "Animation" }
+                  }
                 ]
               }
             }

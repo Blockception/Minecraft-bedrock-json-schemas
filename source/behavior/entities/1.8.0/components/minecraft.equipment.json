@@ -16,7 +16,10 @@
         "title": "Slot Drop Chance",
         "description": "UNDOCUMENTATED",
         "additionalProperties": false,
-        "properties": { "drop_chance": { "type": "number", "title": "Drop Chance" }, "slot": { "type": "string", "title": "Slot", "pattern": "slot\\.[a-z\\.0-9]+" } }
+        "properties": {
+          "drop_chance": { "type": "number", "title": "Drop Chance" },
+          "slot": { "type": "string", "title": "Slot", "pattern": "slot\\.[a-z\\.0-9]+" }
+        }
       }
     }
   },

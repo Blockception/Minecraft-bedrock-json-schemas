@@ -7,7 +7,12 @@
   "title": "Giveable 1.8.0",
   "required": [],
   "properties": {
-    "cooldown": { "type": "number", "default": 0, "description": "An optional cool down in seconds to prevent spamming interactions.", "title": "Cooldown" },
+    "cooldown": {
+      "type": "number",
+      "default": 0,
+      "description": "An optional cool down in seconds to prevent spamming interactions.",
+      "title": "Cooldown"
+    },
     "items": {
       "type": "array",
       "description": "The list of items that can be given to the entity to place in their inventory.",

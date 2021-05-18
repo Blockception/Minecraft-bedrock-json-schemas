@@ -27,6 +27,11 @@
       "title": "Rotation Acceleration",
       "default": 0
     },
-    "rotation_drag_coefficient": { "$ref": "../../../../molang/1.8.0/number.json", "description": "Drag applied to rotation", "title": "Rotation Drag Coefficient", "default": 0 }
+    "rotation_drag_coefficient": {
+      "$ref": "../../../../molang/1.8.0/number.json",
+      "description": "Drag applied to rotation",
+      "title": "Rotation Drag Coefficient",
+      "default": 0
+    }
   }
 }

@@ -23,7 +23,12 @@
         { "type": "integer", "title": "B", "description": "" }
       ]
     },
-    "display_name": { "type": "string", "default": "", "description": "Name to be displayed while trading with this entity", "title": "Display Name" },
+    "display_name": {
+      "type": "string",
+      "default": "",
+      "description": "Name to be displayed while trading with this entity",
+      "title": "Display Name"
+    },
     "hero_demand_discount": {
       "type": "integer",
       "default": -4,
@@ -52,15 +57,30 @@
       "description": "How much should the discount be modified by when the player has cured a nearby Zombie Villager",
       "title": "Nearby Cured Discount"
     },
-    "new_screen": { "type": "boolean", "default": false, "description": "Used to determine if trading with entity opens the new trade screen", "title": "New Screen" },
+    "new_screen": {
+      "type": "boolean",
+      "default": false,
+      "description": "Used to determine if trading with entity opens the new trade screen",
+      "title": "New Screen"
+    },
     "persist_trades": {
       "type": "boolean",
       "default": false,
       "description": "Determines if the trades should persist when the mob transforms. This makes it so that the next time the mob is transformed to something with a trade_table or economy_trade_table, then it keeps their trades.",
       "title": "Persist Trades"
     },
-    "show_trade_screen": { "type": "boolean", "default": true, "description": "Show an in game trade screen when interacting with the mob.", "title": "Show Trade Screen" },
-    "table": { "type": "string", "default": "", "description": "File path relative to the resource pack root for this entity's trades", "title": "Table" },
+    "show_trade_screen": {
+      "type": "boolean",
+      "default": true,
+      "description": "Show an in game trade screen when interacting with the mob.",
+      "title": "Show Trade Screen"
+    },
+    "table": {
+      "type": "string",
+      "default": "",
+      "description": "File path relative to the resource pack root for this entity's trades",
+      "title": "Table"
+    },
     "use_legacy_price_formula": {
       "type": "boolean",
       "default": false,

@@ -6,7 +6,11 @@
   "additionalProperties": false,
   "properties": {
     "collision_drag": { "type": "number", "description": "TODO description: collision drag", "title": "Collision Drag" },
-    "coefficient_of_restitution": { "type": "number", "description": "TODO description: coefficient of restitution", "title": "Coefficient Of Restitution" },
+    "coefficient_of_restitution": {
+      "type": "number",
+      "description": "TODO description: coefficient of restitution",
+      "title": "Coefficient Of Restitution"
+    },
     "collision_radius": { "type": "number", "description": "TODO description: collision radius", "title": "Collision Radius" },
     "enabled": { "$ref": "../../../../molang/1.8.0/number.json", "description": "TODO description: enabled", "title": "Enabled" },
     "expire_on_contact": { "type": "boolean", "description": "TODO description: expire on contact", "title": "Expire On Contact" },

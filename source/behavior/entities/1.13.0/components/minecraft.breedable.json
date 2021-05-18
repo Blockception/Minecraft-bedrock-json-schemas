@@ -27,7 +27,12 @@
       "default": true,
       "title": "Blend Attributes"
     },
-    "breed_cooldown": { "description": "Time in seconds before the Entity can breed again.", "type": "number", "default": 60.0, "title": "Breed Cooldown" },
+    "breed_cooldown": {
+      "description": "Time in seconds before the Entity can breed again.",
+      "type": "number",
+      "default": 60.0,
+      "title": "Breed Cooldown"
+    },
     "breed_items": {
       "description": "The list of items that can be used to get the entity into the 'love' state",
       "title": "Breed Items",
@@ -96,7 +101,14 @@
       "description": "Determines how likely the babies are to NOT inherit one of their parent's variances. Values are between 0.0 and 1.0, with a higher number meaning more likely to mutate.",
       "additionalProperties": false,
       "properties": {
-        "color": { "type": "number", "default": 0, "minimum": 0.0, "maximum": 1.0, "description": "The percentage chance of a mutation on the entity's color.", "title": "Color" },
+        "color": {
+          "type": "number",
+          "default": 0,
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "The percentage chance of a mutation on the entity's color.",
+          "title": "Color"
+        },
         "extra_variant": {
           "type": "number",
           "default": 0,
@@ -116,14 +128,29 @@
       },
       "title": "Mutation Factor"
     },
-    "causes_pregnancy": { "type": "boolean", "default": false, "description": "If true, the entity will become pregnant instead of spawning a baby.", "title": "Causes Pregnancy" },
-    "inherit_tamed": { "type": "boolean", "default": true, "description": "If true, the babies will be automatically tamed if its parents are", "title": "Inherit Tamed" },
+    "causes_pregnancy": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, the entity will become pregnant instead of spawning a baby.",
+      "title": "Causes Pregnancy"
+    },
+    "inherit_tamed": {
+      "type": "boolean",
+      "default": true,
+      "description": "If true, the babies will be automatically tamed if its parents are",
+      "title": "Inherit Tamed"
+    },
     "require_full_health": {
       "type": "boolean",
       "default": false,
       "description": "If true, the entity needs to be at full health before it can breed.",
       "title": "Require Full Health"
     },
-    "require_tame": { "type": "boolean", "default": true, "description": "If true, the entities need to be tamed first before they can breed.", "title": "Require Tame" }
+    "require_tame": {
+      "type": "boolean",
+      "default": true,
+      "description": "If true, the entities need to be tamed first before they can breed.",
+      "title": "Require Tame"
+    }
   }
 }

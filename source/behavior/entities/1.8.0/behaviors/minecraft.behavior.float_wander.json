@@ -21,7 +21,12 @@
       "title": "Y Dist"
     },
     "y_offset": { "type": "number", "default": 0.0, "description": "Height in blocks to add to the selected target position", "title": "Y Offset" },
-    "must_reach": { "type": "boolean", "default": false, "description": "If true, the point has to be reachable to be a valid target", "title": "Must Reach" },
+    "must_reach": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, the point has to be reachable to be a valid target",
+      "title": "Must Reach"
+    },
     "random_reselect": {
       "type": "boolean",
       "default": false,

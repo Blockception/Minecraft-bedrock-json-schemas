@@ -5,6 +5,9 @@
   "title": "Follow Range 1.8.0",
   "additionalProperties": false,
   "required": [],
-  "properties": { "value": { "type": "integer", "description": "TODO", "title": "Value" }, "max": { "type": "integer", "description": "TODO", "title": "Max" } },
+  "properties": {
+    "value": { "type": "integer", "description": "TODO", "title": "Value" },
+    "max": { "type": "integer", "description": "TODO", "title": "Max" }
+  },
   "description": "TODO description: "
 }

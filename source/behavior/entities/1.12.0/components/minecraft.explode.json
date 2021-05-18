@@ -7,8 +7,18 @@
   "description": "Defines how the entity explodes.",
   "required": [],
   "properties": {
-    "breaks_blocks": { "type": "boolean", "default": true, "description": "If true, the explosion will destroy blocks in the explosion radius.", "title": "Breaks Blocks" },
-    "causes_fire": { "type": "boolean", "default": false, "description": "If true, blocks in the explosion radius will be set on fire.", "title": "Causes Fire" },
+    "breaks_blocks": {
+      "type": "boolean",
+      "default": true,
+      "description": "If true, the explosion will destroy blocks in the explosion radius.",
+      "title": "Breaks Blocks"
+    },
+    "causes_fire": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, blocks in the explosion radius will be set on fire.",
+      "title": "Causes Fire"
+    },
     "destroy_affected_by_griefing": {
       "type": "boolean",
       "default": false,
@@ -38,13 +48,23 @@
         }
       ]
     },
-    "fuse_lit": { "type": "boolean", "default": false, "description": "If true, the fuse is already lit when this component is added to the entity.", "title": "Fuse Lit" },
+    "fuse_lit": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, the fuse is already lit when this component is added to the entity.",
+      "title": "Fuse Lit"
+    },
     "max_resistance": {
       "type": "number",
       "default": 3.40282e38,
       "description": "A blocks explosion resistance will be capped at this value when an explosion occurs.",
       "title": "Max Resistance"
     },
-    "power": { "type": "number", "default": 3, "description": "The radius of the explosion in blocks and the amount of damage the explosion deals.", "title": "Power" }
+    "power": {
+      "type": "number",
+      "default": 3,
+      "description": "The radius of the explosion in blocks and the amount of damage the explosion deals.",
+      "title": "Power"
+    }
   }
 }

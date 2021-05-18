@@ -6,5 +6,7 @@
   "additionalProperties": false,
   "description": "Sets the distance through which the entity can push through.",
   "required": [],
-  "properties": { "value": { "type": "number", "default": 0.0, "description": "The value of the entity's push-through, in blocks", "title": "TODO Title" } }
+  "properties": {
+    "value": { "type": "number", "default": 0.0, "description": "The value of the entity's push-through, in blocks", "title": "TODO Title" }
+  }
 }

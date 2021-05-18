@@ -22,7 +22,12 @@
     { "type": "object", "$ref": "#/definitions/on_environement" },
     {
       "type": "array",
-      "items": { "oneOf": [{ "$ref": "#/definitions/on_environement" }, { "type": "object", "properties": { "on_environment": { "$ref": "#/definitions/on_environement" } } }] }
+      "items": {
+        "oneOf": [
+          { "$ref": "#/definitions/on_environement" },
+          { "type": "object", "properties": { "on_environment": { "$ref": "#/definitions/on_environement" } } }
+        ]
+      }
     }
   ]
 }

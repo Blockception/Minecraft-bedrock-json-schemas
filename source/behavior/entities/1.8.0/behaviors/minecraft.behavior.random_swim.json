@@ -8,7 +8,12 @@
   "properties": {
     "priority": { "$ref": "types/base_priority.json" },
     "speed_multiplier": { "$ref": "types/base_speed_multiplier.json" },
-    "avoid_surface": { "type": "boolean", "default": true, "description": "If true, the mob will avoid surface water blocks by swimming below them", "title": "TODO Title" },
+    "avoid_surface": {
+      "type": "boolean",
+      "default": true,
+      "description": "If true, the mob will avoid surface water blocks by swimming below them",
+      "title": "TODO Title"
+    },
     "interval": {
       "type": "integer",
       "default": 120,

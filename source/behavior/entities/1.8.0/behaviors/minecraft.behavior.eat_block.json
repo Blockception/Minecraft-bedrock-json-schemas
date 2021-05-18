@@ -9,7 +9,11 @@
   "properties": {
     "priority": { "$ref": "./types/base_priority.json" },
     "on_eat": { "$ref": "../types/trigger.json", "description": "UNDOCUMENTATED", "title": "On Eat" },
-    "success_chance": { "title": "Succes Chance", "description": "UNDOCUMENTATED", "oneOf": [{ "type": "number" }, { "type": "string", "title": "Molang" }] },
+    "success_chance": {
+      "title": "Succes Chance",
+      "description": "UNDOCUMENTATED",
+      "oneOf": [{ "type": "number" }, { "type": "string", "title": "Molang" }]
+    },
     "time_until_eat": { "title": "Time Until Eat", "description": "UNDOCUMENTATED", "type": "number" },
     "eat_and_replace_block_pairs": {
       "type": "array",

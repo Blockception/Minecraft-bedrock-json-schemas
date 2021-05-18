@@ -47,7 +47,9 @@
         "type": "object",
         "title": "Texture Data",
         "description": "TODO: add description",
-        "properties": { "textures": { "oneOf": [{ "$ref": "#/definitions/texture" }, { "type": "array", "items": { "$ref": "#/definitions/texture" } }] } }
+        "properties": {
+          "textures": { "oneOf": [{ "$ref": "#/definitions/texture" }, { "type": "array", "items": { "$ref": "#/definitions/texture" } }] }
+        }
       },
       "description": "TODO description",
       "title": "TODO Title"

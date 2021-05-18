@@ -27,7 +27,12 @@
       "default": true,
       "title": "Blend Attributes"
     },
-    "breed_cooldown": { "description": "Time in seconds before the Entity can breed again.", "type": "number", "default": 60.0, "title": "Breed Cooldown" },
+    "breed_cooldown": {
+      "description": "Time in seconds before the Entity can breed again.",
+      "type": "number",
+      "default": 60.0,
+      "title": "Breed Cooldown"
+    },
     "breed_items": {
       "description": "The list of items that can be used to get the entity into the 'love' state",
       "title": "Breed Items",
@@ -52,7 +57,12 @@
       ],
       "title": "TODO Title"
     },
-    "causes_pregnancy": { "type": "boolean", "default": false, "description": "If true, the entity will become pregnant instead of spawning a baby.", "title": "Causes Pregnancy" },
+    "causes_pregnancy": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, the entity will become pregnant instead of spawning a baby.",
+      "title": "Causes Pregnancy"
+    },
     "deny_parents_variant": {
       "type": "object",
       "description": "Determines how likely the baby of parents with the same variant will deny that variant and take a random variant within the given range instead.",
@@ -102,14 +112,26 @@
       "maximum": 1.0,
       "title": "Extra Baby Chance"
     },
-    "inherit_tamed": { "description": "If true, the babies will be automatically tamed if its parents are", "type": "boolean", "default": true, "title": "Inherit Tamed" },
+    "inherit_tamed": {
+      "description": "If true, the babies will be automatically tamed if its parents are",
+      "type": "boolean",
+      "default": true,
+      "title": "Inherit Tamed"
+    },
     "love_filters": { "$ref": "../filters.json", "description": "The filters to run when attempting to fall in love.", "title": "Love Filters" },
     "mutation_factor": {
       "type": "object",
       "description": "Determines how likely the babies are to NOT inherit one of their parent's variances. Values are between 0.0 and 1.0, with a higher number meaning more likely to mutate.",
       "additionalProperties": false,
       "properties": {
-        "color": { "type": "number", "default": 0, "minimum": 0.0, "maximum": 1.0, "description": "The percentage chance of a mutation on the entity's color.", "title": "Color" },
+        "color": {
+          "type": "number",
+          "default": 0,
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "The percentage chance of a mutation on the entity's color.",
+          "title": "Color"
+        },
         "extra_variant": {
           "type": "number",
           "default": 0,
@@ -129,6 +151,11 @@
       },
       "title": "Mutation Factor"
     },
-    "require_tame": { "type": "boolean", "description": "If true, the entities need to be tamed first before they can breed.", "default": true, "title": "Require Tame" }
+    "require_tame": {
+      "type": "boolean",
+      "description": "If true, the entities need to be tamed first before they can breed.",
+      "default": true,
+      "title": "Require Tame"
+    }
   }
 }

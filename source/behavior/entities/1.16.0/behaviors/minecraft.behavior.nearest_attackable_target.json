@@ -53,7 +53,12 @@
       "title": "Attack Interval Min"
     },
     "attack_owner": { "type": "boolean", "default": false, "description": "If true, this entity can attack its owner.", "title": "Attack Owner" },
-    "must_reach": { "type": "boolean", "default": false, "description": "If true, this entity requires a path to the target.", "title": "Must Reach" },
+    "must_reach": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, this entity requires a path to the target.",
+      "title": "Must Reach"
+    },
     "must_see": {
       "type": "boolean",
       "default": false,
@@ -84,7 +89,12 @@
       "description": "If \"attack_interval\" is 0 or isn't declared, then between attacks: scanning for a new target occurs every amount of ticks equal to \"scan_interval\", minimum value is 1. Values under 10 can affect performance.",
       "title": "Scan Interval"
     },
-    "set_persistent": { "type": "boolean", "default": false, "description": "Allows the actor to be set to persist upon targeting a player", "title": "Set Persistent" },
+    "set_persistent": {
+      "type": "boolean",
+      "default": false,
+      "description": "Allows the actor to be set to persist upon targeting a player",
+      "title": "Set Persistent"
+    },
     "target_invisible_multiplier": {
       "type": "number",
       "default": 0.7,

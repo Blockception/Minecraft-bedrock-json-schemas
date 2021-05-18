@@ -19,12 +19,22 @@
           "type": "object",
           "required": ["identifier", "basic_render_parameters"],
           "properties": {
-            "identifier": { "type": "string", "description": "TODO description: identifier", "title": "Identifier", "$ref": "../../../general/particle/identifier.json" },
+            "identifier": {
+              "type": "string",
+              "description": "TODO description: identifier",
+              "title": "Identifier",
+              "$ref": "../../../general/particle/identifier.json"
+            },
             "basic_render_parameters": {
               "additionalProperties": false,
               "type": "object",
               "properties": {
-                "material": { "type": "string", "examples": ["particles_alpha", "particles_blend"], "description": " Minecraft material to use for emitter", "title": "Material" },
+                "material": {
+                  "type": "string",
+                  "examples": ["particles_alpha", "particles_blend"],
+                  "description": " Minecraft material to use for emitter",
+                  "title": "Material"
+                },
                 "texture": { "type": "string", "pattern": "^.+$", "description": "Minecraft texture to use for emitter", "title": "Texture" }
               },
               "description": "TODO description: basic render parameters",
@@ -51,10 +61,19 @@
                 "title": "Nodes",
                 "oneOf": [
                   { "minItems": 1, "type": "array", "items": { "$ref": "../../../molang/1.8.0/number.json" } },
-                  { "type": "object", "propertyNames": { "pattern": "(^[\\-0-9]+$|^[\\-0-9]+\\.[\\-0-9]+$)" }, "additionalProperties": { "type": "object", "properties": {} } }
+                  {
+                    "type": "object",
+                    "propertyNames": { "pattern": "(^[\\-0-9]+$|^[\\-0-9]+\\.[\\-0-9]+$)" },
+                    "additionalProperties": { "type": "object", "properties": {} }
+                  }
                 ]
               },
-              "type": { "type": "string", "title": "Type", "description": "The type of curve", "enum": ["linear", "bezier", "bezier_chain", "catmull_rom"] },
+              "type": {
+                "type": "string",
+                "title": "Type",
+                "description": "The type of curve",
+                "enum": ["linear", "bezier", "bezier_chain", "catmull_rom"]
+              },
               "horizontal_range": { "type": "string", "title": "Horizontal Range", "description": "What is the range the input is mapped onto" }
             }
           }

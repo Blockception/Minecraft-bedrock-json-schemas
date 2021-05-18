@@ -28,7 +28,11 @@
       }
     },
     "sea_material": { "title": "Sea Material", "description": "Material used to replace air blocks below sea level.", "type": "string" },
-    "foundation_material": { "title": "Foundation Material", "description": "Material used to repalce solid blocks that are not surface blocks.", "type": "string" },
+    "foundation_material": {
+      "title": "Foundation Material",
+      "description": "Material used to repalce solid blocks that are not surface blocks.",
+      "type": "string"
+    },
     "beach_material": { "title": "Beach Material", "description": "Material used to decorate surface near sea level.", "type": "string" }
   }
 }

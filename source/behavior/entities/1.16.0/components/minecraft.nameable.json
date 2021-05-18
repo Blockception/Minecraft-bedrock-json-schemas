@@ -13,13 +13,27 @@
       "description": "Describes the special names for this entity and the events to call when the entity acquires those names",
       "title": "Name Action",
       "properties": {
-        "name_filter": { "type": "string", "default": "", "description": "List of special names that will cause the events defined in 'on_named' to fire", "title": "Name Filter" },
-        "on_named": { "$ref": "../types/event.json", "description": "Event to be called when this entity acquires the name specified in 'name_filter'", "title": "On Named" }
+        "name_filter": {
+          "type": "string",
+          "default": "",
+          "description": "List of special names that will cause the events defined in 'on_named' to fire",
+          "title": "Name Filter"
+        },
+        "on_named": {
+          "$ref": "../types/event.json",
+          "description": "Event to be called when this entity acquires the name specified in 'name_filter'",
+          "title": "On Named"
+        }
       }
     }
   },
   "properties": {
-    "allow_name_tag_renaming": { "type": "boolean", "default": true, "description": "If true, this entity can be renamed with name tags", "title": "Allow Name Tag Renaming" },
+    "allow_name_tag_renaming": {
+      "type": "boolean",
+      "default": true,
+      "description": "If true, this entity can be renamed with name tags",
+      "title": "Allow Name Tag Renaming"
+    },
     "always_show": { "type": "boolean", "default": false, "description": "If true, the name will always be shown", "title": "Always Show" },
     "default_trigger": { "$ref": "../types/trigger.json", "description": "Trigger to run when the entity gets named", "title": "Default Trigger" },
     "name_actions": {

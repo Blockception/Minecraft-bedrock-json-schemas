@@ -15,6 +15,11 @@
       "description": "The distance in blocks that the owner can be away from this mob before it starts following it",
       "title": "TODO Title"
     },
-    "stop_distance": { "type": "number", "default": 2, "description": "The distance in blocks this mob will stop from its owner while following it", "title": "TODO Title" }
+    "stop_distance": {
+      "type": "number",
+      "default": 2,
+      "description": "The distance in blocks this mob will stop from its owner while following it",
+      "title": "TODO Title"
+    }
   }
 }

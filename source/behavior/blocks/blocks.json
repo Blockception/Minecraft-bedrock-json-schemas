@@ -1,7 +1,12 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.blocks",
-  "examples": [{ "format_version": "1.16.200", "minecraft:block": { "description": { "identifier": "namespace:block", "properties": {} }, "components": {}, "events": {} } }],
+  "examples": [
+    {
+      "format_version": "1.16.200",
+      "minecraft:block": { "description": { "identifier": "namespace:block", "properties": {} }, "components": {}, "events": {} }
+    }
+  ],
   "allOf": [
     { "if": { "properties": { "format_version": { "type": "string", "const": "1.10" } } }, "then": { "$ref": "./1.10.0/blocks.json" } },
     { "if": { "properties": { "format_version": { "type": "string", "const": "1.10.0" } } }, "then": { "$ref": "./1.10.0/blocks.json" } },

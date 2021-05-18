@@ -32,9 +32,21 @@
       "description": "An array of 3 items that describe the bones position",
       "type": "array",
       "items": [
-        { "title": "Position X", "description": "The position over the X-axis or forwards/backwards.\nCan be molang or a float", "$ref": "../../../molang/1.8.0/number.json" },
-        { "title": "Position Y", "description": "The position over the Y-axis, or up/down.\nCan be molang or a float", "$ref": "../../../molang/1.8.0/number.json" },
-        { "title": "Position Z", "description": "The position over the Z-axis, or left/right.\nCan be molang or a float", "$ref": "../../../molang/1.8.0/number.json" }
+        {
+          "title": "Position X",
+          "description": "The position over the X-axis or forwards/backwards.\nCan be molang or a float",
+          "$ref": "../../../molang/1.8.0/number.json"
+        },
+        {
+          "title": "Position Y",
+          "description": "The position over the Y-axis, or up/down.\nCan be molang or a float",
+          "$ref": "../../../molang/1.8.0/number.json"
+        },
+        {
+          "title": "Position Z",
+          "description": "The position over the Z-axis, or left/right.\nCan be molang or a float",
+          "$ref": "../../../molang/1.8.0/number.json"
+        }
       ]
     },
     "RotationV3": {
@@ -42,9 +54,21 @@
       "description": "An array of 3 items that describe the bones rotation",
       "type": "array",
       "items": [
-        { "title": "Rotation X", "description": "The rotation over the X-axis, or up or down.\nCan be molang or a float", "$ref": "../../../molang/1.8.0/number.json" },
-        { "title": "Rotation Y", "description": "The rotation over the Y-axis, or yaw.\nCan be molang or a float", "$ref": "../../../molang/1.8.0/number.json" },
-        { "title": "Rotation Z", "description": "The rotation over the Z-axis, or roll.\nCan be molang or a float", "$ref": "../../../molang/1.8.0/number.json" }
+        {
+          "title": "Rotation X",
+          "description": "The rotation over the X-axis, or up or down.\nCan be molang or a float",
+          "$ref": "../../../molang/1.8.0/number.json"
+        },
+        {
+          "title": "Rotation Y",
+          "description": "The rotation over the Y-axis, or yaw.\nCan be molang or a float",
+          "$ref": "../../../molang/1.8.0/number.json"
+        },
+        {
+          "title": "Rotation Z",
+          "description": "The rotation over the Z-axis, or roll.\nCan be molang or a float",
+          "$ref": "../../../molang/1.8.0/number.json"
+        }
       ]
     },
     "ScaleV3": {
@@ -52,16 +76,34 @@
       "description": "An array of 3 items that describe the bones position",
       "type": "array",
       "items": [
-        { "title": "Position X", "description": "The position over the X-axis or forwards/backwards.\nCan be molang or a float", "$ref": "../../../molang/1.8.0/number.json" },
-        { "title": "Position Y", "description": "The position over the Y-axis, or up/down.\nCan be molang or a float", "$ref": "../../../molang/1.8.0/number.json" },
-        { "title": "Position Z", "description": "The position over the Z-axis, or left/right.\nCan be molang or a float", "$ref": "../../../molang/1.8.0/number.json" }
+        {
+          "title": "Position X",
+          "description": "The position over the X-axis or forwards/backwards.\nCan be molang or a float",
+          "$ref": "../../../molang/1.8.0/number.json"
+        },
+        {
+          "title": "Position Y",
+          "description": "The position over the Y-axis, or up/down.\nCan be molang or a float",
+          "$ref": "../../../molang/1.8.0/number.json"
+        },
+        {
+          "title": "Position Z",
+          "description": "The position over the Z-axis, or left/right.\nCan be molang or a float",
+          "$ref": "../../../molang/1.8.0/number.json"
+        }
       ]
     },
     "SoundEffect": {
       "title": "Sound Effect",
       "type": "object",
       "additionalProperties": false,
-      "properties": { "effect": { "title": "Effect", "type": "string", "description": "Valid sound effect names should be listed in the entity's resource_definition json file." } }
+      "properties": {
+        "effect": {
+          "title": "Effect",
+          "type": "string",
+          "description": "Valid sound effect names should be listed in the entity's resource_definition json file."
+        }
+      }
     }
   },
   "required": ["format_version", "animations"],
@@ -153,7 +195,11 @@
                   "title": "Relative To",
                   "description": "If set, makes the bone rotation relative to the entity instead of the bone's parent",
                   "properties": {
-                    "rotation": { "title": "Rotation", "description": "If set, makes the bone rotation relative to the entity instead of the bone's parent", "type": "string" }
+                    "rotation": {
+                      "title": "Rotation",
+                      "description": "If set, makes the bone rotation relative to the entity instead of the bone's parent",
+                      "type": "string"
+                    }
                   }
                 },
                 "scale": {

@@ -22,8 +22,16 @@
         "additionalProperties": false,
         "required": ["localization_name", "geometry", "texture", "type"],
         "properties": {
-          "localization_name": { "title": "Locatlization Name", "description": "The key in the language file to use to display text", "type": "string" },
-          "geometry": { "title": "Geometry", "description": "The type of geometry to use", "enum": ["geometry.humanoid.custom", "geometry.humanoid.customSlim"] },
+          "localization_name": {
+            "title": "Locatlization Name",
+            "description": "The key in the language file to use to display text",
+            "type": "string"
+          },
+          "geometry": {
+            "title": "Geometry",
+            "description": "The type of geometry to use",
+            "enum": ["geometry.humanoid.custom", "geometry.humanoid.customSlim"]
+          },
           "texture": { "title": "Texture", "description": "The filename of the skin", "pattern": "^.*\\.png$" },
           "type": { "title": "Type", "description": "The type of skin", "enum": ["free", "paid"] }
         }

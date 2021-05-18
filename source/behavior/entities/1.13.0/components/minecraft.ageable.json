@@ -11,7 +11,12 @@
       "oneOf": [{ "type": "array", "items": { "type": "string" } }, { "type": "string" }],
       "title": "TODO Title"
     },
-    "duration": { "type": "number", "default": 1200, "description": "Amount of time before the entity grows up, -1 for always a baby.", "title": "TODO Title" },
+    "duration": {
+      "type": "number",
+      "default": 1200,
+      "description": "Amount of time before the entity grows up, -1 for always a baby.",
+      "title": "TODO Title"
+    },
     "feed_items": {
       "description": "List of items that can be fed to the entity. Includes 'item' for the item name and 'growth' to define how much time it grows up by",
       "oneOf": [{ "type": "array", "items": { "type": "string" } }, { "type": "string" }],

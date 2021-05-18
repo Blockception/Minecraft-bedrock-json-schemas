@@ -8,7 +8,12 @@
   "properties": {
     "priority": { "$ref": "types/base_priority.json" },
     "speed_multiplier": { "$ref": "types/base_speed_multiplier.json" },
-    "can_pickup_any_item": { "type": "boolean", "default": false, "description": "If true, the mob can pickup any item", "title": "Can Pickup Any Item" },
+    "can_pickup_any_item": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, the mob can pickup any item",
+      "title": "Can Pickup Any Item"
+    },
     "can_pickup_to_hand_or_equipment": {
       "type": "boolean",
       "default": true,
@@ -29,6 +34,11 @@
       "description": "If true, depending on the difficulty, there is a random chance that the mob may not be able to pickup items",
       "title": "Pickup Based On Chance"
     },
-    "track_target": { "type": "boolean", "default": false, "description": "If true, this mob will chase after the target as long as it's a valid target", "title": "Track Target" }
+    "track_target": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, this mob will chase after the target as long as it's a valid target",
+      "title": "Track Target"
+    }
   }
 }

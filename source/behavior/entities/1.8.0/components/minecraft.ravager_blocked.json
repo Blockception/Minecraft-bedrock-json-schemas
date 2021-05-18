@@ -7,7 +7,12 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "knockback_strength": { "type": "number", "default": 3, "description": "The strength with which blocking entities should be knocked back", "title": "TODO Title" },
+    "knockback_strength": {
+      "type": "number",
+      "default": 3,
+      "description": "The strength with which blocking entities should be knocked back",
+      "title": "TODO Title"
+    },
     "reaction_choices": {
       "type": "array",
       "description": "A list of weighted responses to the melee attack being blocked",

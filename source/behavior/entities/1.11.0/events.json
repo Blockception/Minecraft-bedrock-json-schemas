@@ -73,8 +73,16 @@
       "$ref": "#/definitions/event_base",
       "title": "Entity Born"
     },
-    "minecraft:entity_spawned": { "description": "Event called on an entity that is placed in the level.", "$ref": "#/definitions/event_base", "title": "Entity Spawned" },
-    "minecraft:on_prime": { "description": "Event called on an entity whose fuse is lit and is ready to explode.", "$ref": "#/definitions/event_base", "title": "On Prime" }
+    "minecraft:entity_spawned": {
+      "description": "Event called on an entity that is placed in the level.",
+      "$ref": "#/definitions/event_base",
+      "title": "Entity Spawned"
+    },
+    "minecraft:on_prime": {
+      "description": "Event called on an entity whose fuse is lit and is ready to explode.",
+      "$ref": "#/definitions/event_base",
+      "title": "On Prime"
+    }
   },
   "additionalProperties": { "$ref": "#/definitions/event_base" }
 }

@@ -14,6 +14,11 @@
       "description": "Amount of time in seconds the trap exists. After this amount of time is elapsed, the trap is removed from the world if it hasn't been activated",
       "title": "TODO Title"
     },
-    "within_radius": { "type": "number", "default": 0, "description": "Distance in blocks that the player has to be within to trigger the horse trap", "title": "TODO Title" }
+    "within_radius": {
+      "type": "number",
+      "default": 0,
+      "description": "Distance in blocks that the player has to be within to trigger the horse trap",
+      "title": "TODO Title"
+    }
   }
 }

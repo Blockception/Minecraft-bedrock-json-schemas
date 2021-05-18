@@ -7,6 +7,10 @@
   "additionalProperties": false,
   "properties": {
     "priority": { "$ref": "types/base_priority.json" },
-    "delay_before_eating": { "type": "number", "description": "Time in seconds the mob should wait before eating the item.", "title": "Delay Before Eating" }
+    "delay_before_eating": {
+      "type": "number",
+      "description": "Time in seconds the mob should wait before eating the item.",
+      "title": "Delay Before Eating"
+    }
   }
 }

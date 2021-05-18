@@ -16,7 +16,17 @@
       "title": "TODO Title"
     },
     "on_lay": { "$ref": "../types/event.json", "description": "Event to run when this mob lays the egg.", "title": "TODO Title" },
-    "search_height": { "type": "integer", "default": 1, "description": "Height in blocks the mob will look for sand block to move towards", "title": "TODO Title" },
-    "search_range": { "type": "integer", "default": 0, "description": "The distance in blocks it will look for a sand block to move towards", "title": "TODO Title" }
+    "search_height": {
+      "type": "integer",
+      "default": 1,
+      "description": "Height in blocks the mob will look for sand block to move towards",
+      "title": "TODO Title"
+    },
+    "search_range": {
+      "type": "integer",
+      "default": 0,
+      "description": "The distance in blocks it will look for a sand block to move towards",
+      "title": "TODO Title"
+    }
   }
 }

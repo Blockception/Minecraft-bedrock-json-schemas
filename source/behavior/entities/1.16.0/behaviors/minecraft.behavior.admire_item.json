@@ -7,7 +7,12 @@
   "additionalProperties": false,
   "properties": {
     "priority": { "$ref": "types/base_priority.json" },
-    "admire_item_sound": { "type": "string", "default": "", "description": "The sound event to play when admiring the item", "title": "Admire Item Sound" },
+    "admire_item_sound": {
+      "type": "string",
+      "default": "",
+      "description": "The sound event to play when admiring the item",
+      "title": "Admire Item Sound"
+    },
     "on_admire_item_start": { "$ref": "../types/event.json", "title": "On Admire Item Start", "description": "UNDOCUMENTATED" },
     "on_admire_item_stop": { "$ref": "../types/event.json", "title": "On Admire Item Stop", "description": "UNDOCUMENTATED" },
     "sound_interval": {

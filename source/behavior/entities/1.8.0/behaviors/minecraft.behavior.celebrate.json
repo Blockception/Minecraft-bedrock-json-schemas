@@ -25,7 +25,11 @@
         { "type": "number" }
       ]
     },
-    "on_celebration_end_event": { "$ref": "../types/trigger.json", "description": "The event to trigger when the goal's duration expires.", "title": "On Celebration End Event" },
+    "on_celebration_end_event": {
+      "$ref": "../types/trigger.json",
+      "description": "The event to trigger when the goal's duration expires.",
+      "title": "On Celebration End Event"
+    },
     "sound_interval": {
       "type": "array",
       "default": 0,

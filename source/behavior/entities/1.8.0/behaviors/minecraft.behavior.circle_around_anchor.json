@@ -8,7 +8,12 @@
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/base_priority.json" },
-    "speed_multiplier": { "type": "number", "default": 1.0, "description": "Movement speed multiplier of the mob when using this AI Goal", "title": "Speed Multiplier" },
+    "speed_multiplier": {
+      "type": "number",
+      "default": 1.0,
+      "description": "Movement speed multiplier of the mob when using this AI Goal",
+      "title": "Speed Multiplier"
+    },
     "radius_range": {
       "$ref": "../types/range_number_type.json",
       "default": [5.0, 15.0],

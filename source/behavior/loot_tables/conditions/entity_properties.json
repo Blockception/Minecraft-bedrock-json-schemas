@@ -14,7 +14,10 @@
       "description": "The entity's properties. \"on_fire\", \"on_ground\" is used for now.",
       "title": "Properties",
       "additionalProperties": false,
-      "properties": { "on_fire": { "title": "On Fire", "description": "TODO", "type": "boolean" }, "on_ground": { "title": "On Fire", "description": "TODO", "type": "boolean" } }
+      "properties": {
+        "on_fire": { "title": "On Fire", "description": "TODO", "type": "boolean" },
+        "on_ground": { "title": "On Fire", "description": "TODO", "type": "boolean" }
+      }
     }
   }
 }

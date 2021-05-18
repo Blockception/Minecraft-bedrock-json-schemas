@@ -10,7 +10,13 @@
         { "type": "string", "enum": ["inwards", "outwards"], "description": "TODO description: Todo", "title": "Todo" },
         {
           "type": "array",
-          "items": { "minItems": 3, "maxItems": 3, "$ref": "../../../../molang/1.8.0/number.json", "description": "TODO description: Todo", "title": "Todo" },
+          "items": {
+            "minItems": 3,
+            "maxItems": 3,
+            "$ref": "../../../../molang/1.8.0/number.json",
+            "description": "TODO description: Todo",
+            "title": "Todo"
+          },
           "description": "TODO description: Todo",
           "title": "Todo"
         }
@@ -20,7 +26,13 @@
     },
     "offset": {
       "type": "array",
-      "items": { "minItems": 3, "maxItems": 3, "$ref": "../../../../molang/1.8.0/number.json", "description": "TODO description: offset", "title": "Offset" },
+      "items": {
+        "minItems": 3,
+        "maxItems": 3,
+        "$ref": "../../../../molang/1.8.0/number.json",
+        "description": "TODO description: offset",
+        "title": "Offset"
+      },
       "description": "TODO description",
       "title": "TODO Title"
     }

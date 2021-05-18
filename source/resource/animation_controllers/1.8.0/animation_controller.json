@@ -59,7 +59,10 @@
       "type": "object",
       "title": "Animation Controllers Schema",
       "description": "The animation controllers schema for 1.8.0",
-      "propertyNames": { "pattern": "^controller\\.animation\\.[a-z\\.]+", "examples": ["controller.animation.example", "controller.animation.example.foo"] },
+      "propertyNames": {
+        "pattern": "^controller\\.animation\\.[a-z\\.]+",
+        "examples": ["controller.animation.example", "controller.animation.example.foo"]
+      },
       "additionalProperties": {
         "additionalProperties": false,
         "type": "object",
@@ -88,7 +91,10 @@
                 "blend_transition": {
                   "title": "Blend Transition",
                   "oneOf": [
-                    { "type": "number", "description": "A short-hand version of blend_out that simply sets the amount of time to fade out if the animation is interrupted" },
+                    {
+                      "type": "number",
+                      "description": "A short-hand version of blend_out that simply sets the amount of time to fade out if the animation is interrupted"
+                    },
                     {
                       "type": "object",
                       "description": "Specifies the cross-fade time in seconds when transitioning to another state",
@@ -107,7 +113,11 @@
                 "particle_effects": {
                   "description": "The effects to be emitted",
                   "type": "array",
-                  "items": { "$ref": "#/definitions/particle_effect_spec", "description": "TODO description: particle effects", "title": "Particle Effects" },
+                  "items": {
+                    "$ref": "#/definitions/particle_effect_spec",
+                    "description": "TODO description: particle effects",
+                    "title": "Particle Effects"
+                  },
                   "title": "Particle Effects"
                 },
                 "sound_effects": {
@@ -117,7 +127,12 @@
                     "type": "object",
                     "additionalProperties": false,
                     "required": ["effect"],
-                    "properties": { "effect": { "description": "Valid sound effect names should be listed in the entity's resource_definition json file.", "type": "string" } }
+                    "properties": {
+                      "effect": {
+                        "description": "Valid sound effect names should be listed in the entity's resource_definition json file.",
+                        "type": "string"
+                      }
+                    }
                   }
                 },
                 "transitions": {
@@ -125,7 +140,11 @@
                   "description": "The transition definition for 1.8.0",
                   "minProperties": 1,
                   "type": "array",
-                  "items": { "$ref": "#/definitions/animationspec", "description": "The specification on when to transition to a new state", "title": "Transitions" }
+                  "items": {
+                    "$ref": "#/definitions/animationspec",
+                    "description": "The specification on when to transition to a new state",
+                    "title": "Transitions"
+                  }
                 },
                 "variables": {
                   "type": "object",
@@ -133,7 +152,10 @@
                     "additionalProperties": false,
                     "type": "object",
                     "required": ["input"],
-                    "properties": { "input": { "$ref": "../../../molang/1.8.0/number.json" }, "remap_curve": { "additionalProperties": { "type": "number" } } }
+                    "properties": {
+                      "input": { "$ref": "../../../molang/1.8.0/number.json" },
+                      "remap_curve": { "additionalProperties": { "type": "number" } }
+                    }
                   }
                 },
                 "on_entry": {

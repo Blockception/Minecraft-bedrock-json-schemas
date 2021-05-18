@@ -16,8 +16,18 @@
       "title": "TODO Title"
     },
     "eat_delay": { "type": "integer", "default": 2, "description": "Time in seconds between each time it eats", "title": "TODO Title" },
-    "full_delay": { "type": "integer", "default": 100, "description": "Amount of time in seconds before this mob wants to eat again", "title": "TODO Title" },
-    "initial_eat_delay": { "type": "integer", "default": 0, "description": "Time in seconds before starting to eat/raid once it arrives at it", "title": "Initial Eat Delay" },
+    "full_delay": {
+      "type": "integer",
+      "default": 100,
+      "description": "Amount of time in seconds before this mob wants to eat again",
+      "title": "TODO Title"
+    },
+    "initial_eat_delay": {
+      "type": "integer",
+      "default": 0,
+      "description": "Time in seconds before starting to eat/raid once it arrives at it",
+      "title": "Initial Eat Delay"
+    },
     "goal_radius": {
       "type": "number",
       "default": 0.5,
@@ -25,7 +35,12 @@
       "title": "TODO Title"
     },
     "max_to_eat": { "type": "integer", "default": 6, "description": "Maximum number of things this entity wants to eat", "title": "TODO Title" },
-    "search_range": { "type": "integer", "default": 0, "description": "Distance in blocks the mob will look for crops to eat", "title": "TODO Title" },
+    "search_range": {
+      "type": "integer",
+      "default": 0,
+      "description": "Distance in blocks the mob will look for crops to eat",
+      "title": "TODO Title"
+    },
     "search_height": { "type": "integer", "default": 0, "description": "UNDOCUMENTATED", "title": "TODO Title" }
   }
 }

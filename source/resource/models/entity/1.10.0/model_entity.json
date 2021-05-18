@@ -64,7 +64,12 @@
                 "normals": { "type": "array", "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }] },
                 "polys": {
                   "type": "array",
-                  "items": { "type": "array", "minItems": 3, "maxItems": 4, "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }] }
+                  "items": {
+                    "type": "array",
+                    "minItems": 3,
+                    "maxItems": 4,
+                    "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
+                  }
                 }
               }
             },

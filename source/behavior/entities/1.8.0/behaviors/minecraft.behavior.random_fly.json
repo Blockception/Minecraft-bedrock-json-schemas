@@ -8,7 +8,12 @@
   "required": [],
   "properties": {
     "priority": { "$ref": "types/base_priority.json" },
-    "can_land_on_trees": { "type": "boolean", "default": true, "description": "If true, the mob can stop flying and land on a tree instead of the ground", "title": "TODO Title" },
+    "can_land_on_trees": {
+      "type": "boolean",
+      "default": true,
+      "description": "If true, the mob can stop flying and land on a tree instead of the ground",
+      "title": "TODO Title"
+    },
     "xz_dist": {
       "type": "integer",
       "default": 10,

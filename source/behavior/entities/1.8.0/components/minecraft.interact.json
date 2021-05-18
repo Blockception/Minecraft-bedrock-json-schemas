@@ -33,7 +33,10 @@
           "properties": {
             "particle_type": { "type": "string", "description": "The type of particle that will be spawned" },
             "particle_y_offset": { "type": "string", "description": "Will offset the particle this amount in the y direction" },
-            "particle_offset_towards_interactor": { "type": "string", "description": "Whether or not the particle will appear closer to who performed the interaction" }
+            "particle_offset_towards_interactor": {
+              "type": "string",
+              "description": "Whether or not the particle will appear closer to who performed the interaction"
+            }
           }
         },
         "play_sounds": { "type": "string", "default": "", "description": "List of sounds to play when the interaction occurs" },
@@ -43,8 +46,15 @@
           "description": "Loot table with items to drop on the ground upon successful interaction",
           "properties": { "table": { "type": "string", "description": "File path, relative to the Behavior Pack's path, to the loot table file" } }
         },
-        "swing": { "type": "boolean", "default": false, "description": "If true, the player will do the 'swing' animation when interacting with this entity" },
-        "transform_to_item": { "type": "string", "description": "The item used will transform to this item upon successful interaction. Format: itemName:auxValue" },
+        "swing": {
+          "type": "boolean",
+          "default": false,
+          "description": "If true, the player will do the 'swing' animation when interacting with this entity"
+        },
+        "transform_to_item": {
+          "type": "string",
+          "description": "The item used will transform to this item upon successful interaction. Format: itemName:auxValue"
+        },
         "use_item": { "type": "boolean", "default": false, "description": "If true, the interaction will use an item" }
       }
     }

@@ -15,7 +15,17 @@
       "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot",
       "title": "TODO Title"
     },
-    "search_height": { "type": "integer", "default": 1, "description": "Height in blocks from the owner the pet can be to sleep with owner.", "title": "TODO Title" },
-    "search_range": { "type": "integer", "default": 0, "description": "The distance in blocks from the owner the pet can be to sleep with owner.", "title": "TODO Title" }
+    "search_height": {
+      "type": "integer",
+      "default": 1,
+      "description": "Height in blocks from the owner the pet can be to sleep with owner.",
+      "title": "TODO Title"
+    },
+    "search_range": {
+      "type": "integer",
+      "default": 0,
+      "description": "The distance in blocks from the owner the pet can be to sleep with owner.",
+      "title": "TODO Title"
+    }
   }
 }

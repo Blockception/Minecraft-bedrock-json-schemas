@@ -6,7 +6,12 @@
   "description": "Enables the mob to admire items that have been configured as admirable. Must be used in combination with the admire_item component.",
   "additionalProperties": false,
   "properties": {
-    "admire_item_sound": { "type": "string", "default": "", "description": "The sound event to play when admiring the item", "title": "Admire Item Sound" },
+    "admire_item_sound": {
+      "type": "string",
+      "default": "",
+      "description": "The sound event to play when admiring the item",
+      "title": "Admire Item Sound"
+    },
     "sound_interval": {
       "type": "array",
       "default": 0,

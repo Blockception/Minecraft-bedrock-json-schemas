@@ -7,13 +7,25 @@
   "properties": {
     "direction": {
       "type": "array",
-      "items": { "minItems": 3, "maxItems": 3, "$ref": "../../../../molang/1.8.0/number.json", "description": "TODO description: direction", "title": "Direction" },
+      "items": {
+        "minItems": 3,
+        "maxItems": 3,
+        "$ref": "../../../../molang/1.8.0/number.json",
+        "description": "TODO description: direction",
+        "title": "Direction"
+      },
       "description": "TODO description: direction",
       "title": "Direction"
     },
     "offset": {
       "type": "array",
-      "items": { "minItems": 3, "maxItems": 3, "$ref": "../../../../molang/1.8.0/number.json", "description": "TODO description: offset", "title": "Offset" },
+      "items": {
+        "minItems": 3,
+        "maxItems": 3,
+        "$ref": "../../../../molang/1.8.0/number.json",
+        "description": "TODO description: offset",
+        "title": "Offset"
+      },
       "description": "TODO description: offset",
       "title": "Offset"
     }

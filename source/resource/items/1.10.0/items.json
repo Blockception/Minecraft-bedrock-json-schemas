@@ -24,7 +24,12 @@
           "type": "object",
           "additionalProperties": false,
           "properties": {
-            "identifier": { "title": "Identifier", "description": "The item identifier", "$ref": "../../../general/item/identifier.json", "examples": ["namespace:example"] },
+            "identifier": {
+              "title": "Identifier",
+              "description": "The item identifier",
+              "$ref": "../../../general/item/identifier.json",
+              "examples": ["namespace:example"]
+            },
             "category": { "title": "Category", "description": "The category this item belongs in", "type": "string" }
           }
         },
@@ -34,7 +39,12 @@
           "additionalProperties": false,
           "properties": {
             "minecraft:icon": { "title": "Icon", "description": "The texture defined in `textures/item_texture.json`", "type": "string" },
-            "minecraft:render_offsets": { "type": "string", "description": "The render offset used for the item", "title": "Render Offsets", "enum": ["apple"] }
+            "minecraft:render_offsets": {
+              "type": "string",
+              "description": "The render offset used for the item",
+              "title": "Render Offsets",
+              "enum": ["apple"]
+            }
           }
         }
       }

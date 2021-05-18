@@ -55,13 +55,21 @@
                 "slide_away_duration": { "type": "number", "description": "UNDOCUMANTED", "title": "UNDOCUMANTED" }
               }
             },
-            "minecraft:max_damage": { "type": "integer", "description": "Max damage item has, this is used like item max health.", "title": "UNDOCUMANTED" },
+            "minecraft:max_damage": {
+              "type": "integer",
+              "description": "Max damage item has, this is used like item max health.",
+              "title": "UNDOCUMANTED"
+            },
             "minecraft:hand_equipped": { "type": "boolean", "title": "Hand Equipped", "description": "Is this a hand equipped item." },
             "minecraft:stacked_by_data": { "type": "boolean", "description": "Stacked by data aux value or not?", "title": "UNDOCUMANTED" },
             "minecraft:foil": { "type": "boolean", "description": "Foil or glint.", "title": "UNDOCUMANTED" },
             "minecraft:block": { "type": "string", "description": "Block name, leave blank for no block.", "title": "UNDOCUMANTED" },
             "minecraft:max_stack_size": { "type": "integer", "description": "Max stack size.", "title": "UNDOCUMANTED", "minimum": 0 },
-            "minecraft:use_duration": { "type": "integer", "description": "How long to use before item is done being used.", "title": "UNDOCUMANTED" },
+            "minecraft:use_duration": {
+              "type": "integer",
+              "description": "How long to use before item is done being used.",
+              "title": "UNDOCUMANTED"
+            },
             "minecraft:food": {
               "type": "object",
               "description": "Food settings of the item",
@@ -86,7 +94,12 @@
                   "enum": ["chorus_teleport", "suspicious_stew_effect", "none"]
                 },
                 "on_use_range": { "$ref": "../../../general/array_3_number.json" },
-                "cooldown_type": { "type": "string", "description": "'chorusfruit' or 'none'.", "title": "UNDOCUMANTED", "enum": ["chorusfruit", "none"] },
+                "cooldown_type": {
+                  "type": "string",
+                  "description": "'chorusfruit' or 'none'.",
+                  "title": "UNDOCUMANTED",
+                  "enum": ["chorusfruit", "none"]
+                },
                 "cooldown_time": { "type": "integer", "description": "Cooldown time in ticks.", "title": "UNDOCUMANTED" },
                 "can_always_eat": { "type": "boolean", "description": "Can always eat this item? true or false.", "title": "UNDOCUMANTED" },
                 "effects": {

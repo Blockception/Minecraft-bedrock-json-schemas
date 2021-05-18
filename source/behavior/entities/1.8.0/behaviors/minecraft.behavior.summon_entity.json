@@ -17,10 +17,22 @@
         "properties": {
           "cast_duration": { "type": "number", "description": "Time in seconds the spell casting will take" },
           "cooldown_time": { "type": "number", "default": 0, "description": "Time in seconds the mob has to wait before using the spell again" },
-          "do_casting": { "type": "boolean", "default": true, "description": "If true, the mob will do the casting animations and render spell particles" },
+          "do_casting": {
+            "type": "boolean",
+            "default": true,
+            "description": "If true, the mob will do the casting animations and render spell particles"
+          },
           "filters": { "$ref": "../filters.json" },
-          "max_activation_range": { "type": "number", "default": -1, "description": "Upper bound of the activation distance in blocks for this spell" },
-          "min_activation_range": { "type": "number", "default": 1, "description": "Lower bound of the activation distance in blocks for this spell" },
+          "max_activation_range": {
+            "type": "number",
+            "default": -1,
+            "description": "Upper bound of the activation distance in blocks for this spell"
+          },
+          "min_activation_range": {
+            "type": "number",
+            "default": 1,
+            "description": "Lower bound of the activation distance in blocks for this spell"
+          },
           "particle_color": {
             "description": "The color of the particles for this spell",
             "title": "Particle Color",
@@ -37,7 +49,11 @@
               "additionalProperties": false,
               "properties": {
                 "base_delay": { "type": "number", "default": 0, "description": "Amount of time in seconds to wait before this step starts" },
-                "delay_per_summon": { "type": "number", "default": 0, "description": "Amount of time in seconds before each entity is summoned in this step" },
+                "delay_per_summon": {
+                  "type": "number",
+                  "default": 0,
+                  "description": "Amount of time in seconds before each entity is summoned in this step"
+                },
                 "entity_lifespan": {
                   "type": "number",
                   "default": -1,
@@ -59,7 +75,11 @@
             }
           },
           "start_sound_event": { "type": "string", "description": "The sound event to play when using this spell" },
-          "weight": { "type": "number", "default": 0, "description": "The weight of this spell. Controls how likely the mob is to choose this spell when casting one" }
+          "weight": {
+            "type": "number",
+            "default": 0,
+            "description": "The weight of this spell. Controls how likely the mob is to choose this spell when casting one"
+          }
         }
       },
       "title": "TODO Title"

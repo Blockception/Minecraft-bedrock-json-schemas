@@ -9,11 +9,31 @@
   "additionalProperties": false,
   "properties": {
     "top_material": { "title": "Top Material", "description": "Controls the block type used for the surface of this biome.", "string": "string" },
-    "mid_material": { "title": "Mid Material", "description": "Controls the block type used in a layer below the surface of this biome.", "string": "string" },
-    "sea_floor_material": { "title": "Sea Floor Material", "description": "Controls the block type used as a floor for bodies of water in this biome.", "string": "boostringlean" },
-    "foundation_material": { "title": "Foundation Material", "description": "Controls the block type used deep underground in this biome.", "string": "string" },
-    "sea_material": { "title": "Sea Material", "description": "Controls the block type used for the bodies of water in this biome.", "string": "string" },
-    "sea_floor_depth": { "title": "Sea Floor Depth", "description": "Controls how deep below the world water level the floor should occur.", "type": "integer" },
+    "mid_material": {
+      "title": "Mid Material",
+      "description": "Controls the block type used in a layer below the surface of this biome.",
+      "string": "string"
+    },
+    "sea_floor_material": {
+      "title": "Sea Floor Material",
+      "description": "Controls the block type used as a floor for bodies of water in this biome.",
+      "string": "boostringlean"
+    },
+    "foundation_material": {
+      "title": "Foundation Material",
+      "description": "Controls the block type used deep underground in this biome.",
+      "string": "string"
+    },
+    "sea_material": {
+      "title": "Sea Material",
+      "description": "Controls the block type used for the bodies of water in this biome.",
+      "string": "string"
+    },
+    "sea_floor_depth": {
+      "title": "Sea Floor Depth",
+      "description": "Controls how deep below the world water level the floor should occur.",
+      "type": "integer"
+    },
     "clay_material": { "title": "Clay Material", "description": "UNDOCUMENTATED", "type": "string" },
     "hard_clay_material": { "title": "Hard Clay Material", "description": "UNDOCUMENTATED", "type": "string" },
     "bryce_pillars": { "title": "Bryce Pillars", "description": "UNDOCUMENTATED", "type": "boolean" },

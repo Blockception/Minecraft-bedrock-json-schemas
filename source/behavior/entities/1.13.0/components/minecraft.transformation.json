@@ -24,13 +24,21 @@
           "default": 0,
           "description": "Chance that the entity will look for nearby blocks that can speed up the transformation. Value must be between 0.0 and 1.0"
         },
-        "block_chance": { "type": "number", "default": 0, "description": "Chance that, once a block is found, will help speed up the transformation" },
+        "block_chance": {
+          "type": "number",
+          "default": 0,
+          "description": "Chance that, once a block is found, will help speed up the transformation"
+        },
         "block_max": {
           "type": "integer",
           "default": 0,
           "description": "Maximum number of blocks the entity will look for to aid in the transformation. If not defined or set to 0, it will be set to the block radius"
         },
-        "block_radius": { "type": "integer", "default": 0, "description": "Distance in Blocks that the entity will search for blocks that can help the transformation" },
+        "block_radius": {
+          "type": "integer",
+          "default": 0,
+          "description": "Distance in Blocks that the entity will search for blocks that can help the transformation"
+        },
         "block_types": {
           "type": "array",
           "description": "List of blocks that can help the transformation of this entity",
@@ -41,7 +49,12 @@
       "title": "TODO Title",
       "additionalProperties": false
     },
-    "drop_equipment": { "type": "boolean", "default": false, "description": "Cause the entity to drop all equipment upon transformation", "title": "TODO Title" },
+    "drop_equipment": {
+      "type": "boolean",
+      "default": false,
+      "description": "Cause the entity to drop all equipment upon transformation",
+      "title": "TODO Title"
+    },
     "into": { "type": "string", "description": "Entity Definition that this entity will transform into", "title": "TODO Title" },
     "keep_level": {
       "type": "boolean",

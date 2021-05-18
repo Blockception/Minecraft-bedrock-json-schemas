@@ -25,7 +25,11 @@
         { "type": "object", "additionalProperties": false, "properties": { "range_min": { "type": "number" }, "range_max": { "type": "number" } } }
       ]
     },
-    "on_celebration_end_event": { "$ref": "../types/trigger.json", "description": "The event to trigger when the goal's duration expires.", "title": "On Celebration End Event" },
+    "on_celebration_end_event": {
+      "$ref": "../types/trigger.json",
+      "description": "The event to trigger when the goal's duration expires.",
+      "title": "On Celebration End Event"
+    },
     "sound_interval": {
       "default": 0,
       "description": "The range of time in seconds to randomly wait before playing the sound again.",

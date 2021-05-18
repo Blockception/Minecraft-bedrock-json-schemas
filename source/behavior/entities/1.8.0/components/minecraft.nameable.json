@@ -19,8 +19,18 @@
     },
     "default_trigger": { "type": "string", "description": "Trigger to run when the entity gets named", "title": "TODO Title" },
     "alwaysShow": { "type": "boolean", "default": false, "description": "If true, the name will always be shown", "title": "TODO Title" },
-    "allowNameTagRenaming": { "type": "boolean", "default": true, "description": "If true, this entity can be renamed with name tags", "title": "TODO Title" },
-    "allow_name_tag_renaming": { "type": "boolean", "default": true, "description": "If true, this entity can be renamed with name tags", "title": "Allow Name Tag Renaming" },
+    "allowNameTagRenaming": {
+      "type": "boolean",
+      "default": true,
+      "description": "If true, this entity can be renamed with name tags",
+      "title": "TODO Title"
+    },
+    "allow_name_tag_renaming": {
+      "type": "boolean",
+      "default": true,
+      "description": "If true, this entity can be renamed with name tags",
+      "title": "Allow Name Tag Renaming"
+    },
     "always_show": { "type": "boolean", "default": false, "description": "If true, the name will always be shown", "title": "Always Show" }
   }
 }

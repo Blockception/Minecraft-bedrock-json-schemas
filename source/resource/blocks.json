@@ -26,7 +26,12 @@
   },
   "propertyNames": { "pattern": "^[\\w_\\-:]+$" },
   "properties": {
-    "format_version": { "type": "array", "items": [{ "type": "integer" }, { "type": "integer" }, { "type": "integer" }], "description": "TODO description", "title": "TODO Title" }
+    "format_version": {
+      "type": "array",
+      "items": [{ "type": "integer" }, { "type": "integer" }, { "type": "integer" }],
+      "description": "TODO description",
+      "title": "TODO Title"
+    }
   },
   "additionalProperties": {
     "additionalProperties": false,

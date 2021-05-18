@@ -13,7 +13,13 @@
     }
   ],
   "allOf": [
-    { "if": { "properties": { "format_version": { "const": 1, "type": "number", "title": "Format Version" } } }, "then": { "$ref": "./manifest/manifest.1.json" } },
-    { "if": { "properties": { "format_version": { "const": 2, "type": "number", "title": "Format Version" } } }, "then": { "$ref": "./manifest/manifest.2.json" } }
+    {
+      "if": { "properties": { "format_version": { "const": 1, "type": "number", "title": "Format Version" } } },
+      "then": { "$ref": "./manifest/manifest.1.json" }
+    },
+    {
+      "if": { "properties": { "format_version": { "const": 2, "type": "number", "title": "Format Version" } } },
+      "then": { "$ref": "./manifest/manifest.2.json" }
+    }
   ]
 }

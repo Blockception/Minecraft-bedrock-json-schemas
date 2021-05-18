@@ -8,7 +8,12 @@
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/base_priority.json" },
-    "walk_speed_multiplier": { "type": "number", "default": 1.0, "description": "Multiplier for the walking speed while using this attack", "title": "Walk Speed Multiplier" },
+    "walk_speed_multiplier": {
+      "type": "number",
+      "default": 1.0,
+      "description": "Multiplier for the walking speed while using this attack",
+      "title": "Walk Speed Multiplier"
+    },
     "sprint_speed_multiplier": {
       "type": "number",
       "default": 1.0,

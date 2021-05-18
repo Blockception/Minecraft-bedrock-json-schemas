@@ -7,7 +7,12 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "must_see": { "type": "boolean", "default": false, "description": "Whether the other entity needs to be visible to trigger 'inside' events", "title": "TODO Title" },
+    "must_see": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the other entity needs to be visible to trigger 'inside' events",
+      "title": "TODO Title"
+    },
     "inside_range": {
       "type": "number",
       "default": 1,

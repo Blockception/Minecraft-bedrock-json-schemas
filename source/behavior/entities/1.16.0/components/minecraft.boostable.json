@@ -23,9 +23,19 @@
         "additionalProperties": false,
         "description": "List of items that can be used to boost while riding this entity.",
         "properties": {
-          "damage": { "type": "integer", "default": 1, "description": "This is the damage that the item will take each time it is used.", "title": "Damage" },
+          "damage": {
+            "type": "integer",
+            "default": 1,
+            "description": "This is the damage that the item will take each time it is used.",
+            "title": "Damage"
+          },
           "item": { "type": "string", "default": "", "description": "Name of the item that can be used to boost.", "title": "Item" },
-          "replace_item": { "type": "string", "default": "", "description": "The item used to boost will become this item once it is used up.", "title": "Replace Item" }
+          "replace_item": {
+            "type": "string",
+            "default": "",
+            "description": "The item used to boost will become this item once it is used up.",
+            "title": "Replace Item"
+          }
         }
       }
     }

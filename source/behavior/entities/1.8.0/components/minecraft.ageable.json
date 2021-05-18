@@ -7,7 +7,12 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "duration": { "type": "number", "default": 1200.0, "description": "Amount of time before the entity grows up, -1 for always a baby.", "title": "Duration" },
+    "duration": {
+      "type": "number",
+      "default": 1200.0,
+      "description": "Amount of time before the entity grows up, -1 for always a baby.",
+      "title": "Duration"
+    },
     "feedItems": {
       "description": "List of items that can be fed to the entity. Includes 'item' for the item name and 'growth' to define how much time it grows up by",
       "items": {
@@ -15,7 +20,12 @@
           {
             "type": "object",
             "properties": {
-              "item": { "type": "string", "description": "The item name that can be used to feed", "title": "Item", "$ref": "../../../../general/item/identifier.json" },
+              "item": {
+                "type": "string",
+                "description": "The item name that can be used to feed",
+                "title": "Item",
+                "$ref": "../../../../general/item/identifier.json"
+              },
               "growth": { "type": "integer", "description": "The amount that counts for aging", "title": "Growth" }
             }
           },
@@ -34,7 +44,10 @@
     },
     "grow_up": {
       "description": "Event to run when this entity grows up",
-      "oneOf": [{ "type": "string" }, { "type": "object", "properties": { "event": { "type": "string" }, "target": { "$ref": "../filters/types/base_subject.json" } } }],
+      "oneOf": [
+        { "type": "string" },
+        { "type": "object", "properties": { "event": { "type": "string" }, "target": { "$ref": "../filters/types/base_subject.json" } } }
+      ],
       "title": "TODO Title"
     }
   }

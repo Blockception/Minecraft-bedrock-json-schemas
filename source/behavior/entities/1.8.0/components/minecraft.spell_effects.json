@@ -13,7 +13,10 @@
       "items": {
         "oneOf": [
           { "type": "string" },
-          { "type": "object", "properties": { "effect": { "type": "string" }, "duration": { "type": "integer" }, "display_on_screen_animation": { "type": "boolean" } } }
+          {
+            "type": "object",
+            "properties": { "effect": { "type": "string" }, "duration": { "type": "integer" }, "display_on_screen_animation": { "type": "boolean" } }
+          }
         ]
       },
       "title": "Add Effects"
@@ -24,7 +27,11 @@
       "oneOf": [
         {
           "type": "array",
-          "items": { "type": ["string"], "title": "Spell effect id", "description": "identifier of the effect to be removed from this entity after adding this component" }
+          "items": {
+            "type": ["string"],
+            "title": "Spell effect id",
+            "description": "identifier of the effect to be removed from this entity after adding this component"
+          }
         },
         { "type": "string" }
       ]

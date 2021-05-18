@@ -18,6 +18,10 @@
       "examples": ["wither", "hunger"],
       "title": "Effect Name"
     },
-    "effect_duration": { "type": "number", "description": "Duration in seconds of the status ailment applied to the damaged entity", "title": "Effect Duration" }
+    "effect_duration": {
+      "type": "number",
+      "description": "Duration in seconds of the status ailment applied to the damaged entity",
+      "title": "Effect Duration"
+    }
   }
 }

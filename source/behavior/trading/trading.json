@@ -3,7 +3,15 @@
   "$id": "blockception.minecraft.behavior.trading",
   "type": "object",
   "additionalProperties": false,
-  "examples": [{ "tiers": [{ "trades": [{ "wants": [{ "item": "minecraft:coal:0", "quantity": { "min": 16, "max": 24 } }], "gives": [{ "item": "minecraft:emerald" }] }] }] }],
+  "examples": [
+    {
+      "tiers": [
+        {
+          "trades": [{ "wants": [{ "item": "minecraft:coal:0", "quantity": { "min": 16, "max": 24 } }], "gives": [{ "item": "minecraft:emerald" }] }]
+        }
+      ]
+    }
+  ],
   "definitions": {
     "Item": {
       "title": "Item",
@@ -23,7 +31,10 @@
                   "type": "object",
                   "additionalProperties": false,
                   "required": ["min", "max"],
-                  "properties": { "min": { "type": "integer", "minimum": 1, "title": "Minimum" }, "max": { "type": "integer", "minimum": 1, "title": "Maximum" } }
+                  "properties": {
+                    "min": { "type": "integer", "minimum": 1, "title": "Minimum" },
+                    "max": { "type": "integer", "minimum": 1, "title": "Maximum" }
+                  }
                 }
               ]
             },
@@ -32,7 +43,11 @@
         }
       ]
     },
-    "Functions": { "title": "Functions", "type": "array", "items": { "type": "object", "required": ["function"], "$ref": "../loot_tables/functions.json" } },
+    "Functions": {
+      "title": "Functions",
+      "type": "array",
+      "items": { "type": "object", "required": ["function"], "$ref": "../loot_tables/functions.json" }
+    },
     "TradeArray": {
       "type": "array",
       "title": "Trades",
@@ -62,7 +77,10 @@
                           "type": "object",
                           "additionalProperties": false,
                           "required": ["min", "max"],
-                          "properties": { "min": { "type": "integer", "minimum": 1, "title": "Minimum" }, "max": { "type": "integer", "minimum": 1, "title": "Maximum" } }
+                          "properties": {
+                            "min": { "type": "integer", "minimum": 1, "title": "Minimum" },
+                            "max": { "type": "integer", "minimum": 1, "title": "Maximum" }
+                          }
                         }
                       ]
                     },
@@ -93,7 +111,10 @@
                           "type": "object",
                           "additionalProperties": false,
                           "required": ["min", "max"],
-                          "properties": { "min": { "type": "integer", "minimum": 1, "title": "Minimum" }, "max": { "type": "integer", "minimum": 1, "title": "Maximum" } }
+                          "properties": {
+                            "min": { "type": "integer", "minimum": 1, "title": "Minimum" },
+                            "max": { "type": "integer", "minimum": 1, "title": "Maximum" }
+                          }
                         }
                       ]
                     },

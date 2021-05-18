@@ -6,7 +6,10 @@
     { "Source": "./language/languages.json", "Destination": "../language/languages.json" },
     { "Source": "./general/manifest.json", "Destination": "../general/manifest.json" },
     { "Source": "./general/world_x_packs.json", "Destination": "../general/world_x_packs.json" },
-    { "Source": "./resource/animation_controllers/animation_controller.json", "Destination": "../resource/animation_controllers/animation_controller.json" },
+    {
+      "Source": "./resource/animation_controllers/animation_controller.json",
+      "Destination": "../resource/animation_controllers/animation_controller.json"
+    },
     { "Source": "./resource/animations/actor_animation.json", "Destination": "../resource/animations/actor_animation.json" },
     { "Source": "./resource/attachables/attachables.json", "Destination": "../resource/attachables/attachables.json" },
     { "Source": "./resource/biomes_client.json", "Destination": "../resource/biomes_client.json" },
@@ -25,7 +28,10 @@
     { "Source": "./resource/sounds/sound_definitions.json", "Destination": "../resource/sounds/sound_definitions.json" },
     { "Source": "./resource/sounds.json", "Destination": "../resource/sounds.json" },
     { "Source": "./resource/textures/terrain_texture.json", "Destination": "../resource/textures/terrain_texture.json" },
-    { "Source": "./behavior/animation_controllers/animation_controller.json", "Destination": "../behavior/animation_controllers/animation_controller.json" },
+    {
+      "Source": "./behavior/animation_controllers/animation_controller.json",
+      "Destination": "../behavior/animation_controllers/animation_controller.json"
+    },
     { "Source": "./behavior/animations/animations.json", "Destination": "../behavior/animations/animations.json" },
     { "Source": "./behavior/biomes/biomes.json", "Destination": "../behavior/biomes/biomes.json" },
     { "Source": "./behavior/loot_tables/loot_tables.json", "Destination": "../behavior/loot_tables/loot_tables.json" },
