@@ -145,7 +145,7 @@
       "description": "UNDOCUMENTED",
       "type": "array",
       "items": {
-        "$ref": "#/defintions/iteration"
+        "$ref": "#/definitions/iteration"
       }
     },
     "after_surface_pass": {
@@ -153,7 +153,7 @@
       "description": "UNDOCUMENTED",
       "type": "array",
       "items": {
-        "$ref": "#/defintions/iteration"
+        "$ref": "#/definitions/iteration"
       }
     },
     "after_underground_pass": {
@@ -161,7 +161,7 @@
       "description": "UNDOCUMENTED",
       "type": "array",
       "items": {
-        "$ref": "#/defintions/iteration"
+        "$ref": "#/definitions/iteration"
       }
     },
     "before_sky_pass": {
@@ -169,7 +169,7 @@
       "description": "UNDOCUMENTED",
       "type": "array",
       "items": {
-        "$ref": "#/defintions/iteration"
+        "$ref": "#/definitions/iteration"
       }
     },
     "before_surface_pass": {
@@ -177,7 +177,7 @@
       "description": "UNDOCUMENTED",
       "type": "array",
       "items": {
-        "$ref": "#/defintions/iteration"
+        "$ref": "#/definitions/iteration"
       }
     },
     "before_underground_pass": {
@@ -185,7 +185,7 @@
       "description": "UNDOCUMENTED",
       "type": "array",
       "items": {
-        "$ref": "#/defintions/iteration"
+        "$ref": "#/definitions/iteration"
       }
     },
     "final_pass": {
@@ -193,7 +193,7 @@
       "description": "UNDOCUMENTED",
       "type": "array",
       "items": {
-        "$ref": "#/defintions/iteration"
+        "$ref": "#/definitions/iteration"
       }
     },
     "first_pass": {
@@ -201,7 +201,7 @@
       "description": "UNDOCUMENTED",
       "type": "array",
       "items": {
-        "$ref": "#/defintions/iteration"
+        "$ref": "#/definitions/iteration"
       }
     },
     "surface_pass": {
@@ -209,7 +209,7 @@
       "description": "UNDOCUMENTED",
       "type": "array",
       "items": {
-        "$ref": "#/defintions/iteration"
+        "$ref": "#/definitions/iteration"
       }
     },
     "sky_pass": {
@@ -217,7 +217,7 @@
       "description": "UNDOCUMENTED",
       "type": "array",
       "items": {
-        "$ref": "#/defintions/iteration"
+        "$ref": "#/definitions/iteration"
       }
     },
     "underground_pass": {
@@ -225,7 +225,7 @@
       "description": "UNDOCUMENTED",
       "type": "array",
       "items": {
-        "$ref": "#/defintions/iteration"
+        "$ref": "#/definitions/iteration"
       }
     }
   }
