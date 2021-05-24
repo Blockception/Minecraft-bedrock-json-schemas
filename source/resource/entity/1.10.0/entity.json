@@ -127,6 +127,7 @@
                   "type": "array",
                   "description": "Clientside molang variables that are to be evualated during the creation of the entity",
                   "title": "Initialize",
+                  "minItems": 1,
                   "items": {
                     "pattern": ";$",
                     "$ref": "../../../molang/1.8.0/string.json",
