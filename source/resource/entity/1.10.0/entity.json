@@ -3,7 +3,8 @@
   "$id": "blockception.minecraft.resource.1.10.0.entity",
   "type": "object",
   "title": "Resourcepack Actor Animation 1.10.0",
-  "description": "TODO description",
+  "description": "A client side entity definition",
+  "additionalProperties": false,
   "required": ["format_version", "minecraft:client_entity"],
   "properties": {
     "format_version": {
@@ -14,16 +15,17 @@
     },
     "minecraft:client_entity": {
       "type": "object",
+      "additionalProperties": false,
       "title": "Client Entity",
-      "description": "The client entity definition",
+      "description": "The entity description for clientside rendering, animations and models",
       "required": ["description"],
       "properties": {
         "description": {
+          "additionalProperties": false,
           "title": "Description",
+          "description": "The entity description for clientside rendering, animations and models",
           "type": "object",
           "required": ["identifier"],
-          "description": "The entity description for clientside rendering, animations and models",
-          "additionalProperties": false,
           "properties": {
             "animations": {
               "title": "Animations",
@@ -37,7 +39,7 @@
                 "examples": [{ "basic": "controller.generic.basic" }]
               }
             },
-            "enable_attachables": { "type": "boolean", "description": "TODO description: enable attachables", "title": "Enable Attachables" },
+            "enable_attachables": { "type": "boolean", "description": "Whether or not attachables are enaboled", "title": "Enable Attachables" },
             "geometry": {
               "title": "Geometry",
               "description": "The reference to defined geometries in '<resource pack>/models/'",
@@ -50,45 +52,45 @@
               "type": "string",
               "description": "The entity indentifier",
               "title": "Identifier",
-              "$ref": "../../../general/item/identifier.json"
+              "$ref": "../../../general/entity/identifier.json"
             },
             "materials": {
               "type": "object",
-              "additionalProperties": { "type": "string", "description": "TODO description: additionalProperties", "title": "TODO" },
-              "description": "TODO description: materials",
+              "additionalProperties": { "type": "string", "description": "Material reference", "title": "Material" },
+              "description": "A collection of material definitions",
               "title": "Materials"
             },
             "min_engine_version": {
               "type": "string",
               "pattern": "[0-9]+\\.[0-9]+\\.[0-9]+",
-              "description": "TODO description: min engine version",
+              "description": "The minimum engine version to be used",
               "title": "Min Engine Version"
             },
             "particle_effects": {
               "type": "object",
               "minProperties": 1,
-              "additionalProperties": { "type": "string", "description": "TODO description: additionalProperties", "title": "TODO" },
-              "description": "TODO description: particle effects",
+              "additionalProperties": { "type": "string", "description": "Particle reference", "title": "Particle" },
+              "description": "A collection of particle definitions",
               "title": "Particle Effects"
             },
             "particle_emitters": {
               "type": "object",
               "minProperties": 1,
-              "additionalProperties": { "type": "string", "description": "TODO description: additionalProperties", "title": "TODO" },
-              "description": "TODO description: particle emitters",
+              "additionalProperties": { "type": "string", "description": "Particle emitter reference", "title": "Particle emitter" },
+              "description": "A collection of particle emitters definitions",
               "title": "Particle Emitters"
             },
             "render_controllers": {
               "type": "array",
-              "description": "TODO description: render controllers",
-              "title": "Render Controllers",
+              "description": "A collection of Render controller definitions",
+              "title": "Render controllers",
               "minItems": 1,
               "items": {
                 "oneOf": [
-                  { "type": "string" },
+                  { "type": "string", "title": "Render controller", "description": "A single render controller definition" },
                   {
                     "type": "object",
-                    "additionalProperties": { "type": "string", "description": "A render controller", "title": "Render Controller" }
+                    "additionalProperties": { "type": "string", "description": "A render controller activate on conditional", "title": "Render Controller" }
                   }
                 ]
               }
@@ -154,7 +156,7 @@
                 },
                 "scale": {
                   "type": "string",
-                  "description": "TODO description: scale",
+                  "description": "Scale sets the scale of the mob's geometry.",
                   "title": "Scale",
                   "$ref": "../../../molang/1.8.0/number.json"
                 },
@@ -188,10 +190,10 @@
             },
             "sound_effects": {
               "title": "Sound Effects",
-              "description": "TODO description: sound effects",
+              "description": "A collection of sound effect definition",
               "type": "object",
               "minProperties": 1,
-              "additionalProperties": { "type": "string", "description": "TODO description: additionalProperties", "title": "Sound Effect" }
+              "additionalProperties": { "type": "string", "description": "A sound effect definition", "title": "Sound effect" }
             },
             "spawn_egg": {
               "additionalProperties": false,
@@ -219,9 +221,7 @@
             }
           }
         }
-      },
-      "additionalProperties": false
+      }
     }
-  },
-  "additionalProperties": false
+  }
 }

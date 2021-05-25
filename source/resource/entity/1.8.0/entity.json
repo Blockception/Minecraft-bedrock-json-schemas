@@ -1,9 +1,9 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "blockception.minecraft.resource.entity1.8.0",
+  "$id": "blockception.minecraft.resource.1.8.0.entity",
   "type": "object",
   "title": "Resourcepack Actor Animation 1.8.0",
-  "description": "TODO description",
+  "description": "A client side entity definition",
   "additionalProperties": false,
   "required": ["format_version", "minecraft:client_entity"],
   "properties": {
@@ -18,86 +18,140 @@
       "additionalProperties": false,
       "title": "Client Entity",
       "description": "The entity description for clientside rendering, animations and models",
+      "required": ["description"],
       "properties": {
         "description": {
           "additionalProperties": false,
           "title": "Description",
-          "description": "TODO description: description",
+          "description": "The entity description for clientside rendering, animations and models",
           "type": "object",
           "required": ["identifier"],
           "properties": {
             "animations": {
-              "description": "The connecting of animations in animations controllers with the actuall animations, names should corosponds",
-              "title": "Animations Schema",
+              "title": "Animations",
+              "description": "The collection of animations",
               "type": "object",
               "minProperties": 1,
-              "additionalProperties": { "type": "string", "description": "TODO description: additionalProperties", "title": "TODO" }
+              "additionalProperties": {
+                "type": "string",
+                "description": "A reference to an animation",
+                "title": "Animation Reference",
+                "examples": [{ "basic": "controller.generic.basic" }]
+              }
             },
             "animation_controllers": {
               "type": "array",
               "minItems": 1,
-              "description": "TODO description: animation controllers",
+              "description": "A reference to an animation controller",
               "title": "Animation Controllers",
               "items": {
                 "type": "object",
-                "additionalProperties": { "type": "string", "description": "TODO description: additionalProperties", "title": "TODO" },
-                "description": "TODO description: animation controllers",
-                "title": "Animation Controllers"
+                "description": "A collection of animation controllers",
+                "title": "Animation Controllers",
+                "additionalProperties": {
+                  "type": "string",
+                  "description": "A reference to an animation",
+                  "title": "Animation Reference",
+                  "examples": [{ "basic": "controller.generic.basic" }]
+                }
               }
             },
             "enable_attachables": { "type": "boolean", "description": "TODO description: enable attachables", "title": "Enable Attachables" },
             "geometry": {
               "title": "Geometry",
+              "description": "The reference to defined geometries in '<resource pack>/models/'",
               "type": "object",
+              "propertyNames": { "pattern": "[a-zA-Z0-9_\\.\\-]+" },
               "minProperties": 1,
-              "additionalProperties": { "type": "string", "description": "TODO description: additionalProperties", "title": "TODO" },
-              "description": "TODO description: geometry"
+              "additionalProperties": { "type": "string", "description": "The reference to the geometry", "title": "Geometry Reference" }
             },
             "identifier": {
               "type": "string",
-              "description": "TODO description: identifier",
+              "description": "The entity indentifier",
               "title": "Identifier",
               "$ref": "../../../general/entity/identifier.json"
             },
             "materials": {
               "type": "object",
-              "description": "TODO description: materials",
-              "title": "Materials",
-              "additionalProperties": { "type": "string", "description": "TODO description: additionalProperties", "title": "TODO" }
+              "additionalProperties": { "type": "string", "description": "Material reference", "title": "Material" },
+              "description": "A collection of material definitions",
+              "title": "Materials"
             },
             "min_engine_version": {
               "type": "string",
               "pattern": "[0-9]+\\.[0-9]+\\.[0-9]+",
-              "description": "TODO description: min engine version",
+              "description": "The minimum engine version to be used",
               "title": "Min Engine Version"
             },
             "particle_effects": {
               "type": "object",
               "minProperties": 1,
-              "additionalProperties": { "type": "string", "description": "TODO description: additionalProperties", "title": "TODO" },
-              "description": "TODO description: particle effects",
+              "additionalProperties": { "type": "string", "description": "Particle reference", "title": "Particle" },
+              "description": "A collection of particle definitions",
               "title": "Particle Effects"
             },
             "particle_emitters": {
               "type": "object",
               "minProperties": 1,
-              "additionalProperties": { "type": "string", "description": "TODO description: additionalProperties", "title": "TODO" },
-              "description": "TODO description: particle emitters",
+              "additionalProperties": { "type": "string", "description": "Particle emitter reference", "title": "Particle emitter" },
+              "description": "A collection of particle emitters definitions",
               "title": "Particle Emitters"
             },
             "render_controllers": {
               "type": "array",
-              "description": "TODO description: render controllers",
-              "title": "Render Controllers",
+              "description": "A collection of Render controller definitions",
+              "title": "Render controllers",
               "minItems": 1,
-              "items": { "type": "string", "description": "TODO description: render controllers", "title": "Render Controllers" }
+              "items": {
+                "oneOf": [
+                  { "type": "string", "title": "Render controller", "description": "A single render controller definition" },
+                  {
+                    "type": "object",
+                    "additionalProperties": { "type": "string", "description": "A render controller activate on conditional", "title": "Render Controller" }
+                  }
+                ]
+              }
+            },
+            "scripts": {
+              "additionalProperties": false,
+              "type": "object",
+              "title": "Scripts",
+              "description": "The place where variables, and animations / controller to be run is specified",
+              "properties": {
+                "pre_animation": {
+                  "type": "array",
+                  "description": "Clientside molang variables that are to be evualated during the animation",
+                  "title": "Pre Animation",
+                  "items": {
+                    "pattern": ";$",
+                    "$ref": "../../../molang/1.8.0/string.json",
+                    "description": "Clientside molang variables that are to be evualated during the animation",
+                    "title": "Pre Animation"
+                  }
+                },
+                "parent_setup": {
+                  "type": "string",
+                  "description": "TODO description: parent setup",
+                  "title": "Parent Setup",
+                  "$ref": "../../../molang/1.8.0/number.json"
+                },
+                "scale": {
+                  "type": "string",
+                  "description": "Scale sets the scale of the mob's geometry.",
+                  "title": "Scale",
+                  "$ref": "../../../molang/1.8.0/number.json"
+                },
+                "scalex": { "$ref": "../../../molang/1.8.0/number.json", "title": "Scale X" },
+                "scaley": { "$ref": "../../../molang/1.8.0/number.json", "title": "Scale Y" },
+                "scalez": { "$ref": "../../../molang/1.8.0/number.json", "title": "Scale Z" }
+              }
             },
             "sound_effects": {
               "title": "Sound Effects",
-              "description": "TODO description: sound effects",
+              "description": "A collection of sound effect definition",
               "type": "object",
               "minProperties": 1,
-              "additionalProperties": { "type": "string", "description": "TODO description: additionalProperties", "title": "TODO" }
+              "additionalProperties": { "type": "string", "description": "A sound effect definition", "title": "Sound effect" }
             },
             "spawn_egg": {
               "additionalProperties": false,
@@ -115,30 +169,6 @@
                 },
                 "texture": { "type": "string", "description": "The texture reference in item_texture.json", "title": "Texture" },
                 "texture_index": { "type": "integer", "description": "The index of the texture", "title": "Texture Index", "default": 0 }
-              }
-            },
-            "scripts": {
-              "additionalProperties": false,
-              "type": "object",
-              "description": "TODO description: scripts",
-              "title": "Scripts",
-              "properties": {
-                "pre_animation": {
-                  "type": "array",
-                  "description": "Clientside molang variables that are to be evualated during the animation",
-                  "title": "Pre Animation",
-                  "items": {
-                    "pattern": ";$",
-                    "$ref": "../../../molang/1.8.0/string.json",
-                    "description": "Clientside molang variables that are to be evualated during the animation",
-                    "title": "Pre Animation"
-                  }
-                },
-                "parent_setup": { "$ref": "../../../molang/1.8.0/number.json" },
-                "scale": { "type": "string", "description": "TODO description: scale", "title": "Scale" },
-                "scalex": { "$ref": "../../../molang/1.8.0/number.json", "title": "Scale X" },
-                "scaley": { "$ref": "../../../molang/1.8.0/number.json", "title": "Scale Y" },
-                "scalez": { "$ref": "../../../molang/1.8.0/number.json", "title": "Scale Z" }
               }
             },
             "textures": {

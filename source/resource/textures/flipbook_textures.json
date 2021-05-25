@@ -1,28 +1,64 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.resource.texture.flipbook",
+  "$schema": "http://json-schema.org/draft-07/schema",
   "additionalProperties": false,
-  "type": "array",
+  "description": "The file that specifies animated textures",
   "title": "Flipbook Texture File",
-  "description": "",
+  "type": "array",
   "items": {
     "additionalProperties": false,
-    "type": "object",
     "description": "A single flipbook texture",
     "title": "Flipbook Texture",
+    "type": "object",
     "properties": {
-      "atlas_index": { "type": "integer", "title": "Atlas Index", "description": "TODO: add description" },
-      "atlas_tile": { "type": "string", "pattern": "^[a-z0-9_\\-]*$", "title": "Atlas Index", "description": "TODO: add description" },
-      "atlas_tile_variant": { "type": "integer", "title": "Atlas Index", "description": "TODO: add description" },
-      "blend_frames": { "type": "boolean", "title": "Atlas Index", "description": "TODO: add description" },
-      "flipbook_texture": { "description": "A texture file", "type": "string", "pattern": "^textures/.+$" },
-      "frames": {
-        "description": "The collection of frame index to display",
-        "type": "array",
-        "items": { "description": "The index of the frame", "type": "integer", "title": "Frame Index", "minimum": 0 }
+      "atlas_index": {
+        "description": "TODO: add description",
+        "title": "Atlas Index",
+        "type": "integer"
       },
-      "replicate": { "type": "integer", "title": "Atlas Index", "description": "TODO: add description" },
-      "ticks_per_frame": { "description": "The amount of ticks to wait between frames", "type": "integer" }
+      "atlas_tile": {
+        "description": "TODO: add description",
+        "pattern": "^[a-z0-9_\\-]*$",
+        "title": "Atlas Index",
+        "type": "string"
+      },
+      "atlas_tile_variant": {
+        "description": "TODO: add description",
+        "title": "Atlas Index",
+        "type": "integer"
+      },
+      "blend_frames": {
+        "description": "TODO: add description",
+        "title": "Atlas Index",
+        "type": "boolean"
+      },
+      "flipbook_texture": {
+        "description": "A texture file",
+        "pattern": "^textures/.+$",
+        "title": "Flipbook texture",
+        "type": "string"
+      },
+      "frames": {
+        "title": "Frames",
+        "description": "The collection of frame index to display",
+        "items": {
+          "description": "The index of the frame",
+          "minimum": 0,
+          "title": "Frame Index",
+          "type": "integer"
+        },
+        "type": "array"
+      },
+      "replicate": {
+        "description": "TODO: add description",
+        "title": "Atlas Index",
+        "type": "integer"
+      },
+      "ticks_per_frame": {
+        "description": "The amount of ticks to wait between frames",
+        "title": "Ticks per frame",
+        "type": "integer"
+      }
     }
   }
 }
