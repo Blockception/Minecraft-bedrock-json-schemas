@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities.1.13.0.speed_multiplier",
   "additionalProperties": false,
   "default": 1.0,

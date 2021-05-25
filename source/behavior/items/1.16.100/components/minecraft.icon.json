@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.1.16.100.items.minecraft:icon",
   "title": "Icon",
   "description": "The icon item componenent determines the icon to represent the item in the UI and elsewhere.",

@@ -1,5 +1,8 @@
 {
-  "json.schemas": [{ "fileMatch": ["source/**/*.json", "source/*.json"], "url": "./.vscode/schema-validation.json" }],
+  "json.schemas": [
+    { "fileMatch": ["source/**/*.json", "source/*.json"], "url": "./.vscode/schema-validation.json" },
+    { "fileMatch": ["source/**/*.json", "source/*.json"], "url": "http://json-schema.org/draft-07/schema" }
+  ],
   "editor.formatOnSave": true,
   "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },

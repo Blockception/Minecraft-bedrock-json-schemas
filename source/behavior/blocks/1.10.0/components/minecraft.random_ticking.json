@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.blocks.1.10.0.minecraft.random_ticking",
   "title": "Random Ticking 1.10.0",
   "description": "Describes the component that will trigger an even at a regular interval between two values",

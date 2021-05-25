@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "minecraft.behavior.biomes.1.12.0.components.minecraft.nether_generation_rules",
   "title": "Nether Generation Rules",
   "description": "Controls how this biome is instantiated (and then potentially modified) during world generation of the nether.",

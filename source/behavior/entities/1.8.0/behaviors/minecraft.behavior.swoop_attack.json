@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.swoop_attack",
   "description": "Allows the mob to move to attack a target. The goal ends if it has a horizontal collision or gets hit. Built to be used with flying mobs.",
   "type": "object",

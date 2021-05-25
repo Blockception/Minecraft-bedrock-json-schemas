@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.resource.particle.1.10.0.particle_kill_plane",
   "type": "array",
   "title": "Particle Kill Plane Component For 1.10.0",

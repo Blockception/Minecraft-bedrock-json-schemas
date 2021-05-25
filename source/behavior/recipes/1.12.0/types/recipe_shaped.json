@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.1.12.0.recipe.shaped",
   "description": "Represents a shaped crafting recipe for a crafting table. The key used in the pattern may be any single character except the 'space' character, which is reserved for empty slots in a recipe..",
   "title": "Shaped Recipe 1.12.0",

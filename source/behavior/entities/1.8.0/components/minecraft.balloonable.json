@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.balloonable",
   "additionalProperties": false,
   "type": "object",

@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.1.16.200.items.minecraft:",
   "title": "On Use On",
   "description": "The on_use_on item component allows you to receive an event when the item is used on a block in the world.",

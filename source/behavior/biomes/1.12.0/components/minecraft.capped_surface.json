@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "minecraft.behavior.biomes.1.12.0.components.minecraft.capped_surface",
   "title": "Capped Surface",
   "description": "Generates surface on blocks with non-solid blocks above or below.",

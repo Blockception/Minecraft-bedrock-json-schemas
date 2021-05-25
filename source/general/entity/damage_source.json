@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "title": "Entity Damage Source",
   "description": "The types of damage an entity can receive",
   "type": "string",

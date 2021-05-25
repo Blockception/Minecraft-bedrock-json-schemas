@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.condition.entity_properties",
   "type": "object",
   "additionalProperties": false,

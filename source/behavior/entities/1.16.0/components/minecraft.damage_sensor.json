@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.damage_sensor",
   "title": "Damage Sensor",
   "description": "Defines what events to call when this entity is damaged by specific entities or items.",

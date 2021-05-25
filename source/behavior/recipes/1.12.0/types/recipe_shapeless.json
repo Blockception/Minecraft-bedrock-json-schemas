@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.1.12.0.recipe.shapeless",
   "description": "Represents a shapeless crafting recipe..",
   "title": "Shapeless Recipe 1.12.0",

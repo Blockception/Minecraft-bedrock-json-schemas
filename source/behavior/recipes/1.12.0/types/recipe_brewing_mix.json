@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.1.12.0.recipe.brewing.mix",
   "description": "Represents a Potion Brewing Container Recipe..",
   "title": "Brewing Recipe 1.12.0",

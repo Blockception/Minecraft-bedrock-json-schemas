@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.1.16.200.items.minecraft:durability",
   "title": "Durability",
   "description": "Durability item component: how much damage can this item take before breaking.",

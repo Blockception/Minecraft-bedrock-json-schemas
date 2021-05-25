@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.on_target_acquired",
   "description": "Adds a trigger to call when this entity finds a target.",
   "type": "object",

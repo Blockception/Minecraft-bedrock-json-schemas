@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.1.16.100.items.minecraft:cooldown",
   "title": "Cooldown",
   "description": "Cool down time for a component. After you use an item it becomes unusable for the duration specified by the 'cool down time' setting in this component.",

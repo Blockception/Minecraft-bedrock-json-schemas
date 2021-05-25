@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.movement.hover",
   "title": "Movement.hover 1.16.0",
   "description": "This move control causes the mob to hover.",

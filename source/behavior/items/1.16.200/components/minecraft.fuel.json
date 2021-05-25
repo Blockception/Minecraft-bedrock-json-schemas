@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.1.16.200.items.minecraft:fuel",
   "title": "Fuel",
   "description": "Fuel component. Allows this item to be used as fuel in a furnace to 'cook' other items.",

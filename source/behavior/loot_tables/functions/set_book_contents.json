@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.loot_tables.set_book_contents",
   "additionalProperties": false,
   "description": "The function set_book_contents",

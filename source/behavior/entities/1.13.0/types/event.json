@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.entities.1.13.0.event",
   "title": "Event",
   "description": "Minecraft behavior event 1.13.0",

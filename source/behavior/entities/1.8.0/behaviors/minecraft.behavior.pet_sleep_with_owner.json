@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.pet_sleep_with_owner",
   "description": "Allows the pet mob to move onto a bed with it's owner while sleeping.",
   "type": "object",

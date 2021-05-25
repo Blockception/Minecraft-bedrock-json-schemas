@@ -1,6 +1,5 @@
 {
   "$id": "blockception.minecraft.resource.texture.flipbook",
-  "$schema": "http://json-schema.org/draft-07/schema",
   "additionalProperties": false,
   "description": "The file that specifies animated textures",
   "title": "Flipbook Texture File",

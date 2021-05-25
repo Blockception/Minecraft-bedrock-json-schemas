@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.circle_around_anchor",
   "type": "object",
   "title": "Circle Around Anchor 1.8.0",

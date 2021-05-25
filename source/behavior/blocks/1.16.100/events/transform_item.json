@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.1.16.100.block.events.transform_item",
   "type": "object",
   "description": "Transforms item into another item.",

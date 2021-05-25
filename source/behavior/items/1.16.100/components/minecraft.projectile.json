@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.1.16.100.items.minecraft:projectile",
   "title": "Projectile",
   "description": "Projectile item component. projectile items shoot out, like an arrow.",

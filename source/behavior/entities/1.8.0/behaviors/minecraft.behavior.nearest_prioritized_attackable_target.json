@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.nearest_prioritized_attackable_target",
   "type": "object",
   "title": "Nearest Prioritized Attackable Target 1.8.0",

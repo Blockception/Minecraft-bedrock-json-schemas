@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.is_dyeable",
   "description": "Allows dyes to be used on this entity to change its color.",
   "type": "object",

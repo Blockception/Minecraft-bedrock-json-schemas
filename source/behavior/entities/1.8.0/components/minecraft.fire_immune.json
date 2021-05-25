@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.fire_immune",
   "title": "Fire Immune 1.8.0",
   "additionalProperties": false,

@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.blocks.1.16.200.minecraft.placement_filter",
   "title": "Placement Filter 1.16.200",
   "description": "Sets rules for under what conditions the block can be placed/survive",

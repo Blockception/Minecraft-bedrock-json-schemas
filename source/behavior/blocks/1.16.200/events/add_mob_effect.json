@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.1.16.200.block.events.add_mob_effect",
   "type": "object",
   "description": "Apply mob effect to target.",

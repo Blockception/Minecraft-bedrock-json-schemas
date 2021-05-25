@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities.1.13.0.filters.inactivity_timer",
   "type": "object",
   "title": "Filters Inactivity Timer 1.13.0",

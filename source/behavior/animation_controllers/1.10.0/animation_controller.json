@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.animation_controller.1.10.0",
   "type": "object",
   "definitions": {
@@ -52,6 +51,7 @@
     },
     "commands": {
       "type": "string",
+      "title": "Commands",
       "description": "The event or commands to execute",
       "examples": ["@s example:event"],
       "oneOf": [

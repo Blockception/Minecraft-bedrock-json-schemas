@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities.1.16.0.filters.is_leashed_to",
   "type": "object",
   "title": "Filters Is Leashed To 1.16.0",

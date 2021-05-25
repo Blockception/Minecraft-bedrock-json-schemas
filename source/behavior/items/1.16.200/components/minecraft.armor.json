@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.1.16.200.items.minecraft:armor",
   "title": "Armor",
   "description": "The armor item componenent determines the amount of protection you have in your armor item.",

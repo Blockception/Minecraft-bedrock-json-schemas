@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.sleep",
   "additionalProperties": false,
   "description": "Allows mobs that own a bed to in a village to move to and sleep in it.",

@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities.1.16.0.filters.trusts",
   "type": "object",
   "title": "Filters Trusts 1.16.0",

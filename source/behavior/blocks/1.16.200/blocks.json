@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.1.16.200.blocks",
   "description": "Minecraft blocks 1.16.200",
   "required": ["format_version", "minecraft:block"],

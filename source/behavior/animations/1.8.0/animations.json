@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.1.8.0.animations",
   "definitions": {
     "animationspec": {
@@ -21,18 +20,24 @@
       "required": ["effect"],
       "properties": {
         "bind_to_actor": {
+          "title": "Bind to actor",
           "type": "boolean",
           "description": "Set to false to have the effect spawned in the world without being bound to an actor (by default an effect is bound to the actor).",
           "const": false
         },
-        "effect": { "type": "string", "description": "The name of a particle effect that should be played" },
-        "locator": { "type": "string", "description": "The name of a locator on the actor where the effect should be located" },
-        "pre_effect_script": { "type": "string", "description": "A molang script that will be run when the particle emitter is initialized" }
+        "effect": { "type": "string", "description": "The name of a particle effect that should be played", "title": "Effect" },
+        "locator": { "type": "string", "description": "The name of a locator on the actor where the effect should be located", "title": "Locator" },
+        "pre_effect_script": {
+          "type": "string",
+          "description": "A molang script that will be run when the particle emitter is initialized",
+          "title": "Pre effect script"
+        }
       }
     },
     "commands": {
       "type": "string",
       "description": "The event or commands to execute",
+      "title": "Commands",
       "anyOf": [
         { "pattern": "^.*=.*;$", "title": "Variable" },
         { "pattern": "^/[a-z].*$", "title": "Minecraft Command" },

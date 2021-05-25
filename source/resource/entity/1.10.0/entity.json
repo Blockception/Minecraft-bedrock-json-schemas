@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.resource.1.10.0.entity",
   "type": "object",
   "title": "Resourcepack Actor Animation 1.10.0",
@@ -90,7 +89,11 @@
                   { "type": "string", "title": "Render controller", "description": "A single render controller definition" },
                   {
                     "type": "object",
-                    "additionalProperties": { "type": "string", "description": "A render controller activate on conditional", "title": "Render Controller" }
+                    "additionalProperties": {
+                      "type": "string",
+                      "description": "A render controller activate on conditional",
+                      "title": "Render Controller"
+                    }
                   }
                 ]
               }

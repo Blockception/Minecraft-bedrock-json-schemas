@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.1.16.200.items.minecraft:weapon",
   "title": "Weapon",
   "description": "Weapon Item Component. Added to every weapon item such as axe, sword, trident, bow, crossbow.",

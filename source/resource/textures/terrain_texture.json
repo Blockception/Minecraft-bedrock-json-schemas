@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.resource.texture.terrain_texture",
   "additionalProperties": false,
   "type": "object",
@@ -8,12 +7,14 @@
   "definitions": {
     "texture": {
       "oneOf": [
-        { "description": "A texture file", "type": "string", "pattern": "^textures/.+$" },
+        { "description": "A texture file", "type": "string", "pattern": "^textures/.+$", "title": "Texture" },
         {
           "type": "object",
           "additionalProperties": false,
+          "description": "A collection of texture files",
+          "title": "Texture",
           "properties": {
-            "overlay_color": { "description": "The color to apply to the texture", "format": "color-hex" },
+            "overlay_color": { "description": "The color to apply to the texture", "title": "overlay_color", "format": "color-hex" },
             "path": { "description": "A texture file", "type": "string", "pattern": "^textures/.+$", "title": "Path" },
             "tint_color": { "title": "Tint Color", "description": "TODO", "format": "color-hex", "type": "string" },
             "variations": {

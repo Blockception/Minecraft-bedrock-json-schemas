@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.wither_target_highest_damage",
   "description": "Allows the wither to launch random attacks. Can only be used by the Wither Boss.",
   "additionalProperties": false,

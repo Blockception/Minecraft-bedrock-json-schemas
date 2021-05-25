@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.jump.dynamic",
   "description": "Defines a dynamic type jump control that will change jump properties based on the speed modifier of the mob.",
   "type": "object",

@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.loot_tables.trader_material_type",
   "additionalProperties": false,
   "description": "The function trader_material_type",

@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.slime_attack",
   "additionalProperties": false,
   "description": "Can only be used by Slimes and Magma Cubes. Allows the mob to use a melee attack like the slime's.",

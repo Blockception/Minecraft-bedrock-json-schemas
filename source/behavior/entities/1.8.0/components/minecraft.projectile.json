@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.projectile",
   "description": "Allows the entity to be a thrown entity.",
   "type": "object",

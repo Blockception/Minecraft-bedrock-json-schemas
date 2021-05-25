@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.1.16.100.items.minecraft:block_placer",
   "title": "Block Placer",
   "description": "Planter item component. planter items are items that can be planted.",

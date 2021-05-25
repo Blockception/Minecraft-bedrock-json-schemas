@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities.1.13.0.filters.weather_at_position",
   "type": "object",
   "title": "Filters Weather At Position 1.13.0",

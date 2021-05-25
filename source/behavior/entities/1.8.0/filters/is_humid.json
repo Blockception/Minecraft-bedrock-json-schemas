@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities.1.8.0.filters.is_humid",
   "type": "object",
   "title": "Filters Is Humid 1.8.0",

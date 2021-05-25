@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.block.identifier.1.8.0",
   "type": "string",
   "title": "Block Identifier 1.8.0",

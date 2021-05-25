@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.pickup_items",
   "description": "Allows the mob to pick up items on the ground.",
   "additionalProperties": false,

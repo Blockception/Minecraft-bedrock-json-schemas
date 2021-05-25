@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.trade_with_player",
   "description": "Allows the player to trade with this mob.",
   "type": "object",

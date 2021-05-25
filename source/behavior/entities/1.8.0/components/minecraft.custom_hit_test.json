@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.custom_hit_test",
   "type": "object",
   "title": "Custom Hit Test 1.8.0",

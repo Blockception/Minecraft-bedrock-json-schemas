@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.target_nearby_sensor",
   "description": "Defines the entity's range within which it can see or sense other entities to target them.",
   "type": "object",

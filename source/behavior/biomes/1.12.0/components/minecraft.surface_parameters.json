@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "minecraft.behavior.biomes.1.12.0.components.minecraft.surface_parameters",
   "title": "Surface Parameters",
   "description": "Control the blocks used for the default Minecraft Overworld terrain generation.",

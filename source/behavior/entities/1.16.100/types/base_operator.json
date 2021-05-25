@@ -1,5 +1,4 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities.filters.1.16.100.base_operator",
   "title": "Operator",
   "type": "string",
