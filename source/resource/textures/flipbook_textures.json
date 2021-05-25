@@ -34,7 +34,7 @@
       "flipbook_texture": {
         "description": "A texture file",
         "pattern": "^textures/.+$",
-        "title": "Flipbook texture",
+        "title": "Flipbook Texture",
         "type": "string"
       },
       "frames": {
@@ -55,7 +55,7 @@
       },
       "ticks_per_frame": {
         "description": "The amount of ticks to wait between frames",
-        "title": "Ticks per frame",
+        "title": "Ticks Per Frame",
         "type": "integer"
       }
     }

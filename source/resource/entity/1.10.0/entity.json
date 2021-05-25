@@ -75,18 +75,18 @@
             "particle_emitters": {
               "type": "object",
               "minProperties": 1,
-              "additionalProperties": { "type": "string", "description": "Particle emitter reference", "title": "Particle emitter" },
+              "additionalProperties": { "type": "string", "description": "Particle emitter reference", "title": "Particle Emitter" },
               "description": "A collection of particle emitters definitions",
               "title": "Particle Emitters"
             },
             "render_controllers": {
               "type": "array",
               "description": "A collection of Render controller definitions",
-              "title": "Render controllers",
+              "title": "Render Controllers",
               "minItems": 1,
               "items": {
                 "oneOf": [
-                  { "type": "string", "title": "Render controller", "description": "A single render controller definition" },
+                  { "type": "string", "title": "Render Controller", "description": "A single render controller definition" },
                   {
                     "type": "object",
                     "additionalProperties": {
@@ -121,7 +121,7 @@
                         "additionalProperties": {
                           "oneOf": [
                             { "type": "string", "description": "A molang condition", "title": "Molang" },
-                            { "type": "number", "description": "Blend weight", "title": "Blend weight" }
+                            { "type": "number", "description": "Blend weight", "title": "Blend Weight" }
                           ]
                         }
                       }
@@ -196,7 +196,7 @@
               "description": "A collection of sound effect definition",
               "type": "object",
               "minProperties": 1,
-              "additionalProperties": { "type": "string", "description": "A sound effect definition", "title": "Sound effect" }
+              "additionalProperties": { "type": "string", "description": "A sound effect definition", "title": "Sound Effect" }
             },
             "spawn_egg": {
               "additionalProperties": false,

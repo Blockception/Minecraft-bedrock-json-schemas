@@ -53,7 +53,7 @@
           "textures": {
             "oneOf": [
               { "$ref": "#/definitions/texture" },
-              { "description": "A collection of textures", "title": "Texture data", "type": "array", "items": { "$ref": "#/definitions/texture" } }
+              { "description": "A collection of textures", "title": "Texture Data", "type": "array", "items": { "$ref": "#/definitions/texture" } }
             ]
           }
         }

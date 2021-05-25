@@ -28,7 +28,7 @@
           "type": "array",
           "items": {
             "type": ["string"],
-            "title": "Spell effect id",
+            "title": "Spell Effect ID",
             "description": "identifier of the effect to be removed from this entity after adding this component"
           }
         },

@@ -20,7 +20,7 @@
       "required": ["effect"],
       "properties": {
         "bind_to_actor": {
-          "title": "Bind to actor",
+          "title": "Bind To Actor",
           "type": "boolean",
           "description": "Set to false to have the effect spawned in the world without being bound to an actor (by default an effect is bound to the actor).",
           "const": false
@@ -30,7 +30,7 @@
         "pre_effect_script": {
           "type": "string",
           "description": "A molang script that will be run when the particle emitter is initialized",
-          "title": "Pre effect script"
+          "title": "Pre Effect Script"
         }
       }
     },

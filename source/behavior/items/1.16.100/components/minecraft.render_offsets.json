@@ -11,12 +11,12 @@
       "additionalProperties": false,
       "properties": {
         "first_person": {
-          "title": "First person",
+          "title": "First Person",
           "description": "",
           "$ref": "#/definitions/mode"
         },
         "thrid_person": {
-          "title": "Thrid person",
+          "title": "Thrid Person",
           "description": "",
           "$ref": "#/definitions/mode"
         }
