@@ -17,6 +17,21 @@
           "description": "The fog to be associated to this biome",
           "$ref": "../general/fog/identifier.json"
         },
+        "fog_ids_to_merge": {
+          "title": "Fog ids to merge",
+          "Description": "UNDOCUMENTATED",
+          "type": "array",
+          "items": {
+            "title": "Fog ID",
+            "type": "string",
+            "$ref": "../general/fog/identifier.json"
+          }
+        },
+        "inherit_from_prior_fog": {
+          "title": "Inherit From Prior Fog",
+          "Description": "UNDOCUMENTATED",
+          "type": "boolean"
+        },
         "water_fog_color": { "$ref": "#/definitions/colorhex", "title": "Water Fog Color", "description": "The color of the water fog" },
         "water_fog_distance": { "type": "integer", "title": "Water Fog Distance", "description": "The distance the water fog start at" },
         "water_surface_color": { "$ref": "#/definitions/colorhex", "title": "Water Surface Color", "description": "The color of the water surface" },
