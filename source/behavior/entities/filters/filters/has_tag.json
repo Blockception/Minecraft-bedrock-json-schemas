@@ -1,0 +1,13 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.has_tag",
+  "type": "object",
+  "title": "Filters Has Tag",
+  "description": "Returns true if the subject entity has the tag provided.",
+  "required": ["value"],
+  "properties": {
+    "test": { "type": "string", "title": "Test Property", "description": "Returns true if the subject entity has the tag provided." },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
+    "value": { "type": "string", "description": "The tag as a string", "pattern": "[a-zA-Z0-9_]+", "title": "Value" }
+  }
+}

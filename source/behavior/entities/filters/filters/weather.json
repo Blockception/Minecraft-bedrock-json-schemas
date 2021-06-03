@@ -1,0 +1,13 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.weather",
+  "type": "object",
+  "title": "Filters Weather",
+  "description": "Tests the current weather in the dimension against a provided weather value.",
+  "required": ["value"],
+  "properties": {
+    "test": { "type": "string", "title": "Test", "description": "The test property" },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
+    "value": { "description": "The Family name to look for", "type": "string", "title": "Value" }
+  }
+}

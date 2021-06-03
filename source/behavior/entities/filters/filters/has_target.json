@@ -1,0 +1,19 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.has_target",
+  "type": "object",
+  "title": "Filters Has Target",
+  "description": "Returns true if the subject entity has a valid target.",
+  "properties": {
+    "test": { "type": "string", "title": "Test", "description": "The test property" },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
+    "value": {
+      "description": "True or false.",
+      "oneOf": [
+        { "type": "boolean", "default": true },
+        { "type": "string", "enum": ["true", "false"] }
+      ],
+      "title": "Value"
+    }
+  }
+}

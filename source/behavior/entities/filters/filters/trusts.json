@@ -1,0 +1,19 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.trusts",
+  "type": "object",
+  "title": "Filters Trusts",
+  "description": "Returns true if the subject is trusted by entity.",
+  "properties": {
+    "test": { "type": "string", "title": "Test", "description": "The test property" },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
+    "value": {
+      "description": "True or false.",
+      "oneOf": [
+        { "type": "boolean", "default": true },
+        { "type": "string", "enum": ["true", "false"] }
+      ],
+      "title": "Value"
+    }
+  }
+}

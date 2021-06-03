@@ -1,0 +1,13 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.is_block",
+  "type": "object",
+  "title": "Filters Is Block",
+  "description": "Returns true when the block has the given name.",
+  "required": ["value"],
+  "properties": {
+    "test": { "type": "string", "title": "Test", "description": "The test property" },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
+    "value": { "description": "The Family name to look for", "type": "string", "title": "Value" }
+  }
+}

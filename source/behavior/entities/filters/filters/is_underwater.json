@@ -1,0 +1,19 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.is_underwater",
+  "type": "object",
+  "title": "Filters Is Underwater",
+  "description": "Returns true when the subject entity is under water. An entity is considered underwater if it is completely submerged in water blocks.",
+  "properties": {
+    "test": { "type": "string", "title": "Test Property", "description": "The test property" },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
+    "value": {
+      "title": "Value",
+      "description": "True or false.",
+      "oneOf": [
+        { "type": "boolean", "default": true },
+        { "type": "string", "default": "true", "enum": ["true", "false"] }
+      ]
+    }
+  }
+}

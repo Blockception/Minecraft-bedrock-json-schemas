@@ -1,0 +1,29 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.has_equipment",
+  "type": "object",
+  "title": "Filters Has Equipment",
+  "description": "Tests for the presence of a named item in the designated slot of the subject entity.",
+  "required": ["value"],
+  "properties": {
+    "test": {
+      "type": "string",
+      "const": "has_equipment",
+      "description": "Tests for the presence of a named item in the designated slot of the subject entity.",
+      "title": "Test"
+    },
+    "domain": {
+      "description": "The equipment location to test",
+      "default": "any",
+      "enum": ["any", "armor", "feet", "hand", "head", "leg", "torso"],
+      "title": "Domain"
+    },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
+    "value": {
+      "description": "The item name to look for",
+      "type": "string",
+      "$ref": "../../../../general/item/identifier.json",
+      "title": "TODO Title"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.in_water",
+  "type": "object",
+  "title": "Filters In Water",
+  "description": "Returns true when the subject entity is in water.",
+  "properties": {
+    "test": { "type": "string", "title": "Test Property", "description": "Returns true when the subject entity is in water." },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
+    "value": {
+      "title": "Value",
+      "description": "True or false.",
+      "oneOf": [
+        { "type": "boolean", "default": true },
+        { "type": "string", "default": "true", "enum": ["true", "false"] }
+      ]
+    }
+  }
+}

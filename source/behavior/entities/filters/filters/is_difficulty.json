@@ -1,0 +1,18 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.is_difficulty",
+  "type": "object",
+  "title": "Filters Is Difficulty",
+  "description": "Tests the current difficulty level of the game.",
+  "required": ["value"],
+  "properties": {
+    "test": { "type": "string", "title": "Test Property", "description": "Tests the current difficulty level of the game." },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
+    "value": {
+      "description": "The game's difficulty level to test",
+      "type": "string",
+      "enum": ["easy", "hard", "normal", "peaceful"],
+      "title": "Value"
+    }
+  }
+}

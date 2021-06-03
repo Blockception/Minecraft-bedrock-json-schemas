@@ -1,0 +1,13 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.is_variant",
+  "type": "object",
+  "title": "Filters Is Variant",
+  "description": "Returns true if the subject entity is the variant number provided.",
+  "required": ["value"],
+  "properties": {
+    "test": { "type": "string", "title": "Test Property", "description": "The test property" },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
+    "value": { "type": "integer", "description": "The altitude value to compare with", "title": "Value" }
+  }
+}

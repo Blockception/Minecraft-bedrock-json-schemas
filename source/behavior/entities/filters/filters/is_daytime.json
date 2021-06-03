@@ -1,0 +1,19 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.is_daytime",
+  "type": "object",
+  "title": "Filters Is Daytime",
+  "description": "Returns true during the daylight hours.",
+  "properties": {
+    "test": { "type": "string", "title": "Test Property", "description": "Returns true during the daylight hours." },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
+    "value": {
+      "title": "Value",
+      "description": "True or false.",
+      "oneOf": [
+        { "type": "boolean", "default": true },
+        { "type": "string", "default": "true", "enum": ["true", "false"] }
+      ]
+    }
+  }
+}

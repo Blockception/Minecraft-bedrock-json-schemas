@@ -1,0 +1,19 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.is_visible",
+  "type": "object",
+  "title": "Filters Is Visible",
+  "description": "Returns true if the subject entity is visible.",
+  "properties": {
+    "test": { "type": "string", "title": "Test Property", "description": "The test property" },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
+    "value": {
+      "title": "Value",
+      "description": "True or false.",
+      "oneOf": [
+        { "type": "boolean", "default": true },
+        { "type": "string", "default": "true", "enum": ["true", "false"] }
+      ]
+    }
+  }
+}

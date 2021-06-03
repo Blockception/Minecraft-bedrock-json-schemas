@@ -1,0 +1,19 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.in_nether",
+  "type": "object",
+  "title": "Filters In Nether",
+  "description": "Returns true when the subject entity is in Nether.",
+  "properties": {
+    "test": { "type": "string", "title": "Test", "description": "The test property" },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
+    "value": {
+      "description": "True or false.",
+      "oneOf": [
+        { "type": "boolean", "default": true },
+        { "type": "string", "enum": ["true", "false"] }
+      ],
+      "title": "Value"
+    }
+  }
+}

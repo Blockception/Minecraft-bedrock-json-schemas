@@ -1,0 +1,13 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.is_family",
+  "type": "object",
+  "title": "Filters Is Family",
+  "description": "Returns true when the subject entity is a member of the named family.",
+  "required": ["value"],
+  "properties": {
+    "test": { "type": "string", "title": "Test Property", "description": "Returns true when the subject entity is a member of the named family." },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
+    "value": { "description": "The Family name to look for", "type": "string", "title": "Value" }
+  }
+}

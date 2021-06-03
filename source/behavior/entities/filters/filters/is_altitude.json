@@ -1,0 +1,17 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.is_altitude",
+  "type": "object",
+  "title": "Filters Is Altitude",
+  "description": "Tests the current altitude against a provided value. 0= bedrock elevation.",
+  "required": ["value"],
+  "properties": {
+    "test": {
+      "type": "string",
+      "title": "Test Property",
+      "description": "Tests the current altitude against a provided value. 0= bedrock elevation."
+    },
+    "operator": { "$ref": "./types/base_operator.json" },
+    "subject": { "$ref": "./types/base_subject.json" },
+    "value": { "type": "integer", "description": "The altitude value to compare with", "minimum": 0, "title": "Value" }
+  }
+}

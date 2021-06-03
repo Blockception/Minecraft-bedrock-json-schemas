@@ -1,0 +1,26 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.in_block",
+  "type": "object",
+  "title": "In block",
+  "description": "Returns true when the subject entity is inside a specified Block type.",
+  "properties": {
+    "test": {
+      "type": "string",
+      "title": "Test Property",
+      "description": "Returns true when the subject entity is inside a specified Block type."
+    },
+    "operator": {
+      "$ref": "./types/base_operator.json",
+      "description": "(Optional) The comparison to apply with 'value'.",
+      "default": "equals",
+      "title": "Operator"
+    },
+    "subject": {
+      "$ref": "./types/base_subject.json",
+      "description": "(Optional) The subject of this filter test.",
+      "default": "self",
+      "title": "Subject"
+    },
+    "value": { "type": "string", "description": "(Optional) A string value.", "title": "Value" }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.distance_to_nearest_player",
+  "type": "object",
+  "title": "Filters Distance To Nearest Player",
+  "description": "Compares the distance to the nearest Player with a float value.",
+  "required": ["value"],
+  "properties": {
+    "test": { "type": "string", "title": "Test Property", "description": "Compares the distance to the nearest Player with a float value." },
+    "operator": { "$ref": "./types/base_operator.json", "description": "(Optional) The comparison to apply with 'value'.", "title": "Operator" },
+    "subject": { "$ref": "./types/base_subject.json", "description": "(Optional) The subject of this filter test.", "title": "Subject" },
+    "value": { "type": "number", "description": "(Required) A floating point value.", "title": "Value" }
+  }
+}
