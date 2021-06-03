@@ -37,6 +37,7 @@
     { "Source": "./behavior/loot_tables/loot_tables.json", "Destination": "../behavior/loot_tables/loot_tables.json" },
     { "Source": "./behavior/blocks/blocks.json", "Destination": "../behavior/blocks/blocks.json" },
     { "Source": "./behavior/entities/entities.json", "Destination": "../behavior/entities/entities.json" },
+    { "Source": "./behavior/features/features.json", "Destination": "../behavior/features/features.json" },
     { "Source": "./behavior/items/items.json", "Destination": "../behavior/items/items.json" },
     { "Source": "./behavior/recipes/recipes.json", "Destination": "../behavior/recipes/recipes.json" },
     { "Source": "./behavior/spawn_rules/spawn_rules.json", "Destination": "../behavior/spawn_rules/spawn_rules.json" },
