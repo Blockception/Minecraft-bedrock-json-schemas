@@ -130,6 +130,17 @@
                     { "type": "string", "$ref": "../../../general/blocks_item.json" },
                     { "type": "array", "items": { "type": "string", "$ref": "../../../general/blocks_item.json" } }
                   ]
+                },
+                "plant_at_any_solid_surface": {
+                  "title": "Plant At Any Solid Surface",
+                  "type": "string",
+                  "description": "UNDOCUMENTATED"
+                },
+                "plant_at_face": {
+                  "title": "Plnat at face",
+                  "type": "string",
+                  "description": "UNDOCUMENTATED",
+                  "enum": ["DOWN", "UP"]
                 }
               }
             }
