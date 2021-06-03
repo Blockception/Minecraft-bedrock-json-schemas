@@ -3,7 +3,7 @@
   "title": "Biome Filter 1.11.0",
   "description": "TODO",
   "oneOf": [
-    { "type": "array", "items": { "$ref": "../../../entities/1.16.0/filters.json" } },
-    { "type": "object", "$ref": "../../../entities/1.16.0/filters.json" }
+    { "type": "array", "items": { "$ref": "../../../filters/filters.json" } },
+    { "type": "object", "$ref": "../../../filters/filters.json" }
   ]
 }
