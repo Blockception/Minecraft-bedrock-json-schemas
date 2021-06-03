@@ -1,0 +1,7 @@
+{
+  "$id": "blockception.minecraft.behavior.spawn_rules.1.17.0.minecraft.spawns_underwater",
+  "title": "Spawns Underwater 1.17.0",
+  "description": "TODO",
+  "type": "object",
+  "additionalProperties": false
+}
