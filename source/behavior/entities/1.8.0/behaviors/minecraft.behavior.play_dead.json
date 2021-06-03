@@ -1,0 +1,54 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.play_dead",
+  "description": "UNDOCUMENTATED",
+  "type": "object",
+  "title": "Play dead 1.8.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "types/priority.json" },
+    "duration": {
+      "title": "Duration",
+      "description": "UNDOCUMENTATED",
+      "type": "number",
+      "minimum": 0
+    },
+    "force_below_health": {
+      "title": "Force Below Health",
+      "description": "UNDOCUMENTATED",
+      "type": "number",
+      "minimum": 0
+    },
+    "random_start_chance": {
+      "title": "Random Start Chance",
+      "description": "UNDOCUMENTATED",
+      "type": "number",
+      "minimum": 0
+    },
+    "random_damage_range": {
+      "title": "Random Damage Range",
+      "description": "UNDOCUMENTATED",
+      "type": "array",
+      "items": [
+        { "title": "Min", "description": "UNDOCUMENTATED", "type": "integer", "minimum": 0 },
+        { "title": "Max", "description": "UNDOCUMENTATED", "type": "integer", "minimum": 0 }
+      ]
+    },
+    "damage_sources": {
+      "title": "Damage sources",
+      "description": "UNDOCUMENTATED",
+      "type": "array",
+      "items": {
+        "title": "Damage Source",
+        "description": "UNDOCUMENTATED",
+        "$ref": "../../../general/entity_damage.json"
+      }
+    },
+    "apply_regeneration": {
+      "title": "Apply regeneration",
+      "description": "UNDOCUMENTATED",
+      "type": "boolean"
+    },
+    "filters": { "$ref": "../../filters/filters.json" }
+  }
+}
