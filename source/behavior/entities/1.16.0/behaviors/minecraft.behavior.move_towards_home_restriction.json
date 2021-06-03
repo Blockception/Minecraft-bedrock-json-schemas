@@ -4,5 +4,5 @@
   "title": "Move Towards Home Restriction 1.16.0",
   "description": "UNDOCUMENTATED",
   "additionalProperties": false,
-  "properties": { "priority": { "$ref": "types/base_priority.json" }, "speed_multiplier": { "$ref": "types/base_speed_multiplier.json" } }
+  "properties": { "priority": { "$ref": "types/priority.json" }, "speed_multiplier": { "$ref": "types/speed_multiplier.json" } }
 }

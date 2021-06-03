@@ -6,7 +6,7 @@
   "description": "UNDOCUMENTATED",
   "required": [],
   "properties": {
-    "priority": { "$ref": "./types/base_priority.json" },
+    "priority": { "$ref": "./types/priority.json" },
     "tick_interval": { "type": "number", "title": "Tick Interval", "description": "UNDOCUMENTATED" },
     "start_chance": { "type": "number", "title": "Start Chance", "description": "UNDOCUMENTATED" },
     "search_range": { "type": "number", "title": "Search Range", "description": "UNDOCUMENTATED" },

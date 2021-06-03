@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" },
+    "priority": { "$ref": "types/priority.json" },
     "can_land_on_trees": {
       "type": "boolean",
       "default": true,

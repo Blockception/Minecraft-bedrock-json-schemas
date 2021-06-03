@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "./types/base_priority.json" },
+    "priority": { "$ref": "./types/priority.json" },
     "summon_choices": {
       "type": "array",
       "description": "List of spells for the mob to use to summon entities. Each spell has the following parameters:",
@@ -47,7 +47,7 @@
               "type": "object",
               "additionalProperties": false,
               "properties": {
-                "base_delay": { "type": "number", "default": 0, "description": "Amount of time in seconds to wait before this step starts" },
+                "delay": { "type": "number", "default": 0, "description": "Amount of time in seconds to wait before this step starts" },
                 "delay_per_summon": {
                   "type": "number",
                   "default": 0,

@@ -5,8 +5,8 @@
   "title": "Delayed Attack 1.8.0",
   "description": "Allows the mob to drink potions based on specified environment conditions.",
   "properties": {
-    "priority": { "$ref": "./types/base_priority.json" },
-    "speed_multiplier": { "$ref": "./types/base_speed_multiplier.json" },
+    "priority": { "$ref": "./types/priority.json" },
+    "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },
     "attack_duration": { "type": "number", "default": 1, "description": "The duration of the attack animation in seconds", "title": "TODO Title" },
     "attack_once": { "type": "boolean", "default": false, "description": "If true, this mob will attack only one time.", "title": "TODO Title" },
     "attack_types": { "type": "string", "default": "", "description": "Defines the entity types this mob will attack", "title": "TODO Title" },

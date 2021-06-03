@@ -11,7 +11,7 @@
       "description": "Applies gravity each tick. Causes more of a wave simulation, but will cause more gravity to be applied outside liquids.",
       "title": "Apply Gravity"
     },
-    "base_buoyancy": {
+    "buoyancy": {
       "type": "number",
       "default": 1,
       "description": "Base buoyancy used to calculate how much will a mob float.",

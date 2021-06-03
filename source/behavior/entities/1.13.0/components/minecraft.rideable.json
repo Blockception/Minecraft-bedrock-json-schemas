@@ -35,7 +35,7 @@
   },
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" },
+    "priority": { "$ref": "types/priority.json" },
     "controlling_seat": {
       "type": "integer",
       "default": 0,

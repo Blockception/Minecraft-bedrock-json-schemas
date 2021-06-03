@@ -10,7 +10,7 @@
     "filters": { "$ref": "../../filters/filters.json", "description": "The list of conditions for this trigger", "title": "TODO Title" },
     "target": {
       "type": "string",
-      "$ref": "../filters/types/base_subject.json",
+      "$ref": "../../filters/filters/types/subject.json",
       "default": "self",
       "description": "The target of the event",
       "title": "TODO Title"

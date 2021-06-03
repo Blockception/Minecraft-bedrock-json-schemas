@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "./types/base_priority.json" },
+    "priority": { "$ref": "./types/priority.json" },
     "carried_item_switch_time": {
       "type": "number",
       "default": 2,

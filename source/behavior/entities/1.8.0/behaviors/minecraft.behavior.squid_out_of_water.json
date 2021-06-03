@@ -5,5 +5,5 @@
   "title": "Squid Out Of Water 1.8.0",
   "additionalProperties": false,
   "required": [],
-  "properties": { "priority": { "$ref": "./types/base_priority.json" } }
+  "properties": { "priority": { "$ref": "./types/priority.json" } }
 }

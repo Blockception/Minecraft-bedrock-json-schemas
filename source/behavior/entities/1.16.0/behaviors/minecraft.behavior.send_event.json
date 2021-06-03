@@ -13,7 +13,7 @@
         "type": "object",
         "additionalProperties": false,
         "properties": {
-          "base_delay": { "type": "number", "default": 0, "description": "Amount of time in seconds before starting this step" },
+          "delay": { "type": "number", "default": 0, "description": "Amount of time in seconds before starting this step" },
           "event": { "type": "string", "default": "", "description": "The event to send to the entity" },
           "sound_event": { "type": "string", "default": "", "description": "The sound event to play when this step happens" }
         }
@@ -21,7 +21,7 @@
     }
   },
   "properties": {
-    "priority": { "$ref": "./types/base_priority.json" },
+    "priority": { "$ref": "./types/priority.json" },
     "cast_duration": { "type": "number", "description": "Time in seconds for the entire event sending process", "title": "TODO Title" },
     "event_choices": {
       "type": "array",

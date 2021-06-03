@@ -23,7 +23,7 @@
           "value": {
             "additionalProperties": false,
             "type": "object",
-            "properties": { "event": { "type": "string" }, "target": { "type": "string", "$ref": "../filters/types/base_subject.json" } }
+            "properties": { "event": { "type": "string" }, "target": { "type": "string", "$ref": "../../filters/filters/types/subject.json" } }
           }
         }
       },

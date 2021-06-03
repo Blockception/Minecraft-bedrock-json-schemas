@@ -45,7 +45,7 @@
       "description": "Event to run when this entity grows up",
       "oneOf": [
         { "type": "string" },
-        { "type": "object", "properties": { "event": { "type": "string" }, "target": { "$ref": "../filters/types/base_subject.json" } } }
+        { "type": "object", "properties": { "event": { "type": "string" }, "target": { "$ref": "../../filters/filters/types/subject.json" } } }
       ],
       "title": "TODO Title"
     }

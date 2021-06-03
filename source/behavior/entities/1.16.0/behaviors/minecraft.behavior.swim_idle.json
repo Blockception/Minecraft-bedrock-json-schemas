@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" },
+    "priority": { "$ref": "types/priority.json" },
     "idle_time": { "type": "number", "title": "Idle Time", "description": "UNDOCUMENTATED" },
     "success_rate": { "type": "number", "title": "Succes Rate", "description": "UNDOCUMENTATED" }
   }

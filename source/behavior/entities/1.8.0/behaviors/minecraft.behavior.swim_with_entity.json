@@ -6,8 +6,8 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" },
-    "speed_multiplier": { "$ref": "types/base_speed_multiplier.json" },
+    "priority": { "$ref": "types/priority.json" },
+    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
     "success_rate": { "type": "number", "title": "Success Rate", "description": "UNDOCUMENTATED" },
     "chance_to_stop": { "type": "number", "title": "Chance To Stop", "description": "UNDOCUMENTATED" },
     "state_check_interval": { "type": "number", "title": "State Check Interval", "description": "UNDOCUMENTATED" },

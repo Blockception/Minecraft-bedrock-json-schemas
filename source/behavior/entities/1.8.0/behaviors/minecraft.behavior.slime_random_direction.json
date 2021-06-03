@@ -6,7 +6,7 @@
   "title": "Slime Random Direction 1.8.0",
   "required": [],
   "properties": {
-    "priority": { "$ref": "./types/base_priority.json" },
+    "priority": { "$ref": "./types/priority.json" },
     "add_random_time_range": { "type": "number", "title": "Add Random Time Range", "description": "UNDOCUMENTATED" },
     "turn_range": { "type": "number", "title": "Turn Range", "description": "UNDOCUMENTATED" },
     "min_change_direction_time": { "type": "number", "title": "Min Change Direction Time", "description": "UNDOCUMENTATED" }

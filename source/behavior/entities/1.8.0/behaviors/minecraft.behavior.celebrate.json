@@ -5,7 +5,7 @@
   "description": "This allows the mob celebrate by jumping up and playing a sound periodically.",
   "additionalProperties": false,
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" },
+    "priority": { "$ref": "types/priority.json" },
     "celebration_sound": { "type": "string", "default": "", "description": "The sound to occasionally play.", "title": "Celebration Sound" },
     "duration": { "type": "number", "default": 1, "description": "The duration of the celebration (in seconds).", "title": "Duration" },
     "jump_interval": {

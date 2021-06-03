@@ -1,5 +1,5 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.13.0.base_priority",
+  "$id": "blockception.minecraft.behavior.entities.1.13.0.priority",
   "additionalProperties": false,
   "type": "integer",
   "title": "Priority",

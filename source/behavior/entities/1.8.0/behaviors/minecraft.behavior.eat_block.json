@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "./types/base_priority.json" },
+    "priority": { "$ref": "./types/priority.json" },
     "on_eat": { "$ref": "../types/trigger.json", "description": "UNDOCUMENTATED", "title": "On Eat" },
     "success_chance": {
       "title": "Succes Chance",

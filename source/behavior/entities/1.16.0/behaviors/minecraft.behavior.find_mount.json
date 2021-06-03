@@ -5,7 +5,7 @@
   "title": "Find Mount 1.16.0",
   "type": "object",
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" },
+    "priority": { "$ref": "types/priority.json" },
     "avoid_water": {
       "type": "boolean",
       "default": false,

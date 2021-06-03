@@ -33,7 +33,7 @@
     }
   },
   "properties": {
-    "priority": { "$ref": "./types/base_priority.json" },
+    "priority": { "$ref": "./types/priority.json" },
     "entity_types": {
       "description": "Filters which types of targets are valid for this entity.",
       "title": "Entity Types",

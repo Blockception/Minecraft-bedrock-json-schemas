@@ -5,7 +5,7 @@
   "description": "The mob freezes and looks at the mob they are targeting.",
   "additionalProperties": false,
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" },
+    "priority": { "$ref": "types/priority.json" },
     "broadcast": {
       "type": "boolean",
       "default": false,

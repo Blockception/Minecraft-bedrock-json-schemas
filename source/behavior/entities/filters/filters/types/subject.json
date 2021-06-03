@@ -1,5 +1,5 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.filters.base_subject",
+  "$id": "blockception.minecraft.behavior.entities.filters.subject",
   "title": "Filters Subject",
   "type": "string",
   "description": "The subject of this filter test.",

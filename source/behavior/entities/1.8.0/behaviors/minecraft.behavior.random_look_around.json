@@ -6,7 +6,7 @@
   "title": "Random Look Around 1.8.0",
   "required": [],
   "properties": {
-    "priority": { "$ref": "./types/base_priority.json" },
+    "priority": { "$ref": "./types/priority.json" },
     "look_time": {
       "$ref": "../types/range_number_type.json",
       "default": [2, 4],

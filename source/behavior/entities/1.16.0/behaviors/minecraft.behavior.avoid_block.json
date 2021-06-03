@@ -5,7 +5,7 @@
   "description": "UNDOCUMENTATED",
   "additionalProperties": false,
   "properties": {
-    "priority": { "$ref": "types/base_priority.json" },
+    "priority": { "$ref": "types/priority.json" },
     "tick_interval": { "type": "integer", "title": "Tick Interval", "description": "UNDOCUMENTATED" },
     "search_range": { "type": "integer", "title": "Search Range", "description": "UNDOCUMENTATED" },
     "search_height": { "type": "integer", "title": "Search Height", "description": "UNDOCUMENTATED" },

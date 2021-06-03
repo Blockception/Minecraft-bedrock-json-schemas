@@ -4,5 +4,5 @@
   "type": "object",
   "title": "Door Interact 1.8.0",
   "description": "Allows the mob to drink potions based on specified environment conditions.",
-  "properties": { "priority": { "$ref": "./types/base_priority.json" } }
+  "properties": { "priority": { "$ref": "./types/priority.json" } }
 }
