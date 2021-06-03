@@ -1,8 +1,0 @@
-{
-  "$id": "blockception.minecraft.behavior.entities.filters.1.16.0.base_operator",
-  "title": "Operator",
-  "type": "string",
-  "description": "The operator comparison to apply with 'value'.",
-  "default": "equals",
-  "enum": ["!=", "<", "<=", "<>", "=", "==", ">", ">=", "equals", "not"]
-}
