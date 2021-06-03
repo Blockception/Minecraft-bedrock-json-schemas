@@ -40,6 +40,7 @@
     { "Source": "./behavior/items/items.json", "Destination": "../behavior/items/items.json" },
     { "Source": "./behavior/recipes/recipes.json", "Destination": "../behavior/recipes/recipes.json" },
     { "Source": "./behavior/spawn_rules/spawn_rules.json", "Destination": "../behavior/spawn_rules/spawn_rules.json" },
-    { "Source": "./behavior/trading/trading.json", "Destination": "../behavior/trading/trading.json" }
+    { "Source": "./behavior/trading/trading.json", "Destination": "../behavior/trading/trading.json" },
+    { "Source": "./behavior/volumes/volumes.json", "Destination": "../behavior/volumes/volumes.json" }
   ]
 }

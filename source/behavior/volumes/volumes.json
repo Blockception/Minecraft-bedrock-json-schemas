@@ -1,0 +1,18 @@
+{
+  "$id": "blockception.minecraft.behavior.volumes",
+  "examples": [
+    {
+      "format_version": "1.17.0",
+      "minecraft:volume": {
+        "description": {
+          "identifier": "example:foo"
+        },
+        "components": {}
+      }
+    }
+  ],
+  "allOf": [
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.17.0" } } }, "then": { "$ref": "./1.17.0/volumes.json" } },
+    { "properties": { "format_version": { "$ref": "../../general/format_version.json" } } }
+  ]
+}

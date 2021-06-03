@@ -262,6 +262,22 @@
         "*.trade.json"
       ],
       "url": "./minecraft-bedrock-schemas/behavior/trading/trading.json"
+    },
+    {
+      "fileMatch": [
+        "behavior_packs/*/volumes/*.json",
+        "*behavior*pack*/volumes/*.json",
+        "*Behavior*Pack*/volumes/*.json",
+        "*BP*/volumes/*.json",
+        "*bp*/volumes/*.json",
+        "behavior_packs/*/volumes/**/*.json",
+        "*behavior*pack*/volumes/**/*.json",
+        "*Behavior*Pack*/volumes/**/*.json",
+        "*BP*/volumes/**/*.json",
+        "*bp*/volumes/**/*.json",
+        "*.volume.json"
+      ],
+      "url": "./minecraft-bedrock-schemas/behavior/volumes/volumes.json"
     }
   ]
 }
