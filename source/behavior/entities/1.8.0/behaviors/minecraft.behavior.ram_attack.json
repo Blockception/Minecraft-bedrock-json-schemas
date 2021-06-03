@@ -1,0 +1,65 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.ram_attack",
+  "description": "UNDOCUMENTATED",
+  "type": "object",
+  "title": "Ram attack 1.8.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "types/priority.json" },
+    "run_speed": {
+      "title": "Run speed",
+      "description": "UNDOCUMENTATED",
+      "type": "number"
+    },
+    "ram_speed": {
+      "title": "Ram speed",
+      "description": "UNDOCUMENTATED",
+      "type": "number"
+    },
+    "min_ram_distance": {
+      "title": "Minimum Ram speed",
+      "description": "UNDOCUMENTATED",
+      "type": "number"
+    },
+    "ram_distance": {
+      "title": "Ram Distance",
+      "description": "UNDOCUMENTATED",
+      "type": "number"
+    },
+    "knockback_force": {
+      "title": "Knockback force",
+      "description": "UNDOCUMENTATED",
+      "type": "number"
+    },
+    "knockback_height": {
+      "title": "Knockback height",
+      "description": "UNDOCUMENTATED",
+      "type": "number"
+    },
+    "pre_ram_sound": {
+      "title": "Pre ram sound",
+      "description": "UNDOCUMENTATED",
+      "type": "string"
+    },
+    "ram_impact_sound": {
+      "title": "Ram impact sound",
+      "description": "UNDOCUMENTATED",
+      "type": "string"
+    },
+    "cooldown_range": {
+      "title": "Cooldown range",
+      "description": "UNDOCUMENTATED",
+      "type": "array",
+      "items": [
+        { "title": "Min", "description": "UNDOCUMENTATED", "type": "integer", "minimum": 0 },
+        { "title": "Max", "description": "UNDOCUMENTATED", "type": "integer", "minimum": 0 }
+      ]
+    },
+    "on_start": {
+      "title": "On start",
+      "description": "UNDOCUMENTATED",
+      "$ref": "../types/event.json"
+    }
+  }
+}
