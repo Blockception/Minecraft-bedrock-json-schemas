@@ -34,6 +34,8 @@
     "minecraft:collision_box": { "$ref": "../1.8.0/components/minecraft.collision_box.json" },
     "minecraft:color": { "$ref": "../1.8.0/components/minecraft.color.json" },
     "minecraft:color2": { "$ref": "../1.8.0/components/minecraft.color2.json" },
+    "minecraft:combat_regeneration": { "$ref": "../1.8.0/components/minecraft.combat_regeneration.json" },
+    "minecraft:drying_out_timer": { "$ref": "../1.8.0/components/minecraft.drying_out_timer.json" },
     "minecraft:conditional_bandwidth_optimization": { "$ref": "../1.8.0/components/minecraft.conditional_bandwidth_optimization.json" },
     "minecraft:custom_hit_test": { "$ref": "../1.8.0/components/minecraft.custom_hit_test.json" },
     "minecraft:damage_over_time": { "$ref": "../1.8.0/components/minecraft.damage_over_time.json" },
