@@ -130,6 +130,13 @@
                   "effect": { "type": "string", "description": "TODO description: effect", "title": "Effect" },
                   "type": { "type": "string", "description": "TODO description: type", "title": "Type" }
                 }
+              },
+              "sound_effect": {
+                "title": "Sound effect",
+                "description": "TODO",
+                "properties": {
+                  "event_name": { "type": "string", "description": "TODO description: effect", "title": "Event name" }
+                }
               }
             }
           },
