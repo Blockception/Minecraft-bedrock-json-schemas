@@ -3,7 +3,5 @@
   "type": "object",
   "title": "Is Hidden When Invisible 1.8.0",
   "additionalProperties": false,
-  "required": [],
-  "properties": {},
-  "description": "TODO description"
+  "description": "Sets that this entity can hide from hostile mobs while invisible."
 }
