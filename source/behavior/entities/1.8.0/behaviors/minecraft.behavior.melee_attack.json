@@ -41,6 +41,7 @@
       "description": "If true, this goal will only trigger if the mob can reach its target.",
       "title": "Require Complete Path"
     },
-    "on_attack": { "$ref": "../types/event.json", "title": "On Attack", "description": "UNDOCUMENTATED" }
+    "on_attack": { "$ref": "../types/event.json", "title": "On Attack", "description": "UNDOCUMENTATED" },
+    "on_kill": { "$ref": "../types/event.json", "title": "On Attack", "description": "UNDOCUMENTATED" }
   }
 }
