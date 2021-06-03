@@ -9,6 +9,7 @@
   "allOf": [
     { "if": { "properties": { "format_version": { "type": "string", "const": "1.8.0" } } }, "then": { "$ref": "./1.8.0/spawn_rules.json" } },
     { "if": { "properties": { "format_version": { "type": "string", "const": "1.11.0" } } }, "then": { "$ref": "./1.11.0/spawn_rules.json" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.17.0" } } }, "then": { "$ref": "./1.17.0/spawn_rules.json" } },
     { "properties": { "format_version": { "$ref": "../../general/format_version.json" } } }
   ]
 }
