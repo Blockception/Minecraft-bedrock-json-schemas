@@ -34,6 +34,11 @@
       ],
       "title": "TODO Title"
     },
-    "grow_up": { "$ref": "../types/event.json", "description": "Event to run when this entity grows up.", "title": "TODO Title" }
+    "grow_up": { "$ref": "../types/event.json", "description": "Event to run when this entity grows up.", "title": "Grow up" },
+    "transform_to_item": {
+      "type": "string",
+      "title": "Transform to item",
+      "description": "The feed item used will transform to this item upon successful interaction. Format: itemName:auxValue"
+    }
   }
 }

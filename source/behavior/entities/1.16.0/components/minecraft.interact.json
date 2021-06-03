@@ -83,9 +83,8 @@
         },
         "transform_to_item": {
           "type": "string",
-          "default": "",
-          "description": "The item used will transform to this item upon successful interaction. Format: itemName:auxValue",
-          "title": "Transform To Item"
+          "title": "Transform to item",
+          "description": "The feed item used will transform to this item upon successful interaction. Format: itemName:auxValue"
         },
         "use_item": { "type": "boolean", "default": false, "description": "If true, the interaction will use an item.", "title": "Use Item" }
       }
