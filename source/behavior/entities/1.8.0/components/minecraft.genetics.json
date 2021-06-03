@@ -66,9 +66,21 @@
                   "description": "If this value is non-negative, compare the mob's hidden allele with this value for a match. Can also be a range of integers."
                 },
                 "main_allele": {
-                  "type": "integer",
                   "default": -1,
-                  "description": "If this value is non-negative, compare the mob's main allele with this value for a match. Can also be a range of integers."
+                  "description": "If this value is non-negative, compare the mob's main allele with this value for a match. Can also be a range of integers.",
+                  "oneOf": [
+                    { "type": "integer" },
+                    {
+                      "type": "object",
+                      "description": "UNDOCUMENTATED",
+                      "title": "UNDOCUMENTATED",
+                      "additionalProperties": false,
+                      "properties": {
+                        "range_min": { "type": "integer", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
+                        "range_max": { "type": "integer", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" }
+                      }
+                    }
+                  ]
                 }
               }
             }
