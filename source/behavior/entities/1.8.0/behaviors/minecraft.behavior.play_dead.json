@@ -41,7 +41,7 @@
       "items": {
         "title": "Damage Source",
         "description": "UNDOCUMENTATED",
-        "$ref": "../../../general/entity_damage.json"
+        "$ref": "../../../../general/entity_damage.json"
       }
     },
     "apply_regeneration": {
