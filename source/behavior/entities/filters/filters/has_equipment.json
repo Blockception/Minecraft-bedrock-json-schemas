@@ -17,8 +17,8 @@
       "enum": ["any", "armor", "feet", "hand", "head", "leg", "torso"],
       "title": "Domain"
     },
-    "operator": { "$ref": "./types/base_operator.json" },
-    "subject": { "$ref": "./types/base_subject.json" },
+    "operator": { "$ref": "./types/operator.json" },
+    "subject": { "$ref": "./types/subject.json" },
     "value": {
       "description": "The item name to look for",
       "type": "string",

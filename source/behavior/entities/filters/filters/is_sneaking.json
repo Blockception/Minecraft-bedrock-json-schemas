@@ -5,8 +5,8 @@
   "description": "Returns true if the subject entity is sneaking.",
   "properties": {
     "test": { "type": "string", "title": "Test Property", "description": "The test property" },
-    "operator": { "$ref": "./types/base_operator.json" },
-    "subject": { "$ref": "./types/base_subject.json" },
+    "operator": { "$ref": "./types/operator.json" },
+    "subject": { "$ref": "./types/subject.json" },
     "value": {
       "title": "Value",
       "description": "True or false.",

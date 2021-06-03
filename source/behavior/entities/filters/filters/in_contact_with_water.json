@@ -9,8 +9,8 @@
       "title": "Test Property",
       "description": "Returns true when the subject entity in contact with any water: water, rain, splash water bottle."
     },
-    "operator": { "$ref": "./types/base_operator.json" },
-    "subject": { "$ref": "./types/base_subject.json" },
+    "operator": { "$ref": "./types/operator.json" },
+    "subject": { "$ref": "./types/subject.json" },
     "value": {
       "title": "Value",
       "description": "(Optional) true or false.",

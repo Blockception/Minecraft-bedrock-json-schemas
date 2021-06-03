@@ -6,8 +6,8 @@
   "required": ["value"],
   "properties": {
     "test": { "type": "string", "title": "Test Property", "description": "The test property" },
-    "operator": { "$ref": "./types/base_operator.json" },
-    "subject": { "$ref": "./types/base_subject.json" },
+    "operator": { "$ref": "./types/operator.json" },
+    "subject": { "$ref": "./types/subject.json" },
     "value": { "description": "The Biome temperature value to compare with.", "type": "number", "minimum": 0.0, "maximum": 1.0, "title": "Value" }
   }
 }

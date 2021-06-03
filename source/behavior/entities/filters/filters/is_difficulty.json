@@ -6,8 +6,8 @@
   "required": ["value"],
   "properties": {
     "test": { "type": "string", "title": "Test Property", "description": "Tests the current difficulty level of the game." },
-    "operator": { "$ref": "./types/base_operator.json" },
-    "subject": { "$ref": "./types/base_subject.json" },
+    "operator": { "$ref": "./types/operator.json" },
+    "subject": { "$ref": "./types/subject.json" },
     "value": {
       "description": "The game's difficulty level to test",
       "type": "string",

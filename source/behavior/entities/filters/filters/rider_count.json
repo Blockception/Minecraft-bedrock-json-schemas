@@ -6,8 +6,8 @@
   "required": ["value"],
   "properties": {
     "test": { "type": "string", "title": "Test", "description": "The test property" },
-    "operator": { "$ref": "./types/base_operator.json" },
-    "subject": { "$ref": "./types/base_subject.json" },
+    "operator": { "$ref": "./types/operator.json" },
+    "subject": { "$ref": "./types/subject.json" },
     "value": { "description": "An integer value.", "type": "integer", "title": "Value" }
   }
 }

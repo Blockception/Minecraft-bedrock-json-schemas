@@ -10,13 +10,13 @@
       "description": "Returns true when the subject entity is inside a specified Block type."
     },
     "operator": {
-      "$ref": "./types/base_operator.json",
+      "$ref": "./types/operator.json",
       "description": "(Optional) The comparison to apply with 'value'.",
       "default": "equals",
       "title": "Operator"
     },
     "subject": {
-      "$ref": "./types/base_subject.json",
+      "$ref": "./types/subject.json",
       "description": "(Optional) The subject of this filter test.",
       "default": "self",
       "title": "Subject"

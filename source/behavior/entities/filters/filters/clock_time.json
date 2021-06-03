@@ -11,13 +11,13 @@
       "description": "Compares the current 24 hour time with an int value in the range[0, 24000]"
     },
     "operator": {
-      "$ref": "./types/base_operator.json",
+      "$ref": "./types/operator.json",
       "description": "(Optional) The comparison to apply with 'value'.",
       "default": "equals",
       "title": "Operator"
     },
     "subject": {
-      "$ref": "./types/base_subject.json",
+      "$ref": "./types/subject.json",
       "description": "(Optional) The subject of this filter test.",
       "default": "self",
       "title": "Subject"
