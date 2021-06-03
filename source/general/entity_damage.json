@@ -2,6 +2,7 @@
   "$id": "blockception.minecraft.general.1.8.0.entity.damage",
   "type": "string",
   "title": "Entity Damage Name",
+  "description": "TODO description",
   "enum": [
     "all",
     "anvil",
@@ -34,6 +35,5 @@
     "thorns",
     "void",
     "wither"
-  ],
-  "description": "TODO description"
+  ]
 }
