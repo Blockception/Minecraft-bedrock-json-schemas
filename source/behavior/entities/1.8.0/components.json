@@ -157,9 +157,9 @@
     "minecraft:wants_jockey": { "$ref": "./components/minecraft.wants_jockey.json" },
     "minecraft:water_movement": { "$ref": "./components/minecraft.water_movement.json" },
 
-    "minecraft:behavior.play_dead": { "$ref": "./behavors/minecraft.behavior.play_dead.json" },
-    "minecraft:behavior.ram_attack": { "$ref": "./behavors/minecraft.behavior.ram_attack.json" },
-    "minecraft:behavior.jump_to_block": { "$ref": "./behavors/minecraft.behavior.jump_to_block.json" },
+    "minecraft:behavior.play_dead": { "$ref": "./behaviors/minecraft.behavior.play_dead.json" },
+    "minecraft:behavior.ram_attack": { "$ref": "./behaviors/minecraft.behavior.ram_attack.json" },
+    "minecraft:behavior.jump_to_block": { "$ref": "./behaviors/minecraft.behavior.jump_to_block.json" },
 
     "minecraft:behavior.hide": { "$ref": "./behaviors/minecraft.behavior.hide.json" },
     "minecraft:behavior.move_to_poi": { "$ref": "./behaviors/minecraft.behavior.move_to_poi.json" },
