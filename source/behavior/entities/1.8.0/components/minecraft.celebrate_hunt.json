@@ -12,7 +12,7 @@
       "title": "Broadcast"
     },
     "celeberation_targets": {
-      "$ref": "../filters.json",
+      "$ref": "../../filters/filters.json",
       "description": "The list of conditions that target of hunt must satisfy to initiate celebration.",
       "title": "Celeberation Targets"
     },

@@ -32,7 +32,7 @@
           "description": "Specifies filters for entity definitions and events.",
           "title": "On Damage",
           "properties": {
-            "filters": { "$ref": "../filters.json" },
+            "filters": { "$ref": "../../filters/filters.json" },
             "event": { "type": "string", "pattern": "^.*$", "description": "TODO description: event", "title": "Event" },
             "target": { "$ref": "../filters/types/base_subject.json", "description": "TODO description: target", "title": "Target" }
           },

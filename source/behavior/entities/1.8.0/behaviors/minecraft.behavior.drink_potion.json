@@ -27,7 +27,7 @@
           },
           "filters": {
             "description": "The filters to use when determining if this potion can be selected.",
-            "$ref": "../filters.json",
+            "$ref": "../../filters/filters.json",
             "title": "Filters"
           }
         },

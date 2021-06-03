@@ -18,7 +18,7 @@
           "title": "Target",
           "enum": ["baby", "block", "damager", "other", "parent", "player", "self", "target"]
         },
-        "filters": { "$ref": "../filters.json" }
+        "filters": { "$ref": "../../filters/filters.json" }
       }
     }
   },

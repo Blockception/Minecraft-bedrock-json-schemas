@@ -15,7 +15,11 @@
       "title": "TODO Title"
     },
     "destroyOnHurt": { "type": "boolean", "default": false, "description": "If true, this entity will be destroyed when hit", "title": "TODO Title" },
-    "filter": { "$ref": "../filters.json", "description": "Entity Definitions defined here can't be hurt by the projectile", "title": "TODO Title" },
+    "filter": {
+      "$ref": "../../filters/filters.json",
+      "description": "Entity Definitions defined here can't be hurt by the projectile",
+      "title": "TODO Title"
+    },
     "fireAffectedByGriefing": {
       "type": "boolean",
       "default": false,

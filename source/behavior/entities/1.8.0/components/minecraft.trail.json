@@ -13,7 +13,7 @@
       "title": "Block Type"
     },
     "spawn_filter": {
-      "$ref": "../filters.json",
+      "$ref": "../../filters/filters.json",
       "description": "One or more conditions that must be met in order to cause the chosen block type to spawn.",
       "title": "Spawn Filter"
     },

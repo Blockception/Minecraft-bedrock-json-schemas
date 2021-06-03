@@ -13,7 +13,7 @@
       "title": "Broadcast Anger"
     },
     "broadcast_filters": {
-      "$ref": "../filters.json",
+      "$ref": "../../filters/filters.json",
       "description": "Conditions that make this entry in the list valid",
       "title": "Broadcast Filters"
     },

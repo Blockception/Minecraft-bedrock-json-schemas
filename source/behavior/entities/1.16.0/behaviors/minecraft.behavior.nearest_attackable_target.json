@@ -10,7 +10,7 @@
       "type": "object",
       "description": "A entity type",
       "properties": {
-        "filters": { "$ref": "../filters.json", "description": "Conditions that make this target a valid type.", "title": "Filters" },
+        "filters": { "$ref": "../../filters/filters.json", "description": "Conditions that make this target a valid type.", "title": "Filters" },
         "max_dist": {
           "type": "number",
           "default": 16,

@@ -17,7 +17,7 @@
       "description": "How close a hostile entity must be to have the damage applied.",
       "title": "Damage Range"
     },
-    "entity_filter": { "$ref": "../filters.json", "description": "Entity_filter", "title": "Filter" },
+    "entity_filter": { "$ref": "../../filters/filters.json", "description": "Entity_filter", "title": "Filter" },
     "cause": { "type": "string", "description": "TODO", "title": "Cause", "$ref": "../../../../general/entity/damage_source.json" }
   }
 }

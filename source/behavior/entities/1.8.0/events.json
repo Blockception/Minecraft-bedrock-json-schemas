@@ -49,13 +49,13 @@
             "properties": {
               "add": { "$ref": "#/definitions/addremove", "description": "What gets added when the event gets triggered", "title": "Add" },
               "remove": { "$ref": "#/definitions/addremove", "description": "What gets removed when the event gets triggered", "title": "Remove" },
-              "filters": { "$ref": "./filters.json" }
+              "filters": { "$ref": "./../filters/filters.json" }
             }
           },
           "description": "A series of filters and components to be added",
           "title": "Sequences"
         },
-        "filters": { "$ref": "./filters.json" },
+        "filters": { "$ref": "./../filters/filters.json" },
         "trigger": { "type": "string", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" }
       }
     }

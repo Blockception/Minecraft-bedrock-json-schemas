@@ -15,7 +15,7 @@
         "description": "TODO",
         "additionalProperties": false,
         "properties": {
-          "filters": { "$ref": "../filters.json" },
+          "filters": { "$ref": "../../filters/filters.json" },
           "cause": { "type": "string", "title": "Cause", "description": "Damage cause", "$ref": "../../../../general/entity/damage_source.json" },
           "damage_per_tick": { "type": "integer", "title": "Damage Per Tick", "description": "TODO" }
         }

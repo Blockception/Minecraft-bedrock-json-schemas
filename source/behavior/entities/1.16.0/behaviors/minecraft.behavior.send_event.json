@@ -37,7 +37,7 @@
           "max_activation_range": { "type": "number", "title": "UNDOCUMENTATED", "description": "UNDOCUMENTATED" },
           "cooldown_time": { "type": "number", "title": "UNDOCUMENTATED", "description": "UNDOCUMENTATED" },
           "cast_duration": { "type": "number", "title": "UNDOCUMENTATED", "description": "UNDOCUMENTATED" },
-          "filters": { "$ref": "../filters.json" },
+          "filters": { "$ref": "../../filters/filters.json" },
           "particle_color": { "type": "string", "format": "color-hex", "title": "UNDOCUMENTATED", "description": "UNDOCUMENTATED" },
           "weight": { "type": "integer", "title": "UNDOCUMENTATED", "description": "UNDOCUMENTATED" },
           "start_sound_event": { "type": "string", "title": "UNDOCUMENTATED", "description": "UNDOCUMENTATED" },

@@ -6,7 +6,11 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "filters": { "$ref": "../filters.json", "description": "The filter group that defines the conditions for this trigger", "title": "Filters" },
+    "filters": {
+      "$ref": "../../filters/filters.json",
+      "description": "The filter group that defines the conditions for this trigger",
+      "title": "Filters"
+    },
     "force_use": {
       "type": "boolean",
       "default": false,
@@ -20,7 +24,7 @@
         "type": "object",
         "properties": {
           "filters": {
-            "$ref": "../filters.json",
+            "$ref": "../../filters/filters.json",
             "description": "The filter group that defines the conditions for using this item to heal the entity"
           },
           "heal_amount": { "type": "integer", "default": 1, "description": "The amount of health this entity gains when fed this item" },

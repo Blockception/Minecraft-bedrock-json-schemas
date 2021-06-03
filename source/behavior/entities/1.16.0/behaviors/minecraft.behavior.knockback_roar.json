@@ -24,8 +24,8 @@
     "knockback_range": { "type": "integer", "default": 4, "description": "The radius (in blocks) of the knockback effect.", "title": "TODO Title" },
     "knockback_strength": { "type": "integer", "default": 4, "description": "The strength of the knockback.", "title": "TODO Title" },
     "Trigger": { "$ref": "../types/trigger.json", "description": "On_roar_end", "title": "TODO Title" },
-    "knockback_filters": { "$ref": "../filters.json", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
-    "damage_filters": { "$ref": "../filters.json", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
+    "knockback_filters": { "$ref": "../../filters/filters.json", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
+    "damage_filters": { "$ref": "../../filters/filters.json", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
     "on_roar_end": { "$ref": "../types/event.json", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" }
   }
 }

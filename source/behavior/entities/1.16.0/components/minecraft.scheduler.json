@@ -17,7 +17,7 @@
         "type": "object",
         "description": "UNDOCUMENTATED",
         "title": "UNDOCUMENTATED",
-        "properties": { "filters": { "$ref": "../filters.json" }, "event": { "$ref": "../types/event.json" } }
+        "properties": { "filters": { "$ref": "../../filters/filters.json" }, "event": { "$ref": "../types/event.json" } }
       }
     }
   }

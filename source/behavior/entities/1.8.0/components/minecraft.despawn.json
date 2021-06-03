@@ -7,7 +7,7 @@
   "required": [],
   "properties": {
     "filters": {
-      "$ref": "../filters.json",
+      "$ref": "../../filters/filters.json",
       "description": "The list of conditions that must be satisfied before the Actor is despawned",
       "title": "Filters"
     },

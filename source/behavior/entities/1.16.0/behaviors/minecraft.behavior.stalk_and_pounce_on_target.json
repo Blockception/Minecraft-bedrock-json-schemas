@@ -57,6 +57,6 @@
       "title": "Stuck Time"
     },
     "leap_dist": { "type": "number", "description": "UNDOCUMENTATED", "title": "Leap Dist" },
-    "stuck_blocks": { "$ref": "../filters.json", "description": "UNDOCUMENTATED", "title": "Stuck Block" }
+    "stuck_blocks": { "$ref": "../../filters/filters.json", "description": "UNDOCUMENTATED", "title": "Stuck Block" }
   }
 }
