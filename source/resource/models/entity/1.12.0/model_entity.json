@@ -330,6 +330,11 @@
                     "description": "This is the initial rotation of the bone around the pivot, pre-animation (in degrees, x-then-y-then-z order)."
                   }
                 },
+                "reset": {
+                  "title": "Reset",
+                  "description": "UNDOCUMANTED",
+                  "type": "boolean"
+                },
                 "texture_meshes": {
                   "type": "array",
                   "description": "***EXPERIMENTAL*** Adds a mesh to the bone's geometry by converting texels in a texture into boxes",

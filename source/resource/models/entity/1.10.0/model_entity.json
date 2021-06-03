@@ -73,7 +73,11 @@
               }
             },
             "render_group_id": { "type": "integer", "minimum": 0 },
-            "reset": { "type": "boolean" },
+            "reset": {
+              "title": "Reset",
+              "description": "UNDOCUMANTED",
+              "type": "boolean"
+            },
             "rotation": { "type": "array", "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }] },
             "texture_meshes": {
               "type": "array",

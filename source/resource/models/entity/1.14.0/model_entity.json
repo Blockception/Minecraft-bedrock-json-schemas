@@ -151,6 +151,11 @@
                           }
                         ]
                       },
+                      "reset": {
+                        "title": "Reset",
+                        "description": "UNDOCUMANTED",
+                        "type": "boolean"
+                      },
                       "rotation": {
                         "title": "Rotation",
                         "type": "array",

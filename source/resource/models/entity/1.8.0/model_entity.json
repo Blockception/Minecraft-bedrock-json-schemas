@@ -88,7 +88,11 @@
               }
             },
             "render_group_id": { "title": "Render Group Id", "description": "TODO", "type": "integer", "minimum": 0 },
-            "reset": { "title": "Reset", "description": "TODO", "type": "boolean" },
+            "reset": {
+              "title": "Reset",
+              "description": "UNDOCUMANTED",
+              "type": "boolean"
+            },
             "rotation": {
               "title": "Rotation",
               "description": "TODO",
