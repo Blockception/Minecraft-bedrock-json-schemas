@@ -176,6 +176,11 @@
     "minecraft:walk_animation_speed": { "$ref": "../1.8.0/components/minecraft.walk_animation_speed.json" },
     "minecraft:wants_jockey": { "$ref": "../1.8.0/components/minecraft.wants_jockey.json" },
     "minecraft:water_movement": { "$ref": "../1.8.0/components/minecraft.water_movement.json" },
+
+    "minecraft:behavior.play_dead": { "$ref": "./behavors/minecraft.behavior.play_dead.json" },
+    "minecraft:behavior.ram_attack": { "$ref": "./behavors/minecraft.behavior.ram_attack.json" },
+    "minecraft:behavior.jump_to_block": { "$ref": "./behavors/minecraft.behavior.jump_to_block.json" },
+
     "minecraft:behavior.admire_item": { "$ref": "../1.8.0/behaviors/minecraft.behavior.admire_item.json" },
     "minecraft:behavior.avoid_mob_type": { "$ref": "../1.8.0/behaviors/minecraft.behavior.avoid_mob_type.json" },
     "minecraft:behavior.beg": { "$ref": "../1.8.0/behaviors/minecraft.behavior.beg.json" },
