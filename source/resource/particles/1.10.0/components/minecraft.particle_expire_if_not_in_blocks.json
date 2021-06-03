@@ -3,6 +3,6 @@
   "type": "array",
   "title": "Particle Expire If Not In Blocks Component For 1.10.0",
   "additionalProperties": false,
-  "items": { "$ref": "../../../../general/blocks_identifiers.json", "description": "TODO description", "title": "TODO Title" },
+  "items": { "$ref": "../../../../general/block/identifier.json", "description": "TODO description", "title": "TODO Title" },
   "description": "TODO description"
 }

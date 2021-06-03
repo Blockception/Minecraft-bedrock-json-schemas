@@ -44,7 +44,7 @@
             "block_types": {
               "type": "array",
               "description": "List of blocks that can help the transformation of this entity",
-              "items": { "$ref": "../../../../general/blocks_identifiers.json" }
+              "items": { "$ref": "../../../../general/block/identifier.json" }
             },
             "value": { "type": "number", "default": 0, "description": "Time in seconds before the entity transforms" }
           }

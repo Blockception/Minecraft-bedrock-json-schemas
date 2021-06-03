@@ -45,25 +45,25 @@
     "breatheBlocks": {
       "type": "array",
       "description": "List of blocks this entity can breathe in, in addition to the above",
-      "items": { "$ref": "../../../../general/blocks_identifiers.json" },
+      "items": { "$ref": "../../../../general/block/identifier.json" },
       "title": "TODO Title"
     },
     "breathe_blocks": {
       "type": "array",
       "description": "List of blocks this entity can breathe in, in addition to the above",
-      "items": { "$ref": "../../../../general/blocks_identifiers.json" },
+      "items": { "$ref": "../../../../general/block/identifier.json" },
       "title": "TODO Title"
     },
     "nonBreatheBlocks": {
       "type": "array",
       "description": "List of blocks this entity can't breathe in, in addition to the above",
-      "items": { "$ref": "../../../../general/blocks_identifiers.json" },
+      "items": { "$ref": "../../../../general/block/identifier.json" },
       "title": "TODO Title"
     },
     "non_breathe_blocks": {
       "type": "array",
       "description": "List of blocks this entity can't breathe in, in addition to the above",
-      "items": { "$ref": "../../../../general/blocks_identifiers.json" },
+      "items": { "$ref": "../../../../general/block/identifier.json" },
       "title": "TODO Title"
     }
   }
