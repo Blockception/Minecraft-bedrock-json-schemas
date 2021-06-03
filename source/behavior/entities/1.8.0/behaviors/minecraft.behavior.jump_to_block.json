@@ -1,0 +1,28 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.melee_attack",
+  "type": "object",
+  "title": "Melee Attack 1.8.0",
+  "description": "Allows the mob to use close combat melee attacks.",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "./types/priority.json" },
+    "search_width": { "type": "number", "title": "Search Range", "description": "UNDOCUMENTATED" },
+    "search_height": { "type": "number", "title": "Search Height", "description": "UNDOCUMENTATED" },
+
+    "minimum_path_length": { "type": "number", "title": "Minimum Path Length", "description": "UNDOCUMENTATED" },
+    "minimum_distance": { "type": "number", "title": "Minimum Distance", "description": "UNDOCUMENTATED" },
+
+    "scale_factor": { "type": "number", "title": "Scale Factor", "description": "UNDOCUMENTATED" },
+
+    "cooldown_range": {
+      "title": "Cooldown range",
+      "description": "UNDOCUMENTATED",
+      "type": "array",
+      "items": [
+        { "title": "Min", "description": "UNDOCUMENTATED", "type": "integer", "minimum": 0 },
+        { "title": "Max", "description": "UNDOCUMENTATED", "type": "integer", "minimum": 0 }
+      ]
+    }
+  }
+}
