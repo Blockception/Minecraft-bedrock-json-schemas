@@ -18,6 +18,46 @@
       "type": "object",
       "additionalProperties": false,
       "required": ["description", "components"],
+      "definitions": {
+        "components_ref": {
+          "type": "object",
+          "title": "Component",
+          "description": "UNDOCUMENTATED",
+          "additionalProperties": false,
+          "properties": {
+            "minecraft:on_fall_on": { "$ref": "./components/minecraft.on_fall_on.json" },
+            "minecraft:on_interact": { "$ref": "./components/minecraft.on_interact.json" },
+            "minecraft:on_placed": { "$ref": "./components/minecraft.on_placed.json" },
+            "minecraft:on_player_destroyed": { "$ref": "./components/minecraft.on_player_destroyed.json" },
+            "minecraft:on_player_placing": { "$ref": "./components/minecraft.on_player_placing.json" },
+            "minecraft:on_step_off": { "$ref": "./components/minecraft.on_step_off.json" },
+            "minecraft:on_step_on": { "$ref": "./components/minecraft.on_step_on.json" },
+            "minecraft:block_light_absorption": { "$ref": "./components/minecraft.block_light_absorption.json" },
+            "minecraft:block_light_emission": { "$ref": "./components/minecraft.block_light_emission.json" },
+            "minecraft:breakonpush": { "$ref": "./components/minecraft.breakonpush.json" },
+            "minecraft:breathability": { "$ref": "./components/minecraft.breathability.json" },
+            "minecraft:destroy_time": { "$ref": "./components/minecraft.destroy_time.json" },
+            "minecraft:display_name": { "$ref": "./components/minecraft.display_name.json" },
+            "minecraft:entity_collision": { "$ref": "./components/minecraft.entity_collision.json" },
+            "minecraft:explosion_resistance": { "$ref": "./components/minecraft.explosion_resistance.json" },
+            "minecraft:flammable": { "$ref": "./components/minecraft.flammable.json" },
+            "minecraft:friction": { "$ref": "./components/minecraft.friction.json" },
+            "minecraft:geometry": { "$ref": "./components/minecraft.geometry.json" },
+            "minecraft:immovable": { "$ref": "./components/minecraft.immovable.json" },
+            "minecraft:map_color": { "$ref": "./components/minecraft.map_color.json" },
+            "minecraft:material_instances": { "$ref": "./components/minecraft.material_instances.json" },
+            "minecraft:onlypistonpush": { "$ref": "./components/minecraft.onlypistonpush.json" },
+            "minecraft:pick_collision": { "$ref": "./components/minecraft.pick_collision.json" },
+            "minecraft:placement_filter": { "$ref": "./components/minecraft.placement_filter.json" },
+            "minecraft:preventsjumping": { "$ref": "./components/minecraft.preventsjumping.json" },
+            "minecraft:random_ticking": { "$ref": "./components/minecraft.random_ticking.json" },
+            "minecraft:rotation": { "$ref": "./components/minecraft.rotation.json" },
+            "minecraft:ticking": { "$ref": "./components/minecraft.ticking.json" },
+            "minecraft:unit_cube": { "$ref": "./components/minecraft.unit_cube.json" },
+            "minecraft:unwalkable": { "$ref": "./components/minecraft.unwalkable.json" }
+          }
+        }
+      },
       "properties": {
         "description": {
           "title": "Block Description",
@@ -66,44 +106,35 @@
             }
           }
         },
+        "events": { "$ref": "./events.json" },
         "components": {
           "type": "object",
           "title": "Component",
-          "description": "",
-          "properties": {
-            "minecraft:on_fall_on": { "$ref": "./components/minecraft.on_fall_on.json" },
-            "minecraft:on_interact": { "$ref": "./components/minecraft.on_interact.json" },
-            "minecraft:on_placed": { "$ref": "./components/minecraft.on_placed.json" },
-            "minecraft:on_player_destroyed": { "$ref": "./components/minecraft.on_player_destroyed.json" },
-            "minecraft:on_player_placing": { "$ref": "./components/minecraft.on_player_placing.json" },
-            "minecraft:on_step_off": { "$ref": "./components/minecraft.on_step_off.json" },
-            "minecraft:on_step_on": { "$ref": "./components/minecraft.on_step_on.json" },
-            "minecraft:block_light_absorption": { "$ref": "./components/minecraft.block_light_absorption.json" },
-            "minecraft:block_light_emission": { "$ref": "./components/minecraft.block_light_emission.json" },
-            "minecraft:breakonpush": { "$ref": "./components/minecraft.breakonpush.json" },
-            "minecraft:breathability": { "$ref": "./components/minecraft.breathability.json" },
-            "minecraft:destroy_time": { "$ref": "./components/minecraft.destroy_time.json" },
-            "minecraft:display_name": { "$ref": "./components/minecraft.display_name.json" },
-            "minecraft:entity_collision": { "$ref": "./components/minecraft.entity_collision.json" },
-            "minecraft:explosion_resistance": { "$ref": "./components/minecraft.explosion_resistance.json" },
-            "minecraft:flammable": { "$ref": "./components/minecraft.flammable.json" },
-            "minecraft:friction": { "$ref": "./components/minecraft.friction.json" },
-            "minecraft:geometry": { "$ref": "./components/minecraft.geometry.json" },
-            "minecraft:immovable": { "$ref": "./components/minecraft.immovable.json" },
-            "minecraft:map_color": { "$ref": "./components/minecraft.map_color.json" },
-            "minecraft:material_instances": { "$ref": "./components/minecraft.material_instances.json" },
-            "minecraft:onlypistonpush": { "$ref": "./components/minecraft.onlypistonpush.json" },
-            "minecraft:pick_collision": { "$ref": "./components/minecraft.pick_collision.json" },
-            "minecraft:placement_filter": { "$ref": "./components/minecraft.placement_filter.json" },
-            "minecraft:preventsjumping": { "$ref": "./components/minecraft.preventsjumping.json" },
-            "minecraft:random_ticking": { "$ref": "./components/minecraft.random_ticking.json" },
-            "minecraft:rotation": { "$ref": "./components/minecraft.rotation.json" },
-            "minecraft:ticking": { "$ref": "./components/minecraft.ticking.json" },
-            "minecraft:unit_cube": { "$ref": "./components/minecraft.unit_cube.json" },
-            "minecraft:unwalkable": { "$ref": "./components/minecraft.unwalkable.json" }
-          }
+          "$ref": "#/definitions/components_ref"
         },
-        "events": { "$ref": "./events.json" }
+        "permutations": {
+          "type": "array",
+          "title": "Permutations",
+          "description": "UNDOCUMENATED",
+          "items": {
+            "title": "Permutation",
+            "description": "UNDOCUMENATED",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "condition": {
+                "title": "Condition",
+                "description": "UNDOCUMENATED",
+                "$ref": "../../../molang/1.8.0/string.json"
+              },
+              "components": {
+                "type": "object",
+                "title": "Component",
+                "$ref": "#/definitions/components_ref"
+              }
+            }
+          }
+        }
       }
     }
   }

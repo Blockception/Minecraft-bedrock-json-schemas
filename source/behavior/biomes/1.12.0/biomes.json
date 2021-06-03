@@ -19,6 +19,7 @@
     "minecraft:swamp_surface": { "$ref": "./components/minecraft.swamp_surface.json" },
     "minecraft:frozen_ocean_surface": { "$ref": "./components/minecraft.frozen_ocean_surface.json" },
     "minecraft:mesa_surface": { "$ref": "./components/minecraft.mesa_surface.json" },
+    "minecraft:mountain_parameters": { "$ref": "./components/minecraft.mountain_parameters.json" },
     "minecraft:nether_surface": { "$ref": "./components/minecraft.nether_surface.json" },
     "minecraft:the_end_surface": { "$ref": "./components/minecraft.the_end_surface.json" },
     "minecraft:capped_surface": { "$ref": "./components/minecraft.capped_surface.json" },

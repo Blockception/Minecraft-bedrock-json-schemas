@@ -14,13 +14,14 @@
     "minecraft:ticking": { "$ref": "#/definitions/event_base" },
     "minecraft:random_ticking": { "$ref": "#/definitions/event_base" }
   },
-  "additionalProperties": { "oneOf": [{ "$ref": "#/definitions/event_base" }, { "$ref": "#/definitions/event_functions" }] },
+  "additionalProperties": { "$ref": "#/definitions/event_base" },
   "definitions": {
     "event_base": {
       "title": "Event",
       "description": "UNDOCUMENTATED",
       "type": "object",
       "additionalProperties": false,
+      "$ref": "#/definitions/event_functions",
       "properties": {
         "sequence": {
           "title": "Sequence",
@@ -62,6 +63,7 @@
       "title": "Event",
       "description": "UNDOCUMENTATED",
       "type": "object",
+      "additionalProperties": true,
       "properties": {
         "add_mob_effect": { "$ref": "./events/add_mob_effect.json" },
         "damage": { "$ref": "./events/damage.json" },
