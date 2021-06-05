@@ -15,7 +15,7 @@
     }
   ],
   "allOf": [
-    { "if": { "properties": { "format_version": { "type": "string", "const": "1.17.0" } } }, "then": { "$ref": "./1.17.0/feature_rules.json" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.13.0" } } }, "then": { "$ref": "./1.13.0/feature_rules.json" } },
     { "properties": { "format_version": { "$ref": "../../general/format_version.json" } } }
   ]
 }
