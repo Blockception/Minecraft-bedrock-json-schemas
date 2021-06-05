@@ -5,7 +5,7 @@
   "additionalProperties": false,
   "properties": {
     "num_particles": {
-      "$ref": "../../../../molang/1.8.0/number.json",
+      "$ref": "../../../../molang/number.json",
       "description": "This many particles are emitted at once evaluated once per particle emitter loop.",
       "title": "Num Particles",
       "default": 10

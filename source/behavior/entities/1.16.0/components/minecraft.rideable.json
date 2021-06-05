@@ -29,7 +29,7 @@
           "default": [0.0, 0.0, 0.0],
           "description": "Position of this seat relative to this entity's position"
         },
-        "rotate_rider_by": { "$ref": "../../../../molang/1.8.0/number.json", "description": "Offset to rotate riders by" }
+        "rotate_rider_by": { "$ref": "../../../../molang/number.json", "description": "Offset to rotate riders by" }
       }
     }
   },

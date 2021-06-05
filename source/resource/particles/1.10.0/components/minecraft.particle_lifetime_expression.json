@@ -8,10 +8,10 @@
     "expiration_expression": {
       "title": "Expiration Expression",
       "description": "This expression makes the particle expire when true (non-zero), The float/expr is evaluated once per particle, evaluated every frame",
-      "$ref": "../../../../molang/1.8.0/number.json"
+      "$ref": "../../../../molang/number.json"
     },
     "max_lifetime": {
-      "$ref": "../../../../molang/1.8.0/number.json",
+      "$ref": "../../../../molang/number.json",
       "description": "Alternate way to express lifetime, particle will expire after this much time, evaluated once",
       "title": "Max Lifetime"
     }

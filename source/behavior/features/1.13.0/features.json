@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.features.1.13.0",
   "type": "object",
-  "title": "Spawn Rules 1.13.0",
+  "title": "Features 1.13.0",
   "description": "Features are decorations scattered throughout the world. Things such as trees, plants, flowers, springs, ore, and coral are all features. Basically, if it isn't the terrain or a mob, it's probably a feature!",
   "additionalProperties": false,
   "required": ["format_version"],

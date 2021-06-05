@@ -125,7 +125,7 @@
               "condition": {
                 "title": "Condition",
                 "description": "UNDOCUMENATED",
-                "$ref": "../../../molang/1.8.0/string.json"
+                "$ref": "../../../molang/string.json"
               },
               "components": {
                 "type": "object",

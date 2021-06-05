@@ -3,10 +3,10 @@
   "title": "Particle Initial Speed Component For 1.10.0",
   "additionalProperties": false,
   "anyOf": [
-    { "$ref": "../../../../molang/1.8.0/number.json" },
+    { "$ref": "../../../../molang/number.json" },
     {
       "type": "array",
-      "items": { "$ref": "../../../../molang/1.8.0/number.json", "description": "TODO description", "title": "TODO Title" },
+      "items": { "$ref": "../../../../molang/number.json", "description": "TODO description", "title": "TODO Title" },
       "minItems": 3,
       "maxItems": 3,
       "description": "TODO description",

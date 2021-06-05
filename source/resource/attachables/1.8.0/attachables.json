@@ -127,7 +127,7 @@
                   "type": "array",
                   "items": {
                     "pattern": ";$",
-                    "$ref": "../../../molang/1.8.0/number.json",
+                    "$ref": "../../../molang/number.json",
                     "description": "TODO description: pre aninamtion",
                     "title": "Pre Animation"
                   },
@@ -154,7 +154,7 @@
                   },
                   "description": "TODO description: animate"
                 },
-                "parent_setup": { "$ref": "../../../molang/1.8.0/number.json" }
+                "parent_setup": { "$ref": "../../../molang/number.json" }
               },
               "description": "TODO description: scripts",
               "title": "Scripts"

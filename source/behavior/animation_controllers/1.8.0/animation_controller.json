@@ -15,7 +15,7 @@
           "maxProperties": 1,
           "minProperties": 1,
           "additionalProperties": {
-            "$ref": "../../../molang/1.8.0/string.json"
+            "$ref": "../../../molang/string.json"
           }
         }
       ]
@@ -135,7 +135,7 @@
                     "type": "object",
                     "examples": [{ "default": "query.is_chested" }],
                     "additionalProperties": {
-                      "$ref": "../../../molang/1.8.0/string.json"
+                      "$ref": "../../../molang/string.json"
                     },
                     "minProperties": 1,
                     "maxProperties": 1

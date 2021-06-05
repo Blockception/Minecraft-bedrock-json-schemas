@@ -127,7 +127,7 @@
                   "title": "Pre Animation",
                   "items": {
                     "pattern": ";$",
-                    "$ref": "../../../molang/1.8.0/string.json",
+                    "$ref": "../../../molang/string.json",
                     "description": "Clientside molang variables that are to be evualated during the animation",
                     "title": "Pre Animation"
                   }
@@ -136,17 +136,17 @@
                   "type": "string",
                   "description": "TODO description: parent setup",
                   "title": "Parent Setup",
-                  "$ref": "../../../molang/1.8.0/number.json"
+                  "$ref": "../../../molang/number.json"
                 },
                 "scale": {
                   "type": "string",
                   "description": "Scale sets the scale of the mob's geometry.",
                   "title": "Scale",
-                  "$ref": "../../../molang/1.8.0/number.json"
+                  "$ref": "../../../molang/number.json"
                 },
-                "scalex": { "$ref": "../../../molang/1.8.0/number.json", "title": "Scale X" },
-                "scaley": { "$ref": "../../../molang/1.8.0/number.json", "title": "Scale Y" },
-                "scalez": { "$ref": "../../../molang/1.8.0/number.json", "title": "Scale Z" }
+                "scalex": { "$ref": "../../../molang/number.json", "title": "Scale X" },
+                "scaley": { "$ref": "../../../molang/number.json", "title": "Scale Y" },
+                "scalez": { "$ref": "../../../molang/number.json", "title": "Scale Z" }
               }
             },
             "sound_effects": {

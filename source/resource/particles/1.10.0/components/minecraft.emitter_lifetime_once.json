@@ -5,7 +5,7 @@
   "additionalProperties": false,
   "properties": {
     "active_time": {
-      "$ref": "../../../../molang/1.8.0/number.json",
+      "$ref": "../../../../molang/number.json",
       "description": "How long the particles emit for evaluated once",
       "title": "Active Time"
     }

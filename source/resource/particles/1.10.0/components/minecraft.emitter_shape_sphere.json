@@ -12,7 +12,7 @@
           "items": {
             "minItems": 3,
             "maxItems": 3,
-            "$ref": "../../../../molang/1.8.0/number.json",
+            "$ref": "../../../../molang/number.json",
             "description": "TODO description: Todo",
             "title": "Todo"
           },
@@ -28,14 +28,14 @@
       "items": {
         "minItems": 3,
         "maxItems": 3,
-        "$ref": "../../../../molang/1.8.0/number.json",
+        "$ref": "../../../../molang/number.json",
         "description": "TODO description: offset",
         "title": "Offset"
       },
       "description": "TODO description",
       "title": "TODO Title"
     },
-    "radius": { "$ref": "../../../../molang/1.8.0/number.json", "description": "TODO description: radius", "title": "Radius" },
+    "radius": { "$ref": "../../../../molang/number.json", "description": "TODO description: radius", "title": "Radius" },
     "surface_only": { "type": "boolean", "description": "TODO description: surface only", "title": "Surface Only" }
   },
   "description": "TODO description: "

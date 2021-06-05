@@ -22,7 +22,7 @@
             "type": "array",
             "items": { "type": "string", "title": "Item", "description": "UNDOCUMENATED" }
           },
-          "repair_amount": { "title": "Repair Amount", "description": "UNDOCUMENATED", "$ref": "../../../../molang/1.8.0/number.json" }
+          "repair_amount": { "title": "Repair Amount", "description": "UNDOCUMENATED", "$ref": "../../../../molang/number.json" }
         }
       }
     }

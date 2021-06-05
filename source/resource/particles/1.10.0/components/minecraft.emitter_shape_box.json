@@ -10,16 +10,16 @@
       "default": "outwards",
       "anyOf": [
         { "type": "string", "enum": ["inwards", "outwards"] },
-        { "type": "array", "minItems": 3, "maxItems": 3, "items": { "$ref": "../../../../molang/1.8.0/number.json" } }
+        { "type": "array", "minItems": 3, "maxItems": 3, "items": { "$ref": "../../../../molang/number.json" } }
       ]
     },
-    "radius": { "$ref": "../../../../molang/1.8.0/number.json", "description": "TODO description: radius", "title": "Radius" },
+    "radius": { "$ref": "../../../../molang/number.json", "description": "TODO description: radius", "title": "Radius" },
     "offset": {
       "type": "array",
       "items": {
         "minItems": 3,
         "maxItems": 3,
-        "$ref": "../../../../molang/1.8.0/number.json",
+        "$ref": "../../../../molang/number.json",
         "description": "TODO description: offset",
         "title": "Offset"
       },
@@ -31,7 +31,7 @@
       "items": {
         "minItems": 3,
         "maxItems": 3,
-        "$ref": "../../../../molang/1.8.0/number.json",
+        "$ref": "../../../../molang/number.json",
         "description": "TODO description: half dimensions",
         "title": "Half Dimensions"
       },

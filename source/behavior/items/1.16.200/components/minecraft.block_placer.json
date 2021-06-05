@@ -10,7 +10,7 @@
       "type": "object",
       "title": "Allowed Block",
       "description": "A block descriptor that allows to be placed",
-      "properties": { "tags": { "title": "Tags", "description": "Tags", "$ref": "../../../../molang/1.8.0/string.json" } }
+      "properties": { "tags": { "title": "Tags", "description": "Tags", "$ref": "../../../../molang/string.json" } }
     }
   },
   "properties": {

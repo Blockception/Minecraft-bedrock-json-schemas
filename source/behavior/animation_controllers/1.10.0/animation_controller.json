@@ -16,7 +16,7 @@
           "maxProperties": 1,
           "minProperties": 1,
           "additionalProperties": {
-            "$ref": "../../../molang/1.8.0/string.json"
+            "$ref": "../../../molang/string.json"
           }
         }
       ]
@@ -139,7 +139,7 @@
                     "maxProperties": 1,
                     "minProperties": 1,
                     "additionalProperties": {
-                      "$ref": "../../../molang/1.8.0/string.json"
+                      "$ref": "../../../molang/string.json"
                     }
                   }
                 }

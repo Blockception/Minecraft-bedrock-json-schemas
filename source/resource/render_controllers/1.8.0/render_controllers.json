@@ -118,7 +118,7 @@
             }
           },
           "light_color_multiplier": {
-            "$ref": "../../../molang/1.8.0/number.json",
+            "$ref": "../../../molang/number.json",
             "description": "The amount of light that blends into what is being rendered, lower values gives darker rendering, (1 = 100%)",
             "title": "Light Color Multiplier"
           },
@@ -196,7 +196,7 @@
                 "type": "array",
                 "minItems": 2,
                 "maxItems": 2,
-                "items": { "$ref": "../../../molang/1.8.0/number.json", "description": "TODO description: offset", "title": "Offset" },
+                "items": { "$ref": "../../../molang/number.json", "description": "TODO description: offset", "title": "Offset" },
                 "description": "TODO description: offset",
                 "title": "Offset"
               },
@@ -206,7 +206,7 @@
                 "title": "Scale",
                 "minItems": 2,
                 "maxItems": 2,
-                "items": { "$ref": "../../../molang/1.8.0/number.json", "description": "TODO description: scale", "title": "Scale" }
+                "items": { "$ref": "../../../molang/number.json", "description": "TODO description: scale", "title": "Scale" }
               }
             },
             "description": "TODO description: uv anim",

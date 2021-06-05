@@ -16,7 +16,7 @@
         "pre_effect_script": {
           "title": "Pre Effect Script",
           "description": "A molang script that will be run when the particle emitter is initialized",
-          "$ref": "../../../molang/1.8.0/string.json"
+          "$ref": "../../../molang/string.json"
         },
         "bind_to_actor": {
           "type": "boolean",
@@ -34,17 +34,17 @@
         {
           "title": "Position X",
           "description": "The position over the X-axis or forwards/backwards.\nCan be molang or a float",
-          "$ref": "../../../molang/1.8.0/number.json"
+          "$ref": "../../../molang/number.json"
         },
         {
           "title": "Position Y",
           "description": "The position over the Y-axis, or up/down.\nCan be molang or a float",
-          "$ref": "../../../molang/1.8.0/number.json"
+          "$ref": "../../../molang/number.json"
         },
         {
           "title": "Position Z",
           "description": "The position over the Z-axis, or left/right.\nCan be molang or a float",
-          "$ref": "../../../molang/1.8.0/number.json"
+          "$ref": "../../../molang/number.json"
         }
       ]
     },
@@ -56,17 +56,17 @@
         {
           "title": "Rotation X",
           "description": "The rotation over the X-axis, or up or down.\nCan be molang or a float",
-          "$ref": "../../../molang/1.8.0/number.json"
+          "$ref": "../../../molang/number.json"
         },
         {
           "title": "Rotation Y",
           "description": "The rotation over the Y-axis, or yaw.\nCan be molang or a float",
-          "$ref": "../../../molang/1.8.0/number.json"
+          "$ref": "../../../molang/number.json"
         },
         {
           "title": "Rotation Z",
           "description": "The rotation over the Z-axis, or roll.\nCan be molang or a float",
-          "$ref": "../../../molang/1.8.0/number.json"
+          "$ref": "../../../molang/number.json"
         }
       ]
     },
@@ -78,17 +78,17 @@
         {
           "title": "Position X",
           "description": "The position over the X-axis or forwards/backwards.\nCan be molang or a float",
-          "$ref": "../../../molang/1.8.0/number.json"
+          "$ref": "../../../molang/number.json"
         },
         {
           "title": "Position Y",
           "description": "The position over the Y-axis, or up/down.\nCan be molang or a float",
-          "$ref": "../../../molang/1.8.0/number.json"
+          "$ref": "../../../molang/number.json"
         },
         {
           "title": "Position Z",
           "description": "The position over the Z-axis, or left/right.\nCan be molang or a float",
-          "$ref": "../../../molang/1.8.0/number.json"
+          "$ref": "../../../molang/number.json"
         }
       ]
     },
@@ -127,14 +127,14 @@
           "anim_time_update": {
             "title": "Start Delay",
             "description": "How does time pass when playing the animation. Defaults to \"query.anim_time + query.delta_time\" which means advance in seconds.",
-            "$ref": "../../../molang/1.8.0/number.json"
+            "$ref": "../../../molang/number.json"
           },
           "animation_length": {
             "title": "Animation Length",
             "description": "Override calculated value (set as the last keyframe time) and set animation length in seconds.",
             "type": "number"
           },
-          "blend_weight": { "title": "Blend Weight", "description": "TODO", "$ref": "../../../molang/1.8.0/number.json" },
+          "blend_weight": { "title": "Blend Weight", "description": "TODO", "$ref": "../../../molang/number.json" },
           "bones": {
             "title": "Bones",
             "description": "Defines how the bones in an animation move or transform",
@@ -151,7 +151,7 @@
                   "description": "The Position transformation during this animation",
                   "oneOf": [
                     { "$ref": "#/definitions/PositionV3" },
-                    { "$ref": "../../../molang/1.8.0/arraynumber3.json" },
+                    { "$ref": "../../../molang/arraynumber3.json" },
                     {
                       "type": "object",
                       "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$" },
@@ -173,7 +173,7 @@
                   "description": "The rotation transformation during this animation",
                   "oneOf": [
                     { "$ref": "#/definitions/RotationV3" },
-                    { "$ref": "../../../molang/1.8.0/arraynumber3.json" },
+                    { "$ref": "../../../molang/arraynumber3.json" },
                     {
                       "type": "object",
                       "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$" },
@@ -205,7 +205,7 @@
                   "title": "Scale",
                   "description": "TODO",
                   "oneOf": [
-                    { "$ref": "../../../molang/1.8.0/number.json" },
+                    { "$ref": "../../../molang/number.json" },
                     { "$ref": "#/definitions/ScaleV3" },
                     {
                       "type": "object",
@@ -234,7 +234,7 @@
           "loop_delay": {
             "title": "Loop Delay",
             "description": "How long to wait in seconds before looping this animation. Note that this expression is evaluated after each loop and on looping animation only.",
-            "$ref": "../../../molang/1.8.0/number.json"
+            "$ref": "../../../molang/number.json"
           },
           "override_previous_animation": {
             "title": "Override Previous Animation",
@@ -258,7 +258,7 @@
           "start_delay": {
             "title": "Start Delay",
             "description": "How long to wait in seconds before playing this animation. Note that this expression is evaluated once before playing, and only re-evaluated if asked to play from the beginning again. A looping animation should use 'loop_delay' if it wants a delay between loops.",
-            "$ref": "../../../molang/1.8.0/number.json"
+            "$ref": "../../../molang/number.json"
           },
           "sound_effects": {
             "title": "Sound Effect",

@@ -5,7 +5,7 @@
   "additionalProperties": false,
   "properties": {
     "max_particles": {
-      "$ref": "../../../../molang/1.8.0/number.json",
+      "$ref": "../../../../molang/number.json",
       "description": "Evaluated once per particle emitted",
       "title": "Max Particles"
     }

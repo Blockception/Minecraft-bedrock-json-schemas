@@ -8,7 +8,7 @@
     "color": {
       "title": "Color",
       "anyOf": [
-        { "type": "array", "description": "Direct color field", "items": { "$ref": "../../../../molang/1.8.0/number.json" } },
+        { "type": "array", "description": "Direct color field", "items": { "$ref": "../../../../molang/number.json" } },
         { "type": "string", "format": "color-hex", "description": "Direct color field" },
         {
           "description": "Interpolation based color",
@@ -45,7 +45,7 @@
                 }
               ]
             },
-            "interpolant": { "$ref": "../../../../molang/1.8.0/number.json", "description": "TODO description: interpolant", "title": "Interpolant" }
+            "interpolant": { "$ref": "../../../../molang/number.json", "description": "TODO description: interpolant", "title": "Interpolant" }
           }
         }
       ],

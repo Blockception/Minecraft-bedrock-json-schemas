@@ -1,0 +1,21 @@
+{
+  "$id": "blockception.minecraft.behavior.feature_rules",
+  "examples": [
+    {
+      "format_version": "1.13.0",
+      "minecraft:feature_rules": {
+        "minecraft:ore_feature": {
+          "description": {
+            "identifier": "example:foo",
+            "places_feature": "minecraft:legacy:birch_forest_tree_feature"
+          },
+          "conditions": {}
+        }
+      }
+    }
+  ],
+  "allOf": [
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.17.0" } } }, "then": { "$ref": "./1.17.0/feature_rules.json" } },
+    { "properties": { "format_version": { "$ref": "../../general/format_version.json" } } }
+  ]
+}

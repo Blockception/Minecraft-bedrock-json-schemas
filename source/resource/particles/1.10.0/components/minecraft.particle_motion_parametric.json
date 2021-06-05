@@ -8,11 +8,11 @@
       "type": "array",
       "minItems": 3,
       "maxItems": 3,
-      "items": { "$ref": "../../../../molang/1.8.0/number.json", "description": "TODO description: relative position", "title": "Relative Position" },
+      "items": { "$ref": "../../../../molang/number.json", "description": "TODO description: relative position", "title": "Relative Position" },
       "description": "TODO description: relative position",
       "title": "Relative Position"
     },
-    "rotation": { "$ref": "../../../../molang/1.8.0/number.json", "description": "TODO description: rotation", "title": "Rotation" }
+    "rotation": { "$ref": "../../../../molang/number.json", "description": "TODO description: rotation", "title": "Rotation" }
   },
   "description": "TODO description: "
 }

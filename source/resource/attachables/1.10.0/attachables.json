@@ -130,7 +130,7 @@
                   "title": "Initialize",
                   "items": {
                     "pattern": ";$",
-                    "$ref": "../../../molang/1.8.0/number.json",
+                    "$ref": "../../../molang/number.json",
                     "description": "TODO description: initialize",
                     "title": "Initialize"
                   }
@@ -141,7 +141,7 @@
                   "title": "Pre Animation",
                   "items": {
                     "pattern": ";$",
-                    "$ref": "../../../molang/1.8.0/number.json",
+                    "$ref": "../../../molang/number.json",
                     "description": "TODO description: pre aninamtion",
                     "title": "Pre Animation"
                   }
@@ -150,9 +150,9 @@
                   "type": "string",
                   "description": "TODO description: parent setup",
                   "title": "Parent Setup",
-                  "$ref": "../../../molang/1.8.0/number.json"
+                  "$ref": "../../../molang/number.json"
                 },
-                "scale": { "type": "string", "description": "TODO description: scale", "title": "Scale", "$ref": "../../../molang/1.8.0/number.json" }
+                "scale": { "type": "string", "description": "TODO description: scale", "title": "Scale", "$ref": "../../../molang/number.json" }
               }
             },
             "sound_effects": {
