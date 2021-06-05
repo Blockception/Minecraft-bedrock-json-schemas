@@ -2,5 +2,5 @@
   "$id": "molang_number1.8.0",
   "title": "Molang Number",
   "description": "The minecraft molang definition that results in a float",
-  "anyOf": [{ "type": "string", "minLength": 0, "format": "molang" }, { "type": "number" }]
+  "anyOf": [{ "type": "string", "minLength": 0 }, { "type": "number" }]
 }
