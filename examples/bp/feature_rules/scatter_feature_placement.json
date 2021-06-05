@@ -1,0 +1,22 @@
+{
+	"format_version": "1.13.0",
+
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "scatter_and_singleblock_features:scatter_feature_placement",
+			"places_feature": "scatter_and_singleblock_features:scatter_feature"
+		},
+
+		"conditions": {
+			"placement_pass": "final_pass"
+		},
+
+		"distribution": {
+			"iterations": 1,
+
+			"x": 0,
+			"z": 0,
+			"y": 90
+		}
+	}
+}

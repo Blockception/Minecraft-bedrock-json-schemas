@@ -1,0 +1,31 @@
+{
+	"format_version": "1.13.0",
+
+	"minecraft:scatter_feature": {
+		"description": {
+			"identifier": "scatter_and_singleblock_features:scatter_feature"
+		},
+
+		"places_feature": "scatter_and_singleblock_features:scatter_feature_obsidian",
+
+		"scatter_chance": {
+			"numerator": 2,
+			"denominator": 3
+		},
+		"iterations": "math.pow(2, 4)",
+
+		"coordinate_eval_order": "zxy",
+		"project_input_to_floor": true,
+		"z": {
+			"distribution": "fixed_grid",
+			"extent": [10, 15],
+			"step_size": 2,
+			"grid_offset": 3
+		},
+		"x": {
+			"distribution": "gaussian",
+			"extent": ["(v.worldx < 12) * 2", 16]
+		},
+		"y": 0
+	}
+}
