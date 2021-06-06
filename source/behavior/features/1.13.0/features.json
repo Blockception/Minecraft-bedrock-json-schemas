@@ -14,27 +14,27 @@
       "title": "Format Version"
     },
     "minecraft:aggregate_feature": { "$ref": "./features/minecraft.aggregate_feature.json" },
-    "minecraft:beards_and_shavers": { "$ref": "./minecraft:beards_and_shaversfeatures/minecraft.beards_and_shavers.json" },
-    "minecraft:cave_carver_feature": { "$ref": "./minecraft:cave_carver_feature/minecraft.cave_carver_feature.json" },
-    "minecraft:conditional_list": { "$ref": "./minecraft:conditional_listfeatures/minecraft.conditional_list.json" },
-    "minecraft:geode_feature": { "$ref": "./minecraft:geode_feature/minecraft.geode_feature.json" },
-    "minecraft:growing_plant_feature": { "$ref": "./minecraft:growing_plant_feature/minecraft.growing_plant_feature.json" },
-    "minecraft:hell_cave_carver_feature": { "$ref": "./minecraft:hell_cave_carver_feature/minecraft.hell_cave_carver_feature.json" },
-    "minecraft:multiface_feature": { "$ref": "./minecraft:multiface_feature/minecraft.multiface_feature.json" },
-    "minecraft:ore_feature": { "$ref": "./minecraft:ore_feature/minecraft.ore_feature.json" },
-    "minecraft:rect_layout": { "$ref": "./minecraft:rect_layoutfeatures/minecraft.rect_layout.json" },
-    "minecraft:scan_surface": { "$ref": "./minecraft:scan_surfacefeatures/minecraft.scan_surface.json" },
-    "minecraft:scatter_feature": { "$ref": "./minecraft:scatter_feature/minecraft.scatter_feature.json" },
-    "minecraft:search_feature": { "$ref": "./minecraft:search_feature/minecraft.search_feature.json" },
-    "minecraft:sequence_feature": { "$ref": "./minecraft:sequence_feature/minecraft.sequence_feature.json" },
-    "minecraft:single_block_feature": { "$ref": "./minecraft:single_block_feature/minecraft.single_block_feature.json" },
-    "minecraft:snap_to_surface_feature": { "$ref": "./minecraft:snap_to_surface_feature/minecraft.snap_to_surface_feature.json" },
-    "minecraft:structure_template_feature": { "$ref": "./minecraft:structure_template_feature/minecraft.structure_template_feature.json" },
-    "minecraft:tree_feature": { "$ref": "./minecraft:tree_feature/minecraft.tree_feature.json" },
+    "minecraft:beards_and_shavers": { "$ref": "./features/minecraft.beards_and_shavers.json" },
+    "minecraft:cave_carver_feature": { "$ref": "./features/minecraft.cave_carver_feature.json" },
+    "minecraft:conditional_list": { "$ref": ".features/minecraft.conditional_list.json" },
+    "minecraft:geode_feature": { "$ref": "./features/minecraft.geode_feature.json" },
+    "minecraft:growing_plant_feature": { "$ref": "./features/minecraft.growing_plant_feature.json" },
+    "minecraft:hell_cave_carver_feature": { "$ref": "./features/minecraft.hell_cave_carver_feature.json" },
+    "minecraft:multiface_feature": { "$ref": "./features/minecraft.multiface_feature.json" },
+    "minecraft:ore_feature": { "$ref": "./features/minecraft.ore_feature.json" },
+    "minecraft:rect_layout": { "$ref": "./features/minecraft.rect_layout.json" },
+    "minecraft:scan_surface": { "$ref": "./features/minecraft.scan_surface.json" },
+    "minecraft:scatter_feature": { "$ref": "./features/minecraft.scatter_feature.json" },
+    "minecraft:search_feature": { "$ref": "./features/minecraft.search_feature.json" },
+    "minecraft:sequence_feature": { "$ref": "./features/minecraft.sequence_feature.json" },
+    "minecraft:single_block_feature": { "$ref": "./features/minecraft.single_block_feature.json" },
+    "minecraft:snap_to_surface_feature": { "$ref": "./features/minecraft.snap_to_surface_feature.json" },
+    "minecraft:structure_template_feature": { "$ref": "./features/minecraft.structure_template_feature.json" },
+    "minecraft:tree_feature": { "$ref": "./features/minecraft.tree_feature.json" },
     "minecraft:underwater_cave_carver_feature": {
-      "$ref": "./minecraft:underwater_cave_carver_feature/minecraft.underwater_cave_carver_feature.json"
+      "$ref": "./features/minecraft.underwater_cave_carver_feature.json"
     },
-    "minecraft:vegetation_patch_feature": { "$ref": "./minecraft:vegetation_patch_feature/minecraft.vegetation_patch_feature.json" },
-    "minecraft:weighted_random_feature": { "$ref": "./minecraft:weighted_random_feature/minecraft.weighted_random_feature.json" }
+    "minecraft:vegetation_patch_feature": { "$ref": "./features/minecraft.vegetation_patch_feature.json" },
+    "minecraft:weighted_random_feature": { "$ref": "./features/minecraft.weighted_random_feature.json" }
   }
 }
