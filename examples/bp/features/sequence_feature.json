@@ -1,0 +1,14 @@
+{
+	"format_version": "1.13.0",
+
+	"minecraft:sequence_feature": {
+		"description": {
+			"identifier": "sequence_features:sequence_feature"
+		},
+
+		"features": [
+			"tree_features:tree_feature",
+			"sequence_features:sequence_feature_planks"
+		]
+	}
+}

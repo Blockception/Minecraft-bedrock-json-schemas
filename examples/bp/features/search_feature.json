@@ -1,0 +1,16 @@
+{
+  "format_version": "1.13.0",
+  //The schema is exactly right; floats can be used for volume, but they're truncated as always, so indeed integers are the recommended type.
+  "minecraft:search_feature": {
+    "description": {
+      "identifier": "search_features:search_feature"
+    },
+    "places_feature": "search_features:search_feature_obsidian",
+    "search_volume": {
+      "min": [0, 30, 15],
+      "max": [0, 100, 15]
+    },
+    "search_axis": "-y",
+    "required_successes": 3
+  }
+}

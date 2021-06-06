@@ -1,0 +1,14 @@
+{
+  "format_version": "1.13.0",
+  //They're broken: always have been. They don't throw errors, but they don't reposition based on input/output. No errors are thrown, it just doesn't do its job. The schema is correct.
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "sequence_features:sequence_feature_planks"
+    },
+
+    "places_block": "minecraft:planks",
+
+    "enforce_placement_rules": false,
+    "enforce_survivability_rules": false
+  }
+}

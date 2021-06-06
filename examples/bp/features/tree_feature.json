@@ -1,0 +1,45 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:tree_feature": {
+		"description": {
+			"identifier": "tree_features:tree_feature"
+		},
+
+		"base_block": [
+			"minecraft:dirt",
+			"minecraft:coarse_dirt"
+		],
+		"base_cluster": {
+			"num_clusters": 4,
+			"cluster_radius": 3,
+			"may_replace": ["minecraft:air"]
+		},
+
+		"may_replace": ["minecraft:air"],
+
+		"fancy_trunk": {
+			"trunk_block": "minecraft:log",
+
+			"trunk_height": {
+				"base": 24,
+				"variance": 1,
+				"scale": 1
+			},
+			"trunk_width": 3,
+			"width_scale": 2,
+
+			"foliage_altitude_factor": 0.5,
+			"branches": {
+				"slope": 0.33,
+				"density": 0.25,
+				"min_altitude_factor": 0
+			}
+		},
+
+		"fancy_canopy": {
+			"height": 3,
+			"radius": 4,
+			"leaf_block": "minecraft:leaves"
+		}
+	}
+}
