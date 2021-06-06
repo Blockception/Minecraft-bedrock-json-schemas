@@ -82,7 +82,21 @@
             "placement_pass": {
               "title": "Placement pass",
               "description": "When the feature should be placed relative to others. Earlier passes in the list are guaranteed to occur before later passes. Order is not guaranteed within each pass.",
-              "type": "string"
+              "type": "string",
+              "enum": [
+                "pregeneration_pass",
+                "first_pass",
+                "before_underground_pass",
+                "underground_pass",
+                "after_underground_pass",
+                "before_surface_pass",
+                "surface_pass",
+                "after_surface_pass",
+                "before_sky_pass",
+                "sky_pass",
+                "after_sky_pass",
+                "final_pass"
+              ]
             },
             "minecraft:biome_filter": {
               "title": "Placement pass",
