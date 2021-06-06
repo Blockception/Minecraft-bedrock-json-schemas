@@ -225,6 +225,38 @@
     },
     {
       "fileMatch": [
+        "behavior_packs/*/features/*.json",
+        "*behavior*pack*/features/*.json",
+        "*Behavior*Pack*/features/*.json",
+        "*BP*/features/*.json",
+        "*bp*/features/*.json",
+        "behavior_packs/*/features/**/*.json",
+        "*behavior*pack*/features/**/*.json",
+        "*Behavior*Pack*/features/**/*.json",
+        "*BP*/features/**/*.json",
+        "*bp*/features/**/*.json",
+        "*.feature.json"
+      ],
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/minecraft-bedrock-schemas/behavior/features/features.json"
+    },
+    {
+      "fileMatch": [
+        "behavior_packs/*/feature_rules/*.json",
+        "*behavior*pack*/feature_rules/*.json",
+        "*Behavior*Pack*/feature_rules/*.json",
+        "*BP*/feature_rules/*.json",
+        "*bp*/feature_rules/*.json",
+        "behavior_packs/*/feature_rules/**/*.json",
+        "*behavior*pack*/feature_rules/**/*.json",
+        "*Behavior*Pack*/feature_rules/**/*.json",
+        "*BP*/feature_rules/**/*.json",
+        "*bp*/feature_rules/**/*.json",
+        "*.feature_rule.json"
+      ],
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/minecraft-bedrock-schemas/behavior/feature_rules/feature_rules.json"
+    },
+    {
+      "fileMatch": [
         "behavior_packs/*/items/*.json",
         "*behavior*pack*/items/*.json",
         "*Behavior*Pack*/items/*.json",
