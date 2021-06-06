@@ -36,7 +36,8 @@ jobs:
           cd ${{github.workspace}}
           npx prettier --write "source/**/*.json" --config ${{github.workspace}}/scripts/json.prettierrc.json
           
-      - name: Commiting
+      - name: Commiting      
+        continue-on-error: true
         run: |
          git add .
          git config --global user.email "Bot@Blockception.com"
