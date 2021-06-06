@@ -1,23 +1,23 @@
 {
-	"format_version": "1.13.0",
+  "format_version": "1.13.0",
 
-	"minecraft:feature_rules": {
-		"description": {
-			"identifier": "tree_features:tree_feature_placement",
-			"places_feature": "tree_features:tree_feature"
-		},
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "tree_features:tree_feature_placement",
+      "places_feature": "tree_features:tree_feature"
+    },
 
-		"conditions": {
-			"placement_pass": "final_pass"
-		},
+    "conditions": {
+      "placement_pass": "final_pass"
+    },
 
-		"distribution": {
-			"iterations": 1,
-			"scatter_chance": 2,
+    "distribution": {
+      "iterations": 1,
+      "scatter_chance": 2,
 
-			"x": 0,
-			"z": 0,
-			"y": 90
-		}
-	}
+      "x": 0,
+      "z": 0,
+      "y": 90
+    }
+  }
 }

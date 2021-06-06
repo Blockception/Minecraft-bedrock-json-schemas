@@ -1,6 +1,7 @@
 # Minecraft-bedrock-json-schemas
 
 [![Compress Json Schemas](https://github.com/Blockception/Minecraft-bedrock-json-schemas/actions/workflows/compress-json-schemas.yml/badge.svg?branch=main&event=push)](https://github.com/Blockception/Minecraft-bedrock-json-schemas/actions/workflows/compress-json-schemas.yml)
+[![Format json files](https://github.com/Blockception/Minecraft-bedrock-json-schemas/actions/workflows/format-json-files.yml/badge.svg?branch=main&event=push)](https://github.com/Blockception/Minecraft-bedrock-json-schemas/actions/workflows/format-json-files.yml)
 
 The json validation schema files for Minecraft bedrock
 
@@ -15,8 +16,8 @@ The json validation schema files for Minecraft bedrock
 
 ## Contributing
 
-Any changes to the schemas are to be done through the source files in the folder source. these get converted and compressed through an action into smaller schemas. On other matters
-follow the [Contribution guide](CONTRIBUTING.md)
+Any changes to the schemas are to be done through the source files in the folder source. these get converted and compressed through an action into
+smaller schemas. On other matters follow the [Contribution guide](CONTRIBUTING.md)
 
 ## Manual Usage
 
