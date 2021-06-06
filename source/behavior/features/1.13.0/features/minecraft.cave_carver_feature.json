@@ -1,5 +1,7 @@
 {
   "type": "object",
+  "title": "Cave Carver Feature",
+  "description": "`minecraft:cave_carver_feature` carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8 radial pattern. This feature will also only work when placed specifically in the pass \"pregeneration_pass\".",
   "additionalProperties": false,
   "properties": {
     "description": {
@@ -14,6 +16,16 @@
           "$ref": "../../../../general/feature/identifier.json"
         }
       }
+    },
+    "fill_with": {
+      "title": "Fill with",
+      "description": "Reference to the block to fill the cave with.",
+      "$ref": "../../../../general/block/identifier.json"
+    },
+    "width_modifier": {
+      "title": "Width modifier",
+      "description": "How many blocks to increase the cave radius by, from the center point of the cave.",
+      "$ref": "../../../../general/molang/number.json"
     }
   }
 }
