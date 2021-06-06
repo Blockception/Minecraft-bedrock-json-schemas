@@ -257,7 +257,7 @@
           },
           "start_delay": {
             "title": "Start Delay",
-            "description": "How long to wait in seconds before playing this animation. Note that this expression is evaluated once before playing, and only re-evaluated if asked to play from the beginning again. A looping animation should use 'loop_delay' if it wants a delay between loops.",
+            "description": "How long to wait in seconds before playing this animation. Note that this expression is evaluated once before playing, and only re-evaluated if asked to play from the beginning again. A looping animation should use `loop_delay` if it wants a delay between loops.",
             "$ref": "../../../molang/number.json"
           },
           "sound_effects": {

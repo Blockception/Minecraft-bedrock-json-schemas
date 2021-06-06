@@ -15,12 +15,12 @@
         "name_filter": {
           "type": "string",
           "default": "",
-          "description": "List of special names that will cause the events defined in 'on_named' to fire",
+          "description": "List of special names that will cause the events defined in `on_named` to fire",
           "title": "Name Filter"
         },
         "on_named": {
           "$ref": "../types/event.json",
-          "description": "Event to be called when this entity acquires the name specified in 'name_filter'",
+          "description": "Event to be called when this entity acquires the name specified in `name_filter'",
           "title": "On Named"
         }
       }

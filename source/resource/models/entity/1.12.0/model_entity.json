@@ -110,7 +110,7 @@
                       },
                       "mirror": {
                         "type": "boolean",
-                        "description": "Mirrors this cube about the unrotated x axis (effectively flipping the east / west faces), overriding the bone's 'mirror' setting for this cube."
+                        "description": "Mirrors this cube about the unrotated x axis (effectively flipping the east / west faces), overriding the bone's `mirror` setting for this cube."
                       },
                       "origin": {
                         "type": "array",

@@ -9,17 +9,17 @@
           "properties": {
             "all_of": {
               "title": "All Of",
-              "description": "All tests in an 'all_of' group must pass in order for the group to pass.",
+              "description": "All tests in an `all_of` group must pass in order for the group to pass.",
               "$ref": "#/definitions/groups_spec"
             },
             "any_of": {
               "title": "Any Of",
-              "description": "One or more tests in an 'any_of' group must pass in order for the group to pass.",
+              "description": "One or more tests in an `any_of` group must pass in order for the group to pass.",
               "$ref": "#/definitions/groups_spec"
             },
             "none_of": {
               "title": "None Of",
-              "description": "All tests in a 'none_of' group must fail in order for the group to pass.",
+              "description": "All tests in a `none_of` group must fail in order for the group to pass.",
               "$ref": "#/definitions/groups_spec"
             }
           }
@@ -29,17 +29,17 @@
           "properties": {
             "all_of": {
               "title": "All Of",
-              "description": "All tests in an 'all_of' group must pass in order for the group to pass.",
+              "description": "All tests in an `all_of` group must pass in order for the group to pass.",
               "$ref": "#/definitions/groups_spec"
             },
             "any_of": {
               "title": "Any Of",
-              "description": "One or more tests in an 'any_of' group must pass in order for the group to pass.",
+              "description": "One or more tests in an `any_of` group must pass in order for the group to pass.",
               "$ref": "#/definitions/groups_spec"
             },
             "none_of": {
               "title": "None Of",
-              "description": "All tests in a 'none_of' group must fail in order for the group to pass.",
+              "description": "All tests in a `none_of` group must fail in order for the group to pass.",
               "$ref": "#/definitions/groups_spec"
             }
           },

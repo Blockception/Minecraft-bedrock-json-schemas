@@ -10,7 +10,7 @@
     "look_cooldown": {
       "$ref": "../types/range_number_type.json",
       "default": [0.0, 0.0],
-      "description": "The range for the random amount of time during which the entity is 'cooling down' and won't get angered or look for a target",
+      "description": "The range for the random amount of time during which the entity is `cooling down` and won't get angered or look for a target",
       "title": "TODO Title"
     },
     "look_event": {

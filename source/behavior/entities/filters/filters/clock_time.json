@@ -12,7 +12,7 @@
     },
     "operator": {
       "$ref": "./types/operator.json",
-      "description": "(Optional) The comparison to apply with 'value'.",
+      "description": "(Optional) The comparison to apply with `value'.",
       "default": "equals",
       "title": "Operator"
     },

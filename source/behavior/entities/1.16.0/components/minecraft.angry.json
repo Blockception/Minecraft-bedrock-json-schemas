@@ -36,7 +36,7 @@
     },
     "calm_event": {
       "$ref": "../types/event.json",
-      "description": "Event to run after the number of seconds specified in duration expires (when the entity stops being 'angry')",
+      "description": "Event to run after the number of seconds specified in duration expires (when the entity stops being `angry')",
       "title": "Calm Event"
     },
     "angry_sound": { "type": "string", "default": "", "description": "The sound event to play when the mob is angry", "title": "Angry Sound" },

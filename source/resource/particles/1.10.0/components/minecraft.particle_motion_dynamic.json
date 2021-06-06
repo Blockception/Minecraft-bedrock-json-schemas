@@ -16,7 +16,7 @@
     },
     "linear_drag_coefficient": {
       "$ref": "../../../../molang/number.json",
-      "description": "Using the equation: 'acceleration = -linear_drag_coefficient*velocity' where velocity is the current direction times speed. Think of this as air-drag. The higher the value, the more drag evaluated every frame",
+      "description": "Using the equation: `acceleration = -linear_drag_coefficient*velocity` where velocity is the current direction times speed. Think of this as air-drag. The higher the value, the more drag evaluated every frame",
       "default": 0,
       "title": "Linear Drag Coefficient"
     },

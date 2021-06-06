@@ -20,12 +20,12 @@
         "description": {
           "type": "object",
           "title": "Description",
-          "description": "The description contains a single 'identifier' string",
+          "description": "The description contains a single `identifier` string",
           "additionalProperties": false,
           "properties": {
             "identifier": {
               "title": "Identifier",
-              "description": "The unique identifier for this volume. It must be of the form 'namespace:name', where namespace cannot be 'minecraft'.",
+              "description": "The unique identifier for this volume. It must be of the form `namespace:name', where namespace cannot be `minecraft'.",
               "$ref": "../../../general/volume/identifier.json"
             }
           }
@@ -44,7 +44,7 @@
               "properties": {
                 "dimension": {
                   "type": "string",
-                  "description": "The name of the dimension the bounding box will exist in: one of 'overworld', 'nether' or 'the end'.",
+                  "description": "The name of the dimension the bounding box will exist in: one of `overworld', `nether` or `the end'.",
                   "title": "Dimension",
                   "enum": ["overworld", "nether", "the end"]
                 },

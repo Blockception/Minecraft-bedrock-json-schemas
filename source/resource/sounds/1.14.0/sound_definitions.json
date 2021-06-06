@@ -9,7 +9,7 @@
       "$id": "SoundFilepath",
       "type": "string",
       "title": "Sound Filepath Schema",
-      "description": "The filepath to the sound, starts with 'sounds/'",
+      "description": "The filepath to the sound, starts with `sounds/'",
       "pattern": "(^sounds/.*$|^$)",
       "additionalItems": true
     },

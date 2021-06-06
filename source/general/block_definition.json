@@ -3,7 +3,7 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "name": { "title": "Name", "description": "The block id, for example: 'minecraft:air'", "type": "string" },
+    "name": { "title": "Name", "description": "The block id, for example: `minecraft:air'", "type": "string" },
     "states": {
       "title": "States",
       "description": "The block states",

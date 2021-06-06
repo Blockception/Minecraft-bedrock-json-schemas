@@ -27,13 +27,13 @@
       "properties": {
         "fog_start": {
           "title": "Fog Start",
-          "description": "The distance from the player that the fog will begin to appear. 'fog_start' must be less than or equal to 'fog_end'.",
+          "description": "The distance from the player that the fog will begin to appear. `fog_start` must be less than or equal to `fog_end'.",
           "type": "number",
           "minimum": 0
         },
         "fog_end": {
           "title": "Fog End",
-          "description": "The distance from the player that the fog will become fully opaque. 'fog_end' must be greater than or equal to 'fog_start'.",
+          "description": "The distance from the player that the fog will become fully opaque. `fog_end` must be greater than or equal to `fog_start'.",
           "type": "number",
           "minimum": 0
         },
@@ -68,7 +68,7 @@
         },
         "zero_density_height": {
           "title": "Zero Density Height",
-          "description": "The height in blocks that the ground fog will be completely transparent and begin to appear. This value needs to be at least 1 higher than 'max_density_height'.",
+          "description": "The height in blocks that the ground fog will be completely transparent and begin to appear. This value needs to be at least 1 higher than `max_density_height'.",
           "minimum": 0,
           "maximum": 128,
           "type": "number"

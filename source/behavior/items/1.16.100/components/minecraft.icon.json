@@ -16,7 +16,7 @@
     "texture": {
       "type": "string",
       "title": "Texture",
-      "description": "The key from the resource_pack/textures/item_texture.json 'texture_data' object associated with the texture file Example: blaze_powder."
+      "description": "The key from the resource_pack/textures/item_texture.json `texture_data` object associated with the texture file Example: blaze_powder."
     }
   }
 }

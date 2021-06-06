@@ -41,7 +41,7 @@
             "enable_attachables": { "type": "boolean", "description": "Whether or not attachables are enaboled", "title": "Enable Attachables" },
             "geometry": {
               "title": "Geometry",
-              "description": "The reference to defined geometries in '<resource pack>/models/'",
+              "description": "The reference to defined geometries in `<resource pack>/models/'",
               "type": "object",
               "propertyNames": { "pattern": "[a-zA-Z0-9_\\.\\-]+" },
               "minProperties": 1,

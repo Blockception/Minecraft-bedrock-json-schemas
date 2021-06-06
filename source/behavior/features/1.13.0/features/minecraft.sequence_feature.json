@@ -1,6 +1,9 @@
 {
+  "title": "Sequence Feature",
+  "description": "`minecraft:sequence_feature` places a collection of features sequentially, in the order they appear in data. The output position of the previous feature is used as the input position for the next. For example, a tree feature is placed at (0, 0, 0) and places blocks up to (0, 10, 0). The next feature in the sequence begins at (0, 10, 0).\nSucceeds if: All features in the sequence are successfully placed.\nFails if: Any feature in the sequence fails to be placed. Features that have not yet been placed at the time of failure are skipped.",
   "type": "object",
   "additionalProperties": false,
+  "required": ["description", "features"],
   "properties": {
     "description": {
       "title": "Description",
@@ -9,10 +12,21 @@
       "properties": {
         "identifier": {
           "title": "Identifier",
-          "description": "The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.",
+          "description": "The name of this feature in the form `namespace_name:feature_name`. `feature_name` must match the filename.",
           "type": "string",
           "$ref": "../../../../general/feature/identifier.json"
         }
+      }
+    },
+    "features": {
+      "title": "Features",
+      "description": "List of features to be placed in sequence. The output position of the previous feature is used as the input position to the next.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "title": "Feature",
+        "description": "A feature to be placed in sequence. The output position of the previous feature is used as the input position to the next.",
+        "$ref": "../../../../general/feature/identifier.json"
       }
     }
   }

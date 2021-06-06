@@ -33,7 +33,7 @@
       "title": "Breed Cooldown"
     },
     "breed_items": {
-      "description": "The list of items that can be used to get the entity into the 'love' state",
+      "description": "The list of items that can be used to get the entity into the `love` state",
       "title": "Breed Items",
       "oneOf": [{ "type": "array", "items": { "type": "string" } }, { "type": "string" }]
     },
@@ -50,7 +50,7 @@
       "description": "Determines how likely the baby of parents with the same variant will deny that variant and take a random variant within the given range instead.",
       "additionalProperties": false,
       "properties": {
-        "chance": { "type": "number", "default": 0, "description": "The percentage chance of denying the parents' variant.", "title": "Chance" },
+        "chance": { "type": "number", "default": 0, "description": "The percentage chance of denying the parents` variant.", "title": "Chance" },
         "max_variant": { "type": "integer", "default": 0, "description": "The inclusive maximum of the variant range.", "title": "Max Variant" },
         "min_variant": { "type": "integer", "default": 0, "description": "The inclusive minimum of the variant range.", "title": "Min Variant" }
       },
@@ -58,10 +58,10 @@
     },
     "environment_requirements": {
       "type": "array",
-      "description": "The list of nearby block requirements to get the entity into the 'love' state.",
+      "description": "The list of nearby block requirements to get the entity into the `love` state.",
       "items": {
         "type": "object",
-        "description": "A nearby block requirements to get the entity into the 'love' state.",
+        "description": "A nearby block requirements to get the entity into the `love` state.",
         "properties": {
           "blocks": {
             "type": "array",

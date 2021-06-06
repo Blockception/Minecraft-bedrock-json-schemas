@@ -59,11 +59,11 @@
                 },
                 "on_use_action": {
                   "type": "string",
-                  "description": "'chorus_teleport' or 'none'.",
+                  "description": "'chorus_teleport` or `none'.",
                   "enum": ["chorus_teleport", "suspicious_stew_effect", "none"]
                 },
                 "on_use_range": { "$ref": "../../../general/array_3_number.json" },
-                "cooldown_type": { "type": "string", "description": "'chorusfruit' or 'none'.", "enum": ["chorusfruit", "none"] },
+                "cooldown_type": { "type": "string", "description": "'chorusfruit` or `none'.", "enum": ["chorusfruit", "none"] },
                 "cooldown_time": { "type": "integer", "description": "Cooldown time in ticks." },
                 "can_always_eat": { "type": "boolean", "description": "Can always eat this item? true or false." },
                 "effects": {

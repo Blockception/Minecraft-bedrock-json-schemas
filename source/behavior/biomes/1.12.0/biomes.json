@@ -6,7 +6,7 @@
   "additionalProperties": {
     "title": "Tag",
     "type": "object",
-    "description": "Components with no namespace are treated as 'tags': any name consisting of alphanumeric characters, '.' and '_' is permitted; the tag is attached to the biome so that either code or data may check for its existence; tag components may not have member fields.",
+    "description": "Components with no namespace are treated as `tags': any name consisting of alphanumeric characters, `.` and `_` is permitted; the tag is attached to the biome so that either code or data may check for its existence; tag components may not have member fields.",
     "additionalProperties": false
   },
   "properties": {

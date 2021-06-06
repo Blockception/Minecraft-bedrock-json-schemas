@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.peek",
-  "description": "Defines the entity's 'peek' behavior, defining the events that should be called during it",
+  "description": "Defines the entity's `peek` behavior, defining the events that should be called during it",
   "type": "object",
   "title": "Peek 1.8.0",
   "additionalProperties": false,

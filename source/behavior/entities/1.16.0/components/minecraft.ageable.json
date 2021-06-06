@@ -20,7 +20,7 @@
       "title": "TODO Title"
     },
     "feed_items": {
-      "description": "List of items that can be fed to the entity. Includes 'item' for the item name and 'growth' to define how much time it grows up by",
+      "description": "List of items that can be fed to the entity. Includes `item` for the item name and `growth` to define how much time it grows up by",
       "oneOf": [
         { "type": "array", "items": { "$ref": "../../../../general/item/identifier.json" } },
         {

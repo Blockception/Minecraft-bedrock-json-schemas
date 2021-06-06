@@ -10,8 +10,8 @@
       "type": "object",
       "description": "Describes the special names for this entity and the events to call when the entity acquires those names",
       "properties": {
-        "on_named": { "type": "string", "description": "Event to be called when this entity acquires the name specified in 'name_filter'" },
-        "name_filter": { "type": "string", "description": "List of special names that will cause the events defined in 'on_named' to fire" }
+        "on_named": { "type": "string", "description": "Event to be called when this entity acquires the name specified in `name_filter'" },
+        "name_filter": { "type": "string", "description": "List of special names that will cause the events defined in `on_named` to fire" }
       },
       "title": "TODO Title",
       "additionalProperties": false

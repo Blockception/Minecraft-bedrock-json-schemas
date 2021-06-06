@@ -106,7 +106,7 @@
       "description": "If true, the projectile will be treated like a splash potion",
       "title": "TODO Title"
     },
-    "splashRange": { "type": "number", "default": 4, "description": "Radius in blocks of the 'splash' effect", "title": "TODO Title" },
+    "splashRange": { "type": "number", "default": 4, "description": "Radius in blocks of the `splash` effect", "title": "TODO Title" },
     "uncertaintyBase": {
       "type": "number",
       "default": 0,

@@ -8,7 +8,7 @@
     "effect": {
       "type": "string",
       "default": "",
-      "description": "The mob effect to remove. Use 'all' to remove all mob effects from target.",
+      "description": "The mob effect to remove. Use `all` to remove all mob effects from target.",
       "title": "Effect"
     },
     "target": { "type": "string", "default": "self", "description": "The target context to execute against.", "title": "Target" }

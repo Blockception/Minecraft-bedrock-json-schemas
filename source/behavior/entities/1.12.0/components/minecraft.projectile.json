@@ -256,7 +256,7 @@
       "description": "If true, the projectile will be treated like a splash potion",
       "title": "Splash Potion"
     },
-    "splash_range": { "type": "number", "default": 4, "description": "Radius in blocks of the 'splash' effect", "title": "Splash Range" },
+    "splash_range": { "type": "number", "default": 4, "description": "Radius in blocks of the `splash` effect", "title": "Splash Range" },
     "stop_on_hurt": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
     "uncertainty_base": {
       "type": "number",

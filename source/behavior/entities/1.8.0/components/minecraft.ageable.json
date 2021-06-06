@@ -13,7 +13,7 @@
       "title": "Duration"
     },
     "feedItems": {
-      "description": "List of items that can be fed to the entity. Includes 'item' for the item name and 'growth' to define how much time it grows up by",
+      "description": "List of items that can be fed to the entity. Includes `item` for the item name and `growth` to define how much time it grows up by",
       "items": {
         "oneOf": [
           {

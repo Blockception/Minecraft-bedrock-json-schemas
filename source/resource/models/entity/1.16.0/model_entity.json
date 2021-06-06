@@ -97,7 +97,7 @@
           "bones": {
             "title": "Bones",
             "type": "array",
-            "description": "Bones define the 'skeleton' of the mob: the parts that can be animated, and to which geometry and other bones are attached.",
+            "description": "Bones define the `skeleton` of the mob: the parts that can be animated, and to which geometry and other bones are attached.",
             "items": {
               "additionalProperties": false,
               "type": "object",
@@ -124,7 +124,7 @@
                       },
                       "mirror": {
                         "type": "boolean",
-                        "description": "Mirrors this cube about the unrotated x axis (effectively flipping the east / west faces), overriding the bone's 'mirror' setting for this cube."
+                        "description": "Mirrors this cube about the unrotated x axis (effectively flipping the east / west faces), overriding the bone's `mirror` setting for this cube."
                       },
                       "origin": {
                         "type": "array",

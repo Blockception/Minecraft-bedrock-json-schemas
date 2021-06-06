@@ -23,7 +23,7 @@
     "soft_distance": {
       "type": "number",
       "default": 4,
-      "description": "Distance in blocks at which the 'spring' effect starts acting to keep this entity close to the entity that leashed it.",
+      "description": "Distance in blocks at which the `spring` effect starts acting to keep this entity close to the entity that leashed it.",
       "title": "Soft Distance"
     }
   }

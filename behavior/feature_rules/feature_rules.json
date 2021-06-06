@@ -1,1 +1,1455 @@
-﻿{"$id":"blockception.minecraft.behavior.feature_rules","examples":[{"format_version":"1.13.0","minecraft:feature_rules":{"minecraft:ore_feature":{"description":{"identifier":"example:foo","places_feature":"minecraft:legacy:birch_forest_tree_feature"},"conditions":{}}}}],"allOf":[{"if":{"properties":{"format_version":{"type":"string","const":"1.13.0"}}},"then":{"$ref":"#/definitions/A"}},{"properties":{"format_version":{"$ref":"#/definitions/HE"}}}],"definitions":{"A_coord_dist":{"title":"","description":"","oneOf":[{"$ref":"#/definitions/B","description":"Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below."},{"type":"object","description":"Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.","additionalProperties":false,"examples":[{"numerator":1,"denominator":1}],"properties":{"numerator":{"title":"Numerator","description":"UNDOCUMENTATED","type":"number","minimum":1},"denominator":{"title":"Denominator","description":"UNDOCUMENTATED","type":"number","minimum":1}}}]},"B":{"title":"Molang Number","description":"The minecraft molang definition that results in a float","anyOf":[{"type":"string","minLength":0},{"type":"number"}]},"C":{"type":"string","title":"Entity Identifier 1.8.0","description":"The minecraft entity identifier","examples":["namespace:entity_name"],"pattern":"^[0-9a-zA-Z:_\\.\\-]+$"},"D_filters_spec":{"oneOf":[{"propertyNames":{"enum":["all_of","any_of","none_of"]},"properties":{"all_of":{"title":"All Of","description":"All tests in an 'all_of' group must pass in order for the group to pass.","$ref":"#/definitions/D_groups_spec"},"any_of":{"title":"Any Of","description":"One or more tests in an 'any_of' group must pass in order for the group to pass.","$ref":"#/definitions/D_groups_spec"},"none_of":{"title":"None Of","description":"All tests in a 'none_of' group must fail in order for the group to pass.","$ref":"#/definitions/D_groups_spec"}}},{"required":["test"],"properties":{"all_of":{"title":"All Of","description":"All tests in an 'all_of' group must pass in order for the group to pass.","$ref":"#/definitions/D_groups_spec"},"any_of":{"title":"Any Of","description":"One or more tests in an 'any_of' group must pass in order for the group to pass.","$ref":"#/definitions/D_groups_spec"},"none_of":{"title":"None Of","description":"All tests in a 'none_of' group must fail in order for the group to pass.","$ref":"#/definitions/D_groups_spec"}},"allOf":[{"if":{"properties":{"test":{"const":"clock_time"}}},"then":{"$ref":"#/definitions/E"}},{"if":{"properties":{"test":{"const":"distance_to_nearest_player"}}},"then":{"$ref":"#/definitions/H"}},{"if":{"properties":{"test":{"const":"has_ability"}}},"then":{"$ref":"#/definitions/I"}},{"if":{"properties":{"test":{"const":"has_biome_tag"}}},"then":{"$ref":"#/definitions/J"}},{"if":{"properties":{"test":{"const":"has_component"}}},"then":{"$ref":"#/definitions/BA"}},{"if":{"properties":{"test":{"const":"has_container_open"}}},"then":{"$ref":"#/definitions/BB"}},{"if":{"properties":{"test":{"const":"has_damage"}}},"then":{"$ref":"#/definitions/BC"}},{"if":{"properties":{"test":{"const":"has_equipment"}}},"then":{"$ref":"#/definitions/BE"}},{"if":{"properties":{"test":{"const":"has_mob_effect"}}},"then":{"$ref":"#/definitions/BG"}},{"if":{"properties":{"test":{"const":"has_ranged_weapon"}}},"then":{"$ref":"#/definitions/BH"}},{"if":{"properties":{"test":{"const":"has_tag"}}},"then":{"$ref":"#/definitions/BI"}},{"if":{"properties":{"test":{"const":"has_target"}}},"then":{"$ref":"#/definitions/BJ"}},{"if":{"properties":{"test":{"const":"has_trade_supply"}}},"then":{"$ref":"#/definitions/CA"}},{"if":{"properties":{"test":{"const":"hourly_clock_time"}}},"then":{"$ref":"#/definitions/CB"}},{"if":{"properties":{"test":{"const":"in_block"}}},"then":{"$ref":"#/definitions/CC"}},{"if":{"properties":{"test":{"const":"in_caravan"}}},"then":{"$ref":"#/definitions/CD"}},{"if":{"properties":{"test":{"const":"in_clouds"}}},"then":{"$ref":"#/definitions/CE"}},{"if":{"properties":{"test":{"const":"in_lava"}}},"then":{"$ref":"#/definitions/CF"}},{"if":{"properties":{"test":{"const":"in_nether"}}},"then":{"$ref":"#/definitions/CG"}},{"if":{"properties":{"test":{"const":"in_water"}}},"then":{"$ref":"#/definitions/CH"}},{"if":{"properties":{"test":{"const":"in_water_or_rain"}}},"then":{"$ref":"#/definitions/CI"}},{"if":{"properties":{"test":{"const":"in_contact_with_water"}}},"then":{"$ref":"#/definitions/CJ"}},{"if":{"properties":{"test":{"const":"inactivity_timer"}}},"then":{"$ref":"#/definitions/DA"}},{"if":{"properties":{"test":{"const":"is_altitude"}}},"then":{"$ref":"#/definitions/DB"}},{"if":{"properties":{"test":{"const":"is_avoiding_mobs"}}},"then":{"$ref":"#/definitions/DC"}},{"if":{"properties":{"test":{"const":"is_biome"}}},"then":{"$ref":"#/definitions/DD"}},{"if":{"properties":{"test":{"const":"is_block"}}},"then":{"$ref":"#/definitions/DE"}},{"if":{"properties":{"test":{"const":"is_brightness"}}},"then":{"$ref":"#/definitions/DF"}},{"if":{"properties":{"test":{"const":"is_climbing"}}},"then":{"$ref":"#/definitions/DG"}},{"if":{"properties":{"test":{"const":"is_color"}}},"then":{"$ref":"#/definitions/DH"}},{"if":{"properties":{"test":{"const":"is_daytime"}}},"then":{"$ref":"#/definitions/DI"}},{"if":{"properties":{"test":{"const":"is_difficulty"}}},"then":{"$ref":"#/definitions/DJ"}},{"if":{"properties":{"test":{"const":"is_family"}}},"then":{"$ref":"#/definitions/EA"}},{"if":{"properties":{"test":{"const":"is_game_rule"}}},"then":{"$ref":"#/definitions/EB"}},{"if":{"properties":{"test":{"const":"is_humid"}}},"then":{"$ref":"#/definitions/EC"}},{"if":{"properties":{"test":{"const":"is_immobile"}}},"then":{"$ref":"#/definitions/ED"}},{"if":{"properties":{"test":{"const":"is_in_village"}}},"then":{"$ref":"#/definitions/EE"}},{"if":{"properties":{"test":{"const":"is_leashed"}}},"then":{"$ref":"#/definitions/EF"}},{"if":{"properties":{"test":{"const":"is_leashed_to"}}},"then":{"$ref":"#/definitions/EG"}},{"if":{"properties":{"test":{"const":"is_mark_variant"}}},"then":{"$ref":"#/definitions/EH"}},{"if":{"properties":{"test":{"const":"is_moving"}}},"then":{"$ref":"#/definitions/EI"}},{"if":{"properties":{"test":{"const":"is_owner"}}},"then":{"$ref":"#/definitions/EJ"}},{"if":{"properties":{"test":{"const":"is_persistent"}}},"then":{"$ref":"#/definitions/FA"}},{"if":{"properties":{"test":{"const":"is_riding"}}},"then":{"$ref":"#/definitions/FB"}},{"if":{"properties":{"test":{"const":"is_skin_id"}}},"then":{"$ref":"#/definitions/FC"}},{"if":{"properties":{"test":{"const":"is_sleeping"}}},"then":{"$ref":"#/definitions/FD"}},{"if":{"properties":{"test":{"const":"is_sneaking"}}},"then":{"$ref":"#/definitions/FE"}},{"if":{"properties":{"test":{"const":"is_snow_covered"}}},"then":{"$ref":"#/definitions/FF"}},{"if":{"properties":{"test":{"const":"is_target"}}},"then":{"$ref":"#/definitions/FG"}},{"if":{"properties":{"test":{"const":"is_temperature_type"}}},"then":{"$ref":"#/definitions/FH"}},{"if":{"properties":{"test":{"const":"is_temperature_value"}}},"then":{"$ref":"#/definitions/FI"}},{"if":{"properties":{"test":{"const":"is_underground"}}},"then":{"$ref":"#/definitions/FJ"}},{"if":{"properties":{"test":{"const":"is_underwater"}}},"then":{"$ref":"#/definitions/GA"}},{"if":{"properties":{"test":{"const":"is_variant"}}},"then":{"$ref":"#/definitions/GB"}},{"if":{"properties":{"test":{"const":"is_visible"}}},"then":{"$ref":"#/definitions/GC"}},{"if":{"properties":{"test":{"const":"light_level"}}},"then":{"$ref":"#/definitions/GD"}},{"if":{"properties":{"test":{"const":"moon_intensity"}}},"then":{"$ref":"#/definitions/GE"}},{"if":{"properties":{"test":{"const":"moon_phase"}}},"then":{"$ref":"#/definitions/GF"}},{"if":{"properties":{"test":{"const":"on_ground"}}},"then":{"$ref":"#/definitions/GG"}},{"if":{"properties":{"test":{"const":"on_ladder"}}},"then":{"$ref":"#/definitions/GH"}},{"if":{"properties":{"test":{"const":"random_chance"}}},"then":{"$ref":"#/definitions/GI"}},{"if":{"properties":{"test":{"const":"rider_count"}}},"then":{"$ref":"#/definitions/GJ"}},{"if":{"properties":{"test":{"const":"surface_mob"}}},"then":{"$ref":"#/definitions/HA"}},{"if":{"properties":{"test":{"const":"trusts"}}},"then":{"$ref":"#/definitions/HB"}},{"if":{"properties":{"test":{"const":"weather"}}},"then":{"$ref":"#/definitions/HC"}},{"if":{"properties":{"test":{"const":"weather_at_position"}}},"then":{"$ref":"#/definitions/HD"}},{"not":{"properties":{"test":{"const":"is_weather"}},"$comment":"DEPRECATED"}}]}]},"D_groups_spec":{"oneOf":[{"type":"array","items":{"$ref":"#/definitions/D_groups_spec"}},{"type":"object","$ref":"#/definitions/D_filters_spec"}]},"F":{"title":"Filters Operator","type":"string","description":"The comparison to apply with 'value'.","default":"equals","enum":["!=","<","<=","<>","=","==",">",">=","equals","not"]},"G":{"title":"Filters Subject","type":"string","description":"The subject of this filter test.","default":"self","enum":["block","other","parent","player","self","target","damager"]},"E":{"type":"object","title":"Filters Clock Time","description":"Compares the current 24 hour time with an int value in the range[0, 24000]","required":["value"],"properties":{"test":{"type":"string","title":"Test Property","description":"Compares the current 24 hour time with an int value in the range[0, 24000]"},"operator":{"$ref":"#/definitions/F","description":"(Optional) The comparison to apply with 'value'.","default":"equals","title":"Operator"},"subject":{"$ref":"#/definitions/G","description":"(Optional) The subject of this filter test.","default":"self","title":"Subject"},"value":{"type":"number","minimum":0,"maximum":240000,"description":"(Required) An integer value.","title":"Value"}}},"H":{"type":"object","title":"Filters Distance To Nearest Player","description":"Compares the distance to the nearest Player with a float value.","required":["value"],"properties":{"test":{"type":"string","title":"Test Property","description":"Compares the distance to the nearest Player with a float value."},"operator":{"$ref":"#/definitions/F","description":"(Optional) The comparison to apply with 'value'.","title":"Operator"},"subject":{"$ref":"#/definitions/G","description":"(Optional) The subject of this filter test.","title":"Subject"},"value":{"type":"number","description":"(Required) A floating point value.","title":"Value"}}},"I":{"type":"object","title":"Filters Has Ability","description":"Returns true when the subject entity has the named ability.","required":["value"],"properties":{"test":{"type":"string","title":"Test Property","description":"Returns true when the subject entity has the named ability."},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"type":"string","description":"(Required) The Ability type to test","enum":["flySpeed","flying","instabuild","invulnerable","lightning","mayfly","mute","noclip","walkSpeed","worldbuilder"],"title":"Value"}}},"J":{"type":"object","title":"Filters Has Biome Tag","description":"Tests whether the biome the subject is in has the specified tag.","required":["value"],"properties":{"test":{"type":"string","title":"Test Property","description":"Tests whether the biome the subject is in has the specified tag."},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"description":"(Required) The tag to look for","type":"string","title":"Value"}}},"BA":{"type":"object","title":"Filters Has Component","description":"Returns true when the subject entity contains the named component.","required":["value"],"properties":{"test":{"type":"string","title":"Test Property","description":"Returns true when the subject entity contains the named component."},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"type":"string","description":"TODO description: value","title":"Value"}}},"BB":{"type":"object","title":"Filters Has Container Open","description":"Returns true when the subject Player entity has opened a container.","properties":{"test":{"type":"string","title":"Test","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","enum":["true","false"]}],"title":"Value"}}},"BD":{"title":"Entity Damage Source","description":"The types of damage an entity can receive","type":"string","enum":["all","anvil","block_explosion","charging","contact","drowning","entity_attack","entity_explosion","fall","fatal","falling_block","fire","fire_tick","fireworks","fly_into_wall","freezing","lava","lightning","magic","magma","none","override","piston","projectile","starve","suffocation","suicide","temperature","thorns","void","wither"]},"BC":{"type":"object","title":"Filters Has Damage","description":"Returns true when the subject entity receives the named damage type.","required":["value"],"properties":{"test":{"type":"string","title":"Test Property","description":"Returns true when the subject entity receives the named damage type."},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"type":"string","description":"The Damage type to test","$ref":"#/definitions/BD","title":"Value"}}},"BF":{"type":"string","title":"Item Identifier 1.8.0","description":"The minecraft item identifier","pattern":"^[0-9a-zA-Z:_\\-\\.]+$"},"BE":{"type":"object","title":"Filters Has Equipment","description":"Tests for the presence of a named item in the designated slot of the subject entity.","required":["value"],"properties":{"test":{"type":"string","const":"has_equipment","description":"Tests for the presence of a named item in the designated slot of the subject entity.","title":"Test"},"domain":{"description":"The equipment location to test","default":"any","enum":["any","armor","feet","hand","head","leg","torso"],"title":"Domain"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"description":"The item name to look for","type":"string","$ref":"#/definitions/BF","title":"TODO Title"}}},"BG":{"type":"object","title":"Filters Has Mob Effect","description":"Tests whether the Subject has the specified mob effect.","required":["value"],"properties":{"test":{"type":"string","title":"Test Property","description":"Tests whether the Subject has the specified mob effect."},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"type":"string","description":"TODO description: value","title":"Value"}}},"BH":{"type":"object","title":"Filters Has Ranged Weapon","description":"Returns true when the subject entity is holding a ranged weapon like a bow or crossbow.","properties":{"test":{"type":"string","title":"Test","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","enum":["true","false"]}],"title":"Value"}}},"BI":{"type":"object","title":"Filters Has Tag","description":"Returns true if the subject entity has the tag provided.","required":["value"],"properties":{"test":{"type":"string","title":"Test Property","description":"Returns true if the subject entity has the tag provided."},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"type":"string","description":"The tag as a string","pattern":"[a-zA-Z0-9_]+","title":"Value"}}},"BJ":{"type":"object","title":"Filters Has Target","description":"Returns true if the subject entity has a valid target.","properties":{"test":{"type":"string","title":"Test","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","enum":["true","false"]}],"title":"Value"}}},"CA":{"type":"object","title":"Filters Has Trade Supply","description":"Tests whether the target has any trade supply left. Will return false if the target cannot be traded with.","properties":{"test":{"type":"string","title":"Test Property","description":"Tests whether the target has any trade supply left. Will return false if the target cannot be traded with."},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"title":"Value","description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","default":"true","enum":["true","false"]}]}}},"CB":{"type":"object","title":"Filters Hourly Clock Time","description":"Compares the current 24 hour time with an int value in the range[0, 24000]","required":["value"],"properties":{"test":{"type":"string","title":"Test Property","description":"Compares the current 24 hour time with an int value in the range[0, 24000]","const":"hourly_clock_time"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"type":"integer","description":"An integer value.","minimum":0,"maximum":24000,"title":"Value"}}},"CC":{"type":"object","title":"In block","description":"Returns true when the subject entity is inside a specified Block type.","properties":{"test":{"type":"string","title":"Test Property","description":"Returns true when the subject entity is inside a specified Block type."},"operator":{"$ref":"#/definitions/F","description":"(Optional) The comparison to apply with 'value'.","default":"equals","title":"Operator"},"subject":{"$ref":"#/definitions/G","description":"(Optional) The subject of this filter test.","default":"self","title":"Subject"},"value":{"type":"string","description":"(Optional) A string value.","title":"Value"}}},"CD":{"type":"object","title":"Filters In Caravan","description":"Returns true if the subject entity is in a caravan.","properties":{"test":{"type":"string","title":"Test Property","description":"Returns true if the subject entity is in a caravan."},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"title":"Value","description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","default":"true","enum":["true","false"]}]}}},"CE":{"type":"object","title":"Filters In Clouds","description":"Returns true when the subject entity is in the clouds.","properties":{"test":{"type":"string","title":"Test Property","description":"Returns true when the subject entity is in the clouds."},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"title":"Value","description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","default":"true","enum":["true","false"]}]}}},"CF":{"type":"object","title":"Filters In Lava","description":"Returns true when the subject entity is in lava.","properties":{"test":{"type":"string","title":"Test Property","description":"Returns true when the subject entity is in lava."},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"title":"Value","description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","default":"true","enum":["true","false"]}]}}},"CG":{"type":"object","title":"Filters In Nether","description":"Returns true when the subject entity is in Nether.","properties":{"test":{"type":"string","title":"Test","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","enum":["true","false"]}],"title":"Value"}}},"CH":{"type":"object","title":"Filters In Water","description":"Returns true when the subject entity is in water.","properties":{"test":{"type":"string","title":"Test Property","description":"Returns true when the subject entity is in water."},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"title":"Value","description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","default":"true","enum":["true","false"]}]}}},"CI":{"type":"object","title":"Filters In Water Or Rain","description":"Returns true when the subject entity is in water or rain.","properties":{"test":{"type":"string","title":"Test Property","description":"Returns true when the subject entity is in water or rain."},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"title":"Value","description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","default":"true","enum":["true","false"]}]}}},"CJ":{"type":"object","title":"In contact with water","description":"Returns true when the subject entity in contact with any water: water, rain, splash water bottle.","properties":{"test":{"type":"string","title":"Test Property","description":"Returns true when the subject entity in contact with any water: water, rain, splash water bottle."},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"title":"Value","description":"(Optional) true or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","default":"true","enum":["true","false"]}]}}},"DA":{"type":"object","title":"Filters Inactivity Timer","description":"Tests if the specified duration in seconds of inactivity for despawning has been reached.","required":["value"],"properties":{"test":{"type":"string","title":"Test","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"description":"The Family name to look for","type":"integer","title":"Value"}}},"DB":{"type":"object","title":"Filters Is Altitude","description":"Tests the current altitude against a provided value. 0= bedrock elevation.","required":["value"],"properties":{"test":{"type":"string","title":"Test Property","description":"Tests the current altitude against a provided value. 0= bedrock elevation."},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"type":"integer","description":"The altitude value to compare with","minimum":0,"title":"Value"}}},"DC":{"type":"object","title":"Filters Is Avoiding Mobs","description":"Returns true if the subject entity is fleeing from other mobs.","properties":{"test":{"type":"string","title":"Test Property","description":"Returns true if the subject entity is fleeing from other mobs."},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"title":"Value","description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","default":"true","enum":["true","false"]}]}}},"DD":{"type":"object","title":"Filters Is Biome","description":"Tests whether the Subject is currently in the named biome.","required":["value"],"properties":{"test":{"type":"string","title":"Test Property","description":"Tests whether the Subject is currently in the named biome."},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"description":"The Biome type to test","type":"string","enum":["beach","desert","extreme_hills","flat","forest","ice","jungle","mesa","mushroom_island","ocean","plain","river","savanna","stone_beach","swamp","taiga","the_end","the_nethe"],"title":"Value"}}},"DE":{"type":"object","title":"Filters Is Block","description":"Returns true when the block has the given name.","required":["value"],"properties":{"test":{"type":"string","title":"Test","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"description":"The Family name to look for","type":"string","title":"Value"}}},"DF":{"type":"object","title":"Filters Is Brightness","description":"Tests the current brightness against a provided value in the range (0.0f, 1.0f).","required":["value"],"properties":{"test":{"type":"string","title":"Test Property","description":"Tests the current brightness against a provided value in the range (0.0f, 1.0f)."},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"description":"The brightness value to compare with.","type":"number","minimum":0.0,"maximum":1.0,"title":"Value"}}},"DG":{"type":"object","title":"Filters Is Climbing","description":"Returns true if the subject entity is climbing.","properties":{"test":{"type":"string","title":"Test Property","description":"Returns true if the subject entity is climbing."},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"title":"Value","description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","default":"true","enum":["true","false"]}]}}},"DH":{"type":"object","title":"Filters Is Color","description":"Returns true if the subject entity is the named color.","required":["value"],"properties":{"test":{"type":"string","title":"Test Property","description":"Returns true if the subject entity is the named color."},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"description":"The Palette Color to test","type":"string","enum":["black","blue","brown","cyan","gray","green","light_blue","light_green","magenta","orange","pink","purple","red","silver","white","yello"],"title":"Value"}}},"DI":{"type":"object","title":"Filters Is Daytime","description":"Returns true during the daylight hours.","properties":{"test":{"type":"string","title":"Test Property","description":"Returns true during the daylight hours."},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"title":"Value","description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","default":"true","enum":["true","false"]}]}}},"DJ":{"type":"object","title":"Filters Is Difficulty","description":"Tests the current difficulty level of the game.","required":["value"],"properties":{"test":{"type":"string","title":"Test Property","description":"Tests the current difficulty level of the game."},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"description":"The game's difficulty level to test","type":"string","enum":["easy","hard","normal","peaceful"],"title":"Value"}}},"EA":{"type":"object","title":"Filters Is Family","description":"Returns true when the subject entity is a member of the named family.","required":["value"],"properties":{"test":{"type":"string","title":"Test Property","description":"Returns true when the subject entity is a member of the named family."},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"description":"The Family name to look for","type":"string","title":"Value"}}},"EB":{"type":"object","title":"Filters Is Game Rule","description":"TODO description:","required":["domain"],"properties":{"domain":{"description":"The Game Rule to test.","title":"Domain"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"description":"Tests whether a named game rule is active.","default":true,"type":"boolean","title":"Value"}}},"EC":{"type":"object","title":"Filters Is Humid","description":"Tests whether the Subject is in an area with humidity","properties":{"test":{"type":"string","title":"Test Property","description":"Tests whether the Subject is in an area with humidity"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"title":"Value","description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","default":"true","enum":["true","false"]}]}}},"ED":{"type":"object","title":"Filters Is Immobile","description":"Returns true if the subject entity is immobile. An entity is immobile if it lacks AI goals, has just changed dimensions or if it is a mob and has no health.","properties":{"test":{"type":"string","title":"Test Property","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"title":"Value","description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","default":"true","enum":["true","false"]}]}}},"EE":{"type":"object","title":"Filters Is In Village","description":"Tests whether the Subject is inside the bounds of a village.","properties":{"test":{"type":"string","title":"Test Property","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"title":"Value","description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","default":"true","enum":["true","false"]}]}}},"EF":{"type":"object","title":"Filters Is Leashed","description":"Returns true if the subject entity is leashed.","properties":{"test":{"type":"string","title":"Test Property","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"title":"Value","description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","default":"true","enum":["true","false"]}]}}},"EG":{"type":"object","title":"Filters Is Leashed To","description":"Returns true if the subject entity leashed to the calling entity.","properties":{"test":{"type":"string","title":"Test","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","enum":["true","false"]}],"title":"Value"}}},"EH":{"type":"object","title":"Filters Is Mark Variant","description":"Returns true if the subject entity is the mark variant number provided.","properties":{"test":{"type":"string","title":"Test Property","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"type":"integer","description":"The altitude value to compare with","minimum":0,"title":"Value"}},"additionalProperties":false},"EI":{"type":"object","title":"Filters Is Moving","description":"Returns true if the subject entity is moving.","properties":{"test":{"type":"string","title":"Test Property","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"title":"Value","description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","default":"true","enum":["true","false"]}]}}},"EJ":{"type":"object","title":"Filters Is Owner","description":"Returns true if the subject entity is the owner of the calling entity.","properties":{"test":{"type":"string","title":"Test Property","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"title":"Value","description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","default":"true","enum":["true","false"]}]}}},"FA":{"type":"object","title":"Filters Is Persistent","description":"Tests if the subject's persistence matches the bool value passed in.","properties":{"test":{"type":"string","title":"Test","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","enum":["true","false"]}],"title":"Value"}}},"FB":{"type":"object","title":"Filters Is Riding","description":"Returns true if the subject entity is riding on another entity.","properties":{"test":{"type":"string","title":"Test Property","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"title":"Value","description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","default":"true","enum":["true","false"]}]}}},"FC":{"type":"object","title":"Filters Is Skin Id","description":"Returns true if the subject entity is the skin id number provided.","properties":{"test":{"type":"string","title":"Test Property","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"type":"integer","description":"The altitude value to compare with","title":"Value"}}},"FD":{"type":"object","title":"Filters Is Sleeping","description":"Tests whether the Subject is sleeping.","properties":{"test":{"type":"string","title":"Test","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","enum":["true","false"]}],"title":"Value"}}},"FE":{"type":"object","title":"Filters Is Sneaking","description":"Returns true if the subject entity is sneaking.","properties":{"test":{"type":"string","title":"Test Property","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"title":"Value","description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","default":"true","enum":["true","false"]}]}}},"FF":{"type":"object","title":"Filters Is Snow Covered","description":"Tests whether the Subject is in an area with snow cover","properties":{"test":{"type":"string","title":"Test Property","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"title":"Value","description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","default":"true","enum":["true","false"]}]}}},"FG":{"type":"object","title":"Filters Is Target","description":"Returns true if the subject entity is the target of the calling entity.","properties":{"test":{"type":"string","title":"Test Property","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"title":"Value","description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","default":"true","enum":["true","false"]}]}}},"FH":{"type":"object","title":"Filters Is Target","description":"Tests whether the current temperature is a given type.","required":["value"],"properties":{"test":{"type":"string","title":"Test Property","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"description":"The Biome temperature catagory to test","type":"string","enum":["cold","mild","ocean","warm"],"title":"Value"}}},"FI":{"type":"object","title":"Filters Is Temperature Value","description":"Tests the current temperature against a provided value in the range (0.0, 1.0) where 0.0f is the coldest temp and 1.0f is the hottest.","required":["value"],"properties":{"test":{"type":"string","title":"Test Property","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"description":"The Biome temperature value to compare with.","type":"number","minimum":0.0,"maximum":1.0,"title":"Value"}}},"FJ":{"type":"object","title":"Filters Is Underground","description":"Returns true when the subject entity is underground. An entity is considered underground if there are non-solid blocks above it.","properties":{"test":{"type":"string","title":"Test Property","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"title":"Value","description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","default":"true","enum":["true","false"]}]}}},"GA":{"type":"object","title":"Filters Is Underwater","description":"Returns true when the subject entity is under water. An entity is considered underwater if it is completely submerged in water blocks.","properties":{"test":{"type":"string","title":"Test Property","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"title":"Value","description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","default":"true","enum":["true","false"]}]}}},"GB":{"type":"object","title":"Filters Is Variant","description":"Returns true if the subject entity is the variant number provided.","required":["value"],"properties":{"test":{"type":"string","title":"Test Property","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"type":"integer","description":"The altitude value to compare with","title":"Value"}}},"GC":{"type":"object","title":"Filters Is Visible","description":"Returns true if the subject entity is visible.","properties":{"test":{"type":"string","title":"Test Property","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"title":"Value","description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","default":"true","enum":["true","false"]}]}}},"GD":{"type":"object","title":"Filters Light Level","description":"Tests is the mob is outside of the specified light level range (0, 16).","required":["value"],"properties":{"test":{"type":"string","title":"Test","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"description":"An integer value.","type":"integer","title":"Value","minimum":0,"maximum":16}}},"GE":{"type":"object","title":"Filters Moon Intensity","description":"Compares the current moon intensity with a float value in the range (0.0, 1.0)","required":["value"],"properties":{"test":{"type":"string","title":"Test Property","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"description":"A floating point value.","type":"number","minimum":0,"maximum":1,"title":"Value"}}},"GF":{"type":"object","title":"Filters Moon Phase","description":"Compares the current moon phase with an integer value in the range (0, 7).","required":["value"],"properties":{"test":{"type":"string","title":"Test Property","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"type":"integer","description":"An integer value.","minimum":0,"maximum":7,"title":"Value"}}},"GG":{"type":"object","title":"Filters On Ground","description":"Returns true when the subject entity is on ground.","properties":{"test":{"type":"string","title":"Test Property","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"title":"Value","description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","default":"true","enum":["true","false"]}]}}},"GH":{"type":"object","title":"Filters On Ladder","description":"Returns true when the subject entity is on a ladder.","properties":{"test":{"type":"string","title":"Test Property","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"title":"Value","description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","default":"true","enum":["true","false"]}]}}},"GI":{"type":"object","title":"Filters Random Chance","description":"Returns true if the random chance rolls 0 out of a specified max range.","required":["value"],"properties":{"test":{"type":"string","title":"Test","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"description":"An integer value.","type":"integer","title":"Value"}}},"GJ":{"type":"object","title":"Filters Rider Count","description":"Returns the number of riders on this entity.","required":["value"],"properties":{"test":{"type":"string","title":"Test","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"description":"An integer value.","type":"integer","title":"Value"}}},"HA":{"type":"object","title":"Filters Surface Mob","description":"Tests if the subject is a surface mob.","properties":{"test":{"type":"string","title":"Test","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","enum":["true","false"]}],"title":"Value"}}},"HB":{"type":"object","title":"Filters Trusts","description":"Returns true if the subject is trusted by entity.","properties":{"test":{"type":"string","title":"Test","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"description":"True or false.","oneOf":[{"type":"boolean","default":true},{"type":"string","enum":["true","false"]}],"title":"Value"}}},"HC":{"type":"object","title":"Filters Weather","description":"Tests the current weather in the dimension against a provided weather value.","required":["value"],"properties":{"test":{"type":"string","title":"Test","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"description":"The Family name to look for","type":"string","title":"Value"}}},"HD":{"type":"object","title":"Filters Weather At Position","description":"Tests the current weather, at the actor's position, against a provided weather value.","required":["value"],"properties":{"test":{"type":"string","title":"Test","description":"The test property"},"operator":{"$ref":"#/definitions/F"},"subject":{"$ref":"#/definitions/G"},"value":{"description":"The Family name to look for","type":"string","title":"Value"}}},"D":{"title":"Filters","$ref":"#/definitions/D_groups_spec"},"A":{"type":"object","title":"Feature Rules 1.13.0","description":"Each feature rule controls exactly one feature and serves as the root of a chain of feature data.","additionalProperties":false,"required":["format_version","minecraft:feature_rules"],"minProperties":2,"maxProperties":2,"properties":{"format_version":{"const":"1.13.0","description":"Specifies the version of the game this entity was made in. Minimum supported version is 1.13.0. Current supported version is 1.13.0.","title":"Format Version"},"minecraft:feature_rules":{"title":"Feature rules","description":"Each feature rule controls exactly one feature and serves as the root of a chain of feature data.","type":"object","additionalProperties":false,"required":["description","conditions"],"properties":{"description":{"title":"Description","description":"","type":"object","additionalProperties":false,"required":["identifier","places_feature"],"properties":{"identifier":{"title":"Identifier","description":"The name of this feature in the form 'namespace_name:feature_name'. 'feature_name' must match the filename.","type":"string","$ref":"#/definitions/C"},"places_feature":{"title":"Places Feature","description":"Named reference to the feature controlled by this rule.","type":"string"}}},"conditions":{"title":"Conditions","description":"Parameters to control where and when the feature will be placed.","type":"object","additionalProperties":false,"required":["placement_pass"],"properties":{"placement_pass":{"title":"Placement pass","description":"When the feature should be placed relative to others. Earlier passes in the list are guaranteed to occur before later passes. Order is not guaranteed within each pass.","type":"string","enum":["pregeneration_pass","first_pass","before_underground_pass","underground_pass","after_underground_pass","before_surface_pass","surface_pass","after_surface_pass","before_sky_pass","sky_pass","after_sky_pass","final_pass"]},"minecraft:biome_filter":{"title":"Placement pass","description":"List of filter tests to determine which biomes this rule will attach to.","$ref":"#/definitions/D"}}},"distribution":{"title":"Distribution","description":"Parameters controlling the initial scatter of the feature.","type":"object","additionalProperties":false,"required":["iterations"],"properties":{"coordinate_eval_order":{"title":"Coordinate Eval Order","description":"The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. If omitted, defaults to `xzy`.","type":"string","enum":["xyz","xzy","yxz","yzx","zxy","zyx"]},"iterations":{"title":"Iterations","description":"Number of scattered positions to generate","$ref":"#/definitions/B"},"scatter_chance":{"title":"Scatter Chance","oneOf":[{"$ref":"#/definitions/B","description":"Probability (0-100] that this scatter will occur.  Not evaluated each iteration; either no iterations will run, or all will."},{"type":"object","description":"Probability numerator / denominator that this scatter will occur.  Not evaluated each iteration; either no iterations will run, or all will.","additionalProperties":false,"properties":{"numerator":{"title":"Numerator","description":"UNDOCUMENTATED","type":"number","minimum":1},"denominator":{"title":"Denominator","description":"UNDOCUMENTATED","type":"number","minimum":1}}}]},"x":{"title":"X","$ref":"#/definitions/A_coord_dist"},"z":{"title":"Y","$ref":"#/definitions/A_coord_dist"},"y":{"title":"Z","$ref":"#/definitions/A_coord_dist"}}}}}}},"HE":{"title":"Format Version","description":"A version that tells minecraft what type of data format can be expected when reading this file.","pattern":"^(1)\\.([0-9]+)\\.([0-9]+)$","type":"string"}}}
+﻿{
+  "$id": "blockception.minecraft.behavior.feature_rules",
+  "examples": [
+    {
+      "format_version": "1.13.0",
+      "minecraft:feature_rules": {
+        "minecraft:ore_feature": {
+          "description": { "identifier": "example:foo", "places_feature": "minecraft:legacy:birch_forest_tree_feature" },
+          "conditions": {}
+        }
+      }
+    }
+  ],
+  "allOf": [
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.13.0" } } }, "then": { "$ref": "#/definitions/A" } },
+    { "properties": { "format_version": { "$ref": "#/definitions/HE" } } }
+  ],
+  "definitions": {
+    "A_coord_dist": {
+      "title": "",
+      "description": "",
+      "oneOf": [
+        {
+          "$ref": "#/definitions/B",
+          "description": "Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below."
+        },
+        {
+          "type": "object",
+          "description": "Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.",
+          "additionalProperties": false,
+          "examples": [{ "numerator": 1, "denominator": 1 }],
+          "properties": {
+            "numerator": { "title": "Numerator", "description": "UNDOCUMENTATED", "type": "number", "minimum": 1 },
+            "denominator": { "title": "Denominator", "description": "UNDOCUMENTATED", "type": "number", "minimum": 1 }
+          }
+        }
+      ]
+    },
+    "B": {
+      "title": "Molang Number",
+      "description": "The minecraft molang definition that results in a float",
+      "anyOf": [{ "type": "string", "minLength": 0 }, { "type": "number" }]
+    },
+    "C": {
+      "type": "string",
+      "title": "Entity Identifier 1.8.0",
+      "description": "The minecraft entity identifier",
+      "examples": ["namespace:entity_name"],
+      "pattern": "^[0-9a-zA-Z:_\\.\\-]+$"
+    },
+    "D_filters_spec": {
+      "oneOf": [
+        {
+          "propertyNames": { "enum": ["all_of", "any_of", "none_of"] },
+          "properties": {
+            "all_of": {
+              "title": "All Of",
+              "description": "All tests in an `all_of` group must pass in order for the group to pass.",
+              "$ref": "#/definitions/D_groups_spec"
+            },
+            "any_of": {
+              "title": "Any Of",
+              "description": "One or more tests in an `any_of` group must pass in order for the group to pass.",
+              "$ref": "#/definitions/D_groups_spec"
+            },
+            "none_of": {
+              "title": "None Of",
+              "description": "All tests in a `none_of` group must fail in order for the group to pass.",
+              "$ref": "#/definitions/D_groups_spec"
+            }
+          }
+        },
+        {
+          "required": ["test"],
+          "properties": {
+            "all_of": {
+              "title": "All Of",
+              "description": "All tests in an `all_of` group must pass in order for the group to pass.",
+              "$ref": "#/definitions/D_groups_spec"
+            },
+            "any_of": {
+              "title": "Any Of",
+              "description": "One or more tests in an `any_of` group must pass in order for the group to pass.",
+              "$ref": "#/definitions/D_groups_spec"
+            },
+            "none_of": {
+              "title": "None Of",
+              "description": "All tests in a `none_of` group must fail in order for the group to pass.",
+              "$ref": "#/definitions/D_groups_spec"
+            }
+          },
+          "allOf": [
+            { "if": { "properties": { "test": { "const": "clock_time" } } }, "then": { "$ref": "#/definitions/E" } },
+            { "if": { "properties": { "test": { "const": "distance_to_nearest_player" } } }, "then": { "$ref": "#/definitions/H" } },
+            { "if": { "properties": { "test": { "const": "has_ability" } } }, "then": { "$ref": "#/definitions/I" } },
+            { "if": { "properties": { "test": { "const": "has_biome_tag" } } }, "then": { "$ref": "#/definitions/J" } },
+            { "if": { "properties": { "test": { "const": "has_component" } } }, "then": { "$ref": "#/definitions/BA" } },
+            { "if": { "properties": { "test": { "const": "has_container_open" } } }, "then": { "$ref": "#/definitions/BB" } },
+            { "if": { "properties": { "test": { "const": "has_damage" } } }, "then": { "$ref": "#/definitions/BC" } },
+            { "if": { "properties": { "test": { "const": "has_equipment" } } }, "then": { "$ref": "#/definitions/BE" } },
+            { "if": { "properties": { "test": { "const": "has_mob_effect" } } }, "then": { "$ref": "#/definitions/BG" } },
+            { "if": { "properties": { "test": { "const": "has_ranged_weapon" } } }, "then": { "$ref": "#/definitions/BH" } },
+            { "if": { "properties": { "test": { "const": "has_tag" } } }, "then": { "$ref": "#/definitions/BI" } },
+            { "if": { "properties": { "test": { "const": "has_target" } } }, "then": { "$ref": "#/definitions/BJ" } },
+            { "if": { "properties": { "test": { "const": "has_trade_supply" } } }, "then": { "$ref": "#/definitions/CA" } },
+            { "if": { "properties": { "test": { "const": "hourly_clock_time" } } }, "then": { "$ref": "#/definitions/CB" } },
+            { "if": { "properties": { "test": { "const": "in_block" } } }, "then": { "$ref": "#/definitions/CC" } },
+            { "if": { "properties": { "test": { "const": "in_caravan" } } }, "then": { "$ref": "#/definitions/CD" } },
+            { "if": { "properties": { "test": { "const": "in_clouds" } } }, "then": { "$ref": "#/definitions/CE" } },
+            { "if": { "properties": { "test": { "const": "in_lava" } } }, "then": { "$ref": "#/definitions/CF" } },
+            { "if": { "properties": { "test": { "const": "in_nether" } } }, "then": { "$ref": "#/definitions/CG" } },
+            { "if": { "properties": { "test": { "const": "in_water" } } }, "then": { "$ref": "#/definitions/CH" } },
+            { "if": { "properties": { "test": { "const": "in_water_or_rain" } } }, "then": { "$ref": "#/definitions/CI" } },
+            { "if": { "properties": { "test": { "const": "in_contact_with_water" } } }, "then": { "$ref": "#/definitions/CJ" } },
+            { "if": { "properties": { "test": { "const": "inactivity_timer" } } }, "then": { "$ref": "#/definitions/DA" } },
+            { "if": { "properties": { "test": { "const": "is_altitude" } } }, "then": { "$ref": "#/definitions/DB" } },
+            { "if": { "properties": { "test": { "const": "is_avoiding_mobs" } } }, "then": { "$ref": "#/definitions/DC" } },
+            { "if": { "properties": { "test": { "const": "is_biome" } } }, "then": { "$ref": "#/definitions/DD" } },
+            { "if": { "properties": { "test": { "const": "is_block" } } }, "then": { "$ref": "#/definitions/DE" } },
+            { "if": { "properties": { "test": { "const": "is_brightness" } } }, "then": { "$ref": "#/definitions/DF" } },
+            { "if": { "properties": { "test": { "const": "is_climbing" } } }, "then": { "$ref": "#/definitions/DG" } },
+            { "if": { "properties": { "test": { "const": "is_color" } } }, "then": { "$ref": "#/definitions/DH" } },
+            { "if": { "properties": { "test": { "const": "is_daytime" } } }, "then": { "$ref": "#/definitions/DI" } },
+            { "if": { "properties": { "test": { "const": "is_difficulty" } } }, "then": { "$ref": "#/definitions/DJ" } },
+            { "if": { "properties": { "test": { "const": "is_family" } } }, "then": { "$ref": "#/definitions/EA" } },
+            { "if": { "properties": { "test": { "const": "is_game_rule" } } }, "then": { "$ref": "#/definitions/EB" } },
+            { "if": { "properties": { "test": { "const": "is_humid" } } }, "then": { "$ref": "#/definitions/EC" } },
+            { "if": { "properties": { "test": { "const": "is_immobile" } } }, "then": { "$ref": "#/definitions/ED" } },
+            { "if": { "properties": { "test": { "const": "is_in_village" } } }, "then": { "$ref": "#/definitions/EE" } },
+            { "if": { "properties": { "test": { "const": "is_leashed" } } }, "then": { "$ref": "#/definitions/EF" } },
+            { "if": { "properties": { "test": { "const": "is_leashed_to" } } }, "then": { "$ref": "#/definitions/EG" } },
+            { "if": { "properties": { "test": { "const": "is_mark_variant" } } }, "then": { "$ref": "#/definitions/EH" } },
+            { "if": { "properties": { "test": { "const": "is_moving" } } }, "then": { "$ref": "#/definitions/EI" } },
+            { "if": { "properties": { "test": { "const": "is_owner" } } }, "then": { "$ref": "#/definitions/EJ" } },
+            { "if": { "properties": { "test": { "const": "is_persistent" } } }, "then": { "$ref": "#/definitions/FA" } },
+            { "if": { "properties": { "test": { "const": "is_riding" } } }, "then": { "$ref": "#/definitions/FB" } },
+            { "if": { "properties": { "test": { "const": "is_skin_id" } } }, "then": { "$ref": "#/definitions/FC" } },
+            { "if": { "properties": { "test": { "const": "is_sleeping" } } }, "then": { "$ref": "#/definitions/FD" } },
+            { "if": { "properties": { "test": { "const": "is_sneaking" } } }, "then": { "$ref": "#/definitions/FE" } },
+            { "if": { "properties": { "test": { "const": "is_snow_covered" } } }, "then": { "$ref": "#/definitions/FF" } },
+            { "if": { "properties": { "test": { "const": "is_target" } } }, "then": { "$ref": "#/definitions/FG" } },
+            { "if": { "properties": { "test": { "const": "is_temperature_type" } } }, "then": { "$ref": "#/definitions/FH" } },
+            { "if": { "properties": { "test": { "const": "is_temperature_value" } } }, "then": { "$ref": "#/definitions/FI" } },
+            { "if": { "properties": { "test": { "const": "is_underground" } } }, "then": { "$ref": "#/definitions/FJ" } },
+            { "if": { "properties": { "test": { "const": "is_underwater" } } }, "then": { "$ref": "#/definitions/GA" } },
+            { "if": { "properties": { "test": { "const": "is_variant" } } }, "then": { "$ref": "#/definitions/GB" } },
+            { "if": { "properties": { "test": { "const": "is_visible" } } }, "then": { "$ref": "#/definitions/GC" } },
+            { "if": { "properties": { "test": { "const": "light_level" } } }, "then": { "$ref": "#/definitions/GD" } },
+            { "if": { "properties": { "test": { "const": "moon_intensity" } } }, "then": { "$ref": "#/definitions/GE" } },
+            { "if": { "properties": { "test": { "const": "moon_phase" } } }, "then": { "$ref": "#/definitions/GF" } },
+            { "if": { "properties": { "test": { "const": "on_ground" } } }, "then": { "$ref": "#/definitions/GG" } },
+            { "if": { "properties": { "test": { "const": "on_ladder" } } }, "then": { "$ref": "#/definitions/GH" } },
+            { "if": { "properties": { "test": { "const": "random_chance" } } }, "then": { "$ref": "#/definitions/GI" } },
+            { "if": { "properties": { "test": { "const": "rider_count" } } }, "then": { "$ref": "#/definitions/GJ" } },
+            { "if": { "properties": { "test": { "const": "surface_mob" } } }, "then": { "$ref": "#/definitions/HA" } },
+            { "if": { "properties": { "test": { "const": "trusts" } } }, "then": { "$ref": "#/definitions/HB" } },
+            { "if": { "properties": { "test": { "const": "weather" } } }, "then": { "$ref": "#/definitions/HC" } },
+            { "if": { "properties": { "test": { "const": "weather_at_position" } } }, "then": { "$ref": "#/definitions/HD" } },
+            { "not": { "properties": { "test": { "const": "is_weather" } }, "$comment": "DEPRECATED" } }
+          ]
+        }
+      ]
+    },
+    "D_groups_spec": {
+      "oneOf": [
+        { "type": "array", "items": { "$ref": "#/definitions/D_groups_spec" } },
+        { "type": "object", "$ref": "#/definitions/D_filters_spec" }
+      ]
+    },
+    "F": {
+      "title": "Filters Operator",
+      "type": "string",
+      "description": "The comparison to apply with `value'.",
+      "default": "equals",
+      "enum": ["!=", "<", "<=", "<>", "=", "==", ">", ">=", "equals", "not"]
+    },
+    "G": {
+      "title": "Filters Subject",
+      "type": "string",
+      "description": "The subject of this filter test.",
+      "default": "self",
+      "enum": ["block", "other", "parent", "player", "self", "target", "damager"]
+    },
+    "E": {
+      "type": "object",
+      "title": "Filters Clock Time",
+      "description": "Compares the current 24 hour time with an int value in the range[0, 24000]",
+      "required": ["value"],
+      "properties": {
+        "test": {
+          "type": "string",
+          "title": "Test Property",
+          "description": "Compares the current 24 hour time with an int value in the range[0, 24000]"
+        },
+        "operator": {
+          "$ref": "#/definitions/F",
+          "description": "(Optional) The comparison to apply with `value'.",
+          "default": "equals",
+          "title": "Operator"
+        },
+        "subject": { "$ref": "#/definitions/G", "description": "(Optional) The subject of this filter test.", "default": "self", "title": "Subject" },
+        "value": { "type": "number", "minimum": 0, "maximum": 240000, "description": "(Required) An integer value.", "title": "Value" }
+      }
+    },
+    "H": {
+      "type": "object",
+      "title": "Filters Distance To Nearest Player",
+      "description": "Compares the distance to the nearest Player with a float value.",
+      "required": ["value"],
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "Compares the distance to the nearest Player with a float value." },
+        "operator": { "$ref": "#/definitions/F", "description": "(Optional) The comparison to apply with `value'.", "title": "Operator" },
+        "subject": { "$ref": "#/definitions/G", "description": "(Optional) The subject of this filter test.", "title": "Subject" },
+        "value": { "type": "number", "description": "(Required) A floating point value.", "title": "Value" }
+      }
+    },
+    "I": {
+      "type": "object",
+      "title": "Filters Has Ability",
+      "description": "Returns true when the subject entity has the named ability.",
+      "required": ["value"],
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "Returns true when the subject entity has the named ability." },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "type": "string",
+          "description": "(Required) The Ability type to test",
+          "enum": ["flySpeed", "flying", "instabuild", "invulnerable", "lightning", "mayfly", "mute", "noclip", "walkSpeed", "worldbuilder"],
+          "title": "Value"
+        }
+      }
+    },
+    "J": {
+      "type": "object",
+      "title": "Filters Has Biome Tag",
+      "description": "Tests whether the biome the subject is in has the specified tag.",
+      "required": ["value"],
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "Tests whether the biome the subject is in has the specified tag." },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": { "description": "(Required) The tag to look for", "type": "string", "title": "Value" }
+      }
+    },
+    "BA": {
+      "type": "object",
+      "title": "Filters Has Component",
+      "description": "Returns true when the subject entity contains the named component.",
+      "required": ["value"],
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "Returns true when the subject entity contains the named component." },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": { "type": "string", "description": "TODO description: value", "title": "Value" }
+      }
+    },
+    "BB": {
+      "type": "object",
+      "title": "Filters Has Container Open",
+      "description": "Returns true when the subject Player entity has opened a container.",
+      "properties": {
+        "test": { "type": "string", "title": "Test", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "enum": ["true", "false"] }
+          ],
+          "title": "Value"
+        }
+      }
+    },
+    "BD": {
+      "title": "Entity Damage Source",
+      "description": "The types of damage an entity can receive",
+      "type": "string",
+      "enum": [
+        "all",
+        "anvil",
+        "block_explosion",
+        "charging",
+        "contact",
+        "drowning",
+        "entity_attack",
+        "entity_explosion",
+        "fall",
+        "fatal",
+        "falling_block",
+        "fire",
+        "fire_tick",
+        "fireworks",
+        "fly_into_wall",
+        "freezing",
+        "lava",
+        "lightning",
+        "magic",
+        "magma",
+        "none",
+        "override",
+        "piston",
+        "projectile",
+        "starve",
+        "suffocation",
+        "suicide",
+        "temperature",
+        "thorns",
+        "void",
+        "wither"
+      ]
+    },
+    "BC": {
+      "type": "object",
+      "title": "Filters Has Damage",
+      "description": "Returns true when the subject entity receives the named damage type.",
+      "required": ["value"],
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "Returns true when the subject entity receives the named damage type." },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": { "type": "string", "description": "The Damage type to test", "$ref": "#/definitions/BD", "title": "Value" }
+      }
+    },
+    "BF": { "type": "string", "title": "Item Identifier 1.8.0", "description": "The minecraft item identifier", "pattern": "^[0-9a-zA-Z:_\\-\\.]+$" },
+    "BE": {
+      "type": "object",
+      "title": "Filters Has Equipment",
+      "description": "Tests for the presence of a named item in the designated slot of the subject entity.",
+      "required": ["value"],
+      "properties": {
+        "test": {
+          "type": "string",
+          "const": "has_equipment",
+          "description": "Tests for the presence of a named item in the designated slot of the subject entity.",
+          "title": "Test"
+        },
+        "domain": {
+          "description": "The equipment location to test",
+          "default": "any",
+          "enum": ["any", "armor", "feet", "hand", "head", "leg", "torso"],
+          "title": "Domain"
+        },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": { "description": "The item name to look for", "type": "string", "$ref": "#/definitions/BF", "title": "TODO Title" }
+      }
+    },
+    "BG": {
+      "type": "object",
+      "title": "Filters Has Mob Effect",
+      "description": "Tests whether the Subject has the specified mob effect.",
+      "required": ["value"],
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "Tests whether the Subject has the specified mob effect." },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": { "type": "string", "description": "TODO description: value", "title": "Value" }
+      }
+    },
+    "BH": {
+      "type": "object",
+      "title": "Filters Has Ranged Weapon",
+      "description": "Returns true when the subject entity is holding a ranged weapon like a bow or crossbow.",
+      "properties": {
+        "test": { "type": "string", "title": "Test", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "enum": ["true", "false"] }
+          ],
+          "title": "Value"
+        }
+      }
+    },
+    "BI": {
+      "type": "object",
+      "title": "Filters Has Tag",
+      "description": "Returns true if the subject entity has the tag provided.",
+      "required": ["value"],
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "Returns true if the subject entity has the tag provided." },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": { "type": "string", "description": "The tag as a string", "pattern": "[a-zA-Z0-9_]+", "title": "Value" }
+      }
+    },
+    "BJ": {
+      "type": "object",
+      "title": "Filters Has Target",
+      "description": "Returns true if the subject entity has a valid target.",
+      "properties": {
+        "test": { "type": "string", "title": "Test", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "enum": ["true", "false"] }
+          ],
+          "title": "Value"
+        }
+      }
+    },
+    "CA": {
+      "type": "object",
+      "title": "Filters Has Trade Supply",
+      "description": "Tests whether the target has any trade supply left. Will return false if the target cannot be traded with.",
+      "properties": {
+        "test": {
+          "type": "string",
+          "title": "Test Property",
+          "description": "Tests whether the target has any trade supply left. Will return false if the target cannot be traded with."
+        },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "title": "Value",
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "default": "true", "enum": ["true", "false"] }
+          ]
+        }
+      }
+    },
+    "CB": {
+      "type": "object",
+      "title": "Filters Hourly Clock Time",
+      "description": "Compares the current 24 hour time with an int value in the range[0, 24000]",
+      "required": ["value"],
+      "properties": {
+        "test": {
+          "type": "string",
+          "title": "Test Property",
+          "description": "Compares the current 24 hour time with an int value in the range[0, 24000]",
+          "const": "hourly_clock_time"
+        },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": { "type": "integer", "description": "An integer value.", "minimum": 0, "maximum": 24000, "title": "Value" }
+      }
+    },
+    "CC": {
+      "type": "object",
+      "title": "In block",
+      "description": "Returns true when the subject entity is inside a specified Block type.",
+      "properties": {
+        "test": {
+          "type": "string",
+          "title": "Test Property",
+          "description": "Returns true when the subject entity is inside a specified Block type."
+        },
+        "operator": {
+          "$ref": "#/definitions/F",
+          "description": "(Optional) The comparison to apply with `value'.",
+          "default": "equals",
+          "title": "Operator"
+        },
+        "subject": { "$ref": "#/definitions/G", "description": "(Optional) The subject of this filter test.", "default": "self", "title": "Subject" },
+        "value": { "type": "string", "description": "(Optional) A string value.", "title": "Value" }
+      }
+    },
+    "CD": {
+      "type": "object",
+      "title": "Filters In Caravan",
+      "description": "Returns true if the subject entity is in a caravan.",
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "Returns true if the subject entity is in a caravan." },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "title": "Value",
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "default": "true", "enum": ["true", "false"] }
+          ]
+        }
+      }
+    },
+    "CE": {
+      "type": "object",
+      "title": "Filters In Clouds",
+      "description": "Returns true when the subject entity is in the clouds.",
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "Returns true when the subject entity is in the clouds." },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "title": "Value",
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "default": "true", "enum": ["true", "false"] }
+          ]
+        }
+      }
+    },
+    "CF": {
+      "type": "object",
+      "title": "Filters In Lava",
+      "description": "Returns true when the subject entity is in lava.",
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "Returns true when the subject entity is in lava." },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "title": "Value",
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "default": "true", "enum": ["true", "false"] }
+          ]
+        }
+      }
+    },
+    "CG": {
+      "type": "object",
+      "title": "Filters In Nether",
+      "description": "Returns true when the subject entity is in Nether.",
+      "properties": {
+        "test": { "type": "string", "title": "Test", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "enum": ["true", "false"] }
+          ],
+          "title": "Value"
+        }
+      }
+    },
+    "CH": {
+      "type": "object",
+      "title": "Filters In Water",
+      "description": "Returns true when the subject entity is in water.",
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "Returns true when the subject entity is in water." },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "title": "Value",
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "default": "true", "enum": ["true", "false"] }
+          ]
+        }
+      }
+    },
+    "CI": {
+      "type": "object",
+      "title": "Filters In Water Or Rain",
+      "description": "Returns true when the subject entity is in water or rain.",
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "Returns true when the subject entity is in water or rain." },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "title": "Value",
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "default": "true", "enum": ["true", "false"] }
+          ]
+        }
+      }
+    },
+    "CJ": {
+      "type": "object",
+      "title": "In contact with water",
+      "description": "Returns true when the subject entity in contact with any water: water, rain, splash water bottle.",
+      "properties": {
+        "test": {
+          "type": "string",
+          "title": "Test Property",
+          "description": "Returns true when the subject entity in contact with any water: water, rain, splash water bottle."
+        },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "title": "Value",
+          "description": "(Optional) true or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "default": "true", "enum": ["true", "false"] }
+          ]
+        }
+      }
+    },
+    "DA": {
+      "type": "object",
+      "title": "Filters Inactivity Timer",
+      "description": "Tests if the specified duration in seconds of inactivity for despawning has been reached.",
+      "required": ["value"],
+      "properties": {
+        "test": { "type": "string", "title": "Test", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": { "description": "The Family name to look for", "type": "integer", "title": "Value" }
+      }
+    },
+    "DB": {
+      "type": "object",
+      "title": "Filters Is Altitude",
+      "description": "Tests the current altitude against a provided value. 0= bedrock elevation.",
+      "required": ["value"],
+      "properties": {
+        "test": {
+          "type": "string",
+          "title": "Test Property",
+          "description": "Tests the current altitude against a provided value. 0= bedrock elevation."
+        },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": { "type": "integer", "description": "The altitude value to compare with", "minimum": 0, "title": "Value" }
+      }
+    },
+    "DC": {
+      "type": "object",
+      "title": "Filters Is Avoiding Mobs",
+      "description": "Returns true if the subject entity is fleeing from other mobs.",
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "Returns true if the subject entity is fleeing from other mobs." },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "title": "Value",
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "default": "true", "enum": ["true", "false"] }
+          ]
+        }
+      }
+    },
+    "DD": {
+      "type": "object",
+      "title": "Filters Is Biome",
+      "description": "Tests whether the Subject is currently in the named biome.",
+      "required": ["value"],
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "Tests whether the Subject is currently in the named biome." },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "description": "The Biome type to test",
+          "type": "string",
+          "enum": [
+            "beach",
+            "desert",
+            "extreme_hills",
+            "flat",
+            "forest",
+            "ice",
+            "jungle",
+            "mesa",
+            "mushroom_island",
+            "ocean",
+            "plain",
+            "river",
+            "savanna",
+            "stone_beach",
+            "swamp",
+            "taiga",
+            "the_end",
+            "the_nethe"
+          ],
+          "title": "Value"
+        }
+      }
+    },
+    "DE": {
+      "type": "object",
+      "title": "Filters Is Block",
+      "description": "Returns true when the block has the given name.",
+      "required": ["value"],
+      "properties": {
+        "test": { "type": "string", "title": "Test", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": { "description": "The Family name to look for", "type": "string", "title": "Value" }
+      }
+    },
+    "DF": {
+      "type": "object",
+      "title": "Filters Is Brightness",
+      "description": "Tests the current brightness against a provided value in the range (0.0f, 1.0f).",
+      "required": ["value"],
+      "properties": {
+        "test": {
+          "type": "string",
+          "title": "Test Property",
+          "description": "Tests the current brightness against a provided value in the range (0.0f, 1.0f)."
+        },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": { "description": "The brightness value to compare with.", "type": "number", "minimum": 0.0, "maximum": 1.0, "title": "Value" }
+      }
+    },
+    "DG": {
+      "type": "object",
+      "title": "Filters Is Climbing",
+      "description": "Returns true if the subject entity is climbing.",
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "Returns true if the subject entity is climbing." },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "title": "Value",
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "default": "true", "enum": ["true", "false"] }
+          ]
+        }
+      }
+    },
+    "DH": {
+      "type": "object",
+      "title": "Filters Is Color",
+      "description": "Returns true if the subject entity is the named color.",
+      "required": ["value"],
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "Returns true if the subject entity is the named color." },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "description": "The Palette Color to test",
+          "type": "string",
+          "enum": [
+            "black",
+            "blue",
+            "brown",
+            "cyan",
+            "gray",
+            "green",
+            "light_blue",
+            "light_green",
+            "magenta",
+            "orange",
+            "pink",
+            "purple",
+            "red",
+            "silver",
+            "white",
+            "yello"
+          ],
+          "title": "Value"
+        }
+      }
+    },
+    "DI": {
+      "type": "object",
+      "title": "Filters Is Daytime",
+      "description": "Returns true during the daylight hours.",
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "Returns true during the daylight hours." },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "title": "Value",
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "default": "true", "enum": ["true", "false"] }
+          ]
+        }
+      }
+    },
+    "DJ": {
+      "type": "object",
+      "title": "Filters Is Difficulty",
+      "description": "Tests the current difficulty level of the game.",
+      "required": ["value"],
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "Tests the current difficulty level of the game." },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "description": "The game's difficulty level to test",
+          "type": "string",
+          "enum": ["easy", "hard", "normal", "peaceful"],
+          "title": "Value"
+        }
+      }
+    },
+    "EA": {
+      "type": "object",
+      "title": "Filters Is Family",
+      "description": "Returns true when the subject entity is a member of the named family.",
+      "required": ["value"],
+      "properties": {
+        "test": {
+          "type": "string",
+          "title": "Test Property",
+          "description": "Returns true when the subject entity is a member of the named family."
+        },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": { "description": "The Family name to look for", "type": "string", "title": "Value" }
+      }
+    },
+    "EB": {
+      "type": "object",
+      "title": "Filters Is Game Rule",
+      "description": "TODO description:",
+      "required": ["domain"],
+      "properties": {
+        "domain": { "description": "The Game Rule to test.", "title": "Domain" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": { "description": "Tests whether a named game rule is active.", "default": true, "type": "boolean", "title": "Value" }
+      }
+    },
+    "EC": {
+      "type": "object",
+      "title": "Filters Is Humid",
+      "description": "Tests whether the Subject is in an area with humidity",
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "Tests whether the Subject is in an area with humidity" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "title": "Value",
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "default": "true", "enum": ["true", "false"] }
+          ]
+        }
+      }
+    },
+    "ED": {
+      "type": "object",
+      "title": "Filters Is Immobile",
+      "description": "Returns true if the subject entity is immobile. An entity is immobile if it lacks AI goals, has just changed dimensions or if it is a mob and has no health.",
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "title": "Value",
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "default": "true", "enum": ["true", "false"] }
+          ]
+        }
+      }
+    },
+    "EE": {
+      "type": "object",
+      "title": "Filters Is In Village",
+      "description": "Tests whether the Subject is inside the bounds of a village.",
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "title": "Value",
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "default": "true", "enum": ["true", "false"] }
+          ]
+        }
+      }
+    },
+    "EF": {
+      "type": "object",
+      "title": "Filters Is Leashed",
+      "description": "Returns true if the subject entity is leashed.",
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "title": "Value",
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "default": "true", "enum": ["true", "false"] }
+          ]
+        }
+      }
+    },
+    "EG": {
+      "type": "object",
+      "title": "Filters Is Leashed To",
+      "description": "Returns true if the subject entity leashed to the calling entity.",
+      "properties": {
+        "test": { "type": "string", "title": "Test", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "enum": ["true", "false"] }
+          ],
+          "title": "Value"
+        }
+      }
+    },
+    "EH": {
+      "type": "object",
+      "title": "Filters Is Mark Variant",
+      "description": "Returns true if the subject entity is the mark variant number provided.",
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": { "type": "integer", "description": "The altitude value to compare with", "minimum": 0, "title": "Value" }
+      },
+      "additionalProperties": false
+    },
+    "EI": {
+      "type": "object",
+      "title": "Filters Is Moving",
+      "description": "Returns true if the subject entity is moving.",
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "title": "Value",
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "default": "true", "enum": ["true", "false"] }
+          ]
+        }
+      }
+    },
+    "EJ": {
+      "type": "object",
+      "title": "Filters Is Owner",
+      "description": "Returns true if the subject entity is the owner of the calling entity.",
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "title": "Value",
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "default": "true", "enum": ["true", "false"] }
+          ]
+        }
+      }
+    },
+    "FA": {
+      "type": "object",
+      "title": "Filters Is Persistent",
+      "description": "Tests if the subject's persistence matches the bool value passed in.",
+      "properties": {
+        "test": { "type": "string", "title": "Test", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "enum": ["true", "false"] }
+          ],
+          "title": "Value"
+        }
+      }
+    },
+    "FB": {
+      "type": "object",
+      "title": "Filters Is Riding",
+      "description": "Returns true if the subject entity is riding on another entity.",
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "title": "Value",
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "default": "true", "enum": ["true", "false"] }
+          ]
+        }
+      }
+    },
+    "FC": {
+      "type": "object",
+      "title": "Filters Is Skin Id",
+      "description": "Returns true if the subject entity is the skin id number provided.",
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": { "type": "integer", "description": "The altitude value to compare with", "title": "Value" }
+      }
+    },
+    "FD": {
+      "type": "object",
+      "title": "Filters Is Sleeping",
+      "description": "Tests whether the Subject is sleeping.",
+      "properties": {
+        "test": { "type": "string", "title": "Test", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "enum": ["true", "false"] }
+          ],
+          "title": "Value"
+        }
+      }
+    },
+    "FE": {
+      "type": "object",
+      "title": "Filters Is Sneaking",
+      "description": "Returns true if the subject entity is sneaking.",
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "title": "Value",
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "default": "true", "enum": ["true", "false"] }
+          ]
+        }
+      }
+    },
+    "FF": {
+      "type": "object",
+      "title": "Filters Is Snow Covered",
+      "description": "Tests whether the Subject is in an area with snow cover",
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "title": "Value",
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "default": "true", "enum": ["true", "false"] }
+          ]
+        }
+      }
+    },
+    "FG": {
+      "type": "object",
+      "title": "Filters Is Target",
+      "description": "Returns true if the subject entity is the target of the calling entity.",
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "title": "Value",
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "default": "true", "enum": ["true", "false"] }
+          ]
+        }
+      }
+    },
+    "FH": {
+      "type": "object",
+      "title": "Filters Is Target",
+      "description": "Tests whether the current temperature is a given type.",
+      "required": ["value"],
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "description": "The Biome temperature catagory to test",
+          "type": "string",
+          "enum": ["cold", "mild", "ocean", "warm"],
+          "title": "Value"
+        }
+      }
+    },
+    "FI": {
+      "type": "object",
+      "title": "Filters Is Temperature Value",
+      "description": "Tests the current temperature against a provided value in the range (0.0, 1.0) where 0.0f is the coldest temp and 1.0f is the hottest.",
+      "required": ["value"],
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": { "description": "The Biome temperature value to compare with.", "type": "number", "minimum": 0.0, "maximum": 1.0, "title": "Value" }
+      }
+    },
+    "FJ": {
+      "type": "object",
+      "title": "Filters Is Underground",
+      "description": "Returns true when the subject entity is underground. An entity is considered underground if there are non-solid blocks above it.",
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "title": "Value",
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "default": "true", "enum": ["true", "false"] }
+          ]
+        }
+      }
+    },
+    "GA": {
+      "type": "object",
+      "title": "Filters Is Underwater",
+      "description": "Returns true when the subject entity is under water. An entity is considered underwater if it is completely submerged in water blocks.",
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "title": "Value",
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "default": "true", "enum": ["true", "false"] }
+          ]
+        }
+      }
+    },
+    "GB": {
+      "type": "object",
+      "title": "Filters Is Variant",
+      "description": "Returns true if the subject entity is the variant number provided.",
+      "required": ["value"],
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": { "type": "integer", "description": "The altitude value to compare with", "title": "Value" }
+      }
+    },
+    "GC": {
+      "type": "object",
+      "title": "Filters Is Visible",
+      "description": "Returns true if the subject entity is visible.",
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "title": "Value",
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "default": "true", "enum": ["true", "false"] }
+          ]
+        }
+      }
+    },
+    "GD": {
+      "type": "object",
+      "title": "Filters Light Level",
+      "description": "Tests is the mob is outside of the specified light level range (0, 16).",
+      "required": ["value"],
+      "properties": {
+        "test": { "type": "string", "title": "Test", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": { "description": "An integer value.", "type": "integer", "title": "Value", "minimum": 0, "maximum": 16 }
+      }
+    },
+    "GE": {
+      "type": "object",
+      "title": "Filters Moon Intensity",
+      "description": "Compares the current moon intensity with a float value in the range (0.0, 1.0)",
+      "required": ["value"],
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": { "description": "A floating point value.", "type": "number", "minimum": 0, "maximum": 1, "title": "Value" }
+      }
+    },
+    "GF": {
+      "type": "object",
+      "title": "Filters Moon Phase",
+      "description": "Compares the current moon phase with an integer value in the range (0, 7).",
+      "required": ["value"],
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": { "type": "integer", "description": "An integer value.", "minimum": 0, "maximum": 7, "title": "Value" }
+      }
+    },
+    "GG": {
+      "type": "object",
+      "title": "Filters On Ground",
+      "description": "Returns true when the subject entity is on ground.",
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "title": "Value",
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "default": "true", "enum": ["true", "false"] }
+          ]
+        }
+      }
+    },
+    "GH": {
+      "type": "object",
+      "title": "Filters On Ladder",
+      "description": "Returns true when the subject entity is on a ladder.",
+      "properties": {
+        "test": { "type": "string", "title": "Test Property", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "title": "Value",
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "default": "true", "enum": ["true", "false"] }
+          ]
+        }
+      }
+    },
+    "GI": {
+      "type": "object",
+      "title": "Filters Random Chance",
+      "description": "Returns true if the random chance rolls 0 out of a specified max range.",
+      "required": ["value"],
+      "properties": {
+        "test": { "type": "string", "title": "Test", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": { "description": "An integer value.", "type": "integer", "title": "Value" }
+      }
+    },
+    "GJ": {
+      "type": "object",
+      "title": "Filters Rider Count",
+      "description": "Returns the number of riders on this entity.",
+      "required": ["value"],
+      "properties": {
+        "test": { "type": "string", "title": "Test", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": { "description": "An integer value.", "type": "integer", "title": "Value" }
+      }
+    },
+    "HA": {
+      "type": "object",
+      "title": "Filters Surface Mob",
+      "description": "Tests if the subject is a surface mob.",
+      "properties": {
+        "test": { "type": "string", "title": "Test", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "enum": ["true", "false"] }
+          ],
+          "title": "Value"
+        }
+      }
+    },
+    "HB": {
+      "type": "object",
+      "title": "Filters Trusts",
+      "description": "Returns true if the subject is trusted by entity.",
+      "properties": {
+        "test": { "type": "string", "title": "Test", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": {
+          "description": "True or false.",
+          "oneOf": [
+            { "type": "boolean", "default": true },
+            { "type": "string", "enum": ["true", "false"] }
+          ],
+          "title": "Value"
+        }
+      }
+    },
+    "HC": {
+      "type": "object",
+      "title": "Filters Weather",
+      "description": "Tests the current weather in the dimension against a provided weather value.",
+      "required": ["value"],
+      "properties": {
+        "test": { "type": "string", "title": "Test", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": { "description": "The Family name to look for", "type": "string", "title": "Value" }
+      }
+    },
+    "HD": {
+      "type": "object",
+      "title": "Filters Weather At Position",
+      "description": "Tests the current weather, at the actor's position, against a provided weather value.",
+      "required": ["value"],
+      "properties": {
+        "test": { "type": "string", "title": "Test", "description": "The test property" },
+        "operator": { "$ref": "#/definitions/F" },
+        "subject": { "$ref": "#/definitions/G" },
+        "value": { "description": "The Family name to look for", "type": "string", "title": "Value" }
+      }
+    },
+    "D": { "title": "Filters", "$ref": "#/definitions/D_groups_spec" },
+    "A": {
+      "type": "object",
+      "title": "Feature Rules 1.13.0",
+      "description": "Each feature rule controls exactly one feature and serves as the root of a chain of feature data.",
+      "additionalProperties": false,
+      "required": ["format_version", "minecraft:feature_rules"],
+      "minProperties": 2,
+      "maxProperties": 2,
+      "properties": {
+        "format_version": {
+          "const": "1.13.0",
+          "description": "Specifies the version of the game this entity was made in. Minimum supported version is 1.13.0. Current supported version is 1.13.0.",
+          "title": "Format Version"
+        },
+        "minecraft:feature_rules": {
+          "title": "Feature rules",
+          "description": "Each feature rule controls exactly one feature and serves as the root of a chain of feature data.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["description", "conditions"],
+          "properties": {
+            "description": {
+              "title": "Description",
+              "description": "",
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["identifier", "places_feature"],
+              "properties": {
+                "identifier": {
+                  "title": "Identifier",
+                  "description": "The name of this feature in the form `namespace_name:feature_name'. `feature_name` must match the filename.",
+                  "type": "string",
+                  "$ref": "#/definitions/C"
+                },
+                "places_feature": {
+                  "title": "Places Feature",
+                  "description": "Named reference to the feature controlled by this rule.",
+                  "type": "string"
+                }
+              }
+            },
+            "conditions": {
+              "title": "Conditions",
+              "description": "Parameters to control where and when the feature will be placed.",
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["placement_pass"],
+              "properties": {
+                "placement_pass": {
+                  "title": "Placement pass",
+                  "description": "When the feature should be placed relative to others. Earlier passes in the list are guaranteed to occur before later passes. Order is not guaranteed within each pass.",
+                  "type": "string",
+                  "enum": [
+                    "pregeneration_pass",
+                    "first_pass",
+                    "before_underground_pass",
+                    "underground_pass",
+                    "after_underground_pass",
+                    "before_surface_pass",
+                    "surface_pass",
+                    "after_surface_pass",
+                    "before_sky_pass",
+                    "sky_pass",
+                    "after_sky_pass",
+                    "final_pass"
+                  ]
+                },
+                "minecraft:biome_filter": {
+                  "title": "Placement pass",
+                  "description": "List of filter tests to determine which biomes this rule will attach to.",
+                  "$ref": "#/definitions/D"
+                }
+              }
+            },
+            "distribution": {
+              "title": "Distribution",
+              "description": "Parameters controlling the initial scatter of the feature.",
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["iterations"],
+              "properties": {
+                "coordinate_eval_order": {
+                  "title": "Coordinate Eval Order",
+                  "description": "The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. If omitted, defaults to `xzy`.",
+                  "type": "string",
+                  "enum": ["xyz", "xzy", "yxz", "yzx", "zxy", "zyx"]
+                },
+                "iterations": { "title": "Iterations", "description": "Number of scattered positions to generate", "$ref": "#/definitions/B" },
+                "scatter_chance": {
+                  "title": "Scatter Chance",
+                  "oneOf": [
+                    {
+                      "$ref": "#/definitions/B",
+                      "description": "Probability (0-100] that this scatter will occur.  Not evaluated each iteration; either no iterations will run, or all will."
+                    },
+                    {
+                      "type": "object",
+                      "description": "Probability numerator / denominator that this scatter will occur.  Not evaluated each iteration; either no iterations will run, or all will.",
+                      "additionalProperties": false,
+                      "properties": {
+                        "numerator": { "title": "Numerator", "description": "UNDOCUMENTATED", "type": "number", "minimum": 1 },
+                        "denominator": { "title": "Denominator", "description": "UNDOCUMENTATED", "type": "number", "minimum": 1 }
+                      }
+                    }
+                  ]
+                },
+                "x": { "title": "X", "$ref": "#/definitions/A_coord_dist" },
+                "z": { "title": "Y", "$ref": "#/definitions/A_coord_dist" },
+                "y": { "title": "Z", "$ref": "#/definitions/A_coord_dist" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "HE": {
+      "title": "Format Version",
+      "description": "A version that tells minecraft what type of data format can be expected when reading this file.",
+      "pattern": "^(1)\\.([0-9]+)\\.([0-9]+)$",
+      "type": "string"
+    }
+  }
+}
