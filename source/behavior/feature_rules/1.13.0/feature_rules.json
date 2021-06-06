@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.feature_rules.1.13.0",
   "type": "object",
   "title": "Feature Rules 1.13.0",
-  "description": " Each feature rule controls exactly one feature and serves as the root of a chain of feature data.",
+  "description": "Each feature rule controls exactly one feature and serves as the root of a chain of feature data.",
   "additionalProperties": false,
   "required": ["format_version", "minecraft:feature_rules"],
   "minProperties": 2,
@@ -20,6 +20,7 @@
           "type": "object",
           "description": "Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.",
           "additionalProperties": false,
+          "examples": [{ "numerator": 1, "denominator": 1 }],
           "properties": {
             "numerator": {
               "title": "Numerator",
@@ -46,7 +47,7 @@
     },
     "minecraft:feature_rules": {
       "title": "Feature rules",
-      "description": "",
+      "description": "Each feature rule controls exactly one feature and serves as the root of a chain of feature data.",
       "type": "object",
       "additionalProperties": false,
       "required": ["description", "conditions"],
@@ -56,7 +57,7 @@
           "description": "",
           "type": "object",
           "additionalProperties": false,
-          "required": ["identifier", "feature_reference"],
+          "required": ["identifier", "places_feature"],
           "properties": {
             "identifier": {
               "title": "Identifier",
