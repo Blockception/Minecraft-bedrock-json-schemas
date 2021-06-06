@@ -1,22 +1,22 @@
 {
-	"format_version": "1.13.0",
+  "format_version": "1.13.0",
 
-	"minecraft:feature_rules": {
-		"description": {
-			"identifier": "ore_features:ore_feature_placement",
-			"places_feature": "ore_features:ore_feature"
-		},
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "ore_features:ore_feature_placement",
+      "places_feature": "ore_features:ore_feature"
+    },
 
-		"conditions": {
-			"placement_pass": "final_pass"
-		},
+    "conditions": {
+      "placement_pass": "final_pass"
+    },
 
-		"distribution": {
-			"iterations": 1,
+    "distribution": {
+      "iterations": 1,
 
-			"x": 0,
-			"z": 0,
-			"y": "query.heightmap(v.worldx, v.worldz)"
-		}
-	}
+      "x": { "denominator": 1, "numerator": 1 },
+      "z": 0,
+      "y": "query.heightmap(v.worldx, v.worldz)"
+    }
+  }
 }
