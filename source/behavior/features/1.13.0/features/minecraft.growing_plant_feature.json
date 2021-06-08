@@ -1,6 +1,61 @@
 {
   "type": "object",
+  "title": "Growing Plant Feature",
+  "description": "'minecraft:growing_plant_feature' places a growing plant in the world. A growing plant is a column that is anchored either to the ceiling or the floor, based on its growth direction.\nThe growing plant has a body and a head, where the head is the tip of the plant, and the body consists of the remainder blocks.\nThis feature can be used to define growing plants with variable body and head blocks, e.g. Cave Vines.",
   "additionalProperties": false,
+  "required": ["description", "height_distribution", "growth_direction", "body_blocks", "head_blocks"],
+  "definitions": {
+    "range": {
+      "title": "Range",
+      "description": "A range",
+      "type": "object",
+      "required": ["range_min", "range_max"],
+      "examples": [{ "range_min": 8, "range_max": 9 }],
+      "properties": {
+        "range_max": {
+          "title": "Range Max",
+          "type": "integer",
+          "description": "The maximum plant height"
+        },
+        "range_min": {
+          "title": "Range Min",
+          "type": "integer",
+          "description": "The minimum plant height"
+        }
+      }
+    },
+    "rangeOrInt": {
+      "oneOf": [
+        { "type": "integer", "minimum": 0 },
+        { "type": "object", "$ref": "#/definitions/range" }
+      ]
+    },
+    "blocks_array": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "title": "Blocks",
+        "description": "Collection of weighted block descriptor that placement will select from for the plant.",
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": [
+          {
+            "title": "Plant Body Block",
+            "description": "Plant body block.",
+            "type": "string",
+            "$ref": "../../../../general/block/identifier.json"
+          },
+          {
+            "type": "number",
+            "title": "Weight",
+            "description": "Weight used in random selection. Value is relative to other weights in the collection.",
+            "minimum": 0
+          }
+        ]
+      }
+    }
+  },
   "properties": {
     "description": {
       "title": "Description",
@@ -9,11 +64,69 @@
       "properties": {
         "identifier": {
           "title": "Identifier",
-          "description": "The name of this feature in the form `namespace_name:feature_name'. `feature_name` must match the filename.",
+          "description": "The name of this feature in the form `namespace_name:feature_name`. `feature_name` must match the filename.",
           "type": "string",
           "$ref": "../../../../general/feature/identifier.json"
         }
       }
+    },
+    "age": {
+      "title": "Age",
+      "description": "Age of the head of the plant.",
+      "$ref": "#/definitions/rangeOrInt"
+    },
+    "height_distribution": {
+      "title": "Height distribution",
+      "description": "Collection of weighted heights that placement will select from.",
+      "type": "array",
+      "minItems": 1,
+      "examples": [
+        [
+          [{ "range_min": 8, "range_max": 9 }, 1],
+          [6, 1]
+        ]
+      ],
+      "items": {
+        "title": "Height distribution",
+        "description": "Collection of weighted heights that placement will select from.",
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": [
+          {
+            "title": "Plant Height",
+            "description": "Plant height.",
+            "$ref": "#/definitions/rangeOrInt"
+          },
+          {
+            "type": "number",
+            "title": "Weight",
+            "description": "Weight used in random selection. Value is relative to other weights in the collection.",
+            "minimum": 0
+          }
+        ]
+      }
+    },
+    "growth_direction": {
+      "title": "Growth Direction",
+      "description": "Direction that the plant grows towards. Valid values: UP and DOWN",
+      "type": "string",
+      "enum": ["UP", "DOWN", "up", "down"]
+    },
+    "body_blocks": {
+      "title": "Body Blocks",
+      "description": "Collection of weighted block descriptor that placement will select from for the body of the plant.",
+      "$ref": "#/definitions/blocks_array"
+    },
+    "head_blocks": {
+      "title": "Head Blocks",
+      "description": "Collection of weighted block descriptor that placement will select from for the body of the plant.",
+      "$ref": "#/definitions/blocks_array"
+    },
+    "allow_water": {
+      "title": "Allow Water",
+      "description": "Plant blocks can be placed in water.",
+      "type": "boolean"
     }
   }
 }

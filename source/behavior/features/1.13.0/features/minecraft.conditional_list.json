@@ -1,6 +1,6 @@
 {
   "type": "object",
-  "title": "Conditional list",
+  "title": "Conditional List",
   "description": "`minecraft:conditional_list` Places the first suitable feature within a collection.\nThese conditional features will be evaluated in order.\nSucceeds if: A condition is successfully resolved.\nFails if: No condition is successfully resolved.\nExample use: assigning a feature to an expression",
   "additionalProperties": false,
   "required": ["description", "conditional_features"],
