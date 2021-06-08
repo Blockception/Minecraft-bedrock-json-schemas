@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entity1.10.0",
   "type": "object",
-  "title": "Behavior Entity 1.12.0",
+  "title": "Entity Behavior 1.12.0",
   "description": "TODO description",
   "required": ["format_version", "minecraft:entity"],
   "properties": {
