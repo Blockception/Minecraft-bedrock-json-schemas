@@ -1,0 +1,22 @@
+{
+	"format_version": "1.13.0",
+
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "growing_plant_features:growing_plant_feature_placement",
+			"places_feature": "growing_plant_features:growing_plant_feature"
+		},
+
+		"conditions": {
+			"placement_pass": "final_pass"
+		},
+
+		"distribution": {
+			"iterations": 1,
+
+			"x": 0,
+			"z": 0,
+			"y": 61
+		}
+	}
+}

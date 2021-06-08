@@ -1,0 +1,22 @@
+{
+	"format_version": "1.13.0",
+
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "scan_surface_features:scan_surface_feature_placement",
+			"places_feature": "scan_surface_features:scan_surface_feature"
+		},
+
+		"conditions": {
+			"placement_pass": "final_pass"
+		},
+
+		"distribution": {
+			"iterations": 1,
+
+			"x": 0,
+			"z": 0,
+			"y": 0
+		}
+	}
+}

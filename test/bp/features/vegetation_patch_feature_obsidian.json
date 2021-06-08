@@ -1,0 +1,14 @@
+{
+	"format_version": "1.13.0",
+
+	"minecraft:single_block_feature": {
+		"description": {
+			"identifier": "vegetation_patch_features:vegetation_patch_feature_obsidian"
+		},
+
+		"places_block": "minecraft:fence",
+
+		"enforce_placement_rules": false,
+		"enforce_survivability_rules": false
+	}
+}

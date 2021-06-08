@@ -1,0 +1,22 @@
+{
+	"format_version": "1.13.0",
+
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "geode_features:geode_feature_placement",
+			"places_feature": "geode_features:geode_feature"
+		},
+
+		"conditions": {
+			"placement_pass": "final_pass"
+		},
+
+		"distribution": {
+			"iterations": "math.mod(math.floor(v.originx / 16), 4) == 0 && math.mod(math.floor(v.originz / 16), 4) == 0",
+
+			"x": 0,
+			"z": 0,
+			"y": 90
+		}
+	}
+}

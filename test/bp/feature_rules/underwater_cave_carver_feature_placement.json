@@ -1,0 +1,14 @@
+{
+	"format_version": "1.13.0",
+
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "underwater_cave_carver_features:underwater_cave_carver_feature_placement",
+			"places_feature": "underwater_cave_carver_features:underwater_cave_carver_feature"
+		},
+
+		"conditions": {
+			"placement_pass": "pregeneration_pass"
+		}
+	}
+}

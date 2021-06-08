@@ -1,0 +1,11 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:hell_cave_carver_feature": {
+		"description": {
+			"identifier": "hell_cave_carver_features:hell_cave_carver_feature"
+		},
+
+		"fill_with": "minecraft:planks",
+		"width_modifier": 1
+	}
+}

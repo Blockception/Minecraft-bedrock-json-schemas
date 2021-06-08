@@ -1,0 +1,37 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:geode_feature": {
+		"description": {
+			"identifier": "geode_features:geode_feature"
+		},
+
+		"max_radius": 80,
+
+		"filler": "minecraft:air",
+
+		"inner_layer": "minecraft:stone",
+		"alternate_inner_layer": "minecraft:cobblestone",
+		"use_alternate_layer0_chance": 0.5,
+
+		"middle_layer": "minecraft:planks",
+
+		"outer_layer": "minecraft:obsidian",
+
+		"inner_placements": ["mincraft:glass"],
+		"placements_require_layer0_alternate": true,
+		"use_potential_placements_chance": 0.125,
+
+		"min_distribution_points": 3,
+		"max_distribution_points": 3,
+		"min_outer_wall_distance": 3,
+		"max_outer_wall_distance": 3,
+		"min_point_offset": 0,
+		"max_point_offset": 0,
+		"noise_multiplier": 0.025,
+		"invalid_blocks_threshold": 10000,
+
+		"crack_point_offset": 0,
+		"generate_crack_chance": 0,
+		"base_crack_size": 0
+	}
+}

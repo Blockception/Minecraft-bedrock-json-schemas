@@ -1,0 +1,11 @@
+{
+	"format_version": "1.13.0",
+
+	"minecraft:scan_surface": {
+		"description": {
+			"identifier": "scan_surface_features:scan_surface_feature"
+		},
+
+		"scan_surface_feature": "scan_surface_features:scan_surface_feature_obsidian"
+	}
+}

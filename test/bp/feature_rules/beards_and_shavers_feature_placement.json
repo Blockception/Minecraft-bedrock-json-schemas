@@ -1,0 +1,22 @@
+{
+	"format_version": "1.13.0",
+
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "beards_and_shavers_features:beards_and_shavers_feature_placement",
+			"places_feature": "beards_and_shavers_features:beards_and_shavers_feature"
+		},
+
+		"conditions": {
+			"placement_pass": "final_pass"
+		},
+
+		"distribution": {
+			"iterations": 1,
+
+			"x": 0,
+			"z": 0,
+			"y": "query.heightmap(v.worldx, v.worldz)"
+		}
+	}
+}

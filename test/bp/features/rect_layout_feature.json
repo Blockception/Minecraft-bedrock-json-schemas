@@ -1,0 +1,21 @@
+{
+	"format_version": "1.13.0",
+
+	"minecraft:rect_layout": {
+		"description": {
+			"identifier": "rect_layout_features:rect_layout_feature"
+		},
+
+		"ratio_of_empty_space": 0.5,
+		"feature_areas":[
+			{
+				"feature": "rect_layout_features:rect_layout_feature_obsidian",
+				"area_dimensions": [1, 1]
+			},
+			{
+				"feature": "rect_layout_features:rect_layout_feature_planks",
+				"area_dimensions": [1, 1]
+			}
+		]
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"format_version": "1.13.0",
+
+	"minecraft:conditional_list": {
+		"description": {
+			"identifier": "conditional_list_features:conditional_list_feature"
+		},
+
+		"conditional_features": [
+			{
+				"places_feature": "conditional_list_features:conditional_list_feature_obsidian",
+				"condition": "query.noise(v.originx, v.originz) < 0"
+			}
+		],
+		"early_out_scheme": "placement_success"
+	}
+}

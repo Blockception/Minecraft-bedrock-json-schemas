@@ -1,0 +1,14 @@
+{
+	"format_version": "1.13.0",
+
+	"minecraft:single_block_feature": {
+		"description": {
+			"identifier": "rect_layout_features:rect_layout_feature_obsidian"
+		},
+
+		"places_block": "minecraft:obsidian",
+
+		"enforce_placement_rules": false,
+		"enforce_survivability_rules": false
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"format_version": "1.13.0",
+
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "rect_layout_features:rect_layout_feature_placement",
+			"places_feature": "rect_layout_features:rect_layout_feature"
+		},
+
+		"conditions": {
+			"placement_pass": "final_pass"
+		},
+
+		"distribution": {
+			"iterations": 1,
+
+			"x": 0,
+			"z": 0,
+			"y": 90
+		}
+	}
+}

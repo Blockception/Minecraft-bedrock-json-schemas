@@ -1,23 +1,25 @@
 {
-  "format_version": 2,
+	"format_version": 2,
 
-  "metadata": {
-    "authors": ["Christopher Cook"]
-  },
+	"metadata": {
+		"authors": [
+			"Christopher Cook"
+		]
+	},
 
-  "header": {
-    "name": "Aggregate Features",
-    "uuid": "9f562163-9835-4d63-90a5-558f198088f9",
-    "description": "Tests aggregate features",
-    "version": [1, 0, 0],
-    "min_engine_version": [1, 17, 0]
-  },
-  "modules": [
-    {
-      "type": "data",
-      "description": "Behavior pack for Aggregate Features",
-      "uuid": "82df4a01-6431-4d4c-9d20-d62409481ad4",
-      "version": [1, 0, 0]
-    }
-  ]
+	"header": {
+		"name": "Hell Cave Carver Features",
+		"uuid": "459909b9-fdb8-4eb3-9b8d-55d09545b89d",
+		"description": "Tests hell cave carver features",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 17, 0]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"description": "Behavior pack for Hell Cave Carver Features",
+			"uuid": "1016f5a1-5eaf-4ccd-8e0c-a4231d7bb308",
+			"version": [1, 0, 0]
+		}
+	]
 }

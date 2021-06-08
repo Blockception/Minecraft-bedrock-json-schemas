@@ -1,0 +1,14 @@
+{
+	"format_version": "1.13.0",
+
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "cave_carver_features:cave_carver_feature_placement",
+			"places_feature": "cave_carver_features:cave_carver_feature"
+		},
+
+		"conditions": {
+			"placement_pass": "pregeneration_pass"
+		}
+	}
+}

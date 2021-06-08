@@ -1,0 +1,29 @@
+{
+	"format_version": "1.13.0",
+
+	"minecraft:vegetation_patch_feature": {
+		"description": {
+			"identifier": "vegetation_patch_features:vegetation_patch_feature"
+		},
+
+		"replaceable_blocks": [
+			"minecraft:air",
+			"minecraft:dirt",
+			"minecraft:grass",
+			"minecraft:sand",
+			"minecraft:stone"
+		],
+		"ground_block": "minecraft:planks",
+		"waterlogged": true,
+
+		"surface": "floor",
+		"horizontal_radius": 4,
+		"vertical_range": 5,
+		"depth": 4,
+		"extra_deep_block_chance": 0.5,
+		"extra_edge_column_chance": 0.5,
+
+		"vegetation_feature": "vegetation_patch_features:vegetation_patch_feature_obsidian",
+		"vegetation_chance": 0.125
+	}
+}

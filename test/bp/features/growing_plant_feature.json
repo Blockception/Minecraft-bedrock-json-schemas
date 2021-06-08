@@ -1,0 +1,26 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:growing_plant_feature": {
+		"description": {
+			"identifier": "growing_plant_features:growing_plant_feature"
+		},
+
+		"growth_direction": "up",
+		"height_distribution":  [
+			[{"range_min": 8, "range_max": 9}, 1],
+			[6, 1]
+		],
+		"age" : {"range_min": 3, "range_max": 4},
+
+		"body_blocks" : [
+			["minecraft:planks", 4],
+			["minecraft:obsidian", 1]
+		],
+		"head_blocks" : [
+			["minecraft:glass", 4],
+			["minecraft:sand", 1 ]
+		],
+
+		"allow_water": true
+	}
+}
