@@ -64,7 +64,7 @@
                 "size": { "type": "number", "default": 1, "description": "The base size of the entity" },
                 "sound_event": { "type": "string", "description": "The sound event to play for this step" },
                 "summon_cap": { "type": "integer", "default": 0, "description": "Maximum number of summoned entities at any given time" },
-                "summon_cap_radius": { "type": "number", "default": 0, "description": "" },
+                "summon_cap_radius": { "type": "number", "default": 0, "description": "UNDOCUMENTATED" },
                 "target": {
                   "type": "string",
                   "default": "self",

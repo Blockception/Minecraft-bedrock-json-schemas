@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Terrain Texture File",
-  "description": "",
+  "description": "UNDOCUMENTATED",
   "definitions": {
     "texture": {
       "oneOf": [

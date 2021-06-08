@@ -45,7 +45,7 @@
               }
             ]
           },
-          "type": { "title": "Type", "type": "string", "description": "", "enum": ["loot_table", "item", "empty"] },
+          "type": { "title": "Type", "type": "string", "description": "UNDOCUMENTATED", "enum": ["loot_table", "item", "empty"] },
           "conditions": { "title": "Conditions", "description": "TODO", "type": "array", "items": { "$ref": "./conditions.json" } },
           "entries": {
             "title": "Entries",

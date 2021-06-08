@@ -100,13 +100,13 @@
               "properties": {
                 "denominator": {
                   "title": "Denominator",
-                  "description": "",
+                  "description": "UNDOCUMENTATED",
                   "type": "integer",
                   "minimum": 1
                 },
                 "numerator": {
                   "title": "Numerator",
-                  "description": "",
+                  "description": "UNDOCUMENTATED",
                   "type": "integer",
                   "minimum": 1
                 }

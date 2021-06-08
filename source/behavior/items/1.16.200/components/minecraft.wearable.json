@@ -5,7 +5,7 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "dispensable": { "title": "Dispensable", "description": "", "type": "boolean" },
+    "dispensable": { "title": "Dispensable", "description": "UNDOCUMENTATED", "type": "boolean" },
     "slot": {
       "title": "Slot",
       "description": "equipment_slot: slot.weapon.mainhand, slot.weapon.offhand, slot.armor.head, slot.armor.chest, slot.armor.legs, slot.armor.feet, slot.hotbar, slot.inventory, slot.enderchest, slot.saddle, slot.armor, slot.chest",

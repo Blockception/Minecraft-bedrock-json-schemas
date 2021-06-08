@@ -10,7 +10,7 @@
   "definitions": {
     "coord_dist": {
       "title": "",
-      "description": "",
+      "description": "UNDOCUMENTATED",
       "oneOf": [
         {
           "$ref": "../../../molang/number.json",
@@ -54,7 +54,7 @@
       "properties": {
         "description": {
           "title": "Description",
-          "description": "",
+          "description": "UNDOCUMENTATED",
           "type": "object",
           "additionalProperties": false,
           "required": ["identifier", "places_feature"],

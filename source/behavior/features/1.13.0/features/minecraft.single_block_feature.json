@@ -12,7 +12,7 @@
   "properties": {
     "description": {
       "title": "Description",
-      "description": "",
+      "description": "UNDOCUMENTATED",
       "type": "object",
       "required": ["identifier"],
       "properties": {
@@ -42,7 +42,7 @@
     },
     "may_attach_to": {
       "title": "May attach to",
-      "description": "",
+      "description": "UNDOCUMENTATED",
       "type": "object",
       "additionalProperties": false,
       "required": [],

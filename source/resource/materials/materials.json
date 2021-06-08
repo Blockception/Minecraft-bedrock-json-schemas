@@ -101,11 +101,26 @@
       "description": "TODO",
       "additionalProperties": false,
       "properties": {
-        "stencilDepthFailOp": { "type": "string", "title": "Stencil Depth Fail Operation", "description": "", "$ref": "#/definitions/FailOperation" },
-        "stencilFailOp": { "type": "string", "title": "Stencil Fail Operation", "description": "", "$ref": "#/definitions/FailOperation" },
-        "stencilFunc": { "type": "string", "title": "Stencil Function", "description": "", "enum": ["Always", "Equal", "NotEqual"] },
-        "stencilPass": { "type": "string", "title": "Stencil Pass", "description": "", "enum": ["Replace"] },
-        "stencilPassOp": { "type": "string", "title": "Stencil Depth Fail Operation", "description": "", "$ref": "#/definitions/FailOperation" }
+        "stencilDepthFailOp": {
+          "type": "string",
+          "title": "Stencil Depth Fail Operation",
+          "description": "UNDOCUMENTATED",
+          "$ref": "#/definitions/FailOperation"
+        },
+        "stencilFailOp": {
+          "type": "string",
+          "title": "Stencil Fail Operation",
+          "description": "UNDOCUMENTATED",
+          "$ref": "#/definitions/FailOperation"
+        },
+        "stencilFunc": { "type": "string", "title": "Stencil Function", "description": "UNDOCUMENTATED", "enum": ["Always", "Equal", "NotEqual"] },
+        "stencilPass": { "type": "string", "title": "Stencil Pass", "description": "UNDOCUMENTATED", "enum": ["Replace"] },
+        "stencilPassOp": {
+          "type": "string",
+          "title": "Stencil Depth Fail Operation",
+          "description": "UNDOCUMENTATED",
+          "$ref": "#/definitions/FailOperation"
+        }
       }
     },
     "StatesSpecification": {

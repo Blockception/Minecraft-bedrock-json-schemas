@@ -166,7 +166,7 @@
                     "type": "object",
                     "required": ["input"],
                     "properties": {
-                      "input": { "title": "Input", "description": "", "$ref": "../../../molang/number.json" },
+                      "input": { "title": "Input", "description": "UNDOCUMENTATED", "$ref": "../../../molang/number.json" },
                       "remap_curve": {
                         "title": "Remap Curve",
                         "additionalProperties": { "propertyNames": { "pattern": "^([\\-\\+0-9]+|[\\-\\+0-9]+.[0-9]+)$" }, "type": "number" }
