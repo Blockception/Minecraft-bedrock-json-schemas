@@ -1,9 +1,9 @@
 {
-  "title": "Structure Template Feature",
-  "description": "`minecraft:structure_template_feature` places a structure in the world. The structure must be stored as a .mcstructure file in the `structures` subdirectory of a behavior pack. It is possible to reference structures that are part of other behavior packs, they do not need to come from the same behavior pack as this feature. Constraints can be defined to specify where the structure is allowed to be placed. During placement, the feature will search for a position within the 'adjustment_radius' that satisfies all constraints. If none are found, the structure will not be placed.\nSucceeds if: The structure is placed in the world.\nFails if: The structure fails to be placed within the world.",
+  "title": "Underwater Cave Carver Feature",
+  "description": "'minecraft:underwater_cave_carver_feature' carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8 radial pattern.This feature will specifically target creating caves only below sea level.\nThis feature will also only work when placed specifically in the pass \"pregeneration_pass\".",
   "type": "object",
   "additionalProperties": false,
-  "required": ["description", "structure_name", "constraints"],
+  "required": ["description"],
   "properties": {
     "description": {
       "title": "Description",
@@ -18,6 +18,24 @@
           "$ref": "../../../../general/feature/identifier.json"
         }
       }
+    },
+    "fill_with": {
+      "title": "Fill with",
+      "description": "Reference to the block to fill the cave with.",
+      "type": "string",
+      "$ref": "../../../../general/block/identifier.json"
+    },
+    "width_modifier": {
+      "title": "Width Modifier",
+      "description": "How many blocks to increase the cave radius by, from the center point of the cave.",
+      "type": "string",
+      "$ref": "../../../../molang/number.json"
+    },
+    "replace_air_with": {
+      "title": "Replace air with",
+      "description": "Reference to the block to replace air blocks with.",
+      "type": "string",
+      "$ref": "../../../../general/block/identifier.json"
     }
   }
 }

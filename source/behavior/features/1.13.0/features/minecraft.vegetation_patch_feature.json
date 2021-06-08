@@ -1,6 +1,9 @@
 {
+  "title": "Vegetation Patch Feature",
+  "description": "Feature type `minecraft:vegetation_patch_feature` has not yet been documented.",
   "type": "object",
   "additionalProperties": false,
+  "required": ["description"],
   "properties": {
     "description": {
       "title": "Description",
@@ -15,6 +18,74 @@
           "$ref": "../../../../general/feature/identifier.json"
         }
       }
+    },
+    "replaceable_blocks": {
+      "title": "Replaceable Blocks",
+      "description": "",
+      "type": "array",
+      "items": {
+        "title": "Replace block",
+        "type": "string",
+        "$ref": "../../../../general/block/identifier.json"
+      }
+    },
+    "ground_block": {
+      "title": "Ground Block",
+      "description": "",
+      "type": "string",
+      "$ref": "../../../../general/block/identifier.json"
+    },
+    "vegetation_feature": {
+      "title": "Vegetation Feature",
+      "description": "",
+      "type": "string",
+      "$ref": "../../../../general/feature/identifier.json"
+    },
+    "surface": {
+      "title": "Surface",
+      "description": "",
+      "type": "string"
+    },
+    "depth": {
+      "title": "Depth",
+      "description": "",
+      "type": "integer",
+      "minimum": 0
+    },
+    "extra_deep_block_chance": {
+      "title": "Extra Deep Block Chance",
+      "description": "",
+      "type": "number",
+      "minimum": 0
+    },
+    "vertical_range": {
+      "title": "Vertical Range",
+      "description": "",
+      "type": "integer",
+      "minimum": 0
+    },
+    "vegetation_chance": {
+      "title": "Vegatation Chance",
+      "description": "",
+      "type": "number",
+      "minimum": 0
+    },
+    "horizontal_radius": {
+      "title": "Horizontal Radius",
+      "description": "",
+      "type": "integer",
+      "minimum": 0
+    },
+    "extra_edge_column_chance": {
+      "title": "Extra Egde Column Chance",
+      "description": "",
+      "type": "number",
+      "minimum": 0
+    },
+    "waterlogged": {
+      "title": "Waterlogged",
+      "description": "",
+      "type": "boolean"
     }
   }
 }

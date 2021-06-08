@@ -1,6 +1,9 @@
 {
+  "title": "Weighted Random Feature",
+  "description": "'minecraft:weighted_random_feature' randomly selects and places a feature based on a weight value. Weights are relative, with higher values making selection more likely.\nSucceeds if: The selected feature is placed.\nFails if: The selected feature fails to be placed.",
   "type": "object",
   "additionalProperties": false,
+  "required": ["description", "features"],
   "properties": {
     "description": {
       "title": "Description",
@@ -14,6 +17,25 @@
           "type": "string",
           "$ref": "../../../../general/feature/identifier.json"
         }
+      }
+    },
+    "features": {
+      "title": "Features",
+      "description": " Collection of weighted features that placement will select from.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "title": "Feature",
+        "description": "Named reference to a feature.",
+        "type": "array",
+        "items": [
+          { "title": "Feature", "description": "Named reference to a feature.", "$ref": "../../../../general/feature/identifier.json" },
+          {
+            "title": "Weight",
+            "description": "Weight used in random selection. Value is relative to other weights in the collection.",
+            "type": "number"
+          }
+        ]
       }
     }
   }
