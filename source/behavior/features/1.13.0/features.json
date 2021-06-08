@@ -14,6 +14,7 @@
       "title": "Format Version"
     },
     "minecraft:aggregate_feature": { "$ref": "./features/minecraft.aggregate_feature.json" },
+    "minecraft:beards_and_shavers": { "$ref": "./features/minecraft.beards_and_shavers.json" },
     "minecraft:cave_carver_feature": { "$ref": "./features/minecraft.cave_carver_feature.json" },
     "minecraft:conditional_list": { "$ref": "./features/minecraft.conditional_list.json" },
     "minecraft:geode_feature": { "$ref": "./features/minecraft.geode_feature.json" },

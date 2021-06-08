@@ -1,6 +1,9 @@
 {
   "type": "object",
+  "title": "Rect Layout",
+  "description": "`minecraft:scan_surface` scans the surface of a Chunk, calling place() on the surface of each block column.\nSucceeds if: A Feature was successfully placed during the scan.\nFails if: No Feature was placed during the course of the scan.",
   "additionalProperties": false,
+  "required": ["description", "scan_surface_feature"],
   "properties": {
     "description": {
       "title": "Description",
@@ -15,6 +18,12 @@
           "$ref": "../../../../general/feature/identifier.json"
         }
       }
+    },
+    "scan_surface_feature": {
+      "title": "Scan Surface Feature",
+      "description": "Named reference of feature to be placed",
+      "type": "string",
+      "$ref": "../../../../general/feature/identifier.json"
     }
   }
 }

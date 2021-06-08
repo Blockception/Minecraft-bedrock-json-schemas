@@ -1,6 +1,9 @@
 {
   "type": "object",
+  "title": "Ore Feature",
+  "description": "`minecraft:ore_feature` places a vein of blocks to simulate ore deposits. Despite the name, any block can be placed by this feature. During placement, existing world blocks are checked to see if they can be replaced by the new ore block based on the list provided in the `may_replace` field of a `replace_rules` entry. If no `may_replace` field is specified in a `replace_rule` entry, the ore block can replace any existing block.\nSucceeds if: At least one ore block is successfully placed.\nFails if: All ore block placements fail.",
   "additionalProperties": false,
+  "required": ["count", "description"],
   "properties": {
     "description": {
       "title": "Description",
@@ -13,6 +16,40 @@
           "description": "The name of this feature in the form `namespace_name:feature_name`. `feature_name` must match the filename.",
           "type": "string",
           "$ref": "../../../../general/feature/identifier.json"
+        }
+      }
+    },
+    "count": {
+      "title": "Count",
+      "description": "The number of blocks to be placed.",
+      "type": "number",
+      "minimum": 1
+    },
+    "replace_rules": {
+      "title": "Replace Rules",
+      "description": "Collection of replace rules that will be checked in order of definition. If a rule is resolved, the rest will not be resolved for that block position.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "title": "Repalce Rule",
+        "description": "If a rule is resolved, the rest will not be resolved for that block position.",
+        "type": "object",
+        "required": ["places_block"],
+        "properties": {
+          "places_block": {
+            "title": "Places Block",
+            "description": "Reference to the block to be placed.",
+            "$ref": "../../../../general/block/identifier.json"
+          },
+          "may_replace": {
+            "title": "May replace",
+            "description": "A list of blocks that may be replaced during placement. Omit this field to allow any block to be replaced.",
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "../../../../general/block/identifier.json"
+            }
+          }
         }
       }
     }

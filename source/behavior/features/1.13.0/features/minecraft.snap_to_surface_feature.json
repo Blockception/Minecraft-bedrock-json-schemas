@@ -1,5 +1,5 @@
 {
-  "title": "",
+  "title": "Snap To Surface Feature",
   "description": "`minecraft:snap_to_surface_feature` snaps the y-value of a feature placement pos to the floor or the ceiling within the provided `vertical_search_range`. The placement biome is preserved. \nIf the snap position goes outside of the placement biome, placement will fail.",
   "type": "object",
   "additionalProperties": false,

@@ -1,13 +1,14 @@
 {
-    "speed_multiplier": {
-        "prefix": "snippet.speed_multiplier",
-        "body": [
-            "\"priority\": { \"$ref\": \"types/base_priority.json\" },",
-            "\"speed_multiplier\": { \"$ref\": \"types/base_speed_multiplier.json\" },"
-        ]
-    },
-    "priority": {
-        "prefix": "snippet.priority",
-        "body": "\"priority\": { \"$ref\": \"types/base_priority.json\" },"
-    }
+  "speed_multiplier": {
+    "prefix": "snippet.speed_multiplier",
+    "body": ["\"priority\": { \"$ref\": \"types/base_priority.json\" },", "\"speed_multiplier\": { \"$ref\": \"types/base_speed_multiplier.json\" },"]
+  },
+  "priority": {
+    "prefix": "snippet.priority",
+    "body": "\"priority\": { \"$ref\": \"types/base_priority.json\" },"
+  },
+  "object": {
+    "prefix": "json.object",
+    "body": "\"title\": \"\",\n\"description\": \"\",\n\"type\": \"object\", \n\"additionalProperties\": false,\n\"properties\": {}"
+  }
 }
