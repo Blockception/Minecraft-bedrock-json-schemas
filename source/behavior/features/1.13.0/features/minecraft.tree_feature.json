@@ -3,7 +3,7 @@
   "description": "Feature type 'minecraft:tree_feature' has not yet been documented.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["description", "structure_name", "constraints"],
+  "required": ["description"],
   "definitions": {
     "branch_canopy": {
       "title": "branch_canopy",
@@ -821,448 +821,448 @@
             }
           }
         }
-      },
-      "trunk": {
-        "title": "trunk",
-        "description": "UNDOCUMENTATED",
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "trunk_height": {
-            "title": "trunk_height",
-            "description": "UNDOCUMENTATED",
-            "type": "integer",
-            "minimum": 0
-          },
-          "height_modifier": {
-            "title": "height_modifier",
-            "description": "UNDOCUMENTATED",
-            "type": "integer",
-            "minimum": 0
-          },
-          "can_be_submerged": {
-            "title": "can_be_submerged",
-            "description": "UNDOCUMENTATED",
+      }
+    },
+    "trunk": {
+      "title": "trunk",
+      "description": "UNDOCUMENTATED",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "trunk_height": {
+          "title": "trunk_height",
+          "description": "UNDOCUMENTATED",
+          "type": "integer",
+          "minimum": 0
+        },
+        "height_modifier": {
+          "title": "height_modifier",
+          "description": "UNDOCUMENTATED",
+          "type": "integer",
+          "minimum": 0
+        },
+        "can_be_submerged": {
+          "title": "can_be_submerged",
+          "description": "UNDOCUMENTATED",
 
-            "oneOf": [
-              {
-                "type": "object",
-                "additionalProperties": false,
-                "properties": {
-                  "max_depth": {
-                    "title": "max_depth",
-                    "description": "UNDOCUMENTATED",
-                    "type": "integer",
-                    "minimum": 1
-                  }
-                }
-              },
-              {
-                "title": "can_be_submerged",
-                "description": "UNDOCUMENTATED",
-                "type": "boolean"
-              }
-            ]
-          },
-          "trunk_block": {
-            "title": "trunk_block",
-            "description": "UNDOCUMENTATED",
-            "type": "string",
-            "$ref": "../../../../general/block/identifier.json"
-          },
-          "trunk_decoration": {
-            "title": "trunk_decoration",
-            "description": "UNDOCUMENTATED",
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-              "decoration_chance": {
-                "title": "decoration_chance",
-                "description": "UNDOCUMENTATED",
-                "$ref": "../../../../general/1.14.0/chance_information.json"
-              },
-              "decoration_block": {
-                "title": "decoration_block",
-                "description": "UNDOCUMENTATED",
-                "type": "string",
-                "$ref": "../../../../general/block/identifier.json"
-              },
-              "num_steps": {
-                "title": "num_steps",
-                "description": "UNDOCUMENTATED",
-                "type": "integer"
-              },
-              "step_direction": {
-                "title": "step_direction",
-                "description": "UNDOCUMENTATED",
-                "type": "string",
-                "enum": ["down", "up", "out", "away"]
-              }
-            }
-          }
-        }
-      },
-      "acacia_canopy": {
-        "title": "acacia_canopy",
-        "description": "UNDOCUMENTATED",
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "canopy_size": {
-            "title": "canopy_size",
-            "description": "UNDOCUMENTATED",
-            "type": "integer",
-            "minimum": 1
-          },
-          "leaf_block": {
-            "title": "leaf_block",
-            "description": "UNDOCUMENTATED",
-            "type": "string",
-            "$ref": "../../../../general/block/identifier.json"
-          },
-          "simplify_canopy": {
-            "title": "simplify_canopy",
-            "description": "UNDOCUMENTATED",
-            "type": "boolean"
-          }
-        }
-      },
-      "canopy": {
-        "title": "canopy",
-        "description": "UNDOCUMENTATED",
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "canopy_offset": {
-            "title": "canopy_offset",
-            "description": "UNDOCUMENTATED",
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-              "min": {
-                "title": "min",
-                "description": "UNDOCUMENTATED",
-                "type": "integer"
-              },
-              "max": {
-                "title": "max",
-                "description": "UNDOCUMENTATED",
-                "type": "integer"
-              }
-            }
-          },
-          "min_width": {
-            "title": "min_width",
-            "description": "UNDOCUMENTATED",
-            "type": "integer",
-            "minimum": 0
-          },
-          "canopy_slope": {
-            "title": "canopy_slope",
-            "description": "UNDOCUMENTATED",
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-              "rise": {
-                "title": "rise",
-                "description": "UNDOCUMENTATED",
-                "type": "integer",
-                "minimum": 1
-              },
-              "run": {
-                "title": "run",
-                "description": "UNDOCUMENTATED",
-                "type": "integer",
-                "minimum": 1
-              }
-            }
-          },
-          "variation_chance": {
-            "title": "variation_chance",
-            "description": "UNDOCUMENTATED",
-            "oneOf": [
-              { "$ref": "../../../../general/1.14.0/chance_information.json" },
-              {
-                "type": "number",
-                "items": {
-                  "title": "variation_chance",
-                  "$ref": "../../../../general/1.14.0/chance_information.json"
+          "oneOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "max_depth": {
+                  "title": "max_depth",
+                  "description": "UNDOCUMENTATED",
+                  "type": "integer",
+                  "minimum": 1
                 }
               }
-            ]
-          },
-          "leaf_block": {
-            "title": "leaf_block",
-            "description": "UNDOCUMENTATED",
-            "type": "string",
-            "$ref": "../../../../general/block/identifier.json"
-          },
-          "canopy_decoration": {
-            "title": "canopy_decoration",
-            "description": "UNDOCUMENTATED",
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-              "decoration_chance": {
-                "title": "decoration_chance",
-                "description": "UNDOCUMENTATED",
-                "$ref": "../../../../general/1.14.0/chance_information.json"
-              },
-              "decoration_block": {
-                "title": "decoration_block",
-                "description": "UNDOCUMENTATED",
-                "type": "string",
-                "$ref": "../../../../general/block/identifier.json"
-              },
-              "num_steps": {
-                "title": "num_steps",
-                "description": "UNDOCUMENTATED",
-                "type": "integer",
-                "minimum": 0
-              },
-              "step_direction": {
-                "title": "step_direction",
-                "description": "UNDOCUMENTATED",
-                "type": "string",
-                "enum": ["down", "up", "out", "away"]
-              }
+            },
+            {
+              "title": "can_be_submerged",
+              "description": "UNDOCUMENTATED",
+              "type": "boolean"
+            }
+          ]
+        },
+        "trunk_block": {
+          "title": "trunk_block",
+          "description": "UNDOCUMENTATED",
+          "type": "string",
+          "$ref": "../../../../general/block/identifier.json"
+        },
+        "trunk_decoration": {
+          "title": "trunk_decoration",
+          "description": "UNDOCUMENTATED",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "decoration_chance": {
+              "title": "decoration_chance",
+              "description": "UNDOCUMENTATED",
+              "$ref": "../../../../general/1.14.0/chance_information.json"
+            },
+            "decoration_block": {
+              "title": "decoration_block",
+              "description": "UNDOCUMENTATED",
+              "type": "string",
+              "$ref": "../../../../general/block/identifier.json"
+            },
+            "num_steps": {
+              "title": "num_steps",
+              "description": "UNDOCUMENTATED",
+              "type": "integer"
+            },
+            "step_direction": {
+              "title": "step_direction",
+              "description": "UNDOCUMENTATED",
+              "type": "string",
+              "enum": ["down", "up", "out", "away"]
             }
           }
         }
-      },
-      "fancy_canopy": {
-        "title": "fancy_canopy",
-        "description": "UNDOCUMENTATED",
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "height": {
-            "title": "height",
-            "description": "UNDOCUMENTATED",
-            "type": "integer",
-            "minimum": 1
-          },
-          "radius": {
-            "title": "radius",
-            "description": "UNDOCUMENTATED",
-            "type": "integer",
-            "minimum": 0
-          },
-          "leaf_block": {
-            "title": "leaf_block",
-            "description": "UNDOCUMENTATED",
-            "type": "string",
-            "$ref": "../../../../general/block/identifier.json"
+      }
+    },
+    "acacia_canopy": {
+      "title": "acacia_canopy",
+      "description": "UNDOCUMENTATED",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "canopy_size": {
+          "title": "canopy_size",
+          "description": "UNDOCUMENTATED",
+          "type": "integer",
+          "minimum": 1
+        },
+        "leaf_block": {
+          "title": "leaf_block",
+          "description": "UNDOCUMENTATED",
+          "type": "string",
+          "$ref": "../../../../general/block/identifier.json"
+        },
+        "simplify_canopy": {
+          "title": "simplify_canopy",
+          "description": "UNDOCUMENTATED",
+          "type": "boolean"
+        }
+      }
+    },
+    "canopy": {
+      "title": "canopy",
+      "description": "UNDOCUMENTATED",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "canopy_offset": {
+          "title": "canopy_offset",
+          "description": "UNDOCUMENTATED",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "min": {
+              "title": "min",
+              "description": "UNDOCUMENTATED",
+              "type": "integer"
+            },
+            "max": {
+              "title": "max",
+              "description": "UNDOCUMENTATED",
+              "type": "integer"
+            }
+          }
+        },
+        "min_width": {
+          "title": "min_width",
+          "description": "UNDOCUMENTATED",
+          "type": "integer",
+          "minimum": 0
+        },
+        "canopy_slope": {
+          "title": "canopy_slope",
+          "description": "UNDOCUMENTATED",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "rise": {
+              "title": "rise",
+              "description": "UNDOCUMENTATED",
+              "type": "integer",
+              "minimum": 1
+            },
+            "run": {
+              "title": "run",
+              "description": "UNDOCUMENTATED",
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "variation_chance": {
+          "title": "variation_chance",
+          "description": "UNDOCUMENTATED",
+          "oneOf": [
+            { "$ref": "../../../../general/1.14.0/chance_information.json" },
+            {
+              "type": "number",
+              "items": {
+                "title": "variation_chance",
+                "$ref": "../../../../general/1.14.0/chance_information.json"
+              }
+            }
+          ]
+        },
+        "leaf_block": {
+          "title": "leaf_block",
+          "description": "UNDOCUMENTATED",
+          "type": "string",
+          "$ref": "../../../../general/block/identifier.json"
+        },
+        "canopy_decoration": {
+          "title": "canopy_decoration",
+          "description": "UNDOCUMENTATED",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "decoration_chance": {
+              "title": "decoration_chance",
+              "description": "UNDOCUMENTATED",
+              "$ref": "../../../../general/1.14.0/chance_information.json"
+            },
+            "decoration_block": {
+              "title": "decoration_block",
+              "description": "UNDOCUMENTATED",
+              "type": "string",
+              "$ref": "../../../../general/block/identifier.json"
+            },
+            "num_steps": {
+              "title": "num_steps",
+              "description": "UNDOCUMENTATED",
+              "type": "integer",
+              "minimum": 0
+            },
+            "step_direction": {
+              "title": "step_direction",
+              "description": "UNDOCUMENTATED",
+              "type": "string",
+              "enum": ["down", "up", "out", "away"]
+            }
           }
         }
-      },
-      "mega_canopy": {
-        "title": "mega_canopy",
-        "description": "UNDOCUMENTATED",
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "canopy_height": {
-            "title": "canopy_height",
-            "description": "UNDOCUMENTATED",
-            "type": "integer",
-            "minimum": 0
-          },
-          "base_radius": {
-            "title": "base_radius",
-            "description": "UNDOCUMENTATED",
-            "type": "number",
-            "minimum": 0
-          },
-          "core_width": {
-            "title": "core_width",
-            "description": "UNDOCUMENTATED",
-            "type": "number",
-            "minimum": 1
-          },
-          "simplify_canopy": {
-            "title": "simplify_canopy",
-            "description": "UNDOCUMENTATED",
-            "type": "boolean"
-          },
-          "leaf_block": {
-            "title": "leaf_block",
-            "description": "UNDOCUMENTATED",
-            "type": "string",
-            "$ref": "../../../../general/block/identifier.json"
-          }
+      }
+    },
+    "fancy_canopy": {
+      "title": "fancy_canopy",
+      "description": "UNDOCUMENTATED",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "height": {
+          "title": "height",
+          "description": "UNDOCUMENTATED",
+          "type": "integer",
+          "minimum": 1
+        },
+        "radius": {
+          "title": "radius",
+          "description": "UNDOCUMENTATED",
+          "type": "integer",
+          "minimum": 0
+        },
+        "leaf_block": {
+          "title": "leaf_block",
+          "description": "UNDOCUMENTATED",
+          "type": "string",
+          "$ref": "../../../../general/block/identifier.json"
         }
-      },
-      "mega_pine_canopy": {
-        "title": "mega_pine_canopy",
-        "description": "UNDOCUMENTATED",
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "canopy_height": {
-            "title": "canopy_height",
-            "description": "UNDOCUMENTATED",
-            "type": "integer",
-            "minimum": 0
-          },
-          "base_radius": {
-            "title": "base_radius",
-            "description": "UNDOCUMENTATED",
-            "type": "integer",
-            "minimum": 0
-          },
-          "radius_step_modifier": {
-            "title": "radius_step_modifier",
-            "description": "UNDOCUMENTATED",
-            "type": "number",
-            "minimum": 0.0
-          },
-          "core_width": {
-            "title": "core_width",
-            "description": "UNDOCUMENTATED",
-            "type": "integer",
-            "minimum": 1
-          },
-          "leaf_block": {
-            "title": "leaf_block",
-            "description": "UNDOCUMENTATED",
-            "type": "string",
-            "$ref": "../../../../general/block/identifier.json"
-          }
+      }
+    },
+    "mega_canopy": {
+      "title": "mega_canopy",
+      "description": "UNDOCUMENTATED",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "canopy_height": {
+          "title": "canopy_height",
+          "description": "UNDOCUMENTATED",
+          "type": "integer",
+          "minimum": 0
+        },
+        "base_radius": {
+          "title": "base_radius",
+          "description": "UNDOCUMENTATED",
+          "type": "number",
+          "minimum": 0
+        },
+        "core_width": {
+          "title": "core_width",
+          "description": "UNDOCUMENTATED",
+          "type": "number",
+          "minimum": 1
+        },
+        "simplify_canopy": {
+          "title": "simplify_canopy",
+          "description": "UNDOCUMENTATED",
+          "type": "boolean"
+        },
+        "leaf_block": {
+          "title": "leaf_block",
+          "description": "UNDOCUMENTATED",
+          "type": "string",
+          "$ref": "../../../../general/block/identifier.json"
         }
-      },
-      "pine_canopy": {
-        "title": "pine_canopy",
-        "description": "UNDOCUMENTATED",
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "canopy_height": {
-            "title": "canopy_height",
-            "description": "UNDOCUMENTATED",
-            "type": "integer",
-            "minimum": 0
-          },
-          "base_radius": {
-            "title": "base_radius",
-            "description": "UNDOCUMENTATED",
-            "type": "integer",
-            "minimum": 1
-          },
-          "leaf_block": {
-            "title": "leaf_block",
-            "description": "UNDOCUMENTATED",
-            "type": "string",
-            "$ref": "../../../../general/block/identifier.json"
-          }
+      }
+    },
+    "mega_pine_canopy": {
+      "title": "mega_pine_canopy",
+      "description": "UNDOCUMENTATED",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "canopy_height": {
+          "title": "canopy_height",
+          "description": "UNDOCUMENTATED",
+          "type": "integer",
+          "minimum": 0
+        },
+        "base_radius": {
+          "title": "base_radius",
+          "description": "UNDOCUMENTATED",
+          "type": "integer",
+          "minimum": 0
+        },
+        "radius_step_modifier": {
+          "title": "radius_step_modifier",
+          "description": "UNDOCUMENTATED",
+          "type": "number",
+          "minimum": 0.0
+        },
+        "core_width": {
+          "title": "core_width",
+          "description": "UNDOCUMENTATED",
+          "type": "integer",
+          "minimum": 1
+        },
+        "leaf_block": {
+          "title": "leaf_block",
+          "description": "UNDOCUMENTATED",
+          "type": "string",
+          "$ref": "../../../../general/block/identifier.json"
         }
-      },
-      "roofed_canopy": {
-        "title": "roofed_canopy",
-        "description": "UNDOCUMENTATED",
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "canopy_height": {
-            "title": "canopy_height",
-            "description": "UNDOCUMENTATED",
-            "type": "integer",
-            "minimum": 3
-          },
-          "core_width": {
-            "title": "core_width",
-            "description": "UNDOCUMENTATED",
-            "type": "integer",
-            "minimum": 1
-          },
-          "outer_radius": {
-            "title": "outer_radius",
-            "description": "UNDOCUMENTATED",
-            "type": "integer",
-            "minimum": 0
-          },
-          "inner_radius": {
-            "title": "inner_radius",
-            "description": "UNDOCUMENTATED",
-            "type": "integer",
-            "minimum": 0
-          },
-          "leaf_block": {
-            "title": "leaf_block",
-            "description": "UNDOCUMENTATED",
-            "type": "string",
-            "$ref": "../../../../general/block/identifier.json"
-          }
+      }
+    },
+    "pine_canopy": {
+      "title": "pine_canopy",
+      "description": "UNDOCUMENTATED",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "canopy_height": {
+          "title": "canopy_height",
+          "description": "UNDOCUMENTATED",
+          "type": "integer",
+          "minimum": 0
+        },
+        "base_radius": {
+          "title": "base_radius",
+          "description": "UNDOCUMENTATED",
+          "type": "integer",
+          "minimum": 1
+        },
+        "leaf_block": {
+          "title": "leaf_block",
+          "description": "UNDOCUMENTATED",
+          "type": "string",
+          "$ref": "../../../../general/block/identifier.json"
         }
-      },
-      "spruce_canopy": {
-        "title": "Spruce Canopy",
-        "description": "UNDOCUMENTATED",
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "lower_offset": {
-            "title": "lower_offset",
-            "description": "UNDOCUMENTATED",
-            "type": "integer",
-            "minimum": 0
-          },
-          "upper_offset": {
-            "title": "upper_offset",
-            "description": "UNDOCUMENTATED",
-            "type": "integer",
-            "minimum": 0
-          },
-          "max_radius": {
-            "title": "max_radius",
-            "description": "UNDOCUMENTATED",
-            "type": "integer",
-            "minimum": 0
-          },
-          "leaf_block": {
-            "title": "leaf_block",
-            "description": "UNDOCUMENTATED",
-            "type": "string",
-            "$ref": "../../../../general/block/identifier.json"
-          }
+      }
+    },
+    "roofed_canopy": {
+      "title": "roofed_canopy",
+      "description": "UNDOCUMENTATED",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "canopy_height": {
+          "title": "canopy_height",
+          "description": "UNDOCUMENTATED",
+          "type": "integer",
+          "minimum": 3
+        },
+        "core_width": {
+          "title": "core_width",
+          "description": "UNDOCUMENTATED",
+          "type": "integer",
+          "minimum": 1
+        },
+        "outer_radius": {
+          "title": "outer_radius",
+          "description": "UNDOCUMENTATED",
+          "type": "integer",
+          "minimum": 0
+        },
+        "inner_radius": {
+          "title": "inner_radius",
+          "description": "UNDOCUMENTATED",
+          "type": "integer",
+          "minimum": 0
+        },
+        "leaf_block": {
+          "title": "leaf_block",
+          "description": "UNDOCUMENTATED",
+          "type": "string",
+          "$ref": "../../../../general/block/identifier.json"
         }
-      },
-      "random_spread_canopy": {
-        "title": "Random Spread Canopy",
-        "description": "UNDOCUMENTATED",
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "canopy_height": {
-            "title": "canopy_height",
-            "description": "UNDOCUMENTATED",
-            "type": "integer",
-            "minimum": 0
-          },
-          "canopy_radius": {
-            "title": "canopy_radius",
-            "description": "UNDOCUMENTATED",
-            "type": "integer",
-            "minimum": 0
-          },
-          "leaf_placement_attempts": {
-            "title": "leaf_placement_attempts",
-            "description": "UNDOCUMENTATED",
-            "type": "integer",
-            "minimum": 1
-          },
-          "leaf_blocks": {
-            "title": "leaf_blocks",
+      }
+    },
+    "spruce_canopy": {
+      "title": "Spruce Canopy",
+      "description": "UNDOCUMENTATED",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "lower_offset": {
+          "title": "lower_offset",
+          "description": "UNDOCUMENTATED",
+          "type": "integer",
+          "minimum": 0
+        },
+        "upper_offset": {
+          "title": "upper_offset",
+          "description": "UNDOCUMENTATED",
+          "type": "integer",
+          "minimum": 0
+        },
+        "max_radius": {
+          "title": "max_radius",
+          "description": "UNDOCUMENTATED",
+          "type": "integer",
+          "minimum": 0
+        },
+        "leaf_block": {
+          "title": "leaf_block",
+          "description": "UNDOCUMENTATED",
+          "type": "string",
+          "$ref": "../../../../general/block/identifier.json"
+        }
+      }
+    },
+    "random_spread_canopy": {
+      "title": "Random Spread Canopy",
+      "description": "UNDOCUMENTATED",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "canopy_height": {
+          "title": "canopy_height",
+          "description": "UNDOCUMENTATED",
+          "type": "integer",
+          "minimum": 0
+        },
+        "canopy_radius": {
+          "title": "canopy_radius",
+          "description": "UNDOCUMENTATED",
+          "type": "integer",
+          "minimum": 0
+        },
+        "leaf_placement_attempts": {
+          "title": "leaf_placement_attempts",
+          "description": "UNDOCUMENTATED",
+          "type": "integer",
+          "minimum": 1
+        },
+        "leaf_blocks": {
+          "title": "leaf_blocks",
+          "description": "UNDOCUMENTATED",
+          "type": "array",
+          "additionalProperties": false,
+          "items": {
+            "title": "items",
             "description": "UNDOCUMENTATED",
             "type": "array",
             "additionalProperties": false,
-            "items": {
-              "title": "items",
-              "description": "UNDOCUMENTATED",
-              "type": "array",
-              "additionalProperties": false,
-              "items": [{ "type": "integer" }, { "type": "number" }]
-            }
+            "items": [{ "type": "integer" }, { "type": "number" }]
           }
         }
       }

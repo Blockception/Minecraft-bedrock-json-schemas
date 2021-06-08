@@ -28,7 +28,6 @@
     "width_modifier": {
       "title": "Identifier",
       "description": "How many blocks to increase the cave radius by, from the center point of the cave.",
-      "type": "string",
       "$ref": "../../../../molang/number.json"
     }
   }
