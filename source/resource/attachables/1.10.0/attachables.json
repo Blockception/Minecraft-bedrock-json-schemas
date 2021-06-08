@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.resource.1.10.0.attachables",
   "type": "object",
-  "title": "Resourcepack Actor Animation 1.10.0",
+  "title": "Actor Animation 1.10.0",
   "description": "TODO description",
   "required": ["format_version", "minecraft:attachable"],
   "properties": {

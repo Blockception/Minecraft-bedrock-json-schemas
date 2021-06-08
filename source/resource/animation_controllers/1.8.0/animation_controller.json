@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.resource.animation_controller1.8.0",
   "type": "object",
-  "title": "Resourcepack Animation Controller 1.8.0",
+  "title": "Animation Controller 1.8.0",
   "description": "TODO description",
   "definitions": {
     "animationspec": {

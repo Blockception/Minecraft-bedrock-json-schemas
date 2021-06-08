@@ -133,7 +133,7 @@
                 },
                 "plant_at_any_solid_surface": {
                   "title": "Plant At Any Solid Surface",
-                  "type": "string",
+                  "type": "boolean",
                   "description": "UNDOCUMENTATED"
                 },
                 "plant_at_face": {

@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.resource.1.10.0.entity",
   "type": "object",
-  "title": "Resourcepack Actor Animation 1.10.0",
+  "title": "Actor Entity 1.10.0",
   "description": "A client side entity definition",
   "additionalProperties": false,
   "required": ["format_version", "minecraft:client_entity"],

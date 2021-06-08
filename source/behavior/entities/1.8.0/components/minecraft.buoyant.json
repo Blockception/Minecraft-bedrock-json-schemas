@@ -5,6 +5,12 @@
   "description": "Enables an entity to float on the specified liquid blocks.",
   "additionalProperties": false,
   "properties": {
+    "base_buoyancy": {
+      "type": "number",
+      "default": 0,
+      "description": "UNDOCUMENTATED",
+      "title": "Base Buoyancy"
+    },
     "apply_gravity": {
       "type": "boolean",
       "default": true,

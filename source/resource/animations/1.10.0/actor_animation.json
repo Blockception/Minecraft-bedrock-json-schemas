@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.resource.1.10.0.actor_animation",
   "additionalProperties": false,
   "type": "object",
-  "title": "Resourcepack Actor Animation 1.10.0",
+  "title": "Actor Animation 1.10.0",
   "description": "TODO description",
   "definitions": {
     "ParticleEffect": {

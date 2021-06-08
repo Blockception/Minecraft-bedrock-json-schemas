@@ -58,6 +58,7 @@
                   "default": -1,
                   "description": "Amount of time in seconds that the spawned entity will be alive for. A value of -1.0 means it will remain alive for as long as it can"
                 },
+                "base_delay": { "type": "number", "default": 0, "description": "UNDOCUMENTATED" },
                 "entity_type": { "type": "string", "description": "The entity type of the entities we will spawn in this step" },
                 "num_entities_spawned": { "type": "integer", "default": 1, "description": "Number of entities that will be spawned in this step" },
                 "shape": { "type": "string", "default": "line", "description": "The base shape of this step. Valid values are circle and line" },

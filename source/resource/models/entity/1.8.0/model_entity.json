@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.resource.model.1.8.0",
   "type": "object",
-  "title": "Resourcepack Model Schema For 1.8.0",
+  "title": "Model Schema For 1.8.0",
   "description": "TODO description",
   "required": ["format_version"],
   "properties": {
