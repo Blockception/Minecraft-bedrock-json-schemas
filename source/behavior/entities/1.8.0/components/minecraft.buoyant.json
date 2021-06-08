@@ -26,7 +26,7 @@
     "big_wave_speed": {
       "type": "number",
       "default": 10,
-      "description": "Multiplier for the speed to make a big wave. Triggered depending on `big_wave_probability'.",
+      "description": "Multiplier for the speed to make a big wave. Triggered depending on `big_wave_probability`.",
       "title": "Big Wave Speed"
     },
     "drag_down_on_buoyancy_removed": {

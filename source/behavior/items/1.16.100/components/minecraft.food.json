@@ -29,7 +29,7 @@
     },
     "using_converts_to": {
       "title": "Using Converts To",
-      "description": "When used, convert the *this* item to the one specified by `using_converts_to'.",
+      "description": "When used, convert the *this* item to the one specified by `using_converts_to`.",
       "type": "string"
     }
   }

@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.1.12.0.recipe.furnace",
-  "description": "Represents a furnace recipe for a furnace.'Input` items will burn and transform into items specified in `output'..",
+  "description": "Represents a furnace recipe for a furnace.'Input` items will burn and transform into items specified in `output`..",
   "title": "Furnace Recipe 1.12.0",
   "additionalProperties": false,
   "required": ["description"],

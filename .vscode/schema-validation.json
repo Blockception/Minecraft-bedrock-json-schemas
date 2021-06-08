@@ -4,7 +4,6 @@
     "object_check": {
       "type": "object",
       "dependencies": {
-        "description": ["title"],
         "additionalProperties": ["type"],
         "items": ["type"],
         "properties": ["type"]
@@ -24,6 +23,12 @@
           { "type": "number" },
           { "type": "integer" }
         ]
+      },
+      "properties": {
+        "title": {
+          "type": "string",
+          "pattern": "^([A-Z0-9][a-z0-9]*(| ))*$"
+        }
       }
     },
     "array_check": {
