@@ -9,7 +9,7 @@
       "title": "Coordinate",
       "oneOf": [
         {
-          "$ref": "../../../molang/number.json",
+          "$ref": "../../../../molang/number.json",
           "description": "Expression for the coordinate (evaluated each iteration). Mutually exclusive with random distribution object below."
         },
         {
@@ -43,12 +43,12 @@
               "items": [
                 {
                   "title": "Lower bound",
-                  "$ref": "../../../molang/number.json",
+                  "$ref": "../../../../molang/number.json",
                   "description": "Lower bound (inclusive) of the scatter range, as an offset from the input point to scatter around"
                 },
                 {
                   "title": "Upper bound",
-                  "$ref": "../../../molang/number.json",
+                  "$ref": "../../../../molang/number.json",
                   "description": "Upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around"
                 }
               ]
