@@ -61,6 +61,7 @@
       "title": "Description",
       "description": "",
       "type": "object",
+      "required": ["identifier"],
       "properties": {
         "identifier": {
           "title": "Identifier",

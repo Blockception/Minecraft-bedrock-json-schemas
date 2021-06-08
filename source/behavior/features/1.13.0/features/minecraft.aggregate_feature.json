@@ -3,11 +3,13 @@
   "description": "'minecraft:aggregate_feature` places a collection of features in an arbitary order. All features in the collection use the same input position. Features should not depend on each other, as there is no guarantee on the order the features will be placed.\n Succeeds if: At lease one feature is placed successfully.\n Fails if: All features fail to be placed.",
   "type": "object",
   "additionalProperties": false,
+  "required": ["description", "features"],
   "properties": {
     "description": {
       "title": "Description",
       "description": "",
       "type": "object",
+      "required": ["identifier"],
       "properties": {
         "identifier": {
           "title": "Identifier",
