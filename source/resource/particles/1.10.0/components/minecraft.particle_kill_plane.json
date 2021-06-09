@@ -2,6 +2,11 @@
   "$id": "blockception.minecraft.resource.particle.1.10.0.particle_kill_plane",
   "type": "array",
   "title": "Particle Kill Plane Component For 1.10.0",
-  "items": { "minItems": 4, "maxItems": 4, "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "TODO Title" },
-  "description": "UNDOCUMENTATED"
+  "description": "A*x + B*y + C*z + D = 0\nwith the parameters being [ A, B, C, D ]",
+  "items": [
+    { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "A" },
+    { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "B" },
+    { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "C" },
+    { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "D" }
+  ]
 }

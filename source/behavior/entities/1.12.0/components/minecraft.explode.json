@@ -35,14 +35,20 @@
       "description": "The range for the random amount of time the fuse will be lit before exploding, a negative value means the explosion will be immediate.",
       "title": "Fuse Length",
       "oneOf": [
-        { "type": "array", "items": [{ "type": "number" }, { "type": "number" }] },
+        {
+          "type": "array",
+          "items": [
+            { "type": "number", "title": "Minimum" },
+            { "type": "number", "title": "Maximum" }
+          ]
+        },
         { "type": "number" },
         {
           "type": "object",
           "additionalProperties": false,
           "properties": {
-            "range_min": { "type": "number", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
-            "range_max": { "type": "number", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" }
+            "range_min": { "type": "number", "description": "UNDOCUMENTATED", "title": "Range min" },
+            "range_max": { "type": "number", "description": "UNDOCUMENTATED", "title": "Range max" }
           }
         }
       ]

@@ -1,16 +1,16 @@
 {
   "$id": "blockception.minecraft.resource.particle.1.10.0.particle_initial_speed",
   "title": "Particle Initial Speed Component For 1.10.0",
-  "additionalProperties": false,
+  "description": "UNDOCUMENTATED",
   "anyOf": [
     { "$ref": "../../../../molang/number.json" },
     {
       "type": "array",
-      "items": { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "TODO Title" },
-      "minItems": 3,
-      "maxItems": 3,
-      "description": "UNDOCUMENTATED",
-      "title": "TODO Title"
+      "items": [
+        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "TODO Title" },
+        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "TODO Title" },
+        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "TODO Title" }
+      ]
     }
   ]
 }

@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "anchor": { "type": "integer", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
+    "anchor": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Anchor" },
     "angle_offset": {
       "type": "number",
       "default": 0,
@@ -116,20 +116,21 @@
       "additionalProperties": false,
       "type": "object",
       "description": "UNDOCUMENTATED",
-      "title": "UNDOCUMENTATED",
+      "title": "On Hit",
       "properties": {
         "definition_event": {
           "additionalProperties": false,
           "description": "UNDOCUMENTATED",
-          "title": "UNDOCUMENTATED",
+          "title": "Event",
           "type": "object",
           "properties": {
             "affect_projectile": {
               "type": "boolean",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "Affect Projectile"
             },
             "event_trigger": {
+              "title": "Event Trigger",
               "$ref": "../types/event.json"
             }
           }
@@ -138,33 +139,33 @@
           "type": "object",
           "additionalProperties": false,
           "description": "UNDOCUMENTATED",
-          "title": "UNDOCUMENTATED"
+          "title": "Douse Fire"
         },
         "impact_damage": {
           "additionalProperties": false,
           "type": "object",
           "description": "UNDOCUMENTATED",
-          "title": "UNDOCUMENTATED",
+          "title": "Impact Damage",
           "properties": {
             "damage": {
               "type": "integer",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "Damage"
             },
             "knockback": {
               "type": "boolean",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "Knockback"
             },
             "destroy_on_hit": {
               "type": "boolean",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "Destroy On Hit"
             },
             "should_bounce": {
               "type": "boolean",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "Should Bounce"
             }
           }
         },
@@ -172,33 +173,33 @@
           "additionalProperties": false,
           "type": "object",
           "description": "UNDOCUMENTATED",
-          "title": "UNDOCUMENTATED",
+          "title": "Mob Effect",
           "effect": "levitation",
           "properties": {
             "effect": {
               "type": "string",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "Effect"
             },
             "durationeasy": {
               "type": "integer",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "DurationEasy"
             },
             "durationnormal": {
               "type": "integer",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "DurationNormal"
             },
             "durationhard": {
               "type": "integer",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "DurationHard"
             },
             "amplifier": {
               "type": "integer",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "Amplifier"
             }
           }
         },
@@ -206,27 +207,27 @@
           "additionalProperties": false,
           "type": "object",
           "description": "UNDOCUMENTATED",
-          "title": "UNDOCUMENTATED",
+          "title": "Particle On Hit",
           "properties": {
             "particle_type": {
               "type": "string",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "Particle Type"
             },
             "num_particles": {
               "type": "integer",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "Number Particles"
             },
             "on_entity_hit": {
               "type": "boolean",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "On Entity Hit"
             },
             "on_other_hit": {
               "type": "boolean",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "On Other Hit"
             }
           }
         },
@@ -234,48 +235,48 @@
           "additionalProperties": false,
           "type": "object",
           "description": "UNDOCUMENTATED",
-          "title": "UNDOCUMENTATED"
+          "title": "Remove On Hit"
         },
         "spawn_chance": {
           "additionalProperties": false,
           "type": "object",
           "description": "UNDOCUMENTATED",
-          "title": "UNDOCUMENTATED",
+          "title": "Spawn Chance",
           "properties": {
             "first_spawn_percent_chance": {
               "type": "number",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "First Spawn Percent Chance"
             },
             "first_spawn_chance": {
               "type": "integer",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "First Spawn Chance"
             },
             "second_spawn_chance": {
               "type": "integer",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "Second Spawn Chance"
             },
             "first_spawn_count": {
               "type": "integer",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "First Spawn Count"
             },
             "second_spawn_count": {
               "type": "integer",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "Second Spawn Count"
             },
             "spawn_definition": {
               "type": "string",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "Spawn Definition"
             },
             "spawn_baby": {
               "type": "boolean",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "Spawn Baby"
             }
           }
         },
@@ -286,31 +287,31 @@
             "radius": {
               "type": "number",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "Spawn Aoe Cloud"
             },
             "radius_on_use": {
               "type": "number",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "Radius On Use"
             },
             "potion": {
               "type": "integer",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "Potion"
             },
             "particle": {
               "type": "string",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "Particle"
             },
             "duration": {
               "type": "integer",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "Duration"
             },
             "color": {
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED",
+              "title": "Color",
               "type": "array",
               "format": "color-array",
               "items": [
@@ -340,12 +341,12 @@
             "affect_owner": {
               "type": "boolean",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "Affect Owner"
             },
             "reapplication_delay": {
               "type": "integer",
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED"
+              "title": "Reapplication Delay"
             }
           }
         },
@@ -353,13 +354,13 @@
           "additionalProperties": false,
           "type": "object",
           "description": "UNDOCUMENTATED",
-          "title": "UNDOCUMENTATED"
+          "title": "Stick In Ground"
         },
         "teleport_owner": {
           "additionalProperties": false,
           "type": "object",
           "description": "UNDOCUMENTATED",
-          "title": "UNDOCUMENTATED"
+          "title": "Teleport Owner"
         }
       }
     },

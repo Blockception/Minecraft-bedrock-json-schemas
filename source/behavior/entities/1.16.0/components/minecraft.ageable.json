@@ -11,13 +11,13 @@
         { "type": "array", "items": { "$ref": "../../../../general/item/identifier.json" } },
         { "type": "string", "$ref": "../../../../general/item/identifier.json" }
       ],
-      "title": "TODO Title"
+      "title": "Drop Items"
     },
     "duration": {
       "type": "number",
       "default": 1200,
       "description": "Amount of time before the entity grows up, -1 for always a baby.",
-      "title": "TODO Title"
+      "title": "Duration"
     },
     "feed_items": {
       "description": "List of items that can be fed to the entity. Includes `item` for the item name and `growth` to define how much time it grows up by",
@@ -32,7 +32,7 @@
         },
         { "type": "string", "$ref": "../../../../general/item/identifier.json" }
       ],
-      "title": "TODO Title"
+      "title": "Feed Items"
     },
     "grow_up": { "$ref": "../types/event.json", "description": "Event to run when this entity grows up.", "title": "Grow up" },
     "transform_to_item": {

@@ -5,7 +5,7 @@
   "description": "Allows the entity to be a thrown entity.",
   "additionalProperties": false,
   "properties": {
-    "anchor": { "type": "integer", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
+    "anchor": { "type": "integer", "description": "UNDOCUMENTATED", "title": "TODO" },
     "angle_offset": {
       "type": "number",
       "default": 0,
@@ -97,80 +97,80 @@
       "additionalProperties": false,
       "type": "object",
       "description": "UNDOCUMENTATED",
-      "title": "UNDOCUMENTATED",
+      "title": "TODO",
       "properties": {
         "catch_fire": {
           "additionalProperties": false,
           "description": "UNDOCUMENTATED",
-          "title": "UNDOCUMENTATED",
+          "title": "TODO",
           "type": "object",
-          "properties": { "fire_affected_by_griefing": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" } }
+          "properties": { "fire_affected_by_griefing": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "TODO" } }
         },
         "definition_event": {
           "additionalProperties": false,
           "description": "UNDOCUMENTATED",
-          "title": "UNDOCUMENTATED",
+          "title": "TODO",
           "type": "object",
           "properties": {
-            "affect_projectile": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
+            "affect_projectile": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "TODO" },
             "event_trigger": { "$ref": "../types/event.json" }
           }
         },
-        "douse_fire": { "type": "object", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
+        "douse_fire": { "type": "object", "description": "UNDOCUMENTATED", "title": "TODO" },
         "impact_damage": {
           "additionalProperties": false,
           "type": "object",
           "description": "UNDOCUMENTATED",
-          "title": "UNDOCUMENTATED",
+          "title": "TODO",
           "properties": {
-            "filter": { "type": "string", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
-            "catch_fire": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
-            "damage": { "type": "integer", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
-            "destroy_on_hit": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
-            "knockback": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
-            "semi_random_diff_damage": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" }
+            "filter": { "type": "string", "description": "UNDOCUMENTATED", "title": "TODO" },
+            "catch_fire": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "TODO" },
+            "damage": { "type": "integer", "description": "UNDOCUMENTATED", "title": "TODO" },
+            "destroy_on_hit": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "TODO" },
+            "knockback": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "TODO" },
+            "semi_random_diff_damage": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "TODO" }
           }
         },
         "particle_on_hit": {
           "additionalProperties": false,
           "type": "object",
           "description": "UNDOCUMENTATED",
-          "title": "UNDOCUMENTATED",
+          "title": "TODO",
           "properties": {
-            "particle_type": { "type": "string", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
-            "num_particles": { "type": "integer", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
-            "on_entity_hit": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
-            "on_other_hit": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" }
+            "particle_type": { "type": "string", "description": "UNDOCUMENTATED", "title": "TODO" },
+            "num_particles": { "type": "integer", "description": "UNDOCUMENTATED", "title": "TODO" },
+            "on_entity_hit": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "TODO" },
+            "on_other_hit": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "TODO" }
           }
         },
-        "remove_on_hit": { "additionalProperties": false, "type": "object", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
+        "remove_on_hit": { "additionalProperties": false, "type": "object", "description": "UNDOCUMENTATED", "title": "TODO" },
         "spawn_chance": {
           "additionalProperties": false,
           "type": "object",
           "description": "UNDOCUMENTATED",
-          "title": "UNDOCUMENTATED",
+          "title": "TODO",
           "properties": {
-            "first_spawn_percent_chance": { "type": "number", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
-            "first_spawn_chance": { "type": "integer", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
-            "second_spawn_chance": { "type": "integer", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
-            "first_spawn_count": { "type": "integer", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
-            "second_spawn_count": { "type": "integer", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
-            "spawn_definition": { "type": "string", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
-            "spawn_baby": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" }
+            "first_spawn_percent_chance": { "type": "number", "description": "UNDOCUMENTATED", "title": "TODO" },
+            "first_spawn_chance": { "type": "integer", "description": "UNDOCUMENTATED", "title": "TODO" },
+            "second_spawn_chance": { "type": "integer", "description": "UNDOCUMENTATED", "title": "TODO" },
+            "first_spawn_count": { "type": "integer", "description": "UNDOCUMENTATED", "title": "TODO" },
+            "second_spawn_count": { "type": "integer", "description": "UNDOCUMENTATED", "title": "TODO" },
+            "spawn_definition": { "type": "string", "description": "UNDOCUMENTATED", "title": "TODO" },
+            "spawn_baby": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "TODO" }
           }
         },
         "spawn_aoe_cloud": {
           "additionalProperties": false,
           "type": "object",
           "properties": {
-            "radius": { "type": "number", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
-            "radius_on_use": { "type": "number", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
-            "potion": { "type": "integer", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
-            "particle": { "type": "string", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
-            "duration": { "type": "integer", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
+            "radius": { "type": "number", "description": "UNDOCUMENTATED", "title": "TODO" },
+            "radius_on_use": { "type": "number", "description": "UNDOCUMENTATED", "title": "TODO" },
+            "potion": { "type": "integer", "description": "UNDOCUMENTATED", "title": "TODO" },
+            "particle": { "type": "string", "description": "UNDOCUMENTATED", "title": "TODO" },
+            "duration": { "type": "integer", "description": "UNDOCUMENTATED", "title": "TODO" },
             "color": {
               "description": "UNDOCUMENTATED",
-              "title": "UNDOCUMENTATED",
+              "title": "TODO",
               "type": "array",
               "format": "color-array",
               "items": [
@@ -179,12 +179,12 @@
                 { "type": "integer", "minimum": 0, "maximum": 255, "description": "B", "title": "B" }
               ]
             },
-            "affect_owner": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
-            "reapplication_delay": { "type": "integer", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" }
+            "affect_owner": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "TODO" },
+            "reapplication_delay": { "type": "integer", "description": "UNDOCUMENTATED", "title": "TODO" }
           }
         },
-        "stick_in_ground": { "additionalProperties": false, "type": "object", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
-        "teleport_owner": { "additionalProperties": false, "type": "object", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" }
+        "stick_in_ground": { "additionalProperties": false, "type": "object", "description": "UNDOCUMENTATED", "title": "TODO" },
+        "teleport_owner": { "additionalProperties": false, "type": "object", "description": "UNDOCUMENTATED", "title": "TODO" }
       }
     },
     "particle": { "type": "string", "default": "iconcrack", "description": "Particle to use upon collision", "title": "Particle" },

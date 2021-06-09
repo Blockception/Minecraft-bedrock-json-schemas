@@ -11,21 +11,26 @@
       "type": "number",
       "default": 0.5,
       "description": "The delay after which the knockback occurs (in seconds).",
-      "title": "TODO Title"
+      "title": "Attack Time"
     },
     "cooldown_time": {
       "type": "number",
       "default": 0,
       "description": "Time in seconds the mob has to wait before using the goal again",
-      "title": "TODO Title"
+      "title": "Cooldown Time"
     },
-    "duration": { "type": "number", "default": 1, "description": "The duration of the roar (in seconds).", "title": "TODO Title" },
-    "knockback_damage": { "type": "integer", "default": 6, "description": "The damage dealt by the knockback roar.", "title": "TODO Title" },
-    "knockback_range": { "type": "integer", "default": 4, "description": "The radius (in blocks) of the knockback effect.", "title": "TODO Title" },
-    "knockback_strength": { "type": "integer", "default": 4, "description": "The strength of the knockback.", "title": "TODO Title" },
-    "Trigger": { "$ref": "../types/trigger.json", "description": "On_roar_end", "title": "TODO Title" },
-    "knockback_filters": { "$ref": "../../filters/filters.json", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
-    "damage_filters": { "$ref": "../../filters/filters.json", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
-    "on_roar_end": { "$ref": "../types/event.json", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" }
+    "duration": { "type": "number", "default": 1, "description": "The duration of the roar (in seconds).", "title": "Duration" },
+    "knockback_damage": { "type": "integer", "default": 6, "description": "The damage dealt by the knockback roar.", "title": "Knockback Damage" },
+    "knockback_range": {
+      "type": "integer",
+      "default": 4,
+      "description": "The radius (in blocks) of the knockback effect.",
+      "title": "Knockback Range"
+    },
+    "knockback_strength": { "type": "integer", "default": 4, "description": "The strength of the knockback.", "title": "Knockback Strength" },
+    "Trigger": { "$ref": "../types/trigger.json", "description": "On_roar_end", "title": "Trigger" },
+    "knockback_filters": { "$ref": "../../filters/filters.json", "description": "UNDOCUMENTATED", "title": "Knockback Filters" },
+    "damage_filters": { "$ref": "../../filters/filters.json", "description": "UNDOCUMENTATED", "title": "Damage Filters" },
+    "on_roar_end": { "$ref": "../types/event.json", "description": "UNDOCUMENTATED", "title": "On Roar End" }
   }
 }

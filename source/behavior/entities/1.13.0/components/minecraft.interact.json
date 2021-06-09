@@ -98,7 +98,7 @@
         { "type": "array", "items": { "$ref": "#/definitions/interaction_spec" } }
       ],
       "description": "UNDOCUMENTATED",
-      "title": "TODO Title"
+      "title": "Interactions"
     }
   }
 }

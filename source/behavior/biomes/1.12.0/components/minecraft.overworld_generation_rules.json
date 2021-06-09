@@ -15,6 +15,7 @@
         {
           "type": "array",
           "description": "UNDOCUMENTATED",
+          "title": "Block Reference",
           "minItems": 1,
           "items": {
             "oneOf": [
@@ -60,13 +61,13 @@
         "type": "array",
         "items": [
           {
-            "title": "UNDOCUMENTATED",
+            "title": "Climate Category",
             "description": "Name of a climate category",
             "type": "string",
             "enum": ["medium", "warm", "lukewarm", "cold", "frozen"]
           },
           {
-            "title": "UNDOCUMENTATED",
+            "title": "Weight",
             "description": "Weight with which this biome should be selected, relative to other biomes in the same category",
             "type": "integer"
           }

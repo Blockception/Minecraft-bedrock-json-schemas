@@ -38,15 +38,15 @@
     }
   },
   "properties": {
-    "resource_pack_name": { "type": "string", "title": "Resource Pack Name", "description": "TODO: add description" },
+    "resource_pack_name": { "type": "string", "title": "Resource Pack Name", "description": "UNDOCUMENTATED" },
     "texture_data": {
       "title": "Texture Data",
-      "description": "TODO: add description",
+      "description": "UNDOCUMENTATED",
       "type": "object",
       "propertyNames": { "pattern": "^[\\w_\\-\\.]+$" },
       "additionalProperties": {
         "title": "Texture Data",
-        "description": "TODO: add description",
+        "description": "UNDOCUMENTATED",
         "type": "object",
         "additionalProperties": false,
         "properties": {
@@ -59,6 +59,6 @@
         }
       }
     },
-    "texture_name": { "title": "Texture Name", "description": "TODO: add description", "type": "string" }
+    "texture_name": { "title": "Texture Name", "description": "UNDOCUMENTATED", "type": "string" }
   }
 }

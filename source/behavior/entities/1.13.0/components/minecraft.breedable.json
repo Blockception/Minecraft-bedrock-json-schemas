@@ -43,7 +43,7 @@
         { "type": "object", "$ref": "#/definitions/breeds_with_spec" },
         { "uniqueItems": true, "type": "array", "items": { "type": "object", "$ref": "#/definitions/breeds_with_spec" } }
       ],
-      "title": "TODO Title"
+      "title": "Breeds With"
     },
     "deny_parents_variant": {
       "type": "object",

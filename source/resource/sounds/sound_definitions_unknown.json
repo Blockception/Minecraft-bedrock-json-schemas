@@ -33,8 +33,8 @@
                 "$id": "#/Sound/sounds/stringItem",
                 "type": "string",
                 "$ref": "#/definitions/SoundPath",
-                "description": "UNDOCUMENTATED: Todo",
-                "title": "Todo"
+                "description": "UNDOCUMENTATED",
+                "title": "Sounds"
               },
               {
                 "additionalItems": false,
@@ -64,8 +64,8 @@
                     "title": "Name"
                   }
                 },
-                "description": "UNDOCUMENTATED: Todo",
-                "title": "Todo"
+                "description": "UNDOCUMENTATED",
+                "title": "Sounds"
               }
             ],
             "description": "UNDOCUMENTATED: sounds",
@@ -74,8 +74,7 @@
           "description": "UNDOCUMENTATED: sounds",
           "title": "Sounds"
         }
-      },
-      "description": "UNDOCUMENTATED: additionalProperties"
+      }
     }
   },
   "additionalProperties": { "$ref": "#/definitions/SoundSpec" },

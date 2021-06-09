@@ -34,11 +34,11 @@
       "description": "Tells the pathfinder which blocks to avoid when creating a path",
       "title": "Blocks To Avoid",
       "items": {
-        "title": "Block",
+        "title": "Block to Avoid",
         "description": "UNDOCUMENTATED",
         "oneOf": [
           { "type": "string", "$ref": "../../../../general/block/identifier.json" },
-          { "type": "object", "title": "UNDOCUMENTATED", "properties": { "name": { "$ref": "../../../../general/block/identifier.json" } } }
+          { "type": "object", "title": "Block to Avoid", "properties": { "name": { "$ref": "../../../../general/block/identifier.json" } } }
         ]
       }
     },

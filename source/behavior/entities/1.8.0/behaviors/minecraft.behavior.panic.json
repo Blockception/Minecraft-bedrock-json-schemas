@@ -27,14 +27,14 @@
       "title": "TODO Title"
     },
     "prefer_water": { "type": "boolean", "default": false, "description": "If true, the mob will prefer water over land", "title": "TODO Title" },
-    "panic_sound": { "type": "string", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
+    "panic_sound": { "type": "string", "description": "UNDOCUMENTATED", "title": "TODO" },
     "sound_interval": {
       "type": "object",
       "description": "UNDOCUMENTATED",
-      "title": "UNDOCUMENTATED",
+      "title": "TODO",
       "properties": {
-        "range_min": { "type": "number", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
-        "range_max": { "type": "number", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" }
+        "range_min": { "type": "number", "description": "UNDOCUMENTATED", "title": "TODO" },
+        "range_max": { "type": "number", "description": "UNDOCUMENTATED", "title": "TODO" }
       },
       "additionalProperties": false
     }

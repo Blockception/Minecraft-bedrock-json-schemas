@@ -22,29 +22,29 @@
   },
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
-    "cast_duration": { "type": "number", "description": "Time in seconds for the entire event sending process", "title": "TODO Title" },
+    "cast_duration": { "type": "number", "description": "Time in seconds for the entire event sending process", "title": "Cast Duration" },
     "event_choices": {
       "type": "array",
-      "title": "UNDOCUMENTATED",
+      "title": "Event Choices",
       "description": "UNDOCUMENTATED",
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "title": "UNDOCUMENTATED",
+        "title": "Event Choice",
         "description": "UNDOCUMENTATED",
         "properties": {
-          "min_activation_range": { "type": "number", "title": "UNDOCUMENTATED", "description": "UNDOCUMENTATED" },
-          "max_activation_range": { "type": "number", "title": "UNDOCUMENTATED", "description": "UNDOCUMENTATED" },
-          "cooldown_time": { "type": "number", "title": "UNDOCUMENTATED", "description": "UNDOCUMENTATED" },
-          "cast_duration": { "type": "number", "title": "UNDOCUMENTATED", "description": "UNDOCUMENTATED" },
+          "min_activation_range": { "type": "number", "title": "Minimum Activation Range", "description": "UNDOCUMENTATED" },
+          "max_activation_range": { "type": "number", "title": "Maxmimum Activation Range", "description": "UNDOCUMENTATED" },
+          "cooldown_time": { "type": "number", "title": "Cooldown Time", "description": "UNDOCUMENTATED" },
+          "cast_duration": { "type": "number", "title": "Cast Duration", "description": "UNDOCUMENTATED" },
           "filters": { "$ref": "../../filters/filters.json" },
-          "particle_color": { "type": "string", "format": "color-hex", "title": "UNDOCUMENTATED", "description": "UNDOCUMENTATED" },
-          "weight": { "type": "integer", "title": "UNDOCUMENTATED", "description": "UNDOCUMENTATED" },
-          "start_sound_event": { "type": "string", "title": "UNDOCUMENTATED", "description": "UNDOCUMENTATED" },
+          "particle_color": { "type": "string", "format": "color-hex", "title": "Particle Color", "description": "UNDOCUMENTATED" },
+          "weight": { "type": "integer", "title": "Weight", "description": "UNDOCUMENTATED" },
+          "start_sound_event": { "type": "string", "title": "Start Sound Event", "description": "UNDOCUMENTATED" },
           "sequence": { "$ref": "#/definitions/sequence" }
         }
       }
     },
-    "sequence": { "$ref": "#/definitions/sequence", "description": "UNDOCUMENTATED", "title": "TODO Title" }
+    "sequence": { "$ref": "#/definitions/sequence", "description": "UNDOCUMENTATED", "title": "Sequence" }
   }
 }

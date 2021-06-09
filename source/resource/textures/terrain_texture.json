@@ -38,23 +38,23 @@
     }
   },
   "properties": {
-    "num_mip_levels": { "type": "integer", "title": "Num Mip Levels", "description": "TODO: add description" },
-    "padding": { "type": "integer", "title": "Padding", "description": "TODO: add description" },
-    "resource_pack_name": { "type": "string", "title": "Resource Pack Name", "description": "TODO: add description" },
+    "num_mip_levels": { "type": "integer", "title": "Num Mip Levels", "description": "UNDOCUMENTATED" },
+    "padding": { "type": "integer", "title": "Padding", "description": "UNDOCUMENTATED" },
+    "resource_pack_name": { "type": "string", "title": "Resource Pack Name", "description": "UNDOCUMENTATED" },
     "texture_data": {
       "type": "object",
       "propertyNames": { "pattern": "^[\\w_\\-\\.]+$" },
       "additionalProperties": {
         "type": "object",
         "title": "Texture Data",
-        "description": "TODO: add description",
+        "description": "UNDOCUMENTATED",
         "properties": {
           "textures": { "oneOf": [{ "$ref": "#/definitions/texture" }, { "type": "array", "items": { "$ref": "#/definitions/texture" } }] }
         }
       },
       "description": "UNDOCUMENTATED",
-      "title": "TODO Title"
+      "title": "Texture Data"
     },
-    "texture_name": { "type": "string", "description": "UNDOCUMENTATED", "title": "TODO Title" }
+    "texture_name": { "type": "string", "description": "UNDOCUMENTATED", "title": "Texture Name" }
   }
 }

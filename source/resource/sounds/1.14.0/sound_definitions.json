@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.sound_definition.1.14.0.json",
   "type": "object",
   "additionalItems": false,
-  "title": "Sound  File For 1.14.0",
+  "title": "Sound File For 1.14.0",
   "description": "UNDOCUMENTATED",
   "definitions": {
     "SoundPath": {
@@ -34,8 +34,8 @@
                 "$id": "#/Sound/sounds/stringItem",
                 "type": "string",
                 "$ref": "#/definitions/SoundPath",
-                "description": "UNDOCUMENTATED: Todo",
-                "title": "Todo"
+                "description": "UNDOCUMENTATED",
+                "title": "Sounds"
               },
               {
                 "additionalItems": false,
@@ -59,8 +59,8 @@
                     "title": "Name"
                   }
                 },
-                "description": "UNDOCUMENTATED: Todo",
-                "title": "Todo"
+                "description": "UNDOCUMENTATED",
+                "title": "Sounds"
               }
             ],
             "description": "UNDOCUMENTATED: sounds",
@@ -69,8 +69,7 @@
           "description": "UNDOCUMENTATED: sounds",
           "title": "Sounds"
         }
-      },
-      "description": "UNDOCUMENTATED: additionalProperties"
+      }
     }
   },
   "properties": {

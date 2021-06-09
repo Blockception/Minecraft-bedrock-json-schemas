@@ -39,6 +39,6 @@
       "title": "Look Time",
       "items": [{ "type": "integer" }, { "type": "integer" }]
     },
-    "target_distance": { "type": "number", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" }
+    "target_distance": { "type": "number", "description": "UNDOCUMENTATED", "title": "TODO" }
   }
 }

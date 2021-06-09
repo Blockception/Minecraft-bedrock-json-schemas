@@ -23,7 +23,7 @@
       "description": "Determines if the \"min_range_inactivity_timer\" is used in the standard despawn rules.",
       "title": "Despawn From Inactivity"
     },
-    "despawn_from_distance": { "type": "object", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED", "additionalProperties": false },
+    "despawn_from_distance": { "type": "object", "description": "UNDOCUMENTATED", "title": "TODO", "additionalProperties": false },
     "despawn_from_simulation_edge": {
       "type": "boolean",
       "default": true,

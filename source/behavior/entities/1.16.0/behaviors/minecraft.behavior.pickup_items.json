@@ -19,7 +19,7 @@
       "description": "If true, the mob can pickup items to its hand or armor slots",
       "title": "Can Pickup To Hand Or Equipment"
     },
-    "cooldown_after_being_attacked": { "type": "number", "default": true, "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
+    "cooldown_after_being_attacked": { "type": "number", "default": true, "description": "UNDOCUMENTATED", "title": "Cooldown After Being Attacked" },
     "goal_radius": {
       "type": "number",
       "default": 0.5,

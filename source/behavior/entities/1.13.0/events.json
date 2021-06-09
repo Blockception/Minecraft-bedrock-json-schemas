@@ -31,7 +31,7 @@
             "properties": {
               "add": { "$ref": "#/definitions/addremove", "description": "What gets added when the event gets triggered", "title": "Add" },
               "remove": { "$ref": "#/definitions/addremove", "description": "What gets removed when the event gets triggered", "title": "Remove" },
-              "trigger": { "type": "string", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
+              "trigger": { "type": "string", "description": "UNDOCUMENTATED", "title": "Trigger" },
               "weight": { "type": "number", "description": "UNDOCUMENTATED: weight", "title": "Weight" }
             },
             "description": "UNDOCUMENTATED: randomize",
@@ -56,7 +56,7 @@
           "title": "Sequences"
         },
         "filters": { "$ref": "./../filters/filters.json" },
-        "trigger": { "type": "string", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" }
+        "trigger": { "type": "string", "description": "UNDOCUMENTATED", "title": "Trigger" }
       }
     }
   },

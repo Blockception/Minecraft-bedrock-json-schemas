@@ -3,5 +3,6 @@
   "type": "string",
   "title": "Molang / String",
   "description": "Molang definition",
-  "format": "molang"
+  "format": "molang",
+  "examples": ["query.variant"]
 }

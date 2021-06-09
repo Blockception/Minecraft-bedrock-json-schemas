@@ -6,7 +6,7 @@
   "required": ["description", "places_block", "enforce_placement_rules", "enforce_survivability_rules"],
   "definitions": {
     "block_side": {
-      "oneOf": [{ "type": "string" }, { "type": "array", "items": { "title": "UNDOCUMENTATED", "description": "UNDOCUMENTATED", "type": "string" } }]
+      "oneOf": [{ "type": "string" }, { "type": "array", "items": { "title": "TODO", "description": "UNDOCUMENTATED", "type": "string" } }]
     }
   },
   "properties": {

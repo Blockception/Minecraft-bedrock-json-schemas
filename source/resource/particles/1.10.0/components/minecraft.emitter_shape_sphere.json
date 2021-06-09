@@ -6,17 +6,17 @@
   "properties": {
     "direction": {
       "anyOf": [
-        { "type": "string", "enum": ["inwards", "outwards"], "description": "UNDOCUMENTATED: Todo", "title": "Todo" },
+        { "type": "string", "enum": ["inwards", "outwards"], "description": "UNDOCUMENTATED", "title": "Todo" },
         {
           "type": "array",
           "items": {
             "minItems": 3,
             "maxItems": 3,
             "$ref": "../../../../molang/number.json",
-            "description": "UNDOCUMENTATED: Todo",
+            "description": "UNDOCUMENTATED",
             "title": "Todo"
           },
-          "description": "UNDOCUMENTATED: Todo",
+          "description": "UNDOCUMENTATED",
           "title": "Todo"
         }
       ],
