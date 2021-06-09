@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.entity.volume.1.8.0",
+  "$id": "blockception.minecraft.entity.volume",
   "type": "string",
-  "title": "Entity Identifier 1.8.0",
-  "description": "The minecraft entity volume",
-  "examples": ["namespace:volume"],
+  "title": "Volume Identifier",
+  "description": "A minecraft entity volume",
+  "examples": ["namespace:volume_name"],
   "pattern": "^[0-9a-zA-Z:_\\.\\-]+$"
 }
