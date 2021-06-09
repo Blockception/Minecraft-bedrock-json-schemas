@@ -6,26 +6,22 @@
   "properties": {
     "direction": {
       "type": "array",
-      "items": {
-        "minItems": 3,
-        "maxItems": 3,
-        "$ref": "../../../../molang/number.json",
-        "description": "UNDOCUMENTATED: direction",
-        "title": "Direction"
-      },
+      "items": [
+        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "X" },
+        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "Y" },
+        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "Z" }
+      ],
       "description": "UNDOCUMENTATED: direction",
       "title": "Direction"
     },
     "offset": {
       "type": "array",
-      "items": {
-        "minItems": 3,
-        "maxItems": 3,
-        "$ref": "../../../../molang/number.json",
-        "description": "UNDOCUMENTATED: offset",
-        "title": "Offset"
-      },
-      "description": "UNDOCUMENTATED: offset",
+      "items": [
+        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "X" },
+        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "Y" },
+        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "Z" }
+      ],
+      "description": "UNDOCUMENTATED",
       "title": "Offset"
     }
   },

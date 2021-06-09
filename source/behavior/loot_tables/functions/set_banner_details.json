@@ -3,8 +3,9 @@
   "additionalProperties": false,
   "description": "The function set_banner_details",
   "title": "Set Banner Details",
+  "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "set_banner_details", "description": "UNDOCUMENTATED", "title": "TODO Title" },
-    "type": { "type": "integer", "description": "UNDOCUMENTATED", "title": "TODO Title" }
+    "function": { "type": "string", "const": "set_banner_details", "description": "UNDOCUMENTATED", "title": "Function" },
+    "type": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Type" }
   }
 }

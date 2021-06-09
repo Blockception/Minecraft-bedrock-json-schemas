@@ -7,7 +7,7 @@
   "items": {
     "type": "object",
     "additionalProperties": false,
-    "title": "TODO",
+    "title": "Permute Type",
     "description": "UNDOCUMENTATED",
     "properties": {
       "weight": { "type": "integer", "title": "Weight", "description": "UNDOCUMENTATED" },

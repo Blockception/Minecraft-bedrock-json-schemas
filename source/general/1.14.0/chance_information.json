@@ -2,10 +2,10 @@
   "$id": "blockception.minecraft.general.1.14.0.chance_information",
   "additionalProperties": false,
   "type": "object",
-  "title": "TODO",
+  "title": "Chance Information",
   "description": "UNDOCUMENTATED",
   "properties": {
-    "numerator": { "type": "number", "minimum": 1, "description": "UNDOCUMENTATED", "title": "TODO Title" },
-    "denominator": { "type": "number", "minimum": 1, "description": "UNDOCUMENTATED", "title": "TODO Title" }
+    "numerator": { "type": "number", "minimum": 1, "description": "UNDOCUMENTATED", "title": "Numerator" },
+    "denominator": { "type": "number", "minimum": 1, "description": "UNDOCUMENTATED", "title": "Denominator" }
   }
 }

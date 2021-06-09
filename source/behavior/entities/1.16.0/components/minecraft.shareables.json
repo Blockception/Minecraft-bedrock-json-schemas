@@ -35,6 +35,9 @@
       "description": "List of items that the entity wants to share",
       "items": {
         "type": "object",
+        "title": "Item",
+        "description": "An Item that the entity wants to share",
+        "additionalProperties": false,
         "properties": {
           "admire": {
             "type": "boolean",
@@ -77,8 +80,7 @@
           },
           "want_amount": { "type": "integer", "description": "Number of this item this entity wants to have.", "title": "Want Amount" }
         }
-      },
-      "title": "TODO Title"
+      }
     }
   }
 }

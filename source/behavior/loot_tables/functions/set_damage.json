@@ -3,16 +3,22 @@
   "additionalProperties": false,
   "description": "The function set_damage",
   "title": "Set Damage",
+  "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "set_damage", "description": "UNDOCUMENTATED", "title": "TODO Title" },
+    "function": { "type": "string", "const": "set_damage", "description": "UNDOCUMENTATED", "title": "Function" },
     "damage": {
+      "description": "UNDOCUMENTATED",
+      "title": "Damage",
       "oneOf": [
         { "type": "integer" },
-        { "type": "object", "properties": { "min": { "type": "integer" }, "max": { "type": "integer" } } },
-        { "type": "object", "properties": { "min": { "type": "number" }, "max": { "type": "number" } } }
-      ],
-      "description": "UNDOCUMENTATED",
-      "title": "TODO Title"
+        {
+          "type": "object",
+          "properties": {
+            "min": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Minimum" },
+            "max": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Maximum" }
+          }
+        }
+      ]
     }
   }
 }

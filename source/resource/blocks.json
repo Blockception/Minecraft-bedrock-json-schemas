@@ -29,7 +29,7 @@
       "type": "array",
       "items": [{ "type": "integer" }, { "type": "integer" }, { "type": "integer" }],
       "description": "UNDOCUMENTATED",
-      "title": "TODO Title"
+      "title": "Format Version"
     }
   },
   "additionalProperties": {

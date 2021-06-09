@@ -8,7 +8,7 @@
   "properties": {
     "triggers": {
       "description": "UNDOCUMENTATED",
-      "title": "TODO",
+      "title": "Triggers",
       "properties": {
         "cooldown": {
           "type": "number",

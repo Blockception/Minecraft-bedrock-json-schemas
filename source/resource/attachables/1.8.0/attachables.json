@@ -26,10 +26,10 @@
           "properties": {
             "animations": {
               "description": "The connecting of animations in animations controllers with the actuall animations, names should corosponds",
-              "title": "Animations Schema",
+              "title": "Animations",
               "type": "object",
               "minProperties": 1,
-              "additionalProperties": { "type": "string", "description": "UNDOCUMENTATED: additionalProperties", "title": "TODO" }
+              "additionalProperties": { "type": "string", "description": "UNDOCUMENTATED: additionalProperties", "title": "Animation" }
             },
             "animation_controllers": {
               "type": "array",
@@ -38,7 +38,7 @@
               "title": "Animation Controllers",
               "items": {
                 "type": "object",
-                "additionalProperties": { "type": "string", "description": "UNDOCUMENTATED: additionalProperties", "title": "TODO" },
+                "additionalProperties": { "type": "string", "description": "UNDOCUMENTATED: additionalProperties", "title": "Animation Controller" },
                 "description": "UNDOCUMENTATED: animation controllers",
                 "title": "Animation Controllers"
               }
@@ -48,7 +48,7 @@
               "title": "Geometry",
               "type": "object",
               "minProperties": 1,
-              "additionalProperties": { "type": "string", "description": "UNDOCUMENTATED: additionalProperties", "title": "TODO" },
+              "additionalProperties": { "type": "string", "description": "UNDOCUMENTATED: additionalProperties", "title": "Geometry" },
               "description": "UNDOCUMENTATED: geometry"
             },
             "identifier": {
@@ -61,13 +61,13 @@
               "type": "object",
               "title": "Item",
               "description": "UNDOCUMENTATED",
-              "additionalProperties": { "type": "string", "title": "TODO", "description": "UNDOCUMENTATED" }
+              "additionalProperties": { "type": "string", "title": "Item", "description": "UNDOCUMENTATED" }
             },
             "materials": {
               "type": "object",
               "description": "UNDOCUMENTATED: materials",
               "title": "Materials",
-              "additionalProperties": { "type": "string", "description": "UNDOCUMENTATED: additionalProperties", "title": "TODO" }
+              "additionalProperties": { "type": "string", "description": "UNDOCUMENTATED: additionalProperties", "title": "Material" }
             },
             "min_engine_version": {
               "type": "string",
@@ -78,14 +78,14 @@
             "particle_effects": {
               "type": "object",
               "minProperties": 1,
-              "additionalProperties": { "type": "string", "description": "UNDOCUMENTATED: additionalProperties", "title": "TODO" },
+              "additionalProperties": { "type": "string", "description": "UNDOCUMENTATED: additionalProperties", "title": "Particle Effects" },
               "description": "UNDOCUMENTATED: particle effects",
               "title": "Particle Effects"
             },
             "particle_emitters": {
               "type": "object",
               "minProperties": 1,
-              "additionalProperties": { "type": "string", "description": "UNDOCUMENTATED: additionalProperties", "title": "TODO" },
+              "additionalProperties": { "type": "string", "description": "UNDOCUMENTATED: additionalProperties", "title": "Particle Emitter" },
               "description": "UNDOCUMENTATED: particle emitters",
               "title": "Particle Emitters"
             },
@@ -122,6 +122,8 @@
             },
             "scripts": {
               "type": "object",
+              "description": "UNDOCUMENTATED: scripts",
+              "title": "Scripts",
               "properties": {
                 "pre_animation": {
                   "type": "array",
@@ -137,16 +139,16 @@
                 "scale": { "type": "string", "description": "UNDOCUMENTATED: scale", "title": "Scale" },
                 "animate": {
                   "type": "array",
-                  "title": "Animate Schema",
+                  "title": "Animate",
                   "items": {
                     "oneOf": [
-                      { "type": "string", "description": "UNDOCUMENTATED: oneOf[0]", "title": "TODO Title" },
+                      { "type": "string", "description": "UNDOCUMENTATED: oneOf[0]", "title": "Animate" },
                       {
                         "type": "object",
                         "minProperties": 1,
-                        "additionalProperties": { "type": "string", "description": "UNDOCUMENTATED: additionalProperties", "title": "TODO" },
+                        "additionalProperties": { "type": "string", "description": "UNDOCUMENTATED: additionalProperties", "title": "Animate" },
                         "description": "UNDOCUMENTATED: oneOf[1]",
-                        "title": "TODO Title"
+                        "title": "Animate"
                       }
                     ],
                     "description": "UNDOCUMENTATED: animate",
@@ -155,13 +157,11 @@
                   "description": "UNDOCUMENTATED: animate"
                 },
                 "parent_setup": { "$ref": "../../../molang/number.json" }
-              },
-              "description": "UNDOCUMENTATED: scripts",
-              "title": "Scripts"
+              }
             },
             "textures": {
               "type": "object",
-              "additionalProperties": { "type": "string", "description": "UNDOCUMENTATED: additionalProperties", "title": "TODO" },
+              "additionalProperties": { "type": "string", "description": "UNDOCUMENTATED: additionalProperties", "title": "Textures" },
               "description": "UNDOCUMENTATED: textures",
               "title": "Textures"
             }

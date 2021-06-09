@@ -5,7 +5,7 @@
   "description": "UNDOCUMENTATED",
   "required": ["format_version"],
   "properties": {
-    "debug": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "TODO Title" },
+    "debug": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "Debug" },
     "format_version": {
       "title": "1.8.0 Format Version",
       "type": "string",

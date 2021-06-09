@@ -24,7 +24,7 @@
     }
   },
   "properties": {
-    "debug": { "type": "boolean", "default": false, "description": "UNDOCUMENTATED", "title": "TODO Title" },
+    "debug": { "type": "boolean", "default": false, "description": "UNDOCUMENTATED", "title": "Debug" },
     "format_version": {
       "title": "1.12.0 Format Version",
       "type": "string",

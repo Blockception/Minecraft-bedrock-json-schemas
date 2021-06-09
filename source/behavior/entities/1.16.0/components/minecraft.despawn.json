@@ -14,6 +14,8 @@
     "despawn_from_distance": {
       "type": "object",
       "additionalProperties": false,
+      "description": "UNDOCUMENTATED",
+      "title": "Despawn From Distance",
       "properties": {
         "max_distance": {
           "type": "integer",
@@ -27,9 +29,7 @@
           "description": "Minimum distance for standard despawn rules to try to despawn the mob.",
           "title": "Min Distance"
         }
-      },
-      "description": "UNDOCUMENTATED",
-      "title": "TODO Title"
+      }
     },
     "despawn_from_inactivity": {
       "type": "boolean",

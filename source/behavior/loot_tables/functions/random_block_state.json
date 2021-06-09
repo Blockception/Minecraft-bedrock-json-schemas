@@ -3,14 +3,15 @@
   "additionalProperties": false,
   "description": "The function random_block_state",
   "title": "Random Block State",
+  "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "random_block_state", "description": "UNDOCUMENTATED", "title": "TODO Title" },
-    "block_state": { "type": "string", "description": "UNDOCUMENTATED", "title": "TODO Title" },
+    "function": { "type": "string", "const": "random_block_state", "description": "UNDOCUMENTATED", "title": "Function" },
+    "block_state": { "type": "string", "description": "UNDOCUMENTATED", "title": "Block State" },
     "values": {
       "type": "object",
       "properties": { "min": { "title": "Min", "type": "integer" }, "max": { "title": "Max", "type": "integer" } },
       "description": "UNDOCUMENTATED",
-      "title": "TODO Title",
+      "title": "Values",
       "additionalProperties": false
     }
   }

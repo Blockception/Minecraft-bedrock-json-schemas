@@ -2,16 +2,16 @@
   "$id": "blockception.minecraft.general.1.14.0.block_reference",
   "additionalProperties": false,
   "type": "object",
-  "title": "TODO",
+  "title": "Block Reference",
   "description": "UNDOCUMENTATED",
   "properties": {
-    "name": { "type": "string", "description": "UNDOCUMENTATED", "title": "TODO Title" },
+    "name": { "type": "string", "description": "UNDOCUMENTATED", "title": "Name", "$ref": "../block/identifier.json" },
     "states": {
       "type": "object",
       "propertyNames": { "pattern": "\\w*:?\\w+" },
       "additionalProperties": { "oneOf": [{ "type": "boolean" }, { "type": "integer" }, { "type": "string" }] },
       "description": "UNDOCUMENTATED",
-      "title": "TODO Title"
+      "title": "State"
     }
   }
 }

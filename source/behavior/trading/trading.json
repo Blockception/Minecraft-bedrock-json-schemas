@@ -2,6 +2,8 @@
   "$id": "blockception.minecraft.behavior.trading",
   "type": "object",
   "additionalProperties": false,
+  "description": "UNDOCUMENTATED",
+  "title": "Trading",
   "examples": [
     {
       "tiers": [
@@ -158,7 +160,5 @@
         }
       }
     }
-  },
-  "description": "UNDOCUMENTATED",
-  "title": "TODO Title"
+  }
 }

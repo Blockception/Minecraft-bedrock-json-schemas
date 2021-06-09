@@ -11,7 +11,7 @@
     "success_chance": {
       "title": "Succes Chance",
       "description": "UNDOCUMENTATED",
-      "oneOf": [{ "type": "number" }, { "type": "string", "title": "Molang" }]
+      "$ref": "../../../../molang/number.json"
     },
     "time_until_eat": { "title": "Time Until Eat", "description": "UNDOCUMENTATED", "type": "number" },
     "eat_and_replace_block_pairs": {
@@ -20,11 +20,21 @@
       "description": "UNDOCUMENTATED",
       "items": {
         "type": "object",
-        "title": "TODO",
+        "title": "Eat And Replace Block Pair",
         "description": "UNDOCUMENTATED",
         "properties": {
-          "eat_block": { "type": "string", "title": "TODO", "description": "UNDOCUMENTATED" },
-          "replace_block": { "type": "string", "title": "TODO", "description": "UNDOCUMENTATED" }
+          "eat_block": {
+            "type": "string",
+            "title": "Block",
+            "description": "UNDOCUMENTATED",
+            "$ref": "../../../../general/block/identifier.json"
+          },
+          "replace_block": {
+            "type": "string",
+            "title": "Replace Block",
+            "description": "UNDOCUMENTATED",
+            "$ref": "../../../../general/block/identifier.json"
+          }
         }
       }
     }

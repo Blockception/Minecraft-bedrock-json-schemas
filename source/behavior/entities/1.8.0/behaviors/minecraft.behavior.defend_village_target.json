@@ -9,7 +9,7 @@
     "entity_types": {
       "$ref": "../types/entity_types.json",
       "description": "List of entity types this mob considers a threat to the village",
-      "title": "TODO Title"
+      "title": "Entity Types"
     },
     "must_reach": { "title": "Must Reach", "description": "UNDOCUMENTATED", "type": "boolean" },
     "attack_chance": { "title": "Attack Chance", "description": "UNDOCUMENTATED", "type": "number" }

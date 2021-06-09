@@ -14,6 +14,8 @@
     "particle_effect": {
       "type": "object",
       "additionalProperties": false,
+      "description": "UNDOCUMENTATED: particle effect",
+      "title": "Particle Effect",
       "properties": {
         "description": {
           "additionalProperties": false,
@@ -117,9 +119,11 @@
         },
         "events": {
           "type": "object",
+          "description": "UNDOCUMENTATED: events",
+          "title": "Events",
           "additionalProperties": {
-            "description": "Event",
-            "title": "TODO",
+            "description": "UNDOCUMENTATED",
+            "title": "Event",
             "type": "object",
             "additionalProperties": false,
             "properties": {
@@ -139,13 +143,9 @@
                 }
               }
             }
-          },
-          "description": "UNDOCUMENTATED: events",
-          "title": "Events"
+          }
         }
-      },
-      "description": "UNDOCUMENTATED: particle effect",
-      "title": "Particle Effect"
+      }
     }
   }
 }

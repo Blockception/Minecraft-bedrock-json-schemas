@@ -77,19 +77,19 @@
             "type": "string",
             "description": "An item that can be used to get the entity into the `love` state",
             "$ref": "../../../../general/item/identifier.json",
-            "title": "TODO Title"
+            "title": "Breed Item"
           }
         },
-        { "type": "string", "$ref": "../../../../general/item/identifier.json", "title": "TODO Title" }
+        { "type": "string", "$ref": "../../../../general/item/identifier.json" }
       ]
     },
     "breeds_with": {
       "description": "The list of entity definitions that this entity can breed with.",
+      "title": "Breeds With",
       "oneOf": [
         { "type": "object", "$ref": "#/definitions/breeds_with_spec" },
         { "uniqueItems": true, "type": "array", "items": { "type": "object", "$ref": "#/definitions/breeds_with_spec" } }
-      ],
-      "title": "TODO Title"
+      ]
     },
     "deny_parents_variant": {
       "type": "object",

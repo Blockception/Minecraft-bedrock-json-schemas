@@ -33,13 +33,13 @@
               "type": "array",
               "additionalProperties": {
                 "type": "object",
+                "description": "A collection of animation controller references",
+                "title": "Animation Controller",
                 "additionalProperties": {
                   "type": "string",
                   "description": "A single Animation controller reference",
                   "title": "Animation Controller Reference"
-                },
-                "description": "A collection of animation controller references",
-                "title": "TODO"
+                }
               },
               "description": "The specification of animation controllers",
               "title": "Animation Controllers"
@@ -63,7 +63,7 @@
               "type": "object",
               "title": "Item",
               "description": "UNDOCUMENTATED",
-              "additionalProperties": { "type": "string", "title": "TODO", "description": "UNDOCUMENTATED" }
+              "additionalProperties": { "type": "string", "title": "Item", "description": "UNDOCUMENTATED" }
             },
             "materials": {
               "type": "object",
@@ -87,7 +87,7 @@
             "particle_emitters": {
               "type": "object",
               "minProperties": 1,
-              "additionalProperties": { "type": "string", "description": "UNDOCUMENTATED: additionalProperties", "title": "TODO" },
+              "additionalProperties": { "type": "string", "description": "UNDOCUMENTATED: additionalProperties", "title": "Particle Emitters" },
               "description": "UNDOCUMENTATED: particle emitters",
               "title": "Particle Emitters"
             },
@@ -106,17 +106,17 @@
               "properties": {
                 "animate": {
                   "type": "array",
-                  "title": "Animate Schema",
+                  "title": "Animate",
                   "minItems": 1,
                   "items": {
                     "oneOf": [
-                      { "type": "string", "description": "UNDOCUMENTATED: oneOf[0]", "title": "TODO Title" },
+                      { "type": "string", "description": "UNDOCUMENTATED: oneOf[0]", "title": "Animate" },
                       {
                         "type": "object",
                         "minProperties": 1,
-                        "additionalProperties": { "type": "string", "description": "UNDOCUMENTATED: additionalProperties", "title": "TODO" },
+                        "additionalProperties": { "type": "string", "description": "UNDOCUMENTATED: additionalProperties", "title": "Animate" },
                         "description": "UNDOCUMENTATED: oneOf[1]",
-                        "title": "TODO Title"
+                        "title": "Animate"
                       }
                     ],
                     "description": "UNDOCUMENTATED: animate",
@@ -181,7 +181,7 @@
             },
             "textures": {
               "type": "object",
-              "additionalProperties": { "type": "string", "description": "UNDOCUMENTATED: additionalProperties", "title": "TODO" },
+              "additionalProperties": { "type": "string", "description": "UNDOCUMENTATED: additionalProperties", "title": "Texture" },
               "description": "UNDOCUMENTATED: textures",
               "title": "Textures"
             }

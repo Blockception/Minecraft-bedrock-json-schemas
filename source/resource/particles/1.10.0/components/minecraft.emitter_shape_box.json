@@ -5,36 +5,38 @@
   "additionalProperties": false,
   "properties": {
     "direction": {
-      "description": "UNDOCUMENTATED: direction",
-      "title": "Direction",
-      "default": "outwards",
       "anyOf": [
         { "type": "string", "enum": ["inwards", "outwards"] },
-        { "type": "array", "minItems": 3, "maxItems": 3, "items": { "$ref": "../../../../molang/number.json" } }
-      ]
+        {
+          "type": "array",
+          "items": [
+            { "$ref": "../../../../molang/number.json", "title": "X" },
+            { "$ref": "../../../../molang/number.json", "title": "Y" },
+            { "$ref": "../../../../molang/number.json", "title": "Z" }
+          ]
+        }
+      ],
+      "description": "UNDOCUMENTATED: direction",
+      "title": "Direction"
     },
     "radius": { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED: radius", "title": "Radius" },
     "offset": {
       "type": "array",
-      "items": {
-        "minItems": 3,
-        "maxItems": 3,
-        "$ref": "../../../../molang/number.json",
-        "description": "UNDOCUMENTATED: offset",
-        "title": "Offset"
-      },
+      "items": [
+        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "X" },
+        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "Y" },
+        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "Z" }
+      ],
       "description": "UNDOCUMENTATED",
-      "title": "TODO Title"
+      "title": "Offset"
     },
     "half_dimensions": {
       "type": "array",
-      "items": {
-        "minItems": 3,
-        "maxItems": 3,
-        "$ref": "../../../../molang/number.json",
-        "description": "UNDOCUMENTATED: half dimensions",
-        "title": "Half Dimensions"
-      },
+      "items": [
+        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "X" },
+        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "Y" },
+        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "Z" }
+      ],
       "description": "UNDOCUMENTATED: half dimensions",
       "title": "Half Dimensions"
     },

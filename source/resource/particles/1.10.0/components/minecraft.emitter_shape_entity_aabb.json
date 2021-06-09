@@ -2,39 +2,28 @@
   "$id": "blockception.minecraft.resource.particle.1.10.0.emitter_shape_entity_aabb",
   "type": "object",
   "title": "Emitter Shape Entity Aabb Component For 1.10.0",
+  "description": "UNDOCUMENTATED",
   "additionalProperties": false,
   "properties": {
     "direction": {
-      "anyOf": [
-        { "type": "string", "enum": ["inwards", "outwards"], "description": "UNDOCUMENTATED", "title": "Todo" },
-        {
-          "type": "array",
-          "items": {
-            "minItems": 3,
-            "maxItems": 3,
-            "$ref": "../../../../molang/number.json",
-            "description": "UNDOCUMENTATED",
-            "title": "Todo"
-          },
-          "description": "UNDOCUMENTATED",
-          "title": "Todo"
-        }
+      "type": "array",
+      "items": [
+        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "X" },
+        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "Y" },
+        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "Z" }
       ],
       "description": "UNDOCUMENTATED: direction",
       "title": "Direction"
     },
     "offset": {
       "type": "array",
-      "items": {
-        "minItems": 3,
-        "maxItems": 3,
-        "$ref": "../../../../molang/number.json",
-        "description": "UNDOCUMENTATED: offset",
-        "title": "Offset"
-      },
+      "items": [
+        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "X" },
+        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "Y" },
+        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "Z" }
+      ],
       "description": "UNDOCUMENTATED",
-      "title": "TODO Title"
+      "title": "Offset"
     }
-  },
-  "description": "UNDOCUMENTATED: "
+  }
 }

@@ -92,12 +92,12 @@
   },
   "properties": {
     "interactions": {
+      "description": "UNDOCUMENTATED",
+      "title": "Interactions",
       "oneOf": [
         { "type": "object", "$ref": "#/definitions/interaction_spec" },
         { "type": "array", "items": { "$ref": "#/definitions/interaction_spec" } }
-      ],
-      "description": "UNDOCUMENTATED",
-      "title": "TODO Title"
+      ]
     }
   }
 }

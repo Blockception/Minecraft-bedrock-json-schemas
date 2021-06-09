@@ -38,7 +38,7 @@
         "description": "UNDOCUMENTATED",
         "oneOf": [
           { "type": "string", "$ref": "../../../../general/block/identifier.json" },
-          { "type": "object", "title": "TODO", "properties": { "name": { "$ref": "../../../../general/block/identifier.json" } } }
+          { "type": "object", "properties": { "name": { "$ref": "../../../../general/block/identifier.json" } } }
         ]
       }
     },

@@ -3,8 +3,9 @@
   "additionalProperties": false,
   "description": "The function furnace_smelt",
   "title": "Furnace Smelt",
+  "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "furnace_smelt", "description": "UNDOCUMENTATED", "title": "TODO Title" },
+    "function": { "type": "string", "const": "furnace_smelt", "description": "UNDOCUMENTATED", "title": "Function" },
     "conditions": { "title": "Conditions", "description": "UNDOCUMENTATED", "type": "array", "items": { "$ref": "../conditions.json" } }
   }
 }

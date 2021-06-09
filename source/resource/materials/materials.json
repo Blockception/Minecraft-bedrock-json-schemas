@@ -191,11 +191,11 @@
       "description": "UNDOCUMENTATED",
       "additionalProperties": false,
       "properties": {
-        "+defines": { "title": "Defines", "description": "TODO, Add definitions???", "$ref": "#/definitions/DefinesSpecification" },
+        "+defines": { "title": "Defines", "description": "UNDOCUMENTATED, Add definitions???", "$ref": "#/definitions/DefinesSpecification" },
         "vertexFields": { "title": "Vertex Fields", "description": "UNDOCUMENTATED", "$ref": "#/definitions/VertexFieldsSpecification" },
-        "states": { "title": "States", "description": "TODO, start states???", "$ref": "#/definitions/StatesSpecification" },
-        "+states": { "title": "States", "description": "TODO, Add additional states???", "$ref": "#/definitions/StatesSpecification" },
-        "-states": { "title": "States", "description": "TODO, remove additional states???", "$ref": "#/definitions/StatesSpecification" }
+        "states": { "title": "States", "description": "UNDOCUMENTATED, start states???", "$ref": "#/definitions/StatesSpecification" },
+        "+states": { "title": "States", "description": "UNDOCUMENTATED, Add additional states???", "$ref": "#/definitions/StatesSpecification" },
+        "-states": { "title": "States", "description": "UNDOCUMENTATED, remove additional states???", "$ref": "#/definitions/StatesSpecification" }
       }
     }
   },
@@ -225,9 +225,13 @@
             "description": "UNDOCUMENTATED",
             "enum": ["DestColor", "One", "OneMinusDestColor", "SourceAlpha", "SourceColor"]
           },
-          "defines": { "title": "Defines", "description": "TODO, sets or starts definitions???", "$ref": "#/definitions/DefinesSpecification" },
-          "+defines": { "title": "Defines", "description": "TODO, Add definitions???", "$ref": "#/definitions/DefinesSpecification" },
-          "-defines": { "title": "Defines", "description": "TODO, removes definitions???", "$ref": "#/definitions/DefinesSpecification" },
+          "defines": {
+            "title": "Defines",
+            "description": "UNDOCUMENTATED, sets or starts definitions???",
+            "$ref": "#/definitions/DefinesSpecification"
+          },
+          "+defines": { "title": "Defines", "description": "UNDOCUMENTATED, Add definitions???", "$ref": "#/definitions/DefinesSpecification" },
+          "-defines": { "title": "Defines", "description": "UNDOCUMENTATED, removes definitions???", "$ref": "#/definitions/DefinesSpecification" },
           "depthBias": { "type": "number", "title": "Depth Bias", "description": "UNDOCUMENTATED" },
           "depthBiasOGL": { "type": "number", "title": "Depth Bias OGL", "description": "UNDOCUMENTATED" },
           "depthFunc": { "type": "string", "title": "Depth Function", "description": "UNDOCUMENTATED", "enum": ["LessEqual", "Always", "Equal"] },
@@ -236,31 +240,31 @@
           "isAnimatedTexture": {
             "type": "integer",
             "title": "Is Animated Texture",
-            "description": "TODO, think its a boolean value as a number, so 1 and 0????"
+            "description": "UNDOCUMENTATED, think its a boolean value as a number, so 1 and 0????"
           },
           "msaaSupport": { "type": "string", "title": "MSAA Support", "description": "UNDOCUMENTATED", "enum": ["Both", "MSAA"] },
           "primitiveMode": { "type": "string", "title": "Primitive Mode", "description": "UNDOCUMENTATED", "enum": ["Line"] },
           "samplerStates": {
             "title": "Sampler States",
-            "description": "TODO, set or start samplerStates???",
+            "description": "UNDOCUMENTATED, set or start samplerStates???",
             "$ref": "#/definitions/SamplerStatesSpecification"
           },
           "+samplerStates": {
             "title": "Sampler States",
-            "description": "TODO, Add samplerStates???",
+            "description": "UNDOCUMENTATED, Add samplerStates???",
             "$ref": "#/definitions/SamplerStatesSpecification"
           },
           "slopeScaledDepthBias": { "type": "number", "title": "Slope Scaled Depth Bias", "description": "UNDOCUMENTATED" },
           "slopeScaledDepthBiasOGL": { "type": "number", "title": "Slope Scaled Depth Bias OGL", "description": "UNDOCUMENTATED" },
-          "states": { "title": "States", "description": "TODO, start states???", "$ref": "#/definitions/StatesSpecification" },
-          "+states": { "title": "States", "description": "TODO, Add additional states???", "$ref": "#/definitions/StatesSpecification" },
-          "-states": { "title": "States", "description": "TODO, remove additional states???", "$ref": "#/definitions/StatesSpecification" },
+          "states": { "title": "States", "description": "UNDOCUMENTATED, start states???", "$ref": "#/definitions/StatesSpecification" },
+          "+states": { "title": "States", "description": "UNDOCUMENTATED, Add additional states???", "$ref": "#/definitions/StatesSpecification" },
+          "-states": { "title": "States", "description": "UNDOCUMENTATED, remove additional states???", "$ref": "#/definitions/StatesSpecification" },
           "stencilRef": { "type": "integer", "title": "Stencil Ref", "description": "UNDOCUMENTATED" },
           "stencilRefOverride": { "type": "integer", "title": "Stencil Ref Override", "description": "UNDOCUMENTATED" },
           "stencilReadMask": { "type": "integer", "title": "Stencil Read Mask", "description": "UNDOCUMENTATED" },
           "stencilWriteMask": { "type": "integer", "title": "Stencil Write Mask", "description": "UNDOCUMENTATED" },
-          "variants": { "title": "Variants", "description": "TODO, sets the variants?", "$ref": "#/definitions/VariantSpecification" },
-          "+variants": { "title": "Variants", "description": "TODO, adds variants?", "$ref": "#/definitions/VariantSpecification" },
+          "variants": { "title": "Variants", "description": "UNDOCUMENTATED, sets the variants?", "$ref": "#/definitions/VariantSpecification" },
+          "+variants": { "title": "Variants", "description": "UNDOCUMENTATED, adds variants?", "$ref": "#/definitions/VariantSpecification" },
           "vertexFields": { "title": "Vertex Fields", "description": "UNDOCUMENTATED", "$ref": "#/definitions/VertexFieldsSpecification" },
           "vertexShader": { "type": "string", "title": "Vertex Shader", "description": "UNDOCUMENTATED", "pattern": "^shaders/.*\\.vertex$" },
           "vrGeometryShader": {

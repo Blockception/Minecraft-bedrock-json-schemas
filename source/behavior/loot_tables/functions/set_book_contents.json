@@ -4,15 +4,16 @@
   "description": "The function set_book_contents",
   "title": "Set Book Contents",
   "required": ["function", "author", "title", "pages"],
+  "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "set_book_contents", "description": "UNDOCUMENTATED", "title": "TODO Title" },
-    "author": { "type": "string", "description": "UNDOCUMENTATED", "title": "TODO Title" },
-    "title": { "type": "string", "description": "UNDOCUMENTATED", "title": "TODO Title" },
+    "function": { "type": "string", "const": "set_book_contents", "description": "UNDOCUMENTATED", "title": "Function" },
+    "author": { "type": "string", "description": "UNDOCUMENTATED", "title": "Author" },
+    "title": { "type": "string", "description": "UNDOCUMENTATED", "title": "Title" },
     "pages": {
       "type": "array",
       "items": { "type": "string", "examples": ["Some text", "{\"rawtext\":[ {\"translate\":\"some.text\"}]}"] },
       "description": "UNDOCUMENTATED",
-      "title": "TODO Title"
+      "title": "Pages"
     }
   }
 }

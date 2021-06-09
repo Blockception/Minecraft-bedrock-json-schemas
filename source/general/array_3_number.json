@@ -3,7 +3,9 @@
   "type": "array",
   "title": "Array Of 3 Items",
   "description": "An array of 3 numbers",
-  "minimum": 3,
-  "maximum": 3,
-  "items": { "type": "number", "description": "An number", "title": "TODO Title" }
+  "items": [
+    { "type": "number", "description": "An number", "title": "X" },
+    { "type": "number", "description": "An number", "title": "Y" },
+    { "type": "number", "description": "An number", "title": "Z" }
+  ]
 }

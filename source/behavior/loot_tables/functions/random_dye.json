@@ -3,5 +3,6 @@
   "additionalProperties": false,
   "description": "The function random_dye",
   "title": "Trader Material Type",
-  "properties": { "function": { "type": "string", "const": "random_dye", "description": "UNDOCUMENTATED", "title": "TODO Title" } }
+  "type": "object",
+  "properties": { "function": { "type": "string", "const": "random_dye", "description": "UNDOCUMENTATED", "title": "Function" } }
 }

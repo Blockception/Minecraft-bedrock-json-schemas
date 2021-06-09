@@ -9,7 +9,7 @@
     "format_version": {
       "const": "1.17.0",
       "description": "Specifies the version of the game this entity was made in. Minimum supported version is 1.17.0. Current supported version is 1.17.0.",
-      "title": "TODO Title"
+      "title": "Format Version"
     },
     "minecraft:volume": {
       "type": "object",

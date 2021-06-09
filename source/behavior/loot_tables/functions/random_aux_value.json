@@ -3,14 +3,18 @@
   "additionalProperties": false,
   "description": "The function random_aux_value",
   "title": "Random Aux Value",
+  "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "random_aux_value", "description": "UNDOCUMENTATED", "title": "TODO Title" },
+    "function": { "type": "string", "const": "random_aux_value", "description": "UNDOCUMENTATED", "title": "Function" },
     "values": {
-      "type": "object",
-      "properties": { "min": { "type": "integer" }, "max": { "type": "integer" } },
       "description": "UNDOCUMENTATED",
-      "title": "TODO Title",
-      "additionalProperties": false
+      "title": "Values",
+      "additionalProperties": false,
+      "type": "object",
+      "properties": {
+        "min": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Minimum" },
+        "max": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Maximum" }
+      }
     }
   }
 }

@@ -3,13 +3,14 @@
   "additionalProperties": false,
   "description": "The function looting_enchant",
   "title": "Looting Enchant",
+  "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "looting_enchant", "description": "UNDOCUMENTATED", "title": "TODO Title" },
+    "function": { "type": "string", "const": "looting_enchant", "description": "UNDOCUMENTATED", "title": "Function" },
     "count": {
       "type": "object",
       "properties": { "min": { "type": "integer" }, "max": { "type": "integer" } },
       "description": "UNDOCUMENTATED",
-      "title": "TODO Title",
+      "title": "Count",
       "additionalProperties": false
     }
   }

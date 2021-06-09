@@ -10,12 +10,13 @@
       "type": "object",
       "description": "List of components to add to the entity after the transformation",
       "properties": { "component_groups": { "type": "array", "description": "Names of component groups to add", "items": { "type": "string" } } },
-      "title": "TODO Title",
+      "title": "Add",
       "additionalProperties": false
     },
-    "begin_transform_sound": { "type": "string", "description": "Sound to play when the transformation starts", "title": "TODO Title" },
+    "begin_transform_sound": { "type": "string", "description": "Sound to play when the transformation starts", "title": "Begin Transform Sound" },
     "delay": {
       "description": "Defines the properties of the delay for the transformation",
+      "title": "Delay",
       "oneOf": [
         { "type": "number" },
         {
@@ -49,8 +50,7 @@
             "value": { "type": "number", "default": 0, "description": "Time in seconds before the entity transforms" }
           }
         }
-      ],
-      "title": "TODO Title"
+      ]
     },
     "drop_equipment": {
       "type": "boolean",

@@ -41,7 +41,7 @@
         { "type": "object", "$ref": "#/definitions/name_action" }
       ],
       "description": "UNDOCUMENTATED",
-      "title": "TODO Title"
+      "title": "Name Actions"
     }
   }
 }

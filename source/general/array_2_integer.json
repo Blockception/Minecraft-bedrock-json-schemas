@@ -3,7 +3,8 @@
   "type": "array",
   "title": "Array Of 2 Items",
   "description": "An array of 2 integers",
-  "minimum": 2,
-  "maximum": 2,
-  "items": { "type": "integer", "description": "An integer", "title": "TODO Title" }
+  "items": [
+    { "type": "integer", "description": "An number", "title": "X" },
+    { "type": "integer", "description": "An number", "title": "Y" }
+  ]
 }

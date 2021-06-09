@@ -8,7 +8,7 @@
     "filters": {
       "$ref": "../../filters/filters.json",
       "description": "The filters to check to determine if the event should be fired",
-      "title": "TODO Title"
+      "title": "Filters"
     },
     "target": { "$ref": "../../filters/filters/types/subject.json", "description": "The entity to target", "title": "Target" }
   },

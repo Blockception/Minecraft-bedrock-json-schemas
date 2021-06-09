@@ -72,16 +72,16 @@
           "type": "array",
           "default": [0, 0],
           "items": [
-            { "type": "integer", "minimum": 0 },
-            { "type": "integer", "minimum": 0 }
+            { "type": "integer", "minimum": 0, "description": "UNDOCUMENTATED", "title": "Minimum" },
+            { "type": "integer", "minimum": 0, "description": "UNDOCUMENTATED", "title": "Maximum" }
           ]
         },
         {
           "type": "object",
           "additionalProperties": false,
           "properties": {
-            "range_min": { "type": "number", "description": "UNDOCUMENTATED", "title": "TODO" },
-            "range_max": { "type": "number", "description": "UNDOCUMENTATED", "title": "TODO" }
+            "range_min": { "type": "number", "description": "UNDOCUMENTATED", "title": "Range Minimum" },
+            "range_max": { "type": "number", "description": "UNDOCUMENTATED", "title": "Range Maximum" }
           }
         }
       ]

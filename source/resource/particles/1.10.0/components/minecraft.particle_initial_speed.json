@@ -7,9 +7,9 @@
     {
       "type": "array",
       "items": [
-        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "TODO Title" },
-        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "TODO Title" },
-        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "TODO Title" }
+        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "X" },
+        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "Y" },
+        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "Z" }
       ]
     }
   ]
