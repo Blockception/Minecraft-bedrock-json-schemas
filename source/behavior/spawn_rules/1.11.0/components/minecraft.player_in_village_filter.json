@@ -3,9 +3,9 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Player In Village Filter 1.11.0",
-  "description": "TODO",
+  "description": "UNDOCUMENTATED",
   "properties": {
-    "distance": { "type": "integer", "title": "Distance", "description": "TODO" },
-    "village_border_tolerance": { "type": "integer", "title": "Village Border Tolerance", "description": "TODO" }
+    "distance": { "type": "integer", "title": "Distance", "description": "UNDOCUMENTATED" },
+    "village_border_tolerance": { "type": "integer", "title": "Village Border Tolerance", "description": "UNDOCUMENTATED" }
   }
 }

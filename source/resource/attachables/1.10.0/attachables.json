@@ -62,8 +62,8 @@
             "item": {
               "type": "object",
               "title": "Item",
-              "description": "TODO",
-              "additionalProperties": { "type": "string", "title": "TODO", "description": "TODO" }
+              "description": "UNDOCUMENTATED",
+              "additionalProperties": { "type": "string", "title": "TODO", "description": "UNDOCUMENTATED" }
             },
             "materials": {
               "type": "object",

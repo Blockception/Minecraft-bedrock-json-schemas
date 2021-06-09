@@ -84,7 +84,7 @@
                       ]
                     },
                     "functions": { "$ref": "#/definitions/Functions" },
-                    "choice": { "title": "Choice", "description": "TODO", "type": "array", "items": { "$ref": "#/definitions/Item" } }
+                    "choice": { "title": "Choice", "description": "UNDOCUMENTATED", "type": "array", "items": { "$ref": "#/definitions/Item" } }
                   }
                 }
               ]
@@ -117,9 +117,9 @@
                         }
                       ]
                     },
-                    "price_multiplier": { "title": "Price Multiplier", "description": "TODO", "type": "number" },
+                    "price_multiplier": { "title": "Price Multiplier", "description": "UNDOCUMENTATED", "type": "number" },
                     "functions": { "$ref": "#/definitions/Functions" },
-                    "choice": { "title": "Choice", "description": "TODO", "type": "array", "items": { "$ref": "#/definitions/Item" } }
+                    "choice": { "title": "Choice", "description": "UNDOCUMENTATED", "type": "array", "items": { "$ref": "#/definitions/Item" } }
                   }
                 }
               ]

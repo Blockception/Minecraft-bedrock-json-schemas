@@ -9,14 +9,14 @@
       "additionalProperties": false,
       "required": ["description"],
       "type": "object",
-      "description": "TODO",
+      "description": "UNDOCUMENTATED",
       "title": "Item",
       "properties": {
         "description": {
           "additionalProperties": false,
           "type": "object",
           "title": "Description",
-          "description": "TODO",
+          "description": "UNDOCUMENTATED",
           "properties": {
             "identifier": {
               "title": "Identifier",

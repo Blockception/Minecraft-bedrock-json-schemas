@@ -12,7 +12,7 @@
       "type": "array",
       "items": {
         "title": "Block",
-        "description": "TODO",
+        "description": "UNDOCUMENTATED",
         "type": "object",
         "additionalProperties": false,
         "properties": {

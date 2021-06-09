@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "type": "object",
   "title": "TODO",
-  "description": "TODO",
+  "description": "UNDOCUMENTATED",
   "properties": {
     "name": { "type": "string", "description": "UNDOCUMENTATED", "title": "TODO Title" },
     "states": {

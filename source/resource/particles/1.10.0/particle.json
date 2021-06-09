@@ -54,7 +54,7 @@
             "type": "object",
             "additionalProperties": false,
             "title": "Curve",
-            "description": "TODO",
+            "description": "UNDOCUMENTATED",
             "properties": {
               "input": { "$ref": "../../../molang/number.json", "title": "Input", "description": "What is the input value to use" },
               "nodes": {
@@ -125,7 +125,7 @@
             "properties": {
               "particle_effect": {
                 "title": "Particle Effect",
-                "description": "TODO",
+                "description": "UNDOCUMENTATED",
                 "properties": {
                   "effect": { "type": "string", "description": "UNDOCUMENTATED: effect", "title": "Effect" },
                   "type": { "type": "string", "description": "UNDOCUMENTATED: type", "title": "Type" }
@@ -133,7 +133,7 @@
               },
               "sound_effect": {
                 "title": "Sound effect",
-                "description": "TODO",
+                "description": "UNDOCUMENTATED",
                 "properties": {
                   "event_name": { "type": "string", "description": "UNDOCUMENTATED: effect", "title": "Event name" }
                 }

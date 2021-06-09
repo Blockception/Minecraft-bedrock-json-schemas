@@ -8,19 +8,19 @@
     "hitboxes": {
       "type": "array",
       "title": "Hitboxes",
-      "description": "TODO",
+      "description": "UNDOCUMENTATED",
       "items": {
         "type": "object",
         "title": "Hitbox",
-        "description": "TODO",
+        "description": "UNDOCUMENTATED",
         "additionalProperties": false,
         "properties": {
-          "width": { "type": "number", "title": "Width", "description": "TODO" },
-          "height": { "type": "number", "title": "Height", "description": "TODO" },
+          "width": { "type": "number", "title": "Width", "description": "UNDOCUMENTATED" },
+          "height": { "type": "number", "title": "Height", "description": "UNDOCUMENTATED" },
           "pivot": {
             "type": "array",
             "title": "Pivot",
-            "description": "TODO",
+            "description": "UNDOCUMENTATED",
             "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
           }
         }

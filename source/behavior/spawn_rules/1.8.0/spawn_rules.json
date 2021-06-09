@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.spawn_rules.1.8.0",
   "type": "object",
   "title": "Spawn Rules 1.8.0",
-  "description": "TODO",
+  "description": "UNDOCUMENTATED",
   "additionalProperties": false,
   "required": ["format_version", "minecraft:spawn_rules"],
   "properties": {
@@ -10,20 +10,20 @@
     "minecraft:spawn_rules": {
       "type": "object",
       "title": "Spawn Rules",
-      "description": "TODO",
+      "description": "UNDOCUMENTATED",
       "additionalProperties": false,
       "properties": {
         "description": {
           "type": "object",
           "title": "Description",
-          "description": "TODO",
+          "description": "UNDOCUMENTATED",
           "additionalProperties": false,
           "properties": {
-            "identifier": { "title": "Identifier", "description": "TODO", "$ref": "../../../general/entity/identifier.json" },
+            "identifier": { "title": "Identifier", "description": "UNDOCUMENTATED", "$ref": "../../../general/entity/identifier.json" },
             "population_control": {
               "type": "string",
               "title": "Population Control",
-              "description": "TODO",
+              "description": "UNDOCUMENTATED",
               "enum": ["ambient", "animal", "water_animal", "monster", "cat", "pillager"]
             }
           }
@@ -31,12 +31,12 @@
         "conditions": {
           "type": "array",
           "title": "Conditions",
-          "description": "TODO",
+          "description": "UNDOCUMENTATED",
           "items": {
             "additionalProperties": false,
             "type": "object",
             "title": "Condition",
-            "description": "TODO",
+            "description": "UNDOCUMENTATED",
             "properties": {
               "minecraft:biome_filter": { "$ref": "./components/minecraft.biome_filter.json" },
               "minecraft:brightness_filter": { "$ref": "./components/minecraft.brightness_filter.json" },

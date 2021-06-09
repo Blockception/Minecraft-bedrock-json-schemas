@@ -5,7 +5,7 @@
   "description": "Sets a random chance of the specified value. Looting enchantment increase the random chance multiplier.",
   "title": "Random Chance With Looting",
   "properties": {
-    "condition": { "type": "string", "title": "Condition", "description": "TODO" },
+    "condition": { "type": "string", "title": "Condition", "description": "UNDOCUMENTATED" },
     "chance": { "type": "number", "default": 0, "description": "The random chance of the value.", "title": "Chance" },
     "looting_multiplier": {
       "type": "number",

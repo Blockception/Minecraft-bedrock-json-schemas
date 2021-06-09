@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.resource.particle.1.10.0.emitter_lifetime_events",
   "type": "object",
   "title": "Emitter Lifetime Events Component For 1.10.0",
-  "description": "TODO",
+  "description": "UNDOCUMENTATED",
   "additionalProperties": false,
   "properties": {
     "creation_event": {
@@ -40,10 +40,10 @@
         "title": "Distance Event",
         "additionalProperties": false,
         "properties": {
-          "distance": { "title": "Distance", "description": "TODO", "type": "number" },
+          "distance": { "title": "Distance", "description": "UNDOCUMENTATED", "type": "number" },
           "effects": {
             "title": "Effects",
-            "description": "TODO",
+            "description": "UNDOCUMENTATED",
             "oneOf": [{ "type": "array", "items": { "type": "string" } }, { "type": "string" }]
           }
         }

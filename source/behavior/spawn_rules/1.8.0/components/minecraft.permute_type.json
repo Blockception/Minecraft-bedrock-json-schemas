@@ -3,15 +3,15 @@
   "additionalProperties": false,
   "type": "array",
   "title": "Permute Type 1.8.0",
-  "description": "TODO",
+  "description": "UNDOCUMENTATED",
   "items": {
     "type": "object",
     "additionalProperties": false,
     "title": "TODO",
-    "description": "TODO",
+    "description": "UNDOCUMENTATED",
     "properties": {
-      "weight": { "type": "integer", "title": "Weight", "description": "TODO" },
-      "entity_type": { "type": "string", "title": "Entity Type", "description": "TODO" }
+      "weight": { "type": "integer", "title": "Weight", "description": "UNDOCUMENTATED" },
+      "entity_type": { "type": "string", "title": "Entity Type", "description": "UNDOCUMENTATED" }
     }
   }
 }

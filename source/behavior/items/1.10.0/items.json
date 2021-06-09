@@ -9,13 +9,18 @@
       "additionalProperties": false,
       "required": ["description"],
       "type": "object",
-      "description": "TODO",
+      "description": "UNDOCUMENTATED",
       "properties": {
         "description": {
           "additionalProperties": false,
           "type": "object",
           "properties": {
-            "identifier": { "title": "Identifier", "type": "string", "description": "TODO", "$ref": "../../../general/item/identifier.json" }
+            "identifier": {
+              "title": "Identifier",
+              "type": "string",
+              "description": "UNDOCUMENTATED",
+              "$ref": "../../../general/item/identifier.json"
+            }
           }
         },
         "components": {

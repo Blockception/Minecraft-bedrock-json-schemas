@@ -3,6 +3,6 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Weight 1.17.0",
-  "description": "TODO",
-  "properties": { "default": { "type": "integer", "description": "TODO", "title": "Default" } }
+  "description": "UNDOCUMENTATED",
+  "properties": { "default": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Default" } }
 }

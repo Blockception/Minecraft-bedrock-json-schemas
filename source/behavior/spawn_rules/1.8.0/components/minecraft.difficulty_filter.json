@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Difficulty Filter 1.8.0",
-  "description": "TODO",
+  "description": "UNDOCUMENTATED",
   "definitions": { "difficulty": { "type": "string", "enum": ["easy", "normal", "hard", "peaceful"] } },
   "properties": {
     "min": { "$ref": "#/definitions/difficulty", "description": "This is the minimum difficulty level that a mob spawns", "title": "Min" },

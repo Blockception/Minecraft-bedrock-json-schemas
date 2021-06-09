@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Density Limit 1.11.0",
-  "description": "TODO",
+  "description": "UNDOCUMENTATED",
   "properties": {
     "surface": { "type": "integer", "description": "This is the maximum number of mobs of this type spawnable on the surface", "title": "Surface" },
     "underground": {

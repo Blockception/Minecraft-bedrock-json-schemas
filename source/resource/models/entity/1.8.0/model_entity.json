@@ -58,25 +58,25 @@
               "type": "object",
               "required": ["polys"],
               "title": "Poly Mesh",
-              "description": "TODO",
+              "description": "UNDOCUMENTATED",
               "additionalProperties": false,
               "properties": {
-                "normalized_uvs": { "title": "Normalized Uvs", "description": "TODO", "type": "boolean" },
+                "normalized_uvs": { "title": "Normalized Uvs", "description": "UNDOCUMENTATED", "type": "boolean" },
                 "positions": {
                   "title": "Positions",
-                  "description": "TODO",
+                  "description": "UNDOCUMENTATED",
                   "type": "array",
                   "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
                 },
                 "normals": {
                   "title": "Normals",
-                  "description": "TODO",
+                  "description": "UNDOCUMENTATED",
                   "type": "array",
                   "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
                 },
                 "polys": {
                   "title": "Polys",
-                  "description": "TODO",
+                  "description": "UNDOCUMENTATED",
                   "type": "array",
                   "items": {
                     "type": "array",
@@ -87,7 +87,7 @@
                 }
               }
             },
-            "render_group_id": { "title": "Render Group Id", "description": "TODO", "type": "integer", "minimum": 0 },
+            "render_group_id": { "title": "Render Group Id", "description": "UNDOCUMENTATED", "type": "integer", "minimum": 0 },
             "reset": {
               "title": "Reset",
               "description": "UNDOCUMANTED",
@@ -95,14 +95,14 @@
             },
             "rotation": {
               "title": "Rotation",
-              "description": "TODO",
+              "description": "UNDOCUMENTATED",
               "type": "array",
               "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
             },
             "texture_meshes": {
               "type": "array",
               "title": "Texture Meshes",
-              "description": "TODO",
+              "description": "UNDOCUMENTATED",
               "items": {
                 "type": "object",
                 "additionalProperties": false,
@@ -118,8 +118,8 @@
           }
         }
       },
-      "cape": { "title": "Cape", "description": "TODO", "type": "string" },
-      "debug": { "title": "Debug", "description": "TODO", "type": "boolean" },
+      "cape": { "title": "Cape", "description": "UNDOCUMENTATED", "type": "string" },
+      "debug": { "title": "Debug", "description": "UNDOCUMENTATED", "type": "boolean" },
       "texturewidth": { "type": "integer", "description": "UNDOCUMENTATED: texturewidth", "title": "Texturewidth" },
       "textureheight": { "type": "integer", "description": "UNDOCUMENTATED: textureheight", "title": "Textureheight" },
       "visible_bounds_width": { "type": "number", "description": "UNDOCUMENTATED: visible bounds width", "title": "Visible Bounds Width" },

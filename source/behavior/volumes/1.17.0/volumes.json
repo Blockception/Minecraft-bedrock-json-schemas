@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.volumes.1.17.0",
   "type": "object",
   "title": "Spawn Rules 1.17.0",
-  "description": "TODO",
+  "description": "UNDOCUMENTATED",
   "additionalProperties": false,
   "required": ["format_version", "minecraft:volume"],
   "properties": {
@@ -14,7 +14,7 @@
     "minecraft:volume": {
       "type": "object",
       "title": "Spawn Rules",
-      "description": "TODO",
+      "description": "UNDOCUMENTATED",
       "additionalProperties": false,
       "properties": {
         "description": {
@@ -33,7 +33,7 @@
         "components": {
           "type": "object",
           "title": "Components",
-          "description": "TODO",
+          "description": "UNDOCUMENTATED",
           "additionalProperties": false,
           "properties": {
             "minecraft:bounds": {

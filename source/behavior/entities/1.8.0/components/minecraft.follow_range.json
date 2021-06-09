@@ -5,8 +5,8 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "value": { "type": "integer", "description": "TODO", "title": "Value" },
-    "max": { "type": "integer", "description": "TODO", "title": "Max" }
+    "value": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Value" },
+    "max": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Max" }
   },
   "description": "UNDOCUMENTATED: "
 }

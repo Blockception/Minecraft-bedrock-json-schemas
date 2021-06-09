@@ -5,6 +5,6 @@
   "title": "Furnace Smelt",
   "properties": {
     "function": { "type": "string", "const": "furnace_smelt", "description": "UNDOCUMENTATED", "title": "TODO Title" },
-    "conditions": { "title": "Conditions", "description": "TODO", "type": "array", "items": { "$ref": "../conditions.json" } }
+    "conditions": { "title": "Conditions", "description": "UNDOCUMENTATED", "type": "array", "items": { "$ref": "../conditions.json" } }
   }
 }

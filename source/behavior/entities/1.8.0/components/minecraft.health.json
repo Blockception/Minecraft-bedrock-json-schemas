@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.health",
-  "description": "TODO",
+  "description": "UNDOCUMENTATED",
   "type": "object",
   "title": "Health 1.8.0",
   "additionalProperties": false,

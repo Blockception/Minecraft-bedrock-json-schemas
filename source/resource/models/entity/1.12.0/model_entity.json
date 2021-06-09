@@ -19,7 +19,7 @@
           "description": "The face maps this many texels from the uv origin. If not specified, the box dimensions are used instead.",
           "$ref": "#/definitions/uv"
         },
-        "material_instance": { "type": "string", "description": "TODO" }
+        "material_instance": { "type": "string", "description": "UNDOCUMENTATED" }
       }
     }
   },

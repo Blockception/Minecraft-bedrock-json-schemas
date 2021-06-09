@@ -3,9 +3,9 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Height Filter 1.8.0",
-  "description": "TODO",
+  "description": "UNDOCUMENTATED",
   "properties": {
-    "min": { "type": "integer", "description": "TODO", "title": "Min" },
-    "max": { "type": "integer", "description": "TODO", "title": "Max" }
+    "min": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Min" },
+    "max": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Max" }
   }
 }
