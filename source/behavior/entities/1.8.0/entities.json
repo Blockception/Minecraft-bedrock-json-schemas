@@ -6,7 +6,7 @@
   "required": ["format_version", "minecraft:entity"],
   "properties": {
     "format_version": {
-      "title": "1.8.0 Format Version",
+      "title": "Format Version",
       "type": "string",
       "const": "1.8.0",
       "description": "A version that tells minecraft what type of data format can be expected when reading this file."

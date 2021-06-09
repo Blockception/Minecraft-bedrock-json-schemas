@@ -6,7 +6,11 @@
   "additionalProperties": false,
   "required": ["format_version", "minecraft:spawn_rules"],
   "properties": {
-    "format_version": { "const": "1.8.0", "description": "UNDOCUMENTATED", "title": "Format Version" },
+    "format_version": {
+      "const": "1.8.0",
+      "description": "A version that tells minecraft what type of data format can be expected when reading this file.",
+      "title": "Format Version"
+    },
     "minecraft:spawn_rules": {
       "type": "object",
       "title": "Spawn Rules",

@@ -4,6 +4,7 @@
   "required": ["format_version"],
   "additionalProperties": false,
   "minProperties": 2,
+  "type": "object",
   "title": "Recipe",
   "properties": {
     "format_version": {

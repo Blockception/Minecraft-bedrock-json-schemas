@@ -3,11 +3,10 @@
   "type": "array",
   "title": "Version Numbering",
   "description": "A version made of 3 numbers",
-  "minItems": 3,
-  "maxItems": 3,
+  "examples": [[1, 0, 0]],
   "items": [
-    { "type": "number", "minimum": 1 },
-    { "type": "number", "minimum": 0 },
-    { "type": "number", "minimum": 0 }
+    { "type": "number", "minimum": 1, "title": "" },
+    { "type": "number", "minimum": 0, "title": "Major" },
+    { "type": "number", "minimum": 0, "title": "Minor" }
   ]
 }

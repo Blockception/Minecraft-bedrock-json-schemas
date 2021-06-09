@@ -28,7 +28,7 @@
     "format_version": {
       "type": "array",
       "items": [{ "type": "integer" }, { "type": "integer" }, { "type": "integer" }],
-      "description": "UNDOCUMENTATED",
+      "description": "A version that tells minecraft what type of data format can be expected when reading this file.",
       "title": "Format Version"
     }
   },

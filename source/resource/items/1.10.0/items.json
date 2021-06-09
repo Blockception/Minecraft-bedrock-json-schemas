@@ -3,6 +3,7 @@
   "required": ["format_version", "minecraft:item"],
   "title": "Item",
   "description": "Minecraft items 1.10.0",
+  "type": "object",
   "properties": {
     "format_version": {
       "title": "Format Version",

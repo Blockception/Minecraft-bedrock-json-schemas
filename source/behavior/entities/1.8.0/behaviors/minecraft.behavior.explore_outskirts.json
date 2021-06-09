@@ -15,22 +15,22 @@
       "title": "Explore Dist"
     },
     "wait_time": { "type": "integer", "default": 0, "description": "The time the mob will stand around `searching` for POIs", "title": "Wait Time" },
-    "next_xz": { "title": "TODO", "description": "UNDOCUMENATED", "type": "integer" },
-    "next_y": { "title": "TODO", "description": "UNDOCUMENATED", "type": "integer" },
-    "min_wait_time": { "title": "TODO", "description": "UNDOCUMENATED", "type": "number" },
-    "max_wait_time": { "title": "TODO", "description": "UNDOCUMENATED", "type": "number" },
-    "max_travel_time": { "title": "TODO", "description": "UNDOCUMENATED", "type": "number" },
-    "min_perimeter": { "title": "TODO", "description": "UNDOCUMENATED", "type": "number" },
-    "min_dist_from_target": { "title": "TODO", "description": "UNDOCUMENATED", "type": "number" },
-    "timer_ratio": { "title": "TODO", "description": "UNDOCUMENATED", "type": "number" },
+    "next_xz": { "title": "Next XZ", "description": "UNDOCUMENATED", "type": "integer" },
+    "next_y": { "title": "Next Y", "description": "UNDOCUMENATED", "type": "integer" },
+    "min_wait_time": { "title": "Minimum Wait Time", "description": "UNDOCUMENATED", "type": "number" },
+    "max_wait_time": { "title": "Maximum Wait Time", "description": "UNDOCUMENATED", "type": "number" },
+    "max_travel_time": { "title": "Maximum Travel Time", "description": "UNDOCUMENATED", "type": "number" },
+    "min_perimeter": { "title": "Minimum Perimeter", "description": "UNDOCUMENATED", "type": "number" },
+    "min_dist_from_target": { "title": "Minimum Distance From Target", "description": "UNDOCUMENATED", "type": "number" },
+    "timer_ratio": { "title": "Timer Ratio", "description": "UNDOCUMENATED", "type": "number" },
     "dist_from_boundary": {
-      "title": "TODO",
+      "title": "Distance From Boundary",
       "description": "UNDOCUMENATED",
       "type": "array",
       "items": [
-        { "title": "TODO", "description": "UNDOCUMENATED", "type": "number" },
-        { "title": "TODO", "description": "UNDOCUMENATED", "type": "number" },
-        { "title": "TODO", "description": "UNDOCUMENATED", "type": "number" }
+        { "title": "X", "description": "UNDOCUMENATED", "type": "number" },
+        { "title": "Y", "description": "UNDOCUMENATED", "type": "number" },
+        { "title": "Z", "description": "UNDOCUMENATED", "type": "number" }
       ]
     }
   }

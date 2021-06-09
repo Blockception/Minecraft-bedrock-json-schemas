@@ -4,6 +4,7 @@
   "required": ["description"],
   "dependencies": { "component_groups": ["events"] },
   "additionalProperties": false,
+  "type": "object",
   "properties": {
     "description": {
       "required": ["identifier"],
