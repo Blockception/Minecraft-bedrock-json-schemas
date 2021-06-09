@@ -5,13 +5,13 @@
   "title": "Set Book Contents",
   "required": ["function", "author", "title", "pages"],
   "properties": {
-    "function": { "type": "string", "const": "set_book_contents", "description": "TODO description", "title": "TODO Title" },
-    "author": { "type": "string", "description": "TODO description", "title": "TODO Title" },
-    "title": { "type": "string", "description": "TODO description", "title": "TODO Title" },
+    "function": { "type": "string", "const": "set_book_contents", "description": "UNDOCUMENTATED", "title": "TODO Title" },
+    "author": { "type": "string", "description": "UNDOCUMENTATED", "title": "TODO Title" },
+    "title": { "type": "string", "description": "UNDOCUMENTATED", "title": "TODO Title" },
     "pages": {
       "type": "array",
       "items": { "type": "string", "examples": ["Some text", "{\"rawtext\":[ {\"translate\":\"some.text\"}]}"] },
-      "description": "TODO description",
+      "description": "UNDOCUMENTATED",
       "title": "TODO Title"
     }
   }

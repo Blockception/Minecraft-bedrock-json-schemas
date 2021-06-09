@@ -38,7 +38,7 @@
       "description": "If true, visbility between this entity and the mob type will not be checked.",
       "title": "Ignore Visibility"
     },
-    "entity_types": { "$ref": "../types/entity_types.json", "description": "TODO description: entity types", "title": "Entity Types" },
+    "entity_types": { "$ref": "../types/entity_types.json", "description": "UNDOCUMENTATED: entity types", "title": "Entity Types" },
     "avoid_mob_sound": { "title": "Avoid Mob Sound", "description": "UNDOCUMENTATED", "type": "string" },
     "remove_target": { "title": "Remove Target", "description": "UNDOCUMENTATED", "type": "boolean" },
     "on_escape_event": { "$ref": "../types/event.json", "title": "On Escape Event", "description": "UNDOCUMENTATED" },

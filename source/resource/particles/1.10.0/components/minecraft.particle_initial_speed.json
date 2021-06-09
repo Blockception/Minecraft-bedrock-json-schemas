@@ -6,10 +6,10 @@
     { "$ref": "../../../../molang/number.json" },
     {
       "type": "array",
-      "items": { "$ref": "../../../../molang/number.json", "description": "TODO description", "title": "TODO Title" },
+      "items": { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "TODO Title" },
       "minItems": 3,
       "maxItems": 3,
-      "description": "TODO description",
+      "description": "UNDOCUMENTATED",
       "title": "TODO Title"
     }
   ]

@@ -3,7 +3,7 @@
   "type": "object",
   "additionalItems": false,
   "title": "Sound  File For 1.14.0",
-  "description": "TODO description",
+  "description": "UNDOCUMENTATED",
   "definitions": {
     "SoundPath": {
       "$id": "SoundFilepath",
@@ -25,7 +25,7 @@
           "$id": "#/Sound/category",
           "title": "Sound Category",
           "enum": ["ambient", "block", "music", "weather", "ui", "bucket", "neutral", "player", "hostile", "record", "bottle"],
-          "description": "TODO description: category"
+          "description": "UNDOCUMENTATED: category"
         },
         "sounds": {
           "items": {
@@ -34,7 +34,7 @@
                 "$id": "#/Sound/sounds/stringItem",
                 "type": "string",
                 "$ref": "#/definitions/SoundPath",
-                "description": "TODO description: Todo",
+                "description": "UNDOCUMENTATED: Todo",
                 "title": "Todo"
               },
               {
@@ -55,22 +55,22 @@
                     "$id": "#/Sound/sounds/stringItem",
                     "type": "string",
                     "$ref": "#/definitions/SoundPath",
-                    "description": "TODO description: name",
+                    "description": "UNDOCUMENTATED: name",
                     "title": "Name"
                   }
                 },
-                "description": "TODO description: Todo",
+                "description": "UNDOCUMENTATED: Todo",
                 "title": "Todo"
               }
             ],
-            "description": "TODO description: sounds",
+            "description": "UNDOCUMENTATED: sounds",
             "title": "Sounds"
           },
-          "description": "TODO description: sounds",
+          "description": "UNDOCUMENTATED: sounds",
           "title": "Sounds"
         }
       },
-      "description": "TODO description: additionalProperties"
+      "description": "UNDOCUMENTATED: additionalProperties"
     }
   },
   "properties": {
@@ -82,11 +82,11 @@
     "sound_definitions": {
       "type": "object",
       "additionalProperties": { "$ref": "#/definitions/SoundSpec" },
-      "description": "TODO description: sound definitions",
+      "description": "UNDOCUMENTATED: sound definitions",
       "title": "Sound Definitions"
     },
     "__use_legacy_max_distance": {
-      "description": "TODO description: use legacy max distance",
+      "description": "UNDOCUMENTATED: use legacy max distance",
       "title": "Use Legacy Max Distance",
       "type": "string",
       "enum": ["true", "false"]

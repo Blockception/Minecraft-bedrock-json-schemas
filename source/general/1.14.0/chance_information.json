@@ -5,7 +5,7 @@
   "title": "TODO",
   "description": "TODO",
   "properties": {
-    "numerator": { "type": "number", "minimum": 1, "description": "TODO description", "title": "TODO Title" },
-    "denominator": { "type": "number", "minimum": 1, "description": "TODO description", "title": "TODO Title" }
+    "numerator": { "type": "number", "minimum": 1, "description": "UNDOCUMENTATED", "title": "TODO Title" },
+    "denominator": { "type": "number", "minimum": 1, "description": "UNDOCUMENTATED", "title": "TODO Title" }
   }
 }

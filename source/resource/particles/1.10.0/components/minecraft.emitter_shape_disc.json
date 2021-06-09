@@ -9,20 +9,20 @@
         { "type": "string", "enum": ["inwards", "outwards"] },
         { "type": "array", "minItems": 3, "maxItems": 3, "items": { "$ref": "../../../../molang/number.json" } }
       ],
-      "description": "TODO description: direction",
+      "description": "UNDOCUMENTATED: direction",
       "title": "Direction"
     },
-    "radius": { "$ref": "../../../../molang/number.json", "description": "TODO description: radius", "title": "Radius" },
+    "radius": { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED: radius", "title": "Radius" },
     "offset": {
       "type": "array",
       "items": {
         "minItems": 3,
         "maxItems": 3,
         "$ref": "../../../../molang/number.json",
-        "description": "TODO description: offset",
+        "description": "UNDOCUMENTATED: offset",
         "title": "Offset"
       },
-      "description": "TODO description",
+      "description": "UNDOCUMENTATED",
       "title": "TODO Title"
     },
     "plane_normal": {
@@ -41,7 +41,7 @@
         }
       ]
     },
-    "surface_only": { "type": "boolean", "description": "TODO description: surface only", "title": "Surface Only" }
+    "surface_only": { "type": "boolean", "description": "UNDOCUMENTATED: surface only", "title": "Surface Only" }
   },
-  "description": "TODO description: "
+  "description": "UNDOCUMENTATED: "
 }

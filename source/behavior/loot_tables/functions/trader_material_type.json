@@ -3,5 +3,5 @@
   "additionalProperties": false,
   "description": "The function trader_material_type",
   "title": "Trader Material Type",
-  "properties": { "function": { "type": "string", "const": "trader_material_type", "description": "TODO description", "title": "TODO Title" } }
+  "properties": { "function": { "type": "string", "const": "trader_material_type", "description": "UNDOCUMENTATED", "title": "TODO Title" } }
 }

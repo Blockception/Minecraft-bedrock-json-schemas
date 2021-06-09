@@ -2,10 +2,10 @@
   "$id": "blockception.minecraft.resource.model.1.10.0",
   "type": "object",
   "title": "Model Schema For 1.10.0",
-  "description": "TODO description",
+  "description": "UNDOCUMENTATED",
   "required": ["format_version"],
   "properties": {
-    "debug": { "type": "boolean", "description": "TODO description", "title": "TODO Title" },
+    "debug": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "TODO Title" },
     "format_version": {
       "title": "1.10.0 Format Version",
       "type": "string",
@@ -97,13 +97,13 @@
       },
       "cape": { "type": "string" },
       "debug": { "type": "boolean" },
-      "texturewidth": { "type": "integer", "description": "TODO description: texturewidth", "title": "Texturewidth" },
-      "textureheight": { "type": "integer", "description": "TODO description: textureheight", "title": "Textureheight" },
-      "visible_bounds_width": { "type": "number", "description": "TODO description: visible bounds width", "title": "Visible Bounds Width" },
-      "visible_bounds_height": { "type": "number", "description": "TODO description: visible bounds height", "title": "Visible Bounds Height" },
+      "texturewidth": { "type": "integer", "description": "UNDOCUMENTATED: texturewidth", "title": "Texturewidth" },
+      "textureheight": { "type": "integer", "description": "UNDOCUMENTATED: textureheight", "title": "Textureheight" },
+      "visible_bounds_width": { "type": "number", "description": "UNDOCUMENTATED: visible bounds width", "title": "Visible Bounds Width" },
+      "visible_bounds_height": { "type": "number", "description": "UNDOCUMENTATED: visible bounds height", "title": "Visible Bounds Height" },
       "visible_bounds_offset": {
         "type": "array",
-        "description": "TODO description: visible bounds offset",
+        "description": "UNDOCUMENTATED: visible bounds offset",
         "title": "Visible Bounds Offset",
         "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
       }

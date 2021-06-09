@@ -7,7 +7,7 @@
     "on_environement": {
       "type": "object",
       "additionalProperties": false,
-      "description": "TODO description: on environement",
+      "description": "UNDOCUMENTATED: on environement",
       "title": "On Environement",
       "properties": {
         "filters": { "$ref": "../../filters/filters.json", "description": "The filters to evualate for this environment sensor", "title": "Filters" },

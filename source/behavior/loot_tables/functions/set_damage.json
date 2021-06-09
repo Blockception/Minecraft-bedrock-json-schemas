@@ -4,14 +4,14 @@
   "description": "The function set_damage",
   "title": "Set Damage",
   "properties": {
-    "function": { "type": "string", "const": "set_damage", "description": "TODO description", "title": "TODO Title" },
+    "function": { "type": "string", "const": "set_damage", "description": "UNDOCUMENTATED", "title": "TODO Title" },
     "damage": {
       "oneOf": [
         { "type": "integer" },
         { "type": "object", "properties": { "min": { "type": "integer" }, "max": { "type": "integer" } } },
         { "type": "object", "properties": { "min": { "type": "number" }, "max": { "type": "number" } } }
       ],
-      "description": "TODO description",
+      "description": "UNDOCUMENTATED",
       "title": "TODO Title"
     }
   }

@@ -27,8 +27,8 @@
           "type": "object",
           "properties": {
             "filters": { "$ref": "../../filters/filters.json" },
-            "event": { "type": "string", "pattern": "^.*$", "description": "TODO description: event", "title": "Event" },
-            "target": { "$ref": "../../filters/filters/types/subject.json", "description": "TODO description: target", "title": "Target" }
+            "event": { "type": "string", "pattern": "^.*$", "description": "UNDOCUMENTATED: event", "title": "Event" },
+            "target": { "$ref": "../../filters/filters/types/subject.json", "description": "UNDOCUMENTATED: target", "title": "Target" }
           },
           "description": "Specifies filters for entity definitions and events.",
           "title": "On Damage"

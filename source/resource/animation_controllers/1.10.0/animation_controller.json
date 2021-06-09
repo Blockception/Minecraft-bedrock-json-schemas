@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.resource.animation_controller1.10.0",
   "type": "object",
   "title": "Animation Controller 1.10.0",
-  "description": "TODO description",
+  "description": "UNDOCUMENTATED",
   "definitions": {
     "animationspec": {
       "anyOf": [
@@ -126,7 +126,7 @@
                   "type": "array",
                   "items": {
                     "$ref": "#/definitions/particle_effect_spec",
-                    "description": "TODO description: particle effects",
+                    "description": "UNDOCUMENTATED: particle effects",
                     "title": "Particle Effects"
                   },
                   "title": "Particle Effects"
@@ -154,7 +154,7 @@
                   "examples": [[{ "some_state": "query.is_sheared" }]],
                   "items": {
                     "$ref": "#/definitions/animationspec",
-                    "description": "TODO description: transitions",
+                    "description": "UNDOCUMENTATED: transitions",
                     "title": "Transitions",
                     "examples": [{ "some_state": "query.is_sheared" }]
                   }
@@ -189,7 +189,7 @@
               }
             }
           },
-          "initial_state": { "type": "string", "description": "TODO description: initial state", "title": "Initial State" }
+          "initial_state": { "type": "string", "description": "UNDOCUMENTATED: initial state", "title": "Initial State" }
         }
       }
     }

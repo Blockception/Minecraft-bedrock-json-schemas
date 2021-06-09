@@ -8,5 +8,5 @@
     "value": { "type": "integer", "description": "TODO", "title": "Value" },
     "max": { "type": "integer", "description": "TODO", "title": "Max" }
   },
-  "description": "TODO description: "
+  "description": "UNDOCUMENTATED: "
 }

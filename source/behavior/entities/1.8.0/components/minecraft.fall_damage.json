@@ -5,5 +5,5 @@
   "additionalProperties": false,
   "description": "TODO",
   "required": [],
-  "properties": { "value": { "type": "number", "default": 1, "description": "TODO description: value", "title": "Value" } }
+  "properties": { "value": { "type": "number", "default": 1, "description": "UNDOCUMENTATED: value", "title": "Value" } }
 }

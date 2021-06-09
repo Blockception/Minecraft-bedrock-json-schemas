@@ -4,6 +4,6 @@
   "title": "Attack Damage 1.8.0",
   "additionalProperties": false,
   "required": ["value"],
-  "properties": { "value": { "type": "number", "description": "TODO description: value", "title": "Value" } },
-  "description": "TODO description: "
+  "properties": { "value": { "type": "number", "description": "UNDOCUMENTATED: value", "title": "Value" } },
+  "description": "UNDOCUMENTATED: "
 }

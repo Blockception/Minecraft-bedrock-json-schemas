@@ -45,6 +45,6 @@
         }
       }
     },
-    "sequence": { "$ref": "#/definitions/sequence", "description": "TODO description", "title": "TODO Title" }
+    "sequence": { "$ref": "#/definitions/sequence", "description": "UNDOCUMENTATED", "title": "TODO Title" }
   }
 }

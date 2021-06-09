@@ -2,6 +2,6 @@
   "$id": "blockception.minecraft.resource.particle.1.10.0.particle_kill_plane",
   "type": "array",
   "title": "Particle Kill Plane Component For 1.10.0",
-  "items": { "minItems": 4, "maxItems": 4, "$ref": "../../../../molang/number.json", "description": "TODO description", "title": "TODO Title" },
-  "description": "TODO description"
+  "items": { "minItems": 4, "maxItems": 4, "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "TODO Title" },
+  "description": "UNDOCUMENTATED"
 }

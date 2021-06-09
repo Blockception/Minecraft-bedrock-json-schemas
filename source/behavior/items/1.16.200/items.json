@@ -4,7 +4,7 @@
   "required": ["format_version", "minecraft:item"],
   "title": "Item",
   "properties": {
-    "format_version": { "type": "string", "description": "TODO description", "title": "TODO Title" },
+    "format_version": { "type": "string", "description": "UNDOCUMENTATED", "title": "TODO Title" },
     "minecraft:item": {
       "additionalProperties": false,
       "required": ["description"],

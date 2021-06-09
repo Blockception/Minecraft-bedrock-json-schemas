@@ -10,8 +10,8 @@
     "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },
     "control_flags": {
       "type": "array",
-      "items": { "type": "string", "enum": ["move", "look"], "description": "TODO description: control flags", "title": "Control Flags" },
-      "description": "TODO description: control flags",
+      "items": { "type": "string", "enum": ["move", "look"], "description": "UNDOCUMENTATED: control flags", "title": "Control Flags" },
+      "description": "UNDOCUMENTATED: control flags",
       "title": "Control Flags"
     }
   }

@@ -10,10 +10,10 @@
         "minItems": 3,
         "maxItems": 3,
         "$ref": "../../../../molang/number.json",
-        "description": "TODO description: direction",
+        "description": "UNDOCUMENTATED: direction",
         "title": "Direction"
       },
-      "description": "TODO description: direction",
+      "description": "UNDOCUMENTATED: direction",
       "title": "Direction"
     },
     "offset": {
@@ -22,12 +22,12 @@
         "minItems": 3,
         "maxItems": 3,
         "$ref": "../../../../molang/number.json",
-        "description": "TODO description: offset",
+        "description": "UNDOCUMENTATED: offset",
         "title": "Offset"
       },
-      "description": "TODO description: offset",
+      "description": "UNDOCUMENTATED: offset",
       "title": "Offset"
     }
   },
-  "description": "TODO description: "
+  "description": "UNDOCUMENTATED: "
 }

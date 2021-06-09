@@ -32,7 +32,7 @@
     }
   },
   "properties": {
-    "debug": { "title": "Debug", "description": "TODO description", "type": "boolean", "default": false },
+    "debug": { "title": "Debug", "description": "UNDOCUMENTATED", "type": "boolean", "default": false },
     "format_version": {
       "title": "1.16.0 Format Version",
       "type": "string",

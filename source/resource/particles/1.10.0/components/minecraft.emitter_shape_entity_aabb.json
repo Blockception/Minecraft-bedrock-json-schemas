@@ -6,21 +6,21 @@
   "properties": {
     "direction": {
       "anyOf": [
-        { "type": "string", "enum": ["inwards", "outwards"], "description": "TODO description: Todo", "title": "Todo" },
+        { "type": "string", "enum": ["inwards", "outwards"], "description": "UNDOCUMENTATED: Todo", "title": "Todo" },
         {
           "type": "array",
           "items": {
             "minItems": 3,
             "maxItems": 3,
             "$ref": "../../../../molang/number.json",
-            "description": "TODO description: Todo",
+            "description": "UNDOCUMENTATED: Todo",
             "title": "Todo"
           },
-          "description": "TODO description: Todo",
+          "description": "UNDOCUMENTATED: Todo",
           "title": "Todo"
         }
       ],
-      "description": "TODO description: direction",
+      "description": "UNDOCUMENTATED: direction",
       "title": "Direction"
     },
     "offset": {
@@ -29,12 +29,12 @@
         "minItems": 3,
         "maxItems": 3,
         "$ref": "../../../../molang/number.json",
-        "description": "TODO description: offset",
+        "description": "UNDOCUMENTATED: offset",
         "title": "Offset"
       },
-      "description": "TODO description",
+      "description": "UNDOCUMENTATED",
       "title": "TODO Title"
     }
   },
-  "description": "TODO description: "
+  "description": "UNDOCUMENTATED: "
 }

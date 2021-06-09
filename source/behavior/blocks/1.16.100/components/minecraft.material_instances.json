@@ -11,8 +11,8 @@
       "properties": {
         "ambient_occlusion": { "title": "Ambient Occlusion", "type": "boolean", "description": "UNDOCUMENTATED" },
         "face_dimming": { "title": "Face Dimming", "type": "boolean", "description": "UNDOCUMENTATED" },
-        "render_method": { "type": "string", "title": "Render Method", "description": "TODO description", "enum": ["blend", "opaque", "alpha_test"] },
-        "texture": { "type": "string", "title": "Texture", "description": "TODO description" }
+        "render_method": { "type": "string", "title": "Render Method", "description": "UNDOCUMENTATED", "enum": ["blend", "opaque", "alpha_test"] },
+        "texture": { "type": "string", "title": "Texture", "description": "UNDOCUMENTATED" }
       }
     }
   },

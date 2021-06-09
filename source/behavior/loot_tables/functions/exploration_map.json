@@ -4,7 +4,7 @@
   "description": "The function exploration_map",
   "title": "Exploration Map",
   "properties": {
-    "function": { "type": "string", "const": "exploration_map", "description": "TODO description", "title": "TODO Title" },
+    "function": { "type": "string", "const": "exploration_map", "description": "UNDOCUMENTATED", "title": "TODO Title" },
     "destination": {
       "type": "string",
       "description": "The destination value defines what type of treasure map they receive.",

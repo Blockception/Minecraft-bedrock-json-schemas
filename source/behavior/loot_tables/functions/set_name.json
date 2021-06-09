@@ -4,7 +4,7 @@
   "description": "The function set_name",
   "title": "Set Name",
   "properties": {
-    "function": { "type": "string", "const": "set_name", "description": "TODO description", "title": "TODO Title" },
-    "name": { "type": "string", "description": "TODO description", "title": "TODO Title" }
+    "function": { "type": "string", "const": "set_name", "description": "UNDOCUMENTATED", "title": "TODO Title" },
+    "name": { "type": "string", "description": "UNDOCUMENTATED", "title": "TODO Title" }
   }
 }

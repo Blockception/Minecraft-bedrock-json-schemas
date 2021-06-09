@@ -23,7 +23,7 @@
   "definitions": {
     "pools_spec": {
       "title": "Pools",
-      "description": "TODO description",
+      "description": "UNDOCUMENTATED",
       "type": "array",
       "additionalProperties": false,
       "items": {
@@ -72,13 +72,13 @@
           },
           "tiers": {
             "title": "Tiers",
-            "description": "TODO description",
+            "description": "UNDOCUMENTATED",
             "type": "object",
             "additionalProperties": false,
             "properties": {
-              "bonus_chance": { "title": "Bonus Chance", "description": "TODO description", "type": "number" },
-              "bonus_rolls": { "title": "Bonus Rolls", "description": "TODO description", "type": "integer" },
-              "initial_range": { "title": "Initial Range", "description": "TODO description", "type": "integer" }
+              "bonus_chance": { "title": "Bonus Chance", "description": "UNDOCUMENTATED", "type": "number" },
+              "bonus_rolls": { "title": "Bonus Rolls", "description": "UNDOCUMENTATED", "type": "integer" },
+              "initial_range": { "title": "Initial Range", "description": "UNDOCUMENTATED", "type": "integer" }
             }
           }
         }
@@ -86,7 +86,7 @@
     }
   },
   "properties": {
-    "pools": { "$ref": "#/definitions/pools_spec", "description": "TODO description", "title": "TODO Title" },
-    "type": { "title": "Type", "type": "string", "description": "TODO description", "enum": ["minecraft:chest"] }
+    "pools": { "$ref": "#/definitions/pools_spec", "description": "UNDOCUMENTATED", "title": "TODO Title" },
+    "type": { "title": "Type", "type": "string", "description": "UNDOCUMENTATED", "enum": ["minecraft:chest"] }
   }
 }

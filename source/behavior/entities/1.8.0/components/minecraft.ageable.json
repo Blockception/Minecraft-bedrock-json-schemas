@@ -30,7 +30,7 @@
           },
           { "type": "string", "$ref": "../../../../general/item/identifier.json" }
         ],
-        "description": "TODO description: feedItems",
+        "description": "UNDOCUMENTATED: feedItems",
         "title": "Feed Items"
       },
       "title": "Feed Items"

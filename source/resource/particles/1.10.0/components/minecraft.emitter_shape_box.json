@@ -5,7 +5,7 @@
   "additionalProperties": false,
   "properties": {
     "direction": {
-      "description": "TODO description: direction",
+      "description": "UNDOCUMENTATED: direction",
       "title": "Direction",
       "default": "outwards",
       "anyOf": [
@@ -13,17 +13,17 @@
         { "type": "array", "minItems": 3, "maxItems": 3, "items": { "$ref": "../../../../molang/number.json" } }
       ]
     },
-    "radius": { "$ref": "../../../../molang/number.json", "description": "TODO description: radius", "title": "Radius" },
+    "radius": { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED: radius", "title": "Radius" },
     "offset": {
       "type": "array",
       "items": {
         "minItems": 3,
         "maxItems": 3,
         "$ref": "../../../../molang/number.json",
-        "description": "TODO description: offset",
+        "description": "UNDOCUMENTATED: offset",
         "title": "Offset"
       },
-      "description": "TODO description",
+      "description": "UNDOCUMENTATED",
       "title": "TODO Title"
     },
     "half_dimensions": {
@@ -32,13 +32,13 @@
         "minItems": 3,
         "maxItems": 3,
         "$ref": "../../../../molang/number.json",
-        "description": "TODO description: half dimensions",
+        "description": "UNDOCUMENTATED: half dimensions",
         "title": "Half Dimensions"
       },
-      "description": "TODO description: half dimensions",
+      "description": "UNDOCUMENTATED: half dimensions",
       "title": "Half Dimensions"
     },
-    "surface_only": { "type": "boolean", "description": "TODO description: surface only", "title": "Surface Only" }
+    "surface_only": { "type": "boolean", "description": "UNDOCUMENTATED: surface only", "title": "Surface Only" }
   },
-  "description": "TODO description: "
+  "description": "UNDOCUMENTATED: "
 }

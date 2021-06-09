@@ -4,11 +4,11 @@
   "description": "The function random_aux_value",
   "title": "Random Aux Value",
   "properties": {
-    "function": { "type": "string", "const": "random_aux_value", "description": "TODO description", "title": "TODO Title" },
+    "function": { "type": "string", "const": "random_aux_value", "description": "UNDOCUMENTATED", "title": "TODO Title" },
     "values": {
       "type": "object",
       "properties": { "min": { "type": "integer" }, "max": { "type": "integer" } },
-      "description": "TODO description",
+      "description": "UNDOCUMENTATED",
       "title": "TODO Title",
       "additionalProperties": false
     }

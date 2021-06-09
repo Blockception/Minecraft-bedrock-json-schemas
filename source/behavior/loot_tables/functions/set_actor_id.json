@@ -4,7 +4,7 @@
   "description": "The function set_actor_id",
   "title": "Set Actor Id",
   "properties": {
-    "function": { "type": "string", "const": "set_actor_id", "description": "TODO description", "title": "TODO Title" },
-    "id": { "type": "string", "description": "TODO description", "title": "TODO Title" }
+    "function": { "type": "string", "const": "set_actor_id", "description": "UNDOCUMENTATED", "title": "TODO Title" },
+    "id": { "type": "string", "description": "UNDOCUMENTATED", "title": "TODO Title" }
   }
 }

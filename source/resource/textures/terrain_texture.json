@@ -52,9 +52,9 @@
           "textures": { "oneOf": [{ "$ref": "#/definitions/texture" }, { "type": "array", "items": { "$ref": "#/definitions/texture" } }] }
         }
       },
-      "description": "TODO description",
+      "description": "UNDOCUMENTATED",
       "title": "TODO Title"
     },
-    "texture_name": { "type": "string", "description": "TODO description", "title": "TODO Title" }
+    "texture_name": { "type": "string", "description": "UNDOCUMENTATED", "title": "TODO Title" }
   }
 }

@@ -39,7 +39,7 @@
     "max_failed_attempts": {
       "type": "integer",
       "$comment": "NOT DOCUMENTATED BY MINECRAFT",
-      "description": "TODO description",
+      "description": "UNDOCUMENTATED",
       "title": "TODO Title"
     }
   }

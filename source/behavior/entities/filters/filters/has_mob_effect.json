@@ -8,6 +8,6 @@
     "test": { "type": "string", "title": "Test Property", "description": "Tests whether the Subject has the specified mob effect." },
     "operator": { "$ref": "./types/operator.json" },
     "subject": { "$ref": "./types/subject.json" },
-    "value": { "type": "string", "description": "TODO description: value", "title": "Value" }
+    "value": { "type": "string", "description": "UNDOCUMENTATED: value", "title": "Value" }
   }
 }

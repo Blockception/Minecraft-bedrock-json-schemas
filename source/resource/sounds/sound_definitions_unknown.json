@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.sound_definition.json",
   "type": "object",
   "title": "Sound  File, Unknown Version",
-  "description": "TODO description",
+  "description": "UNDOCUMENTATED",
   "definitions": {
     "SoundPath": {
       "$id": "SoundFilepath",
@@ -24,7 +24,7 @@
           "$id": "#/Sound/category",
           "title": "Sound Category",
           "enum": ["block", "music", "weather", "ui", "bucket", "neutral", "player", "hostile", "record"],
-          "description": "TODO description: category"
+          "description": "UNDOCUMENTATED: category"
         },
         "sounds": {
           "items": {
@@ -33,7 +33,7 @@
                 "$id": "#/Sound/sounds/stringItem",
                 "type": "string",
                 "$ref": "#/definitions/SoundPath",
-                "description": "TODO description: Todo",
+                "description": "UNDOCUMENTATED: Todo",
                 "title": "Todo"
               },
               {
@@ -60,22 +60,22 @@
                     "$id": "#/Sound/sounds/stringItem",
                     "type": "string",
                     "$ref": "#/definitions/SoundPath",
-                    "description": "TODO description: name",
+                    "description": "UNDOCUMENTATED: name",
                     "title": "Name"
                   }
                 },
-                "description": "TODO description: Todo",
+                "description": "UNDOCUMENTATED: Todo",
                 "title": "Todo"
               }
             ],
-            "description": "TODO description: sounds",
+            "description": "UNDOCUMENTATED: sounds",
             "title": "Sounds"
           },
-          "description": "TODO description: sounds",
+          "description": "UNDOCUMENTATED: sounds",
           "title": "Sounds"
         }
       },
-      "description": "TODO description: additionalProperties"
+      "description": "UNDOCUMENTATED: additionalProperties"
     }
   },
   "additionalProperties": { "$ref": "#/definitions/SoundSpec" },
@@ -88,7 +88,7 @@
     "sound_definitions": {
       "type": "object",
       "additionalProperties": { "$ref": "#/definitions/SoundSpec" },
-      "description": "TODO description: sound definitions",
+      "description": "UNDOCUMENTATED: sound definitions",
       "title": "Sound Definitions"
     }
   }

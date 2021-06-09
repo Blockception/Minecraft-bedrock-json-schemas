@@ -36,10 +36,10 @@
       "description": "This is a list of objects, representing one value in seconds that can be picked before firing the event and an optional weight. Incompatible with time.",
       "items": {
         "properties": {
-          "weight": { "type": "integer", "description": "TODO description: weight", "title": "Weight" },
-          "value": { "type": "integer", "description": "TODO description: value", "title": "Value" }
+          "weight": { "type": "integer", "description": "UNDOCUMENTATED: weight", "title": "Weight" },
+          "value": { "type": "integer", "description": "UNDOCUMENTATED: value", "title": "Value" }
         },
-        "description": "TODO description: random time choices",
+        "description": "UNDOCUMENTATED: random time choices",
         "title": "Random Time Choices"
       },
       "title": "Random Time Choices"

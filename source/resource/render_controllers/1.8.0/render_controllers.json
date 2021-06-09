@@ -91,7 +91,7 @@
             }
           },
           "color": {
-            "description": "TODO description: color",
+            "description": "UNDOCUMENTATED: color",
             "title": "Color",
             "additionalProperties": false,
             "type": "object",
@@ -102,9 +102,9 @@
               "a": { "$ref": "#/definitions/color", "description": "The value of alpha, must result in a float between 0 and 1", "title": "A" }
             }
           },
-          "filter_lighting": { "type": "boolean", "description": "TODO description: filter lighting", "title": "Filter Lighting" },
-          "geometry": { "type": "string", "description": "TODO description: geometry", "title": "Geometry" },
-          "ignore_lighting": { "type": "boolean", "description": "TODO description: ignore lighting", "title": "Ignore Lighting" },
+          "filter_lighting": { "type": "boolean", "description": "UNDOCUMENTATED: filter lighting", "title": "Filter Lighting" },
+          "geometry": { "type": "string", "description": "UNDOCUMENTATED: geometry", "title": "Geometry" },
+          "ignore_lighting": { "type": "boolean", "description": "UNDOCUMENTATED: ignore lighting", "title": "Ignore Lighting" },
           "is_hurt_color": {
             "type": "object",
             "title": "Is Hurt Color",
@@ -127,11 +127,11 @@
             "minItems": 1,
             "items": {
               "type": "object",
-              "additionalProperties": { "type": "string", "description": "TODO description: additionalProperties", "title": "TODO" },
-              "description": "TODO description: materials",
+              "additionalProperties": { "type": "string", "description": "UNDOCUMENTATED: additionalProperties", "title": "TODO" },
+              "description": "UNDOCUMENTATED: materials",
               "title": "Materials"
             },
-            "description": "TODO description: materials",
+            "description": "UNDOCUMENTATED: materials",
             "title": "Materials"
           },
           "on_fire_color": {
@@ -143,7 +143,7 @@
               "b": { "$ref": "#/definitions/color", "description": "The value of blue, must result in a float between 0 and 1", "title": "B" },
               "a": { "$ref": "#/definitions/color", "description": "The value of alpha, must result in a float between 0 and 1", "title": "A" }
             },
-            "description": "TODO description: on fire color",
+            "description": "UNDOCUMENTATED: on fire color",
             "title": "On Fire Color"
           },
           "overlay_color": {
@@ -172,19 +172,19 @@
                 "title": "Part Visibilty"
               }
             },
-            "description": "TODO description: part visibility",
+            "description": "UNDOCUMENTATED: part visibility",
             "title": "Part Visibility"
           },
           "rebuild_animation_matrices": {
             "type": "boolean",
-            "description": "TODO description: rebuild animation matrices",
+            "description": "UNDOCUMENTATED: rebuild animation matrices",
             "title": "Rebuild Animation Matrices"
           },
           "textures": {
             "type": "array",
             "minItems": 1,
-            "items": { "type": "string", "description": "TODO description: textures", "title": "Textures" },
-            "description": "TODO description: textures",
+            "items": { "type": "string", "description": "UNDOCUMENTATED: textures", "title": "Textures" },
+            "description": "UNDOCUMENTATED: textures",
             "title": "Textures"
           },
           "uv_anim": {
@@ -196,25 +196,25 @@
                 "type": "array",
                 "minItems": 2,
                 "maxItems": 2,
-                "items": { "$ref": "../../../molang/number.json", "description": "TODO description: offset", "title": "Offset" },
-                "description": "TODO description: offset",
+                "items": { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTATED: offset", "title": "Offset" },
+                "description": "UNDOCUMENTATED: offset",
                 "title": "Offset"
               },
               "scale": {
                 "type": "array",
-                "description": "TODO description: scale",
+                "description": "UNDOCUMENTATED: scale",
                 "title": "Scale",
                 "minItems": 2,
                 "maxItems": 2,
-                "items": { "$ref": "../../../molang/number.json", "description": "TODO description: scale", "title": "Scale" }
+                "items": { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTATED: scale", "title": "Scale" }
               }
             },
-            "description": "TODO description: uv anim",
+            "description": "UNDOCUMENTATED: uv anim",
             "title": "Uv Anim"
           }
         }
       },
-      "description": "TODO description: render controllers",
+      "description": "UNDOCUMENTATED: render controllers",
       "title": "Render Controllers"
     }
   }

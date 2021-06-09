@@ -8,8 +8,8 @@
       "type": "array",
       "minItems": 2,
       "maxItems": 2,
-      "items": { "$ref": "../../../../molang/number.json", "description": "TODO description: size", "title": "Size" },
-      "description": "TODO description: size",
+      "items": { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED: size", "title": "Size" },
+      "description": "UNDOCUMENTATED: size",
       "title": "Size"
     },
     "facing_camera_mode": {
@@ -22,8 +22,8 @@
       "additionalProperties": false,
       "type": "object",
       "properties": {
-        "texture_width": { "type": "integer", "description": "TODO description: texture width", "title": "Texture Width" },
-        "texture_height": { "type": "integer", "description": "TODO description: texture height", "title": "Texture Height" },
+        "texture_width": { "type": "integer", "description": "UNDOCUMENTATED: texture width", "title": "Texture Width" },
+        "texture_height": { "type": "integer", "description": "UNDOCUMENTATED: texture height", "title": "Texture Height" },
         "flipbook": {
           "additionalProperties": false,
           "type": "object",
@@ -33,58 +33,58 @@
               "type": "array",
               "minItems": 2,
               "maxItems": 2,
-              "items": { "$ref": "../../../../molang/number.json", "description": "TODO description: base UV", "title": "Base U V" },
-              "description": "TODO description: base UV",
+              "items": { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED: base UV", "title": "Base U V" },
+              "description": "UNDOCUMENTATED: base UV",
               "title": "Base U V"
             },
             "size_UV": {
               "type": "array",
               "minItems": 2,
               "maxItems": 2,
-              "items": { "$ref": "../../../../molang/number.json", "description": "TODO description: size UV", "title": "Size U V" },
-              "description": "TODO description: size UV",
+              "items": { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED: size UV", "title": "Size U V" },
+              "description": "UNDOCUMENTATED: size UV",
               "title": "Size U V"
             },
             "step_UV": {
               "type": "array",
               "minItems": 2,
               "maxItems": 2,
-              "items": { "$ref": "../../../../molang/number.json", "description": "TODO description: step UV", "title": "Step U V" },
-              "description": "TODO description: step UV",
+              "items": { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED: step UV", "title": "Step U V" },
+              "description": "UNDOCUMENTATED: step UV",
               "title": "Step U V"
             },
             "frames_per_second": {
               "$ref": "../../../../molang/number.json",
-              "description": "TODO description: frames per second",
+              "description": "UNDOCUMENTATED: frames per second",
               "title": "Frames Per Second"
             },
-            "max_frame": { "$ref": "../../../../molang/number.json", "description": "TODO description: max frame", "title": "Max Frame" },
-            "stretch_to_lifetime": { "type": "boolean", "description": "TODO description: stretch to lifetime", "title": "Stretch To Lifetime" },
-            "loop": { "type": "boolean", "description": "TODO description: loop", "title": "Loop" }
+            "max_frame": { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED: max frame", "title": "Max Frame" },
+            "stretch_to_lifetime": { "type": "boolean", "description": "UNDOCUMENTATED: stretch to lifetime", "title": "Stretch To Lifetime" },
+            "loop": { "type": "boolean", "description": "UNDOCUMENTATED: loop", "title": "Loop" }
           },
-          "description": "TODO description: flipbook",
+          "description": "UNDOCUMENTATED: flipbook",
           "title": "Flipbook"
         },
         "uv": {
           "type": "array",
           "minItems": 2,
           "maxItems": 2,
-          "items": { "$ref": "../../../../molang/number.json", "description": "TODO description: uv", "title": "Uv" },
-          "description": "TODO description: uv",
+          "items": { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED: uv", "title": "Uv" },
+          "description": "UNDOCUMENTATED: uv",
           "title": "Uv"
         },
         "uv_size": {
           "type": "array",
           "minItems": 2,
           "maxItems": 2,
-          "items": { "$ref": "../../../../molang/number.json", "description": "TODO description: uv size", "title": "Uv Size" },
-          "description": "TODO description: uv size",
+          "items": { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED: uv size", "title": "Uv Size" },
+          "description": "UNDOCUMENTATED: uv size",
           "title": "Uv Size"
         }
       },
-      "description": "TODO description: uv",
+      "description": "UNDOCUMENTATED: uv",
       "title": "Uv"
     }
   },
-  "description": "TODO description: "
+  "description": "UNDOCUMENTATED: "
 }

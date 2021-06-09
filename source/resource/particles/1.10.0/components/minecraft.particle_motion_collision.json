@@ -4,29 +4,29 @@
   "title": "Particle Motion Collision Component For 1.10.0",
   "additionalProperties": false,
   "properties": {
-    "collision_drag": { "type": "number", "description": "TODO description: collision drag", "title": "Collision Drag" },
+    "collision_drag": { "type": "number", "description": "UNDOCUMENTATED: collision drag", "title": "Collision Drag" },
     "coefficient_of_restitution": {
       "type": "number",
-      "description": "TODO description: coefficient of restitution",
+      "description": "UNDOCUMENTATED: coefficient of restitution",
       "title": "Coefficient Of Restitution"
     },
-    "collision_radius": { "type": "number", "description": "TODO description: collision radius", "title": "Collision Radius" },
-    "enabled": { "$ref": "../../../../molang/number.json", "description": "TODO description: enabled", "title": "Enabled" },
-    "expire_on_contact": { "type": "boolean", "description": "TODO description: expire on contact", "title": "Expire On Contact" },
+    "collision_radius": { "type": "number", "description": "UNDOCUMENTATED: collision radius", "title": "Collision Radius" },
+    "enabled": { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED: enabled", "title": "Enabled" },
+    "expire_on_contact": { "type": "boolean", "description": "UNDOCUMENTATED: expire on contact", "title": "Expire On Contact" },
     "events": {
       "type": "array",
       "items": {
         "properties": {
           "additionalProperties": false,
-          "event": { "type": "string", "description": "TODO description: event", "title": "Event" },
-          "min_speed": { "type": "number", "description": "TODO description: min speed", "title": "Min Speed" }
+          "event": { "type": "string", "description": "UNDOCUMENTATED: event", "title": "Event" },
+          "min_speed": { "type": "number", "description": "UNDOCUMENTATED: min speed", "title": "Min Speed" }
         },
-        "description": "TODO description: events",
+        "description": "UNDOCUMENTATED: events",
         "title": "Events"
       },
-      "description": "TODO description: events",
+      "description": "UNDOCUMENTATED: events",
       "title": "Events"
     }
   },
-  "description": "TODO description: "
+  "description": "UNDOCUMENTATED: "
 }

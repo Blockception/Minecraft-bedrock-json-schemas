@@ -45,11 +45,11 @@
                 }
               ]
             },
-            "interpolant": { "$ref": "../../../../molang/number.json", "description": "TODO description: interpolant", "title": "Interpolant" }
+            "interpolant": { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED: interpolant", "title": "Interpolant" }
           }
         }
       ],
-      "description": "TODO description"
+      "description": "UNDOCUMENTATED"
     }
   }
 }

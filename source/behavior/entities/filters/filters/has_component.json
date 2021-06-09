@@ -8,6 +8,6 @@
     "test": { "type": "string", "title": "Test Property", "description": "Returns true when the subject entity contains the named component." },
     "operator": { "$ref": "./types/operator.json" },
     "subject": { "$ref": "./types/subject.json" },
-    "value": { "type": "string", "description": "TODO description: value", "title": "Value" }
+    "value": { "type": "string", "description": "UNDOCUMENTATED: value", "title": "Value" }
   }
 }

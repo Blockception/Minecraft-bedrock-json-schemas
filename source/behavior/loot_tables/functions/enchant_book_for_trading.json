@@ -5,10 +5,10 @@
   "title": "Enchant Book For Trading",
   "required": ["function", "base_cost", "base_random_cost", "per_level_random_cost", "per_level_cost"],
   "properties": {
-    "function": { "type": "string", "const": "enchant_book_for_trading", "title": "Function", "description": "TODO description" },
-    "base_cost": { "type": "integer", "title": "Base Cost", "description": "TODO description" },
-    "base_random_cost": { "type": "integer", "title": "Base Cost", "description": "TODO description" },
-    "per_level_random_cost": { "type": "integer", "title": "Base Cost", "description": "TODO description" },
-    "per_level_cost": { "type": "integer", "title": "Base Cost", "description": "TODO description" }
+    "function": { "type": "string", "const": "enchant_book_for_trading", "title": "Function", "description": "UNDOCUMENTATED" },
+    "base_cost": { "type": "integer", "title": "Base Cost", "description": "UNDOCUMENTATED" },
+    "base_random_cost": { "type": "integer", "title": "Base Cost", "description": "UNDOCUMENTATED" },
+    "per_level_random_cost": { "type": "integer", "title": "Base Cost", "description": "UNDOCUMENTATED" },
+    "per_level_cost": { "type": "integer", "title": "Base Cost", "description": "UNDOCUMENTATED" }
   }
 }

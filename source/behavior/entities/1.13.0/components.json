@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Entity 1.13.0",
-  "description": "TODO description",
+  "description": "UNDOCUMENTATED",
   "properties": {
     "minecraft:addrider": { "$ref": "../1.8.0/components/minecraft.addrider.json" },
     "minecraft:admire_item": { "$ref": "../1.8.0/components/minecraft.admire_item.json" },

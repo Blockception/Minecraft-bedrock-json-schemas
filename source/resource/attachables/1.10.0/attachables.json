@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.resource.1.10.0.attachables",
   "type": "object",
   "title": "Actor Animation 1.10.0",
-  "description": "TODO description",
+  "description": "UNDOCUMENTATED",
   "required": ["format_version", "minecraft:attachable"],
   "properties": {
     "format_version": {
@@ -44,7 +44,7 @@
               "description": "The specification of animation controllers",
               "title": "Animation Controllers"
             },
-            "enable_attachables": { "type": "boolean", "description": "TODO description: enable attachables", "title": "Enable Attachables" },
+            "enable_attachables": { "type": "boolean", "description": "UNDOCUMENTATED: enable attachables", "title": "Enable Attachables" },
             "geometry": {
               "title": "Geometry",
               "type": "object",
@@ -55,7 +55,7 @@
             },
             "identifier": {
               "type": "string",
-              "description": "TODO description: identifier",
+              "description": "UNDOCUMENTATED: identifier",
               "title": "Identifier",
               "$ref": "../../../general/item/identifier.json"
             },
@@ -87,21 +87,21 @@
             "particle_emitters": {
               "type": "object",
               "minProperties": 1,
-              "additionalProperties": { "type": "string", "description": "TODO description: additionalProperties", "title": "TODO" },
-              "description": "TODO description: particle emitters",
+              "additionalProperties": { "type": "string", "description": "UNDOCUMENTATED: additionalProperties", "title": "TODO" },
+              "description": "UNDOCUMENTATED: particle emitters",
               "title": "Particle Emitters"
             },
             "render_controllers": {
               "type": "array",
-              "description": "TODO description: render controllers",
+              "description": "UNDOCUMENTATED: render controllers",
               "title": "Render Controllers",
               "minItems": 1,
-              "items": { "type": "string", "description": "TODO description: render controllers", "title": "Render Controllers" }
+              "items": { "type": "string", "description": "UNDOCUMENTATED: render controllers", "title": "Render Controllers" }
             },
             "scripts": {
               "additionalProperties": false,
               "type": "object",
-              "description": "TODO description: scripts",
+              "description": "UNDOCUMENTATED: scripts",
               "title": "Scripts",
               "properties": {
                 "animate": {
@@ -110,61 +110,61 @@
                   "minItems": 1,
                   "items": {
                     "oneOf": [
-                      { "type": "string", "description": "TODO description: oneOf[0]", "title": "TODO Title" },
+                      { "type": "string", "description": "UNDOCUMENTATED: oneOf[0]", "title": "TODO Title" },
                       {
                         "type": "object",
                         "minProperties": 1,
-                        "additionalProperties": { "type": "string", "description": "TODO description: additionalProperties", "title": "TODO" },
-                        "description": "TODO description: oneOf[1]",
+                        "additionalProperties": { "type": "string", "description": "UNDOCUMENTATED: additionalProperties", "title": "TODO" },
+                        "description": "UNDOCUMENTATED: oneOf[1]",
                         "title": "TODO Title"
                       }
                     ],
-                    "description": "TODO description: animate",
+                    "description": "UNDOCUMENTATED: animate",
                     "title": "Animate"
                   },
-                  "description": "TODO description: animate"
+                  "description": "UNDOCUMENTATED: animate"
                 },
                 "initialize": {
                   "type": "array",
-                  "description": "TODO description: initialize",
+                  "description": "UNDOCUMENTATED: initialize",
                   "title": "Initialize",
                   "items": {
                     "pattern": ";$",
                     "$ref": "../../../molang/number.json",
-                    "description": "TODO description: initialize",
+                    "description": "UNDOCUMENTATED: initialize",
                     "title": "Initialize"
                   }
                 },
                 "pre_animation": {
                   "type": "array",
-                  "description": "TODO description: pre aninamtion",
+                  "description": "UNDOCUMENTATED: pre aninamtion",
                   "title": "Pre Animation",
                   "items": {
                     "pattern": ";$",
                     "$ref": "../../../molang/number.json",
-                    "description": "TODO description: pre aninamtion",
+                    "description": "UNDOCUMENTATED: pre aninamtion",
                     "title": "Pre Animation"
                   }
                 },
                 "parent_setup": {
                   "type": "string",
-                  "description": "TODO description: parent setup",
+                  "description": "UNDOCUMENTATED: parent setup",
                   "title": "Parent Setup",
                   "$ref": "../../../molang/number.json"
                 },
-                "scale": { "type": "string", "description": "TODO description: scale", "title": "Scale", "$ref": "../../../molang/number.json" }
+                "scale": { "type": "string", "description": "UNDOCUMENTATED: scale", "title": "Scale", "$ref": "../../../molang/number.json" }
               }
             },
             "sound_effects": {
               "type": "array",
-              "description": "TODO description: sound effects",
+              "description": "UNDOCUMENTATED: sound effects",
               "title": "Sound Effects",
               "minItems": 1,
-              "items": { "type": "string", "description": "TODO description: sound effects", "title": "Sound Effects" }
+              "items": { "type": "string", "description": "UNDOCUMENTATED: sound effects", "title": "Sound Effects" }
             },
             "spawn_egg": {
               "type": "object",
-              "description": "TODO description: spawn egg",
+              "description": "UNDOCUMENTATED: spawn egg",
               "title": "Spawn Egg",
               "dependencies": {
                 "texture": ["texture_index"],
@@ -173,20 +173,20 @@
                 "overlay_color": ["base_colour"]
               },
               "properties": {
-                "base_colour": { "type": "string", "description": "TODO description: base colour", "title": "Base Colour" },
-                "overlay_color": { "type": "string", "description": "TODO description: overlay color", "title": "Overlay Color" },
-                "texture": { "type": "string", "description": "TODO description: texture", "title": "Texture" },
-                "texture_index": { "type": "integer", "description": "TODO description: texture index", "title": "Texture Index" }
+                "base_colour": { "type": "string", "description": "UNDOCUMENTATED: base colour", "title": "Base Colour" },
+                "overlay_color": { "type": "string", "description": "UNDOCUMENTATED: overlay color", "title": "Overlay Color" },
+                "texture": { "type": "string", "description": "UNDOCUMENTATED: texture", "title": "Texture" },
+                "texture_index": { "type": "integer", "description": "UNDOCUMENTATED: texture index", "title": "Texture Index" }
               }
             },
             "textures": {
               "type": "object",
-              "additionalProperties": { "type": "string", "description": "TODO description: additionalProperties", "title": "TODO" },
-              "description": "TODO description: textures",
+              "additionalProperties": { "type": "string", "description": "UNDOCUMENTATED: additionalProperties", "title": "TODO" },
+              "description": "UNDOCUMENTATED: textures",
               "title": "Textures"
             }
           },
-          "description": "TODO description: description"
+          "description": "UNDOCUMENTATED: description"
         }
       },
       "additionalProperties": false

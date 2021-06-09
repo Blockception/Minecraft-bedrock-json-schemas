@@ -22,7 +22,7 @@
           "properties": {
             "identifier": {
               "type": "string",
-              "description": "TODO description: identifier",
+              "description": "UNDOCUMENTATED: identifier",
               "title": "Identifier",
               "$ref": "../../../general/particle/identifier.json"
             },
@@ -38,11 +38,11 @@
                 },
                 "texture": { "type": "string", "pattern": "^.+$", "description": "Minecraft texture to use for emitter", "title": "Texture" }
               },
-              "description": "TODO description: basic render parameters",
+              "description": "UNDOCUMENTATED: basic render parameters",
               "title": "Basic Render Parameters"
             }
           },
-          "description": "TODO description: description",
+          "description": "UNDOCUMENTATED: description",
           "title": "Description"
         },
         "curves": {
@@ -127,24 +127,24 @@
                 "title": "Particle Effect",
                 "description": "TODO",
                 "properties": {
-                  "effect": { "type": "string", "description": "TODO description: effect", "title": "Effect" },
-                  "type": { "type": "string", "description": "TODO description: type", "title": "Type" }
+                  "effect": { "type": "string", "description": "UNDOCUMENTATED: effect", "title": "Effect" },
+                  "type": { "type": "string", "description": "UNDOCUMENTATED: type", "title": "Type" }
                 }
               },
               "sound_effect": {
                 "title": "Sound effect",
                 "description": "TODO",
                 "properties": {
-                  "event_name": { "type": "string", "description": "TODO description: effect", "title": "Event name" }
+                  "event_name": { "type": "string", "description": "UNDOCUMENTATED: effect", "title": "Event name" }
                 }
               }
             }
           },
-          "description": "TODO description: events",
+          "description": "UNDOCUMENTATED: events",
           "title": "Events"
         }
       },
-      "description": "TODO description: particle effect",
+      "description": "UNDOCUMENTATED: particle effect",
       "title": "Particle Effect"
     }
   }

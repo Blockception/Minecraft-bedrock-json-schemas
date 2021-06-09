@@ -40,7 +40,7 @@
         { "type": "array", "items": { "$ref": "#/definitions/name_action" } },
         { "type": "object", "$ref": "#/definitions/name_action" }
       ],
-      "description": "TODO description",
+      "description": "UNDOCUMENTATED",
       "title": "TODO Title"
     }
   }

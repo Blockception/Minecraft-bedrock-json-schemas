@@ -4,7 +4,7 @@
   "description": "The function set_lore",
   "title": "Set Lore",
   "properties": {
-    "function": { "type": "string", "const": "set_lore", "description": "TODO description", "title": "TODO Title" },
-    "lore": { "type": "array", "items": { "type": "string" }, "description": "TODO description", "title": "TODO Title" }
+    "function": { "type": "string", "const": "set_lore", "description": "UNDOCUMENTATED", "title": "TODO Title" },
+    "lore": { "type": "array", "items": { "type": "string" }, "description": "UNDOCUMENTATED", "title": "TODO Title" }
   }
 }

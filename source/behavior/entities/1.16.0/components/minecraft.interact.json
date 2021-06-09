@@ -96,7 +96,7 @@
         { "type": "object", "$ref": "#/definitions/interaction_spec" },
         { "type": "array", "items": { "$ref": "#/definitions/interaction_spec" } }
       ],
-      "description": "TODO description",
+      "description": "UNDOCUMENTATED",
       "title": "TODO Title"
     }
   }

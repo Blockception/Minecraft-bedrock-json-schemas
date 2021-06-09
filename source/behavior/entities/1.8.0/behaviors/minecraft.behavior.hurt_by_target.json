@@ -7,7 +7,7 @@
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
-    "entity_types": { "$ref": "../types/entity_types.json", "description": "TODO description: entity types", "title": "Entity Types" },
+    "entity_types": { "$ref": "../types/entity_types.json", "description": "UNDOCUMENTATED: entity types", "title": "Entity Types" },
     "alert_same_type": {
       "type": "boolean",
       "default": false,

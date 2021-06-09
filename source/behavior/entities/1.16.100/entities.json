@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.entity1.16.100",
   "type": "object",
   "title": "Entity Behavior 1.16.100",
-  "description": "TODO description",
+  "description": "UNDOCUMENTATED",
   "required": ["format_version", "minecraft:entity"],
   "properties": {
     "format_version": {

@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Actor Animation 1.10.0",
-  "description": "TODO description",
+  "description": "UNDOCUMENTATED",
   "definitions": {
     "ParticleEffect": {
       "type": "object",

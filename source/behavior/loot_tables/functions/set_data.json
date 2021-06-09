@@ -4,14 +4,14 @@
   "description": "The function set_data",
   "title": "Set Data",
   "properties": {
-    "function": { "type": "string", "const": "set_data", "description": "TODO description", "title": "TODO Title" },
+    "function": { "type": "string", "const": "set_data", "description": "UNDOCUMENTATED", "title": "TODO Title" },
     "data": {
       "title": "Data",
       "oneOf": [
         { "type": "integer" },
         { "type": "object", "properties": { "min": { "type": "integer", "title": "Minimum" }, "max": { "type": "integer", "title": "Maximum" } } }
       ],
-      "description": "TODO description"
+      "description": "UNDOCUMENTATED"
     }
   }
 }

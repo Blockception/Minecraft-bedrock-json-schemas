@@ -153,7 +153,7 @@
                 },
                 "parent_setup": {
                   "type": "string",
-                  "description": "TODO description: parent setup",
+                  "description": "UNDOCUMENTATED: parent setup",
                   "title": "Parent Setup",
                   "$ref": "../../../molang/number.json"
                 },

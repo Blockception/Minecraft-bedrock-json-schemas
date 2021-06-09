@@ -14,7 +14,7 @@
           "title": "Component Groups Schema",
           "description": "The components groups to add or remove",
           "type": "array",
-          "items": { "type": "string", "description": "TODO description: component groups", "title": "Component Groups" }
+          "items": { "type": "string", "description": "UNDOCUMENTATED: component groups", "title": "Component Groups" }
         }
       }
     },
@@ -32,18 +32,18 @@
               "add": { "$ref": "#/definitions/addremove", "description": "What gets added when the event gets triggered", "title": "Add" },
               "remove": { "$ref": "#/definitions/addremove", "description": "What gets removed when the event gets triggered", "title": "Remove" },
               "trigger": { "type": "string", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
-              "weight": { "type": "number", "description": "TODO description: weight", "title": "Weight" }
+              "weight": { "type": "number", "description": "UNDOCUMENTATED: weight", "title": "Weight" }
             },
-            "description": "TODO description: randomize",
+            "description": "UNDOCUMENTATED: randomize",
             "title": "Randomize"
           },
-          "description": "TODO description: randomize",
+          "description": "UNDOCUMENTATED: randomize",
           "title": "Randomize"
         },
         "sequence": {
           "type": "array",
           "items": {
-            "description": "TODO description: sequence",
+            "description": "UNDOCUMENTATED: sequence",
             "title": "Sequence",
             "type": "object",
             "properties": {

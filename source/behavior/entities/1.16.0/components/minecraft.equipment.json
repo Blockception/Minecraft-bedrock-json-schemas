@@ -20,7 +20,7 @@
         }
       }
     },
-    "table": { "type": "string", "pattern": ".*\\.json$", "description": "TODO description: table", "title": "Table" }
+    "table": { "type": "string", "pattern": ".*\\.json$", "description": "UNDOCUMENTATED: table", "title": "Table" }
   },
-  "description": "TODO description: "
+  "description": "UNDOCUMENTATED: "
 }

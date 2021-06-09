@@ -20,7 +20,7 @@
     },
     "randomize": {
       "title": "Randomize",
-      "description": "TODO description: randomize",
+      "description": "UNDOCUMENTATED: randomize",
       "type": "array",
       "items": {
         "required": ["weight"],
@@ -28,7 +28,7 @@
           "add": { "$ref": "#/definitions/addremove", "description": "What gets added when the event gets triggered", "title": "Add" },
           "remove": { "$ref": "#/definitions/addremove", "description": "What gets removed when the event gets triggered", "title": "Remove" },
           "trigger": { "type": "string", "description": "UNDOCUMENTATED", "title": "UNDOCUMENTATED" },
-          "weight": { "type": "number", "description": "TODO description: weight", "title": "Weight" }
+          "weight": { "type": "number", "description": "UNDOCUMENTATED: weight", "title": "Weight" }
         }
       }
     },
@@ -48,7 +48,7 @@
           "description": "A series of filters and components to be added",
           "title": "Sequences",
           "type": "array",
-          "items": { "description": "TODO description: sequence", "title": "Sequence", "type": "object", "$ref": "#/definitions/event_base" }
+          "items": { "description": "UNDOCUMENTATED: sequence", "title": "Sequence", "type": "object", "$ref": "#/definitions/event_base" }
         },
         "trigger": { "type": "string", "description": "The event to run", "title": "Trigger" }
       }

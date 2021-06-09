@@ -3,5 +3,5 @@
   "additionalProperties": false,
   "description": "The function set_data_from_color_index",
   "title": "Set Data From Color Index",
-  "properties": { "function": { "type": "string", "const": "set_data_from_color_index", "description": "TODO description", "title": "TODO Title" } }
+  "properties": { "function": { "type": "string", "const": "set_data_from_color_index", "description": "UNDOCUMENTATED", "title": "TODO Title" } }
 }
