@@ -3,7 +3,7 @@
   "type": "object",
   "title": "Breedable 1.13.0",
   "additionalProperties": false,
-  "description": "Specifies the blocks that this entity can break as it moves around.",
+  "description": "Defines the way an entity can get into the `love` state.",
   "definitions": {
     "breeds_with_spec": {
       "type": "object",
