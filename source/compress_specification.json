@@ -34,6 +34,7 @@
     },
     { "Source": "./behavior/animations/animations.json", "Destination": "../behavior/animations/animations.json" },
     { "Source": "./behavior/biomes/biomes.json", "Destination": "../behavior/biomes/biomes.json" },
+    { "Source": "./behavior/dialogue/dialogue.json", "Destination": "../behavior/dialogue/dialogue.json" },
     { "Source": "./behavior/loot_tables/loot_tables.json", "Destination": "../behavior/loot_tables/loot_tables.json" },
     { "Source": "./behavior/blocks/blocks.json", "Destination": "../behavior/blocks/blocks.json" },
     { "Source": "./behavior/entities/entities.json", "Destination": "../behavior/entities/entities.json" },

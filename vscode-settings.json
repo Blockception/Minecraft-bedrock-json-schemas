@@ -177,6 +177,22 @@
     },
     {
       "fileMatch": [
+        "behavior_packs/*/dialogue/*.json",
+        "*behavior*pack*/dialogue/*.json",
+        "*Behavior*Pack*/dialogue/*.json",
+        "*BP*/dialogue/*.json",
+        "*bp*/dialogue/*.json",
+        "behavior_packs/*/dialogue/**/*.json",
+        "*behavior*pack*/dialogue/**/*.json",
+        "*Behavior*Pack*/dialogue/**/*.json",
+        "*BP*/dialogue/**/*.json",
+        "*bp*/dialogue/**/*.json",
+        "*.diag.json"
+      ],
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/dialogue/dialogue.json"
+    },
+    {
+      "fileMatch": [
         "behavior_packs/*/loot_tables/*.json",
         "*behavior*pack*/loot_tables/*.json",
         "*Behavior*Pack*/loot_tables/*.json",

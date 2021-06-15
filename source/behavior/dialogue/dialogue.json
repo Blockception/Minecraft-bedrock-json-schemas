@@ -1,0 +1,23 @@
+{
+  "$id": "blockception.minecraft.behavior.feature_rules",
+  "examples": [
+    {
+      "format_version": "1.14.0",
+      "minecraft:npc_dialogue": {
+        "scenes": [
+          {
+            "scene_tag": "fast_travel",
+            "npc_name": { "rawtext": [{ "translate": "dialogue.guide.name" }] },
+            "text": { "rawtext": [{ "translate": "dialogue.fast_travel.body", "with": ["\n"] }] },
+            "buttons": []
+          }
+        ]
+      }
+    }
+  ],
+  "allOf": [
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.14.0" } } }, "then": { "$ref": "./1.14.0/dialogue.json" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.14" } } }, "then": { "$ref": "./1.14.0/dialogue.json" } },
+    { "properties": { "format_version": { "$ref": "../../general/format_version.json" } } }
+  ]
+}

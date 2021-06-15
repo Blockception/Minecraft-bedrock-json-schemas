@@ -1,0 +1,93 @@
+{
+  "$id": "blockception.minecraft.behavior.dialogue.1.14.0",
+  "type": "object",
+  "title": "NPC Dialogue",
+  "description": "UNDOCUMENTATED",
+  "additionalProperties": false,
+  "required": ["format_version", "minecraft:npc_dialogue"],
+  "properties": {
+    "format_version": {
+      "const": "1.14.0",
+      "description": "Specifies the version of the game this entity was made in. Minimum supported version is 1.14.0. Current supported version is 1.14.0.",
+      "title": "Format Version"
+    },
+    "minecraft:npc_dialogue": {
+      "title": "NPC Dialogue",
+      "description": "",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "scenes": {
+          "title": "Scenes",
+          "description": "",
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "title": "Scene",
+            "description": "",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "buttons": {
+                "title": "Buttons",
+                "description": "",
+                "type": "array",
+                "maxItems": 6,
+                "items": {
+                  "title": "Button",
+                  "description": "",
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "name": {
+                      "title": "Name",
+                      "description": "",
+                      "$ref": "../../../general/rawtext/rawtext.json"
+                    },
+                    "commands": {
+                      "type": "array",
+                      "description": "",
+                      "title": "Commands",
+                      "items": {
+                        "title": "Minecraft Command",
+                        "description": "",
+                        "type": "string",
+                        "pattern": "^/[a-z].*$"
+                      }
+                    }
+                  }
+                }
+              },
+              "npc_name": {
+                "title": "NPC Name",
+                "description": "",
+                "$ref": "../../../general/rawtext/rawtext.json"
+              },
+              "on_close_commands": {
+                "type": "array",
+                "description": "",
+                "title": "On Close Commands",
+                "items": {
+                  "title": "Minecraft Command",
+                  "description": "",
+                  "type": "string",
+                  "pattern": "^/[a-z].*$"
+                }
+              },
+              "scene_tag": {
+                "title": "Scene tag",
+                "description": "",
+                "type": "string"
+              },
+              "text": {
+                "title": "Text",
+                "description": "",
+                "$ref": "../../../general/rawtext/rawtext.json"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
