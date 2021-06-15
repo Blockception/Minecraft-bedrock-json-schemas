@@ -87,7 +87,7 @@
     "minecraft:is_saddled": { "$ref": "../1.8.0/components/minecraft.is_saddled.json" },
     "minecraft:is_shaking": { "$ref": "../1.8.0/components/minecraft.is_shaking.json" },
     "minecraft:is_sheared": { "$ref": "../1.8.0/components/minecraft.is_sheared.json" },
-    "minecraft:is_stackable": { "$ref": "../1.8.0/components/minecraft.is_stackable.json" },
+    "minecraft:is_stackable": { "$ref": "../1.16.0/components/minecraft.is_stackable.json" },
     "minecraft:is_stunned": { "$ref": "../1.8.0/components/minecraft.is_stunned.json" },
     "minecraft:is_tamed": { "$ref": "../1.8.0/components/minecraft.is_tamed.json" },
     "minecraft:item_controllable": { "$ref": "../1.8.0/components/minecraft.item_controllable.json" },
