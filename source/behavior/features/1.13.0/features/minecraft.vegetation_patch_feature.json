@@ -21,7 +21,7 @@
     },
     "replaceable_blocks": {
       "title": "Replaceable Blocks",
-      "description": "",
+      "description": "UNDOCUMENTATED",
       "type": "array",
       "items": {
         "title": "Replace block",
@@ -31,60 +31,60 @@
     },
     "ground_block": {
       "title": "Ground Block",
-      "description": "",
+      "description": "UNDOCUMENTATED",
       "type": "string",
       "$ref": "../../../../general/block/identifier.json"
     },
     "vegetation_feature": {
       "title": "Vegetation Feature",
-      "description": "",
+      "description": "UNDOCUMENTATED",
       "type": "string",
       "$ref": "../../../../general/feature/identifier.json"
     },
     "surface": {
       "title": "Surface",
-      "description": "",
+      "description": "UNDOCUMENTATED",
       "type": "string"
     },
     "depth": {
       "title": "Depth",
-      "description": "",
+      "description": "UNDOCUMENTATED",
       "type": "integer",
       "minimum": 0
     },
     "extra_deep_block_chance": {
       "title": "Extra Deep Block Chance",
-      "description": "",
+      "description": "UNDOCUMENTATED",
       "type": "number",
       "minimum": 0
     },
     "vertical_range": {
       "title": "Vertical Range",
-      "description": "",
+      "description": "UNDOCUMENTATED",
       "type": "integer",
       "minimum": 0
     },
     "vegetation_chance": {
       "title": "Vegatation Chance",
-      "description": "",
+      "description": "UNDOCUMENTATED",
       "type": "number",
       "minimum": 0
     },
     "horizontal_radius": {
       "title": "Horizontal Radius",
-      "description": "",
+      "description": "UNDOCUMENTATED",
       "type": "integer",
       "minimum": 0
     },
     "extra_edge_column_chance": {
       "title": "Extra Egde Column Chance",
-      "description": "",
+      "description": "UNDOCUMENTATED",
       "type": "number",
       "minimum": 0
     },
     "waterlogged": {
       "title": "Waterlogged",
-      "description": "",
+      "description": "UNDOCUMENTATED",
       "type": "boolean"
     }
   }
