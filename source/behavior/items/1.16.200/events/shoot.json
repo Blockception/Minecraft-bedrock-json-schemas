@@ -1,12 +1,12 @@
 {
   "$id": "blockception.minecraft.behavior.1.16.200.items.events.shoot",
   "title": "Shoot",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "angle_offset": { "type": "number", "title": "Angle Offset", "description": "UNDOCUMENTATED" },
-    "launch_power": { "type": "number", "title": "Launch Power", "description": "UNDOCUMENTATED" },
-    "projectile": { "type": "string", "title": "Projectile", "description": "UNDOCUMENTATED" }
+    "angle_offset": { "type": "number", "title": "Angle Offset", "description": "UNDOCUMENTED" },
+    "launch_power": { "type": "number", "title": "Launch Power", "description": "UNDOCUMENTED" },
+    "projectile": { "type": "string", "title": "Projectile", "description": "UNDOCUMENTED" }
   }
 }

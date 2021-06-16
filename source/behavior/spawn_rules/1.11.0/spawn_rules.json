@@ -2,28 +2,28 @@
   "$id": "blockception.minecraft.behavior.spawn_rules.1.11.0",
   "type": "object",
   "title": "Spawn Rules 1.11.0",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "additionalProperties": false,
   "required": ["format_version", "minecraft:spawn_rules"],
   "properties": {
-    "format_version": { "const": "1.11.0", "description": "UNDOCUMENTATED", "title": "Spawn Rules" },
+    "format_version": { "const": "1.11.0", "description": "UNDOCUMENTED", "title": "Spawn Rules" },
     "minecraft:spawn_rules": {
       "type": "object",
       "title": "Spawn Rules",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "additionalProperties": false,
       "properties": {
         "description": {
           "type": "object",
           "title": "Description",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "additionalProperties": false,
           "properties": {
-            "identifier": { "title": "Identifier", "description": "UNDOCUMENTATED", "$ref": "../../../general/entity/identifier.json" },
+            "identifier": { "title": "Identifier", "description": "UNDOCUMENTED", "$ref": "../../../general/entity/identifier.json" },
             "population_control": {
               "type": "string",
               "title": "Population Control",
-              "description": "UNDOCUMENTATED",
+              "description": "UNDOCUMENTED",
               "enum": ["ambient", "animal", "water_animal", "monster", "cat", "pillager"]
             }
           }
@@ -31,12 +31,12 @@
         "conditions": {
           "type": "array",
           "title": "Conditions",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "items": {
             "additionalProperties": false,
             "type": "object",
             "title": "Condition",
-            "description": "UNDOCUMENTATED",
+            "description": "UNDOCUMENTED",
             "properties": {
               "minecraft:biome_filter": { "$ref": "./components/minecraft.biome_filter.json" },
               "minecraft:brightness_filter": { "$ref": "./components/minecraft.brightness_filter.json" },

@@ -3,6 +3,6 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Spawns On Lava 1.11.0",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "properties": {}
 }

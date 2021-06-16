@@ -9,10 +9,10 @@
       "description": "A single material instance",
       "additionalProperties": false,
       "properties": {
-        "ambient_occlusion": { "title": "Ambient Occlusion", "type": "boolean", "description": "UNDOCUMENTATED" },
-        "face_dimming": { "title": "Face Dimming", "type": "boolean", "description": "UNDOCUMENTATED" },
-        "render_method": { "type": "string", "title": "Render Method", "description": "UNDOCUMENTATED", "enum": ["blend", "opaque", "alpha_test"] },
-        "texture": { "type": "string", "title": "Texture", "description": "UNDOCUMENTATED" }
+        "ambient_occlusion": { "title": "Ambient Occlusion", "type": "boolean", "description": "UNDOCUMENTED" },
+        "face_dimming": { "title": "Face Dimming", "type": "boolean", "description": "UNDOCUMENTED" },
+        "render_method": { "type": "string", "title": "Render Method", "description": "UNDOCUMENTED", "enum": ["blend", "opaque", "alpha_test"] },
+        "texture": { "type": "string", "title": "Texture", "description": "UNDOCUMENTED" }
       }
     }
   },

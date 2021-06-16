@@ -12,11 +12,11 @@
       "items": {
         "additionalProperties": false,
         "title": "Slot Drop Chance",
-        "description": "UNDOCUMENTATED",
+        "description": "UNDOCUMENTED",
         "type": "object",
         "properties": {
-          "drop_chance": { "type": "number", "title": "Drop Chance", "description": "UNDOCUMENTATED" },
-          "slot": { "type": "string", "title": "Slot", "description": "UNDOCUMENTATED" }
+          "drop_chance": { "type": "number", "title": "Drop Chance", "description": "UNDOCUMENTED" },
+          "slot": { "type": "string", "title": "Slot", "description": "UNDOCUMENTED" }
         }
       }
     },

@@ -3,7 +3,7 @@
   "type": "object",
   "additionalProperties": false,
   "title": "Fog",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "definitions": {
     "colorHexOrArray": {
       "examples": ["#056bd1"],

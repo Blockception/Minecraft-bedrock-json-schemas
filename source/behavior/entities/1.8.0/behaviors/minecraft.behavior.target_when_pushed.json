@@ -1,13 +1,13 @@
 {
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.target_when_pushed",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "type": "object",
   "title": "Target When Pushed 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {
     "priority": { "$ref": "types/priority.json" },
-    "entity_types": { "$ref": "../types/entity_types.json", "title": "Entity Types", "description": "UNDOCUMENTATED" },
-    "percent_chance": { "type": "number", "title": "Percent Chance", "description": "UNDOCUMENTATED" }
+    "entity_types": { "$ref": "../types/entity_types.json", "title": "Entity Types", "description": "UNDOCUMENTED" },
+    "percent_chance": { "type": "number", "title": "Percent Chance", "description": "UNDOCUMENTED" }
   }
 }

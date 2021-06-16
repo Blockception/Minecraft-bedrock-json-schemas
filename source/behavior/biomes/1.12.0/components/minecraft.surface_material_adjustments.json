@@ -10,7 +10,7 @@
       "description": "All adjustments that match the column's noise values will be applied in the order listed.",
       "items": {
         "title": "Adjustment",
-        "description": "UNDOCUMENTATED",
+        "description": "UNDOCUMENTED",
         "type": "object",
         "additionalProperties": false,
         "properties": {
@@ -31,7 +31,7 @@
           },
           "materials": {
             "title": "Materials",
-            "description": "UNDOCUMENTATED",
+            "description": "UNDOCUMENTED",
             "type": "object",
             "additionalProperties": false,
             "properties": {

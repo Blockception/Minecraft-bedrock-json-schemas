@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Player.saturation 1.8.0",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "required": [],
-  "properties": { "value": { "type": "number", "default": true, "title": "Value", "description": "UNDOCUMENTATED" } }
+  "properties": { "value": { "type": "number", "default": true, "title": "Value", "description": "UNDOCUMENTED" } }
 }

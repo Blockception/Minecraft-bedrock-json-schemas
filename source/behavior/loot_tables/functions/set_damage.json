@@ -5,17 +5,17 @@
   "title": "Set Damage",
   "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "set_damage", "description": "UNDOCUMENTATED", "title": "Function" },
+    "function": { "type": "string", "const": "set_damage", "description": "UNDOCUMENTED", "title": "Function" },
     "damage": {
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "title": "Damage",
       "oneOf": [
         { "type": "integer" },
         {
           "type": "object",
           "properties": {
-            "min": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Minimum" },
-            "max": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Maximum" }
+            "min": { "type": "integer", "description": "UNDOCUMENTED", "title": "Minimum" },
+            "max": { "type": "integer", "description": "UNDOCUMENTED", "title": "Maximum" }
           }
         }
       ]

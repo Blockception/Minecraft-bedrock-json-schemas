@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.resource.animation_controller1.10.0",
   "type": "object",
   "title": "Animation Controller 1.10.0",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "definitions": {
     "animationspec": {
       "anyOf": [
@@ -166,7 +166,7 @@
                     "type": "object",
                     "required": ["input"],
                     "properties": {
-                      "input": { "title": "Input", "description": "UNDOCUMENTATED", "$ref": "../../../molang/number.json" },
+                      "input": { "title": "Input", "description": "UNDOCUMENTED", "$ref": "../../../molang/number.json" },
                       "remap_curve": {
                         "title": "Remap Curve",
                         "additionalProperties": { "propertyNames": { "pattern": "^([\\-\\+0-9]+|[\\-\\+0-9]+.[0-9]+)$" }, "type": "number" }
@@ -176,15 +176,15 @@
                 },
                 "on_entry": {
                   "title": "On Entry",
-                  "description": "UNDOCUMENTATED",
+                  "description": "UNDOCUMENTED",
                   "type": "array",
-                  "items": { "pattern": "^.+=.+;$", "title": "Molang", "description": "UNDOCUMENTATED", "type": "string" }
+                  "items": { "pattern": "^.+=.+;$", "title": "Molang", "description": "UNDOCUMENTED", "type": "string" }
                 },
                 "on_exit": {
                   "title": "On Exit",
-                  "description": "UNDOCUMENTATED",
+                  "description": "UNDOCUMENTED",
                   "type": "array",
-                  "items": { "pattern": "^.+=.+;$", "title": "Molang", "description": "UNDOCUMENTATED", "type": "string" }
+                  "items": { "pattern": "^.+=.+;$", "title": "Molang", "description": "UNDOCUMENTED", "type": "string" }
                 }
               }
             }

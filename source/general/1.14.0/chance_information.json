@@ -3,9 +3,9 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Chance Information",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "properties": {
-    "numerator": { "type": "number", "minimum": 1, "description": "UNDOCUMENTATED", "title": "Numerator" },
-    "denominator": { "type": "number", "minimum": 1, "description": "UNDOCUMENTATED", "title": "Denominator" }
+    "numerator": { "type": "number", "minimum": 1, "description": "UNDOCUMENTED", "title": "Numerator" },
+    "denominator": { "type": "number", "minimum": 1, "description": "UNDOCUMENTED", "title": "Denominator" }
   }
 }

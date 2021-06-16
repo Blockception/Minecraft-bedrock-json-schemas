@@ -5,7 +5,7 @@
   "title": "Set Banner Details",
   "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "set_banner_details", "description": "UNDOCUMENTATED", "title": "Function" },
-    "type": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Type" }
+    "function": { "type": "string", "const": "set_banner_details", "description": "UNDOCUMENTED", "title": "Function" },
+    "type": { "type": "integer", "description": "UNDOCUMENTED", "title": "Type" }
   }
 }

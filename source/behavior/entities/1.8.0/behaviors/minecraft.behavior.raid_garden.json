@@ -40,6 +40,6 @@
       "description": "Distance in blocks the mob will look for crops to eat",
       "title": "TODO Title"
     },
-    "search_height": { "type": "integer", "default": 0, "description": "UNDOCUMENTATED", "title": "TODO Title" }
+    "search_height": { "type": "integer", "default": 0, "description": "UNDOCUMENTED", "title": "TODO Title" }
   }
 }

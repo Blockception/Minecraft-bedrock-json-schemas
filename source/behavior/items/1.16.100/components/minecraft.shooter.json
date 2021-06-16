@@ -12,13 +12,13 @@
       "items": {
         "type": "object",
         "title": "TODO",
-        "description": "UNDOCUMENTATED",
+        "description": "UNDOCUMENTED",
         "additionalProperties": false,
         "properties": {
-          "item": { "title": "Item", "description": "UNDOCUMENTATED", "type": "string" },
-          "use_offhand": { "title": "Use Offhand", "description": "UNDOCUMENTATED", "type": "boolean" },
-          "search_inventory": { "title": "Search Inventory", "description": "UNDOCUMENTATED", "type": "boolean" },
-          "use_in_creative": { "title": "Use In Creative", "description": "UNDOCUMENTATED", "type": "boolean" }
+          "item": { "title": "Item", "description": "UNDOCUMENTED", "type": "string" },
+          "use_offhand": { "title": "Use Offhand", "description": "UNDOCUMENTED", "type": "boolean" },
+          "search_inventory": { "title": "Search Inventory", "description": "UNDOCUMENTED", "type": "boolean" },
+          "use_in_creative": { "title": "Use In Creative", "description": "UNDOCUMENTED", "type": "boolean" }
         }
       }
     },

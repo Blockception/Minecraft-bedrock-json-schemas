@@ -36,7 +36,7 @@
       "title": "Blocks To Avoid",
       "items": {
         "title": "Block",
-        "description": "UNDOCUMENTATED",
+        "description": "UNDOCUMENTED",
         "oneOf": [
           { "type": "string", "$ref": "../../../../general/block/identifier.json" },
           { "type": "object", "title": "TODO", "properties": { "name": { "$ref": "../../../../general/block/identifier.json" } } }

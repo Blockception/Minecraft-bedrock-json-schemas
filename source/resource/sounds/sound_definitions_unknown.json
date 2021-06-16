@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.sound_definition.json",
   "type": "object",
   "title": "Sound  File, Unknown Version",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "definitions": {
     "SoundPath": {
       "$id": "SoundFilepath",
@@ -33,7 +33,7 @@
                 "$id": "#/Sound/sounds/stringItem",
                 "type": "string",
                 "$ref": "#/definitions/SoundPath",
-                "description": "UNDOCUMENTATED",
+                "description": "UNDOCUMENTED",
                 "title": "Sounds"
               },
               {
@@ -64,7 +64,7 @@
                     "title": "Name"
                   }
                 },
-                "description": "UNDOCUMENTATED",
+                "description": "UNDOCUMENTED",
                 "title": "Sounds"
               }
             ],

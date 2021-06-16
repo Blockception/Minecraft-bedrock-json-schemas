@@ -2,37 +2,37 @@
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.eat_block",
   "type": "object",
   "title": "Eat Block 1.8.0",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "additionalProperties": false,
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
-    "on_eat": { "$ref": "../types/trigger.json", "description": "UNDOCUMENTATED", "title": "On Eat" },
+    "on_eat": { "$ref": "../types/trigger.json", "description": "UNDOCUMENTED", "title": "On Eat" },
     "success_chance": {
       "title": "Succes Chance",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "$ref": "../../../../molang/number.json"
     },
-    "time_until_eat": { "title": "Time Until Eat", "description": "UNDOCUMENTATED", "type": "number" },
+    "time_until_eat": { "title": "Time Until Eat", "description": "UNDOCUMENTED", "type": "number" },
     "eat_and_replace_block_pairs": {
       "type": "array",
       "title": "Eat And Replace Block Pairs",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "items": {
         "type": "object",
         "title": "Eat And Replace Block Pair",
-        "description": "UNDOCUMENTATED",
+        "description": "UNDOCUMENTED",
         "properties": {
           "eat_block": {
             "type": "string",
             "title": "Block",
-            "description": "UNDOCUMENTATED",
+            "description": "UNDOCUMENTED",
             "$ref": "../../../../general/block/identifier.json"
           },
           "replace_block": {
             "type": "string",
             "title": "Replace Block",
-            "description": "UNDOCUMENTATED",
+            "description": "UNDOCUMENTED",
             "$ref": "../../../../general/block/identifier.json"
           }
         }

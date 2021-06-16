@@ -13,7 +13,7 @@
       "items": {
         "type": "object",
         "title": "Slot Drop Chance",
-        "description": "UNDOCUMENTATED",
+        "description": "UNDOCUMENTED",
         "additionalProperties": false,
         "properties": {
           "drop_chance": { "type": "number", "title": "Drop Chance" },

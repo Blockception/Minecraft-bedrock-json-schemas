@@ -11,7 +11,7 @@
       "description": "List of entity types this mob considers a threat to the village",
       "title": "Entity Types"
     },
-    "must_reach": { "title": "Must Reach", "description": "UNDOCUMENTATED", "type": "boolean" },
-    "attack_chance": { "title": "Attack Chance", "description": "UNDOCUMENTATED", "type": "number" }
+    "must_reach": { "title": "Must Reach", "description": "UNDOCUMENTED", "type": "boolean" },
+    "attack_chance": { "title": "Attack Chance", "description": "UNDOCUMENTED", "type": "number" }
   }
 }

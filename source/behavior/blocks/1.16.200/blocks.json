@@ -9,7 +9,7 @@
     "components_ref": {
       "type": "object",
       "title": "Component",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "additionalProperties": false,
       "properties": {
         "minecraft:on_fall_on": { "$ref": "./components/minecraft.on_fall_on.json" },

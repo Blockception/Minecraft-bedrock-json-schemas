@@ -6,8 +6,8 @@
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
-    "idle_time": { "title": "TODO", "description": "UNDOCUMENTATED", "type": "number" },
-    "success_rate": { "title": "TODO", "description": "UNDOCUMENTATED", "type": "number" }
+    "idle_time": { "title": "TODO", "description": "UNDOCUMENTED", "type": "number" },
+    "success_rate": { "title": "TODO", "description": "UNDOCUMENTED", "type": "number" }
   },
-  "description": "UNDOCUMENTATED"
+  "description": "UNDOCUMENTED"
 }

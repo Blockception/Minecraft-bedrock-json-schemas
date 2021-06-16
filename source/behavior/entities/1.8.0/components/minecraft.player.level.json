@@ -3,10 +3,10 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Player.level 1.8.0",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "required": [],
   "properties": {
-    "value": { "type": "number", "default": true, "title": "Value", "description": "UNDOCUMENTATED" },
-    "max": { "type": "number", "default": true, "title": "Maximum", "description": "UNDOCUMENTATED" }
+    "value": { "type": "number", "default": true, "title": "Value", "description": "UNDOCUMENTED" },
+    "max": { "type": "number", "default": true, "title": "Maximum", "description": "UNDOCUMENTED" }
   }
 }

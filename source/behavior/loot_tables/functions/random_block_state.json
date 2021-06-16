@@ -5,12 +5,12 @@
   "title": "Random Block State",
   "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "random_block_state", "description": "UNDOCUMENTATED", "title": "Function" },
-    "block_state": { "type": "string", "description": "UNDOCUMENTATED", "title": "Block State" },
+    "function": { "type": "string", "const": "random_block_state", "description": "UNDOCUMENTED", "title": "Function" },
+    "block_state": { "type": "string", "description": "UNDOCUMENTED", "title": "Block State" },
     "values": {
       "type": "object",
       "properties": { "min": { "title": "Min", "type": "integer" }, "max": { "title": "Max", "type": "integer" } },
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "title": "Values",
       "additionalProperties": false
     }

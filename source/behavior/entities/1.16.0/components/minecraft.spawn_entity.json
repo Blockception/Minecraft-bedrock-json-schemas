@@ -71,7 +71,7 @@
   "properties": {
     "entities": {
       "title": "Entities",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "oneOf": [
         { "type": "object", "$ref": "#/definitions/entity_spawn" },
         { "type": "array", "items": { "$ref": "#/definitions/entity_spawn" } }

@@ -5,7 +5,7 @@
   "title": "Set Name",
   "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "set_name", "description": "UNDOCUMENTATED", "title": "Function" },
-    "name": { "type": "string", "description": "UNDOCUMENTATED", "title": "name" }
+    "function": { "type": "string", "const": "set_name", "description": "UNDOCUMENTED", "title": "Function" },
+    "name": { "type": "string", "description": "UNDOCUMENTED", "title": "name" }
   }
 }

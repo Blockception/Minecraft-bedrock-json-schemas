@@ -11,13 +11,13 @@
       "type": "array",
       "title": "Dispense On",
       "description": "List of block descriptors that contain blocks that this item can be dispensed on. If left empty, all blocks will be allowed.",
-      "items": { "title": "TODO", "description": "UNDOCUMENTATED" }
+      "items": { "title": "TODO", "description": "UNDOCUMENTED" }
     },
     "use_on": {
       "type": "array",
       "title": "Use On",
       "description": "List of block descriptors that contain blocks that this item can be used on. If left empty, all blocks will be allowed.",
-      "items": { "title": "TODO", "description": "UNDOCUMENTATED" }
+      "items": { "title": "TODO", "description": "UNDOCUMENTED" }
     }
   }
 }

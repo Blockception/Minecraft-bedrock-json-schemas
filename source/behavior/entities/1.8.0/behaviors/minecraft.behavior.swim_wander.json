@@ -8,8 +8,8 @@
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
-    "interval": { "type": "number", "title": "Interval", "description": "UNDOCUMENTATED" },
-    "look_ahead": { "type": "number", "title": "Look Ahead", "description": "UNDOCUMENTATED" },
-    "wander_time": { "type": "number", "title": "Wander Time", "description": "UNDOCUMENTATED" }
+    "interval": { "type": "number", "title": "Interval", "description": "UNDOCUMENTED" },
+    "look_ahead": { "type": "number", "title": "Look Ahead", "description": "UNDOCUMENTED" },
+    "wander_time": { "type": "number", "title": "Wander Time", "description": "UNDOCUMENTED" }
   }
 }

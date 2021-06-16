@@ -31,7 +31,7 @@
           "title": "Experimental Custom Ui"
         },
         "chemistry": { "type": "boolean", "description": "Allows the pack to add, change or replace Chemistry functionality", "title": "Chemistry" },
-        "raytraced": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "Raytraced" }
+        "raytraced": { "type": "boolean", "description": "UNDOCUMENTED", "title": "Raytraced" }
       }
     },
     "dependencies": {

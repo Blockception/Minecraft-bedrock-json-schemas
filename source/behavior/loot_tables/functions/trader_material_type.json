@@ -4,5 +4,5 @@
   "description": "The function trader_material_type",
   "title": "Trader Material Type",
   "type": "object",
-  "properties": { "function": { "type": "string", "const": "trader_material_type", "description": "UNDOCUMENTATED", "title": "function" } }
+  "properties": { "function": { "type": "string", "const": "trader_material_type", "description": "UNDOCUMENTED", "title": "function" } }
 }

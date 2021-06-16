@@ -8,7 +8,7 @@
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
-    "avoid_damage_blocks": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "Avoid Damage Blocks" },
+    "avoid_damage_blocks": { "type": "boolean", "description": "UNDOCUMENTED", "title": "Avoid Damage Blocks" },
     "can_land_on_trees": {
       "type": "boolean",
       "default": true,
@@ -27,6 +27,6 @@
       "description": "Distance in blocks that the mob will look up or down for a new spot to move to. Must be at least 1",
       "title": "Y Dist"
     },
-    "y_offset": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Y Offset" }
+    "y_offset": { "type": "integer", "description": "UNDOCUMENTED", "title": "Y Offset" }
   }
 }

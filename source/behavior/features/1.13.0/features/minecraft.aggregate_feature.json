@@ -7,7 +7,7 @@
   "properties": {
     "description": {
       "title": "Description",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "object",
       "required": ["identifier"],
       "properties": {
@@ -26,7 +26,7 @@
       "minItems": 1,
       "items": {
         "title": "Feature",
-        "description": "UNDOCUMENTATED",
+        "description": "UNDOCUMENTED",
         "type": "string"
       }
     },

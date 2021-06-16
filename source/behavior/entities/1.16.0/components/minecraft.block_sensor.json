@@ -5,7 +5,7 @@
   "description": "Fires off a specified event when a block in the block list is broken within the sensor range.",
   "additionalProperties": false,
   "properties": {
-    "sensor_radius": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Sensor Radius", "minimum": 0 },
+    "sensor_radius": { "type": "integer", "description": "UNDOCUMENTED", "title": "Sensor Radius", "minimum": 0 },
     "on_break": {
       "type": "array",
       "title": "On Break",
@@ -17,13 +17,13 @@
           "block_list": {
             "type": "array",
             "title": "Block List",
-            "description": "UNDOCUMENTATED",
+            "description": "UNDOCUMENTED",
             "items": { "type": "string", "title": "Block ID" }
           },
           "on_block_broken": { "type": "string", "title": "On Block Broken", "description": "On block broken" }
         }
       },
-      "description": "UNDOCUMENTATED"
+      "description": "UNDOCUMENTED"
     }
   }
 }

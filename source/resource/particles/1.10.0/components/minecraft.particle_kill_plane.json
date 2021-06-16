@@ -4,9 +4,9 @@
   "title": "Particle Kill Plane Component For 1.10.0",
   "description": "A*x + B*y + C*z + D = 0\nwith the parameters being [ A, B, C, D ]",
   "items": [
-    { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "A" },
-    { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "B" },
-    { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "C" },
-    { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "D" }
+    { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTED", "title": "A" },
+    { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTED", "title": "B" },
+    { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTED", "title": "C" },
+    { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTED", "title": "D" }
   ]
 }

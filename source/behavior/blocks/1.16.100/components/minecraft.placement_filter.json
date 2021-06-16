@@ -11,7 +11,7 @@
       "items": {
         "type": "object",
         "title": "Condition",
-        "description": "UNDOCUMENTATED",
+        "description": "UNDOCUMENTED",
         "properties": {
           "allowed_faces": {
             "title": "Allowed Faces",
@@ -23,7 +23,7 @@
             "title": "Block Filter",
             "description": "List of blocks (can use tags to specify them) that this block can be placed against in the allowed_faces direction",
             "type": "array",
-            "items": { "type": "string", "title": "Block Identifier", "description": "UNDOCUMENTATED" }
+            "items": { "type": "string", "title": "Block Identifier", "description": "UNDOCUMENTED" }
           }
         }
       }

@@ -5,8 +5,8 @@
   "description": "Sets a random chance of the specified value.",
   "title": "Random Chance",
   "properties": {
-    "condition": { "type": "string", "title": "Condition", "description": "UNDOCUMENTATED" },
-    "chance": { "type": "number", "default": 0, "description": "UNDOCUMENTATED", "title": "Chance" },
+    "condition": { "type": "string", "title": "Condition", "description": "UNDOCUMENTED" },
+    "chance": { "type": "number", "default": 0, "description": "UNDOCUMENTED", "title": "Chance" },
     "max_chance": { "type": "number", "default": 0, "description": "The maximum random chance value allowed.", "title": "Max Chance" }
   }
 }

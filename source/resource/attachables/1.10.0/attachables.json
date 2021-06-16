@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.resource.1.10.0.attachables",
   "type": "object",
   "title": "Actor Animation 1.10.0",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "required": ["format_version", "minecraft:attachable"],
   "properties": {
     "format_version": {
@@ -62,8 +62,8 @@
             "item": {
               "type": "object",
               "title": "Item",
-              "description": "UNDOCUMENTATED",
-              "additionalProperties": { "type": "string", "title": "Item", "description": "UNDOCUMENTATED" }
+              "description": "UNDOCUMENTED",
+              "additionalProperties": { "type": "string", "title": "Item", "description": "UNDOCUMENTED" }
             },
             "materials": {
               "type": "object",

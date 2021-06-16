@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.general.1.8.0.entity.damage",
   "type": "string",
   "title": "Entity Damage Name",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "enum": [
     "all",
     "anvil",

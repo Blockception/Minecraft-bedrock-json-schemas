@@ -2,10 +2,10 @@
   "$id": "blockception.minecraft.resource.model.1.10.0",
   "type": "object",
   "title": "Model Schema For 1.10.0",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "required": ["format_version"],
   "properties": {
-    "debug": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "Debug" },
+    "debug": { "type": "boolean", "description": "UNDOCUMENTED", "title": "Debug" },
     "format_version": {
       "title": "1.10.0 Format Version",
       "type": "string",

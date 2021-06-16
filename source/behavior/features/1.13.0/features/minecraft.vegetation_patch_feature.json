@@ -7,7 +7,7 @@
   "properties": {
     "description": {
       "title": "Description",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "object",
       "required": ["identifier"],
       "properties": {
@@ -21,7 +21,7 @@
     },
     "replaceable_blocks": {
       "title": "Replaceable Blocks",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "array",
       "items": {
         "title": "Replace block",
@@ -31,60 +31,60 @@
     },
     "ground_block": {
       "title": "Ground Block",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "string",
       "$ref": "../../../../general/block/identifier.json"
     },
     "vegetation_feature": {
       "title": "Vegetation Feature",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "string",
       "$ref": "../../../../general/feature/identifier.json"
     },
     "surface": {
       "title": "Surface",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "string"
     },
     "depth": {
       "title": "Depth",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "integer",
       "minimum": 0
     },
     "extra_deep_block_chance": {
       "title": "Extra Deep Block Chance",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "number",
       "minimum": 0
     },
     "vertical_range": {
       "title": "Vertical Range",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "integer",
       "minimum": 0
     },
     "vegetation_chance": {
       "title": "Vegatation Chance",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "number",
       "minimum": 0
     },
     "horizontal_radius": {
       "title": "Horizontal Radius",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "integer",
       "minimum": 0
     },
     "extra_edge_column_chance": {
       "title": "Extra Egde Column Chance",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "number",
       "minimum": 0
     },
     "waterlogged": {
       "title": "Waterlogged",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "boolean"
     }
   }

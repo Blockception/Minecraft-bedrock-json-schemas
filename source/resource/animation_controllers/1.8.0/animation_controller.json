@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.resource.animation_controller1.8.0",
   "type": "object",
   "title": "Animation Controller 1.8.0",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "definitions": {
     "animationspec": {
       "anyOf": [
@@ -159,15 +159,15 @@
                 },
                 "on_entry": {
                   "title": "On Entry",
-                  "description": "UNDOCUMENTATED",
+                  "description": "UNDOCUMENTED",
                   "type": "array",
-                  "items": { "pattern": "^.+;$", "title": "Molang", "description": "UNDOCUMENTATED", "type": "string" }
+                  "items": { "pattern": "^.+;$", "title": "Molang", "description": "UNDOCUMENTED", "type": "string" }
                 },
                 "on_exit": {
                   "title": "On Exit",
-                  "description": "UNDOCUMENTATED",
+                  "description": "UNDOCUMENTED",
                   "type": "array",
-                  "items": { "pattern": "^.+;$", "title": "Molang", "description": "UNDOCUMENTATED", "type": "string" }
+                  "items": { "pattern": "^.+;$", "title": "Molang", "description": "UNDOCUMENTED", "type": "string" }
                 }
               }
             }

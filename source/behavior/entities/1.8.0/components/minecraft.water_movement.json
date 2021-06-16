@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.water_movement",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "type": "object",
   "title": "Water Movement 1.8.0",
   "additionalProperties": false,

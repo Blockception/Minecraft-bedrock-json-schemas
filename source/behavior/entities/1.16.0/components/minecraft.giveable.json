@@ -7,7 +7,7 @@
   "required": [],
   "properties": {
     "triggers": {
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "title": "Triggers",
       "properties": {
         "cooldown": {

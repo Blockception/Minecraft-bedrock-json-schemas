@@ -26,25 +26,25 @@
     "event_choices": {
       "type": "array",
       "title": "Event Choices",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "items": {
         "type": "object",
         "additionalProperties": false,
         "title": "Event Choice",
-        "description": "UNDOCUMENTATED",
+        "description": "UNDOCUMENTED",
         "properties": {
-          "min_activation_range": { "type": "number", "title": "Minimum Activation Range", "description": "UNDOCUMENTATED" },
-          "max_activation_range": { "type": "number", "title": "Maxmimum Activation Range", "description": "UNDOCUMENTATED" },
-          "cooldown_time": { "type": "number", "title": "Cooldown Time", "description": "UNDOCUMENTATED" },
-          "cast_duration": { "type": "number", "title": "Cast Duration", "description": "UNDOCUMENTATED" },
+          "min_activation_range": { "type": "number", "title": "Minimum Activation Range", "description": "UNDOCUMENTED" },
+          "max_activation_range": { "type": "number", "title": "Maxmimum Activation Range", "description": "UNDOCUMENTED" },
+          "cooldown_time": { "type": "number", "title": "Cooldown Time", "description": "UNDOCUMENTED" },
+          "cast_duration": { "type": "number", "title": "Cast Duration", "description": "UNDOCUMENTED" },
           "filters": { "$ref": "../../filters/filters.json" },
-          "particle_color": { "type": "string", "format": "color-hex", "title": "Particle Color", "description": "UNDOCUMENTATED" },
-          "weight": { "type": "integer", "title": "Weight", "description": "UNDOCUMENTATED" },
-          "start_sound_event": { "type": "string", "title": "Start Sound Event", "description": "UNDOCUMENTATED" },
+          "particle_color": { "type": "string", "format": "color-hex", "title": "Particle Color", "description": "UNDOCUMENTED" },
+          "weight": { "type": "integer", "title": "Weight", "description": "UNDOCUMENTED" },
+          "start_sound_event": { "type": "string", "title": "Start Sound Event", "description": "UNDOCUMENTED" },
           "sequence": { "$ref": "#/definitions/sequence" }
         }
       }
     },
-    "sequence": { "$ref": "#/definitions/sequence", "description": "UNDOCUMENTATED", "title": "Sequence" }
+    "sequence": { "$ref": "#/definitions/sequence", "description": "UNDOCUMENTED", "title": "Sequence" }
   }
 }

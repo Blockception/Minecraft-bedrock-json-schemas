@@ -6,13 +6,13 @@
   "required": ["description", "places_block", "enforce_placement_rules", "enforce_survivability_rules"],
   "definitions": {
     "block_side": {
-      "oneOf": [{ "type": "string" }, { "type": "array", "items": { "title": "TODO", "description": "UNDOCUMENTATED", "type": "string" } }]
+      "oneOf": [{ "type": "string" }, { "type": "array", "items": { "title": "TODO", "description": "UNDOCUMENTED", "type": "string" } }]
     }
   },
   "properties": {
     "description": {
       "title": "Description",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "object",
       "required": ["identifier"],
       "properties": {
@@ -42,14 +42,14 @@
     },
     "may_attach_to": {
       "title": "May attach to",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
       "required": [],
       "properties": {
         "min_sides_must_attach": {
           "title": "Minimum sides must attach",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "minimum": 1,
           "maximum": 4
         },
@@ -57,14 +57,14 @@
           "title": "Auto rotate",
           "description": "Automatically rotate the block to attach sensibly."
         },
-        "top": { "title": "Top", "description": "UNDOCUMENTATED", "$ref": "#/definitions/block_side" },
-        "bottom": { "title": "Bottom", "description": "UNDOCUMENTATED", "$ref": "#/definitions/block_side" },
-        "north": { "title": "North", "description": "UNDOCUMENTATED", "$ref": "#/definitions/block_side" },
-        "south": { "title": "South", "description": "UNDOCUMENTATED", "$ref": "#/definitions/block_side" },
-        "east": { "title": "East", "description": "UNDOCUMENTATED", "$ref": "#/definitions/block_side" },
-        "west": { "title": "West", "description": "UNDOCUMENTATED", "$ref": "#/definitions/block_side" },
-        "all": { "title": "All", "description": "UNDOCUMENTATED", "$ref": "#/definitions/block_side" },
-        "sides": { "title": "Sides", "description": "UNDOCUMENTATED", "$ref": "#/definitions/block_side" }
+        "top": { "title": "Top", "description": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "bottom": { "title": "Bottom", "description": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "north": { "title": "North", "description": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "south": { "title": "South", "description": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "east": { "title": "East", "description": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "west": { "title": "West", "description": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "all": { "title": "All", "description": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "sides": { "title": "Sides", "description": "UNDOCUMENTED", "$ref": "#/definitions/block_side" }
       }
     },
     "may_replace": {

@@ -14,7 +14,7 @@
     "despawn_from_distance": {
       "type": "object",
       "additionalProperties": false,
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "title": "Despawn From Distance",
       "properties": {
         "max_distance": {

@@ -23,7 +23,7 @@
   "definitions": {
     "pools_spec": {
       "title": "Pools",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "array",
       "additionalProperties": false,
       "items": {
@@ -45,8 +45,8 @@
               }
             ]
           },
-          "type": { "title": "Type", "type": "string", "description": "UNDOCUMENTATED", "enum": ["loot_table", "item", "empty"] },
-          "conditions": { "title": "Conditions", "description": "UNDOCUMENTATED", "type": "array", "items": { "$ref": "./conditions.json" } },
+          "type": { "title": "Type", "type": "string", "description": "UNDOCUMENTED", "enum": ["loot_table", "item", "empty"] },
+          "conditions": { "title": "Conditions", "description": "UNDOCUMENTED", "type": "array", "items": { "$ref": "./conditions.json" } },
           "entries": {
             "title": "Entries",
             "type": "array",
@@ -72,13 +72,13 @@
           },
           "tiers": {
             "title": "Tiers",
-            "description": "UNDOCUMENTATED",
+            "description": "UNDOCUMENTED",
             "type": "object",
             "additionalProperties": false,
             "properties": {
-              "bonus_chance": { "title": "Bonus Chance", "description": "UNDOCUMENTATED", "type": "number" },
-              "bonus_rolls": { "title": "Bonus Rolls", "description": "UNDOCUMENTATED", "type": "integer" },
-              "initial_range": { "title": "Initial Range", "description": "UNDOCUMENTATED", "type": "integer" }
+              "bonus_chance": { "title": "Bonus Chance", "description": "UNDOCUMENTED", "type": "number" },
+              "bonus_rolls": { "title": "Bonus Rolls", "description": "UNDOCUMENTED", "type": "integer" },
+              "initial_range": { "title": "Initial Range", "description": "UNDOCUMENTED", "type": "integer" }
             }
           }
         }
@@ -86,7 +86,7 @@
     }
   },
   "properties": {
-    "pools": { "$ref": "#/definitions/pools_spec", "description": "UNDOCUMENTATED", "title": "TODO Title" },
-    "type": { "title": "Type", "type": "string", "description": "UNDOCUMENTATED", "enum": ["minecraft:chest"] }
+    "pools": { "$ref": "#/definitions/pools_spec", "description": "UNDOCUMENTED", "title": "TODO Title" },
+    "type": { "title": "Type", "type": "string", "description": "UNDOCUMENTED", "enum": ["minecraft:chest"] }
   }
 }

@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities.1.13.0.minecraft.experience_reward",
   "type": "object",
   "title": "Experience Reward 1.13.0",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "additionalProperties": false,
   "properties": {
     "on_bred": {

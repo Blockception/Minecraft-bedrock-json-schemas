@@ -12,13 +12,13 @@
       "type": "integer",
       "default": 0,
       "description": "The distance in blocks it will look for a mob to follow",
-      "title": "TODO Title"
+      "title": "Search Range"
     },
     "stop_distance": {
       "type": "number",
       "default": 2,
       "description": "The distance in blocks this mob stops from the mob it is following",
-      "title": "TODO Title"
+      "title": "Stop Distance"
     }
   }
 }

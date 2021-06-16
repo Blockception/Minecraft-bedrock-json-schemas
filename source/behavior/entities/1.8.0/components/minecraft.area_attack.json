@@ -18,6 +18,6 @@
       "title": "Damage Range"
     },
     "entity_filter": { "$ref": "../../filters/filters.json", "description": "Entity_filter", "title": "Filter" },
-    "cause": { "type": "string", "description": "UNDOCUMENTATED", "title": "Cause", "$ref": "../../../../general/entity/damage_source.json" }
+    "cause": { "type": "string", "description": "UNDOCUMENTED", "title": "Cause", "$ref": "../../../../general/entity/damage_source.json" }
   }
 }

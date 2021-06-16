@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.world_x_packs",
   "type": "array",
   "title": "World X Pack Schema",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "examples": [[{ "pack_id": "UUID", "version": [1, 0, 0] }]],
   "definitions": { "uuidv4": { "$ref": "./UUIDV4.json" }, "version": { "$ref": "./Version.json" } },
   "items": {

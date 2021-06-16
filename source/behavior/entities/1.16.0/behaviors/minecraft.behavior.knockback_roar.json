@@ -29,8 +29,8 @@
     },
     "knockback_strength": { "type": "integer", "default": 4, "description": "The strength of the knockback.", "title": "Knockback Strength" },
     "Trigger": { "$ref": "../types/trigger.json", "description": "On_roar_end", "title": "Trigger" },
-    "knockback_filters": { "$ref": "../../filters/filters.json", "description": "UNDOCUMENTATED", "title": "Knockback Filters" },
-    "damage_filters": { "$ref": "../../filters/filters.json", "description": "UNDOCUMENTATED", "title": "Damage Filters" },
-    "on_roar_end": { "$ref": "../types/event.json", "description": "UNDOCUMENTATED", "title": "On Roar End" }
+    "knockback_filters": { "$ref": "../../filters/filters.json", "description": "UNDOCUMENTED", "title": "Knockback Filters" },
+    "damage_filters": { "$ref": "../../filters/filters.json", "description": "UNDOCUMENTED", "title": "Damage Filters" },
+    "on_roar_end": { "$ref": "../types/event.json", "description": "UNDOCUMENTED", "title": "On Roar End" }
   }
 }

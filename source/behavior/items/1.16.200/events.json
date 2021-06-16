@@ -1,57 +1,57 @@
 {
   "$id": "blockception.minecraft.behavior.1.16.200.items.events",
   "title": "Events",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "type": "object",
   "properties": { "on_consume": { "$ref": "#/definitions/event_base" } },
   "additionalProperties": { "$ref": "#/definitions/event_base" },
   "definitions": {
     "event_base": {
       "title": "Event",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
       "$ref": "#/definitions/event_functions",
       "properties": {
         "sequence": {
           "title": "Sequence",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "type": "array",
-          "items": { "title": "Sequence", "description": "UNDOCUMENTATED", "type": "object", "$ref": "#/definitions/event_functions" }
+          "items": { "title": "Sequence", "description": "UNDOCUMENTED", "type": "object", "$ref": "#/definitions/event_functions" }
         },
         "randomize": {
           "title": "Randomize",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "type": "array",
           "items": {
             "title": "Randomize",
-            "description": "UNDOCUMENTATED",
+            "description": "UNDOCUMENTED",
             "type": "object",
             "$ref": "#/definitions/event_functions",
             "required": ["weight"],
-            "properties": { "weight": { "title": "Weight", "description": "UNDOCUMENTATED", "type": "integer", "minimum": 0 } }
+            "properties": { "weight": { "title": "Weight", "description": "UNDOCUMENTED", "type": "integer", "minimum": 0 } }
           }
         },
         "run_command": {
           "title": "Run Command",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
           "properties": {
             "command": {
               "title": "Command",
-              "description": "UNDOCUMENTATED",
+              "description": "UNDOCUMENTED",
               "type": "array",
-              "items": { "type": "string", "title": "Command", "description": "UNDOCUMENTATED" }
+              "items": { "type": "string", "title": "Command", "description": "UNDOCUMENTED" }
             },
-            "target": { "type": "string", "title": "Target", "description": "UNDOCUMENTATED", "enum": ["other"] }
+            "target": { "type": "string", "title": "Target", "description": "UNDOCUMENTED", "enum": ["other"] }
           }
         }
       }
     },
     "event_functions": {
       "title": "Event",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "object",
       "properties": {
         "add_mob_effect": { "$ref": "./events/add_mob_effect.json" },

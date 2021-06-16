@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "anchor": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Anchor" },
+    "anchor": { "type": "integer", "description": "UNDOCUMENTED", "title": "Anchor" },
     "angle_offset": {
       "type": "number",
       "default": 0,
@@ -45,7 +45,7 @@
       "title": "Gravity"
     },
     "hit_sound": { "type": "string", "default": "", "description": "The sound that plays when the projectile hits something", "title": "Hit Sound" },
-    "hit_ground_sound": { "type": "string", "default": "", "description": "UNDOCUMENTATED", "title": "Hit Ground Sound" },
+    "hit_ground_sound": { "type": "string", "default": "", "description": "UNDOCUMENTED", "title": "Hit Ground Sound" },
     "homing": { "type": "boolean", "default": false, "description": "If true, the projectile homes in to the nearest entity", "title": "Homing" },
     "inertia": {
       "type": "number",
@@ -98,106 +98,106 @@
     "on_hit": {
       "additionalProperties": false,
       "type": "object",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "title": "On Hit",
       "properties": {
         "catch_fire": {
           "additionalProperties": false,
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "title": "Catch Fire",
           "type": "object",
-          "properties": { "fire_affected_by_griefing": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "Fire Affected By Griefing" } }
+          "properties": { "fire_affected_by_griefing": { "type": "boolean", "description": "UNDOCUMENTED", "title": "Fire Affected By Griefing" } }
         },
         "definition_event": {
           "additionalProperties": false,
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "title": "Definition Event",
           "type": "object",
           "properties": {
-            "affect_projectile": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "Affect Projectile" },
+            "affect_projectile": { "type": "boolean", "description": "UNDOCUMENTED", "title": "Affect Projectile" },
             "event_trigger": { "$ref": "../types/event.json" }
           }
         },
-        "douse_fire": { "type": "object", "additionalProperties": false, "description": "UNDOCUMENTATED", "title": "Douse Fire" },
+        "douse_fire": { "type": "object", "additionalProperties": false, "description": "UNDOCUMENTED", "title": "Douse Fire" },
         "grant_xp": {
           "additionalProperties": false,
           "type": "object",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "title": "Grant XP",
           "effect": "levitation",
           "properties": {
-            "minXP": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Minimum XP" },
-            "maxXP": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Maximum XP" }
+            "minXP": { "type": "integer", "description": "UNDOCUMENTED", "title": "Minimum XP" },
+            "maxXP": { "type": "integer", "description": "UNDOCUMENTED", "title": "Maximum XP" }
           }
         },
         "impact_damage": {
           "additionalProperties": false,
           "type": "object",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "title": "Impact Damage",
           "properties": {
-            "catch_fire": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "Catch Fire" },
-            "damage": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Damage" },
-            "destroy_on_hit": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "Destroy On Hit" },
-            "knockback": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "Knockback" },
-            "semi_random_diff_damage": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "Semi Random Diff Damage" }
+            "catch_fire": { "type": "boolean", "description": "UNDOCUMENTED", "title": "Catch Fire" },
+            "damage": { "type": "integer", "description": "UNDOCUMENTED", "title": "Damage" },
+            "destroy_on_hit": { "type": "boolean", "description": "UNDOCUMENTED", "title": "Destroy On Hit" },
+            "knockback": { "type": "boolean", "description": "UNDOCUMENTED", "title": "Knockback" },
+            "semi_random_diff_damage": { "type": "boolean", "description": "UNDOCUMENTED", "title": "Semi Random Diff Damage" }
           }
         },
         "mob_effect": {
           "additionalProperties": false,
           "type": "object",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "title": "Mob Effect",
           "effect": "levitation",
           "properties": {
-            "effect": { "type": "string", "description": "UNDOCUMENTATED", "title": "Effect" },
-            "durationeasy": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Duration Easy" },
-            "durationnormal": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Duration Normal" },
-            "durationhard": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Duration Hard" },
-            "amplifier": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Amplifier" }
+            "effect": { "type": "string", "description": "UNDOCUMENTED", "title": "Effect" },
+            "durationeasy": { "type": "integer", "description": "UNDOCUMENTED", "title": "Duration Easy" },
+            "durationnormal": { "type": "integer", "description": "UNDOCUMENTED", "title": "Duration Normal" },
+            "durationhard": { "type": "integer", "description": "UNDOCUMENTED", "title": "Duration Hard" },
+            "amplifier": { "type": "integer", "description": "UNDOCUMENTED", "title": "Amplifier" }
           }
         },
         "particle_on_hit": {
           "additionalProperties": false,
           "type": "object",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "title": "Particle On Hit",
           "properties": {
-            "particle_type": { "type": "string", "description": "UNDOCUMENTATED", "title": "Particle Type" },
-            "num_particles": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Number Particles" },
-            "on_entity_hit": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "On Entity Hit" },
-            "on_other_hit": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "On Other Hit" }
+            "particle_type": { "type": "string", "description": "UNDOCUMENTED", "title": "Particle Type" },
+            "num_particles": { "type": "integer", "description": "UNDOCUMENTED", "title": "Number Particles" },
+            "on_entity_hit": { "type": "boolean", "description": "UNDOCUMENTED", "title": "On Entity Hit" },
+            "on_other_hit": { "type": "boolean", "description": "UNDOCUMENTED", "title": "On Other Hit" }
           }
         },
-        "remove_on_hit": { "additionalProperties": false, "type": "object", "description": "UNDOCUMENTATED", "title": "Remove On Hit" },
+        "remove_on_hit": { "additionalProperties": false, "type": "object", "description": "UNDOCUMENTED", "title": "Remove On Hit" },
         "spawn_chance": {
           "additionalProperties": false,
           "type": "object",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "title": "Spawn Chance",
           "properties": {
-            "first_spawn_percent_chance": { "type": "number", "description": "UNDOCUMENTATED", "title": "First Spawn Percent Chance" },
-            "first_spawn_chance": { "type": "integer", "description": "UNDOCUMENTATED", "title": "First Spawn Chance" },
-            "second_spawn_chance": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Second Spawn Chance" },
-            "first_spawn_count": { "type": "integer", "description": "UNDOCUMENTATED", "title": "First Spawn Count" },
-            "second_spawn_count": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Second Spawn Count" },
-            "spawn_definition": { "type": "string", "description": "UNDOCUMENTATED", "title": "Spawn Definition" },
-            "spawn_baby": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "Spawn Baby" }
+            "first_spawn_percent_chance": { "type": "number", "description": "UNDOCUMENTED", "title": "First Spawn Percent Chance" },
+            "first_spawn_chance": { "type": "integer", "description": "UNDOCUMENTED", "title": "First Spawn Chance" },
+            "second_spawn_chance": { "type": "integer", "description": "UNDOCUMENTED", "title": "Second Spawn Chance" },
+            "first_spawn_count": { "type": "integer", "description": "UNDOCUMENTED", "title": "First Spawn Count" },
+            "second_spawn_count": { "type": "integer", "description": "UNDOCUMENTED", "title": "Second Spawn Count" },
+            "spawn_definition": { "type": "string", "description": "UNDOCUMENTED", "title": "Spawn Definition" },
+            "spawn_baby": { "type": "boolean", "description": "UNDOCUMENTED", "title": "Spawn Baby" }
           }
         },
         "spawn_aoe_cloud": {
           "additionalProperties": false,
           "type": "object",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "title": "Spawn Aoe Cloud",
           "properties": {
-            "radius": { "type": "number", "description": "UNDOCUMENTATED", "title": "Radius" },
-            "radius_on_use": { "type": "number", "description": "UNDOCUMENTATED", "title": "Radius On Use" },
-            "potion": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Potion" },
-            "particle": { "type": "string", "description": "UNDOCUMENTATED", "title": "Particle" },
-            "duration": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Duration" },
+            "radius": { "type": "number", "description": "UNDOCUMENTED", "title": "Radius" },
+            "radius_on_use": { "type": "number", "description": "UNDOCUMENTED", "title": "Radius On Use" },
+            "potion": { "type": "integer", "description": "UNDOCUMENTED", "title": "Potion" },
+            "particle": { "type": "string", "description": "UNDOCUMENTED", "title": "Particle" },
+            "duration": { "type": "integer", "description": "UNDOCUMENTED", "title": "Duration" },
             "color": {
-              "description": "UNDOCUMENTATED",
+              "description": "UNDOCUMENTED",
               "title": "Color",
               "type": "array",
               "format": "color-array",
@@ -207,19 +207,19 @@
                 { "type": "integer", "minimum": 0, "maximum": 255, "description": "Blue", "title": "B" }
               ]
             },
-            "affect_owner": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "Affect Owner" },
-            "reapplication_delay": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Reapplication Delay" }
+            "affect_owner": { "type": "boolean", "description": "UNDOCUMENTED", "title": "Affect Owner" },
+            "reapplication_delay": { "type": "integer", "description": "UNDOCUMENTED", "title": "Reapplication Delay" }
           }
         },
         "stick_in_ground": {
           "additionalProperties": false,
           "type": "object",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "title": "Stick In Ground",
-          "properties": { "shake_time": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Shake Time" } }
+          "properties": { "shake_time": { "type": "integer", "description": "UNDOCUMENTED", "title": "Shake Time" } }
         },
-        "teleport_owner": { "additionalProperties": false, "type": "object", "description": "UNDOCUMENTATED", "title": "Teleport Owner" },
-        "thrown_potion_effect": { "additionalProperties": false, "type": "object", "description": "UNDOCUMENTATED", "title": "Thrown Potion Effect" }
+        "teleport_owner": { "additionalProperties": false, "type": "object", "description": "UNDOCUMENTED", "title": "Teleport Owner" },
+        "thrown_potion_effect": { "additionalProperties": false, "type": "object", "description": "UNDOCUMENTED", "title": "Thrown Potion Effect" }
       }
     },
     "particle": { "type": "string", "default": "iconcrack", "description": "Particle to use upon collision", "title": "Particle" },
@@ -257,7 +257,7 @@
       "title": "Splash Potion"
     },
     "splash_range": { "type": "number", "default": 4, "description": "Radius in blocks of the `splash` effect", "title": "Splash Range" },
-    "stop_on_hurt": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "Stop On Hurt" },
+    "stop_on_hurt": { "type": "boolean", "description": "UNDOCUMENTED", "title": "Stop On Hurt" },
     "uncertainty_base": {
       "type": "number",
       "default": 0,

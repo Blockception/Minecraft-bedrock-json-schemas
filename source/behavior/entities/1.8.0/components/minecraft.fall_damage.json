@@ -3,7 +3,7 @@
   "type": "object",
   "title": "Fall Damage 1.8.0",
   "additionalProperties": false,
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "required": [],
   "properties": { "value": { "type": "number", "default": 1, "description": "UNDOCUMENTATED: value", "title": "Value" } }
 }

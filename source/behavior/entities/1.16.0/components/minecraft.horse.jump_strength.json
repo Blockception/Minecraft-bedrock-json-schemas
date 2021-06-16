@@ -3,16 +3,13 @@
   "type": "object",
   "title": "Horse.jump Strength 1.16.0",
   "additionalProperties": false,
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "required": [],
   "properties": {
     "value": {
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "title": "Value",
-      "oneOf": [
-        { "type": "object", "additionalProperties": false, "properties": { "range_min": { "type": "number" }, "range_max": { "type": "number" } } },
-        { "type": "number" }
-      ]
+      "oneOf": [{ "type": "object", "additionalProperties": false, "properties": { "range_min": { "type": "number" }, "range_max": { "type": "number" } } }, { "type": "number" }]
     }
   }
 }

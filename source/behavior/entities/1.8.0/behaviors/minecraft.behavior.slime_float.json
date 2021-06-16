@@ -8,6 +8,6 @@
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
-    "jump_chance_percentage": { "type": "number", "title": "Sink Delta", "description": "UNDOCUMENTATED" }
+    "jump_chance_percentage": { "type": "number", "title": "Sink Delta", "description": "UNDOCUMENTED" }
   }
 }

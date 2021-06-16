@@ -7,7 +7,7 @@
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
-    "cooldown": { "title": "Cooldown", "description": "UNDOCUMENTATED", "type": "number" },
+    "cooldown": { "title": "Cooldown", "description": "UNDOCUMENTED", "type": "number" },
     "drop_item_chance": {
       "type": "number",
       "default": [1.0],
@@ -32,8 +32,8 @@
       "description": "Maximum distance in blocks this mob will look for entities to drop an item for.",
       "title": "Max Dist"
     },
-    "minimum_teleport_distance": { "title": "Minimum Teleport Distance", "description": "UNDOCUMENTATED", "type": "number" },
-    "max_head_look_at_height": { "title": "Max Head Look At Height", "description": "UNDOCUMENTATED", "type": "number" },
+    "minimum_teleport_distance": { "title": "Minimum Teleport Distance", "description": "UNDOCUMENTED", "type": "number" },
+    "max_head_look_at_height": { "title": "Max Head Look At Height", "description": "UNDOCUMENTED", "type": "number" },
     "offering_distance": {
       "type": "number",
       "default": [1.0],
@@ -45,8 +45,8 @@
       "description": "Event to run when this mob attempts to drop an item.",
       "title": "On Drop Attempt"
     },
-    "seconds_before_pickup": { "title": "Seconds Before Pickup", "description": "UNDOCUMENTATED", "type": "number" },
-    "search_count": { "type": "integer", "default": 1, "description": "UNDOCUMENTATED", "title": "Search Height" },
+    "seconds_before_pickup": { "title": "Seconds Before Pickup", "description": "UNDOCUMENTED", "type": "number" },
+    "search_count": { "type": "integer", "default": 1, "description": "UNDOCUMENTED", "title": "Search Height" },
     "search_height": { "type": "integer", "default": 1, "description": "Height in blocks from the target the mob can be.", "title": "Search Height" },
     "search_range": {
       "type": "integer",
@@ -56,13 +56,13 @@
     },
     "target_range": {
       "title": "Target Range",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "array",
       "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
     },
     "teleport_offset": {
       "title": "Teleport Offset",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "array",
       "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
     },

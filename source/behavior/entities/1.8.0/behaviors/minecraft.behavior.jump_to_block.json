@@ -7,21 +7,21 @@
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
-    "search_width": { "type": "number", "title": "Search Range", "description": "UNDOCUMENTATED" },
-    "search_height": { "type": "number", "title": "Search Height", "description": "UNDOCUMENTATED" },
+    "search_width": { "type": "number", "title": "Search Range", "description": "UNDOCUMENTED" },
+    "search_height": { "type": "number", "title": "Search Height", "description": "UNDOCUMENTED" },
 
-    "minimum_path_length": { "type": "number", "title": "Minimum Path Length", "description": "UNDOCUMENTATED" },
-    "minimum_distance": { "type": "number", "title": "Minimum Distance", "description": "UNDOCUMENTATED" },
+    "minimum_path_length": { "type": "number", "title": "Minimum Path Length", "description": "UNDOCUMENTED" },
+    "minimum_distance": { "type": "number", "title": "Minimum Distance", "description": "UNDOCUMENTED" },
 
-    "scale_factor": { "type": "number", "title": "Scale Factor", "description": "UNDOCUMENTATED" },
+    "scale_factor": { "type": "number", "title": "Scale Factor", "description": "UNDOCUMENTED" },
 
     "cooldown_range": {
       "title": "Cooldown range",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "array",
       "items": [
-        { "title": "Min", "description": "UNDOCUMENTATED", "type": "integer", "minimum": 0 },
-        { "title": "Max", "description": "UNDOCUMENTATED", "type": "integer", "minimum": 0 }
+        { "title": "Min", "description": "UNDOCUMENTED", "type": "integer", "minimum": 0 },
+        { "title": "Max", "description": "UNDOCUMENTED", "type": "integer", "minimum": 0 }
       ]
     }
   }

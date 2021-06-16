@@ -14,8 +14,8 @@
       "description": "If true, the mob can stop being tempted if the player moves too fast while close to this mob",
       "title": "Can Get Scared"
     },
-    "can_tempt_while_ridden": { "type": "boolean", "title": "Can Tempt While Ridden", "description": "UNDOCUMENTATED" },
-    "can_tempt_vertically": { "type": "boolean", "title": "Can Tempt Vertically", "description": "UNDOCUMENTATED" },
+    "can_tempt_while_ridden": { "type": "boolean", "title": "Can Tempt While Ridden", "description": "UNDOCUMENTED" },
+    "can_tempt_vertically": { "type": "boolean", "title": "Can Tempt Vertically", "description": "UNDOCUMENTED" },
     "items": {
       "type": "array",
       "description": "List of items this mob is tempted by",

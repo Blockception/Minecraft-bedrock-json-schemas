@@ -6,13 +6,13 @@
   "required": ["function", "author", "title", "pages"],
   "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "set_book_contents", "description": "UNDOCUMENTATED", "title": "Function" },
-    "author": { "type": "string", "description": "UNDOCUMENTATED", "title": "Author" },
-    "title": { "type": "string", "description": "UNDOCUMENTATED", "title": "Title" },
+    "function": { "type": "string", "const": "set_book_contents", "description": "UNDOCUMENTED", "title": "Function" },
+    "author": { "type": "string", "description": "UNDOCUMENTED", "title": "Author" },
+    "title": { "type": "string", "description": "UNDOCUMENTED", "title": "Title" },
     "pages": {
       "type": "array",
       "items": { "type": "string", "examples": ["Some text", "{\"rawtext\":[ {\"translate\":\"some.text\"}]}"] },
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "title": "Pages"
     }
   }

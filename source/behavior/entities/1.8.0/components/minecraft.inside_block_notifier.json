@@ -12,13 +12,13 @@
       "type": "array",
       "items": {
         "title": "Block",
-        "description": "UNDOCUMENTATED",
+        "description": "UNDOCUMENTED",
         "type": "object",
         "additionalProperties": false,
         "properties": {
           "block": { "$ref": "../../../../general/block_definition.json" },
-          "entered_block_event": { "title": "Entered Block Event", "description": "UNDOCUMENTATED", "$ref": "../types/event.json" },
-          "exited_block_event": { "title": "Exited Block Event", "description": "UNDOCUMENTATED", "$ref": "../types/event.json" }
+          "entered_block_event": { "title": "Entered Block Event", "description": "UNDOCUMENTED", "$ref": "../types/event.json" },
+          "exited_block_event": { "title": "Exited Block Event", "description": "UNDOCUMENTED", "$ref": "../types/event.json" }
         }
       }
     }

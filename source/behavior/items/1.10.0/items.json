@@ -4,12 +4,12 @@
   "required": ["format_version", "minecraft:item"],
   "title": "Item",
   "properties": {
-    "format_version": { "type": "string", "description": "UNDOCUMENTATED", "title": "TODO Title" },
+    "format_version": { "type": "string", "description": "UNDOCUMENTED", "title": "TODO Title" },
     "minecraft:item": {
       "additionalProperties": false,
       "required": ["description"],
       "type": "object",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "properties": {
         "description": {
           "additionalProperties": false,
@@ -18,7 +18,7 @@
             "identifier": {
               "title": "Identifier",
               "type": "string",
-              "description": "UNDOCUMENTATED",
+              "description": "UNDOCUMENTED",
               "$ref": "../../../general/item/identifier.json"
             }
           }

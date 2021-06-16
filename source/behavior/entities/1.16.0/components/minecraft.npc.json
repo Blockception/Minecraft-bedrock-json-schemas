@@ -18,39 +18,39 @@
     "npc_data": {
       "type": "object",
       "title": "Npc Data",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "additionalProperties": false,
       "properties": {
         "portrait_offsets": {
           "type": "object",
           "title": "Portrait Offsets",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "additionalProperties": false,
           "properties": {
-            "translate": { "$ref": "#/definitions/rangeXYZ", "title": "Translate", "description": "UNDOCUMENTATED" },
-            "scale": { "$ref": "#/definitions/rangeXYZ", "title": "Scale", "description": "UNDOCUMENTATED" }
+            "translate": { "$ref": "#/definitions/rangeXYZ", "title": "Translate", "description": "UNDOCUMENTED" },
+            "scale": { "$ref": "#/definitions/rangeXYZ", "title": "Scale", "description": "UNDOCUMENTED" }
           }
         },
         "picker_offsets": {
           "type": "object",
           "title": "Picker Offsets",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "additionalProperties": false,
           "properties": {
-            "translate": { "$ref": "#/definitions/rangeXYZ", "title": "Translate", "description": "UNDOCUMENTATED" },
-            "scale": { "$ref": "#/definitions/rangeXYZ", "title": "Scale", "description": "UNDOCUMENTATED" }
+            "translate": { "$ref": "#/definitions/rangeXYZ", "title": "Translate", "description": "UNDOCUMENTED" },
+            "scale": { "$ref": "#/definitions/rangeXYZ", "title": "Scale", "description": "UNDOCUMENTED" }
           }
         },
         "skin_list": {
           "type": "array",
           "title": "Skin List",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "items": {
             "type": "object",
             "title": "Skin",
-            "description": "UNDOCUMENTATED",
+            "description": "UNDOCUMENTED",
             "additionalProperties": false,
-            "properties": { "variant": { "title": "Variant", "description": "UNDOCUMENTATED", "type": "integer", "minimum": 0 } }
+            "properties": { "variant": { "title": "Variant", "description": "UNDOCUMENTED", "type": "integer", "minimum": 0 } }
           }
         }
       }

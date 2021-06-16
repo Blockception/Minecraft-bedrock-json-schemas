@@ -38,7 +38,7 @@
     },
     "max_failed_attempts": {
       "type": "integer",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "title": "Max Failed Attempts"
     }
   }

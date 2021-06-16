@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.trading",
   "type": "object",
   "additionalProperties": false,
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "title": "Trading",
   "examples": [
     {
@@ -86,7 +86,7 @@
                       ]
                     },
                     "functions": { "$ref": "#/definitions/Functions" },
-                    "choice": { "title": "Choice", "description": "UNDOCUMENTATED", "type": "array", "items": { "$ref": "#/definitions/Item" } }
+                    "choice": { "title": "Choice", "description": "UNDOCUMENTED", "type": "array", "items": { "$ref": "#/definitions/Item" } }
                   }
                 }
               ]
@@ -119,9 +119,9 @@
                         }
                       ]
                     },
-                    "price_multiplier": { "title": "Price Multiplier", "description": "UNDOCUMENTATED", "type": "number" },
+                    "price_multiplier": { "title": "Price Multiplier", "description": "UNDOCUMENTED", "type": "number" },
                     "functions": { "$ref": "#/definitions/Functions" },
-                    "choice": { "title": "Choice", "description": "UNDOCUMENTATED", "type": "array", "items": { "$ref": "#/definitions/Item" } }
+                    "choice": { "title": "Choice", "description": "UNDOCUMENTED", "type": "array", "items": { "$ref": "#/definitions/Item" } }
                   }
                 }
               ]

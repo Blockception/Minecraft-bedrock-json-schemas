@@ -45,12 +45,12 @@
                     { "type": "integer" },
                     {
                       "type": "object",
-                      "description": "UNDOCUMENTATED",
+                      "description": "UNDOCUMENTED",
                       "title": "TODO",
                       "additionalProperties": false,
                       "properties": {
-                        "range_min": { "type": "integer", "description": "UNDOCUMENTATED", "title": "TODO" },
-                        "range_max": { "type": "integer", "description": "UNDOCUMENTATED", "title": "TODO" }
+                        "range_min": { "type": "integer", "description": "UNDOCUMENTED", "title": "TODO" },
+                        "range_max": { "type": "integer", "description": "UNDOCUMENTED", "title": "TODO" }
                       }
                     }
                   ]
@@ -72,12 +72,12 @@
                     { "type": "integer" },
                     {
                       "type": "object",
-                      "description": "UNDOCUMENTATED",
+                      "description": "UNDOCUMENTED",
                       "title": "TODO",
                       "additionalProperties": false,
                       "properties": {
-                        "range_min": { "type": "integer", "description": "UNDOCUMENTATED", "title": "TODO" },
-                        "range_max": { "type": "integer", "description": "UNDOCUMENTATED", "title": "TODO" }
+                        "range_min": { "type": "integer", "description": "UNDOCUMENTED", "title": "TODO" },
+                        "range_max": { "type": "integer", "description": "UNDOCUMENTED", "title": "TODO" }
                       }
                     }
                   ]
@@ -87,7 +87,7 @@
           }
         }
       },
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "title": "TODO Title"
     }
   }

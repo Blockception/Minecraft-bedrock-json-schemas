@@ -3,7 +3,7 @@
   "type": "object",
   "additionalItems": false,
   "title": "Sound File For 1.14.0",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "definitions": {
     "SoundPath": {
       "$id": "SoundFilepath",
@@ -34,7 +34,7 @@
                 "$id": "#/Sound/sounds/stringItem",
                 "type": "string",
                 "$ref": "#/definitions/SoundPath",
-                "description": "UNDOCUMENTATED",
+                "description": "UNDOCUMENTED",
                 "title": "Sounds"
               },
               {
@@ -59,7 +59,7 @@
                     "title": "Name"
                   }
                 },
-                "description": "UNDOCUMENTATED",
+                "description": "UNDOCUMENTED",
                 "title": "Sounds"
               }
             ],

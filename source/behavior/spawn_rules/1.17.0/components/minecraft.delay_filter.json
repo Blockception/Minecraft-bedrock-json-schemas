@@ -3,11 +3,11 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Delay Filter 1.17.0",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "properties": {
-    "min": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Min" },
-    "max": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Max" },
-    "identifier": { "type": "string", "description": "UNDOCUMENTATED", "title": "Identifier" },
-    "spawn_chance": { "title": "Spawn Chance", "description": "UNDOCUMENTATED", "type": "number" }
+    "min": { "type": "integer", "description": "UNDOCUMENTED", "title": "Min" },
+    "max": { "type": "integer", "description": "UNDOCUMENTED", "title": "Max" },
+    "identifier": { "type": "string", "description": "UNDOCUMENTED", "title": "Identifier" },
+    "spawn_chance": { "title": "Spawn Chance", "description": "UNDOCUMENTED", "type": "number" }
   }
 }

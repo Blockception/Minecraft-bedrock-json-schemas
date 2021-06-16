@@ -3,10 +3,10 @@
   "type": "object",
   "title": "Knockback Resistance 1.8.0",
   "additionalProperties": false,
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "required": [],
   "properties": {
-    "value": { "type": "number", "description": "UNDOCUMENTATED", "title": "Value" },
-    "max": { "type": "number", "description": "UNDOCUMENTATED", "title": "Maximum" }
+    "value": { "type": "number", "description": "UNDOCUMENTED", "title": "Value" },
+    "max": { "type": "number", "description": "UNDOCUMENTED", "title": "Maximum" }
   }
 }

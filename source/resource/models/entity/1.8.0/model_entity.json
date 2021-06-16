@@ -2,10 +2,10 @@
   "$id": "blockception.minecraft.resource.model.1.8.0",
   "type": "object",
   "title": "Model Schema For 1.8.0",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "required": ["format_version"],
   "properties": {
-    "debug": { "type": "boolean", "description": "UNDOCUMENTATED", "title": "Debug" },
+    "debug": { "type": "boolean", "description": "UNDOCUMENTED", "title": "Debug" },
     "format_version": {
       "title": "1.8.0 Format Version",
       "type": "string",
@@ -58,25 +58,25 @@
               "type": "object",
               "required": ["polys"],
               "title": "Poly Mesh",
-              "description": "UNDOCUMENTATED",
+              "description": "UNDOCUMENTED",
               "additionalProperties": false,
               "properties": {
-                "normalized_uvs": { "title": "Normalized Uvs", "description": "UNDOCUMENTATED", "type": "boolean" },
+                "normalized_uvs": { "title": "Normalized Uvs", "description": "UNDOCUMENTED", "type": "boolean" },
                 "positions": {
                   "title": "Positions",
-                  "description": "UNDOCUMENTATED",
+                  "description": "UNDOCUMENTED",
                   "type": "array",
                   "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
                 },
                 "normals": {
                   "title": "Normals",
-                  "description": "UNDOCUMENTATED",
+                  "description": "UNDOCUMENTED",
                   "type": "array",
                   "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
                 },
                 "polys": {
                   "title": "Polys",
-                  "description": "UNDOCUMENTATED",
+                  "description": "UNDOCUMENTED",
                   "type": "array",
                   "items": {
                     "type": "array",
@@ -87,7 +87,7 @@
                 }
               }
             },
-            "render_group_id": { "title": "Render Group Id", "description": "UNDOCUMENTATED", "type": "integer", "minimum": 0 },
+            "render_group_id": { "title": "Render Group Id", "description": "UNDOCUMENTED", "type": "integer", "minimum": 0 },
             "reset": {
               "title": "Reset",
               "description": "UNDOCUMANTED",
@@ -95,14 +95,14 @@
             },
             "rotation": {
               "title": "Rotation",
-              "description": "UNDOCUMENTATED",
+              "description": "UNDOCUMENTED",
               "type": "array",
               "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
             },
             "texture_meshes": {
               "type": "array",
               "title": "Texture Meshes",
-              "description": "UNDOCUMENTATED",
+              "description": "UNDOCUMENTED",
               "items": {
                 "type": "object",
                 "additionalProperties": false,
@@ -118,8 +118,8 @@
           }
         }
       },
-      "cape": { "title": "Cape", "description": "UNDOCUMENTATED", "type": "string" },
-      "debug": { "title": "Debug", "description": "UNDOCUMENTATED", "type": "boolean" },
+      "cape": { "title": "Cape", "description": "UNDOCUMENTED", "type": "string" },
+      "debug": { "title": "Debug", "description": "UNDOCUMENTED", "type": "boolean" },
       "texturewidth": { "type": "integer", "description": "UNDOCUMENTATED: texturewidth", "title": "Texturewidth" },
       "textureheight": { "type": "integer", "description": "UNDOCUMENTATED: textureheight", "title": "Textureheight" },
       "visible_bounds_width": { "type": "number", "description": "UNDOCUMENTATED: visible bounds width", "title": "Visible Bounds Width" },

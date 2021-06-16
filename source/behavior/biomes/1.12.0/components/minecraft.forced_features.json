@@ -32,7 +32,7 @@
             },
             "extent": {
               "title": "Extent",
-              "description": "UNDOCUMENTATED",
+              "description": "UNDOCUMENTED",
               "type": "array",
               "items": [
                 {
@@ -100,13 +100,13 @@
               "properties": {
                 "denominator": {
                   "title": "Denominator",
-                  "description": "UNDOCUMENTATED",
+                  "description": "UNDOCUMENTED",
                   "type": "integer",
                   "minimum": 1
                 },
                 "numerator": {
                   "title": "Numerator",
-                  "description": "UNDOCUMENTATED",
+                  "description": "UNDOCUMENTED",
                   "type": "integer",
                   "minimum": 1
                 }

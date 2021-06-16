@@ -8,7 +8,7 @@
     "base_buoyancy": {
       "type": "number",
       "default": 0,
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "title": "Base Buoyancy"
     },
     "apply_gravity": {

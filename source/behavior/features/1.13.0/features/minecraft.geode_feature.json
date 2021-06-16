@@ -65,7 +65,7 @@
   "properties": {
     "description": {
       "title": "Description",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "object",
       "required": ["identifier"],
       "properties": {

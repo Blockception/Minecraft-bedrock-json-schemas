@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "anchor": { "type": "number", "title": "Anchor", "description": "UNDOCUMENTATED" },
+    "anchor": { "type": "number", "title": "Anchor", "description": "UNDOCUMENTED" },
     "angle_offset": {
       "type": "number",
       "default": 0,
@@ -98,34 +98,34 @@
       "additionalProperties": false,
       "type": "object",
       "title": "On Hit",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "properties": {
-        "arrow_effect": { "description": "UNDOCUMENTATED", "title": "Arrow Effect", "type": "object", "additionalProperties": false },
+        "arrow_effect": { "description": "UNDOCUMENTED", "title": "Arrow Effect", "type": "object", "additionalProperties": false },
         "impact_damage": {
           "additionalProperties": false,
           "type": "object",
           "title": "Impact Damage",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "properties": {
             "damage": {
               "oneOf": [{ "type": "number" }, { "type": "array", "items": [{ "type": "integer" }, { "type": "integer" }] }],
               "title": "Damage",
-              "description": "UNDOCUMENTATED"
+              "description": "UNDOCUMENTED"
             },
-            "destroy_on_hit": { "type": "boolean", "title": "Destroy On Hit", "description": "UNDOCUMENTATED" },
-            "knockback": { "type": "boolean", "title": "Knockback", "description": "UNDOCUMENTATED" },
-            "max_critical_damage": { "type": "integer", "title": "Max Critical Damage", "description": "UNDOCUMENTATED" },
-            "min_critical_damage": { "type": "integer", "title": "Min Critical Damage", "description": "UNDOCUMENTATED" },
-            "power_multiplier": { "type": "number", "title": "Power Multiplier", "description": "UNDOCUMENTATED" },
-            "semi_random_diff_damage": { "type": "boolean", "title": "Semi Random Diff Damage", "description": "UNDOCUMENTATED" }
+            "destroy_on_hit": { "type": "boolean", "title": "Destroy On Hit", "description": "UNDOCUMENTED" },
+            "knockback": { "type": "boolean", "title": "Knockback", "description": "UNDOCUMENTED" },
+            "max_critical_damage": { "type": "integer", "title": "Max Critical Damage", "description": "UNDOCUMENTED" },
+            "min_critical_damage": { "type": "integer", "title": "Min Critical Damage", "description": "UNDOCUMENTED" },
+            "power_multiplier": { "type": "number", "title": "Power Multiplier", "description": "UNDOCUMENTED" },
+            "semi_random_diff_damage": { "type": "boolean", "title": "Semi Random Diff Damage", "description": "UNDOCUMENTED" }
           }
         },
         "stick_in_ground": {
           "additionalProperties": false,
           "title": "Stick In Ground",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "type": "object",
-          "properties": { "shake_time": { "title": "Shake Time", "description": "UNDOCUMENTATED", "type": "number" } }
+          "properties": { "shake_time": { "title": "Shake Time", "description": "UNDOCUMENTED", "type": "number" } }
         }
       }
     },

@@ -1,13 +1,13 @@
 {
   "title": "RawText",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "type": "object",
   "additionalProperties": false,
   "required": ["rawtext"],
   "definitions": {
     "rawtext": {
       "title": "Rawtext",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "array",
       "items": {
         "oneOf": [
@@ -21,14 +21,14 @@
     },
     "selector": {
       "title": "Selector",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
       "required": ["selector"],
       "properties": {
         "selector": {
           "title": "Selector",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "type": "string",
           "examples": ["@a", "@s", "@r", "@p", "@e", "@initiator"],
           "pattern": "^@.*$"
@@ -37,14 +37,14 @@
     },
     "score": {
       "title": "Score",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
       "required": ["score"],
       "properties": {
         "score": {
           "title": "Score",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
           "required": ["name", "objective"],
@@ -57,7 +57,7 @@
             },
             "objective": {
               "title": "Objective",
-              "description": "UNDOCUMENTATED",
+              "description": "UNDOCUMENTED",
               "type": "string"
             }
           }
@@ -66,28 +66,28 @@
     },
     "text": {
       "title": "Text",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
       "required": ["text"],
       "properties": {
         "text": {
           "title": "Text",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "type": "string"
         }
       }
     },
     "translate": {
       "title": "Translate",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
       "required": ["translate"],
       "properties": {
         "translate": {
           "title": "Translate",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "type": "string"
         },
         "with": {
@@ -97,14 +97,14 @@
     },
     "with": {
       "title": "With",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "examples": ["\n", { "rawtext": [] }],
       "items": {
         "oneOf": [
           { "type": "string" },
           {
             "title": "Rawtext",
-            "description": "UNDOCUMENTATED",
+            "description": "UNDOCUMENTED",
             "type": "object",
             "additionalProperties": false,
             "properties": {

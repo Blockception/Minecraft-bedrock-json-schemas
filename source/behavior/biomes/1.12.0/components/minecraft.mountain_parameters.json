@@ -10,7 +10,7 @@
     "peaks_factor": {
       "type": "number",
       "title": "Peaks factor",
-      "description": "UNDOCUMENTATED"
+      "description": "UNDOCUMENTED"
     },
     "steep_material_adjustment": {
       "type": "object",

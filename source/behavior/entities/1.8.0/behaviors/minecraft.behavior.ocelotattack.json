@@ -25,12 +25,12 @@
       "description": "Multiplier for the sneaking speed. 1.0 means the ocelot will move at the speed it normally sneaks",
       "title": "Sneak Speed Multiplier"
     },
-    "cooldown_time": { "type": "number", "title": "Cooldown Time", "description": "UNDOCUMENTATED" },
-    "x_max_rotation": { "type": "number", "title": "X Max Rotation", "description": "UNDOCUMENTATED" },
-    "y_max_head_rotation": { "type": "number", "title": "Y Max Head Rotation", "description": "UNDOCUMENTATED" },
-    "max_distance": { "type": "number", "title": "Max Distance", "description": "UNDOCUMENTATED" },
-    "max_sneak_range": { "type": "number", "title": "Max Sneak Range", "description": "UNDOCUMENTATED" },
-    "max_sprint_range": { "type": "number", "title": "Max Sprint Range", "description": "UNDOCUMENTATED" },
-    "reach_multiplier": { "type": "number", "title": "Reach Multiplier", "description": "UNDOCUMENTATED" }
+    "cooldown_time": { "type": "number", "title": "Cooldown Time", "description": "UNDOCUMENTED" },
+    "x_max_rotation": { "type": "number", "title": "X Max Rotation", "description": "UNDOCUMENTED" },
+    "y_max_head_rotation": { "type": "number", "title": "Y Max Head Rotation", "description": "UNDOCUMENTED" },
+    "max_distance": { "type": "number", "title": "Max Distance", "description": "UNDOCUMENTED" },
+    "max_sneak_range": { "type": "number", "title": "Max Sneak Range", "description": "UNDOCUMENTED" },
+    "max_sprint_range": { "type": "number", "title": "Max Sprint Range", "description": "UNDOCUMENTED" },
+    "reach_multiplier": { "type": "number", "title": "Reach Multiplier", "description": "UNDOCUMENTED" }
   }
 }

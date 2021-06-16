@@ -92,7 +92,7 @@
   },
   "properties": {
     "interactions": {
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "title": "Interactions",
       "oneOf": [
         { "type": "object", "$ref": "#/definitions/interaction_spec" },

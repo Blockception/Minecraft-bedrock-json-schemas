@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Terrain Texture File",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "definitions": {
     "texture": {
       "oneOf": [
@@ -16,19 +16,19 @@
           "properties": {
             "overlay_color": { "description": "The color to apply to the texture", "title": "overlay_color", "format": "color-hex" },
             "path": { "description": "A texture file", "type": "string", "pattern": "^textures/.+$", "title": "Path" },
-            "tint_color": { "title": "Tint Color", "description": "UNDOCUMENTATED", "format": "color-hex", "type": "string" },
+            "tint_color": { "title": "Tint Color", "description": "UNDOCUMENTED", "format": "color-hex", "type": "string" },
             "variations": {
               "type": "array",
               "title": "Variantions",
-              "description": "UNDOCUMENTATED",
+              "description": "UNDOCUMENTED",
               "items": {
                 "type": "object",
                 "title": "Variantion",
-                "description": "UNDOCUMENTATED",
+                "description": "UNDOCUMENTED",
                 "required": ["path"],
                 "properties": {
                   "path": { "description": "A texture file", "type": "string", "pattern": "^textures/.+$", "title": "Path" },
-                  "weight": { "type": "integer", "title": "Weight", "description": "UNDOCUMENTATED" }
+                  "weight": { "type": "integer", "title": "Weight", "description": "UNDOCUMENTED" }
                 }
               }
             }
@@ -38,23 +38,23 @@
     }
   },
   "properties": {
-    "num_mip_levels": { "type": "integer", "title": "Num Mip Levels", "description": "UNDOCUMENTATED" },
-    "padding": { "type": "integer", "title": "Padding", "description": "UNDOCUMENTATED" },
-    "resource_pack_name": { "type": "string", "title": "Resource Pack Name", "description": "UNDOCUMENTATED" },
+    "num_mip_levels": { "type": "integer", "title": "Num Mip Levels", "description": "UNDOCUMENTED" },
+    "padding": { "type": "integer", "title": "Padding", "description": "UNDOCUMENTED" },
+    "resource_pack_name": { "type": "string", "title": "Resource Pack Name", "description": "UNDOCUMENTED" },
     "texture_data": {
       "type": "object",
       "propertyNames": { "pattern": "^[\\w_\\-\\.]+$" },
       "additionalProperties": {
         "type": "object",
         "title": "Texture Data",
-        "description": "UNDOCUMENTATED",
+        "description": "UNDOCUMENTED",
         "properties": {
           "textures": { "oneOf": [{ "$ref": "#/definitions/texture" }, { "type": "array", "items": { "$ref": "#/definitions/texture" } }] }
         }
       },
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "title": "Texture Data"
     },
-    "texture_name": { "type": "string", "description": "UNDOCUMENTATED", "title": "Texture Name" }
+    "texture_name": { "type": "string", "description": "UNDOCUMENTED", "title": "Texture Name" }
   }
 }

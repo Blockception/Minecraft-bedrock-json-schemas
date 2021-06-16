@@ -7,7 +7,7 @@
   "properties": {
     "description": {
       "title": "Description",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "object",
       "required": ["identifier"],
       "properties": {
@@ -26,13 +26,13 @@
     },
     "feature_areas": {
       "title": "Feature Areas",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "minItems": 1,
       "maxItems": 4294967295,
       "items": {
         "type": "object",
         "title": "Feature Area",
-        "description": "UNDOCUMENTATED",
+        "description": "UNDOCUMENTED",
         "additionalProperties": false,
         "properties": {
           "feature": {

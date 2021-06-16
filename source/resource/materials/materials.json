@@ -2,17 +2,17 @@
   "$id": "blockception.minecraft.materials",
   "type": "object",
   "title": "Material",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "additionalProperties": false,
   "definitions": {
     "DefinesSpecification": {
       "type": "array",
       "title": "Defines",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "items": {
         "type": "string",
         "title": "Definition",
-        "description": "UNDOCUMENTATED",
+        "description": "UNDOCUMENTED",
         "enum": [
           "ALLOW_FADE",
           "ALPHA_TEST",
@@ -94,31 +94,31 @@
         ]
       }
     },
-    "FailOperation": { "type": "string", "title": "Fail Operation", "description": "UNDOCUMENTATED", "enum": ["Keep", "Replace"] },
+    "FailOperation": { "type": "string", "title": "Fail Operation", "description": "UNDOCUMENTED", "enum": ["Keep", "Replace"] },
     "FaceSpecification": {
       "type": "object",
       "title": "Face",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "additionalProperties": false,
       "properties": {
         "stencilDepthFailOp": {
           "type": "string",
           "title": "Stencil Depth Fail Operation",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "$ref": "#/definitions/FailOperation"
         },
         "stencilFailOp": {
           "type": "string",
           "title": "Stencil Fail Operation",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "$ref": "#/definitions/FailOperation"
         },
-        "stencilFunc": { "type": "string", "title": "Stencil Function", "description": "UNDOCUMENTATED", "enum": ["Always", "Equal", "NotEqual"] },
-        "stencilPass": { "type": "string", "title": "Stencil Pass", "description": "UNDOCUMENTATED", "enum": ["Replace"] },
+        "stencilFunc": { "type": "string", "title": "Stencil Function", "description": "UNDOCUMENTED", "enum": ["Always", "Equal", "NotEqual"] },
+        "stencilPass": { "type": "string", "title": "Stencil Pass", "description": "UNDOCUMENTED", "enum": ["Replace"] },
         "stencilPassOp": {
           "type": "string",
           "title": "Stencil Depth Fail Operation",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "$ref": "#/definitions/FailOperation"
         }
       }
@@ -126,11 +126,11 @@
     "StatesSpecification": {
       "type": "array",
       "title": "States",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "items": {
         "type": "string",
         "title": "State",
-        "description": "UNDOCUMENTATED",
+        "description": "UNDOCUMENTED",
         "enum": [
           "Blending",
           "DisableAlphaWrite",
@@ -148,51 +148,51 @@
     "SamplerStatesSpecification": {
       "type": "array",
       "title": "Sampler States",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "items": {
         "type": "object",
         "title": "Sample State",
-        "description": "UNDOCUMENTATED",
+        "description": "UNDOCUMENTED",
         "additionalProperties": false,
         "properties": {
-          "samplerIndex": { "type": "integer", "title": "Sample State", "description": "UNDOCUMENTATED" },
-          "textureFilter": { "type": "string", "title": "Texture Filter", "description": "UNDOCUMENTATED", "enum": ["Point", "Bilinear", "TexelAA"] },
-          "textureWrap": { "type": "string", "title": "Texture Wrap", "description": "UNDOCUMENTATED", "enum": ["Repeat", "Clamp"] }
+          "samplerIndex": { "type": "integer", "title": "Sample State", "description": "UNDOCUMENTED" },
+          "textureFilter": { "type": "string", "title": "Texture Filter", "description": "UNDOCUMENTED", "enum": ["Point", "Bilinear", "TexelAA"] },
+          "textureWrap": { "type": "string", "title": "Texture Wrap", "description": "UNDOCUMENTED", "enum": ["Repeat", "Clamp"] }
         }
       }
     },
     "VertexFieldsSpecification": {
       "type": "array",
       "title": "Vertex Fields",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "items": {
         "type": "object",
         "title": "Vertex Field",
-        "description": "UNDOCUMENTATED",
+        "description": "UNDOCUMENTED",
         "additionalProperties": false,
-        "properties": { "field": { "type": "string", "title": "Vertex Field", "description": "UNDOCUMENTATED" } }
+        "properties": { "field": { "type": "string", "title": "Vertex Field", "description": "UNDOCUMENTED" } }
       }
     },
     "VariantSpecification": {
       "type": "array",
       "title": "Variants",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "items": {
         "type": "object",
         "title": "Variant",
-        "description": "UNDOCUMENTATED",
+        "description": "UNDOCUMENTED",
         "propertyNames": { "enum": ["fading", "fog", "fog.underwater", "lit", "skinning", "skinning_color", "underlava", "underwater"] },
-        "additionalProperties": { "title": "Variant Item", "description": "UNDOCUMENTATED", "$ref": "#/definitions/VariantsItemSpecificaiton" }
+        "additionalProperties": { "title": "Variant Item", "description": "UNDOCUMENTED", "$ref": "#/definitions/VariantsItemSpecificaiton" }
       }
     },
     "VariantsItemSpecificaiton": {
       "type": "object",
       "title": "Variant Item",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "additionalProperties": false,
       "properties": {
         "+defines": { "title": "Defines", "description": "UNDOCUMENTATED, Add definitions???", "$ref": "#/definitions/DefinesSpecification" },
-        "vertexFields": { "title": "Vertex Fields", "description": "UNDOCUMENTATED", "$ref": "#/definitions/VertexFieldsSpecification" },
+        "vertexFields": { "title": "Vertex Fields", "description": "UNDOCUMENTED", "$ref": "#/definitions/VertexFieldsSpecification" },
         "states": { "title": "States", "description": "UNDOCUMENTATED, start states???", "$ref": "#/definitions/StatesSpecification" },
         "+states": { "title": "States", "description": "UNDOCUMENTATED, Add additional states???", "$ref": "#/definitions/StatesSpecification" },
         "-states": { "title": "States", "description": "UNDOCUMENTATED, remove additional states???", "$ref": "#/definitions/StatesSpecification" }
@@ -203,26 +203,26 @@
     "materials": {
       "type": "object",
       "title": "Materials",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "required": ["version"],
-      "properties": { "version": { "type": "string", "const": "1.0.0", "title": "Version", "description": "UNDOCUMENTATED" } },
+      "properties": { "version": { "type": "string", "const": "1.0.0", "title": "Version", "description": "UNDOCUMENTED" } },
       "additionalProperties": {
         "title": "Material Definitions",
-        "description": "UNDOCUMENTATED",
+        "description": "UNDOCUMENTED",
         "additionalProperties": false,
         "properties": {
-          "alphaDst": { "type": "string", "title": "Alpha Distance", "description": "UNDOCUMENTATED", "enum": ["DestColor", "OneMinusSrcAlpha"] },
-          "backFace": { "title": "Back Face", "description": "UNDOCUMENTATED", "$ref": "#/definitions/FaceSpecification" },
+          "alphaDst": { "type": "string", "title": "Alpha Distance", "description": "UNDOCUMENTED", "enum": ["DestColor", "OneMinusSrcAlpha"] },
+          "backFace": { "title": "Back Face", "description": "UNDOCUMENTED", "$ref": "#/definitions/FaceSpecification" },
           "blendDst": {
             "type": "string",
             "title": "Blend Distance",
-            "description": "UNDOCUMENTATED",
+            "description": "UNDOCUMENTED",
             "enum": ["SourceAlpha", "OneMinusSrcAlpha", "OneMinusSrcColor", "SourceColor", "Zero", "One"]
           },
           "blendSrc": {
             "type": "string",
             "title": "Blend Source",
-            "description": "UNDOCUMENTATED",
+            "description": "UNDOCUMENTED",
             "enum": ["DestColor", "One", "OneMinusDestColor", "SourceAlpha", "SourceColor"]
           },
           "defines": {
@@ -232,18 +232,18 @@
           },
           "+defines": { "title": "Defines", "description": "UNDOCUMENTATED, Add definitions???", "$ref": "#/definitions/DefinesSpecification" },
           "-defines": { "title": "Defines", "description": "UNDOCUMENTATED, removes definitions???", "$ref": "#/definitions/DefinesSpecification" },
-          "depthBias": { "type": "number", "title": "Depth Bias", "description": "UNDOCUMENTATED" },
-          "depthBiasOGL": { "type": "number", "title": "Depth Bias OGL", "description": "UNDOCUMENTATED" },
-          "depthFunc": { "type": "string", "title": "Depth Function", "description": "UNDOCUMENTATED", "enum": ["LessEqual", "Always", "Equal"] },
-          "fragmentShader": { "type": "string", "title": "Fragment Shader", "description": "UNDOCUMENTATED", "pattern": "^shaders/.*\\.fragment$" },
-          "frontFace": { "title": "Front Face", "description": "UNDOCUMENTATED", "$ref": "#/definitions/FaceSpecification" },
+          "depthBias": { "type": "number", "title": "Depth Bias", "description": "UNDOCUMENTED" },
+          "depthBiasOGL": { "type": "number", "title": "Depth Bias OGL", "description": "UNDOCUMENTED" },
+          "depthFunc": { "type": "string", "title": "Depth Function", "description": "UNDOCUMENTED", "enum": ["LessEqual", "Always", "Equal"] },
+          "fragmentShader": { "type": "string", "title": "Fragment Shader", "description": "UNDOCUMENTED", "pattern": "^shaders/.*\\.fragment$" },
+          "frontFace": { "title": "Front Face", "description": "UNDOCUMENTED", "$ref": "#/definitions/FaceSpecification" },
           "isAnimatedTexture": {
             "type": "integer",
             "title": "Is Animated Texture",
             "description": "UNDOCUMENTATED, think its a boolean value as a number, so 1 and 0????"
           },
-          "msaaSupport": { "type": "string", "title": "MSAA Support", "description": "UNDOCUMENTATED", "enum": ["Both", "MSAA"] },
-          "primitiveMode": { "type": "string", "title": "Primitive Mode", "description": "UNDOCUMENTATED", "enum": ["Line"] },
+          "msaaSupport": { "type": "string", "title": "MSAA Support", "description": "UNDOCUMENTED", "enum": ["Both", "MSAA"] },
+          "primitiveMode": { "type": "string", "title": "Primitive Mode", "description": "UNDOCUMENTED", "enum": ["Line"] },
           "samplerStates": {
             "title": "Sampler States",
             "description": "UNDOCUMENTATED, set or start samplerStates???",
@@ -254,23 +254,23 @@
             "description": "UNDOCUMENTATED, Add samplerStates???",
             "$ref": "#/definitions/SamplerStatesSpecification"
           },
-          "slopeScaledDepthBias": { "type": "number", "title": "Slope Scaled Depth Bias", "description": "UNDOCUMENTATED" },
-          "slopeScaledDepthBiasOGL": { "type": "number", "title": "Slope Scaled Depth Bias OGL", "description": "UNDOCUMENTATED" },
+          "slopeScaledDepthBias": { "type": "number", "title": "Slope Scaled Depth Bias", "description": "UNDOCUMENTED" },
+          "slopeScaledDepthBiasOGL": { "type": "number", "title": "Slope Scaled Depth Bias OGL", "description": "UNDOCUMENTED" },
           "states": { "title": "States", "description": "UNDOCUMENTATED, start states???", "$ref": "#/definitions/StatesSpecification" },
           "+states": { "title": "States", "description": "UNDOCUMENTATED, Add additional states???", "$ref": "#/definitions/StatesSpecification" },
           "-states": { "title": "States", "description": "UNDOCUMENTATED, remove additional states???", "$ref": "#/definitions/StatesSpecification" },
-          "stencilRef": { "type": "integer", "title": "Stencil Ref", "description": "UNDOCUMENTATED" },
-          "stencilRefOverride": { "type": "integer", "title": "Stencil Ref Override", "description": "UNDOCUMENTATED" },
-          "stencilReadMask": { "type": "integer", "title": "Stencil Read Mask", "description": "UNDOCUMENTATED" },
-          "stencilWriteMask": { "type": "integer", "title": "Stencil Write Mask", "description": "UNDOCUMENTATED" },
+          "stencilRef": { "type": "integer", "title": "Stencil Ref", "description": "UNDOCUMENTED" },
+          "stencilRefOverride": { "type": "integer", "title": "Stencil Ref Override", "description": "UNDOCUMENTED" },
+          "stencilReadMask": { "type": "integer", "title": "Stencil Read Mask", "description": "UNDOCUMENTED" },
+          "stencilWriteMask": { "type": "integer", "title": "Stencil Write Mask", "description": "UNDOCUMENTED" },
           "variants": { "title": "Variants", "description": "UNDOCUMENTATED, sets the variants?", "$ref": "#/definitions/VariantSpecification" },
           "+variants": { "title": "Variants", "description": "UNDOCUMENTATED, adds variants?", "$ref": "#/definitions/VariantSpecification" },
-          "vertexFields": { "title": "Vertex Fields", "description": "UNDOCUMENTATED", "$ref": "#/definitions/VertexFieldsSpecification" },
-          "vertexShader": { "type": "string", "title": "Vertex Shader", "description": "UNDOCUMENTATED", "pattern": "^shaders/.*\\.vertex$" },
+          "vertexFields": { "title": "Vertex Fields", "description": "UNDOCUMENTED", "$ref": "#/definitions/VertexFieldsSpecification" },
+          "vertexShader": { "type": "string", "title": "Vertex Shader", "description": "UNDOCUMENTED", "pattern": "^shaders/.*\\.vertex$" },
           "vrGeometryShader": {
             "type": "string",
             "title": "VR Geometry Shader",
-            "description": "UNDOCUMENTATED",
+            "description": "UNDOCUMENTED",
             "pattern": "^shaders/.*\\.geometry$"
           }
         }

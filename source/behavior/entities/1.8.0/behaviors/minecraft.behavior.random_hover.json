@@ -10,7 +10,7 @@
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
     "hover_height": {
       "type": "array",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "title": "Hover Height",
       "items": [{ "type": "number" }, { "type": "number" }]
     },

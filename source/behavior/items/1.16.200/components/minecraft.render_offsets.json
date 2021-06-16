@@ -8,17 +8,17 @@
     "offset_spec": {
       "type": "object",
       "title": "Offset",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "additionalProperties": false,
       "properties": {
         "first_person": {
           "title": "First Person",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "$ref": "#/definitions/mode"
         },
         "thrid_person": {
           "title": "Thrid Person",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "$ref": "#/definitions/mode"
         }
       }
@@ -26,7 +26,7 @@
     "mode": {
       "type": "object",
       "title": "Mode",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "additionalProperties": false,
       "properties": {
         "position": {

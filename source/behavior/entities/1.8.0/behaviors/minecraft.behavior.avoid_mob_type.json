@@ -39,12 +39,12 @@
       "title": "Ignore Visibility"
     },
     "entity_types": { "$ref": "../types/entity_types.json", "description": "UNDOCUMENTATED: entity types", "title": "Entity Types" },
-    "avoid_mob_sound": { "title": "Avoid Mob Sound", "description": "UNDOCUMENTATED", "type": "string" },
-    "remove_target": { "title": "Remove Target", "description": "UNDOCUMENTATED", "type": "boolean" },
-    "on_escape_event": { "$ref": "../types/event.json", "title": "On Escape Event", "description": "UNDOCUMENTATED" },
+    "avoid_mob_sound": { "title": "Avoid Mob Sound", "description": "UNDOCUMENTED", "type": "string" },
+    "remove_target": { "title": "Remove Target", "description": "UNDOCUMENTED", "type": "boolean" },
+    "on_escape_event": { "$ref": "../types/event.json", "title": "On Escape Event", "description": "UNDOCUMENTED" },
     "sound_interval": {
       "default": 0,
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "title": "Sound Interval",
       "oneOf": [
         {

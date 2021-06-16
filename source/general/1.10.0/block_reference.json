@@ -3,14 +3,14 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Block Reference",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "properties": {
-    "name": { "type": "string", "description": "UNDOCUMENTATED", "title": "Name", "$ref": "../block/identifier.json" },
+    "name": { "type": "string", "description": "UNDOCUMENTED", "title": "Name", "$ref": "../block/identifier.json" },
     "states": {
       "type": "object",
       "propertyNames": { "pattern": "\\w*:?\\w+" },
       "additionalProperties": { "oneOf": [{ "type": "boolean" }, { "type": "integer" }, { "type": "string" }] },
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "title": "State"
     }
   }

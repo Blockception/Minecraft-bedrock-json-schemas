@@ -2,16 +2,16 @@
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.dweller",
   "type": "object",
   "title": "Dweller 1.8.0",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "additionalProperties": false,
   "properties": {
-    "dwelling_type": { "type": "string", "title": "Dwelling Type", "description": "UNDOCUMENTATED" },
-    "dweller_role": { "type": "string", "title": "Dwelling Role", "description": "UNDOCUMENTATED" },
-    "update_interval_base": { "type": "integer", "title": "Update Interval Base", "description": "UNDOCUMENTATED" },
-    "update_interval_variant": { "type": "integer", "title": "Update Interval Variant", "description": "UNDOCUMENTATED" },
-    "preferred_profession": { "type": "string", "title": "Preferred Profession", "description": "UNDOCUMENTATED" },
-    "can_find_poi": { "type": "boolean", "title": "Can Find Poi", "description": "UNDOCUMENTATED" },
-    "can_migrate": { "type": "boolean", "title": "Can Migrate", "description": "UNDOCUMENTATED" },
-    "first_founding_reward": { "type": "integer", "title": "First Founding Reward", "description": "UNDOCUMENTATED" }
+    "dwelling_type": { "type": "string", "title": "Dwelling Type", "description": "UNDOCUMENTED" },
+    "dweller_role": { "type": "string", "title": "Dwelling Role", "description": "UNDOCUMENTED" },
+    "update_interval_base": { "type": "integer", "title": "Update Interval Base", "description": "UNDOCUMENTED" },
+    "update_interval_variant": { "type": "integer", "title": "Update Interval Variant", "description": "UNDOCUMENTED" },
+    "preferred_profession": { "type": "string", "title": "Preferred Profession", "description": "UNDOCUMENTED" },
+    "can_find_poi": { "type": "boolean", "title": "Can Find Poi", "description": "UNDOCUMENTED" },
+    "can_migrate": { "type": "boolean", "title": "Can Migrate", "description": "UNDOCUMENTED" },
+    "first_founding_reward": { "type": "integer", "title": "First Founding Reward", "description": "UNDOCUMENTED" }
   }
 }

@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.1.16.100.block.events",
   "title": "Events",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "type": "object",
   "properties": {
     "minecraft:on_interact": { "$ref": "#/definitions/event_base" },
@@ -18,28 +18,28 @@
   "definitions": {
     "event_base": {
       "title": "Event",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
       "$ref": "#/definitions/event_functions",
       "properties": {
         "sequence": {
           "title": "Sequence",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "type": "array",
-          "items": { "title": "Sequence", "description": "UNDOCUMENTATED", "type": "object", "$ref": "#/definitions/event_functions" }
+          "items": { "title": "Sequence", "description": "UNDOCUMENTED", "type": "object", "$ref": "#/definitions/event_functions" }
         },
         "randomize": {
           "title": "Randomize",
-          "description": "UNDOCUMENTATED",
+          "description": "UNDOCUMENTED",
           "type": "array",
           "items": {
             "title": "Randomize",
-            "description": "UNDOCUMENTATED",
+            "description": "UNDOCUMENTED",
             "type": "object",
             "$ref": "#/definitions/event_functions",
             "required": ["weight"],
-            "properties": { "weight": { "title": "Weight", "description": "UNDOCUMENTATED", "type": "integer", "minimum": 0 } }
+            "properties": { "weight": { "title": "Weight", "description": "UNDOCUMENTED", "type": "integer", "minimum": 0 } }
           }
         },
         "add_mob_effect": { "$ref": "./events/add_mob_effect.json" },
@@ -61,7 +61,7 @@
     },
     "event_functions": {
       "title": "Event",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": true,
       "properties": {

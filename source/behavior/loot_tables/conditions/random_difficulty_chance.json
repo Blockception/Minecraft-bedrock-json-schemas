@@ -5,7 +5,7 @@
   "description": "Sets a random chance of the specified value based on the level difficulty.",
   "title": "Random Difficulty Chance",
   "properties": {
-    "condition": { "type": "string", "title": "Condition", "description": "UNDOCUMENTATED" },
+    "condition": { "type": "string", "title": "Condition", "description": "UNDOCUMENTED" },
     "default_chance": {
       "type": "number",
       "default": 0,

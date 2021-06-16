@@ -5,15 +5,15 @@
   "title": "Random Aux Value",
   "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "random_aux_value", "description": "UNDOCUMENTATED", "title": "Function" },
+    "function": { "type": "string", "const": "random_aux_value", "description": "UNDOCUMENTED", "title": "Function" },
     "values": {
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "title": "Values",
       "additionalProperties": false,
       "type": "object",
       "properties": {
-        "min": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Minimum" },
-        "max": { "type": "integer", "description": "UNDOCUMENTATED", "title": "Maximum" }
+        "min": { "type": "integer", "description": "UNDOCUMENTED", "title": "Minimum" },
+        "max": { "type": "integer", "description": "UNDOCUMENTED", "title": "Maximum" }
       }
     }
   }

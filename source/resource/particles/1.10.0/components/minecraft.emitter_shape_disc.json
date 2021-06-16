@@ -22,12 +22,12 @@
     "radius": { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED: radius", "title": "Radius" },
     "offset": {
       "type": "array",
-      "description": "UNDOCUMENTATED",
+      "description": "UNDOCUMENTED",
       "title": "Offset",
       "items": [
-        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "X" },
-        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "Y" },
-        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "Z" }
+        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTED", "title": "X" },
+        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTED", "title": "Y" },
+        { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTED", "title": "Z" }
       ]
     },
     "plane_normal": {
@@ -39,9 +39,9 @@
         {
           "type": "array",
           "items": [
-            { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "X" },
-            { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "Y" },
-            { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED", "title": "Z" }
+            { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTED", "title": "X" },
+            { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTED", "title": "Y" },
+            { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTED", "title": "Z" }
           ]
         }
       ]

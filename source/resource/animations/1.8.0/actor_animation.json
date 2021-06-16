@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Actor Animation 1.8.0",
-  "description": "UNDOCUMENTATED",
+  "description": "UNDOCUMENTED",
   "definitions": {
     "ParticleEffect": {
       "type": "object",
@@ -134,7 +134,7 @@
             "description": "Override calculated value (set as the last keyframe time) and set animation length in seconds.",
             "type": "number"
           },
-          "blend_weight": { "title": "Blend Weight", "description": "UNDOCUMENTATED", "$ref": "../../../molang/number.json" },
+          "blend_weight": { "title": "Blend Weight", "description": "UNDOCUMENTED", "$ref": "../../../molang/number.json" },
           "bones": {
             "title": "Bones",
             "minProperties": 1,
@@ -160,9 +160,9 @@
                         "description": "A single point in time",
                         "additionalProperties": false,
                         "properties": {
-                          "lerp_mode": { "type": "string", "title": "Lerp Mode", "description": "UNDOCUMENTATED", "enum": ["linear", "catmullrom"] },
-                          "pre": { "title": "Pre", "description": "UNDOCUMENTATED", "$ref": "#/definitions/PositionV3" },
-                          "post": { "title": "Pre", "description": "UNDOCUMENTATED", "$ref": "#/definitions/PositionV3" }
+                          "lerp_mode": { "type": "string", "title": "Lerp Mode", "description": "UNDOCUMENTED", "enum": ["linear", "catmullrom"] },
+                          "pre": { "title": "Pre", "description": "UNDOCUMENTED", "$ref": "#/definitions/PositionV3" },
+                          "post": { "title": "Pre", "description": "UNDOCUMENTED", "$ref": "#/definitions/PositionV3" }
                         }
                       }
                     }
@@ -182,9 +182,9 @@
                         "description": "A single point in time",
                         "additionalProperties": false,
                         "properties": {
-                          "lerp_mode": { "type": "string", "title": "Lerp Mode", "description": "UNDOCUMENTATED", "enum": ["linear", "catmullrom"] },
-                          "pre": { "title": "Pre", "description": "UNDOCUMENTATED", "$ref": "#/definitions/RotationV3" },
-                          "post": { "title": "Pre", "description": "UNDOCUMENTATED", "$ref": "#/definitions/RotationV3" }
+                          "lerp_mode": { "type": "string", "title": "Lerp Mode", "description": "UNDOCUMENTED", "enum": ["linear", "catmullrom"] },
+                          "pre": { "title": "Pre", "description": "UNDOCUMENTED", "$ref": "#/definitions/RotationV3" },
+                          "post": { "title": "Pre", "description": "UNDOCUMENTED", "$ref": "#/definitions/RotationV3" }
                         }
                       }
                     }
@@ -203,7 +203,7 @@
                 },
                 "scale": {
                   "title": "Scale",
-                  "description": "UNDOCUMENTATED",
+                  "description": "UNDOCUMENTED",
                   "oneOf": [
                     { "$ref": "../../../molang/number.json" },
                     { "$ref": "#/definitions/ScaleV3" },
@@ -215,9 +215,9 @@
                         "description": "A single point in time",
                         "additionalProperties": false,
                         "properties": {
-                          "lerp_mode": { "type": "string", "title": "Lerp Mode", "description": "UNDOCUMENTATED", "enum": ["linear", "catmullrom"] },
-                          "pre": { "title": "Pre", "description": "UNDOCUMENTATED", "$ref": "#/definitions/ScaleV3" },
-                          "post": { "title": "Pre", "description": "UNDOCUMENTATED", "$ref": "#/definitions/ScaleV3" }
+                          "lerp_mode": { "type": "string", "title": "Lerp Mode", "description": "UNDOCUMENTED", "enum": ["linear", "catmullrom"] },
+                          "pre": { "title": "Pre", "description": "UNDOCUMENTED", "$ref": "#/definitions/ScaleV3" },
+                          "post": { "title": "Pre", "description": "UNDOCUMENTED", "$ref": "#/definitions/ScaleV3" }
                         }
                       }
                     }
@@ -243,7 +243,7 @@
           },
           "particle_effects": {
             "title": "Particle Effects",
-            "description": "UNDOCUMENTATED",
+            "description": "UNDOCUMENTED",
             "type": "object",
             "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$", "examples": ["0.0"] },
             "additionalProperties": {
@@ -262,7 +262,7 @@
           },
           "sound_effects": {
             "title": "Sound Effect",
-            "description": "UNDOCUMENTATED",
+            "description": "UNDOCUMENTED",
             "type": "object",
             "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$" },
             "additionalProperties": {
