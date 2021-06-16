@@ -7,7 +7,7 @@
     "test": { "type": "string", "title": "Test Property", "description": "The test property" },
     "operator": { "$ref": "./types/operator.json" },
     "subject": { "$ref": "./types/subject.json" },
-    "value": { "type": "integer", "description": "The altitude value to compare with", "minimum": 0, "title": "Value" }
+    "value": { "type": "integer", "description": "The altitude value to compare with", "title": "Value" }
   },
   "additionalProperties": false
 }
