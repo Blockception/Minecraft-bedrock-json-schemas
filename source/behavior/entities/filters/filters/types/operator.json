@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.operator",
-  "title": "Filters Operator",
+  "title": "Operator",
   "type": "string",
   "description": "The comparison to apply with `value`.",
   "default": "equals",

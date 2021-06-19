@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.has_equipment",
   "type": "object",
-  "title": "Filters Has Equipment",
+  "title": "Has Equipment",
   "description": "Tests for the presence of a named item in the designated slot of the subject entity.",
   "required": ["value"],
   "properties": {

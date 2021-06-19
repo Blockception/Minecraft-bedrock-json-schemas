@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.1.14.0.minecraft.filters",
-  "title": "Filters 1.14.0",
+  "title": "1.14.0",
   "definitions": {
     "filters_spec": {
       "oneOf": [

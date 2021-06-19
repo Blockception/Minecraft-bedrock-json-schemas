@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.is_brightness",
   "type": "object",
-  "title": "Filters Is Brightness",
+  "title": "Is Brightness",
   "description": "Tests the current brightness against a provided value in the range (0.0f, 1.0f).",
   "required": ["value"],
   "properties": {

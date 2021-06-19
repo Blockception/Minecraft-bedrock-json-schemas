@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.has_biome_tag",
   "type": "object",
-  "title": "Filters Has Biome Tag",
+  "title": "Has Biome Tag",
   "description": "Tests whether the biome the subject is in has the specified tag.",
   "required": ["value"],
   "properties": {

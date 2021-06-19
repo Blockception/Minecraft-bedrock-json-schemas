@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.is_persistent",
   "type": "object",
-  "title": "Filters Is Persistent",
+  "title": "Is Persistent",
   "description": "Tests if the subject's persistence matches the bool value passed in.",
   "properties": {
     "test": { "type": "string", "title": "Test", "description": "The test property" },

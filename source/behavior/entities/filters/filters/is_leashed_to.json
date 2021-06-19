@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.is_leashed_to",
   "type": "object",
-  "title": "Filters Is Leashed To",
+  "title": "Is Leashed To",
   "description": "Returns true if the subject entity leashed to the calling entity.",
   "properties": {
     "test": { "type": "string", "title": "Test", "description": "The test property" },

@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.is_skin_id",
   "type": "object",
-  "title": "Filters Is Skin Id",
+  "title": "Is Skin Id",
   "description": "Returns true if the subject entity is the skin id number provided.",
   "properties": {
     "test": { "type": "string", "title": "Test Property", "description": "The test property" },

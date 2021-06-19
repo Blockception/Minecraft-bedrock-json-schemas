@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.is_block",
   "type": "object",
-  "title": "Filters Is Block",
+  "title": "Is Block",
   "description": "Returns true when the block has the given name.",
   "required": ["value"],
   "properties": {

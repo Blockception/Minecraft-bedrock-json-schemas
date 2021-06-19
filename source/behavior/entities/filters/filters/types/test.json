@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.test",
-  "title": "Filters Test",
+  "title": "Test",
   "type": "string",
   "description": "The test operation",
   "enum": [

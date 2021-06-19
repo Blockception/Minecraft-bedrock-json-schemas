@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.is_altitude",
   "type": "object",
-  "title": "Filters Is Altitude",
+  "title": "Is Altitude",
   "description": "Tests the current altitude against a provided value. 0= bedrock elevation.",
   "required": ["value"],
   "properties": {

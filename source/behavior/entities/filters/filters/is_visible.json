@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.is_visible",
   "type": "object",
-  "title": "Filters Is Visible",
+  "title": "Is Visible",
   "description": "Returns true if the subject entity is visible.",
   "properties": {
     "test": { "type": "string", "title": "Test Property", "description": "The test property" },

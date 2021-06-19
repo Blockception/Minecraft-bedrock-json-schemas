@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.weather",
   "type": "object",
-  "title": "Filters Weather",
+  "title": "Weather",
   "description": "Tests the current weather in the dimension against a provided weather value.",
   "required": ["value"],
   "properties": {

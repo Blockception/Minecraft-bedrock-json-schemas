@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.on_ladder",
   "type": "object",
-  "title": "Filters On Ladder",
+  "title": "On Ladder",
   "description": "Returns true when the subject entity is on a ladder.",
   "properties": {
     "test": { "type": "string", "title": "Test Property", "description": "The test property" },

@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.is_riding",
   "type": "object",
-  "title": "Filters Is Riding",
+  "title": "Is Riding",
   "description": "Returns true if the subject entity is riding on another entity.",
   "properties": {
     "test": { "type": "string", "title": "Test Property", "description": "The test property" },

@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.has_container_open",
   "type": "object",
-  "title": "Filters Has Container Open",
+  "title": "Has Container Open",
   "description": "Returns true when the subject Player entity has opened a container.",
   "properties": {
     "test": { "type": "string", "title": "Test", "description": "The test property" },

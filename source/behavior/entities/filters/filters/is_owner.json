@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.is_owner",
   "type": "object",
-  "title": "Filters Is Owner",
+  "title": "Is Owner",
   "description": "Returns true if the subject entity is the owner of the calling entity.",
   "properties": {
     "test": { "type": "string", "title": "Test Property", "description": "The test property" },

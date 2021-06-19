@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.is_target",
   "type": "object",
-  "title": "Filters Is Target",
+  "title": "Is Target",
   "description": "Tests whether the current temperature is a given type.",
   "required": ["value"],
   "properties": {

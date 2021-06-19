@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.moon_phase",
   "type": "object",
-  "title": "Filters Moon Phase",
+  "title": "Moon Phase",
   "description": "Compares the current moon phase with an integer value in the range (0, 7).",
   "required": ["value"],
   "properties": {

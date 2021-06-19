@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.has_damage",
   "type": "object",
-  "title": "Filters Has Damage",
+  "title": "Has Damage",
   "description": "Returns true when the subject entity receives the named damage type.",
   "required": ["value"],
   "properties": {

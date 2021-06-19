@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.hourly_clock_time",
   "type": "object",
-  "title": "Filters Hourly Clock Time",
+  "title": "Hourly Clock Time",
   "description": "Compares the current 24 hour time with an int value in the range[0, 24000]",
   "required": ["value"],
   "properties": {

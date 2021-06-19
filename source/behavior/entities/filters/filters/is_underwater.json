@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.is_underwater",
   "type": "object",
-  "title": "Filters Is Underwater",
+  "title": "Is Underwater",
   "description": "Returns true when the subject entity is under water. An entity is considered underwater if it is completely submerged in water blocks.",
   "properties": {
     "test": { "type": "string", "title": "Test Property", "description": "The test property" },

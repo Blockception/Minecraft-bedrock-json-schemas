@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.has_component",
   "type": "object",
-  "title": "Filters Has Component",
+  "title": "Has Component",
   "description": "Returns true when the subject entity contains the named component.",
   "required": ["value"],
   "properties": {

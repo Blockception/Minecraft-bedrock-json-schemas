@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.is_color",
   "type": "object",
-  "title": "Filters Is Color",
+  "title": "Is Color",
   "description": "Returns true if the subject entity is the named color.",
   "required": ["value"],
   "properties": {

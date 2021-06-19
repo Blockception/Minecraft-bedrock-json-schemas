@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.in_caravan",
   "type": "object",
-  "title": "Filters In Caravan",
+  "title": "In Caravan",
   "description": "Returns true if the subject entity is in a caravan.",
   "properties": {
     "test": { "type": "string", "title": "Test Property", "description": "Returns true if the subject entity is in a caravan." },

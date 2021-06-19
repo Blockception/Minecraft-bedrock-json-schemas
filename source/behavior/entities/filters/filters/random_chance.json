@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.random_chance",
   "type": "object",
-  "title": "Filters Random Chance",
+  "title": "Random Chance",
   "description": "Returns true if the random chance rolls 0 out of a specified max range.",
   "required": ["value"],
   "properties": {

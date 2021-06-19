@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.is_variant",
   "type": "object",
-  "title": "Filters Is Variant",
+  "title": "Is Variant",
   "description": "Returns true if the subject entity is the variant number provided.",
   "required": ["value"],
   "properties": {

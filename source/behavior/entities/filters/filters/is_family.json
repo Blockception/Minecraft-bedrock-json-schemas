@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.is_family",
   "type": "object",
-  "title": "Filters Is Family",
+  "title": "Is Family",
   "description": "Returns true when the subject entity is a member of the named family.",
   "required": ["value"],
   "properties": {

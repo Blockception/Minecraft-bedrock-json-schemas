@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.is_underground",
   "type": "object",
-  "title": "Filters Is Underground",
+  "title": "Is Underground",
   "description": "Returns true when the subject entity is underground. An entity is considered underground if there are non-solid blocks above it.",
   "properties": {
     "test": { "type": "string", "title": "Test Property", "description": "The test property" },

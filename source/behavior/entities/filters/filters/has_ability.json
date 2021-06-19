@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.has_ability",
   "type": "object",
-  "title": "Filters Has Ability",
+  "title": "Has Ability",
   "description": "Returns true when the subject entity has the named ability.",
   "required": ["value"],
   "properties": {

@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.is_difficulty",
   "type": "object",
-  "title": "Filters Is Difficulty",
+  "title": "Is Difficulty",
   "description": "Tests the current difficulty level of the game.",
   "required": ["value"],
   "properties": {

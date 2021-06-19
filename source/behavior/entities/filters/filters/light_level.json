@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.light_level",
   "type": "object",
-  "title": "Filters Light Level",
+  "title": "Light Level",
   "description": "Tests is the mob is outside of the specified light level range (0, 16).",
   "required": ["value"],
   "properties": {

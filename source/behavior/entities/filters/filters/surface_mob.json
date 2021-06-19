@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.surface_mob",
   "type": "object",
-  "title": "Filters Surface Mob",
+  "title": "Surface Mob",
   "description": "Tests if the subject is a surface mob.",
   "properties": {
     "test": { "type": "string", "title": "Test", "description": "The test property" },

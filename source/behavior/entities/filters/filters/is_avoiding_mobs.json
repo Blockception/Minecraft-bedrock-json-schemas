@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.is_avoiding_mobs",
   "type": "object",
-  "title": "Filters Is Avoiding Mobs",
+  "title": "Is Avoiding Mobs",
   "description": "Returns true if the subject entity is fleeing from other mobs.",
   "properties": {
     "test": { "type": "string", "title": "Test Property", "description": "Returns true if the subject entity is fleeing from other mobs." },

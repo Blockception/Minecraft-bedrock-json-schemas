@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.is_sleeping",
   "type": "object",
-  "title": "Filters Is Sleeping",
+  "title": "Is Sleeping",
   "description": "Tests whether the Subject is sleeping.",
   "properties": {
     "test": { "type": "string", "title": "Test", "description": "The test property" },

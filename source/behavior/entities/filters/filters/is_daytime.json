@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.is_daytime",
   "type": "object",
-  "title": "Filters Is Daytime",
+  "title": "Is Daytime",
   "description": "Returns true during the daylight hours.",
   "properties": {
     "test": { "type": "string", "title": "Test Property", "description": "Returns true during the daylight hours." },

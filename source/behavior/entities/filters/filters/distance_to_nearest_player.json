@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.distance_to_nearest_player",
   "type": "object",
-  "title": "Filters Distance To Nearest Player",
+  "title": "Distance To Nearest Player",
   "description": "Compares the distance to the nearest Player with a float value.",
   "required": ["value"],
   "properties": {

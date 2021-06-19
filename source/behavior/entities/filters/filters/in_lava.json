@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.in_lava",
   "type": "object",
-  "title": "Filters In Lava",
+  "title": "In Lava",
   "description": "Returns true when the subject entity is in lava.",
   "properties": {
     "test": { "type": "string", "title": "Test Property", "description": "Returns true when the subject entity is in lava." },

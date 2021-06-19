@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.has_ranged_weapon",
   "type": "object",
-  "title": "Filters Has Ranged Weapon",
+  "title": "Has Ranged Weapon",
   "description": "Returns true when the subject entity is holding a ranged weapon like a bow or crossbow.",
   "properties": {
     "test": { "type": "string", "title": "Test", "description": "The test property" },

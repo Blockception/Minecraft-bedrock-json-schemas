@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.is_in_village",
   "type": "object",
-  "title": "Filters Is In Village",
+  "title": "Is In Village",
   "description": "Tests whether the Subject is inside the bounds of a village.",
   "properties": {
     "test": { "type": "string", "title": "Test Property", "description": "The test property" },

@@ -1,14 +1,14 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.clock_time",
   "type": "object",
-  "title": "Filters Clock Time",
-  "description": "Compares the current 24 hour time with an int value in the range[0, 24000]",
+  "title": "Clock Time",
+  "description": "Compares the current time with a float value in the range (0.0, 1.0).\n0.0= Noon\n0.25= Sunset\n0.5= Midnight\n0.75= Sunrise",
   "required": ["value"],
   "properties": {
     "test": {
       "type": "string",
       "title": "Test Property",
-      "description": "Compares the current 24 hour time with an int value in the range[0, 24000]"
+      "description": "Compares the current time with a float value in the range (0.0, 1.0).\n0.0= Noon\n0.25= Sunset\n0.5= Midnight\n0.75= Sunrise"
     },
     "operator": {
       "$ref": "./types/operator.json",
@@ -22,6 +22,13 @@
       "default": "self",
       "title": "Subject"
     },
-    "value": { "type": "number", "minimum": 0, "maximum": 240000, "description": "(Required) An integer value.", "title": "Value" }
+    "value": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 240000,
+      "description": "(Required) A floating point value.",
+      "title": "Value",
+      "examples": [0, 0.025, 0.5, 0.75, 1]
+    }
   }
 }

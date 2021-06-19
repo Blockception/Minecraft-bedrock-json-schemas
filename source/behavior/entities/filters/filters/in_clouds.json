@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.in_clouds",
   "type": "object",
-  "title": "Filters In Clouds",
+  "title": "In Clouds",
   "description": "Returns true when the subject entity is in the clouds.",
   "properties": {
     "test": { "type": "string", "title": "Test Property", "description": "Returns true when the subject entity is in the clouds." },

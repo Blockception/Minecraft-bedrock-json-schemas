@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.is_immobile",
   "type": "object",
-  "title": "Filters Is Immobile",
+  "title": "Is Immobile",
   "description": "Returns true if the subject entity is immobile. An entity is immobile if it lacks AI goals, has just changed dimensions or if it is a mob and has no health.",
   "properties": {
     "test": { "type": "string", "title": "Test Property", "description": "The test property" },

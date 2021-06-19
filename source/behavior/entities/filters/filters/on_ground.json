@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.on_ground",
   "type": "object",
-  "title": "Filters On Ground",
+  "title": "On Ground",
   "description": "Returns true when the subject entity is on ground.",
   "properties": {
     "test": { "type": "string", "title": "Test Property", "description": "The test property" },

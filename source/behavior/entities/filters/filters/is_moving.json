@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.is_moving",
   "type": "object",
-  "title": "Filters Is Moving",
+  "title": "Is Moving",
   "description": "Returns true if the subject entity is moving.",
   "properties": {
     "test": { "type": "string", "title": "Test Property", "description": "The test property" },

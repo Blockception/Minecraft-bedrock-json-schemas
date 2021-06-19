@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.rider_count",
   "type": "object",
-  "title": "Filters Rider Count",
+  "title": "Rider Count",
   "description": "Returns the number of riders on this entity.",
   "required": ["value"],
   "properties": {

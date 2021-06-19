@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.filters.in_nether",
   "type": "object",
-  "title": "Filters In Nether",
+  "title": "In Nether",
   "description": "Returns true when the subject entity is in Nether.",
   "properties": {
     "test": { "type": "string", "title": "Test", "description": "The test property" },
