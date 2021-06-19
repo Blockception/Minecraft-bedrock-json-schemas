@@ -106,7 +106,7 @@
               "properties": {
                 "binding": {
                   "title": "Binding",
-                  "description": "useful for items. A molang expression specifying the bone name of the parent skeletal hierarchy that this bone should use as the root transform. Without this field it will look for a bone in the parent entity with the same name as this bone. If both are missing, it will assume a local skeletal hierarchy (via the \"parent\" field). If that is also missing, it will attach to the owning entity's root transform.",
+                  "description": "useful for items. A molang expression specifying the bone name of the parent skeletal hierarchy that this bone should use as the root transform. Without this field it will look for a bone in the parent entity with the same name as this bone. If both are missing, it will assume a local skeletal hierarchy (via the `parent` field). If that is also missing, it will attach to the owning entity's root transform.",
                   "$ref": "../../../../molang/string.json"
                 },
                 "cubes": {
@@ -317,15 +317,15 @@
                     },
                     "normals": {
                       "type": "array",
-                      "description": "Vertex normals. Can be either indexed via the \"polys\" section, or be a quad-list if mapped 1-to-1 to the positions and UVs sections.",
+                      "description": "Vertex normals. Can be either indexed via the `polys` section, or be a quad-list if mapped 1-to-1 to the positions and UVs sections.",
                       "items": {
                         "type": "array",
                         "minItems": 3,
                         "maxItems": 3,
-                        "description": "Vertex normals. Can be either indexed via the \"polys\" section, or be a quad-list if mapped 1-to-1 to the positions and UVs sections.",
+                        "description": "Vertex normals. Can be either indexed via the `polys` section, or be a quad-list if mapped 1-to-1 to the positions and UVs sections.",
                         "items": {
                           "type": "number",
-                          "description": "Vertex normals. Can be either indexed via the \"polys\" section, or be a quad-list if mapped 1-to-1 to the positions and UVs sections."
+                          "description": "Vertex normals. Can be either indexed via the `polys` section, or be a quad-list if mapped 1-to-1 to the positions and UVs sections."
                         }
                       }
                     },
@@ -333,7 +333,7 @@
                       "oneOf": [
                         {
                           "type": "string",
-                          "description": "If not specifying vertex indices, arrays of data must be a list of tris or quads, set by making this property either \"tri_list\" or \"quad_list\"",
+                          "description": "If not specifying vertex indices, arrays of data must be a list of tris or quads, set by making this property either `tri_list` or `quad_list`",
                           "enum": ["tri_list", "quad_list"]
                         },
                         {
@@ -366,21 +366,21 @@
                         "maxItems": 3,
                         "items": {
                           "type": "number",
-                          "description": "Vertex positions for the mesh. Can be either indexed via the \"polys\" section, or be a quad-list if mapped 1-to-1 to the normals and UVs sections."
+                          "description": "Vertex positions for the mesh. Can be either indexed via the `polys` section, or be a quad-list if mapped 1-to-1 to the normals and UVs sections."
                         }
                       }
                     },
                     "uvs": {
                       "type": "array",
-                      "description": "Vertex UVs. Can be either indexed via the \"polys\" section, or be a quad-list if mapped 1-to-1 to the positions and normals sections.",
+                      "description": "Vertex UVs. Can be either indexed via the `polys` section, or be a quad-list if mapped 1-to-1 to the positions and normals sections.",
                       "items": {
                         "type": "array",
-                        "description": "Vertex UVs. Can be either indexed via the \"polys\" section, or be a quad-list if mapped 1-to-1 to the positions and normals sections.",
+                        "description": "Vertex UVs. Can be either indexed via the `polys` section, or be a quad-list if mapped 1-to-1 to the positions and normals sections.",
                         "minItems": 2,
                         "maxItems": 2,
                         "items": {
                           "type": "number",
-                          "description": "Vertex UVs. Can be either indexed via the \"polys\" section, or be a quad-list if mapped 1-to-1 to the positions and normals sections."
+                          "description": "Vertex UVs. Can be either indexed via the `polys` section, or be a quad-list if mapped 1-to-1 to the positions and normals sections."
                         }
                       }
                     }

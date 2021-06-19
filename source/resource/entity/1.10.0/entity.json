@@ -178,7 +178,7 @@
                 },
                 "variables": {
                   "title": "Variables",
-                  "description": " A list of variables that need certain settings applied to them. Currently, for the client, only \"public\" is supported.",
+                  "description": " A list of variables that need certain settings applied to them. Currently, for the client, only `public` is supported.",
                   "type": "object",
                   "minProperties": 1,
                   "propertyNames": { "pattern": "variable.[a-zA-Z_][a-zA-Z0-9_]*" },

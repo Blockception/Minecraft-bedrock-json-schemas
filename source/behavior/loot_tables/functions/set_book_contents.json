@@ -11,7 +11,7 @@
     "title": { "type": "string", "description": "UNDOCUMENTED", "title": "Title" },
     "pages": {
       "type": "array",
-      "items": { "type": "string", "examples": ["Some text", "{\"rawtext\":[ {\"translate\":\"some.text\"}]}"] },
+      "items": { "type": "string", "examples": ["Some text", "{`rawtext`:[ {`translate`:`some.text`}]}"] },
       "description": "UNDOCUMENTED",
       "title": "Pages"
     }

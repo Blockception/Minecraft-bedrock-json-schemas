@@ -35,7 +35,7 @@
     "work_in_rain_tolerance": {
       "type": "integer",
       "default": -1,
-      "description": "If \"can_work_in_rain\" is false, this is the maximum number of ticks left in the goal where rain will not interrupt the goal",
+      "description": "If `can_work_in_rain` is false, this is the maximum number of ticks left in the goal where rain will not interrupt the goal",
       "title": "TODO Title"
     }
   },

@@ -15,25 +15,25 @@
     "easy": {
       "type": "number",
       "default": 0,
-      "description": "The default random chance if the level difficulty is in easy. Omitting this field will set the value to \"default_chance\" field.",
+      "description": "The default random chance if the level difficulty is in easy. Omitting this field will set the value to `default_chance` field.",
       "title": "Easy"
     },
     "hard": {
       "type": "number",
       "default": 0,
-      "description": "The default random chance if the level difficulty is in hard. Omitting this field will set the value to \"default_chance\" field.",
+      "description": "The default random chance if the level difficulty is in hard. Omitting this field will set the value to `default_chance` field.",
       "title": "Hard"
     },
     "normal": {
       "type": "number",
       "default": 0,
-      "description": "The default random chance if the level difficulty is in normal. Omitting this field will set the value to \"default_chance\" field.",
+      "description": "The default random chance if the level difficulty is in normal. Omitting this field will set the value to `default_chance` field.",
       "title": "Normal"
     },
     "peaceful": {
       "type": "number",
       "default": 0,
-      "description": "The default random chance if the level difficulty is in peaceful. Omitting this field will set the value to \"default_chance\" field.",
+      "description": "The default random chance if the level difficulty is in peaceful. Omitting this field will set the value to `default_chance` field.",
       "title": "Peaceful"
     }
   }

@@ -6,11 +6,11 @@
   "title": "Entity Properties",
   "properties": {
     "condition": { "type": "string", "title": "Condition", "description": "UNDOCUMENTED" },
-    "entity": { "type": "string", "default": "this", "description": "The entity to test. The value must be only \"this\".", "title": "Entity" },
+    "entity": { "type": "string", "default": "this", "description": "The entity to test. The value must be only `this`.", "title": "Entity" },
     "properties": {
       "type": "object",
       "default": {},
-      "description": "The entity's properties. \"on_fire\", \"on_ground\" is used for now.",
+      "description": "The entity's properties. `on_fire`, `on_ground` is used for now.",
       "title": "Properties",
       "additionalProperties": false,
       "properties": {

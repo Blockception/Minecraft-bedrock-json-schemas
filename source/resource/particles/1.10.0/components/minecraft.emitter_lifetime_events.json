@@ -18,7 +18,7 @@
     "timeline": {
       "title": "Timeline",
       "type": "object",
-      "description": "A series of times, e.g. 0.0 or 1.0, that trigger the event, these get fired on every loop the emitter goes through, \"time\" is the time, e.g. one line might be: \"0.4\": \"event\"",
+      "description": "A series of times, e.g. 0.0 or 1.0, that trigger the event, these get fired on every loop the emitter goes through, `time` is the time, e.g. one line might be: `0.4`: `event`",
       "propertyNames": { "pattern": "^[\\d\\.]+$" },
       "additionalProperties": {
         "title": "Timeline Object",
@@ -28,7 +28,7 @@
     },
     "travel_distance_events": {
       "title": "Travel Distance Events",
-      "description": "A series of distances, e.g. 0.0 or 1.0, that trigger the event these get fired when the emitter has moved by the specified input distance, e.g. one line might be: \"0.4\": \"event\"",
+      "description": "A series of distances, e.g. 0.0 or 1.0, that trigger the event these get fired when the emitter has moved by the specified input distance, e.g. one line might be: `0.4`: `event`",
       "propertyNames": { "pattern": "^[\\d\\.]+$" }
     },
     "looping_travel_distance_events": {

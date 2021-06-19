@@ -23,7 +23,7 @@
     "ignore_mob_damage": {
       "type": "boolean",
       "default": false,
-      "description": "If true, the mob will not panic in response to damage from other mobs. This overrides the damage types in \"damage_sources\"",
+      "description": "If true, the mob will not panic in response to damage from other mobs. This overrides the damage types in `damage_sources`",
       "title": "TODO Title"
     },
     "prefer_water": { "type": "boolean", "default": false, "description": "If true, the mob will prefer water over land", "title": "TODO Title" },

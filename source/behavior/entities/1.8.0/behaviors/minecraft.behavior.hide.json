@@ -8,13 +8,19 @@
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
-    "duration": { "type": "number", "default": 1, "description": "Amount of time in seconds that the mob reacts.", "title": "TODO Title" },
-    "poi_type": { "type": "string", "default": "", "description": "Defines what POI type to hide at.", "title": "TODO Title" },
+    "duration": { "type": "number", "default": 1, "description": "Amount of time in seconds that the mob reacts.", "title": "Duration" },
+    "poi_type": {
+      "type": "string",
+      "default": "",
+      "description": "Defines what POI type to hide at.",
+      "title": "Point Of Interest Type",
+      "examples": ["bed"]
+    },
     "timeout_cooldown": {
       "type": "number",
       "default": 8,
       "description": "The cooldown time in seconds before the goal can be reused after a internal failure or timeout condition.",
-      "title": "TODO Title"
+      "title": "Timeout Cooldown"
     }
   }
 }
