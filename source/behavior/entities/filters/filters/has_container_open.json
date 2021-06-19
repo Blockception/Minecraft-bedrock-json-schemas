@@ -8,7 +8,7 @@
     "operator": { "$ref": "./types/operator.json" },
     "subject": { "$ref": "./types/subject.json" },
     "value": {
-      "description": "True or false.",
+      "description": "(Optional) true or false.",
       "oneOf": [
         { "type": "boolean", "default": true },
         { "type": "string", "enum": ["true", "false"] }

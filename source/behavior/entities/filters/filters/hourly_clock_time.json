@@ -13,6 +13,12 @@
     },
     "operator": { "$ref": "./types/operator.json" },
     "subject": { "$ref": "./types/subject.json" },
-    "value": { "type": "integer", "description": "An integer value.", "minimum": 0, "maximum": 24000, "title": "Value" }
+    "value": {
+      "type": "integer",
+      "description": "(Required) An integer value set between 0 and 24000",
+      "minimum": 0,
+      "maximum": 24000,
+      "title": "Value"
+    }
   }
 }

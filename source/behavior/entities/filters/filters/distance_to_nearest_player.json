@@ -6,8 +6,8 @@
   "required": ["value"],
   "properties": {
     "test": { "type": "string", "title": "Test Property", "description": "Compares the distance to the nearest Player with a float value." },
-    "operator": { "$ref": "./types/operator.json", "description": "(Optional) The comparison to apply with `value`.", "title": "Operator" },
-    "subject": { "$ref": "./types/subject.json", "description": "(Optional) The subject of this filter test.", "title": "Subject" },
+    "operator": { "$ref": "./types/operator.json" },
+    "subject": { "$ref": "./types/subject.json" },
     "value": { "type": "number", "description": "(Required) A floating point value.", "title": "Value" }
   }
 }
