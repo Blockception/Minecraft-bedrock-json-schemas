@@ -3,13 +3,27 @@
   "additionalProperties": false,
   "description": "The function exploration_map",
   "title": "Exploration Map",
+  "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "exploration_map", "description": "UNDOCUMENTED", "title": "TODO Title" },
+    "function": { "type": "string", "const": "exploration_map", "description": "UNDOCUMENTED", "title": "Function" },
     "destination": {
       "type": "string",
       "description": "The destination value defines what type of treasure map they receive.",
-      "enum": ["endcity", "fortress", "mineshaft", "monument", "ruins", "stronghold", "temple", "village", "mansion", "shipwreck", "buriedtreasure", "pillageroutpost"],
-      "title": "TODO Title"
+      "enum": [
+        "endcity",
+        "fortress",
+        "mineshaft",
+        "monument",
+        "ruins",
+        "stronghold",
+        "temple",
+        "village",
+        "mansion",
+        "shipwreck",
+        "buriedtreasure",
+        "pillageroutpost"
+      ],
+      "title": "Destination"
     }
   }
 }

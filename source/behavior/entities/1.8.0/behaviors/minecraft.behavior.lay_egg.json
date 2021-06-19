@@ -12,20 +12,20 @@
       "type": "number",
       "default": 0.5,
       "description": "Distance in blocks within the mob considers it has reached the goal. This is the `wiggle room` to stop the AI from bouncing back and forth trying to reach a specific spot",
-      "title": "TODO Title"
+      "title": "Goal Radius"
     },
-    "on_lay": { "$ref": "../types/event.json", "description": "Event to run when this mob lays the egg.", "title": "TODO Title" },
+    "on_lay": { "$ref": "../types/event.json", "description": "Event to run when this mob lays the egg.", "title": "On Lay" },
     "search_height": {
       "type": "integer",
       "default": 1,
       "description": "Height in blocks the mob will look for sand block to move towards",
-      "title": "TODO Title"
+      "title": "Search Height"
     },
     "search_range": {
       "type": "integer",
       "default": 0,
       "description": "The distance in blocks it will look for a sand block to move towards",
-      "title": "TODO Title"
+      "title": "Search Range"
     }
   }
 }
