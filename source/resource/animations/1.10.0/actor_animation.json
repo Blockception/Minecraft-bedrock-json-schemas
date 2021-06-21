@@ -154,7 +154,7 @@
                     { "$ref": "../../../molang/arraynumber3.json" },
                     {
                       "type": "object",
-                      "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$" },
+                      "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$", "examples": ["0.0", "1.0"] },
                       "additionalProperties": {
                         "title": "Timeline Object",
                         "description": "A single point in time",
@@ -176,7 +176,7 @@
                     { "$ref": "../../../molang/arraynumber3.json" },
                     {
                       "type": "object",
-                      "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$" },
+                      "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$", "examples": ["0.0", "1.0"] },
                       "additionalProperties": {
                         "title": "Timeline Object",
                         "description": "A single point in time",
@@ -209,7 +209,7 @@
                     { "$ref": "#/definitions/ScaleV3" },
                     {
                       "type": "object",
-                      "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$" },
+                      "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$", "examples": ["0.0", "1.0"] },
                       "additionalProperties": {
                         "title": "Timeline Object",
                         "description": "A single point in time",
@@ -245,7 +245,7 @@
             "title": "Particle Effects",
             "description": "UNDOCUMENTED",
             "type": "object",
-            "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$", "examples": ["0.0"] },
+            "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$", "examples": ["0.0", "1.0"] },
             "additionalProperties": {
               "title": "Timeline Object",
               "description": "A single point in time",
@@ -264,7 +264,7 @@
             "title": "Sound Effect",
             "description": "UNDOCUMENTED",
             "type": "object",
-            "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$" },
+            "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$", "examples": ["0.0", "1.0"] },
             "additionalProperties": {
               "title": "Timeline Object",
               "description": "A single point in time",
@@ -278,7 +278,7 @@
             "title": "Timeline",
             "description": "The time line",
             "type": "object",
-            "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$" },
+            "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$", "examples": ["0.0", "1.0"] },
             "additionalProperties": {
               "oneOf": [
                 { "type": "string", "title": "Molang", "description": "Variable definition", "pattern": "^(v|variable)\\..*=.*;$" },
