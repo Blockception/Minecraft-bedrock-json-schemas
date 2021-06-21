@@ -139,7 +139,7 @@
             "title": "Bones",
             "minProperties": 1,
             "description": "Defines how the bones in an animation move or transform",
-            "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$", "examples": ["0.0", "1.0"] },
+            "propertyNames": { "examples": ["leftArm"] },
             "type": "object",
             "additionalProperties": {
               "title": "Bone Transformation",
