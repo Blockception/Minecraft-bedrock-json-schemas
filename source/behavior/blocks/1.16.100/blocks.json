@@ -10,15 +10,8 @@
       "type": "object",
       "title": "Component",
       "description": "UNDOCUMENTED",
-      "additionalProperties": false,
+      "propertyNames": { "examples": ["tag:foo"] },
       "properties": {
-        "minecraft:on_fall_on": { "$ref": "./components/minecraft.on_fall_on.json" },
-        "minecraft:on_interact": { "$ref": "./components/minecraft.on_interact.json" },
-        "minecraft:on_placed": { "$ref": "./components/minecraft.on_placed.json" },
-        "minecraft:on_player_destroyed": { "$ref": "./components/minecraft.on_player_destroyed.json" },
-        "minecraft:on_player_placing": { "$ref": "./components/minecraft.on_player_placing.json" },
-        "minecraft:on_step_off": { "$ref": "./components/minecraft.on_step_off.json" },
-        "minecraft:on_step_on": { "$ref": "./components/minecraft.on_step_on.json" },
         "minecraft:block_light_absorption": { "$ref": "./components/minecraft.block_light_absorption.json" },
         "minecraft:block_light_emission": { "$ref": "./components/minecraft.block_light_emission.json" },
         "minecraft:breakonpush": { "$ref": "./components/minecraft.breakonpush.json" },
@@ -31,9 +24,17 @@
         "minecraft:friction": { "$ref": "./components/minecraft.friction.json" },
         "minecraft:geometry": { "$ref": "./components/minecraft.geometry.json" },
         "minecraft:immovable": { "$ref": "./components/minecraft.immovable.json" },
+        "minecraft:loot": { "$ref": "./components/minecraft.loot.json" },
         "minecraft:map_color": { "$ref": "./components/minecraft.map_color.json" },
         "minecraft:material_instances": { "$ref": "./components/minecraft.material_instances.json" },
         "minecraft:onlypistonpush": { "$ref": "./components/minecraft.onlypistonpush.json" },
+        "minecraft:on_fall_on": { "$ref": "./components/minecraft.on_fall_on.json" },
+        "minecraft:on_interact": { "$ref": "./components/minecraft.on_interact.json" },
+        "minecraft:on_placed": { "$ref": "./components/minecraft.on_placed.json" },
+        "minecraft:on_player_destroyed": { "$ref": "./components/minecraft.on_player_destroyed.json" },
+        "minecraft:on_player_placing": { "$ref": "./components/minecraft.on_player_placing.json" },
+        "minecraft:on_step_off": { "$ref": "./components/minecraft.on_step_off.json" },
+        "minecraft:on_step_on": { "$ref": "./components/minecraft.on_step_on.json" },
         "minecraft:pick_collision": { "$ref": "./components/minecraft.pick_collision.json" },
         "minecraft:placement_filter": { "$ref": "./components/minecraft.placement_filter.json" },
         "minecraft:preventsjumping": { "$ref": "./components/minecraft.preventsjumping.json" },
@@ -42,6 +43,9 @@
         "minecraft:ticking": { "$ref": "./components/minecraft.ticking.json" },
         "minecraft:unit_cube": { "$ref": "./components/minecraft.unit_cube.json" },
         "minecraft:unwalkable": { "$ref": "./components/minecraft.unwalkable.json" }
+      },
+      "additionalProperties": {
+        "type": "object"
       }
     }
   },
@@ -88,7 +92,7 @@
             "properties": {
               "title": "Properties",
               "description": "UNDOCUMENATED",
-              "propertyNames": { "pattern": "^([a-zA-Z0-9_]+:[a-zA-Z0-9_\\-]+)$" },
+              "propertyNames": { "pattern": "^([a-zA-Z0-9_]+:[a-zA-Z0-9_\\-]+)$", "examples": ["self:foo"] },
               "additionalProperties": {
                 "title": "Property",
                 "description": "A block property",
