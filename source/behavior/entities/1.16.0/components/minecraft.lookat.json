@@ -20,9 +20,9 @@
       "title": "Look Cooldown"
     },
     "look_event": {
-      "type": "string",
       "description": "The event identifier to run when the entities specified in filters look at this entity",
-      "title": "Look Event"
+      "title": "Look Event",
+      "$ref": "../types/event.json"
     },
     "search_radius": {
       "type": "number",
