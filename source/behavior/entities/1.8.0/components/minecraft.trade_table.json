@@ -10,21 +10,21 @@
       "type": "boolean",
       "default": false,
       "description": "Determines when the mob transforms, if the trades should be converted when the new mob has a economy_trade_table. When the trades are converted, the mob will generate a new trade list with their new trade table, but then it will try to convert any of the same trades over to have the same enchantments and user data. For example, if the original has a Emerald to Enchanted Iron Sword (Sharpness 1), and the new trade also has an Emerald for Enchanted Iron Sword, then the enchantment will be Sharpness 1.",
-      "title": "TODO Title"
+      "title": "Convert Trades Economy"
     },
-    "display_name": { "type": "string", "description": "Name to be displayed while trading with this entity.", "title": "TODO Title" },
+    "display_name": { "type": "string", "description": "Name to be displayed while trading with this entity.", "title": "Display Name" },
     "new_screen": {
       "type": "boolean",
       "default": false,
       "description": "Used to determine if trading with entity opens the new trade screen.",
-      "title": "TODO Title"
+      "title": "New Screen"
     },
     "persist_trades": {
       "type": "boolean",
       "default": false,
       "description": "Determines if the trades should persist when the mob transforms. This makes it so that the next time the mob is transformed to something with a trade_table or economy_trade_table, then it keeps their trades.",
-      "title": "TODO Title"
+      "title": "Persist Trades"
     },
-    "table": { "type": "string", "description": "File path relative to the resource pack root for this entity's trades.", "title": "TODO Title" }
+    "table": { "type": "string", "description": "File path relative to the resource pack root for this entity's trades.", "title": "Table" }
   }
 }

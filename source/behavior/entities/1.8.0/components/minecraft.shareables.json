@@ -9,6 +9,7 @@
     "items": {
       "type": "array",
       "description": "List of items that the entity wants to share",
+      "title": "Shareables Items",
       "items": {
         "type": "object",
         "properties": {
@@ -20,8 +21,7 @@
             "description": "Defines the item this entity wants to craft with the item defined above. Should be an item name"
           }
         }
-      },
-      "title": "TODO Title"
+      }
     }
   }
 }

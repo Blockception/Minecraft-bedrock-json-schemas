@@ -23,13 +23,16 @@
           "items": [
             { "type": "number", "title": "A" },
             { "type": "number", "title": "B" }
-          ],
-          "title": "TODO Title"
+          ]
         },
         { "type": "number", "default": 0 }
       ]
     },
-    "time_down_event": { "description": "Event to fire when the time on the timer runs out", "title": "TODO", "$ref": "../types/event.json" },
+    "time_down_event": {
+      "description": "Event to fire when the time on the timer runs out",
+      "title": "Time Down Event",
+      "$ref": "../types/event.json"
+    },
     "random_time_choices": {
       "type": "array",
       "default": [],
