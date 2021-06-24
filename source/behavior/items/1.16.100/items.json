@@ -3,6 +3,7 @@
   "description": "Minecraft items 1.16.100",
   "required": ["format_version", "minecraft:item"],
   "title": "Item",
+  "type": "object",
   "properties": {
     "format_version": { "type": "string", "description": "UNDOCUMENTED", "title": "TODO Title" },
     "minecraft:item": {
@@ -42,6 +43,7 @@
           "additionalProperties": { "type": "object" },
           "type": "object",
           "description": "The components of this item",
+          "title": "Components",
           "properties": {
             "minecraft:armor": { "$ref": "./components/minecraft.armor.json" },
             "minecraft:block_placer": { "$ref": "./components/minecraft.block_placer.json" },

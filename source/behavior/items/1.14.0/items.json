@@ -3,6 +3,7 @@
   "description": "Minecraft items 1.14.0",
   "required": ["format_version", "minecraft:item"],
   "title": "Item",
+  "type": "object",
   "properties": {
     "format_version": { "type": "string", "description": "UNDOCUMENTED", "title": "TODO Title" },
     "minecraft:item": {
