@@ -13,7 +13,7 @@
       "items": {
         "title": "Block Reference",
         "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED"
+        "$comment": "UNDOCUMENTED",
         "type": "string"
       }
     },
@@ -24,7 +24,7 @@
       "items": {
         "title": "Block Reference",
         "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED"
+        "$comment": "UNDOCUMENTED",
         "type": "string"
       }
     },
