@@ -10,24 +10,25 @@
       "type": "number",
       "default": 3,
       "description": "The strength with which blocking entities should be knocked back",
-      "title": "TODO Title"
+      "title": "Knockback Strength"
     },
     "reaction_choices": {
       "type": "array",
       "description": "A list of weighted responses to the melee attack being blocked",
+      "title": "Reaction Choices",
       "items": {
         "additionalProperties": false,
         "type": "object",
         "properties": {
-          "weight": { "type": "integer" },
+          "weight": { "type": "integer", "title": "Weight", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
           "value": {
-            "additionalProperties": false,
-            "type": "object",
-            "properties": { "event": { "type": "string" }, "target": { "type": "string", "$ref": "../../filters/filters/types/subject.json" } }
+            "title": "Value",
+            "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED",
+            "$ref": "../types/event.json"
           }
         }
-      },
-      "title": "TODO Title"
+      }
     }
   }
 }

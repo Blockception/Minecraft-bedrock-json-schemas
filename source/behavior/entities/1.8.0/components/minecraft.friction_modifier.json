@@ -10,7 +10,7 @@
       "type": "number",
       "default": 1.0,
       "description": "The higher the number, the more the friction affects this entity. A value of 1.0 means regular friction, while 2.0 means twice as much",
-      "title": "TODO Title"
+      "title": "Value"
     }
   }
 }

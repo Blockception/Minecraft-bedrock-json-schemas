@@ -12,7 +12,7 @@
       "type": "boolean",
       "default": false,
       "description": "If true, the mob can stop being tempted if the player moves too fast while close to this mob",
-      "title": "TODO Title"
+      "title": "Can Get Scared"
     },
     "can_tempt_while_ridden": {
       "type": "boolean",
@@ -23,14 +23,14 @@
     "items": {
       "type": "array",
       "description": "List of items this mob is tempted by",
-      "items": { "$ref": "../../../../general/item/identifier.json" },
-      "title": "TODO Title"
+      "items": { "$ref": "../../../../general/item/identifier.json", "title": "Item" },
+      "title": "Items"
     },
     "within_radius": {
       "type": "number",
       "default": 0,
       "description": "Distance in blocks this mob can get tempted by a player holding an item they like",
-      "title": "TODO Title"
+      "title": "Within Radius"
     }
   }
 }

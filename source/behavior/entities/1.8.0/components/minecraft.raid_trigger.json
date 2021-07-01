@@ -9,7 +9,7 @@
     "triggered_event": {
       "$ref": "../types/event.json",
       "description": "Event to run we attempt to trigger a raid on the village.",
-      "title": "TODO Title"
+      "title": "Triggered Event"
     }
   }
 }

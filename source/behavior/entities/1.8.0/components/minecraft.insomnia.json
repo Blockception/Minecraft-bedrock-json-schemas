@@ -10,7 +10,7 @@
       "type": "number",
       "default": 3,
       "description": "Number of days the mob has to stay up until the insomnia effect begins.",
-      "title": "TODO Title"
+      "title": "Days Until Insomnia"
     }
   }
 }

@@ -5,7 +5,6 @@
       "type": "object",
       "dependencies": {
         "additionalProperties": ["type"],
-        "items": ["type"],
         "properties": ["type"]
       },
       "additionalProperties": {

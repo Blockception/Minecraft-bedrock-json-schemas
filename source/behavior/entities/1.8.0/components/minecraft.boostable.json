@@ -6,15 +6,18 @@
   "description": "Defines the conditions and behavior of a rideable entity's boost",
   "required": [],
   "properties": {
-    "duration": { "type": "number", "default": 3, "description": "Time in seconds for the boost", "title": "TODO Title" },
+    "duration": { "type": "number", "default": 3, "description": "Time in seconds for the boost", "title": "Duration" },
     "speed_multiplier": {
       "type": "number",
       "default": 1,
       "description": "Factor by which the entity's normal speed increases. E.g. 2.0 means go twice as fast",
-      "title": "TODO Title"
+      "title": "Speed Multiplier"
     },
     "boost_items": {
       "type": "array",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "title": "Boost Items",
       "items": {
         "type": "object",
         "description": "List of items that can be used to boost while riding this entity.",
@@ -31,10 +34,7 @@
             "description": "The item used to boost will become this item once it is used up"
           }
         }
-      },
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
-      "title": "TODO Title"
+      }
     }
   }
 }

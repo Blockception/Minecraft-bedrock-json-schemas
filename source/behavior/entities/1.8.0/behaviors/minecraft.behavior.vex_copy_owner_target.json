@@ -10,7 +10,7 @@
     "entity_types": {
       "$ref": "../types/entity_types.json",
       "description": "List of entities this mob can copy the owner from.",
-      "title": "TODO Title"
+      "title": "Entity Types"
     }
   }
 }
