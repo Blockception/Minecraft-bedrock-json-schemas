@@ -33,6 +33,7 @@
             "extent": {
               "title": "Extent",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "array",
               "items": [
                 {
@@ -66,6 +67,7 @@
     "iteration": {
       "title": "Iteration",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "additionalProperties": false,
       "required": ["iterations", "places_feature", "identifier"],
       "properties": {
@@ -101,12 +103,14 @@
                 "denominator": {
                   "title": "Denominator",
                   "description": "UNDOCUMENTED",
+                  "$comment": "UNDOCUMENTED",
                   "type": "integer",
                   "minimum": 1
                 },
                 "numerator": {
                   "title": "Numerator",
                   "description": "UNDOCUMENTED",
+                  "$comment": "UNDOCUMENTED",
                   "type": "integer",
                   "minimum": 1
                 }
@@ -142,6 +146,7 @@
     "after_sky_pass": {
       "title": "First Pass",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
         "$ref": "#/definitions/iteration"
@@ -150,6 +155,7 @@
     "after_surface_pass": {
       "title": "First Pass",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
         "$ref": "#/definitions/iteration"
@@ -158,6 +164,7 @@
     "after_underground_pass": {
       "title": "First Pass",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
         "$ref": "#/definitions/iteration"
@@ -166,6 +173,7 @@
     "before_sky_pass": {
       "title": "First Pass",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
         "$ref": "#/definitions/iteration"
@@ -174,6 +182,7 @@
     "before_surface_pass": {
       "title": "First Pass",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
         "$ref": "#/definitions/iteration"
@@ -182,6 +191,7 @@
     "before_underground_pass": {
       "title": "First Pass",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
         "$ref": "#/definitions/iteration"
@@ -190,6 +200,7 @@
     "final_pass": {
       "title": "First Pass",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
         "$ref": "#/definitions/iteration"
@@ -198,6 +209,7 @@
     "first_pass": {
       "title": "First Pass",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
         "$ref": "#/definitions/iteration"
@@ -206,6 +218,7 @@
     "surface_pass": {
       "title": "First Pass",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
         "$ref": "#/definitions/iteration"
@@ -214,6 +227,7 @@
     "sky_pass": {
       "title": "First Pass",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
         "$ref": "#/definitions/iteration"
@@ -222,6 +236,7 @@
     "underground_pass": {
       "title": "First Pass",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
         "$ref": "#/definitions/iteration"

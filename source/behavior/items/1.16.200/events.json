@@ -2,6 +2,7 @@
   "$id": "blockception.minecraft.behavior.1.16.200.items.events",
   "title": "Events",
   "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "type": "object",
   "properties": { "on_consume": { "$ref": "#/definitions/event_base" } },
   "additionalProperties": { "$ref": "#/definitions/event_base" },
@@ -9,6 +10,7 @@
     "event_base": {
       "title": "Event",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
       "$ref": "#/definitions/event_functions",
@@ -16,35 +18,48 @@
         "sequence": {
           "title": "Sequence",
           "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "type": "array",
-          "items": { "title": "Sequence", "description": "UNDOCUMENTED", "type": "object", "$ref": "#/definitions/event_functions" }
+          "items": {
+            "title": "Sequence",
+            "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED",
+            "type": "object",
+            "$ref": "#/definitions/event_functions"
+          }
         },
         "randomize": {
           "title": "Randomize",
           "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "type": "array",
           "items": {
             "title": "Randomize",
             "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED",
             "type": "object",
             "$ref": "#/definitions/event_functions",
             "required": ["weight"],
-            "properties": { "weight": { "title": "Weight", "description": "UNDOCUMENTED", "type": "integer", "minimum": 0 } }
+            "properties": {
+              "weight": { "title": "Weight", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "integer", "minimum": 0 }
+            }
           }
         },
         "run_command": {
           "title": "Run Command",
           "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
           "properties": {
             "command": {
               "title": "Command",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "array",
-              "items": { "type": "string", "title": "Command", "description": "UNDOCUMENTED" }
+              "items": { "type": "string", "title": "Command", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
             },
-            "target": { "type": "string", "title": "Target", "description": "UNDOCUMENTED", "enum": ["other"] }
+            "target": { "type": "string", "title": "Target", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "enum": ["other"] }
           }
         }
       }
@@ -52,6 +67,7 @@
     "event_functions": {
       "title": "Event",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "object",
       "properties": {
         "add_mob_effect": { "$ref": "./events/add_mob_effect.json" },

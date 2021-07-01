@@ -2,6 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.ram_attack",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "type": "object",
   "title": "Ram Attack 1.8.0",
   "additionalProperties": false,
@@ -12,11 +13,13 @@
       "title": "Run speed",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "number"
     },
     "ram_speed": {
       "title": "Ram speed",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "number"
     },
@@ -24,11 +27,13 @@
       "title": "Minimum Ram speed",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "number"
     },
     "ram_distance": {
       "title": "Ram Distance",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "number"
     },
@@ -36,11 +41,13 @@
       "title": "Knockback force",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "number"
     },
     "knockback_height": {
       "title": "Knockback height",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "number"
     },
@@ -48,17 +55,20 @@
       "title": "Pre ram sound",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "string"
     },
     "ram_impact_sound": {
       "title": "Ram impact sound",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "string"
     },
     "cooldown_range": {
       "title": "Cooldown range",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": [
@@ -69,6 +79,7 @@
     "on_start": {
       "title": "On start",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "$ref": "../types/event.json"
     }

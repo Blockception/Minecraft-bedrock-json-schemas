@@ -4,6 +4,7 @@
   "additionalProperties": false,
   "title": "Fog",
   "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "definitions": {
     "colorHexOrArray": {
       "examples": ["#056bd1"],

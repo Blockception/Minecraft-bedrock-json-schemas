@@ -10,11 +10,13 @@
         {
           "type": "string",
           "title": "Block Reference",
-          "description": "UNDOCUMENTED"
+          "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED"
         },
         {
           "type": "array",
           "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "title": "Block Reference",
           "minItems": 1,
           "items": {
@@ -22,20 +24,24 @@
               {
                 "type": "string",
                 "description": "UNDOCUMENTED",
+                "$comment": "UNDOCUMENTED",
                 "title": "Block Reference"
               },
               {
                 "type": "array",
                 "description": "UNDOCUMENTED",
+                "$comment": "UNDOCUMENTED",
                 "items": [
                   {
                     "title": "Biome Reference",
                     "description": "UNDOCUMENTED",
+                    "$comment": "UNDOCUMENTED",
                     "type": "string"
                   },
                   {
                     "title": "_",
                     "description": "UNDOCUMENTED",
+                    "$comment": "UNDOCUMENTED",
                     "type": "integer"
                   }
                 ]
@@ -47,10 +53,30 @@
     }
   },
   "properties": {
-    "hills_transformation": { "title": "Hills Transformation", "description": "UNDOCUMENTED", "$ref": "#/definitions/transformation" },
-    "mutate_transformation": { "title": "Mutate Transformation", "description": "UNDOCUMENTED", "$ref": "#/definitions/transformation" },
-    "river_transformation": { "title": "River Transformation", "description": "UNDOCUMENTED", "$ref": "#/definitions/transformation" },
-    "shore_transformation": { "title": "Shore Transformation", "description": "UNDOCUMENTED", "$ref": "#/definitions/transformation" },
+    "hills_transformation": {
+      "title": "Hills Transformation",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$ref": "#/definitions/transformation"
+    },
+    "mutate_transformation": {
+      "title": "Mutate Transformation",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$ref": "#/definitions/transformation"
+    },
+    "river_transformation": {
+      "title": "River Transformation",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$ref": "#/definitions/transformation"
+    },
+    "shore_transformation": {
+      "title": "Shore Transformation",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$ref": "#/definitions/transformation"
+    },
     "generate_for_climates": {
       "title": "Generate For Climates",
       "description": "Controls the world generation climate categories that this biome can spawn for.  A single biome can be associated with multiple categories with different weightings.",
@@ -58,6 +84,7 @@
       "items": {
         "title": "_",
         "description": "UNDOCUMENTED",
+        "$comment": "UNDOCUMENTED",
         "type": "array",
         "items": [
           {

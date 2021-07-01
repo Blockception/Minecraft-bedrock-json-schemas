@@ -5,7 +5,7 @@
   "description": "Returns the condition true if the actor's mark variant is matched to the value.",
   "title": "Has Mark Variant",
   "properties": {
-    "condition": { "type": "string", "title": "Condition", "description": "UNDOCUMENTED" },
+    "condition": { "type": "string", "title": "Condition", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
     "value": { "type": "integer", "default": "0", "description": "Tests for the actor's mark variant (if it has one)", "title": "Value" }
   }
 }

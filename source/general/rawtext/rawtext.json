@@ -1,6 +1,7 @@
 {
   "title": "RawText",
   "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "type": "object",
   "additionalProperties": false,
   "required": ["rawtext"],
@@ -8,6 +9,7 @@
     "rawtext": {
       "title": "Rawtext",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
         "oneOf": [
@@ -22,6 +24,7 @@
     "selector": {
       "title": "Selector",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
       "required": ["selector"],
@@ -29,6 +32,7 @@
         "selector": {
           "title": "Selector",
           "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "type": "string",
           "examples": ["@a", "@s", "@r", "@p", "@e", "@initiator"],
           "pattern": "^@.*$"
@@ -38,6 +42,7 @@
     "score": {
       "title": "Score",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
       "required": ["score"],
@@ -45,6 +50,7 @@
         "score": {
           "title": "Score",
           "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
           "required": ["name", "objective"],
@@ -58,6 +64,7 @@
             "objective": {
               "title": "Objective",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "string"
             }
           }
@@ -67,6 +74,7 @@
     "text": {
       "title": "Text",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
       "required": ["text"],
@@ -74,6 +82,7 @@
         "text": {
           "title": "Text",
           "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "type": "string"
         }
       }
@@ -81,6 +90,7 @@
     "translate": {
       "title": "Translate",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
       "required": ["translate"],
@@ -88,6 +98,7 @@
         "translate": {
           "title": "Translate",
           "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "type": "string"
         },
         "with": {
@@ -98,6 +109,7 @@
     "with": {
       "title": "With",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "examples": ["\n", { "rawtext": [] }],
       "items": {
         "oneOf": [
@@ -105,6 +117,7 @@
           {
             "title": "Rawtext",
             "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED",
             "type": "object",
             "additionalProperties": false,
             "properties": {

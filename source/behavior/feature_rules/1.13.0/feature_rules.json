@@ -11,6 +11,7 @@
     "coord_dist": {
       "title": "",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "oneOf": [
         {
           "$ref": "../../../molang/number.json",
@@ -25,12 +26,14 @@
             "numerator": {
               "title": "Numerator",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "number",
               "minimum": 1
             },
             "denominator": {
               "title": "Denominator",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "number",
               "minimum": 1
             }
@@ -55,6 +58,7 @@
         "description": {
           "title": "Description",
           "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
           "required": ["identifier", "places_feature"],
@@ -138,12 +142,14 @@
                     "numerator": {
                       "title": "Numerator",
                       "description": "UNDOCUMENTED",
+                      "$comment": "UNDOCUMENTED",
                       "type": "number",
                       "minimum": 1
                     },
                     "denominator": {
                       "title": "Denominator",
                       "description": "UNDOCUMENTED",
+                      "$comment": "UNDOCUMENTED",
                       "type": "number",
                       "minimum": 1
                     }

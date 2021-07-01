@@ -14,7 +14,13 @@
       "description": "If true, the mob can stop being tempted if the player moves too fast while close to this mob",
       "title": "TODO Title"
     },
-    "can_tempt_while_ridden": { "type": "boolean", "title": "Can Tempt While Ridden", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "can_tempt_while_ridden": {
+      "type": "boolean",
+      "title": "Can Tempt While Ridden",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
     "items": {
       "type": "array",
       "description": "List of items this mob is tempted by",

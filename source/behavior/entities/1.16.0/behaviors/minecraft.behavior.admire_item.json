@@ -12,8 +12,18 @@
       "description": "The sound event to play when admiring the item",
       "title": "Admire Item Sound"
     },
-    "on_admire_item_start": { "$ref": "../types/event.json", "title": "On Admire Item Start", "description": "UNDOCUMENTED" },
-    "on_admire_item_stop": { "$ref": "../types/event.json", "title": "On Admire Item Stop", "description": "UNDOCUMENTED" },
+    "on_admire_item_start": {
+      "$ref": "../types/event.json",
+      "title": "On Admire Item Start",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "on_admire_item_stop": {
+      "$ref": "../types/event.json",
+      "title": "On Admire Item Stop",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
     "sound_interval": {
       "default": 0,
       "description": "The range of time in seconds to randomly wait before playing the sound again.",

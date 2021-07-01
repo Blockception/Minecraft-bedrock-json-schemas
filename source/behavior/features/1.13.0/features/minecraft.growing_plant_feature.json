@@ -60,6 +60,7 @@
     "description": {
       "title": "Description",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "object",
       "required": ["identifier"],
       "properties": {

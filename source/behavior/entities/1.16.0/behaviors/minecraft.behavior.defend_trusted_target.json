@@ -20,7 +20,7 @@
       "description": "Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more",
       "title": "Must See Forget Duration"
     },
-    "on_defend_start": { "$ref": "../types/event.json", "title": "On Defend Start", "description": "UNDOCUMENTED" },
+    "on_defend_start": { "$ref": "../types/event.json", "title": "On Defend Start", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
     "within_radius": {
       "type": "number",
       "default": 0,
@@ -33,6 +33,6 @@
       "title": "Entity Types",
       "additionalProperties": false
     },
-    "sound_chance": { "title": "Sound Chance", "description": "UNDOCUMENTED", "type": "number" }
+    "sound_chance": { "title": "Sound Chance", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" }
   }
 }

@@ -18,8 +18,8 @@
       "description": "How much should the discount be modified by when the player has cured the Zombie Villager. Can be specified as a pair of numbers (low-tier trade discount and high-tier trade discount)",
       "title": "Cured Discount",
       "items": [
-        { "type": "integer", "title": "A", "description": "UNDOCUMENTED" },
-        { "type": "integer", "title": "B", "description": "UNDOCUMENTED" }
+        { "type": "integer", "title": "A", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+        { "type": "integer", "title": "B", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
       ]
     },
     "display_name": {
@@ -40,8 +40,8 @@
       "description": "The max the discount can be modified by when the player has cured the Zombie Villager. Can be specified as a pair of numbers (low-tier trade discount and high-tier trade discount)",
       "title": "Max Cured Discount",
       "items": [
-        { "type": "integer", "title": "A", "description": "UNDOCUMENTED" },
-        { "type": "integer", "title": "B", "description": "UNDOCUMENTED" }
+        { "type": "integer", "title": "A", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+        { "type": "integer", "title": "B", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
       ]
     },
     "max_nearby_cured_discount": {

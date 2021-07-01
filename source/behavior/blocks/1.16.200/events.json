@@ -2,6 +2,7 @@
   "$id": "blockception.minecraft.behavior.1.16.200.block.events",
   "title": "Events",
   "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "type": "object",
   "properties": {
     "minecraft:on_interact": { "$ref": "#/definitions/event_base" },
@@ -19,6 +20,7 @@
     "event_base": {
       "title": "Event",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
       "$ref": "#/definitions/event_functions",
@@ -26,20 +28,31 @@
         "sequence": {
           "title": "Sequence",
           "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "type": "array",
-          "items": { "title": "Sequence", "description": "UNDOCUMENTED", "type": "object", "$ref": "#/definitions/event_functions" }
+          "items": {
+            "title": "Sequence",
+            "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED",
+            "type": "object",
+            "$ref": "#/definitions/event_functions"
+          }
         },
         "randomize": {
           "title": "Randomize",
           "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "type": "array",
           "items": {
             "title": "Randomize",
             "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED",
             "type": "object",
             "$ref": "#/definitions/event_functions",
             "required": ["weight"],
-            "properties": { "weight": { "title": "Weight", "description": "UNDOCUMENTED", "type": "integer", "minimum": 0 } }
+            "properties": {
+              "weight": { "title": "Weight", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "integer", "minimum": 0 }
+            }
           }
         },
         "add_mob_effect": { "$ref": "./events/add_mob_effect.json" },
@@ -62,6 +75,7 @@
     "event_functions": {
       "title": "Event",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": true,
       "properties": {

@@ -41,11 +41,18 @@
       "description": "If true, this mob will chase after the target as long as it's a valid target",
       "title": "TODO Title"
     },
-    "stomp_range_multiplier": { "type": "number", "title": "Stomp Range Multiplier", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "stomp_range_multiplier": {
+      "type": "number",
+      "title": "Stomp Range Multiplier",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
     "no_damage_range_multiplier": {
       "type": "number",
       "title": "No Damage Range Multiplier",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }
   }

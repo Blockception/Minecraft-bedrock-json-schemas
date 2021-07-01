@@ -31,7 +31,17 @@
       "description": "The block distance in y that will be checked for mobs that this mob detects",
       "title": "Mob Detect Height"
     },
-    "can_nap_filters": { "$ref": "../../filters/filters.json", "description": "UNDOCUMENTED", "title": "Can Nap Filters" },
-    "wake_mob_exceptions": { "$ref": "../../filters/filters.json", "description": "UNDOCUMENTED", "title": "Wake Mob Exceptions" }
+    "can_nap_filters": {
+      "$ref": "../../filters/filters.json",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "title": "Can Nap Filters"
+    },
+    "wake_mob_exceptions": {
+      "$ref": "../../filters/filters.json",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "title": "Wake Mob Exceptions"
+    }
   }
 }

@@ -41,6 +41,7 @@
         { "type": "object", "$ref": "#/definitions/name_action" }
       ],
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "title": "Name Actions"
     }
   }

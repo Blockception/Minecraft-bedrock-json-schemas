@@ -13,7 +13,7 @@
       "title": "Ingredients",
       "oneOf": [{ "$ref": "./base types/item.json" }, { "type": "array", "items": { "$ref": "./base types/item.json" } }]
     },
-    "group": { "type": "string", "title": "Group", "description": "UNDOCUMENTED" },
+    "group": { "type": "string", "title": "Group", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
     "priority": { "type": "integer", "description": "Item used as output for the furnace recipe.", "title": "Priority" },
     "result": {
       "description": "When input items match the pattern then these items are the result.",

@@ -3,6 +3,7 @@
   "type": "object",
   "title": "Animation Controller 1.8.0",
   "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "definitions": {
     "animationspec": {
       "anyOf": [
@@ -160,14 +161,16 @@
                 "on_entry": {
                   "title": "On Entry",
                   "description": "UNDOCUMENTED",
+                  "$comment": "UNDOCUMENTED",
                   "type": "array",
-                  "items": { "pattern": "^.+;$", "title": "Molang", "description": "UNDOCUMENTED", "type": "string" }
+                  "items": { "pattern": "^.+;$", "title": "Molang", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "string" }
                 },
                 "on_exit": {
                   "title": "On Exit",
                   "description": "UNDOCUMENTED",
+                  "$comment": "UNDOCUMENTED",
                   "type": "array",
-                  "items": { "pattern": "^.+;$", "title": "Molang", "description": "UNDOCUMENTED", "type": "string" }
+                  "items": { "pattern": "^.+;$", "title": "Molang", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "string" }
                 }
               }
             }

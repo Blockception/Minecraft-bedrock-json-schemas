@@ -20,6 +20,6 @@
       "title": "Set Persistent"
     },
     "yd": { "type": "number", "default": 0, "description": "The height in blocks the mob jumps when leaping at its target", "title": "Yd" },
-    "target_dist": { "type": "number", "default": 0, "description": "UNDOCUMENTED", "title": "Target Dist" }
+    "target_dist": { "type": "number", "default": 0, "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Target Dist" }
   }
 }

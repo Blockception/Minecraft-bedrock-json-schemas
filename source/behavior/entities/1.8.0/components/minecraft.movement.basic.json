@@ -7,5 +7,6 @@
   "properties": {
     "max_turn": { "type": "number", "default": 30, "description": "The maximum number in degrees the mob can turn per tick.", "title": "TODO Title" }
   },
-  "description": "UNDOCUMENTED"
+  "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED"
 }

@@ -3,9 +3,10 @@
   "type": "object",
   "title": "Model Schema For 1.10.0",
   "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "required": ["format_version"],
   "properties": {
-    "debug": { "type": "boolean", "description": "UNDOCUMENTED", "title": "Debug" },
+    "debug": { "type": "boolean", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Debug" },
     "format_version": {
       "title": "1.10.0 Format Version",
       "type": "string",

@@ -28,15 +28,34 @@
       "title": "Ignore Mob Damage"
     },
     "prefer_water": { "type": "boolean", "default": false, "description": "If true, the mob will prefer water over land", "title": "Prefer Water" },
-    "panic_sound": { "type": "string", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Panic Sound" },
+    "panic_sound": {
+      "type": "string",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "title": "Panic Sound"
+    },
     "sound_interval": {
       "type": "object",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "title": "Sound Interval",
       "properties": {
-        "range_min": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Range Minimum" },
-        "range_max": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Range Maximum" }
+        "range_min": {
+          "type": "number",
+          "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
+          "title": "Range Minimum"
+        },
+        "range_max": {
+          "type": "number",
+          "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
+          "title": "Range Maximum"
+        }
       },
       "additionalProperties": false
     }

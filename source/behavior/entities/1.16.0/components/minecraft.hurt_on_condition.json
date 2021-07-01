@@ -9,15 +9,17 @@
       "type": "array",
       "title": "Damage Conditions",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "items": {
         "type": "object",
         "title": "Damage Condition",
         "description": "UNDOCUMENTED",
+        "$comment": "UNDOCUMENTED",
         "additionalProperties": false,
         "properties": {
           "filters": { "$ref": "../../filters/filters.json" },
           "cause": { "type": "string", "title": "Cause", "description": "Damage cause", "$ref": "../../../../general/entity/damage_source.json" },
-          "damage_per_tick": { "type": "integer", "title": "Damage Per Tick", "description": "UNDOCUMENTED" }
+          "damage_per_tick": { "type": "integer", "title": "Damage Per Tick", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
         }
       }
     }

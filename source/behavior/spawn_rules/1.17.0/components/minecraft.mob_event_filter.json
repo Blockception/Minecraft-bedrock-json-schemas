@@ -2,6 +2,7 @@
   "$id": "blockception.minecraft.behavior.spawn_rules.1.17.0.minecraft.mob_event_filter",
   "title": "Mob Event Filter 1.17.0",
   "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "additionalProperties": false,
-  "properties": { "event": { "type": "string", "description": "UNDOCUMENTED", "title": "Event" } }
+  "properties": { "event": { "type": "string", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Event" } }
 }

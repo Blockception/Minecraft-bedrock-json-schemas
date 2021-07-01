@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "anchor": { "type": "integer", "description": "UNDOCUMENTED", "title": "Anchor" },
+    "anchor": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Anchor" },
     "angle_offset": {
       "type": "number",
       "default": 0,
@@ -116,17 +116,20 @@
       "additionalProperties": false,
       "type": "object",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "title": "On Hit",
       "properties": {
         "definition_event": {
           "additionalProperties": false,
           "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "title": "Event",
           "type": "object",
           "properties": {
             "affect_projectile": {
               "type": "boolean",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "Affect Projectile"
             },
             "event_trigger": {
@@ -139,32 +142,38 @@
           "type": "object",
           "additionalProperties": false,
           "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "title": "Douse Fire"
         },
         "impact_damage": {
           "additionalProperties": false,
           "type": "object",
           "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "title": "Impact Damage",
           "properties": {
             "damage": {
               "type": "integer",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "Damage"
             },
             "knockback": {
               "type": "boolean",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "Knockback"
             },
             "destroy_on_hit": {
               "type": "boolean",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "Destroy On Hit"
             },
             "should_bounce": {
               "type": "boolean",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "Should Bounce"
             }
           }
@@ -173,32 +182,38 @@
           "additionalProperties": false,
           "type": "object",
           "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "title": "Mob Effect",
           "effect": "levitation",
           "properties": {
             "effect": {
               "type": "string",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "Effect"
             },
             "durationeasy": {
               "type": "integer",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "DurationEasy"
             },
             "durationnormal": {
               "type": "integer",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "DurationNormal"
             },
             "durationhard": {
               "type": "integer",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "DurationHard"
             },
             "amplifier": {
               "type": "integer",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "Amplifier"
             }
           }
@@ -207,26 +222,31 @@
           "additionalProperties": false,
           "type": "object",
           "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "title": "Particle On Hit",
           "properties": {
             "particle_type": {
               "type": "string",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "Particle Type"
             },
             "num_particles": {
               "type": "integer",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "Number Particles"
             },
             "on_entity_hit": {
               "type": "boolean",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "On Entity Hit"
             },
             "on_other_hit": {
               "type": "boolean",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "On Other Hit"
             }
           }
@@ -235,47 +255,56 @@
           "additionalProperties": false,
           "type": "object",
           "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "title": "Remove On Hit"
         },
         "spawn_chance": {
           "additionalProperties": false,
           "type": "object",
           "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "title": "Spawn Chance",
           "properties": {
             "first_spawn_percent_chance": {
               "type": "number",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "First Spawn Percent Chance"
             },
             "first_spawn_chance": {
               "type": "integer",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "First Spawn Chance"
             },
             "second_spawn_chance": {
               "type": "integer",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "Second Spawn Chance"
             },
             "first_spawn_count": {
               "type": "integer",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "First Spawn Count"
             },
             "second_spawn_count": {
               "type": "integer",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "Second Spawn Count"
             },
             "spawn_definition": {
               "type": "string",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "Spawn Definition"
             },
             "spawn_baby": {
               "type": "boolean",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "Spawn Baby"
             }
           }
@@ -287,30 +316,36 @@
             "radius": {
               "type": "number",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "Spawn Aoe Cloud"
             },
             "radius_on_use": {
               "type": "number",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "Radius On Use"
             },
             "potion": {
               "type": "integer",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "Potion"
             },
             "particle": {
               "type": "string",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "Particle"
             },
             "duration": {
               "type": "integer",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "Duration"
             },
             "color": {
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "Color",
               "type": "array",
               "format": "color-array",
@@ -341,11 +376,13 @@
             "affect_owner": {
               "type": "boolean",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "Affect Owner"
             },
             "reapplication_delay": {
               "type": "integer",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "title": "Reapplication Delay"
             }
           }
@@ -354,12 +391,14 @@
           "additionalProperties": false,
           "type": "object",
           "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "title": "Stick In Ground"
         },
         "teleport_owner": {
           "additionalProperties": false,
           "type": "object",
           "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "title": "Teleport Owner"
         }
       }

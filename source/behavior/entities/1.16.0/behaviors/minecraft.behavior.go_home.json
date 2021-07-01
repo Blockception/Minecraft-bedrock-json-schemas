@@ -10,6 +10,7 @@
       "type": "object",
       "title": "On Home Event",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "properties": {
         "event": { "type": "string", "pattern": "^[a-zA-Z0-9_\\-:]+$", "description": "The event to fire", "title": "Event" },
         "target": {
@@ -46,6 +47,6 @@
         { "type": "array", "items": { "$ref": "#/definitions/on_home_spec" } }
       ]
     },
-    "on_failed": { "$ref": "../types/event.json", "title": "On Failed", "description": "UNDOCUMENTED" }
+    "on_failed": { "$ref": "../types/event.json", "title": "On Failed", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
   }
 }

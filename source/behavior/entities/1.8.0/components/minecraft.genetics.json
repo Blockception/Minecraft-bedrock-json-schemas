@@ -46,11 +46,12 @@
                     {
                       "type": "object",
                       "description": "UNDOCUMENTED",
+                      "$comment": "UNDOCUMENTED",
                       "title": "TODO",
                       "additionalProperties": false,
                       "properties": {
-                        "range_min": { "type": "integer", "description": "UNDOCUMENTED", "title": "TODO" },
-                        "range_max": { "type": "integer", "description": "UNDOCUMENTED", "title": "TODO" }
+                        "range_min": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "TODO" },
+                        "range_max": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "TODO" }
                       }
                     }
                   ]
@@ -73,11 +74,12 @@
                     {
                       "type": "object",
                       "description": "UNDOCUMENTED",
+                      "$comment": "UNDOCUMENTED",
                       "title": "TODO",
                       "additionalProperties": false,
                       "properties": {
-                        "range_min": { "type": "integer", "description": "UNDOCUMENTED", "title": "TODO" },
-                        "range_max": { "type": "integer", "description": "UNDOCUMENTED", "title": "TODO" }
+                        "range_min": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "TODO" },
+                        "range_max": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "TODO" }
                       }
                     }
                   ]
@@ -88,6 +90,7 @@
         }
       },
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "title": "TODO Title"
     }
   }

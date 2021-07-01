@@ -13,10 +13,11 @@
         "additionalProperties": false,
         "title": "Slot Drop Chance",
         "description": "UNDOCUMENTED",
+        "$comment": "UNDOCUMENTED",
         "type": "object",
         "properties": {
-          "drop_chance": { "type": "number", "title": "Drop Chance", "description": "UNDOCUMENTED" },
-          "slot": { "type": "string", "title": "Slot", "description": "UNDOCUMENTED" }
+          "drop_chance": { "type": "number", "title": "Drop Chance", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+          "slot": { "type": "string", "title": "Slot", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
         }
       }
     },

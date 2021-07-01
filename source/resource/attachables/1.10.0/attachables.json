@@ -3,6 +3,7 @@
   "type": "object",
   "title": "Actor Animation 1.10.0",
   "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "required": ["format_version", "minecraft:attachable"],
   "properties": {
     "format_version": {
@@ -63,7 +64,8 @@
               "type": "object",
               "title": "Item",
               "description": "UNDOCUMENTED",
-              "additionalProperties": { "type": "string", "title": "Item", "description": "UNDOCUMENTED" }
+              "$comment": "UNDOCUMENTED",
+              "additionalProperties": { "type": "string", "title": "Item", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
             },
             "materials": {
               "type": "object",

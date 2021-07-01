@@ -46,7 +46,7 @@
       "description": "Variance in seconds added to the duration [-delta, delta]",
       "title": "Duration Delta"
     },
-    "broadcastAnger": { "type": "boolean", "description": "UNDOCUMENTED", "title": "TODO" },
-    "broadcastRange": { "type": "integer", "description": "UNDOCUMENTED", "title": "TODO" }
+    "broadcastAnger": { "type": "boolean", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "TODO" },
+    "broadcastRange": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "TODO" }
   }
 }

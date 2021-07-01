@@ -3,6 +3,7 @@
   "type": "object",
   "title": "NPC Dialogue",
   "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "additionalProperties": false,
   "required": ["format_version", "minecraft:npc_dialogue"],
   "properties": {
@@ -14,43 +15,51 @@
     "minecraft:npc_dialogue": {
       "title": "NPC Dialogue",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
       "properties": {
         "scenes": {
           "title": "Scenes",
           "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "type": "array",
           "minItems": 1,
           "items": {
             "title": "Scene",
             "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED",
             "type": "object",
             "additionalProperties": false,
             "properties": {
               "buttons": {
                 "title": "Buttons",
                 "description": "UNDOCUMENTED",
+                "$comment": "UNDOCUMENTED",
                 "type": "array",
                 "maxItems": 6,
                 "items": {
                   "title": "Button",
                   "description": "UNDOCUMENTED",
+                  "$comment": "UNDOCUMENTED",
                   "type": "object",
                   "additionalProperties": false,
                   "properties": {
                     "name": {
                       "title": "Name",
                       "description": "UNDOCUMENTED",
+                      "$comment": "UNDOCUMENTED",
                       "$ref": "../../../general/rawtext/rawtext.json"
                     },
                     "commands": {
                       "type": "array",
                       "description": "UNDOCUMENTED",
+                      "$comment": "UNDOCUMENTED",
                       "title": "Commands",
                       "items": {
                         "title": "Minecraft Command",
                         "description": "UNDOCUMENTED",
+                        "$comment": "UNDOCUMENTED",
                         "type": "string",
                         "pattern": "^/[a-z].*$"
                       }
@@ -61,15 +70,18 @@
               "npc_name": {
                 "title": "NPC Name",
                 "description": "UNDOCUMENTED",
+                "$comment": "UNDOCUMENTED",
                 "$ref": "../../../general/rawtext/rawtext.json"
               },
               "on_close_commands": {
                 "type": "array",
                 "description": "UNDOCUMENTED",
+                "$comment": "UNDOCUMENTED",
                 "title": "On Close Commands",
                 "items": {
                   "title": "Minecraft Command",
                   "description": "UNDOCUMENTED",
+                  "$comment": "UNDOCUMENTED",
                   "type": "string",
                   "pattern": "^/[a-z].*$"
                 }
@@ -77,11 +89,13 @@
               "scene_tag": {
                 "title": "Scene tag",
                 "description": "UNDOCUMENTED",
+                "$comment": "UNDOCUMENTED",
                 "type": "string"
               },
               "text": {
                 "title": "Text",
                 "description": "UNDOCUMENTED",
+                "$comment": "UNDOCUMENTED",
                 "$ref": "../../../general/rawtext/rawtext.json"
               }
             }

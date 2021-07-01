@@ -8,6 +8,7 @@
     "value": {
       "title": "Value",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "oneOf": [
         {
           "type": "array",
@@ -20,7 +21,8 @@
         { "type": "object", "additionalProperties": false, "properties": { "range_min": { "type": "number" }, "range_max": { "type": "number" } } }
       ]
     },
-    "max": { "type": "number", "title": "Maximum", "description": "UNDOCUMENTED" }
+    "max": { "type": "number", "title": "Maximum", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
   },
-  "description": "UNDOCUMENTED"
+  "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED"
 }

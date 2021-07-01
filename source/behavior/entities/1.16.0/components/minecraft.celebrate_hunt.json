@@ -46,8 +46,8 @@
           "type": "object",
           "additionalProperties": false,
           "properties": {
-            "range_min": { "type": "number", "title": "Update Interval Variant", "description": "UNDOCUMENTED" },
-            "range_max": { "type": "number", "title": "Update Interval Variant", "description": "UNDOCUMENTED" }
+            "range_min": { "type": "number", "title": "Update Interval Variant", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+            "range_max": { "type": "number", "title": "Update Interval Variant", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
           }
         }
       ]

@@ -5,12 +5,13 @@
   "title": "Item",
   "type": "object",
   "properties": {
-    "format_version": { "type": "string", "description": "UNDOCUMENTED", "title": "TODO Title" },
+    "format_version": { "type": "string", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "TODO Title" },
     "minecraft:item": {
       "additionalProperties": false,
       "required": ["description"],
       "type": "object",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "title": "Item",
       "properties": {
         "description": {
@@ -18,6 +19,7 @@
           "type": "object",
           "title": "Description",
           "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "properties": {
             "identifier": {
               "title": "Identifier",

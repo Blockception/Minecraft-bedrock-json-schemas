@@ -10,6 +10,7 @@
       "type": "object",
       "title": "Component",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "propertyNames": { "examples": ["tag:foo"] },
       "properties": {
         "minecraft:block_light_absorption": { "$ref": "./components/minecraft.block_light_absorption.json" },

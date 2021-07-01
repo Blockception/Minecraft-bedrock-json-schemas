@@ -8,6 +8,7 @@
     "description": {
       "title": "Description",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "object",
       "required": ["identifier"],
       "properties": {
@@ -22,6 +23,7 @@
     "replaceable_blocks": {
       "title": "Replaceable Blocks",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
         "title": "Replace block",
@@ -32,59 +34,69 @@
     "ground_block": {
       "title": "Ground Block",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "string",
       "$ref": "../../../../general/block/identifier.json"
     },
     "vegetation_feature": {
       "title": "Vegetation Feature",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "string",
       "$ref": "../../../../general/feature/identifier.json"
     },
     "surface": {
       "title": "Surface",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "string"
     },
     "depth": {
       "title": "Depth",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "integer",
       "minimum": 0
     },
     "extra_deep_block_chance": {
       "title": "Extra Deep Block Chance",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "number",
       "minimum": 0
     },
     "vertical_range": {
       "title": "Vertical Range",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "integer",
       "minimum": 0
     },
     "vegetation_chance": {
       "title": "Vegatation Chance",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "number",
       "minimum": 0
     },
     "horizontal_radius": {
       "title": "Horizontal Radius",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "integer",
       "minimum": 0
     },
     "extra_edge_column_chance": {
       "title": "Extra Egde Column Chance",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "number",
       "minimum": 0
     },
     "waterlogged": {
       "title": "Waterlogged",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "boolean"
     }
   }

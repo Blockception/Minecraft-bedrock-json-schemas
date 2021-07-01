@@ -4,6 +4,7 @@
   "additionalItems": false,
   "title": "Sound File For 1.14.0",
   "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "definitions": {
     "SoundPath": {
       "$id": "SoundFilepath",
@@ -35,6 +36,7 @@
                 "type": "string",
                 "$ref": "#/definitions/SoundPath",
                 "description": "UNDOCUMENTED",
+                "$comment": "UNDOCUMENTED",
                 "title": "Sounds"
               },
               {
@@ -60,6 +62,7 @@
                   }
                 },
                 "description": "UNDOCUMENTED",
+                "$comment": "UNDOCUMENTED",
                 "title": "Sounds"
               }
             ],

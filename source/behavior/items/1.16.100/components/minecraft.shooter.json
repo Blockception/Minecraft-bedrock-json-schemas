@@ -13,12 +13,13 @@
         "type": "object",
         "title": "TODO",
         "description": "UNDOCUMENTED",
+        "$comment": "UNDOCUMENTED",
         "additionalProperties": false,
         "properties": {
-          "item": { "title": "Item", "description": "UNDOCUMENTED", "type": "string" },
-          "use_offhand": { "title": "Use Offhand", "description": "UNDOCUMENTED", "type": "boolean" },
-          "search_inventory": { "title": "Search Inventory", "description": "UNDOCUMENTED", "type": "boolean" },
-          "use_in_creative": { "title": "Use In Creative", "description": "UNDOCUMENTED", "type": "boolean" }
+          "item": { "title": "Item", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "string" },
+          "use_offhand": { "title": "Use Offhand", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "boolean" },
+          "search_inventory": { "title": "Search Inventory", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "boolean" },
+          "use_in_creative": { "title": "Use In Creative", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "boolean" }
         }
       }
     },

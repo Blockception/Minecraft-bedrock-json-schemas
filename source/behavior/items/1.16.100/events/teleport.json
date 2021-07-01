@@ -2,18 +2,20 @@
   "$id": "blockception.minecraft.behavior.1.16.100.items.events.teleport",
   "title": "Teleport",
   "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "target": { "type": "string", "title": "Target", "description": "UNDOCUMENTED", "enum": ["holder"] },
+    "target": { "type": "string", "title": "Target", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "enum": ["holder"] },
     "max_range": {
       "type": "array",
       "title": "Max Range",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "items": [
-        { "type": "number", "title": "X", "description": "UNDOCUMENTED" },
-        { "type": "number", "title": "Y", "description": "UNDOCUMENTED" },
-        { "type": "number", "title": "Z", "description": "UNDOCUMENTED" }
+        { "type": "number", "title": "X", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+        { "type": "number", "title": "Y", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+        { "type": "number", "title": "Z", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
       ]
     }
   }

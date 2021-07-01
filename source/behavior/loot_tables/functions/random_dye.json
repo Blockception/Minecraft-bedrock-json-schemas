@@ -4,5 +4,7 @@
   "description": "The function random_dye",
   "title": "Trader Material Type",
   "type": "object",
-  "properties": { "function": { "type": "string", "const": "random_dye", "description": "UNDOCUMENTED", "title": "Function" } }
+  "properties": {
+    "function": { "type": "string", "const": "random_dye", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Function" }
+  }
 }

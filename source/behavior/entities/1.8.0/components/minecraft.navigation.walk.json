@@ -37,6 +37,7 @@
       "items": {
         "title": "Block",
         "description": "UNDOCUMENTED",
+        "$comment": "UNDOCUMENTED",
         "oneOf": [
           { "type": "string", "$ref": "../../../../general/block/identifier.json" },
           { "type": "object", "title": "TODO", "properties": { "name": { "$ref": "../../../../general/block/identifier.json" } } }
@@ -59,6 +60,7 @@
       "type": "boolean",
       "default": true,
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "title": "Can Float"
     },
     "can_jump": {

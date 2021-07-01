@@ -128,7 +128,7 @@
             "minItems": 1,
             "items": {
               "type": "object",
-              "additionalProperties": { "type": "string", "description": "UNDOCUMENTED", "title": "Material" },
+              "additionalProperties": { "type": "string", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Material" },
               "description": "UNDOCUMENTATED: materials",
               "title": "Materials"
             },

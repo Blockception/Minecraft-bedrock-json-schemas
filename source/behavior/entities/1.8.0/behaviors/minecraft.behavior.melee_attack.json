@@ -8,7 +8,13 @@
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
     "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },
-    "cooldown_time": { "type": "number", "title": "Cooldown Time", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "cooldown_time": {
+      "type": "number",
+      "title": "Cooldown Time",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
     "melee_fov": {
       "type": "number",
       "default": 90.0,
@@ -41,7 +47,19 @@
       "description": "If true, this goal will only trigger if the mob can reach its target.",
       "title": "Require Complete Path"
     },
-    "on_attack": { "$ref": "../types/event.json", "title": "On Attack", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-    "on_kill": { "$ref": "../types/event.json", "title": "On Attack", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
+    "on_attack": {
+      "$ref": "../types/event.json",
+      "title": "On Attack",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "on_kill": {
+      "$ref": "../types/event.json",
+      "title": "On Attack",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    }
   }
 }

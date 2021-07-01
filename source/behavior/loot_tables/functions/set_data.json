@@ -5,17 +5,18 @@
   "title": "Set Data",
   "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "set_data", "description": "UNDOCUMENTED", "title": "Function" },
+    "function": { "type": "string", "const": "set_data", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Function" },
     "data": {
       "title": "Data",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "oneOf": [
         { "type": "integer" },
         {
           "type": "object",
           "properties": {
-            "min": { "type": "integer", "title": "Minimum", "description": "UNDOCUMENTED" },
-            "max": { "type": "integer", "title": "Maximum", "description": "UNDOCUMENTED" }
+            "min": { "type": "integer", "title": "Minimum", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+            "max": { "type": "integer", "title": "Maximum", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
           }
         }
       ]

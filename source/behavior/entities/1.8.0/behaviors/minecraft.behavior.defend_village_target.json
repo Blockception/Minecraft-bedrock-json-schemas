@@ -12,6 +12,12 @@
       "title": "Entity Types"
     },
     "must_reach": { "title": "Must Reach", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "boolean" },
-    "attack_chance": { "title": "Attack Chance", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" }
+    "attack_chance": {
+      "title": "Attack Chance",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "type": "number"
+    }
   }
 }

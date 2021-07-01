@@ -39,6 +39,7 @@
     "max_failed_attempts": {
       "type": "integer",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "title": "Max Failed Attempts"
     }
   }

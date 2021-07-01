@@ -3,5 +3,6 @@
   "type": "object",
   "title": "Entity 1.11.0",
   "$ref": "../1.10.0/components.json",
-  "description": "UNDOCUMENTED"
+  "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED"
 }

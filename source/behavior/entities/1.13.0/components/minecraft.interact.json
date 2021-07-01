@@ -98,6 +98,7 @@
         { "type": "array", "items": { "$ref": "#/definitions/interaction_spec" } }
       ],
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "title": "Interactions"
     }
   }

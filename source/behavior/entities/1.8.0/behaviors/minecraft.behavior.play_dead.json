@@ -2,6 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.play_dead",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "type": "object",
   "title": "Play dead 1.8.0",
   "additionalProperties": false,
@@ -12,12 +13,14 @@
       "title": "Duration",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "number",
       "minimum": 0
     },
     "force_below_health": {
       "title": "Force Below Health",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "number",
       "minimum": 0
@@ -26,12 +29,14 @@
       "title": "Random Start Chance",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "number",
       "minimum": 0
     },
     "random_damage_range": {
       "title": "Random Damage Range",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": [
@@ -43,10 +48,12 @@
       "title": "Damage sources",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
         "title": "Damage Source",
         "description": "UNDOCUMENTED",
+        "$comment": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED",
         "$ref": "../../../../general/entity_damage.json"
       }
@@ -54,6 +61,7 @@
     "apply_regeneration": {
       "title": "Apply regeneration",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "boolean"
     },

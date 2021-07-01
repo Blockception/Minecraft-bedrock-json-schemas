@@ -18,6 +18,6 @@
       "description": "The mob effect that is applied to entities that enter this entities effect range.",
       "title": "Mob Effect"
     },
-    "entity_filter": { "$ref": "../../filters/filters.json", "title": "Entity Filter", "description": "UNDOCUMENTED" }
+    "entity_filter": { "$ref": "../../filters/filters.json", "title": "Entity Filter", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
   }
 }

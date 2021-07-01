@@ -5,7 +5,7 @@
   "title": "Exploration Map",
   "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "exploration_map", "description": "UNDOCUMENTED", "title": "Function" },
+    "function": { "type": "string", "const": "exploration_map", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Function" },
     "destination": {
       "type": "string",
       "description": "The destination value defines what type of treasure map they receive.",

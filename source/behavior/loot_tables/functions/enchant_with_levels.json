@@ -4,7 +4,13 @@
   "description": "The function enchant_with_levels",
   "title": "Enchant With Levels",
   "properties": {
-    "function": { "type": "string", "const": "enchant_with_levels", "description": "UNDOCUMENTED", "title": "TODO Title" },
+    "function": {
+      "type": "string",
+      "const": "enchant_with_levels",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "title": "TODO Title"
+    },
     "levels": {
       "title": "Levels",
       "oneOf": [
@@ -16,8 +22,9 @@
           "properties": { "min": { "type": "integer", "title": "Minimum" }, "max": { "type": "integer", "title": "Maximum" } }
         }
       ],
-      "description": "UNDOCUMENTED"
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
     },
-    "treasure": { "type": "boolean", "title": "Treasure", "description": "UNDOCUMENTED" }
+    "treasure": { "type": "boolean", "title": "Treasure", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
   }
 }

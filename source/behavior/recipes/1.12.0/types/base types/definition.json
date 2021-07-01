@@ -3,6 +3,14 @@
   "description": "Recipe definition 1.12.0",
   "title": "Definition",
   "type": "object",
-  "properties": { "identifier": { "type": "string", "pattern": "[a-z0-9_:\\-]+", "title": "Recipe Identifier", "description": "UNDOCUMENTED" } },
+  "properties": {
+    "identifier": {
+      "type": "string",
+      "pattern": "[a-z0-9_:\\-]+",
+      "title": "Recipe Identifier",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    }
+  },
   "additionalProperties": false
 }

@@ -4,6 +4,7 @@
   "type": "object",
   "title": "Difficulty Filter 1.8.0",
   "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "definitions": { "difficulty": { "type": "string", "enum": ["easy", "normal", "hard", "peaceful"] } },
   "properties": {
     "min": { "$ref": "#/definitions/difficulty", "description": "This is the minimum difficulty level that a mob spawns", "title": "Min" },

@@ -38,8 +38,8 @@
     "description": "Block texture definition",
     "type": "object",
     "properties": {
-      "brightness_gamma": { "type": "number", "title": "Brightness Gamma", "description": "UNDOCUMENTED" },
-      "carried_textures": { "$ref": "#/definitions/texture", "title": "Carried Textures", "description": "UNDOCUMENTED" },
+      "brightness_gamma": { "type": "number", "title": "Brightness Gamma", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+      "carried_textures": { "$ref": "#/definitions/texture", "title": "Carried Textures", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
       "isotropic": {
         "title": "Isotropic",
         "description": "Marks if this block is isotropic or not, or which side are",

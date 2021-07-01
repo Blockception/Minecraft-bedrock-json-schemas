@@ -19,7 +19,8 @@
         },
         "fog_ids_to_merge": {
           "title": "Fog ids to merge",
-          "Description": "UNDOCUMENTED",
+          "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "type": "array",
           "items": {
             "title": "Fog ID",
@@ -29,12 +30,14 @@
         },
         "inherit_from_prior_fog": {
           "title": "Inherit From Prior Fog",
-          "Description": "UNDOCUMENTED",
+          "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "type": "boolean"
         },
         "remove_all_prior_fog": {
           "title": "Remove All Prior Fog",
-          "Description": "UNDOCUMENTED",
+          "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "type": "boolean"
         },
         "water_fog_color": { "$ref": "#/definitions/colorhex", "title": "Water Fog Color", "description": "The color of the water fog" },

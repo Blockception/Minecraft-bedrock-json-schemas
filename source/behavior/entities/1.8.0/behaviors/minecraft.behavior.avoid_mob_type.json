@@ -39,12 +39,31 @@
       "title": "Ignore Visibility"
     },
     "entity_types": { "$ref": "../types/entity_types.json", "description": "UNDOCUMENTATED: entity types", "title": "Entity Types" },
-    "avoid_mob_sound": { "title": "Avoid Mob Sound", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "string" },
-    "remove_target": { "title": "Remove Target", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "boolean" },
-    "on_escape_event": { "$ref": "../types/event.json", "title": "On Escape Event", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "avoid_mob_sound": {
+      "title": "Avoid Mob Sound",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "type": "string"
+    },
+    "remove_target": {
+      "title": "Remove Target",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "type": "boolean"
+    },
+    "on_escape_event": {
+      "$ref": "../types/event.json",
+      "title": "On Escape Event",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
     "sound_interval": {
       "default": 0,
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "title": "Sound Interval",
       "oneOf": [

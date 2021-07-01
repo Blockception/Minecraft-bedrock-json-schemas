@@ -62,6 +62,7 @@
                     "type": "object",
                     "title": "Conditional Animation",
                     "description": "UNDOCUMENTED",
+                    "$comment": "UNDOCUMENTED",
                     "additionalProperties": { "type": "string", "title": "Animation" }
                   }
                 ]

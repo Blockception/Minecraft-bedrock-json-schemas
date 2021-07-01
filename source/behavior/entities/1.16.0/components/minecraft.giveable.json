@@ -8,6 +8,7 @@
   "properties": {
     "triggers": {
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "title": "Triggers",
       "properties": {
         "cooldown": {

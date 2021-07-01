@@ -15,7 +15,7 @@
       "minProperties": 1,
       "additionalProperties": { "$ref": "./base types/item.json" }
     },
-    "group": { "type": "string", "title": "Group", "description": "UNDOCUMENTED" },
+    "group": { "type": "string", "title": "Group", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
     "pattern": {
       "type": "array",
       "description": "Characters that represent a pattern to be defined by keys.",

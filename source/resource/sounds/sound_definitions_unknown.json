@@ -3,6 +3,7 @@
   "type": "object",
   "title": "Sound  File, Unknown Version",
   "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "definitions": {
     "SoundPath": {
       "$id": "SoundFilepath",
@@ -34,6 +35,7 @@
                 "type": "string",
                 "$ref": "#/definitions/SoundPath",
                 "description": "UNDOCUMENTED",
+                "$comment": "UNDOCUMENTED",
                 "title": "Sounds"
               },
               {
@@ -65,6 +67,7 @@
                   }
                 },
                 "description": "UNDOCUMENTED",
+                "$comment": "UNDOCUMENTED",
                 "title": "Sounds"
               }
             ],

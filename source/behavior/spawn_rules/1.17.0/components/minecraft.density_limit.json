@@ -4,6 +4,7 @@
   "type": "object",
   "title": "Density Limit 1.17.0",
   "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "properties": {
     "surface": { "type": "integer", "description": "This is the maximum number of mobs of this type spawnable on the surface", "title": "Surface" },
     "underground": {

@@ -3,6 +3,7 @@
   "type": "object",
   "title": "Experience Reward 1.13.0",
   "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "additionalProperties": false,
   "properties": {
     "on_bred": {
