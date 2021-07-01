@@ -177,12 +177,9 @@
     "minecraft:wants_jockey": { "$ref": "../1.8.0/components/minecraft.wants_jockey.json" },
     "minecraft:water_movement": { "$ref": "../1.8.0/components/minecraft.water_movement.json" },
 
-    "minecraft:behavior.play_dead": { "$ref": "../1.8.0/behaviors/minecraft.behavior.play_dead.json" },
-    "minecraft:behavior.ram_attack": { "$ref": "../1.8.0/behaviors/minecraft.behavior.ram_attack.json" },
-    "minecraft:behavior.jump_to_block": { "$ref": "../1.8.0/behaviors/minecraft.behavior.jump_to_block.json" },
-
     "minecraft:behavior.admire_item": { "$ref": "../1.8.0/behaviors/minecraft.behavior.admire_item.json" },
     "minecraft:behavior.avoid_mob_type": { "$ref": "../1.8.0/behaviors/minecraft.behavior.avoid_mob_type.json" },
+    "minecraft:behavior.barter": { "$ref": "../1.8.0/behaviors/minecraft.behavior.barter.json" },
     "minecraft:behavior.beg": { "$ref": "../1.8.0/behaviors/minecraft.behavior.beg.json" },
     "minecraft:behavior.break_door": { "$ref": "../1.8.0/behaviors/minecraft.behavior.break_door.json" },
     "minecraft:behavior.breed": { "$ref": "../1.8.0/behaviors/minecraft.behavior.breed.json" },
@@ -228,6 +225,7 @@
     "minecraft:behavior.hold_ground": { "$ref": "../1.8.0/behaviors/minecraft.behavior.hold_ground.json" },
     "minecraft:behavior.hurt_by_target": { "$ref": "../1.8.0/behaviors/minecraft.behavior.hurt_by_target.json" },
     "minecraft:behavior.inspect_bookshelf": { "$ref": "../1.8.0/behaviors/minecraft.behavior.inspect_bookshelf.json" },
+    "minecraft:behavior.jump_to_block": { "$ref": "../1.8.0/behaviors/minecraft.behavior.jump_to_block.json" },
     "minecraft:behavior.knockback_roar": { "$ref": "../1.8.0/behaviors/minecraft.behavior.knockback_roar.json" },
     "minecraft:behavior.lay_down": { "$ref": "../1.8.0/behaviors/minecraft.behavior.lay_down.json" },
     "minecraft:behavior.lay_egg": { "$ref": "../1.8.0/behaviors/minecraft.behavior.lay_egg.json" },
@@ -271,8 +269,10 @@
     "minecraft:behavior.pet_sleep_with_owner": { "$ref": "../1.8.0/behaviors/minecraft.behavior.pet_sleep_with_owner.json" },
     "minecraft:behavior.pickup_items": { "$ref": "../1.8.0/behaviors/minecraft.behavior.pickup_items.json" },
     "minecraft:behavior.play": { "$ref": "../1.8.0/behaviors/minecraft.behavior.play.json" },
+    "minecraft:behavior.play_dead": { "$ref": "../1.8.0/behaviors/minecraft.behavior.play_dead.json" },
     "minecraft:behavior.player_ride_tamed": { "$ref": "../1.8.0/behaviors/minecraft.behavior.player_ride_tamed.json" },
     "minecraft:behavior.raid_garden": { "$ref": "../1.8.0/behaviors/minecraft.behavior.raid_garden.json" },
+    "minecraft:behavior.ram_attack": { "$ref": "../1.8.0/behaviors/minecraft.behavior.ram_attack.json" },
     "minecraft:behavior.random_breach": { "$ref": "../1.8.0/behaviors/minecraft.behavior.random_breach.json" },
     "minecraft:behavior.random_fly": { "$ref": "../1.8.0/behaviors/minecraft.behavior.random_fly.json" },
     "minecraft:behavior.random_hover": { "$ref": "../1.8.0/behaviors/minecraft.behavior.random_hover.json" },
@@ -326,6 +326,10 @@
     "minecraft:behavior.vex_random_move": { "$ref": "../1.8.0/behaviors/minecraft.behavior.vex_random_move.json" },
     "minecraft:behavior.wither_random_attack_pos_goal": { "$ref": "../1.8.0/behaviors/minecraft.behavior.wither_random_attack_pos_goal.json" },
     "minecraft:behavior.wither_target_highest_damage": { "$ref": "../1.8.0/behaviors/minecraft.behavior.wither_target_highest_damage.json" },
-    "minecraft:behavior.work": { "$ref": "../1.8.0/behaviors/minecraft.behavior.work.json" }
+    "minecraft:behavior.work": { "$ref": "../1.8.0/behaviors/minecraft.behavior.work.json" },
+
+    "minecraft:behavior.avoid_block": { "$ref": "../1.16.0/behaviors/minecraft.behavior.avoid_block.json" },
+    "minecraft:behavior.equip_item": { "$ref": "../1.16.0/behaviors/minecraft.behavior.equip_item.json" },
+    "minecraft:behavior.move_towards_home_restriction": { "$ref": "../1.16.0/behaviors/minecraft.behavior.move_towards_home_restriction.json" }
   }
 }

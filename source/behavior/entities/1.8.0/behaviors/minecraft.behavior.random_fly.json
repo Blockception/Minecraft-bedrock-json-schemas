@@ -11,19 +11,19 @@
       "type": "boolean",
       "default": true,
       "description": "If true, the mob can stop flying and land on a tree instead of the ground",
-      "title": "TODO Title"
+      "title": "Can Land On Trees"
     },
     "xz_dist": {
       "type": "integer",
       "default": 10,
       "description": "Distance in blocks on ground that the mob will look for a new spot to move to. Must be at least 1",
-      "title": "TODO Title"
+      "title": "XZ Distance"
     },
     "y_dist": {
       "type": "integer",
       "default": 7,
       "description": "Distance in blocks that the mob will look up or down for a new spot to move to. Must be at least 1",
-      "title": "TODO Title"
+      "title": "Y Distance"
     }
   }
 }

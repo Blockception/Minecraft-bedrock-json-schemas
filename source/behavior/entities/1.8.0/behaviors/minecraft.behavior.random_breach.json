@@ -12,25 +12,25 @@
       "type": "number",
       "default": 0,
       "description": "Time in seconds the mob has to wait before using the goal again",
-      "title": "TODO Title"
+      "title": "Cooldown Time"
     },
     "interval": {
       "type": "integer",
       "default": 120,
       "description": "A random value to determine when to randomly move somewhere. This has a 1/interval chance to choose this goal",
-      "title": "TODO Title"
+      "title": "Interval"
     },
     "xz_dist": {
       "type": "integer",
       "default": 10,
       "description": "Distance in blocks on ground that the mob will look for a new spot to move to. Must be at least 1",
-      "title": "TODO Title"
+      "title": "XZ Distance"
     },
     "y_dist": {
       "type": "integer",
       "default": 7,
       "description": "Distance in blocks that the mob will look up or down for a new spot to move to. Must be at least 1",
-      "title": "TODO Title"
+      "title": "Y Distance"
     }
   }
 }

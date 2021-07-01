@@ -11,8 +11,8 @@
       "$ref": "../types/range_number_type.json",
       "default": [2, 4],
       "description": "The range of time in seconds the mob will stay looking in a random direction before looking elsewhere",
-      "title": "TODO Title"
+      "title": "Look Time"
     },
-    "look_distance": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "TODO" }
+    "look_distance": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Look Distance" }
   }
 }
