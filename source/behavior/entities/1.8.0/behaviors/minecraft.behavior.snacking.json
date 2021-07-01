@@ -8,28 +8,30 @@
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
     "items": {
-      "type": "array",
+      "title": "Items",
       "description": "Items that we are interested in snacking on",
-      "$ref": "../../../../general/item/identifier.json",
-      "title": "TODO Title"
+      "oneOf": [
+        { "type": "array", "items": { "$ref": "../../../../general/item/identifier.json", "title": "Item" } },
+        { "$ref": "../../../../general/item/identifier.json" }
+      ]
     },
     "snacking_cooldown": {
       "type": "number",
       "default": 7.5,
       "description": "The cooldown time in seconds before the mob is able to snack again",
-      "title": "TODO Title"
+      "title": "Snacking Cooldown"
     },
     "snacking_cooldown_min": {
       "type": "number",
       "default": 0.5,
       "description": "The minimum time in seconds before the mob is able to snack again",
-      "title": "TODO Title"
+      "title": "Snacking Cooldown Minimum"
     },
     "snacking_stop_chance": {
       "type": "number",
       "default": 0.0017,
       "description": "This is the chance that the mob will stop snacking, from 0 to 1",
-      "title": "TODO Title"
+      "title": "Snacking Stop Chance"
     }
   }
 }

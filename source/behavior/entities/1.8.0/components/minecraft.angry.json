@@ -6,6 +6,8 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
+    "broadcastAnger": { "type": "boolean", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Broadcast Anger" },
+    "broadcastRange": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Broadcast Range" },
     "broadcast_anger": {
       "type": "boolean",
       "default": false,
@@ -16,6 +18,11 @@
       "$ref": "../../filters/filters.json",
       "description": "Conditions that make this entry in the list valid",
       "title": "Broadcast Filters"
+    },
+    "filters": {
+      "$ref": "../../filters/filters.json",
+      "description": "Filter out mob types that it should not attack while angry (other Piglins)",
+      "title": "Filters"
     },
     "broadcast_range": {
       "type": "integer",
@@ -34,6 +41,19 @@
       "description": "Event to run after the number of seconds specified in duration expires (when the entity stops being `angry')",
       "title": "Calm Event"
     },
+    "angry_sound": { "type": "string", "default": "", "description": "The sound event to play when the mob is angry", "title": "Angry Sound" },
+    "broadcast_anger_on_attack": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry whenever this mob attacks",
+      "title": "Broadcast Anger On Attack"
+    },
+    "broadcast_anger_on_being_attacked": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry whenever this mob is attacked",
+      "title": "Broadcast Anger On Being Attacked"
+    },
     "duration": {
       "type": "integer",
       "default": 25,
@@ -46,7 +66,27 @@
       "description": "Variance in seconds added to the duration [-delta, delta]",
       "title": "Duration Delta"
     },
-    "broadcastAnger": { "type": "boolean", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "TODO" },
-    "broadcastRange": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "TODO" }
+    "sound_interval": {
+      "description": "The range of time in seconds to randomly wait before playing the sound again",
+      "title": "Sound Interval",
+      "oneOf": [
+        {
+          "type": "array",
+          "default": [0, 0],
+          "items": [
+            { "type": "integer", "minimum": 0, "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Minimum" },
+            { "type": "integer", "minimum": 0, "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Maximum" }
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "range_min": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Range Minimum" },
+            "range_max": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Range Maximum" }
+          }
+        }
+      ]
+    }
   }
 }

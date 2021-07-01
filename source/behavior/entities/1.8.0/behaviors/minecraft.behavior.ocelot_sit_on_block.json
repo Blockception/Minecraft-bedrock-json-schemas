@@ -3,7 +3,6 @@
   "additionalProperties": false,
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
-  "$comment": "UNDOCUMENTED",
   "type": "object",
   "title": "Ocelot Sit On Block 1.8.0",
   "required": [],

@@ -2,7 +2,6 @@
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.target_when_pushed",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
-  "$comment": "UNDOCUMENTED",
   "type": "object",
   "title": "Target When Pushed 1.8.0",
   "additionalProperties": false,
@@ -13,14 +12,12 @@
       "$ref": "../types/entity_types.json",
       "title": "Entity Types",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
     "percent_chance": {
       "type": "number",
       "title": "Percent Chance",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }
   }

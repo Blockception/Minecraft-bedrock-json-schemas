@@ -10,13 +10,7 @@
       },
       "additionalProperties": {
         "anyOf": [
-          {
-            "type": "object",
-            "properties": {
-              "properties": { "additionalProperties": { "$ref": "#/definitions/object_check" } },
-              "additionalProperties": { "additionalProperties": { "$ref": "#/definitions/object_check" } }
-            }
-          },
+          { "type": "object", "$ref": "#/definitions/object_check" },
           { "type": "array", "$ref": "#/definitions/array_check" },
           { "type": "string" },
           { "type": "boolean" },

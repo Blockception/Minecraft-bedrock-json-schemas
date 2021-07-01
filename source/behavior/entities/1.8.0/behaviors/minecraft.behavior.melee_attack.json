@@ -12,7 +12,6 @@
       "type": "number",
       "title": "Cooldown Time",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
     "melee_fov": {
@@ -51,14 +50,12 @@
       "$ref": "../types/event.json",
       "title": "On Attack",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
     "on_kill": {
       "$ref": "../types/event.json",
       "title": "On Attack",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }
   }

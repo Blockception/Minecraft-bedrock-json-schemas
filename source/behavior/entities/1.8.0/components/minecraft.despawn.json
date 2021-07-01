@@ -8,7 +8,7 @@
   "properties": {
     "filters": {
       "$ref": "../../filters/filters.json",
-      "description": "The list of conditions that must be satisfied before the Actor is despawned",
+      "description": "The list of conditions that must be satisfied before the Actor is despawned. If a filter is defined then standard despawn rules are ignored.",
       "title": "Filters"
     },
     "despawn_from_chance": {
@@ -25,10 +25,22 @@
     },
     "despawn_from_distance": {
       "type": "object",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
-      "title": "TODO",
-      "additionalProperties": false
+      "description": "Defines the minimum and maximum distance for despawn to occur",
+      "title": "Despawn From Distance",
+      "properties": {
+        "max_distance": {
+          "title": "Maximum Distance",
+          "description": "Maximum distance for standard despawn rules to instantly despawn the mob.",
+          "type": "integer",
+          "default": 128
+        },
+        "min_distance": {
+          "title": "Minimum Distance",
+          "description": "Minimum distance for standard despawn rules to try to despawn the mob.",
+          "type": "integer",
+          "default": 32
+        }
+      }
     },
     "despawn_from_simulation_edge": {
       "type": "boolean",
@@ -40,13 +52,13 @@
       "type": "integer",
       "default": 30,
       "description": "The amount of time in seconds that the mob must be inactive.",
-      "title": "Min Range Inactivity Timer"
+      "title": "Minimum Range Inactivity Timer"
     },
     "min_range_random_chance": {
       "type": "integer",
       "default": 800,
       "description": "A random chance between 1 and the given value.",
-      "title": "Min Range Random Chance"
+      "title": "Minimum Range Random Chance"
     },
     "remove_child_entities": {
       "type": "boolean",

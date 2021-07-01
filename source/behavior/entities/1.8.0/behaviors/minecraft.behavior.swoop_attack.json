@@ -12,14 +12,13 @@
       "type": "number",
       "title": "Damage Reach",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
     "delay_range": {
       "$ref": "../types/range_number_type.json",
-      "default": [10.0, 20.0],
+      "default": [[10.0, 20.0]],
       "description": "Range of time in seconds between uses of this goal.",
-      "title": "TODO Title"
+      "title": "Delay Range"
     }
   }
 }

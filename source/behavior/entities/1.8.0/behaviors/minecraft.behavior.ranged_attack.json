@@ -13,69 +13,66 @@
       "default": 0,
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
-      "title": "TODO Title"
+      "title": "Attack Interval"
     },
     "attack_interval_max": {
       "type": "number",
       "default": 0,
       "description": "Maximum amount of time in seconds the entity will wait after an attack before launching another",
-      "title": "TODO Title"
+      "title": "Attack Interval Maximum"
     },
     "attack_interval_min": {
       "type": "number",
       "default": 0,
       "description": "Minimum amount of time in seconds the entity will wait after an attack before launching another",
-      "title": "TODO Title"
+      "title": "Attack Interval Minimum"
     },
     "attack_radius": {
       "type": "number",
       "default": 0,
       "description": "Maximum distance the target can be for this mob to fire. If the target is further away, this mob will move first before firing",
-      "title": "TODO Title"
+      "title": "Attack Radius"
     },
     "burst_interval": {
       "type": "number",
       "default": 0,
       "description": "Amount of time in seconds between each individual shot when firing multiple shots per attack",
-      "title": "TODO Title"
+      "title": "Burst Interval"
     },
     "burst_shots": {
       "type": "integer",
       "default": 1,
       "description": "Number of shots fired every time the mob uses a charged attack",
-      "title": "TODO Title"
+      "title": "Burst Shots"
     },
     "charge_charged_trigger": {
       "type": "number",
       "default": 0,
       "description": "The minimum amount of time in ticks the mob has to charge before firing a charged attack",
-      "title": "TODO Title"
+      "title": "Charge Charged Trigger"
     },
     "charge_shoot_trigger": {
       "type": "number",
       "default": 0,
       "description": "The minimum amount of time in ticks for the mob to start charging a charged shot. Must be greater than 0 to enable burst shots",
-      "title": "TODO Title"
+      "title": "Charge Shoot Trigger"
     },
     "ranged_fov": {
       "type": "number",
       "default": 90,
       "description": "The allowable FOV the actor will use to determine if it can make a valid ranged attack",
-      "title": "TODO Title"
+      "title": "Ranged FOV"
     },
     "target_in_sight_time": {
       "type": "number",
       "title": "Target In Sight Time",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
     "attack_radius_min": {
       "type": "number",
       "title": "Attack Radius Min",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }
   }

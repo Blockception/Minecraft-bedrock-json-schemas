@@ -11,13 +11,13 @@
       "type": "number",
       "default": 10,
       "description": "This mob starts swelling when a target is at least this many blocks away",
-      "title": "TODO Title"
+      "title": "Start Distance"
     },
     "stop_distance": {
       "type": "number",
       "default": 2,
       "description": "This mob stops swelling when a target has moved away at least this many blocks",
-      "title": "TODO Title"
+      "title": "Stop Distance"
     }
   }
 }

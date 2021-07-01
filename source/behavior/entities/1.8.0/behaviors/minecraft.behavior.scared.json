@@ -11,7 +11,7 @@
       "type": "integer",
       "default": 0,
       "description": "The interval in which a sound will play when active in a 1/delay chance to kick off",
-      "title": "TODO Title"
+      "title": "Sound Interval"
     }
   }
 }

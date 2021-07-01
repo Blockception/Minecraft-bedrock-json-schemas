@@ -7,6 +7,6 @@
   "required": [],
   "properties": {
     "priority": { "$ref": "types/priority.json" },
-    "probability": { "type": "number", "minimum": 0, "description": "The probability that the mob will use the goal.", "title": "TODO Title" }
+    "probability": { "type": "number", "minimum": 0, "description": "The probability that the mob will use the goal.", "title": "Probability" }
   }
 }
