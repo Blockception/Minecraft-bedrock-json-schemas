@@ -8,7 +8,7 @@
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
-    "attack_interval": { "type": "number", "default": 0, "description": "UNDOCUMENTED", "title": "TODO Title" },
+    "attack_interval": { "type": "number", "default": 0, "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "TODO Title" },
     "attack_interval_max": {
       "type": "number",
       "default": 0,
@@ -57,7 +57,7 @@
       "description": "The allowable FOV the actor will use to determine if it can make a valid ranged attack",
       "title": "TODO Title"
     },
-    "target_in_sight_time": { "type": "number", "title": "Target In Sight Time", "description": "UNDOCUMENTED" },
-    "attack_radius_min": { "type": "number", "title": "Attack Radius Min", "description": "UNDOCUMENTED" }
+    "target_in_sight_time": { "type": "number", "title": "Target In Sight Time", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "attack_radius_min": { "type": "number", "title": "Attack Radius Min", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
   }
 }

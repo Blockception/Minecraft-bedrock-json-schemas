@@ -11,15 +11,15 @@
     "blocks": {
       "type": "array",
       "description": "Blocks that the mob is looking for to eat",
-      "items": { "type": "string", "title": "Block Id", "description": "A block identifier", "pattern": "[0-9:a-z_]+" },
-      "title": "TODO Title"
+      "items": { "type": "string", "title": "Block Id", "description": "A block identifier", "$ref": "../../../../general/block/identifier.json" },
+      "title": "Blocks"
     },
-    "eat_delay": { "type": "integer", "default": 2, "description": "Time in seconds between each time it eats", "title": "TODO Title" },
+    "eat_delay": { "type": "integer", "default": 2, "description": "Time in seconds between each time it eats", "title": "Eat Delay" },
     "full_delay": {
       "type": "integer",
       "default": 100,
       "description": "Amount of time in seconds before this mob wants to eat again",
-      "title": "TODO Title"
+      "title": "Full Delay"
     },
     "initial_eat_delay": {
       "type": "integer",
@@ -31,15 +31,15 @@
       "type": "number",
       "default": 0.5,
       "description": "Distance in blocks within the mob considers it has reached the goal. This is the `wiggle room` to stop the AI from bouncing back and forth trying to reach a specific spot",
-      "title": "TODO Title"
+      "title": "Goal Radius"
     },
-    "max_to_eat": { "type": "integer", "default": 6, "description": "Maximum number of things this entity wants to eat", "title": "TODO Title" },
+    "max_to_eat": { "type": "integer", "default": 6, "description": "Maximum number of things this entity wants to eat", "title": "Maximum to eat" },
     "search_range": {
       "type": "integer",
       "default": 0,
       "description": "Distance in blocks the mob will look for crops to eat",
-      "title": "TODO Title"
+      "title": "Search Range"
     },
-    "search_height": { "type": "integer", "default": 0, "description": "UNDOCUMENTED", "title": "TODO Title" }
+    "search_height": { "type": "integer", "default": 0, "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Search Height" }
   }
 }

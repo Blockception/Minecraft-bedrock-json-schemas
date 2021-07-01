@@ -11,30 +11,32 @@
     "damage_sources": {
       "type": "array",
       "items": { "$ref": "../../../../general/entity_damage.json" },
+      "default": [["all"]],
       "description": "The list of Entity Damage Sources that will cause this mob to panic",
-      "title": "TODO Title"
+      "title": "Damage Sources"
     },
     "force": {
       "type": "boolean",
       "default": false,
       "description": "If true, this mob will not stop panicking until it can't move anymore or the goal is removed from it",
-      "title": "TODO Title"
+      "title": "Force"
     },
     "ignore_mob_damage": {
       "type": "boolean",
       "default": false,
       "description": "If true, the mob will not panic in response to damage from other mobs. This overrides the damage types in `damage_sources`",
-      "title": "TODO Title"
+      "title": "Ignore Mob Damage"
     },
-    "prefer_water": { "type": "boolean", "default": false, "description": "If true, the mob will prefer water over land", "title": "TODO Title" },
-    "panic_sound": { "type": "string", "description": "UNDOCUMENTED", "title": "TODO" },
+    "prefer_water": { "type": "boolean", "default": false, "description": "If true, the mob will prefer water over land", "title": "Prefer Water" },
+    "panic_sound": { "type": "string", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Panic Sound" },
     "sound_interval": {
       "type": "object",
       "description": "UNDOCUMENTED",
-      "title": "TODO",
+      "$comment": "UNDOCUMENTED",
+      "title": "Sound Interval",
       "properties": {
-        "range_min": { "type": "number", "description": "UNDOCUMENTED", "title": "TODO" },
-        "range_max": { "type": "number", "description": "UNDOCUMENTED", "title": "TODO" }
+        "range_min": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Range Minimum" },
+        "range_max": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Range Maximum" }
       },
       "additionalProperties": false
     }

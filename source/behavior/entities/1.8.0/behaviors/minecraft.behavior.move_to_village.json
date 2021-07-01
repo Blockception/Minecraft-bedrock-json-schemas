@@ -12,19 +12,19 @@
       "type": "number",
       "default": 0,
       "description": "Time in seconds the mob has to wait before using the goal again",
-      "title": "TODO Title"
+      "title": "Cooldown Time"
     },
     "goal_radius": {
       "type": "number",
       "default": 0.5,
       "description": "Distance in blocks within the mob considers it has reached the goal. This is the `wiggle room` to stop the AI from bouncing back and forth trying to reach a specific spot",
-      "title": "TODO Title"
+      "title": "Goal Radius"
     },
     "search_range": {
       "type": "integer",
       "default": 0,
       "description": "The distance in blocks to search for villages. If <= 0, find the closest village regardless of distance.",
-      "title": "TODO Title"
+      "title": "Search Range"
     }
   }
 }

@@ -49,9 +49,9 @@
       "description": "Distance in blocks within the mob considers it has reached the goal. This is the `wiggle room` to stop the AI from bouncing back and forth trying to reach a specific spot",
       "title": "Goal Radius"
     },
-    "radius_change": { "type": "number", "title": "Radius Change", "description": "UNDOCUMENTED" },
-    "radius_adjustment_chance": { "type": "number", "title": "Radius Adjustment Chance", "description": "UNDOCUMENTED" },
-    "height_adjustment_chance": { "type": "number", "title": "Height Adjustment Chance", "description": "UNDOCUMENTED" },
-    "angle_change": { "type": "number", "title": "Angle Change", "description": "UNDOCUMENTED" }
+    "radius_change": { "type": "number", "title": "Radius Change", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "radius_adjustment_chance": { "type": "number", "title": "Radius Adjustment Chance", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "height_adjustment_chance": { "type": "number", "title": "Height Adjustment Chance", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "angle_change": { "type": "number", "title": "Angle Change", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
   }
 }

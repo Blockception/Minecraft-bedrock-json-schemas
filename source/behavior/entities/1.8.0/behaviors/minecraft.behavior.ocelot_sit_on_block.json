@@ -2,6 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.ocelot_sit_on_block",
   "additionalProperties": false,
   "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "type": "object",
   "title": "Ocelot Sit On Block 1.8.0",
   "required": [],

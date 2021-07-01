@@ -1,8 +1,9 @@
 {
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.ram_attack",
   "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "type": "object",
-  "title": "Ram attack 1.8.0",
+  "title": "Ram Attack 1.8.0",
   "additionalProperties": false,
   "required": [],
   "properties": {
@@ -10,55 +11,65 @@
     "run_speed": {
       "title": "Run speed",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "number"
     },
     "ram_speed": {
       "title": "Ram speed",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "number"
     },
     "min_ram_distance": {
       "title": "Minimum Ram speed",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "number"
     },
     "ram_distance": {
       "title": "Ram Distance",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "number"
     },
     "knockback_force": {
       "title": "Knockback force",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "number"
     },
     "knockback_height": {
       "title": "Knockback height",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "number"
     },
     "pre_ram_sound": {
       "title": "Pre ram sound",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "string"
     },
     "ram_impact_sound": {
       "title": "Ram impact sound",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "string"
     },
     "cooldown_range": {
       "title": "Cooldown range",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": [
-        { "title": "Min", "description": "UNDOCUMENTED", "type": "integer", "minimum": 0 },
-        { "title": "Max", "description": "UNDOCUMENTED", "type": "integer", "minimum": 0 }
+        { "title": "Min", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "integer", "minimum": 0 },
+        { "title": "Max", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "integer", "minimum": 0 }
       ]
     },
     "on_start": {
       "title": "On start",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$ref": "../types/event.json"
     }
   }

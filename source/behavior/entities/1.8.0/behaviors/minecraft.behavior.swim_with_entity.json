@@ -3,19 +3,25 @@
   "type": "object",
   "title": "Swim With Entity 1.8.0",
   "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "additionalProperties": false,
   "required": [],
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
-    "success_rate": { "type": "number", "title": "Success Rate", "description": "UNDOCUMENTED" },
-    "chance_to_stop": { "type": "number", "title": "Chance To Stop", "description": "UNDOCUMENTED" },
-    "state_check_interval": { "type": "number", "title": "State Check Interval", "description": "UNDOCUMENTED" },
-    "catch_up_threshold": { "type": "number", "title": "Catch Up Threshold", "description": "UNDOCUMENTED" },
-    "match_direction_threshold": { "type": "number", "title": "Match Direction Threshold", "description": "UNDOCUMENTED" },
-    "catch_up_multiplier": { "type": "number", "title": "Catch Up Multiplier", "description": "UNDOCUMENTED" },
-    "search_range": { "type": "number", "title": "Search Range", "description": "UNDOCUMENTED" },
-    "stop_distance": { "type": "number", "title": "Stop Distance", "description": "UNDOCUMENTED" },
-    "entity_types": { "$ref": "../types/entity_types.json", "title": "Entity Types", "description": "UNDOCUMENTED" }
+    "success_rate": { "type": "number", "title": "Success Rate", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "chance_to_stop": { "type": "number", "title": "Chance To Stop", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "state_check_interval": { "type": "number", "title": "State Check Interval", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "catch_up_threshold": { "type": "number", "title": "Catch Up Threshold", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "match_direction_threshold": {
+      "type": "number",
+      "title": "Match Direction Threshold",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "catch_up_multiplier": { "type": "number", "title": "Catch Up Multiplier", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "search_range": { "type": "number", "title": "Search Range", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "stop_distance": { "type": "number", "title": "Stop Distance", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "entity_types": { "$ref": "../types/entity_types.json", "title": "Entity Types", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
   }
 }

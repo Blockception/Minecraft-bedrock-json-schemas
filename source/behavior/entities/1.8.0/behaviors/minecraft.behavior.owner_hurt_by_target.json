@@ -10,7 +10,7 @@
     "entity_types": {
       "$ref": "../types/entity_types.json",
       "description": "List of entity types that this mob can target if they hurt their owner",
-      "title": "TODO Title"
+      "title": "Entity Types"
     }
   }
 }

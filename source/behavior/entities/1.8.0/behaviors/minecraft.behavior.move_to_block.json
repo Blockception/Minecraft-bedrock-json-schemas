@@ -4,29 +4,44 @@
   "title": "Move To Block 1.8.0",
   "additionalProperties": false,
   "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
-    "tick_interval": { "type": "number", "title": "Tick Interval", "description": "UNDOCUMENTED" },
-    "start_chance": { "type": "number", "title": "Start Chance", "description": "UNDOCUMENTED" },
-    "search_range": { "type": "number", "title": "Search Range", "description": "UNDOCUMENTED" },
-    "search_height": { "type": "number", "title": "Search Height", "description": "UNDOCUMENTED" },
-    "goal_radius": { "type": "number", "title": "Goal Radius", "description": "UNDOCUMENTED" },
-    "stay_duration": { "type": "number", "title": "Stay Duration", "description": "UNDOCUMENTED" },
-    "target_selection_method": { "type": "string", "title": "Target Selection Method", "description": "UNDOCUMENTED" },
+    "tick_interval": { "type": "number", "title": "Tick Interval", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "start_chance": { "type": "number", "title": "Start Chance", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "search_range": { "type": "number", "title": "Search Range", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "search_height": { "type": "number", "title": "Search Height", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "goal_radius": { "type": "number", "title": "Goal Radius", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "stay_duration": { "type": "number", "title": "Stay Duration", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "target_selection_method": { "type": "string", "title": "Target Selection Method", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
     "target_offset": {
       "type": "array",
       "title": "Target Offset",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
     },
-    "target_blocks": { "type": "array", "title": "Target Blocks", "description": "UNDOCUMENTED", "items": { "type": "string" } },
+    "target_blocks": {
+      "type": "array",
+      "title": "Target Blocks",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "items": { "type": "string" }
+    },
     "on_stay_completed": {
       "type": "array",
       "title": "On Stay Completed",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "items": { "$ref": "../types/event.json" }
     },
-    "on_reach": { "type": "array", "title": "On Reach", "description": "UNDOCUMENTED", "items": { "$ref": "../types/event.json" } }
+    "on_reach": {
+      "type": "array",
+      "title": "On Reach",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "items": { "$ref": "../types/event.json" }
+    }
   }
 }

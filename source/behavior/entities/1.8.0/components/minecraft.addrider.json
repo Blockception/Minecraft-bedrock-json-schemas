@@ -2,8 +2,8 @@
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.addrider",
   "additionalProperties": false,
   "type": "object",
-  "title": "Addrider 1.8.0",
-  "description": "Adds a rider to the entity. Requires minecraft:rideable.",
+  "title": "Add Rider 1.8.0",
+  "description": "Adds a rider to the entity. Requires `minecraft:rideable.`",
   "required": ["entity_type"],
   "properties": {
     "entity_type": { "type": "string", "description": "The entity type that will be riding this entity", "title": "Entity Type" },

@@ -1,6 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.play_dead",
   "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "type": "object",
   "title": "Play dead 1.8.0",
   "additionalProperties": false,
@@ -10,43 +11,50 @@
     "duration": {
       "title": "Duration",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "number",
       "minimum": 0
     },
     "force_below_health": {
       "title": "Force Below Health",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "number",
       "minimum": 0
     },
     "random_start_chance": {
       "title": "Random Start Chance",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "number",
       "minimum": 0
     },
     "random_damage_range": {
       "title": "Random Damage Range",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": [
-        { "title": "Min", "description": "UNDOCUMENTED", "type": "integer", "minimum": 0 },
-        { "title": "Max", "description": "UNDOCUMENTED", "type": "integer", "minimum": 0 }
+        { "title": "Min", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "integer", "minimum": 0 },
+        { "title": "Max", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "integer", "minimum": 0 }
       ]
     },
     "damage_sources": {
       "title": "Damage sources",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
         "title": "Damage Source",
         "description": "UNDOCUMENTED",
+        "$comment": "UNDOCUMENTED",
         "$ref": "../../../../general/entity_damage.json"
       }
     },
     "apply_regeneration": {
       "title": "Apply regeneration",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "boolean"
     },
     "filters": { "$ref": "../../filters/filters.json" }
