@@ -14,12 +14,13 @@
     "nutrition": { "title": "Nutrition", "description": "How much nutrition does this food item give the player when eaten.", "type": "number" },
     "on_consume": {
       "title": "On Consume",
-      "description": "UNDOCUMENATED",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "event": { "type": "string", "title": "UNDOCUMENATED", "description": "UNDOCUMENATED" },
-        "target": { "type": "string", "title": "UNDOCUMENATED", "description": "UNDOCUMENATED", "enum": ["self"] }
+        "event": { "type": "string", "title": "UNDOCUMENTED", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+        "target": { "type": "string", "title": "UNDOCUMENTED", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "enum": ["self"] }
       }
     },
     "saturation_modifier": {

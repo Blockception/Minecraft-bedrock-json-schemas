@@ -4,6 +4,7 @@
   "type": "object",
   "title": "Item Texture File",
   "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "definitions": {
     "texture": {
@@ -21,6 +22,7 @@
               "title": "Tint Color",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "format": "color-hex",
               "type": "string"
             },
@@ -29,15 +31,18 @@
               "title": "Variantions",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "items": {
                 "type": "object",
                 "title": "Variantion",
                 "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
                 "$comment": "UNDOCUMENTED",
                 "required": ["path"],
                 "properties": {
                   "path": { "description": "A texture file", "type": "string", "pattern": "^textures/.+$", "title": "Path" },
-                  "weight": { "type": "integer", "title": "Weight", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
+                  "weight": { "type": "integer", "title": "Weight", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
                 }
               }
             }
@@ -47,16 +52,19 @@
     }
   },
   "properties": {
-    "resource_pack_name": { "type": "string", "title": "Resource Pack Name", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "resource_pack_name": { "type": "string", "title": "Resource Pack Name", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
     "texture_data": {
       "title": "Texture Data",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "propertyNames": { "pattern": "^[\\w_\\-\\.]+$" },
       "additionalProperties": {
         "title": "Texture Data",
         "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED",
         "type": "object",
         "additionalProperties": false,
@@ -70,6 +78,7 @@
         }
       }
     },
-    "texture_name": { "title": "Texture Name", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "string" }
+    "texture_name": { "title": "Texture Name", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "type": "string" }
   }
 }

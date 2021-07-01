@@ -3,6 +3,7 @@
   "type": "object",
   "title": "Material",
   "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "additionalProperties": false,
   "definitions": {
@@ -10,11 +11,13 @@
       "type": "array",
       "title": "Defines",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "items": {
         "type": "string",
         "title": "Definition",
         "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED",
         "enum": [
           "ALLOW_FADE",
@@ -101,6 +104,7 @@
       "type": "string",
       "title": "Fail Operation",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "enum": ["Keep", "Replace"]
     },
@@ -108,6 +112,7 @@
       "type": "object",
       "title": "Face",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "additionalProperties": false,
       "properties": {
@@ -115,6 +120,7 @@
           "type": "string",
           "title": "Stencil Depth Fail Operation",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "$ref": "#/definitions/FailOperation"
         },
@@ -122,6 +128,7 @@
           "type": "string",
           "title": "Stencil Fail Operation",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "$ref": "#/definitions/FailOperation"
         },
@@ -129,14 +136,17 @@
           "type": "string",
           "title": "Stencil Function",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "enum": ["Always", "Equal", "NotEqual"]
         },
-        "stencilPass": { "type": "string", "title": "Stencil Pass", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "enum": ["Replace"] },
+        "stencilPass": { "type": "string", "title": "Stencil Pass", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "enum": ["Replace"] },
         "stencilPassOp": {
           "type": "string",
           "title": "Stencil Depth Fail Operation",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "$ref": "#/definitions/FailOperation"
         }
@@ -146,11 +156,13 @@
       "type": "array",
       "title": "States",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "items": {
         "type": "string",
         "title": "State",
         "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED",
         "enum": [
           "Blending",
@@ -170,19 +182,23 @@
       "type": "array",
       "title": "Sampler States",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "items": {
         "type": "object",
         "title": "Sample State",
         "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED",
         "additionalProperties": false,
         "properties": {
-          "samplerIndex": { "type": "integer", "title": "Sample State", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+          "samplerIndex": { "type": "integer", "title": "Sample State", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
           "textureFilter": {
             "type": "string",
             "title": "Texture Filter",
             "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "enum": ["Point", "Bilinear", "TexelAA"]
           },
@@ -190,6 +206,7 @@
             "type": "string",
             "title": "Texture Wrap",
             "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "enum": ["Repeat", "Clamp"]
           }
@@ -200,30 +217,36 @@
       "type": "array",
       "title": "Vertex Fields",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "items": {
         "type": "object",
         "title": "Vertex Field",
         "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED",
         "additionalProperties": false,
-        "properties": { "field": { "type": "string", "title": "Vertex Field", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" } }
+        "properties": { "field": { "type": "string", "title": "Vertex Field", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" } }
       }
     },
     "VariantSpecification": {
       "type": "array",
       "title": "Variants",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "items": {
         "type": "object",
         "title": "Variant",
         "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED",
         "propertyNames": { "enum": ["fading", "fog", "fog.underwater", "lit", "skinning", "skinning_color", "underlava", "underwater"] },
         "additionalProperties": {
           "title": "Variant Item",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "$ref": "#/definitions/VariantsItemSpecificaiton"
         }
@@ -233,6 +256,7 @@
       "type": "object",
       "title": "Variant Item",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "additionalProperties": false,
       "properties": {
@@ -240,6 +264,7 @@
         "vertexFields": {
           "title": "Vertex Fields",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "$ref": "#/definitions/VertexFieldsSpecification"
         },
@@ -254,14 +279,17 @@
       "type": "object",
       "title": "Materials",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "required": ["version"],
       "properties": {
-        "version": { "type": "string", "const": "1.0.0", "title": "Version", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
+        "version": { "type": "string", "const": "1.0.0", "title": "Version", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
       },
       "additionalProperties": {
         "title": "Material Definitions",
         "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED",
         "additionalProperties": false,
         "properties": {
@@ -269,14 +297,17 @@
             "type": "string",
             "title": "Alpha Distance",
             "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "enum": ["DestColor", "OneMinusSrcAlpha"]
           },
-          "backFace": { "title": "Back Face", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/FaceSpecification" },
+          "backFace": { "title": "Back Face", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "$ref": "#/definitions/FaceSpecification" },
           "blendDst": {
             "type": "string",
             "title": "Blend Distance",
             "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "enum": ["SourceAlpha", "OneMinusSrcAlpha", "OneMinusSrcColor", "SourceColor", "Zero", "One"]
           },
@@ -284,6 +315,7 @@
             "type": "string",
             "title": "Blend Source",
             "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "enum": ["DestColor", "One", "OneMinusDestColor", "SourceAlpha", "SourceColor"]
           },
@@ -294,12 +326,15 @@
           },
           "+defines": { "title": "Defines", "description": "UNDOCUMENTATED, Add definitions???", "$ref": "#/definitions/DefinesSpecification" },
           "-defines": { "title": "Defines", "description": "UNDOCUMENTATED, removes definitions???", "$ref": "#/definitions/DefinesSpecification" },
-          "depthBias": { "type": "number", "title": "Depth Bias", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-          "depthBiasOGL": { "type": "number", "title": "Depth Bias OGL", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+          "depthBias": { "type": "number", "title": "Depth Bias", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+          "depthBiasOGL": { "type": "number", "title": "Depth Bias OGL", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
           "depthFunc": {
             "type": "string",
             "title": "Depth Function",
             "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "enum": ["LessEqual", "Always", "Equal"]
           },
@@ -307,12 +342,14 @@
             "type": "string",
             "title": "Fragment Shader",
             "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "pattern": "^shaders/.*\\.fragment$"
           },
           "frontFace": {
             "title": "Front Face",
             "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "$ref": "#/definitions/FaceSpecification"
           },
@@ -325,6 +362,7 @@
             "type": "string",
             "title": "MSAA Support",
             "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "enum": ["Both", "MSAA"]
           },
@@ -332,6 +370,7 @@
             "type": "string",
             "title": "Primitive Mode",
             "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "enum": ["Line"]
           },
@@ -345,25 +384,32 @@
             "description": "UNDOCUMENTATED, Add samplerStates???",
             "$ref": "#/definitions/SamplerStatesSpecification"
           },
-          "slopeScaledDepthBias": { "type": "number", "title": "Slope Scaled Depth Bias", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+          "slopeScaledDepthBias": { "type": "number", "title": "Slope Scaled Depth Bias", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
           "slopeScaledDepthBiasOGL": {
             "type": "number",
             "title": "Slope Scaled Depth Bias OGL",
             "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED"
           },
           "states": { "title": "States", "description": "UNDOCUMENTATED, start states???", "$ref": "#/definitions/StatesSpecification" },
           "+states": { "title": "States", "description": "UNDOCUMENTATED, Add additional states???", "$ref": "#/definitions/StatesSpecification" },
           "-states": { "title": "States", "description": "UNDOCUMENTATED, remove additional states???", "$ref": "#/definitions/StatesSpecification" },
-          "stencilRef": { "type": "integer", "title": "Stencil Ref", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-          "stencilRefOverride": { "type": "integer", "title": "Stencil Ref Override", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-          "stencilReadMask": { "type": "integer", "title": "Stencil Read Mask", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-          "stencilWriteMask": { "type": "integer", "title": "Stencil Write Mask", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+          "stencilRef": { "type": "integer", "title": "Stencil Ref", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+          "stencilRefOverride": { "type": "integer", "title": "Stencil Ref Override", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+          "stencilReadMask": { "type": "integer", "title": "Stencil Read Mask", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+          "stencilWriteMask": { "type": "integer", "title": "Stencil Write Mask", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
           "variants": { "title": "Variants", "description": "UNDOCUMENTATED, sets the variants?", "$ref": "#/definitions/VariantSpecification" },
           "+variants": { "title": "Variants", "description": "UNDOCUMENTATED, adds variants?", "$ref": "#/definitions/VariantSpecification" },
           "vertexFields": {
             "title": "Vertex Fields",
             "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "$ref": "#/definitions/VertexFieldsSpecification"
           },
@@ -371,6 +417,7 @@
             "type": "string",
             "title": "Vertex Shader",
             "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "pattern": "^shaders/.*\\.vertex$"
           },
@@ -378,6 +425,7 @@
             "type": "string",
             "title": "VR Geometry Shader",
             "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "pattern": "^shaders/.*\\.geometry$"
           }

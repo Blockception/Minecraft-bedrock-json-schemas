@@ -4,27 +4,72 @@
   "title": "Avoid Block 1.16.0",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "additionalProperties": false,
   "properties": {
     "priority": { "$ref": "types/priority.json" },
-    "tick_interval": { "type": "integer", "title": "Tick Interval", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-    "search_range": { "type": "integer", "title": "Search Range", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-    "search_height": { "type": "integer", "title": "Search Height", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-    "sprint_speed_modifier": { "type": "number", "title": "Sprint Speed Modifier", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-    "target_selection_method": { "type": "string", "title": "Target Selection Method", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "tick_interval": {
+      "type": "integer",
+      "title": "Tick Interval",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "search_range": {
+      "type": "integer",
+      "title": "Search Range",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "search_height": {
+      "type": "integer",
+      "title": "Search Height",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "sprint_speed_modifier": {
+      "type": "number",
+      "title": "Sprint Speed Modifier",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "target_selection_method": {
+      "type": "string",
+      "title": "Target Selection Method",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
     "target_blocks": {
       "type": "array",
       "title": "Target Blocks",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
-      "items": { "type": "string", "title": "Block ID", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
+      "$comment": "UNDOCUMENTED",
+      "items": { "type": "string", "title": "Block ID", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
     },
-    "avoid_block_sound": { "type": "string", "title": "Avoid Block Sound", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-    "walk_speed_modifier": { "type": "number", "title": "Walk Speed Modifier", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "avoid_block_sound": {
+      "type": "string",
+      "title": "Avoid Block Sound",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "walk_speed_modifier": {
+      "type": "number",
+      "title": "Walk Speed Modifier",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
     "on_escape": {
       "type": "array",
       "title": "Walk Speed Modifier",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "items": { "$ref": "../types/event.json" }
     },

@@ -10,11 +10,13 @@
       "const": "enchant_with_levels",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "title": "Function"
     },
     "levels": {
       "title": "Levels",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "oneOf": [
         { "type": "integer" },
@@ -26,6 +28,6 @@
         }
       ]
     },
-    "treasure": { "type": "boolean", "title": "Treasure", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
+    "treasure": { "type": "boolean", "title": "Treasure", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
   }
 }

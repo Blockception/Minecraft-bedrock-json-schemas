@@ -3,6 +3,7 @@
   "title": "Height Filter 1.17.0",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "definitions": {
     "herd": {
       "type": "object",
@@ -10,8 +11,8 @@
       "description": "Herd",
       "additionalProperties": false,
       "properties": {
-        "initial_event": { "title": "Initial Event", "description": "UNDOCUMENATED", "type": "string" },
-        "initial_event_count": { "title": "Initial Event Count", "description": "UNDOCUMENATED", "type": "integer" },
+        "initial_event": { "title": "Initial Event", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "string" },
+        "initial_event_count": { "title": "Initial Event Count", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "integer" },
         "min_size": { "type": "integer", "description": "This is the minimum number of mobs that spawn in a herd", "title": "Min Size" },
         "max_size": { "type": "integer", "description": "This is the maximum number of mobs that spawn in a herd", "title": "Max Size" },
         "event": { "type": "string", "description": "This is an event that can be triggered from spawning", "title": "Event" },

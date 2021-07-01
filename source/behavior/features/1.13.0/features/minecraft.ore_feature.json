@@ -9,6 +9,7 @@
       "title": "Description",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "object",
       "required": ["identifier"],
       "properties": {

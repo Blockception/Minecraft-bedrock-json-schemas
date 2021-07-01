@@ -9,6 +9,7 @@
       "title": "Description",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "object",
       "required": ["identifier"],
       "properties": {
@@ -24,6 +25,7 @@
       "title": "Replaceable Blocks",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
         "title": "Replace block",
@@ -35,12 +37,14 @@
       "title": "Ground Block",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "string",
       "$ref": "../../../../general/block/identifier.json"
     },
     "vegetation_feature": {
       "title": "Vegetation Feature",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "string",
       "$ref": "../../../../general/feature/identifier.json"
@@ -49,11 +53,13 @@
       "title": "Surface",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "string"
     },
     "depth": {
       "title": "Depth",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "integer",
       "minimum": 0
@@ -62,12 +68,14 @@
       "title": "Extra Deep Block Chance",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "number",
       "minimum": 0
     },
     "vertical_range": {
       "title": "Vertical Range",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "integer",
       "minimum": 0
@@ -76,12 +84,14 @@
       "title": "Vegatation Chance",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "number",
       "minimum": 0
     },
     "horizontal_radius": {
       "title": "Horizontal Radius",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "integer",
       "minimum": 0
@@ -90,12 +100,14 @@
       "title": "Extra Egde Column Chance",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "number",
       "minimum": 0
     },
     "waterlogged": {
       "title": "Waterlogged",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "boolean"
     }

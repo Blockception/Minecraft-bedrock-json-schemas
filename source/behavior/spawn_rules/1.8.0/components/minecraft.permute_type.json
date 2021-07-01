@@ -5,15 +5,23 @@
   "title": "Permute Type 1.8.0",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "items": {
     "type": "object",
     "additionalProperties": false,
     "title": "Permute Type",
     "description": "UNDOCUMENTED",
     "$comment": "UNDOCUMENTED",
+    "$comment": "UNDOCUMENTED",
     "properties": {
-      "weight": { "type": "integer", "title": "Weight", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-      "entity_type": { "type": "string", "title": "Entity Type", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
+      "weight": { "type": "integer", "title": "Weight", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+      "entity_type": {
+        "type": "string",
+        "title": "Entity Type",
+        "description": "UNDOCUMENTED",
+        "$comment": "UNDOCUMENTED",
+        "$comment": "UNDOCUMENTED"
+      }
     }
   }
 }

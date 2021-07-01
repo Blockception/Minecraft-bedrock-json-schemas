@@ -3,6 +3,7 @@
   "type": "object",
   "additionalProperties": false,
   "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "title": "Trading",
   "examples": [
@@ -90,6 +91,7 @@
                     "choice": {
                       "title": "Choice",
                       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
                       "$comment": "UNDOCUMENTED",
                       "type": "array",
                       "items": { "$ref": "#/definitions/Item" }
@@ -126,11 +128,13 @@
                         }
                       ]
                     },
-                    "price_multiplier": { "title": "Price Multiplier", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" },
+                    "price_multiplier": { "title": "Price Multiplier", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "type": "number" },
                     "functions": { "$ref": "#/definitions/Functions" },
                     "choice": {
                       "title": "Choice",
                       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
                       "$comment": "UNDOCUMENTED",
                       "type": "array",
                       "items": { "$ref": "#/definitions/Item" }

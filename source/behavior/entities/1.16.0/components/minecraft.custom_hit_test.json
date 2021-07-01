@@ -10,19 +10,22 @@
       "title": "Hitboxes",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "items": {
         "type": "object",
         "title": "Hitbox",
         "description": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED",
+        "$comment": "UNDOCUMENTED",
         "additionalProperties": false,
         "properties": {
-          "width": { "type": "number", "title": "Width", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-          "height": { "type": "number", "title": "Height", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+          "width": { "type": "number", "title": "Width", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+          "height": { "type": "number", "title": "Height", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
           "pivot": {
             "type": "array",
             "title": "Pivot",
             "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
           }

@@ -4,9 +4,13 @@
   "title": "Particle Kill Plane Component For 1.10.0",
   "description": "A*x + B*y + C*z + D = 0\nwith the parameters being [ A, B, C, D ]",
   "items": [
-    { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "A" },
-    { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "B" },
-    { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "C" },
-    { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "D" }
+    { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "title": "A" },
+    { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "title": "B" },
+    { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "title": "C" },
+    { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "title": "D" }
   ]
 }

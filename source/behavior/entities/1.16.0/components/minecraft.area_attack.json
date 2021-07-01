@@ -22,6 +22,7 @@
       "type": "string",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "title": "Cause",
       "$ref": "../../../../general/entity/damage_source.json"
     }

@@ -5,16 +5,20 @@
   "title": "Random Aux Value",
   "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "random_aux_value", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Function" },
+    "function": { "type": "string", "const": "random_aux_value", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "title": "Function" },
     "values": {
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "title": "Values",
       "additionalProperties": false,
       "type": "object",
       "properties": {
-        "min": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Minimum" },
-        "max": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Maximum" }
+        "min": { "type": "integer", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "title": "Minimum" },
+        "max": { "type": "integer", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "title": "Maximum" }
       }
     }
   }

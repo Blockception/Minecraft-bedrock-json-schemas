@@ -43,11 +43,13 @@
       "title": "Avoid Mob Sound",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "string"
     },
     "remove_target": {
       "title": "Remove Target",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "boolean"
     },
@@ -55,11 +57,13 @@
       "$ref": "../types/event.json",
       "title": "On Escape Event",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
     "sound_interval": {
       "default": 0,
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "title": "Sound Interval",
       "oneOf": [

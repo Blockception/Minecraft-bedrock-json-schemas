@@ -4,6 +4,8 @@
   "type": "object",
   "title": "Weight 1.8.0",
   "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
-  "properties": { "default": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Default" } }
+  "properties": { "default": { "type": "integer", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "title": "Default" } }
 }

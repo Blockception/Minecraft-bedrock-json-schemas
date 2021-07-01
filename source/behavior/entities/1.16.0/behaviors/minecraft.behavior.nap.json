@@ -35,11 +35,13 @@
       "$ref": "../../filters/filters.json",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "title": "Can Nap Filters"
     },
     "wake_mob_exceptions": {
       "$ref": "../../filters/filters.json",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "title": "Wake Mob Exceptions"
     }

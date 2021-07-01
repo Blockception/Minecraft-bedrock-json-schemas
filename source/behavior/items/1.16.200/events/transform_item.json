@@ -2,8 +2,10 @@
   "$id": "blockception.minecraft.behavior.1.16.200.items.events.transform_item",
   "title": "Transform Item",
   "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "type": "object",
   "additionalProperties": false,
-  "properties": { "transform": { "title": "Transform", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "string" } }
+  "properties": { "transform": { "title": "Transform", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "type": "string" } }
 }

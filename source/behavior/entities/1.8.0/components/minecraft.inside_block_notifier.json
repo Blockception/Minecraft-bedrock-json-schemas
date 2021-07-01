@@ -14,6 +14,7 @@
         "title": "Block",
         "description": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED",
+        "$comment": "UNDOCUMENTED",
         "type": "object",
         "additionalProperties": false,
         "properties": {
@@ -22,11 +23,13 @@
             "title": "Entered Block Event",
             "description": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED",
             "$ref": "../types/event.json"
           },
           "exited_block_event": {
             "title": "Exited Block Event",
             "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "$ref": "../types/event.json"
           }

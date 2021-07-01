@@ -13,6 +13,7 @@
       "description": "The range of time in seconds the mob will stay looking in a random direction before looking elsewhere",
       "title": "Look Time"
     },
-    "look_distance": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Look Distance" }
+    "look_distance": { "type": "number", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "title": "Look Distance" }
   }
 }

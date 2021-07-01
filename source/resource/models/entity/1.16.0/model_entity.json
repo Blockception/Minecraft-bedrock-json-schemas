@@ -32,7 +32,8 @@
     }
   },
   "properties": {
-    "debug": { "title": "Debug", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "boolean", "default": false },
+    "debug": { "title": "Debug", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "type": "boolean", "default": false },
     "format_version": {
       "title": "1.16.0 Format Version",
       "type": "string",
@@ -447,7 +448,8 @@
               }
             }
           },
-          "cape": { "title": "Cape", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "string" }
+          "cape": { "title": "Cape", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "type": "string" }
         }
       }
     }

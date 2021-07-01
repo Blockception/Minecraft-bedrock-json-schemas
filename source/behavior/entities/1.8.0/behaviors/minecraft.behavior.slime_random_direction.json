@@ -11,13 +11,15 @@
       "type": "number",
       "title": "Add Random Time Range",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
-    "turn_range": { "type": "number", "title": "Turn Range", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "turn_range": { "type": "number", "title": "Turn Range", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
     "min_change_direction_time": {
       "type": "number",
       "title": "Min Change Direction Time",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }
   }

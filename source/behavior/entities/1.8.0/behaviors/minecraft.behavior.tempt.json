@@ -18,6 +18,7 @@
       "type": "boolean",
       "title": "Can Tempt While Ridden",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
     "items": {

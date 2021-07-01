@@ -4,7 +4,14 @@
   "description": "The function set_count",
   "title": "Set Count",
   "properties": {
-    "function": { "type": "string", "const": "set_count", "title": "Function", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "function": {
+      "type": "string",
+      "const": "set_count",
+      "title": "Function",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
     "count": {
       "title": "Count",
       "oneOf": [
@@ -12,6 +19,7 @@
         { "type": "object", "properties": { "min": { "type": "integer", "title": "Minimum" }, "max": { "type": "integer", "title": "Maximum" } } }
       ],
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }
   }

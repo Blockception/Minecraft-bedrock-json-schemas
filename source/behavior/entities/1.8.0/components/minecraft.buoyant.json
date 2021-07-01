@@ -10,6 +10,7 @@
       "default": 0,
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "title": "Base Buoyancy"
     },
     "apply_gravity": {

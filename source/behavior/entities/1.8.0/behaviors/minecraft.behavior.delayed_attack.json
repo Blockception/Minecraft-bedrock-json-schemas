@@ -33,7 +33,7 @@
       "description": "Multiplier for how far outside its box the mob can reach its target (this can be used to simulate a mob with longer arms by making this bigger)",
       "title": "Reach Multiplier"
     },
-    "require_complete_path": { "type": "boolean", "title": "Require Complet Path", "description": "UNDOCUMENATED" },
+    "require_complete_path": { "type": "boolean", "title": "Require Complet Path", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
     "sound_event": { "type": "string", "description": "The sound event to play when the attack starts", "title": "Sound Event" },
     "track_target": {
       "type": "boolean",

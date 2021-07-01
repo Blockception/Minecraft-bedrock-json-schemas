@@ -12,6 +12,6 @@
       "type": "string",
       "description": "Actor definition to use as projectile for the ranged attack. The actor definition must have the projectile component to be able to be shot as a projectile"
     },
-    "type": { "title": "Type", "type": "string", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
+    "type": { "title": "Type", "type": "string", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
   }
 }

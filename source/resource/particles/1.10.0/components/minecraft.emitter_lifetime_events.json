@@ -3,6 +3,7 @@
   "type": "object",
   "title": "Emitter Lifetime Events Component For 1.10.0",
   "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "additionalProperties": false,
   "properties": {
@@ -41,10 +42,12 @@
         "title": "Distance Event",
         "additionalProperties": false,
         "properties": {
-          "distance": { "title": "Distance", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" },
+          "distance": { "title": "Distance", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "type": "number" },
           "effects": {
             "title": "Effects",
             "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "oneOf": [{ "type": "array", "items": { "type": "string" } }, { "type": "string" }]
           }

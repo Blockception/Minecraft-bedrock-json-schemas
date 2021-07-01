@@ -4,6 +4,7 @@
   "title": "Spawn Rules 1.17.0",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "additionalProperties": false,
   "required": ["format_version", "minecraft:volume"],
   "properties": {
@@ -16,6 +17,7 @@
       "type": "object",
       "title": "Spawn Rules",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "additionalProperties": false,
       "properties": {
@@ -36,6 +38,7 @@
           "type": "object",
           "title": "Components",
           "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "additionalProperties": false,
           "properties": {

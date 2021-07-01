@@ -32,10 +32,13 @@
     "knockback_filters": {
       "$ref": "../../filters/filters.json",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "title": "Knockback Filters"
     },
-    "damage_filters": { "$ref": "../../filters/filters.json", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Damage Filters" },
-    "on_roar_end": { "$ref": "../types/event.json", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "On Roar End" }
+    "damage_filters": { "$ref": "../../filters/filters.json", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "title": "Damage Filters" },
+    "on_roar_end": { "$ref": "../types/event.json", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "title": "On Roar End" }
   }
 }

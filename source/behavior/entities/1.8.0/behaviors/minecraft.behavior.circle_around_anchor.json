@@ -53,24 +53,28 @@
       "type": "number",
       "title": "Radius Change",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
     "radius_adjustment_chance": {
       "type": "number",
       "title": "Radius Adjustment Chance",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
     "height_adjustment_chance": {
       "type": "number",
       "title": "Height Adjustment Chance",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
     "angle_change": {
       "type": "number",
       "title": "Angle Change",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }
   }

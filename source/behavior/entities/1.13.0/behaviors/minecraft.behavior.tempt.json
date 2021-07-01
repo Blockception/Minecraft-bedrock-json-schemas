@@ -14,7 +14,8 @@
       "description": "If true, the mob can stop being tempted if the player moves too fast while close to this mob",
       "title": "Can Get Scared"
     },
-    "can_tempt_while_ridden": { "type": "boolean", "title": "Can Tempt While Ridden", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "can_tempt_while_ridden": { "type": "boolean", "title": "Can Tempt While Ridden", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
     "items": {
       "type": "array",
       "description": "List of items this mob is tempted by",
@@ -27,15 +28,19 @@
       "description": "Distance in blocks this mob can get tempted by a player holding an item they like",
       "title": "Within Radius"
     },
-    "tempt_sound": { "type": "string", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Tempt Sound" },
+    "tempt_sound": { "type": "string", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "title": "Tempt Sound" },
     "sound_interval": {
       "type": "object",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "title": "Sound Interval",
       "properties": {
-        "range_min": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Range Min" },
-        "range_max": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Range Max" }
+        "range_min": { "type": "number", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "title": "Range Min" },
+        "range_max": { "type": "number", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "title": "Range Max" }
       },
       "additionalProperties": false
     }

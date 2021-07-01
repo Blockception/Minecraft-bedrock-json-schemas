@@ -9,7 +9,8 @@
   "properties": {
     "noise_params": {
       "title": "Noise Params",
-      "description": "UNDOCUMENATED",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": [
         {
@@ -22,7 +23,8 @@
     },
     "noise_type": {
       "title": "Noise Type",
-      "description": "UNDOCUMENATED",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "type": "string",
       "enum": [
         "stone_beach",

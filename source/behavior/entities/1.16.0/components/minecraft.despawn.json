@@ -16,6 +16,7 @@
       "additionalProperties": false,
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "title": "Despawn From Distance",
       "properties": {
         "max_distance": {

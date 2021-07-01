@@ -3,5 +3,6 @@
   "type": "string",
   "title": "Block Name",
   "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED"
 }

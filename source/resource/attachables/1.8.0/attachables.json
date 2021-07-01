@@ -4,6 +4,7 @@
   "title": "Actor Animation 1.8.0",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "required": ["format_version", "minecraft:attachable"],
   "properties": {
     "format_version": {
@@ -63,7 +64,14 @@
               "title": "Item",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
-              "additionalProperties": { "type": "string", "title": "Item", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
+              "$comment": "UNDOCUMENTED",
+              "additionalProperties": {
+                "type": "string",
+                "title": "Item",
+                "description": "UNDOCUMENTED",
+                "$comment": "UNDOCUMENTED",
+                "$comment": "UNDOCUMENTED"
+              }
             },
             "materials": {
               "type": "object",

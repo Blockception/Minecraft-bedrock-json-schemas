@@ -76,6 +76,7 @@
                   "type": "number",
                   "default": 0,
                   "description": "UNDOCUMENTED",
+                  "$comment": "UNDOCUMENTED",
                   "$comment": "UNDOCUMENTED"
                 },
                 "entity_type": { "type": "string", "description": "The entity type of the entities we will spawn in this step" },
@@ -88,6 +89,7 @@
                   "type": "number",
                   "default": 0,
                   "description": "UNDOCUMENTED",
+                  "$comment": "UNDOCUMENTED",
                   "$comment": "UNDOCUMENTED"
                 },
                 "target": {

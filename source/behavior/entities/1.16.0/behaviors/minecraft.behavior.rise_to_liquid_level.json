@@ -7,8 +7,14 @@
   "required": [],
   "properties": {
     "priority": { "$ref": "types/priority.json" },
-    "liquid_y_offset": { "type": "number", "title": "Liquid Y Offset", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-    "rise_delta": { "type": "number", "title": "Rise Delta", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-    "sink_delta": { "type": "number", "title": "Sink Delta", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
+    "liquid_y_offset": {
+      "type": "number",
+      "title": "Liquid Y Offset",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "rise_delta": { "type": "number", "title": "Rise Delta", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "sink_delta": { "type": "number", "title": "Sink Delta", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
   }
 }

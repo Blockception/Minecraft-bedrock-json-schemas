@@ -12,7 +12,8 @@
       "minItems": 1,
       "items": {
         "title": "Block Reference",
-        "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED",
+        "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED"
         "type": "string"
       }
     },
@@ -22,7 +23,8 @@
       "minItems": 1,
       "items": {
         "title": "Block Reference",
-        "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED",
+        "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED"
         "type": "string"
       }
     },

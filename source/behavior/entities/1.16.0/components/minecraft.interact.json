@@ -94,6 +94,7 @@
     "interactions": {
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "title": "Interactions",
       "oneOf": [
         { "type": "object", "$ref": "#/definitions/interaction_spec" },

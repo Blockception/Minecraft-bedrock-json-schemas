@@ -20,10 +20,11 @@
         "additionalProperties": false,
         "type": "object",
         "properties": {
-          "weight": { "type": "integer", "title": "Weight", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+          "weight": { "type": "integer", "title": "Weight", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
           "value": {
             "title": "Value",
             "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "$ref": "../types/event.json"
           }

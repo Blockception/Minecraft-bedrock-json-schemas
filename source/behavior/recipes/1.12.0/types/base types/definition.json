@@ -9,6 +9,7 @@
       "pattern": "[a-z0-9_:\\-]+",
       "title": "Recipe Identifier",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }
   },

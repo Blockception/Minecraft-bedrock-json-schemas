@@ -21,6 +21,7 @@
           "title": "Fog ids to merge",
           "description": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "type": "array",
           "items": {
             "title": "Fog ID",
@@ -32,11 +33,13 @@
           "title": "Inherit From Prior Fog",
           "description": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "type": "boolean"
         },
         "remove_all_prior_fog": {
           "title": "Remove All Prior Fog",
           "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "boolean"
         },

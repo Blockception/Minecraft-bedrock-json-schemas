@@ -4,6 +4,7 @@
   "title": "Entity Behavior 1.16.100",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "required": ["format_version", "minecraft:entity"],
   "properties": {
     "format_version": {

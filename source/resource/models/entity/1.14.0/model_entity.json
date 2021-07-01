@@ -32,7 +32,8 @@
     }
   },
   "properties": {
-    "debug": { "type": "boolean", "default": false, "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Debug" },
+    "debug": { "type": "boolean", "default": false, "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "title": "Debug" },
     "format_version": {
       "title": "1.14.0 Format Version",
       "type": "string",

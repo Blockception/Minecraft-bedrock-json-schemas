@@ -5,8 +5,15 @@
   "title": "Player In Village Filter 1.11.0",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "properties": {
-    "distance": { "type": "integer", "title": "Distance", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-    "village_border_tolerance": { "type": "integer", "title": "Village Border Tolerance", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
+    "distance": { "type": "integer", "title": "Distance", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "village_border_tolerance": {
+      "type": "integer",
+      "title": "Village Border Tolerance",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    }
   }
 }

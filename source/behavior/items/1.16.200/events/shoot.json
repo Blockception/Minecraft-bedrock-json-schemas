@@ -3,11 +3,24 @@
   "title": "Shoot",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "angle_offset": { "type": "number", "title": "Angle Offset", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-    "launch_power": { "type": "number", "title": "Launch Power", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-    "projectile": { "type": "string", "title": "Projectile", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
+    "angle_offset": {
+      "type": "number",
+      "title": "Angle Offset",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "launch_power": {
+      "type": "number",
+      "title": "Launch Power",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "projectile": { "type": "string", "title": "Projectile", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
   }
 }

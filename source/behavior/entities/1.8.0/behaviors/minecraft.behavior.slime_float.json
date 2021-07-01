@@ -12,6 +12,7 @@
       "type": "number",
       "title": "Sink Delta",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }
   }

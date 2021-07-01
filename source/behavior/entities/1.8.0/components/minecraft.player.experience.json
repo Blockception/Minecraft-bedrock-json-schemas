@@ -5,9 +5,24 @@
   "title": "Player.experience 1.8.0",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "required": [],
   "properties": {
-    "value": { "type": "number", "default": true, "title": "Value", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-    "max": { "type": "number", "default": true, "title": "Maximum", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
+    "value": {
+      "type": "number",
+      "default": true,
+      "title": "Value",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "max": {
+      "type": "number",
+      "default": true,
+      "title": "Maximum",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    }
   }
 }

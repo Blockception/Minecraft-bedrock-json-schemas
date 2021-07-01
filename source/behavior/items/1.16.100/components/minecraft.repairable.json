@@ -12,17 +12,24 @@
       "type": "array",
       "items": {
         "type": "object",
-        "title": "UNDOCUMENATED",
-        "description": "UNDOCUMENATED",
+        "title": "UNDOCUMENTED",
+        "description": "UNDOCUMENTED",
+        "$comment": "UNDOCUMENTED",
         "additionalProperties": false,
         "properties": {
           "items": {
             "title": "Items",
-            "description": "UNDOCUMENATED",
+            "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED",
             "type": "array",
-            "items": { "type": "string", "title": "Item", "description": "UNDOCUMENATED" }
+            "items": { "type": "string", "title": "Item", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
           },
-          "repair_amount": { "title": "Repair Amount", "description": "UNDOCUMENATED", "$ref": "../../../../molang/number.json" }
+          "repair_amount": {
+            "title": "Repair Amount",
+            "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED",
+            "$ref": "../../../../molang/number.json"
+          }
         }
       }
     }

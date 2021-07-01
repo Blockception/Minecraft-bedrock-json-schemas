@@ -27,42 +27,52 @@
       "type": "array",
       "title": "Event Choices",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "items": {
         "type": "object",
         "additionalProperties": false,
         "title": "Event Choice",
         "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED",
         "properties": {
           "min_activation_range": {
             "type": "number",
             "title": "Minimum Activation Range",
             "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED"
           },
           "max_activation_range": {
             "type": "number",
             "title": "Maxmimum Activation Range",
             "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED"
           },
-          "cooldown_time": { "type": "number", "title": "Cooldown Time", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-          "cast_duration": { "type": "number", "title": "Cast Duration", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+          "cooldown_time": { "type": "number", "title": "Cooldown Time", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+          "cast_duration": { "type": "number", "title": "Cast Duration", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
           "filters": { "$ref": "../../filters/filters.json" },
           "particle_color": {
             "type": "string",
             "format": "color-hex",
             "title": "Particle Color",
             "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED"
           },
-          "weight": { "type": "integer", "title": "Weight", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-          "start_sound_event": { "type": "string", "title": "Start Sound Event", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+          "weight": { "type": "integer", "title": "Weight", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+          "start_sound_event": { "type": "string", "title": "Start Sound Event", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
           "sequence": { "$ref": "#/definitions/sequence" }
         }
       }
     },
-    "sequence": { "$ref": "#/definitions/sequence", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Sequence" }
+    "sequence": { "$ref": "#/definitions/sequence", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "title": "Sequence" }
   }
 }

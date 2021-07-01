@@ -11,6 +11,7 @@
       "title": "Component",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "additionalProperties": false,
       "properties": {
         "minecraft:block_light_absorption": { "$ref": "./components/minecraft.block_light_absorption.json" },
@@ -89,7 +90,8 @@
             },
             "properties": {
               "title": "Properties",
-              "description": "UNDOCUMENATED",
+              "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "propertyNames": { "pattern": "^([a-zA-Z0-9_]+:[a-zA-Z0-9_\\-]+)$" },
               "additionalProperties": {
                 "title": "Property",
@@ -118,16 +120,19 @@
         "permutations": {
           "type": "array",
           "title": "Permutations",
-          "description": "UNDOCUMENATED",
+          "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "items": {
             "title": "Permutation",
-            "description": "UNDOCUMENATED",
+            "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED",
             "type": "object",
             "additionalProperties": false,
             "properties": {
               "condition": {
                 "title": "Condition",
-                "description": "UNDOCUMENATED",
+                "description": "UNDOCUMENTED",
+                "$comment": "UNDOCUMENTED",
                 "$ref": "../../../molang/string.json"
               },
               "components": {

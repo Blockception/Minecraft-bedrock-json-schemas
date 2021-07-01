@@ -8,6 +8,7 @@
     "branch_canopy": {
       "title": "branch_canopy",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
@@ -15,6 +16,7 @@
         "acacia_canopy": {
           "title": "acacia_canopy",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
@@ -23,12 +25,14 @@
               "title": "canopy_size",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 1
             },
             "leaf_block": {
               "title": "leaf_block",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "string",
               "$ref": "../../../../general/block/identifier.json"
@@ -37,6 +41,7 @@
               "title": "simplify_canopy",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "boolean"
             }
           }
@@ -44,6 +49,7 @@
         "canopy": {
           "title": "canopy",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
@@ -52,18 +58,21 @@
               "title": "canopy_offset",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "object",
               "additionalProperties": false,
               "properties": {
                 "min": {
                   "title": "min",
                   "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
                   "$comment": "UNDOCUMENTED",
                   "type": "integer"
                 },
                 "max": {
                   "title": "max",
                   "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
                   "$comment": "UNDOCUMENTED",
                   "type": "integer"
                 }
@@ -73,6 +82,7 @@
               "title": "min_width",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 0
             },
@@ -80,12 +90,14 @@
               "title": "canopy_slope",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "object",
               "additionalProperties": false,
               "properties": {
                 "rise": {
                   "title": "rise",
                   "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
                   "$comment": "UNDOCUMENTED",
                   "type": "integer",
                   "minimum": 1
@@ -93,6 +105,7 @@
                 "run": {
                   "title": "run",
                   "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
                   "$comment": "UNDOCUMENTED",
                   "type": "integer",
                   "minimum": 1
@@ -102,6 +115,7 @@
             "variation_chance": {
               "title": "variation_chance",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "oneOf": [
                 { "$ref": "../../../../general/1.14.0/chance_information.json" },
@@ -118,6 +132,7 @@
               "title": "leaf_block",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "string",
               "$ref": "../../../../general/block/identifier.json"
             },
@@ -125,18 +140,21 @@
               "title": "canopy_decoration",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "object",
               "additionalProperties": false,
               "properties": {
                 "decoration_chance": {
                   "title": "decoration_chance",
                   "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
                   "$comment": "UNDOCUMENTED",
                   "$ref": "../../../../general/1.14.0/chance_information.json"
                 },
                 "decoration_block": {
                   "title": "decoration_block",
                   "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
                   "$comment": "UNDOCUMENTED",
                   "type": "string",
                   "$ref": "../../../../general/block/identifier.json"
@@ -144,6 +162,7 @@
                 "num_steps": {
                   "title": "num_steps",
                   "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
                   "$comment": "UNDOCUMENTED",
                   "type": "integer",
                   "minimum": 0
@@ -151,6 +170,7 @@
                 "step_direction": {
                   "title": "step_direction",
                   "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
                   "$comment": "UNDOCUMENTED",
                   "type": "string",
                   "enum": ["down", "up", "out", "away"]
@@ -162,6 +182,7 @@
         "fancy_canopy": {
           "title": "fancy_canopy",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
@@ -170,6 +191,7 @@
               "title": "height",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 1
             },
@@ -177,12 +199,14 @@
               "title": "radius",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 0
             },
             "leaf_block": {
               "title": "leaf_block",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "string",
               "$ref": "../../../../general/block/identifier.json"
@@ -192,6 +216,7 @@
         "mega_canopy": {
           "title": "mega_canopy",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
@@ -200,12 +225,14 @@
               "title": "canopy_height",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 0
             },
             "base_radius": {
               "title": "base_radius",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "number",
               "minimum": 0
@@ -214,6 +241,7 @@
               "title": "core_width",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "number",
               "minimum": 1
             },
@@ -221,11 +249,13 @@
               "title": "simplify_canopy",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "boolean"
             },
             "leaf_block": {
               "title": "leaf_block",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "string",
               "$ref": "../../../../general/block/identifier.json"
@@ -235,6 +265,7 @@
         "mega_pine_canopy": {
           "title": "mega_pine_canopy",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
@@ -243,12 +274,14 @@
               "title": "canopy_height",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 0
             },
             "base_radius": {
               "title": "base_radius",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 0
@@ -257,6 +290,7 @@
               "title": "radius_step_modifier",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "number",
               "minimum": 0.0
             },
@@ -264,12 +298,14 @@
               "title": "core_width",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 1
             },
             "leaf_block": {
               "title": "leaf_block",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "string",
               "$ref": "../../../../general/block/identifier.json"
@@ -279,6 +315,7 @@
         "pine_canopy": {
           "title": "pine_canopy",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
@@ -287,6 +324,7 @@
               "title": "canopy_height",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 0
             },
@@ -294,12 +332,14 @@
               "title": "base_radius",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 1
             },
             "leaf_block": {
               "title": "leaf_block",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "string",
               "$ref": "../../../../general/block/identifier.json"
@@ -309,6 +349,7 @@
         "roofed_canopy": {
           "title": "roofed_canopy",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
@@ -317,12 +358,14 @@
               "title": "canopy_height",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 3
             },
             "core_width": {
               "title": "core_width",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 1
@@ -331,6 +374,7 @@
               "title": "outer_radius",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 0
             },
@@ -338,12 +382,14 @@
               "title": "inner_radius",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 0
             },
             "leaf_block": {
               "title": "leaf_block",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "string",
               "$ref": "../../../../general/block/identifier.json"
@@ -353,6 +399,7 @@
         "spruce_canopy": {
           "title": "spruce_canopy",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
@@ -361,12 +408,14 @@
               "title": "lower_offset",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 0
             },
             "upper_offset": {
               "title": "upper_offset",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 0
@@ -375,12 +424,14 @@
               "title": "max_radius",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 0
             },
             "leaf_block": {
               "title": "leaf_block",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "string",
               "$ref": "../../../../general/block/identifier.json"
@@ -394,6 +445,7 @@
     "description": {
       "title": "Description",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "required": ["identifier"],
@@ -419,6 +471,7 @@
     "base_cluster": {
       "title": "base_cluster",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
@@ -427,6 +480,7 @@
         "may_replace": {
           "title": "May Replace",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "array",
           "items": {
@@ -436,6 +490,7 @@
         "num_clusters": {
           "title": "Num Clusters",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 1
@@ -443,6 +498,7 @@
         "cluster_radius": {
           "title": "Clusters Radius",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 0
@@ -452,6 +508,7 @@
     "may_grow_on": {
       "title": "May grow on",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
@@ -461,6 +518,7 @@
     "may_replace": {
       "title": "May grow on",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
@@ -470,6 +528,7 @@
     "may_grow_through": {
       "title": "May grow on",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
@@ -479,6 +538,7 @@
     "acacia_trunk": {
       "title": "Acacia Trunk",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
@@ -486,6 +546,7 @@
         "trunk_width": {
           "title": "Trunk Width",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 0
@@ -493,6 +554,7 @@
         "trunk_height": {
           "title": "Trunk Height",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
@@ -501,12 +563,14 @@
               "title": "Base",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 0
             },
             "intervals": {
               "title": "Intervals",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "array",
               "minItems": 1,
@@ -519,6 +583,7 @@
               "title": "Min Height For Canopy",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 1
             }
@@ -528,6 +593,7 @@
           "allow_diagonal_growth": {
             "title": "Allow Diagonal Growth",
             "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "type": "integer",
             "minimum": 0
@@ -535,18 +601,21 @@
           "lean_height": {
             "title": "Lean Height",
             "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "type": "string"
           },
           "lean_steps": {
             "title": "Lean Steps",
             "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "type": "string"
           },
           "lean_length": {
             "title": "Lean Length",
             "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "type": "string"
           }
@@ -554,6 +623,7 @@
         "trunk_block": {
           "title": "Trunk Block",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "string",
           "$ref": "../../../../general/block/identifier.json"
@@ -561,6 +631,7 @@
         "branches": {
           "title": "Branches",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
@@ -569,12 +640,14 @@
               "title": "Branch Length",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "number",
               "minimum": 0
             },
             "branch_position": {
               "title": "Branch Position",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "number",
               "minimum": 0
@@ -583,11 +656,13 @@
               "title": "Branch Chance",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$ref": "../../../../general/1.14.0/chance_information.json"
             },
             "branch_canopy": {
               "title": "branch_canopy",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "$ref": "#/definitions/branch_canopy"
             },
@@ -595,18 +670,21 @@
               "title": "trunk_decoration",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "object",
               "additionalProperties": false,
               "properties": {
                 "decoration_chance": {
                   "title": "decoration_chance",
                   "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
                   "$comment": "UNDOCUMENTED",
                   "$ref": "../../../../general/1.14.0/chance_information.json"
                 },
                 "decoration_block": {
                   "title": "decoration_block",
                   "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
                   "$comment": "UNDOCUMENTED",
                   "type": "string",
                   "$ref": "../../../../general/block/identifier.json"
@@ -614,6 +692,7 @@
                 "num_steps": {
                   "title": "num_steps",
                   "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
                   "$comment": "UNDOCUMENTED",
                   "type": "integer",
                   "minimum": 0
@@ -621,6 +700,7 @@
                 "step_direction": {
                   "title": "step_direction",
                   "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
                   "$comment": "UNDOCUMENTED",
                   "type": "string",
                   "enum": ["down", "up", "out", "away"]
@@ -634,6 +714,7 @@
     "fallen_trunk": {
       "title": "fallen_trunk",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
@@ -641,6 +722,7 @@
         "log_length": {
           "title": "log_length",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 0
@@ -648,6 +730,7 @@
         "stump_height": {
           "title": "stump_height",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 0
@@ -655,6 +738,7 @@
         "height_modifier": {
           "title": "height_modifier",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 0
@@ -662,6 +746,7 @@
         "trunk_block": {
           "title": "trunk_block",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "string",
           "$ref": "../../../../general/block/identifier.json"
@@ -669,6 +754,7 @@
         "log_decoration_feature": {
           "title": "log_decoration_feature",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "string",
           "$ref": "../../../../general/feature/identifier.json"
@@ -676,6 +762,7 @@
         "trunk_decoration": {
           "title": "trunk_decoration",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
@@ -684,11 +771,13 @@
               "title": "decoration_chance",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$ref": "../../../../general/1.14.0/chance_information.json"
             },
             "decoration_block": {
               "title": "decoration_block",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "string",
               "$ref": "../../../../general/block/identifier.json"
@@ -697,11 +786,13 @@
               "title": "num_steps",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "integer"
             },
             "step_direction": {
               "title": "step_direction",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "string",
               "enum": ["down", "up", "out", "away"]
@@ -713,6 +804,7 @@
     "fancy_trunk": {
       "title": "fancy_trunk",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
@@ -720,6 +812,7 @@
         "trunk_height": {
           "title": "trunk_height",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
@@ -728,12 +821,14 @@
               "title": "base",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 1
             },
             "variance": {
               "title": "variance",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 1
@@ -742,6 +837,7 @@
               "title": "scale",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "number"
             }
           }
@@ -749,6 +845,7 @@
         "trunk_width": {
           "title": "trunk_width",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 1
@@ -756,6 +853,7 @@
         "branches": {
           "title": "branches",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
@@ -764,17 +862,20 @@
               "title": "slope",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "number"
             },
             "density": {
               "title": "density",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "number"
             },
             "min_altitude_factor": {
               "title": "min_altitude_factor",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "number",
               "minimum": 0.0,
@@ -785,6 +886,7 @@
         "trunk_block": {
           "title": "trunk_block",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "string",
           "$ref": "../../../../general/block/identifier.json"
@@ -792,6 +894,7 @@
         "width_scale": {
           "title": "width_scale",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "number",
           "minimum": 0.0
@@ -799,6 +902,7 @@
         "foliage_altitude_factor": {
           "title": "foliage_altitude_factor",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "number",
           "minimum": 0.0,
@@ -809,6 +913,7 @@
     "mega_trunk": {
       "title": "mega_trunk",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
@@ -816,12 +921,14 @@
         "trunk_width": {
           "title": "trunk_width",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer"
         },
         "trunk_height": {
           "title": "trunk_height",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
@@ -830,6 +937,7 @@
               "title": "base",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 1
             },
@@ -837,10 +945,12 @@
               "title": "intervals",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "array",
               "items": {
                 "title": "items",
                 "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
                 "$comment": "UNDOCUMENTED",
                 "type": "integer",
                 "minimum": 0
@@ -851,6 +961,7 @@
         "trunk_block": {
           "title": "trunk_block",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "string",
           "$ref": "../../../../general/block/identifier.json"
@@ -858,6 +969,7 @@
         "trunk_decoration": {
           "title": "trunk_decoration",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
@@ -866,11 +978,13 @@
               "title": "decoration_chance",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$ref": "../../../../general/1.14.0/chance_information.json"
             },
             "decoration_block": {
               "title": "decoration_block",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "string",
               "$ref": "../../../../general/block/identifier.json"
@@ -879,11 +993,13 @@
               "title": "num_steps",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "integer"
             },
             "step_direction": {
               "title": "step_direction",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "string",
               "enum": ["down", "up", "out", "away"]
@@ -893,6 +1009,7 @@
         "branches": {
           "title": "branches",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
@@ -901,6 +1018,7 @@
               "title": "branch_length",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 1
             },
@@ -908,12 +1026,15 @@
               "title": "branch_slope",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "number"
             },
-            "branch_interval": { "title": "", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "integer", "minimum": 0 },
+            "branch_interval": { "title": "", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "type": "integer", "minimum": 0 },
             "branch_altitude_factor": {
               "title": "branch_altitude_factor",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "object",
               "additionalProperties": false,
@@ -921,6 +1042,7 @@
                 "min": {
                   "title": "min",
                   "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
                   "$comment": "UNDOCUMENTED",
                   "type": "number",
                   "minimum": 0.0,
@@ -929,6 +1051,7 @@
                 "max": {
                   "title": "max",
                   "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
                   "$comment": "UNDOCUMENTED",
                   "type": "number",
                   "minimum": 0.0,
@@ -940,6 +1063,7 @@
               "title": "branch_canopy",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$ref": "#/definitions/branch_canopy"
             }
           }
@@ -949,6 +1073,7 @@
     "trunk": {
       "title": "trunk",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
@@ -956,6 +1081,7 @@
         "trunk_height": {
           "title": "trunk_height",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 0
@@ -963,6 +1089,7 @@
         "height_modifier": {
           "title": "height_modifier",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 0
@@ -970,6 +1097,7 @@
         "can_be_submerged": {
           "title": "can_be_submerged",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
 
           "oneOf": [
@@ -980,6 +1108,7 @@
                 "max_depth": {
                   "title": "max_depth",
                   "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
                   "$comment": "UNDOCUMENTED",
                   "type": "integer",
                   "minimum": 1
@@ -990,6 +1119,7 @@
               "title": "can_be_submerged",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "boolean"
             }
           ]
@@ -997,6 +1127,7 @@
         "trunk_block": {
           "title": "trunk_block",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "string",
           "$ref": "../../../../general/block/identifier.json"
@@ -1004,6 +1135,7 @@
         "trunk_decoration": {
           "title": "trunk_decoration",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
@@ -1012,11 +1144,13 @@
               "title": "decoration_chance",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$ref": "../../../../general/1.14.0/chance_information.json"
             },
             "decoration_block": {
               "title": "decoration_block",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "string",
               "$ref": "../../../../general/block/identifier.json"
@@ -1025,11 +1159,13 @@
               "title": "num_steps",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "integer"
             },
             "step_direction": {
               "title": "step_direction",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "string",
               "enum": ["down", "up", "out", "away"]
@@ -1041,6 +1177,7 @@
     "acacia_canopy": {
       "title": "acacia_canopy",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
@@ -1048,6 +1185,7 @@
         "canopy_size": {
           "title": "canopy_size",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 1
@@ -1055,6 +1193,7 @@
         "leaf_block": {
           "title": "leaf_block",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "string",
           "$ref": "../../../../general/block/identifier.json"
@@ -1062,6 +1201,7 @@
         "simplify_canopy": {
           "title": "simplify_canopy",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "boolean"
         }
@@ -1070,6 +1210,7 @@
     "canopy": {
       "title": "canopy",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
@@ -1077,6 +1218,7 @@
         "canopy_offset": {
           "title": "canopy_offset",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
@@ -1085,11 +1227,13 @@
               "title": "min",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "integer"
             },
             "max": {
               "title": "max",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "integer"
             }
@@ -1098,6 +1242,7 @@
         "min_width": {
           "title": "min_width",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 0
@@ -1105,6 +1250,7 @@
         "canopy_slope": {
           "title": "canopy_slope",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
@@ -1113,12 +1259,14 @@
               "title": "rise",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 1
             },
             "run": {
               "title": "run",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 1
@@ -1128,6 +1276,7 @@
         "variation_chance": {
           "title": "variation_chance",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "oneOf": [
             { "$ref": "../../../../general/1.14.0/chance_information.json" },
@@ -1143,6 +1292,7 @@
         "leaf_block": {
           "title": "leaf_block",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "string",
           "$ref": "../../../../general/block/identifier.json"
@@ -1150,6 +1300,7 @@
         "canopy_decoration": {
           "title": "canopy_decoration",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
@@ -1158,11 +1309,13 @@
               "title": "decoration_chance",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$ref": "../../../../general/1.14.0/chance_information.json"
             },
             "decoration_block": {
               "title": "decoration_block",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "string",
               "$ref": "../../../../general/block/identifier.json"
@@ -1171,12 +1324,14 @@
               "title": "num_steps",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 0
             },
             "step_direction": {
               "title": "step_direction",
               "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "string",
               "enum": ["down", "up", "out", "away"]
@@ -1188,6 +1343,7 @@
     "fancy_canopy": {
       "title": "fancy_canopy",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
@@ -1195,6 +1351,7 @@
         "height": {
           "title": "height",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 1
@@ -1202,6 +1359,7 @@
         "radius": {
           "title": "radius",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 0
@@ -1209,6 +1367,7 @@
         "leaf_block": {
           "title": "leaf_block",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "string",
           "$ref": "../../../../general/block/identifier.json"
@@ -1218,6 +1377,7 @@
     "mega_canopy": {
       "title": "mega_canopy",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
@@ -1225,6 +1385,7 @@
         "canopy_height": {
           "title": "canopy_height",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 0
@@ -1232,6 +1393,7 @@
         "base_radius": {
           "title": "base_radius",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "number",
           "minimum": 0
@@ -1239,6 +1401,7 @@
         "core_width": {
           "title": "core_width",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "number",
           "minimum": 1
@@ -1246,12 +1409,14 @@
         "simplify_canopy": {
           "title": "simplify_canopy",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "boolean"
         },
         "leaf_block": {
           "title": "leaf_block",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "string",
           "$ref": "../../../../general/block/identifier.json"
@@ -1261,6 +1426,7 @@
     "mega_pine_canopy": {
       "title": "mega_pine_canopy",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
@@ -1268,6 +1434,7 @@
         "canopy_height": {
           "title": "canopy_height",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 0
@@ -1275,6 +1442,7 @@
         "base_radius": {
           "title": "base_radius",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 0
@@ -1282,6 +1450,7 @@
         "radius_step_modifier": {
           "title": "radius_step_modifier",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "number",
           "minimum": 0.0
@@ -1289,6 +1458,7 @@
         "core_width": {
           "title": "core_width",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 1
@@ -1296,6 +1466,7 @@
         "leaf_block": {
           "title": "leaf_block",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "string",
           "$ref": "../../../../general/block/identifier.json"
@@ -1305,6 +1476,7 @@
     "pine_canopy": {
       "title": "pine_canopy",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
@@ -1312,6 +1484,7 @@
         "canopy_height": {
           "title": "canopy_height",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 0
@@ -1319,6 +1492,7 @@
         "base_radius": {
           "title": "base_radius",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 1
@@ -1326,6 +1500,7 @@
         "leaf_block": {
           "title": "leaf_block",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "string",
           "$ref": "../../../../general/block/identifier.json"
@@ -1335,6 +1510,7 @@
     "roofed_canopy": {
       "title": "roofed_canopy",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
@@ -1342,6 +1518,7 @@
         "canopy_height": {
           "title": "canopy_height",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 3
@@ -1349,6 +1526,7 @@
         "core_width": {
           "title": "core_width",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 1
@@ -1356,6 +1534,7 @@
         "outer_radius": {
           "title": "outer_radius",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 0
@@ -1363,6 +1542,7 @@
         "inner_radius": {
           "title": "inner_radius",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 0
@@ -1370,6 +1550,7 @@
         "leaf_block": {
           "title": "leaf_block",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "string",
           "$ref": "../../../../general/block/identifier.json"
@@ -1379,6 +1560,7 @@
     "spruce_canopy": {
       "title": "Spruce Canopy",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
@@ -1386,6 +1568,7 @@
         "lower_offset": {
           "title": "lower_offset",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 0
@@ -1393,6 +1576,7 @@
         "upper_offset": {
           "title": "upper_offset",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 0
@@ -1400,6 +1584,7 @@
         "max_radius": {
           "title": "max_radius",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 0
@@ -1407,6 +1592,7 @@
         "leaf_block": {
           "title": "leaf_block",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "string",
           "$ref": "../../../../general/block/identifier.json"
@@ -1416,6 +1602,7 @@
     "random_spread_canopy": {
       "title": "Random Spread Canopy",
       "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
@@ -1423,6 +1610,7 @@
         "canopy_height": {
           "title": "canopy_height",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 0
@@ -1430,6 +1618,7 @@
         "canopy_radius": {
           "title": "canopy_radius",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 0
@@ -1437,6 +1626,7 @@
         "leaf_placement_attempts": {
           "title": "leaf_placement_attempts",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "integer",
           "minimum": 1
@@ -1444,12 +1634,14 @@
         "leaf_blocks": {
           "title": "leaf_blocks",
           "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "array",
           "additionalProperties": false,
           "items": {
             "title": "items",
             "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "type": "array",
             "additionalProperties": false,

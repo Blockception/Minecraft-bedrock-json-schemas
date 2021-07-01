@@ -46,7 +46,8 @@
             },
             "properties": {
               "title": "Properties",
-              "description": "UNDOCUMENATED",
+              "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "propertyNames": { "pattern": "^([a-zA-Z0-9_]+:[a-zA-Z0-9_\\-]+)$" },
               "additionalProperties": {
                 "title": "Property",

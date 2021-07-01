@@ -45,12 +45,14 @@
       "type": "number",
       "title": "Stomp Range Multiplier",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
     "no_damage_range_multiplier": {
       "type": "number",
       "title": "No Damage Range Multiplier",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }
   }

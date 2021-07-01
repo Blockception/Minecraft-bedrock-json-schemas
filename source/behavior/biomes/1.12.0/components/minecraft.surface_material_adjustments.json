@@ -12,6 +12,7 @@
         "title": "Adjustment",
         "description": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED",
+        "$comment": "UNDOCUMENTED",
         "type": "object",
         "additionalProperties": false,
         "properties": {
@@ -33,6 +34,7 @@
           "materials": {
             "title": "Materials",
             "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "type": "object",
             "additionalProperties": false,

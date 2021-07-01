@@ -3,5 +3,6 @@
   "title": "Spawns On Block Filter 1.17.0",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "oneOf": [{ "type": "string" }, { "type": "array", "items": { "type": "string" } }]
 }

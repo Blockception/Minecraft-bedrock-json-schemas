@@ -6,8 +6,10 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "broadcastAnger": { "type": "boolean", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Broadcast Anger" },
-    "broadcastRange": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Broadcast Range" },
+    "broadcastAnger": { "type": "boolean", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "title": "Broadcast Anger" },
+    "broadcastRange": { "type": "integer", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "title": "Broadcast Range" },
     "broadcast_anger": {
       "type": "boolean",
       "default": false,
@@ -74,16 +76,20 @@
           "type": "array",
           "default": [0, 0],
           "items": [
-            { "type": "integer", "minimum": 0, "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Minimum" },
-            { "type": "integer", "minimum": 0, "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Maximum" }
+            { "type": "integer", "minimum": 0, "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "title": "Minimum" },
+            { "type": "integer", "minimum": 0, "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "title": "Maximum" }
           ]
         },
         {
           "type": "object",
           "additionalProperties": false,
           "properties": {
-            "range_min": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Range Minimum" },
-            "range_max": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Range Maximum" }
+            "range_min": { "type": "number", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "title": "Range Minimum" },
+            "range_max": { "type": "number", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "title": "Range Maximum" }
           }
         }
       ]

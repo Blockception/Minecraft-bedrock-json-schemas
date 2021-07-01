@@ -12,6 +12,7 @@
       "type": "array",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "title": "Hover Height",
       "items": [{ "type": "number" }, { "type": "number" }]
     },

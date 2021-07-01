@@ -2,11 +2,14 @@
   "$id": "blockception.minecraft.behavior.1.16.100.items.events.remove_mob_effect",
   "title": "Remove Mob Effect",
   "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "effect": { "type": "string", "title": "Effect", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-    "target": { "type": "string", "title": "Target", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "enum": ["holder"] }
+    "effect": { "type": "string", "title": "Effect", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "target": { "type": "string", "title": "Target", "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED" "enum": ["holder"] }
   }
 }

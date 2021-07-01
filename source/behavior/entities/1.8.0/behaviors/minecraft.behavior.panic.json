@@ -32,11 +32,13 @@
       "type": "string",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "title": "Panic Sound"
     },
     "sound_interval": {
       "type": "object",
       "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "title": "Sound Interval",
       "properties": {
@@ -44,11 +46,13 @@
           "type": "number",
           "description": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "title": "Range Minimum"
         },
         "range_max": {
           "type": "number",
           "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "title": "Range Maximum"
         }
