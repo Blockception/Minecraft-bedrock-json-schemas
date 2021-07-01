@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "filters": { "$ref": "../../filters/filters.json", "description": "Defines the entities that can trigger this component", "title": "TODO Title" },
+    "filters": { "$ref": "../../filters/filters.json", "description": "Defines the entities that can trigger this component" },
     "look_cooldown": {
       "$ref": "../types/range_number_type.json",
       "default": [0.0, 0.0],

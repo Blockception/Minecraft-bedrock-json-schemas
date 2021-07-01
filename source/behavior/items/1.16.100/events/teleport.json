@@ -9,7 +9,7 @@
     "target": { "type": "string", "title": "Target", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "enum": ["holder"] },
     "max_range": {
       "type": "array",
-      "title": "Max Range",
+      "title": "Maximum Range",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "items": [

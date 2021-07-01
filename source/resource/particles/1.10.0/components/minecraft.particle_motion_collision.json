@@ -19,7 +19,7 @@
         "properties": {
           "additionalProperties": false,
           "event": { "type": "string", "description": "UNDOCUMENTATED: event", "title": "Event" },
-          "min_speed": { "type": "number", "description": "UNDOCUMENTATED: min speed", "title": "Min Speed" }
+          "min_speed": { "type": "number", "description": "UNDOCUMENTATED: Minimum speed", "title": "Minimum Speed" }
         },
         "description": "UNDOCUMENTATED: events",
         "title": "Events"

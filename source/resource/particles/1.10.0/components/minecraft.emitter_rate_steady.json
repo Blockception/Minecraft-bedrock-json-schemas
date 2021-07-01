@@ -7,7 +7,7 @@
     "max_particles": {
       "$ref": "../../../../molang/number.json",
       "description": "Maximum number of particles that can be active at once for this emitter, evaluated once per particle emitter loop",
-      "title": "Max Particles"
+      "title": "Maximum Particles"
     },
     "spawn_rate": {
       "$ref": "../../../../molang/number.json",

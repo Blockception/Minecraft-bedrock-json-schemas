@@ -30,8 +30,8 @@
       "default": 1.0,
       "type": "number"
     },
-    "max_draw_duration": { "title": "Max Draw Duration", "description": "Draw Duration. Default is set to 0.", "default": 0, "type": "number" },
-    "max_launch_power": { "title": "Max Launch Power", "description": "Launch power. Default is set to 1.0.", "default": 0, "type": "number" },
+    "max_draw_duration": { "title": "Maximum Draw Duration", "description": "Draw Duration. Default is set to 0.", "default": 0, "type": "number" },
+    "max_launch_power": { "title": "Maximum Launch Power", "description": "Launch power. Default is set to 1.0.", "default": 0, "type": "number" },
     "scale_power_by_draw_duration": {
       "title": "Scale Power By Draw Duration",
       "description": "Scale power by draw duration? Default is set to false.",

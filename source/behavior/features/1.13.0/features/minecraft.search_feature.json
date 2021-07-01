@@ -38,9 +38,9 @@
           "description": "Maximum extent of the bounding volume expressed as [ x, y, z ]",
           "type": "array",
           "items": [
-            { "title": "Max X", "type": "integer" },
-            { "title": "Max Y", "type": "integer" },
-            { "title": "Max Z", "type": "integer" }
+            { "title": "Maximum X", "type": "integer" },
+            { "title": "Maximum Y", "type": "integer" },
+            { "title": "Maximum Z", "type": "integer" }
           ]
         },
         "min": {
@@ -48,9 +48,9 @@
           "description": "Maxium extent of the bounding volume expressed as [ x, y, z ]",
           "type": "array",
           "items": [
-            { "title": "Min X", "type": "integer" },
-            { "title": "Min Y", "type": "integer" },
-            { "title": "Min Z", "type": "integer" }
+            { "title": "Minimum X", "type": "integer" },
+            { "title": "Minimum Y", "type": "integer" },
+            { "title": "Minimum Z", "type": "integer" }
           ]
         }
       }

@@ -15,13 +15,13 @@
         "additionalProperties": false,
         "properties": {
           "max_dropped_ticks": {
-            "title": "Max Dropped Ticks",
+            "title": "Maximum Dropped Ticks",
             "description": "In relation to the optimization value, determines the maximum ticks spatial update packets can be not sent.",
             "type": "integer"
           },
           "max_optimized_distance": {
-            "title": "Max Optimized Distance",
-            "description": "The maximum distance considered during bandwidth optimizations. Any value below the max is interpolated to find optimization, and any value greater than or equal to this max results in max optimization.",
+            "title": "Maximum Optimized Distance",
+            "description": "The maximum distance considered during bandwidth optimizations. Any value below the Maximum is interpolated to find optimization, and any value greater than or equal to this Maximum results in Maximum optimization.",
             "type": "number"
           },
           "use_motion_prediction_hints": {
@@ -45,13 +45,13 @@
       "additionalProperties": false,
       "properties": {
         "max_dropped_ticks": {
-          "title": "Max Dropped Ticks",
+          "title": "Maximum Dropped Ticks",
           "description": "In relation to the optimization value, determines the maximum ticks spatial update packets can be not sent.",
           "type": "integer"
         },
         "max_optimized_distance": {
-          "title": "Max Optimized Distance",
-          "description": "The maximum distance considered during bandwidth optimizations. Any value below the max is interpolated to find optimization, and any value greater than or equal to this max results in max optimization.",
+          "title": "Maximum Optimized Distance",
+          "description": "The maximum distance considered during bandwidth optimizations. Any value below the Maximum is interpolated to find optimization, and any value greater than or equal to this Maximum results in Maximum optimization.",
           "type": "number"
         },
         "use_motion_prediction_hints": {

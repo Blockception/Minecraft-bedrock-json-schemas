@@ -12,7 +12,7 @@
         "type": "number",
         "description": "Maximum distance this mob can be away to be a valid choice",
         "default": 16,
-        "title": "Max Dist"
+        "title": "Maximum Dist"
       },
       "walk_speed_multiplier": {
         "type": "number",

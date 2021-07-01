@@ -22,13 +22,13 @@
           "type": "integer",
           "default": 128,
           "description": "Maximum distance for standard despawn rules to instantly despawn the mob.",
-          "title": "Max Distance"
+          "title": "Maximum Distance"
         },
         "min_distance": {
           "type": "integer",
           "default": 32,
           "description": "Minimum distance for standard despawn rules to try to despawn the mob.",
-          "title": "Min Distance"
+          "title": "Minimum Distance"
         }
       }
     },
@@ -53,13 +53,13 @@
       "type": "integer",
       "default": 30,
       "description": "The amount of time in seconds that the mob must be inactive.",
-      "title": "Min Range Inactivity Timer"
+      "title": "Minimum Range Inactivity Timer"
     },
     "min_range_random_chance": {
       "type": "integer",
       "default": 800,
       "description": "A random chance between 1 and the given value.",
-      "title": "Min Range Random Chance"
+      "title": "Minimum Range Random Chance"
     },
     "remove_child_entities": {
       "type": "boolean",

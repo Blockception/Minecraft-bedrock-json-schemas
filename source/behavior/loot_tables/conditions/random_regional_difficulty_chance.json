@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.condition.random_regional_difficulty_chance",
   "type": "object",
   "additionalProperties": false,
-  "description": "Sets a max regional difficulty random chance of the specified value.",
+  "description": "Sets a Maximum regional difficulty random chance of the specified value.",
   "title": "Random Regional Difficulty Chance",
   "properties": {
     "condition": { "type": "string", "title": "Condition", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
@@ -12,7 +12,7 @@
       "description": "The default random chance if the level difficulty is not assigned.",
       "title": "Default Chance"
     },
-    "max_chance": { "title": "Max Chance", "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "max_chance": { "title": "Maximum Chance", "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
     "easy": {
       "type": "number",
       "default": 0,

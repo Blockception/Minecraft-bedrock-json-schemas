@@ -17,7 +17,7 @@
       "type": "number",
       "default": 10.0,
       "description": "Minimum distance the target must be for the mob to run this goal.",
-      "title": "Min Radius"
+      "title": "Minimum Radius"
     },
     "within_radius_event": {
       "$ref": "../types/event.json",

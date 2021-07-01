@@ -58,7 +58,7 @@
               "description": "UNDOCUMENTATED: frames per second",
               "title": "Frames Per Second"
             },
-            "max_frame": { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED: max frame", "title": "Max Frame" },
+            "max_frame": { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED: Maximum frame", "title": "Maximum Frame" },
             "stretch_to_lifetime": { "type": "boolean", "description": "UNDOCUMENTATED: stretch to lifetime", "title": "Stretch To Lifetime" },
             "loop": { "type": "boolean", "description": "UNDOCUMENTATED: loop", "title": "Loop" }
           },

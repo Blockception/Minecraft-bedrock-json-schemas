@@ -24,7 +24,7 @@
       "type": "number",
       "default": 10,
       "description": "The minimum amount of time in seconds before the mob can stand back up",
-      "title": "Min Sit Time"
+      "title": "Minimum Sit Time"
     },
     "start_chance": {
       "type": "number",

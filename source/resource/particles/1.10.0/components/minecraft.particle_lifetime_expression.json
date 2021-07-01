@@ -13,7 +13,7 @@
     "max_lifetime": {
       "$ref": "../../../../molang/number.json",
       "description": "Alternate way to express lifetime, particle will expire after this much time, evaluated once",
-      "title": "Max Lifetime"
+      "title": "Maximum Lifetime"
     }
   }
 }

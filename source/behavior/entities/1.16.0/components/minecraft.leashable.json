@@ -17,7 +17,7 @@
       "description": "Distance in blocks at which the leash stiffens, restricting movement.",
       "title": "Hard Distance"
     },
-    "max_distance": { "type": "number", "default": 10, "description": "Distance in blocks at which the leash breaks.", "title": "Max Distance" },
+    "max_distance": { "type": "number", "default": 10, "description": "Distance in blocks at which the leash breaks.", "title": "Maximum Distance" },
     "on_leash": { "$ref": "../types/event.json", "description": "Event to call when this entity is leashed.", "title": "On Leash" },
     "on_unleash": { "$ref": "../types/event.json", "description": "Event to call when this entity is unleashed.", "title": "On Unleash" },
     "soft_distance": {

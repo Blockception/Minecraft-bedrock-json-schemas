@@ -29,13 +29,13 @@
       "type": "number",
       "default": 10,
       "description": "The maximum distance away a target can be before the mob gives up on stalking",
-      "title": "Max Stalk Dist"
+      "title": "Maximum Stalk Dist"
     },
     "pounce_max_dist": {
       "type": "number",
       "default": 5,
       "description": "The maximum distance away from the target in blocks to begin pouncing at the target",
-      "title": "Pounce Max Dist"
+      "title": "Pounce Maximum Dist"
     },
     "set_persistent": {
       "type": "boolean",
@@ -47,7 +47,7 @@
     "strike_dist": {
       "type": "number",
       "default": 2,
-      "description": "The max distance away from the target when landing from the pounce that will still result in damaging the target",
+      "description": "The Maximum distance away from the target when landing from the pounce that will still result in damaging the target",
       "title": "Strike Dist"
     },
     "stuck_time": {

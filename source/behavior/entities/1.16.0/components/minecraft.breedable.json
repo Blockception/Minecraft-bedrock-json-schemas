@@ -97,8 +97,8 @@
       "additionalProperties": false,
       "properties": {
         "chance": { "type": "number", "default": 0, "description": "The percentage chance of denying the parents` variant.", "title": "Chance" },
-        "max_variant": { "type": "integer", "default": 0, "description": "The inclusive maximum of the variant range.", "title": "Max Variant" },
-        "min_variant": { "type": "integer", "default": 0, "description": "The inclusive minimum of the variant range.", "title": "Min Variant" }
+        "max_variant": { "type": "integer", "default": 0, "description": "The inclusive maximum of the variant range.", "title": "Maximum Variant" },
+        "min_variant": { "type": "integer", "default": 0, "description": "The inclusive minimum of the variant range.", "title": "Minimum Variant" }
       },
       "title": "Deny Parents Variant"
     },

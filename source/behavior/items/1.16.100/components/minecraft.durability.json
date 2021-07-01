@@ -18,8 +18,8 @@
       }
     },
     "max_durability": {
-      "title": "Max Durability",
-      "description": "Max durability is the amount of damage that this item can take before breaking.",
+      "title": "Maximum Durability",
+      "description": "Maximum durability is the amount of damage that this item can take before breaking.",
       "type": "number"
     }
   }

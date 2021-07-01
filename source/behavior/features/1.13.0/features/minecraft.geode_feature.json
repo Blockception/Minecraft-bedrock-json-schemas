@@ -120,49 +120,49 @@
       }
     },
     "min_outer_wall_distance": {
-      "title": "Min Outer Wall Distance",
+      "title": "Minimum Outer Wall Distance",
       "type": "integer",
       "description": "The minimum distance each distribution point must be from the outer wall. [0,10]",
       "minimum": 1,
       "maximum": 10
     },
     "max_outer_wall_distance": {
-      "title": "Max Outer Wall Distance",
+      "title": "Maximum Outer Wall Distance",
       "type": "integer",
       "description": "The maximum distance each distribution point can be from the outer wall. [0,20]",
       "minimum": 1,
       "maximum": 20
     },
     "min_distribution_points": {
-      "title": "Min Distribution Points",
+      "title": "Minimum Distribution Points",
       "type": "integer",
       "description": "The minimum number of points inside the distance field that can get generated. The distance field is the area consisting of all points with a minimum distance to all destribution points. [0,10]",
       "minimum": 1,
       "maximum": 10
     },
     "max_distribution_points": {
-      "title": "Max Distribution Points",
+      "title": "Maximum Distribution Points",
       "type": "integer",
       "description": "The maximum number of points inside the distance field that can get generated. The distance field is the area consisting of all points with a minimum distance to all destribution points. [0,20]",
       "minimum": 1,
       "maximum": 20
     },
     "min_point_offset": {
-      "title": "Min Point Offset",
+      "title": "Minimum Point Offset",
       "type": "integer",
       "description": "The lowest possible value of random offset applied to the position of each distribution point. [0,10]",
       "minimum": 0,
       "maximum": 10
     },
     "max_point_offset": {
-      "title": "Max Point Offset",
+      "title": "Maximum Point Offset",
       "type": "integer",
       "description": "The highest possible value of random offset applied to the position of each distribution point. [0,10]",
       "minimum": 0,
       "maximum": 10
     },
     "max_radius": {
-      "title": "Max Radius",
+      "title": "Maximum Radius",
       "type": "integer",
       "description": "The maximum possible radius of the geode generated."
     },

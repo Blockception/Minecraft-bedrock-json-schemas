@@ -88,8 +88,8 @@
       "title": "Sound Definitions"
     },
     "__use_legacy_max_distance": {
-      "description": "UNDOCUMENTATED: use legacy max distance",
-      "title": "Use Legacy Max Distance",
+      "description": "UNDOCUMENTATED: use legacy Maximum distance",
+      "title": "Use Legacy Maximum Distance",
       "type": "string",
       "enum": ["true", "false"]
     }

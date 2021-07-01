@@ -16,7 +16,7 @@
       "type": "integer",
       "default": -1,
       "description": "Maximum number of this item the mob will hold.",
-      "title": "All Items Max Amount"
+      "title": "All Items Maximum Amount"
     },
     "all_items_surplus_amount": {
       "type": "integer",
@@ -57,7 +57,7 @@
           },
           "item": { "type": "string", "description": "The name of the item", "$ref": "../../../../general/item/identifier.json" },
           "item_aux": { "type": "integer", "description": "Aux value for the item.", "title": "Item Aux" },
-          "max_amount": { "type": "integer", "description": "Maximum number of this item the mob will hold.", "title": "Max Amount" },
+          "max_amount": { "type": "integer", "description": "Maximum number of this item the mob will hold.", "title": "Maximum Amount" },
           "pickup_limit": {
             "type": "integer",
             "description": "Maximum number of this item the mob will pick up during a single goal tick.",

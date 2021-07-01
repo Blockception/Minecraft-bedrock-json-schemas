@@ -33,31 +33,31 @@
     },
     "x_max_rotation": {
       "type": "number",
-      "title": "X Max Rotation",
+      "title": "X Maximum Rotation",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
     "y_max_head_rotation": {
       "type": "number",
-      "title": "Y Max Head Rotation",
+      "title": "Y Maximum Head Rotation",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
     "max_distance": {
       "type": "number",
-      "title": "Max Distance",
+      "title": "Maximum Distance",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
     "max_sneak_range": {
       "type": "number",
-      "title": "Max Sneak Range",
+      "title": "Maximum Sneak Range",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
     "max_sprint_range": {
       "type": "number",
-      "title": "Max Sprint Range",
+      "title": "Maximum Sprint Range",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },

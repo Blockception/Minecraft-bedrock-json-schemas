@@ -19,13 +19,13 @@
           "type": "integer",
           "default": 600,
           "description": "Maximum amount of time to randomly wait in seconds before another entity is spawned.",
-          "title": "Max Wait Time"
+          "title": "Maximum Wait Time"
         },
         "min_wait_time": {
           "type": "integer",
           "default": 300,
           "description": "Minimum amount of time to randomly wait in seconds before another entity is spawned.",
-          "title": "Min Wait Time"
+          "title": "Minimum Wait Time"
         },
         "num_to_spawn": {
           "type": "integer",

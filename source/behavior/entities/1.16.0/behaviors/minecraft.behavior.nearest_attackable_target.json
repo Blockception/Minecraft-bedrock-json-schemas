@@ -15,7 +15,7 @@
           "type": "number",
           "default": 16,
           "description": "To be a valid target choice, the target type cannot be farther away from this entity than `max_dist`.",
-          "title": "Max Dist"
+          "title": "Maximum Dist"
         },
         "must_see": {
           "type": "boolean",

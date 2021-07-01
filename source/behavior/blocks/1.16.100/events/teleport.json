@@ -29,8 +29,8 @@
     },
     "max_range": {
       "default": [8.0, 8.0, 8.0],
-      "description": "Max range the target can teleport relative to the origin destination.",
-      "title": "Max Range",
+      "description": "Maximum range the target can teleport relative to the origin destination.",
+      "title": "Maximum Range",
       "items": [
         { "type": "number", "title": "X", "description": "The x offset from the block's center." },
         { "type": "number", "title": "Y", "description": "The y offset from the block's center." },

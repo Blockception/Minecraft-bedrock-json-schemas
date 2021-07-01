@@ -54,14 +54,14 @@
       "examples": [{ "max_density": 0.25 }, { "max_density": 0.25, "max_density_height": 128, "zero_density_height": 20, "uniform": true }],
       "properties": {
         "max_density": {
-          "title": "Max Density",
+          "title": "Maximum Density",
           "description": "The maximum amount of opaqueness that the ground fog will take on. A value from [0.0, 1.0].",
           "minimum": 0,
           "maximum": 1,
           "type": "number"
         },
         "max_density_height": {
-          "title": "Max Density Height",
+          "title": "Maximum Density Height",
           "description": "The height in blocks that the ground fog will become it's maximum density.",
           "minimum": 0,
           "maximum": 128,

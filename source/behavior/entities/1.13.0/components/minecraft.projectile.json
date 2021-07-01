@@ -135,13 +135,13 @@
             },
             "max_critical_damage": {
               "type": "integer",
-              "title": "Max Critical Damage",
+              "title": "Maximum Critical Damage",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED"
             },
             "min_critical_damage": {
               "type": "integer",
-              "title": "Min Critical Damage",
+              "title": "Minimum Critical Damage",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED"
             },

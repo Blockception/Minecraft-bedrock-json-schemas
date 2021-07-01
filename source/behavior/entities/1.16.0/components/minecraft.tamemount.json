@@ -62,13 +62,13 @@
       "type": "integer",
       "default": 100,
       "description": "The maximum value for the entity's random starting temper",
-      "title": "Max Temper"
+      "title": "Maximum Temper"
     },
     "min_temper": {
       "type": "integer",
       "default": 0,
       "description": "The minimum value for the entity's random starting temper",
-      "title": "Min Temper"
+      "title": "Minimum Temper"
     },
     "ride_text": { "type": "string", "description": "The text that shows in the riding interact button", "title": "Ride Text" },
     "tame_event": { "$ref": "../types/event.json", "description": "Event that triggers when the entity becomes tamed", "title": "Tame Event" }

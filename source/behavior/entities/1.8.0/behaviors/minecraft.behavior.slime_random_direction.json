@@ -16,7 +16,7 @@
     "turn_range": { "type": "number", "title": "Turn Range", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
     "min_change_direction_time": {
       "type": "number",
-      "title": "Min Change Direction Time",
+      "title": "Minimum Change Direction Time",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }

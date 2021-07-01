@@ -10,7 +10,7 @@
       "type": "number",
       "default": 0,
       "description": "The minimum distance in blocks that an actor needs to fall to trigger this event.",
-      "title": "Min Fall Distance"
+      "title": "Minimum Fall Distance"
     },
     "target": { "type": "string", "default": "self", "description": "The target of event executed on the block.", "title": "Target" }
   }

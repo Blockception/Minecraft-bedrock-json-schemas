@@ -48,14 +48,14 @@
             },
             "minecraft:max_damage": {
               "type": "integer",
-              "description": "Max damage item has, this is used like item max health.",
+              "description": "Maximum damage item has, this is used like item Maximum health.",
               "title": "UNDOCUMANTED"
             },
             "minecraft:hand_equipped": { "type": "boolean", "title": "Hand Equipped", "description": "Is this a hand equipped item." },
             "minecraft:stacked_by_data": { "type": "boolean", "description": "Stacked by data aux value or not?", "title": "UNDOCUMANTED" },
             "minecraft:foil": { "type": "boolean", "description": "Foil or glint.", "title": "UNDOCUMANTED" },
             "minecraft:block": { "type": "string", "description": "Block name, leave blank for no block.", "title": "UNDOCUMANTED" },
-            "minecraft:max_stack_size": { "type": "integer", "description": "Max stack size.", "title": "UNDOCUMANTED", "minimum": 0 },
+            "minecraft:max_stack_size": { "type": "integer", "description": "Maximum stack size.", "title": "UNDOCUMANTED", "minimum": 0 },
             "minecraft:use_duration": {
               "type": "integer",
               "description": "How long to use before item is done being used.",

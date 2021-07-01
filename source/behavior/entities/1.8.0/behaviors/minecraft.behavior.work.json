@@ -34,13 +34,13 @@
     "sound_delay_max": {
       "type": "integer",
       "default": 0,
-      "description": "The max interval in which a sound will play",
+      "description": "The Maximum interval in which a sound will play",
       "title": "Sound Delay Maximum"
     },
     "sound_delay_min": {
       "type": "integer",
       "default": 0,
-      "description": "The min interval in which a sound will play",
+      "description": "The Minimum interval in which a sound will play",
       "title": "Sound Delay Minimum"
     },
     "work_in_rain_tolerance": {

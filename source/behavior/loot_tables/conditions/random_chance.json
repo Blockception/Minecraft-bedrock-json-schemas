@@ -7,6 +7,6 @@
   "properties": {
     "condition": { "type": "string", "title": "Condition", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
     "chance": { "type": "number", "default": 0, "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Chance" },
-    "max_chance": { "type": "number", "default": 0, "description": "The maximum random chance value allowed.", "title": "Max Chance" }
+    "max_chance": { "type": "number", "default": 0, "description": "The maximum random chance value allowed.", "title": "Maximum Chance" }
   }
 }

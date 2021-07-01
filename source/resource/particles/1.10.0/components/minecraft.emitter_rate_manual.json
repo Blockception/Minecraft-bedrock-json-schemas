@@ -7,7 +7,7 @@
     "max_particles": {
       "$ref": "../../../../molang/number.json",
       "description": "Evaluated once per particle emitted",
-      "title": "Max Particles"
+      "title": "Maximum Particles"
     }
   },
   "description": "UNDOCUMENTATED: "

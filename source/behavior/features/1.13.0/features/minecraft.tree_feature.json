@@ -516,7 +516,7 @@
               }
             },
             "min_height_for_canopy": {
-              "title": "Min Height For Canopy",
+              "title": "Minimum Height For Canopy",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "integer",

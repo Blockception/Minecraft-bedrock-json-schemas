@@ -32,7 +32,12 @@
       "description": "Distance in blocks within the mob considers it has reached the goal. This is the `wiggle room` to stop the AI from bouncing back and forth trying to reach a specific spot",
       "title": "Goal Radius"
     },
-    "max_dist": { "type": "number", "default": 0, "description": "Maximum distance this mob will look for items to pick up", "title": "Max Dist" },
+    "max_dist": {
+      "type": "number",
+      "default": 0,
+      "description": "Maximum distance this mob will look for items to pick up",
+      "title": "Maximum Dist"
+    },
     "pickup_based_on_chance": {
       "type": "boolean",
       "default": false,

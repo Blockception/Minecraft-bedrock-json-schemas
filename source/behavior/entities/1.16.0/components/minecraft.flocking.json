@@ -73,8 +73,8 @@
       "description": "Tells the flockers that they can only match similar entities that also match the variant, mark variants, and color data of the other potential flockers.",
       "title": "Match Variants"
     },
-    "max_height": { "type": "number", "default": 0, "description": "The max height allowable in the air or water.", "title": "Max Height" },
-    "min_height": { "type": "number", "default": 0, "description": "The min height allowable in the air or water.", "title": "Min Height" },
+    "max_height": { "type": "number", "default": 0, "description": "The Maximum height allowable in the air or water.", "title": "Maximum Height" },
+    "min_height": { "type": "number", "default": 0, "description": "The Minimum height allowable in the air or water.", "title": "Minimum Height" },
     "separation_threshold": {
       "type": "number",
       "default": 2,

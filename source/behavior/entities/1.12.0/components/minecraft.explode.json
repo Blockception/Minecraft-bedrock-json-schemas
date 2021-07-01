@@ -63,7 +63,7 @@
       "type": "number",
       "default": 3.40282e38,
       "description": "A blocks explosion resistance will be capped at this value when an explosion occurs.",
-      "title": "Max Resistance"
+      "title": "Maximum Resistance"
     },
     "power": {
       "type": "number",

@@ -43,12 +43,12 @@
                 "slide_away_duration": { "type": "number", "description": "UNDOCUMANTED", "title": "UNDOCUMANTED" }
               }
             },
-            "minecraft:max_damage": { "type": "integer", "description": "Max damage item has, this is used like item max health." },
+            "minecraft:max_damage": { "type": "integer", "description": "Maximum damage item has, this is used like item Maximum health." },
             "minecraft:hand_equipped": { "type": "boolean", "title": "Hand Equipped", "description": "Is this a hand equipped item." },
             "minecraft:stacked_by_data": { "type": "boolean", "description": "Stacked by data aux value or not?" },
             "minecraft:foil": { "type": "boolean", "description": "Foil or glint." },
             "minecraft:block": { "type": "string", "description": "Block name, leave blank for no block." },
-            "minecraft:max_stack_size": { "type": "integer", "description": "Max stack size.", "minimum": 0 },
+            "minecraft:max_stack_size": { "type": "integer", "description": "Maximum stack size.", "minimum": 0 },
             "minecraft:use_duration": { "type": "integer", "description": "How long to use before item is done being used." },
             "minecraft:food": {
               "type": "object",

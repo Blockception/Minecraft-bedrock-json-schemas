@@ -12,7 +12,7 @@
     },
     "attack_cooldown_time": {
       "default": [0.0, 1.0],
-      "description": "Amount of time in seconds for the cooldown. Can be specified as a number or a pair of numbers (min and max).",
+      "description": "Amount of time in seconds for the cooldown. Can be specified as a number or a pair of numbers (Minimum and max).",
       "title": "Attack Cooldown Time",
       "oneOf": [
         {

@@ -30,7 +30,7 @@
       "type": "number",
       "default": 0,
       "description": "Maximum distance in blocks this mob will look for entities to drop an item for.",
-      "title": "Max Dist"
+      "title": "Maximum Dist"
     },
     "minimum_teleport_distance": {
       "title": "Minimum Teleport Distance",
@@ -38,7 +38,12 @@
       "$comment": "UNDOCUMENTED",
       "type": "number"
     },
-    "max_head_look_at_height": { "title": "Max Head Look At Height", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" },
+    "max_head_look_at_height": {
+      "title": "Maximum Head Look At Height",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "type": "number"
+    },
     "offering_distance": {
       "type": "number",
       "default": [1.0],
