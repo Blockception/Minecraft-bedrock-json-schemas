@@ -9,7 +9,7 @@
     "name_actions": {
       "type": "object",
       "description": "Describes the special names for this entity and the events to call when the entity acquires those names",
-      "title": "TODO Title",
+      "title": "Name Actions",
       "additionalProperties": false,
       "properties": {
         "on_named": {

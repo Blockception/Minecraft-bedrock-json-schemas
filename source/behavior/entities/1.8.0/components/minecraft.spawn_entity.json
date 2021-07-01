@@ -52,8 +52,7 @@
     },
     "filters": {
       "description": "If present, the specified entity will only spawn if the filter evaluates to true",
-      "$ref": "../../filters/filters.json",
-      "title": "Filters"
+      "$ref": "../../filters/filters.json"
     },
     "single_use": {
       "type": "boolean",

@@ -12,6 +12,6 @@
       "description": "The maximum number in degrees the mob can turn per tick.",
       "title": "Maximum Turn"
     },
-    "sway_amplitude": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "TODO Title" }
+    "sway_amplitude": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Sway Amplitude" }
   }
 }

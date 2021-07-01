@@ -39,8 +39,7 @@
     },
     "filters": {
       "description": "Filter to determine the conditions for this mob to look at the entity",
-      "$ref": "../../filters/filters.json",
-      "title": "Filters"
+      "$ref": "../../filters/filters.json"
     }
   }
 }

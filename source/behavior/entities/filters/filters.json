@@ -1,6 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.filters",
   "title": "Filters",
+  "$ref": "#/definitions/groups_spec",
   "definitions": {
     "filters_spec": {
       "oneOf": [
@@ -124,6 +125,5 @@
         { "type": "object", "$ref": "#/definitions/filters_spec" }
       ]
     }
-  },
-  "$ref": "#/definitions/groups_spec"
+  }
 }

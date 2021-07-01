@@ -21,8 +21,7 @@
     },
     "filters": {
       "$ref": "../../filters/filters.json",
-      "description": "Filter out mob types that it should not attack while angry (other Piglins)",
-      "title": "Filters"
+      "description": "Filter out mob types that it should not attack while angry (other Piglins)"
     },
     "broadcast_range": {
       "type": "integer",

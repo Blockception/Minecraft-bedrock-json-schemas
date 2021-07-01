@@ -15,6 +15,7 @@
       "items": {
         "required": ["id", "chance", "filters"],
         "additionalProperties": false,
+        "type": "object",
         "properties": {
           "id": { "type": "integer", "default": -1, "description": "The registry ID of the potion to use", "title": "Id" },
           "chance": {
@@ -27,8 +28,7 @@
           },
           "filters": {
             "description": "The filters to use when determining if this potion can be selected.",
-            "$ref": "../../filters/filters.json",
-            "title": "Filters"
+            "$ref": "../../filters/filters.json"
           }
         },
         "description": "UNDOCUMENTATED: potions",
