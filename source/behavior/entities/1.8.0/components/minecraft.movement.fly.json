@@ -2,10 +2,15 @@
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.movement.fly",
   "type": "object",
   "title": "Movement.fly 1.8.0",
+  "description": "This move control causes the mob to fly.",
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "max_turn": { "type": "number", "default": 30, "description": "The maximum number in degrees the mob can turn per tick.", "title": "TODO Title" }
-  },
-  "description": "This move control causes the mob to fly."
+    "max_turn": {
+      "type": "number",
+      "default": 30,
+      "description": "The maximum number in degrees the mob can turn per tick.",
+      "title": "Maximum Turn"
+    }
+  }
 }

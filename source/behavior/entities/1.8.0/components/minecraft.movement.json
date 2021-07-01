@@ -2,6 +2,8 @@
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.movement",
   "type": "object",
   "title": "Movement 1.8.0",
+  "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "additionalProperties": false,
   "required": [],
   "properties": {
@@ -18,11 +20,14 @@
           ]
         },
         { "type": "number" },
-        { "type": "object", "additionalProperties": false, "properties": { "range_min": { "type": "number" }, "range_max": { "type": "number" } } }
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "title": "Range",
+          "properties": { "range_min": { "type": "number", "title": "Range Minimum" }, "range_max": { "type": "number", "title": "Range Maximum" } }
+        }
       ]
     },
     "max": { "type": "number", "title": "Maximum", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
-  },
-  "description": "UNDOCUMENTED",
-  "$comment": "UNDOCUMENTED"
+  }
 }

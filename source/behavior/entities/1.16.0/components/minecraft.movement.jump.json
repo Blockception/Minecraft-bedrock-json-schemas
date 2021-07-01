@@ -11,7 +11,10 @@
       "default": [0.0, 0.0],
       "description": "Delay after landing when using the slime move control.",
       "title": "Jump Delay",
-      "items": [{ "type": "number" }, { "type": "number" }]
+      "items": [
+        { "type": "number", "title": "Minimum" },
+        { "type": "number", "title": "Maximum" }
+      ]
     },
     "max_turn": {
       "type": "number",
