@@ -176,6 +176,9 @@
     "minecraft:walk_animation_speed": { "$ref": "../1.8.0/components/minecraft.walk_animation_speed.json" },
     "minecraft:wants_jockey": { "$ref": "../1.8.0/components/minecraft.wants_jockey.json" },
     "minecraft:water_movement": { "$ref": "../1.8.0/components/minecraft.water_movement.json" },
+    "minecraft:hide": { "$ref": "../1.16.0/components/minecraft.hide.json" },
+    "minecraft:horse.jump_strength": { "$ref": "../1.16.0/components/minecraft.horse.jump_strength.json" },
+    "minecraft:trade_resupply": { "$ref": "../1.16.0/components/minecraft.trade_resupply.json" },
 
     "minecraft:behavior.admire_item": { "$ref": "../1.8.0/behaviors/minecraft.behavior.admire_item.json" },
     "minecraft:behavior.avoid_mob_type": { "$ref": "../1.8.0/behaviors/minecraft.behavior.avoid_mob_type.json" },
