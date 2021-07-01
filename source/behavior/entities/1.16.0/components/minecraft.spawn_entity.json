@@ -73,7 +73,6 @@
       "title": "Entities",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "oneOf": [
         { "type": "object", "$ref": "#/definitions/entity_spawn" },
         { "type": "array", "items": { "$ref": "#/definitions/entity_spawn" } }

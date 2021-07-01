@@ -42,14 +42,12 @@
         "type": "number",
         "title": "Brightness Gamma",
         "description": "UNDOCUMENTED",
-        "$comment": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED"
       },
       "carried_textures": {
         "$ref": "#/definitions/texture",
         "title": "Carried Textures",
         "description": "UNDOCUMENTED",
-        "$comment": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED"
       },
       "isotropic": {

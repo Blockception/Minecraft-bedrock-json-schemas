@@ -37,7 +37,6 @@
         "title": "Block",
         "description": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED",
-        "$comment": "UNDOCUMENTED",
         "oneOf": [
           { "type": "string", "$ref": "../../../../general/block/identifier.json" },
           { "type": "object", "properties": { "name": { "$ref": "../../../../general/block/identifier.json" } } }

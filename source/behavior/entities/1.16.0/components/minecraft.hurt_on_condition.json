@@ -10,12 +10,10 @@
       "title": "Damage Conditions",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "items": {
         "type": "object",
         "title": "Damage Condition",
         "description": "UNDOCUMENTED",
-        "$comment": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED",
         "additionalProperties": false,
         "properties": {
@@ -25,7 +23,6 @@
             "type": "integer",
             "title": "Damage Per Tick",
             "description": "UNDOCUMENTED",
-            "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED"
           }
         }

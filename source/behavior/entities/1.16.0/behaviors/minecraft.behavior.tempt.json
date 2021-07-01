@@ -18,14 +18,12 @@
       "type": "boolean",
       "title": "Can Tempt While Ridden",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
     "can_tempt_vertically": {
       "type": "boolean",
       "title": "Can Tempt Vertically",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
     "items": {

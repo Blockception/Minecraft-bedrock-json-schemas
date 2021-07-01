@@ -24,7 +24,6 @@
       "default": true,
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "title": "Cooldown After Being Attacked"
     },
     "goal_radius": {

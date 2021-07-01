@@ -5,10 +5,8 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "value": { "type": "integer", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "title": "Value" },
-    "max": { "type": "integer", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "title": "Max" }
+    "value": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Value" },
+    "max": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Max" }
   },
   "description": "UNDOCUMENTATED: "
 }

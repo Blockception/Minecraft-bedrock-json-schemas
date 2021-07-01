@@ -5,7 +5,6 @@
   "title": "Player.level 1.8.0",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
-  "$comment": "UNDOCUMENTED",
   "required": [],
   "properties": {
     "value": {
@@ -13,7 +12,6 @@
       "default": true,
       "title": "Value",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
     "max": {
@@ -21,7 +19,6 @@
       "default": true,
       "title": "Maximum",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }
   }

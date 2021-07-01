@@ -61,7 +61,6 @@
                     "title": "Conditional Animation",
                     "description": "UNDOCUMENTED",
                     "$comment": "UNDOCUMENTED",
-                    "$comment": "UNDOCUMENTED",
                     "additionalProperties": { "type": "string", "title": "Animation" }
                   }
                 ]

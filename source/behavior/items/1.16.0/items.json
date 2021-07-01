@@ -5,14 +5,12 @@
   "title": "Item",
   "type": "object",
   "properties": {
-    "format_version": { "type": "string", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "title": "TODO Title" },
+    "format_version": { "type": "string", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "TODO Title" },
     "minecraft:item": {
       "additionalProperties": false,
       "required": ["description"],
       "type": "object",
       "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "properties": {
         "description": {
@@ -20,7 +18,6 @@
           "type": "object",
           "title": "Description",
           "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "properties": {
             "identifier": {
@@ -141,14 +138,12 @@
                   "title": "Plant At Any Solid Surface",
                   "type": "boolean",
                   "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
                   "$comment": "UNDOCUMENTED"
                 },
                 "plant_at_face": {
                   "title": "Plnat at face",
                   "type": "string",
                   "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
                   "$comment": "UNDOCUMENTED",
                   "enum": ["DOWN", "UP"]
                 }

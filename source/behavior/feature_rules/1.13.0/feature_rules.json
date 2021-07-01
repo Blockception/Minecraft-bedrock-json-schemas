@@ -12,7 +12,6 @@
       "title": "",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "oneOf": [
         {
           "$ref": "../../../molang/number.json",
@@ -28,14 +27,12 @@
               "title": "Numerator",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
               "type": "number",
               "minimum": 1
             },
             "denominator": {
               "title": "Denominator",
               "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "number",
               "minimum": 1
@@ -61,7 +58,6 @@
         "description": {
           "title": "Description",
           "description": "UNDOCUMENTED",
-          "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
@@ -147,14 +143,12 @@
                       "title": "Numerator",
                       "description": "UNDOCUMENTED",
                       "$comment": "UNDOCUMENTED",
-                      "$comment": "UNDOCUMENTED",
                       "type": "number",
                       "minimum": 1
                     },
                     "denominator": {
                       "title": "Denominator",
                       "description": "UNDOCUMENTED",
-                      "$comment": "UNDOCUMENTED",
                       "$comment": "UNDOCUMENTED",
                       "type": "number",
                       "minimum": 1

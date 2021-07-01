@@ -17,7 +17,6 @@
       "type": "array",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "title": "Boost Items",
       "items": {
         "type": "object",

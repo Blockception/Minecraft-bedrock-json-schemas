@@ -13,7 +13,6 @@
       "default": 0,
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "title": "Attack Interval"
     },
     "attack_interval_max": {
@@ -68,14 +67,12 @@
       "type": "number",
       "title": "Target In Sight Time",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
     "attack_radius_min": {
       "type": "number",
       "title": "Attack Radius Min",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }
   }

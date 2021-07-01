@@ -25,7 +25,6 @@
     "pools_spec": {
       "title": "Pools",
       "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "array",
       "additionalProperties": false,
@@ -37,7 +36,6 @@
           "rolls": {
             "title": "Rolls",
             "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "oneOf": [
               { "type": "integer", "minimum": 0 },
@@ -55,14 +53,12 @@
             "title": "Type",
             "type": "string",
             "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "enum": ["loot_table", "item", "empty"]
           },
           "conditions": {
             "title": "Conditions",
             "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "type": "array",
             "items": { "$ref": "./conditions.json" }
@@ -71,7 +67,6 @@
             "title": "Entries",
             "type": "array",
             "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "items": {
               "additionalProperties": false,
@@ -80,14 +75,12 @@
               "title": "Entry",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
               "properties": {
                 "type": {
                   "title": "Type",
                   "type": "string",
                   "enum": ["item", "empty", "loot_table"],
                   "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
                   "$comment": "UNDOCUMENTED"
                 },
                 "count": {
@@ -96,18 +89,21 @@
                   "description": "The amount of the item"
                 },
                 "name": { "title": "Name", "type": "string", "description": "An item or loottable", "pattern": "^([\\w]+:|loot_tables/)" },
-                "weight": { "title": "Weight", "type": "integer", "minimum": 1, "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+                "weight": {
+                  "title": "Weight",
+                  "type": "integer",
+                  "minimum": 1,
+                  "description": "UNDOCUMENTED",
+                  "$comment": "UNDOCUMENTED"
+                },
                 "functions": {
                   "title": "Functions",
                   "type": "array",
                   "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
                   "$comment": "UNDOCUMENTED",
                   "items": {
                     "type": "object",
                     "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
                     "$comment": "UNDOCUMENTED",
                     "required": ["function"],
                     "title": "Function",
@@ -115,25 +111,20 @@
                   }
                 },
                 "pools": { "$ref": "#/definitions/pools_spec" },
-                "quality": { "title": "Quality", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "type": "integer" }
+                "quality": { "title": "Quality", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "integer" }
               }
             }
           },
           "tiers": {
             "title": "Tiers",
             "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "type": "object",
             "additionalProperties": false,
             "properties": {
-              "bonus_chance": { "title": "Bonus Chance", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "type": "number" },
-              "bonus_rolls": { "title": "Bonus Rolls", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "type": "integer" },
-              "initial_range": { "title": "Initial Range", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "type": "integer" }
+              "bonus_chance": { "title": "Bonus Chance", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" },
+              "bonus_rolls": { "title": "Bonus Rolls", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "integer" },
+              "initial_range": { "title": "Initial Range", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "integer" }
             }
           }
         }
@@ -141,9 +132,7 @@
     }
   },
   "properties": {
-    "pools": { "$ref": "#/definitions/pools_spec", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "title": "Pools" },
-    "type": { "title": "Type", "type": "string", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "enum": ["minecraft:chest"] }
+    "pools": { "$ref": "#/definitions/pools_spec", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Pools" },
+    "type": { "title": "Type", "type": "string", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "enum": ["minecraft:chest"] }
   }
 }

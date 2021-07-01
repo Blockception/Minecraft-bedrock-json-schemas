@@ -5,12 +5,10 @@
   "title": "Furnace Smelt",
   "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "furnace_smelt", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "title": "Function" },
+    "function": { "type": "string", "const": "furnace_smelt", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Function" },
     "conditions": {
       "title": "Conditions",
       "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": { "$ref": "../conditions.json" }

@@ -56,9 +56,7 @@
       "description": "The amount of time the mob will be stuck if they fail and land on a block they can be stuck on",
       "title": "Stuck Time"
     },
-    "leap_dist": { "type": "number", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "title": "Leap Dist" },
-    "stuck_blocks": { "$ref": "../../filters/filters.json", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "title": "Stuck Block" }
+    "leap_dist": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Leap Dist" },
+    "stuck_blocks": { "$ref": "../../filters/filters.json", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Stuck Block" }
   }
 }

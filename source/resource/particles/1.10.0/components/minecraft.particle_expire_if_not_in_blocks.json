@@ -3,9 +3,7 @@
   "type": "array",
   "title": "Particle Expire If Not In Blocks Component For 1.10.0",
   "additionalProperties": false,
-  "items": { "$ref": "../../../../general/block/identifier.json", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "title": "Block" },
+  "items": { "$ref": "../../../../general/block/identifier.json", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Block" },
   "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED"
 }

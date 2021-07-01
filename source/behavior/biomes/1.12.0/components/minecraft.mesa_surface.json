@@ -33,13 +33,9 @@
       "description": "Controls how deep below the world water level the floor should occur.",
       "type": "integer"
     },
-    "clay_material": { "title": "Clay Material", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "type": "string" },
-    "hard_clay_material": { "title": "Hard Clay Material", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "type": "string" },
-    "bryce_pillars": { "title": "Bryce Pillars", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "type": "boolean" },
-    "has_forest": { "title": "Has Forest", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "type": "boolean" }
+    "clay_material": { "title": "Clay Material", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "string" },
+    "hard_clay_material": { "title": "Hard Clay Material", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "string" },
+    "bryce_pillars": { "title": "Bryce Pillars", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "boolean" },
+    "has_forest": { "title": "Has Forest", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "boolean" }
   }
 }

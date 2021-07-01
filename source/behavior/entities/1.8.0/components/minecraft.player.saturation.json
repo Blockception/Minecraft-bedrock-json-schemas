@@ -5,7 +5,6 @@
   "title": "Player.saturation 1.8.0",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
-  "$comment": "UNDOCUMENTED",
   "required": [],
   "properties": {
     "value": {
@@ -13,7 +12,6 @@
       "default": true,
       "title": "Value",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }
   }

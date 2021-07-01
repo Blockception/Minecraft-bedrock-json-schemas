@@ -5,7 +5,7 @@
   "description": "Sets a max regional difficulty random chance of the specified value.",
   "title": "Random Regional Difficulty Chance",
   "properties": {
-    "condition": { "type": "string", "title": "Condition", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "condition": { "type": "string", "title": "Condition", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
     "default_chance": {
       "type": "number",
       "default": 0,

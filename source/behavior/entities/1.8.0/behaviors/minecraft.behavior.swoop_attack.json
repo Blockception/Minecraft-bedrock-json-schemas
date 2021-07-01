@@ -12,7 +12,6 @@
       "type": "number",
       "title": "Damage Reach",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
     "delay_range": {

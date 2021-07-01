@@ -3,15 +3,12 @@
   "type": "object",
   "title": "Swim Idle 1.8.0",
   "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "additionalProperties": false,
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
-    "idle_time": { "title": "Idle Time", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "type": "number" },
-    "success_rate": { "title": "Succes Rate", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "type": "number" }
+    "idle_time": { "title": "Idle Time", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" },
+    "success_rate": { "title": "Succes Rate", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" }
   }
 }

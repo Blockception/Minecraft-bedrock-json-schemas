@@ -4,7 +4,6 @@
   "title": "Entity Damage Name",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
-  "$comment": "UNDOCUMENTED",
   "enum": [
     "all",
     "anvil",

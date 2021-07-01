@@ -3,6 +3,5 @@
   "title": "Spawns On Block Prevented Filter 1.11.0",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
-  "$comment": "UNDOCUMENTED",
   "oneOf": [{ "type": "string" }, { "type": "array", "items": { "type": "string" } }]
 }

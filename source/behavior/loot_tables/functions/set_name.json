@@ -5,9 +5,7 @@
   "title": "Set Name",
   "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "set_name", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "title": "Function" },
-    "name": { "type": "string", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "title": "name" }
+    "function": { "type": "string", "const": "set_name", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Function" },
+    "name": { "type": "string", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "name" }
   }
 }

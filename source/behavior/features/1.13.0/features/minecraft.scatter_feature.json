@@ -40,7 +40,6 @@
               "title": "Extent",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
               "type": "array",
               "items": [
                 {
@@ -64,7 +63,6 @@
     "description": {
       "title": "Description",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "required": ["identifier"],

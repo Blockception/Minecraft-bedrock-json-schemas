@@ -22,7 +22,6 @@
       "$ref": "../../filters/filters.json",
       "title": "Entity Filter",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }
   }

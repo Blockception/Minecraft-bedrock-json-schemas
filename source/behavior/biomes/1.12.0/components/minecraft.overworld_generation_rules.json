@@ -11,13 +11,11 @@
           "type": "string",
           "title": "Block Reference",
           "description": "UNDOCUMENTED",
-          "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED"
         },
         {
           "type": "array",
           "description": "UNDOCUMENTED",
-          "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "title": "Block Reference",
           "minItems": 1,
@@ -27,26 +25,22 @@
                 "type": "string",
                 "description": "UNDOCUMENTED",
                 "$comment": "UNDOCUMENTED",
-                "$comment": "UNDOCUMENTED",
                 "title": "Block Reference"
               },
               {
                 "type": "array",
                 "description": "UNDOCUMENTED",
                 "$comment": "UNDOCUMENTED",
-                "$comment": "UNDOCUMENTED",
                 "items": [
                   {
                     "title": "Biome Reference",
                     "description": "UNDOCUMENTED",
-                    "$comment": "UNDOCUMENTED",
                     "$comment": "UNDOCUMENTED",
                     "type": "string"
                   },
                   {
                     "title": "_",
                     "description": "UNDOCUMENTED",
-                    "$comment": "UNDOCUMENTED",
                     "$comment": "UNDOCUMENTED",
                     "type": "integer"
                   }
@@ -63,13 +57,11 @@
       "title": "Hills Transformation",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$ref": "#/definitions/transformation"
     },
     "mutate_transformation": {
       "title": "Mutate Transformation",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "$ref": "#/definitions/transformation"
     },
@@ -77,13 +69,11 @@
       "title": "River Transformation",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$ref": "#/definitions/transformation"
     },
     "shore_transformation": {
       "title": "Shore Transformation",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "$ref": "#/definitions/transformation"
     },
@@ -94,7 +84,6 @@
       "items": {
         "title": "_",
         "description": "UNDOCUMENTED",
-        "$comment": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED",
         "type": "array",
         "items": [

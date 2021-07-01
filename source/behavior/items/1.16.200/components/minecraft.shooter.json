@@ -13,18 +13,13 @@
         "type": "object",
         "title": "Ammunition",
         "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED",
         "additionalProperties": false,
         "properties": {
-          "item": { "title": "Item", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "type": "string" },
-          "use_offhand": { "title": "Use Offhand", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "type": "boolean" },
-          "search_inventory": { "title": "Search Inventory", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "type": "boolean" },
-          "use_in_creative": { "title": "Use In Creative", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "type": "boolean" }
+          "item": { "title": "Item", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "string" },
+          "use_offhand": { "title": "Use Offhand", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "boolean" },
+          "search_inventory": { "title": "Search Inventory", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "boolean" },
+          "use_in_creative": { "title": "Use In Creative", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "boolean" }
         }
       }
     },

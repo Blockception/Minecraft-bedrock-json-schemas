@@ -11,7 +11,6 @@
       "type": "number",
       "title": "Peaks factor",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
     "steep_material_adjustment": {

@@ -3,7 +3,6 @@
   "title": "Height Filter 1.17.0",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
-  "$comment": "UNDOCUMENTED",
   "definitions": {
     "herd": {
       "type": "object",

@@ -4,7 +4,6 @@
   "title": "Eat Block 1.8.0",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
-  "$comment": "UNDOCUMENTED",
   "additionalProperties": false,
   "required": [],
   "properties": {
@@ -13,20 +12,17 @@
       "$ref": "../types/trigger.json",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "title": "On Eat"
     },
     "success_chance": {
       "title": "Succes Chance",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$ref": "../../../../molang/number.json"
     },
     "time_until_eat": {
       "title": "Time Until Eat",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "number"
     },
@@ -35,12 +31,10 @@
       "title": "Eat And Replace Block Pairs",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "items": {
         "type": "object",
         "title": "Eat And Replace Block Pair",
         "description": "UNDOCUMENTED",
-        "$comment": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED",
         "properties": {
           "eat_block": {
@@ -48,14 +42,12 @@
             "title": "Block",
             "description": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
-            "$comment": "UNDOCUMENTED",
             "$ref": "../../../../general/block/identifier.json"
           },
           "replace_block": {
             "type": "string",
             "title": "Replace Block",
             "description": "UNDOCUMENTED",
-            "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "$ref": "../../../../general/block/identifier.json"
           }

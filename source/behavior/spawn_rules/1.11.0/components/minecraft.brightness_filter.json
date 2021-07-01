@@ -5,7 +5,6 @@
   "title": "Brightness Filter 1.11.0",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
-  "$comment": "UNDOCUMENTED",
   "properties": {
     "min": { "type": "integer", "description": "This is the minimum light level value that allows the mob to spawn", "title": "Min" },
     "max": { "type": "integer", "description": "This is the maximum light level value that allows the mob to spawn", "title": "Max" },

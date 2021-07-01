@@ -13,14 +13,12 @@
           "title": "Ambient Occlusion",
           "type": "boolean",
           "description": "UNDOCUMENTED",
-          "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED"
         },
         "face_dimming": {
           "title": "Face Dimming",
           "type": "boolean",
           "description": "UNDOCUMENTED",
-          "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED"
         },
         "render_method": {
@@ -28,10 +26,9 @@
           "title": "Render Method",
           "description": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
-          "$comment": "UNDOCUMENTED",
           "enum": ["blend", "opaque", "alpha_test"]
         },
-        "texture": { "type": "string", "title": "Texture", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
+        "texture": { "type": "string", "title": "Texture", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
       }
     }
   },

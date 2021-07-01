@@ -4,7 +4,6 @@
   "type": "object",
   "title": "Actor Animation 1.10.0",
   "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "definitions": {
     "ParticleEffect": {
@@ -139,7 +138,6 @@
           "blend_weight": {
             "title": "Blend Weight",
             "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "$ref": "../../../molang/number.json"
           },
@@ -173,14 +171,11 @@
                             "type": "string",
                             "title": "Lerp Mode",
                             "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
                             "$comment": "UNDOCUMENTED",
                             "enum": ["linear", "catmullrom"]
                           },
-                          "pre": { "title": "Pre", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "$ref": "#/definitions/PositionV3" },
-                          "post": { "title": "Pre", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "$ref": "#/definitions/PositionV3" }
+                          "pre": { "title": "Pre", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/PositionV3" },
+                          "post": { "title": "Pre", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/PositionV3" }
                         }
                       }
                     }
@@ -204,14 +199,11 @@
                             "type": "string",
                             "title": "Lerp Mode",
                             "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
                             "$comment": "UNDOCUMENTED",
                             "enum": ["linear", "catmullrom"]
                           },
-                          "pre": { "title": "Pre", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "$ref": "#/definitions/RotationV3" },
-                          "post": { "title": "Pre", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "$ref": "#/definitions/RotationV3" }
+                          "pre": { "title": "Pre", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/RotationV3" },
+                          "post": { "title": "Pre", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/RotationV3" }
                         }
                       }
                     }
@@ -231,7 +223,6 @@
                 "scale": {
                   "title": "Scale",
                   "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
                   "$comment": "UNDOCUMENTED",
                   "oneOf": [
                     { "$ref": "../../../molang/number.json" },
@@ -248,14 +239,11 @@
                             "type": "string",
                             "title": "Lerp Mode",
                             "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
                             "$comment": "UNDOCUMENTED",
                             "enum": ["linear", "catmullrom"]
                           },
-                          "pre": { "title": "Pre", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "$ref": "#/definitions/ScaleV3" },
-                          "post": { "title": "Pre", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "$ref": "#/definitions/ScaleV3" }
+                          "pre": { "title": "Pre", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/ScaleV3" },
+                          "post": { "title": "Pre", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/ScaleV3" }
                         }
                       }
                     }
@@ -282,7 +270,6 @@
           "particle_effects": {
             "title": "Particle Effects",
             "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "type": "object",
             "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$", "examples": ["0.0", "1.0"] },
@@ -303,7 +290,6 @@
           "sound_effects": {
             "title": "Sound Effect",
             "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "type": "object",
             "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$", "examples": ["0.0", "1.0"] },

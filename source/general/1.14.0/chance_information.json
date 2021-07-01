@@ -4,12 +4,9 @@
   "type": "object",
   "title": "Chance Information",
   "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "properties": {
-    "numerator": { "type": "number", "minimum": 1, "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "title": "Numerator" },
-    "denominator": { "type": "number", "minimum": 1, "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "title": "Denominator" }
+    "numerator": { "type": "number", "minimum": 1, "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Numerator" },
+    "denominator": { "type": "number", "minimum": 1, "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Denominator" }
   }
 }

@@ -3,7 +3,6 @@
   "type": "object",
   "title": "Animation Controller 1.10.0",
   "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "definitions": {
     "animationspec": {
@@ -168,8 +167,7 @@
                     "type": "object",
                     "required": ["input"],
                     "properties": {
-                      "input": { "title": "Input", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "$ref": "../../../molang/number.json" },
+                      "input": { "title": "Input", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$ref": "../../../molang/number.json" },
                       "remap_curve": {
                         "title": "Remap Curve",
                         "additionalProperties": { "propertyNames": { "pattern": "^([\\-\\+0-9]+|[\\-\\+0-9]+.[0-9]+)$" }, "type": "number" }
@@ -180,20 +178,16 @@
                 "on_entry": {
                   "title": "On Entry",
                   "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
                   "$comment": "UNDOCUMENTED",
                   "type": "array",
-                  "items": { "pattern": "^.+=.+;$", "title": "Molang", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "type": "string" }
+                  "items": { "pattern": "^.+=.+;$", "title": "Molang", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "string" }
                 },
                 "on_exit": {
                   "title": "On Exit",
                   "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
                   "$comment": "UNDOCUMENTED",
                   "type": "array",
-                  "items": { "pattern": "^.+=.+;$", "title": "Molang", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "type": "string" }
+                  "items": { "pattern": "^.+=.+;$", "title": "Molang", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "string" }
                 }
               }
             }

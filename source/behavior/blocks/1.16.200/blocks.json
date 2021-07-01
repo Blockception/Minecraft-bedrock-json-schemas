@@ -11,7 +11,6 @@
       "title": "Component",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "additionalProperties": false,
       "properties": {
         "minecraft:block_light_absorption": { "$ref": "./components/minecraft.block_light_absorption.json" },

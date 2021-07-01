@@ -11,10 +11,9 @@
       "type": "number",
       "title": "Liquid Y Offset",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
-    "rise_delta": { "type": "number", "title": "Rise Delta", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-    "sink_delta": { "type": "number", "title": "Sink Delta", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
+    "rise_delta": { "type": "number", "title": "Rise Delta", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "sink_delta": { "type": "number", "title": "Sink Delta", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
   }
 }

@@ -11,14 +11,12 @@
       "type": "number",
       "title": "Search Range",
       "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
     "search_height": {
       "type": "number",
       "title": "Search Height",
       "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
 
@@ -26,14 +24,12 @@
       "type": "number",
       "title": "Minimum Path Length",
       "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
     "minimum_distance": {
       "type": "number",
       "title": "Minimum Distance",
       "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
 
@@ -41,21 +37,17 @@
       "type": "number",
       "title": "Scale Factor",
       "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
 
     "cooldown_range": {
       "title": "Cooldown range",
       "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": [
-        { "title": "Min", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "type": "integer", "minimum": 0 },
-        { "title": "Max", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "type": "integer", "minimum": 0 }
+        { "title": "Min", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "integer", "minimum": 0 },
+        { "title": "Max", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "integer", "minimum": 0 }
       ]
     }
   }

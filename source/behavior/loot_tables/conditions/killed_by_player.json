@@ -5,6 +5,6 @@
   "description": "Returns the condition true if the actor of the loot table is killed by player or entities that has owner.",
   "title": "Killed By Player",
   "properties": {
-    "condition": { "type": "string", "title": "Condition", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
+    "condition": { "type": "string", "title": "Condition", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
   }
 }

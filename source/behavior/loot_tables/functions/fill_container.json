@@ -9,7 +9,6 @@
       "const": "fill_container",
       "title": "Function",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
     "loot_table": {
@@ -17,7 +16,6 @@
       "title": "Loot Table",
       "pattern": "^loot_tables/.*\\.json$",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }
   }

@@ -3,7 +3,6 @@
   "title": "Biome Filter 1.17.0",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
-  "$comment": "UNDOCUMENTED",
   "oneOf": [
     { "type": "array", "items": { "$ref": "../../../entities/filters/filters.json" } },
     { "type": "object", "$ref": "../../../entities/filters/filters.json" }

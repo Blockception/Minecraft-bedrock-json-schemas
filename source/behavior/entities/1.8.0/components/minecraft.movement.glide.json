@@ -4,7 +4,6 @@
   "title": "Movement.glide 1.8.0",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
-  "$comment": "UNDOCUMENTED",
   "additionalProperties": false,
   "required": [],
   "properties": {
@@ -12,14 +11,12 @@
       "type": "number",
       "title": "Start Speed",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
     "speed_when_turning": {
       "type": "number",
       "title": "Speed When Turning",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }
   }

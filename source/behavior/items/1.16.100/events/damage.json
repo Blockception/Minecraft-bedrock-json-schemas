@@ -2,14 +2,11 @@
   "$id": "blockception.minecraft.behavior.1.16.100.items.events.shoot",
   "title": "Shoot",
   "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "type": { "type": "string", "title": "Type", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED" "enum": ["magic"] },
-    "amount": { "type": "number", "title": "Amount", "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
+    "type": { "type": "string", "title": "Type", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "enum": ["magic"] },
+    "amount": { "type": "number", "title": "Amount", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
   }
 }

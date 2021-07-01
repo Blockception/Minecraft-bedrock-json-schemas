@@ -13,13 +13,11 @@
       "atlas_index": {
         "description": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED",
-        "$comment": "UNDOCUMENTED",
         "title": "Atlas Index",
         "type": "integer"
       },
       "atlas_tile": {
         "description": "UNDOCUMENTED",
-        "$comment": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED",
         "pattern": "^[a-z0-9_\\-]*$",
         "title": "Atlas Index",
@@ -28,13 +26,11 @@
       "atlas_tile_variant": {
         "description": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED",
-        "$comment": "UNDOCUMENTED",
         "title": "Atlas Index",
         "type": "integer"
       },
       "blend_frames": {
         "description": "UNDOCUMENTED",
-        "$comment": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED",
         "title": "Atlas Index",
         "type": "boolean"
@@ -58,7 +54,6 @@
       },
       "replicate": {
         "description": "UNDOCUMENTED",
-        "$comment": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED",
         "title": "Atlas Index",
         "type": "integer"

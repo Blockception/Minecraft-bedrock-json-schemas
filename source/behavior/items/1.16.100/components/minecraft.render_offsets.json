@@ -9,20 +9,17 @@
       "title": "Offset",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "additionalProperties": false,
       "properties": {
         "first_person": {
           "title": "First Person",
           "description": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
-          "$comment": "UNDOCUMENTED",
           "$ref": "#/definitions/mode"
         },
         "thrid_person": {
           "title": "Thrid Person",
           "description": "UNDOCUMENTED",
-          "$comment": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "$ref": "#/definitions/mode"
         }
@@ -32,7 +29,6 @@
       "type": "object",
       "title": "Mode",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "additionalProperties": false,
       "properties": {

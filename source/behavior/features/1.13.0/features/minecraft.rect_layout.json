@@ -9,7 +9,6 @@
       "title": "Description",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "type": "object",
       "required": ["identifier"],
       "properties": {
@@ -30,14 +29,12 @@
       "title": "Feature Areas",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
       "minItems": 1,
       "maxItems": 4294967295,
       "items": {
         "type": "object",
         "title": "Feature Area",
         "description": "UNDOCUMENTED",
-        "$comment": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED",
         "additionalProperties": false,
         "properties": {

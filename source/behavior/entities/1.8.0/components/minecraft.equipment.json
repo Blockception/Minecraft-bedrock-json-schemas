@@ -15,7 +15,6 @@
         "title": "Slot Drop Chance",
         "description": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED",
-        "$comment": "UNDOCUMENTED",
         "additionalProperties": false,
         "properties": {
           "drop_chance": { "type": "number", "title": "Drop Chance" },

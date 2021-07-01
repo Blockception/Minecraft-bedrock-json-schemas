@@ -3,10 +3,9 @@
   "title": "Spawn Event 1.11.0",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
-  "$comment": "UNDOCUMENTED",
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "event": { "type": "string", "title": "Event", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
+    "event": { "type": "string", "title": "Event", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
   }
 }
