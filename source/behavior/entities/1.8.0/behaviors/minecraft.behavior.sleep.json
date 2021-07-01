@@ -14,7 +14,7 @@
       "description": "Time in seconds the mob has to wait before using the goal again",
       "title": "Cooldown Time"
     },
-    "goal_radius": { "type": "number", "default": 0, "description": "UNDOCUMANTED", "title": "UNDOCUMANTED" },
+    "goal_radius": { "type": "number", "default": 0, "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Goal Radius" },
     "sleep_collider_height": {
       "type": "number",
       "default": 1,

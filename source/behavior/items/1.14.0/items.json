@@ -5,11 +5,16 @@
   "title": "Item",
   "type": "object",
   "properties": {
-    "format_version": { "type": "string", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "TODO Title" },
+    "format_version": {
+      "title": "Format Version",
+      "type": "string",
+      "description": "A version that tells minecraft what type of data format can be expected when reading this file."
+    },
     "minecraft:item": {
       "additionalProperties": false,
       "required": ["description"],
       "type": "object",
+      "title": "Item",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "properties": {
@@ -36,74 +41,91 @@
           "properties": {
             "minecraft:camera": {
               "type": "object",
-              "description": "UNDOCUMANTED",
-              "title": "UNDOCUMANTED",
+              "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
+              "title": "Minecraft Camera",
               "properties": {
-                "black_bars_duration": { "type": "number", "description": "UNDOCUMANTED", "title": "UNDOCUMANTED" },
-                "black_bars_screen_ratio": { "type": "number", "description": "UNDOCUMANTED", "title": "UNDOCUMANTED" },
-                "shutter_duration": { "type": "number", "description": "UNDOCUMANTED", "title": "UNDOCUMANTED" },
-                "picture_duration": { "type": "number", "description": "UNDOCUMANTED", "title": "UNDOCUMANTED" },
-                "slide_away_duration": { "type": "number", "description": "UNDOCUMANTED", "title": "UNDOCUMANTED" }
+                "black_bars_duration": {
+                  "type": "number",
+                  "description": "UNDOCUMENTED",
+                  "$comment": "UNDOCUMENTED",
+                  "title": "Black Bars Duration"
+                },
+                "black_bars_screen_ratio": {
+                  "type": "number",
+                  "description": "UNDOCUMENTED",
+                  "$comment": "UNDOCUMENTED",
+                  "title": "Black Bars Screen Ratio"
+                },
+                "shutter_duration": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Shutter Duration" },
+                "picture_duration": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Picture Duration" },
+                "slide_away_duration": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Slide Away Duration" }
               }
             },
             "minecraft:max_damage": {
               "type": "integer",
               "description": "Maximum damage item has, this is used like item Maximum health.",
-              "title": "UNDOCUMANTED"
+              "title": "Max Damage"
             },
             "minecraft:hand_equipped": { "type": "boolean", "title": "Hand Equipped", "description": "Is this a hand equipped item." },
-            "minecraft:stacked_by_data": { "type": "boolean", "description": "Stacked by data aux value or not?", "title": "UNDOCUMANTED" },
-            "minecraft:foil": { "type": "boolean", "description": "Foil or glint.", "title": "UNDOCUMANTED" },
-            "minecraft:block": { "type": "string", "description": "Block name, leave blank for no block.", "title": "UNDOCUMANTED" },
-            "minecraft:max_stack_size": { "type": "integer", "description": "Maximum stack size.", "title": "UNDOCUMANTED", "minimum": 0 },
+            "minecraft:stacked_by_data": { "type": "boolean", "description": "Stacked by data aux value or not?", "title": "Stacked By Data" },
+            "minecraft:foil": { "type": "boolean", "description": "Foil or glint.", "title": "Foil" },
+            "minecraft:block": { "type": "string", "description": "Block name, leave blank for no block.", "title": "Block" },
+            "minecraft:max_stack_size": { "type": "integer", "description": "Maximum stack size.", "title": "Max Stack Size", "minimum": 0 },
             "minecraft:use_duration": {
               "type": "integer",
               "description": "How long to use before item is done being used.",
-              "title": "UNDOCUMANTED"
+              "title": "Use Duration"
             },
             "minecraft:food": {
               "type": "object",
               "description": "Food settings of the item",
               "additionalProperties": false,
               "properties": {
-                "nutrition": { "type": "integer", "description": "Nutrition amount.", "title": "UNDOCUMANTED" },
+                "nutrition": { "type": "integer", "description": "Nutrition amount.", "title": "Nutrition" },
                 "saturation_modifier": {
                   "type": "string",
-                  "description": "Choose: poor, low, normal, good, max, supernatural.",
+                  "description": "Choose: `poor`, `low`, `normal`, `good`, `max`, `supernatural`.",
                   "enum": ["poor", "low", "normal", "good", "max", "supernatural"],
-                  "title": "UNDOCUMANTED"
+                  "title": "Saturation Modifier"
                 },
                 "using_converts_to": {
                   "type": "string",
-                  "description": "After using,  item converts it to this item.",
-                  "title": "UNDOCUMANTED",
+                  "description": "After using, item converts it to this item.",
+                  "title": "Using Converts To",
                   "$ref": "../../../general/item/identifier.json"
                 },
                 "on_use_action": {
                   "type": "string",
                   "description": "'chorus_teleport` or `none`.",
-                  "title": "UNDOCUMANTED",
+                  "title": "On Use Action",
                   "enum": ["chorus_teleport", "suspicious_stew_effect", "none"]
                 },
-                "on_use_range": { "$ref": "../../../general/array_3_number.json", "title": "UNDOCUMANTED" },
+                "on_use_range": { "$ref": "../../../general/array_3_number.json", "title": "On Use Range" },
                 "cooldown_type": {
                   "type": "string",
                   "description": "'chorusfruit` or `none`.",
-                  "title": "UNDOCUMANTED",
+                  "title": "Cooldown Type",
                   "enum": ["chorusfruit", "none"]
                 },
-                "cooldown_time": { "type": "integer", "description": "Cooldown time in ticks.", "title": "UNDOCUMANTED" },
-                "can_always_eat": { "type": "boolean", "description": "Can always eat this item? true or false.", "title": "UNDOCUMANTED" },
+                "cooldown_time": { "type": "integer", "description": "Cooldown time in ticks.", "title": "Cooldown Time" },
+                "can_always_eat": { "type": "boolean", "description": "Can always eat this item? true or false.", "title": "Can Always Eat" },
                 "effects": {
                   "type": "array",
+                  "title": "Effects",
+                  "description": "UNDOCUMENTED",
+                  "$comment": "UNDOCUMENTED",
                   "items": {
                     "additionalProperties": false,
                     "type": "object",
+                    "title": "Items",
+                    "description": "UNDOCUMENTED",
+                    "$comment": "UNDOCUMENTED",
                     "properties": {
-                      "name": { "type": "string", "description": "UNDOCUMANTED", "title": "UNDOCUMANTED" },
-                      "chance": { "type": "number", "description": "UNDOCUMANTED", "title": "UNDOCUMANTED" },
-                      "duration": { "type": "integer", "description": "UNDOCUMANTED", "title": "UNDOCUMANTED" },
-                      "amplifier": { "type": "integer", "description": "UNDOCUMANTED", "title": "UNDOCUMANTED" }
+                      "name": { "type": "string", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Name" },
+                      "chance": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Chance" },
+                      "duration": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Duration" },
+                      "amplifier": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Amplifier" }
                     }
                   }
                 },
@@ -111,18 +133,21 @@
                   "type": "array",
                   "description": "Can always eat this item? true or false.",
                   "title": "Remove Effects",
-                  "items": { "type": "string", "description": "UNDOCUMANTED", "title": "UNDOCUMANTED" }
+                  "items": { "type": "string", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Remove Effects" }
                 }
               }
             },
             "minecraft:seed": {
               "additionalProperties": false,
               "type": "object",
+              "title": "Seed",
+              "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "properties": {
-                "crop_result": { "type": "string", "description": "UNDOCUMANTED", "title": "UNDOCUMANTED" },
+                "crop_result": { "type": "string", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Crop Result" },
                 "plant_at": {
                   "description": "Valid blocks you can plant this item at.",
-                  "title": "UNDOCUMANTED",
+                  "title": "Plant At",
                   "oneOf": [
                     { "type": "string", "$ref": "../../../general/blocks_item.json" },
                     { "type": "array", "items": { "type": "string", "$ref": "../../../general/blocks_item.json" } }
@@ -132,8 +157,7 @@
             }
           }
         }
-      },
-      "title": "TODO Title"
+      }
     }
   }
 }

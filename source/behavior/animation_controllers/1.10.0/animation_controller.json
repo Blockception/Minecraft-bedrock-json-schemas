@@ -91,10 +91,9 @@
           "states": {
             "title": "States",
             "description": "The states of this animation controller",
-            "propertyNames": {
-              "pattern": "[a-z\\.]+"
-            },
+            "propertyNames": { "pattern": "[a-z\\.]+" },
             "minProperties": 1,
+            "type": "object",
             "additionalProperties": {
               "additionalProperties": false,
               "title": "Animation State",

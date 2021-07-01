@@ -6,12 +6,12 @@
   "definitions": {
     "addremove": {
       "additionalProperties": false,
-      "title": "Add/remove Schema",
+      "title": "Add Or Remove",
       "description": "The components groups to add or remove",
       "type": "object",
       "properties": {
         "component_groups": {
-          "title": "Component Groups Schema",
+          "title": "Component Groups",
           "description": "The components groups to add or remove",
           "type": "array",
           "items": { "type": "string", "description": "UNDOCUMENTATED: component groups", "title": "Component Groups" }

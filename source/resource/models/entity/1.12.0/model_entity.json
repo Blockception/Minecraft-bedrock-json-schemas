@@ -332,7 +332,8 @@
                 },
                 "reset": {
                   "title": "Reset",
-                  "description": "UNDOCUMANTED",
+                  "description": "UNDOCUMENTED",
+                  "$comment": "UNDOCUMENTED",
                   "type": "boolean"
                 },
                 "texture_meshes": {

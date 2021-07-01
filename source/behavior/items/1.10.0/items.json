@@ -5,11 +5,17 @@
   "title": "Item",
   "type": "object",
   "properties": {
-    "format_version": { "type": "string", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "TODO Title" },
+    "format_version": {
+      "title": "1.10.0 Format Version",
+      "type": "string",
+      "pattern": "^1.10.0$",
+      "description": "A version that tells minecraft what type of data format can be expected when reading this file."
+    },
     "minecraft:item": {
       "additionalProperties": false,
       "required": ["description"],
       "type": "object",
+      "title": "Item",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "properties": {
@@ -33,14 +39,25 @@
           "properties": {
             "minecraft:camera": {
               "type": "object",
-              "description": "UNDOCUMANTED",
-              "title": "UNDOCUMANTED",
+              "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
+              "title": "Minecraft Camera",
               "properties": {
-                "black_bars_duration": { "type": "number", "description": "UNDOCUMANTED", "title": "UNDOCUMANTED" },
-                "black_bars_screen_ratio": { "type": "number", "description": "UNDOCUMANTED", "title": "UNDOCUMANTED" },
-                "shutter_duration": { "type": "number", "description": "UNDOCUMANTED", "title": "UNDOCUMANTED" },
-                "picture_duration": { "type": "number", "description": "UNDOCUMANTED", "title": "UNDOCUMANTED" },
-                "slide_away_duration": { "type": "number", "description": "UNDOCUMANTED", "title": "UNDOCUMANTED" }
+                "black_bars_duration": {
+                  "type": "number",
+                  "description": "UNDOCUMENTED",
+                  "$comment": "UNDOCUMENTED",
+                  "title": "Black Bars Duration"
+                },
+                "black_bars_screen_ratio": {
+                  "type": "number",
+                  "description": "UNDOCUMENTED",
+                  "$comment": "UNDOCUMENTED",
+                  "title": "Black Bars Screen Ratio"
+                },
+                "shutter_duration": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Shutter Duration" },
+                "picture_duration": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Picture Duration" },
+                "slide_away_duration": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Slide Away Duration" }
               }
             },
             "minecraft:max_damage": { "type": "integer", "description": "Maximum damage item has, this is used like item Maximum health." },
@@ -80,10 +97,10 @@
                     "additionalProperties": false,
                     "type": "object",
                     "properties": {
-                      "name": { "type": "string", "description": "UNDOCUMANTED", "title": "UNDOCUMANTED" },
-                      "chance": { "type": "number", "description": "UNDOCUMANTED", "title": "UNDOCUMANTED" },
-                      "duration": { "type": "integer", "description": "UNDOCUMANTED", "title": "UNDOCUMANTED" },
-                      "amplifier": { "type": "integer", "description": "UNDOCUMANTED", "title": "UNDOCUMANTED" }
+                      "name": { "type": "string", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Name" },
+                      "chance": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Chance" },
+                      "duration": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Duration" },
+                      "amplifier": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Amplifier" }
                     }
                   }
                 }
@@ -105,8 +122,7 @@
             }
           }
         }
-      },
-      "title": "TODO Title"
+      }
     }
   }
 }

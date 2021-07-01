@@ -21,12 +21,14 @@
           "properties": {
             "range_min": {
               "title": "Range minimum",
-              "description": "UNDOCUMANTED",
+              "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "number"
             },
             "range_max": {
               "title": "Range maximum",
-              "description": "UNDOCUMANTED",
+              "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
               "type": "number"
             }
           }

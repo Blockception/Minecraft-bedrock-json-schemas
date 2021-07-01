@@ -79,7 +79,8 @@
         },
         "identifier": {
           "title": "Identifier",
-          "description": "UNDOCUMANTED",
+          "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "type": "string"
         },
         "iterations": {
@@ -89,7 +90,8 @@
         },
         "places_feature": {
           "title": "Places Feature",
-          "description": "UNDOCUMANTED",
+          "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
           "type": "string"
         },
         "scatter_chance": {

@@ -10,13 +10,13 @@
       "type": "boolean",
       "default": true,
       "description": "Whether the entity can be pushed by other entities.",
-      "title": "TODO Title"
+      "title": "Is Pushable"
     },
     "is_pushable_by_piston": {
       "type": "boolean",
       "default": true,
       "description": "Whether the entity can be pushed by pistons safely.",
-      "title": "TODO Title"
+      "title": "Is Pushable By Piston"
     }
   }
 }

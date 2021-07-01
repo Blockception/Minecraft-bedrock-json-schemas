@@ -5,7 +5,11 @@
   "title": "Item",
   "type": "object",
   "properties": {
-    "format_version": { "type": "string", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "TODO Title" },
+    "format_version": {
+      "title": "Format Version",
+      "type": "string",
+      "description": "A version that tells minecraft what type of data format can be expected when reading this file."
+    },
     "minecraft:item": {
       "additionalProperties": false,
       "required": ["description"],

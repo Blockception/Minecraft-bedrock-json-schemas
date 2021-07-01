@@ -8,7 +8,7 @@
     "block_side": {
       "oneOf": [
         { "type": "string" },
-        { "type": "array", "items": { "title": "TODO", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "string" } }
+        { "type": "array", "items": { "title": "Block Side", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "string" } }
       ]
     }
   },
@@ -29,7 +29,7 @@
       }
     },
     "places_block": {
-      "title": "Places block",
+      "title": "Places Block",
       "description": "Reference to the block to be placed.",
       "type": "string",
       "$ref": "../../../../general/block/identifier.json"
@@ -45,7 +45,7 @@
       "type": "boolean"
     },
     "may_attach_to": {
-      "title": "May attach to",
+      "title": "May Attach To",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "object",
@@ -53,14 +53,14 @@
       "required": [],
       "properties": {
         "min_sides_must_attach": {
-          "title": "Minimum sides must attach",
+          "title": "Minimum Sides Must Attach",
           "description": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "minimum": 1,
           "maximum": 4
         },
         "auto_rotate": {
-          "title": "Auto rotate",
+          "title": "Auto Rotate",
           "description": "Automatically rotate the block to attach sensibly."
         },
         "top": { "title": "Top", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
@@ -74,7 +74,7 @@
       }
     },
     "may_replace": {
-      "title": "May replace",
+      "title": "May Replace",
       "description": "A list of blocks that may be replaced during placement. Omit this field to allow any block to be replaced.",
       "type": "array",
       "additionalProperties": false,
