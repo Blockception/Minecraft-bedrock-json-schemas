@@ -35,12 +35,8 @@
       "title": "Blocks To Avoid",
       "items": {
         "title": "Block",
-        "description": "UNDOCUMENTED",
-        "$comment": "UNDOCUMENTED",
-        "oneOf": [
-          { "type": "string", "$ref": "../../../../general/block/identifier.json" },
-          { "type": "object", "properties": { "name": { "$ref": "../../../../general/block/identifier.json" } } }
-        ]
+        "description": "Tells the pathfinder which blocks to avoid when creating a path",
+        "$ref": "../../../../general/block/identifier.json"
       }
     },
     "can_breach": {
