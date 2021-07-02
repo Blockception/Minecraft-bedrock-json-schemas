@@ -1,5 +1,5 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.guardian_attack",
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.hurt_by_target",
   "type": "object",
   "title": "Guardian Attack 1.8.0",
   "additionalProperties": false,
@@ -7,7 +7,11 @@
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
-    "entity_types": { "$ref": "../types/entity_types.json", "description": "UNDOCUMENTED: entity types", "title": "Entity Types" },
+    "entity_types": {
+      "$ref": "../types/entity_types.json",
+      "description": "List of entity types that this mob can target if they hurt their owner",
+      "title": "Entity Types"
+    },
     "alert_same_type": {
       "type": "boolean",
       "default": false,

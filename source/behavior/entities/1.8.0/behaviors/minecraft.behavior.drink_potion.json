@@ -8,14 +8,17 @@
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
     "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },
-    "speed_modifier": { "default": 0.0, "description": "UNDOCUMENTED: speed modifier", "title": "Speed Modifier" },
+    "speed_modifier": { "default": 0.0, "description": "Movement speed modifier of the mob when using this AI Goal", "title": "Speed Modifier" },
     "potions": {
       "type": "array",
+      "title": "Potions",
       "description": "A list of potions that this entity can drink.",
       "items": {
         "required": ["id", "chance", "filters"],
         "additionalProperties": false,
+        "title": "Potions",
         "type": "object",
+        "description": "A potion that this entity can drink.",
         "properties": {
           "id": { "type": "integer", "default": -1, "description": "The registry ID of the potion to use", "title": "Id" },
           "chance": {
@@ -30,11 +33,8 @@
             "description": "The filters to use when determining if this potion can be selected.",
             "$ref": "../../filters/filters.json"
           }
-        },
-        "description": "UNDOCUMENTED: potions",
-        "title": "Potions"
-      },
-      "title": "Potions"
+        }
+      }
     }
   }
 }

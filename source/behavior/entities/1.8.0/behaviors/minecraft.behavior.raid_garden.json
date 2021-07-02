@@ -33,7 +33,7 @@
       "description": "Distance in blocks within the mob considers it has reached the goal. This is the `wiggle room` to stop the AI from bouncing back and forth trying to reach a specific spot",
       "title": "Goal Radius"
     },
-    "max_to_eat": { "type": "integer", "default": 6, "description": "Maximum number of things this entity wants to eat", "title": "Maximum to eat" },
+    "max_to_eat": { "type": "integer", "default": 6, "description": "Maximum number of things this entity wants to eat", "title": "Maximum To Eat" },
     "search_range": {
       "type": "integer",
       "default": 0,

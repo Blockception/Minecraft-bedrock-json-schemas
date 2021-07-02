@@ -3,6 +3,7 @@
   "title": "Entity 1.10.0",
   "required": ["description"],
   "additionalProperties": false,
+  "type": "object",
   "properties": {
     "description": {
       "required": ["identifier"],

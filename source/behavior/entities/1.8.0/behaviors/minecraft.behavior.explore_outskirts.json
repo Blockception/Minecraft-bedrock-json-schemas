@@ -15,6 +15,7 @@
       "title": "Explore Dist"
     },
     "wait_time": { "type": "integer", "default": 0, "description": "The time the mob will stand around `searching` for POIs", "title": "Wait Time" },
+
     "next_xz": { "title": "Next XZ", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "integer" },
     "next_y": { "title": "Next Y", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "integer" },
     "min_wait_time": { "title": "Minimum Wait Time", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" },

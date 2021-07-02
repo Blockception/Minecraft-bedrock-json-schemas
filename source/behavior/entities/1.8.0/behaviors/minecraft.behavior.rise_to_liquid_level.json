@@ -10,10 +10,17 @@
     "liquid_y_offset": {
       "type": "number",
       "title": "Liquid Y Offset",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
+      "description": "Vertical offset from the liquid"
     },
-    "rise_delta": { "type": "number", "title": "Rise Delta", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-    "sink_delta": { "type": "number", "title": "Sink Delta", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
+    "rise_delta": {
+      "type": "number",
+      "title": "Rise Delta",
+      "description": "Displacement for how much the entity will move up in the vertical axis"
+    },
+    "sink_delta": {
+      "type": "number",
+      "title": "Sink Delta",
+      "description": "Displacement for how much the entity will move down in the vertical axis"
+    }
   }
 }

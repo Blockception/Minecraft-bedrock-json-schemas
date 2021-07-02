@@ -8,12 +8,6 @@
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
     "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },
-    "cooldown_time": {
-      "type": "number",
-      "title": "Cooldown Time",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
-    },
     "melee_fov": {
       "type": "number",
       "default": 90.0,
@@ -45,6 +39,12 @@
       "default": false,
       "description": "If true, this goal will only trigger if the mob can reach its target.",
       "title": "Require Complete Path"
+    },
+    "cooldown_time": {
+      "type": "number",
+      "title": "Cooldown Time",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
     },
     "on_attack": {
       "$ref": "../types/event.json",
