@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.scheduler",
-  "description": "Defines a list of items the mob wants to share or pick up. Each item must have the following parameters:",
+  "description": "fires off scheduled mob events at time of day events.",
   "type": "object",
   "title": "Scheduler 1.16.0",
   "additionalProperties": false,

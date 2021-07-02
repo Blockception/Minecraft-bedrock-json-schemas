@@ -21,8 +21,7 @@
     "entity_filter": {
       "$ref": "../../filters/filters.json",
       "title": "Entity Filter",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
+      "description": "Filter to use for conditions"
     }
   }
 }

@@ -69,7 +69,7 @@
           "properties": {
             "table": {
               "type": "string",
-              "default": "",
+              "$ref": "../../../../general/loot_table/identifier.json",
               "description": "File path, relative to the Behavior Pack's path, to the loot table file.",
               "title": "Table"
             }
@@ -83,7 +83,7 @@
         },
         "transform_to_item": {
           "type": "string",
-          "title": "Transform to item",
+          "title": "Transform To Item",
           "description": "The feed item used will transform to this item upon successful interaction. Format: itemName:auxValue"
         },
         "use_item": { "type": "boolean", "default": false, "description": "If true, the interaction will use an item.", "title": "Use Item" }
@@ -92,8 +92,7 @@
   },
   "properties": {
     "interactions": {
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
+      "description": "The interactions",
       "title": "Interactions",
       "oneOf": [
         { "type": "object", "$ref": "#/definitions/interaction_spec" },

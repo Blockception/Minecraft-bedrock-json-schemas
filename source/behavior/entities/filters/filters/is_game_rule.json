@@ -2,10 +2,10 @@
   "$id": "blockception.minecraft.behavior.entities.filters.is_game_rule",
   "type": "object",
   "title": "Is Game Rule",
-  "description": "UNDOCUMENTED:",
+  "description": "Tests whether a named game rule is active.",
   "required": ["domain"],
   "properties": {
-    "domain": { "description": "The Game Rule to test.", "title": "Domain" },
+    "domain": { "description": "The Game Rule to test.", "title": "Domain", "examples": ["domobspawning"] },
     "operator": { "$ref": "./types/operator.json" },
     "subject": { "$ref": "./types/subject.json" },
     "value": { "description": "Tests whether a named game rule is active.", "default": true, "type": "boolean", "title": "Value" }

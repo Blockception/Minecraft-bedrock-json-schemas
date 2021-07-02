@@ -36,13 +36,12 @@
     "always_show": { "type": "boolean", "default": false, "description": "If true, the name will always be shown", "title": "Always Show" },
     "default_trigger": { "$ref": "../types/trigger.json", "description": "Trigger to run when the entity gets named", "title": "Default Trigger" },
     "name_actions": {
+      "title": "Name Actions",
+      "description": "Describes the special names for this entity and the events to call when the entity acquires those names",
       "oneOf": [
         { "type": "array", "items": { "$ref": "#/definitions/name_action" } },
         { "type": "object", "$ref": "#/definitions/name_action" }
-      ],
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
-      "title": "Name Actions"
+      ]
     }
   }
 }
