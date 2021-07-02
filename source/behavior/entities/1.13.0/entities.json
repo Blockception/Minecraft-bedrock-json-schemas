@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entity1.13.0",
+  "$id": "blockception.minecraft.behavior.entity.1.13.0",
   "type": "object",
   "title": "Entity Behavior 1.13.0",
-  "description": "The entity minecraft behavior definition",
+  "description": "The minecraft entity behavior specification",
   "required": ["format_version", "minecraft:entity"],
   "properties": {
     "format_version": {

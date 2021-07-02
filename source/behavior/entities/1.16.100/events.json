@@ -3,6 +3,7 @@
   "type": "object",
   "title": "Events 1.16.100",
   "description": "Events for entities 1.16.100",
+  "additionalProperties": { "$ref": "#/definitions/event_base" },
   "definitions": {
     "addremove": {
       "additionalProperties": false,
@@ -87,6 +88,5 @@
       "$ref": "#/definitions/event_base",
       "title": "On Prime"
     }
-  },
-  "additionalProperties": { "$ref": "#/definitions/event_base" }
+  }
 }
