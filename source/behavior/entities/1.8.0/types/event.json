@@ -11,7 +11,8 @@
         "target": {
           "type": "string",
           "description": "The target of the event",
-          "enum": ["block", "damager", "other", "parent", "player", "self", "target"]
+          "title": "Target",
+          "enum": ["baby", "block", "damager", "other", "parent", "player", "self", "target"]
         }
       }
     }
