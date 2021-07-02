@@ -43,12 +43,12 @@
               "type": "array",
               "items": [
                 {
-                  "title": "Lower bound",
+                  "title": "Lower Bound",
                   "$ref": "../../../../molang/number.json",
                   "description": "Lower bound (inclusive) of the scatter range, as an offset from the input point to scatter around"
                 },
                 {
-                  "title": "Upper bound",
+                  "title": "Upper Bound",
                   "$ref": "../../../../molang/number.json",
                   "description": "Upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around"
                 }
@@ -101,13 +101,13 @@
           "properties": {
             "numerator": {
               "title": "Numerator",
-              "description": "UNDOUCMNEATED",
+              "description": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 1
             },
             "denominator": {
               "title": "Denominator",
-              "description": "UNDOUCMNEATED",
+              "description": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 1
             }

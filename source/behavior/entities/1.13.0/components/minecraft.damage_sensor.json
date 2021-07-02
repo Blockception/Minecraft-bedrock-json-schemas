@@ -33,16 +33,19 @@
           "title": "On Damage",
           "properties": {
             "filters": { "$ref": "../../filters/filters.json" },
-            "event": { "type": "string", "pattern": "^.*$", "description": "UNDOCUMENTED: event", "title": "Event" },
-            "target": { "$ref": "../../filters/filters/types/subject.json", "description": "UNDOCUMENTED: target", "title": "Target" }
-          },
-          "on_damage_sound_event": {
-            "type": "string",
-            "description": "Defines what sound to play, if any, when the on_damage filters are met.",
-            "title": "On Damage Sound Event"
+            "event": { "type": "string", "pattern": "^.*$", "description": "Defines what event to run", "title": "Event" },
+            "target": {
+              "$ref": "../../filters/filters/types/subject.json",
+              "description": "filters to use to define specific tests",
+              "title": "Target"
+            }
           }
         },
-        "on_damage_sound_event": { "$ref": "../../1.8.0/types/event.json" }
+        "on_damage_sound_event": {
+          "$ref": "../../1.8.0/types/event.json",
+          "description": "Defines what sound to play, if any, when the on_damage filters are met.",
+          "title": "On Damage Sound Event"
+        }
       }
     }
   },

@@ -93,13 +93,12 @@
   },
   "properties": {
     "interactions": {
+      "title": "Interactions",
+      "description": "The interactions that are defined",
       "oneOf": [
         { "type": "object", "$ref": "#/definitions/interaction_spec" },
         { "type": "array", "items": { "$ref": "#/definitions/interaction_spec" } }
-      ],
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
-      "title": "Interactions"
+      ]
     }
   }
 }
