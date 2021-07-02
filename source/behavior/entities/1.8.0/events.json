@@ -14,7 +14,7 @@
           "title": "Component Groups",
           "description": "The components groups to add or remove",
           "type": "array",
-          "items": { "type": "string", "description": "UNDOCUMENTED: component groups", "title": "Component Groups" }
+          "items": { "type": "string", "description": "The component group to add or remove", "title": "Component Groups" }
         }
       }
     },
@@ -61,7 +61,7 @@
           "title": "Sequences"
         },
         "filters": { "$ref": "./../filters/filters.json" },
-        "trigger": { "type": "string", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Trigger" }
+        "trigger": { "type": "string", "description": "The additional event to trigger", "$comment": "UNDOCUMENTED", "title": "Trigger" }
       }
     }
   },
