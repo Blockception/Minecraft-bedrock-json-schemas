@@ -12,8 +12,7 @@
       "type": "array",
       "items": {
         "title": "Block",
-        "description": "UNDOCUMENTED",
-        "$comment": "UNDOCUMENTED",
+        "description": "A of block, with certain block states, that we are monitoring to see if the entity is inside.",
         "type": "object",
         "additionalProperties": false,
         "properties": {

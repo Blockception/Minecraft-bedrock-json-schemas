@@ -3,11 +3,12 @@
   "title": "Environment Sensor 1.8.0",
   "additionalProperties": false,
   "description": "Allows the entity to power jump like the horse does in vanilla.",
+  "type": "object",
   "definitions": {
     "on_environement": {
       "type": "object",
       "additionalProperties": false,
-      "description": "UNDOCUMENTATED: on environement",
+      "description": "Allows the entity to power jump like the horse does in vanilla.",
       "title": "On Environement",
       "properties": {
         "filters": { "$ref": "../../filters/filters.json", "description": "The filters to evualate for this environment sensor", "title": "Filters" },

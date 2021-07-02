@@ -12,13 +12,13 @@
       "description": "Amount of time before the entity grows up, -1 for always a baby.",
       "title": "Duration"
     },
-    "feedItems": {
+    "feed_items": {
       "description": "List of items that can be fed to the entity. Includes `item` for the item name and `growth` to define how much time it grows up by",
       "title": "Feed Items",
       "type": "array",
       "items": {
-        "title": "Feed Items",
-        "description": "UNDOCUMENTATED: feedItems",
+        "title": "Feed Item",
+        "description": "An item that can be fed to the entity. Includes 'item' for the item name and 'growth' to define how much time it grows up by",
         "oneOf": [
           {
             "type": "object",

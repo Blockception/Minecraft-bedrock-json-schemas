@@ -37,15 +37,17 @@
       "type": "array",
       "default": [],
       "description": "This is a list of objects, representing one value in seconds that can be picked before firing the event and an optional weight. Incompatible with time.",
+      "title": "Random Time Choices",
       "items": {
+        "title": "Random Time Choices",
+        "description": "representing one value in seconds that can be picked before firing the event and an optional weight. Incompatible with time.",
+        "type": "object",
+        "additionalProperties": false,
         "properties": {
           "weight": { "type": "integer", "description": "UNDOCUMENTATED: weight", "title": "Weight" },
           "value": { "type": "integer", "description": "UNDOCUMENTATED: value", "title": "Value" }
-        },
-        "description": "UNDOCUMENTATED: random time choices",
-        "title": "Random Time Choices"
-      },
-      "title": "Random Time Choices"
+        }
+      }
     }
   }
 }

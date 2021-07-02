@@ -15,12 +15,12 @@
     },
     "boost_items": {
       "type": "array",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
+      "description": "List of items that can be used to boost while riding this entity.",
       "title": "Boost Items",
       "items": {
         "type": "object",
         "description": "List of items that can be used to boost while riding this entity.",
+        "title": "Boost Item",
         "properties": {
           "damage": { "type": "integer", "default": 1, "description": "This is the damage that the item will take each time it is used" },
           "item": {
@@ -28,7 +28,7 @@
             "$ref": "../../../../general/item/identifier.json",
             "description": "Name of the item that can be used to boost"
           },
-          "replaceItem": {
+          "replace_item": {
             "type": "string",
             "$ref": "../../../../general/item/identifier.json",
             "description": "The item used to boost will become this item once it is used up"

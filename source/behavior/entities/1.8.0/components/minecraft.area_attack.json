@@ -17,11 +17,14 @@
       "description": "How close a hostile entity must be to have the damage applied.",
       "title": "Damage Range"
     },
-    "entity_filter": { "$ref": "../../filters/filters.json", "description": "Entity_filter", "title": "Filter" },
+    "entity_filter": {
+      "$ref": "../../filters/filters.json",
+      "description": "Filter to see which entities can be affected by the attack",
+      "title": "Entity Filter"
+    },
     "cause": {
       "type": "string",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
+      "description": "what causes the attack to occur",
       "title": "Cause",
       "$ref": "../../../../general/entity/damage_source.json"
     }

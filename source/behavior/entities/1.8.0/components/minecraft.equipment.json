@@ -2,10 +2,15 @@
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.equipment",
   "type": "object",
   "title": "Equipment 1.8.0",
+  "description": "Sets the equipment table to use for the entity.",
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "table": { "type": "string", "pattern": ".*\\.json$", "description": "UNDOCUMENTATED: table", "title": "Table" },
+    "table": {
+      "title": "Table",
+      "description": "The file path to the equipment table, relative to the behavior pack's root.",
+      "$ref": "../../../../general/loot_table/identifier.json"
+    },
     "slot_drop_chance": {
       "type": "array",
       "title": "Slot Drop Chance",
@@ -22,6 +27,5 @@
         }
       }
     }
-  },
-  "description": "UNDOCUMENTATED: "
+  }
 }

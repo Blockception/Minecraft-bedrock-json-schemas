@@ -20,13 +20,13 @@
           "required": ["range_min", "range_max"],
           "properties": {
             "range_min": {
-              "title": "Range minimum",
+              "title": "Range Minimum",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "number"
             },
             "range_max": {
-              "title": "Range maximum",
+              "title": "Range Maximum",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "type": "number"

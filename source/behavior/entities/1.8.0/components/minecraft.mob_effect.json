@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.mob_effect",
   "type": "object",
   "title": "Mob Effect 1.8.0",
-  "description": "A component that applies a mob effect to entities that get within range.",
+  "description": "Applies a mob effect to entities that get within range.",
   "additionalProperties": false,
   "properties": {
     "effect_range": {
@@ -21,8 +21,7 @@
     "entity_filter": {
       "$ref": "../../filters/filters.json",
       "title": "Entity Filter",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
+      "description": "Filter to use for conditions"
     }
   }
 }

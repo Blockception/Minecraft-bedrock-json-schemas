@@ -2,14 +2,13 @@
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.buoyant",
   "type": "object",
   "title": "Buoyant 1.8.0",
-  "description": "Enables an entity to float on the specified liquid blocks.",
+  "description": "Allows an entity to float on the specified liquid blocks.",
   "additionalProperties": false,
   "properties": {
     "base_buoyancy": {
       "type": "number",
       "default": 0,
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
+      "description": "Base buoyancy used to calculate how much will a mob float.",
       "title": "Base Buoyancy"
     },
     "apply_gravity": {
@@ -46,7 +45,12 @@
       "type": "array",
       "description": "List of blocks this entity can float on. Must be a liquid block.",
       "title": "Liquid Blocks",
-      "items": { "type": "string", "title": "Block ID" }
+      "items": {
+        "type": "string",
+        "title": "Block ID",
+        "description": "A block this entity can float on. Must be a liquid block.",
+        "$ref": "../../../../general/block/identifier.json"
+      }
     },
     "simulate_waves": {
       "type": "boolean",

@@ -3,11 +3,13 @@
   "title": "Damage Sensor 1.8.0",
   "additionalProperties": false,
   "description": "Defines what events to call when this entity is damaged by specific entities or items.",
+  "type": "object",
   "definitions": {
     "damagespec": {
       "type": "object",
       "description": "A trigger with the events to call when taking specific kinds of damage.",
       "additionalProperties": false,
+      "title": "Damage Trigger",
       "properties": {
         "cause": {
           "type": "string",
@@ -25,16 +27,11 @@
         "on_damage": {
           "additionalProperties": false,
           "type": "object",
-          "properties": {
-            "filters": { "$ref": "../../filters/filters.json" },
-            "event": { "type": "string", "pattern": "^.*$", "description": "UNDOCUMENTATED: event", "title": "Event" },
-            "target": { "$ref": "../../filters/filters/types/subject.json", "description": "UNDOCUMENTATED: target", "title": "Target" }
-          },
           "description": "Specifies filters for entity definitions and events.",
-          "title": "On Damage"
+          "title": "On Damage",
+          "$ref": "../types/trigger.json"
         }
-      },
-      "title": "Damagespec"
+      }
     }
   },
   "required": [],
