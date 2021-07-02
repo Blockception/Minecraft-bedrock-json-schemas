@@ -1,8 +1,10 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.minecraft:entity",
+  "$id": "blockception.minecraft.behavior.entities.minecraft:entity.1.14.0",
   "title": "Entity 1.14.0",
   "required": ["description"],
+  "dependencies": { "component_groups": ["events"] },
   "additionalProperties": false,
+  "type": "object",
   "properties": {
     "description": {
       "required": ["identifier"],
@@ -59,7 +61,7 @@
                   {
                     "type": "object",
                     "title": "Conditional Animation",
-                    "description": "UNDOCUMENTED",
+                    "description": "A conditional statement to run the animation under a specified condition",
                     "$comment": "UNDOCUMENTED",
                     "additionalProperties": { "type": "string", "title": "Animation" }
                   }
