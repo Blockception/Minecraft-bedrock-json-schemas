@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/priority.json" },
+    "priority": { "$ref": "./types/priority.json" },
     "avoid_water": {
       "type": "boolean",
       "default": false,

@@ -322,7 +322,7 @@
     "minecraft:behavior.swoop_attack": { "$ref": "../1.8.0/behaviors/minecraft.behavior.swoop_attack.json" },
     "minecraft:behavior.take_flower": { "$ref": "../1.8.0/behaviors/minecraft.behavior.take_flower.json" },
     "minecraft:behavior.target_when_pushed": { "$ref": "../1.8.0/behaviors/minecraft.behavior.target_when_pushed.json" },
-    "minecraft:behavior.tempt": { "$ref": "./behaviors/minecraft.behavior.tempt.json" },
+    "minecraft:behavior.tempt": { "$ref": "../1.8.0/behaviors/minecraft.behavior.tempt.json" },
     "minecraft:behavior.trade_interest": { "$ref": "../1.8.0/behaviors/minecraft.behavior.trade_interest.json" },
     "minecraft:behavior.trade_with_player": { "$ref": "../1.8.0/behaviors/minecraft.behavior.trade_with_player.json" },
     "minecraft:behavior.vex_copy_owner_target": { "$ref": "../1.8.0/behaviors/minecraft.behavior.vex_copy_owner_target.json" },

@@ -78,14 +78,14 @@
       "uniqueItems": true,
       "type": "object",
       "additionalProperties": {
-        "$ref": "./components.json",
+        "$ref": "../1.16.0/components.json",
         "uniqueItems": true,
         "description": "The components that are added as the foundation of the entity",
         "title": "Component"
       }
     },
     "components": {
-      "$ref": "./components.json",
+      "$ref": "../1.16.0/components.json",
       "uniqueItems": true,
       "description": "The components that are added as the foundation of the entity",
       "title": "Component"

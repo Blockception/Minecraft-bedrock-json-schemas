@@ -4,5 +4,6 @@
   "type": "integer",
   "title": "Priority",
   "minimum": 0,
+  "default": 8,
   "description": "Allows the mob to drink potions based on specified environment conditions."
 }

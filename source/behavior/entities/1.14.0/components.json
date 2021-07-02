@@ -2,7 +2,5 @@
   "$id": "blockception.minecraft.behavior.entities.components1.14.0",
   "type": "object",
   "title": "Entity 1.14.0",
-  "$ref": "../1.13.0/components.json",
-  "description": "UNDOCUMENTED",
-  "$comment": "UNDOCUMENTED"
+  "$ref": "../1.13.0/components.json"
 }

@@ -1,8 +1,0 @@
-{
-  "$id": "blockception.minecraft.behavior.entities.1.16.100.speed_multiplier",
-  "additionalProperties": false,
-  "default": 1.0,
-  "description": "Movement speed multiplier of the mob when using this AI Goal.",
-  "type": "number",
-  "title": "Speed Multiplier"
-}

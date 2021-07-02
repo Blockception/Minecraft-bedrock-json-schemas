@@ -30,13 +30,13 @@
       ]
     },
     "on_failed": {
+      "title": "On Failed",
       "description": "Event to run when this mob gets home.",
       "oneOf": [
         { "type": "string" },
         { "type": "object", "$ref": "../types/trigger.json" },
         { "type": "array", "items": { "$ref": "../types/trigger.json" } }
-      ],
-      "title": "On Failed"
+      ]
     }
   }
 }
