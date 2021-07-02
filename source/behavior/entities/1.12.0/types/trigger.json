@@ -1,16 +1,1 @@
-{
-  "$id": "blockception.minecraft.behavior.entities.type.trigger.1.12.0",
-  "title": "Trigger1.12.0",
-  "type": "object",
-  "description": "Trigger to fire",
-  "minProperties": 1,
-  "properties": {
-    "event": { "type": "string", "description": "Event", "title": "Event To Fire" },
-    "filters": {
-      "$ref": "../../filters/filters.json",
-      "description": "The filters to check to determine if the event should be fired"
-    },
-    "target": { "$ref": "../../filters/filters/types/subject.json", "description": "The entity to target", "title": "Target" }
-  },
-  "additionalProperties": false
-}
+{ "$ref": "../../1.8.0/trigger.json" }

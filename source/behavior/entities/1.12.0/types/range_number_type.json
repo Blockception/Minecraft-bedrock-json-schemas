@@ -1,9 +1,1 @@
-{
-  "$id": "blockception.minecraft.behavior.entities.type.range_number_type.1.12.0",
-  "title": "Range [a, B]",
-  "description": "A described range",
-  "items": [
-    { "type": "number", "title": "Range: A", "description": "The first value of the range" },
-    { "type": "number", "title": "Range: B", "description": "The second value of the range" }
-  ]
-}
+{ "$ref": "../../1.8.0/range_number_type.json" }
