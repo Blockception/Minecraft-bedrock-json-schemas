@@ -18,44 +18,51 @@
         }
       }
     },
-    "randomize": {
-      "title": "Randomize",
-      "description": "Randomly selects one of the following items based upon their weight and the total weights",
-      "type": "array",
-      "items": {
-        "required": ["weight"],
-        "properties": {
-          "add": { "$ref": "#/definitions/addremove", "description": "What gets added when the event gets triggered", "title": "Add" },
-          "remove": { "$ref": "#/definitions/addremove", "description": "What gets removed when the event gets triggered", "title": "Remove" },
-          "trigger": { "type": "string", "description": "Triggers additional events", "$comment": "UNDOCUMENTED", "title": "Trigger" },
-          "weight": {
-            "type": "number",
-            "description": "The weight on how likely this section is to trigger",
-            "$comment": "UNDOCUMENTED",
-            "title": "Weight"
-          }
-        }
-      }
-    },
     "event_base": {
       "additionalProperties": false,
       "type": "object",
+      "filters": { "$ref": "./../filters/filters.json" },
+      "trigger": { "type": "string", "description": "Triggers additional events", "$comment": "UNDOCUMENTED", "title": "Trigger" },
       "properties": {
-        "add": { "title": "Add", "$ref": "#/definitions/addremove", "description": "The components groups to be added to this entity" },
-        "filters": { "$ref": "../filters/filters.json" },
-        "randomize": { "type": "array", "$ref": "#/definitions/randomize" },
-        "remove": {
-          "title": "Remove",
-          "description": "The components groups and all its components to be removed",
-          "$ref": "#/definitions/addremove"
+        "add": { "$ref": "#/definitions/addremove", "description": "What gets added when the event gets triggered", "title": "Add" },
+        "remove": { "$ref": "#/definitions/addremove", "description": "What gets removed when the event gets triggered", "title": "Remove" },
+        "randomize": {
+          "type": "array",
+          "description": "Randomly selects one of the following items based upon their weight and the total weights",
+          "title": "Randomize",
+          "items": {
+            "required": ["weight"],
+            "description": "Randomly selects one of the following items based upon their weight and the total weights",
+            "title": "Randomize",
+            "properties": {
+              "add": { "$ref": "#/definitions/addremove", "description": "What gets added when the event gets triggered", "title": "Add" },
+              "remove": { "$ref": "#/definitions/addremove", "description": "What gets removed when the event gets triggered", "title": "Remove" },
+              "trigger": { "type": "string", "description": "Triggers additional events", "$comment": "UNDOCUMENTED", "title": "Trigger" },
+              "weight": {
+                "type": "number",
+                "description": "The weight on how likely this section is to trigger",
+                "$comment": "UNDOCUMENTED",
+                "title": "Weight"
+              }
+            }
+          }
         },
         "sequence": {
+          "type": "array",
           "description": "A series of filters and components to be added",
           "title": "Sequences",
-          "type": "array",
-          "items": { "description": "Filters and components to be added", "title": "Sequence", "type": "object", "$ref": "#/definitions/event_base" }
-        },
-        "trigger": { "type": "string", "description": "The event to run", "title": "Trigger" }
+          "items": {
+            "description": "Filters and components to be added",
+            "title": "Sequence",
+            "type": "object",
+            "properties": {
+              "add": { "$ref": "#/definitions/addremove", "description": "What gets added when the event gets triggered", "title": "Add" },
+              "remove": { "$ref": "#/definitions/addremove", "description": "What gets removed when the event gets triggered", "title": "Remove" },
+              "trigger": { "type": "string", "description": "Triggers additional events", "$comment": "UNDOCUMENTED", "title": "Trigger" },
+              "filters": { "$ref": "./../filters/filters.json" }
+            }
+          }
+        }
       }
     }
   },

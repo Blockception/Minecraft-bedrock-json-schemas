@@ -2,8 +2,7 @@
   "$id": "blockception.minecraft.behavior.entity1.13.0",
   "type": "object",
   "title": "Entity Behavior 1.13.0",
-  "description": "UNDOCUMENTED",
-  "$comment": "UNDOCUMENTED",
+  "description": "The entity minecraft behavior definition",
   "required": ["format_version", "minecraft:entity"],
   "properties": {
     "format_version": {
@@ -12,7 +11,7 @@
       "const": "1.13.0",
       "description": "A version that tells minecraft what type of data format can be expected when reading this file."
     },
-    "minecraft:entity": { "$ref": "./minecraft.entity.json", "description": "UNDOCUMENTED: minecraft:entity", "title": "Entity" }
+    "minecraft:entity": { "$ref": "./minecraft.entity.json", "description": "The entity minecraft behavior description", "title": "Entity" }
   },
   "additionalProperties": false
 }
