@@ -12,7 +12,7 @@
     "minecraft:angry": { "$ref": "../1.8.0/components/minecraft.angry.json" },
     "minecraft:annotation.break_door": { "$ref": "../1.8.0/components/minecraft.annotation.break_door.json" },
     "minecraft:annotation.open_door": { "$ref": "../1.8.0/components/minecraft.annotation.open_door.json" },
-    "minecraft:area_attack": { "$ref": "../1.16.0/components/minecraft.area_attack.json" },
+    "minecraft:area_attack": { "$ref": "../1.8.0/components/minecraft.area_attack.json" },
     "minecraft:attack": { "$ref": "../1.8.0/components/minecraft.attack.json" },
     "minecraft:attack_cooldown": { "$ref": "../1.16.0/components/minecraft.attack_cooldown.json" },
     "minecraft:attack_damage": { "$ref": "../1.8.0/components/minecraft.attack_damage.json" },
