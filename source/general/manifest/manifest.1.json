@@ -39,10 +39,10 @@
           "description": "This is the minimum version of the game that this pack was written for. This helps the game identify whether any backwards compatibility is needed for your pack. You should always use the highest version currently available when creating packs",
           "title": "Minimum Engine Version"
         },
-        "lock_template_options": { "type": "boolean", "description": "UNDOCUMENTATED: lock template options", "title": "Lock Template Options" },
-        "base_game_version": { "$ref": "#/definitions/version", "description": "UNDOCUMENTATED: base game version", "title": "Base Game Version" }
+        "lock_template_options": { "type": "boolean", "description": "UNDOCUMENTED: lock template options", "title": "Lock Template Options" },
+        "base_game_version": { "$ref": "#/definitions/version", "description": "UNDOCUMENTED: base game version", "title": "Base Game Version" }
       },
-      "description": "UNDOCUMENTATED: header",
+      "description": "UNDOCUMENTED: header",
       "title": "Header"
     },
     "modules": {
@@ -51,7 +51,7 @@
       "items": {
         "additionalProperties": false,
         "type": "object",
-        "description": "UNDOCUMENTATED: modules",
+        "description": "UNDOCUMENTED: modules",
         "title": "Modules",
         "required": ["type", "uuid", "version"],
         "properties": {
@@ -78,7 +78,7 @@
           }
         }
       },
-      "description": "UNDOCUMENTATED: modules"
+      "description": "UNDOCUMENTED: modules"
     },
     "dependencies": {
       "type": "array",
@@ -99,7 +99,7 @@
             "title": "Version"
           }
         },
-        "description": "UNDOCUMENTATED: dependencies",
+        "description": "UNDOCUMENTED: dependencies",
         "title": "Dependencies"
       },
       "title": "Dependencies"
@@ -134,7 +134,7 @@
       },
       "license": { "type": "string", "description": "The license of the pack", "title": "License" },
       "url": { "type": "string", "description": "The home website of your pack", "title": "Url" },
-      "description": "UNDOCUMENTATED: metadata",
+      "description": "UNDOCUMENTED: metadata",
       "title": "Metadata"
     }
   }

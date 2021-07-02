@@ -40,12 +40,12 @@
         },
         "randomize": {
           "title": "Randomize",
-          "description": "UNDOCUMENTED",
+          "description": "Randomly selects one of the following items based upon their weight and the total weights",
           "$comment": "UNDOCUMENTED",
           "type": "array",
           "items": {
             "title": "Randomize",
-            "description": "UNDOCUMENTED",
+            "description": "Randomly selects one of the following items based upon their weight and the total weights",
             "$comment": "UNDOCUMENTED",
             "type": "object",
             "$ref": "#/definitions/event_functions",

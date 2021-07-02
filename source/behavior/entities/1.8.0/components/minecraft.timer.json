@@ -44,8 +44,13 @@
         "type": "object",
         "additionalProperties": false,
         "properties": {
-          "weight": { "type": "integer", "description": "UNDOCUMENTATED: weight", "title": "Weight" },
-          "value": { "type": "integer", "description": "UNDOCUMENTATED: value", "title": "Value" }
+          "weight": {
+            "type": "integer",
+            "description": "The weight on how likely this section is to trigger",
+            "$comment": "UNDOCUMENTED",
+            "title": "Weight"
+          },
+          "value": { "type": "integer", "description": "UNDOCUMENTED: value", "title": "Value" }
         }
       }
     }

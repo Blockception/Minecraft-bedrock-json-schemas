@@ -115,7 +115,7 @@
                   "type": "array",
                   "items": {
                     "$ref": "#/definitions/particle_effect_spec",
-                    "description": "UNDOCUMENTATED: particle effects",
+                    "description": "UNDOCUMENTED: particle effects",
                     "title": "Particle Effects"
                   },
                   "title": "Particle Effects"
@@ -175,7 +175,7 @@
               }
             }
           },
-          "initial_state": { "type": "string", "description": "UNDOCUMENTATED: initial state", "title": "Initial State" }
+          "initial_state": { "type": "string", "description": "UNDOCUMENTED: initial state", "title": "Initial State" }
         }
       }
     }

@@ -3,7 +3,7 @@
   "type": "object",
   "title": "Move Towards Dwelling Restriction 1.8.0",
   "additionalProperties": false,
-  "description": "UNDOCUMENTATED, comes from cat",
+  "description": "UNDOCUMENTED, comes from cat",
   "required": [],
   "properties": { "priority": { "$ref": "types/priority.json" }, "speed_multiplier": { "$ref": "types/speed_multiplier.json" } }
 }

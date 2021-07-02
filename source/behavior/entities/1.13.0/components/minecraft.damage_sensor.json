@@ -33,8 +33,8 @@
           "title": "On Damage",
           "properties": {
             "filters": { "$ref": "../../filters/filters.json" },
-            "event": { "type": "string", "pattern": "^.*$", "description": "UNDOCUMENTATED: event", "title": "Event" },
-            "target": { "$ref": "../../filters/filters/types/subject.json", "description": "UNDOCUMENTATED: target", "title": "Target" }
+            "event": { "type": "string", "pattern": "^.*$", "description": "UNDOCUMENTED: event", "title": "Event" },
+            "target": { "$ref": "../../filters/filters/types/subject.json", "description": "UNDOCUMENTED: target", "title": "Target" }
           },
           "on_damage_sound_event": {
             "type": "string",

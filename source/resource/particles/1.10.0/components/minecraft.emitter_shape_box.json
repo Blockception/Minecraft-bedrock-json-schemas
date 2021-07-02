@@ -16,10 +16,10 @@
           ]
         }
       ],
-      "description": "UNDOCUMENTATED: direction",
+      "description": "UNDOCUMENTED: direction",
       "title": "Direction"
     },
-    "radius": { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED: radius", "title": "Radius" },
+    "radius": { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTED: radius", "title": "Radius" },
     "offset": {
       "type": "array",
       "items": [
@@ -38,10 +38,10 @@
         { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Y" },
         { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Z" }
       ],
-      "description": "UNDOCUMENTATED: half dimensions",
+      "description": "UNDOCUMENTED: half dimensions",
       "title": "Half Dimensions"
     },
-    "surface_only": { "type": "boolean", "description": "UNDOCUMENTATED: surface only", "title": "Surface Only" }
+    "surface_only": { "type": "boolean", "description": "UNDOCUMENTED: surface only", "title": "Surface Only" }
   },
-  "description": "UNDOCUMENTATED: "
+  "description": "UNDOCUMENTED: "
 }

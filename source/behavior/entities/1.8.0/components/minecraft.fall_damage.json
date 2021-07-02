@@ -6,5 +6,5 @@
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "required": [],
-  "properties": { "value": { "type": "number", "default": 1, "description": "UNDOCUMENTATED: value", "title": "Value" } }
+  "properties": { "value": { "type": "number", "default": 1, "description": "UNDOCUMENTED: value", "title": "Value" } }
 }

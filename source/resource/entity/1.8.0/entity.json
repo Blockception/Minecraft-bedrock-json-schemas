@@ -55,7 +55,7 @@
                 }
               }
             },
-            "enable_attachables": { "type": "boolean", "description": "UNDOCUMENTATED: enable attachables", "title": "Enable Attachables" },
+            "enable_attachables": { "type": "boolean", "description": "UNDOCUMENTED: enable attachables", "title": "Enable Attachables" },
             "geometry": {
               "title": "Geometry",
               "description": "The reference to defined geometries in `<resource pack>/models/'",
@@ -134,7 +134,7 @@
                 },
                 "parent_setup": {
                   "type": "string",
-                  "description": "UNDOCUMENTATED: parent setup",
+                  "description": "UNDOCUMENTED: parent setup",
                   "title": "Parent Setup",
                   "$ref": "../../../molang/number.json"
                 },

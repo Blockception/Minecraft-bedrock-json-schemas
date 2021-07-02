@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.resource.particle.1.10.0.emitter_shape_point",
   "type": "object",
   "title": "Emitter Shape Point Component For 1.10.0",
-  "description": "UNDOCUMENTATED: ",
+  "description": "UNDOCUMENTED: ",
   "additionalProperties": false,
   "properties": {
     "direction": {
@@ -12,7 +12,7 @@
         { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Y" },
         { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Z" }
       ],
-      "description": "UNDOCUMENTATED: direction",
+      "description": "UNDOCUMENTED: direction",
       "title": "Direction"
     },
     "offset": {

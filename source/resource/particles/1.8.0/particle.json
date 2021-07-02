@@ -21,17 +21,17 @@
           "properties": {
             "identifier": {
               "type": "string",
-              "description": "UNDOCUMENTATED: identifier",
+              "description": "UNDOCUMENTED: identifier",
               "title": "Identifier",
               "$ref": "../../../general/particle/identifier.json"
             }
           },
-          "description": "UNDOCUMENTATED: description",
+          "description": "UNDOCUMENTED: description",
           "title": "Description"
         },
-        "components": { "additionalProperties": false, "type": "object", "description": "UNDOCUMENTATED: components", "title": "Components" }
+        "components": { "additionalProperties": false, "type": "object", "description": "UNDOCUMENTED: components", "title": "Components" }
       },
-      "description": "UNDOCUMENTATED: particle effect",
+      "description": "UNDOCUMENTED: particle effect",
       "title": "Particle Effect"
     }
   }

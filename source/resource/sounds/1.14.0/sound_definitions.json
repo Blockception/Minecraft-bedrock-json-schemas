@@ -26,7 +26,7 @@
           "$id": "#/Sound/category",
           "title": "Sound Category",
           "enum": ["ambient", "block", "music", "weather", "ui", "bucket", "neutral", "player", "hostile", "record", "bottle"],
-          "description": "UNDOCUMENTATED: category"
+          "description": "UNDOCUMENTED: category"
         },
         "sounds": {
           "items": {
@@ -57,7 +57,7 @@
                     "$id": "#/Sound/sounds/stringItem",
                     "type": "string",
                     "$ref": "#/definitions/SoundPath",
-                    "description": "UNDOCUMENTATED: name",
+                    "description": "UNDOCUMENTED: name",
                     "title": "Name"
                   }
                 },
@@ -66,10 +66,10 @@
                 "title": "Sounds"
               }
             ],
-            "description": "UNDOCUMENTATED: sounds",
+            "description": "UNDOCUMENTED: sounds",
             "title": "Sounds"
           },
-          "description": "UNDOCUMENTATED: sounds",
+          "description": "UNDOCUMENTED: sounds",
           "title": "Sounds"
         }
       }
@@ -84,11 +84,11 @@
     "sound_definitions": {
       "type": "object",
       "additionalProperties": { "$ref": "#/definitions/SoundSpec" },
-      "description": "UNDOCUMENTATED: sound definitions",
+      "description": "UNDOCUMENTED: sound definitions",
       "title": "Sound Definitions"
     },
     "__use_legacy_max_distance": {
-      "description": "UNDOCUMENTATED: use legacy Maximum distance",
+      "description": "UNDOCUMENTED: use legacy Maximum distance",
       "title": "Use Legacy Maximum Distance",
       "type": "string",
       "enum": ["true", "false"]

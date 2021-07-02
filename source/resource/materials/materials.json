@@ -248,16 +248,16 @@
       "$comment": "UNDOCUMENTED",
       "additionalProperties": false,
       "properties": {
-        "+defines": { "title": "Defines", "description": "UNDOCUMENTATED, Add definitions???", "$ref": "#/definitions/DefinesSpecification" },
+        "+defines": { "title": "Defines", "description": "UNDOCUMENTED, Add definitions???", "$ref": "#/definitions/DefinesSpecification" },
         "vertexFields": {
           "title": "Vertex Fields",
           "description": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "$ref": "#/definitions/VertexFieldsSpecification"
         },
-        "states": { "title": "States", "description": "UNDOCUMENTATED, start states???", "$ref": "#/definitions/StatesSpecification" },
-        "+states": { "title": "States", "description": "UNDOCUMENTATED, Add additional states???", "$ref": "#/definitions/StatesSpecification" },
-        "-states": { "title": "States", "description": "UNDOCUMENTATED, remove additional states???", "$ref": "#/definitions/StatesSpecification" }
+        "states": { "title": "States", "description": "UNDOCUMENTED, start states???", "$ref": "#/definitions/StatesSpecification" },
+        "+states": { "title": "States", "description": "UNDOCUMENTED, Add additional states???", "$ref": "#/definitions/StatesSpecification" },
+        "-states": { "title": "States", "description": "UNDOCUMENTED, remove additional states???", "$ref": "#/definitions/StatesSpecification" }
       }
     }
   },
@@ -307,11 +307,11 @@
           },
           "defines": {
             "title": "Defines",
-            "description": "UNDOCUMENTATED, sets or starts definitions???",
+            "description": "UNDOCUMENTED, sets or starts definitions???",
             "$ref": "#/definitions/DefinesSpecification"
           },
-          "+defines": { "title": "Defines", "description": "UNDOCUMENTATED, Add definitions???", "$ref": "#/definitions/DefinesSpecification" },
-          "-defines": { "title": "Defines", "description": "UNDOCUMENTATED, removes definitions???", "$ref": "#/definitions/DefinesSpecification" },
+          "+defines": { "title": "Defines", "description": "UNDOCUMENTED, Add definitions???", "$ref": "#/definitions/DefinesSpecification" },
+          "-defines": { "title": "Defines", "description": "UNDOCUMENTED, removes definitions???", "$ref": "#/definitions/DefinesSpecification" },
           "depthBias": {
             "type": "number",
             "title": "Depth Bias",
@@ -347,7 +347,7 @@
           "isAnimatedTexture": {
             "type": "integer",
             "title": "Is Animated Texture",
-            "description": "UNDOCUMENTATED, think its a boolean value as a number, so 1 and 0????"
+            "description": "UNDOCUMENTED, think its a boolean value as a number, so 1 and 0????"
           },
           "msaaSupport": {
             "type": "string",
@@ -365,12 +365,12 @@
           },
           "samplerStates": {
             "title": "Sampler States",
-            "description": "UNDOCUMENTATED, set or start samplerStates???",
+            "description": "UNDOCUMENTED, set or start samplerStates???",
             "$ref": "#/definitions/SamplerStatesSpecification"
           },
           "+samplerStates": {
             "title": "Sampler States",
-            "description": "UNDOCUMENTATED, Add samplerStates???",
+            "description": "UNDOCUMENTED, Add samplerStates???",
             "$ref": "#/definitions/SamplerStatesSpecification"
           },
           "slopeScaledDepthBias": {
@@ -385,9 +385,9 @@
             "description": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED"
           },
-          "states": { "title": "States", "description": "UNDOCUMENTATED, start states???", "$ref": "#/definitions/StatesSpecification" },
-          "+states": { "title": "States", "description": "UNDOCUMENTATED, Add additional states???", "$ref": "#/definitions/StatesSpecification" },
-          "-states": { "title": "States", "description": "UNDOCUMENTATED, remove additional states???", "$ref": "#/definitions/StatesSpecification" },
+          "states": { "title": "States", "description": "UNDOCUMENTED, start states???", "$ref": "#/definitions/StatesSpecification" },
+          "+states": { "title": "States", "description": "UNDOCUMENTED, Add additional states???", "$ref": "#/definitions/StatesSpecification" },
+          "-states": { "title": "States", "description": "UNDOCUMENTED, remove additional states???", "$ref": "#/definitions/StatesSpecification" },
           "stencilRef": {
             "type": "integer",
             "title": "Stencil Ref",
@@ -412,8 +412,8 @@
             "description": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED"
           },
-          "variants": { "title": "Variants", "description": "UNDOCUMENTATED, sets the variants?", "$ref": "#/definitions/VariantSpecification" },
-          "+variants": { "title": "Variants", "description": "UNDOCUMENTATED, adds variants?", "$ref": "#/definitions/VariantSpecification" },
+          "variants": { "title": "Variants", "description": "UNDOCUMENTED, sets the variants?", "$ref": "#/definitions/VariantSpecification" },
+          "+variants": { "title": "Variants", "description": "UNDOCUMENTED, adds variants?", "$ref": "#/definitions/VariantSpecification" },
           "vertexFields": {
             "title": "Vertex Fields",
             "description": "UNDOCUMENTED",

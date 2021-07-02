@@ -4,6 +4,6 @@
   "type": "object",
   "title": "Balloonable 1.8.0",
   "required": [],
-  "properties": { "mass": { "type": "number", "description": "UNDOCUMENTATED: mass", "title": "Mass" } },
-  "description": "UNDOCUMENTATED: "
+  "properties": { "mass": { "type": "number", "description": "UNDOCUMENTED: mass", "title": "Mass" } },
+  "description": "UNDOCUMENTED: "
 }

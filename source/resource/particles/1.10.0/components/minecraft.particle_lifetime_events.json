@@ -9,13 +9,13 @@
       "description": "Fires when the particle is created",
       "oneOf": [{ "type": "array", "items": { "type": "string" } }, { "type": "string" }]
     },
-    "custom_events": { "title": "Custom Events", "description": "UNDOCUMENTATED, unclear structure :(" },
+    "custom_events": { "title": "Custom Events", "description": "UNDOCUMENTED, unclear structure :(" },
     "expiration_event": {
       "title": "Expiration Event",
       "description": "Fires when the particle expires (does not wait for particles to expire too)",
       "oneOf": [{ "type": "array", "items": { "type": "string" } }, { "type": "string" }]
     },
-    "timeline": { "propertyNames": { "pattern": "[0-9]*.[0-9]*" }, "description": "UNDOCUMENTATED: timeline", "title": "Timeline" }
+    "timeline": { "propertyNames": { "pattern": "[0-9]*.[0-9]*" }, "description": "UNDOCUMENTED: timeline", "title": "Timeline" }
   },
-  "description": "UNDOCUMENTATED: "
+  "description": "UNDOCUMENTED: "
 }

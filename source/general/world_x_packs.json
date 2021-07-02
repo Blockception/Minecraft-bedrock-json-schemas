@@ -12,7 +12,7 @@
       "pack_id": { "description": "The uuid of the pack to include", "$ref": "#/definitions/uuidv4", "title": "Pack Id" },
       "version": { "description": "The version of the pack", "$ref": "#/definitions/version", "title": "Version" }
     },
-    "description": "UNDOCUMENTATED: items",
+    "description": "UNDOCUMENTED: items",
     "title": "Items"
   }
 }

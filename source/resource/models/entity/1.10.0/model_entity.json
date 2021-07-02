@@ -99,13 +99,13 @@
       },
       "cape": { "type": "string" },
       "debug": { "type": "boolean" },
-      "texturewidth": { "type": "integer", "description": "UNDOCUMENTATED: texturewidth", "title": "Texturewidth" },
-      "textureheight": { "type": "integer", "description": "UNDOCUMENTATED: textureheight", "title": "Textureheight" },
-      "visible_bounds_width": { "type": "number", "description": "UNDOCUMENTATED: visible bounds width", "title": "Visible Bounds Width" },
-      "visible_bounds_height": { "type": "number", "description": "UNDOCUMENTATED: visible bounds height", "title": "Visible Bounds Height" },
+      "texturewidth": { "type": "integer", "description": "UNDOCUMENTED: texturewidth", "title": "Texturewidth" },
+      "textureheight": { "type": "integer", "description": "UNDOCUMENTED: textureheight", "title": "Textureheight" },
+      "visible_bounds_width": { "type": "number", "description": "UNDOCUMENTED: visible bounds width", "title": "Visible Bounds Width" },
+      "visible_bounds_height": { "type": "number", "description": "UNDOCUMENTED: visible bounds height", "title": "Visible Bounds Height" },
       "visible_bounds_offset": {
         "type": "array",
-        "description": "UNDOCUMENTATED: visible bounds offset",
+        "description": "UNDOCUMENTED: visible bounds offset",
         "title": "Visible Bounds Offset",
         "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
       }

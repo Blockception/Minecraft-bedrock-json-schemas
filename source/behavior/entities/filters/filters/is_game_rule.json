@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities.filters.is_game_rule",
   "type": "object",
   "title": "Is Game Rule",
-  "description": "UNDOCUMENTATED:",
+  "description": "UNDOCUMENTED:",
   "required": ["domain"],
   "properties": {
     "domain": { "description": "The Game Rule to test.", "title": "Domain" },

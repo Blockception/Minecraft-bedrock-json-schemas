@@ -127,7 +127,7 @@
                   "type": "array",
                   "items": {
                     "$ref": "#/definitions/particle_effect_spec",
-                    "description": "UNDOCUMENTATED: particle effects",
+                    "description": "UNDOCUMENTED: particle effects",
                     "title": "Particle Effects"
                   },
                   "title": "Particle Effects"
@@ -155,7 +155,7 @@
                   "examples": [[{ "some_state": "query.is_sheared" }]],
                   "items": {
                     "$ref": "#/definitions/animationspec",
-                    "description": "UNDOCUMENTATED: transitions",
+                    "description": "UNDOCUMENTED: transitions",
                     "title": "Transitions",
                     "examples": [{ "some_state": "query.is_sheared" }]
                   }
@@ -192,7 +192,7 @@
               }
             }
           },
-          "initial_state": { "type": "string", "description": "UNDOCUMENTATED: initial state", "title": "Initial State" }
+          "initial_state": { "type": "string", "description": "UNDOCUMENTED: initial state", "title": "Initial State" }
         }
       }
     }

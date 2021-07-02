@@ -4,29 +4,29 @@
   "title": "Particle Motion Collision Component For 1.10.0",
   "additionalProperties": false,
   "properties": {
-    "collision_drag": { "type": "number", "description": "UNDOCUMENTATED: collision drag", "title": "Collision Drag" },
+    "collision_drag": { "type": "number", "description": "UNDOCUMENTED: collision drag", "title": "Collision Drag" },
     "coefficient_of_restitution": {
       "type": "number",
-      "description": "UNDOCUMENTATED: coefficient of restitution",
+      "description": "UNDOCUMENTED: coefficient of restitution",
       "title": "Coefficient Of Restitution"
     },
-    "collision_radius": { "type": "number", "description": "UNDOCUMENTATED: collision radius", "title": "Collision Radius" },
-    "enabled": { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTATED: enabled", "title": "Enabled" },
-    "expire_on_contact": { "type": "boolean", "description": "UNDOCUMENTATED: expire on contact", "title": "Expire On Contact" },
+    "collision_radius": { "type": "number", "description": "UNDOCUMENTED: collision radius", "title": "Collision Radius" },
+    "enabled": { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTED: enabled", "title": "Enabled" },
+    "expire_on_contact": { "type": "boolean", "description": "UNDOCUMENTED: expire on contact", "title": "Expire On Contact" },
     "events": {
       "type": "array",
       "items": {
         "properties": {
           "additionalProperties": false,
-          "event": { "type": "string", "description": "UNDOCUMENTATED: event", "title": "Event" },
-          "min_speed": { "type": "number", "description": "UNDOCUMENTATED: Minimum speed", "title": "Minimum Speed" }
+          "event": { "type": "string", "description": "UNDOCUMENTED: event", "title": "Event" },
+          "min_speed": { "type": "number", "description": "UNDOCUMENTED: Minimum speed", "title": "Minimum Speed" }
         },
-        "description": "UNDOCUMENTATED: events",
+        "description": "UNDOCUMENTED: events",
         "title": "Events"
       },
-      "description": "UNDOCUMENTATED: events",
+      "description": "UNDOCUMENTED: events",
       "title": "Events"
     }
   },
-  "description": "UNDOCUMENTATED: "
+  "description": "UNDOCUMENTED: "
 }

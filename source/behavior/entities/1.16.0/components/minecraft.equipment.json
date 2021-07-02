@@ -26,7 +26,7 @@
         }
       }
     },
-    "table": { "type": "string", "pattern": ".*\\.json$", "description": "UNDOCUMENTATED: table", "title": "Table" }
+    "table": { "type": "string", "pattern": ".*\\.json$", "description": "UNDOCUMENTED: table", "title": "Table" }
   },
-  "description": "UNDOCUMENTATED: "
+  "description": "UNDOCUMENTED: "
 }

@@ -14,7 +14,7 @@
     "particle_effect": {
       "type": "object",
       "additionalProperties": false,
-      "description": "UNDOCUMENTATED: particle effect",
+      "description": "UNDOCUMENTED: particle effect",
       "title": "Particle Effect",
       "properties": {
         "description": {
@@ -24,7 +24,7 @@
           "properties": {
             "identifier": {
               "type": "string",
-              "description": "UNDOCUMENTATED: identifier",
+              "description": "UNDOCUMENTED: identifier",
               "title": "Identifier",
               "$ref": "../../../general/particle/identifier.json"
             },
@@ -40,11 +40,11 @@
                 },
                 "texture": { "type": "string", "pattern": "^.+$", "description": "Minecraft texture to use for emitter", "title": "Texture" }
               },
-              "description": "UNDOCUMENTATED: basic render parameters",
+              "description": "UNDOCUMENTED: basic render parameters",
               "title": "Basic Render Parameters"
             }
           },
-          "description": "UNDOCUMENTATED: description",
+          "description": "UNDOCUMENTED: description",
           "title": "Description"
         },
         "curves": {
@@ -120,7 +120,7 @@
         },
         "events": {
           "type": "object",
-          "description": "UNDOCUMENTATED: events",
+          "description": "UNDOCUMENTED: events",
           "title": "Events",
           "additionalProperties": {
             "description": "UNDOCUMENTED",
@@ -134,8 +134,8 @@
                 "description": "UNDOCUMENTED",
                 "$comment": "UNDOCUMENTED",
                 "properties": {
-                  "effect": { "type": "string", "description": "UNDOCUMENTATED: effect", "title": "Effect" },
-                  "type": { "type": "string", "description": "UNDOCUMENTATED: type", "title": "Type" }
+                  "effect": { "type": "string", "description": "UNDOCUMENTED: effect", "title": "Effect" },
+                  "type": { "type": "string", "description": "UNDOCUMENTED: type", "title": "Type" }
                 }
               },
               "sound_effect": {
@@ -143,7 +143,7 @@
                 "description": "UNDOCUMENTED",
                 "$comment": "UNDOCUMENTED",
                 "properties": {
-                  "event_name": { "type": "string", "description": "UNDOCUMENTATED: effect", "title": "Event name" }
+                  "event_name": { "type": "string", "description": "UNDOCUMENTED: effect", "title": "Event name" }
                 }
               }
             }

@@ -27,8 +27,8 @@
         ],
         "title": "Event Name"
       },
-      "min_delay": { "type": "integer", "description": "UNDOCUMENTATED: Minimum delay", "title": "Minimum Delay" },
-      "max_delay": { "type": "integer", "description": "UNDOCUMENTATED: Maximum delay", "title": "Maximum Delay" }
+      "min_delay": { "type": "integer", "description": "UNDOCUMENTED: Minimum delay", "title": "Minimum Delay" },
+      "max_delay": { "type": "integer", "description": "UNDOCUMENTED: Maximum delay", "title": "Maximum Delay" }
     },
     "title": "Music"
   }

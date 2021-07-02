@@ -13,7 +13,7 @@
         { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Y" },
         { "$ref": "../../../../molang/number.json", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Z" }
       ],
-      "description": "UNDOCUMENTATED: direction",
+      "description": "UNDOCUMENTED: direction",
       "title": "Direction"
     },
     "offset": {

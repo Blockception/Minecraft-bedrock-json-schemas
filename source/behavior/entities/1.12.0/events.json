@@ -31,19 +31,24 @@
             "properties": {
               "add": { "$ref": "#/definitions/addremove", "description": "What gets added when the event gets triggered", "title": "Add" },
               "remove": { "$ref": "#/definitions/addremove", "description": "What gets removed when the event gets triggered", "title": "Remove" },
-              "trigger": { "type": "string", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Trigger" },
-              "weight": { "type": "number", "description": "UNDOCUMENTATED: weight", "title": "Weight" }
+              "trigger": { "type": "string", "description": "Triggers additional events", "$comment": "UNDOCUMENTED", "title": "Trigger" },
+              "weight": {
+                "type": "number",
+                "description": "The weight on how likely this section is to trigger",
+                "$comment": "UNDOCUMENTED",
+                "title": "Weight"
+              }
             },
-            "description": "UNDOCUMENTATED: randomize",
+            "description": "Randomly selects one of the following items based upon their weight and the total weights",
             "title": "Randomize"
           },
-          "description": "UNDOCUMENTATED: randomize",
+          "description": "Randomly selects one of the following items based upon their weight and the total weights",
           "title": "Randomize"
         },
         "sequence": {
           "type": "array",
           "items": {
-            "description": "UNDOCUMENTATED: sequence",
+            "description": "Filters and components to be added",
             "title": "Sequence",
             "type": "object",
             "properties": {

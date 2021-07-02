@@ -51,8 +51,10 @@
         },
         "sequence": {
           "type": "array",
+          "description": "A series of filters and components to be added",
+          "title": "Sequences",
           "items": {
-            "description": "UNDOCUMENTATED: sequence",
+            "description": "A filters and components to be added",
             "title": "Sequence",
             "type": "object",
             "properties": {
@@ -60,9 +62,7 @@
               "remove": { "$ref": "#/definitions/addremove", "description": "What gets removed when the event gets triggered", "title": "Remove" },
               "filters": { "$ref": "./../filters/filters.json" }
             }
-          },
-          "description": "A series of filters and components to be added",
-          "title": "Sequences"
+          }
         },
         "filters": { "$ref": "./../filters/filters.json" },
         "trigger": { "type": "string", "description": "Triggers additional events", "$comment": "UNDOCUMENTED", "title": "Trigger" }
