@@ -28,14 +28,20 @@
       "title": "Knockback Range"
     },
     "knockback_strength": { "type": "integer", "default": 4, "description": "The strength of the knockback.", "title": "Knockback Strength" },
-    "Trigger": { "$ref": "../types/trigger.json", "description": "On_roar_end", "title": "Trigger" },
     "knockback_filters": {
       "$ref": "../../filters/filters.json",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
+      "description": "filters to use to decide what is affected by knockback roar.",
       "title": "Knockback Filters"
     },
-    "damage_filters": { "$ref": "../../filters/filters.json", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Damage Filters" },
-    "on_roar_end": { "$ref": "../types/event.json", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "On Roar End" }
+    "damage_filters": {
+      "$ref": "../../filters/filters.json",
+      "description": "filters to use to decide what is damaged by knockback roar.",
+      "title": "Damage Filters"
+    },
+    "on_roar_end": {
+      "$ref": "../types/event.json",
+      "description": "Event to run when knockback roar has finished.",
+      "title": "On Roar End"
+    }
   }
 }

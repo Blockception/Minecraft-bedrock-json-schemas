@@ -8,8 +8,7 @@
     "base_buoyancy": {
       "type": "number",
       "default": 0,
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
+      "description": "Base buoyancy used to calculate how much will a mob float.",
       "title": "Base Buoyancy"
     },
     "apply_gravity": {

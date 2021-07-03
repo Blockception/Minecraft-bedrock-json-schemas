@@ -2,8 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.experience_reward",
   "type": "object",
   "title": "Experience Reward 1.16.0",
-  "description": "UNDOCUMENTED",
-  "$comment": "UNDOCUMENTED",
+  "description": "Defines the amount of experience rewarded when the entity dies or is successfully bred.",
   "additionalProperties": false,
   "properties": {
     "on_bred": {

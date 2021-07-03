@@ -14,8 +14,7 @@
     "despawn_from_distance": {
       "type": "object",
       "additionalProperties": false,
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
+      "description": "Defines the minimum and maximum distance for despawn to occur.",
       "title": "Despawn From Distance",
       "properties": {
         "max_distance": {

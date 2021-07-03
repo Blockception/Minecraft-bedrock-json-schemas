@@ -8,23 +8,32 @@
     "hitboxes": {
       "type": "array",
       "title": "Hitboxes",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
+      "description": "Defines a hitbox size and pivot to test against.",
       "items": {
         "type": "object",
         "title": "Hitbox",
-        "description": "UNDOCUMENTED",
-        "$comment": "UNDOCUMENTED",
+        "description": "Defines a hitbox size and pivot to test against.",
         "additionalProperties": false,
         "properties": {
-          "width": { "type": "number", "title": "Width", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-          "height": { "type": "number", "title": "Height", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+          "width": {
+            "type": "number",
+            "title": "Width",
+            "description": "Height of the hitbox in blocks. A negative value will be assumed to be 0."
+          },
+          "height": {
+            "type": "number",
+            "title": "Height",
+            "description": "Width and Depth of the hitbox in blocks. A negative value will be assumed to be 0."
+          },
           "pivot": {
             "type": "array",
             "title": "Pivot",
-            "description": "UNDOCUMENTED",
-            "$comment": "UNDOCUMENTED",
-            "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
+            "description": "The offset from the entity's anchor where the hitbox will spawn",
+            "items": [
+              { "type": "number", "title": "X" },
+              { "type": "number", "title": "Y" },
+              { "type": "number", "title": "Z" }
+            ]
           }
         }
       }

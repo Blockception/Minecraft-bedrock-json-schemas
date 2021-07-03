@@ -2,8 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.equip_item",
   "type": "object",
   "title": "Equip Item 1.16.0",
-  "description": "UNDOCUMENTED",
-  "$comment": "UNDOCUMENTED",
+  "description": "Allows the entity to equip desired equipment.",
   "additionalProperties": false,
   "properties": { "priority": { "$ref": "types/priority.json" } }
 }

@@ -9,23 +9,22 @@
     "on_break": {
       "type": "array",
       "title": "On Break",
+      "description": "Blocks that will trigger the component when broken and what event will trigger.",
       "items": {
         "type": "object",
         "title": "On Block Broken",
+        "description": "",
         "additionalProperties": false,
         "properties": {
           "block_list": {
             "type": "array",
             "title": "Block List",
-            "description": "UNDOCUMENTED",
-            "$comment": "UNDOCUMENTED",
-            "items": { "type": "string", "title": "Block ID" }
+            "description": "Blocks that will trigger the component when broken and what event will trigger.",
+            "items": { "$ref": "../../../../general/block/identifier.json", "title": "Block ID" }
           },
-          "on_block_broken": { "type": "string", "title": "On Block Broken", "description": "On block broken" }
+          "on_block_broken": { "type": "string", "title": "On Block Broken", "description": "Event to run when a block breaks" }
         }
-      },
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
+      }
     }
   }
 }

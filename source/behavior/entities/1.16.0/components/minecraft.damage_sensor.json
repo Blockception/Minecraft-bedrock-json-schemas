@@ -31,16 +31,12 @@
           "type": "object",
           "description": "Specifies filters for entity definitions and events.",
           "title": "On Damage",
-          "properties": {
-            "filters": { "$ref": "../../filters/filters.json" },
-            "event": { "type": "string", "pattern": "^.*$", "description": "UNDOCUMENTED: event", "title": "Event" },
-            "target": { "$ref": "../../filters/filters/types/subject.json", "description": "UNDOCUMENTED: target", "title": "Target" }
-          },
-          "on_damage_sound_event": {
-            "type": "string",
-            "description": "Defines what sound to play, if any, when the on_damage filters are met.",
-            "title": "On Damage Sound Event"
-          }
+          "$ref": "../types/trigger.json"
+        },
+        "on_damage_sound_event": {
+          "type": "string",
+          "description": "Defines what sound to play, if any, when the on_damage filters are met.",
+          "title": "On Damage Sound Event"
         }
       }
     }

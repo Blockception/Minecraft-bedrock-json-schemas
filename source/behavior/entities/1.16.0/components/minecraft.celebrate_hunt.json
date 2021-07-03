@@ -48,15 +48,13 @@
           "properties": {
             "range_min": {
               "type": "number",
-              "title": "Update Interval Variant",
-              "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED"
+              "title": "Minimum",
+              "description": "Minimum"
             },
             "range_max": {
               "type": "number",
-              "title": "Update Interval Variant",
-              "description": "UNDOCUMENTED",
-              "$comment": "UNDOCUMENTED"
+              "title": "Maximum",
+              "description": "Maximum"
             }
           }
         }
