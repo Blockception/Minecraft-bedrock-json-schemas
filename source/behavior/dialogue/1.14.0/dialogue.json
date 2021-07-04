@@ -9,6 +9,7 @@
   "properties": {
     "format_version": {
       "const": "1.14.0",
+      "type": "string",
       "description": "Specifies the version of the game this entity was made in. Minimum supported version is 1.14.0. Current supported version is 1.14.0.",
       "title": "Format Version"
     },
@@ -87,7 +88,7 @@
                 }
               },
               "scene_tag": {
-                "title": "Scene tag",
+                "title": "Scene Tag",
                 "description": "UNDOCUMENTED",
                 "$comment": "UNDOCUMENTED",
                 "type": "string"
