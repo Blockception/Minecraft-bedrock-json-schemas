@@ -2,40 +2,40 @@
   "$id": "blockception.minecraft.behavior.spawn_rules.1.8.0",
   "type": "object",
   "title": "Spawn Rules 1.8.0",
-  "description": "UNDOCUMENTED",
-  "$comment": "UNDOCUMENTED",
+  "description": "Data-Driven spawning allows you to adjust the spawn conditions of mobs",
   "additionalProperties": false,
   "required": ["format_version", "minecraft:spawn_rules"],
   "properties": {
     "format_version": {
       "const": "1.8.0",
+      "type": "string",
       "description": "A version that tells minecraft what type of data format can be expected when reading this file.",
       "title": "Format Version"
     },
     "minecraft:spawn_rules": {
       "type": "object",
       "title": "Spawn Rules",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
+      "description": "Data-Driven spawning allows you to adjust the spawn conditions of mobs",
       "additionalProperties": false,
       "properties": {
         "description": {
           "type": "object",
           "title": "Description",
-          "description": "UNDOCUMENTED",
+          "description": "The descripton of to which entity this spawn rule belongs",
           "$comment": "UNDOCUMENTED",
           "additionalProperties": false,
+          "required": ["properties", "population_control"],
           "properties": {
             "identifier": {
               "title": "Identifier",
-              "description": "UNDOCUMENTED",
+              "description": "The entity identifier this spawn rule will apply to, entity must exist",
               "$comment": "UNDOCUMENTED",
               "$ref": "../../../general/entity/identifier.json"
             },
             "population_control": {
               "type": "string",
               "title": "Population Control",
-              "description": "UNDOCUMENTED",
+              "description": "Setting an entity to a pool it will spawn as long as that pool hasn't reached the spawn limit.",
               "$comment": "UNDOCUMENTED",
               "enum": ["ambient", "animal", "water_animal", "monster", "cat", "pillager"]
             }
