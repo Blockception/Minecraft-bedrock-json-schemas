@@ -28,12 +28,12 @@
           "properties": {
             "animations": {
               "title": "Animations",
-              "description": "The collection of animations and animations controllers",
+              "description": "These names are used by the animation controller JSON. Players can reference animations from the vanilla Minecraft Resource Pack or create their own. Custom animations should be in the animation folder at the root of the Resource Pack.",
               "type": "object",
               "minProperties": 1,
               "additionalProperties": {
                 "type": "string",
-                "description": "A reference to an animation or animation controller",
+                "description": "These names are used by the animation controller JSON. Players can reference animations from the vanilla Minecraft Resource Pack or create their own. Custom animations should be in the animation folder at the root of the Resource Pack.",
                 "title": "Animation Reference",
                 "examples": [{ "basic": "controller.generic.basic" }]
               }

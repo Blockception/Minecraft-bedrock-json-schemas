@@ -9,7 +9,7 @@
     "format_version": {
       "title": "1.8.0 Format Version",
       "type": "string",
-      "pattern": "^1.8.0$",
+      "const": "1.8.0",
       "description": "A version that tells minecraft what type of data format can be expected when reading this file."
     },
     "minecraft:client_entity": {
@@ -28,12 +28,12 @@
           "properties": {
             "animations": {
               "title": "Animations",
-              "description": "The collection of animations",
+              "description": "These names are used by the animation controller JSON. Players can reference animations from the vanilla Minecraft Resource Pack or create their own. Custom animations should be in the animation folder at the root of the Resource Pack.",
               "type": "object",
               "minProperties": 1,
               "additionalProperties": {
                 "type": "string",
-                "description": "A reference to an animation",
+                "description": "These names are used by the animation controller JSON. Players can reference animations from the vanilla Minecraft Resource Pack or create their own. Custom animations should be in the animation folder at the root of the Resource Pack.",
                 "title": "Animation Reference",
                 "examples": [{ "basic": "controller.generic.basic" }]
               }
@@ -86,7 +86,7 @@
               "type": "object",
               "minProperties": 1,
               "additionalProperties": { "type": "string", "description": "Particle reference", "title": "Particle" },
-              "description": "A collection of particle definitions",
+              "description": "Keys are required and need to be unique from all other keys in the animation controllers. Players can reference particles from the vanilla Minecraft Resource Pack or create their own. Custom particles should be in the particle folder at the root of the Resource Pack.",
               "title": "Particle Effects"
             },
             "particle_emitters": {
@@ -98,7 +98,7 @@
             },
             "render_controllers": {
               "type": "array",
-              "description": "A collection of Render controller definitions",
+              "description": "Players can reference Render Controllers from the vanilla Minecraft Resource Pack or create their own. Custom Render Controllers should be in the textures folder at the root of the Resource Pack.",
               "title": "Render Controllers",
               "minItems": 1,
               "items": {
@@ -123,7 +123,7 @@
               "properties": {
                 "pre_animation": {
                   "type": "array",
-                  "description": "Clientside molang variables that are to be evualated during the animation",
+                  "description": "Client side scripts that are evaluated immediately before animations are processed.",
                   "title": "Pre Animation",
                   "items": {
                     "pattern": ";$",
