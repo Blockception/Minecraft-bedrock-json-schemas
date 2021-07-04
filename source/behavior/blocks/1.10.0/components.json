@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.1.10.0.blocks.components",
   "title": "Components",
   "description": "The components of that define this block",
-  "required": [],
+
   "type": "object",
   "additionalProperties": false,
   "properties": {

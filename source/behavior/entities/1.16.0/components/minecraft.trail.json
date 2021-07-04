@@ -4,7 +4,7 @@
   "type": "object",
   "title": "Trail 1.16.0",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
     "block_type": {
       "type": "string",

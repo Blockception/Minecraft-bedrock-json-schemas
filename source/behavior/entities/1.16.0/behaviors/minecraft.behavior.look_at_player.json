@@ -4,7 +4,7 @@
   "title": "Look At Player 1.16.0",
   "description": "Allows the mob to look at the player when the player is nearby.",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
     "angle_of_view_vertical": {

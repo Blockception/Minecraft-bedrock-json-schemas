@@ -4,7 +4,7 @@
   "type": "object",
   "title": "Lookat 1.16.0",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
     "allow_invulnerable": {
       "type": "boolean",

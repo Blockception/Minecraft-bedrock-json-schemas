@@ -4,7 +4,7 @@
   "type": "object",
   "title": "Shooter 1.16.0",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
     "aux_val": { "type": "integer", "title": "Aux Val", "default": -1, "description": "ID of the Potion effect to be applied on hit" },
     "def": {

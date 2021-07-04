@@ -4,7 +4,7 @@
   "type": "object",
   "title": "Random Look Around And Sit 1.16.0",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "max_look_count": {

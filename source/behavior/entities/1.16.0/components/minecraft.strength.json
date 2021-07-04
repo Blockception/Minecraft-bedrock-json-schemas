@@ -4,7 +4,7 @@
   "type": "object",
   "title": "Strength 1.16.0",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
     "max": { "type": "integer", "default": 5, "description": "The maximum strength of this entity", "title": "Maximum" },
     "value": { "type": "integer", "default": 1, "description": "The initial value of the strength", "title": "Value" }

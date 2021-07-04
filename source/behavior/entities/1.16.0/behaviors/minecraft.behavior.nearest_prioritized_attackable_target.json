@@ -4,7 +4,7 @@
   "title": "Nearest Prioritized Attackable Target 1.16.0",
   "description": "Allows the mob to check for and pursue the nearest valid target.",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
     "entity_types": {

@@ -4,7 +4,7 @@
   "type": "object",
   "title": "Stomp Turtle Egg 1.13.0",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },

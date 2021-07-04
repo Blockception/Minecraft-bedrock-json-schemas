@@ -4,7 +4,7 @@
   "type": "object",
   "title": "Shareables 1.16.0",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
     "all_items": {
       "type": "boolean",

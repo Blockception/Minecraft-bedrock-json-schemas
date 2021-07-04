@@ -4,7 +4,7 @@
   "type": "object",
   "title": "Projectile 1.13.0",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
     "anchor": { "type": "number", "title": "Anchor", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
     "angle_offset": {

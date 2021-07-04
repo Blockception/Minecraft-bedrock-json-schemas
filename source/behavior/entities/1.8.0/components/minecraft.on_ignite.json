@@ -1,19 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.on_ignite",
   "description": "Adds a trigger to call when this entity is set on fire.",
-  "type": "object",
   "title": "On Ignite 1.8.0",
-  "additionalProperties": false,
-  "required": [],
-  "properties": {
-    "event": { "type": "string", "description": "The event to run when the conditions for this trigger are met", "title": "Event" },
-    "filters": { "$ref": "../../filters/filters.json", "description": "The list of conditions for this trigger" },
-    "target": {
-      "type": "string",
-      "$ref": "../../filters/filters/types/subject.json",
-      "default": "self",
-      "description": "The target of the event",
-      "title": "Target"
-    }
-  }
+  "$ref": "../types/trigger.json"
 }

@@ -4,7 +4,7 @@
   "type": "object",
   "title": "Send Event 1.16.0",
   "additionalProperties": false,
-  "required": [],
+
   "definitions": {
     "sequence": {
       "type": "array",

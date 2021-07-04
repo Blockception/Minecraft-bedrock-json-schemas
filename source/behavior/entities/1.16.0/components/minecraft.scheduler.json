@@ -4,7 +4,7 @@
   "type": "object",
   "title": "Scheduler 1.16.0",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
     "min_delay_secs": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Minimum Delay Secs", "minimum": 0 },
     "max_delay_secs": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Maximum Delay Secs", "minimum": 0 },

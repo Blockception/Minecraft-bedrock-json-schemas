@@ -4,7 +4,7 @@
   "title": "Find Mount 1.8.0",
   "description": "Allows the mob to look around for another mob to ride atop it.",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
     "avoid_water": {

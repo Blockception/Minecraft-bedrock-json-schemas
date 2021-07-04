@@ -4,6 +4,6 @@
   "type": "object",
   "title": "Wants Jockey 1.16.0",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {}
 }

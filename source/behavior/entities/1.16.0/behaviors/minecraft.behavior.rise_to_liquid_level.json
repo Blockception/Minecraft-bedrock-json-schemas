@@ -4,7 +4,7 @@
   "type": "object",
   "title": "Rise To Liquid Level 1.16.0",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "liquid_y_offset": {

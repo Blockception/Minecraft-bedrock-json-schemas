@@ -33,7 +33,7 @@
       }
     }
   },
-  "required": [],
+
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "controlling_seat": {

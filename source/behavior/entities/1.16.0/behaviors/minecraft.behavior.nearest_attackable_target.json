@@ -4,7 +4,7 @@
   "title": "Nearest Attackable Target 1.16.0",
   "description": "Allows the mob to check for and pursue the nearest valid target.",
   "additionalProperties": false,
-  "required": [],
+
   "definitions": {
     "entity_type": {
       "type": "object",

@@ -4,7 +4,7 @@
   "title": "Explode 1.16.0",
   "additionalProperties": false,
   "description": "Defines how the entity explodes.",
-  "required": [],
+
   "properties": {
     "breaks_blocks": {
       "type": "boolean",

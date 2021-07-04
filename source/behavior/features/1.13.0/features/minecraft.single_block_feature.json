@@ -50,7 +50,7 @@
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
-      "required": [],
+
       "properties": {
         "min_sides_must_attach": {
           "title": "Minimum Sides Must Attach",

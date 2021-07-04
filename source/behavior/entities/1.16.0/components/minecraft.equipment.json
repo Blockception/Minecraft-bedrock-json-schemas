@@ -4,7 +4,7 @@
   "title": "Equipment 1.16.0",
   "description": "Sets the equipment table to use for the entity.",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
     "slot_drop_chance": {
       "type": "array",

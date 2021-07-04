@@ -4,7 +4,7 @@
   "type": "object",
   "title": "Knockback Roar 1.16.0",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
     "attack_time": {

@@ -33,7 +33,7 @@
       }
     }
   },
-  "required": [],
+
   "properties": {
     "controlling_seat": {
       "type": "integer",

@@ -9,7 +9,7 @@
       "type": "object",
       "description": "An entity definitions that this entity can breed with.",
       "additionalItems": false,
-      "required": [],
+
       "properties": {
         "baby_type": { "type": "string", "description": "The entity definition of this entity's babies.", "title": "Baby Type" },
         "breed_event": { "$ref": "../types/event.json", "description": "Event to run when this entity breeds.", "title": "Breed Event" },
@@ -52,7 +52,7 @@
       "title": "Environment Requirements"
     }
   },
-  "required": [],
+
   "properties": {
     "allow_sitting": { "description": "If true, entities can breed while sitting.", "type": "boolean", "default": false, "title": "Allow Sitting" },
     "blend_attributes": {

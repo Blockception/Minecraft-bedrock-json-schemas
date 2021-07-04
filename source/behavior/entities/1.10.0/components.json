@@ -4,7 +4,7 @@
   "type": "object",
   "title": "Components 1.10.0",
   "description": "A collection of components",
-  "required": [],
+
   "properties": {
     "minecraft:addrider": { "$ref": "../1.8.0/components/minecraft.addrider.json" },
     "minecraft:admire_item": { "$ref": "../1.8.0/components/minecraft.admire_item.json" },

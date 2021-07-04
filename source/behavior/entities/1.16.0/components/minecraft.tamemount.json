@@ -33,7 +33,7 @@
       }
     }
   },
-  "required": [],
+
   "properties": {
     "attempt_temper_mod": {
       "type": "integer",

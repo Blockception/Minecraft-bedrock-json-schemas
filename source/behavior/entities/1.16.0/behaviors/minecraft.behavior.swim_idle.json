@@ -5,7 +5,7 @@
   "type": "object",
   "title": "Swim Idle 1.16.0",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "idle_time": { "type": "number", "title": "Idle Time", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },

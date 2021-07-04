@@ -4,7 +4,7 @@
   "title": "Movement.jump 1.16.0",
   "description": "Move control that causes the mob to jump as it moves with a specified delay between jumps.",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
     "jump_delay": {
       "type": "array",

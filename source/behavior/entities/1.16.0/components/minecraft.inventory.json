@@ -4,7 +4,7 @@
   "type": "object",
   "title": "Inventory 1.16.0",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
     "additional_slots_per_strength": {
       "type": "integer",

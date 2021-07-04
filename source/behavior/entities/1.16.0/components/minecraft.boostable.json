@@ -4,7 +4,7 @@
   "title": "Boostable 1.16.0",
   "additionalProperties": false,
   "description": "Defines the conditions and behavior of a rideable entity's boost",
-  "required": [],
+
   "properties": {
     "duration": { "type": "number", "default": 3, "description": "Time in seconds for the boost.", "title": "Duration" },
     "speed_multiplier": {

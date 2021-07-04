@@ -4,7 +4,7 @@
   "type": "object",
   "title": "Stalk And Pounce On Target 1.16.0",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "interest_time": {

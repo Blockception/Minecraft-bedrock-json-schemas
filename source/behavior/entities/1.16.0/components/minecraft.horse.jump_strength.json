@@ -5,7 +5,7 @@
   "additionalProperties": false,
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
-  "required": [],
+
   "properties": {
     "value": {
       "description": "UNDOCUMENTED",

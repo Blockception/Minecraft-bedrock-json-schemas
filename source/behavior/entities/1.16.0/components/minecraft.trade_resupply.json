@@ -5,6 +5,6 @@
   "type": "object",
   "title": "Trade Resupply 1.16.0",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {}
 }
