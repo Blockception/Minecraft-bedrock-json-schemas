@@ -1,7 +1,7 @@
 {
   "$id": "molang.string.1.8.0",
   "type": "string",
-  "title": "Molang / String",
+  "title": "Molang",
   "description": "Molang definition",
   "format": "molang",
   "examples": ["query.variant"]
