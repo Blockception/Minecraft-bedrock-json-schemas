@@ -19,8 +19,8 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "event": { "type": "string", "title": "UNDOCUMENTED", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-        "target": { "type": "string", "title": "UNDOCUMENTED", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "enum": ["self"] }
+        "event": { "type": "string", "title": "Event", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+        "target": { "type": "string", "title": "Target", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "enum": ["self"] }
       }
     },
     "saturation_modifier": {

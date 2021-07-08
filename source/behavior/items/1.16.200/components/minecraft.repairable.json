@@ -12,7 +12,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "title": "UNDOCUMENTED",
+        "title": "Repar Item",
         "description": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED",
         "additionalProperties": false,
