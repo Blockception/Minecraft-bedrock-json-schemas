@@ -27,7 +27,6 @@
           "title": "Deals Damage"
         },
         "on_damage": {
-          "additionalProperties": false,
           "type": "object",
           "description": "Specifies filters for entity definitions and events.",
           "title": "On Damage",
