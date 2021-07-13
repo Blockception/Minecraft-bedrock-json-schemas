@@ -18,6 +18,8 @@
   "allOf": [
     { "if": { "properties": { "format_version": { "type": "string", "const": "1.14.0" } } }, "then": { "$ref": "./1.14.0/dialogue.json" } },
     { "if": { "properties": { "format_version": { "type": "string", "const": "1.14" } } }, "then": { "$ref": "./1.14.0/dialogue.json" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.17.0" } } }, "then": { "$ref": "./1.14.0/dialogue.json" } },
+    { "if": { "properties": { "format_version": { "type": "string", "const": "1.17" } } }, "then": { "$ref": "./1.14.0/dialogue.json" } },
     { "properties": { "format_version": { "$ref": "../../general/format_version.json" } } }
   ]
 }
