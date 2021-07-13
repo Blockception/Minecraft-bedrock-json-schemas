@@ -11,7 +11,16 @@
         "add_items": {
           "type": "object",
           "description": "Loot table with items to add to the player's inventory upon successful interaction.",
-          "title": "Add Items"
+          "title": "Add Items",
+          "additionalProperties": false,
+          "properties": {
+            "table": {
+              "type": "string",
+              "$ref": "../../../../general/loot_table/identifier.json",
+              "description": "File path, relative to the Behavior Pack's path, to the loot table file.",
+              "title": "Table"
+            }
+          }
         },
         "cooldown": {
           "type": "number",
@@ -66,6 +75,7 @@
           "type": "object",
           "description": "Loot table with items to drop on the ground upon successful interaction.",
           "title": "Spawn Items",
+          "additionalProperties": false,
           "properties": {
             "table": {
               "type": "string",
