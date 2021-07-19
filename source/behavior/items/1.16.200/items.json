@@ -62,6 +62,12 @@
             "minecraft:fuel": { "$ref": "./components/minecraft.fuel.json" },
             "minecraft:icon": { "$ref": "./components/minecraft.icon.json" },
             "minecraft:knockback_resistance": { "$ref": "./components/minecraft.knockback_resistance.json" },
+            "minecraft:max_stack_size": { "type": "integer", "title": "Max Stack Size", "description": "Maximum stack size.", "minimum": 0 },
+            "minecraft:use_duration": {
+              "type": "integer",
+              "title": "Use Duration",
+              "description": "How long to use before item is done being used."
+            },
             "minecraft:on_use": { "$ref": "./components/minecraft.on_use.json" },
             "minecraft:on_use_on": { "$ref": "./components/minecraft.on_use_on.json" },
             "minecraft:projectile": { "$ref": "./components/minecraft.projectile.json" },

@@ -65,6 +65,12 @@
             "minecraft:knockback_resistance": { "$ref": "./components/minecraft.knockback_resistance.json" },
             "minecraft:on_use": { "$ref": "./components/minecraft.on_use.json" },
             "minecraft:on_use_on": { "$ref": "./components/minecraft.on_use_on.json" },
+            "minecraft:max_stack_size": { "type": "integer", "title": "Max Stack Size", "description": "Maximum stack size.", "minimum": 0 },
+            "minecraft:use_duration": {
+              "type": "integer",
+              "title": "Use Duration",
+              "description": "How long to use before item is done being used."
+            },
             "minecraft:projectile": { "$ref": "./components/minecraft.projectile.json" },
             "minecraft:repairable": { "$ref": "./components/minecraft.repairable.json" },
             "minecraft:render_offsets": { "$ref": "./components/minecraft.render_offsets.json" },
@@ -72,7 +78,6 @@
             "minecraft:throwable": { "$ref": "./components/minecraft.throwable.json" },
             "minecraft:weapon": { "$ref": "./components/minecraft.weapon.json" },
             "minecraft:wearable": { "$ref": "./components/minecraft.wearable.json" },
-
             "minecraft:hand_equipped": { "type": "boolean", "title": "Hand Equipped", "description": "Is this a hand equipped item." }
           }
         },

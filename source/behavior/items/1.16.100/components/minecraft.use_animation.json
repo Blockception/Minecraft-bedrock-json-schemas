@@ -1,0 +1,7 @@
+{
+  "$id": "blockception.minecraft.behavior.1.16.100.items.minecraft:use_animation",
+  "title": "Use Animation",
+  "description": "Wearable item component.",
+  "type": "string",
+  "additionalProperties": false
+}
