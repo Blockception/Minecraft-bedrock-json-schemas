@@ -1,9 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.damage_sensor",
   "title": "Damage Sensor 1.8.0",
-  "additionalProperties": false,
   "description": "Defines what events to call when this entity is damaged by specific entities or items.",
-  "type": "object",
   "definitions": {
     "damagespec": {
       "type": "object",

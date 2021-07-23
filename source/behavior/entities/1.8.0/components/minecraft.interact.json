@@ -2,8 +2,6 @@
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.interact",
   "description": "Defines interactions with this entity.",
   "title": "Interact 1.8.0",
-  "additionalProperties": false,
-  "type": "object",
   "definitions": {
     "interact_object": {
       "type": "object",
