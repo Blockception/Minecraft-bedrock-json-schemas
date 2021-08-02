@@ -1,9 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.environment_sensor",
   "title": "Environment Sensor 1.8.0",
-  "additionalProperties": false,
   "description": "Allows the entity to power jump like the horse does in vanilla.",
-  "type": "object",
   "definitions": {
     "on_environement": {
       "type": "object",
