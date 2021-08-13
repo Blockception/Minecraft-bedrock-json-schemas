@@ -6,7 +6,12 @@
   "additionalProperties": false,
   "required": ["destroy_speeds"],
   "properties": {
-    "use_efficiency": { "title": "Use Efficiency", "type": "boolean", "description": "Use efficiency? Default is set to false.", "default": "false" },
+    "use_efficiency": {
+      "title": "Use Efficiency",
+      "type": "boolean",
+      "description": "Toggles if the item will be used efficiently",
+      "default": false
+    },
     "destroy_speeds": {
       "type": "array",
       "title": "Destroy Speeds",
