@@ -6,6 +6,50 @@
       "label": "Format workspace",
       "command": "Powershell.exe -executionpolicy remotesigned -File ./scripts/format_documents.ps1",
       "problemMatcher": "$tsc"
+    },
+    {
+      "type": "npm",
+      "script": "watch",
+      "isBackground": true,
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": { "reveal": "silent", "panel": "dedicated" },
+      "problemMatcher": ["$tsc-watch"]
+    },
+    {
+      "type": "npm",
+      "script": "compile",
+      "isBackground": false,
+      "group": "build",
+      "presentation": { "reveal": "silent", "panel": "dedicated" },
+      "problemMatcher": ["$tsc"]
+    },
+    {
+      "type": "shell",
+      "label": "Format workspace",
+      "command": "Powershell.exe -executionpolicy remotesigned -File ./scripts/format_documents.ps1",
+      "problemMatcher": "$tsc"
+    },
+    {
+      "type": "shell",
+      "label": "build extension",
+      "command": "./scripts/build.bat",
+      "group": "build",
+      "problemMatcher": "$tsc"
+    },
+    {
+      "type": "shell",
+      "label": "install project extension",
+      "command": "Powershell.exe -executionpolicy remotesigned -File ./scripts/install.ps1",
+      "problemMatcher": "$tsc"
+    },
+    {
+      "type": "shell",
+      "label": "update project extension",
+      "command": "Powershell.exe -executionpolicy remotesigned -File ./scripts/update.ps1",
+      "problemMatcher": "$tsc"
     }
   ]
 }
