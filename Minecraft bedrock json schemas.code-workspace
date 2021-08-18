@@ -1,12 +1,17 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"extensions": {
-		"recommendations": [
-			"vscode-icons-team.vscode-icons"
-		]
-	}
+  "folders": [{ "path": "." }],
+  "settings": {
+    "editor.formatOnSave": true,
+    "prettier.tabWidth": 2,
+
+    "prettier.useTabs": false,
+    "prettier.printWidth": 180,
+
+    "editor.useTabStops": false,
+    "editor.tabSize": 2,
+
+    "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode", "editor.useTabStops": false, "editor.tabSize": 2 },
+    "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode", "editor.useTabStops": false, "editor.tabSize": 2 },
+    "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode", "editor.useTabStops": false, "editor.tabSize": 2 }
+  }
 }

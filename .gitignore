@@ -7,3 +7,5 @@ log.txt
 out
 node_modules
 client/server
+lib
+lib/
