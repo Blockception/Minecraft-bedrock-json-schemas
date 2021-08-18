@@ -5,7 +5,7 @@ name: npm-test
 
 on:
   workflow_run:
-    workflows: ["Compress Json Schemas"]
+    workflows: ["compress-json-schemas"]
     types: 
       - completed
       - requested
