@@ -16,6 +16,17 @@ describe("test incorrect files", () => {
       it(testfolder, () => {
         let result = validator.ValidateFile(file);
 
+        let schemas = validator.ls.getMatchingSchemas(result.doc, result.jdoc);
+
+        schemas.then(
+          (success) => {
+            expect(success.length, "Expected schemas to be returned").to.greaterThan(0);
+          },
+          (fail) => {
+            expect.fail("failed on retrieving schemas");
+          }
+        );
+
         result.promise.then(
           (succes) => {
             expect(succes.length, "Expected errors! but had none").to.greaterThan(0);
@@ -25,7 +36,7 @@ describe("test incorrect files", () => {
           }
         );
 
-        return result.promise;
+        return Promise.all([schemas, result]);
       });
     }
   });
