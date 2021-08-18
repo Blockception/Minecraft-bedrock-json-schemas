@@ -1,0 +1,20 @@
+{
+  "block_sounds": {},
+  "entity_sounds": {
+    "defaults": {},
+    "entities": {}
+  },
+  "individual_event_sounds": {
+    "events": {}
+  },
+  "interactive_sounds": {
+    "block_sounds": {
+       "block_sounds": {
+          "events": {
+             "default": { "volume": "1"}
+          }
+       }
+    },
+    "entity_sounds": {}
+  }
+}

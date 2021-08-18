@@ -1,0 +1,8 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_data": {
+    "example": {
+      "textures": "textures/items/example"
+    }
+  }
+}

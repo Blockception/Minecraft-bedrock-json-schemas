@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "blockception:dragon_born",
+      "min_engine_version": "1.8.0",
+      "materials": {
+				"default": "entity",
+				"alpha": "entity_alphatest"
+      },
+      "textures": {
+        "default": ["textures/entity/example"]
+      },
+      "animations": {
+        "default_pose": "animation.example.default_pose",
+        "controller.pose": "controller.animation.example.pose"
+      },
+      "scripts": {
+        "initialize": [
+          "variable.example.a = 0;",
+          "variable.example.b = 0;"
+        ],
+        "animate": [
+          "controller.pose"
+        ]
+      },
+      "geometry": {
+        "default": "geometry.example"
+      },
+      "render_controllers": [ "controller.render.example" ]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+[
+  {
+    "flipbook_texture": "textures/example",
+    "atlas_tile": "example",
+    "ticks_per_frame": 15
+  }
+]

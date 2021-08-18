@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "blockception:sheep",
+      "spawn_egg": {
+        "base_color": "",
+        "overlay_color": "",
+        "texture": "",
+        "texture_index": 0
+      }
+    }
+  }
+}

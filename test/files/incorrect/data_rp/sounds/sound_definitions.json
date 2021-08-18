@@ -1,0 +1,11 @@
+{
+  "format_version": "1.14.0",
+  "sound_definitions": {
+    "example.pling": {
+      "sounds": [
+        { "load_on_low_memory": 1, "name": "something", "pitch": 0}
+      ],
+      "category": "ui"
+    }
+  }
+}

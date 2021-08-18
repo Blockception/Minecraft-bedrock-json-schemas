@@ -1,0 +1,7 @@
+{
+  "creative" : {
+     "event_name" : true,
+     "max_delay" : 180,
+     "min_delay" : 60
+  }
+}

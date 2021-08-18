@@ -1,0 +1,20 @@
+{
+  "tiers": [
+    {
+      "trades": [
+        {
+          "wants": [
+            {
+              "item": "minecraft:wheat",
+              "quantity": {
+                "min": 18,
+                "max": 22
+              }
+            }
+          ],
+          "gives": [{ "item": "minecraft:emerald" }]
+        }
+      ]
+    }
+  ]
+}
