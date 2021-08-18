@@ -5,6 +5,3 @@ language/**/*.json linguist-vendored=true
 resource/**/*.json linguist-vendored=true
 skinpacks/**/*.json linguist-vendored=true
 *.json linguist-detectable=true
-
-node_modules/
-node_modules
