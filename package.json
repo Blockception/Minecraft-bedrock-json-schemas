@@ -8,9 +8,16 @@
   },
   "scripts": {
     "compile": "tsc -b",
+    "build": "npm run clean && npm run compile",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "test": "mocha --debug-brk",
+    "clean": "rimraf lib",
     "pretest": "npm run compile",
-    "update": "npm update && npm audit fix"
+    "prepublishOnly": "npm test",
+    "preversion": "",
+    "postversion": "git push && git push --tags",
+    "version": "git add -A src",
+    "watch": "tsc -w -p ./src"
   },
   "repository": {
     "compile": "tsc -b",
