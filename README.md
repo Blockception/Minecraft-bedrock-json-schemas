@@ -2,6 +2,7 @@
 
 [![Compress Json Schemas](https://github.com/Blockception/Minecraft-bedrock-json-schemas/actions/workflows/compress-json-schemas.yml/badge.svg?branch=main&event=push)](https://github.com/Blockception/Minecraft-bedrock-json-schemas/actions/workflows/compress-json-schemas.yml)
 [![Format json files](https://github.com/Blockception/Minecraft-bedrock-json-schemas/actions/workflows/format-json-files.yml/badge.svg?branch=main&event=push)](https://github.com/Blockception/Minecraft-bedrock-json-schemas/actions/workflows/format-json-files.yml)
+[![npm-test](https://github.com/Blockception/Minecraft-bedrock-json-schemas/actions/workflows/npm-test.yml/badge.svg)](https://github.com/Blockception/Minecraft-bedrock-json-schemas/actions/workflows/npm-test.yml)
 
 The json validation schema files for Minecraft bedrock
 
