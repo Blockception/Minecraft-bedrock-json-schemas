@@ -1,4 +1,5 @@
 import { expect } from "chai";
+import { DummyFiles } from "../../src";
 import { Files } from "./Utillity";
 
 describe("Files", () => {
@@ -16,5 +17,9 @@ describe("Files", () => {
     console.log(temp);
 
     expect(temp.endsWith("lib"), "ended with lib").to.be.false;
+  });
+
+  it("Random", () => {
+    expect(Files.TestFolder()).to.equal(DummyFiles.TestFolder());
   });
 });
