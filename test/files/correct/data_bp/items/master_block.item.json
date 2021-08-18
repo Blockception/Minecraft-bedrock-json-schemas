@@ -1,0 +1,10 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "master_block"
+    },
+    "components": {
+    }
+  }
+}

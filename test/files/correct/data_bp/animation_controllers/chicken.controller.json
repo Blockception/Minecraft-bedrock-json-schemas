@@ -1,0 +1,17 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.chicken": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "on_entry": ["@s machine.click", "/tag @a add Something"],
+          "transitions": [{ "transition": "variable.attack_time && query.anim_time > 0" }]
+        },
+        "transition": {
+          "animations": ["idle"]
+        }
+      }
+    }
+  }
+}

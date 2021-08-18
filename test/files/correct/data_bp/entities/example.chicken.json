@@ -1,0 +1,52 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "example:chicken",
+      "animations": {
+        "controller": "controller.animation.chicken",
+        "something": "controller.i.dont.exist"
+      },
+      "scripts": {
+        "animate": ["controller"]
+      }
+    },
+    "component_groups": {},
+    "components": {
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "add_items": { "table": "loot_tables/entities/vending.machine.json" },
+            "play_sounds": "random.levelup",
+            "use_item": true,
+            "swing": true,
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  { "test": "is_family", "value": "player" },
+                  { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "minecraft:gold_nugget" }
+                ]
+              }
+            }
+          },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  { "test": "is_family", "value": "player" },
+                  { "test": "has_equipment", "subject": "other", "domain": "hand", "operator": "not", "value": "minecraft:gold_nugget" }
+                ]
+              },
+              "event": "no_gold"
+            }
+          }
+        ]
+      }
+    },
+    "events": {
+      "no_gold": {
+        "add": { "component_groups": ["example:non_existing"]}
+      }
+    }
+  }
+}

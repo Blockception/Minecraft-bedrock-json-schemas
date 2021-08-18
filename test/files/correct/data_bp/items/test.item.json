@@ -1,0 +1,14 @@
+{
+	"format_version": "1.16.200",
+	"minecraft:item": {
+		"description": {
+			"identifier": "namespace:item"
+		},
+		"components": {
+			"minecraft:armor": { 
+				"protection": 0, 
+				"texture_type": ""
+			}
+		}
+	}
+}

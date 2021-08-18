@@ -1,0 +1,17 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "blockception:sheep",
+      "is_spawnable": true,
+      "is_summonable": true
+    },
+    "component_groups": {
+    },
+    "components": {
+      "minecraft:health": { "value": 10, "max": 10 }
+    },
+    "events": {
+    }
+  }
+}

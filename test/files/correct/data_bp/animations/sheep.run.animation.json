@@ -1,0 +1,13 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.sheep.run": {
+      "loop": false,
+      "timeline": {
+        "0.0": ["/tag @a[tag=Killing,scores={test=!0..10},c=1] add Killing"],
+        "1.36": ["/tp @s ~ -40 ~", "/kill @s", "/tag @a[tag=Killing,scores={test=!0..10}] add Killing"]
+      },
+      "animation_length": 1.5
+    }
+  }
+}

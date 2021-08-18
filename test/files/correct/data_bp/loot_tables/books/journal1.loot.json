@@ -1,0 +1,25 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:written_book",
+          "functions": [
+            {
+              "function": "set_book_contents",
+              "author": "both.name",
+              "title": "book.j1.title",
+              "pages": [
+                "{\"rawtext\":[ {\"translate\":\"book.journal1.page1\",\"with\": [ \"\\n\" ] } ] }",
+                "{\"rawtext\":[ {\"translate\":\"book.journal1.page2\",\"with\": [ \"\\n\" ] } ] }",
+                "{\"rawtext\":[ {\"translate\":\"book.journal1.page3\",\"with\": [ \"\\n\" ] } ] }"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

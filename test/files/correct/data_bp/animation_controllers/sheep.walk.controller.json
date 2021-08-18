@@ -1,0 +1,24 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.sheep.walk.example" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "default_animation" ],
+					"transitions" : [
+						{ "state_1" : "query.is_baby" }
+					]
+				},
+				"state_1" : {
+					"animations" : [ "state_animation" ],
+					"on_entry": ["@s example:foor", "variable.foo = query.average_frame_time;", "/tp @s ~ ~ ~"],
+					"on_exit": ["/tp @s ~ ~2 ~"],
+					"transitions" : [
+						{ "default" : "!query.is_baby" }
+					]
+				}
+			}
+		}
+	}
+}
