@@ -8,7 +8,6 @@ on:
     workflows: ["compress-json-schemas"]
     types: 
       - completed
-      - requested
 
 jobs:
   test-ubuntu:
