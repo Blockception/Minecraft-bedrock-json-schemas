@@ -2,7 +2,8 @@
   "name": "minecraft-bedrock-schemas",
   "version": "1.0.0",
   "description": "The unit test for minecraft-bedrock-schemas",
-  "main": "index.js",
+  "main": "./lib/src/main.js",
+  "types": "./lib/src/main.d.ts",
   "directories": {
     "test": "test"
   },

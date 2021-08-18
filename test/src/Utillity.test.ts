@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import { DummyFiles } from "../../src";
+import { DummyFiles } from "../../src/main";
 import { Files } from "./Utillity";
 
 describe("Files", () => {
