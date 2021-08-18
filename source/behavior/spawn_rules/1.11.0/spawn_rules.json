@@ -24,7 +24,7 @@
           "description": "The descripton of to which entity this spawn rule belongs",
           "$comment": "UNDOCUMENTED",
           "additionalProperties": false,
-          "required": ["properties", "population_control"],
+          "required": ["identifier", "population_control"],
           "properties": {
             "identifier": {
               "title": "Identifier",
