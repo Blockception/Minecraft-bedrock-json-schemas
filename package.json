@@ -36,6 +36,7 @@
     "ts-node": "^10.2.0"
   },
   "dependencies": {
+    "fast-glob": "^3.2.7",
     "vscode-json-languageservice": "^4.1.7"
   }
 }

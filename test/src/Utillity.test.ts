@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import { Files } from "./Utillity";
 
-describe("files", () => {
+describe("Files", () => {
   it("Root", () => {
     const temp = Files.RootFolder();
     console.log(temp);

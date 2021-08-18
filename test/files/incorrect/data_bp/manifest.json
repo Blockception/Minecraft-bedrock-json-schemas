@@ -1,0 +1,22 @@
+{
+  "format_version": 1,
+  "metadata": {
+    "authors": ["Christopher Cook"]
+  },
+
+  "header": {
+    "name": "Hell Cave Carver Features",
+    "uuid": "459909b9-fdb8-4eb3-9b8d-55d09545b89d",
+    "description": "Tests hell cave carver features",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 17, 0]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "description": "Behavior pack for Hell Cave Carver Features",
+      "uuid": "1016f5a1-5eaf-4ccd-8e0c-a4231d7bb308",
+      "version": [1, 0, 0]
+    }
+  ]
+}
