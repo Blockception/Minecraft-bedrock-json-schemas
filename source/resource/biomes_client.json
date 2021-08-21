@@ -50,7 +50,7 @@
         }
       }
     },
-    "colorhex": { "description": "The colouration of this object", "title": "Colorhex", "format": "color-hex" }
+    "colorhex": { "description": "The colouration of this object", "title": "Colorhex", "format": "color-hex", "examples": ["#FFFFFF"] }
   },
   "properties": {
     "biomes": {

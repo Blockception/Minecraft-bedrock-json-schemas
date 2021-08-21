@@ -1,0 +1,7 @@
+{
+  "$id": "blockception.minecraft.behavior.blocks.1.17.0.minecraft.breakonpush",
+  "additionalProperties": false,
+  "type": "boolean",
+  "title": "Break On Push 1.17.0",
+  "description": "When pushed by a piston the block breaks."
+}

@@ -1,0 +1,8 @@
+{
+  "$id": "blockception.minecraft.behavior.blocks.1.17.0.minecraft.loot",
+  "additionalProperties": false,
+  "type": "string",
+  "title": "Loot 1.17.0",
+  "description": "The path of the loot table that this component will use when the block is destroyed.",
+  "pattern": "loot_tables/.*\\.json$"
+}

@@ -1,0 +1,29 @@
+{
+  "$id": "blockception.minecraft.behavior.blocks.1.17.0.minecraft.ticking",
+  "title": "Ticking 1.17.0",
+  "description": "Describes the component that will trigger an even at a regular interval between two values",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "looping": { "type": "boolean", "title": "Looping", "description": "Does the event loop" },
+    "range": {
+      "title": "Range",
+      "description": "The Range between which the component will trigger his event.",
+      "type": "array",
+      "items": [{ "type": "integer" }, { "type": "integer" }]
+    },
+    "on_tick": {
+      "type": "object",
+      "title": "On Tick",
+      "description": "Describes the component that will trigger an even at a regular interval between two values",
+      "condition": { "title": "Condition", "type": "string", "description": "The condition of event to be executed on the block. Molang" },
+      "event": { "title": "Event", "type": "string", "description": "The type of event executed on the block." },
+      "target": {
+        "title": "Target",
+        "description": "The target of event executed on the block.",
+        "type": "string",
+        "enum": ["block", "damager", "other", "parent", "player", "self", "target"]
+      }
+    }
+  }
+}

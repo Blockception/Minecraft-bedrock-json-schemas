@@ -205,7 +205,13 @@
               "title": "Spawn Egg",
               "dependencies": { "texture_index": ["texture"], "base_colour": ["overlay_color"], "overlay_color": ["base_color"] },
               "properties": {
-                "base_color": { "type": "string", "description": "The basic color of the egg", "title": "Base Color", "format": "color-hex" },
+                "base_color": {
+                  "type": "string",
+                  "description": "The basic color of the egg",
+                  "title": "Base Color",
+                  "format": "color-hex",
+                  "examples": ["#FFFFFF"]
+                },
                 "overlay_color": {
                   "type": "string",
                   "description": "The colors of the dots on the egg",

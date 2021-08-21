@@ -38,7 +38,13 @@
           "type": "number",
           "minimum": 0
         },
-        "fog_color": { "title": "Fog Color", "description": "The color that the fog will take on.", "type": "string", "format": "color-hex" },
+        "fog_color": {
+          "title": "Fog Color",
+          "description": "The color that the fog will take on.",
+          "type": "string",
+          "format": "color-hex",
+          "examples": ["#FFFFFF"]
+        },
         "render_distance_type": {
           "title": "Render Distance Type",
           "description": "Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.",

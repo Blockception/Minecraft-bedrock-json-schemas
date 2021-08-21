@@ -21,13 +21,13 @@
                 {
                   "description": "An array of colors",
                   "type": "array",
-                  "items": { "type": "string", "description": "Color", "title": "Color", "format": "color-hex" }
+                  "items": { "type": "string", "description": "Color", "title": "Color", "format": "color-hex", "examples": ["#FFFFFF"] }
                 },
                 {
                   "description": "An object of colors",
                   "type": "object",
                   "propertyNames": { "pattern": "(^[\\-0-9]+$|^[\\-0-9]+\\.[\\-0-9]+$)" },
-                  "additionalProperties": { "type": "string", "description": "Color", "format": "color-hex" }
+                  "additionalProperties": { "type": "string", "description": "Color", "format": "color-hex", "examples": ["#FFFFFF"] }
                 },
                 {
                   "description": "An array of colors",

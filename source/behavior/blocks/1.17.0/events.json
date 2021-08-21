@@ -1,0 +1,100 @@
+{
+  "$id": "blockception.minecraft.behavior.1.17.0.block.events",
+  "title": "Events",
+  "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
+  "type": "object",
+  "properties": {
+    "minecraft:on_interact": { "$ref": "#/definitions/event_base" },
+    "minecraft:on_step_on": { "$ref": "#/definitions/event_base" },
+    "minecraft:on_step_off": { "$ref": "#/definitions/event_base" },
+    "minecraft:on_fall_on": { "$ref": "#/definitions/event_base" },
+    "minecraft:on_placed": { "$ref": "#/definitions/event_base" },
+    "minecraft:on_player_placing": { "$ref": "#/definitions/event_base" },
+    "minecraft:on_player_destroyed": { "$ref": "#/definitions/event_base" },
+    "minecraft:ticking": { "$ref": "#/definitions/event_base" },
+    "minecraft:random_ticking": { "$ref": "#/definitions/event_base" }
+  },
+  "additionalProperties": { "$ref": "#/definitions/event_base" },
+  "definitions": {
+    "event_base": {
+      "title": "Event",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "type": "object",
+      "additionalProperties": false,
+      "$ref": "#/definitions/event_functions",
+      "properties": {
+        "sequence": {
+          "title": "Sequence",
+          "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
+          "type": "array",
+          "items": {
+            "title": "Sequence",
+            "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED",
+            "type": "object",
+            "$ref": "#/definitions/event_functions"
+          }
+        },
+        "randomize": {
+          "title": "Randomize",
+          "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
+          "type": "array",
+          "items": {
+            "title": "Randomize",
+            "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED",
+            "type": "object",
+            "$ref": "#/definitions/event_functions",
+            "required": ["weight"],
+            "properties": {
+              "weight": { "title": "Weight", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "integer", "minimum": 0 }
+            }
+          }
+        },
+        "add_mob_effect": { "$ref": "./events/add_mob_effect.json" },
+        "damage": { "$ref": "./events/damage.json" },
+        "decrement_stack": { "$ref": "./events/decrement_stack.json" },
+        "die": { "$ref": "./events/die.json" },
+        "play_effect": { "$ref": "./events/play_effect.json" },
+        "play_sound": { "$ref": "./events/play_sound.json" },
+        "remove_mob_effect": { "$ref": "./events/remove_mob_effect.json" },
+        "run_command": { "$ref": "./events/run_command.json" },
+        "set_block": { "$ref": "./events/set_block.json" },
+        "set_block_at_pos": { "$ref": "./events/set_block_at_pos.json" },
+        "set_block_property": { "$ref": "./events/set_block_property.json" },
+        "spawn_loot": { "$ref": "./events/spawn_loot.json" },
+        "swing": { "$ref": "./events/swing.json" },
+        "teleport": { "$ref": "./events/teleport.json" },
+        "transform_item": { "$ref": "./events/transform_item.json" }
+      }
+    },
+    "event_functions": {
+      "title": "Event",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "add_mob_effect": { "$ref": "./events/add_mob_effect.json" },
+        "damage": { "$ref": "./events/damage.json" },
+        "decrement_stack": { "$ref": "./events/decrement_stack.json" },
+        "die": { "$ref": "./events/die.json" },
+        "play_effect": { "$ref": "./events/play_effect.json" },
+        "play_sound": { "$ref": "./events/play_sound.json" },
+        "remove_mob_effect": { "$ref": "./events/remove_mob_effect.json" },
+        "run_command": { "$ref": "./events/run_command.json" },
+        "set_block": { "$ref": "./events/set_block.json" },
+        "set_block_at_pos": { "$ref": "./events/set_block_at_pos.json" },
+        "set_block_property": { "$ref": "./events/set_block_property.json" },
+        "spawn_loot": { "$ref": "./events/spawn_loot.json" },
+        "swing": { "$ref": "./events/swing.json" },
+        "teleport": { "$ref": "./events/teleport.json" },
+        "transform_item": { "$ref": "./events/transform_item.json" }
+      }
+    }
+  }
+}

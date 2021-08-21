@@ -1,0 +1,12 @@
+{
+  "$id": "blockception.minecraft.behavior.1.17.0.block.events.damage",
+  "type": "object",
+  "description": "Deals damage to the target.",
+  "title": "Damage 1.17.0",
+  "additionalProperties": false,
+  "properties": {
+    "amount": { "type": "integer", "default": 0, "description": "The amount of damage to deal.", "title": "Amount" },
+    "target": { "type": "object", "default": "self", "description": "The target context to execute against.", "title": "Target" },
+    "type": { "type": "string", "default": "", "description": "The type of damage to deal.", "title": "Type" }
+  }
+}

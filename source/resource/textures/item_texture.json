@@ -15,13 +15,19 @@
           "description": "A collection of texture files",
           "title": "Texture",
           "properties": {
-            "overlay_color": { "description": "The color to apply to the texture", "title": "overlay_color", "format": "color-hex" },
+            "overlay_color": {
+              "description": "The color to apply to the texture",
+              "title": "Overlay Color",
+              "format": "color-hex",
+              "examples": ["#FFFFFF"]
+            },
             "path": { "description": "A texture file", "type": "string", "pattern": "^textures/.+$", "title": "Path" },
             "tint_color": {
               "title": "Tint Color",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "format": "color-hex",
+              "examples": ["#FFFFFF"],
               "type": "string"
             },
             "variations": {
