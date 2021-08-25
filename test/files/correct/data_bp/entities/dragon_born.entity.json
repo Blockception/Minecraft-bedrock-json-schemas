@@ -12,6 +12,9 @@
       "minecraft:health": { "value": 10, "max": 10 }
     },
     "events": {
+      "minecraft:entity": {
+        "trigger": "example"
+      }
     }
   }
 }
