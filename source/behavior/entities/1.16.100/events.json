@@ -22,9 +22,9 @@
     "event_base": {
       "additionalProperties": false,
       "type": "object",
-      "filters": { "$ref": "./../filters/filters.json" },
-      "trigger": { "type": "string", "description": "Triggers additional events", "$comment": "UNDOCUMENTED", "title": "Trigger" },
       "properties": {
+        "filters": { "$ref": "./../filters/filters.json" },
+        "trigger": { "type": "string", "description": "Triggers additional events", "$comment": "UNDOCUMENTED", "title": "Trigger" },
         "add": { "$ref": "#/definitions/addremove", "description": "What gets added when the event gets triggered", "title": "Add" },
         "remove": { "$ref": "#/definitions/addremove", "description": "What gets removed when the event gets triggered", "title": "Remove" },
         "randomize": {
