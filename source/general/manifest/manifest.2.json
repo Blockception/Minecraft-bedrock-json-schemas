@@ -4,6 +4,7 @@
   "title": "Manifest V2 Schema",
   "description": "The manifest file contains all the basic information about the pack that Minecraft needs to identify it. The tables below contain all the components of the manifest, their individual properties, and what they mean.",
   "required": ["format_version", "header"],
+  "additionalProperties": false,
   "definitions": {
     "uuidv4": {
       "type": "string",
@@ -18,7 +19,7 @@
     "format_version": {
       "title": "Format Version",
       "type": "number",
-      "description": "This defines the current version of the manifest. Don't change this unless you have a good reason to"
+      "description": "What version of Minecraft is required in order to run the manifest file."
     },
     "capabilities": {
       "type": "object",
@@ -36,10 +37,13 @@
     },
     "dependencies": {
       "type": "array",
-      "description": "These are the different features that the pack makes use of that aren't necessarily enabled by default.",
+      "title": "Dependencies",
+      "description": "Section containing definitions for any other packs that are required in order for this manifest.json file to work.",
       "items": {
         "additionalProperties": false,
         "type": "object",
+        "title": "Dependency",
+        "description": "Section containing definitions for any other packs that are required in order for this manifest.json file to work.",
         "properties": {
           "uuid": {
             "type": "string",
@@ -52,14 +56,11 @@
             "description": "This is the specific version of the pack that your pack depends on. Should match the version the other pack has in its manifest file",
             "title": "Version"
           }
-        },
-        "description": "UNDOCUMENTED: dependencies",
-        "title": "Dependencies"
-      },
-      "title": "Dependencies"
+        }
+      }
     },
     "header": {
-      "description": "This is the heading of the manifest and is required for the manifest to be valid.",
+      "description": "Section containing information regarding the name of the pack, description, and other features that are public facing.",
       "title": "Header",
       "required": ["description", "name", "uuid", "version"],
       "properties": {
@@ -104,11 +105,11 @@
     "modules": {
       "type": "array",
       "title": "Modules",
-      "description": "This section describes the modules that comprise the pack. Each entry here defines one of the kinds of contents of the pack.",
+      "description": "Section containing information regarding the type of content that is being brought in.",
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "description": "This section describes the modules that comprise the pack. Each entry here defines one of the kinds of contents of the pack.",
+        "description": "Section containing information regarding the type of content that is being brought in.",
         "title": "Module",
         "required": ["type", "uuid", "version"],
         "properties": {
@@ -139,7 +140,7 @@
     "metadata": {
       "additionalProperties": false,
       "type": "object",
-      "description": "This section contains additional data about your pack and is otherwise optional.",
+      "description": "Section containing the metadata about the file such as authors and licensing information.",
       "title": "Metadata",
       "properties": {
         "authors": {
@@ -160,6 +161,5 @@
         "url": { "type": "string", "format": "uri", "title": "Url", "description": "The home website of your pack" }
       }
     }
-  },
-  "additionalProperties": false
+  }
 }
