@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.loot_tables.furnace_smelt",
   "additionalProperties": false,
-  "description": "The function furnace_smelt",
+  "description": "If the item to return has a smelted crafting recipe and the loot table is triggered by an entity killed with fire. the result will be the smelted version of the item",
   "title": "Furnace Smelt",
   "type": "object",
   "properties": {
