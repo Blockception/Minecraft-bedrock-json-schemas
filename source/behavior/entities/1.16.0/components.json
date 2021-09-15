@@ -48,7 +48,7 @@
     "minecraft:environment_sensor": { "$ref": "./components/minecraft.environment_sensor.json" },
     "minecraft:equip_item": { "$ref": "./components/minecraft.equip_item.json" },
     "minecraft:equipment": { "$ref": "./components/minecraft.equipment.json" },
-    "minecraft:equippable": { "$ref": "./components/minecraft.equippable.json" },
+    "minecraft:equippable": { "$ref": "../1.8.0/components/minecraft.equippable.json" },
     "minecraft:experience_reward": { "$ref": "./components/minecraft.experience_reward.json" },
     "minecraft:explode": { "$ref": "./components/minecraft.explode.json" },
     "minecraft:fall_damage": { "$ref": "../1.8.0/components/minecraft.fall_damage.json" },

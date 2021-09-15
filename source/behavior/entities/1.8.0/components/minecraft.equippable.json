@@ -1,50 +1,53 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.equippable",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.equippable",
   "type": "object",
-  "title": "Equippable 1.8.0",
+  "title": "Equippable 1.16.0",
   "additionalProperties": false,
-  "description": "Defines an entity's behavior for having items equipped to it",
-  "required": [],
+  "description": "Defines an entity's behavior for having items equipped to it.",
   "properties": {
     "slots": {
       "description": "List of slots and the item that can be equipped",
       "type": "array",
+      "title": "Slots",
       "items": {
         "description": "A slot and the item that can be equipped",
+        "title": "Slots",
         "type": "object",
         "properties": {
-          "slot": { "type": "integer", "default": 0, "description": "The slot number of this slot", "title": "Slot" },
+          "slot": { "type": "integer", "default": 0, "description": "The slot number of this slot.", "title": "Slot" },
           "accepted_items": {
             "type": "array",
-            "description": "The list of items that can go in this slot",
+            "description": "The list of items that can go in this slot.",
+            "title": "Accepted Items",
             "items": {
               "type": "string",
               "description": "A item name",
               "$ref": "../../../../general/item/identifier.json",
               "title": "Accepted Items"
-            },
-            "title": "Accepted Items"
+            }
           },
-          "item": { "type": "string", "description": "Identifier of the item that can be equipped for this slot", "title": "Item" },
+          "item": {
+            "$ref": "../../../../general/item/identifier.json",
+            "description": "Identifier of the item that can be equipped for this slot.",
+            "title": "Item"
+          },
           "interact_text": {
             "type": "string",
-            "description": "Text to be displayed when the entity can be equipped with this item when playing with Touch-screen controls",
+            "description": "Text to be displayed when the entity can be equipped with this item when playing with Touch-screen controls.",
             "title": "Interact Text"
           },
           "on_equip": {
             "$ref": "../types/event.json",
-            "description": "Event to trigger when this entity is equipped with this item",
+            "description": "Event to trigger when this entity is equipped with this item.",
             "title": "On Equip"
           },
           "on_unequip": {
             "$ref": "../types/event.json",
-            "description": "Event to trigger when this item is removed from this entity",
+            "description": "Event to trigger when this item is removed from this entity.",
             "title": "On Unequip"
           }
-        },
-        "title": "Slots"
-      },
-      "title": "Slots"
+        }
+      }
     }
   }
 }
