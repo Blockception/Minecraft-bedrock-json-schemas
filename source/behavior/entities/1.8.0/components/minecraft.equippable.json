@@ -25,22 +25,19 @@
             },
             "title": "Accepted Items"
           },
-          "item": { "type": "string", "default": 0, "description": "Identifier of the item that can be equipped for this slot", "title": "Item" },
+          "item": { "type": "string", "description": "Identifier of the item that can be equipped for this slot", "title": "Item" },
           "interact_text": {
             "type": "string",
-            "default": 0,
             "description": "Text to be displayed when the entity can be equipped with this item when playing with Touch-screen controls",
             "title": "Interact Text"
           },
           "on_equip": {
-            "type": "string",
-            "default": 0,
+            "$ref": "../types/event.json",
             "description": "Event to trigger when this entity is equipped with this item",
             "title": "On Equip"
           },
           "on_unequip": {
-            "type": "string",
-            "default": 0,
+            "$ref": "../types/event.json",
             "description": "Event to trigger when this item is removed from this entity",
             "title": "On Unequip"
           }
