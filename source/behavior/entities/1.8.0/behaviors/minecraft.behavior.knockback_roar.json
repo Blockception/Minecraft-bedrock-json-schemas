@@ -7,6 +7,7 @@
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
+    "trigger": { "$ref": "../types/trigger.json" },
     "attack_time": {
       "type": "number",
       "default": 0.5,
@@ -19,15 +20,41 @@
       "description": "Time in seconds the mob has to wait before using the goal again",
       "title": "Cooldown Time"
     },
-    "duration": { "type": "number", "default": 1, "description": "The duration of the roar (in seconds).", "title": "Duration" },
-    "knockback_damage": { "type": "integer", "default": 6, "description": "The damage dealt by the knockback roar.", "title": "Knockback Damage" },
+    "duration": {
+      "type": "number",
+      "default": 1,
+      "description": "The duration of the roar (in seconds).",
+      "title": "Duration"
+    },
+    "knockback_damage": {
+      "type": "integer",
+      "default": 6,
+      "description": "The damage dealt by the knockback roar.",
+      "title": "Knockback Damage"
+    },
+    "knockback_horizontal_strength": {
+      "type": "integer",
+      "default": 4,
+      "description": "The strength of the horizontal knockback.",
+      "title": "Knockback Horizontal Strength"
+    },
     "knockback_range": {
       "type": "integer",
       "default": 4,
       "description": "The radius (in blocks) of the knockback effect.",
       "title": "Knockback Range"
     },
-    "knockback_strength": { "type": "integer", "default": 4, "description": "The strength of the knockback.", "title": "Knockback Strength" },
-    "trigger": { "$ref": "../types/trigger.json" }
+    "knockback_vertical_strength": {
+      "type": "integer",
+      "default": 4,
+      "description": "The strength of the vertical knockback.",
+      "title": "Knockback Vertical Strength"
+    },
+    "track_target": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, this mob will chase after the target as long as it's a valid target",
+      "title": "Track Target"
+    }
   }
 }
