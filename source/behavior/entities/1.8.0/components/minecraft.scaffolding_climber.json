@@ -1,9 +1,4 @@
 {
   "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.scaffolding_climber",
-  "type": "object",
-  "title": "Scaffolding Climber 1.8.0",
-  "description": "Allows the player to detect and manuever on the scaffolding block.",
-  "additionalProperties": false,
-  "required": [],
-  "properties": {}
+  "$comment": "DEPRECATED"
 }

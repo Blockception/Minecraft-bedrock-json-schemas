@@ -147,7 +147,6 @@
     "minecraft:rail_sensor": { "$ref": "../1.8.0/components/minecraft.rail_sensor.json" },
     "minecraft:ravager_blocked": { "$ref": "../1.8.0/components/minecraft.ravager_blocked.json" },
     "minecraft:rideable": { "$ref": "./components/minecraft.rideable.json" },
-    "minecraft:scaffolding_climber": { "$ref": "../1.8.0/components/minecraft.scaffolding_climber.json" },
     "minecraft:scale": { "$ref": "../1.8.0/components/minecraft.scale.json" },
     "minecraft:scale_by_age": { "$ref": "../1.8.0/components/minecraft.scale_by_age.json" },
     "minecraft:scheduler": { "$ref": "../1.8.0/components/minecraft.scheduler.json" },
