@@ -11,11 +11,12 @@
       "description": "equipment_slot: slot.weapon.mainhand, slot.weapon.offhand, slot.armor.head, slot.armor.chest, slot.armor.legs, slot.armor.feet, slot.hotbar, slot.inventory, slot.enderchest, slot.saddle, slot.armor, slot.chest",
       "type": "string",
       "enum": [
+        "slot.armor.legs",
+        "none",
         "slot.weapon.mainhand",
         "slot.weapon.offhand",
         "slot.armor.head",
         "slot.armor.chest",
-        "slot.armor.legs",
         "slot.armor.feet",
         "slot.hotbar",
         "slot.inventory",

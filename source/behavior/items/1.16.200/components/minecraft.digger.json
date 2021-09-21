@@ -45,6 +45,7 @@
           }
         }
       }
-    }
+    },
+    "on_dig": { "type": "string", "title": "On Dig", "description": "Trigger for when you dig a block that isn't listed in destroy_speeds" }
   }
 }
