@@ -40,7 +40,7 @@
           "additionalProperties": false,
           "properties": {
             "minecraft:bounds": {
-              "title": "Minecraft:bounds",
+              "title": "Bounds",
               "description": "Component that defines a minimum and maximum block position for a bounding box and which world dimension the bounding box is in. Every volume must have a bounds component.",
               "type": "object",
               "additionalProperties": false,
@@ -56,9 +56,9 @@
                   "description": "The maximum block position of the bounding box.",
                   "title": "Maximum",
                   "items": [
-                    { "title": "A", "type": "number" },
-                    { "title": "B", "type": "number" },
-                    { "title": "C", "type": "number" }
+                    { "title": "X", "type": "number" },
+                    { "title": "Y", "type": "number" },
+                    { "title": "Z", "type": "number" }
                   ]
                 },
                 "min": {
@@ -66,15 +66,15 @@
                   "description": "The minimum block position of the bounding box.",
                   "title": "Minimum",
                   "items": [
-                    { "title": "A", "type": "number" },
-                    { "title": "B", "type": "number" },
-                    { "title": "C", "type": "number" }
+                    { "title": "X", "type": "number" },
+                    { "title": "Y", "type": "number" },
+                    { "title": "Z", "type": "number" }
                   ]
                 }
               }
             },
             "minecraft:fog": {
-              "title": "Minecraft:fog",
+              "title": "Fog",
               "description": "Displays the given fog whenever a player enters the volume. Each volume can only have one fog attached.",
               "type": "object",
               "additionalProperties": false,
@@ -83,13 +83,91 @@
                   "type": "string",
                   "default": "",
                   "description": "The identifier of a fog definition. Note that you will not receive any feedback if the definition does not exist.",
-                  "title": "fog identifier"
+                  "title": "Fog Identifier"
                 },
                 "priority": {
                   "type": "integer",
                   "default": 2147483647,
                   "description": "The priority for this fog definition setting. Smaller numbers have higher priority. Fogs with equal priority will be combined together.",
-                  "title": "priority"
+                  "title": "Priority"
+                }
+              }
+            },
+            "minecraft:on_actor_enter": {
+              "title": "On Actor Enter",
+              "description": "Component that defines what happens when an actor enters the volume. Can contain multiple json objects.",
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["on_enter"],
+              "properties": {
+                "on_enter": {
+                  "title": "On Enter",
+                  "description": "Required array that contains all the triggers.",
+                  "type": "array",
+                  "items": {
+                    "title": "On Enter Trigger",
+                    "description": "Trigger",
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "condition": {
+                        "title": "Condition",
+                        "description": "Molang expression to test against the actor. The given event will be triggered if the expression evaluates to true.",
+                        "type": "string",
+                        "$ref": "../../../molang/string.json"
+                      },
+                      "event": {
+                        "title": "Event",
+                        "description": "Name of the event to run.",
+                        "type": "string"
+                      },
+                      "target": {
+                        "title": "Target",
+                        "description": "One of `self` or `other`. Self means the event is attached to the volume. Other means the event is attached to the actor.",
+                        "type": "string",
+                        "enum": ["self", "other"]
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "minecraft:on_actor_leave": {
+              "title": "On Actor Leave",
+              "description": "Component that defines what happens when an actor leaves the volume.",
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["on_enter"],
+              "properties": {
+                "on_enter": {
+                  "title": "On Enter",
+                  "description": "Required array that contains all the triggers.",
+                  "type": "array",
+                  "items": {
+                    "title": "On Enter Trigger",
+                    "description": "Trigger",
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "condition": {
+                        "title": "Condition",
+                        "description": "Molang expression to test against the actor. The given event will be triggered if the expression evaluates to true.",
+                        "type": "string",
+                        "$ref": "../../../molang/string.json"
+                      },
+                      "event": {
+                        "title": "Event",
+                        "description": "Name of the event to run.",
+                        "type": "string"
+                      },
+                      "target": {
+                        "title": "Target",
+                        "description": "One of `self` or `other`. Self means the event is attached to the volume. Other means the event is attached to the actor.",
+                        "type": "string",
+                        "enum": ["self", "other"]
+                      }
+                    }
+                  }
                 }
               }
             }
