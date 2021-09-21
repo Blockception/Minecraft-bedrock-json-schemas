@@ -17,6 +17,7 @@
         "minecraft:block_light_emission": { "$ref": "./components/minecraft.block_light_emission.json" },
         "minecraft:breakonpush": { "$ref": "./components/minecraft.breakonpush.json" },
         "minecraft:breathability": { "$ref": "./components/minecraft.breathability.json" },
+        "minecraft:creative_category": { "$ref": "./components/minecraft.creative_category.json" },
         "minecraft:destroy_time": { "$ref": "./components/minecraft.destroy_time.json" },
         "minecraft:display_name": { "$ref": "./components/minecraft.display_name.json" },
         "minecraft:entity_collision": { "$ref": "./components/minecraft.entity_collision.json" },

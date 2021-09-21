@@ -3,6 +3,6 @@
   "additionalProperties": false,
   "type": "number",
   "title": "Destroy Time 1.17.0",
-  "description": "Sets the destroy time property for the block. Greater numbers result in greater mining times.",
+  "description": "Sets the destroy time property for the block. Greater numbers result in greater mining times. Time is measured in seconds with base equipment.",
   "default": 0.0
 }

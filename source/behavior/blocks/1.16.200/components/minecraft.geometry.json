@@ -3,6 +3,6 @@
   "additionalProperties": false,
   "type": "string",
   "title": "Geometry 1.16.200",
-  "description": "The geometry definition name to use.",
+  "description": "The geometry description identifier to use, this identifier must match an existing geometry identifier in any of the currently loaded resource packs.",
   "pattern": "^geometry\\.[a-zA-Z0-9_\\-\\.]+$"
 }

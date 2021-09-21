@@ -17,6 +17,7 @@
         "minecraft:block_light_emission": { "$ref": "./components/minecraft.block_light_emission.json" },
         "minecraft:breakonpush": { "$ref": "./components/minecraft.breakonpush.json" },
         "minecraft:breathability": { "$ref": "./components/minecraft.breathability.json" },
+        "minecraft:creative_category": { "$ref": "./components/minecraft.creative_category.json" },
         "minecraft:destroy_time": { "$ref": "./components/minecraft.destroy_time.json" },
         "minecraft:display_name": { "$ref": "./components/minecraft.display_name.json" },
         "minecraft:entity_collision": { "$ref": "./components/minecraft.entity_collision.json" },
@@ -29,6 +30,7 @@
         "minecraft:map_color": { "$ref": "./components/minecraft.map_color.json" },
         "minecraft:material_instances": { "$ref": "./components/minecraft.material_instances.json" },
         "minecraft:onlypistonpush": { "$ref": "./components/minecraft.onlypistonpush.json" },
+        "minecraft:part_visibility.json": { "$ref": "./components/minecraft.part_visibility.json" },
         "minecraft:on_fall_on": { "$ref": "./components/minecraft.on_fall_on.json" },
         "minecraft:on_interact": { "$ref": "./components/minecraft.on_interact.json" },
         "minecraft:on_placed": { "$ref": "./components/minecraft.on_placed.json" },
@@ -92,6 +94,7 @@
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "propertyNames": { "pattern": "^([a-zA-Z0-9_]+:[a-zA-Z0-9_\\-]+)$" },
+              "type": "object",
               "additionalProperties": {
                 "title": "Property",
                 "description": "A block property",

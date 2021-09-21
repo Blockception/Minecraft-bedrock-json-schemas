@@ -1,0 +1,7 @@
+{
+  "$id": "blockception.minecraft.behavior.blocks.1.17.0.minecraft.creative_category",
+  "additionalProperties": false,
+  "type": "boolean",
+  "title": "Creative Category 1.17.0",
+  "description": "Specifies the creative group for the block."
+}

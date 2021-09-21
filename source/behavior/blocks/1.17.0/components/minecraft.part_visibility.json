@@ -1,0 +1,11 @@
+{
+  "$id": "blockception.minecraft.behavior.blocks.1.17.0.minecraft.part_visibility",
+  "title": "Part Visibility 1.17.0",
+  "description": "Maps bone names in a geometry file to a condition that turns their rendering on/off. The condition should be a Molang query that uses block properties to determine true/falseSupported queries include 'has_block_property', 'block_property', and other queries that can evaluate without knowledge of the block's in-game positional or player affected data.",
+  "type": "object",
+  "additionalProperties": {
+    "title": "Bone Name",
+    "examples": [{ "root": "query.variant" }],
+    "type": "string"
+  }
+}
