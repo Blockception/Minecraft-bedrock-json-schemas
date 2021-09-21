@@ -19,6 +19,7 @@
     "minecraft:attack_damage": { "$ref": "../1.8.0/components/minecraft.attack_damage.json" },
     "minecraft:balloonable": { "$ref": "../1.8.0/components/minecraft.balloonable.json" },
     "minecraft:barter": { "$ref": "../1.8.0/components/minecraft.barter.json" },
+    "minecraft:block_climber": { "$ref": "../1.8.0/components/minecraft.block_climber.json" },
     "minecraft:block_sensor": { "$ref": "../1.8.0/components/minecraft.block_sensor.json" },
     "minecraft:boostable": { "$ref": "../1.8.0/components/minecraft.boostable.json" },
     "minecraft:boss": { "$ref": "../1.8.0/components/minecraft.boss.json" },
