@@ -20,6 +20,10 @@
       "description": "A random value to determine when to randomly move somewhere. This has a 1/interval chance to choose this goal",
       "title": "Interval"
     },
-    "on_home": { "$ref": "../types/event.json", "description": "Event to run when this mob gets home.", "title": "On Home" }
+    "on_home": {
+      "description": "Event to run when this mob gets home.",
+      "title": "On Home",
+      "oneOf": [{ "$ref": "../types/trigger.json" }, { "type": "array", "items": { "$ref": "../types/trigger.json" } }]
+    }
   }
 }

@@ -78,7 +78,7 @@
       "title": "On Start",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
-      "$ref": "../types/event.json"
+      "oneOf": [{ "$ref": "../types/event.json" }, { "type": "array", "items": { "$ref": "../types/event.json" } }]
     }
   }
 }

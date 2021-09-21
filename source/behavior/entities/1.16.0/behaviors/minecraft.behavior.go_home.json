@@ -22,7 +22,7 @@
     "on_home": {
       "description": "Event to run when this mob gets home.",
       "title": "On Home",
-      "$ref": "../types/trigger.json"
+      "oneOf": [{ "$ref": "../types/trigger.json" }, { "type": "array", "items": { "$ref": "../types/trigger.json" } }]
     },
     "on_failed": {
       "$ref": "../types/event.json",
