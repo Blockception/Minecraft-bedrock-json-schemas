@@ -7,14 +7,14 @@
   "properties": {
     "on_bred": {
       "default": 0,
-      "description": "A molang expression defining the amount of experience rewarded when this entity is successfully bred. An array of expressions adds each expression's result together for a final total.",
+      "description": "A Molang expression defining the amount of experience rewarded when this entity is successfully bred. An array of expressions adds each expression's result together for a final total.",
       "title": "On Bred",
       "$ref": "../../../../molang/number.json"
     },
     "on_death": {
       "type": "string",
       "default": 0,
-      "description": "A molang expression defining the amount of experience rewarded when this entity dies. An array of expressions adds each expression's result together for a final total.",
+      "description": "A Molang expression defining the amount of experience rewarded when this entity dies. An array of expressions adds each expression's result together for a final total.",
       "title": "On Death",
       "$ref": "../../../../molang/number.json"
     }
