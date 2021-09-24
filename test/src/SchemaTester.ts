@@ -1,4 +1,13 @@
-import { getLanguageService, LanguageService, LanguageSettings, SchemaConfiguration, TextDocument, JSONDocument, Diagnostic, Thenable } from "vscode-json-languageservice";
+import {
+  getLanguageService,
+  LanguageService,
+  LanguageSettings,
+  SchemaConfiguration,
+  TextDocument,
+  JSONDocument,
+  Diagnostic,
+  Thenable,
+} from "vscode-json-languageservice";
 import * as url from "url";
 import * as data from "../../vscode-settings.json";
 import { readFileSync } from "fs";
@@ -33,7 +42,7 @@ export namespace Schema {
 
     data["json.schemas"].forEach((m) => {
       if (m) {
-        const schema = m.url.replace("https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/", rootfolder);
+        const schema = m.url.replace("https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/legacy/", rootfolder);
 
         schemas.push({ uri: schema, fileMatch: m.fileMatch });
       }
