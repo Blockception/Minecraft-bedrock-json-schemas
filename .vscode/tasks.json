@@ -15,7 +15,7 @@
         "kind": "build",
         "isDefault": true
       },
-      "presentation": { "reveal": "silent", "panel": "dedicated" },
+      "presentation": { "reveal": "always", "panel": "dedicated" },
       "problemMatcher": ["$tsc-watch"]
     },
     {
@@ -23,7 +23,7 @@
       "script": "compile",
       "isBackground": false,
       "group": "build",
-      "presentation": { "reveal": "silent", "panel": "dedicated" },
+      "presentation": { "reveal": "always", "panel": "dedicated" },
       "problemMatcher": ["$tsc"]
     },
     {
