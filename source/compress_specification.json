@@ -40,6 +40,7 @@
     { "Source": "./behavior/entities/entities.json", "Destination": "../behavior/entities/entities.json" },
     { "Source": "./behavior/features/features.json", "Destination": "../behavior/features/features.json" },
     { "Source": "./behavior/feature_rules/feature_rules.json", "Destination": "../behavior/feature_rules/feature_rules.json" },
+    { "Source": "./behavior/functions/tick.json", "Destination": "../behavior/functions/tick.json" },
     { "Source": "./behavior/items/items.json", "Destination": "../behavior/items/items.json" },
     { "Source": "./behavior/recipes/recipes.json", "Destination": "../behavior/recipes/recipes.json" },
     { "Source": "./behavior/spawn_rules/spawn_rules.json", "Destination": "../behavior/spawn_rules/spawn_rules.json" },
