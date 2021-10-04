@@ -35,7 +35,12 @@ export namespace Schema {
       if (m) {
         const schema = m.url.replace("https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/", rootfolder);
 
-        schemas.push({ uri: schema, fileMatch: m.fileMatch });
+        let matches = m.fileMatch;
+        if (typeof matches === "string") {
+          matches = [matches];
+        }
+
+        schemas.push({ uri: schema, fileMatch: matches });
       }
     });
 
