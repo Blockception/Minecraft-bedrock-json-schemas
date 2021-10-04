@@ -18,14 +18,17 @@ describe("test correct files", () => {
         const schemas = validator.ls.getMatchingSchemas(result.doc, result.jdoc);
 
         it("validation", () => {
-          return result.promise.then(
+          result.promise.then(
             (succes) => {
-              expect(succes.length, "Expected no errors got: " + JSON.stringify(succes)).to.equal(0);
+              expect(succes.length, "Expected no errors got: " + succes.length).to.equal(0);
+              succes.forEach((item) => console.log(item.message));
             },
             (fail) => {
               expect.fail("Failed to validate");
             }
           );
+
+          return result.promise;
         });
 
         it("schemas", () => {

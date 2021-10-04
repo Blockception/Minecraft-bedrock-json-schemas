@@ -13,28 +13,33 @@ describe("test incorrect files", () => {
     if (file.endsWith(".json")) {
       const testfolder = file.replace(folder + "/", "");
 
-      it(testfolder, () => {
-        let result = validator.ValidateFile(file);
+      describe(testfolder, () => {
+        const result = validator.ValidateFile(file);
+        const schemas = validator.ls.getMatchingSchemas(result.doc, result.jdoc);
 
-        let schemas = validator.ls.getMatchingSchemas(result.doc, result.jdoc);
+        it("schemas", () => {
+          return schemas.then(
+            (success) => {
+              expect(success.length, "Expected schemas to be returned").to.greaterThan(0);
+            },
+            (fail) => {
+              expect.fail("failed on retrieving schemas");
+            }
+          );
+        });
 
-        schemas.then(
-          (success) => {
-            expect(success.length, "Expected schemas to be returned").to.greaterThan(0);
-          },
-          (fail) => {
-            expect.fail("failed on retrieving schemas");
-          }
-        );
+        it("validation", () => {
+          result.promise.then(
+            (succes) => {
+              expect(succes.length, "Expected errors! but had none").to.greaterThan(0);
+            },
+            (fail) => {
+              expect.fail("Failed to validate");
+            }
+          );
 
-        result.promise.then(
-          (succes) => {
-            expect(succes.length, "Expected errors! but had none").to.greaterThan(0);
-          },
-          (fail) => {
-            expect.fail("Failed to validate");
-          }
-        );
+          return result.promise;
+        });
 
         return Promise.all([schemas, result]);
       });
