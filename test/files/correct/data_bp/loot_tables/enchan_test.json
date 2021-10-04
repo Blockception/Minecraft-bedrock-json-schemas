@@ -1,0 +1,15 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:diamond_sword",
+          "weight": 1,
+          "functions": [{ "function": "specific_enchants", "enchants": [{ "id": "power", "level": 3 }] }]
+        }
+      ]
+    }
+  ]
+}
