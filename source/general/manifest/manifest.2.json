@@ -120,8 +120,8 @@
           },
           "type": {
             "type": "string",
-            "enum": ["resources", "data", "client_data", "interface", "world_template"],
-            "description": "This is the type of the module. Can be any of the following: resources, data, client_data, interface, world_template",
+            "enum": ["resources", "data", "client_data", "interface", "world_template", "javascript"],
+            "description": "This is the type of the module.",
             "title": "Type"
           },
           "uuid": {
@@ -133,6 +133,11 @@
             "$ref": "#/definitions/version",
             "description": "This is the version of your pack in the format [majorVersion, minorVersion, revision]. The version number is used when importing a pack that has been imported before. The new pack will replace the old one if the version is higher, and ignored if it's the same or lower",
             "title": "Version"
+          },
+          "entry": {
+            "type": "string",
+            "title": "Entry",
+            "description": "The javascript entry point for tests, only works if types has been set to `javascript`"
           }
         }
       }
