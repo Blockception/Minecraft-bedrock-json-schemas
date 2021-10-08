@@ -3,6 +3,7 @@
   "type": "array",
   "title": "Array Of 3 Items",
   "description": "An array of 3 integers",
+  "examples": [[0, 1, 2]],
   "items": [
     { "type": "integer", "description": "An number", "title": "X" },
     { "type": "integer", "description": "An number", "title": "Y" },
