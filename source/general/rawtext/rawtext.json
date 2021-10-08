@@ -5,6 +5,7 @@
   "type": "object",
   "additionalProperties": false,
   "required": ["rawtext"],
+  "examples": [{ "rawtext": [] }],
   "definitions": {
     "rawtext": {
       "title": "Rawtext",
@@ -28,6 +29,7 @@
       "type": "object",
       "additionalProperties": false,
       "required": ["selector"],
+      "examples": [{ "selector": "@s" }, { "selector": "@p" }],
       "properties": {
         "selector": {
           "title": "Selector",
@@ -46,6 +48,7 @@
       "type": "object",
       "additionalProperties": false,
       "required": ["score"],
+      "examples": [{ "score": { "name": "*", "objective": "score" } }, { "score": { "name": "@p", "objective": "score" } }],
       "properties": {
         "score": {
           "title": "Score",
@@ -78,6 +81,7 @@
       "type": "object",
       "additionalProperties": false,
       "required": ["text"],
+      "examples": [{ "text": "" }],
       "properties": {
         "text": {
           "title": "Text",
@@ -94,6 +98,7 @@
       "type": "object",
       "additionalProperties": false,
       "required": ["translate"],
+      "examples": [{ "translate": "example.translation.key" }, { "translate": "example.translation.key", "with": ["\n"] }],
       "properties": {
         "translate": {
           "title": "Translate",
