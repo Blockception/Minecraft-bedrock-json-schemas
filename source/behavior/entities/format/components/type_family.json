@@ -5,7 +5,7 @@
   "additionalProperties": false,
   "description": "Defines the families this entity belongs to.",
   "required": ["family"],
-  "examples": [{ "family": ["monster"] }, { "family": ["mob"] }, { "family": ["animal"] }, { "family": ["npc"] }],
+  "examples": [{ "family": [] }, { "family": ["monster"] }, { "family": ["mob"] }, { "family": ["animal"] }, { "family": ["npc"] }],
   "properties": {
     "family": {
       "type": "array",
