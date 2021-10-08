@@ -1,6 +1,6 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.minecraft:entity.1.8.0",
-  "title": "Entity 1.8.0",
+  "$id": "blockception.minecraft.behavior.entities.minecraft:entity.1.17.0",
+  "title": "Entity 1.17.0",
   "required": ["description"],
   "dependencies": { "component_groups": ["events"] },
   "additionalProperties": false,
@@ -78,14 +78,14 @@
       "uniqueItems": true,
       "type": "object",
       "additionalProperties": {
-        "$ref": "./components.json",
+        "$ref": "../1.16.0/components.json",
         "uniqueItems": true,
         "description": "The components that are added as the foundation of the entity",
         "title": "Component"
       }
     },
     "components": {
-      "$ref": "./components.json",
+      "$ref": "../1.16.0/components.json",
       "uniqueItems": true,
       "description": "The components that are added as the foundation of the entity",
       "title": "Component"

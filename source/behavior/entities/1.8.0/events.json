@@ -1,8 +1,9 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.events1.8.0",
+  "$id": "blockception.minecraft.behavior.entities.events.1.17.0",
   "type": "object",
-  "title": "Events 1.8.0",
-  "description": "The events in minecraft",
+  "title": "Events 1.17.0",
+  "description": "Events for entities 1.17.0",
+  "additionalProperties": { "$ref": "#/definitions/event_base" },
   "definitions": {
     "addremove": {
       "additionalProperties": false,
@@ -87,6 +88,5 @@
       "$ref": "#/definitions/event_base",
       "title": "On Prime"
     }
-  },
-  "additionalProperties": { "$ref": "#/definitions/event_base" }
+  }
 }
