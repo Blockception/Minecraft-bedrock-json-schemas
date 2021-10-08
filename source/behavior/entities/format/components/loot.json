@@ -1,0 +1,18 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.loot",
+  "type": "object",
+  "title": "Loot",
+  "description": "sets the loot table for what items this entity drops upon death.",
+  "additionalProperties": false,
+  "required": ["table"],
+  "examples": [{ "table": "loot_tables/empty.json" }],
+  "properties": {
+    "table": {
+      "type": "string",
+      "pattern": "^loot_tables/.*.json$",
+      "description": "The path to the loot table, relative to the Behavior Pack's root.",
+      "title": "Table",
+      "default": "loot_tables/empty.json"
+    }
+  }
+}

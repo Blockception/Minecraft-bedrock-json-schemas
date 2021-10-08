@@ -1,0 +1,58 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.dweller",
+  "type": "object",
+  "title": "Dweller",
+  "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
+  "additionalProperties": false,
+  "properties": {
+    "dwelling_type": {
+      "type": "string",
+      "title": "Dwelling Type",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "dweller_role": {
+      "type": "string",
+      "title": "Dwelling Role",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "update_interval_base": {
+      "type": "integer",
+      "title": "Update Interval Base",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "update_interval_variant": {
+      "type": "integer",
+      "title": "Update Interval Variant",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "preferred_profession": {
+      "type": "string",
+      "title": "Preferred Profession",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "can_find_poi": {
+      "type": "boolean",
+      "title": "Can Find Poi",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "can_migrate": {
+      "type": "boolean",
+      "title": "Can Migrate",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "first_founding_reward": {
+      "type": "integer",
+      "title": "First Founding Reward",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    }
+  }
+}

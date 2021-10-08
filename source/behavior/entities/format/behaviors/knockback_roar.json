@@ -1,0 +1,75 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.knockback_roar",
+  "description": "Allows the mob to perform a damaging knockback that affects all nearby entities.",
+  "type": "object",
+  "title": "Knockback Roar",
+  "additionalProperties": false,
+
+  "properties": {
+    "priority": { "$ref": "./types/priority.json" },
+    "attack_time": {
+      "type": "number",
+      "default": 0.5,
+      "description": "The delay after which the knockback occurs (in seconds).",
+      "title": "Attack Time"
+    },
+    "cooldown_time": {
+      "type": "number",
+      "default": 0,
+      "description": "Time in seconds the mob has to wait before using the goal again",
+      "title": "Cooldown Time"
+    },
+    "duration": {
+      "type": "number",
+      "default": 1,
+      "description": "The duration of the roar (in seconds).",
+      "title": "Duration"
+    },
+    "knockback_damage": {
+      "type": "integer",
+      "default": 6,
+      "description": "The damage dealt by the knockback roar.",
+      "title": "Knockback Damage"
+    },
+    "knockback_horizontal_strength": {
+      "type": "integer",
+      "default": 4,
+      "description": "The strength of the horizontal knockback.",
+      "title": "Knockback Horizontal Strength"
+    },
+    "knockback_range": {
+      "type": "integer",
+      "default": 4,
+      "description": "The radius (in blocks) of the knockback effect.",
+      "title": "Knockback Range"
+    },
+    "knockback_vertical_strength": {
+      "type": "integer",
+      "default": 4,
+      "description": "The strength of the vertical knockback.",
+      "title": "Knockback Vertical Strength"
+    },
+    "track_target": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, this mob will chase after the target as long as it's a valid target",
+      "title": "Track Target"
+    },
+    "knockback_strength": { "type": "integer", "default": 4, "description": "The strength of the knockback.", "title": "Knockback Strength" },
+    "knockback_filters": {
+      "$ref": "../../filters/filters.json",
+      "description": "filters to use to decide what is affected by knockback roar.",
+      "title": "Knockback Filters"
+    },
+    "damage_filters": {
+      "$ref": "../../filters/filters.json",
+      "description": "filters to use to decide what is damaged by knockback roar.",
+      "title": "Damage Filters"
+    },
+    "on_roar_end": {
+      "$ref": "../types/event.json",
+      "description": "Event to run when knockback roar has finished.",
+      "title": "On Roar End"
+    }
+  }
+}

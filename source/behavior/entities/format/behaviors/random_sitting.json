@@ -1,0 +1,42 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.random_sitting",
+  "type": "object",
+  "title": "Random Sitting",
+  "description": "Allows the mob to randomly sit for a duration.",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "types/priority.json" },
+    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "cooldown": {
+      "type": "number",
+      "default": 0,
+      "description": "Time in seconds the mob has to wait before using the goal again",
+      "title": "Cooldown"
+    },
+    "cooldown_time": {
+      "type": "number",
+      "default": 0,
+      "description": "Time in seconds the mob has to wait before using the goal again",
+      "title": "Cooldown Time"
+    },
+    "min_sit_time": {
+      "type": "number",
+      "default": 10,
+      "description": "The minimum amount of time in seconds before the mob can stand back up",
+      "title": "Minimum Sit Time"
+    },
+    "start_chance": {
+      "type": "number",
+      "default": 0.1,
+      "description": "This is the chance that the mob will start this goal, from 0 to 1",
+      "title": "Start Chance"
+    },
+    "stop_chance": {
+      "type": "number",
+      "default": 0.3,
+      "description": "This is the chance that the mob will stop this goal, from 0 to 1",
+      "title": "Stop Chance"
+    }
+  }
+}

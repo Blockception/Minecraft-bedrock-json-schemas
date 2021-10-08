@@ -1,0 +1,8 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.block_climber",
+  "type": "object",
+  "title": "Block Climber",
+  "additionalProperties": false,
+  "description": "Allows the player to detect and maneuver on the scaffolding block.",
+  "properties": {}
+}

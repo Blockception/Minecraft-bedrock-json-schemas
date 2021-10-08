@@ -1,0 +1,16 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.skin_id",
+  "type": "object",
+  "title": "Skin Id",
+  "additionalProperties": false,
+  "description": "Skin ID value. Can be used to differentiate skins, such as base skins for villagers.",
+  "required": [],
+  "properties": {
+    "value": {
+      "type": "integer",
+      "default": 0,
+      "description": "The ID of the skin. By convention, 0 is the ID of the base skin",
+      "title": "Value"
+    }
+  }
+}

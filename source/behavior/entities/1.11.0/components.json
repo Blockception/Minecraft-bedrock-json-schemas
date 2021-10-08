@@ -1,6 +1,0 @@
-{
-  "$id": "blockception.minecraft.behavior.entities.components1.11.0",
-  "type": "object",
-  "title": "Entity 1.11.0",
-  "$ref": "../1.10.0/components.json"
-}

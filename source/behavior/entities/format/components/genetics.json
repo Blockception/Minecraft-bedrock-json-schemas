@@ -1,0 +1,96 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.genetics",
+  "type": "object",
+  "title": "Genetics",
+  "additionalProperties": false,
+  "description": "Defines the way a mob's genes and alleles are passed on to it's offspring, and how those traits manifest in the child. Compatible parent genes are crossed together, the alleles are handed down from the parents to the child, and any matching genetic variants fire off JSON events to modify the child and express the traits.",
+  "required": [],
+  "definitions": {
+    "integer_range": {
+      "title": "Range",
+      "examples": [-1, { "range_min": 4, "range_max": 7 }],
+      "oneOf": [
+        { "type": "integer" },
+        {
+          "type": "object",
+          "properties": {
+            "range_min": {
+              "type": "integer",
+              "default": 0,
+              "description": "Lower bound",
+              "title": "Range Minimum"
+            },
+            "range_max": {
+              "type": "integer",
+              "default": 0,
+              "description": "Upper bound",
+              "title": "Range Maximum"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "properties": {
+    "mutation_rate": {
+      "type": "number",
+
+      "description": "Chance that an allele will be replaced with a random one instead of the parent's allele during birth.",
+      "title": "Mutation Rate"
+    },
+    "genes": {
+      "type": "array",
+      "description": "Genes is a list defined by three parameters",
+      "title": "Genes",
+      "items": {
+        "type": "object",
+        "description": "The list of genes that this entity has and will cross with a partner during breeding.",
+        "title": "Gene",
+        "properties": {
+          "allele_range": {
+            "title": "Allele Range",
+            "description": "The range of positive integer allele values for this gene. Spawned mobs will have a random number in this range assigned to them.",
+            "$ref": "#/definitions/integer_range"
+          },
+          "genetic_variants": {
+            "type": "array",
+            "description": "The list of genetic variants for this gene. These check for particular allele combinations and fire events when all of them are satisfied.",
+            "title": "Genetic Variants",
+            "items": {
+              "title": "Genetic Variants",
+              "description": "The genetic variant for this gene. These check for particular allele combinations and fire events when all of them are satisfied.",
+              "type": "object",
+              "properties": {
+                "birth_event": {
+                  "$ref": "../types/event.json",
+                  "description": "Event to run when this mob is created and matches the above allele conditions.",
+                  "title": "Brith Event"
+                },
+                "both_allele": {
+                  "description": "If this value is non-negative, compare both the mob's main and hidden alleles with this value for a match with both. Can also be a range of integers.",
+                  "title": "Both Allele",
+                  "$ref": "#/definitions/integer_range"
+                },
+                "either_allele": {
+                  "type": "integer",
+                  "default": -1,
+                  "description": "If this value is non-negative, compare both the mob's main and hidden alleles with this value for a match with either. Can also be a range of integers."
+                },
+                "hidden_allele": {
+                  "type": "integer",
+                  "default": -1,
+                  "description": "If this value is non-negative, compare the mob's hidden allele with this value for a match. Can also be a range of integers."
+                },
+                "main_allele": {
+                  "default": -1,
+                  "description": "If this value is non-negative, compare the mob's main allele with this value for a match. Can also be a range of integers.",
+                  "$ref": "#/definitions/integer_range"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

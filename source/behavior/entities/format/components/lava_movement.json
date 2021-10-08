@@ -1,0 +1,12 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.lava_movement",
+  "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
+  "type": "object",
+  "title": "Lava Movement",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "value": { "type": "number", "title": "Value", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
+  }
+}

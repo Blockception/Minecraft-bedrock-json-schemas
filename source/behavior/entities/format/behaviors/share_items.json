@@ -1,0 +1,29 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.share_items",
+  "description": "Allows the mob to send an event to another mob.",
+  "type": "object",
+  "title": "Share Items",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "types/priority.json" },
+    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "entity_types": {
+      "$ref": "../types/entity_types.json",
+      "description": "List of entities this mob will share items with",
+      "title": "Entity Types"
+    },
+    "goal_radius": {
+      "type": "number",
+      "default": 0.5,
+      "description": "Distance in blocks within the mob considers it has reached the goal. This is the `wiggle room` to stop the AI from bouncing back and forth trying to reach a specific spot",
+      "title": "Goal Radius"
+    },
+    "max_dist": {
+      "type": "number",
+      "default": 0,
+      "description": "Maximum distance in blocks this mob will look for entities to share items with",
+      "title": "Maximum Distance"
+    }
+  }
+}

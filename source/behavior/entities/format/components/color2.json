@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.color2",
+  "type": "object",
+  "title": "Color.0",
+  "additionalProperties": false,
+  "description": "Defines the entity's second texture color. Only works on vanilla entities that have a second predefined color values (tropical fish).",
+  "required": [],
+  "properties": { "value": { "type": "integer", "default": 0, "description": "The second Palette Color value of the entity", "title": "Value" } }
+}

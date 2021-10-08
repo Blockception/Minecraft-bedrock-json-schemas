@@ -1,0 +1,11 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.jump.static",
+  "description": "Gives the entity the ability to jump.",
+  "type": "object",
+  "title": "Jump.static",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "jump_power": { "type": "number", "default": 0.42, "description": "The initial vertical velocity for the jump", "title": "Jump Power" }
+  }
+}

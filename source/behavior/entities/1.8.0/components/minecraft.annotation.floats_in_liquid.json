@@ -1,9 +1,0 @@
-{
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.annotation.floats_in_liquid",
-  "additionalProperties": false,
-  "description": "Sets that this entity can float in liquid blocks.",
-  "type": "object",
-  "title": "Annotation.floats In Liquid 1.8.0",
-  "required": [],
-  "properties": {}
-}

@@ -1,0 +1,16 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.movement.generic",
+  "description": "This move control allows a mob to fly, swim, climb, etc.",
+  "type": "object",
+  "title": "Movement.generic",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "max_turn": {
+      "type": "number",
+      "default": 30,
+      "description": "The maximum number in degrees the mob can turn per tick.",
+      "title": "Maximum Turn"
+    }
+  }
+}

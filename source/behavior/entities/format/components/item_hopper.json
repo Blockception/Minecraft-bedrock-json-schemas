@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.item_hopper",
+  "type": "object",
+  "title": "Item Hopper",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {},
+  "description": "Determines that this entity is an item hopper"
+}

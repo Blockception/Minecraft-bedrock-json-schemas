@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.can_power_jump",
+  "type": "object",
+  "title": "Can Power Jump",
+  "additionalProperties": false,
+  "description": "Allows the entity to power jump like the horse does in vanilla.",
+  "required": [],
+  "properties": {}
+}

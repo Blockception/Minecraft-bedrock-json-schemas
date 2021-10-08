@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.hurt_when_wet",
+  "type": "object",
+  "title": "Hurt When Wet",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {},
+  "description": "Specifies if an actor is hurt when wet."
+}

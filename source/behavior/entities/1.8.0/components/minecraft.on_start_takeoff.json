@@ -1,6 +1,0 @@
-{
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.on_start_takeoff",
-  "description": "Only usable by the Ender Dragon. Adds a trigger to call when this entity starts flying.",
-  "title": "On Start Takeoff 1.8.0",
-  "$ref": "../types/trigger.json"
-}

@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.managed_wandering_trader",
+  "type": "object",
+  "title": "Managed Wandering Trader",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {},
+  "description": "This component is used to implement part of the Wandering Trader behavior"
+}

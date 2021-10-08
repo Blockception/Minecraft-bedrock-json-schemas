@@ -1,0 +1,36 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.drying_out_timer",
+  "type": "object",
+  "title": "Drying Out Timer",
+  "description": "Adds a timer for drying out that will count down and fire `dried_out_event` or will stop as soon as the entity will get under rain or water and fire `stopped_drying_out_event`",
+  "additionalProperties": false,
+  "properties": {
+    "dried_out_event": {
+      "$ref": "../types/event.json",
+      "description": "Event to fire when the drying out time runs out.",
+      "title": "dried out event"
+    },
+    "recover_after_dried_out_event": {
+      "$ref": "../types/event.json",
+      "description": "Event to fire when entity was already dried out but received increase in water supply.",
+      "title": "recover after dried out event"
+    },
+    "stopped_drying_out_event": {
+      "$ref": "../types/event.json",
+      "description": "Event to fire when entity stopped drying out, for example got into water or under rain.",
+      "title": "stopped drying out event"
+    },
+    "total_time": {
+      "type": "number",
+      "default": 0,
+      "description": "Amount of time in seconds to dry out fully.",
+      "title": "total time"
+    },
+    "water_bottle_refill_time": {
+      "type": "number",
+      "default": 0,
+      "description": "Optional amount of additional time in seconds given by using splash water bottle on entity.",
+      "title": "water bottle refill time"
+    }
+  }
+}

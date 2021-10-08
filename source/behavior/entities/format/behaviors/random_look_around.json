@@ -1,0 +1,31 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.random_look_around",
+  "additionalProperties": false,
+  "description": "Allows the mob to randomly look around.",
+  "type": "object",
+  "title": "Random Look Around",
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "./types/priority.json" },
+    "look_time": {
+      "title": "Look Time",
+      "description": "The range of time in seconds the mob will stay looking in a random direction before looking elsewhere",
+      "oneOf": [
+        { "type": "number" },
+        {
+          "type": "array",
+          "items": [
+            { "type": "number", "title": "Minimum", "description": "Minimum" },
+            { "type": "number", "title": "Maximum", "description": "Maximum" }
+          ]
+        }
+      ]
+    },
+    "look_distance": {
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "title": "Look Distance",
+      "type": "number"
+    }
+  }
+}

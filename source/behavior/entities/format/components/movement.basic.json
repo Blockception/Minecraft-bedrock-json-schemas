@@ -1,0 +1,16 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.movement.basic",
+  "type": "object",
+  "title": "Movement.basic",
+  "description": "defines the movement of an entity.",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "max_turn": {
+      "type": "number",
+      "default": 30,
+      "description": "The maximum number in degrees the mob can turn per tick.",
+      "title": "Maximum Turn"
+    }
+  }
+}

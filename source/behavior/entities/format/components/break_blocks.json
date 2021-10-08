@@ -1,0 +1,16 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.break_blocks",
+  "type": "object",
+  "title": "Break Blocks",
+  "additionalProperties": false,
+  "description": "Specifies the blocks that this entity can break as it moves around.",
+  "required": [],
+  "properties": {
+    "breakable_blocks": {
+      "type": "array",
+      "title": "Breakable Blocks",
+      "description": "A list of the blocks that can be broken as this entity moves around",
+      "items": { "$ref": "../../../../general/blocks_item.json" }
+    }
+  }
+}

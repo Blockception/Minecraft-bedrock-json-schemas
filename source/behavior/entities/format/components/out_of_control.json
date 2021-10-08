@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.out_of_control",
+  "type": "object",
+  "title": "Out Of Control",
+  "additionalProperties": false,
+  "description": "defines the entity's `out of control` state.",
+  "required": [],
+  "properties": {}
+}

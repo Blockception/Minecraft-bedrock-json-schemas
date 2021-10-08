@@ -1,0 +1,83 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.send_event",
+  "description": "Allows the mob to send an event to another mob.",
+  "type": "object",
+  "title": "Send Event",
+  "additionalProperties": false,
+
+  "definitions": {
+    "sequence": {
+      "type": "array",
+      "description": "List of events to send",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "delay": { "type": "number", "default": 0, "description": "Amount of time in seconds before starting this step" },
+          "event": { "type": "string", "default": "", "description": "The event to send to the entity" },
+          "sound_event": { "type": "string", "default": "", "description": "The sound event to play when this step happens" }
+        }
+      }
+    }
+  },
+  "properties": {
+    "priority": { "$ref": "./types/priority.json" },
+    "cast_duration": { "type": "number", "description": "Time in seconds for the entire event sending process", "title": "Cast Duration" },
+    "event_choices": {
+      "type": "array",
+      "title": "Event Choices",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "title": "Event Choice",
+        "description": "UNDOCUMENTED",
+        "$comment": "UNDOCUMENTED",
+        "properties": {
+          "min_activation_range": {
+            "type": "number",
+            "title": "Minimum Activation Range",
+            "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED"
+          },
+          "max_activation_range": {
+            "type": "number",
+            "title": "Maxmimum Activation Range",
+            "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED"
+          },
+          "cooldown_time": {
+            "type": "number",
+            "title": "Cooldown Time",
+            "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED"
+          },
+          "cast_duration": {
+            "type": "number",
+            "title": "Cast Duration",
+            "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED"
+          },
+          "filters": { "$ref": "../../filters/filters.json" },
+          "particle_color": {
+            "type": "string",
+            "format": "color-hex",
+            "title": "Particle Color",
+            "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED"
+          },
+          "weight": { "type": "integer", "title": "Weight", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+          "start_sound_event": {
+            "type": "string",
+            "title": "Start Sound Event",
+            "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED"
+          },
+          "sequence": { "$ref": "#/definitions/sequence" }
+        }
+      }
+    },
+    "sequence": { "$ref": "#/definitions/sequence", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Sequence" }
+  }
+}

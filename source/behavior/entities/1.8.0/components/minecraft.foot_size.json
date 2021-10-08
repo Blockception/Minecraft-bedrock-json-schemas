@@ -1,9 +1,0 @@
-{
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.foot_size",
-  "type": "object",
-  "title": "Foot Size 1.8.0",
-  "additionalProperties": false,
-  "description": "Sets the number of blocks the entity can step without jumping.",
-  "required": [],
-  "properties": { "value": { "type": "number", "default": 0.5, "description": "The value of the size of the entity's step", "title": "Value" } }
-}

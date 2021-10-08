@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.is_ignited",
+  "description": "Sets that this entity is currently on fire.",
+  "type": "object",
+  "title": "Is Ignited",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {}
+}

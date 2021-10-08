@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.is_baby",
+  "description": "Sets that this entity is a baby.",
+  "type": "object",
+  "title": "Is Baby",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {}
+}

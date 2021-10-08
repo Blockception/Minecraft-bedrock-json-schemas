@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.balloonable",
+  "additionalProperties": false,
+  "type": "object",
+  "title": "Balloonable",
+  "required": [],
+  "properties": { "mass": { "type": "number", "description": "UNDOCUMENTED: mass", "title": "Mass" } },
+  "description": "UNDOCUMENTED: "
+}

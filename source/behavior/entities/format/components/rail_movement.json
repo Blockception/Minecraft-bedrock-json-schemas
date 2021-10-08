@@ -1,0 +1,16 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.rail_movement",
+  "type": "object",
+  "title": "Rail Movement",
+  "description": "Defines the entity's movement on the rails. An entity with this component is only allowed to move on the rail.",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "max_speed": {
+      "type": "number",
+      "default": 0.4,
+      "description": "Maximum speed that this entity will move at when on the rail",
+      "title": "Maximum Speed"
+    }
+  }
+}

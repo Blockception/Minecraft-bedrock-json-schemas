@@ -1,0 +1,18 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.guardian_attack",
+  "type": "object",
+  "title": "Guardian Attack",
+  "additionalProperties": false,
+  "description": "Allows mob to move towards its current target.",
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "./types/priority.json" },
+    "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },
+    "within_radius": {
+      "type": "number",
+      "default": 0.0,
+      "description": "Defines the radius in blocks that the mob tries to be from the target. A value of 0 means it tries to occupy the same block as the target",
+      "title": "Within Radius"
+    }
+  }
+}

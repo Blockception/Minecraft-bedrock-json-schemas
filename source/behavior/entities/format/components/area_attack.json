@@ -1,0 +1,32 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.area_attack",
+  "type": "object",
+  "title": "Area Attack",
+  "description": "A component that does damage to entities that get within range.",
+  "additionalProperties": false,
+  "properties": {
+    "damage_per_tick": {
+      "type": "integer",
+      "default": 2,
+      "description": "How much damage per tick is applied to entities that enter the damage range.",
+      "title": "Damage Per Tick"
+    },
+    "damage_range": {
+      "type": "number",
+      "default": 0.2,
+      "description": "How close a hostile entity must be to have the damage applied.",
+      "title": "Damage Range"
+    },
+    "entity_filter": {
+      "$ref": "../../filters/filters.json",
+      "description": "Filter to see which entities can be affected by the attack",
+      "title": "Entity Filter"
+    },
+    "cause": {
+      "type": "string",
+      "description": "what causes the attack to occur",
+      "title": "Cause",
+      "$ref": "../../../../general/entity/damage_source.json"
+    }
+  }
+}

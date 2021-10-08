@@ -1,0 +1,89 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.angry",
+  "type": "object",
+  "title": "Angry",
+  "description": "Adds a timer for the entity to grow up. It can be accelerated by giving the entity the items it likes as defined by feedItems.",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "broadcast_anger": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry",
+      "title": "Broadcast Anger"
+    },
+    "broadcast_filters": {
+      "$ref": "../../filters/filters.json",
+      "description": "Conditions that make this entry in the list valid",
+      "title": "Broadcast Filters"
+    },
+    "filters": {
+      "$ref": "../../filters/filters.json",
+      "description": "Filter out mob types that it should not attack while angry (other Piglins)"
+    },
+    "broadcast_range": {
+      "type": "integer",
+      "default": 20,
+      "description": "Distance in blocks within which other entities of the same entity definition will become angry",
+      "title": "Broadcast Range"
+    },
+    "broadcast_targets": {
+      "type": "array",
+      "description": "A list of entity families to broadcast anger to",
+      "items": { "type": "string", "description": "An entity family", "pattern": "^.+$", "title": "Broadcast Targets" },
+      "title": "Broadcast Targets"
+    },
+    "calm_event": {
+      "$ref": "../types/event.json",
+      "description": "Event to run after the number of seconds specified in duration expires (when the entity stops being `angry')",
+      "title": "Calm Event"
+    },
+    "angry_sound": { "type": "string", "default": "", "description": "The sound event to play when the mob is angry", "title": "Angry Sound" },
+    "broadcast_anger_on_attack": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry whenever this mob attacks",
+      "title": "Broadcast Anger On Attack"
+    },
+    "broadcast_anger_on_being_attacked": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry whenever this mob is attacked",
+      "title": "Broadcast Anger On Being Attacked"
+    },
+    "duration": {
+      "type": "integer",
+      "default": 25,
+      "description": "The amount of time in seconds that the entity will be angry",
+      "title": "Duration"
+    },
+    "duration_delta": {
+      "type": "integer",
+      "default": 0,
+      "description": "Variance in seconds added to the duration [-delta, delta]",
+      "title": "Duration Delta"
+    },
+    "sound_interval": {
+      "description": "The range of time in seconds to randomly wait before playing the sound again",
+      "title": "Sound Interval",
+      "oneOf": [
+        {
+          "type": "array",
+          "default": [0, 0],
+          "items": [
+            { "type": "integer", "minimum": 0, "description": "The minimum interval", "$comment": "UNDOCUMENTED", "title": "Minimum" },
+            { "type": "integer", "minimum": 0, "description": "The maximum interval", "$comment": "UNDOCUMENTED", "title": "Maximum" }
+          ]
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "range_min": { "type": "number", "description": "The minimum interval", "$comment": "UNDOCUMENTED", "title": "Range Minimum" },
+            "range_max": { "type": "number", "description": "The maximum interval", "$comment": "UNDOCUMENTED", "title": "Range Maximum" }
+          }
+        }
+      ]
+    }
+  }
+}

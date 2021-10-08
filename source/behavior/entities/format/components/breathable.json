@@ -1,0 +1,40 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.breathable",
+  "type": "object",
+  "title": "Breathable",
+  "additionalProperties": false,
+  "description": "Defines what blocks this entity can breathe in and gives them the ability to suffocate.",
+  "required": [],
+  "properties": {
+    "total_supply": { "type": "integer", "default": 15, "description": "Time in seconds the entity can hold its breath", "title": "Total Supply" },
+    "suffocate_time": { "type": "integer", "default": -20, "description": "Time in seconds between suffocation damage", "title": "Suffocate Time" },
+    "inhale_time": { "type": "number", "default": 0, "description": "Time in seconds to recover breath to maximum", "title": "Inhale Time" },
+    "breathes_air": { "type": "boolean", "default": true, "description": "If true, this entity can breathe in air", "title": "Breathes Air" },
+    "breathes_water": { "type": "boolean", "default": false, "description": "If true, this entity can breathe in water", "title": "Breathes Water" },
+    "breathes_lava": { "type": "boolean", "default": false, "description": "If true, this entity can breathe in lava", "title": "Breathes Lava" },
+    "breathes_solids": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, this entity can breathe in solid blocks",
+      "title": "Breathes Solids"
+    },
+    "generates_bubbles": {
+      "type": "boolean",
+      "default": true,
+      "description": "If true, this entity will have visible bubbles while in water",
+      "title": "Generates Bubbles"
+    },
+    "breathe_blocks": {
+      "type": "array",
+      "description": "List of blocks this entity can breathe in, in addition to the above",
+      "items": { "$ref": "../../../../general/block/identifier.json" },
+      "title": "Breathe Blocks"
+    },
+    "non_breathe_blocks": {
+      "type": "array",
+      "description": "List of blocks this entity can't breathe in, in addition to the above",
+      "items": { "$ref": "../../../../general/block/identifier.json" },
+      "title": "Non Breathes Blocks"
+    }
+  }
+}

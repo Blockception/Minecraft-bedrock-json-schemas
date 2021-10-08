@@ -1,0 +1,6 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.on_hurt",
+  "description": "Adds a trigger to call when this entity takes damage.",
+  "title": "On Hurt",
+  "$ref": "../types/trigger.json"
+}

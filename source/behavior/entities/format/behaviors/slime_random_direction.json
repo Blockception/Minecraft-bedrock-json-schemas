@@ -1,0 +1,24 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.slime_random_direction",
+  "additionalProperties": false,
+  "description": "Can only be used by Slimes and Magma Cubes. Allows the mob to move in random directions like a slime.",
+  "type": "object",
+  "title": "Slime Random Direction",
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "./types/priority.json" },
+    "add_random_time_range": {
+      "type": "number",
+      "title": "Add Random Time Range",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "turn_range": { "type": "number", "title": "Turn Range", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "min_change_direction_time": {
+      "type": "number",
+      "title": "Minimum Change Direction Time",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    }
+  }
+}

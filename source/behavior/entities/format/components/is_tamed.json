@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.is_tamed",
+  "description": "Sets that this entity is currently tamed.",
+  "type": "object",
+  "title": "Is Tamed",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {}
+}

@@ -1,0 +1,7 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.is_hidden_when_invisible",
+  "type": "object",
+  "title": "Is Hidden When Invisible",
+  "additionalProperties": false,
+  "description": "Sets that this entity can hide from hostile mobs while invisible."
+}

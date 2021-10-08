@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.squid_dive",
+  "description": "Allows an entity to dive underwater.",
+  "type": "object",
+  "title": "Squid Dive",
+  "additionalProperties": false,
+  "required": [],
+  "properties": { "priority": { "$ref": "./types/priority.json" } }
+}

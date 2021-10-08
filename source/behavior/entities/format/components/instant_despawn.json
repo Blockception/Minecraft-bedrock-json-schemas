@@ -1,0 +1,15 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.instant_despawn",
+  "type": "object",
+  "title": "Instant Despawn",
+  "description": "Despawns the Actor immediately.",
+  "additionalProperties": false,
+  "properties": {
+    "remove_child_entities": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, all entities linked to this entity in a child relationship (eg. leashed) will also be despawned.",
+      "title": "Remove Child Entities"
+    }
+  }
+}

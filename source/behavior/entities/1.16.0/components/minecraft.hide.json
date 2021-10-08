@@ -1,9 +1,0 @@
-{
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.hide",
-  "type": "object",
-  "title": "Hide 1.16.0",
-  "description": "UNDOCUMENTED",
-  "$comment": "UNDOCUMENTED",
-  "additionalProperties": false,
-  "properties": {}
-}

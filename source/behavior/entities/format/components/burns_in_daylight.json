@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.burns_in_daylight",
+  "title": "Burns In Daylight",
+  "additionalProperties": false,
+  "description": "Specifies if/how a mob burns in daylight.",
+  "required": [],
+  "properties": {},
+  "oneOf": [{ "type": "boolean" }, { "type": "object" }]
+}

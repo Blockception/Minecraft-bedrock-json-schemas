@@ -1,0 +1,44 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.ageable",
+  "type": "object",
+  "title": "Ageable",
+  "description": "Adds a timer for the entity to grow up. It can be accelerated by giving the entity the items it likes as defined by feedItems.",
+  "additionalProperties": false,
+  "properties": {
+    "drop_items": {
+      "description": "List of items that the entity drops when it grows up.",
+      "oneOf": [
+        { "type": "array", "items": { "$ref": "../../../../general/item/identifier.json" } },
+        { "type": "string", "$ref": "../../../../general/item/identifier.json" }
+      ],
+      "title": "Drop Items"
+    },
+    "duration": {
+      "type": "number",
+      "default": 1200,
+      "description": "Amount of time before the entity grows up, -1 for always a baby.",
+      "title": "Duration"
+    },
+    "feed_items": {
+      "description": "List of items that can be fed to the entity. Includes `item` for the item name and `growth` to define how much time it grows up by",
+      "oneOf": [
+        { "type": "array", "items": { "$ref": "../../../../general/item/identifier.json" } },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": { "growth": { "type": "number" }, "item": { "$ref": "../../../../general/item/identifier.json" } }
+          }
+        },
+        { "type": "string", "$ref": "../../../../general/item/identifier.json" }
+      ],
+      "title": "Feed Items"
+    },
+    "grow_up": { "$ref": "../types/event.json", "description": "Event to run when this entity grows up.", "title": "Grow up" },
+    "transform_to_item": {
+      "type": "string",
+      "title": "Transform to item",
+      "description": "The feed item used will transform to this item upon successful interaction. Format: itemName:auxValue"
+    }
+  }
+}

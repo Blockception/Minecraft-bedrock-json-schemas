@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.restrict_open_door",
+  "description": "Allows the mob to run around aimlessly.",
+  "type": "object",
+  "title": "Restrict Open Door",
+  "additionalProperties": false,
+  "required": [],
+  "properties": { "priority": { "$ref": "types/priority.json" }, "speed_multiplier": { "$ref": "types/speed_multiplier.json" } }
+}

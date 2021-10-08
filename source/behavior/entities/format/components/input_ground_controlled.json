@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.input_ground_controlled",
+  "description": "When configured as a rideable entity, the entity will be controlled using WASD controls.",
+  "type": "object",
+  "title": "Input Ground Controlled",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {}
+}

@@ -1,0 +1,53 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.work",
+  "type": "object",
+  "title": "Work",
+  "description": "Allows an entity to navigate and interact with a point of interest that has been assigned as their worksite.",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "./types/priority.json" },
+    "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },
+    "active_time": {
+      "type": "integer",
+      "default": 0,
+      "description": "The amount of ticks the NPC will stay in their the work location",
+      "title": "Active Time"
+    },
+    "can_work_in_rain": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, this entity can work when their jobsite POI is being rained on.",
+      "title": "Can Work In Rain"
+    },
+    "goal_cooldown": {
+      "type": "integer",
+      "default": 0,
+      "description": "The amount of ticks the goal will be on cooldown before it can be used again",
+      "title": "Goal Cooldown"
+    },
+    "on_arrival": {
+      "$ref": "../types/event.json",
+      "description": "Event to run when the mob reaches their jobsite and finishes working.",
+      "title": "On Arrival"
+    },
+    "sound_delay_max": {
+      "type": "integer",
+      "default": 0,
+      "description": "The Maximum interval in which a sound will play",
+      "title": "Sound Delay Maximum"
+    },
+    "sound_delay_min": {
+      "type": "integer",
+      "default": 0,
+      "description": "The Minimum interval in which a sound will play",
+      "title": "Sound Delay Minimum"
+    },
+    "work_in_rain_tolerance": {
+      "type": "integer",
+      "default": -1,
+      "description": "If `can_work_in_rain` is false, this is the maximum number of ticks left in the goal where rain will not interrupt the goal",
+      "title": "Work In Rain Tolerance"
+    }
+  }
+}

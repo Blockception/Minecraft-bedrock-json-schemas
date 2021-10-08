@@ -1,0 +1,28 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.hold_ground",
+  "type": "object",
+  "title": "Hold Ground",
+  "description": "The mob freezes and looks at the mob they are targeting.",
+  "additionalProperties": false,
+  "properties": {
+    "priority": { "$ref": "types/priority.json" },
+    "broadcast": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether to broadcast out the mob's target to other mobs of the same type.",
+      "title": "Broadcast"
+    },
+    "broadcast_range": { "type": "number", "default": 0.0, "description": "Range in blocks for how far to broadcast.", "title": "Broadcast Range" },
+    "min_radius": {
+      "type": "number",
+      "default": 10.0,
+      "description": "Minimum distance the target must be for the mob to run this goal.",
+      "title": "Minimum Radius"
+    },
+    "within_radius_event": {
+      "$ref": "../types/event.json",
+      "description": "Event to run when target is within the radius. This event is broadcasted if broadcast is true.",
+      "title": "Within Radius Event"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.is_stackable",
+  "description": "Sets that this entity can be stacked.",
+  "type": "object",
+  "title": "Is Stackable",
+  "additionalProperties": false
+}

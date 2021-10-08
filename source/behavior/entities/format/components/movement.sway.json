@@ -1,0 +1,20 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.movement.sway",
+  "title": "Movement.sway",
+  "description": "This move control causes the mob to sway side to side giving the impression it is swimming.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "max_turn": {
+      "type": "number",
+      "default": 30,
+      "description": "The maximum number in degrees the mob can turn per tick.",
+      "title": "Maximum Turn"
+    },
+    "sway_amplitude": {
+      "type": "number",
+      "description": "The amount of sway that is allowed for movement.",
+      "title": "Sway Amplitude"
+    }
+  }
+}

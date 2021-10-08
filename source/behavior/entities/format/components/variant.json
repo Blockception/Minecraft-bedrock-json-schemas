@@ -1,0 +1,16 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.variant",
+  "additionalProperties": false,
+  "type": "object",
+  "title": "Variant",
+  "description": "Used to differentiate the component group of a variant of an entity from others (e.g. ocelot, villager) Parameters",
+  "required": [],
+  "properties": {
+    "value": {
+      "type": "integer",
+      "default": 0,
+      "description": "The ID of the variant. By convention, 0 is the ID of the base entity",
+      "title": "Value"
+    }
+  }
+}

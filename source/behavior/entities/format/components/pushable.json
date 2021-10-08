@@ -1,0 +1,22 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.pushable",
+  "additionalProperties": false,
+  "type": "object",
+  "title": "Pushable",
+  "description": "Defines what can push an entity between other entities and pistons.",
+  "required": [],
+  "properties": {
+    "is_pushable": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether the entity can be pushed by other entities.",
+      "title": "Is Pushable"
+    },
+    "is_pushable_by_piston": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether the entity can be pushed by pistons safely.",
+      "title": "Is Pushable By Piston"
+    }
+  }
+}

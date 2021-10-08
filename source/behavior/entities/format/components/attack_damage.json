@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.attack_damage",
+  "type": "object",
+  "title": "Attack Damage",
+  "additionalProperties": false,
+  "required": ["value"],
+  "properties": { "value": { "type": "number", "description": "UNDOCUMENTED: value", "title": "Value" } },
+  "description": "UNDOCUMENTED: "
+}

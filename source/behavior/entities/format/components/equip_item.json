@@ -1,0 +1,8 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.equip_item",
+  "type": "object",
+  "title": "Equip Item",
+  "description": "The entity puts on the desired equipment.",
+  "additionalProperties": false,
+  "properties": {}
+}

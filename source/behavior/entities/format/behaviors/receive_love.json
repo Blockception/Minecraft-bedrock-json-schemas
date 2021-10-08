@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.receive_love",
+  "description": "Allows the villager to stop so another villager can breed with it. Can only be used by a Villager.",
+  "type": "object",
+  "title": "Receive Love",
+  "additionalProperties": false,
+  "required": [],
+  "properties": { "priority": { "$ref": "types/priority.json" } }
+}

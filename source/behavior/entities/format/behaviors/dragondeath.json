@@ -1,0 +1,8 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.dragondeath",
+  "additionalProperties": false,
+  "type": "object",
+  "title": "Dragondeath",
+  "description": "Allows the dragon to go out with glory. This controls the Ender Dragon's death animation and can't be used by other mobs.",
+  "properties": { "priority": { "$ref": "./types/priority.json" } }
+}

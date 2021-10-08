@@ -1,0 +1,6 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.on_start_landing",
+  "description": "Only usable by the Ender Dragon. Adds a trigger to call when this entity lands.",
+  "title": "On Start Landing",
+  "$ref": "../types/trigger.json"
+}

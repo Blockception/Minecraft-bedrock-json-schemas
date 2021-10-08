@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.is_shaking",
+  "description": "Sets that this entity is currently shaking.",
+  "type": "object",
+  "title": "Is Shaking",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {}
+}

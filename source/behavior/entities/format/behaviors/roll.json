@@ -1,0 +1,12 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.roll",
+  "description": "This allows the mob to roll forward.",
+  "type": "object",
+  "title": "Roll",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "types/priority.json" },
+    "probability": { "type": "number", "minimum": 0, "description": "The probability that the mob will use the goal.", "title": "Probability" }
+  }
+}

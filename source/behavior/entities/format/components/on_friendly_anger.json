@@ -1,0 +1,6 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.on_friendly_anger",
+  "description": "Adds a trigger that will run when a nearby entity of the same type as this entity becomes Angry.",
+  "title": "On Friendly Anger",
+  "$ref": "../types/trigger.json"
+}

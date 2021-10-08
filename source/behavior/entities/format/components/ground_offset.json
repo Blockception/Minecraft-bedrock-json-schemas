@@ -1,0 +1,16 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.ground_offset",
+  "type": "object",
+  "title": "Ground Offset",
+  "additionalProperties": false,
+  "description": "Sets the offset from the ground that the entity is actually at.",
+  "required": [],
+  "properties": {
+    "value": {
+      "type": "number",
+      "default": 0.0,
+      "description": "The value of the entity's offset from the terrain, in blocks",
+      "title": "Value"
+    }
+  }
+}

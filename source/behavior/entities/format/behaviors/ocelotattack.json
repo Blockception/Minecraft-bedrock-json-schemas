@@ -1,0 +1,71 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.ocelotattack",
+  "type": "object",
+  "title": "Ocelotattack",
+  "additionalProperties": false,
+  "description": "Can only be used by the Ocelot. Allows it to perform the sneak and pounce attack.",
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "./types/priority.json" },
+    "walk_speed_multiplier": {
+      "type": "number",
+      "default": 1.0,
+      "description": "Multiplier for the walking speed while using this attack",
+      "title": "Walk Speed Multiplier"
+    },
+    "sprint_speed_multiplier": {
+      "type": "number",
+      "default": 1.0,
+      "description": "Multiplier for the running speed of this mob while using this attack",
+      "title": "Sprint Speed Multiplier"
+    },
+    "sneak_speed_multiplier": {
+      "type": "number",
+      "default": 1.0,
+      "description": "Multiplier for the sneaking speed. 1.0 means the ocelot will move at the speed it normally sneaks",
+      "title": "Sneak Speed Multiplier"
+    },
+    "cooldown_time": {
+      "type": "number",
+      "title": "Cooldown Time",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "x_max_rotation": {
+      "type": "number",
+      "title": "X Maximum Rotation",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "y_max_head_rotation": {
+      "type": "number",
+      "title": "Y Maximum Head Rotation",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "max_distance": {
+      "type": "number",
+      "title": "Maximum Distance",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "max_sneak_range": {
+      "type": "number",
+      "title": "Maximum Sneak Range",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "max_sprint_range": {
+      "type": "number",
+      "title": "Maximum Sprint Range",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "reach_multiplier": {
+      "type": "number",
+      "title": "Reach Multiplier",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    }
+  }
+}

@@ -1,9 +1,0 @@
-{
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.squid_idle",
-  "description": "Allows the squid to swim in place idly. Can only be used by the Squid.",
-  "type": "object",
-  "title": "Squid Idle 1.8.0",
-  "additionalProperties": false,
-  "required": [],
-  "properties": { "priority": { "$ref": "./types/priority.json" } }
-}

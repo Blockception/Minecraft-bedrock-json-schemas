@@ -1,0 +1,8 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.barter",
+  "type": "object",
+  "title": "Barter",
+  "description": "Enables the mob to barter for items that have been configured as barter currency. Must be used in combination with the barter component",
+  "additionalProperties": false,
+  "properties": { "priority": { "$ref": "types/priority.json" } }
+}

@@ -1,0 +1,10 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.trust",
+  "type": "object",
+  "title": "Trust",
+  "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
+  "required": [],
+  "additionalProperties": false,
+  "properties": {}
+}

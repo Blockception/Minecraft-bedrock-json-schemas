@@ -1,0 +1,38 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.healable",
+  "description": "Defines the interactions with this entity for healing it.",
+  "type": "object",
+  "title": "Healable",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "filters": { "$ref": "../../filters/filters.json" },
+    "force_use": {
+      "type": "boolean",
+      "default": false,
+      "description": "Determines if item can be used regardless of entity being at full health",
+      "title": "Force Use"
+    },
+    "items": {
+      "description": "The array of items that can be used to heal this entity",
+      "title": "Items",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "filters": {
+            "$ref": "../../filters/filters.json",
+            "description": "The filter group that defines the conditions for using this item to heal the entity"
+          },
+          "heal_amount": {
+            "type": "integer",
+            "default": 1,
+            "description": "The amount of health this entity gains when fed this item",
+            "title": "Heal Amount"
+          },
+          "item": { "type": "string", "description": "Item identifier that can be used to heal this entity", "title": "Item" }
+        }
+      }
+    }
+  }
+}

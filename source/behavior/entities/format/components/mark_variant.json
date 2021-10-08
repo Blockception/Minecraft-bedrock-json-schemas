@@ -1,0 +1,16 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.mark_variant",
+  "type": "object",
+  "title": "Mark Variant",
+  "description": "Additional variant value. Can be used to further differentiate variants.",
+  "required": ["value"],
+  "properties": {
+    "value": {
+      "type": "integer",
+      "default": 0,
+      "description": "The ID of the variant. By convention, 0 is the ID of the base entity",
+      "title": "Value"
+    }
+  },
+  "additionalProperties": false
+}
