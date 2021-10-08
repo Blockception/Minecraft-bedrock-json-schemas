@@ -1,10 +1,10 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.trail",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.trail",
   "description": "Defines the entity's trail to carry items.",
   "type": "object",
-  "title": "Trail 1.8.0",
+  "title": "Trail 1.16.0",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
     "block_type": {
       "type": "string",

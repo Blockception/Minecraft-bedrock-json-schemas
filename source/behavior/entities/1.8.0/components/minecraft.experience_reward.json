@@ -1,17 +1,19 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.13.0.minecraft.experience_reward",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.experience_reward",
   "type": "object",
-  "title": "Experience Reward 1.13.0",
+  "title": "Experience Reward 1.16.0",
   "description": "Defines the amount of experience rewarded when the entity dies or is successfully bred.",
   "additionalProperties": false,
   "properties": {
     "on_bred": {
-      "$ref": "../../../../molang/number.json",
+      "type": "string",
+      "default": 0,
       "description": "A molang expression defining the amount of experience rewarded when this entity is successfully bred. An array of expressions adds each expression's result together for a final total.",
       "title": "On Bred"
     },
     "on_death": {
-      "$ref": "../../../../molang/number.json",
+      "type": "string",
+      "default": 0,
       "description": "A molang expression defining the amount of experience rewarded when this entity dies. An array of expressions adds each expression's result together for a final total.",
       "title": "On Death"
     }

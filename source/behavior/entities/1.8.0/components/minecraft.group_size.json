@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.group_size",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.group_size",
   "type": "object",
-  "title": "Group Size 1.8.0",
+  "title": "Group Size 1.16.0",
   "description": "Keeps track of entity group size in the given radius.",
   "additionalProperties": false,
   "properties": {

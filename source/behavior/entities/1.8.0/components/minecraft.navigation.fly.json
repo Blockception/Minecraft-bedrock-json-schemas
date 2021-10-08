@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.13.0.minecraft.navigation.fly",
-  "title": "Navigation.fly",
-  "description": "Allows this entity to generate paths in the air like the vanilla Parrots do.",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.navigation.fly",
+  "title": "Navigation.fly 1.16.0",
+  "description": "Allows this entity to generate paths in the air like the vanilla Bees do. Keeps them from falling out of the skies and doing predictive movement.",
   "type": "object",
   "additionalProperties": false,
   "properties": {
@@ -36,11 +36,7 @@
       "items": {
         "title": "Block",
         "description": "Tells the pathfinder which blocks to avoid when creating a path",
-        "$comment": "UNDOCUMENTED",
-        "oneOf": [
-          { "type": "string", "$ref": "../../../../general/block/identifier.json" },
-          { "type": "object", "title": "Block To Avoid", "properties": { "name": { "$ref": "../../../../general/block/identifier.json" } } }
-        ]
+        "$ref": "../../../../general/block/identifier.json"
       }
     },
     "can_breach": {

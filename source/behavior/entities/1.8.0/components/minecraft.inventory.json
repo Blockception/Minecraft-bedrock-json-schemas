@@ -1,10 +1,10 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.inventory",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.inventory",
   "description": "Defines this entity's inventory properties.",
   "type": "object",
-  "title": "Inventory 1.8.0",
+  "title": "Inventory 1.16.0",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
     "additional_slots_per_strength": {
       "type": "integer",
@@ -22,8 +22,8 @@
       "type": "string",
       "default": "none",
       "description": "Type of container this entity has. Can be horse, minecart_chest, minecart_hopper, inventory, container or hopper",
-      "enum": ["horse", "minecart_chest", "minecart_hopper", "inventory", "container", "hopper"],
-      "title": "Container Type"
+      "title": "Container Type",
+      "enum": ["horse", "minecart_chest", "minecart_hopper", "inventory", "container", "hopper"]
     },
     "inventory_size": { "type": "integer", "default": 5, "description": "Number of slots the container has", "title": "Inventory Size" },
     "private": { "type": "boolean", "default": false, "description": "If true, only the entity can access the inventory", "title": "Private" },

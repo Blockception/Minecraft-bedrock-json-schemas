@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.12.0.minecraft.explode",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.explode",
   "type": "object",
-  "title": "Explode 1.12.0",
+  "title": "Explode 1.16.0",
   "additionalProperties": false,
   "description": "Defines how the entity explodes.",
 
@@ -34,24 +34,7 @@
       "default": [0.0, 0.0],
       "description": "The range for the random amount of time the fuse will be lit before exploding, a negative value means the explosion will be immediate.",
       "title": "Fuse Length",
-      "oneOf": [
-        {
-          "type": "array",
-          "items": [
-            { "type": "number", "title": "Minimum" },
-            { "type": "number", "title": "Maximum" }
-          ]
-        },
-        { "type": "number" },
-        {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "range_min": { "type": "number", "description": "Minimum", "title": "Minimum" },
-            "range_max": { "type": "number", "description": "Maximumm", "title": "Maximumm" }
-          }
-        }
-      ]
+      "oneOf": [{ "type": "array", "items": [{ "type": "number" }, { "type": "number" }] }, { "type": "number" }]
     },
     "fuse_lit": {
       "type": "boolean",

@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.13.0.minecraft.breedable",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.breedable",
   "type": "object",
-  "title": "Breedable 1.13.0",
+  "title": "Breedable 1.16.0",
   "additionalProperties": false,
   "description": "Defines the way an entity can get into the `love` state.",
   "definitions": {
@@ -15,6 +15,41 @@
         "breed_event": { "$ref": "../types/event.json", "description": "Event to run when this entity breeds.", "title": "Breed Event" },
         "mate_type": { "type": "string", "description": "The entity definition of this entity's mate.", "title": "Mate Type" }
       }
+    },
+    "enviroment_requirements": {
+      "type": "object",
+      "description": "A nearby block requirements to get the entity into the `love` state.",
+      "properties": {
+        "blocks": {
+          "description": "The block types required nearby for the entity to breed.",
+          "title": "Blocks",
+          "oneOf": [
+            {
+              "type": "array",
+              "items": {
+                "description": "A block type required nearby for the entity to breed.",
+                "type": "string",
+                "$ref": "../../../../general/blocks_item.json",
+                "title": "Blocks"
+              }
+            },
+            {
+              "description": "A block type required nearby for the entity to breed.",
+              "type": "string",
+              "$ref": "../../../../general/blocks_item.json",
+              "title": "Blocks"
+            }
+          ]
+        },
+        "count": { "type": "number", "description": "The number of the required block types nearby for the entity to breed.", "title": "Count" },
+        "radius": {
+          "type": "number",
+          "description": "How many blocks radius from the mob's center to search in for the required blocks. Bounded between 0 and 16.",
+          "minimum": 0,
+          "title": "Radius"
+        }
+      },
+      "title": "Environment Requirements"
     }
   },
 
@@ -35,15 +70,26 @@
     "breed_items": {
       "description": "The list of items that can be used to get the entity into the `love` state",
       "title": "Breed Items",
-      "oneOf": [{ "type": "array", "items": { "type": "string" } }, { "type": "string" }]
+      "oneOf": [
+        {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "An item that can be used to get the entity into the `love` state",
+            "$ref": "../../../../general/item/identifier.json",
+            "title": "Breed Item"
+          }
+        },
+        { "type": "string", "$ref": "../../../../general/item/identifier.json" }
+      ]
     },
     "breeds_with": {
       "description": "The list of entity definitions that this entity can breed with.",
+      "title": "Breeds With",
       "oneOf": [
         { "type": "object", "$ref": "#/definitions/breeds_with_spec" },
         { "uniqueItems": true, "type": "array", "items": { "type": "object", "$ref": "#/definitions/breeds_with_spec" } }
-      ],
-      "title": "Breeds With"
+      ]
     },
     "deny_parents_variant": {
       "type": "object",
@@ -57,33 +103,11 @@
       "title": "Deny Parents Variant"
     },
     "environment_requirements": {
-      "type": "array",
       "description": "The list of nearby block requirements to get the entity into the `love` state.",
-      "items": {
-        "type": "object",
-        "description": "A nearby block requirements to get the entity into the `love` state.",
-        "properties": {
-          "blocks": {
-            "type": "array",
-            "description": "The block types required nearby for the entity to breed.",
-            "items": {
-              "description": "A block type required nearby for the entity to breed.",
-              "type": "string",
-              "$ref": "../../../../general/blocks_item.json",
-              "title": "Blocks"
-            },
-            "title": "Blocks"
-          },
-          "count": { "type": "number", "description": "The number of the required block types nearby for the entity to breed.", "title": "Count" },
-          "radius": {
-            "type": "number",
-            "description": "How many blocks radius from the mob's center to search in for the required blocks. Bounded between 0 and 16.",
-            "minimum": 0,
-            "title": "Radius"
-          }
-        },
-        "title": "Environment Requirements"
-      },
+      "oneOf": [
+        { "type": "object", "$ref": "#/definitions/enviroment_requirements" },
+        { "type": "array", "items": { "$ref": "#/definitions/enviroment_requirements" } }
+      ],
       "title": "Environment Requirements"
     },
     "extra_baby_chance": {
@@ -154,6 +178,11 @@
       "default": true,
       "description": "If true, the entities need to be tamed first before they can breed.",
       "title": "Require Tame"
+    },
+    "transform_to_item": {
+      "type": "string",
+      "title": "Transform To Item",
+      "description": "The feed item used will transform to this item upon successful interaction. Format: itemName:auxValue"
     }
   }
 }

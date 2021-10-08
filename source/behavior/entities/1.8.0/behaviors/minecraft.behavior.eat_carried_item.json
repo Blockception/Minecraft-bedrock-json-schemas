@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.eat_carried_item",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.eat_carried_item",
   "type": "object",
-  "title": "Eat Carried Item 1.8.0",
+  "title": "Eat Carried Item 1.16.0",
   "description": "If the mob is carrying a food item, the mob will eat it and the effects will be applied to the mob.",
   "additionalProperties": false,
   "properties": {

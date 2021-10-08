@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.instant_despawn",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.instant_despawn",
   "type": "object",
-  "title": "Instant Despawn 1.8.0",
+  "title": "Instant Despawn 1.16.0",
   "description": "Despawns the Actor immediately.",
   "additionalProperties": false,
   "properties": {

@@ -1,10 +1,10 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.stalk_and_pounce_on_target",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.stalk_and_pounce_on_target",
   "description": "Allows the mob to stay at a certain level when in liquid.",
   "type": "object",
-  "title": "Stalk And Pounce On Target 1.8.0",
+  "title": "Stalk And Pounce On Target 1.16.0",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "interest_time": {
@@ -55,6 +55,8 @@
       "default": 2,
       "description": "The amount of time the mob will be stuck if they fail and land on a block they can be stuck on",
       "title": "Stuck Time"
-    }
+    },
+    "leap_dist": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Leap Dist" },
+    "stuck_blocks": { "$ref": "../../filters/filters.json", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Stuck Block" }
   }
 }

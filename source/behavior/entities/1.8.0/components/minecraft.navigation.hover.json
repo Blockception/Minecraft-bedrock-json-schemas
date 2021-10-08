@@ -1,6 +1,6 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.navigation.hover",
-  "title": "Navigation.hover 1.8.0",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.navigation.hover",
+  "title": "Navigation.hover 1.16.0",
   "description": "Allows this entity to generate paths in the air like the vanilla Bees do. Keeps them from falling out of the skies and doing predictive movement.",
   "type": "object",
   "additionalProperties": false,

@@ -1,53 +1,44 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.13.0.minecraft.ageable",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.ageable",
   "type": "object",
-  "title": "Ageable 1.13.0",
+  "title": "Ageable 1.16.0",
   "description": "Adds a timer for the entity to grow up. It can be accelerated by giving the entity the items it likes as defined by feedItems.",
   "additionalProperties": false,
   "properties": {
+    "drop_items": {
+      "description": "List of items that the entity drops when it grows up.",
+      "oneOf": [
+        { "type": "array", "items": { "$ref": "../../../../general/item/identifier.json" } },
+        { "type": "string", "$ref": "../../../../general/item/identifier.json" }
+      ],
+      "title": "Drop Items"
+    },
     "duration": {
       "type": "number",
-      "default": 1200.0,
+      "default": 1200,
       "description": "Amount of time before the entity grows up, -1 for always a baby.",
       "title": "Duration"
     },
     "feed_items": {
       "description": "List of items that can be fed to the entity. Includes `item` for the item name and `growth` to define how much time it grows up by",
-      "title": "Feed Items",
-      "type": "array",
-      "items": {
-        "title": "Feed Item",
-        "description": "An item that can be fed to the entity. Includes 'item' for the item name and 'growth' to define how much time it grows up by",
-        "oneOf": [
-          {
-            "type": "object",
-            "properties": {
-              "item": {
-                "type": "string",
-                "description": "The item name that can be used to feed",
-                "title": "Item",
-                "$ref": "../../../../general/item/identifier.json"
-              },
-              "growth": { "type": "integer", "description": "The amount that counts for aging", "title": "Growth" }
-            }
-          },
-          { "type": "string", "$ref": "../../../../general/item/identifier.json" }
-        ]
-      }
-    },
-    "drop_items": {
-      "type": "array",
-      "description": "List of items that the entity drops when it grows up.",
-      "items": { "type": "string", "description": "Item names", "title": "Drop Items", "$ref": "../../../../general/item/identifier.json" },
-      "title": "Drop Items"
-    },
-    "grow_up": {
-      "description": "Event to run when this entity grows up",
-      "title": "Grow Up",
       "oneOf": [
-        { "type": "string" },
-        { "type": "object", "properties": { "event": { "type": "string" }, "target": { "$ref": "../../filters/filters/types/subject.json" } } }
-      ]
+        { "type": "array", "items": { "$ref": "../../../../general/item/identifier.json" } },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": { "growth": { "type": "number" }, "item": { "$ref": "../../../../general/item/identifier.json" } }
+          }
+        },
+        { "type": "string", "$ref": "../../../../general/item/identifier.json" }
+      ],
+      "title": "Feed Items"
+    },
+    "grow_up": { "$ref": "../types/event.json", "description": "Event to run when this entity grows up.", "title": "Grow up" },
+    "transform_to_item": {
+      "type": "string",
+      "title": "Transform to item",
+      "description": "The feed item used will transform to this item upon successful interaction. Format: itemName:auxValue"
     }
   }
 }

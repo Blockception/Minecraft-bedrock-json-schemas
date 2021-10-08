@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.hold_ground",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.hold_ground",
   "type": "object",
-  "title": "Hold Ground 1.8.0",
+  "title": "Hold Ground 1.16.0",
   "description": "The mob freezes and looks at the mob they are targeting.",
   "additionalProperties": false,
   "properties": {

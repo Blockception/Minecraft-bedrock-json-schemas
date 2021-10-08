@@ -1,9 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.13.0.priority",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.priority",
   "additionalProperties": false,
   "type": "integer",
   "title": "Priority",
   "minimum": 0,
-  "default": 8,
   "description": "Allows the mob to drink potions based on specified environment conditions."
 }

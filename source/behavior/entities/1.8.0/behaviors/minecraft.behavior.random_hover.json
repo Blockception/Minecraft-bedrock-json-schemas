@@ -1,10 +1,10 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.random_hover",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.random_hover",
   "description": "Allows the mob to hover around randomly, close to the surface",
   "type": "object",
-  "title": "Random Hover 1.8.0",
+  "title": "Random Hover 1.16.0",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },

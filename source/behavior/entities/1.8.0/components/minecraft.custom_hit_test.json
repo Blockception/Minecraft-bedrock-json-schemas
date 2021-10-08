@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.custom_hit_test",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.custom_hit_test",
   "type": "object",
-  "title": "Custom Hit Test 1.8.0",
-  "description": "Defines a list of hitboxes for melee and ranged hits against the entity.",
+  "title": "Custom Hit Test 1.16.0",
+  "description": "List of hitboxes for melee and ranged hits against the entity.",
   "additionalProperties": false,
   "properties": {
     "hitboxes": {
@@ -14,17 +14,16 @@
         "title": "Hitbox",
         "description": "Defines a hitbox size and pivot to test against.",
         "additionalProperties": false,
-        "required": ["width", "height", "pivot"],
         "properties": {
           "width": {
             "type": "number",
             "title": "Width",
-            "description": "Width and Depth of the hitbox in blocks. A negative value will be assumed to be 0."
+            "description": "Height of the hitbox in blocks. A negative value will be assumed to be 0."
           },
           "height": {
             "type": "number",
             "title": "Height",
-            "description": "Height of the hitbox in blocks. A negative value will be assumed to be 0."
+            "description": "Width and Depth of the hitbox in blocks. A negative value will be assumed to be 0."
           },
           "pivot": {
             "type": "array",

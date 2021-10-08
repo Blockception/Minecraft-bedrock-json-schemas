@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.nap",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.nap",
   "type": "object",
-  "title": "Nap 1.8.0",
+  "title": "Nap 1.16.0",
   "description": "Allows the mob to move back into lava when on land.",
   "additionalProperties": false,
   "properties": {
@@ -30,6 +30,18 @@
       "default": 6,
       "description": "The block distance in y that will be checked for mobs that this mob detects",
       "title": "Mob Detect Height"
+    },
+    "can_nap_filters": {
+      "$ref": "../../filters/filters.json",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "title": "Can Nap Filters"
+    },
+    "wake_mob_exceptions": {
+      "$ref": "../../filters/filters.json",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "title": "Wake Mob Exceptions"
     }
   }
 }

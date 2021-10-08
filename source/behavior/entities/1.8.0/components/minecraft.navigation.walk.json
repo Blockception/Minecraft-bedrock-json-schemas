@@ -1,6 +1,6 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.13.0.minecraft.navigation.walk",
-  "title": "Navigation.walk 1.13.0",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.navigation.walk",
+  "title": "Navigation.walk",
   "description": "Allows this entity to generate paths by walking around and jumping up and down a block like regular mobs.",
   "type": "object",
   "additionalProperties": false,
@@ -36,11 +36,7 @@
       "items": {
         "title": "Block",
         "description": "Tells the pathfinder which blocks to avoid when creating a path",
-        "$comment": "UNDOCUMENTED",
-        "oneOf": [
-          { "type": "string", "$ref": "../../../../general/block/identifier.json" },
-          { "type": "object", "title": "Block To Avoid", "properties": { "name": { "$ref": "../../../../general/block/identifier.json" } } }
-        ]
+        "$ref": "../../../../general/block/identifier.json"
       }
     },
     "can_breach": {

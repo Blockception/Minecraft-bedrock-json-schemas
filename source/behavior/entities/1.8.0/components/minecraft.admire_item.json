@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.admire_item",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.admire_item",
   "type": "object",
-  "title": "Admire Item 1.8.0",
+  "title": "Admire Item 1.16.0",
   "description": "Causes the mob to ignore attackable targets for a given duration.",
   "additionalProperties": false,
   "properties": {

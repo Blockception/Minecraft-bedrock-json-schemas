@@ -1,10 +1,9 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.movement.sway",
-  "description": "Causes the mob to sway side to side giving the impression it is swimming.",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.movement.sway",
+  "title": "Movement.sway 1.16.0",
+  "description": "This move control causes the mob to sway side to side giving the impression it is swimming.",
   "type": "object",
-  "title": "Movement.sway 1.8.0",
   "additionalProperties": false,
-  "required": [],
   "properties": {
     "max_turn": {
       "type": "number",

@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.grows_crop",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.grows_crop",
   "type": "object",
-  "title": "Grows Crop 1.8.0",
+  "title": "Grows Crop 1.16.0",
   "description": "Could increase crop growth when entity walks over crop.",
   "additionalProperties": false,
   "properties": {

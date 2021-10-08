@@ -1,16 +1,25 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.scheduler",
-  "description": "Fires off scheduled mob events at time of day events.",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.scheduler",
+  "description": "fires off scheduled mob events at time of day events.",
   "type": "object",
-  "title": "Scheduler 1.8.0",
+  "title": "Scheduler 1.16.0",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
-    "scheduled_event": {
+    "min_delay_secs": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Minimum Delay Secs", "minimum": 0 },
+    "max_delay_secs": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Maximum Delay Secs", "minimum": 0 },
+    "scheduled_events": {
       "type": "array",
-      "description": "The list of triggers that fire when the conditions match the given filter criteria. If any filter criteria overlap the first defined event will be picked",
-      "items": { "type": "object", "description": "UNKNOWN STRUCTURE" },
-      "title": "Scheduled Event"
+      "description": "The list of triggers that fire when the conditions match the given filter criteria. If any filter criteria overlap the first defined event will be picked.",
+      "title": "Scheduled Events",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "description": "UNDOCUMENTED",
+        "$comment": "UNDOCUMENTED",
+        "title": "Scheduled Events",
+        "properties": { "filters": { "$ref": "../../filters/filters.json" }, "event": { "$ref": "../types/event.json" } }
+      }
     }
   }
 }

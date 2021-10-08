@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.hurt_on_condition",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.hurt_on_condition",
   "type": "object",
-  "title": "Hurt On Condition 1.8.0",
+  "title": "Hurt On Condition 1.16.0",
   "description": "Defines a set of conditions under which an entity should take damage.",
   "additionalProperties": false,
   "properties": {

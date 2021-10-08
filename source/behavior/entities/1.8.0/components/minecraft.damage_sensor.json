@@ -1,6 +1,6 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.13.0.minecraft.damage_sensor",
-  "title": "Damage Sensor 1.13.0",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.damage_sensor",
+  "title": "Damage Sensor",
   "description": "Defines what events to call when this entity is damaged by specific entities or items.",
   "type": "object",
   "additionalProperties": false,
@@ -30,18 +30,10 @@
           "type": "object",
           "description": "Specifies filters for entity definitions and events.",
           "title": "On Damage",
-          "properties": {
-            "filters": { "$ref": "../../filters/filters.json" },
-            "event": { "type": "string", "pattern": "^.*$", "description": "Defines what event to run", "title": "Event" },
-            "target": {
-              "$ref": "../../filters/filters/types/subject.json",
-              "description": "filters to use to define specific tests",
-              "title": "Target"
-            }
-          }
+          "$ref": "../types/trigger.json"
         },
         "on_damage_sound_event": {
-          "$ref": "../../1.8.0/types/event.json",
+          "type": "string",
           "description": "Defines what sound to play, if any, when the on_damage filters are met.",
           "title": "On Damage Sound Event"
         }
@@ -50,7 +42,7 @@
   },
   "properties": {
     "triggers": {
-      "description": "The list of triggers with the events to call when taking specific kinds of damage.",
+      "description": "The list of triggers that fire when the environment conditions match the given filter criteria.",
       "title": "Triggers",
       "oneOf": [
         { "type": "array", "items": { "$ref": "#/definitions/trigger" } },

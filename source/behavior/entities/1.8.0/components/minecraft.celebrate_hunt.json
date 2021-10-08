@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.celebrate_hunt",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.celebrate_hunt",
   "type": "object",
-  "title": "Celebrate Hunt 1.8.0",
+  "title": "Celebrate Hunt 1.16.0",
   "description": "Specifies hunt celebration behavior.",
   "additionalProperties": false,
   "properties": {
@@ -11,7 +11,7 @@
       "description": "If true, celebration will be broadcasted to other entities in the radius.",
       "title": "Broadcast"
     },
-    "celeberation_targets": {
+    "celebration_targets": {
       "$ref": "../../filters/filters.json",
       "description": "The list of conditions that target of hunt must satisfy to initiate celebration.",
       "title": "Celeberation Targets"
@@ -41,7 +41,23 @@
             { "type": "number", "title": "Maximum" }
           ]
         },
-        { "type": "number" }
+        { "type": "number" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "range_min": {
+              "type": "number",
+              "title": "Minimum",
+              "description": "Minimum"
+            },
+            "range_max": {
+              "type": "number",
+              "title": "Maximum",
+              "description": "Maximum"
+            }
+          }
+        }
       ]
     }
   }

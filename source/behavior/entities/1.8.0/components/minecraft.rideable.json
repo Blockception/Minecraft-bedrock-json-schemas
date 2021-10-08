@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.13.0.minecraft.rideable",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.rideable",
   "description": "Determines whether this entity can be ridden. Allows specifying the different seat positions and quantity.",
   "type": "object",
-  "title": "Rideable 1.13.0",
+  "title": "Rideable 1.16.0",
   "additionalProperties": false,
   "definitions": {
     "seats_spec": {
@@ -35,7 +35,6 @@
   },
 
   "properties": {
-    "priority": { "$ref": "types/priority.json" },
     "controlling_seat": {
       "type": "integer",
       "default": 0,
@@ -50,7 +49,7 @@
     },
     "family_types": {
       "type": "array",
-      "items": { "type": "string", "title": "Family Type", "description": "The entity that can ride this entity" },
+      "items": { "type": "string" },
       "description": "List of entities that can ride this entity",
       "title": "Family Types"
     },
@@ -80,11 +79,11 @@
     },
     "seats": {
       "description": "The list of positions and number of riders for each position for entities riding this entity",
+      "title": "Seats",
       "oneOf": [
         { "type": "object", "$ref": "#/definitions/seats_spec" },
         { "type": "array", "items": { "$ref": "#/definitions/seats_spec" } }
-      ],
-      "title": "Seats"
+      ]
     }
   }
 }

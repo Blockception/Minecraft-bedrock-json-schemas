@@ -1,18 +1,23 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.drop_item_for",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.drop_item_for",
   "additionalProperties": false,
+  "description": "Allows the mob to move near a target and drop an item.",
+  "title": "Drop Item For 1.16.0",
   "type": "object",
-  "title": "Drop Item For 1.8.0",
-  "description": "Allows the mob to drink potions based on specified environment conditions.",
   "properties": {
-    "priority": { "$ref": "./types/priority.json" },
-    "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },
-    "entity_types": { "$ref": "../types/entity_types.json" },
+    "priority": { "$ref": "types/priority.json" },
+    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "cooldown": { "title": "Cooldown", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" },
     "drop_item_chance": {
       "type": "number",
-      "default": 1.0,
+      "default": [1.0],
       "description": "The probability that the mob will drop an item.",
       "title": "Drop Item Chance"
+    },
+    "entity_types": {
+      "description": "List of entity types this mob will drop items for.",
+      "title": "Entity Types",
+      "$ref": "../types/entity_types.json"
     },
     "goal_radius": {
       "type": "number",
@@ -20,15 +25,28 @@
       "description": "Distance in blocks within the mob considers it has reached the goal. This is the `wiggle room` to stop the AI from bouncing back and forth trying to reach a specific spot",
       "title": "Goal Radius"
     },
-    "loot_table": { "type": "string", "description": "Loot table to select items from.", "title": "Loot Table" },
+    "loot_table": { "type": "string", "pattern": "^loot_tables.*\\.json$", "description": "Loot table to select items from.", "title": "Loot Table" },
     "max_dist": {
       "type": "number",
+      "default": 0,
       "description": "Maximum distance in blocks this mob will look for entities to drop an item for.",
-      "title": "Maximum Distance"
+      "title": "Maximum Dist"
+    },
+    "minimum_teleport_distance": {
+      "title": "Minimum Teleport Distance",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "type": "number"
+    },
+    "max_head_look_at_height": {
+      "title": "Maximum Head Look At Height",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "type": "number"
     },
     "offering_distance": {
       "type": "number",
-      "default": 1.0,
+      "default": [1.0],
       "description": "The distance in blocks the mob will try to be away from the entity when it drops the item.",
       "title": "Offering Distance"
     },
@@ -37,6 +55,8 @@
       "description": "Event to run when this mob attempts to drop an item.",
       "title": "On Drop Attempt"
     },
+    "seconds_before_pickup": { "title": "Seconds Before Pickup", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" },
+    "search_count": { "type": "integer", "default": 1, "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Search Height" },
     "search_height": { "type": "integer", "default": 1, "description": "Height in blocks from the target the mob can be.", "title": "Search Height" },
     "search_range": {
       "type": "integer",
@@ -44,11 +64,29 @@
       "description": "The distance in blocks from the target the mob can be.",
       "title": "Search Range"
     },
+    "target_range": {
+      "title": "Target Range",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "type": "array",
+      "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
+    },
+    "teleport_offset": {
+      "title": "Teleport Offset",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "type": "array",
+      "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
+    },
     "time_of_day_range": {
-      "$ref": "../types/range_number_type.json",
       "default": [0.0, 1.0],
       "description": "The valid times of day that this goal can be used. For reference: noon is 0.0, sunset is 0.25, midnight is 0.5, and sunrise is 0.75, and back to noon for 1.0.",
-      "title": "Time Of Day Range"
+      "title": "Time Of Day Range",
+      "type": "array",
+      "items": [
+        { "type": "number", "minimum": 0, "maximum": 1 },
+        { "type": "number", "minimum": 0, "maximum": 1 }
+      ]
     }
   }
 }

@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.flocking",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.flocking",
   "type": "object",
-  "title": "Flocking 1.8.0",
+  "title": "Flocking 1.16.0",
   "description": "Allows entities to flock in groups in water or not.",
   "additionalProperties": false,
   "properties": {

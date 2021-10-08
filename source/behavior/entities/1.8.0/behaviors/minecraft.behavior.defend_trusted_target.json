@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.defend_trusted_target",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.defend_trusted_target",
   "type": "object",
-  "title": "Defend Trusted Target 1.8.0",
+  "title": "Defend Trusted Target 1.16.0",
   "description": "Allows the mob to target another mob that hurts an entity it trusts.",
   "additionalProperties": false,
   "properties": {

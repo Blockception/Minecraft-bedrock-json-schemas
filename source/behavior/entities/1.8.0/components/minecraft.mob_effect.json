@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.mob_effect",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.mob_effect",
   "type": "object",
-  "title": "Mob Effect 1.8.0",
-  "description": "Applies a mob effect to entities that get within range.",
+  "title": "Mob Effect 1.16.0",
+  "description": "A component that applies a mob effect to entities that get within range.",
   "additionalProperties": false,
   "properties": {
     "effect_range": {

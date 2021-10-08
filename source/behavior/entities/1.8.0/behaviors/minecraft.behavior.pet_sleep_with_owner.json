@@ -1,10 +1,10 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.pet_sleep_with_owner",
-  "description": "Allows the pet mob to move onto a bed with it's owner while sleeping.",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.pet_sleep_with_owner",
+  "description": "Allows the mob to be tempted by food they like.",
   "type": "object",
-  "title": "Pet Sleep With Owner 1.8.0",
+  "title": "Tempt 1.16.0",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
@@ -25,6 +25,7 @@
       "default": 0,
       "description": "The distance in blocks from the owner the pet can be to sleep with owner.",
       "title": "Search Range"
-    }
+    },
+    "search_radius": { "type": "integer", "default": 0, "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Search Radius" }
   }
 }

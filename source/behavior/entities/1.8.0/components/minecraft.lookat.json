@@ -1,12 +1,18 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.lookat",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.lookat",
   "description": "Defines the behavior when another entity looks at this entity.",
   "type": "object",
-  "title": "Lookat 1.8.0",
+  "title": "Lookat 1.16.0",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
-    "filters": { "$ref": "../../filters/filters.json", "description": "Defines the entities that can trigger this component" },
+    "allow_invulnerable": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, invulnerable entities (e.g. Players in creative mode) are considered valid targets.",
+      "title": "Allow Invulnerable"
+    },
+    "filters": { "$ref": "../../filters/filters.json", "description": "Defines the entities that can trigger this component", "title": "Filters" },
     "look_cooldown": {
       "$ref": "../types/range_number_type.json",
       "default": [0.0, 0.0],
@@ -18,22 +24,16 @@
       "title": "Look Event",
       "$ref": "../types/event.json"
     },
-    "AllowInvulnerable": {
-      "type": "boolean",
-      "default": false,
-      "description": "If true, invulnerable entities (e.g. Players in creative mode) are considered valid targets",
-      "title": "Allow Invulnerable"
-    },
-    "searchRadius": {
+    "search_radius": {
       "type": "number",
       "default": 10,
-      "description": "Maximum distance this entity will look for another entity looking at it",
+      "description": "Maximum distance this entity will look for another entity looking at it.",
       "title": "Search Radius"
     },
-    "setTarget": {
+    "set_target": {
       "type": "boolean",
       "default": true,
-      "description": "If true, this entity will set the attack target as the entity that looked at it",
+      "description": "If true, this entity will set the attack target as the entity that looked at it.",
       "title": "Set Target"
     }
   }

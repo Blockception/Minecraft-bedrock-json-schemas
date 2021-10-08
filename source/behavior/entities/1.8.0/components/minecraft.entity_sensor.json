@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.entity_sensor",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.entity_sensor",
   "type": "object",
-  "title": "Entity Sensor 1.8.0",
+  "title": "Entity Sensor 1.16.0",
   "description": "A component that fires an event when a set of conditions are met by other entities within the defined range.",
   "additionalProperties": false,
   "properties": {

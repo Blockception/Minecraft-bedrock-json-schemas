@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.move_towards_home_restriction",
+  "type": "object",
+  "title": "Move Towards Home Restriction 1.16.0",
+  "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
+  "additionalProperties": false,
+  "properties": { "priority": { "$ref": "types/priority.json" }, "speed_multiplier": { "$ref": "types/speed_multiplier.json" } }
+}

@@ -1,13 +1,12 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.knockback_roar",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.knockback_roar",
   "description": "Allows the mob to perform a damaging knockback that affects all nearby entities.",
   "type": "object",
-  "title": "Knockback Roar 1.8.0",
+  "title": "Knockback Roar 1.16.0",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
-    "trigger": { "$ref": "../types/trigger.json" },
     "attack_time": {
       "type": "number",
       "default": 0.5,
@@ -55,6 +54,22 @@
       "default": false,
       "description": "If true, this mob will chase after the target as long as it's a valid target",
       "title": "Track Target"
+    },
+    "knockback_strength": { "type": "integer", "default": 4, "description": "The strength of the knockback.", "title": "Knockback Strength" },
+    "knockback_filters": {
+      "$ref": "../../filters/filters.json",
+      "description": "filters to use to decide what is affected by knockback roar.",
+      "title": "Knockback Filters"
+    },
+    "damage_filters": {
+      "$ref": "../../filters/filters.json",
+      "description": "filters to use to decide what is damaged by knockback roar.",
+      "title": "Damage Filters"
+    },
+    "on_roar_end": {
+      "$ref": "../types/event.json",
+      "description": "Event to run when knockback roar has finished.",
+      "title": "On Roar End"
     }
   }
 }

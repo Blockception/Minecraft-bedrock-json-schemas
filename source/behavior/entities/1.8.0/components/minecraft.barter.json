@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.barter",
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.barter",
   "type": "object",
-  "title": "Barter 1.8.0",
+  "title": "Barter 1.16.0",
   "description": "Enables the component to drop an item as a barter exchange.",
   "additionalProperties": false,
   "properties": {
