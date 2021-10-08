@@ -10,7 +10,7 @@
     "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },
     "damage_sources": {
       "type": "array",
-      "items": { "$ref": "../../../../general/entity_damage.json" },
+      "items": { "$ref": "../../../../general/entity/damage_source.json" },
       "default": [["all"]],
       "description": "The list of Entity Damage Sources that will cause this mob to panic",
       "title": "Damage Sources"

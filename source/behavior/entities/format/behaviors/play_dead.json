@@ -38,12 +38,12 @@
       "title": "Damage Sources",
       "description": "The list of Entity Damage Sources that will cause this mob to start playing dead.",
       "oneOf": [
-        { "type": "string", "$ref": "../../../../general/entity_damage.json" },
+        { "type": "string", "$ref": "../../../../general/entity/damage_source.json" },
         {
           "type": "array",
           "items": {
             "title": "Damage Source",
-            "$ref": "../../../../general/entity_damage.json"
+            "$ref": "../../../../general/entity/damage_source.json"
           }
         }
       ]
