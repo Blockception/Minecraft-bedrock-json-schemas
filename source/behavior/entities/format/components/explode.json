@@ -4,7 +4,6 @@
   "title": "Explode",
   "additionalProperties": false,
   "description": "Defines how the entity explodes.",
-
   "properties": {
     "breaks_blocks": {
       "type": "boolean",
@@ -44,7 +43,6 @@
     },
     "max_resistance": {
       "type": "number",
-      "default":,
       "description": "A blocks explosion resistance will be capped at this value when an explosion occurs.",
       "title": "Maximum Resistance"
     },

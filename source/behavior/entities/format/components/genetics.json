@@ -34,7 +34,7 @@
   "properties": {
     "mutation_rate": {
       "type": "number",
-      "default":,
+
       "description": "Chance that an allele will be replaced with a random one instead of the parent's allele during birth.",
       "title": "Mutation Rate"
     },
