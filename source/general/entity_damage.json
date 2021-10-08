@@ -2,8 +2,7 @@
   "$id": "blockception.minecraft.general.1.8.0.entity.damage",
   "type": "string",
   "title": "Entity Damage Name",
-  "description": "UNDOCUMENTED",
-  "$comment": "UNDOCUMENTED",
+  "description": "The type of damage that is received",
   "enum": [
     "all",
     "anvil",
@@ -14,6 +13,7 @@
     "entity_attack",
     "entity_explosion",
     "fall",
+    "fatal",
     "falling_block",
     "fire",
     "fire_tick",
