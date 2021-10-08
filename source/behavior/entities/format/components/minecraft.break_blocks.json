@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.break_blocks",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.break_blocks",
   "type": "object",
-  "title": "Break Blocks 1.8.0",
+  "title": "Break Blocks",
   "additionalProperties": false,
   "description": "Specifies the blocks that this entity can break as it moves around.",
   "required": [],

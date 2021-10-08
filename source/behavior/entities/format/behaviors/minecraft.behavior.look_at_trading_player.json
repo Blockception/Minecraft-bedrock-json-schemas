@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.look_at_trading_player",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.look_at_trading_player",
   "type": "object",
-  "title": "Look At Trading Player 1.8.0",
+  "title": "Look At Trading Player",
   "additionalProperties": false,
   "description": "Allows the mob to look at the player they are trading with.",
   "required": [],

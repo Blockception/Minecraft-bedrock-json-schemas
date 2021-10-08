@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.strength",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.strength",
   "description": "Defines the entity's strength to carry items.",
   "type": "object",
-  "title": "Strength 1.16.0",
+  "title": "Strength",
   "additionalProperties": false,
 
   "properties": {

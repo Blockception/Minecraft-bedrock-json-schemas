@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.is_illager_captain",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.is_illager_captain",
   "description": "Sets that this entity is an illager captain.",
   "type": "object",
-  "title": "Is Illager Captain 1.8.0",
+  "title": "Is Illager Captain",
   "additionalProperties": false,
   "required": [],
   "properties": {}

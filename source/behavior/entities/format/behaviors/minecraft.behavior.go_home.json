@@ -1,5 +1,5 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.go_home",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.go_home",
   "additionalProperties": false,
   "description": "Allows the mob to move back to the position they were spawned.",
   "title": "Go Home",

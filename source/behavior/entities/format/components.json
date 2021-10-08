@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.components.1.8.0",
+  "$id": "blockception.minecraft.behavior.entities.components",
   "additionalProperties": false,
   "type": "object",
-  "title": "Components 1.8.0",
+  "title": "Components",
   "description": "A collection of components",
   "required": [],
   "properties": {

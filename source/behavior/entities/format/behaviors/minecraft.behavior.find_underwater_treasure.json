@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.find_underwater_treasure",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.find_underwater_treasure",
   "type": "object",
-  "title": "Find Underwater Treasure 1.8.0",
+  "title": "Find Underwater Treasure",
   "description": "Allows the mob to move towards the nearest underwater ruin or shipwreck.",
   "additionalProperties": false,
   "required": [],

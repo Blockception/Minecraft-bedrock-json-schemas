@@ -1,5 +1,5 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.environment_sensor",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.environment_sensor",
   "title": "Environment Sensor",
   "description": "Creates a trigger based on environment conditions.",
   "type": "object",

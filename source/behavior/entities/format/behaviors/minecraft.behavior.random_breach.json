@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.player_ride_tamed",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.player_ride_tamed",
   "description": "Allows the mob to randomly break surface of the water.",
   "type": "object",
-  "title": "Player Ride Tamed 1.8.0",
+  "title": "Player Ride Tamed",
   "additionalProperties": false,
   "required": [],
   "properties": {

@@ -1,9 +1,9 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.sleep",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.sleep",
   "additionalProperties": false,
   "description": "Allows mobs that own a bed to in a village to move to and sleep in it.",
   "type": "object",
-  "title": "Sleep 1.8.0",
+  "title": "Sleep",
   "required": [],
   "properties": {
     "priority": { "$ref": "types/priority.json" },

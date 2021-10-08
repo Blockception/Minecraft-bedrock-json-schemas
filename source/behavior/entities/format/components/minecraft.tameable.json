@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.tameable",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.tameable",
   "type": "object",
-  "title": "Tameable 1.8.0",
+  "title": "Tameable",
   "description": "Defines the rules for a mob to be tamed by the player.",
   "required": [],
   "additionalProperties": false,

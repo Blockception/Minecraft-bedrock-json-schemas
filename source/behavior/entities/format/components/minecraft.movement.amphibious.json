@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.movement.amphibious",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.movement.amphibious",
   "type": "object",
-  "title": "Movement.amphibious 1.8.0",
+  "title": "Movement.amphibious",
   "additionalProperties": false,
   "required": [],
   "properties": {

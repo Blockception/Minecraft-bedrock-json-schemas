@@ -1,5 +1,5 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.out_of_control",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.out_of_control",
   "type": "object",
   "title": "Out Of Control",
   "additionalProperties": false,

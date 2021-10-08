@@ -1,9 +1,9 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.swim_idle",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.swim_idle",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "type": "object",
-  "title": "Swim Idle 1.16.0",
+  "title": "Swim Idle",
   "additionalProperties": false,
 
   "properties": {

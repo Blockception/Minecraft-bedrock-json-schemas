@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.harvest_farm_block",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.harvest_farm_block",
   "type": "object",
-  "title": "Harvest Farm Block 1.8.0",
+  "title": "Harvest Farm Block",
   "description": "Allows the villager to harvest nearby farms. Can only be used by Villagers.",
   "additionalProperties": false,
   "required": [],

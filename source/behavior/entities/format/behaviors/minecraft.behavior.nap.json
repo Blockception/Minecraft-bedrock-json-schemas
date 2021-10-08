@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.nap",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.nap",
   "type": "object",
-  "title": "Nap 1.16.0",
+  "title": "Nap",
   "description": "Allows the mob to move back into lava when on land.",
   "additionalProperties": false,
   "properties": {

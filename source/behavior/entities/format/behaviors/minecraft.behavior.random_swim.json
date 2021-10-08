@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.random_swim",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.random_swim",
   "type": "object",
-  "title": "Random Swim 1.8.0",
+  "title": "Random Swim",
   "description": "Allows an entity to randomly move through water",
   "required": [],
   "properties": {

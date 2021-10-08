@@ -1,9 +1,9 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.pickup_items",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.pickup_items",
   "description": "Allows the mob to pick up items on the ground.",
   "additionalProperties": false,
   "type": "object",
-  "title": "Pickup Items 1.16.0",
+  "title": "Pickup Items",
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },

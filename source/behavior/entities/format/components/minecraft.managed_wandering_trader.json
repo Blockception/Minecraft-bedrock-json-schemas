@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.managed_wandering_trader",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.managed_wandering_trader",
   "type": "object",
-  "title": "Managed Wandering Trader 1.8.0",
+  "title": "Managed Wandering Trader",
   "additionalProperties": false,
   "required": [],
   "properties": {},

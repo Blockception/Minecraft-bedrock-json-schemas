@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.block_sensor",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.block_sensor",
   "type": "object",
-  "title": "Block Sensor 1.16.0",
+  "title": "Block Sensor",
   "description": "Fires off a specified event when a block in the block list is broken within the sensor range.",
   "additionalProperties": false,
   "properties": {

@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.tempt",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.tempt",
   "description": "Allows the mob to be tempted by food they like.",
   "type": "object",
-  "title": "Tempt 1.16.0",
+  "title": "Tempt",
   "additionalProperties": false,
 
   "properties": {

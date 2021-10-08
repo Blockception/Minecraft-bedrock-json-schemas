@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.movement.glide",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.movement.glide",
   "type": "object",
-  "title": "Movement.glide 1.8.0",
+  "title": "Movement.glide",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "additionalProperties": false,

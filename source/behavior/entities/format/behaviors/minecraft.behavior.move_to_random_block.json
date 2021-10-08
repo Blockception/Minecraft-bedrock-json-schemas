@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.move_to_random_block",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.move_to_random_block",
   "type": "object",
-  "title": "Move To Random Block 1.8.0",
+  "title": "Move To Random Block",
   "description": "Allows mob to move towards a random block.",
   "additionalProperties": false,
   "required": [],

@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.economy_trade_table",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.economy_trade_table",
   "type": "object",
-  "title": "Economy Trade Table 1.8.0",
+  "title": "Economy Trade Table",
   "additionalProperties": false,
   "description": "Defines this entity's ability to trade with players.",
   "required": [],

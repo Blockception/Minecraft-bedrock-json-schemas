@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.knockback_resistance",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.knockback_resistance",
   "type": "object",
-  "title": "Knockback Resistance 1.8.0",
+  "title": "Knockback Resistance",
   "additionalProperties": false,
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",

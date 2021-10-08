@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.item_controllable",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.item_controllable",
   "description": "Efines what items can be used to control this entity while ridden",
   "type": "object",
-  "title": "Item Controllable 1.8.0",
+  "title": "Item Controllable",
   "additionalProperties": false,
   "required": [],
   "properties": {

@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.scale",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.scale",
   "type": "object",
-  "title": "Scale 1.8.0",
+  "title": "Scale",
   "additionalProperties": false,
   "description": "Sets the entity's visual size.",
   "required": [],

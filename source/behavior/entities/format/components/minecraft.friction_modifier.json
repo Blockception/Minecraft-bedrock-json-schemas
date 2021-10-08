@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.friction_modifier",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.friction_modifier",
   "type": "object",
-  "title": "Friction Modifier 1.8.0",
+  "title": "Friction Modifier",
   "additionalProperties": false,
   "description": "Defines how much does friction affect this entity.",
   "required": [],

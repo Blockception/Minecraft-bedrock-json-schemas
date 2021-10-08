@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.float_wander",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.float_wander",
   "type": "object",
-  "title": "Float Wander 1.8.0",
+  "title": "Float Wander",
   "description": "Allows the mob to float around like the Ghast.",
   "additionalProperties": false,
   "required": [],

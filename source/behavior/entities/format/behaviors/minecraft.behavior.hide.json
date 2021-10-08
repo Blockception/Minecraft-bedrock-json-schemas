@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.hide",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.hide",
   "type": "object",
-  "title": "Hide 1.8.0",
+  "title": "Hide",
   "additionalProperties": false,
   "description": "Allows a mob with the hide component to attempt to move to - and hide at - an owned or nearby POI.",
   "required": [],

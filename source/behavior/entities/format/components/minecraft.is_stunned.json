@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.is_stunned",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.is_stunned",
   "description": "Sets that this entity is currently stunned.",
   "type": "object",
-  "title": "Is Stunned 1.8.0",
+  "title": "Is Stunned",
   "additionalProperties": false,
   "required": [],
   "properties": {}

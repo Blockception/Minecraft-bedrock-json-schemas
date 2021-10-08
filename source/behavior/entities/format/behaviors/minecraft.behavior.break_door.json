@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.break_door",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.break_door",
   "type": "object",
-  "title": "Break Door 1.8.0",
+  "title": "Break Door",
   "description": "Allows this mob to break doors.",
   "required": [],
   "properties": { "priority": { "$ref": "types/priority.json" }, "speed_multiplier": { "$ref": "./types/speed_multiplier.json" } },

@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.damage_over_time",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.damage_over_time",
   "type": "object",
-  "title": "Damage Over Time 1.8.0",
+  "title": "Damage Over Time",
   "additionalProperties": false,
   "description": "Applies defined amount of damage to the entity at specified intervals.",
   "required": [],

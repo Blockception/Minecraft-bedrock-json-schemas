@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.nearest_prioritized_attackable_target",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.nearest_prioritized_attackable_target",
   "type": "object",
-  "title": "Nearest Prioritized Attackable Target 1.16.0",
+  "title": "Nearest Prioritized Attackable Target",
   "description": "Allows the mob to check for and pursue the nearest valid target.",
   "additionalProperties": false,
 

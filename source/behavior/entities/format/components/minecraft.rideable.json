@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.rideable",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.rideable",
   "description": "Determines whether this entity can be ridden. Allows specifying the different seat positions and quantity.",
   "type": "object",
-  "title": "Rideable 1.16.0",
+  "title": "Rideable",
   "additionalProperties": false,
   "definitions": {
     "seats_spec": {

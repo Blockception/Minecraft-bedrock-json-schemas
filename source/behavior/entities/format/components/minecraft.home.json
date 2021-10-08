@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.home",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.home",
   "type": "object",
-  "title": "Home 1.16.0",
+  "title": "Home",
   "description": "Saves a home pos for when the the entity is spawned.",
   "additionalProperties": false,
   "properties": {

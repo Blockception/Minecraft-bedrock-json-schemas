@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.default_look_angle",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.default_look_angle",
   "type": "object",
-  "title": "Default Look Angle 1.8.0",
+  "title": "Default Look Angle",
   "additionalProperties": false,
   "description": "Sets this entity's default head rotation angle.",
   "required": [],

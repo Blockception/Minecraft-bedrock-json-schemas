@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.look_at_entity",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.look_at_entity",
   "description": "Allows the mob to look at nearby entities.",
   "type": "object",
-  "title": "Look At Entity 1.8.0",
+  "title": "Look At Entity",
   "additionalProperties": false,
   "required": [],
   "properties": {

@@ -1,9 +1,9 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.wither_target_highest_damage",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.wither_target_highest_damage",
   "description": "Allows the wither to launch random attacks. Can only be used by the Wither Boss.",
   "additionalProperties": false,
   "type": "object",
-  "title": "Wither Target Highest Damage 1.8.0",
+  "title": "Wither Target Highest Damage",
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/priority.json" },

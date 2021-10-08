@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.celebrate_hunt",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.celebrate_hunt",
   "type": "object",
-  "title": "Celebrate Hunt 1.16.0",
+  "title": "Celebrate Hunt",
   "description": "Specifies hunt celebration behavior.",
   "additionalProperties": false,
   "properties": {

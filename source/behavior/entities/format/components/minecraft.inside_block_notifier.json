@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.inside_block_notifier",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.inside_block_notifier",
   "type": "object",
-  "title": "Inside Block Notifier 1.8.0",
+  "title": "Inside Block Notifier",
   "additionalProperties": false,
   "description": "Verifies whether the entity is inside any of the listed blocks.",
   "required": [],

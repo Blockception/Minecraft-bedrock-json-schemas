@@ -1,6 +1,6 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.type.entity_types.1.8.0",
-  "title": "Entity Types 1.8.0",
+  "$id": "blockception.minecraft.behavior.entities.type.entity_types",
+  "title": "Entity Types",
   "definitions": {
     "entity_definition": {
       "description": "The entity type",

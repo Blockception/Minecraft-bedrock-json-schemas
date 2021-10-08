@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.player.exhaustion",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.player.exhaustion",
   "additionalProperties": false,
   "type": "object",
-  "title": "Player.exhaustion 1.8.0",
+  "title": "Player.exhaustion",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "required": [],

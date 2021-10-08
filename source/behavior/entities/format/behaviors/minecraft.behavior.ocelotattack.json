@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.ocelotattack",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.ocelotattack",
   "type": "object",
-  "title": "Ocelotattack 1.8.0",
+  "title": "Ocelotattack",
   "additionalProperties": false,
   "description": "Can only be used by the Ocelot. Allows it to perform the sneak and pounce attack.",
   "required": [],

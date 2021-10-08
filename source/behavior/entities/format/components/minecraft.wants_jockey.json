@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.wants_jockey",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.wants_jockey",
   "description": "Sets that this entity wants to become a jockey.",
   "type": "object",
-  "title": "Wants Jockey 1.16.0",
+  "title": "Wants Jockey",
   "additionalProperties": false,
 
   "properties": {}

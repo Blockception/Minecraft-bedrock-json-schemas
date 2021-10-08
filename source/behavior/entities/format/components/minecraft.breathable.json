@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.breathable",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.breathable",
   "type": "object",
-  "title": "Breathable 1.8.0",
+  "title": "Breathable",
   "additionalProperties": false,
   "description": "Defines what blocks this entity can breathe in and gives them the ability to suffocate.",
   "required": [],

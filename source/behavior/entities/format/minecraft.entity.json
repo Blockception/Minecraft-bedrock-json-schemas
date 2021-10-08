@@ -1,6 +1,6 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.minecraft:entity.1.17.0",
-  "title": "Entity 1.17.0",
+  "$id": "blockception.minecraft.behavior.entities.minecraft:entity",
+  "title": "Entity",
   "required": ["description"],
   "dependencies": { "component_groups": ["events"] },
   "additionalProperties": false,
@@ -30,22 +30,26 @@
         "is_spawnable": {
           "type": "boolean",
           "title": "Is Spawnable",
-          "description": "Sets whether or not this entity has a spawn egg in the creative ui."
+          "description": "Sets whether or not this entity has a spawn egg in the creative ui.",
+          "default": false
         },
         "is_summonable": {
           "type": "boolean",
           "title": "Is Summonable Property",
-          "description": "Sets whether or not we can summon this entity using commands such as /summon."
+          "description": "Sets whether or not we can summon this entity using commands such as /summon.",
+          "default": true
         },
         "is_experimental": {
           "type": "boolean",
           "title": "Is Experimental",
-          "description": "Sets whether or not this entity is experimental. Experimental entities are only enabled when the experimental toggle is enabled."
+          "description": "Sets whether or not this entity is experimental. Experimental entities are only enabled when the experimental toggle is enabled.",
+          "default": false
         },
         "runtime_identifier": {
           "type": "string",
           "title": "Runtime Identifier",
-          "description": "Sets the name for the Vanilla Minecraft identifier this entity will use to build itself from."
+          "description": "Sets the name for the Vanilla Minecraft identifier this entity will use to build itself from.",
+          "examples": ["minecraft."]
         },
         "scripts": {
           "type": "object",
@@ -79,14 +83,14 @@
       "uniqueItems": true,
       "type": "object",
       "additionalProperties": {
-        "$ref": "../1.16.0/components.json",
+        "$ref": "./components.json",
         "uniqueItems": true,
         "description": "The components that are added as the foundation of the entity",
         "title": "Component"
       }
     },
     "components": {
-      "$ref": "../1.16.0/components.json",
+      "$ref": "./components.json",
       "uniqueItems": true,
       "description": "The components that are added as the foundation of the entity",
       "title": "Component"

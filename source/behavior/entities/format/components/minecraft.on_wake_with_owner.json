@@ -1,6 +1,6 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.on_wake_with_owner",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.on_wake_with_owner",
   "description": "Adds a trigger to call when this pet's owner awakes after sleeping with the pet.",
-  "title": "On Wake With Owner 1.8.0",
+  "title": "On Wake With Owner",
   "$ref": "../types/trigger.json"
 }

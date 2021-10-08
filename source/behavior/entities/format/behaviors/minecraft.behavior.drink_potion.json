@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.drink_potion",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.drink_potion",
   "type": "object",
-  "title": "Beg 1.16.0",
+  "title": "Beg",
   "description": "Allows the mob to drink potions based on specified environment conditions.",
   "additionalProperties": false,
 

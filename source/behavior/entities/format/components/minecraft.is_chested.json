@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.is_chested",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.is_chested",
   "description": "Sets that this entity is currently carrying a chest.",
   "type": "object",
-  "title": "Is Chested 1.8.0",
+  "title": "Is Chested",
   "additionalProperties": false,
   "required": [],
   "properties": {}

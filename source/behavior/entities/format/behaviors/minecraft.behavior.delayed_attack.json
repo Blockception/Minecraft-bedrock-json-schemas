@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.delayed_attack",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.delayed_attack",
   "additionalProperties": false,
   "type": "object",
-  "title": "Delayed Attack 1.8.0",
+  "title": "Delayed Attack",
   "description": "Allows the mob to drink potions based on specified environment conditions.",
   "properties": {
     "priority": { "$ref": "./types/priority.json" },

@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.sound_volume",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.sound_volume",
   "type": "object",
-  "title": "Sound Volume 1.8.0",
+  "title": "Sound Volume",
   "additionalProperties": false,
   "description": "Sets the entity's base volume for sound effects.",
   "required": [],

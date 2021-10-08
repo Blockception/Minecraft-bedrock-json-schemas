@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.follow_target_captain",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.follow_target_captain",
   "type": "object",
-  "title": "Follow Target Captain 1.8.0",
+  "title": "Follow Target Captain",
   "description": "Allows mob to move towards its current target captain.",
   "additionalProperties": false,
   "required": [],

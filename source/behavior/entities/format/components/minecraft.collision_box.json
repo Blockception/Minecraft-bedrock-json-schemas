@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.collision_box",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.collision_box",
   "type": "object",
-  "title": "Collision Box 1.8.0",
+  "title": "Collision Box",
   "additionalProperties": false,
   "description": "Sets the width and height of the Entity's collision box.",
   "required": [],

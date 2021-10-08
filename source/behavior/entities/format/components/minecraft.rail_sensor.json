@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.rail_sensor",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.rail_sensor",
   "description": "Defines the behavior of the entity when the rail gets activated or deactivated.",
   "type": "object",
-  "title": "Rail Sensor 1.8.0",
+  "title": "Rail Sensor",
   "additionalProperties": false,
   "required": [],
   "properties": {

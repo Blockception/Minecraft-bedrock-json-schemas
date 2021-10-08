@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.move_to_lava",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.move_to_lava",
   "type": "object",
-  "title": "Move To Lava 1.16.0",
+  "title": "Move To Lava",
   "description": "Allows the mob to move back into lava when on land.",
   "additionalProperties": false,
   "properties": {

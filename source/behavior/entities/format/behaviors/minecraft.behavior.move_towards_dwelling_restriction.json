@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.move_towards_dwelling_restriction",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.move_towards_dwelling_restriction",
   "type": "object",
-  "title": "Move Towards Dwelling Restriction 1.8.0",
+  "title": "Move Towards Dwelling Restriction",
   "additionalProperties": false,
   "description": "UNDOCUMENTED, comes from cat",
   "required": [],

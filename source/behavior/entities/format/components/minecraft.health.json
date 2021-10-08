@@ -1,9 +1,9 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.health",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.health",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "type": "object",
-  "title": "Health 1.8.0",
+  "title": "Health",
   "additionalProperties": false,
   "required": [],
   "dependencies": { "max": ["value"] },

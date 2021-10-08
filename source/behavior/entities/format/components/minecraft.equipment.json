@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.equipment",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.equipment",
   "type": "object",
-  "title": "Equipment 1.16.0",
+  "title": "Equipment",
   "description": "Sets the equipment table to use for the entity.",
   "additionalProperties": false,
 

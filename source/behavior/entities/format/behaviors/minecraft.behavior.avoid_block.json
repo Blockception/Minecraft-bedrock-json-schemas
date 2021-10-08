@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.avoid_block",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.avoid_block",
   "type": "object",
-  "title": "Avoid Block 1.16.0",
+  "title": "Avoid Block",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "additionalProperties": false,

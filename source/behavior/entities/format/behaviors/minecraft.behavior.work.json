@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.work",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.work",
   "type": "object",
-  "title": "Work 1.8.0",
+  "title": "Work",
   "description": "Allows an entity to navigate and interact with a point of interest that has been assigned as their worksite.",
   "additionalProperties": false,
   "required": [],

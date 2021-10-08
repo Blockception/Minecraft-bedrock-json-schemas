@@ -1,5 +1,5 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.type.range_number_type.1.8.0",
+  "$id": "blockception.minecraft.behavior.entities.type.range_number_type",
   "title": "Range [A, B]",
   "description": "A described range",
   "examples": [[0.0, 1.0]],

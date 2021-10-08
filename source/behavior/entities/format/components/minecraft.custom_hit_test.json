@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.custom_hit_test",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.custom_hit_test",
   "type": "object",
-  "title": "Custom Hit Test 1.16.0",
+  "title": "Custom Hit Test",
   "description": "List of hitboxes for melee and ranged hits against the entity.",
   "additionalProperties": false,
   "properties": {

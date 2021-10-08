@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.despawn",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.despawn",
   "type": "object",
-  "title": "Despawn 1.16.0",
+  "title": "Despawn",
   "description": "Despawns the Actor when the despawn rules or optional filters evaluate to true.",
   "additionalProperties": false,
   "properties": {

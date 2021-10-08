@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.charge_held_item",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.charge_held_item",
   "type": "object",
-  "title": "Charge Held Item 1.8.0",
+  "title": "Charge Held Item",
   "description": "Allows this mob to charge and use their held item.",
   "additionalProperties": false,
   "required": [],

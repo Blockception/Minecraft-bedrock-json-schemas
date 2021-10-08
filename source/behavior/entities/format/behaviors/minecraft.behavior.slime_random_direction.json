@@ -1,9 +1,9 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.slime_random_direction",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.slime_random_direction",
   "additionalProperties": false,
   "description": "Can only be used by Slimes and Magma Cubes. Allows the mob to move in random directions like a slime.",
   "type": "object",
-  "title": "Slime Random Direction 1.8.0",
+  "title": "Slime Random Direction",
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/priority.json" },

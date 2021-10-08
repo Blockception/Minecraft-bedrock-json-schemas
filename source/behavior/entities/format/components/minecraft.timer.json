@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.timer",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.timer",
   "type": "object",
-  "title": "Timer 1.8.0",
+  "title": "Timer",
   "description": "Adds a timer after which an event will fire.",
   "required": [],
   "additionalProperties": false,

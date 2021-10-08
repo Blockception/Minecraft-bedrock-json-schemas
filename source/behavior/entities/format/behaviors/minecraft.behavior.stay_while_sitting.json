@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.stay_while_sitting",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.stay_while_sitting",
   "description": "Allows the mob to stay put while it is in a sitting state instead of doing something else.",
   "type": "object",
-  "title": "Stay While Sitting 1.8.0",
+  "title": "Stay While Sitting",
   "additionalProperties": false,
   "required": [],
   "properties": { "priority": { "$ref": "./types/priority.json" } }

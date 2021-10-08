@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.beg",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.beg",
   "type": "object",
-  "title": "Beg 1.8.0",
+  "title": "Beg",
   "additionalProperties": false,
   "description": "Allows this mob to look at and follow the player that holds food they like.",
   "required": [],

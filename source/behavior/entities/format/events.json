@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.events.1.17.0",
+  "$id": "blockception.minecraft.behavior.entities.events",
   "type": "object",
-  "title": "Events 1.17.0",
-  "description": "Events for entities 1.17.0",
+  "title": "Events",
+  "description": "Events for entities",
   "additionalProperties": { "$ref": "#/definitions/event_base" },
   "definitions": {
     "addremove": {

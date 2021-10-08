@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.attack_cooldown",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.attack_cooldown",
   "type": "object",
-  "title": "Attack Cooldown 1.16.0",
+  "title": "Attack Cooldown",
   "description": "Adds a cooldown to a mob. The intention of this cooldown is to be used to prevent the mob from attempting to aquire new attack targets.",
   "additionalProperties": false,
   "properties": {

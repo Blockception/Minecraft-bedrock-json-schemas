@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.preferred_path",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.preferred_path",
   "type": "object",
-  "title": "Preferred Path 1.8.0",
+  "title": "Preferred Path",
   "description": "Specifies costing information for mobs that prefer to walk on preferred paths.",
   "additionalProperties": false,
   "required": ["preferred_path_blocks"],

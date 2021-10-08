@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.ground_offset",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.ground_offset",
   "type": "object",
-  "title": "Ground Offset 1.8.0",
+  "title": "Ground Offset",
   "additionalProperties": false,
   "description": "Sets the offset from the ground that the entity is actually at.",
   "required": [],

@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.color",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.color",
   "type": "object",
-  "title": "Color 1.8.0",
+  "title": "Color",
   "additionalProperties": false,
   "description": "Defines the entity's color. Only works on vanilla entities that have predefined color values (sheep, llama, shulker).",
   "required": [],

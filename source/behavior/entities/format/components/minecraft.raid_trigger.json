@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.raid_trigger",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.raid_trigger",
   "type": "object",
-  "title": "Raid Trigger 1.8.0",
+  "title": "Raid Trigger",
   "additionalProperties": false,
   "description": "Attempts to trigger a raid at the entity's location.",
   "required": [],

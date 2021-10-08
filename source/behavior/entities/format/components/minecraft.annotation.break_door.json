@@ -1,9 +1,9 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.annotation.break_door",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.annotation.break_door",
   "additionalProperties": false,
   "description": "Allows the actor to break doors assuming that that flags set up for the component to use in navigation",
   "type": "object",
-  "title": "Annotation.break Door 1.8.0",
+  "title": "Annotation.break Door",
   "required": [],
   "$comment": "Caution No longe rin use",
   "properties": {

@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.jump_to_block",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.jump_to_block",
   "type": "object",
-  "title": "Melee Attack 1.8.0",
+  "title": "Melee Attack",
   "description": "Allows the mob to search around for a block to jump to and then jump to that block.",
   "additionalProperties": false,
   "required": [],

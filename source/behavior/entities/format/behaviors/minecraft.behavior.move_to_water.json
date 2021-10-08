@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.move_to_water",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.move_to_water",
   "type": "object",
-  "title": "Move To Water 1.8.0",
+  "title": "Move To Water",
   "additionalProperties": false,
   "description": "Allows the mob to move back into water when on land.",
   "required": [],

@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.fall_damage",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.fall_damage",
   "type": "object",
-  "title": "Fall Damage 1.8.0",
+  "title": "Fall Damage",
   "additionalProperties": false,
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",

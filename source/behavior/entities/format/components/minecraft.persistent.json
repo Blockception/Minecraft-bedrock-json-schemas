@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.persistent",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.persistent",
   "description": "Defines whether an entity should be persistent in the game world.",
   "type": "object",
-  "title": "Persistent 1.8.0",
+  "title": "Persistent",
   "additionalProperties": false,
   "required": [],
   "properties": {}

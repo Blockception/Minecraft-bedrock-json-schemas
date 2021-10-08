@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.dweller",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.dweller",
   "type": "object",
-  "title": "Dweller 1.8.0",
+  "title": "Dweller",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "additionalProperties": false,

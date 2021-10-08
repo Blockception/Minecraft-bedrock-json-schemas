@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.interact",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.interact",
   "type": "object",
-  "title": "Interact 1.16.0",
+  "title": "Interact",
   "description": "Allows the entity to be a thrown entity.",
   "additionalProperties": false,
   "properties": {

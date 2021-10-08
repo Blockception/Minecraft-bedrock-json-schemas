@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.lay_down",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.lay_down",
   "description": "Allows mobs to lay down at times.",
   "type": "object",
-  "title": "Lay Down 1.8.0",
+  "title": "Lay Down",
   "additionalProperties": false,
   "required": [],
   "properties": {

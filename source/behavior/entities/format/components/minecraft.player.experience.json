@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.player.experience",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.player.experience",
   "additionalProperties": false,
   "type": "object",
-  "title": "Player.experience 1.8.0",
+  "title": "Player.experience",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "required": [],

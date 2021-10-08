@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.is_sheared",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.is_sheared",
   "description": "Sets that this entity is currently sheared.",
   "type": "object",
-  "title": "Is Sheared 1.8.0",
+  "title": "Is Sheared",
   "additionalProperties": false,
   "required": [],
   "properties": {}

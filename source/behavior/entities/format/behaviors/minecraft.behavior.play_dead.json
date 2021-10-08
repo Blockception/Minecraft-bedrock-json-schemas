@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.play_dead",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.play_dead",
   "description": "Allows the mob to play dead when attacked by other entities. When playing dead, other entities will not target this mob.",
   "type": "object",
-  "title": "Play Dead 1.8.0",
+  "title": "Play Dead",
   "additionalProperties": false,
   "required": [],
   "properties": {

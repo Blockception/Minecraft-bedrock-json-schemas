@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.move_to_block",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.move_to_block",
   "type": "object",
-  "title": "Move To Block 1.8.0",
+  "title": "Move To Block",
   "additionalProperties": false,
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",

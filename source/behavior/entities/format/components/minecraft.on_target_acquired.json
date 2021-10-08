@@ -1,6 +1,6 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.on_target_acquired",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.on_target_acquired",
   "description": "Adds a trigger to call when this entity finds a target.",
-  "title": "On Target Acquired 1.8.0",
+  "title": "On Target Acquired",
   "$ref": "../types/trigger.json"
 }

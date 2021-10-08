@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.owner_hurt_target",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.owner_hurt_target",
   "type": "object",
-  "title": "Owner Hurt Target 1.8.0",
+  "title": "Owner Hurt Target",
   "additionalProperties": false,
   "description": "Allows the mob to target a mob that is hurt by their owner.",
   "required": [],

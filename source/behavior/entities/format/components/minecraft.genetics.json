@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.genetics",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.genetics",
   "type": "object",
-  "title": "Genetics 1.8.0",
+  "title": "Genetics",
   "additionalProperties": false,
   "description": "Defines the way a mob's genes and alleles are passed on to it's offspring, and how those traits manifest in the child. Compatible parent genes are crossed together, the alleles are handed down from the parents to the child, and any matching genetic variants fire off JSON events to modify the child and express the traits.",
   "required": [],
@@ -34,7 +34,7 @@
   "properties": {
     "mutation_rate": {
       "type": "number",
-      "default": 0.03125,
+      "default":,
       "description": "Chance that an allele will be replaced with a random one instead of the parent's allele during birth.",
       "title": "Mutation Rate"
     },

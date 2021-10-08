@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.shareables",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.shareables",
   "description": "Defines a list of items the mob wants to share or pick up. Each item must have the following parameters:",
   "type": "object",
-  "title": "Shareables 1.16.0",
+  "title": "Shareables",
   "additionalProperties": false,
 
   "properties": {

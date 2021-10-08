@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.move_to_liquid",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.move_to_liquid",
   "type": "object",
-  "title": "Move To Liquid 1.8.0",
+  "title": "Move To Liquid",
   "description": "Allows the mob to move back into lava when on land.",
   "additionalProperties": false,
   "properties": {

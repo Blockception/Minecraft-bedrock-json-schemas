@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.ravager_blocked",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.ravager_blocked",
   "description": "Defines the ravager's response to their melee attack being blocked.",
   "type": "object",
-  "title": "Ravager Blocked 1.8.0",
+  "title": "Ravager Blocked",
   "additionalProperties": false,
   "required": [],
   "properties": {

@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.trade_interest",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.trade_interest",
   "description": "Allows the mob to look at a player that is holding a tradable item.",
   "type": "object",
-  "title": "Trade Interest 1.8.0",
+  "title": "Trade Interest",
   "additionalProperties": false,
   "required": [],
   "properties": {

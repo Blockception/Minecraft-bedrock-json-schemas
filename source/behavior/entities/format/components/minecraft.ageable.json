@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.ageable",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.ageable",
   "type": "object",
-  "title": "Ageable 1.16.0",
+  "title": "Ageable",
   "description": "Adds a timer for the entity to grow up. It can be accelerated by giving the entity the items it likes as defined by feedItems.",
   "additionalProperties": false,
   "properties": {

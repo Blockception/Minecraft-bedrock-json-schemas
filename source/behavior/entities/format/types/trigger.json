@@ -1,6 +1,6 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.type.trigger.1.8.0",
-  "title": "Trigger1.8.0",
+  "$id": "blockception.minecraft.behavior.entities.type.trigger",
+  "title": "Trigger",
   "description": "Trigger to fire",
   "oneOf": [
     { "type": "string" },

@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.scheduler",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.scheduler",
   "description": "fires off scheduled mob events at time of day events.",
   "type": "object",
-  "title": "Scheduler 1.16.0",
+  "title": "Scheduler",
   "additionalProperties": false,
 
   "properties": {

@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.ranged_attack",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.ranged_attack",
   "description": "Allows the mob to use ranged attacks like shooting arrows.",
   "type": "object",
-  "title": "Ranged Attack 1.8.0",
+  "title": "Ranged Attack",
   "additionalProperties": false,
   "required": [],
   "properties": {

@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.trade_table",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.trade_table",
   "description": "Defines this entity's ability to trade with players.",
   "type": "object",
-  "title": "Trade Table 1.8.0",
+  "title": "Trade Table",
   "additionalProperties": false,
   "required": [],
   "properties": {

@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.drying_out_timer",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.drying_out_timer",
   "type": "object",
-  "title": "Drying Out Timer 1.8.0",
+  "title": "Drying Out Timer",
   "description": "Adds a timer for drying out that will count down and fire `dried_out_event` or will stop as soon as the entity will get under rain or water and fire `stopped_drying_out_event`",
   "additionalProperties": false,
   "properties": {

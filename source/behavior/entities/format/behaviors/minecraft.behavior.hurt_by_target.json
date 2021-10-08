@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.hurt_by_target",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.hurt_by_target",
   "type": "object",
-  "title": "Guardian Attack 1.8.0",
+  "title": "Guardian Attack",
   "additionalProperties": false,
   "description": "Allows the mob to target another mob that hurts them.",
   "required": [],

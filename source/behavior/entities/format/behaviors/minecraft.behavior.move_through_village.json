@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.move_through_village",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.move_through_village",
   "type": "object",
-  "title": "Move Through Village 1.8.0",
+  "title": "Move Through Village",
   "description": "Can only be used by Villagers. Allows the villagers to create paths around the village.",
   "additionalProperties": false,
   "required": [],

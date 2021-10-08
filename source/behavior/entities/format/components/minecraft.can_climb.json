@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.can_climb",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.can_climb",
   "type": "object",
-  "title": "Can Climb 1.8.0",
+  "title": "Can Climb",
   "additionalProperties": false,
   "description": "Allows this entity to climb up ladders.",
   "required": [],

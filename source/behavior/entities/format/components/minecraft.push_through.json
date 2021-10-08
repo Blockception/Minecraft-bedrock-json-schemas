@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.push_through",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.push_through",
   "type": "object",
-  "title": "Push Through 1.8.0",
+  "title": "Push Through",
   "additionalProperties": false,
   "description": "Sets the distance through which the entity can push through.",
   "required": [],

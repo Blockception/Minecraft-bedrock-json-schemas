@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.melee_attack",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.melee_attack",
   "type": "object",
-  "title": "Melee Attack 1.8.0",
+  "title": "Melee Attack",
   "description": "Allows the mob to use close combat melee attacks.",
   "additionalProperties": false,
   "required": [],

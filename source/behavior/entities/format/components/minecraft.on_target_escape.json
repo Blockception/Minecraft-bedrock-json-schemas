@@ -1,6 +1,6 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.on_target_escape",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.on_target_escape",
   "description": "Adds a trigger to call when this entity loses the target it currently has.",
-  "title": "On Target Escape 1.8.0",
+  "title": "On Target Escape",
   "$ref": "../types/trigger.json"
 }

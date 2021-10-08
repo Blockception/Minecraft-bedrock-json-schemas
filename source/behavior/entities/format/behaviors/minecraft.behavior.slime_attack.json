@@ -1,9 +1,9 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.slime_attack",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.slime_attack",
   "additionalProperties": false,
   "description": "Can only be used by Slimes and Magma Cubes. Allows the mob to use a melee attack like the slime's.",
   "type": "object",
-  "title": "Slime Attack 1.8.0",
+  "title": "Slime Attack",
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
     "set_persistent": {

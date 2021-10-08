@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.follow_mob",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.follow_mob",
   "type": "object",
-  "title": "Follow Mob 1.8.0",
+  "title": "Follow Mob",
   "description": "Allows the mob to follow other mobs.",
   "additionalProperties": false,
   "required": [],

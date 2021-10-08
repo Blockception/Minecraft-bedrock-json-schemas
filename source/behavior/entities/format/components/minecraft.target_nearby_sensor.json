@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.target_nearby_sensor",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.target_nearby_sensor",
   "description": "Defines the entity's range within which it can see or sense other entities to target them.",
   "type": "object",
-  "title": "Target Nearby Sensor 1.8.0",
+  "title": "Target Nearby Sensor",
   "additionalProperties": false,
   "required": [],
   "properties": {

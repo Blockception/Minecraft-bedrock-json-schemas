@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.walk_animation_speed",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.walk_animation_speed",
   "additionalProperties": false,
   "type": "object",
-  "title": "Walk Animation Speed 1.8.0",
+  "title": "Walk Animation Speed",
   "description": "Sets the speed multiplier for this entity's walk animation speed.",
   "required": [],
   "properties": {

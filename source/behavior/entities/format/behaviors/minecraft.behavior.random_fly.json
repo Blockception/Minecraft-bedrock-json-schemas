@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.random_fly",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.random_fly",
   "description": "Allows a mob to randomly fly around",
   "type": "object",
-  "title": "Random Fly 1.16.0",
+  "title": "Random Fly",
   "additionalProperties": false,
 
   "properties": {

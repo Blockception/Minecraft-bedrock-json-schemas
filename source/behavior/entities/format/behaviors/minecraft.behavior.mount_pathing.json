@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.mount_pathing",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.mount_pathing",
   "type": "object",
-  "title": "Mount Pathing 1.8.0",
+  "title": "Mount Pathing",
   "description": "Allows the mob to move around on its own while mounted seeking a target to attack.",
   "additionalProperties": false,
   "required": [],

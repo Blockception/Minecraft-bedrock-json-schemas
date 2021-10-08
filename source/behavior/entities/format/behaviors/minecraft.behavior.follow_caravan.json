@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.follow_caravan",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.follow_caravan",
   "type": "object",
-  "title": "Follow Caravan 1.8.0",
+  "title": "Follow Caravan",
   "description": "Allows the mob to follow mobs that are in a caravan.",
   "additionalProperties": false,
   "required": [],

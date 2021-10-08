@@ -1,6 +1,6 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.on_hurt_by_player",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.on_hurt_by_player",
   "description": "Adds a trigger to call when this entity is attacked by the player.",
-  "title": "On Hurt By Player 1.8.0",
+  "title": "On Hurt By Player",
   "$ref": "../types/trigger.json"
 }

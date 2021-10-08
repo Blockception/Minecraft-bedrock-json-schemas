@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.is_saddled",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.is_saddled",
   "description": "Sets that this entity is currently saddled.",
   "type": "object",
-  "title": "Is Saddled 1.8.0",
+  "title": "Is Saddled",
   "additionalProperties": false,
   "required": [],
   "properties": {}

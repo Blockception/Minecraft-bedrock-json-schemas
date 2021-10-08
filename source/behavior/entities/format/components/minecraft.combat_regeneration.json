@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.combat_regeneration",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.combat_regeneration",
   "type": "object",
-  "title": "Combat Regeneration 1.8.0",
+  "title": "Combat Regeneration",
   "description": "Gives Regeneration I and removes Mining Fatigue from the mob that kills the Actor`s attack target.",
   "additionalProperties": false,
   "properties": {

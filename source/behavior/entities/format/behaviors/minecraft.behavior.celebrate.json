@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.celebrate",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.celebrate",
   "type": "object",
-  "title": "Celebrate 1.16.0",
+  "title": "Celebrate",
   "description": "This allows the mob celebrate by jumping up and playing a sound periodically.",
   "additionalProperties": false,
   "properties": {

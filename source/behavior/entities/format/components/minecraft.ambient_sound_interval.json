@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.ambient_sound_interval",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.ambient_sound_interval",
   "additionalProperties": false,
   "type": "object",
-  "title": "Ambient Sound Interval 1.16.0",
+  "title": "Ambient Sound Interval",
   "description": "Sets the entity's delay between playing its ambient sound.",
 
   "properties": {

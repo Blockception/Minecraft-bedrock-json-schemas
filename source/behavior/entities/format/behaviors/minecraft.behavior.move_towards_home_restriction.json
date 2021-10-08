@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.move_towards_home_restriction",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.move_towards_home_restriction",
   "type": "object",
-  "title": "Move Towards Home Restriction 1.16.0",
+  "title": "Move Towards Home Restriction",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "additionalProperties": false,

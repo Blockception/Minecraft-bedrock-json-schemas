@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.entities.1.8.0.event",
+  "$id": "blockception.minecraft.entities.event",
   "title": "Event",
-  "description": "Minecraft behavior event 1.8.0",
+  "description": "Minecraft behavior event",
   "examples": [{ "event": "example:foo", "target": "self" }],
   "oneOf": [
     { "type": "string", "pattern": "^[a-zA-Z0-9_\\-:]+$", "description": "The event to fire" },

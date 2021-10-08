@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.leashable",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.leashable",
   "type": "object",
-  "title": "Leashable 1.16.0",
+  "title": "Leashable",
   "description": "Defines interactions with this entity.",
   "additionalProperties": false,
   "properties": {

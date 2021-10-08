@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.circle_around_anchor",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.circle_around_anchor",
   "type": "object",
-  "title": "Circle Around Anchor 1.8.0",
+  "title": "Circle Around Anchor",
   "additionalProperties": false,
   "description": "Allows the mob to move in a circle around a point or a target.",
   "required": [],

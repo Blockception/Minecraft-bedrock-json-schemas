@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.transformation",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.transformation",
   "description": "Defines this entity's ability to trade with players.",
   "type": "object",
-  "title": "Transformation 1.16.0",
+  "title": "Transformation",
   "additionalProperties": false,
 
   "properties": {

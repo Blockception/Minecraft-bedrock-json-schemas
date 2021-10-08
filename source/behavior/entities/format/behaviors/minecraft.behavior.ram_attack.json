@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.ram_attack",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.ram_attack",
   "description": "Allows the mob to search for a random target and, if a direct path exists between the mob and the target, it will perform a charge. If the attack hits, the target will be knocked back based on the mob's speed.",
   "type": "object",
-  "title": "Ram Attack 1.8.0",
+  "title": "Ram Attack",
   "additionalProperties": false,
   "required": [],
   "properties": {

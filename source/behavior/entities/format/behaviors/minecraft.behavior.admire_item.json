@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.admire_item",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.admire_item",
   "type": "object",
-  "title": "Admire Item 1.16.0",
+  "title": "Admire Item",
   "description": "Enables the mob to admire items that have been configured as admirable. Must be used in combination with the admire_item component.",
   "additionalProperties": false,
   "properties": {

@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.nameable",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.nameable",
   "type": "object",
-  "title": "Nameable 1.16.0",
+  "title": "Nameable",
   "additionalProperties": false,
   "description": "Allows this entity to be named (e.g. using a name tag).",
 

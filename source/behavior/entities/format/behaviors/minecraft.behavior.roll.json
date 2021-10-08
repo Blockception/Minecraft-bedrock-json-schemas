@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.roll",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.roll",
   "description": "This allows the mob to roll forward.",
   "type": "object",
-  "title": "Roll 1.8.0",
+  "title": "Roll",
   "additionalProperties": false,
   "required": [],
   "properties": {

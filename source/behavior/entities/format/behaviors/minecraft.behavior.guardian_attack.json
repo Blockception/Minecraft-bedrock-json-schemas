@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.guardian_attack",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.guardian_attack",
   "type": "object",
-  "title": "Guardian Attack 1.8.0",
+  "title": "Guardian Attack",
   "description": "Allows the guardian to use its laser beam attack. Can only be used by Guardians and Elder Guardians.",
   "additionalProperties": false,
   "required": [],

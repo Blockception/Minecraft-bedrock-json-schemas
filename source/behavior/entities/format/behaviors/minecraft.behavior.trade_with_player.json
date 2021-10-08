@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.trade_with_player",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.trade_with_player",
   "description": "Allows the player to trade with this mob.",
   "type": "object",
-  "title": "Trade With Player 1.8.0",
+  "title": "Trade With Player",
   "additionalProperties": false,
   "required": [],
   "properties": { "priority": { "$ref": "./types/priority.json" } }

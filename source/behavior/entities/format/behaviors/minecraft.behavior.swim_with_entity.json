@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.swim_with_entity",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.swim_with_entity",
   "type": "object",
-  "title": "Swim With Entity 1.8.0",
+  "title": "Swim With Entity",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "additionalProperties": false,

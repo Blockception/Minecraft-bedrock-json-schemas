@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.bribeable",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.bribeable",
   "type": "object",
-  "title": "Bribeable 1.8.0",
+  "title": "Bribeable",
   "additionalProperties": false,
   "description": "Specifies if/how a mob burns in daylight.",
   "required": [],

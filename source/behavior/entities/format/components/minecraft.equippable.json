@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.equippable",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.equippable",
   "type": "object",
-  "title": "Equippable 1.16.0",
+  "title": "Equippable",
   "additionalProperties": false,
   "description": "Defines an entity's behavior for having items equipped to it.",
   "properties": {

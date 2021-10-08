@@ -1,9 +1,9 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.target_when_pushed",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.target_when_pushed",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "type": "object",
-  "title": "Target When Pushed 1.8.0",
+  "title": "Target When Pushed",
   "additionalProperties": false,
   "required": [],
   "properties": {

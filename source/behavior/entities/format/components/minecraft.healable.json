@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.healable",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.healable",
   "description": "Defines the interactions with this entity for healing it.",
   "type": "object",
-  "title": "Healable 1.8.0",
+  "title": "Healable",
   "additionalProperties": false,
   "required": [],
   "properties": {

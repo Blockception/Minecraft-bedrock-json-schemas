@@ -1,9 +1,9 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.vex_copy_owner_target",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.vex_copy_owner_target",
   "description": "Allows the mob to target the same entity its owner is targeting.",
   "additionalProperties": false,
   "type": "object",
-  "title": "Vex Copy Owner Target 1.8.0",
+  "title": "Vex Copy Owner Target",
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/priority.json" },

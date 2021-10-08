@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.move_to_village",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.move_to_village",
   "type": "object",
-  "title": "Move To Village 1.8.0",
+  "title": "Move To Village",
   "additionalProperties": false,
   "description": "Allows the mob to move into a random location within a village.",
   "required": [],

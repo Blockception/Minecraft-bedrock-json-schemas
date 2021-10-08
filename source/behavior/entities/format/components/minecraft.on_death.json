@@ -1,6 +1,6 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.on_death",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.on_death",
   "description": "Adds a trigger to call on this entity's death. minecraft:on_death can only be used by the `ender_dragon` entity.",
-  "title": "On Death 1.8.0",
+  "title": "On Death",
   "$ref": "../types/trigger.json"
 }

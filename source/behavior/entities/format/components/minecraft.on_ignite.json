@@ -1,6 +1,6 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.on_ignite",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.on_ignite",
   "description": "Adds a trigger to call when this entity is set on fire.",
-  "title": "On Ignite 1.8.0",
+  "title": "On Ignite",
   "$ref": "../types/trigger.json"
 }

@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.stomp_attack",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.stomp_attack",
   "description": "Allows the mob to use the polar bear's melee attack.",
   "type": "object",
-  "title": "Stomp Attack 1.8.0",
+  "title": "Stomp Attack",
   "additionalProperties": false,
   "required": [],
   "properties": {

@@ -1,9 +1,9 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.random_look_around",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.random_look_around",
   "additionalProperties": false,
   "description": "Allows the mob to randomly look around.",
   "type": "object",
-  "title": "Random Look Around 1.8.0",
+  "title": "Random Look Around",
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/priority.json" },

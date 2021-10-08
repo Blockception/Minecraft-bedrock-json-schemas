@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.area_attack",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.area_attack",
   "type": "object",
-  "title": "Area Attack 1.8.0",
+  "title": "Area Attack",
   "description": "A component that does damage to entities that get within range.",
   "additionalProperties": false,
   "properties": {

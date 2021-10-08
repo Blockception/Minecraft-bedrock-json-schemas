@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.stay_while_sitting",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.stay_while_sitting",
   "description": "Allows the creeper to swell up when a player is nearby. It can only be used by Creepers.",
-  "title": "Stay While Sitting 1.8.0",
+  "title": "Stay While Sitting",
   "type": "object",
   "additionalProperties": false,
   "required": [],

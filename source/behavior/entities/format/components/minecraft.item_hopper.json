@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.item_hopper",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.item_hopper",
   "type": "object",
-  "title": "Item Hopper 1.8.0",
+  "title": "Item Hopper",
   "additionalProperties": false,
   "required": [],
   "properties": {},

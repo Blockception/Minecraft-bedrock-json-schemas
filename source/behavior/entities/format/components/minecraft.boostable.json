@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.boostable",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.boostable",
   "type": "object",
-  "title": "Boostable 1.16.0",
+  "title": "Boostable",
   "additionalProperties": false,
   "description": "Defines the conditions and behavior of a rideable entity's boost",
 

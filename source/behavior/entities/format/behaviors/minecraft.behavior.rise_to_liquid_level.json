@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.rise_to_liquid_level",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.rise_to_liquid_level",
   "description": "Allows the mob to stay at a certain level when in liquid.",
   "type": "object",
-  "title": "Rise To Liquid Level 1.16.0",
+  "title": "Rise To Liquid Level",
   "additionalProperties": false,
 
   "properties": {

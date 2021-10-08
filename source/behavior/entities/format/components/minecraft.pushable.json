@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.pushable",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.pushable",
   "additionalProperties": false,
   "type": "object",
-  "title": "Pushable 1.8.0",
+  "title": "Pushable",
   "description": "Defines what can push an entity between other entities and pistons.",
   "required": [],
   "properties": {

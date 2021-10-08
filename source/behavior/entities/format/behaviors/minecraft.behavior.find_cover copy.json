@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.find_cover",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.find_cover",
   "type": "object",
-  "title": "Find Cover 1.16.0",
+  "title": "Find Cover",
   "description": "Allows the mob to seek shade.",
   "additionalProperties": false,
   "properties": {

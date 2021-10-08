@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.loot",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.loot",
   "type": "object",
-  "title": "Loot 1.8.0",
+  "title": "Loot",
   "description": "sets the loot table for what items this entity drops upon death.",
   "additionalProperties": false,
   "required": ["table"],

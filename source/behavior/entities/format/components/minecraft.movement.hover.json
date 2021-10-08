@@ -1,6 +1,6 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.movement.hover",
-  "title": "Movement.hover 1.16.0",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.movement.hover",
+  "title": "Movement.hover",
   "description": "This move control causes the mob to hover.",
   "type": "object",
   "additionalProperties": false,

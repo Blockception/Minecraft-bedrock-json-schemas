@@ -1,9 +1,9 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.avoid_mob_type",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.avoid_mob_type",
   "additionalProperties": false,
   "description": "Allows this entity to avoid certain mob types.",
   "type": "object",
-  "title": "Avoid Mob Type 1.8.0",
+  "title": "Avoid Mob Type",
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/priority.json" },

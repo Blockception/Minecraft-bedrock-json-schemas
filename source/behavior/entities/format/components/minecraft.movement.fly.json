@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.movement.fly",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.movement.fly",
   "type": "object",
-  "title": "Movement.fly 1.8.0",
+  "title": "Movement.fly",
   "description": "This move control causes the mob to fly.",
   "additionalProperties": false,
   "required": [],

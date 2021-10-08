@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.scale_by_age",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.scale_by_age",
   "type": "object",
-  "title": "Scale By Age 1.8.0",
+  "title": "Scale By Age",
   "additionalProperties": false,
   "description": "Defines the entity's size interpolation based on the entity's age.",
   "required": [],

@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.lookat",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.lookat",
   "description": "Defines the behavior when another entity looks at this entity.",
   "type": "object",
-  "title": "Lookat 1.16.0",
+  "title": "Lookat",
   "additionalProperties": false,
 
   "properties": {

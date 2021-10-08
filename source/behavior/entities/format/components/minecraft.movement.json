@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.movement",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.movement",
   "type": "object",
-  "title": "Movement 1.8.0",
+  "title": "Movement",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "additionalProperties": false,

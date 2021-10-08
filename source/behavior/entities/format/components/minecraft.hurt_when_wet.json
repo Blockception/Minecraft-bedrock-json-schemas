@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.hurt_when_wet",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.hurt_when_wet",
   "type": "object",
-  "title": "Hurt When Wet 1.8.0",
+  "title": "Hurt When Wet",
   "additionalProperties": false,
   "required": [],
   "properties": {},

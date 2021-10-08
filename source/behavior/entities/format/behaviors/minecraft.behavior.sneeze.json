@@ -1,9 +1,9 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.sneeze",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.sneeze",
   "additionalProperties": false,
   "description": "Allows the mob to stop and sneeze possibly startling nearby mobs and dropping an item.",
   "type": "object",
-  "title": "Sneeze 1.8.0",
+  "title": "Sneeze",
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/priority.json" },

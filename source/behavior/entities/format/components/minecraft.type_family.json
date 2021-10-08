@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.type_family",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.type_family",
   "type": "object",
-  "title": "Type Family 1.8.0",
+  "title": "Type Family",
   "additionalProperties": false,
   "description": "Defines the families this entity belongs to.",
   "required": ["family"],

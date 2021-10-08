@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.inspect_bookshelf",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.inspect_bookshelf",
   "type": "object",
-  "title": "Inspect Bookshelf 1.8.0",
+  "title": "Inspect Bookshelf",
   "additionalProperties": false,
   "description": "Allows the mob to inspect bookshelves.",
   "required": [],

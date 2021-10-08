@@ -1,9 +1,9 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.vex_random_move",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.vex_random_move",
   "description": "Allows the mob to target the same entity its owner is targeting.",
   "additionalProperties": false,
   "type": "object",
-  "title": "Vex Random Move 1.8.0",
+  "title": "Vex Random Move",
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/priority.json" },

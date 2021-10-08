@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.move_to_poi",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.move_to_poi",
   "type": "object",
-  "title": "Move To Poi 1.8.0",
+  "title": "Move To Poi",
   "additionalProperties": false,
   "description": "Allows the mob to move to a POI if able to",
   "required": [],

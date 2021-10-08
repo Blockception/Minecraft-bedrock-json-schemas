@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.defend_village_target",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.defend_village_target",
   "additionalProperties": false,
   "type": "object",
-  "title": "Defend Village Target 1.8.0",
+  "title": "Defend Village Target",
   "description": "Allows the mob to stay in the village and fight mobs hostile to the villagers.",
   "properties": {
     "priority": { "$ref": "./types/priority.json" },

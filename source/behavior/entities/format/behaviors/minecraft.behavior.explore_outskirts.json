@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.explore_outskirts",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.explore_outskirts",
   "type": "object",
-  "title": "Explore Outskirts 1.8.0",
+  "title": "Explore Outskirts",
   "description": "behavior explore outskirts",
   "additionalProperties": false,
   "required": [],

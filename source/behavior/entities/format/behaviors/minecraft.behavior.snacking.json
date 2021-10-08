@@ -1,9 +1,9 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.snacking",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.snacking",
   "additionalProperties": false,
   "description": "Allows the mob to take a load off and snack on food that it found nearby.",
   "type": "object",
-  "title": "Snacking 1.8.0",
+  "title": "Snacking",
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
@@ -29,7 +29,7 @@
     },
     "snacking_stop_chance": {
       "type": "number",
-      "default": 0.0017,
+      "default":,
       "description": "This is the chance that the mob will stop snacking, from 0 to 1",
       "title": "Snacking Stop Chance"
     }

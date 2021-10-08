@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.trusting",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.trusting",
   "type": "object",
-  "title": "Trusting 1.8.0",
+  "title": "Trusting",
   "description": "Defines the rules for a mob to trust players.",
   "required": [],
   "additionalProperties": false,
