@@ -10,6 +10,7 @@
       "title": "Add Or Remove",
       "description": "The components groups to add or remove",
       "type": "object",
+      "examples": [{ "add": { "component_groups": [] } }, { "remove": { "component_groups": [] } }],
       "properties": {
         "component_groups": {
           "title": "Component Groups",
