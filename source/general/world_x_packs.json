@@ -5,14 +5,13 @@
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "examples": [[{ "pack_id": "UUID", "version": [1, 0, 0] }]],
-  "definitions": { "uuidv4": { "$ref": "./UUIDV4.json" }, "version": { "$ref": "./Version.json" } },
   "items": {
+    "title": "Items",
+    "description": "A reference to a pack",
     "type": "object",
     "properties": {
-      "pack_id": { "description": "The uuid of the pack to include", "$ref": "#/definitions/uuidv4", "title": "Pack Id" },
-      "version": { "description": "The version of the pack", "$ref": "#/definitions/version", "title": "Version" }
-    },
-    "description": "UNDOCUMENTED: items",
-    "title": "Items"
+      "pack_id": { "description": "The uuid of the pack to include", "$ref": "./UUIDV4.json", "title": "Pack Id" },
+      "version": { "description": "The version of the pack", "$ref": "./Version.json", "title": "Version" }
+    }
   }
 }
