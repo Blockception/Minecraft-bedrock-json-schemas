@@ -1,0 +1,16 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.insomnia",
+  "description": "Adds a timer since last rested to see if phantoms should spawn.",
+  "type": "object",
+  "title": "Insomnia 1.8.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "days_until_insomnia": {
+      "type": "number",
+      "default": 3,
+      "description": "Number of days the mob has to stay up until the insomnia effect begins.",
+      "title": "Days Until Insomnia"
+    }
+  }
+}

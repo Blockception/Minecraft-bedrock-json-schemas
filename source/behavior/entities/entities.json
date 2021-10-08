@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities",
   "examples": [
     {
-      "format_version": "1.16.0",
+      "format_version": "1.17.0",
       "minecraft:entity": {
         "description": { "identifier": "namespace:entity", "is_spawnable": true, "is_summonable": true },
         "component_groups": {},
@@ -12,12 +12,12 @@
     }
   ],
   "type": "object",
-  "title": "Entity Behavior 1.17.0",
+  "title": "Entity Behavior",
   "description": "The minecraft entity behavior specification",
   "required": ["format_version", "minecraft:entity"],
   "additionalProperties": false,
   "properties": {
     "format_version": { "$ref": "../../general/format_version.json" },
-    "minecraft:entity": { "$ref": "./minecraft.entity.json" }
+    "minecraft:entity": { "$ref": "./format/minecraft.entity.json" }
   }
 }

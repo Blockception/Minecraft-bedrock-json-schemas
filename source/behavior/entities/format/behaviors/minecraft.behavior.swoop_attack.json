@@ -1,0 +1,24 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.swoop_attack",
+  "description": "Allows the mob to move to attack a target. The goal ends if it has a horizontal collision or gets hit. Built to be used with flying mobs.",
+  "type": "object",
+  "title": "Swoop Attack 1.8.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "types/priority.json" },
+    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "damage_reach": {
+      "type": "number",
+      "title": "Damage Reach",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "delay_range": {
+      "$ref": "../types/range_number_type.json",
+      "default": [[10.0, 20.0]],
+      "description": "Range of time in seconds between uses of this goal.",
+      "title": "Delay Range"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.despawn",
+  "type": "object",
+  "title": "Despawn 1.16.0",
+  "description": "Despawns the Actor when the despawn rules or optional filters evaluate to true.",
+  "additionalProperties": false,
+  "properties": {
+    "despawn_from_chance": {
+      "type": "boolean",
+      "default": true,
+      "description": "Determines if `min_range_random_chance` is used in the standard despawn rules",
+      "title": "Despawn From Chance"
+    },
+    "despawn_from_distance": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Defines the minimum and maximum distance for despawn to occur.",
+      "title": "Despawn From Distance",
+      "properties": {
+        "max_distance": {
+          "type": "integer",
+          "default": 128,
+          "description": "Maximum distance for standard despawn rules to instantly despawn the mob.",
+          "title": "Maximum Distance"
+        },
+        "min_distance": {
+          "type": "integer",
+          "default": 32,
+          "description": "Minimum distance for standard despawn rules to try to despawn the mob.",
+          "title": "Minimum Distance"
+        }
+      }
+    },
+    "despawn_from_inactivity": {
+      "type": "boolean",
+      "default": true,
+      "description": "Determines if the `min_range_inactivity_timer` is used in the standard despawn rules.",
+      "title": "Despawn From Inactivity"
+    },
+    "despawn_from_simulation_edge": {
+      "type": "boolean",
+      "default": true,
+      "description": "Determines if the mob is instantly despawned at the edge of simulation distance in the standard despawn rules.",
+      "title": "Despawn From Simulation Edge"
+    },
+    "filters": {
+      "$ref": "../../filters/filters.json",
+      "description": "The list of conditions that must be satisfied before the Actor is despawned. If a filter is defined then standard despawn rules are ignored."
+    },
+    "min_range_inactivity_timer": {
+      "type": "integer",
+      "default": 30,
+      "description": "The amount of time in seconds that the mob must be inactive.",
+      "title": "Minimum Range Inactivity Timer"
+    },
+    "min_range_random_chance": {
+      "type": "integer",
+      "default": 800,
+      "description": "A random chance between 1 and the given value.",
+      "title": "Minimum Range Random Chance"
+    },
+    "remove_child_entities": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, all entities linked to this entity in a child relationship (eg. leashed) will also be despawned.",
+      "title": "Remove Child Entities"
+    }
+  }
+}

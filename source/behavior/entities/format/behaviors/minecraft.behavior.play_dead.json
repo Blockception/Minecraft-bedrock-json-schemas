@@ -1,0 +1,58 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.play_dead",
+  "description": "Allows the mob to play dead when attacked by other entities. When playing dead, other entities will not target this mob.",
+  "type": "object",
+  "title": "Play Dead 1.8.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "types/priority.json" },
+    "duration": {
+      "title": "Duration",
+      "description": "The amount of time in seconds that the mob will remain playing dead.",
+      "type": "number",
+      "minimum": 0
+    },
+    "force_below_health": {
+      "title": "Force Below Health",
+      "description": "The amount of health at which the mob will start to play dead.",
+      "type": "number",
+      "minimum": 0
+    },
+    "random_start_chance": {
+      "title": "Random Start Chance",
+      "description": "The likelihood that the mob will start to play dead upon taking damage.",
+      "type": "number",
+      "minimum": 0
+    },
+    "random_damage_range": {
+      "title": "Random Damage Range",
+      "description": "The range of damage that may cause the mob to start playing dead. Damage taken below the minimum value will never cause the mob to start playing dead. Damage taken above the maximum value will always cause the mob to start playing dead.",
+      "type": "array",
+      "items": [
+        { "title": "Minimum", "description": "Minimum", "type": "integer", "minimum": 0 },
+        { "title": "Maximum", "description": "Maximum", "type": "integer", "minimum": 0 }
+      ]
+    },
+    "damage_sources": {
+      "title": "Damage Sources",
+      "description": "The list of Entity Damage Sources that will cause this mob to start playing dead.",
+      "oneOf": [
+        { "type": "string", "$ref": "../../../../general/entity_damage.json" },
+        {
+          "type": "array",
+          "items": {
+            "title": "Damage Source",
+            "$ref": "../../../../general/entity_damage.json"
+          }
+        }
+      ]
+    },
+    "apply_regeneration": {
+      "title": "Apply Regeneration",
+      "description": "Whether the mob will receive the effect of CombatRegeneration while playing dead.",
+      "type": "boolean"
+    },
+    "filters": { "$ref": "../../filters/filters.json" }
+  }
+}

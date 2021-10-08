@@ -1,0 +1,84 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.ram_attack",
+  "description": "Allows the mob to search for a random target and, if a direct path exists between the mob and the target, it will perform a charge. If the attack hits, the target will be knocked back based on the mob's speed.",
+  "type": "object",
+  "title": "Ram Attack 1.8.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "types/priority.json" },
+    "baby_knockback_modifier": {
+      "type": "integer",
+      "default": 4,
+      "description": "The modifier to knockback for baby mobs.",
+      "title": "Baby Knockback Modifier"
+    },
+    "cooldown_range": {
+      "type": "array",
+      "default": [10.0, 20.0],
+      "description": "The minimum and maximum cooldown time-range in seconds between each attempted ram attack.",
+      "title": "Cooldown Range",
+      "items": [
+        { "title": "Minimum", "description": "Minimum", "type": "number", "minimum": 0 },
+        { "title": "Maximum", "description": "Maximum", "type": "number", "minimum": 0 }
+      ]
+    },
+    "knockback_force": {
+      "type": "number",
+      "default": 5,
+      "description": "The force of the knockback of the ram's attack.",
+      "title": "Knockback Force"
+    },
+    "knockback_height": {
+      "type": "number",
+      "default": 0.1,
+      "description": "The height in blocks of the knockback of the ram attack.",
+      "title": "Knockback Height"
+    },
+    "min_ram_distance": {
+      "type": "integer",
+      "default": 4,
+      "description": "The minimum distance in blocks at which the mob can start a ram attack.",
+      "title": "Min Ram Distance"
+    },
+    "pre_ram_sound": {
+      "type": "string",
+      "description": "The sound to play when the mob is about to perform a ram attack.",
+      "title": "Pre Ram Sound"
+    },
+    "ram_distance": {
+      "type": "integer",
+      "default": 7,
+      "description": "The distance in blocks at which the mob will start to ram its target.",
+      "title": "Ram Distance"
+    },
+    "ram_impact_sound": {
+      "type": "string",
+      "description": "The sound to play when the mob hits the target with a ram attack .",
+      "title": "Ram Impact Sound"
+    },
+    "ram_speed": {
+      "type": "number",
+      "default": 2,
+      "description": "Sets the mob's speed when performing a ram attack toward the target.",
+      "title": "Ram Speed"
+    },
+    "run_speed": {
+      "type": "number",
+      "default": 1,
+      "description": "Sets the mob's speed when running toward the target.",
+      "title": "Run Speed"
+    },
+    "trigger": {
+      "description": "The event to trigger when attacking.",
+      "title": "Trigger",
+      "$ref": "../types/trigger.json"
+    },
+    "on_start": {
+      "title": "On Start",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "oneOf": [{ "$ref": "../types/event.json" }, { "type": "array", "items": { "$ref": "../types/event.json" } }]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.enderman_leave_block",
+  "type": "object",
+  "title": "Enderman Leave Block 1.8.0",
+  "additionalProperties": false,
+  "description": "Allows the enderman to drop a block they are carrying. Can only be used by Endermen.",
+  "required": [],
+  "properties": { "priority": { "$ref": "./types/priority.json" } }
+}

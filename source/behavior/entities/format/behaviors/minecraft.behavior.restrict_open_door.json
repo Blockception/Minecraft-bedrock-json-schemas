@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.restrict_open_door",
+  "description": "Allows the mob to stay indoors during night time.",
+  "type": "object",
+  "title": "Restrict Open Door 1.8.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": { "priority": { "$ref": "types/priority.json" } }
+}

@@ -1,0 +1,18 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.player.saturation",
+  "additionalProperties": false,
+  "type": "object",
+  "title": "Player.saturation 1.8.0",
+  "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
+  "required": [],
+  "properties": {
+    "value": {
+      "type": "number",
+      "default": true,
+      "title": "Value",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    }
+  }
+}

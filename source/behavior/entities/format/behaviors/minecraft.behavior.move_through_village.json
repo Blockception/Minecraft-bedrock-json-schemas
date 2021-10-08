@@ -1,0 +1,18 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.move_through_village",
+  "type": "object",
+  "title": "Move Through Village 1.8.0",
+  "description": "Can only be used by Villagers. Allows the villagers to create paths around the village.",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "./types/priority.json" },
+    "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },
+    "only_at_night": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, the mob will only move through the village during night time",
+      "title": "Only At Night"
+    }
+  }
+}

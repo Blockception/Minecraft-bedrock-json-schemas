@@ -1,0 +1,93 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.transformation",
+  "description": "Defines this entity's ability to trade with players.",
+  "type": "object",
+  "title": "Transformation 1.16.0",
+  "additionalProperties": false,
+
+  "properties": {
+    "add": {
+      "type": "object",
+      "description": "List of components to add to the entity after the transformation",
+      "properties": { "component_groups": { "type": "array", "description": "Names of component groups to add", "items": { "type": "string" } } },
+      "title": "Add",
+      "additionalProperties": false
+    },
+    "begin_transform_sound": { "type": "string", "description": "Sound to play when the transformation starts", "title": "Begin Transform Sound" },
+    "delay": {
+      "description": "Defines the properties of the delay for the transformation",
+      "title": "Delay",
+      "oneOf": [
+        { "type": "number" },
+        {
+          "type": "object",
+          "properties": {
+            "block_assist_chance": {
+              "type": "number",
+              "default": 0,
+              "description": "Chance that the entity will look for nearby blocks that can speed up the transformation. Value must be between 0.0 and 1.0"
+            },
+            "block_chance": {
+              "type": "number",
+              "default": 0,
+              "description": "Chance that, once a block is found, will help speed up the transformation"
+            },
+            "block_max": {
+              "type": "integer",
+              "default": 0,
+              "description": "Maximum number of blocks the entity will look for to aid in the transformation. If not defined or set to 0, it will be set to the block radius"
+            },
+            "block_radius": {
+              "type": "integer",
+              "default": 0,
+              "description": "Distance in Blocks that the entity will search for blocks that can help the transformation"
+            },
+            "block_types": {
+              "type": "array",
+              "description": "List of blocks that can help the transformation of this entity",
+              "items": { "$ref": "../../../../general/block/identifier.json" }
+            },
+            "value": { "type": "number", "default": 0, "description": "Time in seconds before the entity transforms" }
+          }
+        }
+      ]
+    },
+    "drop_equipment": {
+      "type": "boolean",
+      "default": false,
+      "description": "Cause the entity to drop all equipment upon transformation",
+      "title": "Drop Equipment"
+    },
+    "drop_inventory": {
+      "type": "boolean",
+      "default": false,
+      "description": "Cause the entity to drop all items in inventory upon transformation",
+      "title": "Drop Inventory"
+    },
+    "into": { "type": "string", "default": "", "description": "Entity Definition that this entity will transform into", "title": "Into" },
+    "keep_level": {
+      "type": "boolean",
+      "default": false,
+      "description": "If this entity has trades and has leveled up, it should maintain that level after transformation.",
+      "title": "Keep Level"
+    },
+    "keep_owner": {
+      "type": "boolean",
+      "default": false,
+      "description": "If this entity is owned by another entity, it should remain owned after transformation.",
+      "title": "Keep Owner"
+    },
+    "preserve_equipment": {
+      "type": "boolean",
+      "default": false,
+      "description": "Cause the entity to keep equipment after going through transformation",
+      "title": "Preserve Equipment"
+    },
+    "transformation_sound": {
+      "type": "string",
+      "default": "",
+      "description": "Sound to play when the entity is done transforming",
+      "title": "Transformation Sound"
+    }
+  }
+}

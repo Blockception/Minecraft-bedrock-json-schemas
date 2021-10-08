@@ -1,0 +1,57 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.sneeze",
+  "additionalProperties": false,
+  "description": "Allows the mob to stop and sneeze possibly startling nearby mobs and dropping an item.",
+  "type": "object",
+  "title": "Sneeze 1.8.0",
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "./types/priority.json" },
+    "cooldown_time": {
+      "type": "number",
+      "default": 0,
+      "description": "Time in seconds the mob has to wait before using the goal again",
+      "title": "Cooldown Time"
+    },
+    "drop_item_chance": {
+      "type": "number",
+      "default": 1,
+      "description": "The probability that the mob will drop an item when it sneezes.",
+      "title": "Drop Item Chance"
+    },
+    "entity_types": {
+      "$ref": "../types/entity_types.json",
+      "description": "List of entity types this mob will startle (cause to jump) when it sneezes.",
+      "title": "Entity Types"
+    },
+    "loot_table": {
+      "type": "string",
+      "default": "loot_tables/empty.json",
+      "description": "Loot table to select dropped items from.",
+      "title": "Loot Table",
+      "pattern": "^loot_tables/.*.json$"
+    },
+    "prepare_sound": {
+      "type": "string",
+      "default": "",
+      "description": "Sound to play when the sneeze is about to happen.",
+      "title": "Prepare Sound"
+    },
+    "prepare_time": {
+      "type": "number",
+      "default": 1,
+      "description": "The time in seconds that the mob takes to prepare to sneeze (while the prepare_sound is playing).",
+      "title": "Prepare Time"
+    },
+    "probability": {
+      "type": "number",
+      "default": 0.02,
+      "minimum": 0,
+      "maximum": 1,
+      "description": "The probability of sneezing. A value of 1.00 is 100%",
+      "title": "Probability"
+    },
+    "sound": { "type": "string", "default": "", "description": "Sound to play when the sneeze occurs.", "title": "Sound" },
+    "within_radius": { "type": "number", "default": 0, "description": "Distance in blocks that mobs will be startled.", "title": "Within Radius" }
+  }
+}

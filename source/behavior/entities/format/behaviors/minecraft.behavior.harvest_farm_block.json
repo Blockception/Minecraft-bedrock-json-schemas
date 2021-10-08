@@ -1,0 +1,25 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.harvest_farm_block",
+  "type": "object",
+  "title": "Harvest Farm Block 1.8.0",
+  "description": "Allows the villager to harvest nearby farms. Can only be used by Villagers.",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "types/priority.json" },
+    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "max_seconds_before_search": {
+      "title": "Maximum Seconds Before Search",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "type": "number"
+    },
+    "search_cooldown_max_seconds": {
+      "title": "Search Cooldown Maximum Seconds",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "type": "number"
+    },
+    "seconds_until_new_task": { "title": "Seconds Until New Task", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" }
+  }
+}

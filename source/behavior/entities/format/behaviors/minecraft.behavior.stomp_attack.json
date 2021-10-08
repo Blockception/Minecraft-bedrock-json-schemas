@@ -1,0 +1,57 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.stomp_attack",
+  "description": "Allows the mob to use the polar bear's melee attack.",
+  "type": "object",
+  "title": "Stomp Attack 1.8.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "types/priority.json" },
+    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "attack_once": { "type": "boolean", "default": false, "description": "If true, this mob will attack only one time.", "title": "Attack Once" },
+    "attack_types": { "type": "string", "default": "", "description": "Defines the entity types this mob will attack", "title": "Attack Types" },
+    "probability": {
+      "type": "number",
+      "default": 0.02,
+      "description": "The probability of sneezing. A value of 1.00 is 100%",
+      "title": "Probability"
+    },
+    "random_stop_interval": {
+      "type": "integer",
+      "default": 0,
+      "description": "Defines the probability the mob will stop fighting. A value of 0 disables randomly stopping, while a value of 1 defines a 50% chance",
+      "title": "Random Stop Interval"
+    },
+    "reach_multiplier": {
+      "type": "number",
+      "default": 2,
+      "description": "Multiplier for how far outside its box the mob can reach its target (this can be used to simulate a mob with longer arms by making this bigger)",
+      "title": "Reach Multiplier"
+    },
+    "require_complete_path": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, this goal will only trigger if the mob can reach its target.",
+      "title": "Require Complete Path"
+    },
+    "sound": { "type": "string", "description": "Sound to play when the sneeze occurs.", "title": "Sound" },
+    "track_target": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, this mob will chase after the target as long as it's a valid target",
+      "title": "Track Target"
+    },
+    "stomp_range_multiplier": {
+      "type": "number",
+      "title": "Stomp Range Multiplier",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "no_damage_range_multiplier": {
+      "type": "number",
+      "title": "No Damage Range Multiplier",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    }
+  }
+}

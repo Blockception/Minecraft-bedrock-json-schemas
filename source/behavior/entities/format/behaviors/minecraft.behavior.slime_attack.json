@@ -1,0 +1,16 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.slime_attack",
+  "additionalProperties": false,
+  "description": "Can only be used by Slimes and Magma Cubes. Allows the mob to use a melee attack like the slime's.",
+  "type": "object",
+  "title": "Slime Attack 1.8.0",
+  "properties": {
+    "priority": { "$ref": "./types/priority.json" },
+    "set_persistent": {
+      "type": "boolean",
+      "default": false,
+      "description": "Allows the actor to be set to persist upon targeting a player",
+      "title": "Set Persistent"
+    }
+  }
+}

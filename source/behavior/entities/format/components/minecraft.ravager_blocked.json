@@ -1,0 +1,34 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.ravager_blocked",
+  "description": "Defines the ravager's response to their melee attack being blocked.",
+  "type": "object",
+  "title": "Ravager Blocked 1.8.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "knockback_strength": {
+      "type": "number",
+      "default": 3,
+      "description": "The strength with which blocking entities should be knocked back",
+      "title": "Knockback Strength"
+    },
+    "reaction_choices": {
+      "type": "array",
+      "description": "A list of weighted responses to the melee attack being blocked",
+      "title": "Reaction Choices",
+      "items": {
+        "additionalProperties": false,
+        "type": "object",
+        "properties": {
+          "weight": { "type": "integer", "title": "Weight", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+          "value": {
+            "title": "Value",
+            "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED",
+            "$ref": "../types/event.json"
+          }
+        }
+      }
+    }
+  }
+}

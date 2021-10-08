@@ -1,0 +1,34 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.go_home",
+  "additionalProperties": false,
+  "description": "Allows the mob to move back to the position they were spawned.",
+  "title": "Go Home",
+  "type": "object",
+  "properties": {
+    "priority": { "$ref": "types/priority.json" },
+    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "goal_radius": {
+      "type": "number",
+      "default": 0.5,
+      "description": "Distance in blocks within the mob considers it has reached the goal. This is the `wiggle room` to stop the AI from bouncing back and forth trying to reach a specific spot",
+      "title": "Goal Radius"
+    },
+    "interval": {
+      "type": "integer",
+      "default": 120,
+      "description": "A random value to determine when to randomly move somewhere. This has a 1/interval chance to choose this goal",
+      "title": "Interval"
+    },
+    "on_home": {
+      "description": "Event to run when this mob gets home.",
+      "title": "On Home",
+      "oneOf": [{ "$ref": "../types/trigger.json" }, { "type": "array", "items": { "$ref": "../types/trigger.json" } }]
+    },
+    "on_failed": {
+      "$ref": "../types/event.json",
+      "title": "On Failed",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    }
+  }
+}

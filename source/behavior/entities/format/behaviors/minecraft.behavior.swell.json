@@ -1,0 +1,23 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.stay_while_sitting",
+  "description": "Allows the creeper to swell up when a player is nearby. It can only be used by Creepers.",
+  "title": "Stay While Sitting 1.8.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "./types/priority.json" },
+    "start_distance": {
+      "type": "number",
+      "default": 10,
+      "description": "This mob starts swelling when a target is at least this many blocks away",
+      "title": "Start Distance"
+    },
+    "stop_distance": {
+      "type": "number",
+      "default": 2,
+      "description": "This mob stops swelling when a target has moved away at least this many blocks",
+      "title": "Stop Distance"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.follow_owner",
+  "type": "object",
+  "title": "Follow Owner 1.8.0",
+  "description": "Allows the mob to follow their parent around.",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "types/priority.json" },
+    "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },
+    "start_distance": {
+      "type": "number",
+      "default": 10,
+      "description": "The distance in blocks that the owner can be away from this mob before it starts following it",
+      "title": "Start Distance"
+    },
+    "stop_distance": {
+      "type": "number",
+      "default": 2,
+      "description": "The distance in blocks this mob will stop from its owner while following it",
+      "title": "Stop Distance"
+    }
+  }
+}

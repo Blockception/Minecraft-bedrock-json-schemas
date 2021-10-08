@@ -1,9 +1,0 @@
-{
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.flying_speed",
-  "type": "object",
-  "title": "Flying Speed 1.8.0",
-  "additionalProperties": false,
-  "description": "Speed in Blocks that this entity flies at.",
-  "required": [],
-  "properties": { "value": { "type": "number", "default": 0.02, "description": "Flying speed in blocks per tick", "title": "Value" } }
-}

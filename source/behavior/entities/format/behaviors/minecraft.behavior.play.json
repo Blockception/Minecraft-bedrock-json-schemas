@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.play",
+  "description": "Allows the mob to play with other baby villagers. This can only be used by Villagers.",
+  "type": "object",
+  "title": "Play 1.8.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": { "priority": { "$ref": "types/priority.json" }, "speed_multiplier": { "$ref": "types/speed_multiplier.json" } }
+}

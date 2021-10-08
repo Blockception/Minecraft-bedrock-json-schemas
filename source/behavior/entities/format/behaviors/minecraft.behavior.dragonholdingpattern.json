@@ -1,0 +1,8 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.dragonholdingpattern",
+  "additionalProperties": false,
+  "type": "object",
+  "title": "Dragonholdingpattern 1.8.0",
+  "description": "Allows the Dragon to fly around in a circle around the center podium. Can only be used by the Ender Dragon.",
+  "properties": { "priority": { "$ref": "./types/priority.json" } }
+}

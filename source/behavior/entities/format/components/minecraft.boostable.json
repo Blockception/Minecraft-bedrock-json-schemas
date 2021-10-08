@@ -1,0 +1,42 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.boostable",
+  "type": "object",
+  "title": "Boostable 1.16.0",
+  "additionalProperties": false,
+  "description": "Defines the conditions and behavior of a rideable entity's boost",
+
+  "properties": {
+    "duration": { "type": "number", "default": 3, "description": "Time in seconds for the boost.", "title": "Duration" },
+    "speed_multiplier": {
+      "type": "number",
+      "default": 1,
+      "description": "Factor by which the entity's normal speed increases. E.g. 2.0 means go twice as fast.",
+      "title": "Speed Multiplier"
+    },
+    "boost_items": {
+      "type": "array",
+      "description": "List of items that can be used to boost while riding this entity",
+      "title": "Boost Items",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "description": "List of items that can be used to boost while riding this entity.",
+        "properties": {
+          "damage": {
+            "type": "integer",
+            "default": 1,
+            "description": "This is the damage that the item will take each time it is used.",
+            "title": "Damage"
+          },
+          "item": { "type": "string", "default": "", "description": "Name of the item that can be used to boost.", "title": "Item" },
+          "replace_item": {
+            "type": "string",
+            "default": "",
+            "description": "The item used to boost will become this item once it is used up.",
+            "title": "Replace Item"
+          }
+        }
+      }
+    }
+  }
+}

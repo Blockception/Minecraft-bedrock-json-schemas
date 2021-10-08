@@ -1,0 +1,16 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.water_movement",
+  "description": "Defines the speed with which an entity can move through water.",
+  "type": "object",
+  "title": "Water Movement 1.8.0",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "drag_factor": {
+      "type": "number",
+      "default": 0.8,
+      "description": "Drag factor to determine movement speed when in water.",
+      "title": "Drag Factor"
+    }
+  }
+}

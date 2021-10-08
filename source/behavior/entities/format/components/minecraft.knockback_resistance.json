@@ -1,0 +1,13 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.knockback_resistance",
+  "type": "object",
+  "title": "Knockback Resistance 1.8.0",
+  "additionalProperties": false,
+  "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
+  "required": [],
+  "properties": {
+    "value": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Value" },
+    "max": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Maximum" }
+  }
+}

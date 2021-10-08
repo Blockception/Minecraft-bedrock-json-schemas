@@ -1,0 +1,36 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.behavior.random_look_around_and_sit",
+  "description": "Allows the mob to randomly sit and look around for a duration. Note: Must have a sitting animation set up to use this.",
+  "type": "object",
+  "title": "Random Look Around And Sit 1.16.0",
+  "additionalProperties": false,
+
+  "properties": {
+    "priority": { "$ref": "types/priority.json" },
+    "max_look_count": {
+      "type": "integer",
+      "default": 2,
+      "description": "The Maximum amount of unique looks a mob will have while looking around.",
+      "title": "Maximum Look Count"
+    },
+    "max_look_time": {
+      "type": "integer",
+      "default": 40,
+      "description": "The Maximum amount of time (in ticks) a mob will stay looking at a direction while looking around.",
+      "title": "Maximum Look Time"
+    },
+    "min_look_count": {
+      "type": "integer",
+      "default": 1,
+      "description": "The Minimum amount of unique looks a mob will have while looking around.",
+      "title": "Minimum Look Count"
+    },
+    "min_look_time": {
+      "type": "integer",
+      "default": 20,
+      "description": "The Minimum amount of time (in ticks) a mob will stay looking at a direction while looking around.",
+      "title": "Minimum Look Time"
+    },
+    "probability": { "type": "number", "default": 0.02, "description": "The probability of randomly looking around/sitting.", "title": "Probability" }
+  }
+}

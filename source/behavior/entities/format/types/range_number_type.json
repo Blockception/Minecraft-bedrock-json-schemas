@@ -1,0 +1,10 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.type.range_number_type.1.8.0",
+  "title": "Range [A, B]",
+  "description": "A described range",
+  "examples": [[0.0, 1.0]],
+  "items": [
+    { "type": "number", "title": "A", "description": "The first value of the range" },
+    { "type": "number", "title": "B", "description": "The second value of the range" }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.flee_sun",
+  "type": "object",
+  "title": "Flee Sun 1.8.0",
+  "description": "Allows the mob to run away from direct sunlight and seek shade.",
+  "additionalProperties": false,
+  "required": [],
+  "properties": { "priority": { "$ref": "types/priority.json" }, "speed_multiplier": { "$ref": "types/speed_multiplier.json" } }
+}

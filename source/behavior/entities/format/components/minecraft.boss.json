@@ -1,0 +1,23 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.boss",
+  "type": "object",
+  "title": "Boss 1.8.0",
+  "additionalProperties": false,
+  "description": "The current state of the boss for updating the boss HUD",
+  "required": [],
+  "properties": {
+    "hud_range": {
+      "type": "integer",
+      "default": 55,
+      "description": "The Maximum distance from the boss at which the boss's health bar is present on the players screen.",
+      "title": "Hud Range"
+    },
+    "name": { "type": "string", "default": "", "description": "The name that will be displayed above the boss's health bar.", "title": "Name" },
+    "should_darken_sky": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the sky should darken in the presence of the boss.",
+      "title": "Should Darken Sky"
+    }
+  }
+}

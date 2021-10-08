@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.float",
+  "type": "object",
+  "title": "Float 1.8.0",
+  "description": "Allows the mob to stay afloat while swimming.",
+  "additionalProperties": false,
+  "required": [],
+  "properties": { "priority": { "$ref": "./types/priority.json" } }
+}

@@ -1,0 +1,26 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.movement.jump",
+  "type": "object",
+  "title": "Movement.jump 1.16.0",
+  "description": "Move control that causes the mob to jump as it moves with a specified delay between jumps.",
+  "additionalProperties": false,
+
+  "properties": {
+    "jump_delay": {
+      "type": "array",
+      "default": [0.0, 0.0],
+      "description": "Delay after landing when using the slime move control.",
+      "title": "Jump Delay",
+      "items": [
+        { "type": "number", "title": "Minimum" },
+        { "type": "number", "title": "Maximum" }
+      ]
+    },
+    "max_turn": {
+      "type": "number",
+      "default": 30,
+      "description": "The maximum number in degrees the mob can turn per tick.",
+      "title": "Maximum Turn"
+    }
+  }
+}

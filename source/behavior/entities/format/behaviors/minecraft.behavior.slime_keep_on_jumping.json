@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.slime_keep_on_jumping",
+  "additionalProperties": false,
+  "description": "Can only be used by Slimes and Magma Cubes. Allows the mob to continuously jump around like a slime.",
+  "type": "object",
+  "title": "Slime Keep On Jumping 1.8.0",
+  "required": [],
+  "properties": { "priority": { "$ref": "types/priority.json" }, "speed_multiplier": { "$ref": "types/speed_multiplier.json" } }
+}

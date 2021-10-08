@@ -1,0 +1,17 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.type_family",
+  "type": "object",
+  "title": "Type Family 1.8.0",
+  "additionalProperties": false,
+  "description": "Defines the families this entity belongs to.",
+  "required": ["family"],
+  "examples": [{ "family": ["monster"] }, { "family": ["mob"] }, { "family": ["animal"] }, { "family": ["npc"] }],
+  "properties": {
+    "family": {
+      "type": "array",
+      "items": { "type": "string", "description": "Family name", "title": "Family" },
+      "description": "List of family names",
+      "title": "Family"
+    }
+  }
+}

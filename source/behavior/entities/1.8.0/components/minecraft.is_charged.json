@@ -1,9 +1,0 @@
-{
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.is_charged",
-  "description": "Sets that this entity is charged.",
-  "type": "object",
-  "title": "Is Charged 1.8.0",
-  "additionalProperties": false,
-  "required": [],
-  "properties": {}
-}

@@ -1,0 +1,13 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.move_to_poi",
+  "type": "object",
+  "title": "Move To Poi 1.8.0",
+  "additionalProperties": false,
+  "description": "Allows the mob to move to a POI if able to",
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "./types/priority.json" },
+    "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },
+    "poi_type": { "type": "string", "description": "Tells the goal what POI type it should be looking for", "title": "Point Of Interest Type" }
+  }
+}

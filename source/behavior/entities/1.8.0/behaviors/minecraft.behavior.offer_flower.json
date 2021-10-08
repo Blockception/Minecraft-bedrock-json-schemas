@@ -1,9 +1,0 @@
-{
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.offer_flower",
-  "type": "object",
-  "title": "Offer Flower 1.8.0",
-  "additionalProperties": false,
-  "description": "Allows the mob to offer the player a flower like the Iron Golem does.",
-  "required": [],
-  "properties": { "priority": { "$ref": "./types/priority.json" } }
-}

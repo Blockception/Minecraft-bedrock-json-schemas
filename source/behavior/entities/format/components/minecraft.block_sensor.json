@@ -1,0 +1,30 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.block_sensor",
+  "type": "object",
+  "title": "Block Sensor 1.16.0",
+  "description": "Fires off a specified event when a block in the block list is broken within the sensor range.",
+  "additionalProperties": false,
+  "properties": {
+    "sensor_radius": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Sensor Radius", "minimum": 0 },
+    "on_break": {
+      "type": "array",
+      "title": "On Break",
+      "description": "Blocks that will trigger the component when broken and what event will trigger.",
+      "items": {
+        "type": "object",
+        "title": "On Block Broken",
+        "description": "",
+        "additionalProperties": false,
+        "properties": {
+          "block_list": {
+            "type": "array",
+            "title": "Block List",
+            "description": "Blocks that will trigger the component when broken and what event will trigger.",
+            "items": { "$ref": "../../../../general/block/identifier.json", "title": "Block ID" }
+          },
+          "on_block_broken": { "type": "string", "title": "On Block Broken", "description": "Event to run when a block breaks" }
+        }
+      }
+    }
+  }
+}

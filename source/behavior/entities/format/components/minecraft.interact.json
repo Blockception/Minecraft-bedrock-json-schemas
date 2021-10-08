@@ -1,0 +1,113 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.1.16.0.minecraft.interact",
+  "type": "object",
+  "title": "Interact 1.16.0",
+  "description": "Defines interactions with this entity.",
+  "additionalProperties": false,
+  "definitions": {
+    "interaction_spec": {
+      "type": "object",
+      "properties": {
+        "add_items": {
+          "type": "object",
+          "description": "Loot table with items to add to the player's inventory upon successful interaction.",
+          "title": "Add Items",
+          "additionalProperties": false,
+          "properties": {
+            "table": {
+              "type": "string",
+              "$ref": "../../../../general/loot_table/identifier.json",
+              "description": "File path, relative to the Behavior Pack's path, to the loot table file.",
+              "title": "Table"
+            }
+          }
+        },
+        "cooldown": {
+          "type": "number",
+          "default": 0,
+          "description": "Time in seconds before this entity can be interacted with again.",
+          "title": "Cooldown"
+        },
+        "hurt_item": {
+          "type": "integer",
+          "default": 0,
+          "description": "The amount of damage the item will take when used to interact with this entity. A value of 0 means the item won't lose durability.",
+          "title": "Hurt Item"
+        },
+        "interact_text": {
+          "type": "string",
+          "default": "",
+          "description": "Text to show when the player is able to interact in this way with this entity when playing with Touch-screen controls.",
+          "title": "Interact Text"
+        },
+        "on_interact": { "$ref": "../types/trigger.json", "description": "Event to fire when the interaction occurs.", "title": "On Interact" },
+        "particle_on_start": {
+          "type": "object",
+          "description": "Particle effect that will be triggered at the start of the interaction.",
+          "title": "Particle On Start",
+          "properties": {
+            "particle_offset_towards_interactor": {
+              "type": "boolean",
+              "description": "Whether or not the particle will appear closer to who performed the interaction.",
+              "title": "Particle Offset Towards Interactor"
+            },
+            "particle_type": { "type": "string", "description": "The type of particle that will be spawned.", "title": "Particle Type" },
+            "particle_y_offset": {
+              "type": "number",
+              "description": "Will offset the particle this amount in the y direction.",
+              "title": "Particle Y Offset"
+            }
+          }
+        },
+        "play_sounds": {
+          "type": "string",
+          "default": "",
+          "description": "List of sounds to play when the interaction occurs.",
+          "title": "Play Sounds"
+        },
+        "spawn_entities": {
+          "type": "string",
+          "default": "",
+          "description": "List of entities to spawn when the interaction occurs.",
+          "title": "Spawn Entities"
+        },
+        "spawn_items": {
+          "type": "object",
+          "description": "Loot table with items to drop on the ground upon successful interaction.",
+          "title": "Spawn Items",
+          "additionalProperties": false,
+          "properties": {
+            "table": {
+              "type": "string",
+              "$ref": "../../../../general/loot_table/identifier.json",
+              "description": "File path, relative to the Behavior Pack's path, to the loot table file.",
+              "title": "Table"
+            }
+          }
+        },
+        "swing": {
+          "type": "boolean",
+          "default": false,
+          "description": "If true, the player will do the `swing` animation when interacting with this entity.",
+          "title": "Swing"
+        },
+        "transform_to_item": {
+          "type": "string",
+          "title": "Transform To Item",
+          "description": "The feed item used will transform to this item upon successful interaction. Format: itemName:auxValue"
+        },
+        "use_item": { "type": "boolean", "default": false, "description": "If true, the interaction will use an item.", "title": "Use Item" }
+      }
+    }
+  },
+  "properties": {
+    "interactions": {
+      "description": "The interactions",
+      "title": "Interactions",
+      "oneOf": [
+        { "type": "object", "$ref": "#/definitions/interaction_spec" },
+        { "type": "array", "items": { "$ref": "#/definitions/interaction_spec" } }
+      ]
+    }
+  }
+}
