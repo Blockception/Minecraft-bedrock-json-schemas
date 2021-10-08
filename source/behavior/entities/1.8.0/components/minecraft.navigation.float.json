@@ -1,10 +1,9 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.navigation.float",
+  "$id": "blockception.minecraft.behavior.entities.1.13.0.minecraft.navigation.float",
+  "title": "Navigation.float",
+  "description": "Allows this entity to generate paths by flying around the air like the regular Ghast.",
   "type": "object",
-  "title": "Navigation.float 1.8.0",
   "additionalProperties": false,
-  "description": "Allows this entity to generate paths that include vertical walls like the vanilla Spiders do.",
-  "required": [],
   "properties": {
     "avoid_damage_blocks": {
       "type": "boolean",
@@ -37,7 +36,11 @@
       "items": {
         "title": "Block",
         "description": "Tells the pathfinder which blocks to avoid when creating a path",
-        "$ref": "../../../../general/block/identifier.json"
+        "$comment": "UNDOCUMENTED",
+        "oneOf": [
+          { "type": "string", "$ref": "../../../../general/block/identifier.json" },
+          { "type": "object", "title": "Block To Avoid", "properties": { "name": { "$ref": "../../../../general/block/identifier.json" } } }
+        ]
       }
     },
     "can_breach": {

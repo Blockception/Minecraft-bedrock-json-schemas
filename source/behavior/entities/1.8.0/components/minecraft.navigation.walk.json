@@ -1,10 +1,9 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.navigation.walk",
-  "type": "object",
-  "title": "Navigation.walk.skip 1.8.0",
-  "additionalProperties": false,
+  "$id": "blockception.minecraft.behavior.entities.1.13.0.minecraft.navigation.walk",
+  "title": "Navigation.walk 1.13.0",
   "description": "Allows this entity to generate paths by walking around and jumping up and down a block like regular mobs.",
-  "required": [],
+  "type": "object",
+  "additionalProperties": false,
   "properties": {
     "avoid_damage_blocks": {
       "type": "boolean",
@@ -37,7 +36,11 @@
       "items": {
         "title": "Block",
         "description": "Tells the pathfinder which blocks to avoid when creating a path",
-        "$ref": "../../../../general/block/identifier.json"
+        "$comment": "UNDOCUMENTED",
+        "oneOf": [
+          { "type": "string", "$ref": "../../../../general/block/identifier.json" },
+          { "type": "object", "title": "Block To Avoid", "properties": { "name": { "$ref": "../../../../general/block/identifier.json" } } }
+        ]
       }
     },
     "can_breach": {
@@ -51,13 +54,6 @@
       "default": false,
       "description": "Tells the pathfinder that it can path through a closed door and break it",
       "title": "Can Break Doors"
-    },
-    "can_float": {
-      "type": "boolean",
-      "default": true,
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
-      "title": "Can Float"
     },
     "can_jump": {
       "type": "boolean",

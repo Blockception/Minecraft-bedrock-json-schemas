@@ -1,31 +1,17 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.environment_sensor",
-  "title": "Environment Sensor 1.8.0",
-  "description": "Allows the entity to power jump like the horse does in vanilla.",
-  "definitions": {
-    "on_environement": {
-      "type": "object",
-      "additionalProperties": false,
-      "description": "Allows the entity to power jump like the horse does in vanilla.",
-      "title": "On Environement",
-      "properties": {
-        "filters": { "$ref": "../../filters/filters.json", "description": "The filters to evualate for this environment sensor", "title": "Filters" },
-        "event": { "type": "string", "pattern": "^.+$", "description": "The event to trigger if the filters are true", "title": "Event" },
-        "target": { "description": "The target of the event", "$ref": "../../filters/filters/types/subject.json" }
-      }
+  "$id": "blockception.minecraft.behavior.entities.1.13.0.minecraft.environment_sensor",
+  "title": "Environment Sensor 1.13.0",
+  "description": "Creates a trigger based on environment conditions.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "triggers": {
+      "description": "The list of triggers that fire when the environment conditions match the given filter criteria.",
+      "title": "Triggers",
+      "anyOf": [
+        { "type": "array", "items": { "$ref": "../types/trigger.json" } },
+        { "type": "object", "$ref": "../types/trigger.json" }
+      ]
     }
-  },
-  "required": [],
-  "anyOf": [
-    { "type": "object", "$ref": "#/definitions/on_environement" },
-    {
-      "type": "array",
-      "items": {
-        "oneOf": [
-          { "$ref": "#/definitions/on_environement" },
-          { "type": "object", "properties": { "on_environment": { "$ref": "#/definitions/on_environement" } } }
-        ]
-      }
-    }
-  ]
+  }
 }

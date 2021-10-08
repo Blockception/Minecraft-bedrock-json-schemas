@@ -1,20 +1,24 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.damage_sensor",
-  "title": "Damage Sensor 1.8.0",
+  "$id": "blockception.minecraft.behavior.entities.1.13.0.minecraft.damage_sensor",
+  "title": "Damage Sensor 1.13.0",
   "description": "Defines what events to call when this entity is damaged by specific entities or items.",
+  "type": "object",
+  "additionalProperties": false,
   "definitions": {
-    "damagespec": {
-      "type": "object",
-      "description": "A trigger with the events to call when taking specific kinds of damage.",
-      "additionalProperties": false,
-      "title": "Damage Trigger",
+    "trigger": {
       "properties": {
         "cause": {
           "type": "string",
           "default": "none",
           "description": "Type of damage that triggers the events.",
-          "$ref": "../../../../general/entity_damage.json",
-          "title": "Cause"
+          "title": "Cause",
+          "$ref": "../../../../general/entity/damage_source.json"
+        },
+        "damage_multiplier": {
+          "type": "number",
+          "default": 1,
+          "description": "A multiplier that modifies the base damage from the damage cause. If deals_damage is true the multiplier can only reduce the damage the entity will take to a minimum of 1.",
+          "title": "Damage Multiplier"
         },
         "deals_damage": {
           "type": "boolean",
@@ -26,14 +30,32 @@
           "type": "object",
           "description": "Specifies filters for entity definitions and events.",
           "title": "On Damage",
-          "$ref": "../types/trigger.json"
+          "properties": {
+            "filters": { "$ref": "../../filters/filters.json" },
+            "event": { "type": "string", "pattern": "^.*$", "description": "Defines what event to run", "title": "Event" },
+            "target": {
+              "$ref": "../../filters/filters/types/subject.json",
+              "description": "filters to use to define specific tests",
+              "title": "Target"
+            }
+          }
+        },
+        "on_damage_sound_event": {
+          "$ref": "../../1.8.0/types/event.json",
+          "description": "Defines what sound to play, if any, when the on_damage filters are met.",
+          "title": "On Damage Sound Event"
         }
       }
     }
   },
-  "required": [],
-  "oneOf": [
-    { "type": "object", "$ref": "#/definitions/damagespec" },
-    { "type": "array", "items": { "$ref": "#/definitions/damagespec" } }
-  ]
+  "properties": {
+    "triggers": {
+      "description": "The list of triggers with the events to call when taking specific kinds of damage.",
+      "title": "Triggers",
+      "oneOf": [
+        { "type": "array", "items": { "$ref": "#/definitions/trigger" } },
+        { "type": "object", "$ref": "#/definitions/trigger" }
+      ]
+    }
+  }
 }

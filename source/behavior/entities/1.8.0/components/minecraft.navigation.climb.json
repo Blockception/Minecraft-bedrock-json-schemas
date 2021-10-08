@@ -1,10 +1,9 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.navigation.climb",
-  "type": "object",
-  "title": "Navigation.climb 1.8.0",
-  "additionalProperties": false,
+  "$id": "blockception.minecraft.behavior.entities.1.13.0.minecraft.navigation.climb",
+  "title": "Navigation.climb",
   "description": "Allows this entity to generate paths that include vertical walls like the vanilla Spiders do.",
-  "required": [],
+  "type": "object",
+  "additionalProperties": false,
   "properties": {
     "avoid_damage_blocks": {
       "type": "boolean",
@@ -37,9 +36,10 @@
       "items": {
         "title": "Block",
         "description": "Tells the pathfinder which blocks to avoid when creating a path",
+        "$comment": "UNDOCUMENTED",
         "oneOf": [
           { "type": "string", "$ref": "../../../../general/block/identifier.json" },
-          { "type": "object", "properties": { "name": { "$ref": "../../../../general/block/identifier.json", "title": "Name" } } }
+          { "type": "object", "title": "Block To Avoid", "properties": { "name": { "$ref": "../../../../general/block/identifier.json" } } }
         ]
       }
     },

@@ -1,10 +1,10 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.behavior.go_home",
+  "$id": "blockception.minecraft.behavior.entities.1.13.0.minecraft.behavior.go_home",
   "type": "object",
-  "title": "Go Home 1.8.0",
+  "title": "Go Home 1.13.0",
   "description": "Allows the mob to move back to the position they were spawned.",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
@@ -21,9 +21,22 @@
       "title": "Interval"
     },
     "on_home": {
-      "description": "Event to run when this mob gets home.",
       "title": "On Home",
-      "oneOf": [{ "$ref": "../types/trigger.json" }, { "type": "array", "items": { "$ref": "../types/trigger.json" } }]
+      "description": "Event to run when this mob gets home.",
+      "oneOf": [
+        { "type": "string" },
+        { "type": "object", "$ref": "../types/trigger.json" },
+        { "type": "array", "items": { "$ref": "../types/trigger.json" } }
+      ]
+    },
+    "on_failed": {
+      "title": "On Failed",
+      "description": "Event to run when this mob gets home.",
+      "oneOf": [
+        { "type": "string" },
+        { "type": "object", "$ref": "../types/trigger.json" },
+        { "type": "array", "items": { "$ref": "../types/trigger.json" } }
+      ]
     }
   }
 }

@@ -1,45 +1,41 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.rideable",
+  "$id": "blockception.minecraft.behavior.entities.1.13.0.minecraft.rideable",
   "description": "Determines whether this entity can be ridden. Allows specifying the different seat positions and quantity.",
   "type": "object",
-  "title": "Rideable 1.8.0",
+  "title": "Rideable 1.13.0",
   "additionalProperties": false,
   "definitions": {
     "seats_spec": {
       "additionalProperties": false,
       "type": "object",
-      "title": "Seats",
       "properties": {
         "lock_rider_rotation": {
           "type": "number",
           "default": 181,
-          "description": "Angle in degrees that a rider is allowed to rotate while riding this entity. Omit this property for no limit",
-          "title": "Lock Rider Rotation"
+          "description": "Angle in degrees that a rider is allowed to rotate while riding this entity. Omit this property for no limit"
         },
         "max_rider_count": {
           "type": "integer",
           "default": 0,
-          "description": "Defines the maximum number of riders that can be riding this entity for this seat to be valid",
-          "title": "Maximum Rider Count"
+          "description": "Defines the maximum number of riders that can be riding this entity for this seat to be valid"
         },
         "min_rider_count": {
           "type": "integer",
           "default": 0,
-          "description": "Defines the minimum number of riders that need to be riding this entity before this seat can be used",
-          "title": "Minimum Rider Count"
+          "description": "Defines the minimum number of riders that need to be riding this entity before this seat can be used"
         },
         "position": {
           "$ref": "../../../../general/array_3_number.json",
           "default": [0.0, 0.0, 0.0],
-          "description": "Position of this seat relative to this entity's position",
-          "title": "Position"
+          "description": "Position of this seat relative to this entity's position"
         },
-        "rotate_rider_by": { "type": "number", "default": 0, "description": "Offset to rotate riders by", "title": "Rotate Rider By" }
+        "rotate_rider_by": { "$ref": "../../../../molang/number.json", "description": "Offset to rotate riders by" }
       }
     }
   },
-  "required": [],
+
   "properties": {
+    "priority": { "$ref": "types/priority.json" },
     "controlling_seat": {
       "type": "integer",
       "default": 0,
@@ -54,7 +50,7 @@
     },
     "family_types": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": { "type": "string", "title": "Family Type", "description": "The entity that can ride this entity" },
       "description": "List of entities that can ride this entity",
       "title": "Family Types"
     },

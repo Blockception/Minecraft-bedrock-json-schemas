@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.breedable",
+  "$id": "blockception.minecraft.behavior.entities.1.13.0.minecraft.breedable",
   "type": "object",
-  "title": "Breedable 1.8.0",
+  "title": "Breedable 1.13.0",
   "additionalProperties": false,
   "description": "Defines the way an entity can get into the `love` state.",
   "definitions": {
@@ -9,7 +9,7 @@
       "type": "object",
       "description": "An entity definitions that this entity can breed with.",
       "additionalItems": false,
-      "required": [],
+
       "properties": {
         "baby_type": { "type": "string", "description": "The entity definition of this entity's babies.", "title": "Baby Type" },
         "breed_event": { "$ref": "../types/event.json", "description": "Event to run when this entity breeds.", "title": "Breed Event" },
@@ -17,7 +17,7 @@
       }
     }
   },
-  "required": [],
+
   "properties": {
     "allow_sitting": { "description": "If true, entities can breed while sitting.", "type": "boolean", "default": false, "title": "Allow Sitting" },
     "blend_attributes": {
@@ -35,32 +35,15 @@
     "breed_items": {
       "description": "The list of items that can be used to get the entity into the `love` state",
       "title": "Breed Items",
-      "oneOf": [
-        {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "description": "An item that can be used to get the entity into the `love` state",
-            "$ref": "../../../../general/item/identifier.json",
-            "title": "Breed Item"
-          }
-        },
-        { "type": "string", "$ref": "../../../../general/item/identifier.json" }
-      ]
+      "oneOf": [{ "type": "array", "items": { "type": "string" } }, { "type": "string" }]
     },
     "breeds_with": {
       "description": "The list of entity definitions that this entity can breed with.",
-      "title": "Breeds With",
       "oneOf": [
         { "type": "object", "$ref": "#/definitions/breeds_with_spec" },
         { "uniqueItems": true, "type": "array", "items": { "type": "object", "$ref": "#/definitions/breeds_with_spec" } }
-      ]
-    },
-    "causes_pregnancy": {
-      "type": "boolean",
-      "default": false,
-      "description": "If true, the entity will become pregnant instead of spawning a baby.",
-      "title": "Causes Pregnancy"
+      ],
+      "title": "Breeds With"
     },
     "deny_parents_variant": {
       "type": "object",
@@ -111,12 +94,6 @@
       "maximum": 1.0,
       "title": "Extra Baby Chance"
     },
-    "inherit_tamed": {
-      "description": "If true, the babies will be automatically tamed if its parents are",
-      "type": "boolean",
-      "default": true,
-      "title": "Inherit Tamed"
-    },
     "love_filters": {
       "$ref": "../../filters/filters.json",
       "description": "The filters to run when attempting to fall in love.",
@@ -154,10 +131,28 @@
       },
       "title": "Mutation Factor"
     },
+    "causes_pregnancy": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, the entity will become pregnant instead of spawning a baby.",
+      "title": "Causes Pregnancy"
+    },
+    "inherit_tamed": {
+      "type": "boolean",
+      "default": true,
+      "description": "If true, the babies will be automatically tamed if its parents are",
+      "title": "Inherit Tamed"
+    },
+    "require_full_health": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, the entity needs to be at full health before it can breed.",
+      "title": "Require Full Health"
+    },
     "require_tame": {
       "type": "boolean",
-      "description": "If true, the entities need to be tamed first before they can breed.",
       "default": true,
+      "description": "If true, the entities need to be tamed first before they can breed.",
       "title": "Require Tame"
     }
   }

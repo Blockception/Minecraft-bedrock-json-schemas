@@ -1,10 +1,10 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.1.8.0.minecraft.transformation",
+  "$id": "blockception.minecraft.behavior.entities.1.13.0.minecraft.transformation",
   "description": "Defines this entity's ability to trade with players.",
   "type": "object",
-  "title": "Transformation 1.8.0",
+  "title": "Transformation 1.13.0",
   "additionalProperties": false,
-  "required": [],
+
   "properties": {
     "add": {
       "type": "object",
@@ -13,12 +13,12 @@
       "title": "Add",
       "additionalProperties": false
     },
-    "begin_transform_sound": { "type": "string", "description": "Sound to play when the transformation starts", "title": "Begin Transform Sound" },
+    "begin_transform_sound": { "type": "string", "description": "Sound to play when the transformation starts", "title": "Begin transform sound" },
     "delay": {
-      "title": "Delay",
-      "additionalProperties": false,
       "type": "object",
       "description": "Defines the properties of the delay for the transformation",
+      "title": "Delay",
+      "additionalProperties": false,
       "properties": {
         "block_assist_chance": {
           "type": "number",
@@ -43,7 +43,7 @@
         "block_types": {
           "type": "array",
           "description": "List of blocks that can help the transformation of this entity",
-          "items": { "$ref": "../../../../general/blocks_item.json" }
+          "items": { "$ref": "../../../../general/block/identifier.json" }
         },
         "value": { "type": "number", "default": 0, "description": "Time in seconds before the entity transforms" }
       }
@@ -52,7 +52,7 @@
       "type": "boolean",
       "default": false,
       "description": "Cause the entity to drop all equipment upon transformation",
-      "title": "Drop Equipment"
+      "title": "Drop equipment"
     },
     "into": { "type": "string", "description": "Entity Definition that this entity will transform into", "title": "Into" },
     "keep_level": {
