@@ -10,7 +10,7 @@
       "title": "Add Or Remove",
       "description": "The components groups to add or remove",
       "type": "object",
-      "examples": [{ "add": { "component_groups": [] } }, { "remove": { "component_groups": [] } }],
+      "examples": [{ "component_groups": [] }],
       "properties": {
         "component_groups": {
           "title": "Component Groups",
@@ -23,6 +23,7 @@
     "event_base": {
       "additionalProperties": false,
       "type": "object",
+      "examples": [{ "add": { "component_groups": [] } }, { "remove": { "component_groups": [] } }],
       "properties": {
         "filters": { "$ref": "./../filters/filters.json" },
         "trigger": { "type": "string", "description": "Triggers additional events", "$comment": "UNDOCUMENTED", "title": "Trigger" },

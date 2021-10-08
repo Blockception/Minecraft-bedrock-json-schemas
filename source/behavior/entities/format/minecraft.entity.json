@@ -82,6 +82,7 @@
       "description": "Each group when add / remove the default components",
       "uniqueItems": true,
       "type": "object",
+      "propertyNames": { "examples": ["self:"] },
       "additionalProperties": {
         "$ref": "./components.json",
         "uniqueItems": true,
