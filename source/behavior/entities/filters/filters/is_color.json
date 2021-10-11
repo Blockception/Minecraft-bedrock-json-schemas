@@ -5,9 +5,17 @@
   "description": "Returns true if the subject entity is the named color.",
   "required": ["value"],
   "properties": {
-    "test": { "type": "string", "title": "Test Property", "description": "Returns true if the subject entity is the named color." },
-    "operator": { "$ref": "./types/operator.json" },
-    "subject": { "$ref": "./types/subject.json" },
+    "test": {
+      "type": "string",
+      "title": "Test Property",
+      "description": "Returns true if the subject entity is the named color."
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
     "value": {
       "description": "The Palette Color to test",
       "type": "string",
@@ -31,5 +39,11 @@
       ],
       "title": "Value"
     }
-  }
+  },
+  "examples": [
+    {
+      "test": "is_color",
+      "value": "black"
+    }
+  ]
 }

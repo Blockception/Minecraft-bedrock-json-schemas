@@ -5,9 +5,27 @@
   "description": "Returns true if the subject entity is the variant number provided.",
   "required": ["value"],
   "properties": {
-    "test": { "type": "string", "title": "Test Property", "description": "The test property" },
-    "operator": { "$ref": "./types/operator.json" },
-    "subject": { "$ref": "./types/subject.json" },
-    "value": { "type": "integer", "description": "The altitude value to compare with", "title": "Value" }
-  }
+    "test": {
+      "type": "string",
+      "title": "Test Property",
+      "description": "The test property"
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
+    "value": {
+      "type": "integer",
+      "description": "The altitude value to compare with",
+      "title": "Value"
+    }
+  },
+  "examples": [
+    {
+      "test": "is_variant",
+      "value": 0
+    }
+  ]
 }

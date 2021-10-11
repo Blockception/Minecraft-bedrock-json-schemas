@@ -4,16 +4,28 @@
   "title": "Is Humid",
   "description": "Tests whether the Subject is in an area with humidity",
   "properties": {
-    "test": { "type": "string", "title": "Test Property", "description": "Tests whether the Subject is in an area with humidity" },
-    "operator": { "$ref": "./types/operator.json" },
-    "subject": { "$ref": "./types/subject.json" },
+    "test": {
+      "type": "string",
+      "title": "Test Property",
+      "description": "Tests whether the Subject is in an area with humidity"
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
     "value": {
       "title": "Value",
       "description": "True or false.",
-      "oneOf": [
-        { "type": "boolean", "default": true },
-        { "type": "string", "default": "true", "enum": ["true", "false"] }
-      ]
+      "type": "boolean",
+      "default": true
     }
-  }
+  },
+  "examples": [
+    {
+      "test": "is_humid",
+      "value": true
+    }
+  ]
 }

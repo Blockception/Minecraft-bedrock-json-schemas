@@ -9,15 +9,23 @@
       "title": "Test Property",
       "description": "Tests whether the target has any trade supply left. Will return false if the target cannot be traded with."
     },
-    "operator": { "$ref": "./types/operator.json" },
-    "subject": { "$ref": "./types/subject.json" },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
     "value": {
       "title": "Value",
       "description": "True or false.",
-      "oneOf": [
-        { "type": "boolean", "default": true },
-        { "type": "string", "default": "true", "enum": ["true", "false"] }
-      ]
+      "type": "boolean",
+      "default": true
     }
-  }
+  },
+  "examples": [
+    {
+      "test": "has_trade_supply",
+      "value": true
+    }
+  ]
 }

@@ -4,16 +4,28 @@
   "title": "Surface Mob",
   "description": "Tests if the subject is a surface mob.",
   "properties": {
-    "test": { "type": "string", "title": "Test", "description": "The test property" },
-    "operator": { "$ref": "./types/operator.json" },
-    "subject": { "$ref": "./types/subject.json" },
+    "test": {
+      "type": "string",
+      "title": "Test",
+      "description": "The test property"
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
     "value": {
       "description": "True or false.",
-      "oneOf": [
-        { "type": "boolean", "default": true },
-        { "type": "string", "enum": ["true", "false"] }
-      ],
+      "type": "boolean",
+      "default": true,
       "title": "Value"
     }
-  }
+  },
+  "examples": [
+    {
+      "test": "surface_mob",
+      "value": true
+    }
+  ]
 }

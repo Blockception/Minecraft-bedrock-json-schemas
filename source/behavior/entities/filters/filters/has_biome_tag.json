@@ -5,9 +5,27 @@
   "description": "Tests whether the biome the subject is in has the specified tag.",
   "required": ["value"],
   "properties": {
-    "test": { "type": "string", "title": "Test Property", "description": "Tests whether the biome the subject is in has the specified tag." },
-    "operator": { "$ref": "./types/operator.json" },
-    "subject": { "$ref": "./types/subject.json" },
-    "value": { "description": "(Required) The tag to look for", "type": "string", "title": "Value" }
-  }
+    "test": {
+      "type": "string",
+      "title": "Test Property",
+      "description": "Tests whether the biome the subject is in has the specified tag."
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
+    "value": {
+      "description": "(Required) The tag to look for",
+      "type": "string",
+      "title": "Value"
+    }
+  },
+  "examples": [
+    {
+      "test": "has_biome_tag",
+      "value": "monster"
+    }
+  ]
 }

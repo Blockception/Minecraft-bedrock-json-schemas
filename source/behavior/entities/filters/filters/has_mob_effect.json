@@ -5,9 +5,27 @@
   "description": "Tests whether the Subject has the specified mob effect.",
   "required": ["value"],
   "properties": {
-    "test": { "type": "string", "title": "Test Property", "description": "Tests whether the Subject has the specified mob effect." },
-    "operator": { "$ref": "./types/operator.json" },
-    "subject": { "$ref": "./types/subject.json" },
-    "value": { "type": "string", "description": "The specified mob effect", "title": "Value" }
-  }
+    "test": {
+      "type": "string",
+      "title": "Test Property",
+      "description": "Tests whether the Subject has the specified mob effect."
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
+    "value": {
+      "type": "string",
+      "description": "The specified mob effect",
+      "title": "Value"
+    }
+  },
+  "examples": [
+    {
+      "test": "has_mob_effect",
+      "value": "bad_omen"
+    }
+  ]
 }

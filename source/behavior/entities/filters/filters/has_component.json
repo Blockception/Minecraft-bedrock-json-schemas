@@ -5,9 +5,27 @@
   "description": "Returns true when the subject entity contains the named component.",
   "required": ["value"],
   "properties": {
-    "test": { "type": "string", "title": "Test Property", "description": "Returns true when the subject entity contains the named component." },
-    "operator": { "$ref": "./types/operator.json" },
-    "subject": { "$ref": "./types/subject.json" },
-    "value": { "type": "string", "description": "(Required) The component name to look for", "title": "Value" }
-  }
+    "test": {
+      "type": "string",
+      "title": "Test Property",
+      "description": "Returns true when the subject entity contains the named component."
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
+    "value": {
+      "type": "string",
+      "description": "(Required) The component name to look for",
+      "title": "Value"
+    }
+  },
+  "examples": [
+    {
+      "test": "has_component",
+      "value": "minecraft:explode"
+    }
+  ]
 }

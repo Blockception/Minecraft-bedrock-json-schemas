@@ -5,14 +5,28 @@
   "description": "Returns true when the subject entity has the named ability.",
   "required": ["value"],
   "properties": {
-    "test": { "type": "string", "title": "Test Property", "description": "Returns true when the subject entity has the named ability." },
-    "operator": { "$ref": "./types/operator.json" },
-    "subject": { "$ref": "./types/subject.json" },
+    "test": {
+      "type": "string",
+      "title": "Test Property",
+      "description": "Returns true when the subject entity has the named ability."
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
     "value": {
       "type": "string",
       "description": "(Required) The Ability type to test",
       "enum": ["flySpeed", "flying", "instabuild", "invulnerable", "lightning", "mayfly", "mute", "noclip", "walkSpeed", "worldbuilder"],
       "title": "Value"
     }
-  }
+  },
+  "examples": [
+    {
+      "test": "has_ability",
+      "value": "flySpeed"
+    }
+  ]
 }

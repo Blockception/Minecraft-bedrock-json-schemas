@@ -3,15 +3,32 @@
   "type": "object",
   "title": "Is Altitude",
   "description": "Tests the current altitude against a provided value. 0= bedrock elevation.",
-  "required": ["value"],
+  "required": [
+    "value"
+  ],
   "properties": {
     "test": {
       "type": "string",
       "title": "Test Property",
       "description": "Tests the current altitude against a provided value. 0= bedrock elevation."
     },
-    "operator": { "$ref": "./types/operator.json" },
-    "subject": { "$ref": "./types/subject.json" },
-    "value": { "type": "integer", "description": "The altitude value to compare with", "minimum": 0, "title": "Value" }
-  }
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
+    "value": {
+      "type": "integer",
+      "description": "The altitude value to compare with",
+      "minimum": 0,
+      "title": "Value"
+    }
+  },
+  "examples": [
+    {
+      "test": "example",
+      "value": 0
+    }
+  ]
 }

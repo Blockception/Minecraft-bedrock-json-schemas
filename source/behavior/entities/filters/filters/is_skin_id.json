@@ -4,9 +4,27 @@
   "title": "Is Skin Id",
   "description": "Returns true if the subject entity is the skin id number provided.",
   "properties": {
-    "test": { "type": "string", "title": "Test Property", "description": "The test property" },
-    "operator": { "$ref": "./types/operator.json" },
-    "subject": { "$ref": "./types/subject.json" },
-    "value": { "type": "integer", "description": "The altitude value to compare with", "title": "Value" }
-  }
+    "test": {
+      "type": "string",
+      "title": "Test Property",
+      "description": "The test property"
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
+    "value": {
+      "type": "integer",
+      "description": "The altitude value to compare with",
+      "title": "Value"
+    }
+  },
+  "examples": [
+    {
+      "test": "is_skin_id",
+      "value": 0
+    }
+  ]
 }

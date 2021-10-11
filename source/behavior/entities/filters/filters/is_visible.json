@@ -4,16 +4,28 @@
   "title": "Is Visible",
   "description": "Returns true if the subject entity is visible.",
   "properties": {
-    "test": { "type": "string", "title": "Test Property", "description": "The test property" },
-    "operator": { "$ref": "./types/operator.json" },
-    "subject": { "$ref": "./types/subject.json" },
+    "test": {
+      "type": "string",
+      "title": "Test Property",
+      "description": "The test property"
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
     "value": {
       "title": "Value",
       "description": "True or false.",
-      "oneOf": [
-        { "type": "boolean", "default": true },
-        { "type": "string", "default": "true", "enum": ["true", "false"] }
-      ]
+      "type": "boolean",
+      "default": true
     }
-  }
+  },
+  "examples": [
+    {
+      "test": "is_visible",
+      "value": true
+    }
+  ]
 }

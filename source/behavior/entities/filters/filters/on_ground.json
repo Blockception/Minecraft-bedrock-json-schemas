@@ -4,16 +4,28 @@
   "title": "On Ground",
   "description": "Returns true when the subject entity is on ground.",
   "properties": {
-    "test": { "type": "string", "title": "Test Property", "description": "The test property" },
-    "operator": { "$ref": "./types/operator.json" },
-    "subject": { "$ref": "./types/subject.json" },
+    "test": {
+      "type": "string",
+      "title": "Test Property",
+      "description": "The test property"
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
     "value": {
       "title": "Value",
       "description": "True or false.",
-      "oneOf": [
-        { "type": "boolean", "default": true },
-        { "type": "string", "default": "true", "enum": ["true", "false"] }
-      ]
+      "type": "boolean",
+      "default": true
     }
-  }
+  },
+  "examples": [
+    {
+      "test": "on_ground",
+      "value": true
+    }
+  ]
 }

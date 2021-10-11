@@ -3,11 +3,61 @@
   "type": "object",
   "title": "Is Game Rule",
   "description": "Tests whether a named game rule is active.",
-  "required": ["domain"],
+  "required": ["domain", "value"],
   "properties": {
-    "domain": { "description": "The Game Rule to test.", "title": "Domain", "examples": ["domobspawning"] },
-    "operator": { "$ref": "./types/operator.json" },
-    "subject": { "$ref": "./types/subject.json" },
-    "value": { "description": "Tests whether a named game rule is active.", "default": true, "type": "boolean", "title": "Value" }
-  }
+    "domain": {
+      "description": "The Game Rule to test.",
+      "title": "Domain",
+      "examples": [
+        "commandBlockOutput",
+        "commandBlocksEnabled",
+        "doDaylightCycle",
+        "doEntityDrops",
+        "doFireTick",
+        "doImmediateRespawn",
+        "doInsomnia",
+        "doMobLoot",
+        "doMobSpawning",
+        "doTileDrops",
+        "doWeatherCycle",
+        "drowningDamage",
+        "fallDamage",
+        "fireDamage",
+        "freezeDamage",
+        "functionCommandLimit",
+        "keepInventory",
+        "maxCommandChainLength",
+        "mobGriefing",
+        "naturalRegeneration",
+        "pvp",
+        "randomTickSpeed",
+        "respawnblocksexplode",
+        "sendCommandFeedback",
+        "showCoordinates",
+        "showDeathMessages",
+        "showTags",
+        "spawnRadius",
+        "tntExplodes"
+      ]
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
+    "value": {
+      "description": "Tests whether a named game rule is active.",
+      "default": true,
+      "type": "boolean",
+      "title": "Value"
+    }
+  },
+  "examples": [
+    {
+      "test": "is_game_rule",
+      "domain": "domobspawning",
+      "value": false
+    }
+  ]
 }

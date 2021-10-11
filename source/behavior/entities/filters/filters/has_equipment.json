@@ -3,7 +3,9 @@
   "type": "object",
   "title": "Has Equipment",
   "description": "Tests for the presence of a named item in the designated slot of the subject entity.",
-  "required": ["value"],
+  "required": [
+    "value"
+  ],
   "properties": {
     "test": {
       "type": "string",
@@ -14,16 +16,34 @@
     "domain": {
       "description": "The equipment location to test",
       "default": "any",
-      "enum": ["any", "armor", "feet", "hand", "head", "leg", "torso"],
+      "enum": [
+        "any",
+        "armor",
+        "feet",
+        "hand",
+        "head",
+        "leg",
+        "torso"
+      ],
       "title": "Domain"
     },
-    "operator": { "$ref": "./types/operator.json" },
-    "subject": { "$ref": "./types/subject.json" },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
     "value": {
       "description": "The item name to look for",
       "type": "string",
       "$ref": "../../../../general/item/identifier.json",
       "title": "Value"
     }
-  }
+  },
+  "examples": [
+    {
+      "test": "example",
+      "value": "example"
+    }
+  ]
 }

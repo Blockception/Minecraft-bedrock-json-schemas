@@ -4,16 +4,28 @@
   "title": "Has Target",
   "description": "Returns true if the subject entity has a valid target.",
   "properties": {
-    "test": { "type": "string", "title": "Test", "description": "The test property" },
-    "operator": { "$ref": "./types/operator.json" },
-    "subject": { "$ref": "./types/subject.json" },
+    "test": {
+      "type": "string",
+      "title": "Test",
+      "description": "The test property"
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
     "value": {
       "description": "True or false.",
-      "oneOf": [
-        { "type": "boolean", "default": true },
-        { "type": "string", "enum": ["true", "false"] }
-      ],
+      "type": "boolean",
+      "default": true,
       "title": "Value"
     }
-  }
+  },
+  "examples": [
+    {
+      "test": "has_target",
+      "value": true
+    }
+  ]
 }

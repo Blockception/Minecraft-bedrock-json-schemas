@@ -4,16 +4,28 @@
   "title": "Is Daytime",
   "description": "Returns true during the daylight hours.",
   "properties": {
-    "test": { "type": "string", "title": "Test Property", "description": "Returns true during the daylight hours." },
-    "operator": { "$ref": "./types/operator.json" },
-    "subject": { "$ref": "./types/subject.json" },
+    "test": {
+      "type": "string",
+      "title": "Test Property",
+      "description": "Returns true during the daylight hours."
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
     "value": {
       "title": "Value",
       "description": "True or false.",
-      "oneOf": [
-        { "type": "boolean", "default": true },
-        { "type": "string", "default": "true", "enum": ["true", "false"] }
-      ]
+      "type": "boolean",
+      "default": true
     }
-  }
+  },
+  "examples": [
+    {
+      "test": "is_daytime",
+      "value": true
+    }
+  ]
 }

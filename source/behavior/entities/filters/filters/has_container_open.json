@@ -4,16 +4,28 @@
   "title": "Has Container Open",
   "description": "Returns true when the subject Player entity has opened a container.",
   "properties": {
-    "test": { "type": "string", "title": "Test", "description": "The test property" },
-    "operator": { "$ref": "./types/operator.json" },
-    "subject": { "$ref": "./types/subject.json" },
+    "test": {
+      "type": "string",
+      "title": "Test",
+      "description": "The test property"
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
     "value": {
       "description": "(Optional) true or false.",
-      "oneOf": [
-        { "type": "boolean", "default": true },
-        { "type": "string", "enum": ["true", "false"] }
-      ],
-      "title": "Value"
+      "title": "Value",
+      "type": "boolean",
+      "default": true
     }
-  }
+  },
+  "examples": [
+    {
+      "test": "has_container_open",
+      "value": true
+    }
+  ]
 }

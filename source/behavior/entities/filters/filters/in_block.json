@@ -21,6 +21,16 @@
       "default": "self",
       "title": "Subject"
     },
-    "value": { "type": "string", "description": "(Optional) A string value.", "title": "Value" }
-  }
+    "value": {
+      "type": "string",
+      "description": "(Optional) A string value.",
+      "title": "Value"
+    }
+  },
+  "examples": [
+    {
+      "test": "in_block",
+      "value": "minecraft:water"
+    }
+  ]
 }

@@ -5,9 +5,27 @@
   "description": "Returns true if the random chance rolls 0 out of a specified Maximum range.",
   "required": ["value"],
   "properties": {
-    "test": { "type": "string", "title": "Test", "description": "The test property" },
-    "operator": { "$ref": "./types/operator.json" },
-    "subject": { "$ref": "./types/subject.json" },
-    "value": { "description": "An integer value.", "type": "integer", "title": "Value" }
-  }
+    "test": {
+      "type": "string",
+      "title": "Test",
+      "description": "The test property"
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
+    "value": {
+      "description": "An integer value.",
+      "type": "integer",
+      "title": "Value"
+    }
+  },
+  "examples": [
+    {
+      "test": "random_chance",
+      "value": 0
+    }
+  ]
 }

@@ -5,9 +5,28 @@
   "description": "Tests for the current weather state the entity is experiencing.",
   "required": ["value"],
   "properties": {
-    "test": { "type": "string", "title": "Test", "description": "The test property" },
-    "operator": { "$ref": "./types/operator.json" },
-    "subject": { "$ref": "./types/subject.json" },
-    "value": { "description": "The Family name to look for", "type": "string", "title": "Value" }
-  }
+    "test": {
+      "type": "string",
+      "title": "Test",
+      "description": "The test property"
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
+    "value": {
+      "description": "The Family name to look for",
+      "type": "string",
+      "title": "Value",
+      "examples": ["clear", "thunderstorm"]
+    }
+  },
+  "examples": [
+    {
+      "test": "weather",
+      "value": "clear"
+    }
+  ]
 }
