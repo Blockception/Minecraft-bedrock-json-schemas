@@ -6,8 +6,15 @@
   "title": "Avoid Mob Type",
   "required": [],
   "properties": {
-    "priority": { "$ref": "./types/priority.json" },
-    "max_dist": { "type": "number", "default": 0, "description": "Maximum distance to look for an entity", "title": "Maximum Dist" },
+    "priority": {
+      "$ref": "./types/priority.json"
+    },
+    "max_dist": {
+      "type": "number",
+      "default": 0,
+      "description": "Maximum distance to look for an entity",
+      "title": "Maximum Dist"
+    },
     "max_flee": {
       "type": "number",
       "default": 0.5,
@@ -38,7 +45,11 @@
       "description": "If true, visbility between this entity and the mob type will not be checked.",
       "title": "Ignore Visibility"
     },
-    "entity_types": { "$ref": "../types/entity_types.json", "description": "UNDOCUMENTED: entity types", "title": "Entity Types" },
+    "entity_types": {
+      "$ref": "../types/entity_types.json",
+      "description": "UNDOCUMENTED: entity types",
+      "title": "Entity Types"
+    },
     "avoid_mob_sound": {
       "title": "Avoid Mob Sound",
       "description": "UNDOCUMENTED",
@@ -66,13 +77,44 @@
         {
           "type": "array",
           "items": [
-            { "type": "number", "title": "Maximum" },
-            { "type": "number", "title": "Maximum" }
+            {
+              "type": "number",
+              "title": "Maximum"
+            },
+            {
+              "type": "number",
+              "title": "Maximum"
+            }
           ]
         },
-        { "type": "number" },
-        { "type": "object", "additionalProperties": false, "properties": { "range_min": { "type": "number" }, "range_max": { "type": "number" } } }
+        {
+          "type": "number"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "range_min": {
+              "type": "number"
+            },
+            "range_max": {
+              "type": "number"
+            }
+          }
+        }
       ]
     }
-  }
+  },
+  "examples": [
+    {
+      "max_dist": 0,
+      "max_flee": 0.5,
+      "walk_speed_multiplier": 1.0,
+      "sprint_speed_multiplier": 1.0,
+      "probability_per_strength": 1.0,
+      "ignore_visibility": false,
+      "avoid_mob_sound": "example",
+      "remove_target": true
+    }
+  ]
 }

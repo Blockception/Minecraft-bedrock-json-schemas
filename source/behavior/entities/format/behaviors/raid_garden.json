@@ -6,15 +6,29 @@
   "title": "Raid Garden",
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/priority.json" },
-    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "priority": {
+      "$ref": "types/priority.json"
+    },
+    "speed_multiplier": {
+      "$ref": "types/speed_multiplier.json"
+    },
     "blocks": {
       "type": "array",
       "description": "Blocks that the mob is looking for to eat",
-      "items": { "type": "string", "title": "Block Id", "description": "A block identifier", "$ref": "../../../../general/block/identifier.json" },
+      "items": {
+        "type": "string",
+        "title": "Block Id",
+        "description": "A block identifier",
+        "$ref": "../../../../general/block/identifier.json"
+      },
       "title": "Blocks"
     },
-    "eat_delay": { "type": "integer", "default": 2, "description": "Time in seconds between each time it eats", "title": "Eat Delay" },
+    "eat_delay": {
+      "type": "integer",
+      "default": 2,
+      "description": "Time in seconds between each time it eats",
+      "title": "Eat Delay"
+    },
     "full_delay": {
       "type": "integer",
       "default": 100,
@@ -33,7 +47,12 @@
       "description": "Distance in blocks within the mob considers it has reached the goal. This is the `wiggle room` to stop the AI from bouncing back and forth trying to reach a specific spot",
       "title": "Goal Radius"
     },
-    "max_to_eat": { "type": "integer", "default": 6, "description": "Maximum number of things this entity wants to eat", "title": "Maximum To Eat" },
+    "max_to_eat": {
+      "type": "integer",
+      "default": 6,
+      "description": "Maximum number of things this entity wants to eat",
+      "title": "Maximum To Eat"
+    },
     "search_range": {
       "type": "integer",
       "default": 0,
@@ -47,5 +66,17 @@
       "$comment": "UNDOCUMENTED",
       "title": "Search Height"
     }
-  }
+  },
+  "examples": [
+    {
+      "blocks": [],
+      "eat_delay": 2,
+      "full_delay": 100,
+      "initial_eat_delay": 0,
+      "goal_radius": 0.5,
+      "max_to_eat": 6,
+      "search_range": 0,
+      "search_height": 0
+    }
+  ]
 }

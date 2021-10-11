@@ -5,8 +5,12 @@
   "description": "Allows the mob to move back into lava when on land.",
   "additionalProperties": false,
   "properties": {
-    "priority": { "$ref": "types/priority.json" },
-    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "priority": {
+      "$ref": "types/priority.json"
+    },
+    "speed_multiplier": {
+      "$ref": "types/speed_multiplier.json"
+    },
     "cooldown_max": {
       "type": "number",
       "default": 0,
@@ -43,5 +47,13 @@
       "$comment": "UNDOCUMENTED",
       "title": "Wake Mob Exceptions"
     }
-  }
+  },
+  "examples": [
+    {
+      "cooldown_max": 0,
+      "cooldown_min": 0,
+      "mob_detect_dist": 6,
+      "mob_detect_height": 6
+    }
+  ]
 }

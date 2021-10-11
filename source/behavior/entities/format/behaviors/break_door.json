@@ -4,6 +4,13 @@
   "title": "Break Door",
   "description": "Allows this mob to break doors.",
   "required": [],
-  "properties": { "priority": { "$ref": "types/priority.json" }, "speed_multiplier": { "$ref": "./types/speed_multiplier.json" } },
+  "properties": {
+    "priority": {
+      "$ref": "types/priority.json"
+    },
+    "speed_multiplier": {
+      "$ref": "./types/speed_multiplier.json"
+    }
+  },
   "additionalProperties": false
 }

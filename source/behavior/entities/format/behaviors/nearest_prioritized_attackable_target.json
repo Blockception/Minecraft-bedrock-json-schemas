@@ -4,15 +4,21 @@
   "title": "Nearest Prioritized Attackable Target",
   "description": "Allows the mob to check for and pursue the nearest valid target.",
   "additionalProperties": false,
-
   "properties": {
-    "priority": { "$ref": "./types/priority.json" },
+    "priority": {
+      "$ref": "./types/priority.json"
+    },
     "entity_types": {
       "description": "List of entity types that this mob considers valid targets",
       "title": "Entity Types",
       "$ref": "../types/entity_types.json"
     },
-    "attack_interval": { "type": "integer", "default": 0, "description": "Time in seconds before selecting a target", "title": "Attack Interval" },
+    "attack_interval": {
+      "type": "integer",
+      "default": 0,
+      "description": "Time in seconds before selecting a target",
+      "title": "Attack Interval"
+    },
     "must_reach": {
       "type": "boolean",
       "default": false,
@@ -67,5 +73,19 @@
       "description": "Distance in blocks that the target can be within to launch an attack",
       "title": "Within Radius"
     }
-  }
+  },
+  "examples": [
+    {
+      "attack_interval": 0,
+      "must_reach": false,
+      "must_see": false,
+      "must_see_forget_duration": 3,
+      "persist_time": 0.0,
+      "reselect_targets": false,
+      "scan_interval": 10,
+      "set_persistent": false,
+      "target_search_height": -1.0,
+      "within_radius": 0
+    }
+  ]
 }

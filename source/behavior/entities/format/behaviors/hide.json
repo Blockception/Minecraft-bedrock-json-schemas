@@ -6,15 +6,26 @@
   "description": "Allows a mob with the hide component to attempt to move to - and hide at - an owned or nearby POI.",
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/priority.json" },
-    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
-    "duration": { "type": "number", "default": 1, "description": "Amount of time in seconds that the mob reacts.", "title": "Duration" },
+    "priority": {
+      "$ref": "types/priority.json"
+    },
+    "speed_multiplier": {
+      "$ref": "types/speed_multiplier.json"
+    },
+    "duration": {
+      "type": "number",
+      "default": 1,
+      "description": "Amount of time in seconds that the mob reacts.",
+      "title": "Duration"
+    },
     "poi_type": {
       "type": "string",
       "default": "",
       "description": "Defines what POI type to hide at.",
       "title": "Point Of Interest Type",
-      "examples": ["bed"]
+      "examples": [
+        "bed"
+      ]
     },
     "timeout_cooldown": {
       "type": "number",
@@ -22,5 +33,12 @@
       "description": "The cooldown time in seconds before the goal can be reused after a internal failure or timeout condition.",
       "title": "Timeout Cooldown"
     }
-  }
+  },
+  "examples": [
+    {
+      "duration": 1,
+      "poi_type": "",
+      "timeout_cooldown": 8
+    }
+  ]
 }

@@ -4,5 +4,9 @@
   "type": "object",
   "title": "Dragonholdingpattern",
   "description": "Allows the Dragon to fly around in a circle around the center podium. Can only be used by the Ender Dragon.",
-  "properties": { "priority": { "$ref": "./types/priority.json" } }
+  "properties": {
+    "priority": {
+      "$ref": "./types/priority.json"
+    }
+  }
 }

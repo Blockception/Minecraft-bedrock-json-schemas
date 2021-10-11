@@ -7,8 +7,12 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/priority.json" },
-    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "priority": {
+      "$ref": "types/priority.json"
+    },
+    "speed_multiplier": {
+      "$ref": "types/speed_multiplier.json"
+    },
     "success_rate": {
       "type": "number",
       "title": "Success Rate",
@@ -63,5 +67,17 @@
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }
-  }
+  },
+  "examples": [
+    {
+      "success_rate": 0.0,
+      "chance_to_stop": 0.0,
+      "state_check_interval": 0.0,
+      "catch_up_threshold": 0.0,
+      "match_direction_threshold": 0.0,
+      "catch_up_multiplier": 0.0,
+      "search_range": 0.0,
+      "stop_distance": 0.0
+    }
+  ]
 }

@@ -6,7 +6,9 @@
   "title": "Sneeze",
   "required": [],
   "properties": {
-    "priority": { "$ref": "./types/priority.json" },
+    "priority": {
+      "$ref": "./types/priority.json"
+    },
     "cooldown_time": {
       "type": "number",
       "default": 0,
@@ -51,7 +53,29 @@
       "description": "The probability of sneezing. A value of 1.00 is 100%",
       "title": "Probability"
     },
-    "sound": { "type": "string", "default": "", "description": "Sound to play when the sneeze occurs.", "title": "Sound" },
-    "within_radius": { "type": "number", "default": 0, "description": "Distance in blocks that mobs will be startled.", "title": "Within Radius" }
-  }
+    "sound": {
+      "type": "string",
+      "default": "",
+      "description": "Sound to play when the sneeze occurs.",
+      "title": "Sound"
+    },
+    "within_radius": {
+      "type": "number",
+      "default": 0,
+      "description": "Distance in blocks that mobs will be startled.",
+      "title": "Within Radius"
+    }
+  },
+  "examples": [
+    {
+      "cooldown_time": 0,
+      "drop_item_chance": 1,
+      "loot_table": "loot_tables/empty.json",
+      "prepare_sound": "",
+      "prepare_time": 1,
+      "probability": 0.02,
+      "sound": "",
+      "within_radius": 0
+    }
+  ]
 }

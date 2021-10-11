@@ -6,8 +6,12 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "./types/priority.json" },
-    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "priority": {
+      "$ref": "./types/priority.json"
+    },
+    "speed_multiplier": {
+      "$ref": "types/speed_multiplier.json"
+    },
     "block_distance": {
       "type": "number",
       "default": 16,
@@ -20,5 +24,11 @@
       "description": "Defines the distance in blocks the mob has to be from the block for the movement to be finished.",
       "title": "Within Radius"
     }
-  }
+  },
+  "examples": [
+    {
+      "block_distance": 16,
+      "within_radius": 0
+    }
+  ]
 }

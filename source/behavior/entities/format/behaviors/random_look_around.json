@@ -6,17 +6,29 @@
   "title": "Random Look Around",
   "required": [],
   "properties": {
-    "priority": { "$ref": "./types/priority.json" },
+    "priority": {
+      "$ref": "./types/priority.json"
+    },
     "look_time": {
       "title": "Look Time",
       "description": "The range of time in seconds the mob will stay looking in a random direction before looking elsewhere",
       "oneOf": [
-        { "type": "number" },
+        {
+          "type": "number"
+        },
         {
           "type": "array",
           "items": [
-            { "type": "number", "title": "Minimum", "description": "Minimum" },
-            { "type": "number", "title": "Maximum", "description": "Maximum" }
+            {
+              "type": "number",
+              "title": "Minimum",
+              "description": "Minimum"
+            },
+            {
+              "type": "number",
+              "title": "Maximum",
+              "description": "Maximum"
+            }
           ]
         }
       ]
@@ -27,5 +39,10 @@
       "title": "Look Distance",
       "type": "number"
     }
-  }
+  },
+  "examples": [
+    {
+      "look_distance": 0.0
+    }
+  ]
 }

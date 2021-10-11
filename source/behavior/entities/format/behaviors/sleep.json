@@ -6,15 +6,25 @@
   "title": "Sleep",
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/priority.json" },
-    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "priority": {
+      "$ref": "types/priority.json"
+    },
+    "speed_multiplier": {
+      "$ref": "types/speed_multiplier.json"
+    },
     "cooldown_time": {
       "type": "number",
       "default": 0,
       "description": "Time in seconds the mob has to wait before using the goal again",
       "title": "Cooldown Time"
     },
-    "goal_radius": { "type": "number", "default": 0, "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Goal Radius" },
+    "goal_radius": {
+      "type": "number",
+      "default": 0,
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "title": "Goal Radius"
+    },
     "sleep_collider_height": {
       "type": "number",
       "default": 1,
@@ -39,5 +49,15 @@
       "description": "The cooldown time in seconds before the goal can be reused after a internal failure or timeout condition",
       "title": "Timeout Cooldown"
     }
-  }
+  },
+  "examples": [
+    {
+      "cooldown_time": 0,
+      "goal_radius": 0,
+      "sleep_collider_height": 1,
+      "sleep_collider_width": 1,
+      "sleep_y_offset": 1,
+      "timeout_cooldown": 8
+    }
+  ]
 }

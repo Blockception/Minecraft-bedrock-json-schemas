@@ -5,5 +5,9 @@
   "title": "Trade With Player",
   "additionalProperties": false,
   "required": [],
-  "properties": { "priority": { "$ref": "./types/priority.json" } }
+  "properties": {
+    "priority": {
+      "$ref": "./types/priority.json"
+    }
+  }
 }

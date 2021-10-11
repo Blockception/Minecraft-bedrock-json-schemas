@@ -4,5 +4,9 @@
   "title": "Equip Item",
   "description": "Allows the entity to equip desired equipment.",
   "additionalProperties": false,
-  "properties": { "priority": { "$ref": "types/priority.json" } }
+  "properties": {
+    "priority": {
+      "$ref": "types/priority.json"
+    }
+  }
 }

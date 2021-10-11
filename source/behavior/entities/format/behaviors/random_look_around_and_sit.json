@@ -4,9 +4,10 @@
   "type": "object",
   "title": "Random Look Around And Sit",
   "additionalProperties": false,
-
   "properties": {
-    "priority": { "$ref": "types/priority.json" },
+    "priority": {
+      "$ref": "types/priority.json"
+    },
     "max_look_count": {
       "type": "integer",
       "default": 2,
@@ -31,6 +32,20 @@
       "description": "The Minimum amount of time (in ticks) a mob will stay looking at a direction while looking around.",
       "title": "Minimum Look Time"
     },
-    "probability": { "type": "number", "default": 0.02, "description": "The probability of randomly looking around/sitting.", "title": "Probability" }
-  }
+    "probability": {
+      "type": "number",
+      "default": 0.02,
+      "description": "The probability of randomly looking around/sitting.",
+      "title": "Probability"
+    }
+  },
+  "examples": [
+    {
+      "max_look_count": 2,
+      "max_look_time": 40,
+      "min_look_count": 1,
+      "min_look_time": 20,
+      "probability": 0.02
+    }
+  ]
 }

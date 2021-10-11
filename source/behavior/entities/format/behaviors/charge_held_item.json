@@ -6,12 +6,23 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "./types/priority.json" },
+    "priority": {
+      "$ref": "./types/priority.json"
+    },
     "items": {
       "type": "array",
       "title": "Items",
       "description": "The list of items that can be used to charge the held item.",
-      "items": { "type": "string", "description": "Items names to be used.", "title": "Item ID" }
+      "items": {
+        "type": "string",
+        "description": "Items names to be used.",
+        "title": "Item ID"
+      }
     }
-  }
+  },
+  "examples": [
+    {
+      "items": []
+    }
+  ]
 }

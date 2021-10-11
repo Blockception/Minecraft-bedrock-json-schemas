@@ -6,8 +6,12 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/priority.json" },
-    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "priority": {
+      "$ref": "types/priority.json"
+    },
+    "speed_multiplier": {
+      "$ref": "types/speed_multiplier.json"
+    },
     "cooldown_time": {
       "type": "number",
       "default": 0,
@@ -30,9 +34,24 @@
       "description": "The entity type that this entity is allowed to mingle with",
       "title": "Mingle Partner Type",
       "oneOf": [
-        { "type": "array", "items": { "description": "The entity type that this entity is allowed to mingle with", "type": "string" } },
-        { "type": "string" }
+        {
+          "type": "array",
+          "items": {
+            "description": "The entity type that this entity is allowed to mingle with",
+            "type": "string"
+          }
+        },
+        {
+          "type": "string"
+        }
       ]
     }
-  }
+  },
+  "examples": [
+    {
+      "cooldown_time": 0,
+      "duration": 1,
+      "mingle_distance": 2.0
+    }
+  ]
 }

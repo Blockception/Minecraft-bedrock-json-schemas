@@ -5,5 +5,9 @@
   "type": "object",
   "title": "Wither Random Attack Pos Goal",
   "required": [],
-  "properties": { "priority": { "$ref": "./types/priority.json" } }
+  "properties": {
+    "priority": {
+      "$ref": "./types/priority.json"
+    }
+  }
 }

@@ -6,8 +6,21 @@
   "description": "Allows the mob to move to a POI if able to",
   "required": [],
   "properties": {
-    "priority": { "$ref": "./types/priority.json" },
-    "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },
-    "poi_type": { "type": "string", "description": "Tells the goal what POI type it should be looking for", "title": "Point Of Interest Type" }
-  }
+    "priority": {
+      "$ref": "./types/priority.json"
+    },
+    "speed_multiplier": {
+      "$ref": "./types/speed_multiplier.json"
+    },
+    "poi_type": {
+      "type": "string",
+      "description": "Tells the goal what POI type it should be looking for",
+      "title": "Point Of Interest Type"
+    }
+  },
+  "examples": [
+    {
+      "poi_type": "example"
+    }
+  ]
 }

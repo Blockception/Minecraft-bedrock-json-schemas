@@ -6,8 +6,12 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/priority.json" },
-    "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },
+    "priority": {
+      "$ref": "types/priority.json"
+    },
+    "speed_multiplier": {
+      "$ref": "./types/speed_multiplier.json"
+    },
     "search_range": {
       "type": "integer",
       "default": 0,
@@ -20,5 +24,11 @@
       "description": "The distance in blocks this mob stops from the mob it is following",
       "title": "Stop Distance"
     }
-  }
+  },
+  "examples": [
+    {
+      "search_range": 0,
+      "stop_distance": 2
+    }
+  ]
 }

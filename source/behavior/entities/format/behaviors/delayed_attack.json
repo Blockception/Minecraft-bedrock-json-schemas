@@ -5,16 +5,30 @@
   "title": "Delayed Attack",
   "description": "Allows the mob to drink potions based on specified environment conditions.",
   "properties": {
-    "priority": { "$ref": "./types/priority.json" },
-    "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },
+    "priority": {
+      "$ref": "./types/priority.json"
+    },
+    "speed_multiplier": {
+      "$ref": "./types/speed_multiplier.json"
+    },
     "attack_duration": {
       "type": "number",
       "default": 1,
       "description": "The duration of the attack animation in seconds",
       "title": "Attack Duration"
     },
-    "attack_once": { "type": "boolean", "default": false, "description": "If true, this mob will attack only one time.", "title": "Attack Once" },
-    "attack_types": { "type": "string", "default": "", "description": "Defines the entity types this mob will attack", "title": "Attack Types" },
+    "attack_once": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, this mob will attack only one time.",
+      "title": "Attack Once"
+    },
+    "attack_types": {
+      "type": "string",
+      "default": "",
+      "description": "Defines the entity types this mob will attack",
+      "title": "Attack Types"
+    },
     "hit_delay_pct": {
       "type": "number",
       "default": 1,
@@ -33,13 +47,35 @@
       "description": "Multiplier for how far outside its box the mob can reach its target (this can be used to simulate a mob with longer arms by making this bigger)",
       "title": "Reach Multiplier"
     },
-    "require_complete_path": { "type": "boolean", "title": "Require Complet Path", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-    "sound_event": { "type": "string", "description": "The sound event to play when the attack starts", "title": "Sound Event" },
+    "require_complete_path": {
+      "type": "boolean",
+      "title": "Require Complet Path",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "sound_event": {
+      "type": "string",
+      "description": "The sound event to play when the attack starts",
+      "title": "Sound Event"
+    },
     "track_target": {
       "type": "boolean",
       "default": false,
       "description": "If true, this mob will chase after the target as long as it's a valid target",
       "title": "Track Target"
     }
-  }
+  },
+  "examples": [
+    {
+      "attack_duration": 1,
+      "attack_once": false,
+      "attack_types": "",
+      "hit_delay_pct": 1,
+      "random_stop_interval": 0,
+      "reach_multiplier": 2,
+      "require_complete_path": true,
+      "sound_event": "example",
+      "track_target": false
+    }
+  ]
 }

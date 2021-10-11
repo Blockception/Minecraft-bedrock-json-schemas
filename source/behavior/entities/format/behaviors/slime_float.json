@@ -6,13 +6,22 @@
   "title": "Slime Float",
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/priority.json" },
-    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "priority": {
+      "$ref": "types/priority.json"
+    },
+    "speed_multiplier": {
+      "$ref": "types/speed_multiplier.json"
+    },
     "jump_chance_percentage": {
       "type": "number",
       "title": "Sink Delta",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }
-  }
+  },
+  "examples": [
+    {
+      "jump_chance_percentage": 0.0
+    }
+  ]
 }

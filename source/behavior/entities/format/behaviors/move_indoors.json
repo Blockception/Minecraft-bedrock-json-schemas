@@ -6,13 +6,22 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "./types/priority.json" },
-    "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },
+    "priority": {
+      "$ref": "./types/priority.json"
+    },
+    "speed_multiplier": {
+      "$ref": "./types/speed_multiplier.json"
+    },
     "timeout_cooldown": {
       "type": "number",
       "default": 8,
       "description": "The cooldown time in seconds before the goal can be reused after a internal failure or timeout condition",
       "title": "Timeout Cooldown"
     }
-  }
+  },
+  "examples": [
+    {
+      "timeout_cooldown": 8
+    }
+  ]
 }

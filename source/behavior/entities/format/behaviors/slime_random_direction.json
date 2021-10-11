@@ -6,19 +6,33 @@
   "title": "Slime Random Direction",
   "required": [],
   "properties": {
-    "priority": { "$ref": "./types/priority.json" },
+    "priority": {
+      "$ref": "./types/priority.json"
+    },
     "add_random_time_range": {
       "type": "number",
       "title": "Add Random Time Range",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     },
-    "turn_range": { "type": "number", "title": "Turn Range", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "turn_range": {
+      "type": "number",
+      "title": "Turn Range",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
     "min_change_direction_time": {
       "type": "number",
       "title": "Minimum Change Direction Time",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }
-  }
+  },
+  "examples": [
+    {
+      "add_random_time_range": 0.0,
+      "turn_range": 0.0,
+      "min_change_direction_time": 0.0
+    }
+  ]
 }

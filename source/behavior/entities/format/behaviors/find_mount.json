@@ -5,7 +5,9 @@
   "title": "Find Mount",
   "type": "object",
   "properties": {
-    "priority": { "$ref": "types/priority.json" },
+    "priority": {
+      "$ref": "types/priority.json"
+    },
     "avoid_water": {
       "type": "boolean",
       "default": false,
@@ -42,5 +44,15 @@
       "$comment": "UNDOCUMENTED",
       "title": "Maximum Failed Attempts"
     }
-  }
+  },
+  "examples": [
+    {
+      "avoid_water": false,
+      "mount_distance": -1,
+      "start_delay": 0,
+      "target_needed": false,
+      "within_radius": 0,
+      "max_failed_attempts": 0
+    }
+  ]
 }

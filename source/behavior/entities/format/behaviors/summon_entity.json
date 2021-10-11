@@ -6,7 +6,9 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "./types/priority.json" },
+    "priority": {
+      "$ref": "./types/priority.json"
+    },
     "summon_choices": {
       "type": "array",
       "description": "List of spells for the mob to use to summon entities",
@@ -32,7 +34,9 @@
             "description": "If true, the mob will do the casting animations and render spell particles",
             "title": "Do Casting"
           },
-          "filters": { "$ref": "../../filters/filters.json" },
+          "filters": {
+            "$ref": "../../filters/filters.json"
+          },
           "max_activation_range": {
             "type": "number",
             "default": -1,
@@ -49,8 +53,14 @@
             "description": "The color of the particles for this spell",
             "title": "Particle Color",
             "oneOf": [
-              { "type": "integer", "default": 0 },
-              { "type": "string", "format": "color-hex" }
+              {
+                "type": "integer",
+                "default": 0
+              },
+              {
+                "type": "string",
+                "format": "color-hex"
+              }
             ]
           },
           "sequence": {
@@ -103,8 +113,17 @@
                   "description": "The base shape of this step. Valid values are circle and line",
                   "title": "Shape"
                 },
-                "size": { "type": "number", "default": 1, "description": "The base size of the entity", "title": "Size" },
-                "sound_event": { "type": "string", "description": "The sound event to play for this step", "title": "Sound Event" },
+                "size": {
+                  "type": "number",
+                  "default": 1,
+                  "description": "The base size of the entity",
+                  "title": "Size"
+                },
+                "sound_event": {
+                  "type": "string",
+                  "description": "The sound event to play for this step",
+                  "title": "Sound Event"
+                },
                 "summon_cap": {
                   "type": "integer",
                   "default": 0,
@@ -126,7 +145,11 @@
               }
             }
           },
-          "start_sound_event": { "type": "string", "description": "The sound event to play when using this spell", "title": "Start Sound Event" },
+          "start_sound_event": {
+            "type": "string",
+            "description": "The sound event to play when using this spell",
+            "title": "Start Sound Event"
+          },
           "weight": {
             "type": "number",
             "title": "Weight",
@@ -136,5 +159,10 @@
         }
       }
     }
-  }
+  },
+  "examples": [
+    {
+      "summon_choices": []
+    }
+  ]
 }

@@ -6,10 +6,24 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/priority.json" },
-    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
-    "attack_once": { "type": "boolean", "default": false, "description": "If true, this mob will attack only one time.", "title": "Attack Once" },
-    "attack_types": { "type": "string", "default": "", "description": "Defines the entity types this mob will attack", "title": "Attack Types" },
+    "priority": {
+      "$ref": "types/priority.json"
+    },
+    "speed_multiplier": {
+      "$ref": "types/speed_multiplier.json"
+    },
+    "attack_once": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, this mob will attack only one time.",
+      "title": "Attack Once"
+    },
+    "attack_types": {
+      "type": "string",
+      "default": "",
+      "description": "Defines the entity types this mob will attack",
+      "title": "Attack Types"
+    },
     "probability": {
       "type": "number",
       "default": 0.02,
@@ -34,7 +48,11 @@
       "description": "If true, this goal will only trigger if the mob can reach its target.",
       "title": "Require Complete Path"
     },
-    "sound": { "type": "string", "description": "Sound to play when the sneeze occurs.", "title": "Sound" },
+    "sound": {
+      "type": "string",
+      "description": "Sound to play when the sneeze occurs.",
+      "title": "Sound"
+    },
     "track_target": {
       "type": "boolean",
       "default": false,
@@ -53,5 +71,19 @@
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }
-  }
+  },
+  "examples": [
+    {
+      "attack_once": false,
+      "attack_types": "",
+      "probability": 0.02,
+      "random_stop_interval": 0,
+      "reach_multiplier": 2,
+      "require_complete_path": false,
+      "sound": "example",
+      "track_target": false,
+      "stomp_range_multiplier": 0.0,
+      "no_damage_range_multiplier": 0.0
+    }
+  ]
 }

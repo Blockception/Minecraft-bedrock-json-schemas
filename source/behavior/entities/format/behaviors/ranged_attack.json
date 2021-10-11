@@ -6,8 +6,12 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/priority.json" },
-    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "priority": {
+      "$ref": "types/priority.json"
+    },
+    "speed_multiplier": {
+      "$ref": "types/speed_multiplier.json"
+    },
     "attack_interval": {
       "type": "number",
       "default": 0,
@@ -75,5 +79,20 @@
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }
-  }
+  },
+  "examples": [
+    {
+      "attack_interval": 0,
+      "attack_interval_max": 0,
+      "attack_interval_min": 0,
+      "attack_radius": 0,
+      "burst_interval": 0,
+      "burst_shots": 1,
+      "charge_charged_trigger": 0,
+      "charge_shoot_trigger": 0,
+      "ranged_fov": 90,
+      "target_in_sight_time": 0.0,
+      "attack_radius_min": 0.0
+    }
+  ]
 }

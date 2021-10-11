@@ -7,7 +7,9 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "./types/priority.json" },
+    "priority": {
+      "$ref": "./types/priority.json"
+    },
     "on_eat": {
       "$ref": "../types/trigger.json",
       "description": "UNDOCUMENTED",
@@ -54,5 +56,11 @@
         }
       }
     }
-  }
+  },
+  "examples": [
+    {
+      "time_until_eat": 0.0,
+      "eat_and_replace_block_pairs": []
+    }
+  ]
 }

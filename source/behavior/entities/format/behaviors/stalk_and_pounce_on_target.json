@@ -4,9 +4,10 @@
   "type": "object",
   "title": "Stalk And Pounce On Target",
   "additionalProperties": false,
-
   "properties": {
-    "priority": { "$ref": "types/priority.json" },
+    "priority": {
+      "$ref": "types/priority.json"
+    },
     "interest_time": {
       "type": "number",
       "default": 2,
@@ -43,7 +44,12 @@
       "description": "Allows the actor to be set to persist upon targeting a player",
       "title": "Set Persistent"
     },
-    "stalk_speed": { "type": "number", "default": 1.2, "description": "The movement speed in which you stalk your target", "title": "Stalk Speed" },
+    "stalk_speed": {
+      "type": "number",
+      "default": 1.2,
+      "description": "The movement speed in which you stalk your target",
+      "title": "Stalk Speed"
+    },
     "strike_dist": {
       "type": "number",
       "default": 2,
@@ -56,7 +62,31 @@
       "description": "The amount of time the mob will be stuck if they fail and land on a block they can be stuck on",
       "title": "Stuck Time"
     },
-    "leap_dist": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Leap Dist" },
-    "stuck_blocks": { "$ref": "../../filters/filters.json", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Stuck Block" }
-  }
+    "leap_dist": {
+      "type": "number",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "title": "Leap Dist"
+    },
+    "stuck_blocks": {
+      "$ref": "../../filters/filters.json",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "title": "Stuck Block"
+    }
+  },
+  "examples": [
+    {
+      "interest_time": 2,
+      "leap_distance": 0.8,
+      "leap_height": 0.9,
+      "max_stalk_dist": 10,
+      "pounce_max_dist": 5,
+      "set_persistent": false,
+      "stalk_speed": 1.2,
+      "strike_dist": 2,
+      "stuck_time": 2,
+      "leap_dist": 0.0
+    }
+  ]
 }

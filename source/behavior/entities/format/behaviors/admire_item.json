@@ -5,7 +5,9 @@
   "description": "Enables the mob to admire items that have been configured as admirable. Must be used in combination with the admire_item component.",
   "additionalProperties": false,
   "properties": {
-    "priority": { "$ref": "types/priority.json" },
+    "priority": {
+      "$ref": "types/priority.json"
+    },
     "admire_item_sound": {
       "type": "string",
       "default": "",
@@ -32,13 +34,37 @@
         {
           "type": "array",
           "items": [
-            { "type": "number", "title": "Maximum" },
-            { "type": "number", "title": "Maximum" }
+            {
+              "type": "number",
+              "title": "Maximum"
+            },
+            {
+              "type": "number",
+              "title": "Maximum"
+            }
           ]
         },
-        { "type": "number" },
-        { "type": "object", "additionalProperties": false, "properties": { "range_min": { "type": "number" }, "range_max": { "type": "number" } } }
+        {
+          "type": "number"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "range_min": {
+              "type": "number"
+            },
+            "range_max": {
+              "type": "number"
+            }
+          }
+        }
       ]
     }
-  }
+  },
+  "examples": [
+    {
+      "admire_item_sound": ""
+    }
+  ]
 }

@@ -6,7 +6,9 @@
   "$comment": "UNDOCUMENTED",
   "additionalProperties": false,
   "properties": {
-    "priority": { "$ref": "types/priority.json" },
+    "priority": {
+      "$ref": "types/priority.json"
+    },
     "tick_interval": {
       "type": "integer",
       "title": "Tick Interval",
@@ -42,7 +44,12 @@
       "title": "Target Blocks",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
-      "items": { "type": "string", "title": "Block ID", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
+      "items": {
+        "type": "string",
+        "title": "Block ID",
+        "description": "UNDOCUMENTED",
+        "$comment": "UNDOCUMENTED"
+      }
     },
     "avoid_block_sound": {
       "type": "string",
@@ -61,7 +68,9 @@
       "title": "Walk Speed Modifier",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
-      "items": { "$ref": "../types/event.json" }
+      "items": {
+        "$ref": "../types/event.json"
+      }
     },
     "sound_interval": {
       "default": 0,
@@ -71,13 +80,45 @@
         {
           "type": "array",
           "items": [
-            { "type": "number", "title": "Maximum" },
-            { "type": "number", "title": "Maximum" }
+            {
+              "type": "number",
+              "title": "Maximum"
+            },
+            {
+              "type": "number",
+              "title": "Maximum"
+            }
           ]
         },
-        { "type": "number" },
-        { "type": "object", "additionalProperties": false, "properties": { "range_min": { "type": "number" }, "range_max": { "type": "number" } } }
+        {
+          "type": "number"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "range_min": {
+              "type": "number"
+            },
+            "range_max": {
+              "type": "number"
+            }
+          }
+        }
       ]
     }
-  }
+  },
+  "examples": [
+    {
+      "tick_interval": 0,
+      "search_range": 0,
+      "search_height": 0,
+      "sprint_speed_modifier": 0.0,
+      "target_selection_method": "example",
+      "target_blocks": [],
+      "avoid_block_sound": "example",
+      "walk_speed_modifier": 0.0,
+      "on_escape": []
+    }
+  ]
 }

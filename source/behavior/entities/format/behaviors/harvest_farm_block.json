@@ -6,8 +6,12 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/priority.json" },
-    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "priority": {
+      "$ref": "types/priority.json"
+    },
+    "speed_multiplier": {
+      "$ref": "types/speed_multiplier.json"
+    },
     "max_seconds_before_search": {
       "title": "Maximum Seconds Before Search",
       "description": "UNDOCUMENTED",
@@ -20,6 +24,18 @@
       "$comment": "UNDOCUMENTED",
       "type": "number"
     },
-    "seconds_until_new_task": { "title": "Seconds Until New Task", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" }
-  }
+    "seconds_until_new_task": {
+      "title": "Seconds Until New Task",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "type": "number"
+    }
+  },
+  "examples": [
+    {
+      "max_seconds_before_search": 0.0,
+      "search_cooldown_max_seconds": 0.0,
+      "seconds_until_new_task": 0.0
+    }
+  ]
 }

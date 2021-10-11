@@ -4,7 +4,6 @@
   "type": "object",
   "title": "Send Event",
   "additionalProperties": false,
-
   "definitions": {
     "sequence": {
       "type": "array",
@@ -13,16 +12,34 @@
         "type": "object",
         "additionalProperties": false,
         "properties": {
-          "delay": { "type": "number", "default": 0, "description": "Amount of time in seconds before starting this step" },
-          "event": { "type": "string", "default": "", "description": "The event to send to the entity" },
-          "sound_event": { "type": "string", "default": "", "description": "The sound event to play when this step happens" }
+          "delay": {
+            "type": "number",
+            "default": 0,
+            "description": "Amount of time in seconds before starting this step"
+          },
+          "event": {
+            "type": "string",
+            "default": "",
+            "description": "The event to send to the entity"
+          },
+          "sound_event": {
+            "type": "string",
+            "default": "",
+            "description": "The sound event to play when this step happens"
+          }
         }
       }
     }
   },
   "properties": {
-    "priority": { "$ref": "./types/priority.json" },
-    "cast_duration": { "type": "number", "description": "Time in seconds for the entire event sending process", "title": "Cast Duration" },
+    "priority": {
+      "$ref": "./types/priority.json"
+    },
+    "cast_duration": {
+      "type": "number",
+      "description": "Time in seconds for the entire event sending process",
+      "title": "Cast Duration"
+    },
     "event_choices": {
       "type": "array",
       "title": "Event Choices",
@@ -59,7 +76,9 @@
             "description": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED"
           },
-          "filters": { "$ref": "../../filters/filters.json" },
+          "filters": {
+            "$ref": "../../filters/filters.json"
+          },
           "particle_color": {
             "type": "string",
             "format": "color-hex",
@@ -67,17 +86,35 @@
             "description": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED"
           },
-          "weight": { "type": "integer", "title": "Weight", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+          "weight": {
+            "type": "integer",
+            "title": "Weight",
+            "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED"
+          },
           "start_sound_event": {
             "type": "string",
             "title": "Start Sound Event",
             "description": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED"
           },
-          "sequence": { "$ref": "#/definitions/sequence" }
+          "sequence": {
+            "$ref": "#/definitions/sequence"
+          }
         }
       }
     },
-    "sequence": { "$ref": "#/definitions/sequence", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Sequence" }
-  }
+    "sequence": {
+      "$ref": "#/definitions/sequence",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "title": "Sequence"
+    }
+  },
+  "examples": [
+    {
+      "cast_duration": 0.0,
+      "event_choices": []
+    }
+  ]
 }

@@ -5,15 +5,27 @@
   "type": "object",
   "title": "Swim Idle",
   "additionalProperties": false,
-
   "properties": {
-    "priority": { "$ref": "types/priority.json" },
-    "idle_time": { "type": "number", "title": "Idle Time", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "priority": {
+      "$ref": "types/priority.json"
+    },
+    "idle_time": {
+      "type": "number",
+      "title": "Idle Time",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
     "success_rate": {
       "type": "number",
       "title": "Succes Rate",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }
-  }
+  },
+  "examples": [
+    {
+      "idle_time": 0.0,
+      "success_rate": 0.0
+    }
+  ]
 }

@@ -6,7 +6,9 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/priority.json" },
+    "priority": {
+      "$ref": "types/priority.json"
+    },
     "duration": {
       "title": "Duration",
       "description": "The amount of time in seconds that the mob will remain playing dead.",
@@ -30,15 +32,28 @@
       "description": "The range of damage that may cause the mob to start playing dead. Damage taken below the minimum value will never cause the mob to start playing dead. Damage taken above the maximum value will always cause the mob to start playing dead.",
       "type": "array",
       "items": [
-        { "title": "Minimum", "description": "Minimum", "type": "integer", "minimum": 0 },
-        { "title": "Maximum", "description": "Maximum", "type": "integer", "minimum": 0 }
+        {
+          "title": "Minimum",
+          "description": "Minimum",
+          "type": "integer",
+          "minimum": 0
+        },
+        {
+          "title": "Maximum",
+          "description": "Maximum",
+          "type": "integer",
+          "minimum": 0
+        }
       ]
     },
     "damage_sources": {
       "title": "Damage Sources",
       "description": "The list of Entity Damage Sources that will cause this mob to start playing dead.",
       "oneOf": [
-        { "type": "string", "$ref": "../../../../general/entity/damage_source.json" },
+        {
+          "type": "string",
+          "$ref": "../../../../general/entity/damage_source.json"
+        },
         {
           "type": "array",
           "items": {
@@ -53,6 +68,17 @@
       "description": "Whether the mob will receive the effect of CombatRegeneration while playing dead.",
       "type": "boolean"
     },
-    "filters": { "$ref": "../../filters/filters.json" }
-  }
+    "filters": {
+      "$ref": "../../filters/filters.json"
+    }
+  },
+  "examples": [
+    {
+      "duration": 0.0,
+      "force_below_health": 0.0,
+      "random_start_chance": 0.0,
+      "random_damage_range": [],
+      "apply_regeneration": true
+    }
+  ]
 }

@@ -6,7 +6,9 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "./types/priority.json" },
+    "priority": {
+      "$ref": "./types/priority.json"
+    },
     "duration": {
       "type": "number",
       "default": 1,
@@ -19,5 +21,11 @@
       "description": "Distance in blocks that the player has to be within to trigger the horse trap",
       "title": "Within Radius"
     }
-  }
+  },
+  "examples": [
+    {
+      "duration": 1,
+      "within_radius": 0
+    }
+  ]
 }

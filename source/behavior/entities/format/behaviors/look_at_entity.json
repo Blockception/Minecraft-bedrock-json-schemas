@@ -6,7 +6,9 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "./types/priority.json" },
+    "priority": {
+      "$ref": "./types/priority.json"
+    },
     "look_distance": {
       "type": "number",
       "default": 8.0,
@@ -21,7 +23,10 @@
     },
     "look_time": {
       "$ref": "../types/range_number_type.json",
-      "default": [2, 4],
+      "default": [
+        2,
+        4
+      ],
       "description": "Time range to look at the entity",
       "title": "Look Time"
     },
@@ -41,5 +46,13 @@
       "description": "Filter to determine the conditions for this mob to look at the entity",
       "$ref": "../../filters/filters.json"
     }
-  }
+  },
+  "examples": [
+    {
+      "look_distance": 8.0,
+      "probability": 0.02,
+      "angle_of_view_vertical": 360,
+      "angle_of_view_horizontal": 360
+    }
+  ]
 }

@@ -4,5 +4,9 @@
   "type": "object",
   "title": "Dragonscanning",
   "description": "Allows the dragon to look around for a player to attack while in perch mode. Can only be used by the Ender Dragon.",
-  "properties": { "priority": { "$ref": "./types/priority.json" } }
+  "properties": {
+    "priority": {
+      "$ref": "./types/priority.json"
+    }
+  }
 }

@@ -5,12 +5,19 @@
   "type": "object",
   "title": "Slime Attack",
   "properties": {
-    "priority": { "$ref": "./types/priority.json" },
+    "priority": {
+      "$ref": "./types/priority.json"
+    },
     "set_persistent": {
       "type": "boolean",
       "default": false,
       "description": "Allows the actor to be set to persist upon targeting a player",
       "title": "Set Persistent"
     }
-  }
+  },
+  "examples": [
+    {
+      "set_persistent": false
+    }
+  ]
 }

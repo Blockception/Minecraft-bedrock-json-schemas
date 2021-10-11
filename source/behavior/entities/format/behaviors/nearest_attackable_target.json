@@ -4,13 +4,16 @@
   "title": "Nearest Attackable Target",
   "description": "Allows the mob to check for and pursue the nearest valid target.",
   "additionalProperties": false,
-
   "definitions": {
     "entity_type": {
       "type": "object",
       "description": "A entity type",
       "properties": {
-        "filters": { "$ref": "../../filters/filters.json", "description": "Conditions that make this target a valid type.", "title": "Filters" },
+        "filters": {
+          "$ref": "../../filters/filters.json",
+          "description": "Conditions that make this target a valid type.",
+          "title": "Filters"
+        },
         "max_dist": {
           "type": "number",
           "default": 16,
@@ -33,11 +36,23 @@
     }
   },
   "properties": {
-    "priority": { "$ref": "./types/priority.json" },
+    "priority": {
+      "$ref": "./types/priority.json"
+    },
     "entity_types": {
       "description": "Filters which types of targets are valid for this entity.",
       "title": "Entity Types",
-      "oneOf": [{ "$ref": "#/definitions/entity_type" }, { "type": "array", "items": { "$ref": "#/definitions/entity_type" } }]
+      "oneOf": [
+        {
+          "$ref": "#/definitions/entity_type"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/entity_type"
+          }
+        }
+      ]
     },
     "attack_interval": {
       "type": "integer",
@@ -51,7 +66,12 @@
       "description": "Alias for `attack_interval`; provides the same functionality as `attack_interval`.",
       "title": "Attack Interval Min"
     },
-    "attack_owner": { "type": "boolean", "default": false, "description": "If true, this entity can attack its owner.", "title": "Attack Owner" },
+    "attack_owner": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, this entity can attack its owner.",
+      "title": "Attack Owner"
+    },
     "must_reach": {
       "type": "boolean",
       "default": false,
@@ -118,5 +138,23 @@
       "description": "Maximum distance this entity can be from the target when following it, otherwise the target becomes invalid. This value is only used if the entity doesn't declare `minecraft:follow_range`.",
       "title": "Within Radius"
     }
-  }
+  },
+  "examples": [
+    {
+      "attack_interval": 0,
+      "attack_interval_min": 0,
+      "attack_owner": false,
+      "must_reach": false,
+      "must_see": false,
+      "must_see_forget_duration": 3,
+      "persist_time": 0,
+      "reselect_targets": false,
+      "scan_interval": 10,
+      "set_persistent": false,
+      "target_invisible_multiplier": 0.7,
+      "target_search_height": -1,
+      "target_sneak_visibility_multiplier": 0.8,
+      "within_radius": 0
+    }
+  ]
 }

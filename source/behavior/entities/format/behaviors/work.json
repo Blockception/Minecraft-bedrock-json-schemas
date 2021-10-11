@@ -6,8 +6,12 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "./types/priority.json" },
-    "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },
+    "priority": {
+      "$ref": "./types/priority.json"
+    },
+    "speed_multiplier": {
+      "$ref": "./types/speed_multiplier.json"
+    },
     "active_time": {
       "type": "integer",
       "default": 0,
@@ -49,5 +53,15 @@
       "description": "If `can_work_in_rain` is false, this is the maximum number of ticks left in the goal where rain will not interrupt the goal",
       "title": "Work In Rain Tolerance"
     }
-  }
+  },
+  "examples": [
+    {
+      "active_time": 0,
+      "can_work_in_rain": false,
+      "goal_cooldown": 0,
+      "sound_delay_max": 0,
+      "sound_delay_min": 0,
+      "work_in_rain_tolerance": -1
+    }
+  ]
 }

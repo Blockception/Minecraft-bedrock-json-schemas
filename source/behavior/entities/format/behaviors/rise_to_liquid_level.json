@@ -4,9 +4,10 @@
   "type": "object",
   "title": "Rise To Liquid Level",
   "additionalProperties": false,
-
   "properties": {
-    "priority": { "$ref": "types/priority.json" },
+    "priority": {
+      "$ref": "types/priority.json"
+    },
     "liquid_y_offset": {
       "type": "number",
       "title": "Liquid Y Offset",
@@ -22,5 +23,12 @@
       "title": "Sink Delta",
       "description": "Displacement for how much the entity will move down in the vertical axis"
     }
-  }
+  },
+  "examples": [
+    {
+      "liquid_y_offset": 0.0,
+      "rise_delta": 0.0,
+      "sink_delta": 0.0
+    }
+  ]
 }

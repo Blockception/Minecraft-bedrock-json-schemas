@@ -5,5 +5,12 @@
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "additionalProperties": false,
-  "properties": { "priority": { "$ref": "types/priority.json" }, "speed_multiplier": { "$ref": "types/speed_multiplier.json" } }
+  "properties": {
+    "priority": {
+      "$ref": "types/priority.json"
+    },
+    "speed_multiplier": {
+      "$ref": "types/speed_multiplier.json"
+    }
+  }
 }

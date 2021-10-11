@@ -6,10 +6,36 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/priority.json" },
-    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
-    "interval": { "type": "number", "title": "Interval", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-    "look_ahead": { "type": "number", "title": "Look Ahead", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-    "wander_time": { "type": "number", "title": "Wander Time", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
-  }
+    "priority": {
+      "$ref": "types/priority.json"
+    },
+    "speed_multiplier": {
+      "$ref": "types/speed_multiplier.json"
+    },
+    "interval": {
+      "type": "number",
+      "title": "Interval",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "look_ahead": {
+      "type": "number",
+      "title": "Look Ahead",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    },
+    "wander_time": {
+      "type": "number",
+      "title": "Wander Time",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    }
+  },
+  "examples": [
+    {
+      "interval": 0.0,
+      "look_ahead": 0.0,
+      "wander_time": 0.0
+    }
+  ]
 }

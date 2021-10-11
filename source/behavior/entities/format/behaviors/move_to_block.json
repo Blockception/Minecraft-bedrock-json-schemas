@@ -7,7 +7,9 @@
   "$comment": "UNDOCUMENTED",
   "required": [],
   "properties": {
-    "priority": { "$ref": "./types/priority.json" },
+    "priority": {
+      "$ref": "./types/priority.json"
+    },
     "tick_interval": {
       "type": "number",
       "title": "Tick Interval",
@@ -55,28 +57,59 @@
       "title": "Target Offset",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
-      "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
+      "items": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ]
     },
     "target_blocks": {
       "type": "array",
       "title": "Target Blocks",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
-      "items": { "type": "string" }
+      "items": {
+        "type": "string"
+      }
     },
     "on_stay_completed": {
       "type": "array",
       "title": "On Stay Completed",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
-      "items": { "$ref": "../types/event.json" }
+      "items": {
+        "$ref": "../types/event.json"
+      }
     },
     "on_reach": {
       "type": "array",
       "title": "On Reach",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
-      "items": { "$ref": "../types/event.json" }
+      "items": {
+        "$ref": "../types/event.json"
+      }
     }
-  }
+  },
+  "examples": [
+    {
+      "tick_interval": 0.0,
+      "start_chance": 0.0,
+      "search_range": 0.0,
+      "search_height": 0.0,
+      "goal_radius": 0.0,
+      "stay_duration": 0.0,
+      "target_selection_method": "example",
+      "target_offset": [],
+      "target_blocks": [],
+      "on_stay_completed": [],
+      "on_reach": []
+    }
+  ]
 }

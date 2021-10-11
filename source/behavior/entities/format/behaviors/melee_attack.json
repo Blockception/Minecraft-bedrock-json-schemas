@@ -6,8 +6,12 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "./types/priority.json" },
-    "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },
+    "priority": {
+      "$ref": "./types/priority.json"
+    },
+    "speed_multiplier": {
+      "$ref": "./types/speed_multiplier.json"
+    },
     "melee_fov": {
       "type": "number",
       "default": 90.0,
@@ -20,7 +24,11 @@
       "description": "If true, this mob will chase after the target as long as it's a valid target",
       "title": "Track Target"
     },
-    "attack_types": { "type": "string", "description": "Defines the entity types this mob will attack", "title": "Attack Types" },
+    "attack_types": {
+      "type": "string",
+      "description": "Defines the entity types this mob will attack",
+      "title": "Attack Types"
+    },
     "random_stop_interval": {
       "type": "integer",
       "default": 0,
@@ -33,7 +41,12 @@
       "description": "Multiplier for how far outside its box the mob can reach its target (this can be used to simulate a mob with longer arms by making this bigger)",
       "title": "Reach Multiplier"
     },
-    "attack_once": { "type": "boolean", "default": false, "description": "If true, this mob will attack only one time.", "title": "Attack Once" },
+    "attack_once": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, this mob will attack only one time.",
+      "title": "Attack Once"
+    },
     "require_complete_path": {
       "type": "boolean",
       "default": false,
@@ -58,5 +71,17 @@
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }
-  }
+  },
+  "examples": [
+    {
+      "melee_fov": 90.0,
+      "track_target": false,
+      "attack_types": "example",
+      "random_stop_interval": 0,
+      "reach_multiplier": 2.0,
+      "attack_once": false,
+      "require_complete_path": false,
+      "cooldown_time": 0.0
+    }
+  ]
 }

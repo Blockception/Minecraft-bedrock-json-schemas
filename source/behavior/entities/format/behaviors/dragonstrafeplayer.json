@@ -4,5 +4,9 @@
   "type": "object",
   "title": "Dragonstrafeplayer",
   "description": "Allows the dragon to fly around looking for a player and shoot fireballs at them. Can only be used by the Ender Dragon.",
-  "properties": { "priority": { "$ref": "./types/priority.json" } }
+  "properties": {
+    "priority": {
+      "$ref": "./types/priority.json"
+    }
+  }
 }

@@ -4,9 +4,10 @@
   "type": "object",
   "title": "Stroll Towards Village",
   "additionalProperties": false,
-
   "properties": {
-    "priority": { "$ref": "types/priority.json" },
+    "priority": {
+      "$ref": "types/priority.json"
+    },
     "cooldown_time": {
       "type": "number",
       "default": 0,
@@ -37,5 +38,14 @@
       "description": "This is the chance that the mob will start this goal, from 0 to 1",
       "title": "Start Chance"
     }
-  }
+  },
+  "examples": [
+    {
+      "cooldown_time": 0,
+      "goal_radius": 0.5,
+      "search_range": 0,
+      "speed_multiplier": 1,
+      "start_chance": 0.1
+    }
+  ]
 }

@@ -6,34 +6,112 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "types/priority.json" },
-    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "priority": {
+      "$ref": "types/priority.json"
+    },
+    "speed_multiplier": {
+      "$ref": "types/speed_multiplier.json"
+    },
     "explore_dist": {
       "type": "number",
       "default": 5,
       "description": "The distance in which the mob will proceed past the village bounds",
       "title": "Explore Dist"
     },
-    "wait_time": { "type": "integer", "default": 0, "description": "The time the mob will stand around `searching` for POIs", "title": "Wait Time" },
-
-    "next_xz": { "title": "Next XZ", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "integer" },
-    "next_y": { "title": "Next Y", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "integer" },
-    "min_wait_time": { "title": "Minimum Wait Time", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" },
-    "max_wait_time": { "title": "Maximum Wait Time", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" },
-    "max_travel_time": { "title": "Maximum Travel Time", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" },
-    "min_perimeter": { "title": "Minimum Perimeter", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" },
-    "min_dist_from_target": { "title": "Minimum Distance From Target", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" },
-    "timer_ratio": { "title": "Timer Ratio", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" },
+    "wait_time": {
+      "type": "integer",
+      "default": 0,
+      "description": "The time the mob will stand around `searching` for POIs",
+      "title": "Wait Time"
+    },
+    "next_xz": {
+      "title": "Next XZ",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "type": "integer"
+    },
+    "next_y": {
+      "title": "Next Y",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "type": "integer"
+    },
+    "min_wait_time": {
+      "title": "Minimum Wait Time",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "type": "number"
+    },
+    "max_wait_time": {
+      "title": "Maximum Wait Time",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "type": "number"
+    },
+    "max_travel_time": {
+      "title": "Maximum Travel Time",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "type": "number"
+    },
+    "min_perimeter": {
+      "title": "Minimum Perimeter",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "type": "number"
+    },
+    "min_dist_from_target": {
+      "title": "Minimum Distance From Target",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "type": "number"
+    },
+    "timer_ratio": {
+      "title": "Timer Ratio",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "type": "number"
+    },
     "dist_from_boundary": {
       "title": "Distance From Boundary",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": [
-        { "title": "X", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" },
-        { "title": "Y", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" },
-        { "title": "Z", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" }
+        {
+          "title": "X",
+          "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
+          "type": "number"
+        },
+        {
+          "title": "Y",
+          "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
+          "type": "number"
+        },
+        {
+          "title": "Z",
+          "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
+          "type": "number"
+        }
       ]
     }
-  }
+  },
+  "examples": [
+    {
+      "explore_dist": 5,
+      "wait_time": 0,
+      "next_xz": 0,
+      "next_y": 0,
+      "min_wait_time": 0.0,
+      "max_wait_time": 0.0,
+      "max_travel_time": 0.0,
+      "min_perimeter": 0.0,
+      "min_dist_from_target": 0.0,
+      "timer_ratio": 0.0,
+      "dist_from_boundary": []
+    }
+  ]
 }

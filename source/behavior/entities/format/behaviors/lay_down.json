@@ -6,7 +6,9 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "./types/priority.json" },
+    "priority": {
+      "$ref": "./types/priority.json"
+    },
     "interval": {
       "type": "integer",
       "default": 120,
@@ -19,5 +21,11 @@
       "description": "A random value in which the goal can use to pull out of the behavior. This is a 1/interval chance to play the sound",
       "title": "Random Stop Interval"
     }
-  }
+  },
+  "examples": [
+    {
+      "interval": 120,
+      "random_stop_interval": 120
+    }
+  ]
 }

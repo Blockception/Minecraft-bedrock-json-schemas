@@ -6,7 +6,9 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": { "$ref": "./types/priority.json" },
+    "priority": {
+      "$ref": "./types/priority.json"
+    },
     "xz_dist": {
       "type": "integer",
       "default": 10,
@@ -19,7 +21,12 @@
       "description": "Distance in blocks that the mob will look up or down for a new spot to move to. Must be at least 1",
       "title": "Y Dist"
     },
-    "y_offset": { "type": "number", "default": 0.0, "description": "Height in blocks to add to the selected target position", "title": "Y Offset" },
+    "y_offset": {
+      "type": "number",
+      "default": 0.0,
+      "description": "Height in blocks to add to the selected target position",
+      "title": "Y Offset"
+    },
     "must_reach": {
       "type": "boolean",
       "default": false,
@@ -34,9 +41,21 @@
     },
     "float_duration": {
       "$ref": "../types/range_number_type.json",
-      "default": [0.0, 0.0],
+      "default": [
+        0.0,
+        0.0
+      ],
       "description": "Range of time in seconds the mob will float around before landing and choosing to do something else",
       "title": "Float Duration"
     }
-  }
+  },
+  "examples": [
+    {
+      "xz_dist": 10,
+      "y_dist": 7,
+      "y_offset": 0.0,
+      "must_reach": false,
+      "random_reselect": false
+    }
+  ]
 }

@@ -4,9 +4,10 @@
   "type": "object",
   "title": "Knockback Roar",
   "additionalProperties": false,
-
   "properties": {
-    "priority": { "$ref": "./types/priority.json" },
+    "priority": {
+      "$ref": "./types/priority.json"
+    },
     "attack_time": {
       "type": "number",
       "default": 0.5,
@@ -55,7 +56,12 @@
       "description": "If true, this mob will chase after the target as long as it's a valid target",
       "title": "Track Target"
     },
-    "knockback_strength": { "type": "integer", "default": 4, "description": "The strength of the knockback.", "title": "Knockback Strength" },
+    "knockback_strength": {
+      "type": "integer",
+      "default": 4,
+      "description": "The strength of the knockback.",
+      "title": "Knockback Strength"
+    },
     "knockback_filters": {
       "$ref": "../../filters/filters.json",
       "description": "filters to use to decide what is affected by knockback roar.",
@@ -71,5 +77,18 @@
       "description": "Event to run when knockback roar has finished.",
       "title": "On Roar End"
     }
-  }
+  },
+  "examples": [
+    {
+      "attack_time": 0.5,
+      "cooldown_time": 0,
+      "duration": 1,
+      "knockback_damage": 6,
+      "knockback_horizontal_strength": 4,
+      "knockback_range": 4,
+      "knockback_vertical_strength": 4,
+      "track_target": false,
+      "knockback_strength": 4
+    }
+  ]
 }
