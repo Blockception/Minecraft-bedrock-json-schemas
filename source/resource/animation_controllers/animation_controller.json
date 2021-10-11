@@ -29,7 +29,7 @@
           "minProperties": 1,
           "additionalProperties": {
             "oneOf": [
-              { "type": "string", "$ref": "../../../molang/string.json" },
+              { "type": "string", "$ref": "../../molang/string.json" },
               { "type": "number", "description": "A blend weight" }
             ]
           }
@@ -173,7 +173,7 @@
                     "type": "object",
                     "required": ["input"],
                     "properties": {
-                      "input": { "$ref": "../../../molang/number.json" },
+                      "input": { "$ref": "../../molang/number.json" },
                       "remap_curve": {
                         "title": "Remap Curve",
                         "type": "object",
