@@ -7,9 +7,18 @@
   "required": ["damage"],
   "properties": {
     "damage": {
-      "description": "Range of the random amount of damage the melee attack deals. A negative value can heal the entity instead of hurting it.",
-      "$ref": "../types/range_number_type.json",
-      "title": "Damage"
+      "title": "Damage",
+      "oneOf": [
+        {
+          "type": "integer",
+          "default": 1,
+          "description": "Amount of damage the melee attack deals. A negative value can heal the entity instead of hurting it."
+        },
+        {
+          "$ref": "../types/range_number_type.json",
+          "description": "Range of the random amount of damage the melee attack deals. A negative value can heal the entity instead of hurting it."
+        }
+      ]
     },
     "effect_name": {
       "type": "string",
@@ -24,10 +33,5 @@
       "title": "Effect Duration"
     }
   },
-  "examples": [
-    {
-      "effect_name": "example",
-      "effect_duration": 1
-    }
-  ]
+  "examples": [{ "damage": 0 }, { "damage": 0, "effect_name": "example", "effect_duration": 1 }]
 }
