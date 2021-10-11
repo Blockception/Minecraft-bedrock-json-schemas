@@ -27,7 +27,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2.3.4
 
-      - uses: DaanV2/Json-Schema-Action-Compression@v1.2
+      - uses: DaanV2/Json-Schema-Action-Compression@v1.3
         with:
           specificationFile: "${{github.workspace}}\\source\\compress_specification.json"
       
