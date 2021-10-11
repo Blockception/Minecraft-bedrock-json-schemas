@@ -4,7 +4,14 @@
   "type": "object",
   "title": "Variant",
   "description": "Used to differentiate the component group of a variant of an entity from others (e.g. ocelot, villager) Parameters",
-  "required": [],
+  "required": ["value"],
+  "defaultSnippets": [
+    {
+      "label": "Variant",
+      "description": "New variant",
+      "body": { "value": "$1" }
+    }
+  ],
   "properties": {
     "value": {
       "type": "integer",
@@ -13,9 +20,5 @@
       "title": "Value"
     }
   },
-  "examples": [
-    {
-      "value": 0
-    }
-  ]
+  "examples": [{ "value": 0 }, { "value": 1 }, { "value": 2 }, { "value": 3 }, { "value": 4 }, { "value": 5 }, { "value": 6 }, { "value": 7 }, { "value": 8 }, { "value": 9 }]
 }

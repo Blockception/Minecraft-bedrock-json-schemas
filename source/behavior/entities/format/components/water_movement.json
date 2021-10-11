@@ -13,9 +13,5 @@
       "title": "Drag Factor"
     }
   },
-  "examples": [
-    {
-      "drag_factor": 0.8
-    }
-  ]
+  "examples": [{ "drag_factor": 0.8 }]
 }
