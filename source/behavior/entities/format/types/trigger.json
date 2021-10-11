@@ -2,6 +2,13 @@
   "$id": "blockception.minecraft.behavior.entities.type.trigger",
   "title": "Trigger",
   "description": "Trigger to fire",
+  "examples": [
+    {
+      "filters": [],
+      "target": "self",
+      "event": "to:foo"
+    }
+  ],
   "oneOf": [
     { "type": "string" },
     {

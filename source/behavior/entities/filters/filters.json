@@ -4,7 +4,7 @@
   "$ref": "#/definitions/groups_spec",
   "definitions": {
     "filters_spec": {
-      "examples": [{ "all_of": [{}] }, { "any_of": [{}] }, { "none_of": [{}] }, { "test": "is_variant", "subject": "self", "value": 0 }],
+      "examples": [{ "all_of": [{}] }, { "any_of": [{}] }, { "none_of": [{}] }],
       "oneOf": [
         {
           "propertyNames": { "enum": ["all_of", "any_of", "none_of"] },

@@ -4,6 +4,7 @@
   "title": "Distance To Nearest Player",
   "description": "Compares the distance to the nearest Player with a float value.",
   "required": ["value"],
+  "examples": [{ "test": "distance_to_nearest_player", "value": 5.7 }],
   "properties": {
     "test": { "type": "string", "title": "Test Property", "description": "Compares the distance to the nearest Player with a float value." },
     "operator": { "$ref": "./types/operator.json" },
