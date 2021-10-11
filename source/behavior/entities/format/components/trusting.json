@@ -18,19 +18,24 @@
       "title": "Trust Event"
     },
     "trust_items": {
+      "title": "Trust Items",
       "type": "array",
       "description": "The list of items that can be used to get the entity to trust players",
       "items": {
         "$ref": "../../../../general/item/identifier.json",
         "title": "Trust Item"
-      },
-      "title": "Trust Items"
+      }
     }
   },
   "examples": [
     {
       "probability": 1,
-      "trust_items": []
+      "trust_event": "self:trust"
+    },
+    {
+      "probability": 1,
+      "trust_items": [],
+      "trust_event": "self:trust"
     }
   ]
 }

@@ -5,13 +5,6 @@
   "title": "Variant",
   "description": "Used to differentiate the component group of a variant of an entity from others (e.g. ocelot, villager) Parameters",
   "required": ["value"],
-  "defaultSnippets": [
-    {
-      "label": "Variant",
-      "description": "New variant",
-      "body": { "value": "$1" }
-    }
-  ],
   "properties": {
     "value": {
       "type": "integer",

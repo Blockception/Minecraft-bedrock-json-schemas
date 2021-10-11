@@ -13,9 +13,5 @@
       "title": "Value"
     }
   },
-  "examples": [
-    {
-      "value": 1
-    }
-  ]
+  "examples": [{ "value": 1 }]
 }

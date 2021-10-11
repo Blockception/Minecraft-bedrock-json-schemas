@@ -4,6 +4,17 @@
   "description": "Creates a trigger based on environment conditions.",
   "type": "object",
   "additionalProperties": false,
+  "examples": [
+    {
+      "triggers": [
+        {
+          "event": "self:example",
+          "target": "self",
+          "filters": { "test": "has_tag", "value": "example" }
+        }
+      ]
+    }
+  ],
   "definitions": {
     "trigger": {
       "$ref": "../types/trigger.json"

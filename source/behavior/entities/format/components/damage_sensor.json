@@ -4,6 +4,24 @@
   "description": "Defines what events to call when this entity is damaged by specific entities or items.",
   "type": "object",
   "additionalProperties": false,
+  "examples": [
+    {
+      "triggers": [
+        {
+          "cause": "all",
+          "deals_damage": false
+        }
+      ]
+    },
+    {
+      "triggers": [
+        {
+          "on_damage": { "filters": { "test": "has_damage", "subject": "self", "value": "fatal" } },
+          "deals_damage": false
+        }
+      ]
+    }
+  ],
   "definitions": {
     "trigger": {
       "properties": {
