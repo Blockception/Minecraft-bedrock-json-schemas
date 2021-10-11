@@ -30,18 +30,9 @@
             "title": "Pivot",
             "description": "The offset from the entity's anchor where the hitbox will spawn",
             "items": [
-              {
-                "type": "number",
-                "title": "X"
-              },
-              {
-                "type": "number",
-                "title": "Y"
-              },
-              {
-                "type": "number",
-                "title": "Z"
-              }
+              { "type": "number", "title": "X" },
+              { "type": "number", "title": "Y" },
+              { "type": "number", "title": "Z" }
             ]
           }
         }
@@ -50,7 +41,13 @@
   },
   "examples": [
     {
-      "hitboxes": []
+      "hitboxes": [
+        {
+          "width": 1,
+          "height": 1,
+          "pivot": [0, 1, 0]
+        }
+      ]
     }
   ]
 }

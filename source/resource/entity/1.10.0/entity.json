@@ -216,7 +216,8 @@
                   "type": "string",
                   "description": "The colors of the dots on the egg",
                   "title": "Overlay Color",
-                  "format": "color-hex"
+                  "format": "color-hex",
+                  "examples": ["#FFFFFF"]
                 },
                 "texture": { "type": "string", "description": "The texture reference in item_texture.json", "title": "Texture" },
                 "texture_index": { "type": "integer", "description": "The index of the texture", "title": "Texture Index", "default": 0 }
