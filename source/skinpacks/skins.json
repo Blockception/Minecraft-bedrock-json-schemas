@@ -15,6 +15,14 @@
       "type": "array",
       "title": "Skins",
       "description": "An array of item",
+      "examples": [
+        {
+          "localization_name": "TemplateSkin1",
+          "geometry": "geometry.humanoid.custom",
+          "texture": "some_texture.png",
+          "type": "paid"
+        }
+      ],
       "items": {
         "title": "Skin",
         "description": "A single skin definition",
