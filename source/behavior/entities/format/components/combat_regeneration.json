@@ -23,5 +23,12 @@
       "description": "The duration in seconds of Regeneration I added to the mob.",
       "title": "Regeneration Duration"
     }
-  }
+  },
+  "examples": [
+    {
+      "apply_to_family": false,
+      "apply_to_self": false,
+      "regeneration_duration": 5
+    }
+  ]
 }

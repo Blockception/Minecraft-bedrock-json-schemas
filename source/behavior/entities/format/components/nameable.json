@@ -4,7 +4,6 @@
   "title": "Nameable",
   "additionalProperties": false,
   "description": "Allows this entity to be named (e.g. using a name tag).",
-
   "definitions": {
     "name_action": {
       "type": "object",
@@ -33,15 +32,38 @@
       "description": "If true, this entity can be renamed with name tags",
       "title": "Allow Name Tag Renaming"
     },
-    "always_show": { "type": "boolean", "default": false, "description": "If true, the name will always be shown", "title": "Always Show" },
-    "default_trigger": { "$ref": "../types/trigger.json", "description": "Trigger to run when the entity gets named", "title": "Default Trigger" },
+    "always_show": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, the name will always be shown",
+      "title": "Always Show"
+    },
+    "default_trigger": {
+      "$ref": "../types/trigger.json",
+      "description": "Trigger to run when the entity gets named",
+      "title": "Default Trigger"
+    },
     "name_actions": {
       "title": "Name Actions",
       "description": "Describes the special names for this entity and the events to call when the entity acquires those names",
       "oneOf": [
-        { "type": "array", "items": { "$ref": "#/definitions/name_action" } },
-        { "type": "object", "$ref": "#/definitions/name_action" }
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/name_action"
+          }
+        },
+        {
+          "type": "object",
+          "$ref": "#/definitions/name_action"
+        }
       ]
     }
-  }
+  },
+  "examples": [
+    {
+      "allow_name_tag_renaming": true,
+      "always_show": false
+    }
+  ]
 }

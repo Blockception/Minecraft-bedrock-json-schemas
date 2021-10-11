@@ -28,5 +28,12 @@
       "title": "Cause",
       "$ref": "../../../../general/entity/damage_source.json"
     }
-  }
+  },
+  "examples": [
+    {
+      "damage_per_tick": 2,
+      "damage_range": 0.2,
+      "cause": "example"
+    }
+  ]
 }

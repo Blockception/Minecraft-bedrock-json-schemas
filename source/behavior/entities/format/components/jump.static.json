@@ -6,6 +6,16 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "jump_power": { "type": "number", "default": 0.42, "description": "The initial vertical velocity for the jump", "title": "Jump Power" }
-  }
+    "jump_power": {
+      "type": "number",
+      "default": 0.42,
+      "description": "The initial vertical velocity for the jump",
+      "title": "Jump Power"
+    }
+  },
+  "examples": [
+    {
+      "jump_power": 0.42
+    }
+  ]
 }

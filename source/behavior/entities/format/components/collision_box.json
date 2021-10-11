@@ -18,5 +18,11 @@
       "description": "Width and Depth of the collision box in blocks. A negative value will be assumed to be 0",
       "title": "Width"
     }
-  }
+  },
+  "examples": [
+    {
+      "height": 1,
+      "width": 1
+    }
+  ]
 }

@@ -23,5 +23,11 @@
       "description": "Duration in seconds of the status ailment applied to the damaged entity.",
       "title": "Effect Duration"
     }
-  }
+  },
+  "examples": [
+    {
+      "effect_name": "example",
+      "effect_duration": 1
+    }
+  ]
 }

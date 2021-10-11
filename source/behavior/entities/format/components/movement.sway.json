@@ -16,5 +16,11 @@
       "description": "The amount of sway that is allowed for movement.",
       "title": "Sway Amplitude"
     }
-  }
+  },
+  "examples": [
+    {
+      "max_turn": 30,
+      "sway_amplitude": 0.0
+    }
+  ]
 }

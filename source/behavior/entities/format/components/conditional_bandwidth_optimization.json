@@ -33,7 +33,9 @@
             "title": "Conditional Values",
             "description": "Conditions that must be met for these optimization values to be used.",
             "type": "array",
-            "items": { "$ref": "../../filters/filters.json" }
+            "items": {
+              "$ref": "../../filters/filters.json"
+            }
           }
         }
       }
@@ -61,5 +63,11 @@
         }
       }
     }
-  }
+  },
+  "examples": [
+    {
+      "conditional_values": [],
+      "default_values": {}
+    }
+  ]
 }

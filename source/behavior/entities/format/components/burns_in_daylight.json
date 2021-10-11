@@ -5,5 +5,12 @@
   "description": "Specifies if/how a mob burns in daylight.",
   "required": [],
   "properties": {},
-  "oneOf": [{ "type": "boolean" }, { "type": "object" }]
+  "oneOf": [
+    {
+      "type": "boolean"
+    },
+    {
+      "type": "object"
+    }
+  ]
 }

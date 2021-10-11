@@ -16,7 +16,9 @@
         "type": "object",
         "additionalProperties": false,
         "properties": {
-          "block": { "$ref": "../../../../general/block_definition.json" },
+          "block": {
+            "$ref": "../../../../general/block_definition.json"
+          },
           "entered_block_event": {
             "title": "Entered Block Event",
             "description": "UNDOCUMENTED",
@@ -32,5 +34,10 @@
         }
       }
     }
-  }
+  },
+  "examples": [
+    {
+      "block_list": []
+    }
+  ]
 }

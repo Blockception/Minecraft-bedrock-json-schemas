@@ -54,5 +54,17 @@
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }
-  }
+  },
+  "examples": [
+    {
+      "dwelling_type": "example",
+      "dweller_role": "example",
+      "update_interval_base": 0,
+      "update_interval_variant": 0,
+      "preferred_profession": "example",
+      "can_find_poi": true,
+      "can_migrate": true,
+      "first_founding_reward": 0
+    }
+  ]
 }

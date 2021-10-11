@@ -22,5 +22,11 @@
         "$ref": "../../../../general/item/identifier.json"
       }
     }
-  }
+  },
+  "examples": [
+    {
+      "restriction_radius": -1,
+      "home_block_list": []
+    }
+  ]
 }

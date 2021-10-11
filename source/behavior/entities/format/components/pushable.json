@@ -18,5 +18,11 @@
       "description": "Whether the entity can be pushed by pistons safely.",
       "title": "Is Pushable By Piston"
     }
-  }
+  },
+  "examples": [
+    {
+      "is_pushable": true,
+      "is_pushable_by_piston": true
+    }
+  ]
 }

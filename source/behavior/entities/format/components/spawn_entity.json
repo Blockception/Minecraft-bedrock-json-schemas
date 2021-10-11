@@ -4,7 +4,6 @@
   "description": "Adds a timer after which this entity will spawn another entity or item (similar to vanilla's chicken's egg-laying behavior).",
   "title": "Spawn Entity",
   "additionalProperties": false,
-
   "definitions": {
     "entity_spawn": {
       "additionalProperties": false,
@@ -57,8 +56,18 @@
           "description": "Event to call when the entity is spawned.",
           "title": "Spawn Event"
         },
-        "spawn_item": { "type": "string", "default": "egg", "description": "Item identifier of the item to spawn.", "title": "Spawn Item" },
-        "spawn_method": { "type": "string", "default": "born", "description": "Method to use to spawn the entity.", "title": "Spawn Method" },
+        "spawn_item": {
+          "type": "string",
+          "default": "egg",
+          "description": "Item identifier of the item to spawn.",
+          "title": "Spawn Item"
+        },
+        "spawn_method": {
+          "type": "string",
+          "default": "born",
+          "description": "Method to use to spawn the entity.",
+          "title": "Spawn Method"
+        },
         "spawn_sound": {
           "type": "string",
           "default": "plop",
@@ -74,8 +83,16 @@
       "description": "The entities to spawn",
       "$comment": "UNDOCUMENTED",
       "oneOf": [
-        { "type": "object", "$ref": "#/definitions/entity_spawn" },
-        { "type": "array", "items": { "$ref": "#/definitions/entity_spawn" } }
+        {
+          "type": "object",
+          "$ref": "#/definitions/entity_spawn"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/entity_spawn"
+          }
+        }
       ]
     }
   }

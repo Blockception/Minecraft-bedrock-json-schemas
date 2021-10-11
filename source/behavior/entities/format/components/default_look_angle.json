@@ -5,5 +5,17 @@
   "additionalProperties": false,
   "description": "Sets this entity's default head rotation angle.",
   "required": [],
-  "properties": { "value": { "type": "number", "default": 0.0, "description": "Angle in degrees", "title": "Value" } }
+  "properties": {
+    "value": {
+      "type": "number",
+      "default": 0.0,
+      "description": "Angle in degrees",
+      "title": "Value"
+    }
+  },
+  "examples": [
+    {
+      "value": 0.0
+    }
+  ]
 }

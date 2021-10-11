@@ -7,7 +7,23 @@
   "$comment": "UNDOCUMENTED",
   "required": [],
   "properties": {
-    "value": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Value" },
-    "max": { "type": "number", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Maximum" }
-  }
+    "value": {
+      "type": "number",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "title": "Value"
+    },
+    "max": {
+      "type": "number",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "title": "Maximum"
+    }
+  },
+  "examples": [
+    {
+      "value": 0.0,
+      "max": 0.0
+    }
+  ]
 }

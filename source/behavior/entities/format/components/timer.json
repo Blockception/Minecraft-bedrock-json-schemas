@@ -6,7 +6,12 @@
   "required": [],
   "additionalProperties": false,
   "properties": {
-    "looping": { "type": "boolean", "default": true, "description": "If true, the timer will restart every time after it fires", "title": "Looping" },
+    "looping": {
+      "type": "boolean",
+      "default": true,
+      "description": "If true, the timer will restart every time after it fires",
+      "title": "Looping"
+    },
     "randomInterval": {
       "type": "boolean",
       "default": true,
@@ -21,11 +26,20 @@
           "type": "array",
           "default": [0.0, 0.0],
           "items": [
-            { "type": "number", "title": "A" },
-            { "type": "number", "title": "B" }
+            {
+              "type": "number",
+              "title": "A"
+            },
+            {
+              "type": "number",
+              "title": "B"
+            }
           ]
         },
-        { "type": "number", "default": 0 }
+        {
+          "type": "number",
+          "default": 0
+        }
       ]
     },
     "time_down_event": {
@@ -50,9 +64,20 @@
             "$comment": "UNDOCUMENTED",
             "title": "Weight"
           },
-          "value": { "type": "integer", "description": "UNDOCUMENTED: value", "title": "Value" }
+          "value": {
+            "type": "integer",
+            "description": "UNDOCUMENTED: value",
+            "title": "Value"
+          }
         }
       }
     }
-  }
+  },
+  "examples": [
+    {
+      "looping": true,
+      "randomInterval": true,
+      "random_time_choices": []
+    }
+  ]
 }

@@ -32,5 +32,11 @@
       "description": "Optional amount of additional time in seconds given by using splash water bottle on entity.",
       "title": "Water Bottle Refill Time"
     }
-  }
+  },
+  "examples": [
+    {
+      "total_time": 0,
+      "water_bottle_refill_time": 0
+    }
+  ]
 }

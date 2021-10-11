@@ -6,14 +6,22 @@
   "title": "Health",
   "additionalProperties": false,
   "required": [],
-  "dependencies": { "max": ["value"] },
+  "dependencies": {
+    "max": ["value"]
+  },
   "properties": {
-    "max": { "type": "integer", "description": "The maximum health the entity can heal", "title": "Maximum" },
+    "max": {
+      "type": "integer",
+      "description": "The maximum health the entity can heal",
+      "title": "Maximum"
+    },
     "value": {
       "description": "Current health of the entity",
       "title": "Value",
       "oneOf": [
-        { "type": "integer" },
+        {
+          "type": "integer"
+        },
         {
           "type": "object",
           "additionalProperties": false,
@@ -35,5 +43,10 @@
         }
       ]
     }
-  }
+  },
+  "examples": [
+    {
+      "max": 0
+    }
+  ]
 }

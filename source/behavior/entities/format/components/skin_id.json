@@ -12,5 +12,10 @@
       "description": "The ID of the skin. By convention, 0 is the ID of the base skin",
       "title": "Value"
     }
-  }
+  },
+  "examples": [
+    {
+      "value": 0
+    }
+  ]
 }

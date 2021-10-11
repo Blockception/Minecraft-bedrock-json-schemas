@@ -6,7 +6,15 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "sit_event": { "$ref": "../types/event.json", "description": "Event to run when the entity enters the `sit` state", "title": "Sit Event" },
-    "stand_event": { "$ref": "../types/event.json", "description": "Event to run when the entity exits the `sit` state", "title": "Stand Event" }
+    "sit_event": {
+      "$ref": "../types/event.json",
+      "description": "Event to run when the entity enters the `sit` state",
+      "title": "Sit Event"
+    },
+    "stand_event": {
+      "$ref": "../types/event.json",
+      "description": "Event to run when the entity exits the `sit` state",
+      "title": "Stand Event"
+    }
   }
 }

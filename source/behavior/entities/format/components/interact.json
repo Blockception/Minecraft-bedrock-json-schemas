@@ -40,7 +40,11 @@
           "description": "Text to show when the player is able to interact in this way with this entity when playing with Touch-screen controls.",
           "title": "Interact Text"
         },
-        "on_interact": { "$ref": "../types/trigger.json", "description": "Event to fire when the interaction occurs.", "title": "On Interact" },
+        "on_interact": {
+          "$ref": "../types/trigger.json",
+          "description": "Event to fire when the interaction occurs.",
+          "title": "On Interact"
+        },
         "particle_on_start": {
           "type": "object",
           "description": "Particle effect that will be triggered at the start of the interaction.",
@@ -51,7 +55,11 @@
               "description": "Whether or not the particle will appear closer to who performed the interaction.",
               "title": "Particle Offset Towards Interactor"
             },
-            "particle_type": { "type": "string", "description": "The type of particle that will be spawned.", "title": "Particle Type" },
+            "particle_type": {
+              "type": "string",
+              "description": "The type of particle that will be spawned.",
+              "title": "Particle Type"
+            },
             "particle_y_offset": {
               "type": "number",
               "description": "Will offset the particle this amount in the y direction.",
@@ -96,7 +104,12 @@
           "title": "Transform To Item",
           "description": "The feed item used will transform to this item upon successful interaction. Format: itemName:auxValue"
         },
-        "use_item": { "type": "boolean", "default": false, "description": "If true, the interaction will use an item.", "title": "Use Item" }
+        "use_item": {
+          "type": "boolean",
+          "default": false,
+          "description": "If true, the interaction will use an item.",
+          "title": "Use Item"
+        }
       }
     }
   },
@@ -105,8 +118,16 @@
       "description": "The interactions",
       "title": "Interactions",
       "oneOf": [
-        { "type": "object", "$ref": "#/definitions/interaction_spec" },
-        { "type": "array", "items": { "$ref": "#/definitions/interaction_spec" } }
+        {
+          "type": "object",
+          "$ref": "#/definitions/interaction_spec"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/interaction_spec"
+          }
+        }
       ]
     }
   }

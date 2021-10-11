@@ -5,5 +5,17 @@
   "additionalProperties": false,
   "description": "Speed in Blocks that this entity flies at.",
   "required": [],
-  "properties": { "value": { "type": "number", "default": 0.02, "description": "Flying speed in blocks per tick", "title": "Value" } }
+  "properties": {
+    "value": {
+      "type": "number",
+      "default": 0.02,
+      "description": "Flying speed in blocks per tick",
+      "title": "Value"
+    }
+  },
+  "examples": [
+    {
+      "value": 0.02
+    }
+  ]
 }

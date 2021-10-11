@@ -6,8 +6,16 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "on_close": { "$ref": "../types/event.json", "description": "Event to call when the entity is done peeking", "title": "On Close" },
-    "on_open": { "$ref": "../types/event.json", "description": "Event to call when the entity starts peeking", "title": "On Open" },
+    "on_close": {
+      "$ref": "../types/event.json",
+      "description": "Event to call when the entity is done peeking",
+      "title": "On Close"
+    },
+    "on_open": {
+      "$ref": "../types/event.json",
+      "description": "Event to call when the entity starts peeking",
+      "title": "On Open"
+    },
     "on_target_open": {
       "$ref": "../types/event.json",
       "description": "Event to call when the entity's target entity starts peeking",

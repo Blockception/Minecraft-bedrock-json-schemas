@@ -4,7 +4,6 @@
   "title": "Equipment",
   "description": "Sets the equipment table to use for the entity.",
   "additionalProperties": false,
-
   "properties": {
     "slot_drop_chance": {
       "type": "array",
@@ -22,7 +21,12 @@
             "description": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED"
           },
-          "slot": { "type": "string", "title": "Slot", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
+          "slot": {
+            "type": "string",
+            "title": "Slot",
+            "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED"
+          }
         }
       }
     },
@@ -31,5 +35,10 @@
       "description": "The file path to the equipment table, relative to the behavior pack's root.",
       "$ref": "../../../../general/loot_table/identifier.json"
     }
-  }
+  },
+  "examples": [
+    {
+      "slot_drop_chance": []
+    }
+  ]
 }

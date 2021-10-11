@@ -14,14 +14,30 @@
       "maximum": 1,
       "title": "Probability"
     },
-    "tame_event": { "title": "Tame Event", "$ref": "../types/event.json", "description": "Event to run when this entity becomes tamed" },
+    "tame_event": {
+      "title": "Tame Event",
+      "$ref": "../types/event.json",
+      "description": "Event to run when this entity becomes tamed"
+    },
     "tame_items": {
       "title": "Tame Items",
       "description": "The list of items that can be used to tame this entity",
       "oneOf": [
-        { "type": "array", "items": { "$ref": "../../../../general/item/identifier.json" } },
-        { "$ref": "../../../../general/item/identifier.json" }
+        {
+          "type": "array",
+          "items": {
+            "$ref": "../../../../general/item/identifier.json"
+          }
+        },
+        {
+          "$ref": "../../../../general/item/identifier.json"
+        }
       ]
     }
-  }
+  },
+  "examples": [
+    {
+      "probability": 1
+    }
+  ]
 }

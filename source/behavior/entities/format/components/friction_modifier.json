@@ -12,5 +12,10 @@
       "description": "The higher the number, the more the friction affects this entity. A value of 1.0 means regular friction, while 2.0 means twice as much",
       "title": "Value"
     }
-  }
+  },
+  "examples": [
+    {
+      "value": 1.0
+    }
+  ]
 }

@@ -22,7 +22,12 @@
       "description": "The sound event to play when the mob is celebrating",
       "title": "Celebrate Sound"
     },
-    "duration": { "type": "integer", "default": 4, "description": "Duration, in seconds, of celebration", "title": "Duration" },
+    "duration": {
+      "type": "integer",
+      "default": 4,
+      "description": "Duration, in seconds, of celebration",
+      "title": "Duration"
+    },
     "radius": {
       "type": "number",
       "default": 16,
@@ -37,11 +42,19 @@
         {
           "type": "array",
           "items": [
-            { "type": "number", "title": "Maximum" },
-            { "type": "number", "title": "Maximum" }
+            {
+              "type": "number",
+              "title": "Maximum"
+            },
+            {
+              "type": "number",
+              "title": "Maximum"
+            }
           ]
         },
-        { "type": "number" },
+        {
+          "type": "number"
+        },
         {
           "type": "object",
           "additionalProperties": false,
@@ -60,5 +73,13 @@
         }
       ]
     }
-  }
+  },
+  "examples": [
+    {
+      "broadcast": true,
+      "celebrate_sound": "",
+      "duration": 4,
+      "radius": 16
+    }
+  ]
 }

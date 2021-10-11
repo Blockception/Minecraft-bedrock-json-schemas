@@ -5,6 +5,5 @@
   "type": "object",
   "title": "Trade Resupply",
   "additionalProperties": false,
-
   "properties": {}
 }

@@ -44,10 +44,25 @@
     "triggers": {
       "title": "Triggers",
       "description": "The list of triggers that fire when the environment conditions match the given filter criteria.",
-      "examples": [[{ "cause": "all", "deals_damage": false }]],
+      "examples": [
+        [
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      ],
       "oneOf": [
-        { "type": "array", "items": { "$ref": "#/definitions/trigger" } },
-        { "type": "object", "$ref": "#/definitions/trigger" }
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/trigger"
+          }
+        },
+        {
+          "type": "object",
+          "$ref": "#/definitions/trigger"
+        }
       ]
     }
   }

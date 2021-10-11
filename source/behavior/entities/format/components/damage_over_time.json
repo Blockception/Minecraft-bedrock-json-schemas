@@ -6,7 +6,23 @@
   "description": "Applies defined amount of damage to the entity at specified intervals.",
   "required": [],
   "properties": {
-    "damage_per_hurt": { "type": "integer", "default": 1, "description": "Amount of damage caused each hurt.", "title": "Damage Per Hurt" },
-    "time_between_hurt": { "type": "number", "default": 0, "description": "Time in seconds between damage.", "title": "Time Between Hurt" }
-  }
+    "damage_per_hurt": {
+      "type": "integer",
+      "default": 1,
+      "description": "Amount of damage caused each hurt.",
+      "title": "Damage Per Hurt"
+    },
+    "time_between_hurt": {
+      "type": "number",
+      "default": 0,
+      "description": "Time in seconds between damage.",
+      "title": "Time Between Hurt"
+    }
+  },
+  "examples": [
+    {
+      "damage_per_hurt": 1,
+      "time_between_hurt": 0
+    }
+  ]
 }

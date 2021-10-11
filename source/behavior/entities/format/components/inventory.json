@@ -4,7 +4,6 @@
   "type": "object",
   "title": "Inventory",
   "additionalProperties": false,
-
   "properties": {
     "additional_slots_per_strength": {
       "type": "integer",
@@ -25,13 +24,33 @@
       "title": "Container Type",
       "enum": ["horse", "minecart_chest", "minecart_hopper", "inventory", "container", "hopper"]
     },
-    "inventory_size": { "type": "integer", "default": 5, "description": "Number of slots the container has", "title": "Inventory Size" },
-    "private": { "type": "boolean", "default": false, "description": "If true, only the entity can access the inventory", "title": "Private" },
+    "inventory_size": {
+      "type": "integer",
+      "default": 5,
+      "description": "Number of slots the container has",
+      "title": "Inventory Size"
+    },
+    "private": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, only the entity can access the inventory",
+      "title": "Private"
+    },
     "restrict_to_owner": {
       "type": "boolean",
       "default": false,
       "description": "If true, the entity's inventory can only be accessed by its owner or itself",
       "title": "Restrict To Owner"
     }
-  }
+  },
+  "examples": [
+    {
+      "additional_slots_per_strength": 0,
+      "can_be_siphoned_from": false,
+      "container_type": "none",
+      "inventory_size": 5,
+      "private": false,
+      "restrict_to_owner": false
+    }
+  ]
 }

@@ -19,5 +19,11 @@
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }
-  }
+  },
+  "examples": [
+    {
+      "start_speed": 0.0,
+      "speed_when_turning": 0.0
+    }
+  ]
 }

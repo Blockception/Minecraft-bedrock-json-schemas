@@ -4,7 +4,6 @@
   "description": "Defines sets of items that can be used to trigger events when used on this entity. The item will also be taken and placed in the entity's inventory.",
   "type": "object",
   "title": "Giveable",
-
   "properties": {
     "triggers": {
       "description": "Defines sets of items that can be used to trigger events when used on this entity. The item will also be taken and placed in the entity's inventory.",
@@ -28,8 +27,17 @@
             "title": "Properties"
           }
         },
-        "on_give": { "$ref": "../types/event.json", "description": "Event to fire when the correct item is given.", "title": "On Give" }
+        "on_give": {
+          "$ref": "../types/event.json",
+          "description": "Event to fire when the correct item is given.",
+          "title": "On Give"
+        }
       }
     }
-  }
+  },
+  "examples": [
+    {
+      "triggers": {}
+    }
+  ]
 }

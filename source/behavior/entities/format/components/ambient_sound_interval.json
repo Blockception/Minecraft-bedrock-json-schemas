@@ -4,7 +4,6 @@
   "type": "object",
   "title": "Ambient Sound Interval",
   "description": "Sets the entity's delay between playing its ambient sound.",
-
   "properties": {
     "event_name": {
       "type": "string",
@@ -24,5 +23,12 @@
       "description": "Minimum time in seconds before the entity plays its ambient sound again",
       "title": "Value"
     }
-  }
+  },
+  "examples": [
+    {
+      "event_name": "ambient",
+      "range": 16,
+      "value": 8
+    }
+  ]
 }

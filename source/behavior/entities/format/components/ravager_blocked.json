@@ -20,7 +20,12 @@
         "additionalProperties": false,
         "type": "object",
         "properties": {
-          "weight": { "type": "integer", "title": "Weight", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+          "weight": {
+            "type": "integer",
+            "title": "Weight",
+            "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED"
+          },
           "value": {
             "title": "Value",
             "description": "UNDOCUMENTED",
@@ -30,5 +35,11 @@
         }
       }
     }
-  }
+  },
+  "examples": [
+    {
+      "knockback_strength": 3,
+      "reaction_choices": []
+    }
+  ]
 }

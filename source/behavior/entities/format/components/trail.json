@@ -4,7 +4,6 @@
   "type": "object",
   "title": "Trail",
   "additionalProperties": false,
-
   "properties": {
     "block_type": {
       "type": "string",
@@ -23,10 +22,25 @@
       "description": "The distance from the entities current position to spawn the block. Capped at up to 16 blocks away. The X value is left/right(-/+), the Z value is backward/forward(-/+), the Y value is below/above(-/+).",
       "title": "Spawn Offset",
       "items": [
-        { "type": "number", "title": "X" },
-        { "type": "number", "title": "Y" },
-        { "type": "number", "title": "Z" }
+        {
+          "type": "number",
+          "title": "X"
+        },
+        {
+          "type": "number",
+          "title": "Y"
+        },
+        {
+          "type": "number",
+          "title": "Z"
+        }
       ]
     }
-  }
+  },
+  "examples": [
+    {
+      "block_type": "air",
+      "spawn_offset": [0, 0, 0]
+    }
+  ]
 }

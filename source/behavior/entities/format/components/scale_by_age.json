@@ -6,7 +6,23 @@
   "description": "Defines the entity's size interpolation based on the entity's age.",
   "required": [],
   "properties": {
-    "end_scale": { "type": "number", "default": 1, "description": "Ending scale of the entity when it's fully grown", "title": "End Scale" },
-    "start_scale": { "type": "number", "default": 1, "description": "Initial scale of the newborn entity", "title": "Start Scale" }
-  }
+    "end_scale": {
+      "type": "number",
+      "default": 1,
+      "description": "Ending scale of the entity when it's fully grown",
+      "title": "End Scale"
+    },
+    "start_scale": {
+      "type": "number",
+      "default": 1,
+      "description": "Initial scale of the newborn entity",
+      "title": "Start Scale"
+    }
+  },
+  "examples": [
+    {
+      "end_scale": 1,
+      "start_scale": 1
+    }
+  ]
 }

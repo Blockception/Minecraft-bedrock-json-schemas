@@ -35,7 +35,23 @@
       "description": "The maximum distance another entity can be from this and have the filters checked against it.",
       "title": "Sensor Range"
     },
-    "event_filters": { "$ref": "../../filters/filters.json" },
-    "event": { "title": "Event", "description": "event", "type": "string" }
-  }
+    "event_filters": {
+      "$ref": "../../filters/filters.json"
+    },
+    "event": {
+      "title": "Event",
+      "description": "event",
+      "type": "string"
+    }
+  },
+  "examples": [
+    {
+      "maximum_count": -1,
+      "minimum_count": 1,
+      "relative_range": true,
+      "require_all": false,
+      "sensor_range": 10,
+      "event": "example"
+    }
+  ]
 }

@@ -5,15 +5,27 @@
   "additionalProperties": false,
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
-
   "properties": {
     "value": {
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "title": "Value",
       "oneOf": [
-        { "type": "object", "additionalProperties": false, "properties": { "range_min": { "type": "number" }, "range_max": { "type": "number" } } },
-        { "type": "number" }
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "range_min": {
+              "type": "number"
+            },
+            "range_max": {
+              "type": "number"
+            }
+          }
+        },
+        {
+          "type": "number"
+        }
       ]
     }
   }

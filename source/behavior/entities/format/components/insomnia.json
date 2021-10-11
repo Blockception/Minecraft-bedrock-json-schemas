@@ -12,5 +12,10 @@
       "description": "Number of days the mob has to stay up until the insomnia effect begins.",
       "title": "Days Until Insomnia"
     }
-  }
+  },
+  "examples": [
+    {
+      "days_until_insomnia": 3
+    }
+  ]
 }

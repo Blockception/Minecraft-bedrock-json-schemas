@@ -12,5 +12,10 @@
       "title": "Maximum Turn"
     }
   },
-  "description": "This move control allows the mob to swim in water and walk on land."
+  "description": "This move control allows the mob to swim in water and walk on land.",
+  "examples": [
+    {
+      "max_turn": 30
+    }
+  ]
 }

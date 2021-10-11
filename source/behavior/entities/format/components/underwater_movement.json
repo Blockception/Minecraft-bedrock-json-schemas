@@ -7,6 +7,16 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "value": { "type": "number", "title": "Value", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
-  }
+    "value": {
+      "type": "number",
+      "title": "Value",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
+    }
+  },
+  "examples": [
+    {
+      "value": 0.0
+    }
+  ]
 }

@@ -45,7 +45,10 @@
       "type": "array",
       "description": "List of blocks this entity can float on. Must be a liquid block.",
       "title": "Liquid Blocks",
-      "items": { "type": "string", "title": "Block ID" }
+      "items": {
+        "type": "string",
+        "title": "Block ID"
+      }
     },
     "simulate_waves": {
       "type": "boolean",
@@ -53,5 +56,17 @@
       "description": "Should the movement simulate waves going through.",
       "title": "Simulate Waves"
     }
-  }
+  },
+  "examples": [
+    {
+      "base_buoyancy": 0,
+      "apply_gravity": true,
+      "buoyancy": 1,
+      "big_wave_probability": 0.03,
+      "big_wave_speed": 10,
+      "drag_down_on_buoyancy_removed": 0,
+      "liquid_blocks": [],
+      "simulate_waves": true
+    }
+  ]
 }

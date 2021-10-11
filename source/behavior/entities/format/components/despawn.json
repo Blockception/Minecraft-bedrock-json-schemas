@@ -65,5 +65,16 @@
       "description": "If true, all entities linked to this entity in a child relationship (eg. leashed) will also be despawned.",
       "title": "Remove Child Entities"
     }
-  }
+  },
+  "examples": [
+    {
+      "despawn_from_chance": true,
+      "despawn_from_distance": {},
+      "despawn_from_inactivity": true,
+      "despawn_from_simulation_edge": true,
+      "min_range_inactivity_timer": 30,
+      "min_range_random_chance": 800,
+      "remove_child_entities": false
+    }
+  ]
 }

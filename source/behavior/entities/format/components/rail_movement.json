@@ -12,5 +12,10 @@
       "description": "Maximum speed that this entity will move at when on the rail",
       "title": "Maximum Speed"
     }
-  }
+  },
+  "examples": [
+    {
+      "max_speed": 0.4
+    }
+  ]
 }

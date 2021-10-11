@@ -4,10 +4,21 @@
   "type": "object",
   "title": "Scheduler",
   "additionalProperties": false,
-
   "properties": {
-    "min_delay_secs": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Minimum Delay Secs", "minimum": 0 },
-    "max_delay_secs": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Maximum Delay Secs", "minimum": 0 },
+    "min_delay_secs": {
+      "type": "integer",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "title": "Minimum Delay Secs",
+      "minimum": 0
+    },
+    "max_delay_secs": {
+      "type": "integer",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "title": "Maximum Delay Secs",
+      "minimum": 0
+    },
     "scheduled_events": {
       "type": "array",
       "description": "The list of triggers that fire when the conditions match the given filter criteria. If any filter criteria overlap the first defined event will be picked.",
@@ -18,8 +29,22 @@
         "description": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED",
         "title": "Scheduled Events",
-        "properties": { "filters": { "$ref": "../../filters/filters.json" }, "event": { "$ref": "../types/event.json" } }
+        "properties": {
+          "filters": {
+            "$ref": "../../filters/filters.json"
+          },
+          "event": {
+            "$ref": "../types/event.json"
+          }
+        }
       }
     }
-  }
+  },
+  "examples": [
+    {
+      "min_delay_secs": 0,
+      "max_delay_secs": 0,
+      "scheduled_events": []
+    }
+  ]
 }

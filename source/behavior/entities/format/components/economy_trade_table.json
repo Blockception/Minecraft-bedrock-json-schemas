@@ -18,8 +18,16 @@
       "description": "How much should the discount be modified by when the player has cured the Zombie Villager. Can be specified as a pair of numbers (low-tier trade discount and high-tier trade discount)",
       "title": "Cured Discount",
       "items": [
-        { "type": "integer", "title": "A", "description": "Minimum" },
-        { "type": "integer", "title": "B", "description": "Maximum" }
+        {
+          "type": "integer",
+          "title": "A",
+          "description": "Minimum"
+        },
+        {
+          "type": "integer",
+          "title": "B",
+          "description": "Maximum"
+        }
       ]
     },
     "display_name": {
@@ -40,8 +48,16 @@
       "description": "The Maximum the discount can be modified by when the player has cured the Zombie Villager. Can be specified as a pair of numbers (low-tier trade discount and high-tier trade discount)",
       "title": "Maximum Cured Discount",
       "items": [
-        { "type": "integer", "title": "A", "description": "Minimum" },
-        { "type": "integer", "title": "B", "description": "Maximum" }
+        {
+          "type": "integer",
+          "title": "A",
+          "description": "Minimum"
+        },
+        {
+          "type": "integer",
+          "title": "B",
+          "description": "Maximum"
+        }
       ]
     },
     "max_nearby_cured_discount": {
@@ -86,5 +102,21 @@
       "description": "Determines whether the legacy formula is used to determines the trade prices.",
       "title": "Use Legacy Price Formula"
     }
-  }
+  },
+  "examples": [
+    {
+      "convert_trades_economy": false,
+      "cured_discount": [],
+      "display_name": "",
+      "hero_demand_discount": -4,
+      "max_cured_discount": [],
+      "max_nearby_cured_discount": -200,
+      "nearby_cured_discount": -25,
+      "new_screen": false,
+      "persist_trades": false,
+      "show_trade_screen": true,
+      "table": "",
+      "use_legacy_price_formula": false
+    }
+  ]
 }

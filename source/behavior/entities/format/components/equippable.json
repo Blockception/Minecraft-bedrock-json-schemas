@@ -14,7 +14,12 @@
         "title": "Slots",
         "type": "object",
         "properties": {
-          "slot": { "type": "integer", "default": 0, "description": "The slot number of this slot.", "title": "Slot" },
+          "slot": {
+            "type": "integer",
+            "default": 0,
+            "description": "The slot number of this slot.",
+            "title": "Slot"
+          },
           "accepted_items": {
             "type": "array",
             "description": "The list of items that can go in this slot.",
@@ -49,5 +54,10 @@
         }
       }
     }
-  }
+  },
+  "examples": [
+    {
+      "slots": []
+    }
+  ]
 }

@@ -22,5 +22,11 @@
       },
       "title": "Bribe Items"
     }
-  }
+  },
+  "examples": [
+    {
+      "bribe_cooldown": 2,
+      "bribe_items": []
+    }
+  ]
 }

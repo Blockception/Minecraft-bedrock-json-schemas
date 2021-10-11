@@ -15,8 +15,15 @@
         "description": "A condition used to compare the event to.",
         "additionalProperties": false,
         "properties": {
-          "filters": { "$ref": "../../filters/filters.json" },
-          "cause": { "type": "string", "title": "Cause", "description": "Damage cause", "$ref": "../../../../general/entity/damage_source.json" },
+          "filters": {
+            "$ref": "../../filters/filters.json"
+          },
+          "cause": {
+            "type": "string",
+            "title": "Cause",
+            "description": "Damage cause",
+            "$ref": "../../../../general/entity/damage_source.json"
+          },
           "damage_per_tick": {
             "type": "integer",
             "title": "Damage Per Tick",
@@ -25,5 +32,10 @@
         }
       }
     }
-  }
+  },
+  "examples": [
+    {
+      "damage_conditions": []
+    }
+  ]
 }

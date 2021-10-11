@@ -6,6 +6,16 @@
   "description": "Sets the entity's base volume for sound effects.",
   "required": [],
   "properties": {
-    "value": { "type": "number", "default": 1.0, "description": "The value of the volume the entity uses for sound effects", "title": "Value" }
-  }
+    "value": {
+      "type": "number",
+      "default": 1.0,
+      "description": "The value of the volume the entity uses for sound effects",
+      "title": "Value"
+    }
+  },
+  "examples": [
+    {
+      "value": 1.0
+    }
+  ]
 }

@@ -33,7 +33,6 @@
       }
     }
   },
-
   "properties": {
     "attempt_temper_mod": {
       "type": "integer",
@@ -45,17 +44,37 @@
       "title": "Auto Reject Items",
       "description": "The list of items that, if carried while interacting with the entity, will anger it.",
       "oneOf": [
-        { "type": "object", "$ref": "#/definitions/auto_reject_items" },
-        { "type": "array", "items": { "$ref": "#/definitions/auto_reject_items" } }
+        {
+          "type": "object",
+          "$ref": "#/definitions/auto_reject_items"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/auto_reject_items"
+          }
+        }
       ]
     },
-    "feed_text": { "type": "string", "description": "The text that shows in the feeding interact button", "title": "Feed Text" },
+    "feed_text": {
+      "type": "string",
+      "description": "The text that shows in the feeding interact button",
+      "title": "Feed Text"
+    },
     "feed_items": {
       "description": "The list of items that can be used to increase the entity's temper and speed up the taming process",
       "title": "Feed Items",
       "oneOf": [
-        { "type": "object", "$ref": "#/definitions/feed_items" },
-        { "type": "array", "items": { "$ref": "#/definitions/feed_items" } }
+        {
+          "type": "object",
+          "$ref": "#/definitions/feed_items"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/feed_items"
+          }
+        }
       ]
     },
     "max_temper": {
@@ -70,7 +89,24 @@
       "description": "The minimum value for the entity's random starting temper",
       "title": "Minimum Temper"
     },
-    "ride_text": { "type": "string", "description": "The text that shows in the riding interact button", "title": "Ride Text" },
-    "tame_event": { "$ref": "../types/event.json", "description": "Event that triggers when the entity becomes tamed", "title": "Tame Event" }
-  }
+    "ride_text": {
+      "type": "string",
+      "description": "The text that shows in the riding interact button",
+      "title": "Ride Text"
+    },
+    "tame_event": {
+      "$ref": "../types/event.json",
+      "description": "Event that triggers when the entity becomes tamed",
+      "title": "Tame Event"
+    }
+  },
+  "examples": [
+    {
+      "attempt_temper_mod": 5,
+      "feed_text": "example",
+      "max_temper": 100,
+      "min_temper": 0,
+      "ride_text": "example"
+    }
+  ]
 }

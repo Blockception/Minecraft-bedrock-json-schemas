@@ -4,7 +4,6 @@
   "type": "object",
   "title": "Shareables",
   "additionalProperties": false,
-
   "properties": {
     "all_items": {
       "type": "boolean",
@@ -49,15 +48,31 @@
             "description": "Mob will barter for the item after picking it up. For this to work the mob needs to have a Barter component and a Barter goal.",
             "title": "Barter"
           },
-          "consume_item": { "type": "boolean", "description": "Determines whether the mob will consume the item or not.", "title": "Consume Item" },
+          "consume_item": {
+            "type": "boolean",
+            "description": "Determines whether the mob will consume the item or not.",
+            "title": "Consume Item"
+          },
           "craft_into": {
             "type": "string",
             "description": "Defines the item this entity wants to craft with the item defined above. Should be an item name.",
             "title": "Craft Into"
           },
-          "item": { "type": "string", "description": "The name of the item", "$ref": "../../../../general/item/identifier.json" },
-          "item_aux": { "type": "integer", "description": "Aux value for the item.", "title": "Item Aux" },
-          "max_amount": { "type": "integer", "description": "Maximum number of this item the mob will hold.", "title": "Maximum Amount" },
+          "item": {
+            "type": "string",
+            "description": "The name of the item",
+            "$ref": "../../../../general/item/identifier.json"
+          },
+          "item_aux": {
+            "type": "integer",
+            "description": "Aux value for the item.",
+            "title": "Item Aux"
+          },
+          "max_amount": {
+            "type": "integer",
+            "description": "Maximum number of this item the mob will hold.",
+            "title": "Maximum Amount"
+          },
           "pickup_limit": {
             "type": "integer",
             "description": "Maximum number of this item the mob will pick up during a single goal tick.",
@@ -78,9 +93,22 @@
             "description": "Number of this item considered extra that the entity wants to share.",
             "title": "Surplus Amount"
           },
-          "want_amount": { "type": "integer", "description": "Number of this item this entity wants to have.", "title": "Want Amount" }
+          "want_amount": {
+            "type": "integer",
+            "description": "Number of this item this entity wants to have.",
+            "title": "Want Amount"
+          }
         }
       }
     }
-  }
+  },
+  "examples": [
+    {
+      "all_items": false,
+      "all_items_max_amount": -1,
+      "all_items_surplus_amount": -1,
+      "all_items_want_amount": -1,
+      "items": []
+    }
+  ]
 }

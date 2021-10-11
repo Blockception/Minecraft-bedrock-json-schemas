@@ -33,7 +33,22 @@
       "default": [0.0, 0.0],
       "description": "The range for the random amount of time the fuse will be lit before exploding, a negative value means the explosion will be immediate.",
       "title": "Fuse Length",
-      "oneOf": [{ "type": "array", "items": [{ "type": "number" }, { "type": "number" }] }, { "type": "number" }]
+      "oneOf": [
+        {
+          "type": "array",
+          "items": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "number"
+            }
+          ]
+        },
+        {
+          "type": "number"
+        }
+      ]
     },
     "fuse_lit": {
       "type": "boolean",
@@ -52,5 +67,16 @@
       "description": "The radius of the explosion in blocks and the amount of damage the explosion deals.",
       "title": "Power"
     }
-  }
+  },
+  "examples": [
+    {
+      "breaks_blocks": true,
+      "causes_fire": false,
+      "destroy_affected_by_griefing": false,
+      "fire_affected_by_griefing": false,
+      "fuse_lit": false,
+      "max_resistance": 0.0,
+      "power": 3
+    }
+  ]
 }

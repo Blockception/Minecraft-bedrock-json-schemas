@@ -4,6 +4,5 @@
   "type": "object",
   "title": "Wants Jockey",
   "additionalProperties": false,
-
   "properties": {}
 }

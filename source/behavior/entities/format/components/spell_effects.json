@@ -11,10 +11,22 @@
       "description": "List of effects to add to this entity after adding this component",
       "items": {
         "oneOf": [
-          { "type": "string" },
+          {
+            "type": "string"
+          },
           {
             "type": "object",
-            "properties": { "effect": { "type": "string" }, "duration": { "type": "integer" }, "display_on_screen_animation": { "type": "boolean" } }
+            "properties": {
+              "effect": {
+                "type": "string"
+              },
+              "duration": {
+                "type": "integer"
+              },
+              "display_on_screen_animation": {
+                "type": "boolean"
+              }
+            }
           }
         ]
       },
@@ -32,8 +44,15 @@
             "description": "identifier of the effect to be removed from this entity after adding this component"
           }
         },
-        { "type": "string" }
+        {
+          "type": "string"
+        }
       ]
     }
-  }
+  },
+  "examples": [
+    {
+      "add_effects": []
+    }
+  ]
 }

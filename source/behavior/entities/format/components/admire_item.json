@@ -11,6 +11,17 @@
       "description": "Duration, in seconds, for which mob won't admire items if it was hurt",
       "title": "Cooldown After Being Attacked"
     },
-    "duration": { "type": "integer", "default": 10, "description": "Duration, in seconds, that the mob is pacified.", "title": "Duration" }
-  }
+    "duration": {
+      "type": "integer",
+      "default": 10,
+      "description": "Duration, in seconds, that the mob is pacified.",
+      "title": "Duration"
+    }
+  },
+  "examples": [
+    {
+      "cooldown_after_being_attacked": 0,
+      "duration": 10
+    }
+  ]
 }

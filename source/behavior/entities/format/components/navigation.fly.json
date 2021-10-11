@@ -123,5 +123,28 @@
       "description": "Tells the pathfinder whether or not it can walk on the ground underwater",
       "title": "Is Amphibious"
     }
-  }
+  },
+  "examples": [
+    {
+      "avoid_damage_blocks": false,
+      "avoid_portals": false,
+      "avoid_sun": false,
+      "avoid_water": false,
+      "blocks_to_avoid": [],
+      "can_breach": false,
+      "can_break_doors": false,
+      "can_jump": true,
+      "can_open_doors": false,
+      "can_open_iron_doors": false,
+      "can_pass_doors": true,
+      "can_path_from_air": false,
+      "can_path_over_lava": false,
+      "can_path_over_water": false,
+      "can_sink": true,
+      "can_swim": false,
+      "can_walk": true,
+      "can_walk_in_lava": false,
+      "is_amphibious": false
+    }
+  ]
 }

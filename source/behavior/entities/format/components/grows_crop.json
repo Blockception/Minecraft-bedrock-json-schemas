@@ -13,6 +13,17 @@
       "maximum": 1,
       "title": "Chance"
     },
-    "charges": { "type": "integer", "default": 10, "description": "Number of charges", "title": "Charges" }
-  }
+    "charges": {
+      "type": "integer",
+      "default": 10,
+      "description": "Number of charges",
+      "title": "Charges"
+    }
+  },
+  "examples": [
+    {
+      "chance": 0,
+      "charges": 10
+    }
+  ]
 }

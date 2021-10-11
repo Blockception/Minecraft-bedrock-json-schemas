@@ -30,7 +30,12 @@
     "broadcast_targets": {
       "type": "array",
       "description": "A list of entity families to broadcast anger to",
-      "items": { "type": "string", "description": "An entity family", "pattern": "^.+$", "title": "Broadcast Targets" },
+      "items": {
+        "type": "string",
+        "description": "An entity family",
+        "pattern": "^.+$",
+        "title": "Broadcast Targets"
+      },
       "title": "Broadcast Targets"
     },
     "calm_event": {
@@ -38,7 +43,12 @@
       "description": "Event to run after the number of seconds specified in duration expires (when the entity stops being `angry')",
       "title": "Calm Event"
     },
-    "angry_sound": { "type": "string", "default": "", "description": "The sound event to play when the mob is angry", "title": "Angry Sound" },
+    "angry_sound": {
+      "type": "string",
+      "default": "",
+      "description": "The sound event to play when the mob is angry",
+      "title": "Angry Sound"
+    },
     "broadcast_anger_on_attack": {
       "type": "boolean",
       "default": false,
@@ -71,19 +81,53 @@
           "type": "array",
           "default": [0, 0],
           "items": [
-            { "type": "integer", "minimum": 0, "description": "The minimum interval", "$comment": "UNDOCUMENTED", "title": "Minimum" },
-            { "type": "integer", "minimum": 0, "description": "The maximum interval", "$comment": "UNDOCUMENTED", "title": "Maximum" }
+            {
+              "type": "integer",
+              "minimum": 0,
+              "description": "The minimum interval",
+              "$comment": "UNDOCUMENTED",
+              "title": "Minimum"
+            },
+            {
+              "type": "integer",
+              "minimum": 0,
+              "description": "The maximum interval",
+              "$comment": "UNDOCUMENTED",
+              "title": "Maximum"
+            }
           ]
         },
         {
           "type": "object",
           "additionalProperties": false,
           "properties": {
-            "range_min": { "type": "number", "description": "The minimum interval", "$comment": "UNDOCUMENTED", "title": "Range Minimum" },
-            "range_max": { "type": "number", "description": "The maximum interval", "$comment": "UNDOCUMENTED", "title": "Range Maximum" }
+            "range_min": {
+              "type": "number",
+              "description": "The minimum interval",
+              "$comment": "UNDOCUMENTED",
+              "title": "Range Minimum"
+            },
+            "range_max": {
+              "type": "number",
+              "description": "The maximum interval",
+              "$comment": "UNDOCUMENTED",
+              "title": "Range Maximum"
+            }
           }
         }
       ]
     }
-  }
+  },
+  "examples": [
+    {
+      "broadcast_anger": false,
+      "broadcast_range": 20,
+      "broadcast_targets": [],
+      "angry_sound": "",
+      "broadcast_anger_on_attack": false,
+      "broadcast_anger_on_being_attacked": false,
+      "duration": 25,
+      "duration_delta": 0
+    }
+  ]
 }

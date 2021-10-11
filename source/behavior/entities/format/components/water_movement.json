@@ -12,5 +12,10 @@
       "description": "Drag factor to determine movement speed when in water.",
       "title": "Drag Factor"
     }
-  }
+  },
+  "examples": [
+    {
+      "drag_factor": 0.8
+    }
+  ]
 }

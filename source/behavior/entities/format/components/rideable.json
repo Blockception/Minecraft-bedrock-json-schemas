@@ -29,11 +29,13 @@
           "default": [0.0, 0.0, 0.0],
           "description": "Position of this seat relative to this entity's position"
         },
-        "rotate_rider_by": { "$ref": "../../../../molang/number.json", "description": "Offset to rotate riders by" }
+        "rotate_rider_by": {
+          "$ref": "../../../../molang/number.json",
+          "description": "Offset to rotate riders by"
+        }
       }
     }
   },
-
   "properties": {
     "controlling_seat": {
       "type": "integer",
@@ -49,7 +51,9 @@
     },
     "family_types": {
       "type": "array",
-      "items": { "type": "string" },
+      "items": {
+        "type": "string"
+      },
       "description": "List of entities that can ride this entity",
       "title": "Family Types"
     },
@@ -81,9 +85,28 @@
       "description": "The list of positions and number of riders for each position for entities riding this entity",
       "title": "Seats",
       "oneOf": [
-        { "type": "object", "$ref": "#/definitions/seats_spec" },
-        { "type": "array", "items": { "$ref": "#/definitions/seats_spec" } }
+        {
+          "type": "object",
+          "$ref": "#/definitions/seats_spec"
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/seats_spec"
+          }
+        }
       ]
     }
-  }
+  },
+  "examples": [
+    {
+      "controlling_seat": 0,
+      "crouching_skip_interact": true,
+      "family_types": [],
+      "interact_text": "",
+      "pull_in_entities": false,
+      "rider_can_interact": false,
+      "seat_count": 1
+    }
+  ]
 }

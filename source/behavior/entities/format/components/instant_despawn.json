@@ -11,5 +11,10 @@
       "description": "If true, all entities linked to this entity in a child relationship (eg. leashed) will also be despawned.",
       "title": "Remove Child Entities"
     }
-  }
+  },
+  "examples": [
+    {
+      "remove_child_entities": false
+    }
+  ]
 }

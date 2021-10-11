@@ -4,9 +4,13 @@
   "title": "Boostable",
   "additionalProperties": false,
   "description": "Defines the conditions and behavior of a rideable entity's boost",
-
   "properties": {
-    "duration": { "type": "number", "default": 3, "description": "Time in seconds for the boost.", "title": "Duration" },
+    "duration": {
+      "type": "number",
+      "default": 3,
+      "description": "Time in seconds for the boost.",
+      "title": "Duration"
+    },
     "speed_multiplier": {
       "type": "number",
       "default": 1,
@@ -28,7 +32,12 @@
             "description": "This is the damage that the item will take each time it is used.",
             "title": "Damage"
           },
-          "item": { "type": "string", "default": "", "description": "Name of the item that can be used to boost.", "title": "Item" },
+          "item": {
+            "type": "string",
+            "default": "",
+            "description": "Name of the item that can be used to boost.",
+            "title": "Item"
+          },
           "replace_item": {
             "type": "string",
             "default": "",
@@ -38,5 +47,12 @@
         }
       }
     }
-  }
+  },
+  "examples": [
+    {
+      "duration": 3,
+      "speed_multiplier": 1,
+      "boost_items": []
+    }
+  ]
 }

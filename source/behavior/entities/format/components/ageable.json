@@ -8,8 +8,16 @@
     "drop_items": {
       "description": "List of items that the entity drops when it grows up.",
       "oneOf": [
-        { "type": "array", "items": { "$ref": "../../../../general/item/identifier.json" } },
-        { "type": "string", "$ref": "../../../../general/item/identifier.json" }
+        {
+          "type": "array",
+          "items": {
+            "$ref": "../../../../general/item/identifier.json"
+          }
+        },
+        {
+          "type": "string",
+          "$ref": "../../../../general/item/identifier.json"
+        }
       ],
       "title": "Drop Items"
     },
@@ -22,23 +30,48 @@
     "feed_items": {
       "description": "List of items that can be fed to the entity. Includes `item` for the item name and `growth` to define how much time it grows up by",
       "oneOf": [
-        { "type": "array", "items": { "$ref": "../../../../general/item/identifier.json" } },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "../../../../general/item/identifier.json"
+          }
+        },
         {
           "type": "array",
           "items": {
             "type": "object",
-            "properties": { "growth": { "type": "number" }, "item": { "$ref": "../../../../general/item/identifier.json" } }
+            "properties": {
+              "growth": {
+                "type": "number"
+              },
+              "item": {
+                "$ref": "../../../../general/item/identifier.json"
+              }
+            }
           }
         },
-        { "type": "string", "$ref": "../../../../general/item/identifier.json" }
+        {
+          "type": "string",
+          "$ref": "../../../../general/item/identifier.json"
+        }
       ],
       "title": "Feed Items"
     },
-    "grow_up": { "$ref": "../types/event.json", "description": "Event to run when this entity grows up.", "title": "Grow up" },
+    "grow_up": {
+      "$ref": "../types/event.json",
+      "description": "Event to run when this entity grows up.",
+      "title": "Grow Up"
+    },
     "transform_to_item": {
       "type": "string",
-      "title": "Transform to item",
+      "title": "Transform To Item",
       "description": "The feed item used will transform to this item upon successful interaction. Format: itemName:auxValue"
     }
-  }
+  },
+  "examples": [
+    {
+      "duration": 1200,
+      "transform_to_item": "example"
+    }
+  ]
 }

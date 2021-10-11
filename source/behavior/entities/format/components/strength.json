@@ -4,9 +4,24 @@
   "type": "object",
   "title": "Strength",
   "additionalProperties": false,
-
   "properties": {
-    "max": { "type": "integer", "default": 5, "description": "The maximum strength of this entity", "title": "Maximum" },
-    "value": { "type": "integer", "default": 1, "description": "The initial value of the strength", "title": "Value" }
-  }
+    "max": {
+      "type": "integer",
+      "default": 5,
+      "description": "The maximum strength of this entity",
+      "title": "Maximum"
+    },
+    "value": {
+      "type": "integer",
+      "default": 1,
+      "description": "The initial value of the strength",
+      "title": "Value"
+    }
+  },
+  "examples": [
+    {
+      "max": 5,
+      "value": 1
+    }
+  ]
 }

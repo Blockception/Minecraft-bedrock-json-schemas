@@ -17,14 +17,35 @@
       "description": "Distance in blocks at which the leash stiffens, restricting movement.",
       "title": "Hard Distance"
     },
-    "max_distance": { "type": "number", "default": 10, "description": "Distance in blocks at which the leash breaks.", "title": "Maximum Distance" },
-    "on_leash": { "$ref": "../types/event.json", "description": "Event to call when this entity is leashed.", "title": "On Leash" },
-    "on_unleash": { "$ref": "../types/event.json", "description": "Event to call when this entity is unleashed.", "title": "On Unleash" },
+    "max_distance": {
+      "type": "number",
+      "default": 10,
+      "description": "Distance in blocks at which the leash breaks.",
+      "title": "Maximum Distance"
+    },
+    "on_leash": {
+      "$ref": "../types/event.json",
+      "description": "Event to call when this entity is leashed.",
+      "title": "On Leash"
+    },
+    "on_unleash": {
+      "$ref": "../types/event.json",
+      "description": "Event to call when this entity is unleashed.",
+      "title": "On Unleash"
+    },
     "soft_distance": {
       "type": "number",
       "default": 4,
       "description": "Distance in blocks at which the `spring` effect starts acting to keep this entity close to the entity that leashed it.",
       "title": "Soft Distance"
     }
-  }
+  },
+  "examples": [
+    {
+      "can_be_stolen": false,
+      "hard_distance": 6,
+      "max_distance": 10,
+      "soft_distance": 4
+    }
+  ]
 }

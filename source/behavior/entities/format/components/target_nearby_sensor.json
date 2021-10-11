@@ -39,5 +39,12 @@
       "description": "Maximum distance in blocks that another entity will be considered in the `outside` range",
       "title": "Outside Range"
     }
-  }
+  },
+  "examples": [
+    {
+      "must_see": false,
+      "inside_range": 1,
+      "outside_range": 5
+    }
+  ]
 }

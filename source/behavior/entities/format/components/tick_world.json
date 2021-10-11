@@ -27,5 +27,12 @@
       "maximum": 6,
       "title": "Radius"
     }
-  }
+  },
+  "examples": [
+    {
+      "distance_to_players": 128,
+      "never_despawn": true,
+      "radius": 2
+    }
+  ]
 }

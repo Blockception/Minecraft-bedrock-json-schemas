@@ -8,9 +8,17 @@
   "definitions": {
     "integer_range": {
       "title": "Range",
-      "examples": [-1, { "range_min": 4, "range_max": 7 }],
+      "examples": [
+        -1,
+        {
+          "range_min": 4,
+          "range_max": 7
+        }
+      ],
       "oneOf": [
-        { "type": "integer" },
+        {
+          "type": "integer"
+        },
         {
           "type": "object",
           "properties": {
@@ -34,7 +42,6 @@
   "properties": {
     "mutation_rate": {
       "type": "number",
-
       "description": "Chance that an allele will be replaced with a random one instead of the parent's allele during birth.",
       "title": "Mutation Rate"
     },
@@ -92,5 +99,11 @@
         }
       }
     }
-  }
+  },
+  "examples": [
+    {
+      "mutation_rate": 0.0,
+      "genes": []
+    }
+  ]
 }

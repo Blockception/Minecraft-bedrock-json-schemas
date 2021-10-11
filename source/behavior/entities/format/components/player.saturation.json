@@ -14,5 +14,10 @@
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }
-  }
+  },
+  "examples": [
+    {
+      "value": true
+    }
+  ]
 }

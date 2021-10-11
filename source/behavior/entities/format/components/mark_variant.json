@@ -12,5 +12,10 @@
       "title": "Value"
     }
   },
-  "additionalProperties": false
+  "additionalProperties": false,
+  "examples": [
+    {
+      "value": 0
+    }
+  ]
 }

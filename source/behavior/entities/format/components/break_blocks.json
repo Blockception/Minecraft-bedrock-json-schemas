@@ -10,7 +10,14 @@
       "type": "array",
       "title": "Breakable Blocks",
       "description": "A list of the blocks that can be broken as this entity moves around",
-      "items": { "$ref": "../../../../general/blocks_item.json" }
+      "items": {
+        "$ref": "../../../../general/blocks_item.json"
+      }
     }
-  }
+  },
+  "examples": [
+    {
+      "breakable_blocks": []
+    }
+  ]
 }

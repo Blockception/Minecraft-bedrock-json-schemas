@@ -11,5 +11,10 @@
       "description": "The text that will display when interacting with this entity with a dye when playing with Touch-screen controls",
       "title": "Interact Text"
     }
-  }
+  },
+  "examples": [
+    {
+      "interact_text": "example"
+    }
+  ]
 }

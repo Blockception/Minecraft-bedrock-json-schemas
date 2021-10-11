@@ -9,8 +9,17 @@
     "control_items": {
       "description": "List of items that can be used to control this entity",
       "oneOf": [
-        { "type": "array", "items": { "type": "string", "description": "An item that can be used to control this entity", "title": "Item" } },
-        { "type": "string" }
+        {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "An item that can be used to control this entity",
+            "title": "Item"
+          }
+        },
+        {
+          "type": "string"
+        }
       ],
       "title": "Control Items"
     }

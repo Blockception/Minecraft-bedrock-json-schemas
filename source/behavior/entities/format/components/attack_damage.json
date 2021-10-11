@@ -4,6 +4,17 @@
   "title": "Attack Damage",
   "additionalProperties": false,
   "required": ["value"],
-  "properties": { "value": { "type": "number", "description": "UNDOCUMENTED: value", "title": "Value" } },
-  "description": "UNDOCUMENTED: "
+  "properties": {
+    "value": {
+      "type": "number",
+      "description": "UNDOCUMENTED: value",
+      "title": "Value"
+    }
+  },
+  "description": "UNDOCUMENTED: ",
+  "examples": [
+    {
+      "value": 0.0
+    }
+  ]
 }
