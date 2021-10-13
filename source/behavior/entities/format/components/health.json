@@ -19,9 +19,7 @@
       "description": "Current health of the entity",
       "title": "Value",
       "oneOf": [
-        {
-          "type": "integer"
-        },
+        { "type": "integer", "default": 1 },
         {
           "type": "object",
           "additionalProperties": false,
@@ -44,9 +42,5 @@
       ]
     }
   },
-  "examples": [
-    {
-      "max": 0
-    }
-  ]
+  "examples": [{ "value": 1, "max": 0 }]
 }
