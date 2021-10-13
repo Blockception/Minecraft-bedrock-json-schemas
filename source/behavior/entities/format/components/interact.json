@@ -4,6 +4,7 @@
   "title": "Interact",
   "description": "Defines interactions with this entity.",
   "additionalProperties": false,
+  "examples": [{ "interactions": [] }],
   "definitions": {
     "interaction_spec": {
       "type": "object",
