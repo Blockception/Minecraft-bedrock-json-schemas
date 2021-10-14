@@ -125,6 +125,12 @@
     }
   },
   "examples": [
+    {},
+    {
+      "avoid_damage_blocks": true,
+      "can_pass_doors": true,
+      "can_jump": true
+    },
     {
       "avoid_damage_blocks": false,
       "avoid_portals": false,
