@@ -81,7 +81,6 @@
     "entities": {
       "title": "Entities",
       "description": "The entities to spawn",
-      "$comment": "UNDOCUMENTED",
       "oneOf": [
         {
           "type": "object",
@@ -90,6 +89,7 @@
         {
           "type": "array",
           "items": {
+            "type": "object",
             "$ref": "#/definitions/entity_spawn"
           }
         }
