@@ -163,7 +163,29 @@
           ]
         },
         "license": { "type": "string", "title": "License", "description": "The license of the pack" },
-        "url": { "type": "string", "format": "uri", "title": "Url", "description": "The home website of your pack" }
+        "url": { "type": "string", "format": "uri", "title": "Url", "description": "The home website of your pack" },
+        "generated_with": {
+          "title": "Generated With",
+          "description": "A list of tools and their version that have modified this pack",
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^[a-zA-Z0-9\\_\\-]+$",
+            "maxLength": 32,
+            "maximum": 32
+          },
+          "additionalProperties": {
+            "type": "array",
+            "examples": [["1.0.0"]],
+            "title": "Tool",
+            "description": "The tool and the version used to modified this pack",
+            "items": {
+              "type": "string",
+              "title": "Version",
+              "examples": ["1.0.0"],
+              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+            }
+          }
+        }
       }
     }
   }
