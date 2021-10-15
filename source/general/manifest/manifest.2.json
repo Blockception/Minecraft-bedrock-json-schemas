@@ -150,17 +150,9 @@
       "properties": {
         "authors": {
           "title": "Authors",
-          "oneOf": [
-            {
-              "description": "Name of the author(s) of the pack",
-              "type": "array",
-              "items": { "type": "string", "title": "Name", "description": "Name of the author of the pack" }
-            },
-            {
-              "description": "Name of the author of the pack",
-              "type": "string"
-            }
-          ]
+          "description": "Name of the author(s) of the pack",
+          "type": "array",
+          "items": { "type": "string", "title": "Name", "description": "Name of the author of the pack" }
         },
         "license": { "type": "string", "title": "License", "description": "The license of the pack" },
         "url": { "type": "string", "format": "uri", "title": "Url", "description": "The home website of your pack" }

@@ -120,17 +120,9 @@
     "metadata": {
       "authors": {
         "title": "Authors",
-        "oneOf": [
-          {
-            "description": "Name of the author(s) of the pack",
-            "type": "array",
-            "items": { "type": "string", "title": "Name", "description": "Name of the author of the pack" }
-          },
-          {
-            "description": "Name of the author of the pack",
-            "type": "string"
-          }
-        ]
+        "description": "Name of the author(s) of the pack",
+        "type": "array",
+        "items": { "type": "string", "title": "Name", "description": "Name of the author of the pack" }
       },
       "license": { "type": "string", "description": "The license of the pack", "title": "License" },
       "url": { "type": "string", "description": "The home website of your pack", "title": "Url" },
