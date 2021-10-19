@@ -175,11 +175,6 @@
             "description": "UNDOCUMENTED: part visibility",
             "title": "Part Visibility"
           },
-          "rebuild_animation_matrices": {
-            "type": "boolean",
-            "description": "UNDOCUMENTED: rebuild animation matrices",
-            "title": "Rebuild Animation Matrices"
-          },
           "textures": {
             "type": "array",
             "minItems": 1,
