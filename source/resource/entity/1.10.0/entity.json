@@ -31,11 +31,12 @@
               "description": "These names are used by the animation controller JSON. Players can reference animations from the vanilla Minecraft Resource Pack or create their own. Custom animations should be in the animation folder at the root of the Resource Pack.",
               "type": "object",
               "minProperties": 1,
+              "examples": [{ "basic": "controller.generic.basic" }],
               "additionalProperties": {
                 "type": "string",
                 "description": "These names are used by the animation controller JSON. Players can reference animations from the vanilla Minecraft Resource Pack or create their own. Custom animations should be in the animation folder at the root of the Resource Pack.",
                 "title": "Animation Reference",
-                "examples": [{ "basic": "controller.generic.basic" }]
+                "examples": ["controller.", "animation."]
               }
             },
             "enable_attachables": { "type": "boolean", "description": "Whether or not attachables are enaboled", "title": "Enable Attachables" },
