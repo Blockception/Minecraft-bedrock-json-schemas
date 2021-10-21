@@ -53,6 +53,12 @@
       "description": "The gravity applied to this entity when thrown. The higher the value, the faster the entity falls",
       "title": "Gravity"
     },
+    "hit_ground_sound": {
+      "type": "string",
+      "default": "",
+      "description": "The sound that plays when the projectile hits the ground",
+      "title": "Hit Ground Sound"
+    },
     "hit_sound": {
       "type": "string",
       "default": "",
@@ -383,7 +389,16 @@
           "type": "object",
           "description": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
-          "title": "Stick In Ground"
+          "title": "Stick In Ground",
+          "properties": {
+            "shake_time": {
+              "title": "Shake Time",
+              "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
+              "type": "integer",
+              "minimum": 0
+            }
+          }
         },
         "teleport_owner": {
           "additionalProperties": false,
@@ -458,6 +473,12 @@
       "default": 4,
       "description": "Radius in blocks of the `splash` effect",
       "title": "Splash Range"
+    },
+    "stop_on_hurt": {
+      "title": "Splash Range",
+      "type": "boolean",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED"
     },
     "uncertainty_base": {
       "type": "number",
