@@ -1,7 +1,10 @@
 *.ps1 linguist-detectable=false
-behavior/**/*.json linguist-vendored=true
-general/**/*.json linguist-vendored=true
-language/**/*.json linguist-vendored=true
-resource/**/*.json linguist-vendored=true
-skinpacks/**/*.json linguist-vendored=true
+
+behavior/**/*.json linguist-generated=true
+general/**/*.json linguist-generated=true
+language/**/*.json linguist-generated=true
+resource/**/*.json linguist-generated=true
+skinpacks/**/*.json linguist-generated=true
+
 *.json linguist-detectable=true
+test/**/*.json linguist-vendored=true
