@@ -1,5 +1,5 @@
 {
-  "$id": "blockception.minecraft.behavior.spawn_rules",
+  "$id": "blockception.behavior.spawn_rules",
   "examples": [
     {
       "format_version": "1.17.0",
@@ -54,26 +54,26 @@
             "description": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "properties": {
-              "minecraft:biome_filter": { "$ref": "./components/minecraft.biome_filter.json" },
-              "minecraft:brightness_filter": { "$ref": "./components/minecraft.brightness_filter.json" },
-              "minecraft:density_limit": { "$ref": "./components/minecraft.density_limit.json" },
-              "minecraft:difficulty_filter": { "$ref": "./components/minecraft.difficulty_filter.json" },
-              "minecraft:delay_filter": { "$ref": "./components/minecraft.delay_filter.json" },
-              "minecraft:distance_filter": { "$ref": "./components/minecraft.distance_filter.json" },
-              "minecraft:height_filter": { "$ref": "./components/minecraft.height_filter.json" },
-              "minecraft:herd": { "$ref": "./components/minecraft.herd.json" },
-              "minecraft:player_in_village_filter": { "$ref": "./components/minecraft.player_in_village_filter.json" },
-              "minecraft:permute_type": { "$ref": "./components/minecraft.permute_type.json" },
-              "minecraft:mob_event_filter": { "$ref": "./components/minecraft.mob_event_filter.json" },
-              "minecraft:spawn_event": { "$ref": "./components/minecraft.spawn_event.json" },
-              "minecraft:spawns_on_block_filter": { "$ref": "./components/minecraft.spawns_on_block_filter.json" },
-              "minecraft:spawns_on_block_prevented_filter": { "$ref": "./components/minecraft.spawns_on_block_prevented_filter.json" },
-              "minecraft:spawns_lava": { "$ref": "./components/minecraft.spawns_lava.json" },
-              "minecraft:spawns_on_surface": { "$ref": "./components/minecraft.spawns_on_surface.json" },
-              "minecraft:spawns_underground": { "$ref": "./components/minecraft.spawns_underground.json" },
-              "minecraft:spawns_underwater": { "$ref": "./components/minecraft.spawns_underwater.json" },
-              "minecraft:weight": { "$ref": "./components/minecraft.weight.json" },
-              "minecraft:world_age_filter": { "$ref": "./components/minecraft.world_age_filter.json" }
+              "minecraft:biome_filter": { "$ref": "./components/biome_filter.json" },
+              "minecraft:brightness_filter": { "$ref": "./components/brightness_filter.json" },
+              "minecraft:density_limit": { "$ref": "./components/density_limit.json" },
+              "minecraft:difficulty_filter": { "$ref": "./components/difficulty_filter.json" },
+              "minecraft:delay_filter": { "$ref": "./components/delay_filter.json" },
+              "minecraft:distance_filter": { "$ref": "./components/distance_filter.json" },
+              "minecraft:height_filter": { "$ref": "./components/height_filter.json" },
+              "minecraft:herd": { "$ref": "./components/herd.json" },
+              "minecraft:player_in_village_filter": { "$ref": "./components/player_in_village_filter.json" },
+              "minecraft:permute_type": { "$ref": "./components/permute_type.json" },
+              "minecraft:mob_event_filter": { "$ref": "./components/mob_event_filter.json" },
+              "minecraft:spawn_event": { "$ref": "./components/spawn_event.json" },
+              "minecraft:spawns_on_block_filter": { "$ref": "./components/spawns_on_block_filter.json" },
+              "minecraft:spawns_on_block_prevented_filter": { "$ref": "./components/spawns_on_block_prevented_filter.json" },
+              "minecraft:spawns_lava": { "$ref": "./components/spawns_lava.json" },
+              "minecraft:spawns_on_surface": { "$ref": "./components/spawns_on_surface.json" },
+              "minecraft:spawns_underground": { "$ref": "./components/spawns_underground.json" },
+              "minecraft:spawns_underwater": { "$ref": "./components/spawns_underwater.json" },
+              "minecraft:weight": { "$ref": "./components/weight.json" },
+              "minecraft:world_age_filter": { "$ref": "./components/world_age_filter.json" }
             }
           }
         }
