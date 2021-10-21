@@ -391,6 +391,11 @@
           "description": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "title": "Teleport Owner"
+        },
+        "thrown_potion_effect": {
+          "title": "Thrown Potion Effect",
+          "type": "object",
+          "additionalProperties": false
         }
       }
     },
