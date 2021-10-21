@@ -4,5 +4,6 @@
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "additionalProperties": false,
+  "type": "object",
   "properties": { "event": { "type": "string", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Event" } }
 }
