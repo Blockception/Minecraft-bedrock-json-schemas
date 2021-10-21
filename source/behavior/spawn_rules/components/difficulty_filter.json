@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.spawn_rules.1.17.0.minecraft.difficulty_filter",
+  "$id": "blockception.minecraft.behavior.spawn_rules.minecraft.difficulty_filter",
   "additionalProperties": false,
   "type": "object",
-  "title": "Difficulty Filter 1.17.0",
+  "title": "Difficulty Filter",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "definitions": { "difficulty": { "type": "string", "enum": ["easy", "normal", "hard", "peaceful"] } },

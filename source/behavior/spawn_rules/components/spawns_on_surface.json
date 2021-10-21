@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.spawn_rules.1.17.0.minecraft.spawns_on_surface",
+  "$id": "blockception.minecraft.behavior.spawn_rules.minecraft.spawns_on_surface",
   "additionalProperties": false,
   "type": "object",
-  "title": "Spawns On Surface 1.17.0",
+  "title": "Spawns On Surface",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "properties": {}

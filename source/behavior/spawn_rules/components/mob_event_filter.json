@@ -1,6 +1,6 @@
 {
-  "$id": "blockception.minecraft.behavior.spawn_rules.1.17.0.minecraft.mob_event_filter",
-  "title": "Mob Event Filter 1.17.0",
+  "$id": "blockception.minecraft.behavior.spawn_rules.minecraft.mob_event_filter",
+  "title": "Mob Event Filter",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "additionalProperties": false,
