@@ -103,25 +103,13 @@
     },
     "offset": {
       "type": "array",
-      "default": [0, 0.5, 0],
+      "default": [0, 0.0, 0],
       "description": "The offset from the entity's anchor where the projectile will spawn",
       "title": "Offset",
       "items": [
-        {
-          "type": "number",
-          "description": "X",
-          "title": "X"
-        },
-        {
-          "type": "number",
-          "description": "Y",
-          "title": "Y"
-        },
-        {
-          "type": "number",
-          "description": "Z",
-          "title": "Z"
-        }
+        { "type": "number", "description": "X", "title": "X" },
+        { "type": "number", "description": "Y", "title": "Y" },
+        { "type": "number", "description": "Z", "title": "Z" }
       ]
     },
     "on_fire_time": {
@@ -480,6 +468,7 @@
     }
   },
   "examples": [
+    {},
     {
       "anchor": 0,
       "angle_offset": 0,
