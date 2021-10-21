@@ -1,0 +1,8 @@
+{
+  "$id": "blockception.minecraft.behavior.spawn_rules.minecraft.disallow_spawns_in_bubble",
+  "additionalProperties": false,
+  "type": "object",
+  "title": "Disallow Spawns In Bubble",
+  "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED"
+}
