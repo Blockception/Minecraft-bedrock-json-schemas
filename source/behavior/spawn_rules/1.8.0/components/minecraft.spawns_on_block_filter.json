@@ -1,7 +1,0 @@
-{
-  "$id": "blockception.minecraft.behavior.spawn_rules.1.8.0.minecraft.spawns_on_block_filter",
-  "title": "Spawns On Block Filter 1.8.0",
-  "description": "UNDOCUMENTED",
-  "$comment": "UNDOCUMENTED",
-  "oneOf": [{ "type": "string" }, { "type": "array", "items": { "type": "string" } }]
-}

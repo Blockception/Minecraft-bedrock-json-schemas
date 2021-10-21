@@ -1,0 +1,30 @@
+{
+  "$id": "blockception.minecraft.behavior.spawn_rules.1.17.0.minecraft.height_filter",
+  "title": "Height Filter 1.17.0",
+  "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
+  "definitions": {
+    "herd": {
+      "type": "object",
+      "title": "Herd",
+      "description": "Herd",
+      "additionalProperties": false,
+      "properties": {
+        "initial_event": { "title": "Initial Event", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "string" },
+        "initial_event_count": { "title": "Initial Event Count", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "integer" },
+        "min_size": { "type": "integer", "description": "This is the minimum number of mobs that spawn in a herd", "title": "Minimum Size" },
+        "max_size": { "type": "integer", "description": "This is the maximum number of mobs that spawn in a herd", "title": "Maximum Size" },
+        "event": { "type": "string", "description": "This is an event that can be triggered from spawning", "title": "Event" },
+        "event_skip_count": {
+          "type": "integer",
+          "description": "This is the number of mobs spawned before the specified event is triggered",
+          "title": "Event Skip Count"
+        }
+      }
+    }
+  },
+  "oneOf": [
+    { "type": "object", "$ref": "#/definitions/herd" },
+    { "type": "array", "items": { "$ref": "#/definitions/herd" } }
+  ]
+}
