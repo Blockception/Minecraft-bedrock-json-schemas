@@ -30,6 +30,14 @@
       "$comment": "UNDOCUMENTED",
       "title": "Cooldown After Being Attacked"
     },
+    "excluded_items": {
+      "title": "Excluded Items",
+      "type": "array",
+      "items": {
+        "title": "Excluded Item",
+        "$ref": "../../../../general/item/identifier.json"
+      }
+    },
     "goal_radius": {
       "type": "number",
       "default": 0.5,
@@ -60,6 +68,7 @@
       "can_pickup_any_item": false,
       "can_pickup_to_hand_or_equipment": true,
       "cooldown_after_being_attacked": true,
+      "excluded_items": [],
       "goal_radius": 0.5,
       "max_dist": 0,
       "pickup_based_on_chance": false,
