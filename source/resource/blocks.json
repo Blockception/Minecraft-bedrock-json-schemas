@@ -23,7 +23,7 @@
       ]
     }
   },
-  "propertyNames": { "pattern": "^[\\w_\\-:]+$" },
+  "propertyNames": { "pattern": "^[\\w_\\-:\\.]+$" },
   "properties": {
     "format_version": {
       "type": "array",
