@@ -48,6 +48,12 @@
               "minProperties": 1,
               "additionalProperties": { "type": "string", "description": "The reference to the geometry", "title": "Geometry Reference" }
             },
+            "hide_armor": {
+              "type": "boolean",
+              "default": true,
+              "title": "Hide Armor",
+              "description": "Hides or shows the possible armor"
+            },
             "identifier": {
               "type": "string",
               "description": "The entity indentifier",
