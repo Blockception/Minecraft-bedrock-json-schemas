@@ -1,8 +1,8 @@
 {
   "$id": "blockception.minecraft.block.identifier",
-  "type": "string",
-  "title": "Block Identifier",
   "description": "A minecraft block identifier",
+  "examples": ["namespace:block"],
   "pattern": "^[0-9a-zA-Z:_\\.\\-]+$",
-  "examples": ["namespace:block"]
+  "title": "Block Identifier",
+  "type": "string"
 }

@@ -1,8 +1,8 @@
 {
   "$id": "blockception.minecraft.entity.identifier.1.8.0",
-  "type": "string",
-  "title": "Entity Identifier 1.8.0",
   "description": "A minecraft entity identifier",
   "examples": ["namespace:entity_name"],
-  "pattern": "^[0-9a-zA-Z:_\\.\\-]+$"
+  "pattern": "^[0-9a-zA-Z:_\\.\\-]+$",
+  "title": "Entity Identifier 1.8.0",
+  "type": "string"
 }
