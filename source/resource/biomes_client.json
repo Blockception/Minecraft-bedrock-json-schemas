@@ -18,7 +18,7 @@
           "$ref": "../general/fog/identifier.json"
         },
         "fog_ids_to_merge": {
-          "title": "Fog ids to merge",
+          "title": "Fog Ids To Merge",
           "description": "UNDOCUMENTED",
           "$comment": "UNDOCUMENTED",
           "type": "array",
