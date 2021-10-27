@@ -131,6 +131,12 @@
       "$comment": "UNDOCUMENTED",
       "title": "On Hit",
       "properties": {
+        "arrow_effect": {
+          "type": "object",
+          "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
+          "additionalProperties": false
+        },
         "catch_fire": {
           "additionalProperties": false,
           "description": "UNDOCUMENTED",
@@ -190,10 +196,10 @@
               "title": "Catch Fire"
             },
             "damage": {
-              "type": "integer",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
-              "title": "Damage"
+              "title": "Damage",
+              "oneOf": [{ "type": "integer" }, { "type": "array", "items": [{ "type": "integer" }, { "type": "integer" }] }]
             },
             "destroy_on_hit": {
               "type": "boolean",
@@ -395,7 +401,7 @@
               "title": "Shake Time",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
-              "type": "integer",
+              "type": "number",
               "minimum": 0
             }
           }
