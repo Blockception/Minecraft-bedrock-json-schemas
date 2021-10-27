@@ -12,25 +12,33 @@
       "title": "Sound Filepath Schema",
       "description": "The filepath to the sound, starts with `sounds/'",
       "pattern": "(^sounds/.*$|^$)",
-      "additionalItems": true
+      "additionalItems": true,
+      "examples": ["sounds/"]
     },
     "SoundSpec": {
-      "additionalItems": false,
       "additionalProperties": false,
       "type": "object",
       "$id": "#/Sound",
       "title": "Sound",
       "required": ["sounds"],
       "properties": {
+        "__use_legacy_max_distance": {
+          "type": "boolean",
+          "title": "Use Legacy Max Distance",
+          "description": "UNDOCUMENTED"
+        },
         "category": {
           "type": "string",
-          "$id": "#/Sound/category",
           "title": "Sound Category",
           "enum": ["ambient", "block", "music", "weather", "ui", "bucket", "neutral", "player", "hostile", "record", "bottle"],
           "description": "UNDOCUMENTED: category"
         },
         "sounds": {
+          "title": "Sounds",
+          "description": "UNDOCUMENTED: sounds",
           "items": {
+            "title": "Sounds",
+            "description": "UNDOCUMENTED: sounds",
             "anyOf": [
               {
                 "$id": "#/Sound/sounds/stringItem",
@@ -41,11 +49,17 @@
                 "title": "Sounds"
               },
               {
-                "additionalItems": false,
+                "additionalProperties": false,
                 "$id": "#/Sound/sounds/ObjectItem",
                 "type": "object",
                 "required": ["name"],
                 "properties": {
+                  "is3D": {
+                    "description": "UNDOCUMENTED",
+                    "$comment": "UNDOCUMENTED",
+                    "title": "Is 3D",
+                    "type": "boolean"
+                  },
                   "pitch": { "description": "The pitch of the audio, 1 is nomial", "type": "number", "minimum": 0, "maximum": 2, "title": "Pitch" },
                   "volume": { "description": "The volume of the audio, 1 is nomial", "type": "number", "minimum": 0, "title": "Volume" },
                   "load_on_low_memory": {
@@ -60,18 +74,25 @@
                     "$ref": "#/definitions/SoundPath",
                     "description": "UNDOCUMENTED: name",
                     "title": "Name"
+                  },
+                  "weight": {
+                    "description": "UNDOCUMENTED",
+                    "$comment": "UNDOCUMENTED",
+                    "title": "Weight",
+                    "type": "integer",
+                    "minimum": 0
                   }
                 },
                 "description": "UNDOCUMENTED",
                 "$comment": "UNDOCUMENTED",
                 "title": "Sounds"
               }
-            ],
-            "description": "UNDOCUMENTED: sounds",
-            "title": "Sounds"
-          },
-          "description": "UNDOCUMENTED: sounds",
-          "title": "Sounds"
+            ]
+          }
+        },
+        "max_distance": {
+          "title": "Max Distance",
+          "description": "UNDOCUMENTED"
         }
       }
     }
