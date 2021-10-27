@@ -15,6 +15,7 @@
     },
     "SoundSpec": {
       "additionalItems": false,
+      "additionalProperties": false,
       "type": "object",
       "$id": "#/Sound",
       "title": "Sound",
