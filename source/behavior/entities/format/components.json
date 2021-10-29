@@ -49,7 +49,6 @@
     "minecraft:floats_in_liquid": { "$ref": "./components/floats_in_liquid.json" },
     "minecraft:flying_speed": { "$ref": "./components/flying_speed.json" },
     "minecraft:follow_range": { "$ref": "./components/follow_range.json" },
-    "minecraft:foot_size": { "$ref": "./components/foot_size.json" },
     "minecraft:friction_modifier": { "$ref": "./components/friction_modifier.json" },
     "minecraft:genetics": { "$ref": "./components/genetics.json" },
     "minecraft:giveable": { "$ref": "./components/giveable.json" },
