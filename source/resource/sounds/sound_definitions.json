@@ -92,7 +92,9 @@
         },
         "max_distance": {
           "title": "Max Distance",
-          "description": "UNDOCUMENTED"
+          "description": "UNDOCUMENTED",
+          "type": "number",
+          "minimum": 0
         }
       }
     }
