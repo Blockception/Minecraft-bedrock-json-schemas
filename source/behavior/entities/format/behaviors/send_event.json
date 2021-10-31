@@ -12,7 +12,7 @@
         "type": "object",
         "additionalProperties": false,
         "properties": {
-          "delay": {
+          "base_delay": {
             "type": "number",
             "default": 0,
             "description": "Amount of time in seconds before starting this step"
