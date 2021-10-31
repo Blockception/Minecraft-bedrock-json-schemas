@@ -3,5 +3,12 @@
   "description": "Sets that this entity can be stacked.",
   "type": "object",
   "title": "Is Stackable",
-  "additionalProperties": false
+  "additionalProperties": false,
+  "properties": {
+    "value": {
+      "title": "Value",
+      "description": "UNDOCUMENTATED",
+      "type": "boolean"
+    }
+  }
 }
