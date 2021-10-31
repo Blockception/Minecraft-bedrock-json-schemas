@@ -31,7 +31,7 @@
               "title": "Identifier",
               "description": "The entity identifier this spawn rule will apply to, entity must exist",
               "$comment": "UNDOCUMENTED",
-              "$ref": "../../../general/entity/identifier.json"
+              "$ref": "../../general/entity/identifier.json"
             },
             "population_control": {
               "type": "string",
