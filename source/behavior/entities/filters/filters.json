@@ -2,6 +2,16 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.filters",
   "title": "Filters",
   "$ref": "#/definitions/groups_spec",
+  "examples": [
+    { "test": "is_family", "value": "example" },
+    { "test": "has_tag", "value": "example" }
+  ],
+  "defaultSnippets": [
+    {
+      "label": "test",
+      "body": "{ \"test\": \"$1\", \"value\": \"$2\" }"
+    }
+  ],
   "definitions": {
     "filters_spec": {
       "examples": [{ "all_of": [{}] }, { "any_of": [{}] }, { "none_of": [{}] }],
