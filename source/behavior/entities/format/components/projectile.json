@@ -184,13 +184,13 @@
           "title": "Impact Damage",
           "properties": {
             "max_critical_damage": {
-              "type": "string",
+              "type": "number",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "title": "Max Critical Damage"
             },
             "min_critical_damage": {
-              "type": "string",
+              "type": "number",
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "title": "Min Critical Damage"
