@@ -7,6 +7,8 @@
   "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
 
+  "editor.insertSpaces": true,
+
   "prettier.printWidth": 150,
   "prettier.useTabs": false,
   "prettier.tabWidth": 2
