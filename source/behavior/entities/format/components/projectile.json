@@ -237,6 +237,45 @@
               "description": "UNDOCUMENTED",
               "$comment": "UNDOCUMENTED",
               "title": "Semi Random Diff Damage"
+            },
+            "should_bounce": {
+              "type": "boolean",
+              "description": "UNDOCUMENTED",
+              "$comment": "UNDOCUMENTED",
+              "title": "Should Bounce"
+            },
+            "mob_effect": {
+              "title": "Mob Effect",
+              "description": "",
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "effect": {
+                  "title": "",
+                  "description": "",
+                  "type": "string"
+                },
+                "durationeasy": {
+                  "title": "",
+                  "description": "",
+                  "type": "number"
+                },
+                "durationnormal": {
+                  "title": "",
+                  "description": "",
+                  "type": "number"
+                },
+                "durationhard": {
+                  "title": "",
+                  "description": "",
+                  "type": "number"
+                },
+                "amplifier": {
+                  "title": "",
+                  "description": "",
+                  "type": "number"
+                }
+              }
             }
           }
         },
