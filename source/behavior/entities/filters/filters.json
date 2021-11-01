@@ -9,7 +9,7 @@
   "defaultSnippets": [
     {
       "label": "test",
-      "body": "{ \"test\": \"$1\", \"value\": \"$2\" }"
+      "body": { "test": "$1", "value": "$2" }
     }
   ],
   "definitions": {
