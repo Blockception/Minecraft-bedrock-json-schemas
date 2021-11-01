@@ -2,18 +2,42 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.filters",
   "title": "Filters",
   "$ref": "#/definitions/groups_spec",
-  "examples": [
-    { "test": "is_family", "value": "example" },
-    { "test": "has_tag", "value": "example" }
-  ],
-  "defaultSnippets": [
-    {
-      "label": "test",
-      "body": { "test": "$1", "value": "$2" }
-    }
-  ],
+  "examples": [{ "test": "is_family", "value": "example" }, { "test": "has_tag", "value": "example" }, []],
   "definitions": {
     "filters_spec": {
+      "defaultSnippets": [
+        {
+          "label": "new test",
+          "body": { "test": "$1", "value": "$2" }
+        },
+        {
+          "label": "new all_of test",
+          "body": {
+            "all_of": [
+              { "test": "$1", "value": "$2" },
+              { "test": "$3", "value": "$4" }
+            ]
+          }
+        },
+        {
+          "label": "new any_of test",
+          "body": {
+            "any_of": [
+              { "test": "$1", "value": "$2" },
+              { "test": "$3", "value": "$4" }
+            ]
+          }
+        },
+        {
+          "label": "new none_of test",
+          "body": {
+            "none_of": [
+              { "test": "$1", "value": "$2" },
+              { "test": "$3", "value": "$4" }
+            ]
+          }
+        }
+      ],
       "examples": [{ "all_of": [{}] }, { "any_of": [{}] }, { "none_of": [{}] }],
       "oneOf": [
         {
