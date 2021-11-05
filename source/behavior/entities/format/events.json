@@ -24,6 +24,25 @@
       "additionalProperties": false,
       "type": "object",
       "examples": [{}, { "add": { "component_groups": [] } }, { "remove": { "component_groups": [] } }],
+      "defaultSnippets": [
+        { "label": "add component groups", "body": { "add": { "component_groups": ["$1"] } } },
+        { "label": "remove component groups", "body": { "remove": { "component_groups": ["$1"] } } },
+        {
+          "label": "random component groups",
+          "body": {
+            "randomize": [
+              { "add": { "component_groups": ["$1"] }, "weight": 1 },
+              { "add": { "component_groups": ["$2"] }, "weight": 1 }
+            ]
+          }
+        },
+        {
+          "label": "random component groups",
+          "body": {
+            "sequence": [{ "add": { "component_groups": ["$1"] } }, { "add": { "component_groups": ["$2"] } }]
+          }
+        }
+      ],
       "properties": {
         "filters": { "$ref": "./../filters/filters.json" },
         "trigger": { "type": "string", "description": "Triggers additional events", "$comment": "UNDOCUMENTED", "title": "Trigger" },
@@ -43,6 +62,8 @@
               "trigger": { "type": "string", "description": "Triggers additional events", "$comment": "UNDOCUMENTED", "title": "Trigger" },
               "weight": {
                 "type": "number",
+                "default": 1,
+                "minimum": 1,
                 "description": "The weight on how likely this section is to trigger",
                 "$comment": "UNDOCUMENTED",
                 "title": "Weight"
