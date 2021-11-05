@@ -11,6 +11,16 @@
       "modules": [{ "type": "data", "uuid": "UUID2", "version": [1, 0, 0] }]
     }
   ],
+  "defaultSnippets": [
+    {
+      "label": "New Manifest",
+      "body": {
+        "format_version": 2,
+        "header": { "description": "pack.description", "name": "pack.name", "uuid": "$UUID", "min_engine_version": [1, 16, 0], "version": [1, 0, 0] },
+        "modules": [{ "type": "data", "uuid": "$UUID", "version": [1, 0, 0] }]
+      }
+    }
+  ],
   "allOf": [
     {
       "if": { "properties": { "format_version": { "const": 1, "type": "number", "title": "Format Version" } } },
