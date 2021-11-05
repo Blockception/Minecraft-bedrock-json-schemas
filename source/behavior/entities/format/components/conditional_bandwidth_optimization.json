@@ -13,6 +13,7 @@
         "title": "Conditional Value",
         "description": "The object containing the conditional bandwidth optimization values.",
         "additionalProperties": false,
+        "type": "object",
         "properties": {
           "max_dropped_ticks": {
             "title": "Maximum Dropped Ticks",

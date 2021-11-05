@@ -111,7 +111,7 @@
                   "title": "On Use Action",
                   "enum": ["chorus_teleport", "suspicious_stew_effect", "none"]
                 },
-                "on_use_range": { "$ref": "../../../general/array_3_number.json" },
+                "on_use_range": { "$ref": "../../../general/vectors/number3.json" },
                 "cooldown_type": {
                   "type": "string",
                   "description": "'chorusfruit` or `none`.",

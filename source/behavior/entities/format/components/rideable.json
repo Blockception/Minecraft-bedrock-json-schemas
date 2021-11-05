@@ -25,7 +25,7 @@
           "description": "Defines the minimum number of riders that need to be riding this entity before this seat can be used"
         },
         "position": {
-          "$ref": "../../../../general/array_3_number.json",
+          "$ref": "../../../../general/vectors/number3.json",
           "default": [0.0, 0.0, 0.0],
           "description": "Position of this seat relative to this entity's position"
         },

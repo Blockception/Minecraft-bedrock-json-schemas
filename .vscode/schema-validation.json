@@ -20,6 +20,19 @@
         "title": {
           "type": "string",
           "pattern": "^([A-Z0-9][a-z0-9\\.]*(| ))*$"
+        },
+        "defaultSnippets": {
+          "type": "array",
+          "title": "default Snippets",
+          "items": {
+            "type": "object",
+            "required": ["label", "body"],
+            "examples": [{ "label": "example", "body": {} }],
+            "properties": {
+              "label": { "type": "string" },
+              "body": { "type": ["object", "string", "array", "number", "boolean", "integer"] }
+            }
+          }
         }
       }
     },
