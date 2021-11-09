@@ -107,6 +107,39 @@
       "description": "If true, the projectile can hit multiple entities per flight",
       "title": "Multiple Targets"
     },
+    "mob_effect": {
+      "type": "object",
+      "default": true,
+      "description": "UNDOCUMENTED",
+      "title": "Mob Effects",
+      "properties": {
+        "effect": {
+          "title": "Effect",
+          "description": "UNDOCUMENTED",
+          "type": "string"
+        },
+        "durationeasy": {
+          "title": "Duration Easy",
+          "description": "UNDOCUMENTED",
+          "type": "number"
+        },
+        "durationnormal": {
+          "title": "Duration Normal",
+          "description": "UNDOCUMENTED",
+          "type": "number"
+        },
+        "durationhard": {
+          "title": "Duration Hard",
+          "description": "UNDOCUMENTED",
+          "type": "number"
+        },
+        "amplifier": {
+          "title": "Amplifier",
+          "description": "UNDOCUMENTED",
+          "type": "number"
+        }
+      }
+    },
     "offset": {
       "type": "array",
       "default": [0, 0.0, 0],
