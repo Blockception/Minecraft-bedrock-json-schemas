@@ -166,6 +166,8 @@
                         "title": "Timeline Object",
                         "description": "A single point in time",
                         "additionalProperties": false,
+                        "type": "object",
+                        "examples": [{ "0.0": {} }],
                         "properties": {
                           "lerp_mode": {
                             "type": "string",
@@ -194,6 +196,8 @@
                         "title": "Timeline Object",
                         "description": "A single point in time",
                         "additionalProperties": false,
+                        "type": "object",
+                        "examples": [{ "0.0": {} }],
                         "properties": {
                           "lerp_mode": {
                             "type": "string",
@@ -234,6 +238,8 @@
                         "title": "Timeline Object",
                         "description": "A single point in time",
                         "additionalProperties": false,
+                        "examples": [{ "0.0": {} }],
+                        "type": "object",
                         "properties": {
                           "lerp_mode": {
                             "type": "string",
@@ -273,6 +279,7 @@
             "$comment": "UNDOCUMENTED",
             "type": "object",
             "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$", "examples": ["0.0", "1.0"] },
+            "examples": [{ "0.0": {} }],
             "additionalProperties": {
               "title": "Timeline Object",
               "description": "A single point in time",
