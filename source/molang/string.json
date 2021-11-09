@@ -4,5 +4,5 @@
   "title": "Molang",
   "description": "Molang definition",
   "format": "molang",
-  "examples": ["query.variant"]
+  "examples": ["query.variant", "(1.0)"]
 }
