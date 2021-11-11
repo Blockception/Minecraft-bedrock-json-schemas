@@ -164,19 +164,39 @@
                       "additionalProperties": {
                         "title": "Timeline Object",
                         "description": "A single point in time",
-                        "additionalProperties": false,
-                        "type": "object",
-                        "properties": {
-                          "lerp_mode": {
-                            "type": "string",
-                            "title": "Lerp Mode",
+                        "oneOf": [
+                          {
+                            "type": "array",
                             "description": "UNDOCUMENTED",
                             "$comment": "UNDOCUMENTED",
-                            "enum": ["linear", "catmullrom"]
+                            "$ref": "#/definitions/PositionV3"
                           },
-                          "pre": { "title": "Pre", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/PositionV3" },
-                          "post": { "title": "Pre", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/PositionV3" }
-                        }
+                          {
+                            "additionalProperties": false,
+                            "type": "object",
+                            "properties": {
+                              "lerp_mode": {
+                                "type": "string",
+                                "title": "Lerp Mode",
+                                "description": "UNDOCUMENTED",
+                                "$comment": "UNDOCUMENTED",
+                                "enum": ["linear", "catmullrom"]
+                              },
+                              "pre": {
+                                "title": "Pre",
+                                "description": "UNDOCUMENTED",
+                                "$comment": "UNDOCUMENTED",
+                                "$ref": "#/definitions/PositionV3"
+                              },
+                              "post": {
+                                "title": "Pre",
+                                "description": "UNDOCUMENTED",
+                                "$comment": "UNDOCUMENTED",
+                                "$ref": "#/definitions/PositionV3"
+                              }
+                            }
+                          }
+                        ]
                       }
                     }
                   ]
@@ -192,19 +212,39 @@
                       "additionalProperties": {
                         "title": "Timeline Object",
                         "description": "A single point in time",
-                        "additionalProperties": false,
-                        "type": "object",
-                        "properties": {
-                          "lerp_mode": {
-                            "type": "string",
-                            "title": "Lerp Mode",
+                        "oneOf": [
+                          {
+                            "type": "array",
                             "description": "UNDOCUMENTED",
                             "$comment": "UNDOCUMENTED",
-                            "enum": ["linear", "catmullrom"]
+                            "$ref": "#/definitions/RotationV3"
                           },
-                          "pre": { "title": "Pre", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/RotationV3" },
-                          "post": { "title": "Pre", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/RotationV3" }
-                        }
+                          {
+                            "additionalProperties": false,
+                            "type": "object",
+                            "properties": {
+                              "lerp_mode": {
+                                "type": "string",
+                                "title": "Lerp Mode",
+                                "description": "UNDOCUMENTED",
+                                "$comment": "UNDOCUMENTED",
+                                "enum": ["linear", "catmullrom"]
+                              },
+                              "pre": {
+                                "title": "Pre",
+                                "description": "UNDOCUMENTED",
+                                "$comment": "UNDOCUMENTED",
+                                "$ref": "#/definitions/RotationV3"
+                              },
+                              "post": {
+                                "title": "Pre",
+                                "description": "UNDOCUMENTED",
+                                "$comment": "UNDOCUMENTED",
+                                "$ref": "#/definitions/RotationV3"
+                              }
+                            }
+                          }
+                        ]
                       }
                     }
                   ]
