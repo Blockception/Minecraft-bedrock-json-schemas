@@ -157,8 +157,7 @@
                   "title": "Position",
                   "description": "The Position transformation during this animation",
                   "oneOf": [
-                    { "$ref": "#/definitions/PositionV3" },
-                    { "$ref": "../../../molang/arraynumber3.json" },
+                    { "type": "array", "$ref": "#/definitions/PositionV3" },
                     {
                       "type": "object",
                       "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$", "examples": ["0.0", "1.0"] },
@@ -166,6 +165,7 @@
                         "title": "Timeline Object",
                         "description": "A single point in time",
                         "additionalProperties": false,
+                        "type": "object",
                         "properties": {
                           "lerp_mode": {
                             "type": "string",
@@ -185,8 +185,7 @@
                   "title": "Rotation",
                   "description": "The rotation transformation during this animation",
                   "oneOf": [
-                    { "$ref": "#/definitions/RotationV3" },
-                    { "$ref": "../../../molang/arraynumber3.json" },
+                    { "type": "array", "$ref": "#/definitions/RotationV3" },
                     {
                       "type": "object",
                       "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$", "examples": ["0.0", "1.0"] },
@@ -194,6 +193,7 @@
                         "title": "Timeline Object",
                         "description": "A single point in time",
                         "additionalProperties": false,
+                        "type": "object",
                         "properties": {
                           "lerp_mode": {
                             "type": "string",
@@ -225,8 +225,14 @@
                   "description": "UNDOCUMENTED",
                   "$comment": "UNDOCUMENTED",
                   "oneOf": [
-                    { "$ref": "../../../molang/number.json" },
-                    { "$ref": "#/definitions/ScaleV3" },
+                    {
+                      "type": "array",
+                      "$ref": "../../../molang/number.json"
+                    },
+                    {
+                      "type": "array",
+                      "$ref": "#/definitions/ScaleV3"
+                    },
                     {
                       "type": "object",
                       "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$", "examples": ["0.0", "1.0"] },
@@ -234,6 +240,7 @@
                         "title": "Timeline Object",
                         "description": "A single point in time",
                         "additionalProperties": false,
+                        "type": "object",
                         "properties": {
                           "lerp_mode": {
                             "type": "string",

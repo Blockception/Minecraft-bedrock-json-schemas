@@ -157,8 +157,7 @@
                   "title": "Position",
                   "description": "The Position transformation during this animation",
                   "oneOf": [
-                    { "$ref": "#/definitions/PositionV3" },
-                    { "$ref": "../../../molang/arraynumber3.json" },
+                    { "type": "array", "$ref": "#/definitions/PositionV3" },
                     {
                       "type": "object",
                       "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$", "examples": ["0.0", "1.0"] },
@@ -188,7 +187,6 @@
                   "description": "The rotation transformation during this animation",
                   "oneOf": [
                     { "$ref": "#/definitions/RotationV3" },
-                    { "$ref": "../../../molang/arraynumber3.json" },
                     {
                       "type": "object",
                       "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$", "examples": ["0.0", "1.0"] },
