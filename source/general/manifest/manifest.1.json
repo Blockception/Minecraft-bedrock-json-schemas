@@ -13,7 +13,7 @@
       "title": "Format Version"
     },
     "header": {
-      "required": ["description", "name", "uuid", "version"],
+      "required": ["name", "uuid", "version"],
       "properties": {
         "name": { "type": "string", "default": 0, "description": "This is the name of the pack as it appears within Minecraft", "title": "Name" },
         "description": {
@@ -58,7 +58,7 @@
           "type": {
             "description": "This is the type of the module. Can be any of the following: resources, data, client_data, interface, world_template",
             "type": "string",
-            "enum": ["resources", "data", "client_data", "interface", "world_template"],
+            "enum": ["resources", "data", "client_data", "interface", "world_template", "skin_pack"],
             "title": "Type"
           },
           "description": {
