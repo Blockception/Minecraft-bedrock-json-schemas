@@ -1,0 +1,18 @@
+{
+  "$id": "blockception.minecraft.resource.particle.1.10.0.particle_motion_parametric",
+  "type": "object",
+  "title": "Particle Motion Parametric Component For 1.10.0",
+  "additionalProperties": false,
+  "properties": {
+    "relative_position": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED: relative position", "title": "Relative Position" },
+      "description": "UNDOCUMENTED: relative position",
+      "title": "Relative Position"
+    },
+    "rotation": { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED: rotation", "title": "Rotation" }
+  },
+  "description": "UNDOCUMENTED: "
+}

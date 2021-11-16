@@ -1,0 +1,55 @@
+{
+  "$id": "blockception.minecraft.resource.particle.1.10.0.emitter_lifetime_events",
+  "type": "object",
+  "title": "Emitter Lifetime Events Component For 1.10.0",
+  "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
+  "additionalProperties": false,
+  "properties": {
+    "creation_event": {
+      "title": "Creation Event",
+      "description": "Fires when the emitter is created",
+      "oneOf": [{ "type": "array", "items": { "type": "string" } }, { "type": "string" }]
+    },
+    "expiration_event": {
+      "title": "Expiration Event",
+      "description": "Fires when the emitter expires (does not wait for particles to expire too)",
+      "oneOf": [{ "type": "array", "items": { "type": "string" } }, { "type": "string" }]
+    },
+    "timeline": {
+      "title": "Timeline",
+      "type": "object",
+      "description": "A series of times, e.g. 0.0 or 1.0, that trigger the event, these get fired on every loop the emitter goes through, `time` is the time, e.g. one line might be: `0.4`: `event`",
+      "propertyNames": { "pattern": "^[\\d\\.]+$" },
+      "additionalProperties": {
+        "title": "Timeline Object",
+        "description": "A single point in time that executes commands/molang/events",
+        "oneOf": [{ "type": "array", "items": { "type": "string" } }, { "type": "string" }]
+      }
+    },
+    "travel_distance_events": {
+      "title": "Travel Distance Events",
+      "description": "A series of distances, e.g. 0.0 or 1.0, that trigger the event these get fired when the emitter has moved by the specified input distance, e.g. one line might be: `0.4`: `event`",
+      "propertyNames": { "pattern": "^[\\d\\.]+$" }
+    },
+    "looping_travel_distance_events": {
+      "title": "Looping Travel Distance Events",
+      "description": "A series of events that occur at set intervals these get fired every time the emitter has moved the specified input distance from the last time it was fired.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "title": "Distance Event",
+        "additionalProperties": false,
+        "properties": {
+          "distance": { "title": "Distance", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" },
+          "effects": {
+            "title": "Effects",
+            "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED",
+            "oneOf": [{ "type": "array", "items": { "type": "string" } }, { "type": "string" }]
+          }
+        }
+      }
+    }
+  }
+}

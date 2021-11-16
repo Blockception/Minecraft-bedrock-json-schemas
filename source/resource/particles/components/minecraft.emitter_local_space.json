@@ -1,0 +1,12 @@
+{
+  "$id": "blockception.minecraft.resource.particle.1.10.0.emitter_local_space",
+  "type": "object",
+  "title": "Emitter Local Space Component For 1.10.0",
+  "description": "UNDOCUMENTED:",
+  "additionalProperties": false,
+  "properties": {
+    "position": { "type": "boolean", "description": "UNDOCUMENTED: position", "title": "Position" },
+    "rotation": { "type": "boolean", "description": "UNDOCUMENTED: rotation", "title": "Rotation" },
+    "velocity": { "type": "boolean", "description": "UNDOCUMENTED: rotation", "title": "Rotation" }
+  }
+}

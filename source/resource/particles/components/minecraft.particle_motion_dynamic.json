@@ -1,0 +1,36 @@
+{
+  "$id": "blockception.minecraft.resource.particle.1.10.0.particle_motion_dynamic",
+  "description": "This component specifies the dynamic properties of the particle, from a simulation standpoint what forces act upon the particle? These dynamics alter the velocity of the particle, which is a combination of the direction of the particle and the speed. Particle direction will always be in the direction of the velocity of the particle.",
+  "type": "object",
+  "title": "Particle Motion Dynamic Component For 1.10.0",
+  "additionalProperties": false,
+  "properties": {
+    "linear_acceleration": {
+      "type": "array",
+      "default": [0, 0, 0],
+      "minItems": 3,
+      "maxItems": 3,
+      "items": { "$ref": "../../../molang/number.json" },
+      "description": "The linear acceleration applied to the particle. Units are blocks/sec/sec",
+      "title": "Linear Acceleration"
+    },
+    "linear_drag_coefficient": {
+      "$ref": "../../../molang/number.json",
+      "description": "Using the equation: `acceleration = -linear_drag_coefficient*velocity` where velocity is the current direction times speed. Think of this as air-drag. The higher the value, the more drag evaluated every frame",
+      "default": 0,
+      "title": "Linear Drag Coefficient"
+    },
+    "rotation_acceleration": {
+      "$ref": "../../../molang/number.json",
+      "description": "Acceleration applies to the rotation speed of the particle",
+      "title": "Rotation Acceleration",
+      "default": 0
+    },
+    "rotation_drag_coefficient": {
+      "$ref": "../../../molang/number.json",
+      "description": "Drag applied to rotation",
+      "title": "Rotation Drag Coefficient",
+      "default": 0
+    }
+  }
+}

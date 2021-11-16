@@ -1,0 +1,19 @@
+{
+  "$id": "blockception.minecraft.resource.particle.1.10.0.emitter_rate_steady",
+  "type": "object",
+  "title": "Emitter Rate Steady Component For 1.10.0",
+  "additionalProperties": false,
+  "properties": {
+    "max_particles": {
+      "$ref": "../../../molang/number.json",
+      "description": "Maximum number of particles that can be active at once for this emitter, evaluated once per particle emitter loop",
+      "title": "Maximum Particles"
+    },
+    "spawn_rate": {
+      "$ref": "../../../molang/number.json",
+      "description": "How often a particle is emitted, in particles/sec evaluated once per particle emitted",
+      "title": "Spawn Rate"
+    }
+  },
+  "description": "UNDOCUMENTED: "
+}

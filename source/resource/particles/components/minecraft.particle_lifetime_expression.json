@@ -1,0 +1,19 @@
+{
+  "$id": "blockception.minecraft.resource.particle.1.10.0.particle_lifetime_expression",
+  "type": "object",
+  "description": "UNDOCUMENTED:",
+  "title": "Particle Lifetime Expression Component For 1.10.0",
+  "additionalProperties": false,
+  "properties": {
+    "expiration_expression": {
+      "title": "Expiration Expression",
+      "description": "This expression makes the particle expire when true (non-zero), The float/expr is evaluated once per particle, evaluated every frame",
+      "$ref": "../../../molang/number.json"
+    },
+    "max_lifetime": {
+      "$ref": "../../../molang/number.json",
+      "description": "Alternate way to express lifetime, particle will expire after this much time, evaluated once",
+      "title": "Maximum Lifetime"
+    }
+  }
+}
