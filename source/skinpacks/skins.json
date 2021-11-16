@@ -38,7 +38,9 @@
           "geometry": {
             "title": "Geometry",
             "description": "The type of geometry to use",
-            "enum": ["geometry.humanoid.custom", "geometry.humanoid.customSlim"]
+            "type": "string",
+            "pattern": "^[Gg]eometry\\..+$",
+            "examples": ["geometry.humanoid.custom", "geometry.humanoid.customSlim"]
           },
           "texture": { "title": "Texture", "description": "The filename of the skin", "pattern": "^.*\\.png$" },
           "type": { "title": "Type", "description": "The type of skin", "enum": ["free", "paid"] }
