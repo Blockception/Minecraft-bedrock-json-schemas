@@ -1,4 +1,4 @@
-﻿{
+{
   "$id": "blockception.minecraft.behavior.entities",
   "examples": [
     {
@@ -3385,7 +3385,7 @@
       "type": "object",
       "title": "Is Stackable",
       "additionalProperties": false,
-      "properties": { "value": { "title": "Value", "description": "UNDOCUMENTED", "type": "boolean" } }
+      "properties": { "value": { "title": "Value", "description": "UNDOCUMENTATED", "type": "boolean" } }
     },
     "BEJ": {
       "description": "Sets that this entity is currently stunned.",
