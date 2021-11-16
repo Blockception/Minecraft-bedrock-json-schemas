@@ -1,5 +1,5 @@
 {
-  "$id": "blockception.minecraft.resource.model.1.14.0",
+  "$id": "blockception.minecraft.resource.model.1.16.0",
   "additionalProperties": false,
   "type": "object",
   "title": "Geometry 1.16.0",
