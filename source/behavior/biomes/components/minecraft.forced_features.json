@@ -11,7 +11,7 @@
       "oneOf": [
         {
           "type": "string",
-          "$ref": "../../../../molang/number.json",
+          "$ref": "../../../molang/number.json",
           "description": "Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below."
         },
         {
@@ -39,12 +39,12 @@
                 {
                   "title": "Lower Bound",
                   "description": "Lower bound (inclusive) of the scatter range, as an offset from the input point to scatter around",
-                  "$ref": "../../../../molang/number.json"
+                  "$ref": "../../../molang/number.json"
                 },
                 {
                   "title": "Upper Bound",
                   "description": "Upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around",
-                  "$ref": "../../../../molang/number.json"
+                  "$ref": "../../../molang/number.json"
                 }
               ]
             },
@@ -69,6 +69,7 @@
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "additionalProperties": false,
+      "type": "object",
       "required": ["iterations", "places_feature", "identifier"],
       "properties": {
         "coordinate_eval_order": {
@@ -86,7 +87,7 @@
         "iterations": {
           "title": "Iterations",
           "description": "Number of scattered positions to generate",
-          "$ref": "../../../../molang/number.json"
+          "$ref": "../../../molang/number.json"
         },
         "places_feature": {
           "title": "Places Feature",
@@ -121,7 +122,7 @@
             {
               "type": "string",
               "description": "Probability (0-100) that this scatter will occur.  Not evaluated each iteration; either no iterations will run, or all will.",
-              "$ref": "../../../../molang/number.json"
+              "$ref": "../../../molang/number.json"
             },
             {
               "type": "number",
