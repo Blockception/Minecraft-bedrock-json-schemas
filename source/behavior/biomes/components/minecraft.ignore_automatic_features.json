@@ -1,0 +1,8 @@
+{
+  "$id": "minecraft.behavior.biomes.1.12.0.components.minecraft.ignore_automatic_features",
+  "title": "Ignore Automatic Features",
+  "description": "No features will be automatically attached to this Biome, only features specified in the minecraft:forced_features component will appear.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {}
+}

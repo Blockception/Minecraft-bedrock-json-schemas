@@ -1,0 +1,48 @@
+{
+  "$id": "minecraft.behavior.biomes.1.12.0.components.minecraft.overworld_height",
+  "title": "Overworld Height",
+  "description": "Noise parameters used to drive terrain height in the Overworld.",
+  "type": "object",
+  "minProperties": 0,
+  "maxProperties": 2,
+  "additionalProperties": false,
+  "properties": {
+    "noise_params": {
+      "title": "Noise Params",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "type": "array",
+      "items": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "noise_type": {
+      "title": "Noise Type",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "type": "string",
+      "enum": [
+        "stone_beach",
+        "deep_ocean",
+        "default",
+        "default_mutated",
+        "lowlands",
+        "river",
+        "ocean",
+        "taiga",
+        "mountains",
+        "highlands",
+        "mushroom",
+        "less_extreme",
+        "extreme",
+        "beach",
+        "swamp"
+      ]
+    }
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "$id": "minecraft.behavior.biomes.1.12.0.components.minecraft.nether_surface",
-  "title": "Nether Surface",
-  "description": "Use default Minecraft Nether terrain generation.",
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {}
-}

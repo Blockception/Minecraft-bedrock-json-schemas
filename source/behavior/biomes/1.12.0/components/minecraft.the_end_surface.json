@@ -1,8 +1,0 @@
-{
-  "$id": "minecraft.behavior.biomes.1.12.0.components.minecraft.the_end_surface",
-  "title": "End Surface",
-  "description": "Use default Minecraft End terrain generation.",
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {}
-}

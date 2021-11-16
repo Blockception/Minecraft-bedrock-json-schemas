@@ -1,0 +1,8 @@
+{
+  "$id": "minecraft.behavior.biomes.1.12.0.components.minecraft.legacy_world_generation_rules",
+  "title": "Legacy World Generation Rules",
+  "description": "Additional world generation control applicable only to legacy limited worlds.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {}
+}
