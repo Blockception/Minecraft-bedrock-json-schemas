@@ -43,5 +43,5 @@
     },
     "surface_only": { "type": "boolean", "description": "UNDOCUMENTED: surface only", "title": "Surface Only" }
   },
-  "description": "UNDOCUMENTED: "
+  "description": "UNDOCUMENTED"
 }

@@ -17,5 +17,5 @@
     },
     "timeline": { "propertyNames": { "pattern": "[0-9]*.[0-9]*" }, "description": "UNDOCUMENTED: timeline", "title": "Timeline" }
   },
-  "description": "UNDOCUMENTED: "
+  "description": "UNDOCUMENTED"
 }

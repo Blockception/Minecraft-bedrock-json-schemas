@@ -14,5 +14,5 @@
     },
     "rotation": { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED: rotation", "title": "Rotation" }
   },
-  "description": "UNDOCUMENTED: "
+  "description": "UNDOCUMENTED"
 }

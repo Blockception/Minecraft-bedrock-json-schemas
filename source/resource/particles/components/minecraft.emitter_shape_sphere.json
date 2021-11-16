@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.resource.particle.1.10.0.emitter_shape_sphere",
   "type": "object",
   "title": "Emitter Shape Sphere Component For 1.10.0",
-  "description": "UNDOCUMENTED: ",
+  "description": "UNDOCUMENTED",
   "additionalProperties": false,
   "properties": {
     "direction": {
