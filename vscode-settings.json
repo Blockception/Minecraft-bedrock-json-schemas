@@ -105,7 +105,12 @@
       "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-schemas/resource/items/items.json"
     },
     {
-      "fileMatch": ["models/entity/*.{json,jsonc,json5}", "models/entity/**/*.{json,jsonc,json5}", "*.geo.{json,jsonc,json5}", "*.geometry.{json,jsonc,json5}"],
+      "fileMatch": [
+        "models/entity/*.{json,jsonc,json5}",
+        "models/entity/**/*.{json,jsonc,json5}",
+        "*.geo.{json,jsonc,json5}",
+        "*.geometry.{json,jsonc,json5}"
+      ],
       "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-schemas/resource/models/entity/model_entity.json"
     },
     {
