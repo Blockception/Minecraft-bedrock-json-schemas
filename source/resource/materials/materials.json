@@ -282,6 +282,7 @@
         "description": "UNDOCUMENTED",
         "$comment": "UNDOCUMENTED",
         "additionalProperties": false,
+        "type": "object",
         "properties": {
           "alphaDst": {
             "type": "string",
