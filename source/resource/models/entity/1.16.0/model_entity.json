@@ -33,12 +33,7 @@
   },
   "properties": {
     "debug": { "title": "Debug", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "boolean", "default": false },
-    "format_version": {
-      "title": "1.16.0 Format Version",
-      "type": "string",
-      "pattern": "^1.16.0$",
-      "description": "A version that tells minecraft what type of data format can be expected when reading this file."
-    },
+    "format_version": { "$ref": "../../../../general/format_version.json" },
     "minecraft:geometry": {
       "type": "array",
       "title": "Geometry",
