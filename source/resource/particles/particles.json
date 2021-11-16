@@ -34,7 +34,7 @@
               "type": "string",
               "description": "UNDOCUMENTED: identifier",
               "title": "Identifier",
-              "$ref": "../../../general/particle/identifier.json"
+              "$ref": "../../general/particle/identifier.json"
             },
             "basic_render_parameters": {
               "additionalProperties": false,
