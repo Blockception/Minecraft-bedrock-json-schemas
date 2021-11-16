@@ -39,6 +39,8 @@
             "basic_render_parameters": {
               "additionalProperties": false,
               "type": "object",
+              "description": "UNDOCUMENTED: basic render parameters",
+              "title": "Basic Render Parameters",
               "properties": {
                 "material": {
                   "type": "string",
@@ -47,9 +49,7 @@
                   "title": "Material"
                 },
                 "texture": { "type": "string", "pattern": "^.+$", "description": "Minecraft texture to use for emitter", "title": "Texture" }
-              },
-              "description": "UNDOCUMENTED: basic render parameters",
-              "title": "Basic Render Parameters"
+              }
             }
           },
           "description": "UNDOCUMENTED: description",

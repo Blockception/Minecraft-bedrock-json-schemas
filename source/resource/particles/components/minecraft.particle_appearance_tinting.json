@@ -7,6 +7,8 @@
   "properties": {
     "color": {
       "title": "Color",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
       "anyOf": [
         { "type": "array", "description": "Direct color field", "items": { "$ref": "../../../molang/number.json" } },
         { "type": "string", "format": "color-hex", "description": "Direct color field" },
@@ -48,9 +50,7 @@
             "interpolant": { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED: interpolant", "title": "Interpolant" }
           }
         }
-      ],
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
+      ]
     }
   }
 }
