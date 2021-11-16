@@ -11,7 +11,7 @@
           "description": "A object specification on how to transition",
           "maxProperties": 1,
           "minProperties": 1,
-          "additionalProperties": { "$ref": "../../../molang/string.json" }
+          "additionalProperties": { "$ref": "../../molang/string.json" }
         }
       ]
     },

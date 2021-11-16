@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": ["format_version", "minecraft:client_entity"],
   "properties": {
-    "format_version": { "$ref": "../../general/format_version.json" },
+    "format_version": { "$ref": "../../../general/format_version.json" },
     "minecraft:client_entity": {
       "type": "object",
       "additionalProperties": false,
