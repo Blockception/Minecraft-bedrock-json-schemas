@@ -4,5 +4,6 @@
   "title": "Molang",
   "description": "Molang definition",
   "format": "molang",
-  "examples": ["query.variant", "(1.0)"]
+  "examples": ["query.variant", "(1.0)", "query.", "variable.=;"],
+  "defaultSnippets": [{ "label": "New Molang", "body": "$1" }]
 }
