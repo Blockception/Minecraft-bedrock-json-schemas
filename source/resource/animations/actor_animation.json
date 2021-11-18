@@ -270,6 +270,12 @@
                   "$comment": "UNDOCUMENTED",
                   "oneOf": [
                     {
+                      "type": "array",
+                      "description": "UNDOCUMENTED",
+                      "$comment": "UNDOCUMENTED",
+                      "$ref": "#/definitions/PositionV3"
+                    },
+                    {
                       "$ref": "../../molang/number.json",
                       "description": "Uniform scale"
                     },
@@ -280,20 +286,43 @@
                       "additionalProperties": {
                         "title": "Timeline Object",
                         "description": "A single point in time",
-                        "additionalProperties": false,
-                        "examples": [{ "0.0": {} }],
-                        "type": "object",
-                        "properties": {
-                          "lerp_mode": {
-                            "type": "string",
-                            "title": "Lerp Mode",
+                        "oneOf": [
+                          {
+                            "$ref": "../../molang/number.json",
+                            "description": "Uniform rotation"
+                          },
+                          {
+                            "type": "array",
                             "description": "UNDOCUMENTED",
                             "$comment": "UNDOCUMENTED",
-                            "enum": ["linear", "catmullrom"]
+                            "$ref": "#/definitions/ScaleV3"
                           },
-                          "pre": { "title": "Pre", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/ScaleV3" },
-                          "post": { "title": "Pre", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/ScaleV3" }
-                        }
+                          {
+                            "additionalProperties": false,
+                            "type": "object",
+                            "properties": {
+                              "lerp_mode": {
+                                "type": "string",
+                                "title": "Lerp Mode",
+                                "description": "UNDOCUMENTED",
+                                "$comment": "UNDOCUMENTED",
+                                "enum": ["linear", "catmullrom"]
+                              },
+                              "pre": {
+                                "title": "Pre",
+                                "description": "UNDOCUMENTED",
+                                "$comment": "UNDOCUMENTED",
+                                "$ref": "#/definitions/ScaleV3"
+                              },
+                              "post": {
+                                "title": "Pre",
+                                "description": "UNDOCUMENTED",
+                                "$comment": "UNDOCUMENTED",
+                                "$ref": "#/definitions/ScaleV3"
+                              }
+                            }
+                          }
+                        ]
                       }
                     }
                   ]
