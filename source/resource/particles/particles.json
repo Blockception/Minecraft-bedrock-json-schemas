@@ -67,12 +67,12 @@
             "description": "UNDOCUMENTED",
             "$comment": "UNDOCUMENTED",
             "properties": {
-              "input": { "$ref": "../../../molang/number.json", "title": "Input", "description": "What is the input value to use" },
+              "input": { "$ref": "../../molang/number.json", "title": "Input", "description": "What is the input value to use" },
               "nodes": {
                 "description": "Control nodes for curve.  These are assumed to be equally, used Object for bezier_chain",
                 "title": "Nodes",
                 "oneOf": [
-                  { "minItems": 1, "type": "array", "items": { "$ref": "../../../molang/number.json" } },
+                  { "minItems": 1, "type": "array", "items": { "$ref": "../../molang/number.json" } },
                   {
                     "type": "object",
                     "propertyNames": { "pattern": "(^[\\-0-9]+$|^[\\-0-9]+\\.[\\-0-9]+$)" },
