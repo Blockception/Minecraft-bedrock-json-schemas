@@ -1,4 +1,5 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.items",
   "examples": [{ "format_version": "1.16.200", "minecraft:item": { "description": { "identifier": "namespace:item" }, "components": {} } }],
   "allOf": [
