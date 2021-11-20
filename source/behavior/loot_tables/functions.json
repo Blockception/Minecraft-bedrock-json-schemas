@@ -2,70 +2,58 @@
   "$id": "blockception.minecraft.behavior.loot_tables.Functions",
   "description": "A minecraft loot table condition",
   "title": "Functions",
+  "type": "object",
+  "properties": {
+    "function": {
+      "type": "string",
+      "enum": [
+        "enchant_random_gear",
+        "enchant_book_for_trading",
+        "enchant_randomly",
+        "enchant_with_levels",
+        "exploration_map",
+        "fill_container",
+        "furnace_smelt",
+        "looting_enchant",
+        "random_aux_value",
+        "random_block_state",
+        "set_actor_id",
+        "set_banner_details",
+        "set_book_contents",
+        "set_count",
+        "set_damage",
+        "set_data",
+        "set_data_from_color_index",
+        "trader_material_type",
+        "random_dye",
+        "set_lore",
+        "set_name",
+        "specific_enchants"
+      ]
+    }
+  },
   "allOf": [
-    {
-      "if": { "properties": { "function": { "type": "string", "const": "enchant_random_gear" } } },
-      "then": { "$ref": "./functions/enchant_random_gear.json" }
-    },
-    {
-      "if": { "properties": { "function": { "type": "string", "const": "enchant_book_for_trading" } } },
-      "then": { "$ref": "./functions/enchant_book_for_trading.json" }
-    },
-    {
-      "if": { "properties": { "function": { "type": "string", "const": "enchant_randomly" } } },
-      "then": { "$ref": "./functions/enchant_randomly.json" }
-    },
-    {
-      "if": { "properties": { "function": { "type": "string", "const": "enchant_with_levels" } } },
-      "then": { "$ref": "./functions/enchant_with_levels.json" }
-    },
-    {
-      "if": { "properties": { "function": { "type": "string", "const": "exploration_map" } } },
-      "then": { "$ref": "./functions/exploration_map.json" }
-    },
-    {
-      "if": { "properties": { "function": { "type": "string", "const": "fill_container" } } },
-      "then": { "$ref": "./functions/fill_container.json" }
-    },
+    { "if": { "properties": { "function": { "type": "string", "const": "enchant_random_gear" } } }, "then": { "$ref": "./functions/enchant_random_gear.json" } },
+    { "if": { "properties": { "function": { "type": "string", "const": "enchant_book_for_trading" } } }, "then": { "$ref": "./functions/enchant_book_for_trading.json" } },
+    { "if": { "properties": { "function": { "type": "string", "const": "enchant_randomly" } } }, "then": { "$ref": "./functions/enchant_randomly.json" } },
+    { "if": { "properties": { "function": { "type": "string", "const": "enchant_with_levels" } } }, "then": { "$ref": "./functions/enchant_with_levels.json" } },
+    { "if": { "properties": { "function": { "type": "string", "const": "exploration_map" } } }, "then": { "$ref": "./functions/exploration_map.json" } },
+    { "if": { "properties": { "function": { "type": "string", "const": "fill_container" } } }, "then": { "$ref": "./functions/fill_container.json" } },
     { "if": { "properties": { "function": { "type": "string", "const": "furnace_smelt" } } }, "then": { "$ref": "./functions/furnace_smelt.json" } },
-    {
-      "if": { "properties": { "function": { "type": "string", "const": "looting_enchant" } } },
-      "then": { "$ref": "./functions/looting_enchant.json" }
-    },
-    {
-      "if": { "properties": { "function": { "type": "string", "const": "random_aux_value" } } },
-      "then": { "$ref": "./functions/random_aux_value.json" }
-    },
-    {
-      "if": { "properties": { "function": { "type": "string", "const": "random_block_state" } } },
-      "then": { "$ref": "./functions/random_block_state.json" }
-    },
+    { "if": { "properties": { "function": { "type": "string", "const": "looting_enchant" } } }, "then": { "$ref": "./functions/looting_enchant.json" } },
+    { "if": { "properties": { "function": { "type": "string", "const": "random_aux_value" } } }, "then": { "$ref": "./functions/random_aux_value.json" } },
+    { "if": { "properties": { "function": { "type": "string", "const": "random_block_state" } } }, "then": { "$ref": "./functions/random_block_state.json" } },
     { "if": { "properties": { "function": { "type": "string", "const": "set_actor_id" } } }, "then": { "$ref": "./functions/set_actor_id.json" } },
-    {
-      "if": { "properties": { "function": { "type": "string", "const": "set_banner_details" } } },
-      "then": { "$ref": "./functions/set_banner_details.json" }
-    },
-    {
-      "if": { "properties": { "function": { "type": "string", "const": "set_book_contents" } } },
-      "then": { "$ref": "./functions/set_book_contents.json" }
-    },
+    { "if": { "properties": { "function": { "type": "string", "const": "set_banner_details" } } }, "then": { "$ref": "./functions/set_banner_details.json" } },
+    { "if": { "properties": { "function": { "type": "string", "const": "set_book_contents" } } }, "then": { "$ref": "./functions/set_book_contents.json" } },
     { "if": { "properties": { "function": { "type": "string", "const": "set_count" } } }, "then": { "$ref": "./functions/set_count.json" } },
     { "if": { "properties": { "function": { "type": "string", "const": "set_damage" } } }, "then": { "$ref": "./functions/set_damage.json" } },
     { "if": { "properties": { "function": { "type": "string", "const": "set_data" } } }, "then": { "$ref": "./functions/set_data.json" } },
-    {
-      "if": { "properties": { "function": { "type": "string", "const": "set_data_from_color_index" } } },
-      "then": { "$ref": "./functions/set_data_from_color_index.json" }
-    },
-    {
-      "if": { "properties": { "function": { "type": "string", "const": "trader_material_type" } } },
-      "then": { "$ref": "./functions/trader_material_type.json" }
-    },
+    { "if": { "properties": { "function": { "type": "string", "const": "set_data_from_color_index" } } }, "then": { "$ref": "./functions/set_data_from_color_index.json" } },
+    { "if": { "properties": { "function": { "type": "string", "const": "trader_material_type" } } }, "then": { "$ref": "./functions/trader_material_type.json" } },
     { "if": { "properties": { "function": { "type": "string", "const": "random_dye" } } }, "then": { "$ref": "./functions/random_dye.json" } },
     { "if": { "properties": { "function": { "type": "string", "const": "set_lore" } } }, "then": { "$ref": "./functions/set_lore.json" } },
     { "if": { "properties": { "function": { "type": "string", "const": "set_name" } } }, "then": { "$ref": "./functions/set_name.json" } },
-    {
-      "if": { "properties": { "function": { "type": "string", "const": "specific_enchants" } } },
-      "then": { "$ref": "./functions/specific_enchants.json" }
-    }
+    { "if": { "properties": { "function": { "type": "string", "const": "specific_enchants" } } }, "then": { "$ref": "./functions/specific_enchants.json" } }
   ]
 }

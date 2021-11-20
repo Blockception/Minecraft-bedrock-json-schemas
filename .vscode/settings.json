@@ -9,7 +9,7 @@
 
   "editor.insertSpaces": true,
 
-  "prettier.printWidth": 150,
+  "prettier.printWidth": 200,
   "prettier.useTabs": false,
   "prettier.tabWidth": 2
 }
