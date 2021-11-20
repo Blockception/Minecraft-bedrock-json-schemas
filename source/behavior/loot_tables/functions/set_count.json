@@ -1,6 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.loot_tables.set_count",
   "additionalProperties": false,
+  "type": "object",
   "description": "The function set_count",
   "title": "Set Count",
   "properties": {
@@ -13,10 +14,7 @@
     },
     "count": {
       "title": "Count",
-      "oneOf": [
-        { "type": "integer" },
-        { "type": "object", "properties": { "min": { "type": "integer", "title": "Minimum" }, "max": { "type": "integer", "title": "Maximum" } } }
-      ],
+      "oneOf": [{ "type": "integer" }, { "type": "object", "properties": { "min": { "type": "integer", "title": "Minimum" }, "max": { "type": "integer", "title": "Maximum" } } }],
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED"
     }

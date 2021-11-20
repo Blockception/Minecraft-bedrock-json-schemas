@@ -1,6 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.loot_tables.specific_enchants",
   "additionalProperties": false,
+  "type": "object",
   "description": "The function specific_enchants",
   "title": "Specific Enchants",
   "definitions": {

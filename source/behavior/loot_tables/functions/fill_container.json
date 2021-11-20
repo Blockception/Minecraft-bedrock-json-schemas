@@ -1,6 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.loot_tables.fill_container",
   "additionalProperties": false,
+  "type": "object",
   "description": "The function fill_container",
   "title": "Fill Container",
   "properties": {

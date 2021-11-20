@@ -1,6 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.loot_tables.enchant_randomly",
   "additionalProperties": false,
+  "type": "object",
   "description": "The function enchant_randomly",
   "title": "Enchant Randomly",
   "properties": {
