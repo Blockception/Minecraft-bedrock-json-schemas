@@ -47,13 +47,13 @@
         {
           "title": "Minimum",
           "description": "Minimum",
-          "type": "integer",
+          "type": "number",
           "minimum": 0
         },
         {
           "title": "Maximum",
           "description": "Maximum",
-          "type": "integer",
+          "type": "number",
           "minimum": 0
         }
       ]
