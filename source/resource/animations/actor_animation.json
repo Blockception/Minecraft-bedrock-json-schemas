@@ -214,10 +214,7 @@
                         "title": "Timeline Object",
                         "description": "A single point in time",
                         "oneOf": [
-                          {
-                            "$ref": "../../molang/number.json",
-                            "description": "Uniform rotation"
-                          },
+                          { "$ref": "../../molang/number.json", "description": "Uniform rotation" },
                           {
                             "type": "array",
                             "description": "UNDOCUMENTED",
