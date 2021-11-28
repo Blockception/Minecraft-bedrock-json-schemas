@@ -4,16 +4,6 @@
   "title": "Events",
   "description": "Events for entities",
   "additionalProperties": { "$ref": "#/definitions/event_base" },
-  "defaultSnippets": [
-    {
-      "label": "New Add Event",
-      "body": { "$1": { "add": { "component_groups": ["$2"] } } }
-    },
-    {
-      "label": "New Remove Event",
-      "body": { "$1": { "remove": { "component_groups": ["$2"] } } }
-    }
-  ],
   "definitions": {
     "addremove": {
       "additionalProperties": false,
@@ -35,10 +25,10 @@
       "type": "object",
       "examples": [{}, { "add": { "component_groups": [] } }, { "remove": { "component_groups": [] } }],
       "defaultSnippets": [
-        { "label": "add component groups", "body": { "add": { "component_groups": ["$1"] } } },
-        { "label": "remove component groups", "body": { "remove": { "component_groups": ["$1"] } } },
+        { "label": "New Add Event", "body": { "add": { "component_groups": ["$1"] } } },
+        { "label": "New Remove Event", "body": { "remove": { "component_groups": ["$1"] } } },
         {
-          "label": "random component groups",
+          "label": "New Random Event",
           "body": {
             "randomize": [
               { "add": { "component_groups": ["$1"] }, "weight": 1 },
@@ -47,7 +37,7 @@
           }
         },
         {
-          "label": "random component groups",
+          "label": "New Sequence Events",
           "body": {
             "sequence": [{ "add": { "component_groups": ["$1"] } }, { "add": { "component_groups": ["$2"] } }]
           }
