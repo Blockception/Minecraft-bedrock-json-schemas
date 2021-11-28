@@ -9,6 +9,16 @@
       "event": "to:foo"
     }
   ],
+  "defaultSnippets": [
+    {
+      "label": "New Trigger",
+      "body": { "event": "$1", "target": "self" }
+    },
+    {
+      "label": "New Trigger - Filtered",
+      "body": { "event": "$1", "target": "self", "filters": [{ "test": "$2", "value": "$3" }] }
+    }
+  ],
   "oneOf": [
     { "type": "string" },
     {

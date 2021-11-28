@@ -3,6 +3,12 @@
   "title": "Event",
   "description": "Minecraft behavior event",
   "examples": [{ "event": "example:foo", "target": "self" }],
+  "defaultSnippets": [
+    {
+      "label": "New Event",
+      "body": { "event": "$1", "target": "self" }
+    }
+  ],
   "oneOf": [
     { "type": "string", "pattern": "^[a-zA-Z0-9_\\-:]+$", "description": "The event to fire" },
     {
