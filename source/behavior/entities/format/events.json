@@ -4,13 +4,23 @@
   "title": "Events",
   "description": "Events for entities",
   "additionalProperties": { "$ref": "#/definitions/event_base" },
+  "defaultSnippets": [
+    {
+      "label": "New Add Event",
+      "body": { "$1": { "add": { "component_groups": ["$2"] } } }
+    },
+    {
+      "label": "New Remove Event",
+      "body": { "$1": { "remove": { "component_groups": ["$2"] } } }
+    }
+  ],
   "definitions": {
     "addremove": {
       "additionalProperties": false,
       "title": "Add Or Remove",
       "description": "The components groups to add or remove",
       "type": "object",
-      "examples": [{ "component_groups": [] }],
+      "examples": [{ "component_groups": ["self:variant1"] }],
       "properties": {
         "component_groups": {
           "title": "Component Groups",
