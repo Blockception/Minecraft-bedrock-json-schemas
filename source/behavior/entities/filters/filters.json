@@ -7,11 +7,11 @@
     "filters_spec": {
       "defaultSnippets": [
         {
-          "label": "new test",
+          "label": "New Test",
           "body": { "test": "$1", "value": "$2" }
         },
         {
-          "label": "new all_of test",
+          "label": "New All_of Test",
           "body": {
             "all_of": [
               { "test": "$1", "value": "$2" },
@@ -20,7 +20,7 @@
           }
         },
         {
-          "label": "new any_of test",
+          "label": "New Any_of Test",
           "body": {
             "any_of": [
               { "test": "$1", "value": "$2" },
@@ -29,7 +29,7 @@
           }
         },
         {
-          "label": "new none_of test",
+          "label": "New None_of Test",
           "body": {
             "none_of": [
               { "test": "$1", "value": "$2" },
