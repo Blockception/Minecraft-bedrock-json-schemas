@@ -19,7 +19,7 @@
     "format_version": {
       "title": "Format Version",
       "type": "number",
-      "description": "What version of Minecraft is required in order to run the manifest file."
+      "description": "This defines the current version of the manifest. Don't change this unless you have a good reason to"
     },
     "capabilities": {
       "type": "object",
@@ -31,8 +31,16 @@
           "description": "Allows HTML files in the pack to be used for custom UI, and scripts in the pack to call and manipulate custom UI",
           "title": "Experimental Custom Ui"
         },
-        "chemistry": { "type": "boolean", "description": "Allows the pack to add, change or replace Chemistry functionality", "title": "Chemistry" },
-        "raytraced": { "type": "boolean", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Raytraced" }
+        "chemistry": {
+          "type": "boolean",
+          "description": "Allows the pack to add, change or replace Chemistry functionality",
+          "title": "Chemistry"
+        },
+        "raytraced": {
+          "type": "boolean",
+          "description": "Indicates that this pack contains Raytracing Enhanced or Physical Based Materials for rendering",
+          "title": "Raytraced"
+        }
       }
     },
     "dependencies": {
