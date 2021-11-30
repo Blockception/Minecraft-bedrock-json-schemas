@@ -508,6 +508,27 @@
           "title": "Thrown Potion Effect",
           "type": "object",
           "additionalProperties": false
+        },
+        "grant_xp": {
+          "additionalProperties": false,
+          "type": "object",
+          "title": "Grant XP",
+          "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
+          "properties": {
+            "minXP": {
+              "title": "Minimum XP",
+              "description": "",
+              "type": "integer",
+              "minimum": 0
+            },
+            "maxXP": {
+              "title": "Maximum XP",
+              "description": "",
+              "type": "integer",
+              "minimum": 0
+            }
+          }
         }
       }
     },
