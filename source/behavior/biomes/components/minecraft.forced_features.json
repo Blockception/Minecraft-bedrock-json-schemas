@@ -28,7 +28,7 @@
               "title": "Distribution",
               "description": "Type of distribution - uniform random, gaussian (centered in the range), or grid (either fixed-step or jittered)",
               "type": "string",
-              "enum": ["uniform", "gaussian", "inverse_gaussian", "fixed_grid", "jittered_grid"]
+              "enum": ["uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"]
             },
             "extent": {
               "title": "Extent",
