@@ -43,6 +43,11 @@
               "minProperties": 1,
               "additionalProperties": { "type": "string", "description": "The reference to the geometry", "title": "Geometry Reference" }
             },
+            "queryable_geometry": {
+              "title": "Queryable Geometry",
+              "description": "UNDOCUMENTED",
+              "type": "string"
+            },
             "hide_armor": {
               "type": "boolean",
               "default": true,
