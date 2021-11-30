@@ -81,10 +81,7 @@
           },
           "allOf": [
             { "if": { "properties": { "test": { "const": "clock_time" } } }, "then": { "$ref": "./filters/clock_time.json" } },
-            {
-              "if": { "properties": { "test": { "const": "distance_to_nearest_player" } } },
-              "then": { "$ref": "./filters/distance_to_nearest_player.json" }
-            },
+            { "if": { "properties": { "test": { "const": "distance_to_nearest_player" } } }, "then": { "$ref": "./filters/distance_to_nearest_player.json" } },
             { "if": { "properties": { "test": { "const": "has_ability" } } }, "then": { "$ref": "./filters/has_ability.json" } },
             { "if": { "properties": { "test": { "const": "has_biome_tag" } } }, "then": { "$ref": "./filters/has_biome_tag.json" } },
             { "if": { "properties": { "test": { "const": "has_component" } } }, "then": { "$ref": "./filters/has_component.json" } },
@@ -92,6 +89,7 @@
             { "if": { "properties": { "test": { "const": "has_damage" } } }, "then": { "$ref": "./filters/has_damage.json" } },
             { "if": { "properties": { "test": { "const": "has_equipment" } } }, "then": { "$ref": "./filters/has_equipment.json" } },
             { "if": { "properties": { "test": { "const": "has_mob_effect" } } }, "then": { "$ref": "./filters/has_mob_effect.json" } },
+            { "if": { "properties": { "test": { "const": "has_nametag" } } }, "then": { "$ref": "./filters/has_nametag.json" } },
             { "if": { "properties": { "test": { "const": "has_ranged_weapon" } } }, "then": { "$ref": "./filters/has_ranged_weapon.json" } },
             { "if": { "properties": { "test": { "const": "has_tag" } } }, "then": { "$ref": "./filters/has_tag.json" } },
             { "if": { "properties": { "test": { "const": "has_target" } } }, "then": { "$ref": "./filters/has_target.json" } },
