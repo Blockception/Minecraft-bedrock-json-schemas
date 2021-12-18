@@ -26,12 +26,7 @@
   },
   "propertyNames": { "pattern": "^[\\w_\\-:\\.]+$" },
   "properties": {
-    "format_version": {
-      "type": "array",
-      "items": [{ "type": "integer" }, { "type": "integer" }, { "type": "integer" }],
-      "description": "A version that tells minecraft what type of data format can be expected when reading this file.",
-      "title": "Format Version"
-    }
+    "format_version": { "$ref": "../../general/format_version.json" }
   },
   "additionalProperties": {
     "additionalProperties": false,
