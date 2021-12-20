@@ -8,6 +8,7 @@
   "definitions": {
     "interaction_spec": {
       "type": "object",
+      "additionalProperties": false,
       "properties": {
         "add_items": {
           "type": "object",
