@@ -114,6 +114,8 @@
                   "oneOf": [
                     {
                       "type": "number",
+                      "default": 0.1,
+                      "minimum": 0,
                       "description": "A short-hand version of blend_out that simply sets the amount of time to fade out if the animation is interrupted"
                     },
                     {
