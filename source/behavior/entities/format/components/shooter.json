@@ -14,20 +14,16 @@
     "def": {
       "title": "Def",
       "type": "string",
+      "examples": ["minecraft:arrow", "minecraft:small_fireball", "minecraft:thrown_trident"],
       "description": "Actor definition to use as projectile for the ranged attack. The actor definition must have the projectile component to be able to be shot as a projectile"
     },
     "type": {
       "title": "Type",
       "type": "string",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
+      "$comment": "UNDOCUMENTED",
+      "examples": ["dragonfireball"]
     }
   },
-  "examples": [
-    {
-      "aux_val": -1,
-      "def": "example",
-      "type": "example"
-    }
-  ]
+  "examples": [{ "def": "minecraft:small_fireball" }]
 }
