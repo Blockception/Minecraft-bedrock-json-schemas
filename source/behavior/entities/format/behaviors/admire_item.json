@@ -10,7 +10,6 @@
     },
     "admire_item_sound": {
       "type": "string",
-      "default": "",
       "description": "The sound event to play when admiring the item",
       "title": "Admire Item Sound"
     },
@@ -34,19 +33,11 @@
         {
           "type": "array",
           "items": [
-            {
-              "type": "number",
-              "title": "Maximum"
-            },
-            {
-              "type": "number",
-              "title": "Maximum"
-            }
+            { "type": "number", "title": "Maximum" },
+            { "type": "number", "title": "Maximum" }
           ]
         },
-        {
-          "type": "number"
-        },
+        { "type": "number" },
         {
           "type": "object",
           "additionalProperties": false,
