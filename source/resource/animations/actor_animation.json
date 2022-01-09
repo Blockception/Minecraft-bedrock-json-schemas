@@ -5,7 +5,7 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Actor Animation",
-  "description": "UNDOCUMENTED",
+  "description": "The RP animation that changes an actors models, or molang data.",
   "$comment": "UNDOCUMENTED",
   "definitions": {
     "ParticleEffect": {
@@ -33,66 +33,33 @@
       "title": "Position Array",
       "description": "An array of 3 items that describe the bones position",
       "type": "array",
+      "examples": [[0, 0, 0]],
       "items": [
-        {
-          "title": "Position X",
-          "description": "The position over the X-axis or forwards/backwards.\nCan be molang or a float",
-          "$ref": "../../molang/number.json"
-        },
-        {
-          "title": "Position Y",
-          "description": "The position over the Y-axis, or up/down.\nCan be molang or a float",
-          "$ref": "../../molang/number.json"
-        },
-        {
-          "title": "Position Z",
-          "description": "The position over the Z-axis, or left/right.\nCan be molang or a float",
-          "$ref": "../../molang/number.json"
-        }
+        { "title": "Position X", "description": "The position over the X-axis or forwards/backwards.\nCan be molang or a float", "$ref": "../../molang/number.json" },
+        { "title": "Position Y", "description": "The position over the Y-axis, or up/down.\nCan be molang or a float", "$ref": "../../molang/number.json" },
+        { "title": "Position Z", "description": "The position over the Z-axis, or left/right.\nCan be molang or a float", "$ref": "../../molang/number.json" }
       ]
     },
     "RotationV3": {
       "title": "Rotation Array",
       "description": "An array of 3 items that describe the bones rotation",
       "type": "array",
+      "examples": [[0, 0, 0]],
       "items": [
-        {
-          "title": "Rotation X",
-          "description": "The rotation over the X-axis, or up or down.\nCan be molang or a float",
-          "$ref": "../../molang/number.json"
-        },
-        {
-          "title": "Rotation Y",
-          "description": "The rotation over the Y-axis, or yaw.\nCan be molang or a float",
-          "$ref": "../../molang/number.json"
-        },
-        {
-          "title": "Rotation Z",
-          "description": "The rotation over the Z-axis, or roll.\nCan be molang or a float",
-          "$ref": "../../molang/number.json"
-        }
+        { "title": "Rotation X", "description": "The rotation over the X-axis, or up or down.\nCan be molang or a float", "$ref": "../../molang/number.json" },
+        { "title": "Rotation Y", "description": "The rotation over the Y-axis, or yaw.\nCan be molang or a float", "$ref": "../../molang/number.json" },
+        { "title": "Rotation Z", "description": "The rotation over the Z-axis, or roll.\nCan be molang or a float", "$ref": "../../molang/number.json" }
       ]
     },
     "ScaleV3": {
       "title": "Scale Array",
-      "description": "An array of 3 items that describe the bones position",
+      "description": "An array of 3 items that describe the bones scale",
       "type": "array",
+      "examples": [[0, 0, 0]],
       "items": [
-        {
-          "title": "Position X",
-          "description": "The position over the X-axis or forwards/backwards.\nCan be molang or a float",
-          "$ref": "../../molang/number.json"
-        },
-        {
-          "title": "Position Y",
-          "description": "The position over the Y-axis, or up/down.\nCan be molang or a float",
-          "$ref": "../../molang/number.json"
-        },
-        {
-          "title": "Position Z",
-          "description": "The position over the Z-axis, or left/right.\nCan be molang or a float",
-          "$ref": "../../molang/number.json"
-        }
+        { "title": "Scale X", "description": "The scale over the X-axis or forwards/backwards.\nCan be molang or a float", "$ref": "../../molang/number.json" },
+        { "title": "Scale Y", "description": "The scale over the Y-axis, or up/down.\nCan be molang or a float", "$ref": "../../molang/number.json" },
+        { "title": "Scale Z", "description": "The scale over the Z-axis, or left/right.\nCan be molang or a float", "$ref": "../../molang/number.json" }
       ]
     },
     "SoundEffect": {
@@ -134,7 +101,7 @@
           },
           "blend_weight": {
             "title": "Blend Weight",
-            "description": "UNDOCUMENTED",
+            "description": "The weight of the animation when blending with other animations. Defaults to 1.",
             "$comment": "UNDOCUMENTED",
             "$ref": "../../molang/number.json"
           },
@@ -162,16 +129,8 @@
                         "title": "Timeline Object",
                         "description": "A single point in time",
                         "oneOf": [
-                          {
-                            "$ref": "../../molang/number.json",
-                            "description": "Uniform position"
-                          },
-                          {
-                            "type": "array",
-                            "description": "UNDOCUMENTED",
-                            "$comment": "UNDOCUMENTED",
-                            "$ref": "#/definitions/PositionV3"
-                          },
+                          { "$ref": "../../molang/number.json", "description": "Uniform position" },
+                          { "type": "array", "$ref": "#/definitions/PositionV3" },
                           {
                             "additionalProperties": false,
                             "type": "object",
@@ -267,16 +226,7 @@
                   "description": "UNDOCUMENTED",
                   "$comment": "UNDOCUMENTED",
                   "oneOf": [
-                    {
-                      "type": "array",
-                      "description": "UNDOCUMENTED",
-                      "$comment": "UNDOCUMENTED",
-                      "$ref": "#/definitions/PositionV3"
-                    },
-                    {
-                      "$ref": "../../molang/number.json",
-                      "description": "Uniform scale"
-                    },
+                    { "$ref": "../../molang/number.json", "description": "Uniform scale" },
                     { "$ref": "#/definitions/ScaleV3" },
                     {
                       "type": "object",
@@ -285,10 +235,7 @@
                         "title": "Timeline Object",
                         "description": "A single point in time",
                         "oneOf": [
-                          {
-                            "$ref": "../../molang/number.json",
-                            "description": "Uniform rotation"
-                          },
+                          { "$ref": "../../molang/number.json", "description": "Uniform rotation" },
                           {
                             "type": "array",
                             "description": "UNDOCUMENTED",
@@ -384,6 +331,7 @@
             "description": "The time line",
             "type": "object",
             "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$", "examples": ["0.0", "1.0"] },
+            "examples": [{ "0.0": {} }],
             "additionalProperties": {
               "oneOf": [
                 { "type": "string", "title": "Molang", "description": "Variable definition", "pattern": "^(v|variable)\\..*=.*;$" },
