@@ -87,7 +87,11 @@
                 "description": "The type of curve",
                 "enum": ["linear", "bezier", "bezier_chain", "catmull_rom"]
               },
-              "horizontal_range": { "type": "number", "title": "Horizontal Range", "description": "What is the range the input is mapped onto" }
+              "horizontal_range": {
+                "title": "Horizontal Range",
+                "description": "What is the range the input is mapped onto",
+                "$ref": "../../molang/number.json"
+              }
             }
           }
         },
