@@ -1,11 +1,16 @@
 {
   "$id": "blockception.minecraft.behavior.loot_tables.exploration_map",
   "additionalProperties": false,
-  "description": "The function exploration_map",
+  "description": "Transforms a normal map into a treasure map that marks the location of hidden treasure",
   "title": "Exploration Map",
   "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "exploration_map", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Function" },
+    "function": {
+      "type": "string",
+      "const": "exploration_map",
+      "description": "Transforms a normal map into a treasure map that marks the location of hidden treasure",
+      "title": "Function"
+    },
     "destination": {
       "type": "string",
       "description": "The destination value defines what type of treasure map they receive.",
