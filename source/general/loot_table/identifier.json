@@ -4,5 +4,6 @@
   "examples": ["loot_tables/"],
   "pattern": "^loot_tables/.*\\.json$",
   "title": "Loot Table Identifier",
-  "type": "string"
+  "type": "string",
+  "defaultSnippets": [{ "label": "New Identifier", "body": "loot_tables/$1.json" }]
 }

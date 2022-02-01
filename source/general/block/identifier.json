@@ -4,5 +4,6 @@
   "examples": ["namespace:block"],
   "pattern": "^[0-9a-zA-Z:_\\.\\-]+$",
   "title": "Block Identifier",
-  "type": "string"
+  "type": "string",
+  "defaultSnippets": [{ "label": "New Identifier", "body": "$1:$2" }]
 }

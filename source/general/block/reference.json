@@ -3,6 +3,7 @@
   "description": "A minecraft block reference",
   "examples": ["namespace:block", { "name": "namespace:block" }],
   "title": "Block Reference",
+  "defaultSnippets": [{ "label": "New Identifier", "body": "$1:$2" }],
   "oneOf": [
     { "type": "string", "$ref": "./identifier.json" },
     {

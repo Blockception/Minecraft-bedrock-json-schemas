@@ -6,5 +6,6 @@
   "items": [
     { "type": "integer", "description": "The X component", "title": "X", "default": 0 },
     { "type": "integer", "description": "The Y component", "title": "Y", "default": 0 }
-  ]
+  ],
+  "defaultSnippets": [{ "label": "New Array 2", "body": ["^$1", "^$2"] }]
 }

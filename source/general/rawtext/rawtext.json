@@ -13,13 +13,7 @@
       "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
-        "oneOf": [
-          { "type": "string" },
-          { "$ref": "#/definitions/translate" },
-          { "$ref": "#/definitions/text" },
-          { "$ref": "#/definitions/selector" },
-          { "$ref": "#/definitions/score" }
-        ]
+        "oneOf": [{ "type": "string" }, { "$ref": "#/definitions/translate" }, { "$ref": "#/definitions/text" }, { "$ref": "#/definitions/selector" }, { "$ref": "#/definitions/score" }]
       }
     },
     "selector": {

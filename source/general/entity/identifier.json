@@ -4,5 +4,6 @@
   "examples": ["namespace:entity_name"],
   "pattern": "^[0-9a-zA-Z:_\\.\\-]+$",
   "title": "Entity Identifier",
-  "type": "string"
+  "type": "string",
+  "defaultSnippets": [{ "label": "New Identifier", "body": "$1:$2" }]
 }
