@@ -120,6 +120,7 @@
             "minecraft:particle_appearance_tinting": { "$ref": "./components/minecraft.particle_appearance_tinting.json" },
             "minecraft:particle_appearance_lighting": { "$ref": "./components/minecraft.particle_appearance_lighting.json" },
             "minecraft:particle_expire_if_not_in_blocks": { "$ref": "./components/minecraft.particle_expire_if_not_in_blocks.json" },
+            "minecraft:particle_expire_if_in_blocks": { "$ref": "./components/minecraft.particle_expire_if_in_blocks.json" },
             "minecraft:particle_initialization": { "$ref": "./components/minecraft.particle_initialization.json" },
             "minecraft:particle_initial_speed": { "$ref": "./components/minecraft.particle_initial_speed.json" },
             "minecraft:particle_initial_spin": { "$ref": "./components/minecraft.particle_initial_spin.json" },
