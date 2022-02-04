@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.animations",
-  "examples": [{ "format_version": "1.17.0", "animations": { "animation.example": {} } }],
+  "examples": [{ "format_version": "1.18.0", "animations": { "animation.example": {} } }],
   "definitions": {
     "animationspec": {
       "anyOf": [
