@@ -3,6 +3,7 @@
   "title": "Trigger",
   "description": "Trigger to fire",
   "examples": [
+    "event:example",
     {
       "filters": [],
       "target": "self",
