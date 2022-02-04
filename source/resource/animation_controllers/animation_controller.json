@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.resource.animation_controller",
   "examples": [
     {
-      "format_version": "",
+      "format_version": "1.18.0",
       "animation_controllers": {
         "controller.animation.example": {
           "states": {
