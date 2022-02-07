@@ -34,6 +34,8 @@
       "description": "An array of 3 items that describe the bones position",
       "type": "array",
       "examples": [[0, 0, 0]],
+      "maxItems": 3,
+      "minItems": 3,
       "items": [
         { "title": "Position X", "description": "The position over the X-axis or forwards/backwards.\nCan be molang or a float", "$ref": "../../molang/number.json" },
         { "title": "Position Y", "description": "The position over the Y-axis, or up/down.\nCan be molang or a float", "$ref": "../../molang/number.json" },
@@ -45,6 +47,8 @@
       "description": "An array of 3 items that describe the bones rotation",
       "type": "array",
       "examples": [[0, 0, 0]],
+      "maxItems": 3,
+      "minItems": 3,
       "items": [
         { "title": "Rotation X", "description": "The rotation over the X-axis, or up or down.\nCan be molang or a float", "$ref": "../../molang/number.json" },
         { "title": "Rotation Y", "description": "The rotation over the Y-axis, or yaw.\nCan be molang or a float", "$ref": "../../molang/number.json" },
@@ -56,6 +60,8 @@
       "description": "An array of 3 items that describe the bones scale",
       "type": "array",
       "examples": [[0, 0, 0]],
+      "maxItems": 3,
+      "minItems": 3,
       "items": [
         { "title": "Scale X", "description": "The scale over the X-axis or forwards/backwards.\nCan be molang or a float", "$ref": "../../molang/number.json" },
         { "title": "Scale Y", "description": "The scale over the Y-axis, or up/down.\nCan be molang or a float", "$ref": "../../molang/number.json" },
