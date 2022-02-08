@@ -79,17 +79,6 @@
         "description": "A single animation controller",
         "required": ["states"],
         "minProperties": 1,
-        "examples": [
-          {
-            "controller.animation.some_name": {
-              "initial_state": "default",
-              "states": {
-                "default": { "transitions": [{ "state_1": "query.is_baby" }] },
-                "state_1": { "animations": ["state_1"], "transitions": [{ "default": "query.all_animations_finished" }] }
-              }
-            }
-          }
-        ],
         "properties": {
           "states": {
             "title": "States",
@@ -102,6 +91,12 @@
               "title": "Animation State",
               "description": "Animation state",
               "type": "object",
+              "examples": [
+                {
+                  "animations": ["anim.idle"],
+                  "transition": [{ "example": "query.is_sheared" }]
+                }
+              ],
               "properties": {
                 "animations": {
                   "title": "Animations",

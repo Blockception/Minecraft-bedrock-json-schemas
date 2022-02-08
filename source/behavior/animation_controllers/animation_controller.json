@@ -105,6 +105,12 @@
               "title": "Animation State",
               "description": "Animation state",
               "type": "object",
+              "examples": [
+                {
+                  "animations": ["anim.idle"],
+                  "transition": [{ "example": "query.is_sheared" }]
+                }
+              ],
               "properties": {
                 "animations": {
                   "title": "Animations",
