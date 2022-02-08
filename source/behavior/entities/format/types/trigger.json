@@ -13,7 +13,7 @@
   "defaultSnippets": [
     {
       "label": "New Trigger",
-      "body": { "event": "$1", "target": "self" }
+      "body": "^\"$1\""
     },
     {
       "label": "New Trigger - Filtered",
