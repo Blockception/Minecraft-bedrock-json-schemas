@@ -21,25 +21,17 @@
     "time": {
       "description": "Amount of time in seconds for the timer. Can be specified as a number or a pair of numbers (Minimum and max). Incompatible with random_time_choices.",
       "title": "Time",
+      "examples": [1, [1.0, 5.0]],
       "oneOf": [
         {
           "type": "array",
           "default": [0.0, 0.0],
           "items": [
-            {
-              "type": "number",
-              "title": "A"
-            },
-            {
-              "type": "number",
-              "title": "B"
-            }
+            { "type": "number", "title": "Minimum" },
+            { "type": "number", "title": "Maximum" }
           ]
         },
-        {
-          "type": "number",
-          "default": 0
-        }
+        { "type": "number", "default": 0 }
       ]
     },
     "time_down_event": {
@@ -75,9 +67,9 @@
   },
   "examples": [
     {
+      "time": 1,
       "looping": true,
-      "randomInterval": true,
-      "random_time_choices": []
+      "time_down_event": "self:reset"
     }
   ]
 }
