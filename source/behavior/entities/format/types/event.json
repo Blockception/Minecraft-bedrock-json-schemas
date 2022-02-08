@@ -6,7 +6,7 @@
   "defaultSnippets": [
     {
       "label": "New Event",
-      "body": { "event": "$1", "target": "self" }
+      "body": "^\"$1\""
     }
   ],
   "oneOf": [
