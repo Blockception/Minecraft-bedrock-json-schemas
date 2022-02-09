@@ -1,0 +1,27 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.celebrate_survive",
+  "additionalProperties": false,
+  "type": "object",
+  "title": "Celebrate Survive",
+  "$comment": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED",
+  "properties": {
+    "priority": { "$ref": "types/priority.json" },
+    "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },
+    "fireworks_interval": {
+      "title": "Fireworks Interval",
+      "$ref": "../types/range_number_type.json",
+      "description": "The interval in ticks between playing the fireworks"
+    },
+    "duration": {
+      "title": "Duration",
+      "description": "The duration in ticks of the celebration",
+      "type": "number"
+    },
+    "on_celebration_end_event": {
+      "title": "On Celebration End Event",
+      "description": "The event to fire when the celebration ends",
+      "$ref": "../types/event.json"
+    }
+  }
+}

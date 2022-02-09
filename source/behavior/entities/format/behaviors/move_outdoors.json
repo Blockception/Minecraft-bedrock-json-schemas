@@ -1,0 +1,17 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.move_outdoors",
+  "additionalProperties": false,
+  "type": "object",
+  "title": "Move Outdoors",
+  "$comment": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED",
+  "properties": {
+    "priority": { "$ref": "types/priority.json" },
+    "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },
+    "timeout_cooldown": {
+      "title": "Duration",
+      "description": "The duration in ticks of the celebration",
+      "type": "number"
+    }
+  }
+}

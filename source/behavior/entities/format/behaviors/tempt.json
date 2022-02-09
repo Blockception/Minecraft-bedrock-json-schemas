@@ -5,12 +5,8 @@
   "title": "Tempt",
   "additionalProperties": false,
   "properties": {
-    "priority": {
-      "$ref": "types/priority.json"
-    },
-    "speed_multiplier": {
-      "$ref": "types/speed_multiplier.json"
-    },
+    "priority": { "$ref": "types/priority.json" },
+    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
     "can_get_scared": {
       "type": "boolean",
       "default": false,
@@ -36,6 +32,27 @@
         "$ref": "../../../../general/item/identifier.json"
       },
       "title": "Items"
+    },
+    "sound_interval": {
+      "description": "The interval in ticks between playing the sound",
+      "title": "Sound Interval",
+      "oneOf": [
+        {
+          "type": "number",
+          "minimum": 0
+        },
+        {
+          "items": [
+            { "type": "integer", "minimum": 0, "title": "Minimum" },
+            { "type": "integer", "minimum": 0, "title": "Maximum" }
+          ]
+        }
+      ]
+    },
+    "tempt_sound": {
+      "type": "string",
+      "description": "Sound to play while the mob is being tempted.",
+      "title": "Tempt Sound"
     },
     "within_radius": {
       "type": "number",
