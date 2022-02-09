@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities.filters.is_missing_health",
   "type": "object",
   "title": "In Nether",
-  "description": "Returns true when the subject entity is in Nether.",
+  "description": "Tests if the subject is not at full health.",
   "properties": {
     "test": {
       "type": "string",
