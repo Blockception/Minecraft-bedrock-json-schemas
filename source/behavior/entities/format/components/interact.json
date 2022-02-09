@@ -4,7 +4,7 @@
   "title": "Interact",
   "description": "Defines interactions with this entity.",
   "additionalProperties": false,
-  "examples": [{ "interactions": [] }],
+  "examples": [{ "interactions": [{}] }],
   "definitions": {
     "interaction_spec": {
       "type": "object",
@@ -29,6 +29,12 @@
           "default": 0,
           "description": "Time in seconds before this entity can be interacted with again.",
           "title": "Cooldown"
+        },
+        "health_amount": {
+          "type": "number",
+          "default": 0,
+          "description": "Amount of health to add to the entity upon successful interaction.",
+          "title": "Health Amount"
         },
         "hurt_item": {
           "type": "integer",
