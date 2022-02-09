@@ -33,7 +33,7 @@
         "health_amount": {
           "type": "number",
           "default": 0,
-          "description": "Amount of health to add to the entity upon successful interaction.",
+          "description": "The amount of health this entity will recover or hurt when interacting with this item. Negative values will harm the entity.",
           "title": "Health Amount"
         },
         "hurt_item": {

@@ -13,8 +13,15 @@
     },
     "sway_amplitude": {
       "type": "number",
-      "description": "The amount of sway that is allowed for movement.",
-      "title": "Sway Amplitude"
+      "description": "Strength of the sway movement.",
+      "title": "Sway Amplitude",
+      "default": 0.05
+    },
+    "sway_frequency": {
+      "type": "number",
+      "description": "Multiplier for the frequency of the sway movement.",
+      "title": "Sway Amplitude",
+      "default": 0.5
     }
   },
   "examples": [
