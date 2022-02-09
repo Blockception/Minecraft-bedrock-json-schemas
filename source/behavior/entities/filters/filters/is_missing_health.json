@@ -1,0 +1,26 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.is_missing_health",
+  "type": "object",
+  "title": "In Nether",
+  "description": "Returns true when the subject entity is in Nether.",
+  "properties": {
+    "test": {
+      "type": "string",
+      "title": "Test",
+      "description": "The test property"
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
+    "value": {
+      "description": "True or false.",
+      "type": "boolean",
+      "default": true,
+      "title": "Value"
+    }
+  },
+  "examples": [{ "test": "is_missing_health", "value": true }]
+}
