@@ -16,17 +16,6 @@
             "type": "object",
             "additionalProperties": false,
             "properties": {
-              "effect": {
-                "type": "string",
-                "title": "Effect",
-                "description": "The string identifier of the status effect to add. These are the same as used in the /effect command."
-              },
-              "duration": {
-                "title": "Duration",
-                "description": "The amount of time in seconds the effect should last. This allows for fractional numbers. For example, instant effects should be set to 0.05 seconds (one tick).",
-                "type": "number",
-                "minimum": 0
-              },
               "amplifier": {
                 "type": "integer",
                 "title": "Amplifier",
@@ -40,10 +29,26 @@
                 "default": false,
                 "type": "boolean"
               },
+              "duration": {
+                "title": "Duration",
+                "description": "The amount of time in seconds the effect should last. This allows for fractional numbers. For example, instant effects should be set to 0.05 seconds (one tick).",
+                "type": "number",
+                "minimum": 0
+              },
               "display_on_screen_animation": {
                 "type": "boolean",
                 "title": "Display On Screen Animation",
                 "description": "Boolean value. When set to true, applying this effect displays an animated graphic on-screen similar to the totem of undying effect. Obviously, this only works for players. Defaults to false."
+              },
+              "effect": {
+                "type": "string",
+                "title": "Effect",
+                "description": "The string identifier of the status effect to add. These are the same as used in the /effect command."
+              },
+              "visible": {
+                "type": "boolean",
+                "title": "Visible",
+                "description": "Boolean value. When set to true, the effect will be visible to the player. Defaults to true."
               }
             }
           }
