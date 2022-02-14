@@ -35,7 +35,8 @@
               "type": "string",
               "default": "",
               "description": "The category for this item. Categories are used to control high level properties of how the item is integrated into the bedrock engine, such as whether it can be used in slash commands.",
-              "title": "Category"
+              "title": "Category",
+              "examples": ["Nature", "Equipment", "Construction", "Items"]
             },
             "is_experimental": {
               "type": "boolean",
