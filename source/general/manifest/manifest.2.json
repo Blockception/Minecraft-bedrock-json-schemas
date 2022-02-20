@@ -187,6 +187,35 @@
           }
         }
       }
+    },
+    "subpacks": {
+      "type": "array",
+      "title": "Subpacks",
+      "description": "Section containing information regarding file variations which can then be chosen to apply to.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "description": "Section containing information regarding file variations which can then be chosen to apply to.",
+        "title": "Subpacks",
+        "required": ["folder_name", "name", "memory_tier"],
+        "properties": {
+          "folder_name": {
+            "type": "string",
+            "description": "This represents the folder name located in \"subpacks\" folder. When user select this resolution Minecraft loads the content inside the folder.",
+            "title": "Folder Name"
+          },
+          "name": {
+            "type": "string",
+            "description": "This is the name of the pack resolution. This lets user know what resolution they are choosing.",
+            "title": "Name"
+          },
+          "memory_tier": {
+            "type": "number",
+            "title": "Memory Tier",
+            "description": "This creates a requirement on the capacity of memory needed to select the resolution. Each tier increases memory requirement by 250 megabytes."
+          }
+        }
+      }
     }
   }
 }
