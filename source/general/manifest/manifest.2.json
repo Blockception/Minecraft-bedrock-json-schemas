@@ -191,13 +191,14 @@
     "subpacks": {
       "type": "array",
       "title": "Subpacks",
-      "description": "Section containing information regarding file variations which can then be chosen to apply to.",
+      "description": "A list of subpacks that are applied per memory tier",
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "description": "Section containing information regarding file variations which can then be chosen to apply to.",
+        "description": "A single definition of a subpack",
         "title": "Subpacks",
         "required": ["folder_name", "name", "memory_tier"],
+        "example": [{"folder_name": "tier1", "name": "low", "memory_tier": 1}]
         "properties": {
           "folder_name": {
             "type": "string",
@@ -212,7 +213,7 @@
           "memory_tier": {
             "type": "number",
             "title": "Memory Tier",
-            "description": "This creates a requirement on the capacity of memory needed to select the resolution. Each tier increases memory requirement by 250 megabytes."
+            "description": "This creates a requirement on the capacity of memory needed to select the resolution. Each tier increases memory requirement by 256 MB."
           }
         }
       }
