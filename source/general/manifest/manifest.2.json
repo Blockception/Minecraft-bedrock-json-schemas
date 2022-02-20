@@ -198,7 +198,7 @@
         "description": "A single definition of a subpack",
         "title": "Subpacks",
         "required": ["folder_name", "name", "memory_tier"],
-        "example": [{"folder_name": "tier1", "name": "low", "memory_tier": 1}]
+        "example": [{"folder_name": "tier1", "name": "low", "memory_tier": 1}],
         "properties": {
           "folder_name": {
             "type": "string",
