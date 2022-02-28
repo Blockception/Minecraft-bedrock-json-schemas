@@ -53,9 +53,9 @@
           "description": "Randomly selects one of the following items based upon their weight and the total weights",
           "title": "Randomize",
           "items": {
-            "required": ["weight"],
             "description": "Randomly selects one of the following items based upon their weight and the total weights",
             "title": "Randomize",
+            "examples": [{ "add": { "component_groups": ["foo:example"] }, "weight": 1 }],
             "properties": {
               "add": { "$ref": "#/definitions/addremove", "description": "What gets added when the event gets triggered", "title": "Add" },
               "remove": { "$ref": "#/definitions/addremove", "description": "What gets removed when the event gets triggered", "title": "Remove" },
