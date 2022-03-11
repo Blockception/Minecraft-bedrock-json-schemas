@@ -131,8 +131,8 @@
           "title": "Admire Item"
         },
         "cooldown_after_being_attacked": {
-          "type": "interger",
-          "default": false,
+          "type": "number",
+          "default": "",
           "description": "Duration, in seconds, for which mob won't barter items if it was hurt",
           "title": "Cooldown After Being Attacked"
         }
