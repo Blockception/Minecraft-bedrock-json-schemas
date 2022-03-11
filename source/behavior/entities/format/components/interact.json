@@ -117,6 +117,24 @@
           "default": false,
           "description": "If true, the interaction will use an item.",
           "title": "Use Item"
+        },
+        "barter": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enables the component to drop an item as a barter exchange.",
+          "title": "Barter"
+        },
+        "admire": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enables the mob to admire the item",
+          "title": "Admire Item"
+        },
+        "cooldown_after_being_attacked": {
+          "type": "interger",
+          "default": false,
+          "description": "Duration, in seconds, for which mob won't barter items if it was hurt",
+          "title": "Cooldown After Being Attacked"
         }
       }
     }
