@@ -1,6 +1,6 @@
 {
   "title": "RawText",
-  "description": "UNDOCUMENTED",
+  "description": "A json structure that allows for translations, or go from scores and selectors to text",
   "$comment": "UNDOCUMENTED",
   "type": "object",
   "additionalProperties": false,
@@ -9,16 +9,18 @@
   "definitions": {
     "rawtext": {
       "title": "Rawtext",
-      "description": "UNDOCUMENTED",
+      "description": "The raw text component, which consists of an array of text components",
       "$comment": "UNDOCUMENTED",
       "type": "array",
+      "default": [],
+      "example": [[{ "translate": "example.language.key" }]],
       "items": {
         "oneOf": [{ "type": "string" }, { "$ref": "#/definitions/translate" }, { "$ref": "#/definitions/text" }, { "$ref": "#/definitions/selector" }, { "$ref": "#/definitions/score" }]
       }
     },
     "selector": {
       "title": "Selector",
-      "description": "UNDOCUMENTED",
+      "description": "A text component that turns a selector into text, will usually display like: `Player1, Player2 and Player3`",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
@@ -27,7 +29,7 @@
       "properties": {
         "selector": {
           "title": "Selector",
-          "description": "UNDOCUMENTED",
+          "description": "The selector to target, for dialogue files, you can use @initiator",
           "$comment": "UNDOCUMENTED",
           "type": "string",
           "examples": ["@a", "@s", "@r", "@p", "@e", "@initiator"],
@@ -37,7 +39,7 @@
     },
     "score": {
       "title": "Score",
-      "description": "UNDOCUMENTED",
+      "description": "A text component that grabs the score from an given target and turns its value of a specified score",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
@@ -46,21 +48,25 @@
       "properties": {
         "score": {
           "title": "Score",
-          "description": "UNDOCUMENTED",
+          "description": "The score text component",
           "$comment": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
           "required": ["name", "objective"],
+          "examples": [
+            { "name": "*", "objective": "random" },
+            { "name": "@a[score={count=0..},c=1]", "objective": "count" }
+          ],
           "properties": {
             "name": {
               "title": "Selector",
-              "description": "A selector, player name (can be fake), or *",
+              "description": "A selector, player name (can be fake), or * to target who is reading the message",
               "type": "string",
               "examples": ["@a", "@s", "@r", "@p", "@e", "@initiator", "*"]
             },
             "objective": {
               "title": "Objective",
-              "description": "UNDOCUMENTED",
+              "description": "The scoreboard objective to retrieve the value of",
               "$comment": "UNDOCUMENTED",
               "type": "string"
             }
@@ -70,16 +76,16 @@
     },
     "text": {
       "title": "Text",
-      "description": "UNDOCUMENTED",
+      "description": "A simple text component, will display the text raw (without processing)",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
       "required": ["text"],
-      "examples": [{ "text": "" }],
+      "examples": [{ "text": "Hello World!" }],
       "properties": {
         "text": {
           "title": "Text",
-          "description": "UNDOCUMENTED",
+          "description": "The text to display",
           "$comment": "UNDOCUMENTED",
           "type": "string"
         }
@@ -87,7 +93,7 @@
     },
     "translate": {
       "title": "Translate",
-      "description": "UNDOCUMENTED",
+      "description": "A text component that will attempt to translate the given key through the languages files",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
@@ -96,9 +102,10 @@
       "properties": {
         "translate": {
           "title": "Translate",
-          "description": "UNDOCUMENTED",
+          "description": "The key to translate",
           "$comment": "UNDOCUMENTED",
-          "type": "string"
+          "type": "string",
+          "examples": ["example.translation.key"]
         },
         "with": {
           "$ref": "#/definitions/with"
@@ -107,7 +114,7 @@
     },
     "with": {
       "title": "With",
-      "description": "UNDOCUMENTED",
+      "description": "Specifies for the translator that additional text component needs to be inserted, this will cause the translator to look for variables in the translation text and replaced them with the corresponding 'With' text component",
       "$comment": "UNDOCUMENTED",
       "examples": ["\n", { "rawtext": [] }],
       "items": {
@@ -115,7 +122,7 @@
           { "type": "string" },
           {
             "title": "Rawtext",
-            "description": "UNDOCUMENTED",
+            "description": "Specifies that this 'with' component needs to be processed",
             "$comment": "UNDOCUMENTED",
             "type": "object",
             "additionalProperties": false,
