@@ -12,7 +12,7 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Render Controllers",
-  "description": "Render_controllers",
+  "description": "A collection of render controllers to apply",
   "definitions": {
     "color": {
       "anyOf": [
@@ -24,6 +24,8 @@
   "properties": {
     "format_version": { "$ref": "../../general/format_version.json" },
     "render_controllers": {
+      "title": "Render Controllers",
+      "description": "The collection of render controllers, each property is the identifier of a render controller",
       "type": "object",
       "propertyNames": { "pattern": "^controller\\.render\\.[a-z\\.]+" },
       "additionalProperties": {
@@ -102,12 +104,21 @@
               "b": { "$ref": "#/definitions/color", "description": "The value of blue, between 0 and 1", "title": "B" },
               "a": { "$ref": "#/definitions/color", "description": "The value of alpha, between 0 and 1", "title": "A" }
             },
-            "description": "UNDOCUMENTED: color",
+            "description": "The color to apply",
             "title": "Color"
           },
-          "filter_lighting": { "type": "boolean", "description": "UNDOCUMENTED: filter lighting", "title": "Filter Lighting" },
-          "geometry": { "type": "string", "description": "UNDOCUMENTED: geometry", "title": "Geometry" },
-          "ignore_lighting": { "type": "boolean", "description": "UNDOCUMENTED: ignore lighting", "title": "Ignore Lighting" },
+          "filter_lighting": {
+            "type": "boolean",
+            "description": "Whenever or not to apply enviroment lighting to this object",
+            "title": "Filter Lighting"
+          },
+          "geometry": {
+            "$ref": "../../molang/string.json",
+            "description": "The model data to use",
+            "title": "Geometry",
+            "examples": ["geometry.default"]
+          },
+          "ignore_lighting": { "type": "boolean", "description": "Whenever or not to apply enviroment lighting to this object", "title": "Ignore Lighting" },
           "is_hurt_color": {
             "additionalProperties": false,
             "type": "object",
@@ -126,18 +137,26 @@
             "title": "Light Color Multiplier"
           },
           "materials": {
+            "title": "Materials",
+            "description": "The specification where to apply materials to",
             "type": "array",
             "minItems": 1,
+            "examples": [[{ "*": "material.default" }], [{ "Alpha_*": "material.alpha" }]],
             "items": {
               "type": "object",
-              "additionalProperties": { "type": "string", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Material" },
-              "description": "UNDOCUMENTED: materials",
-              "title": "Materials"
-            },
-            "description": "UNDOCUMENTED: materials",
-            "title": "Materials"
+              "description": "The definitions of what material to apply to what set of bones, can be done through specific names, or patterns using * as a wildcard",
+              "title": "Materials",
+              "additionalProperties": {
+                "type": "string",
+                "description": "The material to apply, or patterns using * as a wildcard",
+                "$comment": "UNDOCUMENTED",
+                "title": "Material"
+              }
+            }
           },
           "on_fire_color": {
+            "title": "On Fire Color",
+            "description": "The color that will be overlayed when the object is on fire",
             "additionalProperties": false,
             "type": "object",
             "properties": {
@@ -145,14 +164,12 @@
               "g": { "$ref": "#/definitions/color", "description": "The value of green, must result in a float between 0 and 1", "title": "G" },
               "b": { "$ref": "#/definitions/color", "description": "The value of blue, must result in a float between 0 and 1", "title": "B" },
               "a": { "$ref": "#/definitions/color", "description": "The value of alpha, must result in a float between 0 and 1", "title": "A" }
-            },
-            "description": "UNDOCUMENTED: on fire color",
-            "title": "On Fire Color"
+            }
           },
           "overlay_color": {
             "additionalProperties": false,
             "type": "object",
-            "description": "UNDOCUMENTED: overlay color",
+            "description": "The color to put over the object",
             "title": "Overlay Color",
             "properties": {
               "r": { "$ref": "#/definitions/color", "description": "The value of red, between 0 and 1", "title": "R" },
@@ -162,6 +179,8 @@
             }
           },
           "part_visibility": {
+            "title": "Part Visibility",
+            "description": "Determines what part of the object to show or hide",
             "type": "array",
             "minItems": 1,
             "items": {
@@ -169,46 +188,47 @@
               "title": "Part Visibility",
               "type": "object",
               "additionalProperties": { "oneOf": [{ "type": "string" }, { "type": "boolean" }, { "type": "number" }] }
-            },
-            "description": "UNDOCUMENTED: part visibility",
-            "title": "Part Visibility"
+            }
           },
           "textures": {
+            "title": "Textures",
+            "description": "The texture to apply, multiple texture can be used as to create an overlay effect, a specific material is required though.",
             "type": "array",
             "minItems": 1,
-            "items": { "type": "string", "description": "UNDOCUMENTED: textures", "title": "Textures" },
-            "description": "UNDOCUMENTED: textures",
-            "title": "Textures"
+            "items": {
+              "description": "The texture definition to apply",
+              "title": "Textures",
+              "$ref": "../../molang/string.json",
+              "examples": ["texture.default", "Array.skins[query.variant]"]
+            }
           },
           "uv_anim": {
+            "title": "Uv Anim",
+            "description": "The UV animation to apply to the render texture",
             "additionalProperties": false,
             "type": "object",
             "required": ["offset", "scale"],
             "properties": {
               "offset": {
+                "title": "Offset",
+                "description": "The offset to apply the UV, this will cause the texture on the object to shift by said amount, can be molang. The value for how much to offset is usually specified between 0 and 1",
                 "type": "array",
                 "minItems": 2,
                 "maxItems": 2,
-                "items": { "$ref": "../../molang/number.json", "description": "UNDOCUMENTED: offset", "title": "Offset" },
-                "description": "UNDOCUMENTED: offset",
-                "title": "Offset"
+                "items": { "$ref": "../../molang/number.json", "description": "The offset to apply on the texture, can be molang", "title": "Offset" }
               },
               "scale": {
                 "type": "array",
-                "description": "UNDOCUMENTED: scale",
+                "description": "The scale to apply to the texture, this will cause texture to seem to grow and shrink if done per frame",
                 "title": "Scale",
                 "minItems": 2,
                 "maxItems": 2,
-                "items": { "$ref": "../../molang/number.json", "description": "UNDOCUMENTED: scale", "title": "Scale" }
+                "items": { "$ref": "../../molang/number.json", "description": "The scale to apply on the texture, can be molang", "title": "Scale" }
               }
-            },
-            "description": "UNDOCUMENTED: uv anim",
-            "title": "Uv Anim"
+            }
           }
         }
-      },
-      "description": "UNDOCUMENTED: render controllers",
-      "title": "Render Controllers"
+      }
     }
   }
 }
