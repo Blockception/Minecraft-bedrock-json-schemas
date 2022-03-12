@@ -25,7 +25,7 @@
   "definitions": {
     "pools_spec": {
       "title": "Pools",
-      "description": "UNDOCUMENTED",
+      "description": "A collection of items where the system will choice one or more from",
       "$comment": "UNDOCUMENTED",
       "type": "array",
       "additionalProperties": false,
@@ -36,7 +36,7 @@
         "properties": {
           "rolls": {
             "title": "Rolls",
-            "description": "UNDOCUMENTED",
+            "description": "Determines how many items, will be selected",
             "$comment": "UNDOCUMENTED",
             "oneOf": [
               { "type": "integer", "minimum": 0 },
@@ -44,8 +44,8 @@
                 "type": "object",
                 "required": ["min", "max"],
                 "properties": {
-                  "min": { "title": "Minimum", "type": "number", "minimum": 0 },
-                  "max": { "title": "Minimum", "type": "number", "minimum": 1 }
+                  "min": { "title": "Minimum", "type": "number", "minimum": 0, "description": "The minimum amount" },
+                  "max": { "title": "Maximum", "type": "number", "minimum": 1, "description": "The maximum amount" }
                 }
               }
             ]
@@ -53,13 +53,13 @@
           "type": {
             "title": "Type",
             "type": "string",
-            "description": "UNDOCUMENTED",
+            "description": "Whenever this pool item is an item or another table",
             "$comment": "UNDOCUMENTED",
             "enum": ["loot_table", "item", "empty"]
           },
           "conditions": {
             "title": "Conditions",
-            "description": "UNDOCUMENTED",
+            "description": "Possible conditions that need to have been met before selecting this item",
             "$comment": "UNDOCUMENTED",
             "type": "array",
             "items": { "$ref": "./conditions.json" }
@@ -67,7 +67,7 @@
           "entries": {
             "title": "Entries",
             "type": "array",
-            "description": "UNDOCUMENTED",
+            "description": "The items specifiation of this pool",
             "$comment": "UNDOCUMENTED",
             "items": {
               "additionalProperties": false,
