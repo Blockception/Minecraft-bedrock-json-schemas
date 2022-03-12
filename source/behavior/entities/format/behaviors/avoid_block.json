@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.avoid_block",
   "type": "object",
   "title": "Avoid Block",
-  "description": "UNDOCUMENTED",
+  "description": "Makes the entity avoid certain blocks while walking, or run away from it",
   "$comment": "UNDOCUMENTED",
   "additionalProperties": false,
   "properties": {
@@ -12,25 +12,25 @@
     "tick_interval": {
       "type": "integer",
       "title": "Tick Interval",
-      "description": "UNDOCUMENTED",
+      "description": "The amount of ticks between each search",
       "$comment": "UNDOCUMENTED"
     },
     "search_range": {
       "type": "integer",
       "title": "Search Range",
-      "description": "UNDOCUMENTED",
+      "description": "The range of the search in blocks",
       "$comment": "UNDOCUMENTED"
     },
     "search_height": {
       "type": "integer",
       "title": "Search Height",
-      "description": "UNDOCUMENTED",
+      "description": "The height of the search",
       "$comment": "UNDOCUMENTED"
     },
     "sprint_speed_modifier": {
       "type": "number",
       "title": "Sprint Speed Modifier",
-      "description": "UNDOCUMENTED",
+      "description": "The speed modifier to apply when walking away from the block",
       "$comment": "UNDOCUMENTED"
     },
     "target_selection_method": {
@@ -42,13 +42,11 @@
     "target_blocks": {
       "type": "array",
       "title": "Target Blocks",
-      "description": "UNDOCUMENTED",
+      "description": "What blocks are to be avoided",
       "$comment": "UNDOCUMENTED",
       "items": {
-        "type": "string",
         "title": "Block ID",
-        "description": "UNDOCUMENTED",
-        "$comment": "UNDOCUMENTED"
+        "$ref": "../../../../general/block/identifier.json"
       }
     },
     "avoid_block_sound": {
