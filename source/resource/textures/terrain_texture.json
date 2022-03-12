@@ -25,7 +25,7 @@
             "path": { "description": "A texture file", "type": "string", "pattern": "^textures/.+$", "title": "Path" },
             "tint_color": {
               "title": "Tint Color",
-              "description": "UNDOCUMENTED",
+              "description": "The tint color to be applied to the texture",
               "$comment": "UNDOCUMENTED",
               "format": "color-hex",
               "examples": ["#FFFFFF"],
@@ -34,17 +34,17 @@
             "variations": {
               "type": "array",
               "title": "Variantions",
-              "description": "UNDOCUMENTED",
+              "description": "The possible variations to use for this texture",
               "$comment": "UNDOCUMENTED",
               "items": {
                 "type": "object",
                 "title": "Variantion",
-                "description": "UNDOCUMENTED",
+                "description": "One of the variantions, specified along with a possible weight",
                 "$comment": "UNDOCUMENTED",
                 "required": ["path"],
                 "properties": {
                   "path": { "description": "A texture file", "type": "string", "pattern": "^textures/.+$", "title": "Path" },
-                  "weight": { "type": "integer", "title": "Weight", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
+                  "weight": { "type": "integer", "title": "Weight", "description": "The weight of the texture", "$comment": "UNDOCUMENTED" }
                 }
               }
             }
