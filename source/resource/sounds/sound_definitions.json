@@ -41,19 +41,15 @@
             "title": "Sounds",
             "description": "UNDOCUMENTED: sounds",
             "anyOf": [
+              { "type": "string", "$ref": "#/definitions/SoundPath" },
               {
-                "$id": "#/Sound/sounds/stringItem",
-                "type": "string",
-                "$ref": "#/definitions/SoundPath",
-                "description": "UNDOCUMENTED",
+                "title": "Sounds",
+                "description": "A collection of sounds to choice from",
                 "$comment": "UNDOCUMENTED",
-                "title": "Sounds"
-              },
-              {
                 "additionalProperties": false,
-                "$id": "#/Sound/sounds/ObjectItem",
                 "type": "object",
                 "required": ["name"],
+                "examples": [{ "load_on_low_memory": false, "name": "sounds/fx/example" }],
                 "properties": {
                   "is3D": {
                     "description": "UNDOCUMENTED",
@@ -83,10 +79,7 @@
                     "type": "integer",
                     "minimum": 0
                   }
-                },
-                "description": "UNDOCUMENTED",
-                "$comment": "UNDOCUMENTED",
-                "title": "Sounds"
+                }
               }
             ]
           }
