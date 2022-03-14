@@ -35,24 +35,17 @@
     },
     "look_time": {
       "type": "array",
-      "default": [
-        2,
-        4
-      ],
+      "default": [2, 4],
       "description": "Time range to look at the entity",
       "title": "Look Time",
       "items": [
-        {
-          "type": "number"
-        },
-        {
-          "type": "number"
-        }
+        { "type": "number", "title": "Minimum", "description": "The minimum amount of time to look" },
+        { "type": "number", "title": "Maximum", "description": "The maximum amount of time to look" }
       ]
     },
     "target_distance": {
       "type": "number",
-      "description": "UNDOCUMENTED",
+      "description": "The distance to the target or less to be considered",
       "$comment": "UNDOCUMENTED",
       "title": "Target Distance"
     }

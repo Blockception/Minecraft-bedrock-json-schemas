@@ -3,8 +3,8 @@
   "$id": "blockception.minecraft.sound_definition",
   "type": "object",
   "additionalProperties": false,
-  "title": "Sound File For ",
-  "description": "UNDOCUMENTED",
+  "title": "Sound Definitions",
+  "description": "The collection of sound definitions this resourcepack has defined",
   "$comment": "UNDOCUMENTED",
   "definitions": {
     "SoundPath": {
@@ -26,17 +26,17 @@
         "__use_legacy_max_distance": {
           "type": "boolean",
           "title": "Use Legacy Max Distance",
-          "description": "UNDOCUMENTED"
+          "description": "Whenever or not use legacy distance checking"
         },
         "category": {
           "type": "string",
           "title": "Sound Category",
           "enum": ["ambient", "block", "music", "weather", "ui", "bucket", "neutral", "player", "hostile", "record", "bottle"],
-          "description": "UNDOCUMENTED: category"
+          "description": "The category this sound belongs to, for the user to control the volume on"
         },
         "sounds": {
           "title": "Sounds",
-          "description": "UNDOCUMENTED: sounds",
+          "description": "The collection of sounds minecraft can choice from",
           "items": {
             "title": "Sounds",
             "description": "UNDOCUMENTED: sounds",

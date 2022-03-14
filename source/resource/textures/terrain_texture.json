@@ -4,7 +4,7 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Terrain Texture File",
-  "description": "UNDOCUMENTED",
+  "description": "An collection of texture definitions",
   "$comment": "UNDOCUMENTED",
   "definitions": {
     "texture": {

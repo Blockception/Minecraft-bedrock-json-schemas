@@ -3,47 +3,45 @@
   "type": "object",
   "title": "Move To Block",
   "additionalProperties": false,
-  "description": "UNDOCUMENTED",
+  "description": "Makes the entity move towards specified blocks",
   "$comment": "UNDOCUMENTED",
   "required": [],
   "properties": {
-    "priority": {
-      "$ref": "./types/priority.json"
-    },
+    "priority": { "$ref": "./types/priority.json" },
     "tick_interval": {
       "type": "number",
       "title": "Tick Interval",
-      "description": "UNDOCUMENTED",
+      "description": "The amount ticks between each search",
       "$comment": "UNDOCUMENTED"
     },
     "start_chance": {
       "type": "number",
       "title": "Start Chance",
-      "description": "UNDOCUMENTED",
+      "description": "The chance that the entity starts on this block search",
       "$comment": "UNDOCUMENTED"
     },
     "search_range": {
       "type": "number",
       "title": "Search Range",
-      "description": "UNDOCUMENTED",
+      "description": "The range of blocks to search",
       "$comment": "UNDOCUMENTED"
     },
     "search_height": {
       "type": "number",
       "title": "Search Height",
-      "description": "UNDOCUMENTED",
+      "description": "How heigh the search can be, (or low)",
       "$comment": "UNDOCUMENTED"
     },
     "goal_radius": {
       "type": "number",
       "title": "Goal Radius",
-      "description": "UNDOCUMENTED",
+      "description": "The radius when the entity must be within of the block to be considered 'there'",
       "$comment": "UNDOCUMENTED"
     },
     "stay_duration": {
       "type": "number",
       "title": "Stay Duration",
-      "description": "UNDOCUMENTED",
+      "description": "The amount of time the entity stays near the block",
       "$comment": "UNDOCUMENTED"
     },
     "target_selection_method": {
@@ -58,15 +56,9 @@
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "items": [
-        {
-          "type": "number"
-        },
-        {
-          "type": "number"
-        },
-        {
-          "type": "number"
-        }
+        { "type": "number", "title": "X" },
+        { "type": "number", "title": "Y" },
+        { "type": "number", "title": "Z" }
       ]
     },
     "target_blocks": {
@@ -75,13 +67,14 @@
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
       "items": {
+        "$ref": "../../../../general/block/identifier.json",
         "type": "string"
       }
     },
     "on_stay_completed": {
       "type": "array",
       "title": "On Stay Completed",
-      "description": "UNDOCUMENTED",
+      "description": "The events to call whenever this entity has completed it staying duration",
       "$comment": "UNDOCUMENTED",
       "items": {
         "$ref": "../types/event.json"
@@ -90,7 +83,7 @@
     "on_reach": {
       "type": "array",
       "title": "On Reach",
-      "description": "UNDOCUMENTED",
+      "description": "The events to call whenever this entity has reached it goal, but is possibly still staying here",
       "$comment": "UNDOCUMENTED",
       "items": {
         "$ref": "../types/event.json"
@@ -99,17 +92,11 @@
   },
   "examples": [
     {
-      "tick_interval": 0.0,
-      "start_chance": 0.0,
-      "search_range": 0.0,
-      "search_height": 0.0,
-      "goal_radius": 0.0,
-      "stay_duration": 0.0,
-      "target_selection_method": "example",
-      "target_offset": [],
-      "target_blocks": [],
-      "on_stay_completed": [],
-      "on_reach": []
+      "start_chance": 1,
+      "search_range": 32,
+      "goal_radius": 3,
+      "stay_duration": 2,
+      "target_blocks": ["minecraft:chest"]
     }
   ]
 }

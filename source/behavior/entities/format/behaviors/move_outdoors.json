@@ -4,7 +4,7 @@
   "type": "object",
   "title": "Move Outdoors",
   "$comment": "UNDOCUMENTED",
-  "description": "UNDOCUMENTED",
+  "description": "Forces the entity to move `outside`, whatever that means",
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },

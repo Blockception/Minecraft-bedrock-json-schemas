@@ -32,7 +32,7 @@
     "search_radius": {
       "type": "integer",
       "default": 0,
-      "description": "UNDOCUMENTED",
+      "description": "The search radius for the mob to consider",
       "$comment": "UNDOCUMENTED",
       "title": "Search Radius"
     }

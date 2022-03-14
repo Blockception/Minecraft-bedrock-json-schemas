@@ -65,7 +65,7 @@
             "type": "object",
             "additionalProperties": false,
             "title": "Curve",
-            "description": "UNDOCUMENTED",
+            "description": "The curve definitions, conists out of a couple of nodes",
             "$comment": "UNDOCUMENTED",
             "properties": {
               "input": { "$ref": "../../molang/number.json", "title": "Input", "description": "What is the input value to use" },

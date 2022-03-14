@@ -37,13 +37,13 @@
     },
     "can_nap_filters": {
       "$ref": "../../filters/filters.json",
-      "description": "UNDOCUMENTED",
+      "description": "The filters that need to be met for the nap to take place",
       "$comment": "UNDOCUMENTED",
       "title": "Can Nap Filters"
     },
     "wake_mob_exceptions": {
       "$ref": "../../filters/filters.json",
-      "description": "UNDOCUMENTED",
+      "description": "Filters that can trigger the entity to wake up from it nap",
       "$comment": "UNDOCUMENTED",
       "title": "Wake Mob Exceptions"
     }

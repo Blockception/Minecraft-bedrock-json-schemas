@@ -27,7 +27,7 @@
     "npc_data": {
       "type": "object",
       "title": "Npc Data",
-      "description": "UNDOCUMENTED",
+      "description": "The data belonging to this npc",
       "$comment": "UNDOCUMENTED",
       "additionalProperties": false,
       "properties": {
