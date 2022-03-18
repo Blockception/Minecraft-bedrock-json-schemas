@@ -5,7 +5,7 @@
   "description": "Returns true if the actor properties defined were executed.",
   "title": "Entity Properties",
   "properties": {
-    "condition": { "type": "string", "title": "Condition", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "condition": { "type": "string", "title": "Condition", "description": "Returns true if the actor properties defined were executed.", "$comment": "UNDOCUMENTED" },
     "entity": { "type": "string", "default": "this", "description": "The entity to test. The value must be only `this`.", "title": "Entity" },
     "properties": {
       "type": "object",
@@ -14,8 +14,18 @@
       "title": "Properties",
       "additionalProperties": false,
       "properties": {
-        "on_fire": { "title": "On Fire", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "boolean" },
-        "on_ground": { "title": "On Fire", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "boolean" }
+        "on_fire": {
+          "title": "On Fire",
+          "description": "Checks if the entity is on fire or not",
+          "$comment": "UNDOCUMENTED",
+          "type": "boolean"
+        },
+        "on_ground": {
+          "title": "On Ground",
+          "description": "Checks if the entity is on the ground or not",
+          "$comment": "UNDOCUMENTED",
+          "type": "boolean"
+        }
       }
     }
   }
