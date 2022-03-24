@@ -94,7 +94,7 @@
               "examples": [
                 {
                   "animations": ["anim.idle"],
-                  "transition": [{ "example": "query.is_sheared" }]
+                  "transitions": [{ "example": "query.is_sheared" }]
                 }
               ],
               "properties": {
