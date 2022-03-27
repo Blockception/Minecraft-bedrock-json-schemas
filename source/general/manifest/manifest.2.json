@@ -80,7 +80,7 @@
         "description": {
           "title": "Description",
           "type": "string",
-          "default": 0,
+          "default": "",
           "description": "This is a short description of the pack. It will appear in the game below the name of the pack. We recommend keeping it to 1-2 lines."
         },
         "lock_template_options": {

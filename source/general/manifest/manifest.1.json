@@ -64,7 +64,8 @@
           "description": {
             "type": "string",
             "description": "This is a short description of the module. This is not user-facing at the moment but is a good place to remind yourself why the module is defined",
-            "title": "Description"
+            "title": "Description",
+            "default": ""
           },
           "uuid": {
             "$ref": "#/definitions/uuidv4",
