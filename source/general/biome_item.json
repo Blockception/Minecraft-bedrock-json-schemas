@@ -2,6 +2,8 @@
   "$id": "blockception.minecraft.general.1.8.0.biome.item",
   "type": "string",
   "title": "Biome Name",
+  "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
   "enum": [
     "animal",
     "beach",
@@ -40,7 +42,5 @@
     "taiga",
     "the_end",
     "warm"
-  ],
-  "description": "UNDOCUMENTED",
-  "$comment": "UNDOCUMENTED"
+  ]
 }

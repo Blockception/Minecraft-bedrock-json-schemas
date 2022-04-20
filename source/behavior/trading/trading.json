@@ -26,6 +26,15 @@
           "properties": {
             "item": { "type": "string", "title": "Item Identifier" },
             "price_multiplier": { "type": "number", "title": "Price Multiplier" },
+            "functions": { "$ref": "#/definitions/Functions" },
+            "biomes": {
+              "title": "Biomes",
+              "description": "UNDOCUMENTED",
+              "type": "array",
+              "items": {
+                "$ref": "../../general/biome_item.json"
+              }
+            },
             "quantity": {
               "title": "Quantity",
               "oneOf": [
@@ -40,8 +49,7 @@
                   }
                 }
               ]
-            },
-            "functions": { "$ref": "#/definitions/Functions" }
+            }
           }
         }
       ]
