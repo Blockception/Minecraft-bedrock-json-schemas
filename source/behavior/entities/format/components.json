@@ -330,6 +330,7 @@
     "minecraft:behavior.vex_random_move": { "$ref": "./behaviors/vex_random_move.json" },
     "minecraft:behavior.wither_random_attack_pos_goal": { "$ref": "./behaviors/wither_random_attack_pos_goal.json" },
     "minecraft:behavior.wither_target_highest_damage": { "$ref": "./behaviors/wither_target_highest_damage.json" },
-    "minecraft:behavior.work": { "$ref": "./behaviors/work.json" }
+    "minecraft:behavior.work": { "$ref": "./behaviors/work.json" },
+    "minecraft:behavior.work_composter": { "$ref": "./behaviors/work_composter.json" }
   }
 }

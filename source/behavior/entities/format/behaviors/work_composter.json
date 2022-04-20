@@ -1,0 +1,94 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.work_composter",
+  "description": "Allows the NPC to use the composter POI to convert excess seeds into bone meal.",
+  "type": "object",
+  "title": "Work Composter",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "./types/priority.json" },
+    "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },
+    "active_time": {
+      "title": "Active Time",
+      "type": "integer",
+      "default": 0,
+      "description": "The amount of ticks the NPC will stay in their the work location"
+    },
+    "block_interaction_max": {
+      "title": "Block Interaction Max",
+      "type": "integer",
+      "default": 1,
+      "description": "The maximum number of times the mob will interact with the composter."
+    },
+    "can_empty_composter": {
+      "title": "Can Empty Composter",
+      "type": "boolean",
+      "default": true,
+      "description": "Determines whether the mob can empty a full composter."
+    },
+    "can_fill_composter": {
+      "title": "Can Fill Composter",
+      "type": "boolean",
+      "default": true,
+      "description": "Determines whether the mob can add items to a composter given that it is not full."
+    },
+    "can_work_in_rain": {
+      "title": "Can Work In Rain",
+      "type": "boolean",
+      "default": false,
+      "description": "If true, this entity can work when their jobsite POI is being rained on."
+    },
+    "goal_cooldown": {
+      "title": "Goal Cooldown",
+      "type": "integer",
+      "default": 0,
+      "description": "The amount of ticks the goal will be on cooldown before it can be used again"
+    },
+    "items_per_use_max": {
+      "title": "Items Per Use Max",
+      "type": "integer",
+      "default": 20,
+      "description": "The maximum number of items which can be added to the composter per block interaction."
+    },
+    "min_item_count": {
+      "title": "Min Item Count",
+      "type": "integer",
+      "default": 10,
+      "description": "Limits the amount of each compostable item the mob can use. Any amount held over this number will be composted if possible"
+    },
+    "on_arrival": {
+      "title": "On Arrival",
+      "type": "trigger",
+      "description": "Event to run when the mob reaches their jobsite."
+    },
+    "sound_delay_max": {
+      "title": "Sound Delay Max",
+      "type": "integer",
+      "description": "Unused."
+    },
+    "sound_delay_min": {
+      "title": "Sound Delay Min",
+      "type": "integer",
+      "description": "Unused."
+    },
+    "use_block_max": {
+      "title": "Use Block Max",
+      "type": "integer",
+      "default": 200,
+      "description": "The maximum interval in which the mob will interact with the composter."
+    },
+    "use_block_min": {
+      "title": "Use Block Min",
+      "type": "integer",
+      "default": 100,
+      "description": "The minimum interval in which the mob will interact with the composter."
+    },
+    "work_in_rain_tolerance": {
+      "title": "Work In Rain Tolerance",
+      "type": "integer",
+      "default": -1,
+      "description": "If \"can_work_in_rain\" is false, this is the maximum number of ticks left in the goal where rain will not interrupt the goal"
+    }
+  },
+  "examples": [{}]
+}

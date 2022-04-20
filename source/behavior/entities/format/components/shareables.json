@@ -97,6 +97,12 @@
             "type": "integer",
             "description": "Number of this item this entity wants to have.",
             "title": "Want Amount"
+          },
+          "pickup_only": {
+            "title": "Pickup Only",
+            "type": "boolean",
+            "description": "Determines whether the mob can only pickup the item and not drop it.",
+            "default": false
           }
         }
       }
