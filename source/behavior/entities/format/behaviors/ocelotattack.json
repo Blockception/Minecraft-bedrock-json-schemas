@@ -9,65 +9,66 @@
     "priority": {
       "$ref": "./types/priority.json"
     },
-    "walk_speed_multiplier": {
-      "type": "number",
-      "default": 1.0,
-      "description": "Multiplier for the walking speed while using this attack",
-      "title": "Walk Speed Multiplier"
-    },
-    "sprint_speed_multiplier": {
-      "type": "number",
-      "default": 1.0,
-      "description": "Multiplier for the running speed of this mob while using this attack",
-      "title": "Sprint Speed Multiplier"
-    },
-    "sneak_speed_multiplier": {
-      "type": "number",
-      "default": 1.0,
-      "description": "Multiplier for the sneaking speed. 1.0 means the ocelot will move at the speed it normally sneaks",
-      "title": "Sneak Speed Multiplier"
-    },
+
     "cooldown_time": {
-      "type": "number",
       "title": "Cooldown Time",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
-    },
-    "x_max_rotation": {
       "type": "number",
-      "title": "X Maximum Rotation",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
-    },
-    "y_max_head_rotation": {
-      "type": "number",
-      "title": "Y Maximum Head Rotation",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
+      "default": 1,
+      "description": "Time (in seconds) between attacks."
     },
     "max_distance": {
+      "title": "Max Distance",
       "type": "number",
-      "title": "Maximum Distance",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
+      "default": 15,
+      "description": "Max distance from the target, this entity will use this attack behavior."
     },
     "max_sneak_range": {
+      "title": "Max Sneak Range",
       "type": "number",
-      "title": "Maximum Sneak Range",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
+      "default": 15,
+      "description": "Max distance from the target, this entity starts sneaking."
     },
     "max_sprint_range": {
+      "title": "Max Sprint Range",
       "type": "number",
-      "title": "Maximum Sprint Range",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
+      "default": 4,
+      "description": "Max distance from the target, this entity starts sprinting (sprinting takes priority over sneaking)."
     },
     "reach_multiplier": {
-      "type": "number",
       "title": "Reach Multiplier",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
+      "type": "number",
+      "default": 2,
+      "description": "Used with the base size of the entity to determine minimum target-distance before trying to deal attack damage."
+    },
+    "sneak_speed_multiplier": {
+      "title": "Sneak Speed Multiplier",
+      "type": "number",
+      "default": 0.6,
+      "description": "Modifies the attacking entity's movement speed while sneaking."
+    },
+    "sprint_speed_multiplier": {
+      "title": "Sprint Speed Multiplier",
+      "type": "number",
+      "default": 1.33,
+      "description": "Modifies the attacking entity's movement speed while sprinting."
+    },
+    "walk_speed_multiplier": {
+      "title": "Walk Speed Multiplier",
+      "type": "number",
+      "default": 0.8,
+      "description": "Modifies the attacking entity's movement speed when not sneaking or sprinting, but still within attack range."
+    },
+    "x_max_rotation": {
+      "title": "X Max Rotation",
+      "type": "number",
+      "default": 30,
+      "description": "Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target."
+    },
+    "y_max_head_rotation": {
+      "title": "Y Max Head Rotation",
+      "type": "number",
+      "default": 30,
+      "description": "Maximum rotation (in degrees), on the Y-axis, this entity can rotate its head while trying to look at the target."
     }
   },
   "examples": [

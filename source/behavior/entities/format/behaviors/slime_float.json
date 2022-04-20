@@ -1,22 +1,18 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.slime_float",
   "additionalProperties": false,
-  "description": "Can only be used by Slimes and Magma Cubes. Controls their ability to float in water / lava.",
+  "description": "Allow slimes to float in water / lava. Can only be used by Slime and Magma Cubes.",
   "type": "object",
   "title": "Slime Float",
   "required": [],
   "properties": {
-    "priority": {
-      "$ref": "types/priority.json"
-    },
-    "speed_multiplier": {
-      "$ref": "types/speed_multiplier.json"
-    },
+    "priority": { "$ref": "types/priority.json" },
+    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
     "jump_chance_percentage": {
       "type": "number",
-      "title": "Sink Delta",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
+      "title": "Jump Chance Percentage",
+      "default": 0.8,
+      "description": "Percent chance a slime or magma cube has to jump while in water / lava."
     }
   },
   "examples": [

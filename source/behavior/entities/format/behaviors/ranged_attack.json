@@ -6,78 +6,97 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": {
-      "$ref": "types/priority.json"
-    },
-    "speed_multiplier": {
-      "$ref": "types/speed_multiplier.json"
-    },
+    "priority": { "$ref": "types/priority.json" },
+    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
     "attack_interval": {
+      "title": "Attack Interval",
       "type": "number",
       "default": 0,
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
-      "title": "Attack Interval"
+      "description": "Alternative to \"attack_interval_min\" & \"attack_interval_max\". Consistent reload-time (in seconds), when not using a charged shot. Does not scale with target-distance."
     },
     "attack_interval_max": {
+      "title": "Attack Interval Max",
       "type": "number",
       "default": 0,
-      "description": "Maximum amount of time in seconds the entity will wait after an attack before launching another",
-      "title": "Attack Interval Maximum"
+      "description": "Maximum bound for reload-time range (in seconds), when not using a charged shot. Reload-time range scales with target-distance."
     },
     "attack_interval_min": {
+      "title": "Attack Interval Min",
       "type": "number",
       "default": 0,
-      "description": "Minimum amount of time in seconds the entity will wait after an attack before launching another",
-      "title": "Attack Interval Minimum"
+      "description": "Minimum bound for reload-time range (in seconds), when not using a charged shot. Reload-time range scales with target-distance."
     },
     "attack_radius": {
+      "title": "Attack Radius",
       "type": "number",
       "default": 0,
-      "description": "Maximum distance the target can be for this mob to fire. If the target is further away, this mob will move first before firing",
-      "title": "Attack Radius"
-    },
-    "burst_interval": {
-      "type": "number",
-      "default": 0,
-      "description": "Amount of time in seconds between each individual shot when firing multiple shots per attack",
-      "title": "Burst Interval"
-    },
-    "burst_shots": {
-      "type": "integer",
-      "default": 1,
-      "description": "Number of shots fired every time the mob uses a charged attack",
-      "title": "Burst Shots"
-    },
-    "charge_charged_trigger": {
-      "type": "number",
-      "default": 0,
-      "description": "The minimum amount of time in ticks the mob has to charge before firing a charged attack",
-      "title": "Charge Charged Trigger"
-    },
-    "charge_shoot_trigger": {
-      "type": "number",
-      "default": 0,
-      "description": "The minimum amount of time in ticks for the mob to start charging a charged shot. Must be greater than 0 to enable burst shots",
-      "title": "Charge Shoot Trigger"
-    },
-    "ranged_fov": {
-      "type": "number",
-      "default": 90,
-      "description": "The allowable FOV the actor will use to determine if it can make a valid ranged attack",
-      "title": "Ranged FOV"
-    },
-    "target_in_sight_time": {
-      "type": "number",
-      "title": "Target In Sight Time",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
+      "description": "Minimum distance to target before this entity will attempt to shoot."
     },
     "attack_radius_min": {
-      "type": "number",
       "title": "Attack Radius Min",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
+      "type": "number",
+      "default": 0,
+      "description": "Minimum distance the target can be for this mob to fire. If the target is closer, this mob will move first before firing"
+    },
+    "burst_interval": {
+      "title": "Burst Interval",
+      "type": "number",
+      "default": 0,
+      "description": "Time (in seconds) between each individual shot when firing a burst of shots from a charged up attack."
+    },
+    "burst_shots": {
+      "title": "Burst Shots",
+      "type": "integer",
+      "default": 1,
+      "description": "Number of shots fired every time the attacking entity uses a charged up attack."
+    },
+    "charge_charged_trigger": {
+      "title": "Charge Charged Trigger",
+      "type": "number",
+      "default": 0,
+      "description": "Time (in seconds, then add \"charge_shoot_trigger\"), before a charged up attack is done charging. Charge-time decays while target is not in sight."
+    },
+    "charge_shoot_trigger": {
+      "title": "Charge Shoot Trigger",
+      "type": "number",
+      "default": 0,
+      "description": "Amount of time (in seconds, then doubled) a charged shot must be charging before reloading burst shots. Charge-time decays while target is not in sight."
+    },
+    "ranged_fov": {
+      "title": "Ranged Fov",
+      "type": "number",
+      "default": 90,
+      "description": "Field of view (in degrees) when using sensing to detect a target for attack."
+    },
+    "set_persistent": {
+      "title": "Set Persistent",
+      "type": "boolean",
+      "default": false,
+      "description": "Allows the actor to be set to persist upon targeting a player"
+    },
+    "swing": {
+      "title": "Swing",
+      "type": "boolean",
+      "default": false,
+      "description": "If a swing animation (using variable.attack_time) exists, this causes the actor to swing their arm(s) upon firing the ranged attack."
+    },
+    "target_in_sight_time": {
+      "title": "Target In Sight Time",
+      "type": "number",
+      "default": 1,
+      "description": "Minimum amount of time (in seconds) the attacking entity needs to see the target before moving toward it."
+    },
+    "x_max_rotation": {
+      "title": "X Max Rotation",
+      "type": "number",
+      "default": 30,
+      "description": "Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target."
+    },
+    "y_max_head_rotation": {
+      "title": "Y Max Head Rotation",
+      "type": "number",
+      "default": 30,
+      "description": "Maximum rotation (in degrees), on the Y-axis, this entity can rotate its head while trying to look at the target."
     }
   },
   "examples": [

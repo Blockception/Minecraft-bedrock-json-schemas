@@ -2,8 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.move_towards_home_restriction",
   "type": "object",
   "title": "Move Towards Home Restriction",
-  "description": "UNDOCUMENTED",
-  "$comment": "UNDOCUMENTED",
+  "description": "Allows mobs with the home component to move toward their pre-defined area that the mob should be restricted to.",
   "additionalProperties": false,
   "properties": {
     "priority": {

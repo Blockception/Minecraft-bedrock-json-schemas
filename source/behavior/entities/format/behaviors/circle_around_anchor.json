@@ -3,25 +3,15 @@
   "type": "object",
   "title": "Circle Around Anchor",
   "additionalProperties": false,
-  "description": "Allows the mob to move in a circle around a point or a target.",
+  "description": "Causes an entity to circle around an anchor point placed near a point or target.",
   "required": [],
   "properties": {
-    "priority": {
-      "$ref": "./types/priority.json"
-    },
-    "speed_multiplier": {
-      "type": "number",
-      "default": 1.0,
-      "description": "Movement speed multiplier of the mob when using this AI Goal",
-      "title": "Speed Multiplier"
-    },
+    "priority": { "$ref": "./types/priority.json" },
+    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
     "radius_range": {
       "$ref": "../types/range_number_type.json",
-      "default": [
-        5.0,
-        15.0
-      ],
-      "description": "Range of radius in blocks of the circle to move around.",
+      "default": [5.0, 15.0],
+      "description": "Horizontal distance from the anchor point this entity must stay within upon a successful radius adjustment.",
       "title": "Radius Range"
     },
     "radius_change_chance": {
@@ -32,19 +22,13 @@
     },
     "height_above_target_range": {
       "$ref": "../types/range_number_type.json",
-      "default": [
-        0.0,
-        0.0
-      ],
-      "description": "When the mob finds a target, the range of height in blocks above the target to start the anchor point.",
+      "default": [0.0, 0.0],
+      "description": "The number of blocks above the target that the next anchor point can be set. This value is used only when the entity is tracking a target.",
       "title": "Height Above Target Range"
     },
     "height_offset_range": {
       "$ref": "../types/range_number_type.json",
-      "default": [
-        0.0,
-        0.0
-      ],
+      "default": [0.0, 0.0],
       "description": "The range of height in blocks offset the mob can have from it's anchor point.",
       "title": "Height Offset Range"
     },
@@ -57,32 +41,28 @@
     "goal_radius": {
       "type": "number",
       "default": 0.5,
-      "description": "Distance in blocks within the mob considers it has reached the goal. This is the `wiggle room` to stop the AI from bouncing back and forth trying to reach a specific spot",
+      "description": "Maximum distance from the anchor-point in which this entity considers itself to have reached the anchor point. This is to prevent the entity from bouncing back and forth trying to reach a specific spot.",
       "title": "Goal Radius"
     },
     "radius_change": {
       "type": "number",
       "title": "Radius Change",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
+      "description": "The number of blocks to increase the current movement radius by, upon successful `radius_adjustment_chance`. If the current radius increases over the range maximum, the current radius will be set back to the range minimum and the entity will change between clockwise and counter-clockwise movement."
     },
     "radius_adjustment_chance": {
       "type": "number",
       "title": "Radius Adjustment Chance",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
+      "description": "Percent chance to determine how often to increase the size of the current movement radius around the anchor point. 1 = 100%. `radius_change_chance` is deprecated and has been replaced with `radius_adjustment_chance`."
     },
     "height_adjustment_chance": {
       "type": "number",
       "title": "Height Adjustment Chance",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
+      "description": "Percent chance to determine how often to increase or decrease the current height around the anchor point. 1 = 100%. `height_change_chance` is deprecated and has been replaced with `height_adjustment_chance`."
     },
     "angle_change": {
       "type": "number",
       "title": "Angle Change",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
+      "description": "Number of degrees to change this entity's facing by, when the entity selects its next anchor point."
     }
   },
   "examples": [

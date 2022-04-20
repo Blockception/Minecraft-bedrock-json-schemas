@@ -2,27 +2,25 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.celebrate",
   "type": "object",
   "title": "Celebrate",
-  "description": "This allows the mob celebrate by jumping up and playing a sound periodically.",
+  "description": "Allows this entity to celebrate surviving a raid by making celebration sounds and jumping.",
   "additionalProperties": false,
   "properties": {
-    "priority": {
-      "$ref": "types/priority.json"
-    },
+    "priority": { "$ref": "types/priority.json" },
     "celebration_sound": {
       "type": "string",
       "default": "",
-      "description": "The sound to occasionally play.",
+      "description": "The sound event to trigger during the celebration.",
       "title": "Celebration Sound"
     },
     "duration": {
       "type": "number",
-      "default": 1,
-      "description": "The duration of the celebration (in seconds).",
+      "default": 30,
+      "description": "The duration in seconds that the celebration lasts for.",
       "title": "Duration"
     },
     "jump_interval": {
-      "default": 0,
-      "description": "The range of time in seconds to randomly wait before jumping again.",
+      "default": [1, 3.5],
+      "description": "Minimum and maximum time between jumping (positive, in seconds).",
       "title": "Jump Interval",
       "oneOf": [
         {
@@ -62,38 +60,9 @@
     },
     "sound_interval": {
       "default": 0,
-      "description": "The range of time in seconds to randomly wait before playing the sound again.",
+      "description": "Minimum and maximum time between sound events (positive, in seconds).",
       "title": "Sound Interval",
-      "oneOf": [
-        {
-          "type": "array",
-          "items": [
-            {
-              "type": "number",
-              "title": "Maximum"
-            },
-            {
-              "type": "number",
-              "title": "Maximum"
-            }
-          ]
-        },
-        {
-          "type": "number"
-        },
-        {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "range_min": {
-              "type": "number"
-            },
-            "range_max": {
-              "type": "number"
-            }
-          }
-        }
-      ]
+      "$ref": "../types/range_number_type.json"
     }
   },
   "examples": [

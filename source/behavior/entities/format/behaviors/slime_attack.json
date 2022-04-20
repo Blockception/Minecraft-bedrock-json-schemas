@@ -5,14 +5,25 @@
   "type": "object",
   "title": "Slime Attack",
   "properties": {
-    "priority": {
-      "$ref": "./types/priority.json"
-    },
+    "priority": { "$ref": "./types/priority.json" },
+    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
     "set_persistent": {
+      "title": "Set Persistent",
       "type": "boolean",
       "default": false,
-      "description": "Allows the actor to be set to persist upon targeting a player",
-      "title": "Set Persistent"
+      "description": "Allows the actor to be set to persist upon targeting a player"
+    },
+    "x_max_rotation": {
+      "title": "X Max Rotation",
+      "type": "number",
+      "default": 10,
+      "description": "Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target."
+    },
+    "y_max_rotation": {
+      "title": "Y Max Rotation",
+      "type": "number",
+      "default": 10,
+      "description": "Maximum rotation (in degrees), on the Y-axis, this entity can rotate while trying to look at the target."
     }
   },
   "examples": [

@@ -6,29 +6,25 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": {
-      "$ref": "types/priority.json"
-    },
-    "speed_multiplier": {
-      "$ref": "types/speed_multiplier.json"
-    },
+    "priority": { "$ref": "types/priority.json" },
+    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
     "interval": {
-      "type": "number",
       "title": "Interval",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
+      "type": "number",
+      "default": 0.00833,
+      "description": "Percent chance to start wandering, when not path-finding. 1 = 100%"
     },
     "look_ahead": {
-      "type": "number",
       "title": "Look Ahead",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
+      "type": "number",
+      "default": 5,
+      "description": "Distance to look ahead for obstacle avoidance, while wandering."
     },
     "wander_time": {
-      "type": "number",
       "title": "Wander Time",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
+      "type": "number",
+      "default": 5,
+      "description": "Amount of time (in seconds) to wander after wandering behavior was successfully started."
     }
   },
   "examples": [

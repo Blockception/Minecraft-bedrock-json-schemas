@@ -3,7 +3,7 @@
   "type": "object",
   "title": "Move Towards Dwelling Restriction",
   "additionalProperties": false,
-  "description": "UNDOCUMENTED, comes from cat",
+  "description": "Allows mobs with the dweller component to move toward their Village area that the mob should be restricted to.",
   "required": [],
   "properties": {
     "priority": {

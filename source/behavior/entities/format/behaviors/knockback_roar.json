@@ -9,16 +9,21 @@
       "$ref": "./types/priority.json"
     },
     "attack_time": {
+      "title": "Attack Time",
       "type": "number",
-      "default": 0.5,
-      "description": "The delay after which the knockback occurs (in seconds).",
-      "title": "Attack Time"
+      "default": 1.0,
+      "description": "The delay after which the knockback occurs (in seconds)."
     },
     "cooldown_time": {
+      "title": "Cooldown Time",
       "type": "number",
       "default": 0,
-      "description": "Time in seconds the mob has to wait before using the goal again",
-      "title": "Cooldown Time"
+      "description": "Time in seconds the mob has to wait before using the goal again"
+    },
+    "damage_filters": {
+      "$ref": "../../filters/filters.json",
+      "description": "The list of conditions another entity must meet to be a valid target to apply damage to.",
+      "title": "Damage Filters"
     },
     "duration": {
       "type": "number",
@@ -31,6 +36,17 @@
       "default": 6,
       "description": "The damage dealt by the knockback roar.",
       "title": "Knockback Damage"
+    },
+    "knockback_strength": {
+      "type": "integer",
+      "default": 4,
+      "description": "The strength of the knockback.",
+      "title": "Knockback Strength"
+    },
+    "knockback_filters": {
+      "$ref": "../../filters/filters.json",
+      "description": "The list of conditions another entity must meet to be a valid target to apply knockback to.",
+      "title": "Knockback Filters"
     },
     "knockback_horizontal_strength": {
       "type": "integer",
@@ -50,31 +66,21 @@
       "description": "The strength of the vertical knockback.",
       "title": "Knockback Vertical Strength"
     },
+    "knockback_height_cap": {
+      "title": "Knockback Height Cap",
+      "type": "number",
+      "default": 0.4,
+      "description": "The maximum height for vertical knockback."
+    },
     "track_target": {
       "type": "boolean",
       "default": false,
       "description": "If true, this mob will chase after the target as long as it's a valid target",
       "title": "Track Target"
     },
-    "knockback_strength": {
-      "type": "integer",
-      "default": 4,
-      "description": "The strength of the knockback.",
-      "title": "Knockback Strength"
-    },
-    "knockback_filters": {
-      "$ref": "../../filters/filters.json",
-      "description": "filters to use to decide what is affected by knockback roar.",
-      "title": "Knockback Filters"
-    },
-    "damage_filters": {
-      "$ref": "../../filters/filters.json",
-      "description": "filters to use to decide what is damaged by knockback roar.",
-      "title": "Damage Filters"
-    },
     "on_roar_end": {
       "$ref": "../types/event.json",
-      "description": "Event to run when knockback roar has finished.",
+      "description": "Event that is triggered when the roar ends.",
       "title": "On Roar End"
     }
   },

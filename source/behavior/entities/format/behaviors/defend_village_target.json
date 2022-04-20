@@ -3,14 +3,13 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Defend Village Target",
-  "description": "Allows the mob to stay in the village and fight mobs hostile to the villagers.",
+  "description": "Allows the entity to stay in a village and defend the village from aggressors. If a player is in bad standing with the village this goal will cause the entity to attack the player regardless of filter conditions.",
   "properties": {
-    "priority": {
-      "$ref": "./types/priority.json"
-    },
+    "priority": { "$ref": "./types/priority.json" },
     "entity_types": {
       "$ref": "../types/entity_types.json",
       "description": "List of entity types this mob considers a threat to the village",
+      "$comment": "UNDOCUMENTED",
       "title": "Entity Types"
     },
     "must_reach": {
@@ -21,9 +20,9 @@
     },
     "attack_chance": {
       "title": "Attack Chance",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
-      "type": "number"
+      "description": "The percentage chance that the entity has to attack aggressors of its village, where 1.0 = 100%.",
+      "type": "number",
+      "default": 0.05
     }
   },
   "examples": [

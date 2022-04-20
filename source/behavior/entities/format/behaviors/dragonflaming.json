@@ -7,6 +7,30 @@
   "properties": {
     "priority": {
       "$ref": "./types/priority.json"
+    },
+    "cooldown_time": {
+      "title": "Cooldown Time",
+      "type": "number",
+      "default": 10,
+      "description": "Time (in seconds), after roar, to breath flame."
+    },
+    "flame_time": {
+      "title": "Flame Time",
+      "type": "number",
+      "default": 0.5,
+      "description": "Time (in seconds), after roar, to breath flame."
+    },
+    "ground_flame_count": {
+      "title": "Ground Flame Count",
+      "type": "integer",
+      "default": 4,
+      "description": "Number of ground flame-breath attacks to use before flight-takeoff."
+    },
+    "roar_time": {
+      "title": "Roar Time",
+      "type": "number",
+      "default": 2,
+      "description": "Time (in seconds) to roar, before breathing flame."
     }
   }
 }

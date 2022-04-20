@@ -15,7 +15,7 @@
     "timeout_cooldown": {
       "type": "number",
       "default": 8,
-      "description": "The cooldown time in seconds before the goal can be reused after a internal failure or timeout condition",
+      "description": "The cooldown time in seconds before the goal can be reused after pathfinding fails",
       "title": "Timeout Cooldown"
     }
   },

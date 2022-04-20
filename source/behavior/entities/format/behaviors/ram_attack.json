@@ -10,100 +10,74 @@
       "$ref": "types/priority.json"
     },
     "baby_knockback_modifier": {
-      "type": "integer",
-      "default": 4,
-      "description": "The modifier to knockback for baby mobs.",
-      "title": "Baby Knockback Modifier"
+      "title": "Baby Knockback Modifier",
+      "type": "number",
+      "default": 0.333333,
+      "description": "The modifier to knockback that babies have."
     },
     "cooldown_range": {
-      "type": "array",
-      "default": [
-        10.0,
-        20.0
-      ],
-      "description": "The minimum and maximum cooldown time-range in seconds between each attempted ram attack.",
       "title": "Cooldown Range",
-      "items": [
-        {
-          "title": "Minimum",
-          "description": "Minimum",
-          "type": "number",
-          "minimum": 0
-        },
-        {
-          "title": "Maximum",
-          "description": "Maximum",
-          "type": "number",
-          "minimum": 0
-        }
-      ]
+      "$ref": "../types/range_number_type.json",
+      "default": [10, 20],
+      "description": "Minimum and maximum cooldown time-range (positive, in seconds) between each attempted ram attack."
     },
     "knockback_force": {
+      "title": "Knockback Force",
       "type": "number",
-      "default": 5,
-      "description": "The force of the knockback of the ram's attack.",
-      "title": "Knockback Force"
+      "default": 5000000,
+      "description": "The force of the knockback of the ram attack."
     },
     "knockback_height": {
+      "title": "Knockback Height",
       "type": "number",
       "default": 0.1,
-      "description": "The height in blocks of the knockback of the ram attack.",
-      "title": "Knockback Height"
+      "description": "The height of the knockback of the ram attack."
     },
     "min_ram_distance": {
-      "type": "integer",
-      "default": 4,
-      "description": "The minimum distance in blocks at which the mob can start a ram attack.",
-      "title": "Min Ram Distance"
+      "title": "Min Ram Distance",
+      "type": "number",
+      "default": 0.0,
+      "description": "The minimum distance at which the mob can start a ram attack."
+    },
+    "on_start": {
+      "title": "On Start",
+      "$ref": "../types/trigger.json",
+      "description": "The event to trigger when attacking"
     },
     "pre_ram_sound": {
+      "title": "Pre Ram Sound",
       "type": "string",
-      "description": "The sound to play when the mob is about to perform a ram attack.",
-      "title": "Pre Ram Sound"
+      "default": "",
+      "description": "The sound to play when an entity is about to perform a ram attack."
     },
     "ram_distance": {
-      "type": "integer",
-      "default": 7,
-      "description": "The distance in blocks at which the mob will start to ram its target.",
-      "title": "Ram Distance"
+      "title": "Ram Distance",
+      "type": "number",
+      "default": 0.0,
+      "description": "The distance at which the mob start to run with ram speed."
     },
     "ram_impact_sound": {
+      "title": "Ram Impact Sound",
       "type": "string",
-      "description": "The sound to play when the mob hits the target with a ram attack .",
-      "title": "Ram Impact Sound"
+      "default": "",
+      "description": "The sound to play when an entity is impacting on a ram attack."
     },
     "ram_speed": {
+      "title": "Ram Speed",
       "type": "number",
-      "default": 2,
-      "description": "Sets the mob's speed when performing a ram attack toward the target.",
-      "title": "Ram Speed"
+      "default": 2000000,
+      "description": "Sets the entity's speed when charging toward the target."
     },
     "run_speed": {
+      "title": "Run Speed",
       "type": "number",
-      "default": 1,
-      "description": "Sets the mob's speed when running toward the target.",
-      "title": "Run Speed"
+      "default": 1000000,
+      "description": "Sets the entity's speed when running toward the target."
     },
     "trigger": {
       "description": "The event to trigger when attacking.",
       "title": "Trigger",
       "$ref": "../types/trigger.json"
-    },
-    "on_start": {
-      "title": "On Start",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
-      "oneOf": [
-        {
-          "$ref": "../types/event.json"
-        },
-        {
-          "type": "array",
-          "items": {
-            "$ref": "../types/event.json"
-          }
-        }
-      ]
     }
   },
   "examples": [

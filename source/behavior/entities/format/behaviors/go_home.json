@@ -5,12 +5,8 @@
   "title": "Go Home",
   "type": "object",
   "properties": {
-    "priority": {
-      "$ref": "types/priority.json"
-    },
-    "speed_multiplier": {
-      "$ref": "types/speed_multiplier.json"
-    },
+    "priority": { "$ref": "types/priority.json" },
+    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
     "goal_radius": {
       "type": "number",
       "default": 0.5,
@@ -24,15 +20,20 @@
       "title": "Interval"
     },
     "on_home": {
-      "description": "Event to run when this mob gets home.",
+      "description": "Event(s) to run when this mob gets home.",
       "title": "On Home",
       "oneOf": [{ "$ref": "../types/trigger.json" }, { "type": "array", "items": { "$ref": "../types/trigger.json" } }]
     },
     "on_failed": {
       "title": "On Failed",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
+      "description": "Event(s) to run when this goal fails.",
       "oneOf": [{ "$ref": "../types/event.json" }, { "type": "array", "items": { "$ref": "../types/event.json" } }]
+    },
+    "calculate_new_path_radius": {
+      "title": "Calculate New Path Radius",
+      "type": "number",
+      "default": 2.0,
+      "description": "Distance in blocks that the mob is considered close enough to the end of the current path. A new path will then be calculated to continue toward home."
     }
   },
   "examples": [

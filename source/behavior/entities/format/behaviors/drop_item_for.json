@@ -1,157 +1,105 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.drop_item_for",
   "additionalProperties": false,
-  "description": "Allows the mob to move near a target and drop an item.",
+  "description": "Allows the entity to move toward a target, and drop an item near the target. This goal requires a \"minecraft:navigation\" to execute.",
   "title": "Drop Item For",
   "type": "object",
   "properties": {
-    "priority": {
-      "$ref": "types/priority.json"
-    },
-    "speed_multiplier": {
-      "$ref": "types/speed_multiplier.json"
-    },
-    "cooldown": {
-      "title": "Cooldown",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
-      "type": "number"
-    },
-    "drop_item_chance": {
-      "type": "number",
-      "default": [
-        1.0
-      ],
-      "description": "The probability that the mob will drop an item.",
-      "title": "Drop Item Chance"
-    },
+    "priority": { "$ref": "types/priority.json" },
+    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
     "entity_types": {
-      "description": "List of entity types this mob will drop items for.",
+      "description": "The list of conditions another entity must meet to be a valid target to drop an item for.",
       "title": "Entity Types",
       "$ref": "../types/entity_types.json"
     },
+    "cooldown": {
+      "title": "Cooldown",
+      "type": "number",
+      "default": 0.2,
+      "description": "Total time that the goal is on cooldown before it can be used again."
+    },
+    "drop_item_chance": {
+      "title": "Drop Item Chance",
+      "type": "number",
+      "default": 1.0,
+      "description": "The percent chance the entity will drop an item when using this goal."
+    },
     "goal_radius": {
+      "title": "Goal Radius",
       "type": "number",
       "default": 0.5,
-      "description": "Distance in blocks within the mob considers it has reached the goal. This is the `wiggle room` to stop the AI from bouncing back and forth trying to reach a specific spot",
-      "title": "Goal Radius"
+      "description": "Distance in blocks within the entity considers it has reached it's target position."
     },
     "loot_table": {
+      "title": "Loot Table",
       "type": "string",
-      "pattern": "^loot_tables.*\\.json$",
-      "description": "Loot table to select items from.",
-      "title": "Loot Table"
+      "description": "The loot table that contains the possible loot the entity can drop with this goal.",
+      "examples": ["loot_tables/"]
     },
-    "max_dist": {
+    "max_head_look_at_height": {
+      "title": "Max Head Look At Height",
       "type": "number",
-      "default": 0,
-      "description": "Maximum distance in blocks this mob will look for entities to drop an item for.",
-      "title": "Maximum Dist"
+      "default": 10.0,
+      "description": "The maximum height the entities head will look at when dropping the item. The entity will always be looking at its target."
     },
     "minimum_teleport_distance": {
       "title": "Minimum Teleport Distance",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
-      "type": "number"
-    },
-    "max_head_look_at_height": {
-      "title": "Maximum Head Look At Height",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
-      "type": "number"
+      "type": "number",
+      "default": 2.0,
+      "description": "If the target position is farther away than this distance on any tick, the entity will teleport to the target position."
     },
     "offering_distance": {
+      "title": "Offering Distance",
       "type": "number",
-      "default": [
-        1.0
-      ],
-      "description": "The distance in blocks the mob will try to be away from the entity when it drops the item.",
-      "title": "Offering Distance"
+      "default": 1.0,
+      "description": "The preferred distance the entity tries to be from the target it is dropping an item for."
     },
     "on_drop_attempt": {
-      "$ref": "../types/event.json",
-      "description": "Event to run when this mob attempts to drop an item.",
-      "title": "On Drop Attempt"
+      "title": "On Drop Attempt",
+      "$ref": "../types/trigger.json",
+      "description": "The event to trigger when the entity attempts to drop an item."
+    },
+    "search_count": {
+      "title": "Search Count",
+      "type": "integer",
+      "default": 0,
+      "description": "The number of blocks each tick that the entity will check within its search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick."
+    },
+    "search_height": {
+      "title": "Search Height",
+      "type": "integer",
+      "default": 1,
+      "description": "The Height in blocks the entity will search within to find a valid target position."
+    },
+    "search_range": {
+      "title": "Search Range",
+      "type": "integer",
+      "default": 0,
+      "description": "The distance in blocks the entity will search within to find a valid target position."
     },
     "seconds_before_pickup": {
       "title": "Seconds Before Pickup",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
-      "type": "number"
-    },
-    "search_count": {
-      "type": "integer",
-      "default": 1,
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
-      "title": "Search Height"
-    },
-    "search_height": {
-      "type": "integer",
-      "default": 1,
-      "description": "Height in blocks from the target the mob can be.",
-      "title": "Search Height"
-    },
-    "search_range": {
-      "type": "integer",
-      "default": 0,
-      "description": "The distance in blocks from the target the mob can be.",
-      "title": "Search Range"
+      "type": "number",
+      "default": 0.0,
+      "description": "The numbers of seconds that will pass before the dropped entity can be picked up from the ground."
     },
     "target_range": {
       "title": "Target Range",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
-      "type": "array",
-      "items": [
-        {
-          "type": "number"
-        },
-        {
-          "type": "number"
-        },
-        {
-          "type": "number"
-        }
-      ]
+      "$ref": "../../../../general/vectors/number3.json",
+      "default": [1, 1, 1],
+      "description": "The range in blocks within which the entity searches to find a target to drop an item for."
     },
     "teleport_offset": {
       "title": "Teleport Offset",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
-      "type": "array",
-      "items": [
-        {
-          "type": "number"
-        },
-        {
-          "type": "number"
-        },
-        {
-          "type": "number"
-        }
-      ]
+      "$ref": "../../../../general/vectors/number3.json",
+      "default": [0, 1, 0],
+      "description": "When the entity teleports, offset the teleport position by this many blocks in the X, Y, and Z coordinate."
     },
     "time_of_day_range": {
-      "default": [
-        0.0,
-        1.0
-      ],
-      "description": "The valid times of day that this goal can be used. For reference: noon is 0.0, sunset is 0.25, midnight is 0.5, and sunrise is 0.75, and back to noon for 1.0.",
       "title": "Time Of Day Range",
-      "type": "array",
-      "items": [
-        {
-          "type": "number",
-          "minimum": 0,
-          "maximum": 1
-        },
-        {
-          "type": "number",
-          "minimum": 0,
-          "maximum": 1
-        }
-      ]
+      "$ref": "../types/range_number_type.json",
+      "default": [0, 1],
+      "description": "The valid times of day that this goal can be used. For reference: noon is 0.0, sunset is 0.25, midnight is 0.5, and sunrise is 0.75, and back to noon for 1.0."
     }
   },
   "examples": [

@@ -20,9 +20,9 @@
     "container_type": {
       "type": "string",
       "default": "none",
-      "description": "Type of container this entity has. Can be horse, minecart_chest, minecart_hopper, inventory, container or hopper",
+      "description": "Type of container this entity has. Can be horse, minecart_chest, chest_boat, minecart_hopper, inventory, container or hopper",
       "title": "Container Type",
-      "enum": ["horse", "minecart_chest", "minecart_hopper", "inventory", "container", "hopper"]
+      "enum": ["horse", "minecart_chest", "chest_boat", "minecart_hopper", "inventory", "container", "hopper"]
     },
     "inventory_size": {
       "type": "integer",
