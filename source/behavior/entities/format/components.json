@@ -51,6 +51,7 @@
     "minecraft:equip_item": { "$ref": "./components/equip_item.json" },
     "minecraft:equipment": { "$ref": "./components/equipment.json" },
     "minecraft:equippable": { "$ref": "./components/equippable.json" },
+    "minecraft:exhaustion_values": { "$ref": "./components/exhaustion_values.json" },
     "minecraft:experience_reward": { "$ref": "./components/experience_reward.json" },
     "minecraft:explode": { "$ref": "./components/explode.json" },
     "minecraft:fall_damage": { "$ref": "./components/fall_damage.json" },
