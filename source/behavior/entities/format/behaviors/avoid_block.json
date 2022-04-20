@@ -6,66 +6,55 @@
   "$comment": "UNDOCUMENTED",
   "additionalProperties": false,
   "properties": {
-    "priority": {
-      "$ref": "types/priority.json"
-    },
+    "priority": { "$ref": "types/priority.json" },
     "tick_interval": {
       "type": "integer",
       "title": "Tick Interval",
-      "description": "The amount of ticks between each search",
-      "$comment": "UNDOCUMENTED"
+      "default": 1,
+      "description": "Should start tick interval."
     },
     "search_range": {
       "type": "integer",
       "title": "Search Range",
-      "description": "The range of the search in blocks",
-      "$comment": "UNDOCUMENTED"
+      "description": "Maximum distance to look for a block in xz."
     },
     "search_height": {
       "type": "integer",
       "title": "Search Height",
-      "description": "The height of the search",
-      "$comment": "UNDOCUMENTED"
+      "description": "Maximum distance to look for a block in y."
     },
     "sprint_speed_modifier": {
       "type": "number",
       "title": "Sprint Speed Modifier",
-      "description": "The speed modifier to apply when walking away from the block",
-      "$comment": "UNDOCUMENTED"
+      "description": "Modifier for sprint speed. 1.0 means keep the regular speed, while higher numbers make the sprint speed faster."
     },
     "target_selection_method": {
       "type": "string",
       "title": "Target Selection Method",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
+      "description": "Block search method.",
+      "enum": ["nearest"]
     },
     "target_blocks": {
       "type": "array",
       "title": "Target Blocks",
-      "description": "What blocks are to be avoided",
-      "$comment": "UNDOCUMENTED",
-      "items": {
-        "title": "Block ID",
-        "$ref": "../../../../general/block/identifier.json"
-      }
+      "description": "List of block types this mob avoids.",
+      "items": { "title": "Block ID", "$ref": "../../../../general/block/identifier.json" }
     },
     "avoid_block_sound": {
       "type": "string",
       "title": "Avoid Block Sound",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
+      "description": "The sound event to play when the mob is avoiding a block."
     },
     "walk_speed_modifier": {
       "type": "number",
       "title": "Walk Speed Modifier",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
+      "default": 1.0,
+      "description": "Modifier for walking speed. 1.0 means keep the regular speed, while higher numbers make the walking speed faster."
     },
     "on_escape": {
       "type": "array",
       "title": "Walk Speed Modifier",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
+      "description": "Escape trigger.",
       "items": {
         "$ref": "../types/event.json"
       }
@@ -78,29 +67,17 @@
         {
           "type": "array",
           "items": [
-            {
-              "type": "number",
-              "title": "Maximum"
-            },
-            {
-              "type": "number",
-              "title": "Maximum"
-            }
+            { "type": "number", "title": "Maximum" },
+            { "type": "number", "title": "Maximum" }
           ]
         },
-        {
-          "type": "number"
-        },
+        { "type": "number" },
         {
           "type": "object",
           "additionalProperties": false,
           "properties": {
-            "range_min": {
-              "type": "number"
-            },
-            "range_max": {
-              "type": "number"
-            }
+            "range_min": { "type": "number" },
+            "range_max": { "type": "number" }
           }
         }
       ]
