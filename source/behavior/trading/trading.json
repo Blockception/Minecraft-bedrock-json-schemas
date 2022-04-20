@@ -149,6 +149,7 @@
     }
   },
   "properties": {
+    "format_version": { "$ref": "../../general/format_version.json" },
     "tiers": {
       "type": "array",
       "title": "Tiers",
