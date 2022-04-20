@@ -3,24 +3,23 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Celebrate Survive",
-  "$comment": "UNDOCUMENTED",
-  "description": "UNDOCUMENTED",
+  "description": "Allows this entity to celebrate surviving a raid by shooting fireworks.",
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },
     "fireworks_interval": {
       "title": "Fireworks Interval",
       "$ref": "../types/range_number_type.json",
-      "description": "The interval in ticks between playing the fireworks"
+      "description": "Minimum and maximum time between firework (positive, in seconds)."
     },
     "duration": {
       "title": "Duration",
-      "description": "The duration in ticks of the celebration",
+      "description": "The duration in seconds that the celebration lasts for.",
       "type": "number"
     },
     "on_celebration_end_event": {
       "title": "On Celebration End Event",
-      "description": "The event to fire when the celebration ends",
+      "description": "The event to trigger when the goal's duration expires.",
       "$ref": "../types/event.json"
     }
   }
