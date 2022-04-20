@@ -91,6 +91,7 @@
             { "if": { "properties": { "test": { "const": "has_mob_effect" } } }, "then": { "$ref": "./filters/has_mob_effect.json" } },
             { "if": { "properties": { "test": { "const": "has_nametag" } } }, "then": { "$ref": "./filters/has_nametag.json" } },
             { "if": { "properties": { "test": { "const": "has_ranged_weapon" } } }, "then": { "$ref": "./filters/has_ranged_weapon.json" } },
+            { "if": { "properties": { "test": { "const": "has_silk_touch" } } }, "then": { "$ref": "./filters/has_silk_touch.json" } },
             { "if": { "properties": { "test": { "const": "has_tag" } } }, "then": { "$ref": "./filters/has_tag.json" } },
             { "if": { "properties": { "test": { "const": "has_target" } } }, "then": { "$ref": "./filters/has_target.json" } },
             { "if": { "properties": { "test": { "const": "has_trade_supply" } } }, "then": { "$ref": "./filters/has_trade_supply.json" } },
