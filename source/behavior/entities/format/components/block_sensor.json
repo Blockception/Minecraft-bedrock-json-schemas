@@ -38,6 +38,15 @@
           }
         }
       }
+    },
+    "sources": {
+      "title": "Sources",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "type": "array",
+      "items": {
+        "$ref": "../../filters/filters.json"
+      }
     }
   },
   "examples": [

@@ -26,23 +26,13 @@
     "on_home": {
       "description": "Event to run when this mob gets home.",
       "title": "On Home",
-      "oneOf": [
-        {
-          "$ref": "../types/trigger.json"
-        },
-        {
-          "type": "array",
-          "items": {
-            "$ref": "../types/trigger.json"
-          }
-        }
-      ]
+      "oneOf": [{ "$ref": "../types/trigger.json" }, { "type": "array", "items": { "$ref": "../types/trigger.json" } }]
     },
     "on_failed": {
-      "$ref": "../types/event.json",
       "title": "On Failed",
       "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
+      "$comment": "UNDOCUMENTED",
+      "oneOf": [{ "$ref": "../types/event.json" }, { "type": "array", "items": { "$ref": "../types/event.json" } }]
     }
   },
   "examples": [
