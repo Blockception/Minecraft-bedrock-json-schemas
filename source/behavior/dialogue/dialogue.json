@@ -60,7 +60,7 @@
                     "name": {
                       "title": "Name",
                       "description": "Set the text that is going to be displayed on your NPC’s button",
-                      "$ref": "../../general/rawtext/rawtext.json"
+                      "oneOf": [{ "type": "string" }, { "$ref": "../../general/rawtext/rawtext.json" }]
                     },
                     "commands": {
                       "type": "array",
@@ -79,7 +79,7 @@
               "npc_name": {
                 "title": "NPC Name",
                 "description": "This is where you can add or change a name for your NPC dialogue box. This is an optional property that is useful for dynamically changing NPC names.",
-                "$ref": "../../general/rawtext/rawtext.json"
+                "oneOf": [{ "type": "string" }, { "$ref": "../../general/rawtext/rawtext.json" }]
               },
               "on_close_commands": {
                 "type": "array",
@@ -111,7 +111,7 @@
               "text": {
                 "title": "Text",
                 "description": "This is where you enter the dialogue you want your NPC to display in-game for this scene. You can type the dialogue text directly here or use raw text if you are using a language file. This is an optional property, but without it your NPC dialogue box will be empty.",
-                "$ref": "../../general/rawtext/rawtext.json"
+                "oneOf": [{ "type": "string" }, { "$ref": "../../general/rawtext/rawtext.json" }]
               }
             }
           }
