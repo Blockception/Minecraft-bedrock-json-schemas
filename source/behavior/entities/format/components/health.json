@@ -6,9 +6,6 @@
   "title": "Health",
   "additionalProperties": false,
   "required": [],
-  "dependencies": {
-    "max": ["value"]
-  },
   "properties": {
     "max": {
       "type": "integer",
