@@ -1,0 +1,22 @@
+{
+  "$id": "blockception.minecraft.behavior.1.16.200.items.minecraft:icon",
+  "title": "Icon",
+  "description": "The icon item componenent determines the icon to represent the item in the UI and elsewhere.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["texture"],
+  "properties": {
+    "frame": {
+      "type": "string",
+      "title": "Frame",
+      "description": "An index or expression for which frame of the icon to display. Default resolves to 0.",
+      "default": 0
+    },
+    "legacy_id": { "type": "string", "title": "Texture", "description": "Legacy texture id for older item icons." },
+    "texture": {
+      "type": "string",
+      "title": "Texture",
+      "description": "The key from the resource_pack/textures/item_texture.json `texture_data` object associated with the texture file Example: blaze_powder."
+    }
+  }
+}

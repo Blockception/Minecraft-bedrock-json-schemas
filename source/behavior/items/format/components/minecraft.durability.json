@@ -1,0 +1,26 @@
+{
+  "$id": "blockception.minecraft.behavior.1.16.200.items.minecraft:durability",
+  "title": "Durability",
+  "description": "Durability item component: how much damage can this item take before breaking.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["damage_chance"],
+  "properties": {
+    "damage_chance": {
+      "type": "object",
+      "title": "Damange Chance",
+      "description": "Damange chance",
+      "additionalProperties": false,
+      "required": ["min", "max"],
+      "properties": {
+        "min": { "title": "Min", "type": "integer", "description": "The minimum" },
+        "max": { "title": "Max", "type": "integer", "description": "The minimum" }
+      }
+    },
+    "max_durability": {
+      "title": "Maximum Durability",
+      "description": "Maximum durability is the amount of damage that this item can take before breaking.",
+      "type": "number"
+    }
+  }
+}
