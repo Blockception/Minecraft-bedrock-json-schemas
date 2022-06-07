@@ -1,0 +1,71 @@
+{
+  "$id": "blockception.minecraft.behavior.items",
+  "additionalProperties": false,
+  "required": ["description"],
+  "type": "object",
+  "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
+  "title": "Item",
+  "properties": {
+    "description": {
+      "additionalProperties": false,
+      "type": "object",
+      "title": "Description",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "properties": {
+        "identifier": {
+          "title": "Identifier",
+          "type": "string",
+          "description": "The identifier for this item. The name must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla item.",
+          "$ref": "../../../general/item/identifier.json"
+        },
+        "category": {
+          "type": "string",
+          "default": "",
+          "description": "The category for this item. Categories are used to control high level properties of how the item is integrated into the bedrock engine, such as whether it can be used in slash commands.",
+          "title": "Category",
+          "examples": ["Nature", "Equipment", "Construction", "Items"]
+        },
+        "is_experimental": {
+          "type": "boolean",
+          "default": false,
+          "description": "If this item is experimental, it will only be registered if the world is marked as experimental.",
+          "title": "Is Experimental"
+        }
+      }
+    },
+    "components": {
+      "additionalProperties": { "type": "object" },
+      "type": "object",
+      "description": "The components of this item",
+      "properties": {
+        "minecraft:armor": { "$ref": "./components/armor.json" },
+        "minecraft:block_placer": { "$ref": "./components/block_placer.json" },
+        "minecraft:cooldown": { "$ref": "./components/cooldown.json" },
+        "minecraft:digger": { "$ref": "./components/digger.json" },
+        "minecraft:display_name": { "$ref": "./components/display_name.json" },
+        "minecraft:durability": { "$ref": "./components/durability.json" },
+        "minecraft:dye_powder": { "$ref": "./components/dye_powder.json" },
+        "minecraft:entity_placer": { "$ref": "./components/entity_placer.json" },
+        "minecraft:food": { "$ref": "./components/food.json" },
+        "minecraft:fuel": { "$ref": "./components/fuel.json" },
+        "minecraft:hand_equipped": { "$ref": "./components/hand_equipped.json" },
+        "minecraft:icon": { "$ref": "./components/icon.json" },
+        "minecraft:knockback_resistance": { "$ref": "./components/knockback_resistance.json" },
+        "minecraft:max_stack_size": { "$ref": "./components/max_stack_size.json" },
+        "minecraft:on_use_on": { "$ref": "./components/on_use_on.json" },
+        "minecraft:on_use": { "$ref": "./components/on_use.json" },
+        "minecraft:projectile": { "$ref": "./components/projectile.json" },
+        "minecraft:render_offsets": { "$ref": "./components/render_offsets.json" },
+        "minecraft:repairable": { "$ref": "./components/repairable.json" },
+        "minecraft:shooter": { "$ref": "./components/shooter.json" },
+        "minecraft:throwable": { "$ref": "./components/throwable.json" },
+        "minecraft:use_duration": { "$ref": "./components/use_duration.json" },
+        "minecraft:weapon": { "$ref": "./components/weapon.json" },
+        "minecraft:wearable": { "$ref": "./components/wearable.json" }
+      }
+    },
+    "events": { "$ref": "./events.json" }
+  }
+}
