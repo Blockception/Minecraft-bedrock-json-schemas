@@ -46,6 +46,13 @@
       "description": "Maximum distance this mob will look for items to pick up",
       "title": "Maximum Dist"
     },
+    "search_height": {
+      "title": "Search Height",
+      "type": "number",
+      "default": 0,
+      "description": "Height in blocks the mob will look for items to pick up",
+      "$comment": "UNDOCUMENTED"
+    },
     "pickup_based_on_chance": {
       "type": "boolean",
       "default": false,
