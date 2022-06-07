@@ -3,6 +3,6 @@
   "additionalProperties": false,
   "type": "string",
   "title": "Loot",
-  "description": "The path to the loot table, relative to the behavior pack.",
+  "description": "The path to the loot table, relative to the behavior pack. Path string is limited to 256 characters.",
   "pattern": "loot_tables/.*\\.json$"
 }
