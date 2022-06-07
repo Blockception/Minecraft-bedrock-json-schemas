@@ -1,6 +1,0 @@
-{
-  "$id": "blockception.minecraft.behavior.blocks.1.16.200.minecraft.unit_cube",
-  "title": "Unit Cube 1.16.200",
-  "description": "Specifies that a unit cube is to be used with tessellation.",
-  "type": "string"
-}

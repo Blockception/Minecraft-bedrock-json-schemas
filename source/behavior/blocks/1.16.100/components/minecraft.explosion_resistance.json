@@ -1,8 +1,0 @@
-{
-  "$id": "blockception.minecraft.behavior.blocks.1.16.100.minecraft.explosion_resistance",
-  "additionalProperties": false,
-  "type": "number",
-  "title": "Explosion Resistance 1.16.100",
-  "description": "Sets the explosion resistance for this block.",
-  "default": 0.0
-}

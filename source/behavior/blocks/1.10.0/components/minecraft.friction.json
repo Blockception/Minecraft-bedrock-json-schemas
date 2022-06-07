@@ -1,8 +1,0 @@
-{
-  "$id": "blockception.minecraft.behavior.blocks.1.10.0.minecraft.friction",
-  "additionalProperties": false,
-  "type": "number",
-  "title": "Friction 1.10.0",
-  "description": "Property describing the friction for this block. Friction effects an entities movements when it walks on the block.",
-  "default": 0.1
-}
