@@ -128,9 +128,15 @@
           },
           "type": {
             "type": "string",
-            "enum": ["resources", "data", "client_data", "interface", "world_template", "javascript"],
+            "enum": ["resources", "data", "client_data", "interface", "world_template", "javascript", "script"],
             "description": "This is the type of the module.",
             "title": "Type"
+          },
+          "language": {
+            "type": "string",
+            "title": "Language",
+            "description": "The programming language to use",
+            "enum": ["javascript"]
           },
           "uuid": {
             "$ref": "#/definitions/uuidv4",
@@ -198,7 +204,7 @@
         "description": "A single definition of a subpack",
         "title": "Subpacks",
         "required": ["folder_name", "name", "memory_tier"],
-        "example": [{"folder_name": "tier1", "name": "low", "memory_tier": 1}],
+        "example": [{ "folder_name": "tier1", "name": "low", "memory_tier": 1 }],
         "properties": {
           "folder_name": {
             "type": "string",
