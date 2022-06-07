@@ -1,7 +1,0 @@
-{
-  "$id": "blockception.minecraft.behavior.blocks.1.16.100.minecraft.immovable",
-  "additionalProperties": false,
-  "type": "boolean",
-  "title": "Immovable 1.16.100",
-  "description": "An Immovable block cannot be pushed by pistons"
-}

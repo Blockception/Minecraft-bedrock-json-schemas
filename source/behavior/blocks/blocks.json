@@ -1,20 +1,14 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "$id": "blockception.minecraft.behavior.blocks",
-  "examples": [
-    {
-      "format_version": "1.16.200",
-      "minecraft:block": { "description": { "identifier": "namespace:block", "properties": {} }, "components": {}, "events": {} }
-    }
-  ],
-  "allOf": [
-    { "if": { "properties": { "format_version": { "type": "string", "const": "1.10" } } }, "then": { "$ref": "./1.10.0/blocks.json" } },
-    { "if": { "properties": { "format_version": { "type": "string", "const": "1.10.0" } } }, "then": { "$ref": "./1.10.0/blocks.json" } },
-    { "if": { "properties": { "format_version": { "type": "string", "const": "1.12.0" } } }, "then": { "$ref": "./1.12.0/blocks.json" } },
-    { "if": { "properties": { "format_version": { "type": "string", "const": "1.16.0" } } }, "then": { "$ref": "./1.16.0/blocks.json" } },
-    { "if": { "properties": { "format_version": { "type": "string", "const": "1.16.100" } } }, "then": { "$ref": "./1.16.100/blocks.json" } },
-    { "if": { "properties": { "format_version": { "type": "string", "const": "1.16.200" } } }, "then": { "$ref": "./1.16.200/blocks.json" } },
-    { "if": { "properties": { "format_version": { "type": "string", "const": "1.17.0" } } }, "then": { "$ref": "./1.17.0/blocks.json" } },
-    { "properties": { "format_version": { "$ref": "../../general/format_version.json" } } }
-  ]
+  "$id": "blockception.minecraft.behavior.block",
+  "$comment": "UNDOCUMENTED",
+  "required": ["format_version", "minecraft:block"],
+  "type": "object",
+  "title": "Block Behavior",
+  "description": "The minecraft block behavior specification",
+  "additionalProperties": false,
+  "properties": {
+    "format_version": { "$ref": "../../general/format_version.json" },
+    "minecraft:block": { "$ref": "./format/minecraft.block.json" }
+  }
 }

@@ -3,7 +3,7 @@
   "$id": "blockception.behavior.spawn_rules",
   "examples": [
     {
-      "format_version": "1.17.0",
+      "format_version": "1.19.0",
       "minecraft:spawn_rules": { "description": { "identifier": "minecraft:entity", "population_control": "ambient" }, "conditions": [{}] }
     }
   ],

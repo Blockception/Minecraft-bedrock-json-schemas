@@ -1,7 +1,0 @@
-{
-  "$id": "blockception.minecraft.behavior.blocks.1.16.200.minecraft.display_name",
-  "additionalProperties": false,
-  "type": "string",
-  "title": "Display Name 1.16.200",
-  "description": "Specifies the language file key that maps to what text will be displayed when you hover over the block."
-}

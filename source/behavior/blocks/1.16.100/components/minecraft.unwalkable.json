@@ -1,6 +1,0 @@
-{
-  "$id": "blockception.minecraft.behavior.blocks.1.16.100.minecraft.unwalkable",
-  "title": "Unwalkable 1.16.100",
-  "description": "this component sets a block as unwalkable. Most mobs will not try to jump over it if the value is set to true",
-  "type": "boolean"
-}

@@ -1,9 +1,0 @@
-{
-  "$id": "blockception.minecraft.behavior.blocks.1.17.0.minecraft.breathability",
-  "additionalProperties": false,
-  "type": "string",
-  "title": "Breathability 1.17.0",
-  "description": "Property describing the breathability of the block, and whether it's treated as a solid block or a block of air",
-  "enum": ["solid", "air"],
-  "default": "solid"
-}

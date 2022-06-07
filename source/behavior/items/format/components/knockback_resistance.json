@@ -1,0 +1,15 @@
+{
+  "$id": "blockception.minecraft.behavior.1.16.200.items.minecraft:knockback_resistance",
+  "title": "Knockback Resistance",
+  "description": "Knockback Resistance Item. Component put on items that provide knockback resistance.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["protection"],
+  "properties": {
+    "protection": {
+      "title": "Protection",
+      "description": "Amount of knockback resistance provided with the total maximum protection being 1.0",
+      "type": "number"
+    }
+  }
+}

@@ -24,11 +24,29 @@
             }
           }
         },
+        "admire": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enables the mob to admire the item",
+          "title": "Admire Item"
+        },
+        "barter": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enables the component to drop an item as a barter exchange.",
+          "title": "Barter"
+        },
         "cooldown": {
           "type": "number",
           "default": 0,
           "description": "Time in seconds before this entity can be interacted with again.",
           "title": "Cooldown"
+        },
+        "cooldown_after_being_attacked": {
+          "type": "number",
+          "default": "",
+          "description": "Duration, in seconds, for which mob won't barter items if it was hurt",
+          "title": "Cooldown After Being Attacked"
         },
         "health_amount": {
           "type": "number",
@@ -118,23 +136,10 @@
           "description": "If true, the interaction will use an item.",
           "title": "Use Item"
         },
-        "barter": {
-          "type": "boolean",
-          "default": false,
-          "description": "Enables the component to drop an item as a barter exchange.",
-          "title": "Barter"
-        },
-        "admire": {
-          "type": "boolean",
-          "default": false,
-          "description": "Enables the mob to admire the item",
-          "title": "Admire Item"
-        },
-        "cooldown_after_being_attacked": {
-          "type": "number",
-          "default": "",
-          "description": "Duration, in seconds, for which mob won't barter items if it was hurt",
-          "title": "Cooldown After Being Attacked"
+        "vibration": {
+          "title": "Vibration",
+          "type": "string",
+          "description": "Vibration to emit when the interaction occurs. Admitted values are entity_interact (used by default), shear, and none (no vibration emitted)."
         }
       }
     }

@@ -1,0 +1,136 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.blocks",
+  "title": "Block Definitions",
+  "description": "A custom block definition",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["description", "components"],
+  "definitions": {
+    "components_ref": {
+      "type": "object",
+      "title": "Component",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "additionalProperties": false,
+      "properties": {
+        "minecraft:block_light_absorption": { "$ref": "./components/block_light_absorption.json" },
+        "minecraft:block_light_emission": { "$ref": "./components/block_light_emission.json" },
+        "minecraft:breakonpush": { "$ref": "./components/breakonpush.json" },
+        "minecraft:breathability": { "$ref": "./components/breathability.json" },
+        "minecraft:creative_category": { "$ref": "./components/creative_category.json" },
+        "minecraft:destroy_time": { "$ref": "./components/destroy_time.json" },
+        "minecraft:display_name": { "$ref": "./components/display_name.json" },
+        "minecraft:entity_collision": { "$ref": "./components/entity_collision.json" },
+        "minecraft:explosion_resistance": { "$ref": "./components/explosion_resistance.json" },
+        "minecraft:flammable": { "$ref": "./components/flammable.json" },
+        "minecraft:friction": { "$ref": "./components/friction.json" },
+        "minecraft:geometry": { "$ref": "./components/geometry.json" },
+        "minecraft:immovable": { "$ref": "./components/immovable.json" },
+        "minecraft:loot": { "$ref": "./components/loot.json" },
+        "minecraft:map_color": { "$ref": "./components/map_color.json" },
+        "minecraft:material_instances": { "$ref": "./components/material_instances.json" },
+        "minecraft:onlypistonpush": { "$ref": "./components/onlypistonpush.json" },
+        "minecraft:part_visibility.json": { "$ref": "./components/part_visibility.json" },
+        "minecraft:on_fall_on": { "$ref": "./components/on_fall_on.json" },
+        "minecraft:on_interact": { "$ref": "./components/on_interact.json" },
+        "minecraft:on_placed": { "$ref": "./components/on_placed.json" },
+        "minecraft:on_player_destroyed": { "$ref": "./components/on_player_destroyed.json" },
+        "minecraft:on_player_placing": { "$ref": "./components/on_player_placing.json" },
+        "minecraft:on_step_off": { "$ref": "./components/on_step_off.json" },
+        "minecraft:on_step_on": { "$ref": "./components/on_step_on.json" },
+        "minecraft:pick_collision": { "$ref": "./components/pick_collision.json" },
+        "minecraft:placement_filter": { "$ref": "./components/placement_filter.json" },
+        "minecraft:preventsjumping": { "$ref": "./components/preventsjumping.json" },
+        "minecraft:random_ticking": { "$ref": "./components/random_ticking.json" },
+        "minecraft:rotation": { "$ref": "./components/rotation.json" },
+        "minecraft:ticking": { "$ref": "./components/ticking.json" },
+        "minecraft:unit_cube": { "$ref": "./components/unit_cube.json" },
+        "minecraft:unwalkable": { "$ref": "./components/unwalkable.json" }
+      }
+    }
+  },
+  "properties": {
+    "description": {
+      "title": "Block Description",
+      "description": "The description for this block",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["identifier"],
+      "properties": {
+        "identifier": {
+          "type": "string",
+          "description": "The identifier for this block. The name must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla block.",
+          "title": "Identifier",
+          "$ref": "../../../general/block/identifier.json"
+        },
+        "is_experimental": {
+          "type": "boolean",
+          "default": false,
+          "description": "If this block is experimental, it will only be registered if the world is marked as experimantal.",
+          "title": "Is Experimental"
+        },
+        "register_to_creative_menu": {
+          "type": "boolean",
+          "default": false,
+          "description": "Whether or not to register this block to the creative inventory menu.",
+          "title": "Register To Creative Menu"
+        },
+        "properties": {
+          "title": "Properties",
+          "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
+          "propertyNames": { "pattern": "^([a-zA-Z0-9_]+:[a-zA-Z0-9_\\-]+)$" },
+          "type": "object",
+          "additionalProperties": {
+            "title": "Property",
+            "description": "A block property",
+            "oneOf": [
+              {
+                "type": "array",
+                "items": {
+                  "title": "Property Value",
+                  "description": "The value of this property",
+                  "anyOf": [{ "type": "boolean" }, { "type": "number" }, { "type": "integer" }, { "type": "string" }]
+                }
+              },
+              { "type": "object" }
+            ]
+          }
+        }
+      }
+    },
+    "events": { "$ref": "./events.json" },
+    "components": {
+      "type": "object",
+      "title": "Component",
+      "$ref": "#/definitions/components_ref"
+    },
+    "permutations": {
+      "type": "array",
+      "title": "Permutations",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "items": {
+        "title": "Permutation",
+        "description": "UNDOCUMENTED",
+        "$comment": "UNDOCUMENTED",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "condition": {
+            "title": "Condition",
+            "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED",
+            "$ref": "../../../molang/string.json"
+          },
+          "components": {
+            "type": "object",
+            "title": "Component",
+            "$ref": "#/definitions/components_ref"
+          }
+        }
+      }
+    }
+  }
+}

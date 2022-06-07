@@ -1,6 +1,0 @@
-{
-  "$id": "blockception.minecraft.behavior.blocks.1.17.0.minecraft.preventsjumping",
-  "title": "Prevents Jumping 1.17.0",
-  "description": "This component makes it so actors can't jump when walking on this block",
-  "type": "boolean"
-}

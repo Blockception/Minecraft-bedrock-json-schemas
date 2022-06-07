@@ -1,0 +1,43 @@
+{
+  "$id": "blockception.minecraft.behavior.block.events",
+  "title": "Events",
+  "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
+  "type": "object",
+  "properties": {
+    "minecraft:on_fall_on": { "$ref": "#/definitions/event_base" },
+    "minecraft:on_interact": { "$ref": "#/definitions/event_base" },
+    "minecraft:on_placed": { "$ref": "#/definitions/event_base" },
+    "minecraft:on_player_destroyed": { "$ref": "#/definitions/event_base" },
+    "minecraft:on_player_placing": { "$ref": "#/definitions/event_base" },
+    "minecraft:on_step_off": { "$ref": "#/definitions/event_base" },
+    "minecraft:on_step_on": { "$ref": "#/definitions/event_base" }
+  },
+  "definitions": {
+    "event_base": {
+      "title": "Event",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "condition": {
+          "title": "Condition",
+          "description": "The condition of event to be executed on the block.",
+          "type": "string"
+        },
+        "event": {
+          "title": "Event",
+          "description": "The event executed on the block.",
+          "type": "string"
+        },
+        "target": {
+          "title": "Target",
+          "description": "The target of event executed on the block.",
+          "type": "string",
+          "default": "self"
+        }
+      }
+    }
+  }
+}

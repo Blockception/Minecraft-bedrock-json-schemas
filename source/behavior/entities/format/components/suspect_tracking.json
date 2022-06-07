@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.suspect_tracking",
+  "type": "object",
+  "title": "Suspect Tracking",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {},
+  "description": "Allows this entity to remember suspicious locations"
+}

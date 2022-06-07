@@ -1,8 +1,0 @@
-{
-  "$id": "blockception.minecraft.behavior.1.16.100.block.events.transform_item",
-  "type": "object",
-  "description": "Transforms item into another item.",
-  "title": "Transform Item 1.16.100",
-  "additionalProperties": false,
-  "properties": { "transform": { "type": "string", "description": "Name of the item it should transform into", "title": "Transform" } }
-}

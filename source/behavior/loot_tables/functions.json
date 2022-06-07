@@ -30,6 +30,12 @@
         "set_name",
         "specific_enchants"
       ]
+    },
+    "add": {
+      "title": "Add",
+      "description": "UNDOCUMENTED",
+      "type": "boolean",
+      "default": false
     }
   },
   "allOf": [

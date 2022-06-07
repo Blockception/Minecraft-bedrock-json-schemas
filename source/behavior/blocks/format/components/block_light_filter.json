@@ -1,0 +1,8 @@
+{
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.block_light_absorption",
+  "additionalProperties": false,
+  "type": "integer",
+  "title": "Block Light Absorption",
+  "description": "The amount of light this block will filter out. Higher value means more light will be filtered out (0 - 15).",
+  "default": 0
+}

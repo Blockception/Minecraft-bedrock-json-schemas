@@ -1,0 +1,11 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.heartbeat",
+  "description": "UNDOCUMENTED",
+  "$comment": "UNDOCUMENTED",
+  "type": "object",
+  "title": "Health",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {},
+  "examples": [{}]
+}
