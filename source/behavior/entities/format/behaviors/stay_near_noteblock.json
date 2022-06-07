@@ -1,0 +1,36 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.stay_near_noteblock",
+  "type": "object",
+  "title": "Barter",
+  "description": "[EXPERIMENTAL BEHAVIOR] The entity will attempt to toss the items from its inventory to a nearby recently played noteblock.",
+  "additionalProperties": false,
+  "properties": {
+    "priority": {
+      "$ref": "types/priority.json"
+    },
+    "listen_time": {
+      "title": "listen time",
+      "type": "integer",
+      "default": 0.0,
+      "description": "Sets the time an entity should stay near a noteblock after hearing it."
+    },
+    "speed": {
+      "title": "speed",
+      "type": "number",
+      "default": 1000000,
+      "description": "Sets the entity's speed when moving toward the block."
+    },
+    "start_distance": {
+      "title": "start distance",
+      "type": "number",
+      "default": 10000000,
+      "description": "Sets the distance the entity needs to be away from the block to attempt to start the goal."
+    },
+    "stop_distance": {
+      "title": "stop distance",
+      "type": "number",
+      "default": 2000000,
+      "description": "Sets the distance from the block the entity will attempt to reach."
+    }
+  }
+}

@@ -3,58 +3,63 @@
   "type": "object",
   "title": "Move To Block",
   "additionalProperties": false,
-  "description": "Makes the entity move towards specified blocks",
-  "$comment": "UNDOCUMENTED",
+  "description": "Allows mob to move towards a block.",
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
-    "tick_interval": {
+
+    "goal_radius": {
+      "title": "Goal Radius",
       "type": "number",
-      "title": "Tick Interval",
-      "description": "The amount ticks between each search",
-      "$comment": "UNDOCUMENTED"
+      "default": 0.5,
+      "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot"
+    },
+    "on_stay_completed": {
+      "title": "On Stay Completed",
+      "description": "Event to run on completing a stay of stay_duration at the block.",
+      "$ref": "../types/trigger.json"
+    },
+    "on_reach": {
+      "type": "array",
+      "title": "On Reach",
+      "description": "Event to run on block reached.",
+      "$ref": "../types/trigger.json"
     },
     "start_chance": {
-      "type": "number",
       "title": "Start Chance",
-      "description": "The chance that the entity starts on this block search",
-      "$comment": "UNDOCUMENTED"
+      "type": "number",
+      "default": 1.0,
+      "description": "Chance to start the behavior (applied after each random tick_interval)."
     },
     "search_range": {
-      "type": "number",
       "title": "Search Range",
-      "description": "The range of blocks to search",
-      "$comment": "UNDOCUMENTED"
+      "type": "integer",
+      "default": 0,
+      "description": "The distance in blocks that the mob will look for the block."
     },
     "search_height": {
-      "type": "number",
       "title": "Search Height",
-      "description": "How heigh the search can be, (or low)",
-      "$comment": "UNDOCUMENTED"
-    },
-    "goal_radius": {
-      "type": "number",
-      "title": "Goal Radius",
-      "description": "The radius when the entity must be within of the block to be considered 'there'",
-      "$comment": "UNDOCUMENTED"
+      "type": "integer",
+      "default": 1,
+      "description": "The height in blocks that the mob will look for the block."
     },
     "stay_duration": {
-      "type": "number",
       "title": "Stay Duration",
-      "description": "The amount of time the entity stays near the block",
-      "$comment": "UNDOCUMENTED"
+      "type": "number",
+      "default": 0.0,
+      "description": "Number of ticks needed to complete a stay at the block."
     },
     "target_selection_method": {
-      "type": "string",
       "title": "Target Selection Method",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED"
+      "type": "string",
+      "default": "nearest",
+      "description": "Kind of block to find fitting the specification. Valid values are \"random\" and \"nearest\"."
     },
     "target_offset": {
       "type": "array",
       "title": "Target Offset",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
+      "default": [0, 0, 0],
+      "description": "Offset to add to the selected target position.",
       "items": [
         { "type": "number", "title": "X" },
         { "type": "number", "title": "Y" },
@@ -64,30 +69,17 @@
     "target_blocks": {
       "type": "array",
       "title": "Target Blocks",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
+      "description": "Block types to move to.",
       "items": {
         "$ref": "../../../../general/block/identifier.json",
         "type": "string"
       }
     },
-    "on_stay_completed": {
-      "type": "array",
-      "title": "On Stay Completed",
-      "description": "The events to call whenever this entity has completed it staying duration",
-      "$comment": "UNDOCUMENTED",
-      "items": {
-        "$ref": "../types/event.json"
-      }
-    },
-    "on_reach": {
-      "type": "array",
-      "title": "On Reach",
-      "description": "The events to call whenever this entity has reached it goal, but is possibly still staying here",
-      "$comment": "UNDOCUMENTED",
-      "items": {
-        "$ref": "../types/event.json"
-      }
+    "tick_interval": {
+      "title": "Tick Interval",
+      "type": "integer",
+      "default": 20,
+      "description": "Average interval in ticks to try to run this behavior."
     }
   },
   "examples": [

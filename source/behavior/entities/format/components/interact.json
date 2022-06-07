@@ -24,47 +24,35 @@
             }
           }
         },
-        "admire": {
-          "type": "boolean",
-          "default": false,
-          "description": "Enables the mob to admire the item",
-          "title": "Admire Item"
-        },
-        "barter": {
-          "type": "boolean",
-          "default": false,
-          "description": "Enables the component to drop an item as a barter exchange.",
-          "title": "Barter"
-        },
         "cooldown": {
+          "title": "cooldown",
           "type": "number",
           "default": 0,
-          "description": "Time in seconds before this entity can be interacted with again.",
-          "title": "Cooldown"
+          "description": "Time in seconds before this entity can be interacted with again."
         },
         "cooldown_after_being_attacked": {
+          "title": "cooldown after being attacked",
           "type": "number",
-          "default": "",
-          "description": "Duration, in seconds, for which mob won't barter items if it was hurt",
-          "title": "Cooldown After Being Attacked"
+          "default": 0,
+          "description": "Time in seconds before this entity can be interacted with after being attacked."
         },
         "health_amount": {
-          "type": "number",
-          "default": 0,
-          "description": "The amount of health this entity will recover or hurt when interacting with this item. Negative values will harm the entity.",
-          "title": "Health Amount"
-        },
-        "hurt_item": {
+          "title": "health amount",
           "type": "integer",
           "default": 0,
-          "description": "The amount of damage the item will take when used to interact with this entity. A value of 0 means the item won't lose durability.",
-          "title": "Hurt Item"
+          "description": "The amount of health this entity will recover or hurt when interacting with this item. Negative values will harm the entity."
+        },
+        "hurt_item": {
+          "title": "hurt item",
+          "type": "integer",
+          "default": 0,
+          "description": "The amount of damage the item will take when used to interact with this entity. A value of 0 means the item won't lose durability."
         },
         "interact_text": {
+          "title": "interact text",
           "type": "string",
           "default": "",
-          "description": "Text to show when the player is able to interact in this way with this entity when playing with Touch-screen controls.",
-          "title": "Interact Text"
+          "description": "Text to show when the player is able to interact in this way with this entity when playing with Touch-screen controls."
         },
         "on_interact": {
           "$ref": "../types/trigger.json",
@@ -140,6 +128,18 @@
           "title": "Vibration",
           "type": "string",
           "description": "Vibration to emit when the interaction occurs. Admitted values are entity_interact (used by default), shear, and none (no vibration emitted)."
+        },
+        "give_item": {
+          "type": "boolean",
+          "title": "Give Item",
+          "$comment": "UNDOCUMENTED",
+          "description": "UNDOCUMENTED Item to give to the player upon successful interaction."
+        },
+        "take_item": {
+          "type": "boolean",
+          "title": "Take Item",
+          "$comment": "UNDOCUMENTED",
+          "description": "UNDOCUMENTED Takes an item from the player"
         }
       }
     }

@@ -1,0 +1,47 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.go_and_give_items_to_owner",
+  "type": "object",
+  "title": "Barter",
+  "description": "[EXPERIMENTAL BEHAVIOR] The entity will attempt to toss the items from its inventory to its owner.",
+  "additionalProperties": false,
+  "properties": {
+    "priority": {
+      "$ref": "types/priority.json"
+    },
+    "on_item_throw": {
+      "title": "on item throw",
+      "$ref": "../types/trigger.json",
+      "description": "Event(s) to run when this mob throws items."
+    },
+    "reach_mob_distance": {
+      "title": "reach mob distance",
+      "type": "number",
+      "default": 3000000,
+      "description": "Sets the desired distance to be reached before giving items to owner."
+    },
+    "run_speed": {
+      "title": "run speed",
+      "type": "number",
+      "default": 1000000,
+      "description": "Sets the entity's speed when running toward the owner."
+    },
+    "throw_force": {
+      "title": "throw force",
+      "type": "number",
+      "default": 0.2,
+      "description": "Sets the throw force."
+    },
+    "throw_sound": {
+      "title": "throw sound",
+      "type": "string",
+      "default": "item_thrown",
+      "description": "Sound to play when this mob throws an item."
+    },
+    "vertical_throw_mul": {
+      "title": "vertical throw mul",
+      "type": "number",
+      "default": 1500000,
+      "description": "Sets the vertical throw multiplier that is applied on top of the throw force in the vertical direction."
+    }
+  }
+}
