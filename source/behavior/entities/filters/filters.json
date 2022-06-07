@@ -138,6 +138,7 @@
             { "if": { "properties": { "test": { "const": "is_underwater" } } }, "then": { "$ref": "./filters/is_underwater.json" } },
             { "if": { "properties": { "test": { "const": "is_variant" } } }, "then": { "$ref": "./filters/is_variant.json" } },
             { "if": { "properties": { "test": { "const": "is_visible" } } }, "then": { "$ref": "./filters/is_visible.json" } },
+            { "if": { "properties": { "test": { "const": "is_waterlogged" } } }, "then": { "$ref": "./filters/is_waterlogged.json" } },
             { "if": { "properties": { "test": { "const": "light_level" } } }, "then": { "$ref": "./filters/light_level.json" } },
             { "if": { "properties": { "test": { "const": "moon_intensity" } } }, "then": { "$ref": "./filters/moon_intensity.json" } },
             { "if": { "properties": { "test": { "const": "moon_phase" } } }, "then": { "$ref": "./filters/moon_phase.json" } },
