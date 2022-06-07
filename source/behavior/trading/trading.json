@@ -151,6 +151,7 @@
           },
           "trader_exp": { "type": "integer", "title": "Trader Experience" },
           "max_uses": { "type": "integer", "title": "Maximum Uses" },
+          "weight": { "type": "integer", "title": "Weight" },
           "reward_exp": { "type": "boolean", "title": "Reward Experience" }
         }
       }
