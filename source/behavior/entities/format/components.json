@@ -68,6 +68,7 @@
     "minecraft:grows_crop": { "$ref": "./components/grows_crop.json" },
     "minecraft:healable": { "$ref": "./components/healable.json" },
     "minecraft:health": { "$ref": "./components/health.json" },
+    "minecraft:heartbeat": { "$ref": "./components/heartbeat.json" },
     "minecraft:hide": { "$ref": "./components/hide.json" },
     "minecraft:home": { "$ref": "./components/home.json" },
     "minecraft:horse.jump_strength": { "$ref": "./components/horse.jump_strength.json" },
