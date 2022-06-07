@@ -59,6 +59,13 @@
       "description": "If true, depending on the difficulty, there is a random chance that the mob may not be able to pickup items",
       "title": "Pickup Based On Chance"
     },
+    "pickup_same_items_as_in_hand": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, the mob will pickup the same item as the item in its hand",
+      "title": "Pickup Same Items As In Hand",
+      "$comment": "UNDOCUMENTED"
+    },
     "track_target": {
       "type": "boolean",
       "default": false,
