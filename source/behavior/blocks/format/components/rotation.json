@@ -1,6 +1,6 @@
 {
-  "$id": "blockception.minecraft.behavior.blocks.1.17.0.minecraft.rotation",
-  "title": "Rotation 1.17.0",
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.rotation",
+  "title": "Rotation",
   "description": "This is the block's rotation around the center of the cube in degrees. The rotation order is x-y-z.",
   "type": "array",
   "additionalProperties": false,

@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.1.17.0.block.events.add_mob_effect",
+  "$id": "blockception.minecraft.behavior.block.events.add_mob_effect",
   "type": "object",
   "description": "Apply mob effect to target.",
-  "title": "Add Mob Effect 1.17.0",
+  "title": "Add Mob Effect",
   "additionalProperties": false,
   "properties": {
     "amplifier": { "type": "integer", "default": 0, "description": "The amplifier for the mob effect.", "title": "Amplifier" },

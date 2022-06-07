@@ -1,5 +1,5 @@
 {
-  "$id": "blockception.minecraft.behavior.blocks.1.17.0.minecraft.on_interact",
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.on_interact",
   "type": "object",
   "title": "On Fall On",
   "description": "Describes event for this block.",

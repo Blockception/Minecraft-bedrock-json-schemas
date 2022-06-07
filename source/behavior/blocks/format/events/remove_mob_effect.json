@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.1.17.0.block.events.remove_mob_effect",
+  "$id": "blockception.minecraft.behavior.block.events.remove_mob_effect",
   "type": "object",
   "description": "Removes mob effect from target.",
-  "title": "Remove Mob Effect 1.17.0",
+  "title": "Remove Mob Effect",
   "additionalProperties": false,
   "properties": {
     "effect": {

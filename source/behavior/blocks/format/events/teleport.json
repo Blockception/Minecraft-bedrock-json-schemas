@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.1.17.0.block.events.teleport",
+  "$id": "blockception.minecraft.behavior.block.events.teleport",
   "type": "object",
   "description": "Teleport target randomly around destination point.",
-  "title": "Teleport 1.17.0",
+  "title": "Teleport",
   "additionalProperties": false,
   "properties": {
     "avoid_water": {

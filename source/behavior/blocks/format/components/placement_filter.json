@@ -1,6 +1,6 @@
 {
-  "$id": "blockception.minecraft.behavior.blocks.1.17.0.minecraft.placement_filter",
-  "title": "Placement Filter 1.17.0",
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.placement_filter",
+  "title": "Placement Filter",
   "description": "Sets rules for under what conditions the block can be placed/survive",
   "type": "object",
   "properties": {

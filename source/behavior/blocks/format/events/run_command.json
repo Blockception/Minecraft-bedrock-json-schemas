@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.1.17.0.block.events.run_command",
+  "$id": "blockception.minecraft.behavior.block.events.run_command",
   "type": "object",
   "description": "Triggers a slash command or a list of slash commands.",
-  "title": "Run Command 1.17.0",
+  "title": "Run Command",
   "additionalProperties": false,
   "properties": {
     "command": {

@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.blocks.1.17.0.minecraft.on_placed",
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.on_placed",
   "type": "object",
-  "title": "On Placed 1.17.0",
+  "title": "On Placed",
   "description": "Describes event for this block.",
   "properties": {
     "condition": { "type": "string", "default": "", "description": "The condition of event to be executed on the block.", "title": "Condition" },

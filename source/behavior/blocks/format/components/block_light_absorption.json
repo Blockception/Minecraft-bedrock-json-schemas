@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.blocks.1.17.0.minecraft.block_light_absorption",
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.block_light_absorption",
   "additionalProperties": false,
   "type": "integer",
-  "title": "Block Light Absorption 1.17.0",
+  "title": "Block Light Absorption",
   "description": "The amount of light this block will absorb.",
   "default": 0
 }

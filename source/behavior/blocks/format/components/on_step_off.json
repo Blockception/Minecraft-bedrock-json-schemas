@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.blocks.1.17.0.minecraft.on_step_off",
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.on_step_off",
   "type": "object",
-  "title": "On Step Off 1.17.0",
+  "title": "On Step Off",
   "description": "Describes event for this block.",
   "properties": {
     "condition": { "type": "string", "default": "", "description": "The condition of event to be executed on the block.", "title": "Condition" },

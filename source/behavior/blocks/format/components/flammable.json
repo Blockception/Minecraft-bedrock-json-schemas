@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.blocks.1.17.0.minecraft.flammable",
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.flammable",
   "additionalProperties": false,
   "type": "object",
-  "title": "Flammable 1.17.0",
+  "title": "Flammable",
   "description": "Describes the flammable properties for this block.",
   "additionalItems": false,
   "properties": {

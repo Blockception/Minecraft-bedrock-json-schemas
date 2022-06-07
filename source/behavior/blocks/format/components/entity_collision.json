@@ -1,6 +1,6 @@
 {
-  "$id": "blockception.minecraft.behavior.blocks.1.17.0.minecraft.entity_collision",
-  "title": "Entity Collision 1.17.0",
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.entity_collision",
+  "title": "Entity Collision",
   "description": "Can only be set to false or an object, it disables the collision of the block with entities.",
   "oneOf": [
     { "type": "boolean", "const": false },

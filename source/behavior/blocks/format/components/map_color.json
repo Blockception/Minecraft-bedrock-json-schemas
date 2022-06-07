@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.blocks.1.17.0.minecraft.map_color",
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.map_color",
   "additionalProperties": false,
   "type": "string",
-  "title": "Map Color 1.17.0",
+  "title": "Map Color",
   "description": "A color represented as a hex value. This will be the color rendered to a map.",
   "format": "color-hex",
   "examples": ["#FFFFFF"]

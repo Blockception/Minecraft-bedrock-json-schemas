@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.blocks.1.17.0.minecraft.material_instances",
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.material_instances",
   "type": "object",
-  "title": "Material Instances 1.17.0",
+  "title": "Material Instances",
   "description": "Maps face or material_instance names in a geometry file to an actual material instance. Material instance can either be a full material instance or a name to another already defined instance",
   "definitions": {
     "material_instance": {

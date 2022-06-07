@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.1.17.0.block.events.playsound",
+  "$id": "blockception.minecraft.behavior.block.events.playsound",
   "type": "object",
   "description": "Play a sound relative to target position.",
-  "title": "Playsound 1.17.0",
+  "title": "Playsound",
   "additionalProperties": false,
   "properties": {
     "sound": { "type": "string", "default": "", "description": "The name of the sound to play.", "title": "Sound" },

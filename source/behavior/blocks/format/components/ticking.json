@@ -1,6 +1,6 @@
 {
-  "$id": "blockception.minecraft.behavior.blocks.1.17.0.minecraft.ticking",
-  "title": "Ticking 1.17.0",
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.ticking",
+  "title": "Ticking",
   "description": "Describes the component that will trigger an even at a regular interval between two values",
   "type": "object",
   "additionalProperties": false,
