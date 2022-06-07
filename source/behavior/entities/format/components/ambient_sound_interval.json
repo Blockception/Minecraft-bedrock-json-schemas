@@ -11,17 +11,36 @@
       "description": "Level sound event to be played as the ambient sound.",
       "title": "Event Name"
     },
+    "event_names": {
+      "type": "array",
+      "description": "List of dynamic level sound events, with conditions for choosing between them. Evaluated in order, first one wins. If none evaluate to true, 'event_name' will take precedence.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "condition": {
+            "type": "string",
+            "description": "The condition that must be satisfied to select the given ambient sound",
+            "title": "Condition"
+          },
+          "event_name": {
+            "type": "string",
+            "description": "Level sound event to be played as the ambient sound.",
+            "title": "Event Name"
+          }
+        }
+      }
+    },
     "range": {
+      "title": "Range",
       "type": "number",
-      "default": 16,
-      "description": "Maximum time in seconds to randomly add to the ambient sound delay time.",
-      "title": "Range"
+      "default": 16.0,
+      "description": "Maximum time in seconds to randomly add to the ambient sound delay time."
     },
     "value": {
+      "title": "Value",
       "type": "number",
-      "default": 8,
-      "description": "Minimum time in seconds before the entity plays its ambient sound again",
-      "title": "Value"
+      "default": 8.0,
+      "description": "Minimum time in seconds before the entity plays its ambient sound again."
     }
   },
   "examples": [
