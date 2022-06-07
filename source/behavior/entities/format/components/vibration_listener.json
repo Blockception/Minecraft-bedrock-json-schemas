@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.vibration_listener",
+  "type": "object",
+  "title": "Vibration Listener",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {},
+  "description": "This entity will respond to vibrations"
+}
