@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.vibration_damper",
+  "type": "object",
+  "title": "Vibration Damper",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {},
+  "description": "Vibrations emitted by this entity will be ignored."
+}
