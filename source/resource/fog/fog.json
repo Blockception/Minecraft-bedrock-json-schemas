@@ -30,13 +30,13 @@
       "properties": {
         "fog_start": {
           "title": "Fog Start",
-          "description": "The distance from the player that the fog will begin to appear. `fog_start` must be less than or equal to `fog_end`.",
+          "description": "The distance from the player that the fog will begin to appear. 'fog_start' must be less than or equal to 'fog_end'.",
           "type": "number",
           "minimum": 0
         },
         "fog_end": {
           "title": "Fog End",
-          "description": "The distance from the player that the fog will become fully opaque. `fog_end` must be greater than or equal to `fog_start`.",
+          "description": "The distance from the player that the fog will become fully opaque. 'fog_end' must be greater than or equal to 'fog_start'.",
           "type": "number",
           "minimum": 0
         },
@@ -52,6 +52,71 @@
           "description": "Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.",
           "type": "string",
           "enum": ["fixed", "render"]
+        },
+        "transition_fog": {
+          "title": "Transition Fog",
+          "description": "Additional fog data which will slowly transition to the distance fog of current biome.",
+          "type": "object",
+          "default": false,
+          "properties": {
+            "init_fog": {
+              "title": "Initial Fog",
+              "description": "Initial fog that will slowly transition into water distance fog of the biome when player goes into water.",
+              "type": "object",
+              "properties": {
+                "fog_color": {
+                  "title": "Fog Color",
+                  "description": "The color that the fog will take on.",
+                  "type": "string",
+                  "format": "color-hex",
+                  "examples": ["#FFFFFF"]
+                },
+                "fog_start": {
+                  "title": "Fog Start",
+                  "description": "The distance from the player that the fog will begin to appear. 'fog_start' must be less than or equal to 'fog_end'.",
+                  "type": "number",
+                  "minimum": 0
+                },
+                "fog_end": {
+                  "title": "Fog End",
+                  "description": "The distance from the player that the fog will become fully opaque. 'fog_end' must be greater than or equal to 'fog_start'.",
+                  "type": "number",
+                  "minimum": 0
+                },
+                "render_distance_type": {
+                  "title": "Render Distance Type",
+                  "description": "Determines how distance value is used. Fixed distance is measured in blocks. Dynamic distance is multiplied by the current render distance.",
+                  "enum": ["fixed", "render"]
+                }
+              }
+            },
+            "min_percent": {
+              "title": "Minimum Percent",
+              "description": "The minimum progress of fog transition.",
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "mid_seconds": {
+              "title": "Midpoint Seconds",
+              "description": "The time takes to reach certain progress('mid_percent') of fog transition.",
+              "type": "number",
+              "minimum": 0
+            },
+            "mid_percent": {
+              "title": "Midpoint Percent",
+              "description": "The progress of fog transition after 'mid_seconds' seconds.",
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "max_seconds": {
+              "title": "Maximum Seconds",
+              "description": "Total amount of time takes to complete fog transition.",
+              "type": "number",
+              "minimum": 0
+            }
+          }
         }
       }
     },
