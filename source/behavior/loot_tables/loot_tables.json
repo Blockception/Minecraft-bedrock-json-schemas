@@ -127,6 +127,14 @@
               "bonus_rolls": { "title": "Bonus Rolls", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "integer" },
               "initial_range": { "title": "Initial Range", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "integer" }
             }
+          },
+          "bonus_rolls": {
+            "title": "Bonus Rolls",
+            "description": "UNDOCUMENTED",
+            "$comment": "UNDOCUMENTED",
+            "type": "integer",
+            "minimum": 0,
+            "default": 0
           }
         }
       }
