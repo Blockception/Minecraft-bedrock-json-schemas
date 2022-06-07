@@ -161,6 +161,7 @@
     "minecraft:sound_volume": { "$ref": "./components/sound_volume.json" },
     "minecraft:spawn_entity": { "$ref": "./components/spawn_entity.json" },
     "minecraft:spell_effects": { "$ref": "./components/spell_effects.json" },
+    "minecraft:suspect_tracking": { "$ref": "./components/suspect_tracking.json" },
     "minecraft:strength": { "$ref": "./components/strength.json" },
     "minecraft:tameable": { "$ref": "./components/tameable.json" },
     "minecraft:tamemount": { "$ref": "./components/tamemount.json" },
