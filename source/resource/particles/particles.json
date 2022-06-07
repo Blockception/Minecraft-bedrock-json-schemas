@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.resource.particle",
   "examples": [
     {
-      "format_version": "1.17.0",
+      "format_version": "1.19.0",
       "particle_effect": {
         "description": {
           "identifier": "example:particle",
