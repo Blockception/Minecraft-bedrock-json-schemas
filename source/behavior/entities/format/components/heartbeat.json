@@ -6,6 +6,13 @@
   "title": "Health",
   "additionalProperties": false,
   "required": [],
-  "properties": {},
+  "properties": {
+    "interval": {
+      "title": "Interval",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$ref": "../../../../molang/number.json"
+    }
+  },
   "examples": [{}]
 }

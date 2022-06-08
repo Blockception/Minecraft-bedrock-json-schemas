@@ -14,7 +14,7 @@
       "$comment": "UNDOCUMENTED",
       "additionalProperties": false,
       "properties": {
-        "minecraft:block_light_absorption": { "$ref": "./components/block_light_absorption.json" },
+        "minecraft:block_light_filter": { "$ref": "./components/block_light_filter.json" },
         "minecraft:block_light_emission": { "$ref": "./components/block_light_emission.json" },
         "minecraft:breakonpush": { "$ref": "./components/breakonpush.json" },
         "minecraft:breathability": { "$ref": "./components/breathability.json" },

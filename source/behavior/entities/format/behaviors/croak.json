@@ -1,0 +1,36 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.croak",
+  "type": "object",
+  "title": "Eat Block",
+  "description": "[EXPERIMENTAL BEHAVIOR] Allows the entity to croak at a random time interval with configurable conditions.",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": { "$ref": "./types/priority.json" },
+    "duration": {
+      "title": "Duration",
+      "type": "array",
+      "items": [
+        { "type": "number", "title": "Mininum" },
+        { "type": "number", "title": "Maximum" }
+      ],
+      "default": [4.5, 4.5],
+      "description": "Random range in seconds after which the croaking stops. Can also be a constant."
+    },
+    "filters": {
+      "title": "Filters",
+      "$ref": "../../filters/filters.json",
+      "description": "Conditions for the behavior to start and keep running. The interval between runs only starts after passing the filters."
+    },
+    "interval": {
+      "title": "Interval",
+      "type": "array",
+      "items": [
+        { "type": "number", "title": "Mininum" },
+        { "type": "number", "title": "Maximum" }
+      ],
+      "default": [10, 20],
+      "description": "Random range in seconds between runs of this behavior. Can also be a constant."
+    }
+  }
+}

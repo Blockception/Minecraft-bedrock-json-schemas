@@ -75,6 +75,12 @@
         "type": "string"
       }
     },
+    "target_block_filters": {
+      "title": "Target Block Filters",
+      "description": "UNDOCUMENTED",
+      "$comment": "UNDOCUMENTED",
+      "$ref": "../../filters/filters.json"
+    },
     "tick_interval": {
       "title": "Tick Interval",
       "type": "integer",
