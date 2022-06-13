@@ -9,8 +9,9 @@ describe("test incorrect files", () => {
 
   expect(files.length, "No files were returned").to.greaterThan(0);
 
-  files.forEach((file) => {
-    if (file.endsWith(".json")) {
+  files
+    .filter((f) => f.endsWith(".json"))
+    .forEach((file) => {
       const testfolder = file.replace(folder + "/", "");
 
       describe(testfolder, () => {
@@ -43,6 +44,5 @@ describe("test incorrect files", () => {
 
         return Promise.all([schemas, result]);
       });
-    }
-  });
+    });
 });
