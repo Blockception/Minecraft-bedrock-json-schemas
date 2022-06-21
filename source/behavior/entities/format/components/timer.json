@@ -69,7 +69,10 @@
     {
       "time": 1,
       "looping": true,
-      "time_down_event": "self:reset"
+      "time_down_event": {
+        "event": "example:foo",
+        "target": "self"
+      }
     }
   ]
 }
