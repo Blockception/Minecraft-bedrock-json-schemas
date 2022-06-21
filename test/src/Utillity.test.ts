@@ -5,7 +5,6 @@ import { Files } from "./Utillity";
 describe("Files", () => {
   it("Root", () => {
     const temp = Files.RootFolder();
-    console.log(temp);
 
     expect(temp.endsWith("lib"), "ended with lib").to.be.false;
     expect(temp.endsWith("lib\\test"), "ended with lib\\test").to.be.false;
@@ -14,7 +13,6 @@ describe("Files", () => {
 
   it("Test", () => {
     const temp = Files.TestFolder();
-    console.log(temp);
 
     expect(temp.endsWith("lib"), "ended with lib").to.be.false;
   });
