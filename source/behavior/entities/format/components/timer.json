@@ -58,7 +58,8 @@
           },
           "value": {
             "type": "integer",
-            "description": "UNDOCUMENTED: value",
+            "description": "The value in seconds that would be used if this section was picked",
+            "$comment": "UNDOCUMENTED",
             "title": "Value"
           }
         }
@@ -69,7 +70,10 @@
     {
       "time": 1,
       "looping": true,
-      "time_down_event": "self:reset"
+      "time_down_event": {
+        "event": "example:foo",
+        "target": "self"
+      }
     }
   ]
 }
