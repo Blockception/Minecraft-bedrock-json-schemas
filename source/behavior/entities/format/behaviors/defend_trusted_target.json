@@ -35,7 +35,7 @@
     "on_defend_start": {
       "$ref": "../types/event.json",
       "title": "On Defend Start",
-      "description": "UNDOCUMENTED",
+      "description": "The event to run when this mob starts to defend the entity it trusts.",
       "$comment": "UNDOCUMENTED"
     },
     "within_radius": {
@@ -52,9 +52,11 @@
     },
     "sound_chance": {
       "title": "Sound Chance",
-      "description": "UNDOCUMENTED",
+      "description": "The chance that the `aggro_sound` will play",
       "$comment": "UNDOCUMENTED",
-      "type": "number"
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
     }
   },
   "examples": [

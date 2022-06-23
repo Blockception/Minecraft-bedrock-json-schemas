@@ -40,7 +40,7 @@
     },
     "max_failed_attempts": {
       "type": "integer",
-      "description": "UNDOCUMENTED",
+      "description": "The number of failed attempts to make before this goal is no longer used.",
       "$comment": "UNDOCUMENTED",
       "title": "Maximum Failed Attempts"
     }

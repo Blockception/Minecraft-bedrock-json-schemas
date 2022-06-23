@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.target_when_pushed",
-  "description": "UNDOCUMENTED",
+  "description": "Allows this mob to target an entity that pushed it",
   "$comment": "UNDOCUMENTED",
   "type": "object",
   "title": "Target When Pushed",
@@ -13,13 +13,13 @@
     "entity_types": {
       "$ref": "../types/entity_types.json",
       "title": "Entity Types",
-      "description": "UNDOCUMENTED",
+      "description": "The list of conditions the other entity must meet to be a valid target",
       "$comment": "UNDOCUMENTED"
     },
     "percent_chance": {
       "type": "number",
       "title": "Percent Chance",
-      "description": "UNDOCUMENTED",
+      "description": "The chance that the entity becomes a target when this mob is pushed",
       "$comment": "UNDOCUMENTED"
     }
   },

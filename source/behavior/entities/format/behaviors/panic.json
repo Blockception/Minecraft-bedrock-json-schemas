@@ -45,25 +45,25 @@
     },
     "panic_sound": {
       "type": "string",
-      "description": "UNDOCUMENTED",
+      "description": "The sound event to play when this mob is in panic",
       "$comment": "UNDOCUMENTED",
       "title": "Panic Sound"
     },
     "sound_interval": {
       "type": "object",
-      "description": "UNDOCUMENTED",
+      "description": "Determines how often the `panic_sound` will play",
       "$comment": "UNDOCUMENTED",
       "title": "Sound Interval",
       "properties": {
         "range_min": {
           "type": "number",
-          "description": "UNDOCUMENTED",
+          "description": "The minimum time in seconds before the `panic_sound` plays",
           "$comment": "UNDOCUMENTED",
           "title": "Range Minimum"
         },
         "range_max": {
           "type": "number",
-          "description": "UNDOCUMENTED",
+          "description": "The maximum time in seconds before the `panic_sound` plays",
           "$comment": "UNDOCUMENTED",
           "title": "Range Maximum"
         }

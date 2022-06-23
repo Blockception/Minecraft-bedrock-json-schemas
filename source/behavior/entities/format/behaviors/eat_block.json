@@ -31,20 +31,20 @@
       "items": {
         "type": "object",
         "title": "Eat And Replace Block Pair",
-        "description": "UNDOCUMENTED",
+        "description": "The block to eat and the block to replace it with.",
         "$comment": "UNDOCUMENTED",
         "properties": {
           "eat_block": {
             "type": "string",
             "title": "Block",
-            "description": "UNDOCUMENTED",
+            "description": "The block to eat.",
             "$comment": "UNDOCUMENTED",
             "$ref": "../../../../general/block/identifier.json"
           },
           "replace_block": {
             "type": "string",
             "title": "Replace Block",
-            "description": "UNDOCUMENTED",
+            "description": "The block to replace the eaten block with.",
             "$comment": "UNDOCUMENTED",
             "$ref": "../../../../general/block/identifier.json"
           }

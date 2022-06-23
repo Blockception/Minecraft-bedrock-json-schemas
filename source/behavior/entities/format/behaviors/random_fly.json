@@ -9,7 +9,7 @@
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
     "avoid_damage_blocks": {
       "type": "boolean",
-      "description": "UNDOCUMENTED",
+      "description": "If true, the mob will avoid blocks that cause damage",
       "$comment": "UNDOCUMENTED",
       "title": "Avoid Damage Blocks"
     },
@@ -33,7 +33,7 @@
     },
     "y_offset": {
       "type": "integer",
-      "description": "UNDOCUMENTED",
+      "description": "Height in blocks to add to the selected target position",
       "$comment": "UNDOCUMENTED",
       "title": "Y Offset"
     }

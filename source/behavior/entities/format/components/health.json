@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.health",
-  "description": "UNDOCUMENTED",
+  "description": "Sets the amount of health this mob has",
   "$comment": "UNDOCUMENTED",
   "type": "object",
   "title": "Health",
@@ -24,13 +24,13 @@
           "properties": {
             "range_min": {
               "title": "Range Minimum",
-              "description": "UNDOCUMENTED",
+              "description": "The minimum amount of health this mob could have",
               "$comment": "UNDOCUMENTED",
               "type": "number"
             },
             "range_max": {
               "title": "Range Maximum",
-              "description": "UNDOCUMENTED",
+              "description": "The maximum amount of health this mob could have",
               "$comment": "UNDOCUMENTED",
               "type": "number"
             }

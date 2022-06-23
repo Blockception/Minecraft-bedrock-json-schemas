@@ -64,13 +64,13 @@
     },
     "leap_dist": {
       "type": "number",
-      "description": "UNDOCUMENTED",
+      "description": "The distance in blocks the mob jumps in the direction of their target",
       "$comment": "UNDOCUMENTED",
       "title": "Leap Dist"
     },
     "stuck_blocks": {
       "$ref": "../../filters/filters.json",
-      "description": "UNDOCUMENTED",
+      "description": "Filters to apply on the block the mob lands on to determine if it is valid for getting stuck",
       "$comment": "UNDOCUMENTED",
       "title": "Stuck Block"
     }

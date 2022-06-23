@@ -14,7 +14,7 @@
     },
     "must_reach": {
       "title": "Must Reach",
-      "description": "UNDOCUMENTED",
+      "description": "If true, the entities considered a threat must be reachable to be a valid target.",
       "$comment": "UNDOCUMENTED",
       "type": "boolean"
     },

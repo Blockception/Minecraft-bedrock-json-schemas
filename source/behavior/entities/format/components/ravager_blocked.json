@@ -23,12 +23,12 @@
           "weight": {
             "type": "integer",
             "title": "Weight",
-            "description": "UNDOCUMENTED",
+            "description": "The chance of this reaction being picked",
             "$comment": "UNDOCUMENTED"
           },
           "value": {
             "title": "Value",
-            "description": "UNDOCUMENTED",
+            "description": "An event that runs when this reaction is picked",
             "$comment": "UNDOCUMENTED",
             "$ref": "../types/event.json"
           }

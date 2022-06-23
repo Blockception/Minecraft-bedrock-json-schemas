@@ -16,13 +16,13 @@
     "on_admire_item_start": {
       "$ref": "../types/event.json",
       "title": "On Admire Item Start",
-      "description": "UNDOCUMENTED",
+      "description": "The event to run when admiring the item",
       "$comment": "UNDOCUMENTED"
     },
     "on_admire_item_stop": {
       "$ref": "../types/event.json",
       "title": "On Admire Item Stop",
-      "description": "UNDOCUMENTED",
+      "description": "The event to run when no longer admiring the item",
       "$comment": "UNDOCUMENTED"
     },
     "sound_interval": {
