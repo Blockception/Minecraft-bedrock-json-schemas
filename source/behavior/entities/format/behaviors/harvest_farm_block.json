@@ -16,7 +16,7 @@
     },
     "search_cooldown_max_seconds": {
       "title": "Search Cooldown Maximum Seconds",
-      "description": "The maximum amount of time in seconds that the goal can take before searching again, after failing to find a a harvest block already.",
+      "description": "The maximum amount of time in seconds that the goal can take before searching again, after failing to find a block to harvest.",
       "$comment": "UNDOCUMENTED",
       "type": "number"
     },
