@@ -43,37 +43,39 @@
     "event_choices": {
       "type": "array",
       "title": "Event Choices",
-      "description": "UNDOCUMENTED",
+      "description": "List of spells for the mob to use",
       "$comment": "UNDOCUMENTED",
       "items": {
         "type": "object",
         "additionalProperties": false,
         "title": "Event Choice",
-        "description": "UNDOCUMENTED",
+        "description": "A spell that the mob can cast",
         "$comment": "UNDOCUMENTED",
         "properties": {
           "min_activation_range": {
             "type": "number",
             "title": "Minimum Activation Range",
-            "description": "UNDOCUMENTED",
-            "$comment": "UNDOCUMENTED"
+            "description": "The minimum distance in blocks the target must be for this spell to be cast",
+            "$comment": "UNDOCUMENTED",
+            "minimum": 0
           },
           "max_activation_range": {
             "type": "number",
             "title": "Maxmimum Activation Range",
-            "description": "UNDOCUMENTED",
-            "$comment": "UNDOCUMENTED"
+            "description": "The maxmimum distance in blocks the target must be for this spell to be cast",
+            "$comment": "UNDOCUMENTED",
+            "minimum": 0
           },
           "cooldown_time": {
             "type": "number",
             "title": "Cooldown Time",
-            "description": "UNDOCUMENTED",
+            "description": "Time in seconds before the mob can use this spell again",
             "$comment": "UNDOCUMENTED"
           },
           "cast_duration": {
             "type": "number",
             "title": "Cast Duration",
-            "description": "UNDOCUMENTED",
+            "description": "Time in seconds the spell casting will take",
             "$comment": "UNDOCUMENTED"
           },
           "filters": {
@@ -83,19 +85,19 @@
             "type": "string",
             "format": "color-hex",
             "title": "Particle Color",
-            "description": "UNDOCUMENTED",
+            "description": "The color of the particles for this spell",
             "$comment": "UNDOCUMENTED"
           },
           "weight": {
             "type": "integer",
             "title": "Weight",
-            "description": "UNDOCUMENTED",
+            "description": "The weight of this spell. Controls how likely this spell will be picked",
             "$comment": "UNDOCUMENTED"
           },
           "start_sound_event": {
             "type": "string",
             "title": "Start Sound Event",
-            "description": "UNDOCUMENTED",
+            "description": "The sound event to play when using this spell",
             "$comment": "UNDOCUMENTED"
           },
           "sequence": {
@@ -106,7 +108,7 @@
     },
     "sequence": {
       "$ref": "#/definitions/sequence",
-      "description": "UNDOCUMENTED",
+      "description": "List of steps for the spell",
       "$comment": "UNDOCUMENTED",
       "title": "Sequence"
     }

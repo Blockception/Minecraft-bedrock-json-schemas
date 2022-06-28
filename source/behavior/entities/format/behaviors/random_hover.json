@@ -9,7 +9,7 @@
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
     "hover_height": {
       "type": "array",
-      "description": "UNDOCUMENTED",
+      "description": "The range of height in blocks above the surface which the mob will try to hover.",
       "$comment": "UNDOCUMENTED",
       "title": "Hover Height",
       "items": [

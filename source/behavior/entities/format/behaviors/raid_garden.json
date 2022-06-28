@@ -58,7 +58,7 @@
     "search_height": {
       "type": "integer",
       "default": 0,
-      "description": "UNDOCUMENTED",
+      "description": "Height in blocks the mob will look for crops to eat",
       "$comment": "UNDOCUMENTED",
       "title": "Search Height"
     }

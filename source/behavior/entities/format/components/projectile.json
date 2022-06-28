@@ -110,32 +110,32 @@
     "mob_effect": {
       "type": "object",
       "default": true,
-      "description": "UNDOCUMENTED",
+      "description": "Effect to apply on the entity hit by this projectile",
       "title": "Mob Effects",
       "properties": {
         "effect": {
           "title": "Effect",
-          "description": "UNDOCUMENTED",
+          "description": "The name of the effect to apply",
           "type": "string"
         },
         "durationeasy": {
           "title": "Duration Easy",
-          "description": "UNDOCUMENTED",
+          "description": "Duration in seconds of the effect when on Easy difficulty",
           "type": "number"
         },
         "durationnormal": {
           "title": "Duration Normal",
-          "description": "UNDOCUMENTED",
+          "description": "Duration in seconds of the effect when on Normal difficulty",
           "type": "number"
         },
         "durationhard": {
           "title": "Duration Hard",
-          "description": "UNDOCUMENTED",
+          "description": "Duration in seconds of the effect when on Hard difficulty",
           "type": "number"
         },
         "amplifier": {
           "title": "Amplifier",
-          "description": "UNDOCUMENTED",
+          "description": "Amplifier level of the effect",
           "type": "number"
         }
       }
@@ -160,7 +160,7 @@
     "on_hit": {
       "additionalProperties": false,
       "type": "object",
-      "description": "UNDOCUMENTED",
+      "description": "Performs different behaviours when this projectile hits something",
       "$comment": "UNDOCUMENTED",
       "title": "On Hit",
       "properties": {
@@ -187,14 +187,14 @@
         },
         "definition_event": {
           "additionalProperties": false,
-          "description": "UNDOCUMENTED",
+          "description": "Calls an event on hit",
           "$comment": "UNDOCUMENTED",
           "title": "Event",
           "type": "object",
           "properties": {
             "affect_projectile": {
               "type": "boolean",
-              "description": "UNDOCUMENTED",
+              "description": "Event will be triggered for this projectile entity",
               "$comment": "UNDOCUMENTED",
               "title": "Affect Projectile"
             },
@@ -212,7 +212,7 @@
         "impact_damage": {
           "additionalProperties": false,
           "type": "object",
-          "description": "UNDOCUMENTED",
+          "description": "Deals damage on hit",
           "$comment": "UNDOCUMENTED",
           "title": "Impact Damage",
           "properties": {
@@ -237,18 +237,18 @@
 
             "filter": {
               "type": "string",
-              "description": "UNDOCUMENTED",
+              "description": "Entity to affect. Note: cannot test for anything other than the identifier",
               "$comment": "UNDOCUMENTED",
               "title": "Filter"
             },
             "catch_fire": {
               "type": "boolean",
-              "description": "UNDOCUMENTED",
+              "description": "If true, sets the target on fire",
               "$comment": "UNDOCUMENTED",
               "title": "Catch Fire"
             },
             "damage": {
-              "description": "UNDOCUMENTED",
+              "description": "Damage dealt to entity on hit",
               "$comment": "UNDOCUMENTED",
               "title": "Damage",
               "oneOf": [{ "type": "integer" }, { "type": "array", "items": [{ "type": "integer" }, { "type": "integer" }] }]
@@ -315,31 +315,31 @@
         "particle_on_hit": {
           "additionalProperties": false,
           "type": "object",
-          "description": "UNDOCUMENTED",
+          "description": "Spawns particles on hit",
           "$comment": "UNDOCUMENTED",
           "title": "Particle On Hit",
           "properties": {
             "particle_type": {
               "type": "string",
-              "description": "UNDOCUMENTED",
+              "description": "The vanilla particle to use",
               "$comment": "UNDOCUMENTED",
               "title": "Particle Type"
             },
             "num_particles": {
               "type": "integer",
-              "description": "UNDOCUMENTED",
+              "description": "Number of particles to spawn",
               "$comment": "UNDOCUMENTED",
               "title": "Num Particles"
             },
             "on_entity_hit": {
               "type": "boolean",
-              "description": "UNDOCUMENTED",
+              "description": "If true, spawns particles when this projectile hits an entity",
               "$comment": "UNDOCUMENTED",
               "title": "On Entity Hit"
             },
             "on_other_hit": {
               "type": "boolean",
-              "description": "UNDOCUMENTED",
+              "description": "If true, spawns particles when this projectile hits something other than an entity",
               "$comment": "UNDOCUMENTED",
               "title": "On Other Hit"
             }
@@ -348,14 +348,14 @@
         "remove_on_hit": {
           "additionalProperties": false,
           "type": "object",
-          "description": "UNDOCUMENTED",
+          "description": "Removes this projectile if it hits something",
           "$comment": "UNDOCUMENTED",
           "title": "Remove On Hit"
         },
         "spawn_chance": {
           "additionalProperties": false,
           "type": "object",
-          "description": "UNDOCUMENTED",
+          "description": "Spawns an entity on hit",
           "$comment": "UNDOCUMENTED",
           "title": "Spawn Chance",
           "properties": {
@@ -391,25 +391,27 @@
             },
             "spawn_definition": {
               "type": "string",
-              "description": "UNDOCUMENTED",
+              "description": "Identifier of the entity to spawn",
               "$comment": "UNDOCUMENTED",
               "title": "Spawn Definition"
             },
             "spawn_baby": {
               "type": "boolean",
-              "description": "UNDOCUMENTED",
+              "description": "If true, the `minecraft:entity_born` event will be run on the entity.",
               "$comment": "UNDOCUMENTED",
               "title": "Spawn Baby"
             }
           }
         },
         "spawn_aoe_cloud": {
+          "description": "Spawns an area of effect cloud",
+          "$comment": "UNDOCUMENTED",
           "additionalProperties": false,
           "type": "object",
           "properties": {
             "radius": {
               "type": "number",
-              "description": "UNDOCUMENTED",
+              "description": "Radius of the cloud",
               "$comment": "UNDOCUMENTED",
               "title": "Radius"
             },
@@ -421,24 +423,24 @@
             },
             "potion": {
               "type": "integer",
-              "description": "UNDOCUMENTED",
+              "description": "The lingering potion ID to use",
               "$comment": "UNDOCUMENTED",
               "title": "Potion"
             },
             "particle": {
               "type": "string",
-              "description": "UNDOCUMENTED",
+              "description": "Vanilla particle that is used for the cloud",
               "$comment": "UNDOCUMENTED",
               "title": "Particle"
             },
             "duration": {
               "type": "integer",
-              "description": "UNDOCUMENTED",
+              "description": "Duration in seconds of the cloud existing",
               "$comment": "UNDOCUMENTED",
               "title": "Duration"
             },
             "color": {
-              "description": "UNDOCUMENTED",
+              "description": "Color of the cloud particles",
               "$comment": "UNDOCUMENTED",
               "title": "Color",
               "type": "array",
@@ -469,13 +471,13 @@
             },
             "affect_owner": {
               "type": "boolean",
-              "description": "UNDOCUMENTED",
+              "description": "If true, the potion effect of the cloud will affect the shooter",
               "$comment": "UNDOCUMENTED",
               "title": "Affect Owner"
             },
             "reapplication_delay": {
               "type": "integer",
-              "description": "UNDOCUMENTED",
+              "description": "Delay in ticks between application of the potion effect",
               "$comment": "UNDOCUMENTED",
               "title": "Reapplication Delay"
             }
@@ -484,7 +486,7 @@
         "stick_in_ground": {
           "additionalProperties": false,
           "type": "object",
-          "description": "UNDOCUMENTED",
+          "description": "Sticks this projectile into the ground on hit",
           "$comment": "UNDOCUMENTED",
           "title": "Stick In Ground",
           "properties": {
@@ -500,7 +502,7 @@
         "teleport_owner": {
           "additionalProperties": false,
           "type": "object",
-          "description": "UNDOCUMENTED",
+          "description": "Teleports the shooter to the hit location",
           "$comment": "UNDOCUMENTED",
           "title": "Teleport Owner"
         },
@@ -513,7 +515,7 @@
           "additionalProperties": false,
           "type": "object",
           "title": "Grant XP",
-          "description": "UNDOCUMENTED",
+          "description": "Spawns a number of experience orbs, which total the amount stated when gathered",
           "$comment": "UNDOCUMENTED",
           "properties": {
             "minXP": {
@@ -595,7 +597,7 @@
     "stop_on_hurt": {
       "title": "Splash Range",
       "type": "boolean",
-      "description": "UNDOCUMENTED",
+      "description": "Radius in blocks of the 'splash' effect",
       "$comment": "UNDOCUMENTED"
     },
     "uncertainty_base": {

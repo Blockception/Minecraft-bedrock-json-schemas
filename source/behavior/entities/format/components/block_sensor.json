@@ -7,10 +7,11 @@
   "properties": {
     "sensor_radius": {
       "type": "integer",
-      "description": "UNDOCUMENTED",
+      "description": "The maximum radius in blocks in which a specified block can be detected.",
       "$comment": "UNDOCUMENTED",
       "title": "Sensor Radius",
-      "minimum": 0
+      "minimum": 0,
+      "maximum": 32
     },
     "on_break": {
       "type": "array",
@@ -41,12 +42,19 @@
     },
     "sources": {
       "title": "Sources",
-      "description": "UNDOCUMENTED",
+      "description": "List of sources that break the block to listen for. If none are specified, then all block breaks will be detected",
       "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
         "$ref": "../../filters/filters.json"
-      }
+      },
+      "examples": [
+        {
+            "test": "has_silk_touch",
+            "subject": "other",
+            "value": false
+        }
+      ]
     }
   },
   "examples": [

@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.swim_with_entity",
   "type": "object",
   "title": "Swim With Entity",
-  "description": "UNDOCUMENTED",
+  "description": "Allows this mob to follow another entity, as long as both entities are in water (swimming)",
   "$comment": "UNDOCUMENTED",
   "additionalProperties": false,
   "required": [],
@@ -12,55 +12,55 @@
     "success_rate": {
       "type": "number",
       "title": "Success Rate",
-      "description": "UNDOCUMENTED",
+      "description": "Chance to start following another entity, if not already doing so",
       "$comment": "UNDOCUMENTED"
     },
     "chance_to_stop": {
       "type": "number",
       "title": "Chance To Stop",
-      "description": "UNDOCUMENTED",
+      "description": "Chance to stop following the current entity",
       "$comment": "UNDOCUMENTED"
     },
     "state_check_interval": {
       "type": "number",
       "title": "State Check Interval",
-      "description": "UNDOCUMENTED",
+      "description": "Time in seconds between checks to determine if this mob should catch up to the entity being followed",
       "$comment": "UNDOCUMENTED"
     },
     "catch_up_threshold": {
       "type": "number",
       "title": "Catch Up Threshold",
-      "description": "UNDOCUMENTED",
+      "description": "Distance in blocks from the entity being followed at which this mob will speed up to catch up",
       "$comment": "UNDOCUMENTED"
     },
     "match_direction_threshold": {
       "type": "number",
       "title": "Match Direction Threshold",
-      "description": "UNDOCUMENTED",
+      "description": "Distance in blocks from the entity being followed at which this mob will match that entity's direction",
       "$comment": "UNDOCUMENTED"
     },
     "catch_up_multiplier": {
       "type": "number",
       "title": "Catch Up Multiplier",
-      "description": "UNDOCUMENTED",
+      "description": "The multiplier applied to the speed of this mob when trying to catch up",
       "$comment": "UNDOCUMENTED"
     },
     "search_range": {
       "type": "number",
       "title": "Search Range",
-      "description": "UNDOCUMENTED",
+      "description": "Radius in blocks around this mob to search for another entity to follow",
       "$comment": "UNDOCUMENTED"
     },
     "stop_distance": {
       "type": "number",
       "title": "Stop Distance",
-      "description": "UNDOCUMENTED",
+      "description": "Distance in blocks from the entity being followed at which this entity will stop following",
       "$comment": "UNDOCUMENTED"
     },
     "entity_types": {
       "$ref": "../types/entity_types.json",
       "title": "Entity Types",
-      "description": "UNDOCUMENTED",
+      "description": "Filters which determine what entites are valid to follow",
       "$comment": "UNDOCUMENTED"
     }
   },

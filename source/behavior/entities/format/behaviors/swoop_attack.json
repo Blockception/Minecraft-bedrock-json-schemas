@@ -11,7 +11,7 @@
     "damage_reach": {
       "type": "number",
       "title": "Damage Reach",
-      "description": "UNDOCUMENTED",
+      "description": "Added onto the base size of this mob to determine the maximum distance this mob can deal damage",
       "$comment": "UNDOCUMENTED"
     },
     "delay_range": {

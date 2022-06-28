@@ -10,19 +10,19 @@
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
     "max_seconds_before_search": {
       "title": "Maximum Seconds Before Search",
-      "description": "UNDOCUMENTED",
+      "description": "The maximum amount of time in seconds that the goal can take before searching for the first harvest block.",
       "$comment": "UNDOCUMENTED",
       "type": "number"
     },
     "search_cooldown_max_seconds": {
       "title": "Search Cooldown Maximum Seconds",
-      "description": "UNDOCUMENTED",
+      "description": "The maximum amount of time in seconds that the goal can take before searching again, after failing to find a block to harvest.",
       "$comment": "UNDOCUMENTED",
       "type": "number"
     },
     "seconds_until_new_task": {
       "title": "Seconds Until New Task",
-      "description": "UNDOCUMENTED",
+      "description": "The amount of time in seconds that the goal will cooldown after a successful reap/sow, before it can start again.",
       "$comment": "UNDOCUMENTED",
       "type": "number"
     }

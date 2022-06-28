@@ -16,13 +16,13 @@
     "can_tempt_while_ridden": {
       "type": "boolean",
       "title": "Can Tempt While Ridden",
-      "description": "UNDOCUMENTED",
+      "description": "If true, this mob can be tempted while it has a passenger",
       "$comment": "UNDOCUMENTED"
     },
     "can_tempt_vertically": {
       "type": "boolean",
       "title": "Can Tempt Vertically",
-      "description": "UNDOCUMENTED",
+      "description": "If true, vertical distance will be considered when being tempted",
       "$comment": "UNDOCUMENTED"
     },
     "items": {

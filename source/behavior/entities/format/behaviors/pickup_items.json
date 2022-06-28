@@ -22,7 +22,7 @@
     "cooldown_after_being_attacked": {
       "type": "number",
       "default": true,
-      "description": "UNDOCUMENTED",
+      "description": "Duration, in seconds, for which the mob won't pickup items if it was hurt",
       "$comment": "UNDOCUMENTED",
       "title": "Cooldown After Being Attacked"
     },

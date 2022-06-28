@@ -7,14 +7,14 @@
   "properties": {
     "min_delay_secs": {
       "type": "integer",
-      "description": "UNDOCUMENTED",
+      "description": "The minimum time in seconds before a scheduled event occurs",
       "$comment": "UNDOCUMENTED",
       "title": "Minimum Delay Secs",
       "minimum": 0
     },
     "max_delay_secs": {
       "type": "integer",
-      "description": "UNDOCUMENTED",
+      "description": "The maximum time in seconds before a scheduled event occurs",
       "$comment": "UNDOCUMENTED",
       "title": "Maximum Delay Secs",
       "minimum": 0
@@ -26,7 +26,7 @@
       "items": {
         "additionalProperties": false,
         "type": "object",
-        "description": "UNDOCUMENTED",
+        "description": "A filter and event pair. The event runs when the filter criteria succeeds",
         "$comment": "UNDOCUMENTED",
         "title": "Scheduled Events",
         "properties": {

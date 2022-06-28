@@ -34,7 +34,7 @@
       ]
     },
     "look_distance": {
-      "description": "UNDOCUMENTED",
+      "description": "The distance in blocks from which the mob will look at",
       "$comment": "UNDOCUMENTED",
       "title": "Look Distance",
       "type": "number"

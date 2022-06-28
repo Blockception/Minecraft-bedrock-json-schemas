@@ -18,14 +18,17 @@
           "drop_chance": {
             "type": "number",
             "title": "Drop Chance",
-            "description": "UNDOCUMENTED",
+            "description": "The chance that the item in this slot will drop",
             "$comment": "UNDOCUMENTED"
           },
           "slot": {
             "type": "string",
             "title": "Slot",
-            "description": "UNDOCUMENTED",
-            "$comment": "UNDOCUMENTED"
+            "description": "The slot in which the item will drop from",
+            "$comment": "UNDOCUMENTED",
+            "examples": [
+                "slot.weapon.mainhand"
+            ]
           }
         }
       }
