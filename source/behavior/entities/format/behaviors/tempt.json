@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.tempt",
-  "description": "Allows the mob to be tempted by food they like.",
+  "description": "Allows an entity to be tempted by a set item.",
   "type": "object",
   "title": "Tempt",
   "additionalProperties": false,
@@ -10,31 +10,31 @@
     "can_get_scared": {
       "type": "boolean",
       "default": false,
-      "description": "If true, the mob can stop being tempted if the player moves too fast while close to this mob",
+      "description": "If true, the mob can stop being tempted if the player moves too fast while close to this mob.",
       "title": "Can Get Scared"
     },
     "can_tempt_while_ridden": {
       "type": "boolean",
+      "default": false,
       "title": "Can Tempt While Ridden",
-      "description": "If true, this mob can be tempted while it has a passenger",
-      "$comment": "UNDOCUMENTED"
+      "description": "If true, the mob can be tempted even if it has a passenger (i.e. if being ridden)."
     },
     "can_tempt_vertically": {
       "type": "boolean",
+      "default": false,
       "title": "Can Tempt Vertically",
-      "description": "If true, vertical distance will be considered when being tempted",
-      "$comment": "UNDOCUMENTED"
+      "description": "If true, vertical distance to the player will be considered when tempting."
     },
     "items": {
       "type": "array",
+      "title": "Items",
       "description": "List of items this mob is tempted by",
       "items": {
         "$ref": "../../../../general/item/identifier.json"
-      },
-      "title": "Items"
+      }
     },
     "sound_interval": {
-      "description": "The interval in ticks between playing the sound",
+      "description": "Range of random ticks to wait between tempt sounds.",
       "title": "Sound Interval",
       "oneOf": [
         {
