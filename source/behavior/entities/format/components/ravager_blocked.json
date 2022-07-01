@@ -8,7 +8,7 @@
   "properties": {
     "knockback_strength": {
       "type": "number",
-      "default": 3,
+      "default": 3.0,
       "description": "The strength with which blocking entities should be knocked back",
       "title": "Knockback Strength"
     },
