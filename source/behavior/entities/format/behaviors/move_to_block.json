@@ -17,13 +17,12 @@
     "on_stay_completed": {
       "title": "On Stay Completed",
       "description": "Event to run on completing a stay of stay_duration at the block.",
-      "$ref": "../types/trigger.json"
+      "oneOf": [{ "type": "array", "items": { "$ref": "../types/trigger.json" } }, { "$ref": "../types/trigger.json" }]
     },
     "on_reach": {
-      "type": "array",
       "title": "On Reach",
       "description": "Event to run on block reached.",
-      "$ref": "../types/trigger.json"
+      "oneOf": [{ "type": "array", "items": { "$ref": "../types/trigger.json" } }, { "$ref": "../types/trigger.json" }]
     },
     "start_chance": {
       "title": "Start Chance",
