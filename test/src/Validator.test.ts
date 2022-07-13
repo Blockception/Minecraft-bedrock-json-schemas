@@ -31,7 +31,6 @@ describe("Validate", function () {
 
       describe("Checking refs", function () {
         if (!object) {
-          expect.fail();
           return;
         }
 
