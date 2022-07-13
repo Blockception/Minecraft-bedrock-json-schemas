@@ -9,52 +9,52 @@
       "$ref": "types/priority.json"
     },
     "aggro_sound": {
+      "title": "Aggro Sound",
       "type": "string",
       "default": "",
-      "description": "Sound to occasionally play while defending.",
-      "title": "Aggro Sound"
+      "description": "Sound to occasionally play while defending."
     },
     "attack_interval": {
+      "title": "Attack Interval",
       "type": "integer",
       "default": 0,
-      "description": "Time in seconds between attacks",
-      "title": "Attack Interval"
+      "description": "Time in seconds between attacks"
     },
     "must_see": {
+      "title": "Must See",
       "type": "boolean",
       "default": false,
-      "description": "If true, only entities in this mob's viewing range can be selected as targets",
-      "title": "Must See"
+      "description": "If true, only entities in this mob's viewing range can be selected as targets"
     },
     "must_see_forget_duration": {
+      "title": "Must See Forget Duration",
       "type": "number",
       "default": 3,
-      "description": "Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more",
-      "title": "Must See Forget Duration"
+      "description": "Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more"
+      
     },
     "on_defend_start": {
-      "$ref": "../types/event.json",
       "title": "On Defend Start",
-      "description": "The event to run when this mob starts to defend the entity it trusts.",
-      "$comment": "UNDOCUMENTED"
+      "$ref": "../types/event.json",
+      "description": "The event to run when this mob starts to defend the entity it trusts."
     },
     "within_radius": {
+      "title": "Within Radius",
       "type": "number",
       "default": 0,
-      "description": "Distance in blocks that the target can be within to launch an attack",
-      "title": "Within Radius"
+      "description": "Distance in blocks that the target can be within to launch an attack"
     },
     "entity_types": {
+      "title": "Entity Types",
       "type": "object",
       "description": "List of entity types that this mob considers valid targets",
-      "title": "Entity Types",
       "additionalProperties": false
     },
     "sound_chance": {
       "title": "Sound Chance",
-      "description": "The chance that the `aggro_sound` will play",
-      "$comment": "UNDOCUMENTED",
       "type": "number",
+      "default": 0.05,
+      "description": "Probability that a sound will play.",
       "minimum": 0,
       "maximum": 1
     }
@@ -67,7 +67,7 @@
       "must_see_forget_duration": 3,
       "within_radius": 0,
       "entity_types": {},
-      "sound_chance": 0.0
+      "sound_chance": 0.05
     }
   ]
 }
