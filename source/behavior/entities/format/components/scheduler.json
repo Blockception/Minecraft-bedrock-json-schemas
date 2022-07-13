@@ -6,29 +6,28 @@
   "additionalProperties": false,
   "properties": {
     "min_delay_secs": {
-      "type": "integer",
-      "description": "The minimum time in seconds before a scheduled event occurs",
-      "$comment": "UNDOCUMENTED",
       "title": "Minimum Delay Secs",
+      "type": "number",
+      "default": 0,
+      "description": "The minimum the scheduler will be delayed.",
       "minimum": 0
     },
     "max_delay_secs": {
-      "type": "integer",
-      "description": "The maximum time in seconds before a scheduled event occurs",
-      "$comment": "UNDOCUMENTED",
       "title": "Maximum Delay Secs",
+      "type": "number",
+      "default": 0,
+      "description": "The maximum the scheduler will be delayed.",
       "minimum": 0
     },
     "scheduled_events": {
+      "title": "Scheduled Events",
       "type": "array",
       "description": "The list of triggers that fire when the conditions match the given filter criteria. If any filter criteria overlap the first defined event will be picked.",
-      "title": "Scheduled Events",
       "items": {
+        "title": "Scheduled Events",
         "additionalProperties": false,
         "type": "object",
         "description": "A filter and event pair. The event runs when the filter criteria succeeds",
-        "$comment": "UNDOCUMENTED",
-        "title": "Scheduled Events",
         "properties": {
           "filters": {
             "$ref": "../../filters/filters.json"
