@@ -14,6 +14,7 @@ The json validation schema files for Minecraft bedrock
 	- [behavior files](#behavior-files)
 	- [Resource files](#resource-files)
 	- [Contributing](#contributing-1)
+	- [License](#license)
 
 ## Contributing
 
@@ -81,3 +82,9 @@ smaller schemas. On other matters follow the [Contribution guide](CONTRIBUTING.m
 This project could more help in filling in descriptions, titles and giving snippets!
 
 Json validation can give snippets for sub items. as well as description, but this hasn't always been filled out!
+
+
+## License
+
+This project makes use of Microsoft open source license:
+[CC-BY-4.0, MIT licenses](https://github.com/MicrosoftDocs/minecraft-creator/blob/main/LICENSE)
