@@ -18,7 +18,7 @@
     "duration": {
       "title": "Duration",
       "type": "number",
-      "default": 1000000,
+      "default": 1.0,
       "description": "The amount of time the mob will remain playing dead (in seconds)."
     },
     "filters": {
@@ -35,7 +35,7 @@
     "random_start_chance": {
       "title": "Random Start Chance",
       "type": "number",
-      "default": 1000000,
+      "default": 1.0,
       "description": "The likelihood of this goal starting upon taking damage."
     },
     "random_damage_range": {
