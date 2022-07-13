@@ -52,11 +52,12 @@
       "title": "Target Selection Method",
       "type": "string",
       "default": "nearest",
-      "description": "Kind of block to find fitting the specification. Valid values are \"random\" and \"nearest\"."
+      "description": "Kind of block to find fitting the specification. Valid values are \"random\" and \"nearest\".",
+      "enum": ["random","nearest"]
     },
     "target_offset": {
-      "type": "array",
       "title": "Target Offset",
+      "type": "array",
       "default": [0, 0, 0],
       "description": "Offset to add to the selected target position.",
       "items": [
