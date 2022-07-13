@@ -40,6 +40,12 @@
       "description": "Time in seconds for the entire event sending process",
       "title": "Cast Duration"
     },
+    "look_at_target": {
+      "title": "Look At Target",
+      "type": "boolean",
+      "default": true,
+      "description": "If true, the mob will face the entity it sends an event to"
+    },
     "event_choices": {
       "type": "array",
       "title": "Event Choices",
