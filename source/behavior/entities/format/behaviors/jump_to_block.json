@@ -11,7 +11,7 @@
     },
     "cooldown_range": {
       "title": "Cooldown Range",
-      "$ref": "../types/range_number_type.json",
+      "$ref": "../../../../general/vectors/number2.json",
       "default": [10, 20],
       "description": "Minimum and maximum cooldown time-range (positive, in seconds) between each attempted jump."
     },
@@ -26,7 +26,7 @@
     "max_velocity": {
       "title": "Max Velocity",
       "type": "number",
-      "default": 1500000,
+      "default": 1.5,
       "description": "The maximum velocity with which the mob can jump."
     },
     "minimum_distance": {
@@ -52,7 +52,7 @@
     "preferred_blocks_chance": {
       "title": "Preferred Blocks Chance",
       "type": "number",
-      "default": 1000000,
+      "default": 1.0,
       "description": "Chance (between 0.0 and 1.0) that the mob will jump to a preferred block, if in range. Only matters if preferred blocks are defined."
     },
     "scale_factor": {
