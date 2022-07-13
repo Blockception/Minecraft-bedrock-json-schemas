@@ -23,7 +23,11 @@
     }
   ],
   "definitions": {
-    "trigger": {
+    "triggers": {
+      "title": "Triggers",
+      "description": "List of triggers with the events to call when taking specific kinds of damage.",
+      "type": "object",
+      "additionalProperties": false,
       "properties": {
         "cause": {
           "type": "string",
@@ -31,6 +35,12 @@
           "description": "Type of damage that triggers the events.",
           "title": "Cause",
           "$ref": "../../../../general/entity/damage_source.json"
+        },
+        "damage_modifier": {
+          "title": "Damage Modifier",
+          "type": "number",
+          "default": 0.0,
+          "description": "A modifier that adds to/removes from the base damage from the damage cause. It does not reduce damage to less than 0."
         },
         "damage_multiplier": {
           "type": "number",
@@ -74,12 +84,12 @@
         {
           "type": "array",
           "items": {
-            "$ref": "#/definitions/trigger"
+            "$ref": "#/definitions/triggers"
           }
         },
         {
           "type": "object",
-          "$ref": "#/definitions/trigger"
+          "$ref": "#/definitions/triggers"
         }
       ]
     }
