@@ -448,7 +448,6 @@
           "type": "object",
           "description": "Removes the projectile.",
           "additionalProperties": true,
-          "$comment": "UNDOCUMENTED",
           "properties": {}
         },
         "spawn_aoe_cloud": {
