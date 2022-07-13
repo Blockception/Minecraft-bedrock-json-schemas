@@ -24,7 +24,7 @@
     "knockback_force": {
       "title": "Knockback Force",
       "type": "number",
-      "default": 5000000,
+      "default": 5.0,
       "description": "The force of the knockback of the ram attack."
     },
     "knockback_height": {
@@ -65,13 +65,13 @@
     "ram_speed": {
       "title": "Ram Speed",
       "type": "number",
-      "default": 2000000,
+      "default": 2.0,
       "description": "Sets the entity's speed when charging toward the target."
     },
     "run_speed": {
       "title": "Run Speed",
       "type": "number",
-      "default": 1000000,
+      "default": 1.0,
       "description": "Sets the entity's speed when running toward the target."
     },
     "trigger": {
