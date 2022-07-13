@@ -4,7 +4,7 @@ import * as fs from "fs";
 import * as JSONC from "comment-json";
 import { expect } from "chai";
 
-describe.only("Validate", function () {
+describe("Validate", function () {
   const folder = path.join(Files.TestFolder(), "..", "source");
   console.log(folder);
   const files = Files.GetFiles(folder);
