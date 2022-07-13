@@ -4,7 +4,7 @@ import * as fs from "fs";
 import * as JSONC from "comment-json";
 import { expect } from "chai";
 
-describe.only("Validate", () => {
+describe.only("Validate", function () {
   const folder = path.join(Files.TestFolder(), "..", "source");
   console.log(folder);
   const files = Files.GetFiles(folder);
@@ -12,24 +12,24 @@ describe.only("Validate", () => {
   files.forEach((filepath) => {
     const filename = filepath.slice(folder.length);
 
-    describe(filename, () => {
+    describe(filename, function () {
       let object: JsonSchema | undefined = undefined;
       let data: string;
 
-      it("Can read file", () => {
+      it("Can read file", function () {
         data = fs.readFileSync(filepath, "utf8");
       });
 
-      it("Can parse to json", () => {
+      it("Can parse to json", function () {
         object = <JsonSchema>JSONC.parse(data);
       });
 
-      it("Not Undefined or null", () => {
+      it("Not Undefined or null", function () {
         expect(object).to.not.be.undefined;
         expect(object).to.not.be.null;
       });
 
-      it("Checking refs", () => {
+      describe("Checking refs", function () {
         if (!object) {
           expect.fail();
           return;
@@ -53,7 +53,9 @@ function explore_refs(data: JsonSchema, folder: string): void {
     if (!ref.startsWith("#")) {
       const filepath = path.isAbsolute(ref) ? ref : path.join(folder, ref);
 
-      expect(fs.existsSync(filepath), `ref ${ref} exists`).to.be.true;
+      it(`expecting ${ref} to exist from ${folder}`, function () {
+        expect(fs.existsSync(filepath), `ref ${ref} exists`).to.be.true;
+      });
     }
   }
 

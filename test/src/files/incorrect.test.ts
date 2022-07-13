@@ -2,7 +2,7 @@ import { expect } from "chai";
 import { Schema } from "../SchemaTester";
 import { Files } from "../Utillity";
 
-describe("test incorrect files", () => {
+describe("test incorrect files", function () {
   const folder = Files.InCorrectFilesFolder().replace(/\\/gi, "/");
   const files = Files.GetFiles(folder);
   const validator = Schema.GetValidator();
@@ -14,11 +14,11 @@ describe("test incorrect files", () => {
     .forEach((file) => {
       const testfolder = file.replace(folder + "/", "");
 
-      describe(testfolder, () => {
+      describe(testfolder, function () {
         const result = validator.ValidateFile(file);
         const schemas = validator.ls.getMatchingSchemas(result.doc, result.jdoc);
 
-        it("schemas", () => {
+        it("schemas", function () {
           return schemas.then(
             (success) => {
               expect(success.length, "Expected schemas to be returned").to.greaterThan(0);
@@ -29,7 +29,7 @@ describe("test incorrect files", () => {
           );
         });
 
-        it("validation", () => {
+        it("validation", function () {
           result.promise.then(
             (succes) => {
               expect(succes.length, "Expected errors! but had none").to.greaterThan(0);

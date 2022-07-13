@@ -2,8 +2,8 @@ import { expect } from "chai";
 import { DummyFiles } from "../../src/main";
 import { Files } from "./Utillity";
 
-describe("Files", () => {
-  it("Root", () => {
+describe("Files", function () {
+  it("Root", function () {
     const temp = Files.RootFolder();
 
     expect(temp.endsWith("lib"), "ended with lib").to.be.false;
@@ -11,13 +11,13 @@ describe("Files", () => {
     expect(temp.endsWith("lib/test"), "ended with lib/test").to.be.false;
   });
 
-  it("Test", () => {
+  it("Test", function () {
     const temp = Files.TestFolder();
 
     expect(temp.endsWith("lib"), "ended with lib").to.be.false;
   });
 
-  it("Random", () => {
+  it("Random", function () {
     expect(Files.TestFolder()).to.equal(DummyFiles.TestFolder());
   });
 });
