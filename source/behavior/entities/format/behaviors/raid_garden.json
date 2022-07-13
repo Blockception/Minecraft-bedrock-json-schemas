@@ -9,6 +9,7 @@
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
     "blocks": {
+      "title": "Blocks",
       "type": "array",
       "description": "Blocks that the mob is looking for to eat",
       "items": {
@@ -16,51 +17,50 @@
         "title": "Block Id",
         "description": "A block identifier",
         "$ref": "../../../../general/block/identifier.json"
-      },
-      "title": "Blocks"
+      }
     },
     "eat_delay": {
+      "title": "Eat Delay",
       "type": "integer",
       "default": 2,
-      "description": "Time in seconds between each time it eats",
-      "title": "Eat Delay"
+      "description": "Time in seconds between each time it eats"
+      
     },
     "full_delay": {
+      "title": "Full Delay",
       "type": "integer",
       "default": 100,
-      "description": "Amount of time in seconds before this mob wants to eat again",
-      "title": "Full Delay"
+      "description": "Amount of time in seconds before this mob wants to eat again"
     },
     "initial_eat_delay": {
+      "title": "Initial Eat Delay",
       "type": "integer",
       "default": 0,
-      "description": "Time in seconds before starting to eat/raid once it arrives at it",
-      "title": "Initial Eat Delay"
+      "description": "Time in seconds before starting to eat/raid once it arrives at it"
     },
     "goal_radius": {
       "type": "number",
+      "title": "Goal Radius",
       "default": 0.5,
-      "description": "Distance in blocks within the mob considers it has reached the goal. This is the `wiggle room` to stop the AI from bouncing back and forth trying to reach a specific spot",
-      "title": "Goal Radius"
+      "description": "Distance in blocks within the mob considers it has reached the goal. This is the `wiggle room` to stop the AI from bouncing back and forth trying to reach a specific spot"
     },
     "max_to_eat": {
+      "title": "Maximum To Eat",
       "type": "integer",
       "default": 6,
-      "description": "Maximum number of things this entity wants to eat",
-      "title": "Maximum To Eat"
+      "description": "Maximum number of things this entity wants to eat"
     },
     "search_range": {
+      "title": "Search Range",
       "type": "integer",
       "default": 0,
-      "description": "Distance in blocks the mob will look for crops to eat",
-      "title": "Search Range"
+      "description": "Distance in blocks the mob will look for crops to eat"
     },
     "search_height": {
+      "title": "Search Height",
       "type": "integer",
       "default": 0,
-      "description": "Height in blocks the mob will look for crops to eat",
-      "$comment": "UNDOCUMENTED",
-      "title": "Search Height"
+      "description": "Height in blocks the mob will look for crops to eat"
     }
   },
   "examples": [
