@@ -22,15 +22,14 @@
     },
     "yd": {
       "type": "number",
-      "default": 0,
+      "default": 0.0,
       "description": "The height in blocks the mob jumps when leaping at its target",
       "title": "Yd"
     },
     "target_dist": {
       "type": "number",
-      "default": 0,
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
+      "default": 0.3,
+      "description": "Distance in blocks the mob jumps when leaping at its target.",
       "title": "Target Dist"
     }
   },
