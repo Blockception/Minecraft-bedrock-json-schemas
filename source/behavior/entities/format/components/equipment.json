@@ -7,7 +7,7 @@
   "properties": {
     "slot_drop_chance": {
       "type": "array",
-      "description": "A list of slots with the chance to drop an equipped item from that slot",
+      "description": "A list of slots with the chance to drop an equipped item from that slot.",
       "title": "Slot Drop Chance",
       "items": {
         "additionalProperties": false,
@@ -26,9 +26,7 @@
             "title": "Slot",
             "description": "The slot in which the item will drop from",
             "$comment": "UNDOCUMENTED",
-            "examples": [
-                "slot.weapon.mainhand"
-            ]
+            "examples": ["slot.weapon.mainhand"]
           }
         }
       }
