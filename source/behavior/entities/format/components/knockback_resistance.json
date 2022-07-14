@@ -3,27 +3,19 @@
   "type": "object",
   "title": "Knockback Resistance",
   "additionalProperties": false,
-  "description": "UNDOCUMENTED",
-  "$comment": "UNDOCUMENTED",
+  "description": "Sets the knockback resistance item component. Determines the amount of knockback resistance that the item has.",
   "required": [],
   "properties": {
-    "value": {
+    "protection": {
+      "title": "Protection",
       "type": "number",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
-      "title": "Value"
-    },
-    "max": {
-      "type": "number",
-      "description": "UNDOCUMENTED",
-      "$comment": "UNDOCUMENTED",
-      "title": "Maximum"
+      "description": "Amount of knockback resistance provided with the total maximum protection being 1.0",
+      "maximum": 1
     }
   },
   "examples": [
     {
-      "value": 0.0,
-      "max": 0.0
+      "protection": 0.5
     }
   ]
 }

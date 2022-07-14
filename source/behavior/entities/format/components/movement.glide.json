@@ -2,11 +2,16 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.movement.glide",
   "type": "object",
   "title": "Movement.glide",
-  "description": "UNDOCUMENTED",
-  "$comment": "UNDOCUMENTED",
+  "description": "This is the move control for a flying mob that has a gliding movement.",
   "additionalProperties": false,
   "required": [],
   "properties": {
+    "max_turn": {
+      "type": "number",
+      "default": 30,
+      "description": "The maximum number in degrees the mob can turn per tick.",
+      "title": "Maximum Turn"
+    },
     "start_speed": {
       "type": "number",
       "title": "Start Speed",
@@ -22,8 +27,8 @@
   },
   "examples": [
     {
-      "start_speed": 0.0,
-      "speed_when_turning": 0.0
+      "start_speed": 1.0,
+      "speed_when_turning": 2.0
     }
   ]
 }

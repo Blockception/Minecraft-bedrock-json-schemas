@@ -7,15 +7,14 @@
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
     "entity_types": {
+      "title": "Entity Types",
       "$ref": "../types/entity_types.json",
       "description": "List of entity types this mob considers a threat to the village",
-      "$comment": "UNDOCUMENTED",
-      "title": "Entity Types"
+      "$comment": "UNDOCUMENTED"
     },
     "must_reach": {
       "title": "Must Reach",
-      "description": "If true, the entities considered a threat must be reachable to be a valid target.",
-      "$comment": "UNDOCUMENTED",
+      "description": "The entity must be able to reach attacker.",
       "type": "boolean"
     },
     "attack_chance": {

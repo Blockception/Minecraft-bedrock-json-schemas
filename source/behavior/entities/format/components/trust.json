@@ -2,8 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.trust",
   "type": "object",
   "title": "Trust",
-  "description": "UNDOCUMENTED",
-  "$comment": "UNDOCUMENTED",
+  "description": "Allows this entity to trust multiple players.",
   "required": [],
   "additionalProperties": false,
   "properties": {}

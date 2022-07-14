@@ -2,78 +2,76 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.swim_with_entity",
   "type": "object",
   "title": "Swim With Entity",
-  "description": "Allows this mob to follow another entity, as long as both entities are in water (swimming)",
-  "$comment": "UNDOCUMENTED",
+  "description": "Allows the entity follow another entity. Both entities must be swimming and in water.",
   "additionalProperties": false,
   "required": [],
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
     "success_rate": {
-      "type": "number",
       "title": "Success Rate",
-      "description": "Chance to start following another entity, if not already doing so",
-      "$comment": "UNDOCUMENTED"
+      "type": "number",
+      "default": 0.1,
+      "description": "Percent chance to start following another entity, if not already doing so. 1.0 = 100%"
     },
     "chance_to_stop": {
-      "type": "number",
       "title": "Chance To Stop",
-      "description": "Chance to stop following the current entity",
-      "$comment": "UNDOCUMENTED"
+      "type": "number",
+      "default": 0.0333,
+      "description": "Percent chance to stop following the current entity, if they're riding another entity or they're not swimming. 1.0 = 100%"
     },
     "state_check_interval": {
-      "type": "number",
       "title": "State Check Interval",
-      "description": "Time in seconds between checks to determine if this mob should catch up to the entity being followed",
-      "$comment": "UNDOCUMENTED"
+      "type": "number",
+      "default": 0.5,
+      "description": "Time (in seconds) between checks to determine if this entity should catch up to the entity being followed or match the direction of the entity being followed."
     },
     "catch_up_threshold": {
-      "type": "number",
       "title": "Catch Up Threshold",
-      "description": "Distance in blocks from the entity being followed at which this mob will speed up to catch up",
-      "$comment": "UNDOCUMENTED"
+      "type": "number",
+      "default": 12,
+      "description": "Distance, from the entity being followed, at which this entity will speed up to reach that entity."
     },
     "match_direction_threshold": {
-      "type": "number",
       "title": "Match Direction Threshold",
-      "description": "Distance in blocks from the entity being followed at which this mob will match that entity's direction",
-      "$comment": "UNDOCUMENTED"
+      "type": "number",
+      "default": 2,
+      "description": "Distance, from the entity being followed, at which this entity will try to match that entity's direction"
     },
     "catch_up_multiplier": {
-      "type": "number",
       "title": "Catch Up Multiplier",
-      "description": "The multiplier applied to the speed of this mob when trying to catch up",
-      "$comment": "UNDOCUMENTED"
+      "type": "number",
+      "default": 2.5,
+      "description": "The multiplier this entity's speed is modified by when matching another entity's direction."
     },
     "search_range": {
-      "type": "number",
       "title": "Search Range",
-      "description": "Radius in blocks around this mob to search for another entity to follow",
-      "$comment": "UNDOCUMENTED"
+      "type": "number",
+      "default": 20,
+      "description": "Radius around this entity to search for another entity to follow."
     },
     "stop_distance": {
-      "type": "number",
       "title": "Stop Distance",
-      "description": "Distance in blocks from the entity being followed at which this entity will stop following",
-      "$comment": "UNDOCUMENTED"
+      "type": "number",
+      "default": 5,
+      "description": "Distance, from the entity being followed, at which this entity will stop following that entity."
     },
     "entity_types": {
       "$ref": "../types/entity_types.json",
       "title": "Entity Types",
-      "description": "Filters which determine what entites are valid to follow",
-      "$comment": "UNDOCUMENTED"
+      "description": "Filters which determine what entites are valid to follow"
     }
   },
   "examples": [
     {
-      "success_rate": 0.0,
-      "chance_to_stop": 0.0,
-      "state_check_interval": 0.0,
-      "catch_up_threshold": 0.0,
-      "match_direction_threshold": 0.0,
-      "catch_up_multiplier": 0.0,
-      "search_range": 0.0,
-      "stop_distance": 0.0
+      "success_rate": 0.1,
+      "chance_to_stop": 0.0333,
+      "state_check_interval": 0.5,
+      "catch_up_threshold": 12,
+      "match_direction_threshold": 2,
+      "catch_up_multiplier": 2.5,
+      "search_range": 20,
+      "stop_distance": 5
     }
   ]
 }

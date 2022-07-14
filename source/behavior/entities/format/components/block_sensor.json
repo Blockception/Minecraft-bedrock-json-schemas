@@ -6,35 +6,34 @@
   "additionalProperties": false,
   "properties": {
     "sensor_radius": {
-      "type": "integer",
-      "description": "The maximum radius in blocks in which a specified block can be detected.",
-      "$comment": "UNDOCUMENTED",
       "title": "Sensor Radius",
+      "type": "integer",
+      "description": "The maximum radial distance in which a specified block can be detected. The biggest radius is 32.0.",
       "minimum": 0,
       "maximum": 32
     },
     "on_break": {
-      "type": "array",
       "title": "On Break",
+      "type": "array",
       "description": "Blocks that will trigger the component when broken and what event will trigger.",
       "items": {
-        "type": "object",
         "title": "On Block Broken",
-        "description": "",
+        "type": "object",
+        "description": "Event to run when a block breaks",
         "additionalProperties": false,
         "properties": {
           "block_list": {
-            "type": "array",
             "title": "Block List",
-            "description": "Blocks that will trigger the component when broken and what event will trigger.",
+            "type": "array",
+            "description": "List of blocks that will trigger the sensor.",
             "items": {
               "$ref": "../../../../general/block/identifier.json",
               "title": "Block ID"
             }
           },
           "on_block_broken": {
-            "type": "string",
             "title": "On Block Broken",
+            "type": "string",
             "description": "Event to run when a block breaks"
           }
         }
@@ -42,8 +41,7 @@
     },
     "sources": {
       "title": "Sources",
-      "description": "List of sources that break the block to listen for. If none are specified, then all block breaks will be detected",
-      "$comment": "UNDOCUMENTED",
+      "description": "List of sources that break the block to listen for. If none are specified, all block breaks will be detected.",
       "type": "array",
       "items": {
         "$ref": "../../filters/filters.json"

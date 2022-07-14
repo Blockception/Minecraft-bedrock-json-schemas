@@ -1,7 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.target_when_pushed",
-  "description": "Allows this mob to target an entity that pushed it",
-  "$comment": "UNDOCUMENTED",
+  "description": "Allows an entity to select a valid target entity that pushed it.",
   "type": "object",
   "title": "Target When Pushed",
   "additionalProperties": false,
@@ -11,21 +10,21 @@
       "$ref": "types/priority.json"
     },
     "entity_types": {
-      "$ref": "../types/entity_types.json",
       "title": "Entity Types",
-      "description": "The list of conditions the other entity must meet to be a valid target",
-      "$comment": "UNDOCUMENTED"
+      "$ref": "../types/entity_types.json",
+      "description": "The list of conditions the other entity must meet to be a valid target"
     },
     "percent_chance": {
-      "type": "number",
       "title": "Percent Chance",
-      "description": "The chance that the entity becomes a target when this mob is pushed",
-      "$comment": "UNDOCUMENTED"
+      "type": "number",
+      "default": 5.0,
+      "description": "Probability that the entity will target the entity that pushed it."
     }
   },
   "examples": [
     {
-      "percent_chance": 0.0
+      "percent_chance": 5.0,
+      "entity_types": []
     }
   ]
 }

@@ -1,7 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.trade_resupply",
-  "description": "UNDOCUMENTED",
-  "$comment": "UNDOCUMENTED",
+  "description": "Resupplies an entity's trade.",
   "type": "object",
   "title": "Trade Resupply",
   "additionalProperties": false,

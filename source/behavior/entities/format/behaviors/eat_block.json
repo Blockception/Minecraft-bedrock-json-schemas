@@ -8,25 +8,25 @@
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
     "on_eat": {
+      "title": "On Eat",
       "$ref": "../types/trigger.json",
-      "description": "The event to trigger when the block eating animation has completed.",
-      "title": "On Eat"
+      "description": "The event to trigger when the block eating animation has completed."
     },
     "success_chance": {
       "title": "Succes Chance",
-      "description": "A molang expression defining the success chance the entity has to consume a block.",
+      "$ref": "../../../../molang/number.json",
       "default": 0.02,
-      "$ref": "../../../../molang/number.json"
+      "description": "A molang expression defining the success chance the entity has to consume a block."
     },
     "time_until_eat": {
       "title": "Time Until Eat",
-      "description": "The amount of time (in seconds) it takes for the block to be eaten upon a successful eat attempt.",
+      "type": "number",
       "default": 1.8,
-      "type": "number"
+      "description": "The amount of time (in seconds) it takes for the block to be eaten upon a successful eat attempt."
     },
     "eat_and_replace_block_pairs": {
-      "type": "array",
       "title": "Eat And Replace Block Pairs",
+      "type": "array",
       "description": "A collection of pairs of blocks; the first (\"eat_block\")is the block the entity should eat, the second (\"replace_block\") is the block that should replace the eaten block.",
       "items": {
         "type": "object",
