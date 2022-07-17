@@ -1,31 +1,8 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.block_climber",
-  "type": "object",
   "title": "Block Climber",
+  "type": "object",
   "additionalProperties": false,
-  "description": "Fires off a specified event when a block in the block list is broken within the sensor range.",
-  "properties": {
-    "on_break": {
-      "title": "On Break",
-      "type": "array",
-      "description": "List of blocks to watch for being broken to fire off a specified event. If a block is in multiple lists, multiple events will fire.",
-      "items": {
-        "$ref": "../../../../general/block/identifier.json"
-      }
-    },
-    "sensor_radius": {
-      "title": "Sensor Radius",
-      "type": "number",
-      "default": 16.0,
-      "description": "The maximum radial distance in which a specified block can be detected. The biggest radius is 32.0."
-    },
-    "sources": {
-      "title": "Sources",
-      "type": "array",
-      "description": "List of sources that break the block to listen for. If none are specified, all block breaks will be detected.",
-      "items": {
-        "$ref": "../../../../general/block/identifier.json"
-      }
-    }
-  }
+  "description": "Allows the player to detect and manuever on the scaffolding block.",
+  "properties": {}
 }
