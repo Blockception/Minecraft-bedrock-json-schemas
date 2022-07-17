@@ -75,12 +75,6 @@
       "default": 1.0,
       "description": "Multiplier for walking speed. 1.0 means keep the regular speed, while higher numbers make the walking speed faster."
     },
-    "work_in_rain_tolerance": {
-      "title": "Work In Rain Tolerance",
-      "type": "integer",
-      "default": -1,
-      "description": "If \"can_work_in_rain\" is false, this is the maximum number of ticks left in the goal where rain will not interrupt the goal"
-    },
     "ignore_visibility": {
       "type": "boolean",
       "default": false,
