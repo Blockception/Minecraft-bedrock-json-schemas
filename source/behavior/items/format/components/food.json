@@ -28,56 +28,55 @@
       "description": "If true, this food item is considered meat.",
       "type": "boolean",
       "default": false
-    },
-    },
-    "saturation_modifier": {
-      "title": "Saturation Modifier",
-      "description": "Saturation Modifier is used in this formula: (nutrition * saturation_modifier * 2) when appling the saturation buff. Which happens when you eat the item.",
-      "oneOf": [
-        { "type": "number" },
-        {
-          "type": "string",
-          "enum": ["poor", "low"]
-        }
-      ]
-    },
-    "using_converts_to": {
-      "title": "Using Converts To",
-      "description": "When used, convert the *this* item to the one specified by `using_converts_to`.",
-      "type": "string"
-    },
-    "effects": {
-      "title": "Effects",
+    }
+  },
+  "saturation_modifier": {
+    "title": "Saturation Modifier",
+    "description": "Saturation Modifier is used in this formula: (nutrition * saturation_modifier * 2) when appling the saturation buff. Which happens when you eat the item.",
+    "oneOf": [
+      { "type": "number" },
+      {
+        "type": "string",
+        "enum": ["poor", "low"]
+      }
+    ]
+  },
+  "using_converts_to": {
+    "title": "Using Converts To",
+    "description": "When used, convert the *this* item to the one specified by `using_converts_to`.",
+    "type": "string"
+  },
+  "effects": {
+    "title": "Effects",
+    "description": "UNDOCUMENTED",
+    "$comment": "UNDOCUMENTED",
+    "type": "array",
+    "items": {
+      "title": "Effect",
       "description": "UNDOCUMENTED",
       "$comment": "UNDOCUMENTED",
-      "type": "array",
-      "items": {
-        "title": "Effect",
-        "description": "UNDOCUMENTED",
-        "$comment": "UNDOCUMENTED",
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "name": {
-            "title": "Name",
-            "description": "UNDOCUMENTED",
-            "$comment": "UNDOCUMENTED",
-            "type": "string"
-          },
-          "duration": {
-            "type": "integer",
-            "default": 0,
-            "minimum": 0,
-            "description": "The duration of the effect.",
-            "$comment": "UNDOCUMENTED"
-          },
-          "amplifier": {
-            "type": "integer",
-            "default": 0,
-            "minimum": 0,
-            "description": "The amplifier of the effect.",
-            "$comment": "UNDOCUMENTED"
-          }
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "title": "Name",
+          "description": "UNDOCUMENTED",
+          "$comment": "UNDOCUMENTED",
+          "type": "string"
+        },
+        "duration": {
+          "type": "integer",
+          "default": 0,
+          "minimum": 0,
+          "description": "The duration of the effect.",
+          "$comment": "UNDOCUMENTED"
+        },
+        "amplifier": {
+          "type": "integer",
+          "default": 0,
+          "minimum": 0,
+          "description": "The amplifier of the effect.",
+          "$comment": "UNDOCUMENTED"
         }
       }
     }
