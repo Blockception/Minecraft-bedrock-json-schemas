@@ -6,7 +6,7 @@
   "required": ["value"],
   "properties": {
     "value": {
-      "type": "integer",
+      "type": "number",
       "default": 1.0,
       "description": "The higher the number, the less often the movement sound will be played.",
       "title": "Value"
