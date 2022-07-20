@@ -57,6 +57,12 @@
       "description": "Tells the pathfinder whether or not it can jump up blocks",
       "title": "Can Jump"
     },
+    "can_float": {
+      "type": "boolean",
+      "default": false,
+      "description": "Tells the pathfinder whether or not it float.",
+      "title": "Can Jump"
+    },
     "can_open_doors": {
       "type": "boolean",
       "default": false,
