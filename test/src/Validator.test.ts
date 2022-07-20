@@ -29,13 +29,9 @@ describe("Validate", function () {
         expect(object).to.not.be.null;
       });
 
-      describe("Checking refs of " + filepath, function () {
-        if (!object) {
-          return;
-        }
-
+      if (object) {
         explore_refs(object, path.dirname(filepath));
-      });
+      }
     });
   });
 });
