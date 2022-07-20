@@ -3,19 +3,22 @@
   "type": "object",
   "title": "Knockback Resistance",
   "additionalProperties": false,
-  "description": "Sets the knockback resistance item component. Determines the amount of knockback resistance that the item has.",
+  "description": "Determines the amount of knockback resistance that the item has.",
+  "$comment": "UNDOCUMENTED",
   "required": [],
   "properties": {
-    "protection": {
-      "title": "Protection",
+    "value": {
+      "title": "Value",
       "type": "number",
-      "description": "Amount of knockback resistance provided with the total maximum protection being 1.0",
+      "default": 1.0,
+      "description": "Percentage of knockback to reduce with 1.0 being 100% reduction.",
+      "$comment": "UNDOCUMENTED",
       "maximum": 1
     }
   },
   "examples": [
     {
-      "protection": 0.5
+      "value": 1.0
     }
   ]
 }
