@@ -2,32 +2,33 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.angry",
   "type": "object",
   "title": "Angry",
-  "description": "Adds a timer for the entity to grow up. It can be accelerated by giving the entity the items it likes as defined by feedItems.",
+  "description": "Defines the entity's 'angry' state using a timer",
   "additionalProperties": false,
   "required": [],
   "properties": {
     "broadcast_anger": {
+      "title": "Broadcast Anger",
       "type": "boolean",
       "default": false,
-      "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry",
-      "title": "Broadcast Anger"
+      "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry"
     },
     "broadcast_filters": {
+      "title": "Broadcast Filters",
       "$ref": "../../filters/filters.json",
-      "description": "Conditions that make this entry in the list valid",
-      "title": "Broadcast Filters"
+      "description": "Conditions that make this entry in the list valid"      
     },
     "filters": {
       "$ref": "../../filters/filters.json",
       "description": "Filter out mob types that it should not attack while angry (other Piglins)"
     },
     "broadcast_range": {
+      "title": "Broadcast Range",
       "type": "integer",
       "default": 20,
-      "description": "Distance in blocks within which other entities of the same entity definition will become angry",
-      "title": "Broadcast Range"
+      "description": "Distance in blocks within which other entities of the same entity definition will become angry"
     },
     "broadcast_targets": {
+      "title": "Broadcast Targets",
       "type": "array",
       "description": "A list of entity families to broadcast anger to",
       "items": {
@@ -36,24 +37,24 @@
         "pattern": "^.+$",
         "title": "Broadcast Targets"
       },
-      "title": "Broadcast Targets"
+      
     },
     "calm_event": {
+    "title": "Calm Event",
       "$ref": "../types/event.json",
-      "description": "Event to run after the number of seconds specified in duration expires (when the entity stops being `angry')",
-      "title": "Calm Event"
+      "description": "Event to run after the number of seconds specified in duration expires (when the entity stops being \"angry\")"      
     },
     "angry_sound": {
+      "title": "Angry Sound",
       "type": "string",
       "default": "",
-      "description": "The sound event to play when the mob is angry",
-      "title": "Angry Sound"
+      "description": "The sound event to play when the mob is angry"      
     },
     "broadcast_anger_on_attack": {
+      "title": "Broadcast Anger On Attack",
       "type": "boolean",
       "default": false,
-      "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry whenever this mob attacks",
-      "title": "Broadcast Anger On Attack"
+      "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry whenever this mob attacks"      
     },
     "broadcast_anger_on_being_attacked": {
       "type": "boolean",
@@ -62,16 +63,16 @@
       "title": "Broadcast Anger On Being Attacked"
     },
     "duration": {
+      "title": "Duration",
       "type": "integer",
       "default": 25,
-      "description": "The amount of time in seconds that the entity will be angry",
-      "title": "Duration"
+      "description": "The amount of time in seconds that the entity will be angry"      
     },
     "duration_delta": {
+      "title": "Duration Delta",
       "type": "integer",
       "default": 0,
-      "description": "Variance in seconds added to the duration [-delta, delta]",
-      "title": "Duration Delta"
+      "description": "Variance in seconds added to the duration [-delta, delta]"      
     },
     "sound_interval": {
       "description": "The range of time in seconds to randomly wait before playing the sound again",
