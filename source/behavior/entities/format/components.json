@@ -213,6 +213,7 @@
     "minecraft:behavior.dragonscanning": { "$ref": "./behaviors/dragonscanning.json" },
     "minecraft:behavior.dragonstrafeplayer": { "$ref": "./behaviors/dragonstrafeplayer.json" },
     "minecraft:behavior.dragontakeoff": { "$ref": "./behaviors/dragontakeoff.json" },
+    "minecraft:behavior.drink_milk": { "$ref": "./behaviors/drink_milk.json" },
     "minecraft:behavior.drink_potion": { "$ref": "./behaviors/drink_potion.json" },
     "minecraft:behavior.drop_item_for": { "$ref": "./behaviors/drop_item_for.json" },
     "minecraft:behavior.eat_block": { "$ref": "./behaviors/eat_block.json" },
