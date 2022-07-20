@@ -29,9 +29,14 @@ describe("Validate", function () {
         expect(object).to.not.be.null;
       });
 
-      if (object) {
+      it("Check refs", function () {
+        if (!object) {
+          this.skip();
+          return;
+        }
+
         explore_refs(object, path.dirname(filepath));
-      }
+      });
     });
   });
 });
@@ -48,9 +53,7 @@ function explore_refs(data: JsonSchema, folder: string): void {
     if (!ref.startsWith("#")) {
       const filepath = path.isAbsolute(ref) ? ref : path.join(folder, ref);
 
-      it(`expecting ${ref} to exist from ${folder}`, function () {
-        expect(fs.existsSync(filepath), `ref ${ref} exists`).to.be.true;
-      });
+      expect(fs.existsSync(filepath), `ref ${ref} exists`).to.be.true;
     }
   }
 
