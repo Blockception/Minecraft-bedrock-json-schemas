@@ -8,7 +8,7 @@
     "attack": {
       "title": "Attack",
       "type": "number",
-      "default": 0.3,
+      "default": 0.1,
       "description": "Amount of exhaustion applied when attacking."
     },
     "damage": {
@@ -20,19 +20,19 @@
     "heal": {
       "title": "Heal",
       "type": "number",
-      "default": 3,
+      "default": 6,
       "description": "Amount of exhaustion applied when healed through food regeneration."
     },
     "jump": {
       "title": "Jump",
       "type": "number",
-      "default": 0.2,
+      "default": 0.05,
       "description": "Amount of exhaustion applied when jumping."
     },
     "mine": {
       "title": "Mine",
       "type": "number",
-      "default": 0.025,
+      "default": 0.005,
       "description": "Amount of exhaustion applied when mining."
     },
     "sprint": {
@@ -44,19 +44,19 @@
     "sprint_jump": {
       "title": "Sprint Jump",
       "type": "number",
-      "default": 0.8,
+      "default": 0.2,
       "description": "Amount of exhaustion applied when sprint jumping."
     },
     "swim": {
       "title": "Swim",
       "type": "number",
-      "default": 0.015,
+      "default": 0.01,
       "description": "Amount of exhaustion applied when swimming."
     },
     "walk": {
       "title": "Walk",
       "type": "number",
-      "default": 0.01,
+      "default": 0,
       "description": "Amount of exhaustion applied when walking."
     }
   },
