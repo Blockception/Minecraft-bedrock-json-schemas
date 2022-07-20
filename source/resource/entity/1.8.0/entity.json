@@ -71,6 +71,12 @@
               "title": "Hide Armor",
               "description": "Hides or shows the possible armor"
             },
+            "held_item_ignores_lighting": {
+              "type": "boolean",
+              "default": false,
+              "title": "Held Item Ignores Lighting",
+              "description": "This determines if the item held by an entity should render fully lit up (if true), or depending on surrounding lighting."
+            },
             "identifier": {
               "type": "string",
               "description": "The entity indentifier",
