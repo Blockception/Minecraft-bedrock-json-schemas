@@ -2,7 +2,7 @@
   "oneOf": [
     {
       "type": "array",
-      "$ref": "./interger2.json"
+      "$ref": "./integer2.json"
     },
     {
       "title": "Value",
