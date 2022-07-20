@@ -1,5 +1,5 @@
 {
-  "$id": "blockception.minecraft.behavior.1.16.200.items.minecraft:on_use",
+  "$id": "blockception.minecraft.behavior.items.minecraft:on_use",
   "title": "On Use",
   "description": "The on_use item component allows you to receive an event when the item is used.",
   "type": "object",

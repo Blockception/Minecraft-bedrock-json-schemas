@@ -1,5 +1,5 @@
 {
-  "$id": "blockception.minecraft.behavior.1.16.200.items.minecraft:knockback_resistance",
+  "$id": "blockception.minecraft.behavior.items.minecraft:knockback_resistance",
   "title": "Knockback Resistance",
   "description": "Knockback Resistance Item. Component put on items that provide knockback resistance.",
   "type": "object",

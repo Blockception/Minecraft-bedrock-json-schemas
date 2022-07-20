@@ -1,5 +1,5 @@
 {
-  "$id": "blockception.minecraft.behavior.1.16.200.items.minecraft:render_offsets",
+  "$id": "blockception.minecraft.behavior.items.minecraft:render_offsets",
   "title": "Render Offsets",
   "description": "Render offsets component: optional values can be given to offset the way the item is rendered.",
   "type": "object",

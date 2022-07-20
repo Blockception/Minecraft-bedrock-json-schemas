@@ -1,5 +1,5 @@
 {
-  "$id": "blockception.minecraft.behavior.1.16.200.items.minecraft:cooldown",
+  "$id": "blockception.minecraft.behavior.items.minecraft:cooldown",
   "title": "Cooldown",
   "description": "Cool down time for a component. After you use an item it becomes unusable for the duration specified by the `cool down time` setting in this component.",
   "type": "object",

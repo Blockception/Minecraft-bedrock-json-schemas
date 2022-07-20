@@ -1,5 +1,5 @@
 {
-  "$id": "blockception.minecraft.behavior.1.16.200.items.minecraft:digger",
+  "$id": "blockception.minecraft.behavior.items.minecraft:digger",
   "title": "Digger",
   "description": "Digger item. Component put on items that dig.",
   "type": "object",

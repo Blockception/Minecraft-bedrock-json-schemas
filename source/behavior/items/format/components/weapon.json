@@ -1,5 +1,5 @@
 {
-  "$id": "blockception.minecraft.behavior.1.16.200.items.minecraft:weapon",
+  "$id": "blockception.minecraft.behavior.items.minecraft:weapon",
   "title": "Weapon",
   "description": "Weapon Item Component. Added to every weapon item such as axe, sword, trident, bow, crossbow.",
   "type": "object",

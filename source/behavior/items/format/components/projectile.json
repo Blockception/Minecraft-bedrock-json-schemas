@@ -1,5 +1,5 @@
 {
-  "$id": "blockception.minecraft.behavior.1.16.200.items.minecraft:projectile",
+  "$id": "blockception.minecraft.behavior.items.minecraft:projectile",
   "title": "Projectile",
   "description": "Projectile item component. projectile items shoot out, like an arrow.",
   "type": "object",

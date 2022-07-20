@@ -1,5 +1,5 @@
 {
-  "$id": "blockception.minecraft.behavior.1.16.200.items.events.teleport",
+  "$id": "blockception.minecraft.behavior.items.events.teleport",
   "title": "Teleport",
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",

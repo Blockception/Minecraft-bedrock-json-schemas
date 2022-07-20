@@ -1,5 +1,5 @@
 {
-  "$id": "blockception.minecraft.behavior.1.16.200.items.minecraft:block_placer",
+  "$id": "blockception.minecraft.behavior.items.minecraft:block_placer",
   "title": "Block Placer",
   "description": "Planter item component. planter items are items that can be planted.",
   "type": "object",

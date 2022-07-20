@@ -1,0 +1,6 @@
+{
+  "$id": "blockception.minecraft.behavior.items.minecraft:stacked_by_data",
+  "title": "On Use",
+  "description": "The on_use item component allows you to receive an event when the item is used.",
+  "type": "boolean"
+}

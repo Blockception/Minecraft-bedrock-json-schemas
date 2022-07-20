@@ -1,5 +1,5 @@
 {
-  "$id": "blockception.minecraft.behavior.1.16.200.items.minecraft:",
+  "$id": "blockception.minecraft.behavior.items.minecraft:",
   "title": "Throwable",
   "description": "Throwable item component. Throwable items, such as a snowball.",
   "type": "object",

@@ -1,5 +1,5 @@
 {
-  "$id": "blockception.minecraft.behavior.1.16.200.items.minecraft:shooter",
+  "$id": "blockception.minecraft.behavior.items.minecraft:shooter",
   "title": "Shooter",
   "description": "Shooter Item Component.",
   "type": "object",

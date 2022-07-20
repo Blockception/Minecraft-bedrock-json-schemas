@@ -1,5 +1,5 @@
 {
-  "$id": "blockception.minecraft.behavior.1.16.200.items.minecraft:repairable",
+  "$id": "blockception.minecraft.behavior.items.minecraft:repairable",
   "title": "Repairable",
   "description": "Repairable item component: how much damage can this item repair, what items can repair it.",
   "type": "object",

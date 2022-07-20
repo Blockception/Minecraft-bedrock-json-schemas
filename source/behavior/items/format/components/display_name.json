@@ -1,5 +1,5 @@
 {
-  "$id": "blockception.minecraft.behavior.1.16.200.items.minecraft:display_name",
+  "$id": "blockception.minecraft.behavior.items.minecraft:display_name",
   "title": "Display Name",
   "description": "Display Name item component. Display Names display the name of an item.",
   "type": "object",

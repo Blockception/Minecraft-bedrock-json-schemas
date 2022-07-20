@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.items.minecraft:max_damage",
+  "additionalProperties": false,
+  "type": "integer",
+  "title": "Max Damage",
+  "description": "Maximum Damage",
+  "$comment": "UNDOCUMENTED",
+  "minimum": 0
+}

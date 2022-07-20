@@ -1,5 +1,5 @@
 {
-  "$id": "blockception.minecraft.behavior.1.16.200.items.minecraft:icon",
+  "$id": "blockception.minecraft.behavior.items.minecraft:icon",
   "title": "Icon",
   "description": "The icon item componenent determines the icon to represent the item in the UI and elsewhere.",
   "type": "object",

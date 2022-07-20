@@ -1,5 +1,5 @@
 {
-  "$id": "blockception.minecraft.behavior.1.16.200.items.minecraft:hand_equiped",
+  "$id": "blockception.minecraft.behavior.items.minecraft:hand_equiped",
   "additionalProperties": false,
   "required": ["texture"],
   "type": "boolean",

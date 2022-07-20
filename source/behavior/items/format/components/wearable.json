@@ -1,5 +1,5 @@
 {
-  "$id": "blockception.minecraft.behavior.1.16.200.items.minecraft:wearable",
+  "$id": "blockception.minecraft.behavior.items.minecraft:wearable",
   "title": "Wearable",
   "description": "Wearable item component.",
   "type": "object",
