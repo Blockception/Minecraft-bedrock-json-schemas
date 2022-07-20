@@ -9,13 +9,8 @@
     "priority": { "$ref": "./types/priority.json" },
     "duration": {
       "title": "Duration",
-      "type": "array",
-      "items": [
-        { "type": "number", "title": "Mininum" },
-        { "type": "number", "title": "Maximum" }
-      ],
-      "default": [4.5, 4.5],
-      "description": "Random range in seconds after which the croaking stops. Can also be a constant."
+      "description": "Random range in seconds after which the croaking stops. Can also be a constant.",
+      "$ref": "../../../../general/vectors/integer2OrValue.json"
     },
     "filters": {
       "title": "Filters",
@@ -24,13 +19,8 @@
     },
     "interval": {
       "title": "Interval",
-      "type": "array",
-      "items": [
-        { "type": "number", "title": "Mininum" },
-        { "type": "number", "title": "Maximum" }
-      ],
-      "default": [10, 20],
-      "description": "Random range in seconds between runs of this behavior. Can also be a constant."
+      "description": "Random range in seconds between runs of this behavior. Can also be a constant.",
+      "$ref": "../../../../general/vectors/integer2OrValue.json"
     }
   }
 }
