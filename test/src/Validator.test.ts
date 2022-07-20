@@ -29,7 +29,7 @@ describe("Validate", function () {
         expect(object).to.not.be.null;
       });
 
-      describe("Checking refs", function () {
+      describe("Checking refs of " + filepath, function () {
         if (!object) {
           return;
         }
