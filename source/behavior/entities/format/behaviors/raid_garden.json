@@ -11,11 +11,11 @@
     "blocks": {
       "title": "Blocks",
       "type": "array",
-      "description": "Blocks that the mob is looking for to eat",
+      "description": "Blocks that the mob is looking for to eat.",
       "items": {
         "type": "string",
         "title": "Block Id",
-        "description": "A block identifier",
+        "description": "A block identifier.",
         "$ref": "../../../../general/block/identifier.json"
       }
     },
@@ -23,20 +23,19 @@
       "title": "Eat Delay",
       "type": "integer",
       "default": 2,
-      "description": "Time in seconds between each time it eats"
-      
+      "description": "Time in seconds between each time it eats."
     },
     "full_delay": {
       "title": "Full Delay",
       "type": "integer",
       "default": 100,
-      "description": "Amount of time in seconds before this mob wants to eat again"
+      "description": "Amount of time in seconds before this mob wants to eat again."
     },
     "initial_eat_delay": {
       "title": "Initial Eat Delay",
       "type": "integer",
       "default": 0,
-      "description": "Time in seconds before starting to eat/raid once it arrives at it"
+      "description": "Time in seconds before starting to eat/raid once it arrives at it."
     },
     "goal_radius": {
       "type": "number",
@@ -48,19 +47,19 @@
       "title": "Maximum To Eat",
       "type": "integer",
       "default": 6,
-      "description": "Maximum number of things this entity wants to eat"
+      "description": "Maximum number of things this entity wants to eat."
     },
     "search_range": {
       "title": "Search Range",
       "type": "integer",
       "default": 0,
-      "description": "Distance in blocks the mob will look for crops to eat"
+      "description": "Distance in blocks the mob will look for crops to eat."
     },
     "search_height": {
       "title": "Search Height",
       "type": "integer",
       "default": 0,
-      "description": "Height in blocks the mob will look for crops to eat"
+      "description": "Height in blocks the mob will look for crops to eat."
     }
   },
   "examples": [

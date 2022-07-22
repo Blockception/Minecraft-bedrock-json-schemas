@@ -9,7 +9,7 @@
     "entity_types": {
       "title": "Entity Types",
       "$ref": "../types/entity_types.json",
-      "description": "List of entity types this mob considers a threat to the village",
+      "description": "List of entity types this mob considers a threat to the village.",
       "$comment": "UNDOCUMENTED"
     },
     "must_reach": {

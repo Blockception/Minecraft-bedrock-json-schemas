@@ -6,16 +6,13 @@
   "required": ["description", "places_block", "enforce_placement_rules", "enforce_survivability_rules"],
   "definitions": {
     "block_side": {
-      "oneOf": [
-        { "type": "string" },
-        { "type": "array", "items": { "title": "Block Side", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "string" } }
-      ]
+      "oneOf": [{ "type": "string" }, { "type": "array", "items": { "title": "Block Side", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "type": "string" } }]
     }
   },
   "properties": {
     "description": {
       "title": "Description",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "required": ["identifier"],
@@ -46,7 +43,7 @@
     },
     "may_attach_to": {
       "title": "May Attach To",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
@@ -54,7 +51,7 @@
       "properties": {
         "min_sides_must_attach": {
           "title": "Minimum Sides Must Attach",
-          "description": "UNDOCUMENTED",
+          "description": "UNDOCUMENTED.",
           "$comment": "UNDOCUMENTED",
           "minimum": 1,
           "maximum": 4
@@ -63,14 +60,14 @@
           "title": "Auto Rotate",
           "description": "Automatically rotate the block to attach sensibly."
         },
-        "top": { "title": "Top", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
-        "bottom": { "title": "Bottom", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
-        "north": { "title": "North", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
-        "south": { "title": "South", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
-        "east": { "title": "East", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
-        "west": { "title": "West", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
-        "all": { "title": "All", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
-        "sides": { "title": "Sides", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" }
+        "top": { "title": "Top", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "bottom": { "title": "Bottom", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "north": { "title": "North", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "south": { "title": "South", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "east": { "title": "East", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "west": { "title": "West", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "all": { "title": "All", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "sides": { "title": "Sides", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" }
       }
     },
     "may_replace": {

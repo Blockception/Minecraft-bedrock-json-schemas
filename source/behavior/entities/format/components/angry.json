@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.angry",
   "type": "object",
   "title": "Angry",
-  "description": "Defines the entity's 'angry' state using a timer",
+  "description": "Defines the entity's 'angry' state using a timer.",
   "additionalProperties": false,
   "required": [],
   "properties": {
@@ -10,30 +10,30 @@
       "title": "Broadcast Anger",
       "type": "boolean",
       "default": false,
-      "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry"
+      "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry."
     },
     "broadcast_filters": {
       "title": "Broadcast Filters",
       "$ref": "../../filters/filters.json",
-      "description": "Conditions that make this entry in the list valid"      
+      "description": "Conditions that make this entry in the list valid."      
     },
     "filters": {
       "$ref": "../../filters/filters.json",
-      "description": "Filter out mob types that it should not attack while angry (other Piglins)"
+      "description": "Filter out mob types that it should not attack while angry (other Piglins)."
     },
     "broadcast_range": {
       "title": "Broadcast Range",
       "type": "integer",
       "default": 20,
-      "description": "Distance in blocks within which other entities of the same entity definition will become angry"
+      "description": "Distance in blocks within which other entities of the same entity definition will become angry."
     },
     "broadcast_targets": {
       "title": "Broadcast Targets",
       "type": "array",
-      "description": "A list of entity families to broadcast anger to",
+      "description": "A list of entity families to broadcast anger to.",
       "items": {
         "type": "string",
-        "description": "An entity family",
+        "description": "An entity family.",
         "pattern": "^.+$",
         "title": "Broadcast Targets"
       },
@@ -42,40 +42,40 @@
     "calm_event": {
     "title": "Calm Event",
       "$ref": "../types/event.json",
-      "description": "Event to run after the number of seconds specified in duration expires (when the entity stops being \"angry\")"      
+      "description": "Event to run after the number of seconds specified in duration expires (when the entity stops being \."angry\")"      
     },
     "angry_sound": {
       "title": "Angry Sound",
       "type": "string",
       "default": "",
-      "description": "The sound event to play when the mob is angry"      
+      "description": "The sound event to play when the mob is angry."      
     },
     "broadcast_anger_on_attack": {
       "title": "Broadcast Anger On Attack",
       "type": "boolean",
       "default": false,
-      "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry whenever this mob attacks"      
+      "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry whenever this mob attacks."      
     },
     "broadcast_anger_on_being_attacked": {
       "type": "boolean",
       "default": false,
-      "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry whenever this mob is attacked",
+      "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry whenever this mob is attacked.",
       "title": "Broadcast Anger On Being Attacked"
     },
     "duration": {
       "title": "Duration",
       "type": "integer",
       "default": 25,
-      "description": "The amount of time in seconds that the entity will be angry"      
+      "description": "The amount of time in seconds that the entity will be angry."      
     },
     "duration_delta": {
       "title": "Duration Delta",
       "type": "integer",
       "default": 0,
-      "description": "Variance in seconds added to the duration [-delta, delta]"      
+      "description": "Variance in seconds added to the duration [-delta, delta]."      
     },
     "sound_interval": {
-      "description": "The range of time in seconds to randomly wait before playing the sound again",
+      "description": "The range of time in seconds to randomly wait before playing the sound again.",
       "title": "Sound Interval",
       "oneOf": [
         {
@@ -85,14 +85,14 @@
             {
               "type": "integer",
               "minimum": 0,
-              "description": "The minimum interval",
+              "description": "The minimum interval.",
               "$comment": "UNDOCUMENTED",
               "title": "Minimum"
             },
             {
               "type": "integer",
               "minimum": 0,
-              "description": "The maximum interval",
+              "description": "The maximum interval.",
               "$comment": "UNDOCUMENTED",
               "title": "Maximum"
             }
@@ -104,13 +104,13 @@
           "properties": {
             "range_min": {
               "type": "number",
-              "description": "The minimum interval",
+              "description": "The minimum interval.",
               "$comment": "UNDOCUMENTED",
               "title": "Range Minimum"
             },
             "range_max": {
               "type": "number",
-              "description": "The maximum interval",
+              "description": "The maximum interval.",
               "$comment": "UNDOCUMENTED",
               "title": "Range Maximum"
             }

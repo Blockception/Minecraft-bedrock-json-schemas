@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.block.reference",
-  "description": "A minecraft block reference",
+  "description": "A minecraft block reference.",
   "examples": ["namespace:block", { "name": "namespace:block" }],
   "title": "Block Reference",
   "defaultSnippets": [{ "label": "New Identifier", "body": "$1:$2" }],
@@ -24,7 +24,7 @@
           "additionalProperties": {
             "type": ["boolean", "integer", "string"],
             "title": "State Value",
-            "description": "The key of property is the name of the block state/property, the value must be the same as the block properties accepted values"
+            "description": "The key of property is the name of the block state/property, the value must be the same as the block properties accepted values."
           }
         }
       }

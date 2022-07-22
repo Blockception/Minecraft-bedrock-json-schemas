@@ -19,12 +19,12 @@
     },
     "entity_filter": {
       "$ref": "../../filters/filters.json",
-      "description": "Filter to see which entities can be affected by the attack",
+      "description": "Filter to see which entities can be affected by the attack.",
       "title": "Entity Filter"
     },
     "cause": {
       "type": "string",
-      "description": "what causes the attack to occur",
+      "description": "what causes the attack to occur.",
       "title": "Cause",
       "$ref": "../../../../general/entity/damage_source.json"
     }

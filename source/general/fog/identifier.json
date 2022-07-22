@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.fog.identifier",
-  "description": "A minecraft fog identifier",
+  "description": "A minecraft fog identifier.",
   "examples": ["namespace:fog_name"],
   "pattern": "^[0-9a-zA-Z:_\\.\\-]+$",
   "title": "Fog Identifier",

@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.random_fly",
-  "description": "Allows a mob to randomly fly around",
+  "description": "Allows a mob to randomly fly around.",
   "type": "object",
   "title": "Random Fly",
   "additionalProperties": false,
@@ -9,14 +9,14 @@
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
     "avoid_damage_blocks": {
       "type": "boolean",
-      "description": "If true, the mob will avoid blocks that cause damage",
+      "description": "If true, the mob will avoid blocks that cause damage.",
       "$comment": "UNDOCUMENTED",
       "title": "Avoid Damage Blocks"
     },
     "can_land_on_trees": {
       "type": "boolean",
       "default": true,
-      "description": "If true, the mob can stop flying and land on a tree instead of the ground",
+      "description": "If true, the mob can stop flying and land on a tree instead of the ground.",
       "title": "Can Land On Trees"
     },
     "xz_dist": {
@@ -33,7 +33,7 @@
     },
     "y_offset": {
       "type": "integer",
-      "description": "Height in blocks to add to the selected target position",
+      "description": "Height in blocks to add to the selected target position.",
       "$comment": "UNDOCUMENTED",
       "title": "Y Offset"
     }

@@ -2,12 +2,12 @@
   "$id": "blockception.minecraft.behavior.entities.filters.is_snow_covered",
   "type": "object",
   "title": "Is Snow Covered",
-  "description": "Tests whether the Subject is in an area with snow cover",
+  "description": "Tests whether the Subject is in an area with snow cover.",
   "properties": {
     "test": {
       "type": "string",
       "title": "Test Property",
-      "description": "The test property"
+      "description": "The test property."
     },
     "operator": {
       "$ref": "./types/operator.json"

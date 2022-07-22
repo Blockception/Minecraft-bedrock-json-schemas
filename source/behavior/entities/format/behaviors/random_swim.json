@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.random_swim",
   "type": "object",
   "title": "Random Swim",
-  "description": "Allows an entity to randomly move through water",
+  "description": "Allows an entity to randomly move through water.",
   "required": [],
   "properties": {
     "priority": { "$ref": "types/priority.json" },
@@ -10,7 +10,7 @@
     "avoid_surface": {
       "type": "boolean",
       "default": true,
-      "description": "If true, the mob will avoid surface water blocks by swimming below them",
+      "description": "If true, the mob will avoid surface water blocks by swimming below them.",
       "title": "Avoid Surface"
     },
     "interval": {

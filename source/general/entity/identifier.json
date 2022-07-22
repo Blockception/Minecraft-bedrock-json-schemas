@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.entity.identifier",
-  "description": "A minecraft entity identifier",
+  "description": "A minecraft entity identifier.",
   "examples": ["namespace:entity_name"],
   "pattern": "^[0-9a-zA-Z:_\\.\\-]+$",
   "title": "Entity Identifier",

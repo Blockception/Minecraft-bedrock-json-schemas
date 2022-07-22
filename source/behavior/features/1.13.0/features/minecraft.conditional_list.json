@@ -7,7 +7,7 @@
   "properties": {
     "description": {
       "title": "Description",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "required": ["identifier"],
@@ -38,7 +38,7 @@
           },
           "condition": {
             "title": "Condition",
-            "description": "Condition for placing associated Feature",
+            "description": "Condition for placing associated Feature.",
             "$ref": "../../../../molang/string.json"
           }
         }

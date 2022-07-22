@@ -6,9 +6,9 @@
   "properties": {
     "active_time": {
       "$ref": "../../../molang/number.json",
-      "description": "How long the particles emit for evaluated once",
+      "description": "How long the particles emit for evaluated once.",
       "title": "Active Time"
     }
   },
-  "description": "UNDOCUMENTED"
+  "description": "UNDOCUMENTED."
 }

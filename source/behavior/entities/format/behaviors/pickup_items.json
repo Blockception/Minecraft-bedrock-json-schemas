@@ -50,7 +50,7 @@
       "title": "Search Height",
       "type": "number",
       "default": 0,
-      "description": "Height in blocks the mob will look for items to pick up",
+      "description": "Height in blocks the mob will look for items to pick up.",
       "$comment": "UNDOCUMENTED"
     },
     "pickup_based_on_chance": {
@@ -62,7 +62,7 @@
     "pickup_same_items_as_in_hand": {
       "type": "boolean",
       "default": false,
-      "description": "If true, the mob will pickup the same item as the item in its hand",
+      "description": "If true, the mob will pickup the same item as the item in its hand.",
       "title": "Pickup Same Items As In Hand",
       "$comment": "UNDOCUMENTED"
     },

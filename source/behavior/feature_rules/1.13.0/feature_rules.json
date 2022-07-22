@@ -10,7 +10,7 @@
   "definitions": {
     "coord_dist": {
       "title": "",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "oneOf": [
         {
@@ -25,14 +25,14 @@
           "properties": {
             "numerator": {
               "title": "Numerator",
-              "description": "UNDOCUMENTED",
+              "description": "UNDOCUMENTED.",
               "$comment": "UNDOCUMENTED",
               "type": "number",
               "minimum": 1
             },
             "denominator": {
               "title": "Denominator",
-              "description": "UNDOCUMENTED",
+              "description": "UNDOCUMENTED.",
               "$comment": "UNDOCUMENTED",
               "type": "number",
               "minimum": 1
@@ -57,7 +57,7 @@
       "properties": {
         "description": {
           "title": "Description",
-          "description": "UNDOCUMENTED",
+          "description": "UNDOCUMENTED.",
           "$comment": "UNDOCUMENTED",
           "type": "object",
           "additionalProperties": false,
@@ -124,7 +124,7 @@
             },
             "iterations": {
               "title": "Iterations",
-              "description": "Number of scattered positions to generate",
+              "description": "Number of scattered positions to generate.",
               "$ref": "../../../molang/number.json"
             },
             "scatter_chance": {
@@ -141,14 +141,14 @@
                   "properties": {
                     "numerator": {
                       "title": "Numerator",
-                      "description": "UNDOCUMENTED",
+                      "description": "UNDOCUMENTED.",
                       "$comment": "UNDOCUMENTED",
                       "type": "number",
                       "minimum": 1
                     },
                     "denominator": {
                       "title": "Denominator",
-                      "description": "UNDOCUMENTED",
+                      "description": "UNDOCUMENTED.",
                       "$comment": "UNDOCUMENTED",
                       "type": "number",
                       "minimum": 1

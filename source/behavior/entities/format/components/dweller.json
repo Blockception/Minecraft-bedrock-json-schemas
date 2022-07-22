@@ -36,12 +36,12 @@
     "first_founding_reward": {
       "type": "integer",
       "title": "First Founding Reward",
-      "description": "How much reputation should the players be rewarded on first founding?"
+      "description": "How much reputation should the players be rewarded on first founding?."
     },
     "can_migrate": {
       "type": "boolean",
       "title": "Can Migrate",
-      "description": "Can this mob migrate between dwellings? Or does it only have its initial dwelling?"
+      "description": "Can this mob migrate between dwellings? Or does it only have its initial dwelling?."
     },
     "dwelling_bounds_tolerance": {
       "title": "Dwelling Bounds Tolerance",

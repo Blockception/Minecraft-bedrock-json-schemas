@@ -24,28 +24,25 @@
     "y_offset": {
       "type": "number",
       "default": 0.0,
-      "description": "Height in blocks to add to the selected target position",
+      "description": "Height in blocks to add to the selected target position.",
       "title": "Y Offset"
     },
     "must_reach": {
       "type": "boolean",
       "default": false,
-      "description": "If true, the point has to be reachable to be a valid target",
+      "description": "If true, the point has to be reachable to be a valid target.",
       "title": "Must Reach"
     },
     "random_reselect": {
       "type": "boolean",
       "default": false,
-      "description": "If true, the mob will randomly pick a new point while moving to the previously selected one",
+      "description": "If true, the mob will randomly pick a new point while moving to the previously selected one.",
       "title": "Random Reselect"
     },
     "float_duration": {
       "$ref": "../types/range_number_type.json",
-      "default": [
-        0.0,
-        0.0
-      ],
-      "description": "Range of time in seconds the mob will float around before landing and choosing to do something else",
+      "default": [0.0, 0.0],
+      "description": "Range of time in seconds the mob will float around before landing and choosing to do something else.",
       "title": "Float Duration"
     }
   },

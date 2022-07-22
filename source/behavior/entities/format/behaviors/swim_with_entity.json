@@ -36,7 +36,7 @@
       "title": "Match Direction Threshold",
       "type": "number",
       "default": 2,
-      "description": "Distance, from the entity being followed, at which this entity will try to match that entity's direction"
+      "description": "Distance, from the entity being followed, at which this entity will try to match that entity's direction."
     },
     "catch_up_multiplier": {
       "title": "Catch Up Multiplier",
@@ -59,7 +59,7 @@
     "entity_types": {
       "$ref": "../types/entity_types.json",
       "title": "Entity Types",
-      "description": "Filters which determine what entites are valid to follow"
+      "description": "Filters which determine what entites are valid to follow."
     }
   },
   "examples": [

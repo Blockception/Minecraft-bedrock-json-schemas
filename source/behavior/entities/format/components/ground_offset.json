@@ -9,7 +9,7 @@
     "value": {
       "type": "number",
       "default": 0.0,
-      "description": "The value of the entity's offset from the terrain, in blocks",
+      "description": "The value of the entity's offset from the terrain, in blocks.",
       "title": "Value"
     }
   },

@@ -9,7 +9,7 @@
     "uuidv4": {
       "type": "string",
       "title": "An UUID V4",
-      "description": "A valid uuid v4",
+      "description": "A valid uuid v4.",
       "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$",
       "format": "uuid"
     },
@@ -28,17 +28,17 @@
       "properties": {
         "experimental_custom_ui": {
           "type": "boolean",
-          "description": "Allows HTML files in the pack to be used for custom UI, and scripts in the pack to call and manipulate custom UI",
+          "description": "Allows HTML files in the pack to be used for custom UI, and scripts in the pack to call and manipulate custom UI.",
           "title": "Experimental Custom Ui"
         },
         "chemistry": {
           "type": "boolean",
-          "description": "Allows the pack to add, change or replace Chemistry functionality",
+          "description": "Allows the pack to add, change or replace Chemistry functionality.",
           "title": "Chemistry"
         },
         "raytraced": {
           "type": "boolean",
-          "description": "Indicates that this pack contains Raytracing Enhanced or Physical Based Materials for rendering",
+          "description": "Indicates that this pack contains Raytracing Enhanced or Physical Based Materials for rendering.",
           "title": "Raytraced"
         }
       }
@@ -135,7 +135,7 @@
           "language": {
             "type": "string",
             "title": "Language",
-            "description": "The programming language to use",
+            "description": "The programming language to use.",
             "enum": ["javascript"]
           },
           "uuid": {
@@ -151,7 +151,7 @@
           "entry": {
             "type": "string",
             "title": "Entry",
-            "description": "The javascript entry point for tests, only works if types has been set to `javascript`"
+            "description": "The javascript entry point for tests, only works if types has been set to `javascript`."
           }
         }
       }
@@ -164,15 +164,15 @@
       "properties": {
         "authors": {
           "title": "Authors",
-          "description": "Name of the author(s) of the pack",
+          "description": "Name of the author(s) of the pack.",
           "type": "array",
-          "items": { "type": "string", "title": "Name", "description": "Name of the author of the pack" }
+          "items": { "type": "string", "title": "Name", "description": "Name of the author of the pack." }
         },
-        "license": { "type": "string", "title": "License", "description": "The license of the pack" },
-        "url": { "type": "string", "format": "uri", "title": "Url", "description": "The home website of your pack" },
+        "license": { "type": "string", "title": "License", "description": "The license of the pack." },
+        "url": { "type": "string", "format": "uri", "title": "Url", "description": "The home website of your pack." },
         "generated_with": {
           "title": "Generated With",
-          "description": "A list of tools and their version that have modified this pack",
+          "description": "A list of tools and their version that have modified this pack.",
           "type": "object",
           "propertyNames": {
             "pattern": "^[a-zA-Z0-9\\_\\-]+$",
@@ -183,7 +183,7 @@
             "type": "array",
             "examples": [["1.0.0"]],
             "title": "Tool",
-            "description": "The tool and the version used to modified this pack",
+            "description": "The tool and the version used to modified this pack.",
             "items": {
               "type": "string",
               "title": "Version",
@@ -197,18 +197,18 @@
     "subpacks": {
       "type": "array",
       "title": "Subpacks",
-      "description": "A list of subpacks that are applied per memory tier",
+      "description": "A list of subpacks that are applied per memory tier.",
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "description": "A single definition of a subpack",
+        "description": "A single definition of a subpack.",
         "title": "Subpacks",
         "required": ["folder_name", "name", "memory_tier"],
         "example": [{ "folder_name": "tier1", "name": "low", "memory_tier": 1 }],
         "properties": {
           "folder_name": {
             "type": "string",
-            "description": "This represents the folder name located in \"subpacks\" folder. When user select this resolution Minecraft loads the content inside the folder.",
+            "description": "This represents the folder name located in \."subpacks\" folder. When user select this resolution Minecraft loads the content inside the folder.",
             "title": "Folder Name"
           },
           "name": {

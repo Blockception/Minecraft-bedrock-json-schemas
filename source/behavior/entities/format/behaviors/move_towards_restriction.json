@@ -16,14 +16,11 @@
       "type": "array",
       "items": {
         "type": "string",
-        "enum": [
-          "move",
-          "look"
-        ],
-        "description": "UNDOCUMENTED: control flags",
+        "enum": ["move", "look"],
+        "description": "UNDOCUMENTED: control flags.",
         "title": "Control Flags"
       },
-      "description": "UNDOCUMENTED: control flags",
+      "description": "UNDOCUMENTED: control flags.",
       "title": "Control Flags"
     }
   },

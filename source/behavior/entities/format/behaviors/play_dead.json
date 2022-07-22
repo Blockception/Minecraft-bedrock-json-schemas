@@ -23,7 +23,7 @@
     },
     "filters": {
       "title": "Filters",
-      "description": "The list of other triggers that are required for the mob to activate play dead",
+      "description": "The list of other triggers that are required for the mob to activate play dead.",
       "$ref": "../../filters/filters.json"
     },
     "force_below_health": {
@@ -43,8 +43,8 @@
       "description": "The range of damage that may cause the goal to start depending on randomness. Damage taken below the min will never cause the goal to start. Damage taken above the max will always cause the goal to start.",
       "type": "array",
       "items": [
-        { "title": "Minimum", "description": "Minimum", "type": "integer", "minimum": 0 },
-        { "title": "Maximum", "description": "Maximum", "type": "integer", "minimum": 0 }
+        { "title": "Minimum", "description": "Minimum.", "type": "integer", "minimum": 0 },
+        { "title": "Maximum", "description": "Maximum.", "type": "integer", "minimum": 0 }
       ]
     },
     "damage_sources": {

@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.stomp_turtle_egg",
-  "description": "Allows this mob to stomp turtle eggs",
+  "description": "Allows this mob to stomp turtle eggs.",
   "type": "object",
   "title": "Stomp Turtle Egg",
   "additionalProperties": false,
@@ -28,13 +28,13 @@
     "search_height": {
       "type": "integer",
       "default": 1,
-      "description": "Height in blocks the mob will look for turtle eggs to move towards",
+      "description": "Height in blocks the mob will look for turtle eggs to move towards.",
       "title": "Search Height"
     },
     "search_range": {
       "type": "integer",
       "default": 0,
-      "description": "The distance in blocks it will look for turtle eggs to move towards",
+      "description": "The distance in blocks it will look for turtle eggs to move towards.",
       "title": "Search Range"
     }
   },

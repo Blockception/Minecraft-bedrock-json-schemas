@@ -1,6 +1,6 @@
 {
   "title": "Molang Array Of 3 Numbers",
-  "description": "The minecraft molang definition that results in a 3 floats",
+  "description": "The minecraft molang definition that results in a 3 floats.",
   "items": [
     { "$ref": "./number.json", "minLength": 0 },
     { "$ref": "./number.json", "minLength": 0 },

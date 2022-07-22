@@ -14,7 +14,7 @@
     "value": {
       "type": "integer",
       "default": "0",
-      "description": "Tests for the actor's mark variant (if it has one)",
+      "description": "Tests for the actor's mark variant (if it has one).",
       "title": "Value"
     }
   }

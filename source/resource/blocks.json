@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.block.json",
   "type": "object",
   "title": "Blocks",
-  "description": "The minecraft block definition file",
+  "description": "The minecraft block definition file.",
   "definitions": {
     "texture": {
       "oneOf": [
@@ -31,24 +31,24 @@
   "additionalProperties": {
     "additionalProperties": false,
     "title": "Block",
-    "description": "Block texture definition",
+    "description": "Block texture definition.",
     "type": "object",
     "properties": {
       "brightness_gamma": {
         "type": "number",
         "title": "Brightness Gamma",
-        "description": "UNDOCUMENTED",
+        "description": "UNDOCUMENTED.",
         "$comment": "UNDOCUMENTED"
       },
       "carried_textures": {
         "$ref": "#/definitions/texture",
         "title": "Carried Textures",
-        "description": "UNDOCUMENTED",
+        "description": "UNDOCUMENTED.",
         "$comment": "UNDOCUMENTED"
       },
       "isotropic": {
         "title": "Isotropic",
-        "description": "Marks if this block is isotropic or not, or which side are",
+        "description": "Marks if this block is isotropic or not, or which side are.",
         "oneOf": [
           { "type": "boolean" },
           {
@@ -66,8 +66,8 @@
           }
         ]
       },
-      "sound": { "type": "string", "title": "Sound", "description": "The sound definition of this block" },
-      "textures": { "$ref": "#/definitions/texture", "title": "Sound", "description": "Textures" }
+      "sound": { "type": "string", "title": "Sound", "description": "The sound definition of this block." },
+      "textures": { "$ref": "#/definitions/texture", "title": "Sound", "description": "Textures." }
     }
   }
 }

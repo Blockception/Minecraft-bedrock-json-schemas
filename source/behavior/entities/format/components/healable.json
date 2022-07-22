@@ -12,11 +12,11 @@
     "force_use": {
       "type": "boolean",
       "default": false,
-      "description": "Determines if item can be used regardless of entity being at full health",
+      "description": "Determines if item can be used regardless of entity being at full health.",
       "title": "Force Use"
     },
     "items": {
-      "description": "The array of items that can be used to heal this entity",
+      "description": "The array of items that can be used to heal this entity.",
       "title": "Items",
       "type": "array",
       "items": {
@@ -24,17 +24,17 @@
         "properties": {
           "filters": {
             "$ref": "../../filters/filters.json",
-            "description": "The filter group that defines the conditions for using this item to heal the entity"
+            "description": "The filter group that defines the conditions for using this item to heal the entity."
           },
           "heal_amount": {
             "type": "integer",
             "default": 1,
-            "description": "The amount of health this entity gains when fed this item",
+            "description": "The amount of health this entity gains when fed this item.",
             "title": "Heal Amount"
           },
           "item": {
             "type": "string",
-            "description": "Item identifier that can be used to heal this entity",
+            "description": "Item identifier that can be used to heal this entity.",
             "title": "Item"
           }
         }

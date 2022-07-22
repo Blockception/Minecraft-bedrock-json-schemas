@@ -2,21 +2,21 @@
   "$id": "blockception.minecraft.behavior.entities.events",
   "type": "object",
   "title": "Events",
-  "description": "Events for entities",
+  "description": "Events for entities.",
   "additionalProperties": { "$ref": "#/definitions/event_base" },
   "definitions": {
     "addremove": {
       "additionalProperties": false,
       "title": "Add Or Remove",
-      "description": "The components groups to add or remove",
+      "description": "The components groups to add or remove.",
       "type": "object",
       "examples": [{ "component_groups": ["self:variant1"] }],
       "properties": {
         "component_groups": {
           "title": "Component Groups",
-          "description": "The components groups to add or remove",
+          "description": "The components groups to add or remove.",
           "type": "array",
-          "items": { "type": "string", "description": "A reference to a component group", "title": "Component Groups" }
+          "items": { "type": "string", "description": "A reference to a component group.", "title": "Component Groups" }
         }
       }
     },
@@ -45,26 +45,26 @@
       ],
       "properties": {
         "filters": { "$ref": "./../filters/filters.json" },
-        "trigger": { "description": "Triggers additional events", "$comment": "UNDOCUMENTED", "title": "Trigger", "$ref": "./types/trigger.json" },
-        "add": { "$ref": "#/definitions/addremove", "description": "What gets added when the event gets triggered", "title": "Add" },
-        "remove": { "$ref": "#/definitions/addremove", "description": "What gets removed when the event gets triggered", "title": "Remove" },
+        "trigger": { "description": "Triggers additional events.", "$comment": "UNDOCUMENTED", "title": "Trigger", "$ref": "./types/trigger.json" },
+        "add": { "$ref": "#/definitions/addremove", "description": "What gets added when the event gets triggered.", "title": "Add" },
+        "remove": { "$ref": "#/definitions/addremove", "description": "What gets removed when the event gets triggered.", "title": "Remove" },
         "randomize": {
           "type": "array",
-          "description": "Randomly selects one of the following items based upon their weight and the total weights",
+          "description": "Randomly selects one of the following items based upon their weight and the total weights.",
           "title": "Randomize",
           "items": {
-            "description": "Randomly selects one of the following items based upon their weight and the total weights",
+            "description": "Randomly selects one of the following items based upon their weight and the total weights.",
             "title": "Randomize",
             "examples": [{ "add": { "component_groups": ["foo:example"] }, "weight": 1 }],
             "properties": {
-              "add": { "$ref": "#/definitions/addremove", "description": "What gets added when the event gets triggered", "title": "Add" },
-              "remove": { "$ref": "#/definitions/addremove", "description": "What gets removed when the event gets triggered", "title": "Remove" },
-              "trigger": { "description": "Triggers additional events", "$comment": "UNDOCUMENTED", "title": "Trigger", "$ref": "./types/trigger.json" },
+              "add": { "$ref": "#/definitions/addremove", "description": "What gets added when the event gets triggered.", "title": "Add" },
+              "remove": { "$ref": "#/definitions/addremove", "description": "What gets removed when the event gets triggered.", "title": "Remove" },
+              "trigger": { "description": "Triggers additional events.", "$comment": "UNDOCUMENTED", "title": "Trigger", "$ref": "./types/trigger.json" },
               "weight": {
                 "type": "number",
                 "default": 1,
                 "minimum": 1,
-                "description": "The weight on how likely this section is to trigger",
+                "description": "The weight on how likely this section is to trigger.",
                 "$comment": "UNDOCUMENTED",
                 "title": "Weight"
               }
@@ -73,16 +73,16 @@
         },
         "sequence": {
           "type": "array",
-          "description": "A series of filters and components to be added",
+          "description": "A series of filters and components to be added.",
           "title": "Sequences",
           "items": {
-            "description": "Filters and components to be added",
+            "description": "Filters and components to be added.",
             "title": "Sequence",
             "type": "object",
             "properties": {
-              "add": { "$ref": "#/definitions/addremove", "description": "What gets added when the event gets triggered", "title": "Add" },
-              "remove": { "$ref": "#/definitions/addremove", "description": "What gets removed when the event gets triggered", "title": "Remove" },
-              "trigger": { "description": "Triggers additional events", "$comment": "UNDOCUMENTED", "title": "Trigger", "$ref": "./types/trigger.json" },
+              "add": { "$ref": "#/definitions/addremove", "description": "What gets added when the event gets triggered.", "title": "Add" },
+              "remove": { "$ref": "#/definitions/addremove", "description": "What gets removed when the event gets triggered.", "title": "Remove" },
+              "trigger": { "description": "Triggers additional events.", "$comment": "UNDOCUMENTED", "title": "Trigger", "$ref": "./types/trigger.json" },
               "filters": { "$ref": "./../filters/filters.json" }
             }
           }

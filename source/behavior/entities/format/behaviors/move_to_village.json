@@ -15,7 +15,7 @@
     "cooldown_time": {
       "type": "number",
       "default": 0,
-      "description": "Time in seconds the mob has to wait before using the goal again",
+      "description": "Time in seconds the mob has to wait before using the goal again.",
       "title": "Cooldown Time"
     },
     "goal_radius": {

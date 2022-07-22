@@ -17,7 +17,7 @@
       "$ref": "./types/subject.json"
     },
     "value": {
-      "description": "The Biome type to test",
+      "description": "The Biome type to test.",
       "type": "string",
       "enum": [
         "beach",

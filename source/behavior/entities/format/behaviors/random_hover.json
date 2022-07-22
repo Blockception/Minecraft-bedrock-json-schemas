@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.random_hover",
-  "description": "Allows the mob to hover around randomly, close to the surface",
+  "description": "Allows the mob to hover around randomly, close to the surface.",
   "type": "object",
   "title": "Random Hover",
   "additionalProperties": false,
@@ -10,7 +10,7 @@
     "hover_height": {
       "title": "Hover Height",
       "type": "array",
-      "description": "The height above the surface which the mob will try to maintain",
+      "description": "The height above the surface which the mob will try to maintain.",
       "items": [
         {
           "type": "number"
@@ -41,7 +41,7 @@
     "y_offset": {
       "type": "number",
       "default": 0,
-      "description": "Height in blocks to add to the selected target position",
+      "description": "Height in blocks to add to the selected target position.",
       "title": "Y Offset"
     }
   },

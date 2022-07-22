@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.entity.volume",
-  "description": "A minecraft entity volume",
+  "description": "A minecraft entity volume.",
   "examples": ["namespace:volume_name"],
   "pattern": "^[0-9a-zA-Z:_\\.\\-]+$",
   "title": "Volume Identifier",

@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.loot_table.identifier",
-  "description": "A minecraft loot_table identifier",
+  "description": "A minecraft loot_table identifier.",
   "examples": ["loot_tables/"],
   "pattern": "^loot_tables/.*\\.json$",
   "title": "Loot Table Identifier",

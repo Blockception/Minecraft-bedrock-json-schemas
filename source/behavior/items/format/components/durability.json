@@ -9,12 +9,12 @@
     "damage_chance": {
       "type": "object",
       "title": "Damange Chance",
-      "description": "Damange chance",
+      "description": "Damange chance.",
       "additionalProperties": false,
       "required": ["min", "max"],
       "properties": {
-        "min": { "title": "Min", "type": "integer", "description": "The minimum" },
-        "max": { "title": "Max", "type": "integer", "description": "The minimum" }
+        "min": { "title": "Min", "type": "integer", "description": "The minimum." },
+        "max": { "title": "Max", "type": "integer", "description": "The minimum." }
       }
     },
     "max_durability": {

@@ -21,7 +21,7 @@
           "cause": {
             "type": "string",
             "title": "Cause",
-            "description": "Damage cause",
+            "description": "Damage cause.",
             "$ref": "../../../../general/entity/damage_source.json"
           },
           "damage_per_tick": {

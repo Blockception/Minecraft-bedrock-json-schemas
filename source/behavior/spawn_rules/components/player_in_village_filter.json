@@ -3,14 +3,14 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Player In Village Filter",
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED",
   "properties": {
-    "distance": { "type": "integer", "title": "Distance", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "distance": { "type": "integer", "title": "Distance", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
     "village_border_tolerance": {
       "type": "integer",
       "title": "Village Border Tolerance",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED"
     }
   }

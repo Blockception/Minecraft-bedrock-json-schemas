@@ -12,7 +12,7 @@
     "entity_types": {
       "title": "Entity Types",
       "$ref": "../types/entity_types.json",
-      "description": "The list of conditions the other entity must meet to be a valid target"
+      "description": "The list of conditions the other entity must meet to be a valid target."
     },
     "percent_chance": {
       "title": "Percent Chance",

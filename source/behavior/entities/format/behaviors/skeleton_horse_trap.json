@@ -18,7 +18,7 @@
     "within_radius": {
       "type": "number",
       "default": 0,
-      "description": "Distance in blocks that the player has to be within to trigger the horse trap",
+      "description": "Distance in blocks that the player has to be within to trigger the horse trap.",
       "title": "Within Radius"
     }
   },

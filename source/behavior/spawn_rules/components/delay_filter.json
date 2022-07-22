@@ -3,12 +3,12 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Delay Filter",
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED",
   "properties": {
-    "min": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Min" },
-    "max": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Max" },
-    "identifier": { "type": "string", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Identifier" },
-    "spawn_chance": { "title": "Spawn Chance", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" }
+    "min": { "type": "integer", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Min" },
+    "max": { "type": "integer", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Max" },
+    "identifier": { "type": "string", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Identifier" },
+    "spawn_chance": { "title": "Spawn Chance", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "type": "number" }
   }
 }

@@ -1,14 +1,14 @@
 {
   "$id": "blockception.minecraft.behavior.loot_tables.set_data_from_color_index",
   "additionalProperties": false,
-  "description": "The function set_data_from_color_index",
+  "description": "The function set_data_from_color_index.",
   "title": "Set Data From Color Index",
   "type": "object",
   "properties": {
     "function": {
       "type": "string",
       "const": "set_data_from_color_index",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "title": "Function"
     }

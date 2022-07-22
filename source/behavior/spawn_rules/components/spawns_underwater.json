@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.spawn_rules.minecraft.spawns_underwater",
   "title": "Spawns Underwater",
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED",
   "type": "object",
   "additionalProperties": false

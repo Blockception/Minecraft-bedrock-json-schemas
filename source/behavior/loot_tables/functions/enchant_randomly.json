@@ -2,14 +2,14 @@
   "$id": "blockception.minecraft.behavior.loot_tables.enchant_randomly",
   "additionalProperties": false,
   "type": "object",
-  "description": "The function enchant_randomly",
+  "description": "The function enchant_randomly.",
   "title": "Enchant Randomly",
   "properties": {
     "function": {
       "type": "string",
       "const": "enchant_randomly",
       "title": "Function",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED"
     },
     "treasure": {

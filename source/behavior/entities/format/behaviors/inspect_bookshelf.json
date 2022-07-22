@@ -23,13 +23,13 @@
     "search_height": {
       "type": "integer",
       "default": 1,
-      "description": "The height that the mob will search for bookshelves",
+      "description": "The height that the mob will search for bookshelves.",
       "title": "Search Height"
     },
     "search_range": {
       "type": "integer",
       "default": 0,
-      "description": "Distance in blocks the mob will look for books to inspect",
+      "description": "Distance in blocks the mob will look for books to inspect.",
       "title": "Search Range"
     }
   },

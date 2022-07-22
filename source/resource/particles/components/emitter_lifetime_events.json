@@ -2,18 +2,18 @@
   "$id": "blockception.minecraft.resource.particle.1.10.0.emitter_lifetime_events",
   "type": "object",
   "title": "Emitter Lifetime Events Component For 1.10.0",
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED",
   "additionalProperties": false,
   "properties": {
     "creation_event": {
       "title": "Creation Event",
-      "description": "Fires when the emitter is created",
+      "description": "Fires when the emitter is created.",
       "oneOf": [{ "type": "array", "items": { "type": "string" } }, { "type": "string" }]
     },
     "expiration_event": {
       "title": "Expiration Event",
-      "description": "Fires when the emitter expires (does not wait for particles to expire too)",
+      "description": "Fires when the emitter expires (does not wait for particles to expire too).",
       "oneOf": [{ "type": "array", "items": { "type": "string" } }, { "type": "string" }]
     },
     "timeline": {
@@ -23,7 +23,7 @@
       "propertyNames": { "pattern": "^[\\d\\.]+$" },
       "additionalProperties": {
         "title": "Timeline Object",
-        "description": "A single point in time that executes commands/molang/events",
+        "description": "A single point in time that executes commands/molang/events.",
         "oneOf": [{ "type": "array", "items": { "type": "string" } }, { "type": "string" }]
       }
     },
@@ -41,10 +41,10 @@
         "title": "Distance Event",
         "additionalProperties": false,
         "properties": {
-          "distance": { "title": "Distance", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" },
+          "distance": { "title": "Distance", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "type": "number" },
           "effects": {
             "title": "Effects",
-            "description": "UNDOCUMENTED",
+            "description": "UNDOCUMENTED.",
             "$comment": "UNDOCUMENTED",
             "oneOf": [{ "type": "array", "items": { "type": "string" } }, { "type": "string" }]
           }

@@ -2,7 +2,7 @@
   "$id": "molang.string.1.8.0",
   "type": "string",
   "title": "Molang",
-  "description": "Molang definition",
+  "description": "Molang definition.",
   "format": "molang",
   "examples": ["query.variant", "(1.0)", "query.", "variable.=;"],
   "defaultSnippets": [{ "label": "New Molang", "body": "$1" }]

@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Components",
-  "description": "A collection of components",
+  "description": "A collection of components.",
   "required": [],
   "properties": {
     "minecraft:addrider": { "$ref": "./components/addrider.json" },

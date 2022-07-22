@@ -41,7 +41,7 @@
       "title": "Inner Boundary Time Increase",
       "type": "number",
       "default": 0.25,
-      "description": "Time (in seconds) to add to attack path recalculation when the target is beyond the \"path_inner_boundary\"."
+      "description": "Time (in seconds) to add to attack path recalculation when the target is beyond the \."path_inner_boundary\"."
     },
     "max_dist": {
       "title": "Max Dist",
@@ -75,7 +75,7 @@
       "title": "Outer Boundary Time Increase",
       "type": "number",
       "default": 0.5,
-      "description": "Time (in seconds) to add to attack path recalculation when the target is beyond the \"path_outer_boundary\"."
+      "description": "Time (in seconds) to add to attack path recalculation when the target is beyond the \."path_outer_boundary\"."
     },
     "path_fail_time_increase": {
       "title": "Path Fail Time Increase",
@@ -87,19 +87,19 @@
       "title": "Path Inner Boundary",
       "type": "number",
       "default": 16,
-      "description": "Distance at which to increase attack path recalculation by \"inner_boundary_tick_increase\"."
+      "description": "Distance at which to increase attack path recalculation by \."inner_boundary_tick_increase\"."
     },
     "path_outer_boundary": {
       "title": "Path Outer Boundary",
       "type": "number",
       "default": 32,
-      "description": "Distance at which to increase attack path recalculation by \"outer_boundary_tick_increase\"."
+      "description": "Distance at which to increase attack path recalculation by \."outer_boundary_tick_increase\"."
     },
     "random_stop_interval": {
       "title": "Random Stop Interval",
       "type": "integer",
       "default": 0,
-      "description": "This entity will have a 1 in N chance to stop it's current attack, where N = \"random_stop_interval\"."
+      "description": "This entity will have a 1 in N chance to stop it's current attack, where N = \."random_stop_interval\"."
     },
     "reach_multiplier": {
       "title": "Reach Multiplier",
@@ -117,7 +117,7 @@
       "title": "Set Persistent",
       "type": "boolean",
       "default": false,
-      "description": "Allows the actor to be set to persist upon targeting a player"
+      "description": "Allows the actor to be set to persist upon targeting a player."
     },
     "target_dist": {
       "title": "Target Dist",

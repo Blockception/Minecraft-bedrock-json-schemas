@@ -11,7 +11,7 @@
     },
     "entity_types": {
       "$ref": "../types/entity_types.json",
-      "description": "List of entity types that this entity can target if the potential target is hurt by this mob's owner",
+      "description": "List of entity types that this entity can target if the potential target is hurt by this mob's owner.",
       "title": "Entity TYpes"
     }
   }

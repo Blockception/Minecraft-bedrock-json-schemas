@@ -17,7 +17,7 @@
       "$ref": "./types/subject.json"
     },
     "value": {
-      "description": "The Palette Color to test",
+      "description": "The Palette Color to test.",
       "type": "string",
       "enum": ["black", "blue", "brown", "cyan", "gray", "green", "light_blue", "light_green", "magenta", "orange", "pink", "purple", "red", "silver", "white", "yellow"],
       "title": "Value"

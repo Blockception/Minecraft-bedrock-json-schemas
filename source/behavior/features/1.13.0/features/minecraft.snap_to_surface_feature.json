@@ -7,7 +7,7 @@
   "properties": {
     "description": {
       "title": "Description",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "required": ["identifier"],
@@ -22,7 +22,7 @@
     },
     "feature_to_snap": {
       "title": "Feature to snap",
-      "description": "Named reference of feature to be snapped",
+      "description": "Named reference of feature to be snapped.",
       "type": "string",
       "$ref": "../../../../general/feature/identifier.json"
     },

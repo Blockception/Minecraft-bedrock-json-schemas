@@ -11,7 +11,7 @@
     },
     "entity_types": {
       "$ref": "../types/entity_types.json",
-      "description": "List of entity types the wither takes into account to find who dealt the most damage to it",
+      "description": "List of entity types the wither takes into account to find who dealt the most damage to it.",
       "title": "Entity Types"
     }
   }

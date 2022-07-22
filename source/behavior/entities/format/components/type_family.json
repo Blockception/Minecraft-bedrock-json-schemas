@@ -9,8 +9,8 @@
   "properties": {
     "family": {
       "type": "array",
-      "items": { "type": "string", "description": "Family name", "title": "Family", "examples": ["monster", "mob", "animal", "npc"] },
-      "description": "List of family names",
+      "items": { "type": "string", "description": "Family name.", "title": "Family", "examples": ["monster", "mob", "animal", "npc"] },
+      "description": "List of family names.",
       "title": "Family"
     }
   }

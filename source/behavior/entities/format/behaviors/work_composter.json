@@ -12,7 +12,7 @@
       "title": "Active Time",
       "type": "integer",
       "default": 0,
-      "description": "The amount of ticks the NPC will stay in their the work location"
+      "description": "The amount of ticks the NPC will stay in their the work location."
     },
     "block_interaction_max": {
       "title": "Block Interaction Max",
@@ -42,7 +42,7 @@
       "title": "Goal Cooldown",
       "type": "integer",
       "default": 0,
-      "description": "The amount of ticks the goal will be on cooldown before it can be used again"
+      "description": "The amount of ticks the goal will be on cooldown before it can be used again."
     },
     "items_per_use_max": {
       "title": "Items Per Use Max",
@@ -87,7 +87,7 @@
       "title": "Work In Rain Tolerance",
       "type": "integer",
       "default": -1,
-      "description": "If \"can_work_in_rain\" is false, this is the maximum number of ticks left in the goal where rain will not interrupt the goal"
+      "description": "If \."can_work_in_rain\" is false, this is the maximum number of ticks left in the goal where rain will not interrupt the goal"
     }
   },
   "examples": [{}]

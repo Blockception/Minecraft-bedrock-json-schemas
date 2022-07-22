@@ -9,13 +9,13 @@
     "must_see": {
       "type": "boolean",
       "default": false,
-      "description": "Whether the other entity needs to be visible to trigger `inside` events",
+      "description": "Whether the other entity needs to be visible to trigger `inside` events.",
       "title": "Must See"
     },
     "inside_range": {
       "type": "number",
       "default": 1,
-      "description": "Maximum distance in blocks that another entity will be considered in the `inside` range",
+      "description": "Maximum distance in blocks that another entity will be considered in the `inside` range.",
       "title": "Inside Range"
     },
     "on_inside_range": {
@@ -36,7 +36,7 @@
     "outside_range": {
       "type": "number",
       "default": 5,
-      "description": "Maximum distance in blocks that another entity will be considered in the `outside` range",
+      "description": "Maximum distance in blocks that another entity will be considered in the `outside` range.",
       "title": "Outside Range"
     }
   },

@@ -37,10 +37,10 @@
   ],
   "type": "array",
   "title": "Languages",
-  "description": "A language definitions file",
+  "description": "A language definitions file.",
   "items": {
     "type": "string",
-    "description": "A language identifier",
+    "description": "A language identifier.",
     "pattern": "^[a-z]{2}_[A-Z]{2}$",
     "enum": [
       "en_US",

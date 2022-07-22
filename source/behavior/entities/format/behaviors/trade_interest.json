@@ -12,31 +12,31 @@
     "carried_item_switch_time": {
       "type": "number",
       "default": 2,
-      "description": "The Maximum time in seconds that the trader will hold an item before attempting to switch for a different item that takes the same trade",
+      "description": "The Maximum time in seconds that the trader will hold an item before attempting to switch for a different item that takes the same trade.",
       "title": "Carried Item Switch Time"
     },
     "cooldown": {
       "type": "number",
       "default": 2,
-      "description": "The time in seconds before the trader can use this goal again",
+      "description": "The time in seconds before the trader can use this goal again.",
       "title": "Cooldown"
     },
     "interest_time": {
       "type": "number",
       "default": 45,
-      "description": "The Maximum time in seconds that the trader will be interested with showing it's trade items",
+      "description": "The Maximum time in seconds that the trader will be interested with showing it's trade items.",
       "title": "Interest_time"
     },
     "remove_item_time": {
       "type": "number",
       "default": 1,
-      "description": "The Maximum time in seconds that the trader will wait when you no longer have items to trade",
+      "description": "The Maximum time in seconds that the trader will wait when you no longer have items to trade.",
       "title": "Remove Item Time"
     },
     "within_radius": {
       "type": "number",
       "default": 0,
-      "description": "Distance in blocks this mob can be interested by a player holding an item they like",
+      "description": "Distance in blocks this mob can be interested by a player holding an item they like.",
       "title": "Within Radius"
     }
   },

@@ -12,37 +12,37 @@
       "title": "Can Sleep While Riding",
       "type": "boolean",
       "default": false,
-      "description": "If true, the mob will be able to use the sleep goal if riding something"
+      "description": "If true, the mob will be able to use the sleep goal if riding something."
     },
     "cooldown_time": {
       "title": "Cooldown Time",
       "type": "number",
       "default": 0.0,
-      "description": "Time in seconds the mob has to wait before using the goal again"
+      "description": "Time in seconds the mob has to wait before using the goal again."
     },
     "sleep_collider_height": {
       "title": "Sleep Collider Height",
       "type": "number",
       "default": 1.0,
-      "description": "The height of the mob's collider while sleeping"
+      "description": "The height of the mob's collider while sleeping."
     },
     "sleep_collider_width": {
       "title": "Sleep Collider Width",
       "type": "number",
       "default": 1.0,
-      "description": "The width of the mob's collider while sleeping"
+      "description": "The width of the mob's collider while sleeping."
     },
     "sleep_y_offset": {
       "title": "Sleep Y Offset",
       "type": "number",
       "default": 1.0,
-      "description": "The y offset of the mob's collider while sleeping"
+      "description": "The y offset of the mob's collider while sleeping."
     },
     "timeout_cooldown": {
       "title": "Timeout Cooldown",
       "type": "number",
       "default": 8.0,
-      "description": "The cooldown time in seconds before the goal can be reused after a internal failure or timeout condition"
+      "description": "The cooldown time in seconds before the goal can be reused after a internal failure or timeout condition."
     }
   },
   "examples": [

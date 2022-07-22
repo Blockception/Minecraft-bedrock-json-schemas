@@ -7,7 +7,7 @@
   "definitions": {
     "range": {
       "title": "Range",
-      "description": "A range",
+      "description": "A range.",
       "type": "object",
       "required": ["range_min", "range_max"],
       "examples": [{ "range_min": 8, "range_max": 9 }],
@@ -15,12 +15,12 @@
         "range_max": {
           "title": "Range Max",
           "type": "integer",
-          "description": "The maximum plant height"
+          "description": "The maximum plant height."
         },
         "range_min": {
           "title": "Range Min",
           "type": "integer",
-          "description": "The minimum plant height"
+          "description": "The minimum plant height."
         }
       }
     },
@@ -59,7 +59,7 @@
   "properties": {
     "description": {
       "title": "Description",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "required": ["identifier"],

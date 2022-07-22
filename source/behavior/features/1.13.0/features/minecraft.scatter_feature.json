@@ -20,37 +20,37 @@
           "properties": {
             "distribution": {
               "title": "Distribution",
-              "description": "Type of distribution - uniform random, gaussian (centered in the range), or grid (either fixed-step or jittered)",
+              "description": "Type of distribution - uniform random, gaussian (centered in the range), or grid (either fixed-step or jittered).",
               "type": "string",
               "enum": ["uniform", "gaussian", "inverse_gaussian", "fixed_grid", "jittered_grid"]
             },
             "step_size": {
               "title": "Step Size",
-              "description": "When the distribution type is grid, defines the distance between steps along this axis",
+              "description": "When the distribution type is grid, defines the distance between steps along this axis.",
               "type": "integer",
               "minimum": 1
             },
             "grid_offset": {
               "title": "Step Size",
-              "description": "When the distribution type is grid, defines the offset along this axis",
+              "description": "When the distribution type is grid, defines the offset along this axis.",
               "type": "integer",
               "minimum": 0
             },
             "extent": {
               "title": "Extent",
-              "description": "UNDOCUMENTED",
+              "description": "UNDOCUMENTED.",
               "$comment": "UNDOCUMENTED",
               "type": "array",
               "items": [
                 {
                   "title": "Lower Bound",
                   "$ref": "../../../../molang/number.json",
-                  "description": "Lower bound (inclusive) of the scatter range, as an offset from the input point to scatter around"
+                  "description": "Lower bound (inclusive) of the scatter range, as an offset from the input point to scatter around."
                 },
                 {
                   "title": "Upper Bound",
                   "$ref": "../../../../molang/number.json",
-                  "description": "Upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around"
+                  "description": "Upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around."
                 }
               ]
             }
@@ -62,7 +62,7 @@
   "properties": {
     "description": {
       "title": "Description",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "required": ["identifier"],
@@ -77,7 +77,7 @@
     },
     "places_feature": {
       "title": "Places Feature",
-      "description": "Named reference of feature to be placed",
+      "description": "Named reference of feature to be placed.",
       "type": "string",
       "$ref": "../../../../general/feature/identifier.json"
     },
@@ -88,7 +88,7 @@
     },
     "iterations": {
       "title": "Iterations",
-      "description": "Number of scattered positions to generate",
+      "description": "Number of scattered positions to generate.",
       "$ref": "../../../../molang/number.json"
     },
     "scatter_chance": {
@@ -101,13 +101,13 @@
           "properties": {
             "numerator": {
               "title": "Numerator",
-              "description": "UNDOCUMENTED",
+              "description": "UNDOCUMENTED.",
               "type": "integer",
               "minimum": 1
             },
             "denominator": {
               "title": "Denominator",
-              "description": "UNDOCUMENTED",
+              "description": "UNDOCUMENTED.",
               "type": "integer",
               "minimum": 1
             }

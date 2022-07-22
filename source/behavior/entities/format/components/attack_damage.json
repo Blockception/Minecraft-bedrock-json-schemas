@@ -7,11 +7,11 @@
   "properties": {
     "value": {
       "type": "number",
-      "description": "UNDOCUMENTED: value",
+      "description": "UNDOCUMENTED: value.",
       "title": "Value"
     }
   },
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "examples": [
     {
       "value": 0.0

@@ -3,7 +3,7 @@
   "type": "object",
   "title": "Boostable",
   "additionalProperties": false,
-  "description": "Defines the conditions and behavior of a rideable entity's boost",
+  "description": "Defines the conditions and behavior of a rideable entity's boost.",
   "properties": {
     "duration": {
       "type": "number",
@@ -19,7 +19,7 @@
     },
     "boost_items": {
       "type": "array",
-      "description": "List of items that can be used to boost while riding this entity",
+      "description": "List of items that can be used to boost while riding this entity.",
       "title": "Boost Items",
       "items": {
         "type": "object",

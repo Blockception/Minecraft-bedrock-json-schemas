@@ -1,12 +1,12 @@
 {
   "type": "array",
   "title": "Vector Of 3 Items",
-  "description": "An vector of 3 integers",
+  "description": "An vector of 3 integers.",
   "examples": [[0, 0, 0]],
   "items": [
-    { "type": "integer", "description": "The X component", "title": "X", "default": 0 },
-    { "type": "integer", "description": "The Y component", "title": "Y", "default": 0 },
-    { "type": "integer", "description": "The Z component", "title": "Z", "default": 0 }
+    { "type": "integer", "description": "The X component.", "title": "X", "default": 0 },
+    { "type": "integer", "description": "The Y component.", "title": "Y", "default": 0 },
+    { "type": "integer", "description": "The Z component.", "title": "Z", "default": 0 }
   ],
   "defaultSnippets": [{ "label": "New Array 3", "body": ["^$1", "^$2", "^$3"] }]
 }

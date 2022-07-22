@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.entities.event",
   "title": "Event",
-  "description": "Minecraft behavior event",
+  "description": "Minecraft behavior event.",
   "examples": ["example:foo", { "event": "example:foo", "target": "self" }],
   "defaultSnippets": [
     {
@@ -10,14 +10,14 @@
     }
   ],
   "oneOf": [
-    { "type": "string", "pattern": "^[a-zA-Z0-9_\\-:]+$", "description": "The event to fire" },
+    { "type": "string", "pattern": "^[a-zA-Z0-9_\\-:]+$", "description": "The event to fire." },
     {
       "type": "object",
       "properties": {
-        "event": { "type": "string", "pattern": "^[a-zA-Z0-9_\\-:]+$", "description": "The event to fire", "title": "Event" },
+        "event": { "type": "string", "pattern": "^[a-zA-Z0-9_\\-:]+$", "description": "The event to fire.", "title": "Event" },
         "target": {
           "type": "string",
-          "description": "The target of the event",
+          "description": "The target of the event.",
           "title": "Target",
           "enum": ["baby", "block", "damager", "other", "parent", "player", "self", "target"]
         }

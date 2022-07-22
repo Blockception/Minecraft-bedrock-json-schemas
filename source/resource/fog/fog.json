@@ -5,7 +5,7 @@
   "type": "object",
   "additionalProperties": false,
   "title": "Fog",
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED",
   "definitions": {
     "colorHexOrArray": {
@@ -171,13 +171,13 @@
     "format_version": { "$ref": "../../general/format_version.json" },
     "minecraft:fog_settings": {
       "title": "Fog Settings",
-      "description": "The definition of a single fog",
+      "description": "The definition of a single fog.",
       "type": "object",
       "additionalProperties": false,
       "properties": {
         "description": {
           "title": "Description",
-          "description": "The identifying description of this fog settings",
+          "description": "The identifying description of this fog settings.",
           "type": "object",
           "additionalProperties": false,
           "properties": {

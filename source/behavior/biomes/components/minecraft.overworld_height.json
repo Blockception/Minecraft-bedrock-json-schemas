@@ -9,7 +9,7 @@
   "properties": {
     "noise_params": {
       "title": "Noise Params",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": [
@@ -23,26 +23,10 @@
     },
     "noise_type": {
       "title": "Noise Type",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "string",
-      "enum": [
-        "stone_beach",
-        "deep_ocean",
-        "default",
-        "default_mutated",
-        "lowlands",
-        "river",
-        "ocean",
-        "taiga",
-        "mountains",
-        "highlands",
-        "mushroom",
-        "less_extreme",
-        "extreme",
-        "beach",
-        "swamp"
-      ]
+      "enum": ["stone_beach", "deep_ocean", "default", "default_mutated", "lowlands", "river", "ocean", "taiga", "mountains", "highlands", "mushroom", "less_extreme", "extreme", "beach", "swamp"]
     }
   }
 }

@@ -7,7 +7,7 @@
     "test": {
       "type": "string",
       "title": "Test Property",
-      "description": "The test property"
+      "description": "The test property."
     },
     "operator": {
       "$ref": "./types/operator.json"
@@ -17,7 +17,7 @@
     },
     "value": {
       "type": "integer",
-      "description": "The altitude value to compare with",
+      "description": "The altitude value to compare with.",
       "title": "Value"
     }
   },

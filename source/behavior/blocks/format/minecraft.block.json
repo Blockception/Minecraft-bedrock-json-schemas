@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.blocks",
   "title": "Block Definitions",
-  "description": "A custom block definition",
+  "description": "A custom block definition.",
   "type": "object",
   "additionalProperties": false,
   "required": ["description", "components"],
@@ -10,7 +10,7 @@
     "components_ref": {
       "type": "object",
       "title": "Component",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "additionalProperties": false,
       "properties": {
@@ -53,7 +53,7 @@
   "properties": {
     "description": {
       "title": "Block Description",
-      "description": "The description for this block",
+      "description": "The description for this block.",
       "type": "object",
       "additionalProperties": false,
       "required": ["identifier"],
@@ -78,19 +78,19 @@
         },
         "properties": {
           "title": "Properties",
-          "description": "UNDOCUMENTED",
+          "description": "UNDOCUMENTED.",
           "$comment": "UNDOCUMENTED",
           "propertyNames": { "pattern": "^([a-zA-Z0-9_]+:[a-zA-Z0-9_\\-]+)$" },
           "type": "object",
           "additionalProperties": {
             "title": "Property",
-            "description": "A block property",
+            "description": "A block property.",
             "oneOf": [
               {
                 "type": "array",
                 "items": {
                   "title": "Property Value",
-                  "description": "The value of this property",
+                  "description": "The value of this property.",
                   "anyOf": [{ "type": "boolean" }, { "type": "number" }, { "type": "integer" }, { "type": "string" }]
                 }
               },
@@ -109,18 +109,18 @@
     "permutations": {
       "type": "array",
       "title": "Permutations",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "items": {
         "title": "Permutation",
-        "description": "UNDOCUMENTED",
+        "description": "UNDOCUMENTED.",
         "$comment": "UNDOCUMENTED",
         "type": "object",
         "additionalProperties": false,
         "properties": {
           "condition": {
             "title": "Condition",
-            "description": "UNDOCUMENTED",
+            "description": "UNDOCUMENTED.",
             "$comment": "UNDOCUMENTED",
             "$ref": "../../../molang/string.json"
           },

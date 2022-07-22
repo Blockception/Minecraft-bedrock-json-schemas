@@ -1,11 +1,11 @@
 {
   "$id": "blockception.minecraft.behavior.loot_tables.set_banner_details",
   "additionalProperties": false,
-  "description": "The function set_banner_details",
+  "description": "The function set_banner_details.",
   "title": "Set Banner Details",
   "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "set_banner_details", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Function" },
-    "type": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Type" }
+    "function": { "type": "string", "const": "set_banner_details", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Function" },
+    "type": { "type": "integer", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Type" }
   }
 }

@@ -4,7 +4,7 @@
   "type": "object",
   "title": "Move Outdoors",
   "$comment": "UNDOCUMENTED",
-  "description": "Forces the entity to move `outside`, whatever that means",
+  "description": "Forces the entity to move `outside`, whatever that means.",
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },
@@ -36,7 +36,7 @@
       "title": "Timeout Cooldown",
       "type": "number",
       "default": 8000000,
-      "description": "The cooldown time in seconds before the goal can be reused after pathfinding fails"
+      "description": "The cooldown time in seconds before the goal can be reused after pathfinding fails."
     }
   }
 }

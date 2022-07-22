@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Dig",
-  "description": "[EXPERIMENTAL BEHAVIOR] Plays the provided sound and activates the `ROARING` actor flag during the specified duration",
+  "description": "[EXPERIMENTAL BEHAVIOR] Plays the provided sound and activates the `ROARING` actor flag during the specified duration.",
   "properties": {
     "priority": {
       "$ref": "./types/priority.json"
@@ -12,7 +12,7 @@
       "title": "Duration",
       "type": "number",
       "default": 0.0,
-      "description": "Goal duration in seconds"
+      "description": "Goal duration in seconds."
     }
   }
 }

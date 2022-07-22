@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.spawn_rules.minecraft.biome_filter",
   "title": "Biome Filter",
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED",
   "oneOf": [
     { "type": "array", "items": { "$ref": "../../entities/filters/filters.json" } },

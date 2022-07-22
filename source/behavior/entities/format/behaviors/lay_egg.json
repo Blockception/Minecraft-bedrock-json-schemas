@@ -49,13 +49,13 @@
       "title": "Search Height",
       "type": "integer",
       "default": 1,
-      "description": "Height in blocks the mob will look for a target block to move towards"
+      "description": "Height in blocks the mob will look for a target block to move towards."
     },
     "search_range": {
       "title": "Search Range",
       "type": "integer",
       "default": 0,
-      "description": "The distance in blocks it will look for a target block to move towards"
+      "description": "The distance in blocks it will look for a target block to move towards."
     },
     "target_blocks": {
       "title": "Target Blocks",

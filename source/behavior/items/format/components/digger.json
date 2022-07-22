@@ -9,7 +9,7 @@
     "use_efficiency": {
       "title": "Use Efficiency",
       "type": "boolean",
-      "description": "Toggles if the item will be used efficiently",
+      "description": "Toggles if the item will be used efficiently.",
       "default": false
     },
     "destroy_speeds": {
@@ -22,21 +22,21 @@
         "type": "object",
         "additionalProperties": false,
         "properties": {
-          "speed": { "title": "Speed", "description": "Speed", "type": "number" },
-          "on_dig": { "type": "string", "title": "On Dig", "description": "Trigger for when you dig a block that isn't listed in destroy_speeds" },
+          "speed": { "title": "Speed", "description": "Speed.", "type": "number" },
+          "on_dig": { "type": "string", "title": "On Dig", "description": "Trigger for when you dig a block that isn't listed in destroy_speeds." },
           "block": {
             "title": "Block",
             "oneOf": [
-              { "type": "string", "description": "The block identifier" },
+              { "type": "string", "description": "The block identifier." },
               {
                 "type": "object",
                 "additionalProperties": false,
-                "description": "Block descriptor",
+                "description": "Block descriptor.",
                 "properties": {
                   "any_tag": {
                     "type": "array",
                     "title": "Any Block Tag",
-                    "description": "The block tag",
+                    "description": "The block tag.",
                     "items": { "type": "string", "title": "Block Tag" }
                   }
                 }
@@ -46,6 +46,6 @@
         }
       }
     },
-    "on_dig": { "type": "string", "title": "On Dig", "description": "Trigger for when you dig a block that isn't listed in destroy_speeds" }
+    "on_dig": { "type": "string", "title": "On Dig", "description": "Trigger for when you dig a block that isn't listed in destroy_speeds." }
   }
 }

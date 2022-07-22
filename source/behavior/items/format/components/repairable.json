@@ -13,20 +13,20 @@
       "items": {
         "type": "object",
         "title": "Repar Item",
-        "description": "UNDOCUMENTED",
+        "description": "UNDOCUMENTED.",
         "$comment": "UNDOCUMENTED",
         "additionalProperties": false,
         "properties": {
           "items": {
             "title": "Items",
-            "description": "UNDOCUMENTED",
+            "description": "UNDOCUMENTED.",
             "$comment": "UNDOCUMENTED",
             "type": "array",
-            "items": { "type": "string", "title": "Item", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
+            "items": { "type": "string", "title": "Item", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" }
           },
           "repair_amount": {
             "title": "Repair Amount",
-            "description": "UNDOCUMENTED",
+            "description": "UNDOCUMENTED.",
             "$comment": "UNDOCUMENTED",
             "$ref": "../../../../molang/number.json"
           }

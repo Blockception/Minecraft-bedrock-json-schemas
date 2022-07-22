@@ -12,7 +12,7 @@
       "title": "Attack Interval",
       "type": "number",
       "default": 0,
-      "description": "Alternative to \"attack_interval_min\" & \"attack_interval_max\". Consistent reload-time (in seconds), when not using a charged shot. Does not scale with target-distance."
+      "description": "Alternative to \."attack_interval_min\" & \"attack_interval_max\". Consistent reload-time (in seconds), when not using a charged shot. Does not scale with target-distance."
     },
     "attack_interval_max": {
       "title": "Attack Interval Max",
@@ -54,7 +54,7 @@
       "title": "Charge Charged Trigger",
       "type": "number",
       "default": 0,
-      "description": "Time (in seconds, then add \"charge_shoot_trigger\"), before a charged up attack is done charging. Charge-time decays while target is not in sight."
+      "description": "Time (in seconds, then add \."charge_shoot_trigger\"), before a charged up attack is done charging. Charge-time decays while target is not in sight."
     },
     "charge_shoot_trigger": {
       "title": "Charge Shoot Trigger",
@@ -72,7 +72,7 @@
       "title": "Set Persistent",
       "type": "boolean",
       "default": false,
-      "description": "Allows the actor to be set to persist upon targeting a player"
+      "description": "Allows the actor to be set to persist upon targeting a player."
     },
     "swing": {
       "title": "Swing",

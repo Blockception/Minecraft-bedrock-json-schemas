@@ -7,7 +7,7 @@
   "properties": {
     "value": {
       "title": "Value",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "type": "boolean"
     }
   }

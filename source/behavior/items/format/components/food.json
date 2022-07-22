@@ -14,13 +14,13 @@
     "nutrition": { "title": "Nutrition", "description": "How much nutrition does this food item give the player when eaten.", "type": "number" },
     "on_consume": {
       "title": "On Consume",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "event": { "type": "string", "title": "Event", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-        "target": { "type": "string", "title": "Target", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "enum": ["self"] }
+        "event": { "type": "string", "title": "Event", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
+        "target": { "type": "string", "title": "Target", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "enum": ["self"] }
       }
     },
     "is_meat": {
@@ -48,19 +48,19 @@
   },
   "effects": {
     "title": "Effects",
-    "description": "UNDOCUMENTED",
+    "description": "UNDOCUMENTED.",
     "$comment": "UNDOCUMENTED",
     "type": "array",
     "items": {
       "title": "Effect",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
       "properties": {
         "name": {
           "title": "Name",
-          "description": "UNDOCUMENTED",
+          "description": "UNDOCUMENTED.",
           "$comment": "UNDOCUMENTED",
           "type": "string"
         },

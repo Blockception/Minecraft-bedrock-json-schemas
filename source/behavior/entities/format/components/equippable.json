@@ -6,11 +6,11 @@
   "description": "Defines an entity's behavior for having items equipped to it.",
   "properties": {
     "slots": {
-      "description": "List of slots and the item that can be equipped",
+      "description": "List of slots and the item that can be equipped.",
       "type": "array",
       "title": "Slots",
       "items": {
-        "description": "A slot and the item that can be equipped",
+        "description": "A slot and the item that can be equipped.",
         "title": "Slots",
         "type": "object",
         "properties": {
@@ -26,7 +26,7 @@
             "title": "Accepted Items",
             "items": {
               "type": "string",
-              "description": "A item name",
+              "description": "A item name.",
               "$ref": "../../../../general/item/identifier.json",
               "title": "Accepted Items"
             }

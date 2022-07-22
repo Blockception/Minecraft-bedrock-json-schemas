@@ -1,8 +1,8 @@
 {
   "$id": "blockception.minecraft.behavior.spawn_rules.minecraft.world_age_filter",
   "title": "World Age Filter",
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED",
   "additionalProperties": false,
-  "properties": { "min": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Min" } }
+  "properties": { "min": { "type": "integer", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Min" } }
 }

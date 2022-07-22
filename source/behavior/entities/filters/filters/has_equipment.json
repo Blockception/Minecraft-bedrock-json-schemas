@@ -12,7 +12,7 @@
       "title": "Test"
     },
     "domain": {
-      "description": "The equipment location to test",
+      "description": "The equipment location to test.",
       "default": "any",
       "enum": ["any", "armor", "feet", "hand", "head", "leg", "torso"],
       "title": "Domain"
@@ -24,7 +24,7 @@
       "$ref": "./types/subject.json"
     },
     "value": {
-      "description": "The item name to look for",
+      "description": "The item name to look for.",
       "type": "string",
       "$ref": "../../../../general/item/identifier.json",
       "title": "Value"

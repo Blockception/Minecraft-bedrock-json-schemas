@@ -125,7 +125,7 @@
           "title": "Swing",
           "type": "boolean",
           "default": false,
-          "description": "If true, the player will do the \"swing\" animation when interacting with this entity."
+          "description": "If true, the player will do the \."swing\" animation when interacting with this entity."
         },
         "transform_to_item": {
           "title": "Transform To Item",
@@ -153,14 +153,14 @@
           "title": "Take Item",
           "type": "boolean",
           "$comment": "UNDOCUMENTED",
-          "description": "UNDOCUMENTED Takes an item from the player"
+          "description": "UNDOCUMENTED Takes an item from the player."
         }
       }
     }
   },
   "properties": {
     "interactions": {
-      "description": "The interactions",
+      "description": "The interactions.",
       "title": "Interactions",
       "oneOf": [
         {

@@ -11,17 +11,17 @@
     "admire_item_sound": {
       "title": "Admire Item Sound",
       "type": "string",
-      "description": "The sound event to play when admiring the item"
+      "description": "The sound event to play when admiring the item."
     },
     "on_admire_item_start": {
       "title": "On Admire Item Start",
       "$ref": "../types/event.json",
-      "description": "The event to run when admiring the item"
+      "description": "The event to run when admiring the item."
     },
     "on_admire_item_stop": {
       "title": "On Admire Item Stop",
       "$ref": "../types/event.json",
-      "description": "The event to run when no longer admiring the item"
+      "description": "The event to run when no longer admiring the item."
     },
     "sound_interval": {
       "title": "Sound Interval",

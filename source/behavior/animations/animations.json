@@ -5,11 +5,11 @@
   "definitions": {
     "animationspec": {
       "anyOf": [
-        { "title": "Animation Specification", "description": "A single string that specifies which animation there are", "type": "string" },
+        { "title": "Animation Specification", "description": "A single string that specifies which animation there are.", "type": "string" },
         {
           "type": "object",
           "title": "Animation Specification",
-          "description": "A object specification on how to transition",
+          "description": "A object specification on how to transition.",
           "maxProperties": 1,
           "minProperties": 1,
           "additionalProperties": { "$ref": "../../molang/string.json" }
@@ -27,55 +27,55 @@
           "description": "Set to false to have the effect spawned in the world without being bound to an actor (by default an effect is bound to the actor).",
           "const": false
         },
-        "effect": { "type": "string", "description": "The name of a particle effect that should be played", "title": "Effect" },
-        "locator": { "type": "string", "description": "The name of a locator on the actor where the effect should be located", "title": "Locator" },
+        "effect": { "type": "string", "description": "The name of a particle effect that should be played.", "title": "Effect" },
+        "locator": { "type": "string", "description": "The name of a locator on the actor where the effect should be located.", "title": "Locator" },
         "pre_effect_script": {
           "type": "string",
-          "description": "A molang script that will be run when the particle emitter is initialized",
+          "description": "A molang script that will be run when the particle emitter is initialized.",
           "title": "Pre Effect Script"
         }
       }
     },
     "commands": {
       "type": "string",
-      "description": "The event or commands to execute",
+      "description": "The event or commands to execute.",
       "title": "Commands",
       "anyOf": [
-        { "pattern": "^.*=.*;$", "title": "Variable", "description": "Sets the value to a molang variable" },
-        { "pattern": "^/[a-z].*$", "title": "Minecraft Command", "description": "Executes a minecraft command" },
+        { "pattern": "^.*=.*;$", "title": "Variable", "description": "Sets the value to a molang variable." },
+        { "pattern": "^/[a-z].*$", "title": "Minecraft Command", "description": "Executes a minecraft command." },
         { "pattern": "[A-Za-z][a-z]*\\.[a-z_0-9]*", "title": "Molang" },
-        { "pattern": "^@s .*$", "title": "Event", "description": "An event to be called upon within the executing entity" }
+        { "pattern": "^@s .*$", "title": "Event", "description": "An event to be called upon within the executing entity." }
       ]
     }
   },
   "type": "object",
   "title": "Animation",
-  "description": "Animation for behavior for",
+  "description": "Animation for behavior for.",
   "required": ["format_version", "animations"],
   "additionalProperties": false,
   "properties": {
     "format_version": { "$ref": "../../general/format_version.json" },
     "animations": {
       "title": "Animations Schema",
-      "description": "The animation specification",
+      "description": "The animation specification.",
       "type": "object",
       "propertyNames": { "pattern": "^animation\\.[a-z\\.]+" },
       "additionalProperties": {
         "title": "Animation",
         "type": "object",
-        "description": "A single animation definition for",
+        "description": "A single animation definition for.",
         "additionalProperties": false,
         "propertyNames": { "examples": ["animation.example.foo"] },
         "properties": {
-          "animation_length": { "type": "number", "description": "The time in seconds this animation will last", "title": "Animation Length" },
+          "animation_length": { "type": "number", "description": "The time in seconds this animation will last.", "title": "Animation Length" },
           "loop": {
             "type": "boolean",
-            "description": "Whenever this animation should loop once it reaches the end, will only happen if the animation is still active",
+            "description": "Whenever this animation should loop once it reaches the end, will only happen if the animation is still active.",
             "title": "Loop"
           },
           "timeline": {
             "title": "Timeline",
-            "description": "A timeline specification, property names are timestamps",
+            "description": "A timeline specification, property names are timestamps.",
             "type": "object",
             "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$", "examples": ["0.0", "1.0"] },
             "additionalProperties": {

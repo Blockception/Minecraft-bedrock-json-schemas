@@ -3,11 +3,11 @@
   "type": "object",
   "title": "Horse.jump Strength",
   "additionalProperties": false,
-  "description": "Allows this mob to jump higher when being ridden by a player",
+  "description": "Allows this mob to jump higher when being ridden by a player.",
   "$comment": "UNDOCUMENTED",
   "properties": {
     "value": {
-      "description": "The multiplier to apply to the jumping height",
+      "description": "The multiplier to apply to the jumping height.",
       "$comment": "UNDOCUMENTED",
       "title": "Value",
       "oneOf": [

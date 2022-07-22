@@ -12,19 +12,19 @@
       "title": "Angle Of View Vertical",
       "type": "integer",
       "default": 360,
-      "description": "The angle in degrees that the mob can see in the X-axis (left-right)"
+      "description": "The angle in degrees that the mob can see in the X-axis (left-right)."
     },
     "angle_of_view_horizontal": {
       "title": "Angle Of View Horizontal",
       "type": "integer",
       "default": 360,
-      "description": "The angle in degrees that the mob can see in the Y-axis (up-down)"
+      "description": "The angle in degrees that the mob can see in the Y-axis (up-down)."
     },
     "look_distance": {
       "title": "Look Distance",
       "type": "number",
       "default": 8.0,
-      "description": "The distance in blocks from which the entity will look at"
+      "description": "The distance in blocks from which the entity will look at."
     },
     "probability": {
       "title": "Probability",
@@ -37,17 +37,17 @@
       "title": "Look Time",
       "type": "array",
       "default": [2, 4],
-      "description": "Time range to look at the entity",
+      "description": "Time range to look at the entity.",
       "items": [
-        { "type": "number", "title": "Minimum", "description": "The minimum amount of time to look" },
-        { "type": "number", "title": "Maximum", "description": "The maximum amount of time to look" }
+        { "type": "number", "title": "Minimum", "description": "The minimum amount of time to look." },
+        { "type": "number", "title": "Maximum", "description": "The maximum amount of time to look." }
       ]
     },
     "target_distance": {
       "title": "Target Distance",
       "type": "number",
       "default": 6.0,
-      "description": "The distance in blocks from which the entity will choose a target"      
+      "description": "The distance in blocks from which the entity will choose a target."
     }
   },
   "examples": [

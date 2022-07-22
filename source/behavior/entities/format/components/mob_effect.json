@@ -26,7 +26,7 @@
     "entity_filter": {
       "$ref": "../../filters/filters.json",
       "title": "Entity Filter",
-      "description": "Filter to use for conditions"
+      "description": "Filter to use for conditions."
     },
     "mob_effect": {
       "title": "Mob Effect",

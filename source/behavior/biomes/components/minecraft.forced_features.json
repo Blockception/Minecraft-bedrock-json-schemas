@@ -26,37 +26,37 @@
           "properties": {
             "distribution": {
               "title": "Distribution",
-              "description": "Type of distribution - uniform random, gaussian (centered in the range), or grid (either fixed-step or jittered)",
+              "description": "Type of distribution - uniform random, gaussian (centered in the range), or grid (either fixed-step or jittered).",
               "type": "string",
               "enum": ["uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"]
             },
             "extent": {
               "title": "Extent",
-              "description": "UNDOCUMENTED",
+              "description": "UNDOCUMENTED.",
               "$comment": "UNDOCUMENTED",
               "type": "array",
               "items": [
                 {
                   "title": "Lower Bound",
-                  "description": "Lower bound (inclusive) of the scatter range, as an offset from the input point to scatter around",
+                  "description": "Lower bound (inclusive) of the scatter range, as an offset from the input point to scatter around.",
                   "$ref": "../../../molang/number.json"
                 },
                 {
                   "title": "Upper Bound",
-                  "description": "Upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around",
+                  "description": "Upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around.",
                   "$ref": "../../../molang/number.json"
                 }
               ]
             },
             "grid_offset": {
               "title": "Step Size",
-              "description": "When the distribution type is grid, defines the offset along this axis",
+              "description": "When the distribution type is grid, defines the offset along this axis.",
               "type": "integer",
               "minimum": 0
             },
             "step_size": {
               "title": "Step Size",
-              "description": "When the distribution type is grid, defines the distance between steps along this axis",
+              "description": "When the distribution type is grid, defines the distance between steps along this axis.",
               "type": "integer",
               "minimum": 1
             }
@@ -66,7 +66,7 @@
     },
     "iteration": {
       "title": "Iteration",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "additionalProperties": false,
       "type": "object",
@@ -80,18 +80,18 @@
         },
         "identifier": {
           "title": "Identifier",
-          "description": "UNDOCUMENTED",
+          "description": "UNDOCUMENTED.",
           "$comment": "UNDOCUMENTED",
           "type": "string"
         },
         "iterations": {
           "title": "Iterations",
-          "description": "Number of scattered positions to generate",
+          "description": "Number of scattered positions to generate.",
           "$ref": "../../../molang/number.json"
         },
         "places_feature": {
           "title": "Places Feature",
-          "description": "UNDOCUMENTED",
+          "description": "UNDOCUMENTED.",
           "$comment": "UNDOCUMENTED",
           "type": "string"
         },
@@ -105,14 +105,14 @@
               "properties": {
                 "denominator": {
                   "title": "Denominator",
-                  "description": "UNDOCUMENTED",
+                  "description": "UNDOCUMENTED.",
                   "$comment": "UNDOCUMENTED",
                   "type": "integer",
                   "minimum": 1
                 },
                 "numerator": {
                   "title": "Numerator",
-                  "description": "UNDOCUMENTED",
+                  "description": "UNDOCUMENTED.",
                   "$comment": "UNDOCUMENTED",
                   "type": "integer",
                   "minimum": 1
@@ -148,7 +148,7 @@
   "properties": {
     "after_sky_pass": {
       "title": "First Pass",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
@@ -157,7 +157,7 @@
     },
     "after_surface_pass": {
       "title": "First Pass",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
@@ -166,7 +166,7 @@
     },
     "after_underground_pass": {
       "title": "First Pass",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
@@ -175,7 +175,7 @@
     },
     "before_sky_pass": {
       "title": "First Pass",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
@@ -184,7 +184,7 @@
     },
     "before_surface_pass": {
       "title": "First Pass",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
@@ -193,7 +193,7 @@
     },
     "before_underground_pass": {
       "title": "First Pass",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
@@ -202,7 +202,7 @@
     },
     "final_pass": {
       "title": "First Pass",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
@@ -211,7 +211,7 @@
     },
     "first_pass": {
       "title": "First Pass",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
@@ -220,7 +220,7 @@
     },
     "surface_pass": {
       "title": "First Pass",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
@@ -229,7 +229,7 @@
     },
     "sky_pass": {
       "title": "First Pass",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {
@@ -238,7 +238,7 @@
     },
     "underground_pass": {
       "title": "First Pass",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": {

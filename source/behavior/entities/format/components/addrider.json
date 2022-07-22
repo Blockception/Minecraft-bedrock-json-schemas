@@ -6,8 +6,8 @@
   "description": "Adds a rider to the entity. Requires `minecraft:rideable.`",
   "required": ["entity_type"],
   "properties": {
-    "entity_type": { "type": "string", "description": "The entity type that will be riding this entity", "title": "Entity Type" },
-    "spawn_event": { "type": "string", "description": "The spawn event that will be used when the riding entity is created", "title": "Spawn Event" }
+    "entity_type": { "type": "string", "description": "The entity type that will be riding this entity.", "title": "Entity Type" },
+    "spawn_event": { "type": "string", "description": "The spawn event that will be used when the riding entity is created.", "title": "Spawn Event" }
   },
   "examples": [{ "entity_type": "minecraft:rabbit" }, { "entity_type": "minecraft:rabbit", "spawn_event": "self:example" }]
 }

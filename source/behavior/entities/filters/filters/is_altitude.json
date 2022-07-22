@@ -3,9 +3,7 @@
   "type": "object",
   "title": "Is Altitude",
   "description": "Tests the current altitude against a provided value. 0= bedrock elevation.",
-  "required": [
-    "value"
-  ],
+  "required": ["value"],
   "properties": {
     "test": {
       "type": "string",
@@ -20,7 +18,7 @@
     },
     "value": {
       "type": "integer",
-      "description": "The altitude value to compare with",
+      "description": "The altitude value to compare with.",
       "minimum": 0,
       "title": "Value"
     }

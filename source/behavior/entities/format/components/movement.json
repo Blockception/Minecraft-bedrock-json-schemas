@@ -2,14 +2,14 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.movement",
   "type": "object",
   "title": "Movement",
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED",
   "additionalProperties": false,
   "required": [],
   "properties": {
     "value": {
       "title": "Value",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "oneOf": [
         {
@@ -42,7 +42,7 @@
     "max": {
       "type": "number",
       "title": "Maximum",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED"
     }
   },

@@ -31,11 +31,11 @@
     },
     "items": {
       "type": "array",
-      "description": "List of items that the entity wants to share",
+      "description": "List of items that the entity wants to share.",
       "items": {
         "type": "object",
         "title": "Item",
-        "description": "An Item that the entity wants to share",
+        "description": "An Item that the entity wants to share.",
         "additionalProperties": false,
         "properties": {
           "admire": {
@@ -60,7 +60,7 @@
           },
           "item": {
             "type": "string",
-            "description": "The name of the item",
+            "description": "The name of the item.",
             "$ref": "../../../../general/item/identifier.json"
           },
           "item_aux": {

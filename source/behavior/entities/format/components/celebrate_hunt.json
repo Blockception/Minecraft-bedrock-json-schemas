@@ -19,13 +19,13 @@
     "celebrate_sound": {
       "type": "string",
       "default": "",
-      "description": "The sound event to play when the mob is celebrating",
+      "description": "The sound event to play when the mob is celebrating.",
       "title": "Celebrate Sound"
     },
     "duration": {
       "type": "integer",
       "default": 4,
-      "description": "Duration, in seconds, of celebration",
+      "description": "Duration, in seconds, of celebration.",
       "title": "Duration"
     },
     "radius": {
@@ -36,7 +36,7 @@
     },
     "sound_interval": {
       "default": 0,
-      "description": "The range of time in seconds to randomly wait before playing the sound again",
+      "description": "The range of time in seconds to randomly wait before playing the sound again.",
       "title": "Sound Interval",
       "oneOf": [
         {
@@ -62,12 +62,12 @@
             "range_min": {
               "type": "number",
               "title": "Minimum",
-              "description": "Minimum"
+              "description": "Minimum."
             },
             "range_max": {
               "type": "number",
               "title": "Maximum",
-              "description": "Maximum"
+              "description": "Maximum."
             }
           }
         }

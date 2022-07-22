@@ -14,12 +14,12 @@
     },
     "entity_types": {
       "$ref": "../types/entity_types.json",
-      "description": "List of entity types that this mob can follow in a caravan",
+      "description": "List of entity types that this mob can follow in a caravan.",
       "title": "Entity Types"
     },
     "entity_count": {
       "type": "integer",
-      "description": "Number of entities that can be in the caravan",
+      "description": "Number of entities that can be in the caravan.",
       "default": 1,
       "title": "Entity Count"
     }

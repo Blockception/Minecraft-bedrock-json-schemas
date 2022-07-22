@@ -9,12 +9,12 @@
     "knockback_strength": {
       "type": "number",
       "default": 3.0,
-      "description": "The strength with which blocking entities should be knocked back",
+      "description": "The strength with which blocking entities should be knocked back.",
       "title": "Knockback Strength"
     },
     "reaction_choices": {
       "type": "array",
-      "description": "A list of weighted responses to the melee attack being blocked",
+      "description": "A list of weighted responses to the melee attack being blocked.",
       "title": "Reaction Choices",
       "items": {
         "additionalProperties": false,
@@ -23,12 +23,12 @@
           "weight": {
             "type": "integer",
             "title": "Weight",
-            "description": "The chance of this reaction being picked",
+            "description": "The chance of this reaction being picked.",
             "$comment": "UNDOCUMENTED"
           },
           "value": {
             "title": "Value",
-            "description": "An event that runs when this reaction is picked",
+            "description": "An event that runs when this reaction is picked.",
             "$comment": "UNDOCUMENTED",
             "$ref": "../types/event.json"
           }

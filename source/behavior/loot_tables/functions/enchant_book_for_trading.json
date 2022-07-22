@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.loot_tables.enchant_book_for_trading",
   "additionalProperties": false,
   "type": "object",
-  "description": "The function enchant_book_for_trading",
+  "description": "The function enchant_book_for_trading.",
   "title": "Enchant Book For Trading",
   "required": ["function", "base_cost", "base_random_cost", "per_level_random_cost", "per_level_cost"],
   "properties": {
@@ -10,26 +10,26 @@
       "type": "string",
       "const": "enchant_book_for_trading",
       "title": "Function",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED"
     },
-    "base_cost": { "type": "integer", "title": "Base Cost", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
+    "base_cost": { "type": "integer", "title": "Base Cost", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
     "base_random_cost": {
       "type": "integer",
       "title": "Base Cost",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED"
     },
     "per_level_random_cost": {
       "type": "integer",
       "title": "Base Cost",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED"
     },
     "per_level_cost": {
       "type": "integer",
       "title": "Base Cost",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED"
     }
   }

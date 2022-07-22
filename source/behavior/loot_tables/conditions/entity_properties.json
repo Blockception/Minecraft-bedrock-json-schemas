@@ -16,13 +16,13 @@
       "properties": {
         "on_fire": {
           "title": "On Fire",
-          "description": "Checks if the entity is on fire or not",
+          "description": "Checks if the entity is on fire or not.",
           "$comment": "UNDOCUMENTED",
           "type": "boolean"
         },
         "on_ground": {
           "title": "On Ground",
-          "description": "Checks if the entity is on the ground or not",
+          "description": "Checks if the entity is on the ground or not.",
           "$comment": "UNDOCUMENTED",
           "type": "boolean"
         }

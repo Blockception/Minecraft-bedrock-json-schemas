@@ -18,13 +18,13 @@
       "title": "Digs In Daylight",
       "type": "boolean",
       "default": false,
-      "description": "Indicates that the actor should start digging when it sees daylight"
+      "description": "Indicates that the actor should start digging when it sees daylight."
     },
     "duration": {
       "title": "Duration",
       "type": "number",
       "default": 0.0,
-      "description": "Goal duration in seconds"
+      "description": "Goal duration in seconds."
     },
     "idle_time": {
       "title": "Idle Time",

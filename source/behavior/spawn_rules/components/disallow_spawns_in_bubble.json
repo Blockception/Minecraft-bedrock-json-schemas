@@ -3,6 +3,6 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Disallow Spawns In Bubble",
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED"
 }

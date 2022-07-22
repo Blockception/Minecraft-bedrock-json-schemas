@@ -17,7 +17,7 @@
       "$ref": "./types/subject.json"
     },
     "value": {
-      "description": "The Family name to look for",
+      "description": "The Family name to look for.",
       "type": "string",
       "title": "Value"
     }

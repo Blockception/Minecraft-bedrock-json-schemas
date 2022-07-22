@@ -9,30 +9,30 @@
     "dark_teleport_chance": {
       "type": "number",
       "default": 0.01,
-      "description": "Modifies the chance that the entity will teleport if the entity is in darkness",
+      "description": "Modifies the chance that the entity will teleport if the entity is in darkness.",
       "title": "Dark Teleport Chance"
     },
     "light_teleport_chance": {
       "type": "number",
       "default": 0.01,
-      "description": "Modifies the chance that the entity will teleport if the entity is in daylight",
+      "description": "Modifies the chance that the entity will teleport if the entity is in daylight.",
       "title": "Light Teleport Chance"
     },
     "max_random_teleport_time": {
       "type": "number",
       "default": 20,
-      "description": "Maximum amount of time in seconds between random teleports",
+      "description": "Maximum amount of time in seconds between random teleports.",
       "title": "Maximum Random Teleport Time"
     },
     "min_random_teleport_time": {
       "type": "number",
       "default": 0,
-      "description": "Minimum amount of time in seconds between random teleports",
+      "description": "Minimum amount of time in seconds between random teleports.",
       "title": "Minimum Random Teleport Time"
     },
     "random_teleport_cube": {
       "title": "Random Teleport Cube",
-      "description": "Entity will teleport to a random position within the area defined by this cube",
+      "description": "Entity will teleport to a random position within the area defined by this cube.",
       "type": "array",
       "default": [32.0, 16.0, 32.0],
       "items": [
@@ -53,13 +53,13 @@
     "random_teleports": {
       "type": "boolean",
       "default": true,
-      "description": "If true, the entity will teleport randomly",
+      "description": "If true, the entity will teleport randomly.",
       "title": "Random Teleports"
     },
     "target_distance": {
       "type": "number",
       "default": 16,
-      "description": "Maximum distance the entity will teleport when chasing a target",
+      "description": "Maximum distance the entity will teleport when chasing a target.",
       "title": "Target Distance"
     },
     "target_teleport_chance": {

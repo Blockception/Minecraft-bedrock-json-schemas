@@ -13,7 +13,7 @@
     "cooldown_after_being_attacked": {
       "type": "integer",
       "default": 0,
-      "description": "Duration, in seconds, for which mob won't barter items if it was hurt",
+      "description": "Duration, in seconds, for which mob won't barter items if it was hurt.",
       "title": "Cooldown After Being Attacked"
     }
   },
