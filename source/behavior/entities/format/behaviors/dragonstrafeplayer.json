@@ -54,7 +54,7 @@
       "title": "View Angle",
       "type": "number",
       "default": 10,
-      "description": "The target must be within \."view_angle\" degrees of the dragon's current rotation before a fireball can be shot."
+      "description": "The target must be within \"view_angle\" degrees of the dragon's current rotation before a fireball can be shot."
     }
   }
 }

@@ -13,7 +13,7 @@
       "title": "Add Random Time Range",
       "type": "integer",
       "default": 3,
-      "description": "Additional time (in whole seconds), chosen randomly in the range of [0, \."add_random_time_range\"], to add to \"min_change_direction_time\"."
+      "description": "Additional time (in whole seconds), chosen randomly in the range of [0, \"add_random_time_range\"], to add to \"min_change_direction_time\"."
     },
     "min_change_direction_time": {
       "title": "Min Change Direction Time",

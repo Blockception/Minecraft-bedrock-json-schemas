@@ -15,7 +15,7 @@
     "broadcast_filters": {
       "title": "Broadcast Filters",
       "$ref": "../../filters/filters.json",
-      "description": "Conditions that make this entry in the list valid."      
+      "description": "Conditions that make this entry in the list valid."
     },
     "filters": {
       "$ref": "../../filters/filters.json",
@@ -36,25 +36,24 @@
         "description": "An entity family.",
         "pattern": "^.+$",
         "title": "Broadcast Targets"
-      },
-      
+      }
     },
     "calm_event": {
-    "title": "Calm Event",
+      "title": "Calm Event",
       "$ref": "../types/event.json",
-      "description": "Event to run after the number of seconds specified in duration expires (when the entity stops being \."angry\")"      
+      "description": "Event to run after the number of seconds specified in duration expires (when the entity stops being \"angry\")"
     },
     "angry_sound": {
       "title": "Angry Sound",
       "type": "string",
       "default": "",
-      "description": "The sound event to play when the mob is angry."      
+      "description": "The sound event to play when the mob is angry."
     },
     "broadcast_anger_on_attack": {
       "title": "Broadcast Anger On Attack",
       "type": "boolean",
       "default": false,
-      "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry whenever this mob attacks."      
+      "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry whenever this mob attacks."
     },
     "broadcast_anger_on_being_attacked": {
       "type": "boolean",
@@ -66,13 +65,13 @@
       "title": "Duration",
       "type": "integer",
       "default": 25,
-      "description": "The amount of time in seconds that the entity will be angry."      
+      "description": "The amount of time in seconds that the entity will be angry."
     },
     "duration_delta": {
       "title": "Duration Delta",
       "type": "integer",
       "default": 0,
-      "description": "Variance in seconds added to the duration [-delta, delta]."      
+      "description": "Variance in seconds added to the duration [-delta, delta]."
     },
     "sound_interval": {
       "description": "The range of time in seconds to randomly wait before playing the sound again.",

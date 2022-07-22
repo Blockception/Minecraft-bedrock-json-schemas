@@ -208,7 +208,7 @@
         "properties": {
           "folder_name": {
             "type": "string",
-            "description": "This represents the folder name located in \."subpacks\" folder. When user select this resolution Minecraft loads the content inside the folder.",
+            "description": "This represents the folder name located in \"subpacks\" folder. When user select this resolution Minecraft loads the content inside the folder.",
             "title": "Folder Name"
           },
           "name": {

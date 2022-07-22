@@ -18,7 +18,7 @@
       "title": "Continue Charge Threshold Time",
       "type": "number",
       "default": 0.5,
-      "description": "If the dragon is outside the \."target_zone\" for longer than \"continue_charge_threshold_time\" seconds, the charge is canceled."
+      "description": "If the dragon is outside the \"target_zone\" for longer than \"continue_charge_threshold_time\" seconds, the charge is canceled."
     },
     "flight_speed": {
       "title": "Flight Speed",
