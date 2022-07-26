@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.jump.dynamic",
   "description": "Defines a dynamic type jump control that will change jump properties based on the speed modifier of the mob.",
   "type": "object",
-  "title": "Jump.dynamic",
+  "title": "Jump Dynamic",
   "additionalProperties": false,
   "required": [],
   "properties": {}
