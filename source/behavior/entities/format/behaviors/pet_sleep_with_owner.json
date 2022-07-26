@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.pet_sleep_with_owner",
   "description": "Allows the mob to be tempted by food they like.",
   "type": "object",
-  "title": "Tempt",
+  "title": "Pet Sleep With Owner",
   "additionalProperties": false,
   "properties": {
     "priority": { "$ref": "types/priority.json" },
