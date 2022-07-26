@@ -2,28 +2,28 @@
   "$id": "blockception.minecraft.resource.particle.1.10.0.emitter_shape_entity_aabb",
   "type": "object",
   "title": "Emitter Shape Entity Aabb Component For 1.10.0",
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED",
   "additionalProperties": false,
   "properties": {
     "direction": {
       "type": "array",
       "items": [
-        { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "X" },
-        { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Y" },
-        { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Z" }
+        { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "X" },
+        { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Y" },
+        { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Z" }
       ],
-      "description": "UNDOCUMENTED: direction",
+      "description": "UNDOCUMENTED: direction.",
       "title": "Direction"
     },
     "offset": {
       "type": "array",
       "items": [
-        { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "X" },
-        { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Y" },
-        { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Z" }
+        { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "X" },
+        { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Y" },
+        { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Z" }
       ],
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "title": "Offset"
     }

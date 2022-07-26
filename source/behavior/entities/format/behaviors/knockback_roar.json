@@ -18,7 +18,7 @@
       "title": "Cooldown Time",
       "type": "number",
       "default": 0,
-      "description": "Time in seconds the mob has to wait before using the goal again"
+      "description": "Time in seconds the mob has to wait before using the goal again."
     },
     "damage_filters": {
       "$ref": "../../filters/filters.json",
@@ -75,7 +75,7 @@
     "track_target": {
       "type": "boolean",
       "default": false,
-      "description": "If true, this mob will chase after the target as long as it's a valid target",
+      "description": "If true, this mob will chase after the target as long as it's a valid target.",
       "title": "Track Target"
     },
     "on_roar_end": {

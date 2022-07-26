@@ -17,60 +17,60 @@
     "leap_distance": {
       "type": "number",
       "default": 0.8,
-      "description": "The distance in blocks the mob jumps in the direction of its target",
+      "description": "The distance in blocks the mob jumps in the direction of its target.",
       "title": "Leap Distance"
     },
     "leap_height": {
       "type": "number",
       "default": 0.9,
-      "description": "The height in blocks the mob jumps when leaping at its target",
+      "description": "The height in blocks the mob jumps when leaping at its target.",
       "title": "Leap Height"
     },
     "max_stalk_dist": {
       "type": "number",
       "default": 10,
-      "description": "The maximum distance away a target can be before the mob gives up on stalking",
+      "description": "The maximum distance away a target can be before the mob gives up on stalking.",
       "title": "Maximum Stalk Dist"
     },
     "pounce_max_dist": {
       "type": "number",
       "default": 5,
-      "description": "The maximum distance away from the target in blocks to begin pouncing at the target",
+      "description": "The maximum distance away from the target in blocks to begin pouncing at the target.",
       "title": "Pounce Maximum Dist"
     },
     "set_persistent": {
       "type": "boolean",
       "default": false,
-      "description": "Allows the actor to be set to persist upon targeting a player",
+      "description": "Allows the actor to be set to persist upon targeting a player.",
       "title": "Set Persistent"
     },
     "stalk_speed": {
       "type": "number",
       "default": 1.2,
-      "description": "The movement speed in which you stalk your target",
+      "description": "The movement speed in which you stalk your target.",
       "title": "Stalk Speed"
     },
     "strike_dist": {
       "type": "number",
       "default": 2,
-      "description": "The Maximum distance away from the target when landing from the pounce that will still result in damaging the target",
+      "description": "The Maximum distance away from the target when landing from the pounce that will still result in damaging the target.",
       "title": "Strike Dist"
     },
     "stuck_time": {
       "type": "number",
       "default": 2,
-      "description": "The amount of time the mob will be stuck if they fail and land on a block they can be stuck on",
+      "description": "The amount of time the mob will be stuck if they fail and land on a block they can be stuck on.",
       "title": "Stuck Time"
     },
     "leap_dist": {
       "type": "number",
-      "description": "The distance in blocks the mob jumps in the direction of their target",
+      "description": "The distance in blocks the mob jumps in the direction of their target.",
       "$comment": "UNDOCUMENTED",
       "title": "Leap Dist"
     },
     "stuck_blocks": {
       "$ref": "../../filters/filters.json",
-      "description": "Filters to apply on the block the mob lands on to determine if it is valid for getting stuck",
+      "description": "Filters to apply on the block the mob lands on to determine if it is valid for getting stuck.",
       "$comment": "UNDOCUMENTED",
       "title": "Stuck Block"
     }

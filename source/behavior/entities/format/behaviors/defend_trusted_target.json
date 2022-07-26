@@ -18,20 +18,19 @@
       "title": "Attack Interval",
       "type": "integer",
       "default": 0,
-      "description": "Time in seconds between attacks"
+      "description": "Time in seconds between attacks."
     },
     "must_see": {
       "title": "Must See",
       "type": "boolean",
       "default": false,
-      "description": "If true, only entities in this mob's viewing range can be selected as targets"
+      "description": "If true, only entities in this mob's viewing range can be selected as targets."
     },
     "must_see_forget_duration": {
       "title": "Must See Forget Duration",
       "type": "number",
       "default": 3,
-      "description": "Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more"
-      
+      "description": "Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more."
     },
     "on_defend_start": {
       "title": "On Defend Start",
@@ -42,12 +41,12 @@
       "title": "Within Radius",
       "type": "number",
       "default": 0,
-      "description": "Distance in blocks that the target can be within to launch an attack"
+      "description": "Distance in blocks that the target can be within to launch an attack."
     },
     "entity_types": {
       "title": "Entity Types",
       "type": "object",
-      "description": "List of entity types that this mob considers valid targets",
+      "description": "List of entity types that this mob considers valid targets.",
       "additionalProperties": false
     },
     "sound_chance": {

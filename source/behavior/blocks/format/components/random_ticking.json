@@ -1,13 +1,13 @@
 {
   "$id": "blockception.minecraft.behavior.blocks.minecraft.random_ticking",
   "title": "Random Ticking",
-  "description": "Describes the component that will trigger an even at a regular interval between two values",
+  "description": "Describes the component that will trigger an even at a regular interval between two values.",
   "type": "object",
   "additionalProperties": false,
   "properties": {
     "on_tick": {
       "title": "On Tick",
-      "description": "Describes the component that will trigger an even at a regular interval between two values",
+      "description": "Describes the component that will trigger an even at a regular interval between two values.",
       "type": "string",
       "additionalProperties": false,
       "properties": {
@@ -27,7 +27,7 @@
         }
       }
     },
-    "looping": { "type": "boolean", "default": true, "description": "Does the event loop", "title": "Looping" },
+    "looping": { "type": "boolean", "default": true, "description": "Does the event loop.", "title": "Looping" },
     "range": {
       "type": "array",
       "default": [10, 10],

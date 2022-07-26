@@ -17,11 +17,11 @@
     "tame_event": {
       "title": "Tame Event",
       "$ref": "../types/event.json",
-      "description": "Event to run when this entity becomes tamed"
+      "description": "Event to run when this entity becomes tamed."
     },
     "tame_items": {
       "title": "Tame Items",
-      "description": "The list of items that can be used to tame this entity",
+      "description": "The list of items that can be used to tame this entity.",
       "oneOf": [
         {
           "type": "array",

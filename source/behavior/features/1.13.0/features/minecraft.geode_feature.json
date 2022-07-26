@@ -65,7 +65,7 @@
   "properties": {
     "description": {
       "title": "Description",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "required": ["identifier"],
@@ -115,7 +115,7 @@
       "minItems": 1,
       "items": {
         "title": "Block reference",
-        "description": "A block that may be replaced during placement",
+        "description": "A block that may be replaced during placement.",
         "$ref": "../../../../general/block/identifier.json"
       }
     },

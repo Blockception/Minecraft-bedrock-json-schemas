@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Player.experience",
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED",
   "required": [],
   "properties": {
@@ -11,14 +11,14 @@
       "type": "number",
       "default": true,
       "title": "Value",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED"
     },
     "max": {
       "type": "number",
       "default": true,
       "title": "Maximum",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED"
     }
   },

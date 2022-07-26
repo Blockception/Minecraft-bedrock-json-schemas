@@ -1,7 +1,7 @@
 {
   "$id": "minecraft.behavior.biomes.1.12.0.components.minecraft.surface_material_adjustments",
   "title": "Surface Material Adjustments",
-  "description": "Specify fine-detail changes to blocks used in terrain generation (based on a noise function)",
+  "description": "Specify fine-detail changes to blocks used in terrain generation (based on a noise function).",
   "type": "object",
   "additionalProperties": false,
   "properties": {
@@ -10,7 +10,7 @@
       "description": "All adjustments that match the column's noise values will be applied in the order listed.",
       "items": {
         "title": "Adjustment",
-        "description": "UNDOCUMENTED",
+        "description": "UNDOCUMENTED.",
         "$comment": "UNDOCUMENTED",
         "type": "object",
         "additionalProperties": false,
@@ -32,7 +32,7 @@
           },
           "materials": {
             "title": "Materials",
-            "description": "UNDOCUMENTED",
+            "description": "UNDOCUMENTED.",
             "$comment": "UNDOCUMENTED",
             "type": "object",
             "additionalProperties": false,

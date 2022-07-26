@@ -28,7 +28,7 @@
           "pivot": {
             "type": "array",
             "title": "Pivot",
-            "description": "The offset from the entity's anchor where the hitbox will spawn",
+            "description": "The offset from the entity's anchor where the hitbox will spawn.",
             "items": [
               { "type": "number", "title": "X" },
               { "type": "number", "title": "Y" },

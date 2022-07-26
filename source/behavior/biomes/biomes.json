@@ -6,7 +6,7 @@
   "additionalProperties": {
     "type": "object",
     "title": "Biomes",
-    "description": "The definition of a biome",
+    "description": "The definition of a biome.",
     "additionalProperties": {
       "title": "Tag",
       "type": "object",

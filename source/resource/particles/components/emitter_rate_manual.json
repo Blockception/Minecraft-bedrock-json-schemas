@@ -6,9 +6,9 @@
   "properties": {
     "max_particles": {
       "$ref": "../../../molang/number.json",
-      "description": "Evaluated once per particle emitted",
+      "description": "Evaluated once per particle emitted.",
       "title": "Maximum Particles"
     }
   },
-  "description": "UNDOCUMENTED"
+  "description": "UNDOCUMENTED."
 }

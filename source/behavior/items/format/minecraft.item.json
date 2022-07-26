@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "required": ["description"],
   "type": "object",
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED",
   "title": "Item",
   "properties": {
@@ -11,7 +11,7 @@
       "additionalProperties": false,
       "type": "object",
       "title": "Description",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "properties": {
         "identifier": {
@@ -38,7 +38,7 @@
     "components": {
       "additionalProperties": { "type": "object" },
       "type": "object",
-      "description": "The components of this item",
+      "description": "The components of this item.",
       "properties": {
         "minecraft:armor": { "$ref": "./components/armor.json" },
         "minecraft:block_placer": { "$ref": "./components/block_placer.json" },

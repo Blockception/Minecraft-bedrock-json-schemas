@@ -11,19 +11,19 @@
     },
     "entity_types": {
       "$ref": "../types/entity_types.json",
-      "description": "List of entity types that this mob can target if they hurt their owner",
+      "description": "List of entity types that this mob can target if they hurt their owner.",
       "title": "Entity Types"
     },
     "alert_same_type": {
       "type": "boolean",
       "default": false,
-      "description": "If true, nearby mobs of the same type will be alerted about the damage",
+      "description": "If true, nearby mobs of the same type will be alerted about the damage.",
       "title": "Alert Same Type"
     },
     "hurt_owner": {
       "type": "boolean",
       "default": false,
-      "description": "If true, the mob will hurt its owner and other mobs with the same owner as itself",
+      "description": "If true, the mob will hurt its owner and other mobs with the same owner as itself.",
       "title": "Hurt Owner"
     }
   },

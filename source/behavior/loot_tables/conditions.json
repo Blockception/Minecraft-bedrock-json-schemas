@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.loot_tables.conditions",
-  "description": "A minecraft loot table condition",
+  "description": "A minecraft loot table condition.",
   "title": "Condition",
   "allOf": [
     {

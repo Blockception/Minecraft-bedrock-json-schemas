@@ -7,7 +7,7 @@
   "definitions": {
     "sequence": {
       "type": "array",
-      "description": "List of events to send",
+      "description": "List of events to send.",
       "items": {
         "type": "object",
         "additionalProperties": false,
@@ -15,17 +15,17 @@
           "base_delay": {
             "type": "number",
             "default": 0,
-            "description": "Amount of time in seconds before starting this step"
+            "description": "Amount of time in seconds before starting this step."
           },
           "event": {
             "type": "string",
             "default": "",
-            "description": "The event to send to the entity"
+            "description": "The event to send to the entity."
           },
           "sound_event": {
             "type": "string",
             "default": "",
-            "description": "The sound event to play when this step happens"
+            "description": "The sound event to play when this step happens."
           }
         }
       }
@@ -37,51 +37,51 @@
     },
     "cast_duration": {
       "type": "number",
-      "description": "Time in seconds for the entire event sending process",
+      "description": "Time in seconds for the entire event sending process.",
       "title": "Cast Duration"
     },
     "look_at_target": {
       "title": "Look At Target",
       "type": "boolean",
       "default": true,
-      "description": "If true, the mob will face the entity it sends an event to"
+      "description": "If true, the mob will face the entity it sends an event to."
     },
     "event_choices": {
       "type": "array",
       "title": "Event Choices",
-      "description": "List of spells for the mob to use",
+      "description": "List of spells for the mob to use.",
       "$comment": "UNDOCUMENTED",
       "items": {
         "type": "object",
         "additionalProperties": false,
         "title": "Event Choice",
-        "description": "A spell that the mob can cast",
+        "description": "A spell that the mob can cast.",
         "$comment": "UNDOCUMENTED",
         "properties": {
           "min_activation_range": {
             "type": "number",
             "title": "Minimum Activation Range",
-            "description": "The minimum distance in blocks the target must be for this spell to be cast",
+            "description": "The minimum distance in blocks the target must be for this spell to be cast.",
             "$comment": "UNDOCUMENTED",
             "minimum": 0
           },
           "max_activation_range": {
             "type": "number",
             "title": "Maxmimum Activation Range",
-            "description": "The maxmimum distance in blocks the target must be for this spell to be cast",
+            "description": "The maxmimum distance in blocks the target must be for this spell to be cast.",
             "$comment": "UNDOCUMENTED",
             "minimum": 0
           },
           "cooldown_time": {
             "type": "number",
             "title": "Cooldown Time",
-            "description": "Time in seconds before the mob can use this spell again",
+            "description": "Time in seconds before the mob can use this spell again.",
             "$comment": "UNDOCUMENTED"
           },
           "cast_duration": {
             "type": "number",
             "title": "Cast Duration",
-            "description": "Time in seconds the spell casting will take",
+            "description": "Time in seconds the spell casting will take.",
             "$comment": "UNDOCUMENTED"
           },
           "filters": {
@@ -91,7 +91,7 @@
             "type": "string",
             "format": "color-hex",
             "title": "Particle Color",
-            "description": "The color of the particles for this spell",
+            "description": "The color of the particles for this spell.",
             "$comment": "UNDOCUMENTED"
           },
           "weight": {
@@ -103,7 +103,7 @@
           "start_sound_event": {
             "type": "string",
             "title": "Start Sound Event",
-            "description": "The sound event to play when using this spell",
+            "description": "The sound event to play when using this spell.",
             "$comment": "UNDOCUMENTED"
           },
           "sequence": {
@@ -114,7 +114,7 @@
     },
     "sequence": {
       "$ref": "#/definitions/sequence",
-      "description": "List of steps for the spell",
+      "description": "List of steps for the spell.",
       "$comment": "UNDOCUMENTED",
       "title": "Sequence"
     }

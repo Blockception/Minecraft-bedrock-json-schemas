@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Spawns On Surface",
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED",
   "properties": {}
 }

@@ -110,7 +110,7 @@
     "mob_effect": {
       "title": "Mob Effect",
       "$comment": "Deprecated",
-      "description": "SEE on_hit/mob_effect"
+      "description": "SEE on_hit/mob_effect."
     },
     "offset": {
       "type": "array",
@@ -333,7 +333,7 @@
               "title": "Semi Random Diff Damage",
               "type": "boolean",
               "default": false,
-              "description": "If true, damage will be randomized based on damage and speed"
+              "description": "If true, damage will be randomized based on damage and speed."
             },
             "set_last_hurt_requires_damage": {
               "title": "Set Last Hurt Requires Damage",
@@ -579,7 +579,7 @@
     "potion_effect": {
       "type": "integer",
       "default": -1,
-      "description": "Defines the effect the arrow will apply to the entity it hits",
+      "description": "Defines the effect the arrow will apply to the entity it hits.",
       "title": "Potion Effect"
     },
     "power": {
@@ -597,7 +597,7 @@
     "semi_random_diff_damage": {
       "type": "boolean",
       "default": false,
-      "description": "If true, damage will be randomized based on damage and speed",
+      "description": "If true, damage will be randomized based on damage and speed.",
       "title": "Semi Random Diff Damage"
     },
     "shoot_sound": {

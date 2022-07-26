@@ -5,5 +5,5 @@
   "additionalProperties": false,
   "required": [],
   "properties": {},
-  "description": "Allows this entity to remember suspicious locations"
+  "description": "Allows this entity to remember suspicious locations."
 }

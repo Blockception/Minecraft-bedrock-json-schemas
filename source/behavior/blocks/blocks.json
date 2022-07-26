@@ -5,7 +5,7 @@
   "required": ["format_version", "minecraft:block"],
   "type": "object",
   "title": "Block Behavior",
-  "description": "The minecraft block behavior specification",
+  "description": "The minecraft block behavior specification.",
   "additionalProperties": false,
   "properties": {
     "format_version": { "$ref": "../../general/format_version.json" },

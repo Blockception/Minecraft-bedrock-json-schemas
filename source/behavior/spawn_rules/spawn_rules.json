@@ -9,7 +9,7 @@
   ],
   "type": "object",
   "title": "Spawn Rules",
-  "description": "Data-Driven spawning allows you to adjust the spawn conditions of mobs",
+  "description": "Data-Driven spawning allows you to adjust the spawn conditions of mobs.",
   "additionalProperties": false,
   "required": ["format_version", "minecraft:spawn_rules"],
   "properties": {
@@ -17,20 +17,20 @@
     "minecraft:spawn_rules": {
       "type": "object",
       "title": "Spawn Rules",
-      "description": "Data-Driven spawning allows you to adjust the spawn conditions of mobs",
+      "description": "Data-Driven spawning allows you to adjust the spawn conditions of mobs.",
       "additionalProperties": false,
       "properties": {
         "description": {
           "type": "object",
           "title": "Description",
-          "description": "The descripton of to which entity this spawn rule belongs",
+          "description": "The descripton of to which entity this spawn rule belongs.",
           "$comment": "UNDOCUMENTED",
           "additionalProperties": false,
           "required": ["identifier", "population_control"],
           "properties": {
             "identifier": {
               "title": "Identifier",
-              "description": "The entity identifier this spawn rule will apply to, entity must exist",
+              "description": "The entity identifier this spawn rule will apply to, entity must exist.",
               "$comment": "UNDOCUMENTED",
               "$ref": "../../general/entity/identifier.json"
             },
@@ -46,13 +46,13 @@
         "conditions": {
           "type": "array",
           "title": "Conditions",
-          "description": "UNDOCUMENTED",
+          "description": "UNDOCUMENTED.",
           "$comment": "UNDOCUMENTED",
           "items": {
             "additionalProperties": false,
             "type": "object",
             "title": "Condition",
-            "description": "UNDOCUMENTED",
+            "description": "UNDOCUMENTED.",
             "$comment": "UNDOCUMENTED",
             "properties": {
               "minecraft:biome_filter": { "$ref": "./components/biome_filter.json" },

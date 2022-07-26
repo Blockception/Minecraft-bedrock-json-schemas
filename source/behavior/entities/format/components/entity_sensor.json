@@ -40,7 +40,7 @@
     },
     "event": {
       "title": "Event",
-      "description": "event",
+      "description": "event.",
       "type": "string"
     }
   },

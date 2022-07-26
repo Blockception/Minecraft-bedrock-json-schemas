@@ -9,7 +9,7 @@
     "value": {
       "type": "number",
       "default": 0.0,
-      "description": "Angle in degrees",
+      "description": "Angle in degrees.",
       "title": "Value"
     }
   },

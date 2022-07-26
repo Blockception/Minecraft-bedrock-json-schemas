@@ -2,21 +2,21 @@
   "$id": "blockception.minecraft.behavior.loot_tables.fill_container",
   "additionalProperties": false,
   "type": "object",
-  "description": "The function fill_container",
+  "description": "The function fill_container.",
   "title": "Fill Container",
   "properties": {
     "function": {
       "type": "string",
       "const": "fill_container",
       "title": "Function",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED"
     },
     "loot_table": {
       "type": "string",
       "title": "Loot Table",
       "pattern": "^loot_tables/.*\\.json$",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED"
     }
   }

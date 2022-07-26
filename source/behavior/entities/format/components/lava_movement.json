@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.lava_movement",
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED",
   "type": "object",
   "title": "Lava Movement",
@@ -10,7 +10,7 @@
     "value": {
       "type": "number",
       "title": "Value",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED"
     }
   },

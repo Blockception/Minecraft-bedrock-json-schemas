@@ -1,33 +1,33 @@
 {
   "$id": "blockception.minecraft.behavior.blocks.minecraft.placement_filter",
   "title": "Placement Filter",
-  "description": "Sets rules for under what conditions the block can be placed/survive",
+  "description": "Sets rules for under what conditions the block can be placed/survive.",
   "type": "object",
   "properties": {
     "conditions": {
       "title": "Conditions",
-      "description": "List of conditions where the block can be placed/survive",
+      "description": "List of conditions where the block can be placed/survive.",
       "type": "array",
       "items": {
         "type": "object",
         "title": "Condition",
-        "description": "UNDOCUMENTED",
+        "description": "UNDOCUMENTED.",
         "$comment": "UNDOCUMENTED",
         "properties": {
           "allowed_faces": {
             "title": "Allowed Faces",
-            "description": "List of any of the following strings: up, down, north, south, east, west, side, all",
+            "description": "List of any of the following strings: up, down, north, south, east, west, side, all.",
             "type": "array",
             "items": { "type": "string", "enum": ["up", "down", "north", "south", "east", "west", "side", "all"] }
           },
           "block_filter": {
             "title": "Block Filter",
-            "description": "List of blocks (can use tags to specify them) that this block can be placed against in the allowed_faces direction",
+            "description": "List of blocks (can use tags to specify them) that this block can be placed against in the allowed_faces direction.",
             "type": "array",
             "items": {
               "type": "string",
               "title": "Block Identifier",
-              "description": "UNDOCUMENTED",
+              "description": "UNDOCUMENTED.",
               "$comment": "UNDOCUMENTED"
             }
           }

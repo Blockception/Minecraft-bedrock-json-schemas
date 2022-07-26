@@ -12,7 +12,7 @@
       "title": "Avoid Water",
       "type": "boolean",
       "default": false,
-      "description": "If true, the mob will not go into water blocks when going towards a mount"
+      "description": "If true, the mob will not go into water blocks when going towards a mount."
     },
     "mount_distance": {
       "type": "number",
@@ -24,19 +24,19 @@
       "title": "Start Delay",
       "type": "integer",
       "default": 0,
-      "description": "Time the mob will wait before starting to move towards the mount"
+      "description": "Time the mob will wait before starting to move towards the mount."
     },
     "target_needed": {
       "title": "Target Needed",
       "type": "boolean",
       "default": false,
-      "description": "If true, the mob will only look for a mount if it has a target"
+      "description": "If true, the mob will only look for a mount if it has a target."
     },
     "within_radius": {
       "title": "Within Radius",
       "type": "number",
       "default": 0,
-      "description": "Distance in blocks within which the mob will look for a mount"
+      "description": "Distance in blocks within which the mob will look for a mount."
     },
     "max_failed_attempts": {
       "title": "Maximum Failed Attempts",

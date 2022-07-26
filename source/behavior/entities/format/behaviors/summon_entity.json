@@ -11,7 +11,7 @@
     },
     "summon_choices": {
       "type": "array",
-      "description": "List of spells for the mob to use to summon entities",
+      "description": "List of spells for the mob to use to summon entities.",
       "title": "Summon Choices",
       "items": {
         "type": "object",
@@ -19,19 +19,19 @@
         "properties": {
           "cast_duration": {
             "type": "number",
-            "description": "Time in seconds the spell casting will take",
+            "description": "Time in seconds the spell casting will take.",
             "title": "Cast Duration"
           },
           "cooldown_time": {
             "type": "number",
             "default": 0,
-            "description": "Time in seconds the mob has to wait before using the spell again",
+            "description": "Time in seconds the mob has to wait before using the spell again.",
             "title": "Cooldown Time"
           },
           "do_casting": {
             "type": "boolean",
             "default": true,
-            "description": "If true, the mob will do the casting animations and render spell particles",
+            "description": "If true, the mob will do the casting animations and render spell particles.",
             "title": "Do Casting"
           },
           "filters": {
@@ -40,17 +40,17 @@
           "max_activation_range": {
             "type": "number",
             "default": -1,
-            "description": "Upper bound of the activation distance in blocks for this spell",
+            "description": "Upper bound of the activation distance in blocks for this spell.",
             "title": "Maximum Activation Range"
           },
           "min_activation_range": {
             "type": "number",
             "default": 1,
-            "description": "Lower bound of the activation distance in blocks for this spell",
+            "description": "Lower bound of the activation distance in blocks for this spell.",
             "title": "Minimum Activation Range"
           },
           "particle_color": {
-            "description": "The color of the particles for this spell",
+            "description": "The color of the particles for this spell.",
             "title": "Particle Color",
             "oneOf": [
               {
@@ -65,7 +65,7 @@
           },
           "sequence": {
             "type": "array",
-            "description": "List of steps for the spell",
+            "description": "List of steps for the spell.",
             "title": "Sequence",
             "items": {
               "type": "object",
@@ -75,14 +75,14 @@
                 "delay": {
                   "type": "number",
                   "default": 0,
-                  "description": "Amount of time in seconds to wait before this step starts",
+                  "description": "Amount of time in seconds to wait before this step starts.",
                   "title": "Delay"
                 },
                 "delay_per_summon": {
                   "type": "number",
                   "default": 0,
                   "title": "Delay Per Summon",
-                  "description": "Amount of time in seconds before each entity is summoned in this step"
+                  "description": "Amount of time in seconds before each entity is summoned in this step."
                 },
                 "entity_lifespan": {
                   "type": "number",
@@ -93,18 +93,18 @@
                 "base_delay": {
                   "type": "number",
                   "default": 0,
-                  "description": "Amount of time in seconds to wait before this step starts",
+                  "description": "Amount of time in seconds to wait before this step starts.",
                   "title": "Base Delay"
                 },
                 "entity_type": {
                   "type": "string",
-                  "description": "The entity type of the entities we will spawn in this step",
+                  "description": "The entity type of the entities we will spawn in this step.",
                   "title": "Entity Type"
                 },
                 "num_entities_spawned": {
                   "type": "integer",
                   "default": 1,
-                  "description": "Number of entities that will be spawned in this step",
+                  "description": "Number of entities that will be spawned in this step.",
                   "title": "Number Entities Spawned"
                 },
                 "shape": {
@@ -116,24 +116,24 @@
                 "size": {
                   "type": "number",
                   "default": 1,
-                  "description": "The base size of the entity",
+                  "description": "The base size of the entity.",
                   "title": "Size"
                 },
                 "sound_event": {
                   "type": "string",
-                  "description": "The sound event to play for this step",
+                  "description": "The sound event to play for this step.",
                   "title": "Sound Event"
                 },
                 "summon_cap": {
                   "type": "integer",
                   "default": 0,
-                  "description": "Maximum number of summoned entities at any given time",
+                  "description": "Maximum number of summoned entities at any given time.",
                   "title": "Summon Cap"
                 },
                 "summon_cap_radius": {
                   "type": "number",
                   "default": 0,
-                  "description": "Maximum radius where the summon entities can spawn",
+                  "description": "Maximum radius where the summon entities can spawn.",
                   "title": "Summon Cap Radius"
                 },
                 "target": {
@@ -147,7 +147,7 @@
           },
           "start_sound_event": {
             "type": "string",
-            "description": "The sound event to play when using this spell",
+            "description": "The sound event to play when using this spell.",
             "title": "Start Sound Event"
           },
           "weight": {

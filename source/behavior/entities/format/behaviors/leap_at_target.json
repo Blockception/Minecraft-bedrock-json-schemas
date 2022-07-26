@@ -17,13 +17,13 @@
     "set_persistent": {
       "type": "boolean",
       "default": false,
-      "description": "Allows the actor to be set to persist upon targeting a player",
+      "description": "Allows the actor to be set to persist upon targeting a player.",
       "title": "Set Persistent"
     },
     "yd": {
       "type": "number",
       "default": 0.0,
-      "description": "The height in blocks the mob jumps when leaping at its target",
+      "description": "The height in blocks the mob jumps when leaping at its target.",
       "title": "Yd"
     },
     "target_dist": {

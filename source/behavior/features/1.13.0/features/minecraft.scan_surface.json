@@ -7,7 +7,7 @@
   "properties": {
     "description": {
       "title": "Description",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "required": ["identifier"],
@@ -22,7 +22,7 @@
     },
     "scan_surface_feature": {
       "title": "Scan Surface Feature",
-      "description": "Named reference of feature to be placed",
+      "description": "Named reference of feature to be placed.",
       "type": "string",
       "$ref": "../../../../general/feature/identifier.json"
     }

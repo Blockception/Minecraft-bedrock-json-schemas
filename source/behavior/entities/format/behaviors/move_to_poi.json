@@ -3,7 +3,7 @@
   "type": "object",
   "title": "Move To Poi",
   "additionalProperties": false,
-  "description": "Allows the mob to move to a POI if able to",
+  "description": "Allows the mob to move to a POI if able to.",
   "required": [],
   "properties": {
     "priority": {
@@ -14,7 +14,7 @@
     },
     "poi_type": {
       "type": "string",
-      "description": "Tells the goal what POI type it should be looking for",
+      "description": "Tells the goal what POI type it should be looking for.",
       "title": "Point Of Interest Type"
     }
   },

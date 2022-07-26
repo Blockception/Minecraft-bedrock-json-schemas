@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.resource.1.10.0.attachables",
   "type": "object",
   "title": "Actor Animation 1.10.0",
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED",
   "required": ["format_version", "minecraft:attachable"],
   "properties": {
@@ -15,7 +15,7 @@
     "minecraft:attachable": {
       "type": "object",
       "title": "Attachables",
-      "description": "The attachables definition",
+      "description": "The attachables definition.",
       "required": ["description"],
       "properties": {
         "description": {
@@ -26,89 +26,89 @@
           "properties": {
             "animations": {
               "type": "object",
-              "additionalProperties": { "type": "string", "description": "A single animation reference", "title": "Animation" },
-              "description": "The collection of animations references",
+              "additionalProperties": { "type": "string", "description": "A single animation reference.", "title": "Animation" },
+              "description": "The collection of animations references.",
               "title": "Animations"
             },
             "animation_controllers": {
               "type": "array",
               "additionalProperties": {
                 "type": "object",
-                "description": "A collection of animation controller references",
+                "description": "A collection of animation controller references.",
                 "title": "Animation Controller",
                 "additionalProperties": {
                   "type": "string",
-                  "description": "A single Animation controller reference",
+                  "description": "A single Animation controller reference.",
                   "title": "Animation Controller Reference"
                 }
               },
-              "description": "The specification of animation controllers",
+              "description": "The specification of animation controllers.",
               "title": "Animation Controllers"
             },
-            "enable_attachables": { "type": "boolean", "description": "UNDOCUMENTED: enable attachables", "title": "Enable Attachables" },
+            "enable_attachables": { "type": "boolean", "description": "UNDOCUMENTED: enable attachables.", "title": "Enable Attachables" },
             "geometry": {
               "title": "Geometry",
               "type": "object",
               "propertyNames": { "pattern": "[a-zA-Z0-9_\\.\\-]+" },
               "minProperties": 1,
-              "additionalProperties": { "type": "string", "description": "A single geometry reference", "title": "Geometry" },
-              "description": "The geometry specification"
+              "additionalProperties": { "type": "string", "description": "A single geometry reference.", "title": "Geometry" },
+              "description": "The geometry specification."
             },
             "identifier": {
               "type": "string",
-              "description": "UNDOCUMENTED: identifier",
+              "description": "UNDOCUMENTED: identifier.",
               "title": "Identifier",
               "$ref": "../../../general/item/identifier.json"
             },
             "item": {
               "type": "object",
               "title": "Item",
-              "description": "UNDOCUMENTED",
+              "description": "UNDOCUMENTED.",
               "$comment": "UNDOCUMENTED",
               "additionalProperties": {
                 "type": "string",
                 "title": "Item",
-                "description": "UNDOCUMENTED",
+                "description": "UNDOCUMENTED.",
                 "$comment": "UNDOCUMENTED"
               }
             },
             "materials": {
               "type": "object",
-              "additionalProperties": { "type": "string", "description": "A single material reference", "title": "Material" },
-              "description": "A collection of material references",
+              "additionalProperties": { "type": "string", "description": "A single material reference.", "title": "Material" },
+              "description": "A collection of material references.",
               "title": "Materials"
             },
             "min_engine_version": {
               "type": "string",
               "pattern": "[0-9]+\\.[0-9]+\\.[0-9]+",
-              "description": "The minimum engine needed to use this",
+              "description": "The minimum engine needed to use this.",
               "title": "Minimum Engine Version"
             },
             "particle_effects": {
               "type": "object",
               "minProperties": 1,
-              "additionalProperties": { "type": "string", "description": "A single particle effect reference", "title": "Particle Effect" },
-              "description": "A collection of particle effect references",
+              "additionalProperties": { "type": "string", "description": "A single particle effect reference.", "title": "Particle Effect" },
+              "description": "A collection of particle effect references.",
               "title": "Particle Effects"
             },
             "particle_emitters": {
               "type": "object",
               "minProperties": 1,
-              "additionalProperties": { "type": "string", "description": "UNDOCUMENTED: additionalProperties", "title": "Particle Emitters" },
-              "description": "UNDOCUMENTED: particle emitters",
+              "additionalProperties": { "type": "string", "description": "UNDOCUMENTED: additionalProperties.", "title": "Particle Emitters" },
+              "description": "UNDOCUMENTED: particle emitters.",
               "title": "Particle Emitters"
             },
             "render_controllers": {
               "type": "array",
-              "description": "UNDOCUMENTED: render controllers",
+              "description": "UNDOCUMENTED: render controllers.",
               "title": "Render Controllers",
               "minItems": 1,
-              "items": { "type": "string", "description": "UNDOCUMENTED: render controllers", "title": "Render Controllers" }
+              "items": { "type": "string", "description": "UNDOCUMENTED: render controllers.", "title": "Render Controllers" }
             },
             "scripts": {
               "additionalProperties": false,
               "type": "object",
-              "description": "UNDOCUMENTED: scripts",
+              "description": "UNDOCUMENTED: scripts.",
               "title": "Scripts",
               "properties": {
                 "animate": {
@@ -117,61 +117,61 @@
                   "minItems": 1,
                   "items": {
                     "oneOf": [
-                      { "type": "string", "description": "UNDOCUMENTED: oneOf[0]", "title": "Animate" },
+                      { "type": "string", "description": "UNDOCUMENTED: oneOf[0].", "title": "Animate" },
                       {
                         "type": "object",
                         "minProperties": 1,
-                        "additionalProperties": { "type": "string", "description": "UNDOCUMENTED: additionalProperties", "title": "Animate" },
-                        "description": "UNDOCUMENTED: oneOf[1]",
+                        "additionalProperties": { "type": "string", "description": "UNDOCUMENTED: additionalProperties.", "title": "Animate" },
+                        "description": "UNDOCUMENTED: oneOf[1].",
                         "title": "Animate"
                       }
                     ],
-                    "description": "UNDOCUMENTED: animate",
+                    "description": "UNDOCUMENTED: animate.",
                     "title": "Animate"
                   },
-                  "description": "UNDOCUMENTED: animate"
+                  "description": "UNDOCUMENTED: animate."
                 },
                 "initialize": {
                   "type": "array",
-                  "description": "UNDOCUMENTED: initialize",
+                  "description": "UNDOCUMENTED: initialize.",
                   "title": "Initialize",
                   "items": {
                     "pattern": ";$",
                     "$ref": "../../../molang/number.json",
-                    "description": "UNDOCUMENTED: initialize",
+                    "description": "UNDOCUMENTED: initialize.",
                     "title": "Initialize"
                   }
                 },
                 "pre_animation": {
                   "type": "array",
-                  "description": "UNDOCUMENTED: pre aninamtion",
+                  "description": "UNDOCUMENTED: pre aninamtion.",
                   "title": "Pre Animation",
                   "items": {
                     "pattern": ";$",
                     "$ref": "../../../molang/number.json",
-                    "description": "UNDOCUMENTED: pre aninamtion",
+                    "description": "UNDOCUMENTED: pre aninamtion.",
                     "title": "Pre Animation"
                   }
                 },
                 "parent_setup": {
                   "type": "string",
-                  "description": "UNDOCUMENTED: parent setup",
+                  "description": "UNDOCUMENTED: parent setup.",
                   "title": "Parent Setup",
                   "$ref": "../../../molang/number.json"
                 },
-                "scale": { "type": "string", "description": "UNDOCUMENTED: scale", "title": "Scale", "$ref": "../../../molang/number.json" }
+                "scale": { "type": "string", "description": "UNDOCUMENTED: scale.", "title": "Scale", "$ref": "../../../molang/number.json" }
               }
             },
             "sound_effects": {
               "type": "array",
-              "description": "UNDOCUMENTED: sound effects",
+              "description": "UNDOCUMENTED: sound effects.",
               "title": "Sound Effects",
               "minItems": 1,
-              "items": { "type": "string", "description": "UNDOCUMENTED: sound effects", "title": "Sound Effects" }
+              "items": { "type": "string", "description": "UNDOCUMENTED: sound effects.", "title": "Sound Effects" }
             },
             "spawn_egg": {
               "type": "object",
-              "description": "UNDOCUMENTED: spawn egg",
+              "description": "UNDOCUMENTED: spawn egg.",
               "title": "Spawn Egg",
               "dependencies": {
                 "texture": ["texture_index"],
@@ -180,20 +180,20 @@
                 "overlay_color": ["base_colour"]
               },
               "properties": {
-                "base_colour": { "type": "string", "description": "UNDOCUMENTED: base colour", "title": "Base Colour" },
-                "overlay_color": { "type": "string", "description": "UNDOCUMENTED: overlay color", "title": "Overlay Color" },
-                "texture": { "type": "string", "description": "UNDOCUMENTED: texture", "title": "Texture" },
-                "texture_index": { "type": "integer", "description": "UNDOCUMENTED: texture index", "title": "Texture Index" }
+                "base_colour": { "type": "string", "description": "UNDOCUMENTED: base colour.", "title": "Base Colour" },
+                "overlay_color": { "type": "string", "description": "UNDOCUMENTED: overlay color.", "title": "Overlay Color" },
+                "texture": { "type": "string", "description": "UNDOCUMENTED: texture.", "title": "Texture" },
+                "texture_index": { "type": "integer", "description": "UNDOCUMENTED: texture index.", "title": "Texture Index" }
               }
             },
             "textures": {
               "type": "object",
-              "additionalProperties": { "type": "string", "description": "UNDOCUMENTED: additionalProperties", "title": "Texture" },
-              "description": "UNDOCUMENTED: textures",
+              "additionalProperties": { "type": "string", "description": "UNDOCUMENTED: additionalProperties.", "title": "Texture" },
+              "description": "UNDOCUMENTED: textures.",
               "title": "Textures"
             }
           },
-          "description": "UNDOCUMENTED: description"
+          "description": "UNDOCUMENTED: description."
         }
       },
       "additionalProperties": false

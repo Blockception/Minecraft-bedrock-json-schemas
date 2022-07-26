@@ -9,13 +9,13 @@
     "looping": {
       "type": "boolean",
       "default": true,
-      "description": "If true, the timer will restart every time after it fires",
+      "description": "If true, the timer will restart every time after it fires.",
       "title": "Looping"
     },
     "randomInterval": {
       "type": "boolean",
       "default": true,
-      "description": "If true, the amount of time on the timer will be random between the Minimum and Maximum values specified in time",
+      "description": "If true, the amount of time on the timer will be random between the Minimum and Maximum values specified in time.",
       "title": "Random Interval"
     },
     "time": {
@@ -35,7 +35,7 @@
       ]
     },
     "time_down_event": {
-      "description": "Event to fire when the time on the timer runs out",
+      "description": "Event to fire when the time on the timer runs out.",
       "title": "Time Down Event",
       "$ref": "../types/event.json"
     },
@@ -52,13 +52,13 @@
         "properties": {
           "weight": {
             "type": "integer",
-            "description": "The weight on how likely this section is to trigger",
+            "description": "The weight on how likely this section is to trigger.",
             "$comment": "UNDOCUMENTED",
             "title": "Weight"
           },
           "value": {
             "type": "integer",
-            "description": "The value in seconds that would be used if this section was picked",
+            "description": "The value in seconds that would be used if this section was picked.",
             "$comment": "UNDOCUMENTED",
             "title": "Value"
           }

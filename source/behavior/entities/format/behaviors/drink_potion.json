@@ -13,7 +13,7 @@
     },
     "speed_modifier": {
       "default": 0.0,
-      "description": "Movement speed modifier of the mob when using this AI Goal",
+      "description": "Movement speed modifier of the mob when using this AI Goal.",
       "title": "Speed Modifier"
     },
     "potions": {
@@ -21,11 +21,7 @@
       "description": "A list of potions that this entity can drink.",
       "title": "Potions",
       "items": {
-        "required": [
-          "id",
-          "chance",
-          "filters"
-        ],
+        "required": ["id", "chance", "filters"],
         "additionalProperties": false,
         "type": "object",
         "description": "A potions that this entity can drink.",
@@ -34,7 +30,7 @@
           "id": {
             "type": "integer",
             "default": -1,
-            "description": "The registry ID of the potion to use",
+            "description": "The registry ID of the potion to use.",
             "title": "Id"
           },
           "chance": {

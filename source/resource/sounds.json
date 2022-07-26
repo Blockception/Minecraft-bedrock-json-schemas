@@ -3,15 +3,15 @@
   "$id": "blockception.minecraft.resource.sounds.json",
   "type": "object",
   "title": "Sounds.json",
-  "description": "Sound definitions",
+  "description": "Sound definitions.",
   "additionalProperties": false,
   "definitions": {
     "pitch": {
       "title": "Pitch",
       "oneOf": [
-        { "default": 1, "type": "number", "description": "A defined pitch" },
+        { "default": 1, "type": "number", "description": "A defined pitch." },
         {
-          "description": "A random selection between a minimum and maximum",
+          "description": "A random selection between a minimum and maximum.",
           "type": "array",
           "items": [
             { "type": "number", "minimum": 0, "title": "Minimum" },
@@ -23,9 +23,9 @@
     "volume": {
       "title": "Volume",
       "oneOf": [
-        { "default": 1, "type": "number", "description": "A defined volume" },
+        { "default": 1, "type": "number", "description": "A defined volume." },
         {
-          "description": "A random selection between a minimum and maximum",
+          "description": "A random selection between a minimum and maximum.",
           "type": "array",
           "items": [
             { "type": "number", "minimum": 0, "title": "Minimum" },
@@ -36,7 +36,7 @@
     },
     "sound_event": {
       "title": "Sound Event",
-      "description": "A single sound event definition",
+      "description": "A single sound event definition.",
       "oneOf": [
         { "type": "string" },
         {
@@ -54,7 +54,7 @@
     "entity_event": {
       "type": "object",
       "title": "Entity Sound",
-      "description": "Entity sound definitions",
+      "description": "Entity sound definitions.",
       "properties": {
         "volume": { "$ref": "#/definitions/volume" },
         "pitch": { "$ref": "#/definitions/pitch" },
@@ -71,11 +71,11 @@
     "block_sounds": {
       "type": "object",
       "title": "Block Sounds",
-      "description": "Block sound definitions",
+      "description": "Block sound definitions.",
       "additionalProperties": {
         "type": "object",
         "title": "Block Sound",
-        "description": "A single block sound definition",
+        "description": "A single block sound definition.",
         "additionalProperties": false,
         "properties": {
           "volume": { "$ref": "#/definitions/volume" },
@@ -92,14 +92,14 @@
     "entity_sounds": {
       "type": "object",
       "title": "Entity Sounds",
-      "description": "Entity sounds definitions",
+      "description": "Entity sounds definitions.",
       "additionalProperties": false,
       "properties": {
         "defaults": { "$ref": "#/definitions/entity_event" },
         "entities": {
           "type": "object",
           "title": "Entities",
-          "description": "Entities definitions",
+          "description": "Entities definitions.",
           "additionalProperties": { "$ref": "#/definitions/entity_event" }
         }
       }
@@ -107,26 +107,26 @@
     "individual_event_sounds": {
       "type": "object",
       "title": "Individual Event Sounds",
-      "description": "Individual event sounds definitions",
+      "description": "Individual event sounds definitions.",
       "additionalProperties": false,
       "properties": {
-        "events": { "type": "object", "title": "Events", "description": "Events", "additionalProperties": { "$ref": "#/definitions/sound_event" } }
+        "events": { "type": "object", "title": "Events", "description": "Events.", "additionalProperties": { "$ref": "#/definitions/sound_event" } }
       }
     },
     "interactive_sounds": {
       "type": "object",
       "title": "Interactive Sounds",
-      "description": "Interactive sounds definitions",
+      "description": "Interactive sounds definitions.",
       "additionalProperties": false,
       "properties": {
         "block_sounds": {
           "type": "object",
           "title": "Block Sounds",
-          "description": "Block sound definitions",
+          "description": "Block sound definitions.",
           "additionalProperties": {
             "type": "object",
             "title": "Block Sound",
-            "description": "A single block sound definition",
+            "description": "A single block sound definition.",
             "additionalProperties": false,
             "properties": {
               "volume": { "$ref": "#/definitions/volume" },
@@ -137,7 +137,7 @@
                 "propertyNames": { "enum": ["default", "fall", "step", "hit", "jump", "land"] },
                 "additionalProperties": {
                   "title": "Sound Event",
-                  "description": "A single sound event definition",
+                  "description": "A single sound event definition.",
                   "oneOf": [
                     { "type": "string" },
                     {
@@ -159,13 +159,13 @@
         "entity_sounds": {
           "type": "object",
           "title": "Entity Sounds",
-          "description": "Entity sound definitions",
+          "description": "Entity sound definitions.",
           "additionalProperties": false,
           "properties": {
             "defaults": {
               "type": "object",
               "title": "Defaults",
-              "description": "Default sound definitions",
+              "description": "Default sound definitions.",
               "additionalProperties": {
                 "type": "object",
                 "title": "Entity Sounds",
@@ -177,7 +177,7 @@
                     "additionalProperties": {
                       "type": "object",
                       "title": "Entity Event",
-                      "description": "A single entity event",
+                      "description": "A single entity event.",
                       "additionalProperties": { "type": "string", "title": "A Sound Interaction" }
                     }
                   }
@@ -188,7 +188,7 @@
             "entities": {
               "type": "object",
               "title": "Entites Sounds",
-              "description": "Entities sound definitions",
+              "description": "Entities sound definitions.",
               "additionalProperties": {
                 "type": "object",
                 "title": "Entity Sounds",
@@ -202,7 +202,7 @@
                     "additionalProperties": {
                       "type": "object",
                       "title": "Entity Event",
-                      "description": "A single entity event",
+                      "description": "A single entity event.",
                       "additionalProperties": { "type": "string", "title": "A Sound Interaction" }
                     }
                   }

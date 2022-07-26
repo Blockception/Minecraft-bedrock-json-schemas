@@ -17,7 +17,7 @@
       "$ref": "./types/subject.json"
     },
     "value": {
-      "description": "The game's difficulty level to test",
+      "description": "The game's difficulty level to test.",
       "type": "string",
       "enum": ["easy", "hard", "normal", "peaceful"],
       "title": "Value"

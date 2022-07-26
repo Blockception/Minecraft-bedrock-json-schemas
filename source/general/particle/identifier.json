@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.particle.identifier",
-  "description": "The minecraft particle identifier",
+  "description": "The minecraft particle identifier.",
   "examples": ["namespace:particle_name"],
   "pattern": "^[0-9a-zA-Z:_\\.\\-]+$",
   "title": "Particle Identifier",

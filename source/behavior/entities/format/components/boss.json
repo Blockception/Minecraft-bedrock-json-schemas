@@ -3,7 +3,7 @@
   "type": "object",
   "title": "Boss",
   "additionalProperties": false,
-  "description": "The current state of the boss for updating the boss HUD",
+  "description": "The current state of the boss for updating the boss HUD.",
   "required": [],
   "properties": {
     "hud_range": {

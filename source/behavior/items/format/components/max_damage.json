@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "type": "integer",
   "title": "Max Damage",
-  "description": "Maximum Damage",
+  "description": "Maximum Damage.",
   "$comment": "UNDOCUMENTED",
   "minimum": 0
 }

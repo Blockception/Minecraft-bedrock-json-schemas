@@ -87,14 +87,14 @@
       "title": "Breed Cooldown"
     },
     "breed_items": {
-      "description": "The list of items that can be used to get the entity into the `love` state",
+      "description": "The list of items that can be used to get the entity into the `love` state.",
       "title": "Breed Items",
       "oneOf": [
         {
           "type": "array",
           "items": {
             "type": "string",
-            "description": "An item that can be used to get the entity into the `love` state",
+            "description": "An item that can be used to get the entity into the `love` state.",
             "$ref": "../../../../general/item/identifier.json",
             "title": "Breed Item"
           }
@@ -219,7 +219,7 @@
     "inherit_tamed": {
       "type": "boolean",
       "default": true,
-      "description": "If true, the babies will be automatically tamed if its parents are",
+      "description": "If true, the babies will be automatically tamed if its parents are.",
       "title": "Inherit Tamed"
     },
     "require_full_health": {

@@ -16,14 +16,14 @@
   ],
   "type": "object",
   "additionalProperties": false,
-  "description": "A particle definition file",
+  "description": "A particle definition file.",
   "title": "Particle",
   "properties": {
     "format_version": { "$ref": "../../general/format_version.json" },
     "particle_effect": {
       "type": "object",
       "additionalProperties": false,
-      "description": "UNDOCUMENTED: particle effect",
+      "description": "UNDOCUMENTED: particle effect.",
       "title": "Particle Effect",
       "properties": {
         "description": {
@@ -33,27 +33,27 @@
           "properties": {
             "identifier": {
               "type": "string",
-              "description": "UNDOCUMENTED: identifier",
+              "description": "UNDOCUMENTED: identifier.",
               "title": "Identifier",
               "$ref": "../../general/particle/identifier.json"
             },
             "basic_render_parameters": {
               "additionalProperties": false,
               "type": "object",
-              "description": "UNDOCUMENTED: basic render parameters",
+              "description": "UNDOCUMENTED: basic render parameters.",
               "title": "Basic Render Parameters",
               "properties": {
                 "material": {
                   "type": "string",
                   "examples": ["particles_alpha", "particles_blend"],
-                  "description": " Minecraft material to use for emitter",
+                  "description": " Minecraft material to use for emitter.",
                   "title": "Material"
                 },
-                "texture": { "type": "string", "pattern": "^.+$", "description": "Minecraft texture to use for emitter", "title": "Texture" }
+                "texture": { "type": "string", "pattern": "^.+$", "description": "Minecraft texture to use for emitter.", "title": "Texture" }
               }
             }
           },
-          "description": "UNDOCUMENTED: description",
+          "description": "UNDOCUMENTED: description.",
           "title": "Description"
         },
         "curves": {
@@ -65,10 +65,10 @@
             "type": "object",
             "additionalProperties": false,
             "title": "Curve",
-            "description": "The curve definitions, conists out of a couple of nodes",
+            "description": "The curve definitions, conists out of a couple of nodes.",
             "$comment": "UNDOCUMENTED",
             "properties": {
-              "input": { "$ref": "../../molang/number.json", "title": "Input", "description": "What is the input value to use" },
+              "input": { "$ref": "../../molang/number.json", "title": "Input", "description": "What is the input value to use." },
               "nodes": {
                 "description": "Control nodes for curve.  These are assumed to be equally, used Object for bezier_chain",
                 "title": "Nodes",
@@ -84,12 +84,12 @@
               "type": {
                 "type": "string",
                 "title": "Type",
-                "description": "The type of curve",
+                "description": "The type of curve.",
                 "enum": ["linear", "bezier", "bezier_chain", "catmull_rom"]
               },
               "horizontal_range": {
                 "title": "Horizontal Range",
-                "description": "What is the range the input is mapped onto",
+                "description": "What is the range the input is mapped onto.",
                 "$ref": "../../molang/number.json"
               }
             }
@@ -134,10 +134,10 @@
         },
         "events": {
           "type": "object",
-          "description": "UNDOCUMENTED: events",
+          "description": "UNDOCUMENTED: events.",
           "title": "Events",
           "additionalProperties": {
-            "description": "UNDOCUMENTED",
+            "description": "UNDOCUMENTED.",
             "$comment": "UNDOCUMENTED",
             "title": "Event",
             "type": "object",
@@ -145,19 +145,19 @@
             "properties": {
               "particle_effect": {
                 "title": "Particle Effect",
-                "description": "UNDOCUMENTED",
+                "description": "UNDOCUMENTED.",
                 "$comment": "UNDOCUMENTED",
                 "properties": {
-                  "effect": { "type": "string", "description": "UNDOCUMENTED: effect", "title": "Effect" },
-                  "type": { "type": "string", "description": "UNDOCUMENTED: type", "title": "Type" }
+                  "effect": { "type": "string", "description": "UNDOCUMENTED: effect.", "title": "Effect" },
+                  "type": { "type": "string", "description": "UNDOCUMENTED: type.", "title": "Type" }
                 }
               },
               "sound_effect": {
                 "title": "Sound Effect",
-                "description": "UNDOCUMENTED",
+                "description": "UNDOCUMENTED.",
                 "$comment": "UNDOCUMENTED",
                 "properties": {
-                  "event_name": { "type": "string", "description": "UNDOCUMENTED: effect", "title": "Event Name" }
+                  "event_name": { "type": "string", "description": "UNDOCUMENTED: effect.", "title": "Event Name" }
                 }
               }
             }

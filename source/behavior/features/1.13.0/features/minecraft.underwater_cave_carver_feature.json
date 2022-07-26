@@ -7,7 +7,7 @@
   "properties": {
     "description": {
       "title": "Description",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "required": ["identifier"],

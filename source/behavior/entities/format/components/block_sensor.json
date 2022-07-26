@@ -19,7 +19,7 @@
       "items": {
         "title": "On Block Broken",
         "type": "object",
-        "description": "Event to run when a block breaks",
+        "description": "Event to run when a block breaks.",
         "additionalProperties": false,
         "properties": {
           "block_list": {
@@ -34,7 +34,7 @@
           "on_block_broken": {
             "title": "On Block Broken",
             "type": "string",
-            "description": "Event to run when a block breaks"
+            "description": "Event to run when a block breaks."
           }
         }
       }
@@ -48,9 +48,9 @@
       },
       "examples": [
         {
-            "test": "has_silk_touch",
-            "subject": "other",
-            "value": false
+          "test": "has_silk_touch",
+          "subject": "other",
+          "value": false
         }
       ]
     }

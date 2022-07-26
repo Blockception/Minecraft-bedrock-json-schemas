@@ -19,7 +19,7 @@
         "properties": {
           "condition": {
             "type": "string",
-            "description": "The condition that must be satisfied to select the given ambient sound",
+            "description": "The condition that must be satisfied to select the given ambient sound.",
             "title": "Condition"
           },
           "event_name": {

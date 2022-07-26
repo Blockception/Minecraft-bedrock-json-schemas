@@ -9,7 +9,7 @@
     "description": {
       "required": ["identifier"],
       "title": "Description",
-      "description": "The description of the this entity",
+      "description": "The description of the this entity.",
       "properties": {
         "animations": {
           "title": "Animations",
@@ -17,7 +17,7 @@
           "type": "object",
           "additionalProperties": {
             "title": "Animation / Controller",
-            "description": "The name of the animation controller / animation",
+            "description": "The name of the animation controller / animation.",
             "type": "string",
             "examples": ["animation.", "controller."]
           }
@@ -59,14 +59,14 @@
             "animate": {
               "type": "array",
               "title": "Animate",
-              "description": "Tells minecraft to run which animation / animation controllers and under what conditions",
+              "description": "Tells minecraft to run which animation / animation controllers and under what conditions.",
               "items": {
                 "oneOf": [
-                  { "type": "string", "title": "Animation", "description": "The name of an animation controller referenced in animations" },
+                  { "type": "string", "title": "Animation", "description": "The name of an animation controller referenced in animations." },
                   {
                     "type": "object",
                     "title": "Conditional Animation",
-                    "description": "A conditional statement to run the animation under a specified condition",
+                    "description": "A conditional statement to run the animation under a specified condition.",
                     "$comment": "UNDOCUMENTED",
                     "additionalProperties": { "type": "string", "title": "Animation" }
                   }
@@ -79,27 +79,27 @@
     },
     "component_groups": {
       "title": "Component Groups",
-      "description": "Each group when add / remove the default components",
+      "description": "Each group when add / remove the default components.",
       "uniqueItems": true,
       "type": "object",
       "propertyNames": { "examples": ["self:"] },
       "additionalProperties": {
         "$ref": "./components.json",
         "uniqueItems": true,
-        "description": "The components that are added as the foundation of the entity",
+        "description": "The components that are added as the foundation of the entity.",
         "title": "Component"
       }
     },
     "components": {
       "$ref": "./components.json",
       "uniqueItems": true,
-      "description": "The components that are added as the foundation of the entity",
+      "description": "The components that are added as the foundation of the entity.",
       "title": "Component"
     },
     "events": {
       "$ref": "./events.json",
       "uniqueItems": true,
-      "description": "The events that the entity can run, these add or remove components_groups",
+      "description": "The events that the entity can run, these add or remove components_groups.",
       "title": "Events"
     }
   }

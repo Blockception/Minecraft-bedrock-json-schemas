@@ -7,13 +7,13 @@
   "properties": {
     "add": {
       "type": "object",
-      "description": "List of components to add to the entity after the transformation",
+      "description": "List of components to add to the entity after the transformation.",
       "title": "Add",
       "additionalProperties": false,
       "properties": {
         "component_groups": {
           "type": "array",
-          "description": "Names of component groups to add",
+          "description": "Names of component groups to add.",
           "items": {
             "type": "string"
           }
@@ -22,11 +22,11 @@
     },
     "begin_transform_sound": {
       "type": "string",
-      "description": "Sound to play when the transformation starts",
+      "description": "Sound to play when the transformation starts.",
       "title": "Begin Transform Sound"
     },
     "delay": {
-      "description": "Defines the properties of the delay for the transformation",
+      "description": "Defines the properties of the delay for the transformation.",
       "title": "Delay",
       "oneOf": [
         { "type": "number" },
@@ -41,7 +41,7 @@
             "block_chance": {
               "type": "number",
               "default": 0,
-              "description": "Chance that, once a block is found, will help speed up the transformation"
+              "description": "Chance that, once a block is found, will help speed up the transformation."
             },
             "block_max": {
               "type": "integer",
@@ -51,11 +51,11 @@
             "block_radius": {
               "type": "integer",
               "default": 0,
-              "description": "Distance in Blocks that the entity will search for blocks that can help the transformation"
+              "description": "Distance in Blocks that the entity will search for blocks that can help the transformation."
             },
             "block_types": {
               "type": "array",
-              "description": "List of blocks that can help the transformation of this entity",
+              "description": "List of blocks that can help the transformation of this entity.",
               "items": {
                 "$ref": "../../../../general/block/identifier.json"
               }
@@ -63,7 +63,7 @@
             "value": {
               "type": "number",
               "default": 0,
-              "description": "Time in seconds before the entity transforms"
+              "description": "Time in seconds before the entity transforms."
             }
           }
         }
@@ -72,19 +72,19 @@
     "drop_equipment": {
       "type": "boolean",
       "default": false,
-      "description": "Cause the entity to drop all equipment upon transformation",
+      "description": "Cause the entity to drop all equipment upon transformation.",
       "title": "Drop Equipment"
     },
     "drop_inventory": {
       "type": "boolean",
       "default": false,
-      "description": "Cause the entity to drop all items in inventory upon transformation",
+      "description": "Cause the entity to drop all items in inventory upon transformation.",
       "title": "Drop Inventory"
     },
     "into": {
       "type": "string",
       "default": "",
-      "description": "Entity Definition that this entity will transform into",
+      "description": "Entity Definition that this entity will transform into.",
       "title": "Into"
     },
     "keep_level": {
@@ -102,13 +102,13 @@
     "preserve_equipment": {
       "type": "boolean",
       "default": false,
-      "description": "Cause the entity to keep equipment after going through transformation",
+      "description": "Cause the entity to keep equipment after going through transformation.",
       "title": "Preserve Equipment"
     },
     "transformation_sound": {
       "type": "string",
       "default": "",
-      "description": "Sound to play when the entity is done transforming",
+      "description": "Sound to play when the entity is done transforming.",
       "title": "Transformation Sound"
     }
   },

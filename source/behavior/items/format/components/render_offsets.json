@@ -8,19 +8,19 @@
     "offset_spec": {
       "type": "object",
       "title": "Offset",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "additionalProperties": false,
       "properties": {
         "first_person": {
           "title": "First Person",
-          "description": "UNDOCUMENTED",
+          "description": "UNDOCUMENTED.",
           "$comment": "UNDOCUMENTED",
           "$ref": "#/definitions/mode"
         },
         "thrid_person": {
           "title": "Thrid Person",
-          "description": "UNDOCUMENTED",
+          "description": "UNDOCUMENTED.",
           "$comment": "UNDOCUMENTED",
           "$ref": "#/definitions/mode"
         }
@@ -29,23 +29,23 @@
     "mode": {
       "type": "object",
       "title": "Mode",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "additionalProperties": false,
       "properties": {
         "position": {
           "title": "Position",
-          "description": "The position transformation",
+          "description": "The position transformation.",
           "$ref": "#/definitions/vec3"
         },
         "rotation": {
           "title": "Rotation",
-          "description": "The rotation transformation",
+          "description": "The rotation transformation.",
           "$ref": "#/definitions/vec3"
         },
         "scale": {
           "title": "Scale",
-          "description": "The scale transformation",
+          "description": "The scale transformation.",
           "$ref": "#/definitions/vec3"
         }
       }
@@ -53,11 +53,11 @@
     "vec3": {
       "type": "array",
       "title": "Vector",
-      "description": "X Y Z",
+      "description": "X Y Z.",
       "items": [
-        { "title": "X", "description": "The X tranformation", "type": "number" },
-        { "title": "Y", "description": "The Y tranformation", "type": "number" },
-        { "title": "Z", "description": "The Z tranformation", "type": "number" }
+        { "title": "X", "description": "The X tranformation.", "type": "number" },
+        { "title": "Y", "description": "The Y tranformation.", "type": "number" },
+        { "title": "Z", "description": "The Z tranformation.", "type": "number" }
       ]
     }
   },

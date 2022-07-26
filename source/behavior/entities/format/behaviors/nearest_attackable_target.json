@@ -7,7 +7,7 @@
   "definitions": {
     "entity_type": {
       "type": "object",
-      "description": "A entity type",
+      "description": "A entity type.",
       "properties": {
         "filters": {
           "$ref": "../../filters/filters.json",
@@ -111,7 +111,7 @@
     "set_persistent": {
       "type": "boolean",
       "default": false,
-      "description": "Allows the actor to be set to persist upon targeting a player",
+      "description": "Allows the actor to be set to persist upon targeting a player.",
       "title": "Set Persistent"
     },
     "target_invisible_multiplier": {

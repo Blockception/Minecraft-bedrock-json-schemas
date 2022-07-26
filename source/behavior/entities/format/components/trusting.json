@@ -14,13 +14,13 @@
     },
     "trust_event": {
       "$ref": "../types/event.json",
-      "description": "Event to run when this entity becomes trusting",
+      "description": "Event to run when this entity becomes trusting.",
       "title": "Trust Event"
     },
     "trust_items": {
       "title": "Trust Items",
       "type": "array",
-      "description": "The list of items that can be used to get the entity to trust players",
+      "description": "The list of items that can be used to get the entity to trust players.",
       "items": {
         "$ref": "../../../../general/item/identifier.json",
         "title": "Trust Item"

@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.resource.particle.1.10.0.emitter_rate_manual",
   "type": "object",
   "title": "Emitter Rate Manual Component 1.10.0",
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "additionalProperties": false,
   "properties": {
     "activation_expression": {

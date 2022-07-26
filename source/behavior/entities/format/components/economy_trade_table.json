@@ -21,25 +21,25 @@
         {
           "type": "integer",
           "title": "A",
-          "description": "Minimum"
+          "description": "Minimum."
         },
         {
           "type": "integer",
           "title": "B",
-          "description": "Maximum"
+          "description": "Maximum."
         }
       ]
     },
     "display_name": {
       "type": "string",
       "default": "",
-      "description": "Name to be displayed while trading with this entity",
+      "description": "Name to be displayed while trading with this entity.",
       "title": "Display Name"
     },
     "hero_demand_discount": {
       "type": "integer",
       "default": -4,
-      "description": "Used in legacy prices to determine how much should Demand be modified by when the player has the Hero of the Village mob effect",
+      "description": "Used in legacy prices to determine how much should Demand be modified by when the player has the Hero of the Village mob effect.",
       "title": "Hero Demand Discount"
     },
     "max_cured_discount": {
@@ -51,31 +51,31 @@
         {
           "type": "integer",
           "title": "A",
-          "description": "Minimum"
+          "description": "Minimum."
         },
         {
           "type": "integer",
           "title": "B",
-          "description": "Maximum"
+          "description": "Maximum."
         }
       ]
     },
     "max_nearby_cured_discount": {
       "type": "integer",
       "default": -200,
-      "description": "The Maximum the discount can be modified by when the player has cured a nearby Zombie Villager",
+      "description": "The Maximum the discount can be modified by when the player has cured a nearby Zombie Villager.",
       "title": "Maximum Nearby Cured Discount"
     },
     "nearby_cured_discount": {
       "type": "integer",
       "default": -25,
-      "description": "How much should the discount be modified by when the player has cured a nearby Zombie Villager",
+      "description": "How much should the discount be modified by when the player has cured a nearby Zombie Villager.",
       "title": "Nearby Cured Discount"
     },
     "new_screen": {
       "type": "boolean",
       "default": false,
-      "description": "Used to determine if trading with entity opens the new trade screen",
+      "description": "Used to determine if trading with entity opens the new trade screen.",
       "title": "New Screen"
     },
     "persist_trades": {
@@ -93,7 +93,7 @@
     "table": {
       "type": "string",
       "default": "",
-      "description": "File path relative to the resource pack root for this entity's trades",
+      "description": "File path relative to the resource pack root for this entity's trades.",
       "title": "Table"
     },
     "use_legacy_price_formula": {

@@ -2,11 +2,11 @@
   "$id": "blockception.minecraft.resource.model.1.8.0",
   "type": "object",
   "title": "Model Schema For 1.8.0",
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED",
   "required": ["format_version"],
   "properties": {
-    "debug": { "type": "boolean", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Debug" },
+    "debug": { "type": "boolean", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Debug" },
     "format_version": {
       "title": "1.8.0 Format Version",
       "type": "string",
@@ -18,17 +18,17 @@
   "additionalProperties": {
     "additionalProperties": false,
     "type": "object",
-    "description": "Geometry specification",
+    "description": "Geometry specification.",
     "title": "Geometry",
     "properties": {
       "bones": {
         "type": "array",
-        "description": "The bones definitions",
+        "description": "The bones definitions.",
         "title": "Bones",
         "items": {
           "additionalProperties": false,
           "type": "object",
-          "description": "The bone definition",
+          "description": "The bone definition.",
           "title": "Bone",
           "required": ["name"],
           "properties": {
@@ -59,28 +59,28 @@
               "type": "object",
               "required": ["polys"],
               "title": "Poly Mesh",
-              "description": "UNDOCUMENTED",
+              "description": "UNDOCUMENTED.",
               "$comment": "UNDOCUMENTED",
               "additionalProperties": false,
               "properties": {
-                "normalized_uvs": { "title": "Normalized Uvs", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "boolean" },
+                "normalized_uvs": { "title": "Normalized Uvs", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "type": "boolean" },
                 "positions": {
                   "title": "Positions",
-                  "description": "UNDOCUMENTED",
+                  "description": "UNDOCUMENTED.",
                   "$comment": "UNDOCUMENTED",
                   "type": "array",
                   "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
                 },
                 "normals": {
                   "title": "Normals",
-                  "description": "UNDOCUMENTED",
+                  "description": "UNDOCUMENTED.",
                   "$comment": "UNDOCUMENTED",
                   "type": "array",
                   "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
                 },
                 "polys": {
                   "title": "Polys",
-                  "description": "UNDOCUMENTED",
+                  "description": "UNDOCUMENTED.",
                   "$comment": "UNDOCUMENTED",
                   "type": "array",
                   "items": {
@@ -94,20 +94,20 @@
             },
             "render_group_id": {
               "title": "Render Group Id",
-              "description": "UNDOCUMENTED",
+              "description": "UNDOCUMENTED.",
               "$comment": "UNDOCUMENTED",
               "type": "integer",
               "minimum": 0
             },
             "reset": {
               "title": "Reset",
-              "description": "UNDOCUMENTED",
+              "description": "UNDOCUMENTED.",
               "$comment": "UNDOCUMENTED",
               "type": "boolean"
             },
             "rotation": {
               "title": "Rotation",
-              "description": "UNDOCUMENTED",
+              "description": "UNDOCUMENTED.",
               "$comment": "UNDOCUMENTED",
               "type": "array",
               "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
@@ -115,7 +115,7 @@
             "texture_meshes": {
               "type": "array",
               "title": "Texture Meshes",
-              "description": "UNDOCUMENTED",
+              "description": "UNDOCUMENTED.",
               "$comment": "UNDOCUMENTED",
               "items": {
                 "type": "object",
@@ -132,15 +132,15 @@
           }
         }
       },
-      "cape": { "title": "Cape", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "string" },
-      "debug": { "title": "Debug", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "boolean" },
-      "texturewidth": { "type": "integer", "description": "UNDOCUMENTED: texturewidth", "title": "Texturewidth" },
-      "textureheight": { "type": "integer", "description": "UNDOCUMENTED: textureheight", "title": "Textureheight" },
-      "visible_bounds_width": { "type": "number", "description": "UNDOCUMENTED: visible bounds width", "title": "Visible Bounds Width" },
-      "visible_bounds_height": { "type": "number", "description": "UNDOCUMENTED: visible bounds height", "title": "Visible Bounds Height" },
+      "cape": { "title": "Cape", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "type": "string" },
+      "debug": { "title": "Debug", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "type": "boolean" },
+      "texturewidth": { "type": "integer", "description": "UNDOCUMENTED: texturewidth.", "title": "Texturewidth" },
+      "textureheight": { "type": "integer", "description": "UNDOCUMENTED: textureheight.", "title": "Textureheight" },
+      "visible_bounds_width": { "type": "number", "description": "UNDOCUMENTED: visible bounds width.", "title": "Visible Bounds Width" },
+      "visible_bounds_height": { "type": "number", "description": "UNDOCUMENTED: visible bounds height.", "title": "Visible Bounds Height" },
       "visible_bounds_offset": {
         "type": "array",
-        "description": "UNDOCUMENTED: visible bounds offset",
+        "description": "UNDOCUMENTED: visible bounds offset.",
         "title": "Visible Bounds Offset",
         "items": [{ "type": "number" }, { "type": "number" }, { "type": "number" }]
       }

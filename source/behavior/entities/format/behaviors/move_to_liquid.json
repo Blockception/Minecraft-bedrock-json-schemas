@@ -22,18 +22,18 @@
     "search_height": {
       "type": "integer",
       "default": 1,
-      "description": "Height in blocks the mob will look for lava to move towards",
+      "description": "Height in blocks the mob will look for lava to move towards.",
       "title": "Search Height"
     },
     "search_range": {
       "type": "integer",
       "default": 0,
-      "description": "The distance in blocks it will look for lava to move towards",
+      "description": "The distance in blocks it will look for lava to move towards.",
       "title": "Search Range"
     },
     "material_type": {
       "title": "Material Type",
-      "description": "UNDOCUMENTAED, examples are : Lava",
+      "description": "UNDOCUMENTAED, examples are : Lava.",
       "type": "string"
     }
   },

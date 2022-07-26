@@ -1,15 +1,15 @@
 {
   "$id": "blockception.minecraft.behavior.entities.type.range_number_type",
   "title": "Range [A, B]",
-  "description": "A described range",
+  "description": "A described range.",
   "examples": [[0.0, 1.0]],
   "oneOf": [
     { "type": "number" },
     {
       "type": "array",
       "items": [
-        { "type": "number", "title": "A", "description": "The first value of the range" },
-        { "type": "number", "title": "B", "description": "The second value of the range" }
+        { "type": "number", "title": "A", "description": "The first value of the range." },
+        { "type": "number", "title": "B", "description": "The second value of the range." }
       ]
     },
     {
@@ -19,12 +19,12 @@
         "range_min": {
           "type": "number",
           "title": "Range Min",
-          "description": "The minimum value of the range"
+          "description": "The minimum value of the range."
         },
         "range_max": {
           "type": "number",
           "title": "Range Max",
-          "description": "The maximum value of the range"
+          "description": "The maximum value of the range."
         }
       }
     }

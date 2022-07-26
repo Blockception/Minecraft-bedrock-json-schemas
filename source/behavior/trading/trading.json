@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behavior.trading",
   "type": "object",
   "additionalProperties": false,
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED",
   "title": "Trading",
   "examples": [
@@ -29,7 +29,7 @@
             "functions": { "$ref": "#/definitions/Functions" },
             "biomes": {
               "title": "Biomes",
-              "description": "UNDOCUMENTED",
+              "description": "UNDOCUMENTED.",
               "type": "array",
               "items": {
                 "$ref": "../../general/biome_item.json"
@@ -98,7 +98,7 @@
                     "functions": { "$ref": "#/definitions/Functions" },
                     "choice": {
                       "title": "Choice",
-                      "description": "UNDOCUMENTED",
+                      "description": "UNDOCUMENTED.",
                       "$comment": "UNDOCUMENTED",
                       "type": "array",
                       "items": { "$ref": "#/definitions/Item" }
@@ -135,11 +135,11 @@
                         }
                       ]
                     },
-                    "price_multiplier": { "title": "Price Multiplier", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" },
+                    "price_multiplier": { "title": "Price Multiplier", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "type": "number" },
                     "functions": { "$ref": "#/definitions/Functions" },
                     "choice": {
                       "title": "Choice",
-                      "description": "UNDOCUMENTED",
+                      "description": "UNDOCUMENTED.",
                       "$comment": "UNDOCUMENTED",
                       "type": "array",
                       "items": { "$ref": "#/definitions/Item" }
@@ -162,7 +162,7 @@
     "tiers": {
       "type": "array",
       "title": "Tiers",
-      "description": "A collection of tiers",
+      "description": "A collection of tiers.",
       "items": {
         "additionalProperties": false,
         "type": "object",
@@ -173,7 +173,7 @@
           "groups": {
             "type": "array",
             "title": "Groups",
-            "description": "A collection of groups",
+            "description": "A collection of groups.",
             "items": {
               "type": "object",
               "title": "Group",

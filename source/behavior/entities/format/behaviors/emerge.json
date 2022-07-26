@@ -11,18 +11,18 @@
       "title": "Cooldown Time",
       "type": "integer",
       "default": 0.5,
-      "description": "Time in seconds the mob has to wait before using the goal again"
+      "description": "Time in seconds the mob has to wait before using the goal again."
     },
     "duration": {
       "title": "Duration",
       "type": "number",
       "default": 5.0,
-      "description": "Goal duration in seconds"
+      "description": "Goal duration in seconds."
     },
     "on_done": {
       "title": "On Done",
       "$ref": "../types/trigger.json",
-      "description": "Trigger to be executed when the goal execution is about to end"
+      "description": "Trigger to be executed when the goal execution is about to end."
     }
   }
 }

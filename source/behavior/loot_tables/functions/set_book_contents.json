@@ -1,18 +1,18 @@
 {
   "$id": "blockception.minecraft.behavior.loot_tables.set_book_contents",
   "additionalProperties": false,
-  "description": "The function set_book_contents",
+  "description": "The function set_book_contents.",
   "title": "Set Book Contents",
   "required": ["function", "author", "title", "pages"],
   "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "set_book_contents", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Function" },
-    "author": { "type": "string", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Author" },
-    "title": { "type": "string", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Title" },
+    "function": { "type": "string", "const": "set_book_contents", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Function" },
+    "author": { "type": "string", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Author" },
+    "title": { "type": "string", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Title" },
     "pages": {
       "type": "array",
       "items": { "type": "string", "examples": ["Some text", "{`rawtext`:[ {`translate`:`some.text`}]}"] },
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "title": "Pages"
     }

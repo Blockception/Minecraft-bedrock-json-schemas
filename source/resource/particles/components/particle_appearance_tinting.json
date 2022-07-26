@@ -7,13 +7,13 @@
   "properties": {
     "color": {
       "title": "Color",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "anyOf": [
-        { "type": "array", "description": "Direct color field", "items": { "$ref": "../../../molang/number.json" } },
-        { "type": "string", "format": "color-hex", "description": "Direct color field" },
+        { "type": "array", "description": "Direct color field.", "items": { "$ref": "../../../molang/number.json" } },
+        { "type": "string", "format": "color-hex", "description": "Direct color field." },
         {
-          "description": "Interpolation based color",
+          "description": "Interpolation based color.",
           "type": "object",
           "additionalProperties": false,
           "properties": {
@@ -21,25 +21,25 @@
               "title": "Gradient",
               "oneOf": [
                 {
-                  "description": "An array of colors",
+                  "description": "An array of colors.",
                   "type": "array",
-                  "items": { "type": "string", "description": "Color", "title": "Color", "format": "color-hex", "examples": ["#FFFFFF"] }
+                  "items": { "type": "string", "description": "Color.", "title": "Color", "format": "color-hex", "examples": ["#FFFFFF"] }
                 },
                 {
-                  "description": "An object of colors",
+                  "description": "An object of colors.",
                   "type": "object",
                   "propertyNames": { "pattern": "(^[\\-0-9]+$|^[\\-0-9]+\\.[\\-0-9]+$)" },
-                  "additionalProperties": { "type": "string", "description": "Color", "format": "color-hex", "examples": ["#FFFFFF"] }
+                  "additionalProperties": { "type": "string", "description": "Color.", "format": "color-hex", "examples": ["#FFFFFF"] }
                 },
                 {
-                  "description": "An array of colors",
+                  "description": "An array of colors.",
                   "type": "array",
                   "items": {
                     "type": "array",
                     "minItems": 3,
                     "items": {
                       "oneOf": [
-                        { "type": "number", "description": "Color", "title": "Color", "minimum": 0, "maximum": 1 },
+                        { "type": "number", "description": "Color.", "title": "Color", "minimum": 0, "maximum": 1 },
                         { "type": "string", "title": "Molang" }
                       ]
                     }
@@ -47,7 +47,7 @@
                 }
               ]
             },
-            "interpolant": { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED: interpolant", "title": "Interpolant" }
+            "interpolant": { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED: interpolant.", "title": "Interpolant" }
           }
         }
       ]

@@ -18,49 +18,45 @@
       "items": {
         "$ref": "../../../../general/entity/damage_source.json"
       },
-      "default": [
-        [
-          "all"
-        ]
-      ],
-      "description": "The list of Entity Damage Sources that will cause this mob to panic"
+      "default": [["all"]],
+      "description": "The list of Entity Damage Sources that will cause this mob to panic."
     },
     "force": {
       "title": "Force",
       "type": "boolean",
       "default": false,
-      "description": "If true, this mob will not stop panicking until it can't move anymore or the goal is removed from it"
+      "description": "If true, this mob will not stop panicking until it can't move anymore or the goal is removed from it."
     },
     "ignore_mob_damage": {
       "title": "Ignore Mob Damage",
       "type": "boolean",
       "default": false,
-      "description": "If true, the mob will not panic in response to damage from other mobs. This overrides the damage types in `damage_sources`"      
+      "description": "If true, the mob will not panic in response to damage from other mobs. This overrides the damage types in `damage_sources`"
     },
     "prefer_water": {
       "title": "Prefer Water",
       "type": "boolean",
       "default": false,
-      "description": "If true, the mob will prefer water over land"
+      "description": "If true, the mob will prefer water over land."
     },
     "panic_sound": {
       "title": "Panic Sound",
       "type": "string",
-      "description": "The sound event to play when this mob is in panic"
+      "description": "The sound event to play when this mob is in panic."
     },
     "sound_interval": {
       "title": "Sound Interval",
       "type": "object",
-      "description": "The range of time in seconds to randomly wait before playing the sound again",
+      "description": "The range of time in seconds to randomly wait before playing the sound again.",
       "properties": {
         "range_min": {
           "type": "number",
-          "description": "The minimum time in seconds before the `panic_sound` plays",
+          "description": "The minimum time in seconds before the `panic_sound` plays.",
           "title": "Range Minimum"
         },
         "range_max": {
           "type": "number",
-          "description": "The maximum time in seconds before the `panic_sound` plays",
+          "description": "The maximum time in seconds before the `panic_sound` plays.",
           "title": "Range Maximum"
         }
       },

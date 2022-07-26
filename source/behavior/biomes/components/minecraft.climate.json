@@ -7,15 +7,15 @@
   "maxProperties": 7,
   "additionalProperties": false,
   "properties": {
-    "temperature": { "title": "Temperature", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" },
-    "downfall": { "title": "Downfall", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" },
-    "red_spores": { "title": "Red Spores", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" },
-    "blue_spores": { "title": "Blue Spores", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" },
-    "ash": { "title": "Ash", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" },
-    "white_ash": { "title": "White Ash", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "number" },
+    "temperature": { "title": "Temperature", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "type": "number" },
+    "downfall": { "title": "Downfall", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "type": "number" },
+    "red_spores": { "title": "Red Spores", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "type": "number" },
+    "blue_spores": { "title": "Blue Spores", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "type": "number" },
+    "ash": { "title": "Ash", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "type": "number" },
+    "white_ash": { "title": "White Ash", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "type": "number" },
     "snow_accumulation": {
       "title": "Snow Accumulation",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "array",
       "items": [

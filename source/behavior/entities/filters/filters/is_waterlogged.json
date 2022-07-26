@@ -8,7 +8,7 @@
     "test": {
       "type": "string",
       "title": "Test",
-      "description": "The test property"
+      "description": "The test property."
     },
     "operator": {
       "$ref": "./types/operator.json"

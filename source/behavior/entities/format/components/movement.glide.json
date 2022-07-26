@@ -15,13 +15,13 @@
     "start_speed": {
       "type": "number",
       "title": "Start Speed",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED"
     },
     "speed_when_turning": {
       "type": "number",
       "title": "Speed When Turning",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED"
     }
   },

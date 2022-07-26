@@ -116,7 +116,7 @@
       "title": "Set Persistent",
       "type": "boolean",
       "default": false,
-      "description": "Allows the actor to be set to persist upon targeting a player"
+      "description": "Allows the actor to be set to persist upon targeting a player."
     },
     "target_dist": {
       "title": "Target Dist",

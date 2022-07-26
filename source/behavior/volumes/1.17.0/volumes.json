@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.volumes.1.17.0",
   "type": "object",
   "title": "Spawn Rules 1.17.0",
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED",
   "additionalProperties": false,
   "required": ["format_version", "minecraft:volume"],
@@ -15,14 +15,14 @@
     "minecraft:volume": {
       "type": "object",
       "title": "Spawn Rules",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "additionalProperties": false,
       "properties": {
         "description": {
           "type": "object",
           "title": "Description",
-          "description": "The description contains a single `identifier` string",
+          "description": "The description contains a single `identifier` string.",
           "additionalProperties": false,
           "properties": {
             "identifier": {
@@ -35,7 +35,7 @@
         "components": {
           "type": "object",
           "title": "Components",
-          "description": "UNDOCUMENTED",
+          "description": "UNDOCUMENTED.",
           "$comment": "UNDOCUMENTED",
           "additionalProperties": false,
           "properties": {
@@ -106,7 +106,7 @@
                   "type": "array",
                   "items": {
                     "title": "On Enter Trigger",
-                    "description": "Trigger",
+                    "description": "Trigger.",
                     "type": "object",
                     "additionalProperties": false,
                     "properties": {
@@ -145,7 +145,7 @@
                   "type": "array",
                   "items": {
                     "title": "On Enter Trigger",
-                    "description": "Trigger",
+                    "description": "Trigger.",
                     "type": "object",
                     "additionalProperties": false,
                     "properties": {

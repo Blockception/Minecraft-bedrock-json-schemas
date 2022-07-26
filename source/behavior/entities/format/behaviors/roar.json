@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.roar",
   "additionalProperties": false,
-  "type": "object",
+  "type": "object
   "title": "Roar",
   "description": "[EXPERIMENTAL BEHAVIOR] Plays the provided sound and activates the `ROARING` actor flag during the specified duration",
   "properties": {
@@ -12,7 +12,7 @@
       "title": "Duration",
       "type": "number",
       "default": 0.0,
-      "description": "Goal duration in seconds"
+      "description": "Goal duration in seconds."
     }
   }
 }

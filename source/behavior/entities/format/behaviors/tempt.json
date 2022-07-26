@@ -28,7 +28,7 @@
     "items": {
       "type": "array",
       "title": "Items",
-      "description": "List of items this mob is tempted by",
+      "description": "List of items this mob is tempted by.",
       "items": {
         "$ref": "../../../../general/item/identifier.json"
       }
@@ -57,7 +57,7 @@
     "within_radius": {
       "type": "number",
       "default": 0,
-      "description": "Distance in blocks this mob can get tempted by a player holding an item they like",
+      "description": "Distance in blocks this mob can get tempted by a player holding an item they like.",
       "title": "Within Radius"
     }
   },

@@ -1,19 +1,19 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.item_controllable",
-  "description": "Efines what items can be used to control this entity while ridden",
+  "description": "Efines what items can be used to control this entity while ridden.",
   "type": "object",
   "title": "Item Controllable",
   "additionalProperties": false,
   "required": [],
   "properties": {
     "control_items": {
-      "description": "List of items that can be used to control this entity",
+      "description": "List of items that can be used to control this entity.",
       "oneOf": [
         {
           "type": "array",
           "items": {
             "type": "string",
-            "description": "An item that can be used to control this entity",
+            "description": "An item that can be used to control this entity.",
             "title": "Item"
           }
         },

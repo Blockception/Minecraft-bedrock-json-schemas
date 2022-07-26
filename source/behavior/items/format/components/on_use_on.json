@@ -12,8 +12,8 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "event": { "type": "string", "title": "Event", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-        "target": { "type": "string", "title": "Target", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "enum": ["block"] }
+        "event": { "type": "string", "title": "Event", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
+        "target": { "type": "string", "title": "Target", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "enum": ["block"] }
       }
     }
   }

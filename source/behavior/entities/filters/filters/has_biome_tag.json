@@ -17,7 +17,7 @@
       "$ref": "./types/subject.json"
     },
     "value": {
-      "description": "(Required) The tag to look for",
+      "description": "(Required) The tag to look for.",
       "type": "string",
       "title": "Value"
     }

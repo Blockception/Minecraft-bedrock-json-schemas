@@ -9,7 +9,7 @@
     "value": {
       "type": "integer",
       "default": 0,
-      "description": "The Palette Color value of the entity",
+      "description": "The Palette Color value of the entity.",
       "title": "Value"
     }
   },

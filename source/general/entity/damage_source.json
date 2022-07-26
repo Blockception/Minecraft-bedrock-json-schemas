@@ -1,6 +1,6 @@
 {
   "title": "Entity Damage Source",
-  "description": "The types of damage an entity can receive",
+  "description": "The types of damage an entity can receive.",
   "type": "string",
   "enum": [
     "all",

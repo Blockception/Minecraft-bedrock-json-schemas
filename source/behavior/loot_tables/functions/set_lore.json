@@ -1,11 +1,11 @@
 {
   "$id": "blockception.minecraft.behavior.loot_tables.set_lore",
   "additionalProperties": false,
-  "description": "The function set_lore",
+  "description": "The function set_lore.",
   "title": "Set Lore",
   "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "set_lore", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Function" },
-    "lore": { "type": "array", "items": { "type": "string" }, "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Lore" }
+    "function": { "type": "string", "const": "set_lore", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Function" },
+    "lore": { "type": "array", "items": { "type": "string" }, "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Lore" }
   }
 }

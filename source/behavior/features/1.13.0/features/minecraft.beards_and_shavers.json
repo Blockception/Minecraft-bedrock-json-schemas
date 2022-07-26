@@ -7,7 +7,7 @@
   "properties": {
     "description": {
       "title": "Description",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "required": ["identifier"],
@@ -28,7 +28,7 @@
     },
     "bounding_box_min": {
       "title": "Bounding Box Min",
-      "description": "Dimensions of the Bounding Box",
+      "description": "Dimensions of the Bounding Box.",
       "type": "array",
       "items": [
         { "type": "number", "title": "X" },
@@ -38,7 +38,7 @@
     },
     "bounding_box_max": {
       "title": "Bounding Box Max",
-      "description": "Dimensions of the Bounding Box",
+      "description": "Dimensions of the Bounding Box.",
       "type": "array",
       "items": [
         { "type": "number", "title": "X" },
@@ -48,7 +48,7 @@
     },
     "y_delta": {
       "title": "Y Delta",
-      "description": "Y Delta for BAS",
+      "description": "Y Delta for BAS.",
       "type": "number"
     },
     "surface_block_type": {
@@ -65,12 +65,12 @@
     },
     "beard_raggedness_min": {
       "title": "Beard Raggedness Min",
-      "description": "Y Delta for BAS",
+      "description": "Y Delta for BAS.",
       "type": "number"
     },
     "beard_raggedness_max": {
       "title": "Beard Raggedness Max",
-      "description": "Y Delta for BAS",
+      "description": "Y Delta for BAS.",
       "type": "number"
     }
   }

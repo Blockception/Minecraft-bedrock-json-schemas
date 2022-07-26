@@ -1,21 +1,21 @@
 {
   "$id": "blockception.minecraft.behavior.spawn_rules.minecraft.spawns_above_block_filter",
   "title": "Spawns Underwater",
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED",
   "type": "object",
   "additionalProperties": false,
   "properties": {
     "blocks": {
       "title": "Blocks",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "oneOf": [{ "type": "string" }, { "type": "array", "items": { "type": "string" } }]
     },
     "distance": {
       "title": "Distance",
       "type": "number",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "minimum": 0
     }

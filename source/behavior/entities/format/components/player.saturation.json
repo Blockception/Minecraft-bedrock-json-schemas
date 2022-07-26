@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Player.saturation",
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED",
   "required": [],
   "properties": {
@@ -11,7 +11,7 @@
       "type": "number",
       "default": true,
       "title": "Value",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED"
     }
   },

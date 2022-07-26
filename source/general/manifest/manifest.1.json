@@ -15,7 +15,7 @@
     "header": {
       "required": ["name", "uuid", "version"],
       "properties": {
-        "name": { "type": "string", "default": 0, "description": "This is the name of the pack as it appears within Minecraft", "title": "Name" },
+        "name": { "type": "string", "default": 0, "description": "This is the name of the pack as it appears within Minecraft.", "title": "Name" },
         "description": {
           "type": "string",
           "default": 0,
@@ -39,10 +39,10 @@
           "description": "This is the minimum version of the game that this pack was written for. This helps the game identify whether any backwards compatibility is needed for your pack. You should always use the highest version currently available when creating packs",
           "title": "Minimum Engine Version"
         },
-        "lock_template_options": { "type": "boolean", "description": "UNDOCUMENTED: lock template options", "title": "Lock Template Options" },
-        "base_game_version": { "$ref": "#/definitions/version", "description": "UNDOCUMENTED: base game version", "title": "Base Game Version" }
+        "lock_template_options": { "type": "boolean", "description": "UNDOCUMENTED: lock template options.", "title": "Lock Template Options" },
+        "base_game_version": { "$ref": "#/definitions/version", "description": "UNDOCUMENTED: base game version.", "title": "Base Game Version" }
       },
-      "description": "UNDOCUMENTED: header",
+      "description": "UNDOCUMENTED: header.",
       "title": "Header"
     },
     "modules": {
@@ -51,7 +51,7 @@
       "items": {
         "additionalProperties": false,
         "type": "object",
-        "description": "UNDOCUMENTED: modules",
+        "description": "UNDOCUMENTED: modules.",
         "title": "Modules",
         "required": ["type", "uuid", "version"],
         "properties": {
@@ -79,7 +79,7 @@
           }
         }
       },
-      "description": "UNDOCUMENTED: modules"
+      "description": "UNDOCUMENTED: modules."
     },
     "dependencies": {
       "type": "array",
@@ -100,7 +100,7 @@
             "title": "Version"
           }
         },
-        "description": "UNDOCUMENTED: dependencies",
+        "description": "UNDOCUMENTED: dependencies.",
         "title": "Dependencies"
       },
       "title": "Dependencies"
@@ -112,22 +112,22 @@
       "properties": {
         "experimental_custom_ui": {
           "type": "boolean",
-          "description": "Allows HTML files in the pack to be used for custom UI, and scripts in the pack to call and manipulate custom UI",
+          "description": "Allows HTML files in the pack to be used for custom UI, and scripts in the pack to call and manipulate custom UI.",
           "title": "Experimental Custom Ui"
         },
-        "chemistry": { "type": "boolean", "description": "Allows the pack to add, change or replace Chemistry functionality", "title": "Chemistry" }
+        "chemistry": { "type": "boolean", "description": "Allows the pack to add, change or replace Chemistry functionality.", "title": "Chemistry" }
       }
     },
     "metadata": {
       "authors": {
         "title": "Authors",
-        "description": "Name of the author(s) of the pack",
+        "description": "Name of the author(s) of the pack.",
         "type": "array",
-        "items": { "type": "string", "title": "Name", "description": "Name of the author of the pack" }
+        "items": { "type": "string", "title": "Name", "description": "Name of the author of the pack." }
       },
-      "license": { "type": "string", "description": "The license of the pack", "title": "License" },
-      "url": { "type": "string", "description": "The home website of your pack", "title": "Url" },
-      "description": "UNDOCUMENTED: metadata",
+      "license": { "type": "string", "description": "The license of the pack.", "title": "License" },
+      "url": { "type": "string", "description": "The home website of your pack.", "title": "Url" },
+      "description": "UNDOCUMENTED: metadata.",
       "title": "Metadata"
     }
   }

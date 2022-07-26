@@ -12,7 +12,7 @@
       "title": "Test"
     },
     "domain": {
-      "description": "The equipment location to test",
+      "description": "The equipment location to test.",
       "default": "any",
       "enum": ["any", "armor", "feet", "hand", "head", "leg", "torso"],
       "title": "Domain"

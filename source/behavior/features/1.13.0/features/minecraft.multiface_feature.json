@@ -3,19 +3,11 @@
   "description": "`minecraft:multiface_feature` places one or a few multiface blocks on floors/walls/ceilings. Despite the name, any block can be placed by this feature. During placement, existing world blocks are checked to see if this feature can be placed on them based on the list provided in the `can_place_on` field. If no `can_replace_on` field is specified, the `place_block` block can be placed on any existing block.\nThis feature will also try to spread the `place_block` block around the location in world the feature is placed.\nSucceeds if: At least one block is successfully placed.\nFails if: All block placements fail.",
   "type": "object",
   "additionalProperties": false,
-  "required": [
-    "description",
-    "places_block",
-    "search_range",
-    "can_place_on_floor",
-    "can_place_on_ceiling",
-    "can_place_on_wall",
-    "chance_of_spreading"
-  ],
+  "required": ["description", "places_block", "search_range", "can_place_on_floor", "can_place_on_ceiling", "can_place_on_wall", "chance_of_spreading"],
   "properties": {
     "description": {
       "title": "Description",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "required": ["identifier"],
@@ -43,22 +35,22 @@
     },
     "can_place_on_floor": {
       "title": "Can Place On Floor",
-      "description": "Can this feature be placed on the ground (top face of a block)?",
+      "description": "Can this feature be placed on the ground (top face of a block)?.",
       "type": "boolean"
     },
     "can_place_on_ceiling": {
       "title": "Can Place On Ceiling",
-      "description": "Can this feature be placed on the ceiling (bottom face of a block)?",
+      "description": "Can this feature be placed on the ceiling (bottom face of a block)?.",
       "type": "boolean"
     },
     "can_place_on_wall": {
       "title": "Can Place On Wall",
-      "description": "Can this feature be placed on the wall (side faces of a block)?",
+      "description": "Can this feature be placed on the wall (side faces of a block)?.",
       "type": "boolean"
     },
     "chance_of_spreading": {
       "title": "Chance of Spreading",
-      "description": "For each block placed by this feature, how likely will that block spread to another?",
+      "description": "For each block placed by this feature, how likely will that block spread to another?.",
       "type": "number",
       "minimum": 0.0,
       "maximum": 1.0

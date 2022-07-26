@@ -1,15 +1,15 @@
 {
   "$id": "blockception.minecraft.behavior.loot_tables.looting_enchant",
   "additionalProperties": false,
-  "description": "The function looting_enchant",
+  "description": "The function looting_enchant.",
   "title": "Looting Enchant",
   "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "looting_enchant", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Function" },
+    "function": { "type": "string", "const": "looting_enchant", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Function" },
     "count": {
       "type": "object",
       "properties": { "min": { "type": "integer" }, "max": { "type": "integer" } },
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "title": "Count",
       "additionalProperties": false

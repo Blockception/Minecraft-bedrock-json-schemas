@@ -42,7 +42,7 @@
     "on_start": {
       "title": "On Start",
       "$ref": "../types/trigger.json",
-      "description": "The event to trigger when attacking"
+      "description": "The event to trigger when attacking."
     },
     "pre_ram_sound": {
       "title": "Pre Ram Sound",

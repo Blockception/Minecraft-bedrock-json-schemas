@@ -7,7 +7,7 @@
   "properties": {
     "description": {
       "title": "Description",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "required": ["identifier"],
@@ -22,7 +22,7 @@
     },
     "places_feature": {
       "title": "Places Feature",
-      "description": "Named reference of feature to be placed",
+      "description": "Named reference of feature to be placed.",
       "type": "string",
       "$ref": "../../../../general/feature/identifier.json"
     },
@@ -35,7 +35,7 @@
       "properties": {
         "max": {
           "title": "Max",
-          "description": "Maximum extent of the bounding volume expressed as [ x, y, z ]",
+          "description": "Maximum extent of the bounding volume expressed as [ x, y, z ].",
           "type": "array",
           "items": [
             { "title": "Maximum X", "type": "integer" },
@@ -45,7 +45,7 @@
         },
         "min": {
           "title": "Min",
-          "description": "Maxium extent of the bounding volume expressed as [ x, y, z ]",
+          "description": "Maxium extent of the bounding volume expressed as [ x, y, z ].",
           "type": "array",
           "items": [
             { "title": "Minimum X", "type": "integer" },
@@ -57,13 +57,13 @@
     },
     "search_axis": {
       "title": "Search Axis",
-      "description": "Axis that the search will sweep along through the `search_volume`",
+      "description": "Axis that the search will sweep along through the `search_volume`.",
       "type": "string",
       "enum": ["-x", "+x", "-y", "+y", "-z", "+z"]
     },
     "required_successes": {
       "title": "Required successes",
-      "description": "Number of valid positions the search must find in order to place the referenced feature",
+      "description": "Number of valid positions the search must find in order to place the referenced feature.",
       "type": "integer",
       "minimum": 1
     }

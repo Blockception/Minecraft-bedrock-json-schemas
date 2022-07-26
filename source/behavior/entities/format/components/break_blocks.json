@@ -9,7 +9,7 @@
     "breakable_blocks": {
       "type": "array",
       "title": "Breakable Blocks",
-      "description": "A list of the blocks that can be broken as this entity moves around",
+      "description": "A list of the blocks that can be broken as this entity moves around.",
       "items": {
         "$ref": "../../../../general/blocks_item.json"
       }

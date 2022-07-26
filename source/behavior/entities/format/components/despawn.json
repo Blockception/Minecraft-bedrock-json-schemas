@@ -8,7 +8,7 @@
     "despawn_from_chance": {
       "type": "boolean",
       "default": true,
-      "description": "Determines if `min_range_random_chance` is used in the standard despawn rules",
+      "description": "Determines if `min_range_random_chance` is used in the standard despawn rules.",
       "title": "Despawn From Chance"
     },
     "despawn_from_distance": {

@@ -1,21 +1,21 @@
 {
   "$id": "blockception.minecraft.behavior.items.events.teleport",
   "title": "Teleport",
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED",
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "target": { "type": "string", "title": "Target", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "enum": ["holder"] },
+    "target": { "type": "string", "title": "Target", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "enum": ["holder"] },
     "max_range": {
       "type": "array",
       "title": "Maximum Range",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "items": [
-        { "type": "number", "title": "X", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-        { "type": "number", "title": "Y", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" },
-        { "type": "number", "title": "Z", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED" }
+        { "type": "number", "title": "X", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
+        { "type": "number", "title": "Y", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
+        { "type": "number", "title": "Z", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" }
       ]
     }
   }

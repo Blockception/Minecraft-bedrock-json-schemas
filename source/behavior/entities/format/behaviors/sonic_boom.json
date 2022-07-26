@@ -47,7 +47,7 @@
       "title": "Duration",
       "type": "number",
       "default": 3.0,
-      "description": "Goal duration in seconds"
+      "description": "Goal duration in seconds."
     },
     "duration_until_attack_sound": {
       "title": "Duration Until Attack Sound",

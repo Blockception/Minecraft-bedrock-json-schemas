@@ -3,24 +3,24 @@
   "$id": "blockception.minecraft.biomes_client.json",
   "type": "object",
   "title": "Biomes Client",
-  "description": "The minecraft biomes definition file",
+  "description": "The minecraft biomes definition file.",
   "additionalProperties": false,
   "definitions": {
     "biomespec": {
       "additionalProperties": false,
-      "description": "The specification of colors in a given biome",
+      "description": "The specification of colors in a given biome.",
       "title": "Biome",
       "type": "object",
       "properties": {
-        "fog_color": { "$ref": "#/definitions/colorhex", "title": "Fog Color", "description": "The color of the fog" },
+        "fog_color": { "$ref": "#/definitions/colorhex", "title": "Fog Color", "description": "The color of the fog." },
         "fog_identifier": {
           "title": "Fog Identifier",
-          "description": "The fog to be associated to this biome",
+          "description": "The fog to be associated to this biome.",
           "$ref": "../general/fog/identifier.json"
         },
         "fog_ids_to_merge": {
           "title": "Fog Ids To Merge",
-          "description": "UNDOCUMENTED",
+          "description": "UNDOCUMENTED.",
           "$comment": "UNDOCUMENTED",
           "type": "array",
           "items": {
@@ -31,34 +31,34 @@
         },
         "inherit_from_prior_fog": {
           "title": "Inherit From Prior Fog",
-          "description": "UNDOCUMENTED",
+          "description": "UNDOCUMENTED.",
           "$comment": "UNDOCUMENTED",
           "type": "boolean"
         },
         "remove_all_prior_fog": {
           "title": "Remove All Prior Fog",
-          "description": "UNDOCUMENTED",
+          "description": "UNDOCUMENTED.",
           "$comment": "UNDOCUMENTED",
           "type": "boolean"
         },
-        "water_fog_color": { "$ref": "#/definitions/colorhex", "title": "Water Fog Color", "description": "The color of the water fog" },
-        "water_fog_distance": { "type": "integer", "title": "Water Fog Distance", "description": "The distance the water fog start at" },
-        "water_surface_color": { "$ref": "#/definitions/colorhex", "title": "Water Surface Color", "description": "The color of the water surface" },
+        "water_fog_color": { "$ref": "#/definitions/colorhex", "title": "Water Fog Color", "description": "The color of the water fog." },
+        "water_fog_distance": { "type": "integer", "title": "Water Fog Distance", "description": "The distance the water fog start at." },
+        "water_surface_color": { "$ref": "#/definitions/colorhex", "title": "Water Surface Color", "description": "The color of the water surface." },
         "water_surface_transparency": {
           "type": "number",
           "title": "Water Surface Transparency",
-          "description": "The amount of transpareny the surface of the water has"
+          "description": "The amount of transpareny the surface of the water has."
         }
       }
     },
-    "colorhex": { "description": "The colouration of this object", "title": "Colorhex", "format": "color-hex", "examples": ["#FFFFFF"] }
+    "colorhex": { "description": "The colouration of this object.", "title": "Colorhex", "format": "color-hex", "examples": ["#FFFFFF"] }
   },
   "properties": {
     "biomes": {
       "type": "object",
       "title": "Biomes",
       "additionalProperties": false,
-      "description": "A collection of predefined biomes",
+      "description": "A collection of predefined biomes.",
       "properties": {
         "bamboo_jungle_hills": { "$ref": "#/definitions/biomespec" },
         "bamboo_jungle": { "$ref": "#/definitions/biomespec" },

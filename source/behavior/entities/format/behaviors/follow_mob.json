@@ -15,13 +15,13 @@
     "search_range": {
       "type": "integer",
       "default": 0,
-      "description": "The distance in blocks it will look for a mob to follow",
+      "description": "The distance in blocks it will look for a mob to follow.",
       "title": "Search Range"
     },
     "stop_distance": {
       "type": "number",
       "default": 2,
-      "description": "The distance in blocks this mob stops from the mob it is following",
+      "description": "The distance in blocks this mob stops from the mob it is following.",
       "title": "Stop Distance"
     }
   },

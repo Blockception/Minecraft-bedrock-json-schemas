@@ -11,7 +11,7 @@
     "cooldown_time": {
       "type": "number",
       "default": 0,
-      "description": "Time in seconds the mob has to wait before using the goal again",
+      "description": "Time in seconds the mob has to wait before using the goal again.",
       "title": "Cooldown Time"
     },
     "goal_radius": {
@@ -29,13 +29,13 @@
     "speed_multiplier": {
       "type": "number",
       "default": 1,
-      "description": "Movement speed multiplier of the mob when using this AI Goal",
+      "description": "Movement speed multiplier of the mob when using this AI Goal.",
       "title": "Speed Multiplier"
     },
     "start_chance": {
       "type": "number",
       "default": 0.1,
-      "description": "This is the chance that the mob will start this goal, from 0 to 1",
+      "description": "This is the chance that the mob will start this goal, from 0 to 1.",
       "title": "Start Chance"
     }
   },

@@ -14,7 +14,7 @@
   ],
   "type": "object",
   "title": "Entity Behavior",
-  "description": "The minecraft entity behavior specification",
+  "description": "The minecraft entity behavior specification.",
   "required": ["format_version", "minecraft:entity"],
   "additionalProperties": false,
   "properties": {

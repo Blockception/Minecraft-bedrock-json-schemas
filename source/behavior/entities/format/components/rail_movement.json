@@ -9,7 +9,7 @@
     "max_speed": {
       "type": "number",
       "default": 0.4,
-      "description": "Maximum speed that this entity will move at when on the rail",
+      "description": "Maximum speed that this entity will move at when on the rail.",
       "title": "Maximum Speed"
     }
   },

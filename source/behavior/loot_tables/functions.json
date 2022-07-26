@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.loot_tables.Functions",
-  "description": "A minecraft loot table condition",
+  "description": "A minecraft loot table condition.",
   "title": "Functions",
   "type": "object",
   "properties": {
@@ -56,7 +56,7 @@
     },
     "add": {
       "title": "Add",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "type": "boolean",
       "default": false
     }

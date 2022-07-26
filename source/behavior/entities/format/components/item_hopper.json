@@ -5,5 +5,5 @@
   "additionalProperties": false,
   "required": [],
   "properties": {},
-  "description": "Determines that this entity is an item hopper"
+  "description": "Determines that this entity is an item hopper."
 }

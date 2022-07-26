@@ -27,27 +27,27 @@
     "npc_data": {
       "type": "object",
       "title": "Npc Data",
-      "description": "The data belonging to this npc",
+      "description": "The data belonging to this npc.",
       "$comment": "UNDOCUMENTED",
       "additionalProperties": false,
       "properties": {
         "portrait_offsets": {
           "type": "object",
           "title": "Portrait Offsets",
-          "description": "UNDOCUMENTED",
+          "description": "UNDOCUMENTED.",
           "$comment": "UNDOCUMENTED",
           "additionalProperties": false,
           "properties": {
             "translate": {
               "$ref": "#/definitions/rangeXYZ",
               "title": "Translate",
-              "description": "UNDOCUMENTED",
+              "description": "UNDOCUMENTED.",
               "$comment": "UNDOCUMENTED"
             },
             "scale": {
               "$ref": "#/definitions/rangeXYZ",
               "title": "Scale",
-              "description": "UNDOCUMENTED",
+              "description": "UNDOCUMENTED.",
               "$comment": "UNDOCUMENTED"
             }
           }
@@ -55,20 +55,20 @@
         "picker_offsets": {
           "type": "object",
           "title": "Picker Offsets",
-          "description": "UNDOCUMENTED",
+          "description": "UNDOCUMENTED.",
           "$comment": "UNDOCUMENTED",
           "additionalProperties": false,
           "properties": {
             "translate": {
               "$ref": "#/definitions/rangeXYZ",
               "title": "Translate",
-              "description": "UNDOCUMENTED",
+              "description": "UNDOCUMENTED.",
               "$comment": "UNDOCUMENTED"
             },
             "scale": {
               "$ref": "#/definitions/rangeXYZ",
               "title": "Scale",
-              "description": "UNDOCUMENTED",
+              "description": "UNDOCUMENTED.",
               "$comment": "UNDOCUMENTED"
             }
           }
@@ -76,18 +76,18 @@
         "skin_list": {
           "type": "array",
           "title": "Skin List",
-          "description": "UNDOCUMENTED",
+          "description": "UNDOCUMENTED.",
           "$comment": "UNDOCUMENTED",
           "items": {
             "type": "object",
             "title": "Skin",
-            "description": "UNDOCUMENTED",
+            "description": "UNDOCUMENTED.",
             "$comment": "UNDOCUMENTED",
             "additionalProperties": false,
             "properties": {
               "variant": {
                 "title": "Variant",
-                "description": "UNDOCUMENTED",
+                "description": "UNDOCUMENTED.",
                 "$comment": "UNDOCUMENTED",
                 "type": "integer",
                 "minimum": 0

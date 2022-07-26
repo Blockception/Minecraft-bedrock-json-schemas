@@ -17,14 +17,14 @@
       "type": "integer",
       "minimum": 0,
       "default": 20,
-      "description": "Anger boost applied to angry threshold when mob gets angry"
+      "description": "Anger boost applied to angry threshold when mob gets angry."
     },
     "angry_threshold": {
       "title": "Angry Threshold",
       "type": "integer",
       "minimum": 0,
       "default": 80,
-      "description": "Threshold that define when the mob is considered angry at a nuisance"
+      "description": "Threshold that define when the mob is considered angry at a nuisance."
     },
     "default_annoyingness": {
       "title": "Default Annoyingness",
@@ -42,7 +42,7 @@
     "nuisance_filter": {
       "title": "Nuisance Filter",
       "$ref": "../../filters/filters.json",
-      "description": "Filter that is applied to determine if a mob can be a nuisance"
+      "description": "Filter that is applied to determine if a mob can be a nuisance."
     },
     "on_increase_sounds": {
       "title": "On Increase Sounds",
@@ -52,7 +52,7 @@
       "title": "Remove Targets Below Angry Threshold",
       "type": "boolean",
       "default": true,
-      "description": "Defines if the mob should remove target if it falls below 'angry' threshold"
+      "description": "Defines if the mob should remove target if it falls below 'angry' threshold."
     }
   },
   "examples": []

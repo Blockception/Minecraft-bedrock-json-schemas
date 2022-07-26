@@ -16,7 +16,7 @@
     "charges": {
       "type": "integer",
       "default": 10,
-      "description": "Number of charges",
+      "description": "Number of charges.",
       "title": "Charges"
     }
   },

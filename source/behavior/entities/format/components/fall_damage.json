@@ -3,14 +3,14 @@
   "type": "object",
   "title": "Fall Damage",
   "additionalProperties": false,
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED",
   "required": [],
   "properties": {
     "value": {
       "type": "number",
       "default": 1,
-      "description": "UNDOCUMENTED: value",
+      "description": "UNDOCUMENTED: value.",
       "title": "Value"
     }
   },

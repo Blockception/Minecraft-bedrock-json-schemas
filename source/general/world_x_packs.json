@@ -3,16 +3,16 @@
   "$id": "blockception.minecraft.world_x_packs",
   "type": "array",
   "title": "World X Pack Schema",
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED",
   "examples": [[{ "pack_id": "UUID", "version": [1, 0, 0] }]],
   "items": {
     "title": "Items",
-    "description": "A reference to a pack",
+    "description": "A reference to a pack.",
     "type": "object",
     "properties": {
-      "pack_id": { "description": "The uuid of the pack to include", "$ref": "./UUIDV4.json", "title": "Pack Id" },
-      "version": { "description": "The version of the pack", "$ref": "./Version.json", "title": "Version" }
+      "pack_id": { "description": "The uuid of the pack to include.", "$ref": "./UUIDV4.json", "title": "Pack Id" },
+      "version": { "description": "The version of the pack.", "$ref": "./Version.json", "title": "Version" }
     }
   }
 }

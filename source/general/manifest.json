@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.manifest",
   "type": "object",
   "title": "Manifest Schema",
-  "description": "The minecraft manifest schema",
+  "description": "The minecraft manifest schema.",
   "required": ["format_version", "header"],
   "examples": [
     {

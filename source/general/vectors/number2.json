@@ -1,11 +1,11 @@
 {
   "type": "array",
   "title": "Vector Of 2 Items",
-  "description": "An vector of 2 number",
+  "description": "An vector of 2 number.",
   "examples": [[0, 0]],
   "items": [
-    { "type": "number", "description": "The X component", "title": "X", "default": 0 },
-    { "type": "number", "description": "The Y component", "title": "Y", "default": 0 }
+    { "type": "number", "description": "The X component.", "title": "X", "default": 0 },
+    { "type": "number", "description": "The Y component.", "title": "Y", "default": 0 }
   ],
   "defaultSnippets": [{ "label": "New Array 2", "body": ["^$1", "^$2"] }]
 }

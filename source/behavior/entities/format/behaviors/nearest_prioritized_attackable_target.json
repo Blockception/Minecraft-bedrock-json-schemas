@@ -9,32 +9,32 @@
       "$ref": "./types/priority.json"
     },
     "entity_types": {
-      "description": "List of entity types that this mob considers valid targets",
+      "description": "List of entity types that this mob considers valid targets.",
       "title": "Entity Types",
       "$ref": "../types/entity_types.json"
     },
     "attack_interval": {
       "type": "integer",
       "default": 0,
-      "description": "Time in seconds before selecting a target",
+      "description": "Time in seconds before selecting a target.",
       "title": "Attack Interval"
     },
     "must_reach": {
       "type": "boolean",
       "default": false,
-      "description": "If true, only entities that this mob can path to can be selected as targets",
+      "description": "If true, only entities that this mob can path to can be selected as targets.",
       "title": "Must Reach"
     },
     "must_see": {
       "type": "boolean",
       "default": false,
-      "description": "If true, only entities in this mob's viewing range can be selected as targets",
+      "description": "If true, only entities in this mob's viewing range can be selected as targets.",
       "title": "Must See"
     },
     "must_see_forget_duration": {
       "type": "number",
       "default": 3,
-      "description": "Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more",
+      "description": "Determines the amount of time in seconds that this mob will look for a target before forgetting about it and looking for a new one when the target isn't visible any more.",
       "title": "Must See Forget Duration"
     },
     "persist_time": {
@@ -46,7 +46,7 @@
     "reselect_targets": {
       "type": "boolean",
       "default": false,
-      "description": "If true, the target will change to the current closest entity whenever a different entity is closer",
+      "description": "If true, the target will change to the current closest entity whenever a different entity is closer.",
       "title": "Reselect Targets"
     },
     "scan_interval": {
@@ -58,7 +58,7 @@
     "set_persistent": {
       "type": "boolean",
       "default": false,
-      "description": "Allows the actor to be set to persist upon targeting a player",
+      "description": "Allows the actor to be set to persist upon targeting a player.",
       "title": "Set Persistent"
     },
     "target_search_height": {
@@ -70,7 +70,7 @@
     "within_radius": {
       "type": "number",
       "default": 0,
-      "description": "Distance in blocks that the target can be within to launch an attack",
+      "description": "Distance in blocks that the target can be within to launch an attack.",
       "title": "Within Radius"
     }
   },

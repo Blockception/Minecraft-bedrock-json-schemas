@@ -3,10 +3,10 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Distance Filter",
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED",
   "properties": {
-    "min": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Min" },
-    "max": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Max" }
+    "min": { "type": "integer", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Min" },
+    "max": { "type": "integer", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Max" }
   }
 }

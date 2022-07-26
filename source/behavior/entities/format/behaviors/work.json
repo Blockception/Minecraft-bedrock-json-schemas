@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.work",
   "type": "object",
   "title": "Work",
-  "description": "Allows the NPC to use the POI",
+  "description": "Allows the NPC to use the POI.",
   "additionalProperties": false,
   "required": [],
   "properties": {
@@ -12,7 +12,7 @@
       "title": "Active Time",
       "type": "integer",
       "default": 0,
-      "description": "The amount of ticks the NPC will stay in their the work location"
+      "description": "The amount of ticks the NPC will stay in their the work location."
     },
     "can_work_in_rain": {
       "title": "Can Work In Rain",
@@ -24,7 +24,7 @@
       "title": "Goal Cooldown",
       "type": "integer",
       "default": 0,
-      "description": "The amount of ticks the goal will be on cooldown before it can be used again"
+      "description": "The amount of ticks the goal will be on cooldown before it can be used again."
     },
     "on_arrival": {
       "title": "On Arrival",

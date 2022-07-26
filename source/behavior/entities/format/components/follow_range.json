@@ -7,18 +7,18 @@
   "properties": {
     "value": {
       "type": "integer",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "title": "Value"
     },
     "max": {
       "type": "integer",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "title": "Max"
     }
   },
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "examples": [
     {
       "value": 0,

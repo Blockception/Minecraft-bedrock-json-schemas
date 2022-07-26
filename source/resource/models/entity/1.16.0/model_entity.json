@@ -9,8 +9,8 @@
     "uv": {
       "type": "array",
       "items": [
-        { "type": "number", "title": "X", "description": "The x component of the uv" },
-        { "type": "number", "title": "Y", "description": "The y component of the uv" }
+        { "type": "number", "title": "X", "description": "The x component of the uv." },
+        { "type": "number", "title": "Y", "description": "The y component of the uv." }
       ]
     },
     "direction_uv": {
@@ -27,21 +27,21 @@
           "description": "The face maps this many texels from the uv origin. If not specified, the box dimensions are used instead.",
           "$ref": "#/definitions/uv"
         },
-        "material_instance": { "type": "string", "title": "Material Instance", "description": "Specifies the UV's for the face that stretches" }
+        "material_instance": { "type": "string", "title": "Material Instance", "description": "Specifies the UV's for the face that stretches." }
       }
     }
   },
   "properties": {
-    "debug": { "title": "Debug", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "boolean", "default": false },
+    "debug": { "title": "Debug", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "type": "boolean", "default": false },
     "format_version": { "$ref": "../../../../general/format_version.json" },
     "minecraft:geometry": {
       "type": "array",
       "title": "Geometry",
-      "description": "The collection of geometries",
+      "description": "The collection of geometries.",
       "minItems": 1,
       "items": {
         "additionalProperties": false,
-        "description": "Model specification",
+        "description": "Model specification.",
         "title": "Model",
         "type": "object",
         "required": ["description"],
@@ -49,7 +49,7 @@
           "description": {
             "type": "object",
             "additionalProperties": false,
-            "description": "The descriptions of the geometry",
+            "description": "The descriptions of the geometry.",
             "title": "Description",
             "required": ["identifier"],
             "properties": {
@@ -96,7 +96,7 @@
             "items": {
               "additionalProperties": false,
               "type": "object",
-              "description": "A bones specification",
+              "description": "A bones specification.",
               "required": ["name"],
               "properties": {
                 "binding": {
@@ -111,7 +111,7 @@
                   "items": {
                     "additionalProperties": false,
                     "type": "object",
-                    "description": "A single cube",
+                    "description": "A single cube.",
                     "properties": {
                       "inflate": {
                         "type": "number",
@@ -154,7 +154,7 @@
                       },
                       "reset": {
                         "title": "Reset",
-                        "description": "UNDOCUMENTED",
+                        "description": "UNDOCUMENTED.",
                         "$comment": "UNDOCUMENTED",
                         "type": "boolean"
                       },
@@ -206,35 +206,35 @@
                               "south": {
                                 "title": "South",
                                 "$ref": "#/definitions/direction_uv",
-                                "description": "Specifies the UV's for the face that stretches along the x and y axes, and faces the z axis"
+                                "description": "Specifies the UV's for the face that stretches along the x and y axes, and faces the z axis."
                               },
                               "east": {
                                 "title": "East",
                                 "$ref": "#/definitions/direction_uv",
-                                "description": "Specifies the UV's for the face that stretches along the z and y axes, and faces the x axis"
+                                "description": "Specifies the UV's for the face that stretches along the z and y axes, and faces the x axis."
                               },
                               "west": {
                                 "title": "West",
                                 "$ref": "#/definitions/direction_uv",
-                                "description": "Specifies the UV's for the face that stretches along the z and y axes, and faces the -x axis"
+                                "description": "Specifies the UV's for the face that stretches along the z and y axes, and faces the -x axis."
                               },
                               "up": {
                                 "title": "Up",
                                 "$ref": "#/definitions/direction_uv",
-                                "description": "Specifies the UV's for the face that stretches along the x and z axes, and faces the y axis"
+                                "description": "Specifies the UV's for the face that stretches along the x and z axes, and faces the y axis."
                               },
                               "down": {
                                 "title": "Down",
                                 "$ref": "#/definitions/direction_uv",
-                                "description": "Specifies the UV's for the face that stretches along the x and z axes, and faces the -y axis"
+                                "description": "Specifies the UV's for the face that stretches along the x and z axes, and faces the -y axis."
                               }
                             }
                           },
                           {
                             "type": "array",
                             "items": [
-                              { "type": "number", "title": "X", "description": "The x component of the uv" },
-                              { "type": "number", "title": "Y", "description": "The y component of the uv" }
+                              { "type": "number", "title": "X", "description": "The x component of the uv." },
+                              { "type": "number", "title": "Y", "description": "The y component of the uv." }
                             ]
                           }
                         ]
@@ -329,7 +329,7 @@
                       "oneOf": [
                         {
                           "type": "string",
-                          "description": "If not specifying vertex indices, arrays of data must be a list of tris or quads, set by making this property either `tri_list` or `quad_list`",
+                          "description": "If not specifying vertex indices, arrays of data must be a list of tris or quads, set by making this property either `tri_list` or `quad_list`.",
                           "enum": ["tri_list", "quad_list"]
                         },
                         {
@@ -345,9 +345,9 @@
                               "minItems": 3,
                               "maxItems": 3,
                               "items": [
-                                { "type": "number", "description": "The index of the position" },
-                                { "type": "number", "description": "The index of the normal vertex" },
-                                { "type": "number", "description": "The index of the uv vertex" }
+                                { "type": "number", "description": "The index of the position." },
+                                { "type": "number", "description": "The index of the normal vertex." },
+                                { "type": "number", "description": "The index of the uv vertex." }
                               ]
                             }
                           }
@@ -388,15 +388,15 @@
                   "title": "Rotation",
                   "description": "This is the initial rotation of the bone around the pivot, pre-animation (in degrees, x-then-y-then-z order).",
                   "items": [
-                    { "type": "number", "title": "X", "description": "in degrees" },
-                    { "type": "number", "title": "Y", "description": "in degrees" },
-                    { "type": "number", "title": "Z", "description": "in degrees" }
+                    { "type": "number", "title": "X", "description": "in degrees." },
+                    { "type": "number", "title": "Y", "description": "in degrees." },
+                    { "type": "number", "title": "Z", "description": "in degrees." }
                   ]
                 },
                 "texture_meshes": {
                   "type": "array",
                   "title": "Texture Meshes",
-                  "description": "***EXPERIMENTAL*** Adds a mesh to the bone's geometry by converting texels in a texture into boxes",
+                  "description": "***EXPERIMENTAL*** Adds a mesh to the bone's geometry by converting texels in a texture into boxes.",
                   "items": {
                     "type": "object",
                     "additionalProperties": false,
@@ -404,37 +404,37 @@
                     "properties": {
                       "local_pivot": {
                         "type": "array",
-                        "description": "The pivot point on the texture (in *texture space* not entity or bone space) of the texture geometry",
+                        "description": "The pivot point on the texture (in *texture space* not entity or bone space) of the texture geometry.",
                         "minItems": 3,
                         "maxItems": 3,
                         "items": {
                           "type": "number",
-                          "description": "The pivot point on the texture (in *texture space* not entity or bone space) of the texture geometry"
+                          "description": "The pivot point on the texture (in *texture space* not entity or bone space) of the texture geometry."
                         }
                       },
                       "position": {
                         "type": "array",
-                        "description": "The position of the pivot point after rotation (in *entity space* not texture or bone space) of the texture geometry",
+                        "description": "The position of the pivot point after rotation (in *entity space* not texture or bone space) of the texture geometry.",
                         "minItems": 3,
                         "maxItems": 3,
                         "items": {
                           "type": "number",
-                          "description": "The position of the pivot point after rotation (in *entity space* not texture or bone space) of the texture geometry"
+                          "description": "The position of the pivot point after rotation (in *entity space* not texture or bone space) of the texture geometry."
                         }
                       },
                       "rotation": {
                         "type": "array",
-                        "description": "The rotation (in degrees) of the texture geometry relative to the offset",
+                        "description": "The rotation (in degrees) of the texture geometry relative to the offset.",
                         "minItems": 3,
                         "maxItems": 3,
-                        "items": { "type": "number", "description": "The rotation (in degrees) of the texture geometry relative to the offset" }
+                        "items": { "type": "number", "description": "The rotation (in degrees) of the texture geometry relative to the offset." }
                       },
                       "scale": {
                         "type": "array",
-                        "description": "The scale (in degrees) of the texture geometry relative to the offset",
+                        "description": "The scale (in degrees) of the texture geometry relative to the offset.",
                         "minItems": 3,
                         "maxItems": 3,
-                        "items": { "type": "number", "description": "The scale (in degrees) of the texture geometry relative to the offset" }
+                        "items": { "type": "number", "description": "The scale (in degrees) of the texture geometry relative to the offset." }
                       },
                       "texture": { "type": "string", "description": "The friendly-named texture to use." }
                     }
@@ -443,7 +443,7 @@
               }
             }
           },
-          "cape": { "title": "Cape", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "type": "string" }
+          "cape": { "title": "Cape", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "type": "string" }
         }
       }
     }

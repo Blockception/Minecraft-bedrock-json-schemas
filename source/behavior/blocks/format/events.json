@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.block.events",
   "title": "Events",
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED",
   "type": "object",
   "properties": {
@@ -16,7 +16,7 @@
   "definitions": {
     "event_base": {
       "title": "Event",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,

@@ -1,11 +1,11 @@
 {
   "$id": "blockception.minecraft.behavior.loot_tables.set_actor_id",
   "additionalProperties": false,
-  "description": "The function set_actor_id",
+  "description": "The function set_actor_id.",
   "title": "Set Actor Id",
   "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "set_actor_id", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Function" },
-    "id": { "type": "string", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Id" }
+    "function": { "type": "string", "const": "set_actor_id", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Function" },
+    "id": { "type": "string", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Id" }
   }
 }

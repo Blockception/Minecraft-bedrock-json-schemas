@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Weight",
-  "description": "UNDOCUMENTED",
+  "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED",
-  "properties": { "default": { "type": "integer", "description": "UNDOCUMENTED", "$comment": "UNDOCUMENTED", "title": "Default" } }
+  "properties": { "default": { "type": "integer", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Default" } }
 }

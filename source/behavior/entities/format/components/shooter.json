@@ -9,7 +9,7 @@
       "type": "integer",
       "title": "Aux Val",
       "default": -1,
-      "description": "ID of the Potion effect to be applied on hit"
+      "description": "ID of the Potion effect to be applied on hit."
     },
     "def": {
       "title": "Def",
@@ -20,7 +20,7 @@
     "type": {
       "title": "Type",
       "type": "string",
-      "description": "UNDOCUMENTED",
+      "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "examples": ["dragonfireball"]
     }

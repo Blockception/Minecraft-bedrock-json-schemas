@@ -12,36 +12,36 @@
     },
     "minecraft:item": {
       "title": "Item",
-      "description": "A resource pack definition of an item",
+      "description": "A resource pack definition of an item.",
       "required": ["description", "components"],
       "type": "object",
       "additionalProperties": false,
       "properties": {
         "description": {
           "title": "Description",
-          "description": "The description of an item",
+          "description": "The description of an item.",
           "required": ["identifier"],
           "type": "object",
           "additionalProperties": false,
           "properties": {
             "identifier": {
               "title": "Identifier",
-              "description": "The item identifier",
+              "description": "The item identifier.",
               "$ref": "../../../general/item/identifier.json",
               "examples": ["namespace:example"]
             },
-            "category": { "title": "Category", "description": "The category this item belongs in", "type": "string" }
+            "category": { "title": "Category", "description": "The category this item belongs in.", "type": "string" }
           }
         },
         "components": {
           "title": "Components",
-          "description": "The components that describe this item",
+          "description": "The components that describe this item.",
           "additionalProperties": false,
           "properties": {
             "minecraft:icon": { "title": "Icon", "description": "The texture defined in `textures/item_texture.json`", "type": "string" },
             "minecraft:render_offsets": {
               "type": "string",
-              "description": "The render offset used for the item",
+              "description": "The render offset used for the item.",
               "title": "Render Offsets",
               "enum": ["apple"]
             }

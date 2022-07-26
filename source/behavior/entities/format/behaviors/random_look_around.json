@@ -11,7 +11,7 @@
     },
     "look_time": {
       "title": "Look Time",
-      "description": "The range of time in seconds the mob will stay looking in a random direction before looking elsewhere",
+      "description": "The range of time in seconds the mob will stay looking in a random direction before looking elsewhere.",
       "oneOf": [
         {
           "type": "number"
@@ -22,12 +22,12 @@
             {
               "type": "number",
               "title": "Minimum",
-              "description": "Minimum"
+              "description": "Minimum."
             },
             {
               "type": "number",
               "title": "Maximum",
-              "description": "Maximum"
+              "description": "Maximum."
             }
           ]
         }
@@ -35,7 +35,7 @@
     },
     "look_distance": {
       "title": "Look Distance",
-      "description": "The distance in blocks from which the mob will look at",
+      "description": "The distance in blocks from which the mob will look at.",
       "type": "number",
       "default": 8.0
     },
@@ -49,13 +49,13 @@
       "title": "Angle Of View Vertical",
       "type": "integer",
       "default": 360,
-      "description": "The angle in degrees that the mob can see in the X-axis (left-right)"
+      "description": "The angle in degrees that the mob can see in the X-axis (left-right)."
     },
     "angle_of_view_horizontal": {
       "title": "Angle Of View Horizontal",
       "type": "integer",
       "default": 360,
-      "description": "The angle in degrees that the mob can see in the Y-axis (up-down)"
+      "description": "The angle in degrees that the mob can see in the Y-axis (up-down)."
     }
   },
   "examples": [
