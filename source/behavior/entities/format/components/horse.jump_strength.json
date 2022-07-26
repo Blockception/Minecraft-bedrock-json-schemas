@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.horse.jump_strength",
   "type": "object",
-  "title": "Horse.jump Strength",
+  "title": "Horse Jump Strength",
   "additionalProperties": false,
   "description": "Allows this mob to jump higher when being ridden by a player",
   "$comment": "UNDOCUMENTED",
