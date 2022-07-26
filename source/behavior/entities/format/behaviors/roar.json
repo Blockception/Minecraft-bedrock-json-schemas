@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.roar",
   "additionalProperties": false,
   "type": "object",
-  "title": "Dig",
+  "title": "Roar",
   "description": "[EXPERIMENTAL BEHAVIOR] Plays the provided sound and activates the `ROARING` actor flag during the specified duration",
   "properties": {
     "priority": {
