@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.movement.glide",
   "type": "object",
-  "title": "Movement.glide",
+  "title": "Movement Glide",
   "description": "This is the move control for a flying mob that has a gliding movement.",
   "additionalProperties": false,
   "required": [],

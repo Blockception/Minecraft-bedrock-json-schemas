@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.movement.basic",
   "type": "object",
-  "title": "Movement.basic",
+  "title": "Movement Basic",
   "description": "defines the movement of an entity.",
   "additionalProperties": false,
   "required": [],
