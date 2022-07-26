@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.emerge",
   "type": "object",
-  "title": "Eat Mob",
+  "title": "Emerge",
   "description": "[EXPERIMENTAL BEHAVIOR] Activates the `EMERGING` actor flag during the specified duration and triggers `on_done` at the end",
   "additionalProperties": false,
   "required": [],
