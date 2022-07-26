@@ -3,7 +3,7 @@
   "description": "UNDOCUMENTED",
   "$comment": "UNDOCUMENTED",
   "type": "object",
-  "title": "Health",
+  "title": "Heartbeat",
   "additionalProperties": false,
   "required": [],
   "properties": {
