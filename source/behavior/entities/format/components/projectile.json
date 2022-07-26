@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.minecraft.interact",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.projectile",
   "type": "object",
-  "title": "Interact",
+  "title": "Projectile",
   "description": "Allows the entity to be a thrown entity.",
   "additionalProperties": false,
   "properties": {
