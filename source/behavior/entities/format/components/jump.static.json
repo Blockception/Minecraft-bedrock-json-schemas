@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.jump.static",
   "description": "Gives the entity the ability to jump.",
   "type": "object",
-  "title": "Jump.static",
+  "title": "Jump Static",
   "additionalProperties": false,
   "required": [],
   "properties": {
