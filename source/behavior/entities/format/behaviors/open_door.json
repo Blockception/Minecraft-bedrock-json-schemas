@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.guardian_attack",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.open_door",
   "type": "object",
-  "title": "Guardian Attack",
+  "title": "Open Door",
   "additionalProperties": false,
   "description": "Allows the mob to open doors. Requires the mob to be able to path through doors, otherwise the mob won't even want to try opening them.",
   "required": [],
