@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.swim_wander",
   "description": "Has the fish swim around when they can't pathfind",
   "type": "object",
-  "title": "Swim Idle",
+  "title": "Swim Wander",
   "additionalProperties": false,
   "required": [],
   "properties": {
