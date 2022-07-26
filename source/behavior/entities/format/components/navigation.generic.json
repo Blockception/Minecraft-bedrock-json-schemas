@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.navigation.generic",
-  "title": "Navigation.generic",
+  "title": "Navigation Generic",
   "description": "Allows this entity to generate paths by walking, swimming, flying and/or climbing around and jumping up and down a block.",
   "type": "object",
   "additionalProperties": false,

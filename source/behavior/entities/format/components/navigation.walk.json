@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.navigation.walk",
-  "title": "Navigation.walk",
+  "title": "Navigation Walk",
   "description": "Allows this entity to generate paths by walking around and jumping up and down a block like regular mobs.",
   "type": "object",
   "additionalProperties": false,
