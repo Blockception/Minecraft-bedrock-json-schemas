@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.movement.skip",
   "type": "object",
-  "title": "Movement.skip",
+  "title": "Movement Skip",
   "additionalProperties": false,
   "required": [],
   "description": "This move control causes the mob to hop as it moves.",

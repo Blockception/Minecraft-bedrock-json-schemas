@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.navigation.fly",
-  "title": "Navigation.fly",
+  "title": "Navigation Fly",
   "description": "Allows this entity to generate paths in the air like the vanilla Bees do. Keeps them from falling out of the skies and doing predictive movement.",
   "type": "object",
   "additionalProperties": false,

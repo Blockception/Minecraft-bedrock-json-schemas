@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.jump_to_block",
   "type": "object",
-  "title": "Melee Attack",
+  "title": "Jump To Block",
   "description": "Allows an entity to jump to another random block.",
   "additionalProperties": false,
   "required": [],

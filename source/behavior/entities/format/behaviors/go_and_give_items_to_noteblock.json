@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.go_and_give_items_to_noteblock",
   "type": "object",
-  "title": "Barter",
+  "title": "Go And Give Items To Noteblock",
   "description": "[EXPERIMENTAL BEHAVIOR] The entity will attempt to toss the items from its inventory to a nearby recently played noteblock.",
   "additionalProperties": false,
   "properties": {
@@ -9,13 +9,13 @@
       "$ref": "types/priority.json"
     },
     "listen_time": {
-      "title": "listen time",
+      "title": "Listen Time",
       "type": "integer",
       "default": 0.0,
       "description": "Sets the time an entity should continue delivering items to a noteblock after hearing it."
     },
     "on_item_throw": {
-      "title": "on item throw",
+      "title": "On Item Throw",
       "description": "Event(s) to run when this mob throws items.",
       "oneOf": [
         { "$ref": "../types/trigger.json" },
@@ -26,33 +26,33 @@
       ]
     },
     "reach_block_distance": {
-      "title": "reach block distance",
+      "title": "Reach Block Distance",
       "type": "number",
-      "default": 3000000,
+      "default": 3.0,
       "description": "Sets the desired distance to be reached before throwing the items towards the block."
     },
     "run_speed": {
-      "title": "run speed",
+      "title": "Run Speed",
       "type": "number",
-      "default": 1000000,
+      "default": 1.0,
       "description": "Sets the entity's speed when running toward the block."
     },
     "throw_force": {
-      "title": "throw force",
+      "title": "Throw Force",
       "type": "number",
       "default": 0.2,
       "description": "Sets the throw force."
     },
     "throw_sound": {
-      "title": "throw sound",
+      "title": "Throw Sound",
       "type": "string",
       "default": "",
       "description": "Sound to play when this mob throws an item."
     },
     "vertical_throw_mul": {
-      "title": "vertical throw mul",
+      "title": "Vertical Throw Mul",
       "type": "number",
-      "default": 1500000,
+      "default": 1.5,
       "description": "Sets the vertical throw multiplier that is applied on top of the throw force in the vertical direction."
     }
   }

@@ -22,12 +22,18 @@
     "on_home": {
       "description": "Event(s) to run when this mob gets home.",
       "title": "On Home",
-      "oneOf": [{ "$ref": "../types/trigger.json" }, { "type": "array", "items": { "$ref": "../types/trigger.json" } }]
+      "type": "array", 
+      "items": { 
+        "$ref": "../types/trigger.json" 
+      }
     },
     "on_failed": {
       "title": "On Failed",
       "description": "Event(s) to run when this goal fails.",
-      "oneOf": [{ "$ref": "../types/event.json" }, { "type": "array", "items": { "$ref": "../types/event.json" } }]
+      "type": "array", 
+      "items": { 
+        "$ref": "../types/event.json" 
+      }
     },
     "calculate_new_path_radius": {
       "title": "Calculate New Path Radius",

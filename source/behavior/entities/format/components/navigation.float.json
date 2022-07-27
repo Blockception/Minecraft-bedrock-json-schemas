@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.navigation.float",
-  "title": "Navigation.float",
+  "title": "Navigation Float",
   "description": "Allows this entity to generate paths by flying around the air like the regular Ghast.",
   "type": "object",
   "additionalProperties": false,

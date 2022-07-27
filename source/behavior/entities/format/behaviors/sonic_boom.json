@@ -2,8 +2,8 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.sonic_boom",
   "additionalProperties": false,
   "type": "object",
-  "title": "Dig",
-  "description": "[EXPERIMENTAL BEHAVIOR] Plays the provided sounds and activates the `SONIC BOOM` actor flag during the specified duration.",
+  "title": "Sonic Boom",
+  "description": "[EXPERIMENTAL BEHAVIOR] Plays the provided sounds and activates the `SONIC BOOM` actor flag during the specified duration",
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },

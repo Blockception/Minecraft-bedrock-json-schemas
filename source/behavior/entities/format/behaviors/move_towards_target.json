@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.guardian_attack",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.move_towards_target",
   "type": "object",
-  "title": "Guardian Attack",
+  "title": "Move Towards Target",
   "additionalProperties": false,
   "description": "Allows mob to move towards its current target.",
   "required": [],

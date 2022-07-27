@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.float",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.follow_parent",
   "type": "object",
-  "title": "Float",
+  "title": "Follow Parent",
   "description": "Allows the mob to follow their parent around.",
   "additionalProperties": false,
   "required": [],

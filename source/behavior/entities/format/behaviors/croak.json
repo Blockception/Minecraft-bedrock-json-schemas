@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.croak",
   "type": "object",
-  "title": "Eat Block",
+  "title": "Croak",
   "description": "[EXPERIMENTAL BEHAVIOR] Allows the entity to croak at a random time interval with configurable conditions.",
   "additionalProperties": false,
   "required": [],

@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.restrict_open_door",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.run_around_like_crazy",
   "description": "Allows the mob to run around aimlessly.",
   "type": "object",
-  "title": "Restrict Open Door",
+  "title": "Run Around Like Crazy",
   "additionalProperties": false,
   "required": [],
   "properties": {

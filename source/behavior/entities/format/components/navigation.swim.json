@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.navigation.swim",
-  "title": "Navigation.swim",
+  "title": "Navigation Swim",
   "description": "Allows this entity to generate paths that include water.",
   "type": "object",
   "additionalProperties": false,

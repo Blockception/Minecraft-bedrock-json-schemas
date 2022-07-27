@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.navigation.climb",
-  "title": "Navigation.climb",
+  "title": "Navigation Climb",
   "description": "Allows this entity to generate paths that include vertical walls like the vanilla Spiders do.",
   "type": "object",
   "additionalProperties": false,

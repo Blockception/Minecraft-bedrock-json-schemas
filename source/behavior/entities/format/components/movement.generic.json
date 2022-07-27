@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.movement.generic",
   "description": "This move control allows a mob to fly, swim, climb, etc.",
   "type": "object",
-  "title": "Movement.generic",
+  "title": "Movement Generic",
   "additionalProperties": false,
   "required": [],
   "properties": {

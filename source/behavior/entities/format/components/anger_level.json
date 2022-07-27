@@ -1,8 +1,8 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.anger_level",
   "type": "object",
-  "title": "Angry",
-  "description": "Allows this entity to track anger towards a set of nuisances.",
+  "title": "Anger Level",
+  "description": "Allows this entity to track anger towards a set of nuisances",
   "additionalProperties": false,
   "required": [],
   "properties": {

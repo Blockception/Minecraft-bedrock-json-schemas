@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.summon_entity",
   "description": "Allows the mob to attack the player by summoning other entities.",
-  "title": "Stay While Sitting",
+  "title": "Summon Entity",
   "type": "object",
   "additionalProperties": false,
   "required": [],
