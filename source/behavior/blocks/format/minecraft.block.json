@@ -31,7 +31,7 @@
         "minecraft:map_color": { "$ref": "./components/map_color.json" },
         "minecraft:material_instances": { "$ref": "./components/material_instances.json" },
         "minecraft:onlypistonpush": { "$ref": "./components/onlypistonpush.json" },
-        "minecraft:part_visibility.json": { "$ref": "./components/part_visibility.json" },
+        "minecraft:part_visibility": { "$ref": "./components/part_visibility.json" },
         "minecraft:on_fall_on": { "$ref": "./components/on_fall_on.json" },
         "minecraft:on_interact": { "$ref": "./components/on_interact.json" },
         "minecraft:on_placed": { "$ref": "./components/on_placed.json" },
