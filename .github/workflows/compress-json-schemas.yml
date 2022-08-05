@@ -29,7 +29,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - uses: DaanV2/Json-Schema-Action-Compression@v2.0
+      - uses: DaanV2/Json-Schema-Action-Compression@debug_0
         name: Compress Json
         with:
           specificationFile: "${{github.workspace}}\\source\\compress_specification.json"
