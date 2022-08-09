@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.move_to_liquid",
   "type": "object",
   "title": "Move To Liquid",
-  "description": "Allows the mob to move back into lava when on land.",
+  "description": "Allows the mob to move into a liquid when on land.",
   "additionalProperties": false,
   "properties": {
     "priority": { "$ref": "types/priority.json" },
@@ -33,7 +33,8 @@
     },
     "material_type": {
       "title": "Material Type",
-      "description": "UNDOCUMENTAED, examples are : Lava.",
+      "description": "The material type of the liquid block to find. Valid values are 'Any', 'Water', and 'Lava'.",
+      "default": "Any",
       "type": "string"
     }
   },
