@@ -2,7 +2,8 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.npc",
   "type": "object",
   "title": "Npc",
-  "description": "A component that applies a mob effect to entities that get within range.",
+  "description": "Sets this entity as an NPC",
+  "$comment": "UNDOCUMENTED",
   "additionalProperties": false,
   "definitions": {
     "rangeXYZ": {
