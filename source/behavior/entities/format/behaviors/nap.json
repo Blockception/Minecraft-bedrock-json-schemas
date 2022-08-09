@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.nap",
   "type": "object",
   "title": "Nap",
-  "description": "Allows the mob to move back into lava when on land.",
+  "description": "Allows mobs to occassionally stop and take a nap under certain conditions.",
   "additionalProperties": false,
   "properties": {
     "priority": { "$ref": "types/priority.json" },

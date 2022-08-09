@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.share_items",
-  "description": "Allows the mob to send an event to another mob.",
+  "description": "Allows the mob to give items it has to others.",
   "type": "object",
   "title": "Share Items",
   "additionalProperties": false,

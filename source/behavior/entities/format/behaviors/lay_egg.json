@@ -9,7 +9,6 @@
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
 
-    //
     "allow_laying_from_below": {
       "title": "Allow Laying From Below",
       "type": "boolean",

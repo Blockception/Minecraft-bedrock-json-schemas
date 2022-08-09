@@ -3,7 +3,7 @@
   "type": "object",
   "title": "Exhaustion Values",
   "additionalProperties": false,
-  "description": "Defines an entity's behavior for having items equipped to it.",
+  "description": "Defines how much exhaustion each player action should take.",
   "properties": {
     "attack": {
       "title": "Attack",
