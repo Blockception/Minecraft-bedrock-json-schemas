@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.wither_target_highest_damage",
-  "description": "Allows the wither to launch random attacks. Can only be used by the Wither Boss.",
+  "description": "Allows the wither to focus its attacks on whichever mob has dealt the most damage to it. Can only be used by the Wither Boss.",
   "additionalProperties": false,
   "type": "object",
   "title": "Wither Target Highest Damage",
