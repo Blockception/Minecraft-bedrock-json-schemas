@@ -3,7 +3,7 @@
   "type": "object",
   "title": "Bribeable",
   "additionalProperties": false,
-  "description": "Specifies if/how a mob burns in daylight.",
+  "description": "Defines the way an entity can get into the 'bribed' state.",
   "required": [],
   "properties": {
     "bribe_cooldown": {
