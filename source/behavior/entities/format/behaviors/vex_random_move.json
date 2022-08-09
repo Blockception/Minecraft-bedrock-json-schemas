@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.vex_random_move",
-  "description": "Allows the mob to target the same entity its owner is targeting.",
+  "description": "Allows the mob to move around randomly like the Vex.",
   "additionalProperties": false,
   "type": "object",
   "title": "Vex Random Move",
