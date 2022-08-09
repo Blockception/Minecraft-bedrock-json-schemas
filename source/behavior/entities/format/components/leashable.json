@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.leashable",
   "type": "object",
   "title": "Leashable",
-  "description": "Defines interactions with this entity.",
+  "description": "Allows this entity to be leashed and defines the conditions and events for this entity when is leashed.",
   "additionalProperties": false,
   "properties": {
     "can_be_stolen": {
