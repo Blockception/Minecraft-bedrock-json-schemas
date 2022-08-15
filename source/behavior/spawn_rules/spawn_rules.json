@@ -39,7 +39,7 @@
               "title": "Population Control",
               "description": "Setting an entity to a pool it will spawn as long as that pool hasn't reached the spawn limit.",
               "$comment": "UNDOCUMENTED",
-              "enum": ["ambient", "animal", "water_animal", "monster", "cat", "pillager"]
+              "enum": ["ambient", "animal", "water_animal", "monster", "cat"]
             }
           }
         },
