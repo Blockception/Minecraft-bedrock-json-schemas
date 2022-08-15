@@ -1,9 +1,15 @@
 {
   "$id": "blockception.minecraft.behavior.spawn_rules.minecraft.mob_event_filter",
   "title": "Mob Event Filter",
-  "description": "UNDOCUMENTED.",
-  "$comment": "UNDOCUMENTED",
+  "description": "This component allows players to spawn mobs on a particular event..",
   "additionalProperties": false,
   "type": "object",
-  "properties": { "event": { "type": "string", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Event" } }
+  "properties": {
+    "event_filter": {
+      "type": "string",
+      "description": "The event String in this JSON Object is used to filter the spawn rules of the mob type. Can be type minecraft:pillager_patrols_event, minecraft:wandering_trader_event, or minecraft:ender_dragon_event..",
+      "title": "Event Filter",
+      "enum": ["minecraft:pillager_patrols_event", "minecraft:wandering_trader_event", "minecraft:ender_dragon_event"]
+    }
+  }
 }
