@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Dragontakeoff",
-  "description": "Allows the dragon to leave perch mode and go back to flying around. Can only be used by the Ender Dragon.",
+  "description": "Allows an entity to leave perch mode and go back to flying around.",
   "properties": {
     "priority": {
       "$ref": "./types/priority.json"
