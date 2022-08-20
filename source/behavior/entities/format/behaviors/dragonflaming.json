@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Dragonflaming",
-  "description": "Allows the dragon to use its flame breath attack. Can only be used by the Ender Dragon.",
+  "description": "Allows this entity to use a flame-breath attack. Note: This behavior can only be used by the ender_dragon entity type.",
   "properties": {
     "priority": {
       "$ref": "./types/priority.json"

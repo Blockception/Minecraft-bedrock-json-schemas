@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Dragonlanding",
-  "description": "Allows the Dragon to stop flying and transition into perching mode. Can only be used by the Ender Dragon.",
+  "description": "Allows the Dragon to stop flying and transition into perching mode. Note: This behavior can only be used by the ender_dragon entity type.",
   "properties": {
     "priority": {
       "$ref": "./types/priority.json"

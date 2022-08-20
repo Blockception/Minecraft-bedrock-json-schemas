@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Dragonchargeplayer",
-  "description": "Allows this entity to attack a player by charging at them. The player is chosen by the \"minecraft:behavior.dragonscanning\". Can only be used by the Ender Dragon.",
+  "description": "Allows this entity to attack a player by charging at them. The player is chosen by the \"minecraft:behavior.dragonscanning\". Note: This behavior can only be used by the ender_dragon entity type.",
   "properties": {
     "priority": {
       "$ref": "./types/priority.json"

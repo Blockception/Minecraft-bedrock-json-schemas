@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Dragonscanning",
-  "description": "Allows the dragon to look around for a player to attack while in perch mode. Can only be used by the Ender Dragon.",
+  "description": "Allows an entity to look around for a player to attack while in perch mode. Note: This behavior can only be used by the ender_dragon entity type.",
   "properties": {
     "priority": {
       "$ref": "./types/priority.json"
