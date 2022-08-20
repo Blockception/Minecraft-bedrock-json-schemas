@@ -2,11 +2,11 @@
 
 name: Format json files
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -21,27 +21,30 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
         with:
           ref: ${{github.ref}}
 
       # Runs a single command using the runners shell
-      - uses: actions/setup-node@v2
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          cache: npm
+          cache-dependency-path: package-lock.json
+          node-version-file: .nvmrc
 
       # Runs a set of commands using the runners shell
       - name: Formatting
         run: |
           cd ${{github.workspace}}
           npx prettier --write "source/**/*.json" --config ${{github.workspace}}/scripts/json.prettierrc.json
-          
-      - name: Commiting      
+
+      - name: Commiting
         continue-on-error: true
         run: |
-         git add .
-         git config --global user.email "Bot@Blockception.com"
-         git config --global user.name "Blockception Bot"
-         git commit -m "auto: Formatted json files"
-         git push
-        
+          git add .
+          git config --global user.email "Bot@Blockception.com"
+          git config --global user.name "Blockception Bot"
+          git commit -m "auto: Formatted json files"
+          git push
