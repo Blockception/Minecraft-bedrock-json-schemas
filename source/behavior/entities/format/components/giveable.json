@@ -28,7 +28,7 @@
           }
         },
         "on_give": {
-          "$ref": "../types/event.json",
+          "$ref": "../types/event_object.json",
           "description": "Event to fire when the correct item is given.",
           "title": "On Give"
         }
