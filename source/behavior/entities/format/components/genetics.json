@@ -70,7 +70,7 @@
               "type": "object",
               "properties": {
                 "birth_event": {
-                  "$ref": "../types/event.json",
+                  "$ref": "../types/event_object.json",
                   "description": "Event to run when this mob is created and matches the above allele conditions.",
                   "title": "Brith Event"
                 },
