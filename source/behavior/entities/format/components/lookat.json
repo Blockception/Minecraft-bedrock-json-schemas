@@ -25,7 +25,7 @@
     "look_event": {
       "description": "The event identifier to run when the entities specified in filters look at this entity.",
       "title": "Look Event",
-      "$ref": "../types/event.json"
+      "$ref": "../types/event_object.json"
     },
     "search_radius": {
       "type": "number",

@@ -58,7 +58,7 @@
       "title": "Feed Items"
     },
     "grow_up": {
-      "$ref": "../types/event.json",
+      "$ref": "../types/event_object.json",
       "description": "Event to run when this entity grows up.",
       "title": "Grow Up"
     },

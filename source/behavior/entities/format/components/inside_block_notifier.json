@@ -23,13 +23,13 @@
             "title": "Entered Block Event",
             "description": "Event to run when this mob enters a valid block.",
             "$comment": "UNDOCUMENTED",
-            "$ref": "../types/event.json"
+            "$ref": "../types/event_object.json"
           },
           "exited_block_event": {
             "title": "Exited Block Event",
             "description": "Event to run when this mob leaves a valid block.",
             "$comment": "UNDOCUMENTED",
-            "$ref": "../types/event.json"
+            "$ref": "../types/event_object.json"
           }
         }
       }

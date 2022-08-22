@@ -42,12 +42,12 @@
             "title": "Interact Text"
           },
           "on_equip": {
-            "$ref": "../types/event.json",
+            "$ref": "../types/event_object.json",
             "description": "Event to trigger when this entity is equipped with this item.",
             "title": "On Equip"
           },
           "on_unequip": {
-            "$ref": "../types/event.json",
+            "$ref": "../types/event_object.json",
             "description": "Event to trigger when this item is removed from this entity.",
             "title": "On Unequip"
           }

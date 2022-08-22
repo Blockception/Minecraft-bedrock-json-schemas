@@ -40,7 +40,7 @@
     },
     "calm_event": {
       "title": "Calm Event",
-      "$ref": "../types/event.json",
+      "$ref": "../types/event_object.json",
       "description": "Event to run after the number of seconds specified in duration expires (when the entity stops being \"angry\")"
     },
     "angry_sound": {

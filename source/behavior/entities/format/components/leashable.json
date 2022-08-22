@@ -24,12 +24,12 @@
       "title": "Maximum Distance"
     },
     "on_leash": {
-      "$ref": "../types/event.json",
+      "$ref": "../types/event_object.json",
       "description": "Event to call when this entity is leashed.",
       "title": "On Leash"
     },
     "on_unleash": {
-      "$ref": "../types/event.json",
+      "$ref": "../types/event_object.json",
       "description": "Event to call when this entity is unleashed.",
       "title": "On Unleash"
     },

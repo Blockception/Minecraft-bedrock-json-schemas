@@ -13,7 +13,7 @@
       "title": "Probability"
     },
     "trust_event": {
-      "$ref": "../types/event.json",
+      "$ref": "../types/event_object.json",
       "description": "Event to run when this entity becomes trusting.",
       "title": "Trust Event"
     },

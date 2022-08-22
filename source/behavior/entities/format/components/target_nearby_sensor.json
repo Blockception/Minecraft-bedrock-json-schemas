@@ -19,17 +19,17 @@
       "title": "Inside Range"
     },
     "on_inside_range": {
-      "$ref": "../types/event.json",
+      "$ref": "../types/event_object.json",
       "description": "Event to call when an entity gets in the inside range. Can specify `event` for the name of the event and `target` for the target of the event",
       "title": "On Inside Range"
     },
     "on_outside_range": {
-      "$ref": "../types/event.json",
+      "$ref": "../types/event_object.json",
       "description": "Event to call when an entity gets in the outside range. Can specify `event` for the name of the event and `target` for the target of the event",
       "title": "On Outside Range"
     },
     "on_vision_lost_inside_range": {
-      "$ref": "../types/event.json",
+      "$ref": "../types/event_object.json",
       "description": "Event to call when an entity exits visual range. Can specify `event` for the name of the event and `target` for the target of the event",
       "title": "On Vision Lost Inside Range"
     },

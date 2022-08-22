@@ -18,7 +18,7 @@
           "title": "Name Filter"
         },
         "on_named": {
-          "$ref": "../types/event.json",
+          "$ref": "../types/event_object.json",
           "description": "Event to be called when this entity acquires the name specified in `name_filter'.",
           "title": "On Named"
         }
