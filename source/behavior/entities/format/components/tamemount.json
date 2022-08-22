@@ -95,7 +95,7 @@
       "title": "Ride Text"
     },
     "tame_event": {
-      "$ref": "../types/event.json",
+      "$ref": "../types/event_object.json",
       "description": "Event that triggers when the entity becomes tamed.",
       "title": "Tame Event"
     }
