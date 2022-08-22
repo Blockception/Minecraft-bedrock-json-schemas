@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Dragonstrafeplayer",
-  "description": "Allows this entity to fly around looking for a player to shoot fireballs at. Can only be used by the Ender Dragon.",
+  "description": "Allows this entity to fly around looking for a player to shoot fireballs at. Note: This behavior can only be used by the ender_dragon entity type.",
   "properties": {
     "priority": {
       "$ref": "./types/priority.json"

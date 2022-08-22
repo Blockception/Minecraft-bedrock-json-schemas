@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Dragondeath",
-  "description": "Allows the dragon to go out with glory. This controls the Ender Dragon's death animation and can't be used by other mobs.",
+  "description": "Controls the entity's death state and animation. Note: This behavior can only be used by the ender_dragon entity type.",
   "properties": {
     "priority": {
       "$ref": "./types/priority.json"
