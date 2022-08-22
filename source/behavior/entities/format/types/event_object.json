@@ -4,6 +4,7 @@
   "description": "Minecraft behavior event.",
   "examples": [{ "event": "example:foo", "target": "self" }],
   "type": "object",
+  "additionalProperties": false,
   "properties": {
     "event": { "type": "string", "pattern": "^[a-zA-Z0-9_\\-:]+$", "description": "The event to fire.", "title": "Event" },
     "target": {
