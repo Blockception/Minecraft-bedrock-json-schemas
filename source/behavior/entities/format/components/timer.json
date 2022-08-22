@@ -37,7 +37,7 @@
     "time_down_event": {
       "description": "Event to fire when the time on the timer runs out.",
       "title": "Time Down Event",
-      "$ref": "../types/event.json"
+      "$ref": "../types/event_object.json"
     },
     "random_time_choices": {
       "type": "array",
