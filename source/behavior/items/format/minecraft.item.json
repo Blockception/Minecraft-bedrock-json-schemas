@@ -48,6 +48,7 @@
         "minecraft:durability": { "$ref": "./components/durability.json" },
         "minecraft:dye_powder": { "$ref": "./components/dye_powder.json" },
         "minecraft:entity_placer": { "$ref": "./components/entity_placer.json" },
+        "minecraft:foil": { "$ref": "./components/foil.json" },
         "minecraft:food": { "$ref": "./components/food.json" },
         "minecraft:fuel": { "$ref": "./components/fuel.json" },
         "minecraft:hand_equipped": { "$ref": "./components/hand_equipped.json" },
