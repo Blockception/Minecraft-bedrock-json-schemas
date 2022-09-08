@@ -23,6 +23,7 @@
       "script": "compile",
       "isBackground": false,
       "group": "build",
+      "label": "npm compile 'schemas'",
       "presentation": { "reveal": "always", "panel": "dedicated" },
       "problemMatcher": ["$tsc"]
     },
