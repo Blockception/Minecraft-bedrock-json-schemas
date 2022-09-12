@@ -19,7 +19,7 @@
               "amplifier": {
                 "type": "integer",
                 "title": "Amplifier",
-                "description": "The level of the effect, same as used in the /effect command (0 for level I, 1 for level II, etc). Defaults to 0.",
+                "description": "The level of the effect, same as used in the /effect command (0 for level I, 1 for level II, etc). Defaults to 0. NOTE: Values can be negative but its not an intentional feature",
                 "default": 0,
                 "minimum": 0
               },
