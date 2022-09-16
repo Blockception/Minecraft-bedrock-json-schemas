@@ -12,6 +12,7 @@
     "clean": "rimraf lib",
     "compile": "tsc -b",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "exit 0",
     "postversion": "git push && git push --tags",
     "prepublishOnly": "npm test",
     "pretest": "npm run compile",
