@@ -6,6 +6,7 @@
       "description": "The entity type.",
       "title": "Entity Type",
       "type": "object",
+      "additionalProperties": false,
       "properties": {
         "filters": { "type": "object", "$ref": "../../filters/filters.json" },
         "max_dist": {

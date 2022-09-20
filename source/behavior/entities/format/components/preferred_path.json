@@ -4,7 +4,6 @@
   "title": "Preferred Path",
   "description": "Specifies costing information for mobs that prefer to walk on preferred paths.",
   "additionalProperties": false,
-  "required": ["preferred_path_blocks"],
   "properties": {
     "default_block_cost": {
       "type": "number",
