@@ -44,10 +44,9 @@
       "description": "Distance in blocks that the target can be within to launch an attack."
     },
     "entity_types": {
-      "title": "Entity Types",
-      "type": "object",
-      "description": "List of entity types that this mob considers valid targets.",
-      "additionalProperties": false
+      "$ref": "../types/entity_types.json",
+      "description": "List of entity types this mob will startle (cause to jump) when it sneezes.",
+      "title": "Entity Types"
     },
     "sound_chance": {
       "title": "Sound Chance",

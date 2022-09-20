@@ -9,9 +9,9 @@
       "$ref": "./types/priority.json"
     },
     "entity_types": {
-      "description": "List of entity types that this mob considers valid targets.",
-      "title": "Entity Types",
-      "$ref": "../types/entity_types.json"
+      "$ref": "../types/entity_types.json",
+      "description": "List of entity types this mob will startle (cause to jump) when it sneezes.",
+      "title": "Entity Types"
     },
     "attack_interval": {
       "type": "integer",
@@ -48,6 +48,12 @@
       "default": false,
       "description": "If true, the target will change to the current closest entity whenever a different entity is closer.",
       "title": "Reselect Targets"
+    },
+    "reevaluate_description": {
+      "title": "Reevaluate Description",
+      "type": "boolean",
+      "default": false,
+      "description": "If true, the mob will stop being targeted if it stops meeting any conditions."
     },
     "scan_interval": {
       "type": "integer",

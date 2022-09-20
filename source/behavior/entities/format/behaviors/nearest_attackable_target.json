@@ -40,19 +40,9 @@
       "$ref": "./types/priority.json"
     },
     "entity_types": {
-      "description": "Filters which types of targets are valid for this entity.",
-      "title": "Entity Types",
-      "oneOf": [
-        {
-          "$ref": "#/definitions/entity_type"
-        },
-        {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/entity_type"
-          }
-        }
-      ]
+      "$ref": "../types/entity_types.json",
+      "description": "List of entity types this mob will startle (cause to jump) when it sneezes.",
+      "title": "Entity Types"
     },
     "attack_interval": {
       "type": "integer",
