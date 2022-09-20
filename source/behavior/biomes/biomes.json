@@ -16,22 +16,25 @@
     "properties": {
       "format_version": { "$ref": "../../general/format_version.json" },
 
-      "minecraft:climate": { "$ref": "./components/minecraft.climate.json" },
-      "minecraft:forced_features": { "$ref": "./components/minecraft.forced_features.json" },
-      "minecraft:overworld_height": { "$ref": "./components/minecraft.overworld_height.json" },
-      "minecraft:ignore_automatic_features": { "$ref": "./components/minecraft.ignore_automatic_features.json" },
-      "minecraft:surface_parameters": { "$ref": "./components/minecraft.surface_parameters.json" },
-      "minecraft:surface_material_adjustments": { "$ref": "./components/minecraft.surface_material_adjustments.json" },
-      "minecraft:swamp_surface": { "$ref": "./components/minecraft.swamp_surface.json" },
-      "minecraft:frozen_ocean_surface": { "$ref": "./components/minecraft.frozen_ocean_surface.json" },
-      "minecraft:mesa_surface": { "$ref": "./components/minecraft.mesa_surface.json" },
-      "minecraft:mountain_parameters": { "$ref": "./components/minecraft.mountain_parameters.json" },
-      "minecraft:nether_surface": { "$ref": "./components/minecraft.nether_surface.json" },
-      "minecraft:the_end_surface": { "$ref": "./components/minecraft.the_end_surface.json" },
-      "minecraft:capped_surface": { "$ref": "./components/minecraft.capped_surface.json" },
-      "minecraft:overworld_generation_rules": { "$ref": "./components/minecraft.overworld_generation_rules.json" },
-      "minecraft:nether_generation_rules": { "$ref": "./components/minecraft.nether_generation_rules.json" },
-      "minecraft:legacy_world_generation_rules": { "$ref": "./components/minecraft.legacy_world_generation_rules.json" }
+      "minecraft:capped_surface": { "$ref": "./components/capped_surface.json" },
+      "minecraft:climate": { "$ref": "./components/climate.json" },
+      "minecraft:consolidated_features": { "$ref": "./components/consolidated_features.json" },
+      "minecraft:forced_features": { "$ref": "./components/forced_features.json" },
+      "minecraft:frozen_ocean_surface": { "$ref": "./components/frozen_ocean_surface.json" },
+      "minecraft:ignore_automatic_features": { "$ref": "./components/ignore_automatic_features.json" },
+      "minecraft:legacy_world_generation_rules": {
+        "$ref": "./components/legacy_world_generation_rules.json"
+      },
+      "minecraft:mesa_surface": { "$ref": "./components/mesa_surface.json" },
+      "minecraft:mountain_parameters": { "$ref": "./components/mountain_parameters.json" },
+      "minecraft:nether_generation_rules": { "$ref": "./components/nether_generation_rules.json" },
+      "minecraft:nether_surface": { "$ref": "./components/nether_surface.json" },
+      "minecraft:overworld_generation_rules": { "$ref": "./components/overworld_generation_rules.json" },
+      "minecraft:overworld_height": { "$ref": "./components/overworld_height.json" },
+      "minecraft:surface_material_adjustments": { "$ref": "./components/surface_material_adjustments.json" },
+      "minecraft:surface_parameters": { "$ref": "./components/surface_parameters.json" },
+      "minecraft:swamp_surface": { "$ref": "./components/swamp_surface.json" },
+      "minecraft:the_end_surface": { "$ref": "./components/the_end_surface.json" }
     }
   }
 }

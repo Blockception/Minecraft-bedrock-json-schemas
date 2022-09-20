@@ -7,7 +7,11 @@
   "maxProperties": 6,
   "additionalProperties": false,
   "properties": {
-    "top_material": { "title": "Top Material", "description": "Controls the block type used for the surface of this biome.", "string": "string" },
+    "top_material": {
+      "title": "Top Material",
+      "description": "Controls the block type used for the surface of this biome.",
+      "string": "string"
+    },
     "mid_material": {
       "title": "Mid Material",
       "description": "Controls the block type used in a layer below the surface of this biome.",
