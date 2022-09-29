@@ -512,24 +512,24 @@
                 },
                 "initialize": {
                   "type": "array",
-                  "description": "Clientside molang variables that are to be evualated during the creation of the entity.",
+                  "description": "Clientside molang variables that are to be evaluated during the creation of the entity.",
                   "title": "Initialize",
                   "minItems": 1,
                   "items": {
                     "pattern": ";$",
                     "$ref": "../../../molang/string.json",
-                    "description": "Clientside molang variables that are to be evualated during the creation of the entity.",
+                    "description": "Clientside molang variables that are to be evaluated during the creation of the entity.",
                     "title": "Initialize"
                   }
                 },
                 "pre_animation": {
                   "type": "array",
-                  "description": "Clientside molang variables that are to be evualated during the animation.",
+                  "description": "Clientside molang variables that are to be evaluated during the animation.",
                   "title": "Pre Animation",
                   "items": {
                     "pattern": ";$",
                     "$ref": "../../../molang/string.json",
-                    "description": "Clientside molang variables that are to be evualated during the animation.",
+                    "description": "Clientside molang variables that are to be evaluated during the animation.",
                     "title": "Pre Animation"
                   }
                 },
