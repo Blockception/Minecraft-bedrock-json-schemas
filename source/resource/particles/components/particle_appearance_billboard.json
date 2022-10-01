@@ -18,12 +18,39 @@
       "enum": ["lookat_xyz", "lookat_y", "rotate_xyz", "rotate_y", "direction_x", "direction_y", "direction_z"],
       "title": "Facing Camera Mode"
     },
+    "direction": {
+      "type": "object",
+      "description": "UNDOCUMENTED",
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": ["custom", "derive_from_velocity"],
+          "description": "Specified how to calculate the billboard direction of a particle."
+        },
+        "custom_direction": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED." },
+          "description": "The facing direction of emitted particles."
+        },
+        "min_speed_threshold": {
+          "type": "number",
+          "description": "The direction is set if the speed of the particle is above the threshold.",
+          "default": 0.01
+        }
+      }
+    },
     "uv": {
       "additionalProperties": false,
       "type": "object",
       "properties": {
         "texture_width": { "type": "integer", "description": "UNDOCUMENTED: texture width.", "title": "Texture Width" },
-        "texture_height": { "type": "integer", "description": "UNDOCUMENTED: texture height.", "title": "Texture Height" },
+        "texture_height": {
+          "type": "integer",
+          "description": "UNDOCUMENTED: texture height.",
+          "title": "Texture Height"
+        },
         "flipbook": {
           "additionalProperties": false,
           "type": "object",
@@ -33,7 +60,11 @@
               "type": "array",
               "minItems": 2,
               "maxItems": 2,
-              "items": { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED: base UV.", "title": "Base U V" },
+              "items": {
+                "$ref": "../../../molang/number.json",
+                "description": "UNDOCUMENTED: base UV.",
+                "title": "Base U V"
+              },
               "description": "UNDOCUMENTED: base UV.",
               "title": "Base U V"
             },
@@ -41,7 +72,11 @@
               "type": "array",
               "minItems": 2,
               "maxItems": 2,
-              "items": { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED: size UV.", "title": "Size U V" },
+              "items": {
+                "$ref": "../../../molang/number.json",
+                "description": "UNDOCUMENTED: size UV.",
+                "title": "Size U V"
+              },
               "description": "UNDOCUMENTED: size UV.",
               "title": "Size U V"
             },
@@ -49,7 +84,11 @@
               "type": "array",
               "minItems": 2,
               "maxItems": 2,
-              "items": { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED: step UV.", "title": "Step U V" },
+              "items": {
+                "$ref": "../../../molang/number.json",
+                "description": "UNDOCUMENTED: step UV.",
+                "title": "Step U V"
+              },
               "description": "UNDOCUMENTED: step UV.",
               "title": "Step U V"
             },
@@ -58,8 +97,16 @@
               "description": "UNDOCUMENTED: frames per second.",
               "title": "Frames Per Second"
             },
-            "max_frame": { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED: Maximum frame.", "title": "Maximum Frame" },
-            "stretch_to_lifetime": { "type": "boolean", "description": "UNDOCUMENTED: stretch to lifetime.", "title": "Stretch To Lifetime" },
+            "max_frame": {
+              "$ref": "../../../molang/number.json",
+              "description": "UNDOCUMENTED: Maximum frame.",
+              "title": "Maximum Frame"
+            },
+            "stretch_to_lifetime": {
+              "type": "boolean",
+              "description": "UNDOCUMENTED: stretch to lifetime.",
+              "title": "Stretch To Lifetime"
+            },
             "loop": { "type": "boolean", "description": "UNDOCUMENTED: loop.", "title": "Loop" }
           },
           "description": "UNDOCUMENTED: flipbook.",
@@ -77,7 +124,11 @@
           "type": "array",
           "minItems": 2,
           "maxItems": 2,
-          "items": { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED: uv size.", "title": "Uv Size" },
+          "items": {
+            "$ref": "../../../molang/number.json",
+            "description": "UNDOCUMENTED: uv size.",
+            "title": "Uv Size"
+          },
           "description": "UNDOCUMENTED: uv size.",
           "title": "Uv Size"
         }
