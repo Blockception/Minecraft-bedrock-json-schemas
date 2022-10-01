@@ -1,24 +1,35 @@
 {
   "$id": "blockception.minecraft.behavior.spawn_rules.minecraft.permute_type",
-  "additionalProperties": false,
-  "type": "array",
   "title": "Permute Type",
-  "description": "UNDOCUMENTED.",
-  "$comment": "UNDOCUMENTED",
-  "items": {
-    "type": "object",
-    "additionalProperties": false,
-    "title": "Permute Type",
-    "description": "UNDOCUMENTED.",
-    "$comment": "UNDOCUMENTED",
-    "properties": {
-      "weight": { "type": "integer", "title": "Weight", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
-      "entity_type": {
-        "type": "string",
-        "title": "Entity Type",
-        "description": "UNDOCUMENTED.",
-        "$comment": "UNDOCUMENTED"
+  "description": "This component allows the players to specify the permutations of a mob that will spawn.",
+  "definitions": {
+    "permute_type": {
+      "type": "object",
+      "additionalProperties": false,
+      "title": "Permute Type",
+      "description": "UNDOCUMENTED.",
+      "$comment": "UNDOCUMENTED",
+      "properties": {
+        "weight": {
+          "type": "integer",
+          "title": "Weight",
+          "description": "The percentage of 100 of a type of mob that should spawn. If there are multiple weights, they must add up to 100."
+        },
+        "entity_type": {
+          "type": "string",
+          "title": "Entity Type",
+          "description": "The type of mob to spawn."
+        },
+        "guaranteed_count": {
+          "type": "number",
+          "title": "Guaranteed Count",
+          "description": "Causes mobs to spawn with a guaranteed_count before mobs that do not have this spawn condition."
+        }
       }
     }
-  }
+  },
+  "oneOf": [
+    { "type": "object", "$ref": "#/definitions/permute_type" },
+    { "type": "array", "items": { "$ref": "#/definitions/permute_type" } }
+  ]
 }

@@ -3,10 +3,13 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Distance Filter",
-  "description": "UNDOCUMENTED.",
-  "$comment": "UNDOCUMENTED",
+  "description": "This component allows players to set mobs spawn with certain distance levels.",
   "properties": {
-    "min": { "type": "integer", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Min" },
-    "max": { "type": "integer", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Max" }
+    "min": {
+      "type": "integer",
+      "description": "This is the minimum distance level that a mob spawns.",
+      "title": "Min"
+    },
+    "max": { "type": "integer", "description": "This is the maximum distance level that a mob spawns.", "title": "Max" }
   }
 }

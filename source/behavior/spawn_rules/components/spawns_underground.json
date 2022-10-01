@@ -3,7 +3,6 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Spawns Underground",
-  "description": "UNDOCUMENTED.",
-  "$comment": "UNDOCUMENTED",
+  "description": "This component allows an entity to spawn underground.",
   "properties": {}
 }

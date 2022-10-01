@@ -3,8 +3,7 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Player In Village Filter",
-  "description": "UNDOCUMENTED.",
-  "$comment": "UNDOCUMENTED",
+  "description": "This component lets players be filtered by whether they are in a village or not, using distance and the village border definitions.",
   "properties": {
     "distance": { "type": "integer", "title": "Distance", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
     "village_border_tolerance": {

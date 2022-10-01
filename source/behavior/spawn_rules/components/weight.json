@@ -3,7 +3,18 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Weight",
-  "description": "UNDOCUMENTED.",
-  "$comment": "UNDOCUMENTED",
-  "properties": { "default": { "type": "integer", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Default" } }
+  "description": "This component allows players to set a priority for how often that mob should spawn. Mobs with lower weight values will have a lower chance to spawn than mobs with higher weight values.",
+  "properties": {
+    "default": {
+      "type": "integer",
+      "description": "This is the priority of the mob spawning out of 100.",
+      "title": "Default"
+    },
+    "rarity": {
+      "type": "integer",
+      "description": "UNDOCUMENTED.",
+      "$comment": "UNDOCUMENTED.",
+      "title": "Rarity"
+    }
+  }
 }

@@ -1,8 +1,13 @@
 {
   "$id": "blockception.minecraft.behavior.spawn_rules.minecraft.world_age_filter",
   "title": "World Age Filter",
-  "description": "UNDOCUMENTED.",
-  "$comment": "UNDOCUMENTED",
+  "description": "This component allows players to set mobs spawn after a certain amount of time has passed within a world.",
   "additionalProperties": false,
-  "properties": { "min": { "type": "integer", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Min" } }
+  "properties": {
+    "min": {
+      "type": "integer",
+      "description": "This is the minimum world_age_filter level that a mob spawns.",
+      "title": "Min"
+    }
+  }
 }

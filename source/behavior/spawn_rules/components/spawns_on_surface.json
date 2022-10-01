@@ -3,7 +3,6 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Spawns On Surface",
-  "description": "UNDOCUMENTED.",
-  "$comment": "UNDOCUMENTED",
+  "description": "This component allows the mob to spawn on the ground. Adding the component causes it to be true, removing it causes the mob to stop spawning on the surface.",
   "properties": {}
 }
