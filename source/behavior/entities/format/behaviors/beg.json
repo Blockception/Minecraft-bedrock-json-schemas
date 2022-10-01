@@ -16,7 +16,7 @@
         "type": "string",
         "description": "List of items that this mob likes.",
         "title": "Properties",
-        "$ref": "../../../../general/item/identifier.json"
+        "$ref": "../../../../general/item/descriptor.json"
       },
       "title": "Properties"
     },

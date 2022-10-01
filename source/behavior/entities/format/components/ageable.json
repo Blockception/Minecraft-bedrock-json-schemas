@@ -33,21 +33,22 @@
         {
           "type": "array",
           "items": {
-            "$ref": "../../../../general/item/identifier.json"
-          }
-        },
-        {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "growth": {
-                "type": "number"
-              },
-              "item": {
+            "oneOf": [
+              {
                 "$ref": "../../../../general/item/identifier.json"
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "growth": {
+                    "type": "number"
+                  },
+                  "item": {
+                    "$ref": "../../../../general/item/identifier.json"
+                  }
+                }
               }
-            }
+            ]
           }
         },
         {

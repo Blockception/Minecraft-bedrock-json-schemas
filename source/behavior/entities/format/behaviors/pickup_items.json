@@ -31,7 +31,7 @@
       "type": "array",
       "items": {
         "title": "Excluded Item",
-        "$ref": "../../../../general/item/identifier.json"
+        "$ref": "../../../../general/item/descriptor.json"
       }
     },
     "goal_radius": {

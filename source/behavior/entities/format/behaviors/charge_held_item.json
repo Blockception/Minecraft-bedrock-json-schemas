@@ -14,7 +14,7 @@
       "title": "Items",
       "description": "The list of items that can be used to charge the held item. This list is required and must have at least one item in it.",
       "items": {
-        "type": "string",
+        "$ref": "../../../../general/item/descriptor.json",
         "description": "Items names to be used.",
         "title": "Item ID"
       }

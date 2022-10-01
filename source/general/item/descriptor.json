@@ -1,0 +1,43 @@
+{
+  "$id": "blockception.minecraft.item.descriptor",
+  "oneOf": [
+    {
+      "$ref": "./identifier.json"
+    },
+    {
+      "$ref": "#/definitions/object_item_descriptor"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "item": {
+          "oneOf": [
+            {
+              "$ref": "./identifier.json"
+            },
+            {
+              "$ref": "#/definitions/object_item_descriptor"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "definitions": {
+    "object_item_descriptor": {
+      "type": "object",
+      "properties": {
+        "tags": {
+          "type": "string",
+          "description": "[UNDOCUMENTED] A Molang expression ran against item or block to match.",
+          "examples": ["query.any_tag('minecraft:is_tool')"]
+        },
+        "item_tag": {
+          "type": "string",
+          "description": "[UNDOCUMENTED] A tag to lookup item or block by.",
+          "examples": ["minecraft:is_tool"]
+        }
+      }
+    }
+  }
+}
