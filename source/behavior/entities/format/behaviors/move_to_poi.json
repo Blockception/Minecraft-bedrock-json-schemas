@@ -15,7 +15,8 @@
     "poi_type": {
       "type": "string",
       "description": "Tells the goal what POI type it should be looking for.",
-      "title": "Point Of Interest Type"
+      "title": "Point Of Interest Type",
+      "enum": ["bed", "jobsite", "meeting_area"]
     }
   },
   "examples": [

@@ -12,7 +12,8 @@
       "title": "Active Time",
       "type": "integer",
       "default": 0,
-      "description": "The amount of ticks the NPC will stay in their the work location."
+      "description": "The amount of ticks the NPC will stay in their the work location.",
+      "exclusiveMinimum": 0
     },
     "can_work_in_rain": {
       "title": "Can Work In Rain",

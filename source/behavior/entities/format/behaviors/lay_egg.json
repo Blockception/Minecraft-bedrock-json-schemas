@@ -65,7 +65,8 @@
     "target_materials_above_block": {
       "title": "Target Materials Above Block",
       "type": "array",
-      "default": ["air"],
+      "default": ["Air"],
+      "enum": ["Air", "Any", "Lava", "Water"],
       "description": "[EXPERIMENTAL] Types of materials that can exist above the target block. Valid types are Air, Water, and Lava."
     },
     "use_default_animation": {

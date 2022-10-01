@@ -31,7 +31,7 @@
       "type": "string",
       "title": "Target Selection Method",
       "description": "Block search method.",
-      "enum": ["nearest"]
+      "enum": ["random", "nearest"]
     },
     "target_blocks": {
       "type": "array",

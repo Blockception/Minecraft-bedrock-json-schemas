@@ -35,6 +35,7 @@
       "title": "Material Type",
       "description": "The material type of the liquid block to find. Valid values are 'Any', 'Water', and 'Lava'.",
       "default": "Any",
+      "enum": ["Air", "Any", "Lava", "Water"],
       "type": "string"
     }
   },

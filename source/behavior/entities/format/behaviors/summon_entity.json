@@ -111,6 +111,7 @@
                   "type": "string",
                   "default": "line",
                   "description": "The base shape of this step. Valid values are circle and line",
+                  "enum": ["line", "circle"],
                   "title": "Shape"
                 },
                 "size": {
