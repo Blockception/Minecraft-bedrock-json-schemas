@@ -17,7 +17,7 @@
     },
     "egg_type": {
       "title": "Egg Type",
-      "$ref": "../../../../general/block/descriptor.json",
+      "$ref": "../../../../general/item/descriptor.json",
       "default": "minecraft:turtle_egg",
       "description": "[EXPERIMENTAL] Block type for the egg to lay. If this is a turtle egg, the number of eggs in the block is randomly set."
     },
