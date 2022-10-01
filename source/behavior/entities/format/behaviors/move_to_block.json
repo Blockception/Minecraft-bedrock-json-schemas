@@ -71,7 +71,7 @@
       "title": "Target Blocks",
       "description": "Block types to move to.",
       "items": {
-        "$ref": "../../../../general/block/descriptor.json"
+        "$ref": "../../../../general/item/descriptor.json"
       }
     },
     "target_block_filters": {

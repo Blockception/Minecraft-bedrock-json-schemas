@@ -60,7 +60,7 @@
       "title": "Target Blocks",
       "type": "array",
       "default": ["minecraft:sand"],
-      "items": { "title": "Block ID", "$ref": "../../../../general/block/descriptor.json" },
+      "items": { "title": "Block ID", "$ref": "../../../../general/item/descriptor.json" },
       "description": "[EXPERIMENTAL] Blocks that the mob can lay its eggs on top of."
     },
     "target_materials_above_block": {
