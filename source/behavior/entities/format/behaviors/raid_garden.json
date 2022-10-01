@@ -16,7 +16,7 @@
         "type": "string",
         "title": "Block Id",
         "description": "A block identifier.",
-        "$ref": "../../../../general/block/identifier.json"
+        "$ref": "../../../../general/block/descriptor.json"
       }
     },
     "eat_delay": {

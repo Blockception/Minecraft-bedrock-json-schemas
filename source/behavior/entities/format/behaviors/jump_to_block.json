@@ -20,7 +20,7 @@
       "type": "array",
       "description": "Blocks that the mob can't jump to.",
       "items": {
-        "$ref": "../../../../general/block/identifier.json"
+        "$ref": "../../../../general/block/descriptor.json"
       }
     },
     "max_velocity": {
@@ -46,7 +46,7 @@
       "type": "array",
       "description": "Blocks that the mob prefers jumping to.",
       "items": {
-        "$ref": "../../../../general/block/identifier.json"
+        "$ref": "../../../../general/block/descriptor.json"
       }
     },
     "preferred_blocks_chance": {

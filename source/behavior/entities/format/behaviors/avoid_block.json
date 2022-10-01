@@ -37,7 +37,7 @@
       "type": "array",
       "title": "Target Blocks",
       "description": "List of block types this mob avoids.",
-      "items": { "title": "Block ID", "$ref": "../../../../general/block/identifier.json" }
+      "items": { "title": "Block ID", "$ref": "../../../../general/block/descriptor.json" }
     },
     "avoid_block_sound": {
       "type": "string",

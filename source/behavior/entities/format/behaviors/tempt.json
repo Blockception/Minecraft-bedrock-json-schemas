@@ -30,7 +30,7 @@
       "title": "Items",
       "description": "List of items this mob is tempted by.",
       "items": {
-        "$ref": "../../../../general/item/identifier.json"
+        "$ref": "../../../../general/item/descriptor.json"
       }
     },
     "sound_interval": {

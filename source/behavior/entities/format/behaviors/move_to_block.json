@@ -53,7 +53,7 @@
       "type": "string",
       "default": "nearest",
       "description": "Kind of block to find fitting the specification. Valid values are \"random\" and \"nearest\".",
-      "enum": ["random","nearest"]
+      "enum": ["random", "nearest"]
     },
     "target_offset": {
       "title": "Target Offset",
@@ -71,8 +71,7 @@
       "title": "Target Blocks",
       "description": "Block types to move to.",
       "items": {
-        "$ref": "../../../../general/block/identifier.json",
-        "type": "string"
+        "$ref": "../../../../general/block/descriptor.json"
       }
     },
     "target_block_filters": {

@@ -16,12 +16,12 @@
         {
           "type": "array",
           "items": {
-            "$ref": "../../../../general/item/identifier.json",
+            "$ref": "../../../../general/item/descriptor.json",
             "title": "Item"
           }
         },
         {
-          "$ref": "../../../../general/item/identifier.json"
+          "$ref": "../../../../general/item/descriptor.json"
         }
       ]
     },

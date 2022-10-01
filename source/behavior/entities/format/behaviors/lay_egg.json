@@ -17,7 +17,7 @@
     },
     "egg_type": {
       "title": "Egg Type",
-      "type": "string",
+      "$ref": "../../../../general/block/descriptor.json",
       "default": "minecraft:turtle_egg",
       "description": "[EXPERIMENTAL] Block type for the egg to lay. If this is a turtle egg, the number of eggs in the block is randomly set."
     },
@@ -60,6 +60,7 @@
       "title": "Target Blocks",
       "type": "array",
       "default": ["minecraft:sand"],
+      "items": { "title": "Block ID", "$ref": "../../../../general/block/descriptor.json" },
       "description": "[EXPERIMENTAL] Blocks that the mob can lay its eggs on top of."
     },
     "target_materials_above_block": {
