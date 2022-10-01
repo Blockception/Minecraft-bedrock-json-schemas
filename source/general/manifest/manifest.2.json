@@ -46,25 +46,55 @@
     "dependencies": {
       "type": "array",
       "title": "Dependencies",
-      "description": "Section containing definitions for any other packs that are required in order for this manifest.json file to work.",
+      "description": "Section containing definitions for any other packs or modules that are required in order for this manifest.json file to work.",
       "items": {
-        "additionalProperties": false,
-        "type": "object",
-        "title": "Dependency",
-        "description": "Section containing definitions for any other packs that are required in order for this manifest.json file to work.",
-        "properties": {
-          "uuid": {
-            "type": "string",
-            "$ref": "#/definitions/uuidv4",
-            "description": "This is the unique identifier of the pack that this pack depends on. It needs to be the exact same UUID that the pack has defined in the header section of it's manifest file",
-            "title": "Uuid"
+        "oneOf": [
+          {
+            "additionalProperties": false,
+            "type": "object",
+            "title": "Dependency",
+            "description": "Section containing definitions for any other packs that are required in order for this manifest.json file to work.",
+            "properties": {
+              "uuid": {
+                "type": "string",
+                "$ref": "#/definitions/uuidv4",
+                "description": "This is the unique identifier of the pack that this pack depends on. It needs to be the exact same UUID that the pack has defined in the header section of it's manifest file",
+                "title": "Uuid"
+              },
+              "version": {
+                "$ref": "#/definitions/version",
+                "description": "This is the specific version of the pack that your pack depends on. Should match the version the other pack has in its manifest file",
+                "title": "Version"
+              }
+            }
           },
-          "version": {
-            "$ref": "#/definitions/version",
-            "description": "This is the specific version of the pack that your pack depends on. Should match the version the other pack has in its manifest file",
-            "title": "Version"
+          {
+            "additionalProperties": false,
+            "type": "object",
+            "title": "Dependency",
+            "description": "Section containing definitions for any other packs or modules that are required in order for this manifest.json file to work.",
+            "properties": {
+              "module_name": {
+                "type": "string",
+                "description": "This is the name of the module that this pack depends on.",
+                "title": "Module Name",
+                "enum": [
+                  "mojang-gamtest",
+                  "mojang-minecraft",
+                  "mojang-minecraft-server-admin",
+                  "mojang-minecraft-ui",
+                  "mojang-net"
+                ]
+              },
+              "version": {
+                "type": "string",
+                "description": "This is the specific version of the module that your pack depends on.",
+                "title": "Version",
+                "default": "1.0.0-beta"
+              }
+            }
           }
-        }
+        ]
       }
     },
     "header": {
