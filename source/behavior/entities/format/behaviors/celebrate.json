@@ -59,7 +59,7 @@
       "title": "On Celebration End Event"
     },
     "sound_interval": {
-      "default": 0,
+      "default": [2, 7],
       "description": "Minimum and maximum time between sound events (positive, in seconds).",
       "title": "Sound Interval",
       "$ref": "../types/range_number_type.json"

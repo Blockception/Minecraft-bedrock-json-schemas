@@ -10,12 +10,14 @@
     "fireworks_interval": {
       "title": "Fireworks Interval",
       "$ref": "../types/range_number_type.json",
-      "description": "Minimum and maximum time between firework (positive, in seconds)."
+      "description": "Minimum and maximum time between firework (positive, in seconds).",
+      "default": [10, 20]
     },
     "duration": {
       "title": "Duration",
       "description": "The duration in seconds that the celebration lasts for.",
-      "type": "number"
+      "type": "number",
+      "default": 30.0
     },
     "on_celebration_end_event": {
       "title": "On Celebration End Event",
