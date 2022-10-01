@@ -1,8 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.spawn_rules.minecraft.spawns_underwater",
   "title": "Spawns Underwater",
-  "description": "UNDOCUMENTED.",
-  "$comment": "UNDOCUMENTED",
+  "description": "This component allows the mob to spawn underwater. Adding the component causes it to be true, removing it causes the mob to stop spawning underwater.",
   "type": "object",
   "additionalProperties": false
 }

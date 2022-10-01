@@ -1,7 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.spawn_rules.minecraft.spawns_on_block_prevented_filter",
   "title": "Spawns On Block Prevented Filter",
-  "description": "UNDOCUMENTED.",
-  "$comment": "UNDOCUMENTED",
+  "description": "This component allows an entity to not spawn on a particular block. It includes a string or array of strings for the block they may not spawn on.",
   "oneOf": [{ "type": "string" }, { "type": "array", "items": { "type": "string" } }]
 }

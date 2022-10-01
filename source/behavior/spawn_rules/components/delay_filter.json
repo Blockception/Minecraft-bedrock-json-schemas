@@ -3,12 +3,21 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Delay Filter",
-  "description": "UNDOCUMENTED.",
-  "$comment": "UNDOCUMENTED",
+  "description": "This component allows players to set mobs spawn with certain time delays before they will spawn.",
+  "required": ["identifier"],
   "properties": {
-    "min": { "type": "integer", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Min" },
-    "max": { "type": "integer", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Max" },
-    "identifier": { "type": "string", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Identifier" },
-    "spawn_chance": { "title": "Spawn Chance", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "type": "number" }
+    "min": { "type": "integer", "description": "This is the minimum delay that a mob spawns.", "title": "Min" },
+    "max": { "type": "integer", "description": "This is the maximum delay that a mob spawns.", "title": "Max" },
+    "identifier": {
+      "type": "string",
+      "description": "The identifier of the mob that will spawn.",
+      "title": "Identifier"
+    },
+    "spawn_chance": {
+      "title": "Spawn Chance",
+      "description": "The percent chance that this entity will spawn.",
+      "type": "number",
+      "default": 100
+    }
   }
 }
