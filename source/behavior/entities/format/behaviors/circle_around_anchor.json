@@ -47,22 +47,26 @@
     "radius_change": {
       "type": "number",
       "title": "Radius Change",
-      "description": "The number of blocks to increase the current movement radius by, upon successful `radius_adjustment_chance`. If the current radius increases over the range maximum, the current radius will be set back to the range minimum and the entity will change between clockwise and counter-clockwise movement."
+      "description": "The number of blocks to increase the current movement radius by, upon successful `radius_adjustment_chance`. If the current radius increases over the range maximum, the current radius will be set back to the range minimum and the entity will change between clockwise and counter-clockwise movement.",
+      "default": 1.0
     },
     "radius_adjustment_chance": {
       "type": "number",
       "title": "Radius Adjustment Chance",
-      "description": "Percent chance to determine how often to increase the size of the current movement radius around the anchor point. 1 = 100%. `radius_change_chance` is deprecated and has been replaced with `radius_adjustment_chance`."
+      "description": "Percent chance to determine how often to increase the size of the current movement radius around the anchor point. 1 = 100%. `radius_change_chance` is deprecated and has been replaced with `radius_adjustment_chance`.",
+      "default": 0.004
     },
     "height_adjustment_chance": {
       "type": "number",
       "title": "Height Adjustment Chance",
-      "description": "Percent chance to determine how often to increase or decrease the current height around the anchor point. 1 = 100%. `height_change_chance` is deprecated and has been replaced with `height_adjustment_chance`."
+      "description": "Percent chance to determine how often to increase or decrease the current height around the anchor point. 1 = 100%. `height_change_chance` is deprecated and has been replaced with `height_adjustment_chance`.",
+      "default": 0.002857
     },
     "angle_change": {
       "type": "number",
       "title": "Angle Change",
-      "description": "Number of degrees to change this entity's facing by, when the entity selects its next anchor point."
+      "description": "Number of degrees to change this entity's facing by, when the entity selects its next anchor point.",
+      "default": 15.0
     }
   },
   "examples": [

@@ -15,23 +15,27 @@
     "search_range": {
       "type": "integer",
       "title": "Search Range",
-      "description": "Maximum distance to look for a block in xz."
+      "description": "Maximum distance to look for a block in xz.",
+      "default": 0
     },
     "search_height": {
       "type": "integer",
       "title": "Search Height",
-      "description": "Maximum distance to look for a block in y."
+      "description": "Maximum distance to look for a block in y.",
+      "default": 0
     },
     "sprint_speed_modifier": {
       "type": "number",
       "title": "Sprint Speed Modifier",
-      "description": "Modifier for sprint speed. 1.0 means keep the regular speed, while higher numbers make the sprint speed faster."
+      "description": "Modifier for sprint speed. 1.0 means keep the regular speed, while higher numbers make the sprint speed faster.",
+      "default": 1.0
     },
     "target_selection_method": {
       "type": "string",
       "title": "Target Selection Method",
       "description": "Block search method.",
-      "enum": ["random", "nearest"]
+      "enum": ["random", "nearest"],
+      "default": "nearest"
     },
     "target_blocks": {
       "type": "array",
@@ -68,7 +72,8 @@
           "items": [
             { "type": "number", "title": "Maximum" },
             { "type": "number", "title": "Maximum" }
-          ]
+          ],
+          "default": [3.0, 8.0]
         },
         { "type": "number" },
         {
