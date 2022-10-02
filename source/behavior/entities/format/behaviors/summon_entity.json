@@ -121,7 +121,7 @@
                   "title": "Size"
                 },
                 "sound_event": {
-                  "type": "string",
+                  "$ref": "../../../../general/sound_event.json",
                   "description": "The sound event to play for this step.",
                   "title": "Sound Event"
                 },
@@ -147,7 +147,7 @@
             }
           },
           "start_sound_event": {
-            "type": "string",
+            "$ref": "../../../../general/sound_event.json",
             "description": "The sound event to play when using this spell.",
             "title": "Start Sound Event"
           },

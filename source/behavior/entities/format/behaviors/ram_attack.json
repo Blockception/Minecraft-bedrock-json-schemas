@@ -46,7 +46,7 @@
     },
     "pre_ram_sound": {
       "title": "Pre Ram Sound",
-      "type": "string",
+      "$ref": "../../../../general/sound_event.json",
       "default": "",
       "description": "The sound to play when an entity is about to perform a ram attack."
     },
@@ -58,7 +58,7 @@
     },
     "ram_impact_sound": {
       "title": "Ram Impact Sound",
-      "type": "string",
+      "$ref": "../../../../general/sound_event.json",
       "default": "",
       "description": "The sound to play when an entity is impacting on a ram attack."
     },

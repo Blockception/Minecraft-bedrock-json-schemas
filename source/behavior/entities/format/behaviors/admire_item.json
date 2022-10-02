@@ -10,7 +10,7 @@
     },
     "admire_item_sound": {
       "title": "Admire Item Sound",
-      "type": "string",
+      "$ref": "../../../../general/sound_event.json",
       "description": "The sound event to play when admiring the item."
     },
     "on_admire_item_start": {

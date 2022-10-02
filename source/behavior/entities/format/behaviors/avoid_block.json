@@ -44,9 +44,9 @@
       "items": { "title": "Block ID", "$ref": "../../../../general/item/descriptor.json" }
     },
     "avoid_block_sound": {
-      "type": "string",
       "title": "Avoid Block Sound",
-      "description": "The sound event to play when the mob is avoiding a block."
+      "description": "The sound event to play when the mob is avoiding a block.",
+      "$ref": "../../../../general/sound_event.json"
     },
     "walk_speed_modifier": {
       "type": "number",

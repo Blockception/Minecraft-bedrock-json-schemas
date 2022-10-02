@@ -7,10 +7,10 @@
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "celebration_sound": {
-      "type": "string",
       "default": "",
       "description": "The sound event to trigger during the celebration.",
-      "title": "Celebration Sound"
+      "title": "Celebration Sound",
+      "$ref": "../../../../general/sound_event.json"
     },
     "duration": {
       "type": "number",

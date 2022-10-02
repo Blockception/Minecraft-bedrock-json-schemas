@@ -29,7 +29,7 @@
     },
     "lay_egg_sound": {
       "title": "Lay Egg Sound",
-      "type": "string",
+      "$ref": "../../../../general/sound_event.json",
       "default": "lay_egg",
       "description": "[EXPERIMENTAL] Sound event name for laying egg. Defaulted to lay_egg which is used for Turtles."
     },

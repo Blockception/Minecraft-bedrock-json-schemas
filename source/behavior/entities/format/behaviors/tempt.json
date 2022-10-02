@@ -50,7 +50,7 @@
       ]
     },
     "tempt_sound": {
-      "type": "string",
+      "$ref": "../../../../general/sound_event.json",
       "description": "Sound to play while the mob is being tempted.",
       "title": "Tempt Sound"
     },

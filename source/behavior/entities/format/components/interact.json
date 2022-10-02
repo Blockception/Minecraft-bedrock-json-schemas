@@ -97,7 +97,7 @@
         },
         "play_sounds": {
           "title": "Play Sounds",
-          "type": "string",
+          "$ref": "../../../../general/sound_event.json",
           "default": "",
           "description": "List of sounds to play when the interaction occurs."
         },

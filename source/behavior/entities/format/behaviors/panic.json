@@ -41,7 +41,7 @@
     },
     "panic_sound": {
       "title": "Panic Sound",
-      "type": "string",
+      "$ref": "../../../../general/sound_event.json",
       "description": "The sound event to play when this mob is in panic."
     },
     "sound_interval": {

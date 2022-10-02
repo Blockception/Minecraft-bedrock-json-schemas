@@ -15,7 +15,7 @@
     },
     "eat_mob_sound": {
       "title": "Eat Mob Sound",
-      "type": "string",
+      "$ref": "../../../../general/sound_event.json",
       "default": "",
       "description": "Sets the sound that should play when eating a mob."
     },

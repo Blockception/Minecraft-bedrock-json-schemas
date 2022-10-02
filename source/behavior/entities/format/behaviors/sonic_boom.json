@@ -33,13 +33,13 @@
     },
     "attack_sound": {
       "title": "Attack Sound",
-      "type": "string",
+      "$ref": "../../../../general/sound_event.json",
       "default": "",
       "description": "Sound event for the attack."
     },
     "charge_sound": {
       "title": "Charge Sound",
-      "type": "string",
+      "$ref": "../../../../general/sound_event.json",
       "default": "",
       "description": "Sound event for the charge up."
     },

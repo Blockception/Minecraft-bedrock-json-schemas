@@ -61,7 +61,7 @@
           "$ref": "../types/trigger.json"
         },
         "on_damage_sound_event": {
-          "type": "string",
+          "$ref": "../../../../general/sound_event.json",
           "description": "Defines what sound to play, if any, when the on_damage filters are met.",
           "title": "On Damage Sound Event"
         }
