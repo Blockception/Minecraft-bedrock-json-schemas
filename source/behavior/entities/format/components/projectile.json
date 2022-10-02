@@ -54,13 +54,13 @@
       "title": "Gravity"
     },
     "hit_ground_sound": {
-      "type": "string",
+      "$ref": "../../../../general/sound_event.json",
       "default": "",
       "description": "The sound that plays when the projectile hits the ground.",
       "title": "Hit Ground Sound"
     },
     "hit_sound": {
-      "type": "string",
+      "$ref": "../../../../general/sound_event.json",
       "default": "",
       "description": "The sound that plays when the projectile hits something.",
       "title": "Hit Sound"
@@ -601,7 +601,7 @@
       "title": "Semi Random Diff Damage"
     },
     "shoot_sound": {
-      "type": "string",
+      "$ref": "../../../../general/sound_event.json",
       "default": "",
       "description": "The sound that plays when the projectile is shot.",
       "title": "Shoot Sound"

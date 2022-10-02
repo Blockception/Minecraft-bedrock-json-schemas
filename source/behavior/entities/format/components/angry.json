@@ -45,7 +45,7 @@
     },
     "angry_sound": {
       "title": "Angry Sound",
-      "type": "string",
+      "$ref": "../../../../general/sound_event.json",
       "default": "",
       "description": "The sound event to play when the mob is angry."
     },

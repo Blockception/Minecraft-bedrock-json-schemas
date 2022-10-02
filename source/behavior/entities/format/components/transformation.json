@@ -21,7 +21,7 @@
       }
     },
     "begin_transform_sound": {
-      "type": "string",
+      "$ref": "../../../../general/sound_event.json",
       "description": "Sound to play when the transformation starts.",
       "title": "Begin Transform Sound"
     },
@@ -106,7 +106,7 @@
       "title": "Preserve Equipment"
     },
     "transformation_sound": {
-      "type": "string",
+      "$ref": "../../../../general/sound_event.json",
       "default": "",
       "description": "Sound to play when the entity is done transforming.",
       "title": "Transformation Sound"

@@ -69,7 +69,7 @@
           "title": "Spawn Method"
         },
         "spawn_sound": {
-          "type": "string",
+          "$ref": "../../../../general/sound_event.json",
           "default": "plop",
           "description": "Identifier of the sound effect to play when the entity is spawned.",
           "title": "Spawn Sound"

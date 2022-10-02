@@ -11,9 +11,9 @@
     },
     "avoid_mob_sound": {
       "title": "Avoid Mob Sound",
-      "type": "string",
       "default": "",
-      "description": "The sound event to play when the mob is avoiding another mob."
+      "description": "The sound event to play when the mob is avoiding another mob.",
+      "$ref": "../../../../general/sound_event.json"
     },
     "avoid_target_xz": {
       "title": "Avoid Target XZ",

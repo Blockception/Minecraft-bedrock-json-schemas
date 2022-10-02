@@ -153,7 +153,6 @@
       "random_stop_interval": 0,
       "reach_multiplier": 2,
       "require_complete_path": false,
-      "sound": "example",
       "track_target": false,
       "stomp_range_multiplier": 0.0,
       "no_damage_range_multiplier": 0.0

@@ -23,7 +23,7 @@
             "title": "Condition"
           },
           "event_name": {
-            "type": "string",
+            "$ref": "../../../../general/sound_event.json",
             "description": "Level sound event to be played as the ambient sound.",
             "title": "Event Name"
           }

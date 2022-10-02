@@ -10,7 +10,7 @@
     },
     "aggro_sound": {
       "title": "Aggro Sound",
-      "type": "string",
+      "$ref": "../../../../general/sound_event.json",
       "default": "",
       "description": "Sound to occasionally play while defending."
     },

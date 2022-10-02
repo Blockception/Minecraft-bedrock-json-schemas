@@ -34,7 +34,7 @@
       "pattern": "^loot_tables/.*.json$"
     },
     "prepare_sound": {
-      "type": "string",
+      "$ref": "../../../../general/sound_event.json",
       "default": "",
       "description": "Sound to play when the sneeze is about to happen.",
       "title": "Prepare Sound"
@@ -54,7 +54,7 @@
       "title": "Probability"
     },
     "sound": {
-      "type": "string",
+      "$ref": "../../../../general/sound_event.json",
       "default": "",
       "description": "Sound to play when the sneeze occurs.",
       "title": "Sound"

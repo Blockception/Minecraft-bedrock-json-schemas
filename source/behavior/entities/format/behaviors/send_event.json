@@ -23,7 +23,7 @@
             "description": "The event to send to the entity."
           },
           "sound_event": {
-            "type": "string",
+            "$ref": "../../../../general/sound_event.json",
             "default": "",
             "description": "The sound event to play when this step happens."
           }
@@ -101,7 +101,7 @@
             "$comment": "UNDOCUMENTED"
           },
           "start_sound_event": {
-            "type": "string",
+            "$ref": "../../../../general/sound_event.json",
             "title": "Start Sound Event",
             "description": "The sound event to play when using this spell.",
             "$comment": "UNDOCUMENTED"

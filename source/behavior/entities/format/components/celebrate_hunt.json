@@ -17,7 +17,7 @@
       "title": "Celeberation Targets"
     },
     "celebrate_sound": {
-      "type": "string",
+      "$ref": "../../../../general/sound_event.json",
       "default": "",
       "description": "The sound event to play when the mob is celebrating.",
       "title": "Celebrate Sound"
