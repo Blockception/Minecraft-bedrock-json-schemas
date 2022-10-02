@@ -79,7 +79,7 @@
                 "description": "This is the name of the module that this pack depends on.",
                 "title": "Module Name",
                 "enum": [
-                  "mojang-gamtest",
+                  "mojang-gametest",
                   "mojang-minecraft",
                   "mojang-minecraft-server-admin",
                   "mojang-minecraft-ui",
