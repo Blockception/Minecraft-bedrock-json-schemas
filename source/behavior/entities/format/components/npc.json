@@ -92,6 +92,13 @@
                 "$comment": "UNDOCUMENTED",
                 "type": "integer",
                 "minimum": 0
+              },
+              "mark_variant": {
+                "title": "Mark Variant",
+                "description": "UNDOCUMENTED.",
+                "$comment": "UNDOCUMENTED",
+                "type": "integer",
+                "minimum": 0
               }
             }
           }

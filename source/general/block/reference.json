@@ -26,6 +26,11 @@
             "title": "State Value",
             "description": "The key of property is the name of the block state/property, the value must be the same as the block properties accepted values."
           }
+        },
+        "tags": {
+          "type": "string",
+          "description": "[UNDOCUMENTED] A Molang expression ran against a block to match.",
+          "examples": ["query.any_tag('wood')"]
         }
       }
     }

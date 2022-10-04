@@ -32,7 +32,7 @@
             }
           },
           "item": {
-            "$ref": "../../../../general/item/identifier.json",
+            "$ref": "../../../../general/item/descriptor.json",
             "description": "Identifier of the item that can be equipped for this slot.",
             "title": "Item"
           },

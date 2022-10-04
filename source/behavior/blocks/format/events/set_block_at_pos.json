@@ -16,6 +16,11 @@
         { "type": "number", "title": "Z", "description": "The z offset from the block's center." }
       ]
     },
-    "block_type": { "type": "string", "default": "", "description": "The type of block to set.", "title": "Block Type" }
+    "block_type": {
+      "$ref": "../../../../general/block/reference.json",
+      "default": "",
+      "description": "The type of block to set.",
+      "title": "Block Type"
+    }
   }
 }
