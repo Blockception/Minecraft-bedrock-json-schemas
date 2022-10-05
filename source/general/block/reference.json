@@ -28,7 +28,7 @@
           }
         },
         "tags": {
-          "type": "string",
+          "$ref": "../../molang/string.json",
           "description": "[UNDOCUMENTED] A Molang expression ran against a block to match.",
           "examples": ["query.any_tag('wood')"]
         }
