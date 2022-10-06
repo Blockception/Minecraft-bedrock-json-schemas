@@ -1,0 +1,23 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:sheep",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:behavior.tempt": {
+        "priority": 4,
+        "speed_multiplier": 1.25,
+        "items": [
+          "wheat",
+          {
+            "tags": "query.any_tag('minecraft:is_tool')"
+          }
+        ]
+      }
+    }
+  }
+}

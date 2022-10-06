@@ -1,21 +1,16 @@
 {
   "$id": "blockception.minecraft.item.descriptor",
-  "oneOf": [
-    {
-      "$ref": "./identifier.json"
-    },
-    {
-      "$ref": "#/definitions/object_item_descriptor"
-    },
+  "anyOf": [
+    { "$ref": "./identifier.json" },
+    { "$ref": "#/definitions/object_item_descriptor" },
     {
       "type": "object",
       "properties": {
         "item": {
           "oneOf": [
+            { "type": "string", "$ref": "./identifier.json" },
             {
-              "$ref": "./identifier.json"
-            },
-            {
+              "type": "object",
               "$ref": "#/definitions/object_item_descriptor"
             }
           ]
@@ -25,19 +20,26 @@
   ],
   "definitions": {
     "object_item_descriptor": {
+      "title": "Item Descriptor",
+      "description": "An object that describes an item.",
       "type": "object",
+      "additionalProperties": false,
       "properties": {
         "tags": {
+          "type": "string",
           "$ref": "../../molang/string.json",
           "description": "[UNDOCUMENTED] A Molang expression ran against item or block to match.",
+          "$comment": "UNDOCUMENTED",
           "examples": ["query.any_tag('minecraft:is_tool')"]
         },
         "item_tag": {
           "type": "string",
           "description": "[UNDOCUMENTED] A tag to lookup item or block by.",
+          "$comment": "UNDOCUMENTED",
           "examples": ["minecraft:is_tool"]
         }
-      }
+      },
+      "examples": [{ "tags": "query.any_tag('minecraft:is_tool')" }, { "item_tag": "minecraft:is_tool" }]
     }
   }
 }
