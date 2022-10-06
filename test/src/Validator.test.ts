@@ -13,32 +13,22 @@ describe("Validate", function () {
   files.forEach((filepath) => {
     const filename = filepath.slice(folder.length);
 
-    describe(filename, function () {
+    test(`Validating schema parts: ${filename}`, function () {
       let object: JsonSchema | undefined = undefined;
       let data: string;
 
-      it("Can read file", function () {
-        data = fs.readFileSync(filepath, "utf8");
-      });
+      data = fs.readFileSync(filepath, "utf8");
+      object = <JsonSchema>JSONC.parse(data);
+      expect(object).to.not.be.undefined;
+      expect(object).to.not.be.null;
 
-      it("Can parse to json", function () {
-        object = <JsonSchema>JSONC.parse(data);
-      });
+      if (!object) {
+        this.skip();
+        return;
+      }
 
-      it("Not Undefined or null", function () {
-        expect(object).to.not.be.undefined;
-        expect(object).to.not.be.null;
-      });
-
-      it("Check refs", function () {
-        if (!object) {
-          this.skip();
-          return;
-        }
-
-        const explorer = new Explorer(data, filepath);
-        explorer.explore_refs(object, path.dirname(filepath));
-      });
+      const explorer = new Explorer(data, filepath);
+      explorer.explore_refs(object, path.dirname(filepath));
     });
   });
 });
