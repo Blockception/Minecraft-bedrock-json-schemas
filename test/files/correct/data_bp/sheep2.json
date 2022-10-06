@@ -1,0 +1,28 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:sheep",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:equippable": {
+        "slots": [
+          {
+            "accepted_items": [
+              {
+                "tags": "query.any_tag('minecraft:is_tool')"
+              }
+            ],
+            "item": {
+              "tags": "query.any_tag('minecraft:is_tool')"
+            },
+            "slot": 0
+          }
+        ]
+      }
+    }
+  }
+}
