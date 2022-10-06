@@ -40,14 +40,14 @@
               "items": {
                 "description": "A block type required nearby for the entity to breed.",
                 "type": "string",
-                "$ref": "../../../../general/blocks_item.json",
+                "$ref": "../../../../general/block/reference.json",
                 "title": "Blocks"
               }
             },
             {
               "description": "A block type required nearby for the entity to breed.",
               "type": "string",
-              "$ref": "../../../../general/blocks_item.json",
+              "$ref": "../../../../general/block/reference.json",
               "title": "Blocks"
             }
           ]
@@ -95,13 +95,13 @@
           "items": {
             "type": "string",
             "description": "An item that can be used to get the entity into the `love` state.",
-            "$ref": "../../../../general/item/identifier.json",
+            "$ref": "../../../../general/item/descriptor.json",
             "title": "Breed Item"
           }
         },
         {
           "type": "string",
-          "$ref": "../../../../general/item/identifier.json"
+          "$ref": "../../../../general/item/descriptor.json"
         }
       ]
     },

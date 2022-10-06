@@ -4,5 +4,12 @@
   "description": "Sets this block to another block type.",
   "title": "Set Block",
   "additionalProperties": false,
-  "properties": { "block_type": { "type": "string", "default": "", "description": "The type of block to set.", "title": "Block Type" } }
+  "properties": {
+    "block_type": {
+      "$ref": "../../../../general/block/reference.json",
+      "default": "",
+      "description": "The type of block to set.",
+      "title": "Block Type"
+    }
+  }
 }

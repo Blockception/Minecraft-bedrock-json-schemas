@@ -15,6 +15,26 @@
           "default": 16,
           "title": "Maximum Dist"
         },
+        "max_height": {
+          "type": "number",
+          "description": "UNDOCUMENTED.",
+          "title": "Maximum Height"
+        },
+        "max_flee": {
+          "type": "number",
+          "description": "UNDOCUMENTED.",
+          "title": "Maximum Height"
+        },
+        "priority": {
+          "type": "number",
+          "description": "UNDOCUMENTED.",
+          "title": "Priority"
+        },
+        "check_if_outnumbered": {
+          "type": "number",
+          "description": "UNDOCUMENTED.",
+          "title": "Check If Outnumbered"
+        },
         "must_see": {
           "type": "boolean",
           "description": "If true, the mob has to be visible to be a valid choice.",

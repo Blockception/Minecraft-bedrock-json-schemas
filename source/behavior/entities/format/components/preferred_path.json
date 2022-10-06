@@ -38,7 +38,7 @@
           "blocks": {
             "type": "array",
             "items": {
-              "$ref": "../../../../general/blocks_item.json"
+              "$ref": "../../../../general/block/reference.json"
             }
           }
         }

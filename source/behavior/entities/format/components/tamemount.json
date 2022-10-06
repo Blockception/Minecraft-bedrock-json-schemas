@@ -10,7 +10,7 @@
       "description": "The list of items that can be used to increase the entity's temper and speed up the taming process.",
       "properties": {
         "item": {
-          "$ref": "../../../../general/item/identifier.json",
+          "$ref": "../../../../general/item/descriptor.json",
           "description": "Name of the item this entity likes and can be used to increase this entity's temper.",
           "title": "Item"
         },
@@ -27,7 +27,7 @@
       "description": "The list of items that this entity dislikes and will cause it to get angry if used while untamed.",
       "properties": {
         "item": {
-          "$ref": "../../../../general/item/identifier.json",
+          "$ref": "../../../../general/item/descriptor.json",
           "description": "Name of the item this entity dislikes and will cause it to get angry if used while untamed."
         }
       }

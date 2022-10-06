@@ -28,7 +28,7 @@
       "type": "object",
       "properties": {
         "tags": {
-          "type": "string",
+          "$ref": "../../molang/string.json",
           "description": "[UNDOCUMENTED] A Molang expression ran against item or block to match.",
           "examples": ["query.any_tag('minecraft:is_tool')"]
         },

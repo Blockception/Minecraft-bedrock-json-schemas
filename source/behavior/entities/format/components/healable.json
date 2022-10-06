@@ -5,6 +5,33 @@
   "title": "Healable",
   "additionalProperties": false,
   "required": [],
+  "definitions": {
+    "effect": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "title": "Name",
+          "description": "UNDOCUMENTED.",
+          "$comment": "UNDOCUMENTED",
+          "type": "string"
+        },
+        "duration": {
+          "type": "integer",
+          "default": 0,
+          "minimum": 0,
+          "description": "The duration of the effect.",
+          "$comment": "UNDOCUMENTED"
+        },
+        "amplifier": {
+          "type": "integer",
+          "default": 0,
+          "minimum": 0,
+          "description": "The amplifier of the effect.",
+          "$comment": "UNDOCUMENTED"
+        }
+      }
+    }
+  },
   "properties": {
     "filters": {
       "$ref": "../../filters/filters.json"
@@ -33,9 +60,22 @@
             "title": "Heal Amount"
           },
           "item": {
-            "type": "string",
-            "description": "Item identifier that can be used to heal this entity.",
+            "$ref": "../../../../general/item/descriptor.json",
+            "description": "Item that can be used to heal this entity.",
             "title": "Item"
+          },
+          "effects": {
+            "oneOf": [
+              {
+                "$ref": "#/definitions/effect"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/effect"
+                }
+              }
+            ]
           }
         }
       }

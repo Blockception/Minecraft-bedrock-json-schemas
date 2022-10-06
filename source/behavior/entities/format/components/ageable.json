@@ -11,12 +11,12 @@
         {
           "type": "array",
           "items": {
-            "$ref": "../../../../general/item/identifier.json"
+            "$ref": "../../../../general/item/descriptor.json"
           }
         },
         {
           "type": "string",
-          "$ref": "../../../../general/item/identifier.json"
+          "$ref": "../../../../general/item/descriptor.json"
         }
       ],
       "title": "Drop Items"
@@ -44,7 +44,7 @@
                     "type": "number"
                   },
                   "item": {
-                    "$ref": "../../../../general/item/identifier.json"
+                    "$ref": "../../../../general/item/descriptor.json"
                   }
                 }
               }
@@ -64,7 +64,7 @@
       "title": "Grow Up"
     },
     "transform_to_item": {
-      "type": "string",
+      "$ref": "../../../../general/item/descriptor.json",
       "title": "Transform To Item",
       "description": "The feed item used will transform to this item upon successful interaction. Format: itemName:auxValue"
     }

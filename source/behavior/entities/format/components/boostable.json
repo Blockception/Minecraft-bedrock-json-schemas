@@ -32,14 +32,20 @@
             "description": "This is the damage that the item will take each time it is used.",
             "title": "Damage"
           },
+          "item_damage": {
+            "type": "integer",
+            "default": 1,
+            "description": "UNDOCUMENTED.",
+            "title": "Item Damage"
+          },
           "item": {
-            "type": "string",
+            "$ref": "../../../../general/item/descriptor.json",
             "default": "",
             "description": "Name of the item that can be used to boost.",
             "title": "Item"
           },
           "replace_item": {
-            "type": "string",
+            "$ref": "../../../../general/item/descriptor.json",
             "default": "",
             "description": "The item used to boost will become this item once it is used up.",
             "title": "Replace Item"

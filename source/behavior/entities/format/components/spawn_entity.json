@@ -57,7 +57,7 @@
           "title": "Spawn Event"
         },
         "spawn_item": {
-          "type": "string",
+          "$ref": "../../../../general/item/descriptor.json",
           "default": "egg",
           "description": "Item identifier of the item to spawn.",
           "title": "Spawn Item"
