@@ -16,10 +16,10 @@ describe("test correct files", function () {
       const testfolder = file.replace(folder + "/", "");
 
       describe(testfolder, function () {
-        const result = validator.ValidateFile(file);
-        const schemas = validator.ls.getMatchingSchemas(result.doc, result.jdoc);
+        it("File should have a schema & validate correctly", async function () {
+          const result = validator.ValidateFile(file);
+          const schemas = validator.ls.getMatchingSchemas(result.doc, result.jdoc);
 
-        it("File should have validate correctly", function () {
           result.promise.then(
             (succes) => {
               expect(succes.length, "Expected no errors got: " + succes.length).to.equal(0);
@@ -30,12 +30,7 @@ describe("test correct files", function () {
               expect.fail("Failed to validate");
             }
           );
-
-          return result.promise;
-        });
-
-        it("File should have a schema", function () {
-          return schemas.then(
+          schemas.then(
             (success) => {
               expect(success.length, "Expected schemas to be returned").to.greaterThan(0);
             },
@@ -44,9 +39,9 @@ describe("test correct files", function () {
               expect.fail("failed on retrieving schemas");
             }
           );
-        });
 
-        return Promise.all([result.promise, schemas]);
+          return Promise.all([result.promise, schemas]);
+        });
       });
     });
 });
