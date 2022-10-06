@@ -15,32 +15,30 @@ describe("test incorrect files", function () {
     .forEach((file) => {
       const testfolder = file.replace(folder + "/", "");
 
-      describe(testfolder, function () {
-        it("File should invalidate & have a schema", function () {
-          const result = validator.ValidateFile(file);
-          const schemas = validator.ls.getMatchingSchemas(result.doc, result.jdoc);
+      it(`File should invalidate & have a schema: ${testfolder}`, async function () {
+        const result = validator.ValidateFile(file);
+        const schemas = validator.ls.getMatchingSchemas(result.doc, result.jdoc);
 
-          result.promise.then(
-            (succes) => {
-              expect(succes.length, "Expected errors! but had none").to.greaterThan(0);
-            },
-            (fail) => {
-              Github.createError("No errors where found", { file: file });
-              expect.fail("Failed to validate");
-            }
-          );
-          schemas.then(
-            (success) => {
-              expect(success.length, "Expected schemas to be returned").to.greaterThan(0);
-            },
-            (fail) => {
-              Github.createError("Found no schema", { file: file });
-              expect.fail("failed on retrieving schemas");
-            }
-          );
+        result.promise.then(
+          (succes) => {
+            expect(succes.length, "Expected errors! but had none").to.greaterThan(0);
+          },
+          (fail) => {
+            Github.createError("No errors where found", { file: file });
+            expect.fail("Failed to validate");
+          }
+        );
+        schemas.then(
+          (success) => {
+            expect(success.length, "Expected schemas to be returned").to.greaterThan(0);
+          },
+          (fail) => {
+            Github.createError("Found no schema", { file: file });
+            expect.fail("failed on retrieving schemas");
+          }
+        );
 
-          return Promise.all([schemas, result]);
-        });
+        return Promise.all([schemas, result]);
       });
     });
 });
