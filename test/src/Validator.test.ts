@@ -64,7 +64,7 @@ class Explorer {
       if (!ref.startsWith("#")) {
         const filepath = path.isAbsolute(ref) ? ref : path.join(folder, ref);
 
-        if (fs.existsSync(filepath)) {
+        if (!fs.existsSync(filepath)) {
           const anno = this.find(ref);
           anno.title = "Ref not found";
           anno.file = this.filepath;
