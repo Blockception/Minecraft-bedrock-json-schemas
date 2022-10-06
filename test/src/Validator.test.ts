@@ -88,7 +88,7 @@ class Explorer {
 
   find(data: string): ErrorAnnotation {
     const index = this.text.indexOf(data);
-    let lines = 0;
+    let lines = 1;
     let lastindex = 0;
 
     for (let i = lastindex; i < index; i++) {
