@@ -17,21 +17,6 @@
             "tags": "query.any_tag('minecraft:is_tool')"
           }
         ]
-      },
-      "minecraft:equippable": {
-        "slots": [
-          {
-            "accepted_items": [
-              {
-                "tags": "query.any_tag('minecraft:is_tool')"
-              }
-            ],
-            "item": {
-              "tags": "query.any_tag('minecraft:is_tool')"
-            },
-            "slot": 0
-          }
-        ]
       }
     }
   }
