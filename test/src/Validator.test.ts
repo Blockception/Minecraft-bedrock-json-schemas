@@ -13,7 +13,7 @@ describe("Validate", function () {
   files.forEach((filepath) => {
     const filename = filepath.slice(folder.length);
 
-    test(`Validating schema parts: ${filename}`, function () {
+    it(`Validating schema parts: ${filename}`, function () {
       let object: JsonSchema | undefined = undefined;
       let data: string;
 
