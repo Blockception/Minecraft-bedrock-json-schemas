@@ -1,4 +1,5 @@
 import { expect } from "chai";
+import { Github } from "../Github";
 import { Schema } from "../SchemaTester";
 import { Files } from "../Utillity";
 
@@ -18,13 +19,14 @@ describe("test correct files", function () {
         const result = validator.ValidateFile(file);
         const schemas = validator.ls.getMatchingSchemas(result.doc, result.jdoc);
 
-        it("validation", function () {
+        it("File should have validate correctly", function () {
           result.promise.then(
             (succes) => {
               expect(succes.length, "Expected no errors got: " + succes.length).to.equal(0);
               succes.forEach((item) => console.log(item.message));
             },
             (fail) => {
+              Github.createError("Failed on validating", { file: file });
               expect.fail("Failed to validate");
             }
           );
@@ -32,12 +34,13 @@ describe("test correct files", function () {
           return result.promise;
         });
 
-        it("schemas", function () {
+        it("File should have a schema", function () {
           return schemas.then(
             (success) => {
               expect(success.length, "Expected schemas to be returned").to.greaterThan(0);
             },
             (fail) => {
+              Github.createError("Failed on retrieving schemas", { file: file });
               expect.fail("failed on retrieving schemas");
             }
           );

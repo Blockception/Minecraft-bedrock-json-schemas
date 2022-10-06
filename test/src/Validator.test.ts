@@ -3,6 +3,7 @@ import { Files } from "./Utillity";
 import * as fs from "fs";
 import * as JSONC from "comment-json";
 import { expect } from "chai";
+import { ErrorAnnotation, Github } from "./Github";
 
 describe("Validate", function () {
   const folder = path.join(Files.TestFolder(), "..", "source");
@@ -35,7 +36,8 @@ describe("Validate", function () {
           return;
         }
 
-        explore_refs(object, path.dirname(filepath));
+        const explorer = new Explorer(data, filepath);
+        explorer.explore_refs(object, path.dirname(filepath));
       });
     });
   });
@@ -46,24 +48,61 @@ interface JsonSchema {
   [key: string]: any;
 }
 
-function explore_refs(data: JsonSchema, folder: string): void {
-  if (data.$ref) {
-    const ref = data.$ref;
+class Explorer {
+  text: string;
+  filepath: string;
 
-    if (!ref.startsWith("#")) {
-      const filepath = path.isAbsolute(ref) ? ref : path.join(folder, ref);
+  constructor(text: string, filepath: string) {
+    this.text = text;
+    this.filepath = filepath;
+  }
 
-      expect(fs.existsSync(filepath), `ref ${ref} exists`).to.be.true;
+  public explore_refs(data: JsonSchema, folder: string): void {
+    if (data.$ref) {
+      const ref = data.$ref;
+
+      if (!ref.startsWith("#")) {
+        const filepath = path.isAbsolute(ref) ? ref : path.join(folder, ref);
+
+        if (fs.existsSync(filepath)) {
+          const anno = this.find(ref);
+          anno.title = "Ref not found";
+          anno.file = this.filepath;
+
+          Github.createError(`Ref not found: ${ref}`, anno);
+          expect.fail(`ref ${ref} does not exists`);
+        }
+      }
+    }
+
+    for (const key in data) {
+      const element = data[key];
+
+      switch (typeof element) {
+        case "object":
+          this.explore_refs(element, folder);
+          break;
+      }
     }
   }
 
-  for (const key in data) {
-    const element = data[key];
+  find(data: string): ErrorAnnotation {
+    const index = this.text.indexOf(data);
+    let lines = 0;
+    let lastindex = 0;
 
-    switch (typeof element) {
-      case "object":
-        explore_refs(element, folder);
-        break;
+    for (let i = lastindex; i < index; i++) {
+      const char = this.text[i];
+
+      if (char === "\n") {
+        lastindex = i;
+        lines++;
+      }
     }
+
+    return {
+      line: lines,
+      column: index - lastindex,
+    };
   }
 }
