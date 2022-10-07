@@ -4,7 +4,7 @@
 [![Format json files](https://github.com/Blockception/Minecraft-bedrock-json-schemas/actions/workflows/format-json-files.yml/badge.svg?branch=main&event=push)](https://github.com/Blockception/Minecraft-bedrock-json-schemas/actions/workflows/format-json-files.yml)
 [![Unit Test](https://github.com/Blockception/Minecraft-bedrock-json-schemas/actions/workflows/pull-request.yml/badge.svg)](https://github.com/Blockception/Minecraft-bedrock-json-schemas/actions/workflows/pull-request.yml)
 
-The json validation schema files for Minecraft bedrock
+The JSON validation schema files for Minecraft bedrock
 
 - [Minecraft-bedrock-json-schemas](#minecraft-bedrock-json-schemas)
   - [Contributing](#contributing)
@@ -13,13 +13,16 @@ The json validation schema files for Minecraft bedrock
 - [Contents](#contents)
   - [behavior files](#behavior-files)
   - [Resource files](#resource-files)
-  - [Contributing](#contributing-1)
   - [License](#license)
 
 ## Contributing
 
-Any changes to the schemas are to be done through the source files in the folder source. these get converted and compressed through an action into
-smaller schemas. On other matters follow the [Contribution guide](CONTRIBUTING.md)
+Any changes to the schemas are to be done through the source files in the folder source. These get converted and compressed through an action into
+smaller schemas. On other matters follow the [Contribution guide](CONTRIBUTING.md).
+
+This project could use help in filling in descriptions, titles and giving snippets!
+
+JSON validation can give snippets for sub items, as well as description, but this hasn't always been filled out!
 
 ## Manual Usage
 
@@ -29,14 +32,14 @@ smaller schemas. On other matters follow the [Contribution guide](CONTRIBUTING.m
   OR
 - Copy the contents of `vscode-settings.json` into your `.code-workspace` file under the property settings:
 
-```json
+```JSON
 {
-	"folders": [ { "path": "." } ],
-	"settings": {
-		"json.schemas": [
-			...
-		]
-	}
+  "folders": [ { "path": "." } ],
+  "settings": {
+    "json.schemas": [
+      ...
+    ]
+  }
 }
 ```
 
@@ -44,7 +47,7 @@ smaller schemas. On other matters follow the [Contribution guide](CONTRIBUTING.m
 
 # Contents
 
-## behavior files
+## Behavior files
 
 - [Animation Controllers](behavior/animation_controllers/animation_controller.json)
 - [Animations](behavior/animations/animations.json)
@@ -77,14 +80,7 @@ smaller schemas. On other matters follow the [Contribution guide](CONTRIBUTING.m
 - [Terrain texture](resource/textures/terrain_texture.json)
 - [Terrain list](resource/textures/texture_list.json)
 
-## Contributing
-
-This project could more help in filling in descriptions, titles and giving snippets!
-
-Json validation can give snippets for sub items. as well as description, but this hasn't always been filled out!
-
-
 ## License
 
 This project makes use of Microsoft open source license:
-[CC-BY-4.0, MIT licenses](https://github.com/MicrosoftDocs/minecraft-creator/blob/main/LICENSE)
+[CC-BY-4.0, MIT licenses](https://github.com/MicrosoftDocs/minecraft-creator/blob/main/LICENSE).
