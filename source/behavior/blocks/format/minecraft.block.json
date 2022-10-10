@@ -18,7 +18,6 @@
         "minecraft:block_light_emission": { "$ref": "./components/block_light_emission.json" },
         "minecraft:breakonpush": { "$ref": "./components/breakonpush.json" },
         "minecraft:breathability": { "$ref": "./components/breathability.json" },
-        "minecraft:creative_category": { "$ref": "./components/creative_category.json" },
         "minecraft:destroy_time": { "$ref": "./components/destroy_time.json" },
         "minecraft:display_name": { "$ref": "./components/display_name.json" },
         "minecraft:entity_collision": { "$ref": "./components/entity_collision.json" },
@@ -58,6 +57,31 @@
       "additionalProperties": false,
       "required": ["identifier"],
       "properties": {
+        "menu_category": {
+          "title": "Menu Category",
+          "$comment": "UNDOCUMENTED",
+          "description": "The category this block will be placed in in the menu.",
+          "type": "object",
+          "default": "misc",
+          "additionalProperties": false,
+          "required": ["category"],
+          "properties": {
+            "category": {
+              "title": "Category",
+              "$comment": "UNDOCUMENTED",
+              "description": "construction",
+              "type": "string",
+              "examples": ["construction"]
+            },
+            "group": {
+              "title": "Group",
+              "$comment": "UNDOCUMENTED",
+              "description": "",
+              "type": "string",
+              "examples": ["itemGroup.name.planks"]
+            }
+          }
+        },
         "identifier": {
           "type": "string",
           "description": "The identifier for this block. The name must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla block.",
