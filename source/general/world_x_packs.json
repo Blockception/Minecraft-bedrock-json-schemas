@@ -11,7 +11,7 @@
     "description": "A reference to a pack.",
     "type": "object",
     "properties": {
-      "pack_id": { "description": "The uuid of the pack to include.", "$ref": "./UUIDV4.json", "title": "Pack Id" },
+      "pack_id": { "description": "The UUID of the pack to include.", "$ref": "./UUIDV4.json", "title": "Pack Id" },
       "version": { "description": "The version of the pack.", "$ref": "./Version.json", "title": "Version" }
     }
   }
