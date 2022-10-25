@@ -39,7 +39,7 @@ jobs:
         run: |
           cd ${{github.workspace}}
           git config --global user.email "Bot@Blockception.com"
-          git config --global user.name "Blockception Bot"
+          git config --global user.name "Blockception[bot]"
           git add .
           git commit -m "auto: Generated Json Schemas"
           git push

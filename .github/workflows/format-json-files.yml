@@ -45,6 +45,6 @@ jobs:
         run: |
           git add .
           git config --global user.email "Bot@Blockception.com"
-          git config --global user.name "Blockception Bot"
+          git config --global user.name "Blockception[bot]"
           git commit -m "auto: Formatted json files"
           git push
