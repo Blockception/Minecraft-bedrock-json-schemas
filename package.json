@@ -38,7 +38,7 @@
   "devDependencies": {
     "@types/chai": "^4.3.1",
     "@types/mocha": "^10.0.0",
-    "@types/node": "^18.0.6",
+    "@types/node": "^18.11.6",
     "chai": "^4.3.6",
     "comment-json": "^4.1.1",
     "json-loader": "^0.5.7",
