@@ -45,6 +45,107 @@
           "description": "Sets whether or not this entity is experimental. Experimental entities are only enabled when the experimental toggle is enabled.",
           "default": false
         },
+        "properties": {
+          "title": "Experimental",
+          "description": "Experimental",
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "required": ["type"],
+            "properties": {
+              "type": {
+                "title": "Type",
+                "description": "The type of the property.",
+                "enum": ["bool", "int", "float", "enum"]
+              }
+            },
+            "oneOf": [
+              {
+                "properties": {
+                  "type": { "const": "bool" },
+                  "default": {
+                    "title": "Default",
+                    "description": "The default value of the property.",
+                    "$ref": "../../../molang/boolean.json"
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "type": { "const": "int" },
+                  "default": {
+                    "title": "Default",
+                    "description": "The default value of the property.",
+                    "$ref": "../../../molang/number.json"
+                  },
+                  "range": {
+                    "title": "Range",
+                    "description": "The range of the property.",
+                    "type": "array",
+                    "items": [
+                      {
+                        "title": "Min",
+                        "type": "integer",
+                        "description": "The minimum value of the property."
+                      },
+                      {
+                        "title": "Max",
+                        "type": "integer",
+                        "description": "The minimum value of the property."
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "type": { "const": "float" },
+                  "default": {
+                    "title": "Default",
+                    "description": "The default value of the property.",
+                    "$ref": "../../../molang/number.json"
+                  },
+                  "range": {
+                    "title": "Range",
+                    "description": "The range of the property.",
+                    "type": "array",
+                    "items": [
+                      {
+                        "title": "Min",
+                        "type": "number",
+                        "description": "The minimum value of the property."
+                      },
+                      {
+                        "title": "Max",
+                        "type": "number",
+                        "description": "The minimum value of the property."
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "properties": {
+                  "type": { "const": "enum" },
+                  "default": { "type": "string" },
+                  "client_sync": {
+                    "title": "Client Sync",
+                    "description": "Sets whether or not the property is synced to the client.",
+                    "type": "boolean",
+                    "default": false
+                  },
+                  "values": {
+                    "title": "Values",
+                    "description": "The values of the property.",
+                    "type": "array",
+                    "minItems": 1,
+                    "items": { "type": "string" }
+                  }
+                }
+              }
+            ]
+          }
+        },
         "runtime_identifier": {
           "type": "string",
           "title": "Runtime Identifier",
@@ -62,7 +163,11 @@
               "description": "Tells minecraft to run which animation / animation controllers and under what conditions.",
               "items": {
                 "oneOf": [
-                  { "type": "string", "title": "Animation", "description": "The name of an animation controller referenced in animations." },
+                  {
+                    "type": "string",
+                    "title": "Animation",
+                    "description": "The name of an animation controller referenced in animations."
+                  },
                   {
                     "type": "object",
                     "title": "Conditional Animation",

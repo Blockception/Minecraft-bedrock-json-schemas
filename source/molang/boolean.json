@@ -1,0 +1,8 @@
+{
+  "$id": "molang_boolean1.19.0",
+  "title": "Molang Boolean",
+  "description": "The minecraft molang definition that results in a boolean.",
+  "anyOf": [{ "type": "string", "minLength": 0 }, { "type": "boolean" }],
+  "examples": [0, "query.variant", "(1.0)", "query.", "variable.=;"],
+  "defaultSnippets": [{ "label": "New Molang", "body": "$1" }]
+}
