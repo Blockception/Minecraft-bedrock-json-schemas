@@ -50,6 +50,6 @@
   },
   "dependencies": {
     "fast-glob": "^3.2.11",
-    "vscode-json-languageservice": "^5.1.0"
+    "vscode-json-languageservice": "^5.1.1"
   }
 }
