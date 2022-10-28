@@ -56,14 +56,22 @@
                 }
               }
             },
-            "enable_attachables": { "type": "boolean", "description": "UNDOCUMENTED: enable attachables.", "title": "Enable Attachables" },
+            "enable_attachables": {
+              "type": "boolean",
+              "description": "UNDOCUMENTED: enable attachables.",
+              "title": "Enable Attachables"
+            },
             "geometry": {
               "title": "Geometry",
               "description": "The reference to defined geometries in `<resource pack>/models/'.",
               "type": "object",
               "propertyNames": { "pattern": "[a-zA-Z0-9_\\.\\-]+" },
               "minProperties": 1,
-              "additionalProperties": { "type": "string", "description": "The reference to the geometry.", "title": "Geometry Reference" }
+              "additionalProperties": {
+                "type": "string",
+                "description": "The reference to the geometry.",
+                "title": "Geometry Reference"
+              }
             },
             "hide_armor": {
               "type": "boolean",
@@ -105,7 +113,11 @@
             "particle_emitters": {
               "type": "object",
               "minProperties": 1,
-              "additionalProperties": { "type": "string", "description": "Particle emitter reference.", "title": "Particle Emitter" },
+              "additionalProperties": {
+                "type": "string",
+                "description": "Particle emitter reference.",
+                "title": "Particle Emitter"
+              },
               "description": "A collection of particle emitters definitions.",
               "title": "Particle Emitters"
             },
@@ -116,7 +128,11 @@
               "minItems": 1,
               "items": {
                 "oneOf": [
-                  { "type": "string", "title": "Render Controller", "description": "A single render controller definition." },
+                  {
+                    "type": "string",
+                    "title": "Render Controller",
+                    "description": "A single render controller definition."
+                  },
                   {
                     "type": "object",
                     "additionalProperties": {
@@ -141,7 +157,7 @@
                   "items": {
                     "pattern": ";$",
                     "$ref": "../../../molang/string.json",
-                    "description": "Clientside molang variables that are to be evualated during the animation.",
+                    "description": "Clientside molang variables that are to be evaluated during the animation.",
                     "title": "Pre Animation"
                   }
                 },
@@ -167,14 +183,22 @@
               "description": "A collection of sound effect definition.",
               "type": "object",
               "minProperties": 1,
-              "additionalProperties": { "type": "string", "description": "A sound effect definition.", "title": "Sound Effect" }
+              "additionalProperties": {
+                "type": "string",
+                "description": "A sound effect definition.",
+                "title": "Sound Effect"
+              }
             },
             "spawn_egg": {
               "additionalProperties": false,
               "type": "object",
               "description": "The definition of how the spawn_egg icon looks like.",
               "title": "Spawn Egg",
-              "dependencies": { "texture_index": ["texture"], "base_colour": ["overlay_color"], "overlay_color": ["base_color"] },
+              "dependencies": {
+                "texture_index": ["texture"],
+                "base_colour": ["overlay_color"],
+                "overlay_color": ["base_color"]
+              },
               "examples": [
                 { "base_color": "#FFFFFF", "overlay_color": "#000000" },
                 { "texture": "example_egg", "texture_index": 0 }
@@ -194,13 +218,26 @@
                   "format": "color-hex",
                   "examples": ["#FFFFFF"]
                 },
-                "texture": { "type": "string", "description": "The texture reference in item_texture.json", "title": "Texture" },
-                "texture_index": { "type": "integer", "description": "The index of the texture.", "title": "Texture Index", "default": 0 }
+                "texture": {
+                  "type": "string",
+                  "description": "The texture reference in item_texture.json",
+                  "title": "Texture"
+                },
+                "texture_index": {
+                  "type": "integer",
+                  "description": "The index of the texture.",
+                  "title": "Texture Index",
+                  "default": 0
+                }
               }
             },
             "textures": {
               "type": "object",
-              "additionalProperties": { "type": "string", "description": "A reference to a texture in the resourcepack.", "title": "Texture" },
+              "additionalProperties": {
+                "type": "string",
+                "description": "A reference to a texture in the resourcepack.",
+                "title": "Texture"
+              },
               "description": "A collection of references to textures in the resourcepack.",
               "title": "Textures"
             }
