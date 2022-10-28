@@ -1,8 +1,7 @@
 # This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
 # For more information see: https://help.github.com/actions/language-and-framework-guides/publishing-nodejs-packages
 
-name: Pull Request
-
+name: PR
 on:
   push:
     branches:
@@ -13,7 +12,7 @@ on:
 
 jobs:
   build:
-    name: Build Check
+    name: 🛠️ Build Check
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -26,14 +25,14 @@ jobs:
           cache-dependency-path: package-lock.json
           node-version-file: .nvmrc
 
-      - name: Install
+      - name: Setup Project
         run: npm ci
 
-      - name: Build
+      - name: 🛠️ Build Check
         run: npm run compile
 
   lint:
-    name: Lint Check
+    name: 🔍 Lint Check
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -46,14 +45,14 @@ jobs:
           cache-dependency-path: package-lock.json
           node-version-file: .nvmrc
 
-      - name: Install
+      - name: Setup Project
         run: npm ci
 
-      - name: Build
+      - name: 🔍 Linting check
         run: npm run lint
 
   test:
-    name: Unit Test ${{ matrix.os }}
+    name: 📋 Unit Test ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     needs: [build]
     strategy:
@@ -72,8 +71,8 @@ jobs:
           cache-dependency-path: package-lock.json
           node-version-file: .nvmrc
 
-      - name: Install
+      - name: Setup Project
         run: npm ci
 
-      - name: Test
+      - name: 📋 Test
         run: npm test
