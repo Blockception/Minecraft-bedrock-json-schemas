@@ -44,7 +44,7 @@ jobs:
         continue-on-error: true
         run: |
           git add .
-          git config --global user.email "Bot@Blockception.com"
+          git config --global user.email "orbi@blockception.com"
           git config --global user.name "Orbi[bot]"
           git commit -m "auto: Formatted json files"
           git push
