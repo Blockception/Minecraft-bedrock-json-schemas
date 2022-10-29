@@ -45,9 +45,22 @@
       ],
       "properties": {
         "filters": { "$ref": "./../filters/filters.json" },
-        "trigger": { "description": "Triggers additional events.", "$comment": "UNDOCUMENTED", "title": "Trigger", "$ref": "./types/trigger.json" },
-        "add": { "$ref": "#/definitions/addremove", "description": "What gets added when the event gets triggered.", "title": "Add" },
-        "remove": { "$ref": "#/definitions/addremove", "description": "What gets removed when the event gets triggered.", "title": "Remove" },
+        "trigger": {
+          "description": "Triggers additional events.",
+          "$comment": "UNDOCUMENTED",
+          "title": "Trigger",
+          "$ref": "./types/trigger.json"
+        },
+        "add": {
+          "$ref": "#/definitions/addremove",
+          "description": "What gets added when the event gets triggered.",
+          "title": "Add"
+        },
+        "remove": {
+          "$ref": "#/definitions/addremove",
+          "description": "What gets removed when the event gets triggered.",
+          "title": "Remove"
+        },
         "randomize": {
           "type": "array",
           "description": "Randomly selects one of the following items based upon their weight and the total weights.",
@@ -57,9 +70,22 @@
             "title": "Randomize",
             "examples": [{ "add": { "component_groups": ["foo:example"] }, "weight": 1 }],
             "properties": {
-              "add": { "$ref": "#/definitions/addremove", "description": "What gets added when the event gets triggered.", "title": "Add" },
-              "remove": { "$ref": "#/definitions/addremove", "description": "What gets removed when the event gets triggered.", "title": "Remove" },
-              "trigger": { "description": "Triggers additional events.", "$comment": "UNDOCUMENTED", "title": "Trigger", "$ref": "./types/trigger.json" },
+              "add": {
+                "$ref": "#/definitions/addremove",
+                "description": "What gets added when the event gets triggered.",
+                "title": "Add"
+              },
+              "remove": {
+                "$ref": "#/definitions/addremove",
+                "description": "What gets removed when the event gets triggered.",
+                "title": "Remove"
+              },
+              "trigger": {
+                "description": "Triggers additional events.",
+                "$comment": "UNDOCUMENTED",
+                "title": "Trigger",
+                "$ref": "./types/trigger.json"
+              },
               "weight": {
                 "type": "number",
                 "default": 1,
@@ -80,12 +106,40 @@
             "title": "Sequence",
             "type": "object",
             "properties": {
-              "add": { "$ref": "#/definitions/addremove", "description": "What gets added when the event gets triggered.", "title": "Add" },
-              "remove": { "$ref": "#/definitions/addremove", "description": "What gets removed when the event gets triggered.", "title": "Remove" },
-              "trigger": { "description": "Triggers additional events.", "$comment": "UNDOCUMENTED", "title": "Trigger", "$ref": "./types/trigger.json" },
+              "add": {
+                "$ref": "#/definitions/addremove",
+                "description": "What gets added when the event gets triggered.",
+                "title": "Add"
+              },
+              "remove": {
+                "$ref": "#/definitions/addremove",
+                "description": "What gets removed when the event gets triggered.",
+                "title": "Remove"
+              },
+              "trigger": {
+                "description": "Triggers additional events.",
+                "$comment": "UNDOCUMENTED",
+                "title": "Trigger",
+                "$ref": "./types/trigger.json"
+              },
               "filters": { "$ref": "./../filters/filters.json" }
             }
           }
+        },
+        "set_property": {
+          "title": "Set Property",
+          "description": "Sets a property on the entity.",
+          "type": "object",
+          "additionalProperties": {
+            "title": "Property",
+            "type": ["string", "number", "integer", "boolean"]
+          },
+          "examples": [
+            { "example:property": false },
+            { "example:property": 0 },
+            { "example:property": 0.0 },
+            { "example:property": "one" }
+          ]
         }
       }
     }
