@@ -29,7 +29,7 @@
         },
         "tags": {
           "$ref": "../../molang/string.json",
-          "description": "[UNDOCUMENTED] A Molang expression ran against a block to match.",
+          "description": "A condition using Molang queries that results to true/false that can be used to query for blocks with certain tags.",
           "examples": ["query.any_tag('wood')"]
         }
       }

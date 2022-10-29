@@ -1,0 +1,38 @@
+{
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.selection_box",
+  "title": "Selection Box",
+  "description": "Defines the area of the block that is selected by the player's cursor. If set to true, default values are used. If set to false, this block is not selectable by the player's cursor. If this component is omitted, default values are used.",
+  "oneOf": [
+    { "type": "boolean" },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "origin": {
+          "title": "Origin",
+          "default": [0, 0, 0],
+          "$ref": "../../../../general/vectors/number3.json",
+          "description": "Minimal position of the bounds of the selection box. \"origin\" is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.",
+          "type": "array",
+          "items": [
+            { "title": "X", "type": "number", "minimum": -8.0, "maximum": 8 },
+            { "title": "Y", "type": "number", "minimum": 0, "maximum": 16 },
+            { "title": "Z", "type": "number", "minimum": -8.0, "maximum": 8 }
+          ]
+        },
+        "size": {
+          "title": "Size",
+          "$ref": "../../../../general/vectors/number3.json",
+          "default": [8.0, 8.0, 8.0],
+          "description": "Size of each side of the selection box. Size is specified as [x, y, z]. \"origin\" + \"size\" must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.",
+          "type": "array",
+          "items": [
+            { "title": "X", "type": "number" },
+            { "title": "Y", "type": "number" },
+            { "title": "Z", "type": "number" }
+          ]
+        }
+      }
+    }
+  ]
+}

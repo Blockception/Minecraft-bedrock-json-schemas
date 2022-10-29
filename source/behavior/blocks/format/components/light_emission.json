@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.light_emission",
+  "title": "Light Emission",
+  "description": "The amount of light this block will emit in a range (0-15). Higher value means more light will be emitted.",
+  "type": "integer",
+  "default": 15,
+  "minimum": 0,
+  "maximum": 15
+}

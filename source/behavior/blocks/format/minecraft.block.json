@@ -23,6 +23,7 @@
         "minecraft:friction": { "$ref": "./components/friction.json" },
         "minecraft:geometry": { "$ref": "./components/geometry.json" },
         "minecraft:light_dampening": { "$ref": "./components/light_dampening.json" },
+        "minecraft:light_emission": { "$ref": "./components/light_emission.json" },
         "minecraft:loot": { "$ref": "./components/loot.json" },
         "minecraft:map_color": { "$ref": "./components/map_color.json" },
         "minecraft:material_instances": { "$ref": "./components/material_instances.json" },
