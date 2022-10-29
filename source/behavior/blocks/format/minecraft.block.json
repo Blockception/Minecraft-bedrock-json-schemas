@@ -35,15 +35,15 @@
         "minecraft:unit_cube": { "$ref": "./components/unit_cube.json" },
 
         //Triggers
-        "minecraft:on_fall_on": { "$ref": "./trigger/on_fall_on.json" },
-        "minecraft:on_interact": { "$ref": "./trigger/on_interact.json" },
-        "minecraft:on_placed": { "$ref": "./trigger/on_placed.json" },
-        "minecraft:on_player_destroyed": { "$ref": "./trigger/on_player_destroyed.json" },
-        "minecraft:on_player_placing": { "$ref": "./trigger/on_player_placing.json" },
-        "minecraft:on_step_off": { "$ref": "./trigger/on_step_off.json" },
-        "minecraft:on_step_on": { "$ref": "./trigger/on_step_on.json" },
-        "minecraft:queued_ticking": { "$ref": "./trigger/queued_ticking.json" },
-        "minecraft:random_ticking": { "$ref": "./trigger/random_ticking.json" }
+        "minecraft:on_fall_on": { "$ref": "./triggers/on_fall_on.json" },
+        "minecraft:on_interact": { "$ref": "./triggers/on_interact.json" },
+        "minecraft:on_placed": { "$ref": "./triggers/on_placed.json" },
+        "minecraft:on_player_destroyed": { "$ref": "./triggers/on_player_destroyed.json" },
+        "minecraft:on_player_placing": { "$ref": "./triggers/on_player_placing.json" },
+        "minecraft:on_step_off": { "$ref": "./triggers/on_step_off.json" },
+        "minecraft:on_step_on": { "$ref": "./triggers/on_step_on.json" },
+        "minecraft:queued_ticking": { "$ref": "./triggers/queued_ticking.json" },
+        "minecraft:random_ticking": { "$ref": "./triggers/random_ticking.json" }
       }
     }
   },
