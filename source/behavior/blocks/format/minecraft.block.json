@@ -14,6 +14,7 @@
       "$comment": "UNDOCUMENTED",
       "additionalProperties": false,
       "properties": {
+        //Components
         "minecraft:collision_box": { "$ref": "./components/collision_box.json" },
         "minecraft:crafting_table": { "$ref": "./components/crafting_table.json" },
         "minecraft:destructible_by_explosion": { "$ref": "./components/destructible_by_explosion.json" },
@@ -31,7 +32,18 @@
         "minecraft:placement_filter": { "$ref": "./components/placement_filter.json" },
         "minecraft:rotation": { "$ref": "./components/rotation.json" },
         "minecraft:selection_box": { "$ref": "./components/selection_box.json" },
-        "minecraft:unit_cube": { "$ref": "./components/unit_cube.json" }
+        "minecraft:unit_cube": { "$ref": "./components/unit_cube.json" },
+
+        //Triggers
+        "minecraft:on_fall_on": { "$ref": "./trigger/on_fall_on.json" },
+        "minecraft:on_interact": { "$ref": "./trigger/on_interact.json" },
+        "minecraft:on_placed": { "$ref": "./trigger/on_placed.json" },
+        "minecraft:on_player_destroyed": { "$ref": "./trigger/on_player_destroyed.json" },
+        "minecraft:on_player_placing": { "$ref": "./trigger/on_player_placing.json" },
+        "minecraft:on_step_off": { "$ref": "./trigger/on_step_off.json" },
+        "minecraft:on_step_on": { "$ref": "./trigger/on_step_on.json" },
+        "minecraft:queued_ticking": { "$ref": "./trigger/queued_ticking.json" },
+        "minecraft:random_ticking": { "$ref": "./trigger/random_ticking.json" }
       }
     }
   },
@@ -52,12 +64,24 @@
           "additionalProperties": false,
           "required": ["category"],
           "properties": {
-            "category": {
-              "title": "Category",
-              "$comment": "UNDOCUMENTED",
-              "description": "construction",
-              "type": "string",
-              "enum": ["construction", "equipment", "items", "nature"]
+            "menu_category": {
+              "title": "",
+              "description": "",
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "category": {
+                  "title": "Category",
+                  "description": "Determines which category this block will be placed under in the inventory and crafting table container screens. Options are \"construction\", \"nature\", \"equipment\", \"items\", and \"none\". If omitted or \"none\" is specified, the block will not appear in the inventory or crafting table container screens.",
+                  "type": "string",
+                  "enum": ["construction", "nature", "equipment", "items", "none"]
+                },
+                "group": {
+                  "title": "Group",
+                  "description": "Specifies the language file key that maps to which expandable/collapsible group this block will be a part of within a category. If this field is omitted, or there is no group whose name matches the loc string, this block will be placed standalone in the given category.",
+                  "type": "string"
+                }
+              }
             },
             "group": {
               "title": "Group",
@@ -246,8 +270,7 @@
         "properties": {
           "condition": {
             "title": "Condition",
-            "description": "UNDOCUMENTED.",
-            "$comment": "UNDOCUMENTED",
+            "description": "A Molang expression that evaluates to true or false to determine if this permutation should be used. For permutation conditions you are limited to using one Molang query: \"query.block_property()\"",
             "$ref": "../../../molang/string.json"
           },
           "components": {
