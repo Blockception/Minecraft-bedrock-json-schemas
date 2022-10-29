@@ -11,9 +11,9 @@ updates:
     schedule:
       interval: "monthly"
     assignees:
-      - "DaanV2"
+      - "Orbi-bot"
     reviewers:
-      - "DaanV2"
+      - "Orbi-bot"
   - package-ecosystem: github-actions
     directory: /
     schedule:
