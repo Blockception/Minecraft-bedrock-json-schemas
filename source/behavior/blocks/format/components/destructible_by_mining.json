@@ -1,7 +1,7 @@
 {
-  "$id": "blockception.minecraft.behavior.blocks.minecraft.flammable",
-  "title": "Flammable",
-  "description": "Describes the flammable properties for this block. If set to true, default values are used. If set to false, or if this component is omitted, the block will not be able to catch on fire naturally from neighbors, but it can still be directly ignited.",
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.destructible_by_mining",
+  "title": "Destructible By Mining",
+  "description": "Describes the destructible by mining properties for this block. If set to true, the block will take the default number of seconds to destroy. If set to false, this block is indestructible by mining. If the component is omitted, the block will take the default number of seconds to destroy.",
   "oneOf": [
     {
       "type": "boolean",

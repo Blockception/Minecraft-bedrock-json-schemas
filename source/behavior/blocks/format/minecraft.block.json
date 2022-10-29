@@ -14,38 +14,36 @@
       "$comment": "UNDOCUMENTED",
       "additionalProperties": false,
       "properties": {
-        "minecraft:block_light_filter": { "$ref": "./components/block_light_filter.json" },
-        "minecraft:block_light_emission": { "$ref": "./components/block_light_emission.json" },
-        "minecraft:breakonpush": { "$ref": "./components/breakonpush.json" },
-        "minecraft:breathability": { "$ref": "./components/breathability.json" },
-        "minecraft:destroy_time": { "$ref": "./components/destroy_time.json" },
+        //Components
+        "minecraft:collision_box": { "$ref": "./components/collision_box.json" },
+        "minecraft:crafting_table": { "$ref": "./components/crafting_table.json" },
+        "minecraft:destructible_by_explosion": { "$ref": "./components/destructible_by_explosion.json" },
+        "minecraft:destructible_by_mining": { "$ref": "./components/destructible_by_mining.json" },
         "minecraft:display_name": { "$ref": "./components/display_name.json" },
-        "minecraft:entity_collision": { "$ref": "./components/entity_collision.json" },
-        "minecraft:explosion_resistance": { "$ref": "./components/explosion_resistance.json" },
         "minecraft:flammable": { "$ref": "./components/flammable.json" },
         "minecraft:friction": { "$ref": "./components/friction.json" },
         "minecraft:geometry": { "$ref": "./components/geometry.json" },
-        "minecraft:immovable": { "$ref": "./components/immovable.json" },
+        "minecraft:light_dampening": { "$ref": "./components/light_dampening.json" },
+        "minecraft:light_emission": { "$ref": "./components/light_emission.json" },
         "minecraft:loot": { "$ref": "./components/loot.json" },
         "minecraft:map_color": { "$ref": "./components/map_color.json" },
         "minecraft:material_instances": { "$ref": "./components/material_instances.json" },
-        "minecraft:onlypistonpush": { "$ref": "./components/onlypistonpush.json" },
         "minecraft:part_visibility": { "$ref": "./components/part_visibility.json" },
-        "minecraft:on_fall_on": { "$ref": "./components/on_fall_on.json" },
-        "minecraft:on_interact": { "$ref": "./components/on_interact.json" },
-        "minecraft:on_placed": { "$ref": "./components/on_placed.json" },
-        "minecraft:on_player_destroyed": { "$ref": "./components/on_player_destroyed.json" },
-        "minecraft:on_player_placing": { "$ref": "./components/on_player_placing.json" },
-        "minecraft:on_step_off": { "$ref": "./components/on_step_off.json" },
-        "minecraft:on_step_on": { "$ref": "./components/on_step_on.json" },
-        "minecraft:pick_collision": { "$ref": "./components/pick_collision.json" },
         "minecraft:placement_filter": { "$ref": "./components/placement_filter.json" },
-        "minecraft:preventsjumping": { "$ref": "./components/preventsjumping.json" },
-        "minecraft:random_ticking": { "$ref": "./components/random_ticking.json" },
         "minecraft:rotation": { "$ref": "./components/rotation.json" },
-        "minecraft:ticking": { "$ref": "./components/ticking.json" },
+        "minecraft:selection_box": { "$ref": "./components/selection_box.json" },
         "minecraft:unit_cube": { "$ref": "./components/unit_cube.json" },
-        "minecraft:unwalkable": { "$ref": "./components/unwalkable.json" }
+
+        //Triggers
+        "minecraft:on_fall_on": { "$ref": "./triggers/on_fall_on.json" },
+        "minecraft:on_interact": { "$ref": "./triggers/on_interact.json" },
+        "minecraft:on_placed": { "$ref": "./triggers/on_placed.json" },
+        "minecraft:on_player_destroyed": { "$ref": "./triggers/on_player_destroyed.json" },
+        "minecraft:on_player_placing": { "$ref": "./triggers/on_player_placing.json" },
+        "minecraft:on_step_off": { "$ref": "./triggers/on_step_off.json" },
+        "minecraft:on_step_on": { "$ref": "./triggers/on_step_on.json" },
+        "minecraft:queued_ticking": { "$ref": "./triggers/queued_ticking.json" },
+        "minecraft:random_ticking": { "$ref": "./triggers/random_ticking.json" }
       }
     }
   },
@@ -66,12 +64,24 @@
           "additionalProperties": false,
           "required": ["category"],
           "properties": {
-            "category": {
-              "title": "Category",
-              "$comment": "UNDOCUMENTED",
-              "description": "construction",
-              "type": "string",
-              "enum": ["construction", "equipment", "items", "nature"]
+            "menu_category": {
+              "title": "",
+              "description": "",
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "category": {
+                  "title": "Category",
+                  "description": "Determines which category this block will be placed under in the inventory and crafting table container screens. Options are \"construction\", \"nature\", \"equipment\", \"items\", and \"none\". If omitted or \"none\" is specified, the block will not appear in the inventory or crafting table container screens.",
+                  "type": "string",
+                  "enum": ["construction", "nature", "equipment", "items", "none"]
+                },
+                "group": {
+                  "title": "Group",
+                  "description": "Specifies the language file key that maps to which expandable/collapsible group this block will be a part of within a category. If this field is omitted, or there is no group whose name matches the loc string, this block will be placed standalone in the given category.",
+                  "type": "string"
+                }
+              }
             },
             "group": {
               "title": "Group",
@@ -260,8 +270,7 @@
         "properties": {
           "condition": {
             "title": "Condition",
-            "description": "UNDOCUMENTED.",
-            "$comment": "UNDOCUMENTED",
+            "description": "A Molang expression that evaluates to true or false to determine if this permutation should be used. For permutation conditions you are limited to using one Molang query: \"query.block_property()\"",
             "$ref": "../../../molang/string.json"
           },
           "components": {

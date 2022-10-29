@@ -1,34 +1,35 @@
 {
   "$id": "blockception.minecraft.behavior.blocks.minecraft.placement_filter",
   "title": "Placement Filter",
-  "description": "Sets rules for under what conditions the block can be placed/survive.",
+  "description": "[Experimental]",
   "type": "object",
   "properties": {
     "conditions": {
-      "title": "Conditions",
-      "description": "List of conditions where the block can be placed/survive.",
       "type": "array",
       "items": {
+        "title": "Placement Filter",
+        "description": "[Experimental]",
         "type": "object",
-        "title": "Condition",
-        "description": "UNDOCUMENTED.",
-        "$comment": "UNDOCUMENTED",
+        "additionalProperties": false,
         "properties": {
           "allowed_faces": {
             "title": "Allowed Faces",
-            "description": "List of any of the following strings: up, down, north, south, east, west, side, all.",
             "type": "array",
-            "items": { "type": "string", "enum": ["up", "down", "north", "south", "east", "west", "side", "all"] }
+            "description": "List of any of the following strings describing which face(s) this block can be placed on: \"up\", \"down\", \"north\", \"south\", \"east\", \"west\", \"side\", \"all\". Limited to 6 faces.",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "enum": ["up", "down", "north", "south", "east", "west", "side", "all"]
+            }
           },
           "block_filter": {
             "title": "Block Filter",
-            "description": "List of blocks (can use tags to specify them) that this block can be placed against in the allowed_faces direction.",
             "type": "array",
+            "description": "List of blocks that this block can be placed against in the \"allowed_faces\" direction. Limited to 64 blocks. Each block in this list can either be specified as a String (block name) or as a BlockDescriptor. A BlockDescriptor is an object that allows you to reference a block (or multiple blocks) based on its tags, or based on its name and states. The fields of a BlockDescriptor are described below.",
             "items": {
-              "type": "string",
-              "title": "Block Identifier",
-              "description": "UNDOCUMENTED.",
-              "$comment": "UNDOCUMENTED"
+              "title": "Block Filter",
+              "description": "[Experimental]",
+              "$ref": "../../../../general/block/reference.json"
             }
           }
         }

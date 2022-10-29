@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.light_dampening",
+  "title": "Light Dampening",
+  "description": "The amount that light will be dampened when it passes through the block, in a range (0-15). Higher value means the light will be dampened more.",
+  "type": "integer",
+  "default": 15,
+  "minimum": 0,
+  "maximum": 15
+}

@@ -1,6 +1,0 @@
-{
-  "$id": "blockception.minecraft.behavior.blocks.minecraft.onlypistonpush",
-  "type": "boolean",
-  "title": "Only Piston Push",
-  "description": "Blocks with those components won't stick to stickyPistons."
-}

@@ -1,37 +1,58 @@
 {
   "$id": "blockception.minecraft.behavior.blocks.minecraft.material_instances",
-  "type": "object",
   "title": "Material Instances",
-  "description": "Maps face or material_instance names in a geometry file to an actual material instance. Material instance can either be a full material instance or a name to another already defined instance",
-  "definitions": {
-    "material_instance": {
-      "title": "Material Instance",
-      "description": "A single material instance.",
-      "additionalProperties": false,
-      "properties": {
-        "ambient_occlusion": {
-          "title": "Ambient Occlusion",
-          "type": "boolean",
-          "description": "UNDOCUMENTED.",
-          "$comment": "UNDOCUMENTED"
-        },
-        "face_dimming": {
-          "title": "Face Dimming",
-          "type": "boolean",
-          "description": "UNDOCUMENTED.",
-          "$comment": "UNDOCUMENTED"
-        },
-        "render_method": {
-          "type": "string",
-          "title": "Render Method",
-          "description": "UNDOCUMENTED.",
-          "$comment": "UNDOCUMENTED",
-          "enum": ["blend", "opaque", "alpha_test"]
-        },
-        "texture": { "type": "string", "title": "Texture", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" }
+  "description": "The material instances for a block. Maps face or material_instance names in a geometry file to an actual material instance. You can assign a material instance object to any of these faces: \"up\", \"down\", \"north\", \"south\", \"east\", \"west\", or \"*\". You can also give an instance the name of your choosing such as \"my_instance\", and then assign it to a face by doing \"north\":\"my_instance\".",
+  "required": [],
+  "examples": [
+    { "*": {} },
+    { "custom_sides": {} },
+    { "up": {} },
+    { "down": {} },
+    { "north": {} },
+    { "south": "custom_sides" },
+    { "east": "custom_sides" },
+    { "west": "custom_sides" }
+  ],
+  "type": "object",
+  "additionalProperties": {
+    "title": "Material Instance",
+    "description": "The material instance for a block. Maps face or material_instance names in a geometry file to an actual material instance. You can assign a material instance object to any of these faces: \"up\", \"down\", \"north\", \"south\", \"east\", \"west\", or \"*\". You can also give an instance the name of your choosing such as \"my_instance\", and then assign it to a face by doing \"north\":\"my_instance\".",
+    "oneOf": [
+      {
+        "type": "string"
+      },
+      {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "ambient_occlusion": {
+            "title": "Ambient Occlusion",
+            "type": "boolean",
+            "default": true,
+            "description": "Should this material have ambient occlusion applied when lighting? If true, shadows will be created around and underneath the block."
+          },
+          "face_dimming": {
+            "title": "Face Dimming",
+            "type": "boolean",
+            "default": true,
+            "description": "Should this material be dimmed by the direction it's facing?"
+          },
+          "render_method": {
+            "title": "Render Method",
+            "type": "string",
+            "default": "opaque",
+            "description": "The render method to use. Must be one of these options: opaque - Used for a regular block texture without an alpha layer. Does not allow for transparency or translucency. double_sided - Used for completely disabling backface culling. blend - Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures). alpha_test - Used for a block like the vanilla (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also disables backface culling.",
+            "markdownDescription": "The render method to use. Must be one of these options: \nopaque - Used for a regular block texture without an alpha layer. Does not allow for transparency or translucency.\ndouble_sided - Used for completely disabling backface culling.\nblend - Used for a block like stained glass. Allows for transparency and translucency (slightly transparent textures).\nalpha_test - Used for a block like the vanilla (unstained) glass. Does not allow for translucency, only fully opaque or fully transparent textures. Also disables backface culling.",
+            "enum": ["opaque", "double_sided", "blend", "alpha_test"]
+          },
+          "texture": {
+            "title": "Texture",
+            "type": "string",
+            "default": "",
+            "description": "Texture name for the material."
+          }
+        }
       }
-    }
-  },
-  "properties": { "*": { "$ref": "#/definitions/material_instance" } },
-  "additionalProperties": { "$ref": "#/definitions/material_instance" }
+    ]
+  }
 }
