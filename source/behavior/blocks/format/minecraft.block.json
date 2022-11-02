@@ -205,6 +205,12 @@
                 "itemGroup.name.wool",
                 "itemGroup.name.woolCarpet"
               ]
+            },
+            "is_hidden_in_commands": {
+              "title": "Is Hidden In Commands",
+              "$comment": "UNDOCUMENTED",
+              "description": "If true, this item will not be shown in the /give command autocomplete list.",
+              "type": "boolean"
             }
           }
         },
