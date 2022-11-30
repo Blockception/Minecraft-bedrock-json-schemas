@@ -58,7 +58,7 @@
         "menu_category": {
           "title": "Menu Category",
           "$comment": "UNDOCUMENTED",
-          "description": "The category this block will be placed in in the menu.",
+          "description": "The category this block will be placed in the menu.",
           "type": "object",
           "default": "misc",
           "additionalProperties": false,
