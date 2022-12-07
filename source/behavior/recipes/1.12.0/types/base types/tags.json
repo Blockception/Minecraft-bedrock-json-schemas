@@ -3,5 +3,5 @@
   "description": "Recipe tags 1.12.0",
   "title": "Tags",
   "type": "array",
-  "items": { "type": "string", "title": "Tag", "examples": ["smithing_table"] }
+  "items": { "type": "string", "title": "Tag", "examples": ["smithing_table", "deprecated"] }
 }

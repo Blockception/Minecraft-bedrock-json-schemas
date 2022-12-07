@@ -11,51 +11,20 @@
     },
     "look_time": {
       "title": "Look Time",
-      "description": "The range of time in seconds the mob will stay looking in a random direction before looking elsewhere.",
-      "oneOf": [
-        {
-          "type": "number"
-        },
-        {
-          "type": "array",
-          "items": [
-            {
-              "type": "number",
-              "title": "Minimum",
-              "description": "Minimum."
-            },
-            {
-              "type": "number",
-              "title": "Maximum",
-              "description": "Maximum."
-            }
-          ]
-        }
-      ]
+      "$ref": "../../../../general/vectors/number2.json",
+      "description": "The range of time in seconds the mob will stay looking in a random direction before looking elsewhere"
     },
-    "look_distance": {
-      "title": "Look Distance",
-      "description": "The distance in blocks from which the mob will look at.",
-      "type": "number",
-      "default": 8.0
-    },
-    "probability": {
-      "title": "Probability",
-      "type": "number",
-      "default": 0.02,
-      "description": "The probability of looking at the target. A value of 1.00 is 100%."
-    },
-    "angle_of_view_vertical": {
-      "title": "Angle Of View Vertical",
+    "max_angle_of_view_horizontal": {
+      "title": "Max Angle Of View Horizontal",
       "type": "integer",
-      "default": 360,
-      "description": "The angle in degrees that the mob can see in the X-axis (left-right)."
+      "default": 30,
+      "description": "The rightmost angle a mob can look at on the horizontal plane with respect to its initial facing direction."
     },
-    "angle_of_view_horizontal": {
-      "title": "Angle Of View Horizontal",
+    "min_angle_of_view_horizontal": {
+      "title": "Min Angle Of View Horizontal",
       "type": "integer",
-      "default": 360,
-      "description": "The angle in degrees that the mob can see in the Y-axis (up-down)."
+      "default": -30,
+      "description": "The leftmost angle a mob can look at on the horizontal plane with respect to its initial facing direction."
     }
   },
   "examples": [

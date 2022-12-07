@@ -8,6 +8,41 @@
   "properties": {
     "priority": {
       "$ref": "./types/priority.json"
+    },
+    "chance_to_start": {
+      "title": "Chance To Start",
+      "type": "number",
+      "default": 0.0,
+      "description": "Percent chance that the mob will start this goal from 0.0 to 1.0 (where 1.0 = 100%)."
+    },
+    "filters": {
+      "title": "Filters",
+      "$ref": "../../filters/filters.json",
+      "description": "Conditions that need to be met for the behavior to start."
+    },
+    "max_head_rotation_y": {
+      "title": "Max Head Rotation Y",
+      "type": "number",
+      "default": 30,
+      "description": "Maximum rotation (in degrees), on the Y-axis, this entity can rotate its head while trying to look at the target."
+    },
+    "max_offer_flower_duration": {
+      "title": "Max Offer Flower Duration",
+      "type": "number",
+      "default": 20.0,
+      "description": "The max amount of time (in seconds) that the mob will offer the flower for before exiting the Goal."
+    },
+    "max_rotation_x": {
+      "title": "Max Rotation X",
+      "type": "number",
+      "default": 30,
+      "description": "Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target."
+    },
+    "search_area": {
+      "title": "Search Area",
+      "default": [6, 2, 6],
+      "description": "The dimensions of the AABB used to search for a potential mob to offer flower to.",
+      "$ref": "../../../../general/vectors/number3.json"
     }
   }
 }

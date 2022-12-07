@@ -6,8 +6,48 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
-    "priority": {
-      "$ref": "./types/priority.json"
+    "priority": { "$ref": "./types/priority.json" },
+    "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },
+    "filters": {
+      "title": "Filters",
+      "$ref": "../../filters/filters.json",
+      "description": "Conditions that need to be met for the behavior to start."
+    },
+    "max_head_rotation_y": {
+      "title": "Max Head Rotation Y",
+      "type": "number",
+      "default": 30,
+      "description": "Maximum rotation (in degrees), on the Y-axis, this entity can rotate its head while trying to look at the target."
+    },
+    "max_rotation_x": {
+      "title": "Max Rotation X",
+      "type": "number",
+      "default": 30,
+      "description": "Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target."
+    },
+    "max_wait_time": {
+      "title": "Max Wait Time",
+      "type": "number",
+      "default": 20.0,
+      "description": "The maximum amount of time (in seconds) for the mob to randomly wait for before taking the flower."
+    },
+    "min_distance_to_target": {
+      "title": "Min Distance To Target",
+      "type": "number",
+      "default": 2.0,
+      "description": "Minimum distance (in blocks) for the entity to be considered having reached its target."
+    },
+    "min_wait_time": {
+      "title": "Min Wait Time",
+      "type": "number",
+      "default": 4.0,
+      "description": "The minimum amount of time (in seconds) for the mob to randomly wait for before taking the flower."
+    },
+    "search_area": {
+      "title": "Search Area",
+      "default": [6, 2, 6],
+      "description": "The dimensions of the AABB used to search for a potential mob to take a flower from.",
+      "$ref": "../../../../general/vectors/number3.json"
     }
   }
 }
