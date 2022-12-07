@@ -38,7 +38,7 @@
         "filters": {
           "title": "Filters",
           "description": "UNDOCUMENTATED",
-          "$ref": "../../filters/filters.jon"
+          "$ref": "../../filters/filters.json"
         }
       }
     },
