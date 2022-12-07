@@ -80,8 +80,11 @@
             }
           },
           "allOf": [
+            { "if": { "properties": { "test": { "const": "bool_property" } } }, "then": { "$ref": "./filters/bool_property.json" } },
             { "if": { "properties": { "test": { "const": "clock_time" } } }, "then": { "$ref": "./filters/clock_time.json" } },
             { "if": { "properties": { "test": { "const": "distance_to_nearest_player" } } }, "then": { "$ref": "./filters/distance_to_nearest_player.json" } },
+            { "if": { "properties": { "test": { "const": "enum_property" } } }, "then": { "$ref": "./filters/enum_property.json" } },
+            { "if": { "properties": { "test": { "const": "float_property" } } }, "then": { "$ref": "./filters/float_property.json" } },
             { "if": { "properties": { "test": { "const": "has_ability" } } }, "then": { "$ref": "./filters/has_ability.json" } },
             { "if": { "properties": { "test": { "const": "has_biome_tag" } } }, "then": { "$ref": "./filters/has_biome_tag.json" } },
             { "if": { "properties": { "test": { "const": "has_component" } } }, "then": { "$ref": "./filters/has_component.json" } },
@@ -90,6 +93,7 @@
             { "if": { "properties": { "test": { "const": "has_equipment" } } }, "then": { "$ref": "./filters/has_equipment.json" } },
             { "if": { "properties": { "test": { "const": "has_mob_effect" } } }, "then": { "$ref": "./filters/has_mob_effect.json" } },
             { "if": { "properties": { "test": { "const": "has_nametag" } } }, "then": { "$ref": "./filters/has_nametag.json" } },
+            { "if": { "properties": { "test": { "const": "has_property" } } }, "then": { "$ref": "./filters/has_property.json" } },
             { "if": { "properties": { "test": { "const": "has_ranged_weapon" } } }, "then": { "$ref": "./filters/has_ranged_weapon.json" } },
             { "if": { "properties": { "test": { "const": "has_silk_touch" } } }, "then": { "$ref": "./filters/has_silk_touch.json" } },
             { "if": { "properties": { "test": { "const": "has_tag" } } }, "then": { "$ref": "./filters/has_tag.json" } },
@@ -105,6 +109,7 @@
             { "if": { "properties": { "test": { "const": "in_water_or_rain" } } }, "then": { "$ref": "./filters/in_water_or_rain.json" } },
             { "if": { "properties": { "test": { "const": "in_water" } } }, "then": { "$ref": "./filters/in_water.json" } },
             { "if": { "properties": { "test": { "const": "inactivity_timer" } } }, "then": { "$ref": "./filters/inactivity_timer.json" } },
+            { "if": { "properties": { "test": { "const": "int_property" } } }, "then": { "$ref": "./filters/int_property.json" } },
             { "if": { "properties": { "test": { "const": "is_altitude" } } }, "then": { "$ref": "./filters/is_altitude.json" } },
             { "if": { "properties": { "test": { "const": "is_avoiding_mobs" } } }, "then": { "$ref": "./filters/is_avoiding_mobs.json" } },
             { "if": { "properties": { "test": { "const": "is_biome" } } }, "then": { "$ref": "./filters/is_biome.json" } },

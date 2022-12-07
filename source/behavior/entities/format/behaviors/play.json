@@ -11,6 +11,54 @@
     },
     "speed_multiplier": {
       "$ref": "types/speed_multiplier.json"
+    },
+    "chance_to_start": {
+      "title": "Chance To Start",
+      "type": "number",
+      "default": 0.0,
+      "description": "Percent chance that the mob will start this goal, from 0 to 1."
+    },
+    "follow_distance": {
+      "title": "Follow Distance",
+      "type": "integer",
+      "default": 2,
+      "description": "The distance (in blocks) that the mob tries to be in range of the friend it's following."
+    },
+    "friend_search_area": {
+      "title": "Friend Search Area",
+      "default": [6, 3, 6],
+      "$ref": "../../../../general/vectors/number3.json",
+      "description": "The dimensions of the AABB used to search for a potential friend to play with."
+    },
+    "friend_types": {
+      "title": "Friend Types",
+      "type": "array",
+      "description": "The entity type(s) to consider when searching for a potential friend to play with.",
+      "items": {
+        "filters": {
+          "title": "Filters",
+          "description": "UNDOCUMENTATED",
+          "$ref": "../../filters/filters.jon"
+        }
+      }
+    },
+    "max_play_duration_seconds": {
+      "title": "Max Play Duration Seconds",
+      "type": "number",
+      "default": 50.0,
+      "description": "The max amount of seconds that the mob will play for before exiting the Goal."
+    },
+    "random_pos_search_height": {
+      "title": "Random Pos Search Height",
+      "type": "integer",
+      "default": 3,
+      "description": "The height (in blocks) that the mob will search within to find a random position position to move to. Must be at least 1."
+    },
+    "random_pos_search_range": {
+      "title": "Random Pos Search Range",
+      "type": "integer",
+      "default": 16,
+      "description": "The distance (in blocks) on ground that the mob will search within to find a random position to move to. Must be at least 1."
     }
   }
 }
