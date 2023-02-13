@@ -83,14 +83,20 @@
                   "mojang-minecraft",
                   "mojang-minecraft-server-admin",
                   "mojang-minecraft-ui",
-                  "mojang-net"
+                  "mojang-net",
+                  "@minecraft/server",
+                  "@minecraft/server-ui",
+                  "@minecraft/server-gametest",
+                  "@minecraft/server-admin",
+                  "@minecraft/server-net"
                 ]
               },
               "version": {
                 "type": "string",
                 "description": "This is the specific version of the module that your pack depends on.",
                 "title": "Version",
-                "default": "1.0.0-beta"
+                "default": "1.0.0-beta",
+                "examples": ["0.1.0", "1.0.0", "1.0.0-beta", "1.1.0-beta"]
               }
             }
           }
