@@ -115,7 +115,37 @@
           "$ref": "../general/format_version.json"
         },
         {
-          "$ref": "#/definitions/B"
+      "title": "Format Version",
+      "description": "A version that tells Minecraft what type of data format can be expected when reading this file.",
+      "type": "array",
+      "default": [
+        1,
+        1,
+        0
+      ],
+      "examples": [
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "items": {
+        "type": "integer"
+      },
+      "minItems": 3,
+      "maxItems": 3,
+      "uniqueItems": false,
+      "defaultSnippets": [
+        {
+          "label": "New Format version",
+          "body": [
+            1,
+            1,
+            0
+          ]
+        }
+      ]
         }
       ]
     }
