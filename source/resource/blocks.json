@@ -112,7 +112,7 @@
     "format_version": {
       "oneOf": [
         {
-          "$ref": "#/definitions/A"
+          "$ref": "../general/format_version.json"
         },
         {
           "$ref": "#/definitions/B"
