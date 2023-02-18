@@ -37,14 +37,12 @@
       "brightness_gamma": {
         "type": "number",
         "title": "Brightness Gamma",
-        "description": "UNDOCUMENTED.",
-        "$comment": "UNDOCUMENTED"
+        "description": "Specifies the gamma brightness level to apply to the block texture."
       },
       "carried_textures": {
         "$ref": "#/definitions/texture",
         "title": "Carried Textures",
-        "description": "UNDOCUMENTED.",
-        "$comment": "UNDOCUMENTED"
+        "description": "Carried Textures."
       },
       "isotropic": {
         "title": "Isotropic",
