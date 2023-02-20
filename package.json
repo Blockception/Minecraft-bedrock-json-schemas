@@ -36,20 +36,21 @@
   },
   "homepage": "https://github.com/Blockception/Minecraft-bedrock-json-schemas#readme",
   "devDependencies": {
-    "@types/chai": "^4.3.3",
-    "@types/mocha": "^10.0.0",
-    "@types/node": "^18.11.9",
-    "chai": "^4.3.6",
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.14.0",
+    "chai": "^4.3.7",
     "comment-json": "^4.2.3",
     "json-loader": "^0.5.7",
-    "mocha": "^10.1.0",
-    "ts-loader": "^9.4.1",
+    "mocha": "^10.2.0",
+    "mocha-junit-reporter": "^2.2.0",
+    "ts-loader": "^9.4.2",
     "ts-mocha": "^10.0.0",
     "ts-node": "^10.9.1",
-    "typescript": "^4.8.4"
+    "typescript": "^4.9.5"
   },
   "dependencies": {
     "fast-glob": "^3.2.12",
-    "vscode-json-languageservice": "^5.1.1"
+    "vscode-json-languageservice": "^5.3.0"
   }
 }
