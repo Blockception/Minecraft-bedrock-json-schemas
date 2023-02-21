@@ -76,11 +76,3 @@ jobs:
 
       - name: 📋 Test
         run: npm test
-
-      - name: 📋 Test Reporter
-        if: ${{ always() }}
-        uses: dorny/test-reporter@v1
-        with:
-          name: 📋 Unit Test
-          reporter: jest-junit
-          path: "**/junit.xml"
