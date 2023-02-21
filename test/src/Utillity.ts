@@ -3,7 +3,7 @@ import path = require("path");
 
 export namespace Files {
   export function TestFolder(): string {
-    return path.join(__dirname, "..", "..", "..", "test");
+    return path.join(__dirname, "..", "..", "test");
   }
 
   export function RootFolder(): string {
@@ -22,11 +22,14 @@ export namespace Files {
     return path.join(FilesFolder(), "incorrect");
   }
 
-  export function GetFiles(folder: string): string[] {
-    if (!folder.endsWith("\\")) folder += "\\";
+  export function GetFiles(cwd: string): string[] {
+    if (!cwd.endsWith("/") && !cwd.endsWith("\\")) cwd += "/";
 
-    folder = folder.replace("\\", "/");
+    cwd = cwd.replace("\\", "/");
 
-    return FastGlob.sync(["*.json", "**/*.json"], { absolute: true, onlyFiles: true, cwd: folder });
+    const options: FastGlob.Options = { onlyFiles: true, absolute: true, cwd: cwd };
+    let entries = FastGlob.sync(["*.json", "**/*.json"], options);
+
+    return entries;
   }
 }
