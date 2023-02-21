@@ -525,6 +525,12 @@
               "default": 0,
               "description": "The chance that a spawn occurs when a projectile hits the entity."
             },
+            "first_spawn_chance": {
+              "title": "First Spawn Chance",
+              "type": "number",
+              "default": 8,
+              "description": "The chance that a first spawn occurs when a projectile hits the entity."
+            },
             "second_spawn_chance": {
               "title": "Second Spawn Chance",
               "type": "number",
