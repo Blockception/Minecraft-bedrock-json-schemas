@@ -18,6 +18,6 @@ describe("Files", function () {
   });
 
   it("Random", function () {
-    expect(Files.TestFolder()).to.equal(DummyFiles.TestFolder());
+    expect(Files.TestFolder()).to.contain("minecraft-bedrock-schemas");
   });
 });

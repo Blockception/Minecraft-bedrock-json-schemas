@@ -3,7 +3,5 @@
   "extension": ["ts"],
   "ui": "bdd",
   "recursive": true,
-  "require": "ts-node/register",
-  "reporter": "mocha-junit-reporter",
-  "reporterOptions": ["mochaFile=./reports/junit.xml"]
+  "require": "ts-node/register"
 }
