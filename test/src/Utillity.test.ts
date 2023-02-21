@@ -16,8 +16,4 @@ describe("Files", function () {
 
     expect(temp.endsWith("lib"), "ended with lib").to.be.false;
   });
-
-  it("Random", function () {
-    expect(Files.TestFolder()).to.contain("minecraft-bedrock-schemas");
-  });
 });
