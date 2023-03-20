@@ -2,14 +2,14 @@
   "$id": "blockception.minecraft.behavior.entities.filters.int_property",
   "type": "object",
   "title": "Int Property",
-  "description": "Returns true when the int actor property matches the value provided.",
+  "description": "Returns true when the integer actor property matches the value provided.",
   "required": ["value", "domain"],
-  "examples": [{ "test": "bool_property", "value": true }],
+  "examples": [{ "test": "int_property", "value": 1 }],
   "properties": {
     "test": {
       "type": "string",
       "title": "Test Property",
-      "description": "Returns true when the int actor property matches the value provided."
+      "description": "Returns true when the integer actor property matches the value provided."
     },
     "domain": {
       "description": "(Required) The property name to look for",
@@ -29,9 +29,9 @@
       "title": "Subject"
     },
     "value": {
-      "type": "string",
+      "type": "integer",
       "title": "Value",
-      "description": "(Required) A floating point value."
+      "description": "(Required) A integer value."
     }
   }
 }
