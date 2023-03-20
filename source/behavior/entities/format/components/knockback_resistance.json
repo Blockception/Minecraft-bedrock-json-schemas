@@ -2,18 +2,21 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.knockback_resistance",
   "type": "object",
   "title": "Knockback Resistance",
-  "additionalProperties": false,
-  "description": "Determines the amount of knockback resistance that the item has.",
-  "$comment": "UNDOCUMENTED",
+  "description": "Allows an entity to resist being knocked backwards by a melee attack.",
   "required": [],
+  "additionalProperties": false,
   "properties": {
     "value": {
       "title": "Value",
       "type": "number",
       "default": 1.0,
-      "description": "Percentage of knockback to reduce with 1.0 being 100% reduction.",
-      "$comment": "UNDOCUMENTED",
-      "maximum": 100
+      "description": "Percentage of knockback to reduce with 1.0 being 100% reduction."
+    },
+    "maximum": {
+      "title": "Maximum",
+      "type": "number",
+      "default": 1.0,
+      "description": "The maximum amount of knockback resistance that can be applied to the entity."
     }
   },
   "examples": [
@@ -21,7 +24,8 @@
       "value": 1.0
     },
     {
-      "value": 100
+      "value": 100,
+      "maximum": 100
     }
   ]
 }
