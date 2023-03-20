@@ -13,12 +13,15 @@
       "default": 1.0,
       "description": "Percentage of knockback to reduce with 1.0 being 100% reduction.",
       "$comment": "UNDOCUMENTED",
-      "maximum": 1
+      "maximum": 100
     }
   },
   "examples": [
     {
       "value": 1.0
+    },
+    {
+      "value": 100
     }
   ]
 }
