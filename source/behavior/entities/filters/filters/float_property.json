@@ -4,7 +4,7 @@
   "title": "Float Property",
   "description": "Returns true when the float actor property matches the value provided.",
   "required": ["value", "domain"],
-  "examples": [{ "test": "bool_property", "value": true }],
+  "examples": [{ "test": "float_property", "value": 1.0 }],
   "properties": {
     "test": {
       "type": "string",
@@ -29,7 +29,7 @@
       "title": "Subject"
     },
     "value": {
-      "type": "string",
+      "type": "number",
       "title": "Value",
       "description": "(Required) A floating point value."
     }
