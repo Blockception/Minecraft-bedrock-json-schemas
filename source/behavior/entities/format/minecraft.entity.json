@@ -150,7 +150,7 @@
           "type": "string",
           "title": "Runtime Identifier",
           "description": "Sets the name for the Vanilla Minecraft identifier this entity will use to build itself from.",
-          "examples": ["minecraft."]
+          "examples": ["minecraft:"]
         },
         "scripts": {
           "type": "object",
