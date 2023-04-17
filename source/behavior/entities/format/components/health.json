@@ -1,7 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.health",
-  "description": "Sets the amount of health this mob has.",
-  "$comment": "UNDOCUMENTED",
+  "description": "Specifies how much life an entity has when spawned.",
   "type": "object",
   "title": "Health",
   "additionalProperties": false,
@@ -9,11 +8,11 @@
   "properties": {
     "max": {
       "type": "integer",
-      "description": "The maximum health the entity can heal.",
+      "description": "The maximum starting health an entity has.",
       "title": "Maximum"
     },
     "value": {
-      "description": "Current health of the entity.",
+      "description": "The amount of health an entity to start with by default.",
       "title": "Value",
       "oneOf": [
         { "type": "integer", "default": 1 },
@@ -39,5 +38,5 @@
       ]
     }
   },
-  "examples": [{ "value": 1, "max": 0 }]
+  "examples": [{ "value": 1, "max": 1 }]
 }
