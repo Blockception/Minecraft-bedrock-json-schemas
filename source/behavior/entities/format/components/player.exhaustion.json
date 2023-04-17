@@ -1,31 +1,21 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.player.exhaustion",
+  "title": "Player.exhaustion",
+  "description": "Defines the player's need for food.",
   "additionalProperties": false,
   "type": "object",
-  "title": "Player.exhaustion",
-  "description": "UNDOCUMENTED.",
-  "$comment": "UNDOCUMENTED",
   "required": [],
   "properties": {
     "value": {
       "type": "number",
-      "default": true,
       "title": "Value",
-      "description": "UNDOCUMENTED.",
-      "$comment": "UNDOCUMENTED"
+      "description": "The maximum player saturation value."
     },
     "max": {
       "type": "number",
-      "default": true,
       "title": "Maximum",
-      "description": "UNDOCUMENTED.",
-      "$comment": "UNDOCUMENTED"
+      "description": "The maximum player saturation value."
     }
   },
-  "examples": [
-    {
-      "value": true,
-      "max": true
-    }
-  ]
+  "examples": [{ "value": 10, "max": 20 }]
 }
