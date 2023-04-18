@@ -10,7 +10,7 @@
     },
     "entity_types": {
       "$ref": "../types/entity_types.json",
-      "description": "List of entity types this mob will startle (cause to jump) when it sneezes.",
+      "description": "List of entity types that this mob considers valid targets",
       "title": "Entity Types"
     },
     "attack_interval": {
