@@ -3,7 +3,7 @@
   "type": "object",
   "title": "Bool Property",
   "description": "Returns true when the bool actor property matches the value provided.",
-  "required": ["value", "domain"],
+  "required": ["domain"],
   "examples": [{ "test": "bool_property", "value": true }],
   "properties": {
     "test": {
