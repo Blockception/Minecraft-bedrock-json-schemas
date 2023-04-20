@@ -57,6 +57,12 @@
                 "title": "Type",
                 "description": "The type of the property.",
                 "enum": ["bool", "int", "float", "enum"]
+              },
+              "client_sync": {
+                "title": "Client Sync",
+                "description": "Sets whether or not the property is synced to the client.",
+                "type": "boolean",
+                "default": false
               }
             },
             "oneOf": [
