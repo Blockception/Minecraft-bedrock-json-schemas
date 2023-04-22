@@ -132,13 +132,16 @@
           "type": "object",
           "additionalProperties": {
             "title": "Property",
-            "type": ["string", "number", "integer", "boolean"]
+            "type": ["string", "number", "integer", "boolean"],
+            "description": "The value to set the property to.",
+            "examples": [false, 0, 0.0, "math.random(0, 10)"]
           },
           "examples": [
             { "example:property": false },
             { "example:property": 0 },
             { "example:property": 0.0 },
-            { "example:property": "one" }
+            { "example:property": "one" },
+            { "example:property": "math.random(0, 10)" }
           ]
         }
       }
