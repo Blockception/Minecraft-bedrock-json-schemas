@@ -28,9 +28,15 @@
     },
     "default_annoyingness": {
       "title": "Default Annoyingness",
-      "type": "string",
-      "default": "0",
+      "type": "number",
+      "default": 0,
       "description": "The default amount of annoyingness for any given nuisance. Specifies how much to raise anger level on each provocation"
+    },
+    "default_projectile_annoyingness": {
+      "title": "Default Projectile Annoyingness",
+      "type": "number",
+      "default": 0,
+      "description": "The default amount of annoyingness for projectile nuisance. Specifies how much to raise anger level on each provocation"
     },
     "max_anger": {
       "title": "Maximum Anger",
