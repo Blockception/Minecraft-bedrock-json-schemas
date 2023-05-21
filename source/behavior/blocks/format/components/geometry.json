@@ -2,5 +2,31 @@
   "$id": "blockception.minecraft.behavior.blocks.minecraft.geometry",
   "title": "Geometry",
   "description": "The description identifier of the geometry file to use to render this block. This identifier must match an existing geometry identifier in any of the currently loaded resource packs.",
-  "type": "string"
+  "oneOf": [
+    {
+      "type": "string"
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["identifier"],
+      "properties": {
+        "identifier": {
+          "title": "Identifier",
+          "description": "The description identifier of the geometry file to use to render this block. This identifier must match an existing geometry identifier in any of the currently loaded resource packs.",
+          "type": "string"
+        },
+        "bone_visibility": {
+          "title": "Bone Visibility",
+          "description": "A list of bones that should be visible when rendering this block. If not specified, all bones will be visible.",
+          "type": "object",
+          "additionalProperties": {
+            "type": "boolean",
+            "description": "Whether or not the bone should be visible.",
+            "title": "Bone Visibility"
+          }
+        }
+      }
+    }
+  ]
 }
