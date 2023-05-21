@@ -1,0 +1,84 @@
+{
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.transformation",
+  "title": "Transformation",
+  "description": "Supports rotation, scaling, and translation",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "rotation": {
+      "title": "Rotation",
+      "description": "Rotation in xxx?",
+      "type": "array",
+      "items": [
+        {
+          "title": "X",
+          "description": "Rotation in xxx?",
+          "type": "number",
+          "default": 0
+        },
+        {
+          "title": "Y",
+          "description": "Rotation in xxx?",
+          "type": "number",
+          "default": 0
+        },
+        {
+          "title": "Z",
+          "description": "Rotation in xxx?",
+          "type": "number",
+          "default": 0
+        }
+      ]
+    },
+    "scale": {
+      "title": "Scale",
+      "description": "UNDOCUMENTED",
+      "type": "array",
+      "items": [
+        {
+          "title": "X",
+          "description": "UNDOCUMENTED",
+          "type": "number",
+          "default": 1
+        },
+        {
+          "title": "Y",
+          "description": "UNDOCUMENTED",
+          "type": "number",
+          "default": 1
+        },
+        {
+          "title": "Z",
+          "description": "UNDOCUMENTED",
+          "type": "number",
+          "default": 1
+        }
+      ]
+    },
+    "translation": {
+      "title": "Translation",
+      "description": "UNDOCUMENTED",
+      "type": "array",
+      "items": [
+        {
+          "title": "X",
+          "description": "UNDOCUMENTED",
+          "type": "number",
+          "default": 0
+        },
+        {
+          "title": "Y",
+          "description": "UNDOCUMENTED",
+          "type": "number",
+          "default": 0
+        },
+        {
+          "title": "Z",
+          "description": "UNDOCUMENTED",
+          "type": "number",
+          "default": 0
+        }
+      ]
+    }
+  }
+}
