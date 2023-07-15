@@ -1,0 +1,19 @@
+name: 📑 Release Page
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  tagged-release:
+    name: 📑 Release Page
+    runs-on: "ubuntu-latest"
+
+    steps:
+      - name: 📑 Release Page
+        uses: ncipollo/release-action@v1
+        with:
+          token: "${{ secrets.GITHUB_TOKEN }}"
+          generateReleaseNotes: true
+          makeLatest: true
