@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.render_controllers",
   "examples": [
     {
-      "format_version": "1.19.0",
+      "format_version": "1.20.0",
       "render_controllers": {
         "controller.render.example": { "geometry": "Geometry.default", "materials": [{ "*": "Material.default" }], "textures": ["Texture.default"] }
       }
