@@ -64,7 +64,7 @@
       "type": "string",
       "description": "The event or commands to execute.",
       "title": "Commands",
-      "oneOf": [
+      "anyOf": [
         { "pattern": "^@s .+$", "title": "Event" },
         { "pattern": "^/.+$", "title": "Command" },
         { "pattern": "^.+;$", "title": "Molang" }
