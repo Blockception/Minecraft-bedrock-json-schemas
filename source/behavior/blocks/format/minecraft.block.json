@@ -30,7 +30,6 @@
         "minecraft:material_instances": { "$ref": "./components/material_instances.json" },
         "minecraft:part_visibility": { "$ref": "./components/part_visibility.json" },
         "minecraft:placement_filter": { "$ref": "./components/placement_filter.json" },
-        "minecraft:rotation": { "$ref": "./components/rotation.json" },
         "minecraft:selection_box": { "$ref": "./components/selection_box.json" },
         "minecraft:transformation": { "$ref": "./components/transformation.json" },
         "minecraft:unit_cube": { "$ref": "./components/unit_cube.json" },

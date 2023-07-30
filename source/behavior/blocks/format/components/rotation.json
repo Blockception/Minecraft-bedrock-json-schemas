@@ -1,6 +1,0 @@
-{
-  "$id": "blockception.minecraft.behavior.blocks.minecraft.rotation",
-  "title": "Rotation",
-  "description": "The block's rotation around the center of the cube in degrees. The rotation order is [x, y, z]. Angles need to be in multiples of 90.",
-  "$ref": "../../../../general/vectors/number3.json"
-}

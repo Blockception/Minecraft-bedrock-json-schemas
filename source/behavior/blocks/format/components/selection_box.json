@@ -11,7 +11,6 @@
         "origin": {
           "title": "Origin",
           "default": [0, 0, 0],
-          "$ref": "../../../../general/vectors/number3.json",
           "description": "Minimal position of the bounds of the selection box. \"origin\" is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.",
           "type": "array",
           "items": [
@@ -22,7 +21,6 @@
         },
         "size": {
           "title": "Size",
-          "$ref": "../../../../general/vectors/number3.json",
           "default": [8.0, 8.0, 8.0],
           "description": "Size of each side of the selection box. Size is specified as [x, y, z]. \"origin\" + \"size\" must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.",
           "type": "array",

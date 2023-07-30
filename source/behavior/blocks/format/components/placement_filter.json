@@ -5,7 +5,16 @@
   "type": "object",
   "properties": {
     "conditions": {
+      "title": "Conditions",
+      "description": "List of conditions where the block can be placed/survive. Limited to 64 conditions. Each condition is a JSON Object that must contain at least one (and can contain both) of the parameters allowed_faces or block_filter as shown below.",
+      "examples": [
+        {
+          "allowed_faces": ["up"],
+          "block_filter": ["grass"]
+        }
+      ],
       "type": "array",
+      "minItems": 1,
       "items": {
         "title": "Placement Filter",
         "description": "[Experimental]",
