@@ -1,7 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.lava_movement",
-  "description": "UNDOCUMENTED.",
-  "$comment": "UNDOCUMENTED",
+  "description": "Allows a custom movement speed across lava blocks.",
   "type": "object",
   "title": "Lava Movement",
   "additionalProperties": false,
@@ -10,13 +9,12 @@
     "value": {
       "type": "number",
       "title": "Value",
-      "description": "UNDOCUMENTED.",
-      "$comment": "UNDOCUMENTED"
+      "description": "The speed a strider moves over a lava block."
     }
   },
   "examples": [
     {
-      "value": 0.0
+      "value": 0.32
     }
   ]
 }

@@ -31,13 +31,7 @@
             "default": 1,
             "description": "This is the damage that the item will take each time it is used.",
             "title": "Damage"
-          },
-          "item_damage": {
-            "type": "integer",
-            "default": 1,
-            "description": "UNDOCUMENTED.",
-            "title": "Item Damage"
-          },
+          },          
           "item": {
             "$ref": "../../../../general/item/descriptor.json",
             "default": "",

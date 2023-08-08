@@ -58,15 +58,17 @@
     },
     "target_distance": {
       "type": "number",
-      "default": 16,
+      "default": 16.0,
       "description": "Maximum distance the entity will teleport when chasing a target.",
       "title": "Target Distance"
     },
     "target_teleport_chance": {
       "type": "number",
-      "default": 1,
+      "default": 1.0,
       "description": "The chance that the entity will teleport between 0.0 and 1.0. 1.0 means 100%",
-      "title": "Target Teleport Chance"
+      "title": "Target Teleport Chance",
+      "minimum": 0.0,
+      "maximum": 1.0
     }
   },
   "examples": [

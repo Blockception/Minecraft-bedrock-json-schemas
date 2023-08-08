@@ -6,15 +6,15 @@
   "required": ["value"],
   "properties": {
     "value": {
-      "type": "number",
-      "description": "UNDOCUMENTED: value.",
+      "type": "integer",
+      "description": "How much an attack should damage a target.",
       "title": "Value"
     }
   },
-  "description": "UNDOCUMENTED.",
+  "description": "Specifies how much damage is dealt by the entity when it attacks.",
   "examples": [
     {
-      "value": 0.0
+      "value": 4
     }
   ]
 }

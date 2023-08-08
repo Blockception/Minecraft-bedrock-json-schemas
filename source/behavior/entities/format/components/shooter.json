@@ -1,6 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.shooter",
   "description": "Defines the entity's ranged attack behavior.",
+  "$comment": "As of 1.19.60 & out of exp 1.20.10",
   "type": "object",
   "title": "Shooter",
   "additionalProperties": false,
@@ -17,12 +18,27 @@
       "examples": ["minecraft:arrow", "minecraft:small_fireball", "minecraft:thrown_trident"],
       "description": "Actor definition to use as projectile for the ranged attack. The actor definition must have the projectile component to be able to be shot as a projectile"
     },
-    "type": {
-      "title": "Type",
+    "magic": {
+      "title": "Magic",
+      "type": "boolean",
+      "default": false,
+      "description": "Sets whether the projectiles being used are flagged as magic. If set, the ranged attack goal will not be used at the same time as other magic goals, such as minecraft:behavior.drink_potion."    },
+    "power": {
+      "type": "number",
+      "title": "Power",
+      "default": 0.00,
+      "description": "Velocity in which the projectiles will be shot. A power of 0 will be overwritten by the default projectile throw power."
+    },
+    "projectiles": {
+      "title": "Projectiles",
+      "description": "List of projectiles that can be used by the shooter. Projectiles are evaluated in the order of the list; after a projectile is chosen, the rest of the list is ignored.",
+      "type": "array",
+      "items": { "type": "string", "description": "Projectiles that can be used by the shooter", "title": "Projectile"}
+    },
+    "sound": {
+      "title": "Sound",
       "type": "string",
-      "description": "UNDOCUMENTED.",
-      "$comment": "UNDOCUMENTED",
-      "examples": ["dragonfireball"]
+      "description": "Sound that is played when the shooter shoots a projectile."
     }
   },
   "examples": [{ "def": "minecraft:small_fireball" }]

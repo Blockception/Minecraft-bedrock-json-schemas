@@ -24,14 +24,12 @@
             "range_min": {
               "title": "Range Minimum",
               "description": "The minimum amount of health this mob could have.",
-              "$comment": "UNDOCUMENTED",
-              "type": "number"
+              "type": "integer"
             },
             "range_max": {
               "title": "Range Maximum",
               "description": "The maximum amount of health this mob could have.",
-              "$comment": "UNDOCUMENTED",
-              "type": "number"
+              "type": "integer"
             }
           }
         }
