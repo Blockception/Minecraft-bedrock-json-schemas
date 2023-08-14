@@ -1,7 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.underwater_movement",
-  "description": "UNDOCUMENTED.",
-  "$comment": "UNDOCUMENTED",
+  "description": "Defines the speed with which an entity can move through water.",
   "type": "object",
   "title": "Underwater Movement",
   "additionalProperties": false,
@@ -10,13 +9,12 @@
     "value": {
       "type": "number",
       "title": "Value",
-      "description": "UNDOCUMENTED.",
-      "$comment": "UNDOCUMENTED"
+      "description": "Movement speed of the entity under water."
     }
   },
   "examples": [
     {
-      "value": 0.0
+      "value": 0.15
     }
   ]
 }

@@ -3,29 +3,24 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Player.level",
-  "description": "UNDOCUMENTED.",
-  "$comment": "UNDOCUMENTED",
+  "description": "Defines the player's level.",
   "required": [],
   "properties": {
     "value": {
-      "type": "number",
-      "default": true,
+      "type": "integer",
       "title": "Value",
-      "description": "UNDOCUMENTED.",
-      "$comment": "UNDOCUMENTED"
+      "description": "The initial value of the player level."
     },
     "max": {
-      "type": "number",
-      "default": true,
+      "type": "integer",
       "title": "Maximum",
-      "description": "UNDOCUMENTED.",
-      "$comment": "UNDOCUMENTED"
+      "description": "The maximum player level value of the entity."
     }
   },
   "examples": [
     {
-      "value": true,
-      "max": true
+      "value": 0,
+      "max": 24791
     }
   ]
 }

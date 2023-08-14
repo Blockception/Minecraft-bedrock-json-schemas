@@ -2,8 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.hide",
   "type": "object",
   "title": "Hide",
-  "description": "UNDOCUMENTED.",
-  "$comment": "UNDOCUMENTED",
+  "description": "Compels an entity to move to and hide at their owned POI or the closest nearby.",
   "additionalProperties": false,
   "properties": {}
 }

@@ -3,18 +3,43 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Balloonable",
+  "description": "allows the entity to have a balloon attached and defines the conditions and events for the entity when is ballooned.",
   "required": [],
   "properties": {
-    "mass": {
+    "soft_distance": {
+      "title": "Soft Distance",
+      "description": "Distance in blocks where the 'spring' effect lifts the entity.",
       "type": "number",
-      "description": "UNDOCUMENTED: mass.",
-      "title": "Mass"
+      "default": 2.0
+    },
+    "max_distance": {
+      "title": "Max Distance",
+      "description": "Distance in blocks where the balloon breaks.",
+      "type": "number",
+      "default": 10.0
+    },
+    "on_balloon": {
+      "title": "On Balloon",
+      "description": "Event to call when the entity is ballooned.",
+      "type": "string"
+    },
+    "on_unballoon": {
+      "title": "On Unballoon",
+      "description": "Event to call when the entity is unballooned.",
+      "type": "string"
+    },
+    "mass": {
+      "title": "Mass",
+      "description": "Mass that the entity has when computing balloon pull forces.",
+      "type": "number",
+      "default": 1.0
     }
   },
-  "description": "UNDOCUMENTED.",
   "examples": [
     {
-      "mass": 0.0
+      "max_distance": 10.0,
+      "soft_distance": 2.0,
+      "mass": 0.5
     }
   ]
 }

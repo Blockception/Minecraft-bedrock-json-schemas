@@ -3,29 +3,26 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Player.experience",
-  "description": "UNDOCUMENTED.",
-  "$comment": "UNDOCUMENTED",
+  "description": "Defines how much experience each player action should take.",  
   "required": [],
   "properties": {
     "value": {
-      "type": "number",
-      "default": true,
+      "type": "integer",
+      "default": 1,
       "title": "Value",
-      "description": "UNDOCUMENTED.",
-      "$comment": "UNDOCUMENTED"
+      "description": "The initial value of the player experience."
     },
     "max": {
-      "type": "number",
-      "default": true,
+      "type": "integer",
+      "default": 5,
       "title": "Maximum",
-      "description": "UNDOCUMENTED.",
-      "$comment": "UNDOCUMENTED"
+      "description": "The maximum player experience of this entity."
     }
   },
   "examples": [
     {
-      "value": true,
-      "max": true
+      "value": 0,
+      "max": 1
     }
   ]
 }

@@ -7,7 +7,7 @@
   "properties": {
     "attack_cooldown_complete_event": {
       "$ref": "../types/trigger.json",
-      "description": "Event to be runned when the cooldown is complete.",
+      "description": "Event to be run when the cooldown is complete.",
       "title": "Attack Cooldown Complete Event"
     },
     "attack_cooldown_time": {

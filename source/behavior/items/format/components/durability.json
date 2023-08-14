@@ -8,13 +8,13 @@
   "properties": {
     "damage_chance": {
       "type": "object",
-      "title": "Damange Chance",
-      "description": "Damange chance.",
+      "title": "Damage Chance",
+      "description": "Damage chance.",
       "additionalProperties": false,
       "required": ["min", "max"],
       "properties": {
         "min": { "title": "Min", "type": "integer", "description": "The minimum." },
-        "max": { "title": "Max", "type": "integer", "description": "The minimum." }
+        "max": { "title": "Max", "type": "integer", "description": "The maximum." }
       }
     },
     "max_durability": {
