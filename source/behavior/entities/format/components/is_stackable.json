@@ -4,5 +4,11 @@
   "type": "object",
   "title": "Is Stackable",
   "additionalProperties": false,
-  "properties": {}
+"properties": {
+    "value": {
+      "title": "Value",
+      "description": "UNDOCUMENTED.",
+      "type": "boolean"
+    }
+  }
 }
