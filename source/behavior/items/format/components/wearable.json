@@ -5,10 +5,10 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "dispensable": { "title": "Dispensable", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "type": "boolean" },
+    "dispensable": { "title": "Dispensable", "description": "Sets if the item can be dropped by a dispenser block", "type": "boolean" },
     "slot": {
       "title": "Slot",
-      "description": "equipment_slot: slot.weapon.mainhand, slot.weapon.offhand, slot.armor.head, slot.armor.chest, slot.armor.legs, slot.armor.feet, slot.hotbar, slot.inventory, slot.enderchest, slot.saddle, slot.armor, slot.chest",
+      "description": "Which equipment slot the item can fit in",
       "type": "string",
       "enum": [
         "slot.weapon.mainhand",

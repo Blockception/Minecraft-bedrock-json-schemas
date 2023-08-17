@@ -12,5 +12,11 @@
       "title": "Duration",
       "type": "number"
     }
-  }
+  },
+  "examples": [
+    {
+      "category" : "attack",
+      "duration" : 0.2
+    }
+  ]
 }
