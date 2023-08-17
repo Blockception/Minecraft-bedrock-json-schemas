@@ -29,5 +29,12 @@
       "event": { "type": "string", "title": "Event", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
       "target": { "type": "string", "title": "Target", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "enum": ["self"] }
     }
-  }
+  },
+  "examples": [
+    {
+      "on_hit_block" : "my_event:block_hit", 
+      "on_hurt_entity" : "my_event:ouch", 
+      "on_not_hurt_entity" : "my_event:panic"
+    }
+  ]
 }

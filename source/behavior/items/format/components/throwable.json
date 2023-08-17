@@ -41,5 +41,15 @@
       "default": false,
       "type": "boolean"
     }
-  }
+  },
+  "examples": [
+    {
+      "do_swing_animation" : false,
+      "min_draw_duration" : 0.0,
+      "max_draw_duration" : 1.0,
+      "launch_power_scale" : 1.0,
+      "max_launch_power" : 2.0,
+      "scale_power_by_draw_duration" : false
+    }
+  ]
 }

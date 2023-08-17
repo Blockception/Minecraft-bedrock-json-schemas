@@ -6,15 +6,20 @@
   "additionalProperties": false,
   "required": ["on_use_on"],
   "properties": {
-    "on_use": {
-      "title": "On Use",
+    "on_use_on": {
+      "title": "On Use On",
       "description": "Event trigger for when the item is used.",
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "event": { "type": "string", "title": "Event", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
-        "target": { "type": "string", "title": "Target", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "enum": ["block"] }
+        "event": { "type": "string", "title": "Event", "description": "Event trigger for when the item is used." },
+        "target": { "type": "string", "title": "Target", "description": "Event target (block).", "$comment": "UNDOCUMENTED", "enum": ["block"] }
       }
     }
-  }
+  },
+  "Examples": [
+    {
+      "on_use_on": "minecraft:entity_primed"
+    }
+  ]
 }

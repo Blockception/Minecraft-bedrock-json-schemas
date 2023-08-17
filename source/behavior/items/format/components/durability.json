@@ -20,7 +20,13 @@
     "max_durability": {
       "title": "Maximum Durability",
       "description": "Maximum durability is the amount of damage that this item can take before breaking.",
-      "type": "number"
+      "type": "integer"
     }
-  }
+  },
+  "examples": [
+    {
+      "damage_chance": {"min":10,"max":50},
+      "max_durability": 36
+    }
+  ]
 }
