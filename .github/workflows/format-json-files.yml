@@ -27,7 +27,7 @@ jobs:
           ref: ${{github.ref}}
 
       # Runs a single command using the runners shell
-      - name: Setup Node.js Environment
+      - name: 🏗️ Setup Node.js Environment
         uses: actions/setup-node@v3
         with:
           cache: npm
