@@ -1,0 +1,14 @@
+{
+  "title": "Integer",
+  "description": "A integer value.",
+  "oneOf": [
+    {
+      "type": "integer"
+    },
+    {
+      "type": "string",
+      "$ref": "./item_ref.json"
+    }
+  ],
+  "examples": [0, 1, 2, "$variable", "($variable)"]
+}

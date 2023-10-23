@@ -1,0 +1,20 @@
+{
+  "title": "Variable",
+  "description": "A variable is a reference to a value that can be used in the UI.",
+  "type": "string",
+  "anyOf": [
+    {
+      "type": "string",
+      "pattern": "^\\$[a-zA-Z0-9_]+$"
+    },
+    {
+      "type": "string",
+      "pattern": "^#[a-zA-Z0-9_]+$"
+    },
+    {
+      "type": "string",
+      "pattern": "^\\(.*\\)$"
+    }
+  ],
+  "examples": ["$variable", "($variable)"]
+}

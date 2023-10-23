@@ -1,0 +1,14 @@
+{
+  "title": "Boolean",
+  "description": "A boolean value.",
+  "anyOf": [
+    {
+      "type": "boolean"
+    },
+    {
+      "type": "string",
+      "$ref": "./item_ref.json"
+    }
+  ],
+  "examples": ["true", "false", "$variable", "($variable)"]
+}

@@ -1,0 +1,40 @@
+{
+  "definitions": {
+    "color_item": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    }
+  },
+  "oneOf": [
+    {
+      "type": "string",
+      "description": "A variable",
+      "$ref": "./item_ref.json"
+    },
+    {
+      "type": "array",
+      "description": "A size with width and height.",
+      "items": [
+        {
+          "title": "Red",
+          "type": "string",
+          "description": "A variable",
+          "$ref": "#/definitions/color_item"
+        },
+        {
+          "title": "Green",
+          "type": "string",
+          "description": "A variable",
+          "$ref": "#/definitions/color_item"
+        },
+        {
+          "title": "Blue",
+          "type": "string",
+          "description": "A variable",
+          "$ref": "#/definitions/color_item"
+        }
+      ]
+    }
+  ]
+}

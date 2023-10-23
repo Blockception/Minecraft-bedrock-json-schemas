@@ -1,0 +1,51 @@
+{
+  "title": "Size",
+  "description": "The size of the element.",
+  "definitions": {
+    "size_coord": {
+      "title": "Size Coord",
+      "description": "A size coordinate.",
+      "oneOf": [
+        {
+          "type": "string",
+          "enum": ["default", "fill"]
+        },
+        {
+          "type": "string",
+          "pattern": "^[0-9]+(px|%)$"
+        },
+        {
+          "type": "integer",
+          "minimum": 0
+        }
+      ],
+      "examples": ["default", "fill", "100px", "100%", "100% - 2px"]
+    }
+  },
+  "oneOf": [
+    {
+      "type": "string",
+      "description": "A variable",
+      "$ref": "./item_ref.json"
+    },
+    {
+      "type": "array",
+      "description": "A size with width and height.",
+      "items": [
+        {
+          "title": "Width",
+          "type": "string",
+          "description": "A variable",
+          "$ref": "#/definitions/size_coord"
+        },
+        {
+          "title": "Height",
+          "type": "string",
+          "description": "A variable",
+          "$ref": "#/definitions/size_coord"
+        }
+      ]
+    }
+  ],
+  "examples": ["default", "fill", ["100%", "100%"]]
+}
