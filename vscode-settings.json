@@ -139,6 +139,18 @@
       "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/resource/textures/terrain_texture.json"
     },
     {
+      "fileMatch": ["ui/_ui_defs.{json,jsonc,json5}"],
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/resource/ui/_ui_defs.json"
+    },
+    {
+      "fileMatch": ["ui/_global_variables.{json,jsonc,json5}"],
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/resource/ui/_global_variables.json"
+    },
+    {
+      "fileMatch": ["ui/*.{json,jsonc,json5}", "ui/**/*.{json,jsonc,json5}"],
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/resource/ui/ui.json"
+    },
+    {
       "fileMatch": [
         "behavior_packs/*/animation_controllers/*.{json,jsonc,json5}",
         "*behavior*pack*/animation_controllers/*.{json,jsonc,json5}",

@@ -1,0 +1,5 @@
+{
+  "title": "String",
+  "description": "A string value.",
+  "anyOf": [{ "type": "string" }, { "type": "string", "$ref": "./item_ref.json" }]
+}

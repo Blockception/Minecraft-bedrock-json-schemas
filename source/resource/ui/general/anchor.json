@@ -1,0 +1,6 @@
+{
+  "title": "Anchor",
+  "description": "An anchor is a reference to an element in the UI.",
+  "type": "string",
+  "enum": ["bottom", "bottom_left", "bottom_right", "bottom_middle", "center", "left", "left_middle", "right", "right_middle", "top", "top_left", "top_right", "top_middle"]
+}
