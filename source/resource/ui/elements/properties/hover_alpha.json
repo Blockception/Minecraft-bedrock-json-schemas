@@ -1,5 +1,0 @@
-{
-  "title": "Hover Alpha",
-  "description": "The alpha of the text when hovered.",
-  "$ref": "../../general/number.json"
-}

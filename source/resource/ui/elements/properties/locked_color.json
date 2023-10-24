@@ -1,5 +1,0 @@
-{
-  "title": "Locked Color",
-  "description": "The color of the text when locked. This can be a hex color code or a color keyword.",
-  "$ref": "../../general/color.json"
-}

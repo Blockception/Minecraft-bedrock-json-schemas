@@ -1,5 +1,0 @@
-{
-  "title": "Pressed Color",
-  "description": "The color of the text when pressed. This can be a hex color code or a color keyword.",
-  "$ref": "../../general/color.json"
-}

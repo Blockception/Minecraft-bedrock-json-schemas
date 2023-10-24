@@ -1,5 +1,0 @@
-{
-  "title": "Hover Color",
-  "description": "The color of the text when hovered. This can be a hex color code or a color keyword.",
-  "$ref": "../../general/color.json"
-}
