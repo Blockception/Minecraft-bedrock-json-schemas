@@ -1,0 +1,5 @@
+{
+  "title": "Use Anchored Offset",
+  "description": "If true, the element will use the anchored offset.",
+  "$ref": "../../general/boolean.json"
+}

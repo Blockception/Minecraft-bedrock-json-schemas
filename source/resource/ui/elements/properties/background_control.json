@@ -1,0 +1,5 @@
+{
+  "title": "Background Control",
+  "description": "The control that will be used for the background.",
+  "$ref": "../../general/string.json"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Texture File System",
+  "description": "The file system that the texture is in.",
+  "anyOf": [
+    {
+      "enum": ["RawPath"]
+    },
+    {
+      "$ref": "../../general/variable.json"
+    }
+  ]
+}

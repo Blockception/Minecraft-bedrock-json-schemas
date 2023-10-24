@@ -1,0 +1,5 @@
+{
+  "title": "Layer",
+  "description": "The layer that the element will be rendered in. Higher layers are rendered on top of lower layers.",
+  "$ref": "../../general/integer.json"
+}

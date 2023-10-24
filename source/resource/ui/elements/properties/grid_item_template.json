@@ -1,0 +1,5 @@
+{
+  "title": "Grid Item Template",
+  "description": "The template that will be used for the grid item.",
+  "$ref": "../../general/string.json"
+}

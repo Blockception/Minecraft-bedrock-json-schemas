@@ -1,0 +1,12 @@
+{
+  "title": "Locked Control",
+  "description": "The control that will be locked.",
+  "anyOf": [
+    {
+      "enum": ["locked", ""]
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

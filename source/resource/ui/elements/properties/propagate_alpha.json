@@ -1,0 +1,5 @@
+{
+  "title": "Propagate Alpha",
+  "description": "If true, the alpha will be propagated.",
+  "$ref": "../../general/boolean.json"
+}

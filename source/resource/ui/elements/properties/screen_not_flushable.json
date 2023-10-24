@@ -1,0 +1,5 @@
+{
+  "title": "Screen Not Flushable",
+  "description": "If true, the screen will not be flushed when the element is added.",
+  "$ref": "../../general/boolean.json"
+}

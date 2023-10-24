@@ -1,0 +1,12 @@
+{
+  "title": "Destroy At End",
+  "description": "If true, the element will be destroyed at the end of the animation.",
+  "anyOf": [
+    {
+      "enum": ["popup", "details_bubble_control", "bundle_mode_popup_control", "selected_item_details"]
+    },
+    {
+      "$ref": "../../general/variable.json"
+    }
+  ]
+}

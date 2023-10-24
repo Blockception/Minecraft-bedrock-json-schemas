@@ -1,0 +1,5 @@
+{
+  "title": "Pressed Alpha",
+  "description": "The alpha of the text when pressed.",
+  "$ref": "../../general/number.json"
+}

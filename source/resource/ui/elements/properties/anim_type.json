@@ -1,0 +1,12 @@
+{
+  "title": "Animation Type",
+  "description": "The type of the animation.",
+  "anyOf": [
+    {
+      "enum": ["wait", "offset", "alpha", "flip_book"]
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

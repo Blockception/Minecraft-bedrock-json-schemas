@@ -1,0 +1,12 @@
+{
+  "title": "Hover Control",
+  "description": "The control that will be hovered.",
+  "anyOf": [
+    {
+      "enum": ["hover"]
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

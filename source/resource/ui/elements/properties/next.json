@@ -1,0 +1,5 @@
+{
+  "title": "Next",
+  "description": "The name of the next element.",
+  "$ref": "../../general/item_ref.json"
+}

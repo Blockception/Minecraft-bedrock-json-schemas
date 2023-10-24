@@ -1,0 +1,5 @@
+{
+  "title": "Handle Deselect",
+  "description": "If true, the element will handle deselect.",
+  "$ref": "../../general/boolean.json"
+}

@@ -1,0 +1,5 @@
+{
+  "title": "TTS Section Container",
+  "description": "The TTS section container.",
+  "$ref": "../../general/boolean.json"
+}

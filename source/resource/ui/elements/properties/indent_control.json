@@ -1,0 +1,12 @@
+{
+  "title": "Indent Control",
+  "description": "The control that will be indented.",
+  "anyOf": [
+    {
+      "enum": ["indent"]
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

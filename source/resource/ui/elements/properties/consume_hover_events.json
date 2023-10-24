@@ -1,0 +1,5 @@
+{
+  "title": "Consume Hover Events",
+  "description": "If true, the element will consume hover events.",
+  "$ref": "../../general/boolean.json"
+}

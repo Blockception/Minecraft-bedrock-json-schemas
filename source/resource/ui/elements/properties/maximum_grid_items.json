@@ -1,0 +1,5 @@
+{
+  "title": "Maximum Grid Items",
+  "description": "The maximum number of grid items.",
+  "$ref": "../../general/integer.json"
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Anchor To",
+  "description": "The anchor point of the element. This is the point that the element will be positioned relative to.",
+  "anyOf": [
+    {
+      "$ref": "../../general/anchor.json"
+    },
+    {
+      "$ref": "../../general/variable.json"
+    }
+  ]
+}

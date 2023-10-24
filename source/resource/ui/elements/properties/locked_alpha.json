@@ -1,0 +1,5 @@
+{
+  "title": "Locked Alpha",
+  "description": "The alpha of the text when locked.",
+  "$ref": "../../general/number.json"
+}

@@ -1,0 +1,5 @@
+{
+  "title": "Allow Clipping",
+  "description": "If true, the element will allow clipping.",
+  "$ref": "../../general/boolean.json"
+}

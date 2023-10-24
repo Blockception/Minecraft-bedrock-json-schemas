@@ -1,0 +1,12 @@
+{
+  "title": "Unchecked Hover Control",
+  "description": "The control that will be unchecked when hovered.",
+  "anyOf": [
+    {
+      "enum": ["unchecked"]
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

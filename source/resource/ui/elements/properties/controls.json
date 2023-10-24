@@ -1,0 +1,18 @@
+{
+  "title": "Controls",
+  "description": "The controls that are contained within this element.",
+  "anyOf": [
+    {
+      "type": "array",
+      "items": {
+        "additionalProperties": {
+          "title": "Sub Element",
+          "$ref": "#/definitions/grouped"
+        }
+      }
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

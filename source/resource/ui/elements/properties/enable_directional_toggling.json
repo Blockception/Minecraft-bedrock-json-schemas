@@ -1,0 +1,5 @@
+{
+  "title": "Enable Directional Toggling",
+  "description": "If true, the element will enable directional toggling.",
+  "$ref": "../../general/boolean.json"
+}

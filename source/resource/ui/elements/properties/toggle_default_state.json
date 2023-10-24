@@ -1,0 +1,12 @@
+{
+  "title": "Toggle Default State",
+  "description": "The default state of the toggle.",
+  "anyOf": [
+    {
+      "enum": ["checked", "unchecked"]
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

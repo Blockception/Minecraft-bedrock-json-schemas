@@ -1,0 +1,49 @@
+{
+  "title": "Factory",
+  "description": "The factory that will be used to create the element.",
+  "anyOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "patternProperties": {
+        "^\\$.*": {
+          "$ref": "#/definitions/variables"
+        }
+      },
+      "properties": {
+        "control_ids": {
+          "$ref": "#/definitions/control_ids"
+        },
+        "control_name": {
+          "title": "Control Name",
+          "description": "The name of the control that will be created by the factory.",
+          "$ref": "../../general/string.json"
+        },
+        "factory_variables": {
+          "title": "Factory Variables",
+          "description": "The variables that will be used by the factory.",
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "title": "Factory Variable"
+              }
+            },
+            {
+              "type": "string"
+            }
+          ]
+        },
+        "name": {
+          "title": "Name",
+          "description": "The name of the factory.",
+          "type": "string"
+        }
+      }
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

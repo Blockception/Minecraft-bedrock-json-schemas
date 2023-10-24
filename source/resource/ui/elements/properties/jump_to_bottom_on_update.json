@@ -1,0 +1,5 @@
+{
+  "title": "Jump To Bottom On Update",
+  "description": "If true, the element will jump to the bottom when updated.",
+  "$ref": "../../general/boolean.json"
+}

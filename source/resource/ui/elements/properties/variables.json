@@ -1,0 +1,26 @@
+{
+  "title": "Variables",
+  "description": "The variables that are contained within this element.",
+  "anyOf": [
+    {
+      "$ref": "../../general/item_ref.json"
+    },
+    {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "title": "Variables",
+        "additionalProperties": {
+          "$ref": "#/definitions/variables"
+        }
+      }
+    },
+    {
+      "type": "object",
+      "title": "Variables",
+      "additionalProperties": {
+        "$ref": "#/definitions/variables"
+      }
+    }
+  ]
+}

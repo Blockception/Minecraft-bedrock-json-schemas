@@ -1,0 +1,5 @@
+{
+  "title": "Modal",
+  "description": "If true, the element will be modal.",
+  "$ref": "../../general/boolean.json"
+}

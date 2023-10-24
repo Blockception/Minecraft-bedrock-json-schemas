@@ -1,0 +1,5 @@
+{
+  "title": "From",
+  "description": "The starting point of the animation.",
+  "anyOf": [{ "type": "number" }, { "$ref": "../../general/vec2.json" }]
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Text Labels",
+  "description": "The labels of the text.",
+  "anyOf": [
+    {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "title": "Text Label"
+      }
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Slider Box Control",
+  "description": "The control that will be used for the slider box.",
+  "anyOf": [
+    {
+      "enum": ["slider_box"]
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

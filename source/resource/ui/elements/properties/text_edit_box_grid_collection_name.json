@@ -1,0 +1,5 @@
+{
+  "title": "Text Edit Box Grid Collection Name",
+  "description": "The name of the collection that the text edit box grid is in.",
+  "$ref": "../../general/string.json"
+}

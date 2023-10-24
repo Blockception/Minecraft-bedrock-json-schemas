@@ -1,0 +1,16 @@
+{
+  "title": "Property Bag",
+  "description": "The property bag that will be used by the element.",
+  "anyOf": [
+    {
+      "type": "object",
+      "additionalProperties": {
+        "title": "Property Bag Property",
+        "$ref": "../../general/any.json"
+      }
+    },
+    {
+      "$ref": "../../general/string.json"
+    }
+  ]
+}

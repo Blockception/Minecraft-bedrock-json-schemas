@@ -1,0 +1,5 @@
+{
+  "title": "Low Frequency Rendering",
+  "description": "If true, the element will be rendered at a lower frequency.",
+  "$ref": "../../general/boolean.json"
+}

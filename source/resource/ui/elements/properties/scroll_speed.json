@@ -1,0 +1,5 @@
+{
+  "title": "Scroll Speed",
+  "description": "The speed that the element will scroll at.",
+  "$ref": "../../general/integer.json"
+}

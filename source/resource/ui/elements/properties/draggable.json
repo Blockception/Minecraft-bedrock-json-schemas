@@ -1,0 +1,5 @@
+{
+  "title": "Draggable",
+  "description": "If true, the element will be draggable.",
+  "$ref": "../../general/boolean.json"
+}

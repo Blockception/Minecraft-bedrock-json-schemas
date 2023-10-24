@@ -1,0 +1,5 @@
+{
+  "title": "Force Texture Reload",
+  "description": "If true, the texture will be reloaded.",
+  "$ref": "../../general/boolean.json"
+}

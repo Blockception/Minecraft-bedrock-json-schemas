@@ -1,0 +1,5 @@
+{
+  "title": "Grid Dimension Binding",
+  "description": "The binding that will be used for the grid dimension.",
+  "$ref": "../../general/variable.json"
+}

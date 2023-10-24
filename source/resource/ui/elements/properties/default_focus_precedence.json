@@ -1,0 +1,5 @@
+{
+  "title": "Default Focus Precedence",
+  "description": "The default focus precedence of the element.",
+  "$ref": "../../general/integer.json"
+}

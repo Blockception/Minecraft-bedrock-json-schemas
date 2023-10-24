@@ -1,0 +1,5 @@
+{
+  "title": "Scroll Box And Track Panel",
+  "description": "The panel that will be used for the scroll box and track.",
+  "$ref": "../../general/string.json"
+}

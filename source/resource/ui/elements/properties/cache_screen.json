@@ -1,0 +1,5 @@
+{
+  "title": "Cache Screen",
+  "description": "If true, the screen will be cached.",
+  "$ref": "../../general/boolean.json"
+}

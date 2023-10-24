@@ -1,0 +1,12 @@
+{
+  "title": "Checked Hover Control",
+  "description": "The control that will be checked when hovered.",
+  "anyOf": [
+    {
+      "enum": ["checked"]
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

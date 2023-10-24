@@ -1,0 +1,12 @@
+{
+  "title": "Scrollbar Box",
+  "description": "The box of the scrollbar.",
+  "anyOf": [
+    {
+      "enum": ["box"]
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

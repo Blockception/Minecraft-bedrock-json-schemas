@@ -1,0 +1,5 @@
+{
+  "title": "Place Holder Control",
+  "description": "The control that will be used for the place holder.",
+  "$ref": "../../general/string.json"
+}

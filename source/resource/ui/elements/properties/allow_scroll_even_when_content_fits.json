@@ -1,0 +1,5 @@
+{
+  "title": "Allow Scroll Even When Content Fits",
+  "description": "If true, the element will allow scrolling even when the content fits.",
+  "$ref": "../../general/boolean.json"
+}

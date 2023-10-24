@@ -1,0 +1,12 @@
+{
+  "title": "Checked Control",
+  "description": "The control that will be checked.",
+  "anyOf": [
+    {
+      "enum": ["checked"]
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

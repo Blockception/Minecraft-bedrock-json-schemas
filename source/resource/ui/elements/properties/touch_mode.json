@@ -1,0 +1,12 @@
+{
+  "title": "Touch Mode",
+  "description": "The touch mode of the element.",
+  "anyOf": [
+    {
+      "enum": ["touch", "mouse"]
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

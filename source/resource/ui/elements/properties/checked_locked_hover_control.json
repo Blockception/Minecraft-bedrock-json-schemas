@@ -1,0 +1,12 @@
+{
+  "title": "Checked Locked Hover Control",
+  "description": "The control that will be checked when locked and hovered.",
+  "anyOf": [
+    {
+      "enum": ["checked"]
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

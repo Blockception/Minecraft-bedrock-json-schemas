@@ -1,0 +1,5 @@
+{
+  "title": "TTS Section Header",
+  "description": "The header of the TTS section.",
+  "$ref": "../../general/string.json"
+}

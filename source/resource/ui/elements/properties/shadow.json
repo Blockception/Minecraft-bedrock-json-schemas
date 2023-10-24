@@ -1,0 +1,5 @@
+{
+  "title": "Shadow",
+  "description": "If true, the text will have a shadow.",
+  "$ref": "../../general/boolean.json"
+}

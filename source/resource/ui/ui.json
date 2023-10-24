@@ -10,21 +10,39 @@
     }
   },
   "definitions": {
-    "control_ids": {
-      "title": "Control IDs",
-      "description": "The IDs of the controls that will be created by the factory.",
-      "oneOf": [
-        {
-          "type": "string"
-        },
-        {
-          "type": "object",
-          "additionalProperties": {
-            "title": "Control ID",
-            "type": "string"
-          }
+    "animation": {
+      "type": "object",
+      "title": "Animation",
+      "description": "An animation is a set of keyframes that can be applied to an element.",
+      "additionalProperties": false,
+      "required": ["anim_type"],
+      "patternProperties": {
+        "^\\$.*": {
+          "$ref": "#/definitions/variables"
         }
-      ]
+      },
+      "properties": {
+        "anim_type": { "$ref": "./elements/properties/anim_type.json" },
+        "animation_reset_name": { "$ref": "./elements/properties/animation_reset_name.json" },
+        "destroy_at_end": { "$ref": "./elements/properties/destroy_at_end.json" },
+        "disable_anim_fast_forward": { "$ref": "./elements/properties/disable_anim_fast_forward.json" },
+        "duration": { "$ref": "./elements/properties/duration.json" },
+        "end_event": { "$ref": "./elements/properties/end_event.json" },
+        "easing": { "$ref": "./elements/properties/easing.json" },
+        "frame_count": { "$ref": "./elements/properties/frame_count.json" },
+        "frame_step": { "$ref": "./elements/properties/frame_step.json" },
+        "from": { "$ref": "./elements/properties/from.json" },
+        "fps": { "$ref": "./elements/properties/fps.json" },
+        "initial_uv": { "$ref": "./elements/properties/initial_uv.json" },
+        "next": { "$ref": "./elements/properties/next.json" },
+        "play_event": { "$ref": "./elements/properties/play_event.json" },
+        "propagate_alpha": { "$ref": "./elements/properties/propagate_alpha.json" },
+        "reversible": { "$ref": "./elements/properties/reversible.json" },
+        "scale_from_starting_alpha": { "$ref": "./elements/properties/scale_from_starting_alpha.json" },
+        "to": { "$ref": "./elements/properties/to.json" },
+        "uv": { "$ref": "./elements/properties/uv.json" },
+        "uv_size": { "$ref": "./elements/properties/uv_size.json" }
+      }
     },
     "variables": {
       "title": "Variable Definition",
@@ -44,1438 +62,193 @@
         }
       },
       "properties": {
-        "allow_scroll_even_when_content_fits": {
-          "title": "Allow Scroll Even When Content Fits",
-          "description": "If true, the element will allow scrolling even when the content fits.",
-          "$ref": "./general/boolean.json"
-        },
-        "always_handle_scrolling": {
-          "title": "Always Handle Scrolling",
-          "description": "If true, the element will always handle scrolling.",
-          "$ref": "./general/boolean.json"
-        },
-        "always_rotate": {
-          "title": "Always Rotate",
-          "description": "If true, the element will always rotate.",
-          "$ref": "./general/boolean.json"
-        },
-        "always_listen_to_input": {
-          "title": "Always Listen To Input",
-          "description": "If true, the element will always listen to input.",
-          "$ref": "./general/boolean.json"
-        },
-        "always_handle_pointer": {
-          "title": "Always Handle Pointer",
-          "description": "If true, the element will always handle the pointer.",
-          "$ref": "./general/boolean.json"
-        },
-        "anims": {
-          "title": "Animations",
-          "description": "The animations that are contained within this element.",
-          "oneOf": [
-            {
-              "$ref": "./general/item_ref.json"
-            },
-            {
-              "type": "array",
-              "items": {
-                "$ref": "./general/item_ref.json"
-              }
-            }
-          ]
-        },
-        "alpha": {
-          "title": "Alpha",
-          "description": "The alpha of the element.",
-          "oneOf": [
-            {
-              "$ref": "./general/item_ref.json"
-            },
-            {
-              "type": "number",
-              "minimum": 0,
-              "maximum": 1
-            }
-          ]
-        },
-        "anchor_from": {
-          "title": "Anchor From",
-          "description": "The anchor point of the element. This is the point that the element will be positioned relative to.",
-          "oneOf": [{ "$ref": "./general/anchor.json" }, { "$ref": "./general/variable.json" }]
-        },
-        "anchor_to": {
-          "title": "Anchor To",
-          "description": "The anchor point of the element. This is the point that the element will be positioned relative to.",
-          "oneOf": [{ "$ref": "./general/anchor.json" }, { "$ref": "./general/variable.json" }]
-        },
-        "bindings": {
-          "title": "Bindings",
-          "description": "The bindings that are contained within this element.",
-          "oneOf": [
-            {
-              "$ref": "./general/item_ref.json"
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "title": "Bindings",
-                "additionalProperties": false,
-                "properties": {
-                  "binding_collection_name": {
-                    "title": "Binding Collection Name",
-                    "description": "The name of the collection that the binding is in.",
-                    "$ref": "./general/string.json"
-                  },
-                  "binding_collection_prefix": {
-                    "title": "Binding Collection Prefix",
-                    "description": "The prefix of the collection that the binding is in.",
-                    "$ref": "./general/string.json"
-                  },
-                  "binding_condition": {
-                    "title": "Binding Condition",
-                    "description": "The condition that must be met for the binding to be applied.",
-                    "anyOf": [
-                      {
-                        "enum": ["once", "always", "always_when_visible", "visible"]
-                      },
-                      {
-                        "$ref": "./general/item_ref.json"
-                      }
-                    ]
-                  },
-                  "binding_name": {
-                    "title": "Binding Name",
-                    "description": "The name of the binding. This is used to reference the binding in the element's properties.",
-                    "$ref": "./general/string.json"
-                  },
-                  "binding_name_override": {
-                    "title": "Binding Name Override",
-                    "description": "The name of the binding. This is used to reference the binding in the element's properties.",
-                    "$ref": "./general/string.json"
-                  },
-                  "binding_type": {
-                    "title": "Binding Type",
-                    "description": "The type of the binding.",
-                    "anyOf": [{ "enum": ["collection", "global", "collection_details", "none", "view"] }, { "$ref": "./general/variable.json" }]
-                  },
-                  "ignored": {
-                    "title": "Ignored",
-                    "description": "If true, the binding will be ignored.",
-                    "$ref": "./general/boolean.json"
-                  },
-                  "resolve_sibling_scope": {
-                    "title": "Resolve Sibling Scope",
-                    "description": "If true, the binding will resolve sibling scope.",
-                    "$ref": "./general/boolean.json"
-                  },
-                  "source_control_name": {
-                    "title": "Source Control Name",
-                    "description": "The name of the control that the binding is in.",
-                    "$ref": "./general/string.json"
-                  },
-                  "source_property_name": {
-                    "title": "Source Property Name",
-                    "description": "The name of the property that the binding is in.",
-                    "$ref": "./general/string.json"
-                  },
-                  "target_property_name": {
-                    "title": "Target Property Name",
-                    "description": "The name of the property that the binding is in.",
-                    "$ref": "./general/string.json"
-                  }
-                }
-              }
-            }
-          ]
-        },
-        "bilinear": {
-          "title": "Bilinear",
-          "description": "If true, the element will use bilinear filtering.",
-          "$ref": "./general/boolean.json"
-        },
-        "background_control": {
-          "title": "Background Control",
-          "description": "The control that will be used for the background.",
-          "$ref": "./general/string.json"
-        },
-        "background_hover_control": {
-          "title": "Background Hover Control",
-          "description": "The control that will be used for the background when hovered.",
-          "$ref": "./general/string.json"
-        },
-        "backup_font_type": {
-          "title": "Backup Font Type",
-          "description": "The type of the backup font.",
-          "type": "string",
-          "oneOf": [
-            {
-              "enum": ["UIFont"]
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "button_mappings": {
-          "title": "Button Mappings",
-          "description": "The button mappings that are contained within this element.",
-          "oneOf": [
-            {
-              "$ref": "./general/item_ref.json"
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "title": "Button Mappings",
-                "additionalProperties": {
-                  "type": ["string", "boolean"],
-                  "title": "Button Mapping",
-                  "examples": ["button.menu", "button.back", "global"]
-                }
-              }
-            }
-          ]
-        },
-        "checked_control": {
-          "title": "Checked Control",
-          "description": "The control that will be checked.",
-          "anyOf": [
-            {
-              "enum": ["checked"]
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "checked_hover_control": {
-          "title": "Checked Hover Control",
-          "description": "The control that will be checked when hovered.",
-          "anyOf": [
-            {
-              "enum": ["checked"]
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "checked_locked_control": {
-          "title": "Checked Locked Control",
-          "description": "The control that will be checked when locked.",
-          "anyOf": [
-            {
-              "enum": ["checked"]
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "checked_locked_hover_control": {
-          "title": "Checked Locked Hover Control",
-          "description": "The control that will be checked when locked and hovered.",
-          "anyOf": [
-            {
-              "enum": ["checked"]
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "clips_children": {
-          "title": "Clips Children",
-          "description": "If true, the element will clip its children.",
-          "$ref": "./general/boolean.json"
-        },
-        "clip_direction": {
-          "title": "Clip Direction",
-          "description": "The direction that the element will be clipped in.",
-          "type": "string",
-          "oneOf": [
-            {
-              "enum": ["left", "right", "top", "bottom"]
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "clip_pixelperfect": {
-          "title": "Clip Pixel Perfect",
-          "description": "If true, the element will be clipped pixel perfect.",
-          "type": "boolean"
-        },
-        "close_on_player_hurt": {
-          "title": "Close On Player Hurt",
-          "description": "If true, the element will close when the player is hurt.",
-          "$ref": "./general/boolean.json"
-        },
-        "collection_name": {
-          "title": "Collection Name",
-          "description": "The name of the collection that the element is in.",
-          "type": "string",
-          "$ref": "./general/string.json"
-        },
-        "color": {
-          "title": "Color",
-          "description": "The color of the text. This can be a hex color code or a color keyword.",
-          "$ref": "./general/color.json"
-        },
-        "contained": {
-          "title": "Contained",
-          "description": "If true, the element will be contained.",
-          "$ref": "./general/boolean.json"
-        },
-        "controls": {
-          "title": "Controls",
-          "description": "The controls that are contained within this element.",
-          "oneOf": [
-            {
-              "type": "array",
-              "items": {
-                "additionalProperties": {
-                  "title": "Sub Element",
-                  "$ref": "#/definitions/grouped"
-                }
-              }
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "control_name": {
-          "title": "Control Name",
-          "description": "The name of the control.",
-          "$ref": "./general/string.json"
-        },
-        "consume_hover_events": {
-          "title": "Consume Hover Events",
-          "description": "If true, the element will consume hover events.",
-          "$ref": "./general/boolean.json"
-        },
-        "default_control": {
-          "title": "Default Control",
-          "description": "The default control that will be focused.",
-          "$ref": "./general/string.json"
-        },
-        "default_focus_precedence": {
-          "title": "Default Focus Precedence",
-          "description": "The default focus precedence of the element.",
-          "$ref": "./general/integer.json"
-        },
-        "disable_anim_fast_forward": {
-          "title": "Disable Anim Fast Forward",
-          "description": "If true, the animation will not be fast forwarded.",
-          "$ref": "./general/boolean.json"
-        },
-        "draggable": {
-          "title": "Draggable",
-          "description": "If true, the element will be draggable.",
-          "$ref": "./general/boolean.json"
-        },
-        "dropdown_area": {
-          "title": "Dropdown Area",
-          "description": "The area that the dropdown will be in.",
-          "$ref": "./general/vec4.json"
-        },
-        "dropdown_content_control": {
-          "title": "Dropdown Content Control",
-          "description": "The control that will be used for the dropdown content.",
-          "$ref": "./general/string.json"
-        },
-        "dropdown_name": {
-          "title": "Dropdown Name",
-          "description": "The name of the dropdown.",
-          "$ref": "./general/string.json"
-        },
-        "enabled": {
-          "title": "Enabled",
-          "description": "If true, the element will be enabled.",
-          "$ref": "./general/boolean.json"
-        },
-        "enabled_newline": {
-          "title": "Enabled Newline",
-          "description": "If true, the element will be enabled when a new line is created.",
-          "$ref": "./general/boolean.json"
-        },
-        "enable_directional_toggling": {
-          "title": "Enable Directional Toggling",
-          "description": "If true, the element will enable directional toggling.",
-          "$ref": "./general/boolean.json"
-        },
-        "enable_profanity_filter": {
-          "title": "Enable Profanity Filter",
-          "description": "If true, the element will enable the profanity filter.",
-          "$ref": "./general/boolean.json"
-        },
-        "factory": {
-          "title": "Factory",
-          "description": "The factory that will be used to create the element.",
-          "type": "object",
-          "additionalProperties": false,
-          "patternProperties": {
-            "^\\$.*": {
-              "$ref": "#/definitions/variables"
-            }
-          },
-          "properties": {
-            "control_ids": {
-              "$ref": "#/definitions/control_ids"
-            },
-            "control_name": {
-              "title": "Control Name",
-              "description": "The name of the control that will be created by the factory.",
-              "$ref": "./general/string.json"
-            },
-            "factory_variables": {
-              "title": "Factory Variables",
-              "description": "The variables that will be used by the factory.",
-              "oneOf": [
-                {
-                  "type": "array",
-                  "items": {
-                    "type": "string",
-                    "title": "Factory Variable"
-                  }
-                },
-                {
-                  "type": "string"
-                }
-              ]
-            },
-            "name": {
-              "title": "Name",
-              "description": "The name of the factory.",
-              "type": "string"
-            }
-          }
-        },
-        "fill": {
-          "title": "Fill",
-          "description": "If true, the element will fill the screen.",
-          "$ref": "./general/boolean.json"
-        },
-        "focus_enabled": {
-          "title": "Focus Enabled",
-          "description": "If true, the element will be focus enabled.",
-          "$ref": "./general/boolean.json"
-        },
-        "focus_change_left": {
-          "title": "Focus Change Left",
-          "oneOf": [
-            {
-              "enum": ["FOCUS_OVERRIDE_STOP"]
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "focus_change_right": {
-          "title": "Focus Change Right",
-          "oneOf": [
-            {
-              "enum": ["FOCUS_OVERRIDE_STOP"]
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "focus_change_down": {
-          "title": "Focus Change Down",
-          "oneOf": [
-            {
-              "enum": ["FOCUS_OVERRIDE_STOP"]
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "focus_change_up": {
-          "title": "Focus Change Up",
-          "oneOf": [
-            {
-              "enum": ["FOCUS_OVERRIDE_STOP"]
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "focus_identifier": {
-          "title": "Focus Identifier",
-          "description": "The identifier of the element that will be focused.",
-          "$ref": "./general/string.json"
-        },
-        "focus_magnet_enabled": {
-          "title": "Focus Magnet Enabled",
-          "description": "If true, the element will be focus magnet enabled.",
-          "$ref": "./general/boolean.json"
-        },
-        "focus_wrap_enabled": {
-          "title": "Focus Wrap Enabled",
-          "description": "If true, the element will be focus wrap enabled.",
-          "$ref": "./general/boolean.json"
-        },
-        "force_render_below": {
-          "title": "Force Render Below",
-          "description": "If true, the element will be rendered below the screen.",
-          "$ref": "./general/boolean.json"
-        },
-        "force_texture_reload": {
-          "title": "Force Texture Reload",
-          "description": "If true, the texture will be reloaded.",
-          "$ref": "./general/boolean.json"
-        },
-        "font_scale_factor": {
-          "title": "Font Scale Factor",
-          "description": "The scale factor of the font.",
-          "$ref": "./general/number.json"
-        },
-        "font_size": {
-          "title": "Font Size",
-          "description": "The size of the font.",
-          "anyOf": [
-            {
-              "enum": ["normal"]
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "font_type": {
-          "title": "Font Type",
-          "description": "The type of the font.",
-          "type": "string",
-          "oneOf": [
-            {
-              "enum": ["smooth", "MinecraftTen"]
-            },
-            {
-              "$ref": "./general/variable.json"
-            }
-          ]
-        },
-        "grid_item_template": {
-          "title": "Grid Item Template",
-          "description": "The template that will be used for the grid item.",
-          "type": "string"
-        },
-        "grid_dimensions": {
-          "title": "Grid Dimensions",
-          "description": "The dimensions of the grid.",
-          "$ref": "./general/vec2.json"
-        },
-        "grid_dimension_binding": {
-          "title": "Grid Dimension Binding",
-          "description": "The binding that will be used for the grid dimension.",
-          "$ref": "./general/variable.json"
-        },
-        "grid_position": {
-          "title": "Grid Position",
-          "description": "The position of the grid.",
-          "$ref": "./general/vec2.json"
-        },
-        "grid_rescaling_type": {
-          "title": "Grid Rescaling Type",
-          "description": "The type of the grid rescaling.",
-          "type": "string",
-          "enum": ["horizontal"]
-        },
-        "handle_select": {
-          "title": "Handle Select",
-          "description": "If true, the element will handle select.",
-          "$ref": "./general/boolean.json"
-        },
-        "handle_deselect": {
-          "title": "Handle Deselect",
-          "description": "If true, the element will handle deselect.",
-          "$ref": "./general/boolean.json"
-        },
-        "hover_alpha": {
-          "title": "Hover Alpha",
-          "description": "The alpha of the text when hovered.",
-          "$ref": "./general/number.json"
-        },
-        "hover_color": {
-          "title": "Hover Color",
-          "description": "The color of the text when hovered. This can be a hex color code or a color keyword.",
-          "$ref": "./general/color.json"
-        },
-        "hover_control": {
-          "title": "Hover Control",
-          "description": "The control that will be hovered.",
-          "anyOf": [
-            {
-              "enum": ["hover"]
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "hover_enabled": {
-          "title": "Hover Enabled",
-          "description": "If true, the element will be hover enabled.",
-          "$ref": "./general/boolean.json"
-        },
-        "ignored": {
-          "title": "Ignored",
-          "description": "If true, the element will be ignored.",
-          "$ref": "./general/boolean.json"
-        },
-        "indent_control": {
-          "title": "Indent Control",
-          "description": "The control that will be indented.",
-          "anyOf": [
-            {
-              "enum": ["indent"]
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "inherit_max_sibling_height": {
-          "title": "Inherit Max Sibling Height",
-          "description": "If true, the element will inherit the maximum height of its siblings.",
-          "type": "boolean"
-        },
-        "is_modal": {
-          "title": "Is Modal",
-          "description": "If true, the element will be modal.",
-          "$ref": "./general/boolean.json"
-        },
-        "is_showing_menu": {
-          "title": "Is Showing Menu",
-          "description": "If true, the element will be showing the menu.",
-          "$ref": "./general/boolean.json"
-        },
-        "jump_to_bottom_on_update": {
-          "title": "Jump To Bottom On Update",
-          "description": "If true, the element will jump to the bottom when updated.",
-          "$ref": "./general/boolean.json"
-        },
-        "keep_ratio": {
-          "title": "Keep Ratio",
-          "description": "If true, the element will keep its ratio.",
-          "$ref": "./general/boolean.json"
-        },
-        "layer": {
-          "title": "Layer",
-          "description": "The layer that the element will be rendered in. Higher layers are rendered on top of lower layers.",
-          "$ref": "./general/integer.json"
-        },
-        "localize": {
-          "title": "Localize",
-          "description": "If true, the element will be localized.",
-          "$ref": "./general/boolean.json"
-        },
-        "locked_alpha": {
-          "title": "Locked Alpha",
-          "description": "The alpha of the text when locked.",
-          "$ref": "./general/number.json"
-        },
-        "locked_color": {
-          "title": "Locked Color",
-          "description": "The color of the text when locked. This can be a hex color code or a color keyword.",
-          "$ref": "./general/color.json"
-        },
-        "locked_control": {
-          "title": "Locked Control",
-          "description": "The control that will be locked.",
-          "anyOf": [
-            {
-              "enum": ["locked", ""]
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "low_frequency_rendering": {
-          "title": "Low Frequency Rendering",
-          "description": "If true, the element will be rendered at a lower frequency.",
-          "$ref": "./general/boolean.json"
-        },
-        "maximum_grid_items": {
-          "title": "Maximum Grid Items",
-          "description": "The maximum number of grid items.",
-          "$ref": "./general/integer.json"
-        },
-        "max_length": {
-          "title": "Max Length",
-          "description": "The maximum length of the text. If the text is longer than this, it will be truncated.",
-          "$ref": "./general/integer.json"
-        },
-        "max_size": {
-          "title": "Max Size",
-          "description": "The maximum size of the element.",
-          "$ref": "./general/size.json"
-        },
-        "min_size": {
-          "title": "Min Size",
-          "description": "The minimum size of the element.",
-          "$ref": "./general/size.json"
-        },
-        "modal": {
-          "title": "Modal",
-          "description": "If true, the element will be modal.",
-          "$ref": "./general/boolean.json"
-        },
-        "offset": {
-          "title": "Offset",
-          "description": "The offset of the element from the anchor point. horizontal by vertical.",
-          "$ref": "./general/vec2.json"
-        },
-        "orientation": {
-          "title": "Orientation",
-          "description": "The orientation of the element.",
-          "type": "string",
-          "anyOf": [
-            {
-              "enum": ["horizontal", "vertical"]
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "primary_color": {
-          "title": "Primary Color",
-          "description": "The primary color of the element. This can be a hex color code or a color keyword.",
-          "$ref": "./general/color.json"
-        },
-        "place_holder_control": {
-          "title": "Place Holder Control",
-          "description": "The control that will be used for the place holder.",
-          "$ref": "./general/string.json"
-        },
-        "pressed_alpha": {
-          "title": "Pressed Alpha",
-          "description": "The alpha of the text when pressed.",
-          "$ref": "./general/number.json"
-        },
-        "pressed_color": {
-          "title": "Pressed Color",
-          "description": "The color of the text when pressed. This can be a hex color code or a color keyword.",
-          "$ref": "./general/color.json"
-        },
-        "pressed_control": {
-          "title": "Pressed Control",
-          "description": "The control that will be pressed.",
-          "anyOf": [
-            {
-              "enum": ["hover", "pressed"]
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "prevent_touch_input": {
-          "title": "Prevent Touch Input",
-          "description": "If true, the element will prevent touch input.",
-          "$ref": "./general/boolean.json"
-        },
-        "progress_control": {
-          "title": "Progress Control",
-          "description": "The control that will be used for the progress.",
-          "$ref": "./general/string.json"
-        },
-        "progress_hover_control": {
-          "title": "Progress Hover Control",
-          "description": "The control that will be used for the progress when hovered.",
-          "$ref": "./general/string.json"
-        },
-        "property_bag": {
-          "title": "Property Bag",
-          "description": "The property bag that will be used by the element.",
-          "anyOf": [
-            {
-              "type": "object",
-              "additionalProperties": {
-                "title": "Property Bag Property",
-                "$ref": "./general/any.json"
-              }
-            },
-            {
-              "$ref": "./general/string.json"
-            }
-          ]
-        },
-        "radio_toggle_group": {
-          "title": "Radio Toggle Group",
-          "description": "The radio toggle group that the element is in.",
-          "$ref": "./general/string.json"
-        },
-        "renderer": {
-          "title": "Renderer",
-          "description": "The renderer that will be used by the element.",
-          "anyOf": [
-            {
-              "enum": ["ui_holo_cursor"]
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "render_game_behind": {
-          "title": "Render Game Behind",
-          "description": "If true, the game will be rendered behind the element.",
-          "$ref": "./general/boolean.json"
-        },
-        "render_only_when_topmost": {
-          "title": "Render Only When Topmost",
-          "description": "If true, the element will only be rendered when it is the topmost element.",
-          "$ref": "./general/boolean.json"
-        },
-        "reset_event": {
-          "title": "Reset Event",
-          "description": "The event that will be reset.",
-          "$ref": "./general/string.json"
-        },
-        "reset_on_focus_lost": {
-          "title": "Reset On Focus Lost",
-          "description": "If true, the element will be reset when focus is lost.",
-          "$ref": "./general/boolean.json"
-        },
-        "rotate_speed": {
-          "title": "Rotate Speed",
-          "description": "The speed that the element will rotate at.",
-          "$ref": "./general/number.json"
-        },
-        "screen_draws_last": {
-          "title": "Screen Draws Last",
-          "description": "If true, the screen will be drawn last.",
-          "$ref": "./general/boolean.json"
-        },
-        "screen_not_flushable": {
-          "title": "Screen Not Flushable",
-          "description": "If true, the screen will not be flushed when the element is added.",
-          "$ref": "./general/boolean.json"
-        },
-        "send_telemetry": {
-          "title": "Send Telemetry",
-          "description": "If true, the element will send telemetry.",
-          "$ref": "./general/boolean.json"
-        },
-        "size": {
-          "title": "Size",
-          "description": "The size of the element.",
-          "$ref": "./general/size.json"
-        },
-        "shadow": {
-          "title": "Shadow",
-          "description": "If true, the text will have a shadow.",
-          "$ref": "./general/boolean.json"
-        },
-        "should_steal_mouse": {
-          "title": "Should Steal Mouse",
-          "description": "If true, the element will steal the mouse.",
-          "$ref": "./general/boolean.json"
-        },
-        "slider_box_control": {
-          "title": "Slider Box Control",
-          "description": "The control that will be used for the slider box.",
-          "anyOf": [
-            {
-              "enum": ["slider_box"]
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "slider_collection_name": {
-          "title": "Slider Collection Name",
-          "description": "The name of the collection that the slider is in.",
-          "$ref": "./general/string.json"
-        },
-        "slider_direction": {
-          "title": "Slider Direction",
-          "description": "The direction of the slider.",
-          "type": "string",
-          "$ref": "./general/item_ref.json"
-        },
-        "slider_name": {
-          "title": "Slider Name",
-          "description": "The name of the slider.",
-          "$ref": "./general/string.json"
-        },
-        "slider_select_on_hover": {
-          "title": "Slider Select On Hover",
-          "description": "If true, the slider will select on hover.",
-          "$ref": "./general/boolean.json"
-        },
-        "slider_small_decrease_button": {
-          "title": "Slider Small Decrease Button",
-          "description": "The button that will be used for the slider small decrease.",
-          "$ref": "./general/item_ref.json"
-        },
-        "slider_small_increase_button": {
-          "title": "Slider Small Increase Button",
-          "description": "The button that will be used for the slider small decrease.",
-          "$ref": "./general/item_ref.json"
-        },
-        "slider_selected_button": {
-          "title": "Slider Selected Button",
-          "description": "The button that will be used for the slider selected.",
-          "$ref": "./general/item_ref.json"
-        },
-        "slider_deselected_button": {
-          "title": "Slider Deselected Button",
-          "description": "The button that will be used for the slider deselected.",
-          "$ref": "./general/item_ref.json"
-        },
-        "slider_steps": {
-          "title": "Slider Steps",
-          "description": "The steps of the slider.",
-          "$ref": "./general/integer.json"
-        },
-        "slider_track_button": {
-          "title": "Slider Track Button",
-          "description": "The button that will be used for the slider track.",
-          "$ref": "./general/item_ref.json"
-        },
-        "scroll_box_and_track_panel": {
-          "title": "Scroll Box And Track Panel",
-          "description": "The panel that will be used for the scroll box and track.",
-          "$ref": "./general/string.json"
-        },
-        "scroll_content": {
-          "title": "Scroll Content",
-          "description": "The content that will be scrolled.",
-          "$ref": "./general/string.json"
-        },
-        "scroll_speed": {
-          "title": "Scroll Speed",
-          "description": "The speed that the element will scroll at.",
-          "$ref": "./general/integer.json"
-        },
-        "scroll_view_port": {
-          "title": "Scroll View Port",
-          "description": "The view port that the element will be scrolled in.",
-          "$ref": "./general/string.json"
-        },
-        "scrollbar_box": {
-          "title": "Scrollbar Box",
-          "description": "The box of the scrollbar.",
-          "anyOf": [
-            {
-              "enum": ["box"]
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "scrollbar_track_button": {
-          "title": "Scrollbar Track Button",
-          "description": "The button that will be used for the scrollbar track.",
-          "$ref": "./general/item_ref.json"
-        },
-        "scrollbar_touch_button": {
-          "title": "Scrollbar Touch Button",
-          "description": "The button that will be used for the scrollbar touch.",
-          "$ref": "./general/item_ref.json"
-        },
-        "scrollbar_track": {
-          "title": "Scrollbar Track",
-          "description": "The track of the scrollbar.",
-          "anyOf": [
-            {
-              "enum": ["track"]
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "sound_name": {
-          "title": "Sound Name",
-          "description": "The name of the sound.",
-          "$ref": "./general/string.json"
-        },
-        "sound_pitch": {
-          "title": "Sound Pitch",
-          "description": "The pitch of the sound.",
-          "$ref": "./general/number.json"
-        },
-        "sound_volume": {
-          "title": "Sound Volume",
-          "description": "The volume of the sound.",
-          "type": "number",
-          "minimum": 0,
-          "maximum": 1
-        },
-        "text": {
-          "title": "Text",
-          "description": "The text to display.",
-          "type": "string"
-        },
-        "text_alignment": {
-          "title": "Text Alignment",
-          "description": "The alignment of the text.",
-          "type": "string",
-          "anyOf": [
-            {
-              "enum": ["left", "center", "right"]
-            },
-            {
-              "$ref": "./general/variable.json"
-            }
-          ]
-        },
-        "text_box_name": {
-          "title": "Text Box Name",
-          "description": "The name of the text box.",
-          "$ref": "./general/string.json"
-        },
-        "text_control": {
-          "title": "Text Control",
-          "description": "The control that will be used for the text.",
-          "$ref": "./general/string.json"
-        },
-        "text_edit_box_grid_collection_name": {
-          "title": "Text Edit Box Grid Collection Name",
-          "description": "The name of the collection that the text edit box grid is in.",
-          "$ref": "./general/string.json"
-        },
-        "text_type": {
-          "title": "Text Type",
-          "description": "The type of the text.",
-          "anyOf": [
-            {
-              "enum": ["ExtendedASCII"]
-            },
-            {
-              "$ref": "./general/variable.json"
-            }
-          ]
-        },
-        "texture": {
-          "title": "Texture",
-          "description": "The texture to display.",
-          "anyOf": [
-            {
-              "type": "string",
-              "pattern": "^textures/[a-zA-Z0-9/_-]+$",
-              "examples": ["textures/ui/file"]
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            },
-            {
-              "type": "string"
-            }
-          ]
-        },
-        "texture_file_system": {
-          "title": "Texture File System",
-          "description": "The file system that the texture is in.",
-          "oneOf": [
-            {
-              "enum": ["RawPath"]
-            },
-            {
-              "$ref": "./general/variable.json"
-            }
-          ]
-        },
-        "tiled": {
-          "title": "Tiled",
-          "description": "If true, the texture will be tiled.",
-          "anyOf": [
-            { "type": "boolean" },
-            { "enum": ["x", "y"] },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "toggle_grid_collection_name": {
-          "title": "Toggle Grid Collection Name",
-          "description": "The name of the collection that the toggle grid is in.",
-          "$ref": "./general/string.json"
-        },
-        "toggle_group_default_selected": {
-          "title": "Toggle Group Default Selected",
-          "description": "The default selected toggle of the toggle group.",
-          "$ref": "./general/string.json"
-        },
-        "toggle_default_state": {
-          "title": "Toggle Default State",
-          "description": "The default state of the toggle.",
-          "type": "string",
-          "anyOf": [
-            {
-              "enum": ["checked", "unchecked"]
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "toggle_group_forced_index": {
-          "title": "Toggle Group Forced Index",
-          "description": "The forced index of the toggle group.",
-          "$ref": "./general/integer.json"
-        },
-        "toggle_name": {
-          "title": "Toggle Name",
-          "description": "The name of the toggle.",
-          "$ref": "./general/string.json"
-        },
-        "toggle_on_button": {
-          "title": "Toggle On Button",
-          "description": "The button that will toggle the element.",
-          "$ref": "./general/string.json"
-        },
-        "toggle_off_button": {
-          "title": "Toggle Off Button",
-          "description": "The button that will toggle the element.",
-          "$ref": "./general/string.json"
-        },
-        "touch_mode": {
-          "title": "Touch Mode",
-          "description": "The touch mode of the element.",
-          "type": "string",
-          "oneOf": [
-            {
-              "enum": ["touch", "mouse"]
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "ttsSectionContainer": {
-          "title": "TTS Section Container",
-          "description": "The TTS section container.",
-          "$ref": "./general/boolean.json"
-        },
-        "tts_control_header": {
-          "title": "TTS Control Header",
-          "description": "The header of the TTS control.",
-          "$ref": "./general/string.json"
-        },
-        "tts_control_type_order_priority": {
-          "title": "TTS Control Type Order Priority",
-          "description": "The priority of the TTS control type order.",
-          "$ref": "./general/integer.json"
-        },
-        "tts_ignore_subsections": {
-          "title": "TTS Ignore Subsections",
-          "description": "If true, the element will ignore subsections.",
-          "$ref": "./general/boolean.json"
-        },
-        "tts_ignore_count": {
-          "title": "TTS Ignore Count",
-          "description": "The number of TTS ignores.",
-          "$ref": "./general/integer.json"
-        },
-        "tts_index_priority": {
-          "title": "TTS Index Priority",
-          "description": "The priority of the TTS index.",
-          "$ref": "./general/integer.json"
-        },
-        "tts_inherit_siblings": {
-          "title": "TTS Inherit Siblings",
-          "description": "If true, the element will inherit its siblings.",
-          "$ref": "./general/boolean.json"
-        },
-        "tts_name": {
-          "title": "TTS Name",
-          "description": "The name of the TTS.",
-          "$ref": "./general/string.json"
-        },
-        "tts_toggle_on": {
-          "title": "TTS Toggle On",
-          "description": "If true, the TTS will toggle on.",
-          "$ref": "./general/boolean.json"
-        },
-        "tts_toggle_off": {
-          "title": "TTS Toggle Off",
-          "description": "If true, the TTS will toggle off.",
-          "$ref": "./general/boolean.json"
-        },
-        "tts_override_control_value": {
-          "title": "TTS Override Control Value",
-          "description": "If true, the TTS will override the control value.",
-          "$ref": "./general/boolean.json"
-        },
-        "tts_section_header": {
-          "title": "TTS Section Header",
-          "description": "The header of the TTS section.",
-          "$ref": "./general/string.json"
-        },
-        "tts_value_changed": {
-          "title": "TTS Value Changed",
-          "description": "If true, the TTS value will change.",
-          "$ref": "./general/boolean.json"
-        },
-        "tts_value_order_priority": {
-          "title": "TTS Value Order Priority",
-          "description": "The priority of the TTS value order.",
-          "$ref": "./general/integer.json"
-        },
-        "type": {
-          "title": "Type",
-          "description": "The type of the element",
-          "type": "string",
-          "enum": [
-            "always_rotate",
-            "button",
-            "carousel_label",
-            "custom",
-            "dropdown",
-            "edit_box",
-            "grid",
-            "image",
-            "input_panel",
-            "label",
-            "panel",
-            "scrollbar_box",
-            "scroll_track",
-            "scroll_view",
-            "slider_box",
-            "slider",
-            "stack_panel",
-            "toggle"
-          ]
-        },
-        "unchecked_control": {
-          "title": "Unchecked Control",
-          "description": "The control that will be unchecked.",
-          "anyOf": [
-            {
-              "enum": ["unchecked"]
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "unchecked_hover_control": {
-          "title": "Unchecked Hover Control",
-          "description": "The control that will be unchecked when hovered.",
-          "anyOf": [
-            {
-              "enum": ["unchecked"]
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "unchecked_locked_control": {
-          "title": "Unchecked Locked Control",
-          "description": "The control that will be unchecked when locked.",
-          "anyOf": [
-            {
-              "enum": ["unchecked"]
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "unchecked_locked_hover_control": {
-          "title": "Unchecked Locked Hover Control",
-          "description": "The control that will be unchecked when locked and hovered.",
-          "anyOf": [
-            {
-              "enum": ["unchecked"]
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
-        "uv": {
-          "title": "UV",
-          "description": "The UV of the animation.",
-          "$ref": "./general/vec2.json"
-        },
-        "uv_size": {
-          "title": "UV Size",
-          "description": "The size of the UV.",
-          "$ref": "./general/vec2.json"
-        },
-        "variables": {
-          "title": "Variables",
-          "description": "The variables that are contained within this element.",
-          "anyOf": [
-            {
-              "$ref": "./general/item_ref.json"
-            },
-            {
-              "type": "array",
-              "items": {
-                "type": "object",
-                "title": "Variables",
-                "additionalProperties": {
-                  "$ref": "#/definitions/variables"
-                }
-              }
-            },
-            {
-              "type": "object",
-              "title": "Variables",
-              "additionalProperties": {
-                "$ref": "#/definitions/variables"
-              }
-            }
-          ]
-        },
-        "visible": {
-          "title": "Visible",
-          "description": "If true, the element will be visible.",
-          "$ref": "./general/boolean.json"
-        },
-        "virtual_keyboard_buffer_control": {
-          "title": "Virtual Keyboard Buffer Control",
-          "description": "The control that will be used for the virtual keyboard buffer.",
-          "$ref": "./general/string.json"
-        },
-        "zip_folder": {
-          "title": "Zip Folder",
-          "description": "The folder that the element will be zipped into.",
-          "$ref": "./general/string.json"
-        }
-      }
-    },
-    "animation": {
-      "type": "object",
-      "title": "Animation",
-      "description": "An animation is a set of keyframes that can be applied to an element.",
-      "additionalProperties": false,
-      "required": ["anim_type"],
-      "patternProperties": {
-        "^\\$.*": {
-          "$ref": "#/definitions/variables"
-        }
-      },
-      "properties": {
-        "anim_type": {
-          "title": "Animation Type",
-          "description": "The type of the animation.",
-          "type": "string",
-          "enum": ["wait", "offset", "alpha", "flip_book"]
-        },
-        "animation_reset_name": {
-          "title": "Animation Reset Name",
-          "description": "The name of the animation that will be reset.",
-          "$ref": "./general/string.json"
-        },
-        "destroy_at_end": {
-          "title": "Destroy At End",
-          "description": "If true, the element will be destroyed at the end of the animation.",
-          "anyOf": [
-            {
-              "enum": ["popup", "details_bubble_control"]
-            },
-            {
-              "$ref": "./general/variable.json"
-            }
-          ]
-        },
-        "disable_anim_fast_forward": {
-          "title": "Disable Anim Fast Forward",
-          "description": "If true, the animation will not be fast forwarded.",
-          "$ref": "./general/boolean.json"
-        },
-        "duration": {
-          "title": "Duration",
-          "description": "The duration of the animation.",
-          "$ref": "./general/number.json"
-        },
-        "end_event": {
-          "title": "End Event",
-          "description": "The event that will be triggered when the animation ends.",
-          "type": "string"
-        },
-        "easing": {
-          "title": "Easing",
-          "description": "The easing of the animation.",
-          "type": "string",
-          "enum": ["spring", "in_sine", "linear", "in_quint", "out_cubic"]
-        },
-        "frame_count": {
-          "title": "Frame Count",
-          "description": "The number of frames in the animation.",
-          "$ref": "./general/integer.json"
-        },
-        "frame_step": {
-          "title": "Frame Step",
-          "description": "The step of the frame.",
-          "$ref": "./general/integer.json"
-        },
-        "from": {
-          "title": "From",
-          "description": "The starting point of the animation.",
-          "anyOf": [{ "type": "number" }, { "$ref": "./general/vec2.json" }]
-        },
-        "fps": {
-          "title": "FPS",
-          "description": "The FPS of the animation.",
-          "$ref": "./general/integer.json"
-        },
-        "initial_uv": {
-          "title": "Initial UV",
-          "description": "The initial UV of the animation.",
-          "$ref": "./general/vec2.json"
-        },
-        "next": {
-          "title": "Next",
-          "description": "The name of the next element.",
-          "$ref": "./general/item_ref.json"
-        },
-        "play_event": {
-          "title": "Play Event",
-          "description": "The event that will be played.",
-          "$ref": "./general/string.json"
-        },
-        "propagate_alpha": {
-          "title": "Propagate Alpha",
-          "description": "If true, the alpha will be propagated.",
-          "$ref": "./general/boolean.json"
-        },
-        "reversible": {
-          "title": "Reversible",
-          "description": "If true, the animation will be reversible.",
-          "$ref": "./general/boolean.json"
-        },
-        "scale_from_starting_alpha": {
-          "title": "Scale From Starting Alpha",
-          "description": "If true, the animation will scale from the starting alpha.",
-          "$ref": "./general/boolean.json"
-        },
-        "to": {
-          "title": "To",
-          "description": "The ending point of the animation.",
-          "oneOf": [{ "type": "number" }, { "$ref": "./general/vec2.json" }]
-        },
-        "uv": {
-          "title": "UV",
-          "description": "The UV of the animation.",
-          "$ref": "./general/vec2.json"
-        },
-        "uv_size": {
-          "title": "UV Size",
-          "description": "The size of the UV.",
-          "$ref": "./general/vec2.json"
-        }
+        "allow_scroll_even_when_content_fits": { "$ref": "./elements/properties/allow_scroll_even_when_content_fits.json" },
+        "always_handle_scrolling": { "$ref": "./elements/properties/always_handle_scrolling.json" },
+        "always_rotate": { "$ref": "./elements/properties/always_rotate.json" },
+        "always_listen_to_input": { "$ref": "./elements/properties/always_listen_to_input.json" },
+        "always_handle_pointer": { "$ref": "./elements/properties/always_handle_pointer.json" },
+        "allow_clipping": { "$ref": "./elements/properties/allow_clipping.json" },
+        "alpha": { "$ref": "./elements/properties/alpha.json" },
+        "anchor_from": { "$ref": "./elements/properties/anchor_from.json" },
+        "anchor_to": { "$ref": "./elements/properties/anchor_to.json" },
+        "anims": { "$ref": "./elements/properties/anims.json" },
+        "bindings": { "$ref": "./elements/properties/bindings.json" },
+        "bilinear": { "$ref": "./elements/properties/bilinear.json" },
+        "background_control": { "$ref": "./elements/properties/background_control.json" },
+        "background_hover_control": { "$ref": "./elements/properties/background_hover_control.json" },
+        "backup_font_type": { "$ref": "./elements/properties/backup_font_type.json" },
+        "button_mappings": { "$ref": "./elements/properties/button_mappings.json" },
+        "cache_screen": { "$ref": "./elements/properties/cache_screen.json" },
+        "checked_control": { "$ref": "./elements/properties/checked_control.json" },
+        "checked_hover_control": { "$ref": "./elements/properties/checked_hover_control.json" },
+        "checked_locked_control": { "$ref": "./elements/properties/checked_locked_control.json" },
+        "checked_locked_hover_control": { "$ref": "./elements/properties/checked_locked_hover_control.json" },
+        "clips_children": { "$ref": "./elements/properties/clips_children.json" },
+        "clip_direction": { "$ref": "./elements/properties/clip_direction.json" },
+        "clip_pixelperfect": { "$ref": "./elements/properties/clip_pixelperfect.json" },
+        "close_on_player_hurt": { "$ref": "./elements/properties/close_on_player_hurt.json" },
+        "collection_name": { "$ref": "./elements/properties/collection_name.json" },
+        "collection_index": { "$ref": "./elements/properties/collection_index.json" },
+        "color": { "$ref": "./elements/properties/color.json" },
+        "contained": { "$ref": "./elements/properties/contained.json" },
+        "controls": { "$ref": "./elements/properties/controls.json" },
+        "control_name": { "$ref": "./elements/properties/control_name.json" },
+        "consume_hover_events": { "$ref": "./elements/properties/consume_hover_events.json" },
+        "default_control": { "$ref": "./elements/properties/default_control.json" },
+        "default_focus_precedence": { "$ref": "./elements/properties/default_focus_precedence.json" },
+        "disable_anim_fast_forward": { "$ref": "./elements/properties/disable_anim_fast_forward.json" },
+        "draggable": { "$ref": "./elements/properties/draggable.json" },
+        "dropdown_area": { "$ref": "./elements/properties/dropdown_area.json" },
+        "dropdown_content_control": { "$ref": "./elements/properties/dropdown_content_control.json" },
+        "dropdown_name": { "$ref": "./elements/properties/dropdown_name.json" },
+        "enabled": { "$ref": "./elements/properties/enabled.json" },
+        "enabled_newline": { "$ref": "./elements/properties/enabled_newline.json" },
+        "enable_directional_toggling": { "$ref": "./elements/properties/enable_directional_toggling.json" },
+        "enable_profanity_filter": { "$ref": "./elements/properties/enable_profanity_filter.json" },
+        "factory": { "$ref": "./elements/properties/factory.json" },
+        "fill": { "$ref": "./elements/properties/fill.json" },
+        "focus_container": { "$ref": "./elements/properties/focus_container.json" },
+        "focus_enabled": { "$ref": "./elements/properties/focus_enabled.json" },
+        "focus_change_left": { "$ref": "./elements/properties/focus_change_left.json" },
+        "focus_change_right": { "$ref": "./elements/properties/focus_change_right.json" },
+        "focus_change_down": { "$ref": "./elements/properties/focus_change_down.json" },
+        "focus_change_up": { "$ref": "./elements/properties/focus_change_up.json" },
+        "focus_identifier": { "$ref": "./elements/properties/focus_identifier.json" },
+        "focus_magnet_enabled": { "$ref": "./elements/properties/focus_magnet_enabled.json" },
+        "focus_navigation_mode_down": { "$ref": "./elements/properties/focus_navigation_mode_down.json" },
+        "focus_navigation_mode_up": { "$ref": "./elements/properties/focus_navigation_mode_up.json" },
+        "focus_navigation_mode_left": { "$ref": "./elements/properties/focus_navigation_mode_left.json" },
+        "focus_navigation_mode_right": { "$ref": "./elements/properties/focus_navigation_mode_right.json" },
+        "focus_wrap_enabled": { "$ref": "./elements/properties/focus_wrap_enabled.json" },
+        "force_render_below": { "$ref": "./elements/properties/force_render_below.json" },
+        "force_texture_reload": { "$ref": "./elements/properties/force_texture_reload.json" },
+        "font_scale_factor": { "$ref": "./elements/properties/font_scale_factor.json" },
+        "font_size": { "$ref": "./elements/properties/font_size.json" },
+        "font_type": { "$ref": "./elements/properties/font_type.json" },
+        "grid_item_template": { "$ref": "./elements/properties/grid_item_template.json" },
+        "grid_dimensions": { "$ref": "./elements/properties/grid_dimensions.json" },
+        "grid_dimension_binding": { "$ref": "./elements/properties/grid_dimension_binding.json" },
+        "grid_position": { "$ref": "./elements/properties/grid_position.json" },
+        "grid_rescaling_type": { "$ref": "./elements/properties/grid_rescaling_type.json" },
+        "handle_select": { "$ref": "./elements/properties/handle_select.json" },
+        "handle_deselect": { "$ref": "./elements/properties/handle_deselect.json" },
+        "hide_hyphen": { "$ref": "./elements/properties/hide_hyphen.json" },
+        "hover_alpha": { "$ref": "./elements/properties/hover_alpha.json" },
+        "hover_color": { "$ref": "./elements/properties/hover_color.json" },
+        "hover_control": { "$ref": "./elements/properties/hover_control.json" },
+        "hover_enabled": { "$ref": "./elements/properties/hover_enabled.json" },
+        "ignored": { "$ref": "./elements/properties/ignored.json" },
+        "images": { "$ref": "./elements/properties/images.json" },
+        "indent_control": { "$ref": "./elements/properties/indent_control.json" },
+        "inherit_max_sibling_height": { "$ref": "./elements/properties/inherit_max_sibling_height.json" },
+        "inherit_max_sibling_width": { "$ref": "./elements/properties/inherit_max_sibling_width.json" },
+        "is_modal": { "$ref": "./elements/properties/is_modal.json" },
+        "is_showing_menu": { "$ref": "./elements/properties/is_showing_menu.json" },
+        "jump_to_bottom_on_update": { "$ref": "./elements/properties/jump_to_bottom_on_update.json" },
+        "keep_ratio": { "$ref": "./elements/properties/keep_ratio.json" },
+        "layer": { "$ref": "./elements/properties/layer.json" },
+        "localize": { "$ref": "./elements/properties/localize.json" },
+        "locked_alpha": { "$ref": "./elements/properties/locked_alpha.json" },
+        "locked_color": { "$ref": "./elements/properties/locked_color.json" },
+        "locked_control": { "$ref": "./elements/properties/locked_control.json" },
+        "low_frequency_rendering": { "$ref": "./elements/properties/low_frequency_rendering.json" },
+        "maximum_grid_items": { "$ref": "./elements/properties/maximum_grid_items.json" },
+        "max_length": { "$ref": "./elements/properties/max_length.json" },
+        "max_size": { "$ref": "./elements/properties/max_size.json" },
+        "min_size": { "$ref": "./elements/properties/min_size.json" },
+        "modal": { "$ref": "./elements/properties/modal.json" },
+        "offset": { "$ref": "./elements/properties/offset.json" },
+        "orientation": { "$ref": "./elements/properties/orientation.json" },
+        "primary_color": { "$ref": "./elements/properties/primary_color.json" },
+        "place_holder_control": { "$ref": "./elements/properties/place_holder_control.json" },
+        "pressed_alpha": { "$ref": "./elements/properties/pressed_alpha.json" },
+        "pressed_color": { "$ref": "./elements/properties/pressed_color.json" },
+        "pressed_control": { "$ref": "./elements/properties/pressed_control.json" },
+        "prevent_touch_input": { "$ref": "./elements/properties/prevent_touch_input.json" },
+        "propagate_alpha": { "$ref": "./elements/properties/propagate_alpha.json" },
+        "progress_control": { "$ref": "./elements/properties/progress_control.json" },
+        "progress_hover_control": { "$ref": "./elements/properties/progress_hover_control.json" },
+        "property_bag": { "$ref": "./elements/properties/property_bag.json" },
+        "radio_toggle_group": { "$ref": "./elements/properties/radio_toggle_group.json" },
+        "renderer": { "$ref": "./elements/properties/renderer.json" },
+        "render_game_behind": { "$ref": "./elements/properties/render_game_behind.json" },
+        "render_only_when_topmost": { "$ref": "./elements/properties/render_only_when_topmost.json" },
+        "reset_event": { "$ref": "./elements/properties/reset_event.json" },
+        "reset_on_focus_lost": { "$ref": "./elements/properties/reset_on_focus_lost.json" },
+        "rotate_speed": { "$ref": "./elements/properties/rotate_speed.json" },
+        "screen_draws_last": { "$ref": "./elements/properties/screen_draws_last.json" },
+        "screen_not_flushable": { "$ref": "./elements/properties/screen_not_flushable.json" },
+        "send_telemetry": { "$ref": "./elements/properties/send_telemetry.json" },
+        "size": { "$ref": "./elements/properties/size.json" },
+        "shadow": { "$ref": "./elements/properties/shadow.json" },
+        "should_steal_mouse": { "$ref": "./elements/properties/should_steal_mouse.json" },
+        "slider_box_control": { "$ref": "./elements/properties/slider_box_control.json" },
+        "slider_collection_name": { "$ref": "./elements/properties/slider_collection_name.json" },
+        "slider_direction": { "$ref": "./elements/properties/slider_direction.json" },
+        "slider_name": { "$ref": "./elements/properties/slider_name.json" },
+        "slider_select_on_hover": { "$ref": "./elements/properties/slider_select_on_hover.json" },
+        "slider_small_decrease_button": { "$ref": "./elements/properties/slider_small_decrease_button.json" },
+        "slider_small_increase_button": { "$ref": "./elements/properties/slider_small_increase_button.json" },
+        "slider_selected_button": { "$ref": "./elements/properties/slider_selected_button.json" },
+        "slider_deselected_button": { "$ref": "./elements/properties/slider_deselected_button.json" },
+        "slider_steps": { "$ref": "./elements/properties/slider_steps.json" },
+        "slider_track_button": { "$ref": "./elements/properties/slider_track_button.json" },
+        "scroll_box_and_track_panel": { "$ref": "./elements/properties/scroll_box_and_track_panel.json" },
+        "scroll_content": { "$ref": "./elements/properties/scroll_content.json" },
+        "scroll_speed": { "$ref": "./elements/properties/scroll_speed.json" },
+        "scroll_view_port": { "$ref": "./elements/properties/scroll_view_port.json" },
+        "scrollbar_box": { "$ref": "./elements/properties/scrollbar_box.json" },
+        "scrollbar_track_button": { "$ref": "./elements/properties/scrollbar_track_button.json" },
+        "scrollbar_touch_button": { "$ref": "./elements/properties/scrollbar_touch_button.json" },
+        "scrollbar_track": { "$ref": "./elements/properties/scrollbar_track.json" },
+        "sound_name": { "$ref": "./elements/properties/sound_name.json" },
+        "sound_pitch": { "$ref": "./elements/properties/sound_pitch.json" },
+        "sound_volume": { "$ref": "./elements/properties/sound_volume.json" },
+        "text": { "$ref": "./elements/properties/text.json" },
+        "text_alignment": { "$ref": "./elements/properties/text_alignment.json" },
+        "text_box_name": { "$ref": "./elements/properties/text_box_name.json" },
+        "text_control": { "$ref": "./elements/properties/text_control.json" },
+        "text_edit_box_grid_collection_name": { "$ref": "./elements/properties/text_edit_box_grid_collection_name.json" },
+        "text_labels": { "$ref": "./elements/properties/text_labels.json" },
+        "text_type": { "$ref": "./elements/properties/text_type.json" },
+        "texture": { "$ref": "./elements/properties/texture.json" },
+        "texture_file_system": { "$ref": "./elements/properties/texture_file_system.json" },
+        "tiled": { "$ref": "./elements/properties/tiled.json" },
+        "toggle_grid_collection_name": { "$ref": "./elements/properties/toggle_grid_collection_name.json" },
+        "toggle_group_default_selected": { "$ref": "./elements/properties/toggle_group_default_selected.json" },
+        "toggle_default_state": { "$ref": "./elements/properties/toggle_default_state.json" },
+        "toggle_group_forced_index": { "$ref": "./elements/properties/toggle_group_forced_index.json" },
+        "toggle_name": { "$ref": "./elements/properties/toggle_name.json" },
+        "toggle_on_button": { "$ref": "./elements/properties/toggle_on_button.json" },
+        "toggle_off_button": { "$ref": "./elements/properties/toggle_off_button.json" },
+        "touch_mode": { "$ref": "./elements/properties/touch_mode.json" },
+        "ttsSectionContainer": { "$ref": "./elements/properties/ttsSectionContainer.json" },
+        "tts_control_header": { "$ref": "./elements/properties/tts_control_header.json" },
+        "tts_control_type_order_priority": { "$ref": "./elements/properties/tts_control_type_order_priority.json" },
+        "tts_ignore_subsections": { "$ref": "./elements/properties/tts_ignore_subsections.json" },
+        "tts_ignore_count": { "$ref": "./elements/properties/tts_ignore_count.json" },
+        "tts_index_priority": { "$ref": "./elements/properties/tts_index_priority.json" },
+        "tts_inherit_siblings": { "$ref": "./elements/properties/tts_inherit_siblings.json" },
+        "tts_name": { "$ref": "./elements/properties/tts_name.json" },
+        "tts_toggle_on": { "$ref": "./elements/properties/tts_toggle_on.json" },
+        "tts_toggle_off": { "$ref": "./elements/properties/tts_toggle_off.json" },
+        "tts_override_control_value": { "$ref": "./elements/properties/tts_override_control_value.json" },
+        "tts_section_header": { "$ref": "./elements/properties/tts_section_header.json" },
+        "tts_value_changed": { "$ref": "./elements/properties/tts_value_changed.json" },
+        "tts_value_order_priority": { "$ref": "./elements/properties/tts_value_order_priority.json" },
+        "type": { "$ref": "./elements/properties/type.json" },
+        "unchecked_control": { "$ref": "./elements/properties/unchecked_control.json" },
+        "unchecked_hover_control": { "$ref": "./elements/properties/unchecked_hover_control.json" },
+        "unchecked_locked_control": { "$ref": "./elements/properties/unchecked_locked_control.json" },
+        "unchecked_locked_hover_control": { "$ref": "./elements/properties/unchecked_locked_hover_control.json" },
+        "use_anchored_offset": { "$ref": "./elements/properties/use_anchored_offset.json" },
+        "use_last_focus": { "$ref": "./elements/properties/use_last_focus.json" },
+        "uv": { "$ref": "./elements/properties/uv.json" },
+        "uv_size": { "$ref": "./elements/properties/uv_size.json" },
+        "variables": { "$ref": "./elements/properties/variables.json" },
+        "visible": { "$ref": "./elements/properties/visible.json" },
+        "virtual_keyboard_buffer_control": { "$ref": "./elements/properties/virtual_keyboard_buffer_control.json" },
+        "zip_folder": { "$ref": "./elements/properties/zip_folder.json" }
       }
     },
     "control_factory": {
@@ -1497,15 +270,13 @@
           "type": "string",
           "enum": ["factory"]
         },
-        "control_ids": {
-          "$ref": "#/definitions/control_ids"
-        }
+        "control_ids": { "$ref": "./elements/properties/control_ids.json" },
+        "control_name": { "$ref": "./elements/properties/control_name.json" }
       }
     },
     "grouped": {
       "title": "UI definition",
       "type": "object",
-      // Either a control or an animation
       "anyOf": [
         {
           "$ref": "#/definitions/control"

@@ -1,0 +1,12 @@
+{
+  "title": "Focus Navigation Mode Right",
+  "description": "The focus navigation mode that will be used when navigating right.",
+  "anyOf": [
+    {
+      "$ref": "../../general/navigation_mode.json"
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

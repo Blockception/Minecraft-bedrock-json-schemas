@@ -1,0 +1,5 @@
+{
+  "title": "Size",
+  "description": "The size of the element.",
+  "$ref": "../../general/size.json"
+}

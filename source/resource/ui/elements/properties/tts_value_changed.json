@@ -1,0 +1,5 @@
+{
+  "title": "TTS Value Changed",
+  "description": "If true, the TTS value will change.",
+  "$ref": "../../general/boolean.json"
+}

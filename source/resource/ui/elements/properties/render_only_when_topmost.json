@@ -1,0 +1,5 @@
+{
+  "title": "Render Only When Topmost",
+  "description": "If true, the element will only be rendered when it is the topmost element.",
+  "$ref": "../../general/boolean.json"
+}

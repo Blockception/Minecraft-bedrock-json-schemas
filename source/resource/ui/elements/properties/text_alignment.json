@@ -1,0 +1,13 @@
+{
+  "title": "Text Alignment",
+  "description": "The alignment of the text.",
+  "$ref": "../../general/string.json",
+  "anyOf": [
+    {
+      "enum": ["left", "center", "right"]
+    },
+    {
+      "$ref": "../../general/variable.json"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "title": "Handle Select",
+  "description": "If true, the element will handle select.",
+  "$ref": "../../general/boolean.json"
+}

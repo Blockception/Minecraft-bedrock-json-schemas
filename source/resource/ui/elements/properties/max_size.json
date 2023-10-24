@@ -1,0 +1,5 @@
+{
+  "title": "Max Size",
+  "description": "The maximum size of the element.",
+  "$ref": "../../general/size.json"
+}

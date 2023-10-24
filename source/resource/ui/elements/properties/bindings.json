@@ -1,0 +1,88 @@
+{
+  "title": "Bindings",
+  "description": "The bindings that are contained within this element.",
+  "anyOf": [
+    {
+      "$ref": "../../general/item_ref.json"
+    },
+    {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "title": "Bindings",
+        "additionalProperties": false,
+        "properties": {
+          "binding_collection_name": {
+            "title": "Binding Collection Name",
+            "description": "The name of the collection that the binding is in.",
+            "$ref": "../../general/string.json"
+          },
+          "binding_collection_prefix": {
+            "title": "Binding Collection Prefix",
+            "description": "The prefix of the collection that the binding is in.",
+            "$ref": "../../general/string.json"
+          },
+          "binding_condition": {
+            "title": "Binding Condition",
+            "description": "The condition that must be met for the binding to be applied.",
+            "anyOf": [
+              {
+                "enum": ["once", "always", "always_when_visible", "visible"]
+              },
+              {
+                "$ref": "../../general/item_ref.json"
+              }
+            ]
+          },
+          "binding_name": {
+            "title": "Binding Name",
+            "description": "The name of the binding. This is used to reference the binding in the element's properties.",
+            "$ref": "../../general/string.json"
+          },
+          "binding_name_override": {
+            "title": "Binding Name Override",
+            "description": "The name of the binding. This is used to reference the binding in the element's properties.",
+            "$ref": "../../general/string.json"
+          },
+          "binding_type": {
+            "title": "Binding Type",
+            "description": "The type of the binding.",
+            "anyOf": [
+              {
+                "enum": ["collection", "global", "collection_details", "none", "view"]
+              },
+              {
+                "$ref": "../../general/variable.json"
+              }
+            ]
+          },
+          "ignored": {
+            "title": "Ignored",
+            "description": "If true, the binding will be ignored.",
+            "$ref": "../../general/boolean.json"
+          },
+          "resolve_sibling_scope": {
+            "title": "Resolve Sibling Scope",
+            "description": "If true, the binding will resolve sibling scope.",
+            "$ref": "../../general/boolean.json"
+          },
+          "source_control_name": {
+            "title": "Source Control Name",
+            "description": "The name of the control that the binding is in.",
+            "$ref": "../../general/string.json"
+          },
+          "source_property_name": {
+            "title": "Source Property Name",
+            "description": "The name of the property that the binding is in.",
+            "$ref": "../../general/string.json"
+          },
+          "target_property_name": {
+            "title": "Target Property Name",
+            "description": "The name of the property that the binding is in.",
+            "$ref": "../../general/string.json"
+          }
+        }
+      }
+    }
+  ]
+}

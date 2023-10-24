@@ -1,0 +1,12 @@
+{
+  "title": "Grid Rescaling Type",
+  "description": "The type of the grid rescaling.",
+  "anyOf": [
+    {
+      "enum": ["horizontal"]
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

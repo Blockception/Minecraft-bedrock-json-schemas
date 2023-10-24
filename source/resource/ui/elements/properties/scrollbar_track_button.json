@@ -1,0 +1,5 @@
+{
+  "title": "Scrollbar Track Button",
+  "description": "The button that will be used for the scrollbar track.",
+  "$ref": "../../general/item_ref.json"
+}

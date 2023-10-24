@@ -1,0 +1,5 @@
+{
+  "title": "Dropdown Name",
+  "description": "The name of the dropdown.",
+  "$ref": "../../general/string.json"
+}

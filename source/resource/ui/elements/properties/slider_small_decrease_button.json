@@ -1,0 +1,5 @@
+{
+  "title": "Slider Small Decrease Button",
+  "description": "The button that will be used for the slider small decrease.",
+  "$ref": "../../general/item_ref.json"
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Images",
+  "description": "The images that are contained within this element.",
+  "anyOf": [
+    {
+      "$ref": "../../general/item_ref.json"
+    },
+    {
+      "type": "array",
+      "items": {
+        "$ref": "../../general/item_ref.json"
+      }
+    }
+  ]
+}

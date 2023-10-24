@@ -1,0 +1,5 @@
+{
+  "title": "Offset",
+  "description": "The offset of the element from the anchor point. horizontal by vertical.",
+  "$ref": "../../general/vec2.json"
+}

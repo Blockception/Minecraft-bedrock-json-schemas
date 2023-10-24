@@ -1,0 +1,5 @@
+{
+  "title": "Max Length",
+  "description": "The maximum length of the text. If the text is longer than this, it will be truncated.",
+  "$ref": "../../general/integer.json"
+}

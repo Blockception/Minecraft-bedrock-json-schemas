@@ -1,0 +1,12 @@
+{
+  "title": "Pressed Control",
+  "description": "The control that will be pressed.",
+  "anyOf": [
+    {
+      "enum": ["hover", "pressed"]
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

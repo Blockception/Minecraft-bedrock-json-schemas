@@ -1,0 +1,5 @@
+{
+  "title": "Rotate Speed",
+  "description": "The speed that the element will rotate at.",
+  "$ref": "../../general/number.json"
+}

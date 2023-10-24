@@ -1,0 +1,12 @@
+{
+  "title": "Backup Font Type",
+  "description": "The type of the backup font.",
+  "anyOf": [
+    {
+      "enum": ["UIFont"]
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

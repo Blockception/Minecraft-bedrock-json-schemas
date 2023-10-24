@@ -1,0 +1,5 @@
+{
+  "title": "Dropdown Content Control",
+  "description": "The control that will be used for the dropdown content.",
+  "$ref": "../../general/string.json"
+}

@@ -1,0 +1,5 @@
+{
+  "title": "Enabled",
+  "description": "If true, the element will be enabled.",
+  "$ref": "../../general/boolean.json"
+}

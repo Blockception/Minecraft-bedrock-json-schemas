@@ -1,0 +1,5 @@
+{
+  "title": "Slider Direction",
+  "description": "The direction of the slider.",
+  "$ref": "../../general/item_ref.json"
+}

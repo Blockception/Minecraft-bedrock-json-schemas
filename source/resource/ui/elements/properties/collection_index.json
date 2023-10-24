@@ -1,0 +1,5 @@
+{
+  "title": "Collection Index",
+  "description": "The index of the collection that the element is in.",
+  "$ref": "../../general/integer.json"
+}

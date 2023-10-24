@@ -1,0 +1,16 @@
+{
+  "title": "Control IDs",
+  "description": "The IDs of the controls that will be created by the factory.",
+  "oneOf": [
+    {
+      "type": "string"
+    },
+    {
+      "type": "object",
+      "additionalProperties": {
+        "title": "Control ID",
+        "type": "string"
+      }
+    }
+  ]
+}

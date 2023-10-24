@@ -1,0 +1,5 @@
+{
+  "title": "Slider Select On Hover",
+  "description": "If true, the slider will select on hover.",
+  "$ref": "../../general/boolean.json"
+}

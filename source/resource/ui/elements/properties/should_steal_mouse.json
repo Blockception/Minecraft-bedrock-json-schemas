@@ -1,0 +1,5 @@
+{
+  "title": "Should Steal Mouse",
+  "description": "If true, the element will steal the mouse.",
+  "$ref": "../../general/boolean.json"
+}

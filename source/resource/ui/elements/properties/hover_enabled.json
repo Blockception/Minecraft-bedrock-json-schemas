@@ -1,0 +1,5 @@
+{
+  "title": "Hover Enabled",
+  "description": "If true, the element will be hover enabled.",
+  "$ref": "../../general/boolean.json"
+}

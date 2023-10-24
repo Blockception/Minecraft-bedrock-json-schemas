@@ -1,0 +1,5 @@
+{
+  "title": "Slider Collection Name",
+  "description": "The name of the collection that the slider is in.",
+  "$ref": "../../general/string.json"
+}

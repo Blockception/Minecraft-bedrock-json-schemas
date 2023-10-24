@@ -1,0 +1,5 @@
+{
+  "title": "Send Telemetry",
+  "description": "If true, the element will send telemetry.",
+  "$ref": "../../general/boolean.json"
+}

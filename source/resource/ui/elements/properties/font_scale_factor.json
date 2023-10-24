@@ -1,0 +1,5 @@
+{
+  "title": "Font Scale Factor",
+  "description": "The scale factor of the font.",
+  "$ref": "../../general/number.json"
+}

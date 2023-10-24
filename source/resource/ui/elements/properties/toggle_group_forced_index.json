@@ -1,0 +1,5 @@
+{
+  "title": "Toggle Group Forced Index",
+  "description": "The forced index of the toggle group.",
+  "$ref": "../../general/integer.json"
+}

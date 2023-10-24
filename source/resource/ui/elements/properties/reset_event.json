@@ -1,0 +1,5 @@
+{
+  "title": "Reset Event",
+  "description": "The event that will be reset.",
+  "$ref": "../../general/string.json"
+}

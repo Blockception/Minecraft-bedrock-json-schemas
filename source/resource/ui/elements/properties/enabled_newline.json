@@ -1,0 +1,5 @@
+{
+  "title": "Enabled Newline",
+  "description": "If true, the element will be enabled when a new line is created.",
+  "$ref": "../../general/boolean.json"
+}

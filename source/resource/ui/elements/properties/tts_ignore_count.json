@@ -1,0 +1,5 @@
+{
+  "title": "TTS Ignore Count",
+  "description": "The number of TTS ignores.",
+  "$ref": "../../general/integer.json"
+}

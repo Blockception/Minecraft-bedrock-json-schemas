@@ -1,0 +1,5 @@
+{
+  "title": "UV",
+  "description": "The UV of the animation.",
+  "$ref": "../../general/vec2.json"
+}

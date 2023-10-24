@@ -1,0 +1,5 @@
+{
+  "title": "TTS Control Type Order Priority",
+  "description": "The priority of the TTS control type order.",
+  "$ref": "../../general/integer.json"
+}

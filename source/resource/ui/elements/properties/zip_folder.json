@@ -1,0 +1,5 @@
+{
+  "title": "Zip Folder",
+  "description": "The folder that the element will be zipped into.",
+  "$ref": "../../general/string.json"
+}

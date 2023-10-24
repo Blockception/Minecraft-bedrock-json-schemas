@@ -1,0 +1,5 @@
+{
+  "title": "Focus Identifier",
+  "description": "The identifier of the element that will be focused.",
+  "$ref": "../../general/string.json"
+}

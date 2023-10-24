@@ -1,0 +1,5 @@
+{
+  "title": "Slider Deselected Button",
+  "description": "The button that will be used for the slider deselected.",
+  "$ref": "../../general/item_ref.json"
+}

@@ -1,0 +1,5 @@
+{
+  "title": "Use Last Focus",
+  "description": "If true, the element will use the last focus.",
+  "$ref": "../../general/boolean.json"
+}

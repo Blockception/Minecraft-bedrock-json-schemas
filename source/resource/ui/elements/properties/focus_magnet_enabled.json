@@ -1,0 +1,5 @@
+{
+  "title": "Focus Magnet Enabled",
+  "description": "If true, the element will be focus magnet enabled.",
+  "$ref": "../../general/boolean.json"
+}

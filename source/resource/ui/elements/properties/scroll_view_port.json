@@ -1,0 +1,5 @@
+{
+  "title": "Scroll View Port",
+  "description": "The view port that the element will be scrolled in.",
+  "$ref": "../../general/string.json"
+}

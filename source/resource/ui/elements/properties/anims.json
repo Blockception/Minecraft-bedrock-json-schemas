@@ -1,0 +1,15 @@
+{
+  "title": "Animations",
+  "description": "The animations that are contained within this element.",
+  "anyOf": [
+    {
+      "$ref": "../../general/item_ref.json"
+    },
+    {
+      "type": "array",
+      "items": {
+        "$ref": "../../general/item_ref.json"
+      }
+    }
+  ]
+}

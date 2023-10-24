@@ -1,0 +1,14 @@
+{
+  "title": "Alpha",
+  "description": "The alpha of the element.",
+  "anyOf": [
+    {
+      "$ref": "../../general/item_ref.json"
+    },
+    {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    }
+  ]
+}

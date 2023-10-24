@@ -1,0 +1,5 @@
+{
+  "title": "Text Control",
+  "description": "The control that will be used for the text.",
+  "$ref": "../../general/string.json"
+}

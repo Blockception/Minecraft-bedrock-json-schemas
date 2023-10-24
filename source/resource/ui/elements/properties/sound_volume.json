@@ -1,0 +1,14 @@
+{
+  "title": "Sound Volume",
+  "description": "The volume of the sound.",
+  "anyOf": [
+    {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

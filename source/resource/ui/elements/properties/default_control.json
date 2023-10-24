@@ -1,0 +1,5 @@
+{
+  "title": "Default Control",
+  "description": "The default control that will be focused.",
+  "$ref": "../../general/string.json"
+}

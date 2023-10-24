@@ -1,0 +1,21 @@
+{
+  "title": "Button Mappings",
+  "description": "The button mappings that are contained within this element.",
+  "anyOf": [
+    {
+      "$ref": "../../general/item_ref.json"
+    },
+    {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "title": "Button Mappings",
+        "additionalProperties": {
+          "type": ["string", "boolean"],
+          "title": "Button Mapping",
+          "examples": ["button.menu", "button.back", "global"]
+        }
+      }
+    }
+  ]
+}

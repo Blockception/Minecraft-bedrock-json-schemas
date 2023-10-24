@@ -1,0 +1,5 @@
+{
+  "title": "Virtual Keyboard Buffer Control",
+  "description": "The control that will be used for the virtual keyboard buffer.",
+  "$ref": "../../general/string.json"
+}

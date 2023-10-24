@@ -1,0 +1,5 @@
+{
+  "title": "Text",
+  "description": "The text to display.",
+  "$ref": "../../general/string.json"
+}

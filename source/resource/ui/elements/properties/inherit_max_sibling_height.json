@@ -1,0 +1,5 @@
+{
+  "title": "Inherit Max Sibling Height",
+  "description": "If true, the element will inherit the maximum height of its siblings.",
+  "$ref": "../../general/boolean.json"
+}

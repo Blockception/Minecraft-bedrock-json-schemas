@@ -1,0 +1,5 @@
+{
+  "title": "Primary Color",
+  "description": "The primary color of the element. This can be a hex color code or a color keyword.",
+  "$ref": "../../general/color.json"
+}

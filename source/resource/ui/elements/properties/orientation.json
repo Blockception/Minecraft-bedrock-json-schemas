@@ -1,0 +1,12 @@
+{
+  "title": "Orientation",
+  "description": "The orientation of the element.",
+  "anyOf": [
+    {
+      "enum": ["horizontal", "vertical"]
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

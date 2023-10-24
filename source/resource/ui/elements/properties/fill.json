@@ -1,0 +1,5 @@
+{
+  "title": "Fill",
+  "description": "If true, the element will fill the screen.",
+  "$ref": "../../general/boolean.json"
+}

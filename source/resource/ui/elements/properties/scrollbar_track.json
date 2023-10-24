@@ -1,0 +1,12 @@
+{
+  "title": "Scrollbar Track",
+  "description": "The track of the scrollbar.",
+  "anyOf": [
+    {
+      "enum": ["track"]
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

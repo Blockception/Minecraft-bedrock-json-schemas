@@ -1,0 +1,5 @@
+{
+  "title": "Text Box Name",
+  "description": "The name of the text box.",
+  "$ref": "../../general/string.json"
+}

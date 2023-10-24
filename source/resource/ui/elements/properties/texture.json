@@ -1,0 +1,17 @@
+{
+  "title": "Texture",
+  "description": "The texture to display.",
+  "anyOf": [
+    {
+      "type": "string",
+      "pattern": "^textures/[a-zA-Z0-9/_-]+$",
+      "examples": ["textures/ui/file"]
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    },
+    {
+      "type": "string"
+    }
+  ]
+}

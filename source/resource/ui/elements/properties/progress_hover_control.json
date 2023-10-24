@@ -1,0 +1,5 @@
+{
+  "title": "Progress Hover Control",
+  "description": "The control that will be used for the progress when hovered.",
+  "$ref": "../../general/string.json"
+}

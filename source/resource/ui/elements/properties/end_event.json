@@ -1,0 +1,5 @@
+{
+  "title": "End Event",
+  "description": "The event that will be triggered when the animation ends.",
+  "$ref": "../../general/string.json"
+}

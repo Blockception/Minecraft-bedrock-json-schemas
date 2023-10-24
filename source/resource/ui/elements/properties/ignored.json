@@ -1,0 +1,5 @@
+{
+  "title": "Ignored",
+  "description": "If true, the element will be ignored.",
+  "$ref": "../../general/boolean.json"
+}

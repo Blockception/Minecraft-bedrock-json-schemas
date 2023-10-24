@@ -1,0 +1,5 @@
+{
+  "title": "Grid Position",
+  "description": "The position of the grid.",
+  "$ref": "../../general/vec2.json"
+}

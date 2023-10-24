@@ -1,0 +1,12 @@
+{
+  "title": "To",
+  "description": "The ending point of the animation.",
+  "anyOf": [
+    {
+      "type": "number"
+    },
+    {
+      "$ref": "../../general/vec2.json"
+    }
+  ]
+}

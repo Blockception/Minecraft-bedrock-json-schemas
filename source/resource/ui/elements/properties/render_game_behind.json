@@ -1,0 +1,5 @@
+{
+  "title": "Render Game Behind",
+  "description": "If true, the game will be rendered behind the element.",
+  "$ref": "../../general/boolean.json"
+}

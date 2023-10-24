@@ -1,0 +1,5 @@
+{
+  "title": "Scroll Content",
+  "description": "The content that will be scrolled.",
+  "$ref": "../../general/string.json"
+}

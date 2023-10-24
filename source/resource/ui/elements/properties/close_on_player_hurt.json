@@ -1,0 +1,5 @@
+{
+  "title": "Close On Player Hurt",
+  "description": "If true, the element will close when the player is hurt.",
+  "$ref": "../../general/boolean.json"
+}

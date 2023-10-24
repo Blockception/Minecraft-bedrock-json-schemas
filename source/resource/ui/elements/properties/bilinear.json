@@ -1,0 +1,5 @@
+{
+  "title": "Bilinear",
+  "description": "If true, the element will use bilinear filtering.",
+  "$ref": "../../general/boolean.json"
+}

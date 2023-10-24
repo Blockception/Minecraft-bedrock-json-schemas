@@ -1,0 +1,5 @@
+{
+  "title": "Frame Step",
+  "description": "The step of the frame.",
+  "$ref": "../../general/integer.json"
+}

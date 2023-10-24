@@ -1,0 +1,5 @@
+{
+  "title": "Dropdown Area",
+  "description": "The area that the dropdown will be in.",
+  "$ref": "../../general/vec4.json"
+}

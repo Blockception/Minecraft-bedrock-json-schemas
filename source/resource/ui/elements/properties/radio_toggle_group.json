@@ -1,0 +1,5 @@
+{
+  "title": "Radio Toggle Group",
+  "description": "The radio toggle group that the element is in.",
+  "$ref": "../../general/string.json"
+}

@@ -1,0 +1,5 @@
+{
+  "title": "Duration",
+  "description": "The duration of the animation.",
+  "$ref": "../../general/number.json"
+}

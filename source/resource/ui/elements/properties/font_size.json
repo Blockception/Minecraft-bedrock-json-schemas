@@ -1,0 +1,12 @@
+{
+  "title": "Font Size",
+  "description": "The size of the font.",
+  "anyOf": [
+    {
+      "enum": ["normal"]
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

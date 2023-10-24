@@ -1,0 +1,5 @@
+{
+  "title": "Frame Count",
+  "description": "The number of frames in the animation.",
+  "$ref": "../../general/integer.json"
+}

@@ -1,0 +1,5 @@
+{
+  "title": "Localize",
+  "description": "If true, the element will be localized.",
+  "$ref": "../../general/boolean.json"
+}

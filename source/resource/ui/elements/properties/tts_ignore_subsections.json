@@ -1,0 +1,5 @@
+{
+  "title": "TTS Ignore Subsections",
+  "description": "If true, the element will ignore subsections.",
+  "$ref": "../../general/boolean.json"
+}

@@ -1,0 +1,5 @@
+{
+  "title": "TTS Name",
+  "description": "The name of the TTS.",
+  "$ref": "../../general/string.json"
+}

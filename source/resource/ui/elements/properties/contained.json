@@ -1,0 +1,5 @@
+{
+  "title": "Contained",
+  "description": "If true, the element will be contained.",
+  "$ref": "../../general/boolean.json"
+}

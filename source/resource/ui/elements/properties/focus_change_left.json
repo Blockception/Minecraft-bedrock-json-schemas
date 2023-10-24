@@ -1,0 +1,11 @@
+{
+  "title": "Focus Change Left",
+  "anyOf": [
+    {
+      "enum": ["FOCUS_OVERRIDE_STOP"]
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

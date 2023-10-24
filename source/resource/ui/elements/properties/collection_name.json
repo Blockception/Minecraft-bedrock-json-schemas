@@ -1,0 +1,5 @@
+{
+  "title": "Collection Name",
+  "description": "The name of the collection that the element is in.",
+  "$ref": "../../general/string.json"
+}

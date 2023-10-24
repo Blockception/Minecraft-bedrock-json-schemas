@@ -1,0 +1,5 @@
+{
+  "title": "Reset On Focus Lost",
+  "description": "If true, the element will be reset when focus is lost.",
+  "$ref": "../../general/boolean.json"
+}

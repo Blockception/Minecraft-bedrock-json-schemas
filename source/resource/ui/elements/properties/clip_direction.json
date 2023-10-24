@@ -1,0 +1,12 @@
+{
+  "title": "Clip Direction",
+  "description": "The direction that the element will be clipped in.",
+  "anyOf": [
+    {
+      "enum": ["left", "right", "top", "bottom"]
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

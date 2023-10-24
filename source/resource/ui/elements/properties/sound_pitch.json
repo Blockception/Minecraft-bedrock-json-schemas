@@ -1,0 +1,5 @@
+{
+  "title": "Sound Pitch",
+  "description": "The pitch of the sound.",
+  "$ref": "../../general/number.json"
+}

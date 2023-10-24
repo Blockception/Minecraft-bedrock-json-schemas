@@ -1,0 +1,5 @@
+{
+  "title": "Progress Control",
+  "description": "The control that will be used for the progress.",
+  "$ref": "../../general/string.json"
+}

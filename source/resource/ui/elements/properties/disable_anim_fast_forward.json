@@ -1,0 +1,5 @@
+{
+  "title": "Disable Anim Fast Forward",
+  "description": "If true, the animation will not be fast forwarded.",
+  "$ref": "../../general/boolean.json"
+}

@@ -1,0 +1,6 @@
+{
+  "title": "Navigation Mode",
+  "description": "The navigation mode of the UI.",
+  "type": "string",
+  "enum": ["contained", "stop"]
+}

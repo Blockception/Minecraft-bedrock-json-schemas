@@ -1,0 +1,5 @@
+{
+  "title": "Toggle Group Default Selected",
+  "description": "The default selected toggle of the toggle group.",
+  "$ref": "../../general/string.json"
+}

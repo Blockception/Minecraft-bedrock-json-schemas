@@ -1,0 +1,5 @@
+{
+  "title": "Screen Draws Last",
+  "description": "If true, the screen will be drawn last.",
+  "$ref": "../../general/boolean.json"
+}

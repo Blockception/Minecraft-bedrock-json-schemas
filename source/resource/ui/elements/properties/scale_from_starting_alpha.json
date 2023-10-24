@@ -1,0 +1,5 @@
+{
+  "title": "Scale From Starting Alpha",
+  "description": "If true, the animation will scale from the starting alpha.",
+  "$ref": "../../general/boolean.json"
+}

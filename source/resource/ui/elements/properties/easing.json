@@ -1,0 +1,12 @@
+{
+  "title": "Easing",
+  "description": "The easing of the animation.",
+  "anyOf": [
+    {
+      "enum": ["spring", "in_sine", "linear", "in_quint", "out_cubic"]
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

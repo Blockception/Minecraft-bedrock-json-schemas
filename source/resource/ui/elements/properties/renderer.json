@@ -1,0 +1,12 @@
+{
+  "title": "Renderer",
+  "description": "The renderer that will be used by the element.",
+  "anyOf": [
+    {
+      "enum": ["ui_holo_cursor"]
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

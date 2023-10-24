@@ -1,0 +1,15 @@
+{
+  "title": "Tiled",
+  "description": "If true, the texture will be tiled.",
+  "anyOf": [
+    {
+      "type": "boolean"
+    },
+    {
+      "enum": ["x", "y"]
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

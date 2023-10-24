@@ -1,0 +1,5 @@
+{
+  "title": "Toggle Name",
+  "description": "The name of the toggle.",
+  "$ref": "../../general/string.json"
+}

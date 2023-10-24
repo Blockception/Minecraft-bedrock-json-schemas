@@ -1,0 +1,5 @@
+{
+  "title": "Toggle On Button",
+  "description": "The button that will toggle the element.",
+  "$ref": "../../general/string.json"
+}

@@ -1,0 +1,5 @@
+{
+  "title": "Reversible",
+  "description": "If true, the animation will be reversible.",
+  "$ref": "../../general/boolean.json"
+}

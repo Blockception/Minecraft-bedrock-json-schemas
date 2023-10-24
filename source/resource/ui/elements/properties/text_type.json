@@ -1,0 +1,12 @@
+{
+  "title": "Text Type",
+  "description": "The type of the text.",
+  "anyOf": [
+    {
+      "enum": ["ExtendedASCII"]
+    },
+    {
+      "$ref": "../../general/variable.json"
+    }
+  ]
+}
