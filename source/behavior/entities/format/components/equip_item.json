@@ -11,7 +11,7 @@
       "description": "List of items that the entity should not equip.",
       "items": {
         "type": "string",
-        "$ref": "../../../../../general/item/descriptor.json",
+        "$ref": "../../../../general/item/descriptor.json",
         "description": "Item that the entity should not equip.",
         "title": "Excluded Items"
       }
