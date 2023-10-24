@@ -1,0 +1,3 @@
+{
+  "ui_defs": ["ui/some_file_path.json", "ui/some_other_file_path.json"]
+}
