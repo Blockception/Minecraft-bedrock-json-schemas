@@ -1,5 +1,5 @@
 {
   "title": "TTS Index Priority",
   "description": "The priority of the TTS index.",
-  "$ref": "../../general/integer.json"
+  "$ref": "../../../general/integer.json"
 }

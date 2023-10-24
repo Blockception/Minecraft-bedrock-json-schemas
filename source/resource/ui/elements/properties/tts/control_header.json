@@ -1,5 +1,5 @@
 {
   "title": "TTS Control Header",
   "description": "The header of the TTS control.",
-  "$ref": "../../general/string.json"
+  "$ref": "../../../general/string.json"
 }

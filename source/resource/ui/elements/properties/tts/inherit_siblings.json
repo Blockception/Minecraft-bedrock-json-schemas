@@ -1,5 +1,5 @@
 {
   "title": "TTS Inherit Siblings",
   "description": "If true, the element will inherit its siblings.",
-  "$ref": "../../general/boolean.json"
+  "$ref": "../../../general/boolean.json"
 }

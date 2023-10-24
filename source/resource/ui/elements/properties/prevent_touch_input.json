@@ -1,0 +1,5 @@
+{
+  "title": "Prevent Touch Input",
+  "description": "If true, touch input will be prevented from passing through this element.",
+  "$ref": "../../general/boolean.json"
+}

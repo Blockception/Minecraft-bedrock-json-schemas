@@ -36,7 +36,7 @@
         "initial_uv": { "$ref": "./elements/properties/initial_uv.json" },
         "next": { "$ref": "./elements/properties/next.json" },
         "play_event": { "$ref": "./elements/properties/play_event.json" },
-        "propagate_alpha": { "$ref": "./elements/properties/propagate_alpha.json" },
+        "propagate_alpha": { "$ref": "./elements/properties/alpha.json" },
         "reversible": { "$ref": "./elements/properties/reversible.json" },
         "scale_from_starting_alpha": { "$ref": "./elements/properties/scale_from_starting_alpha.json" },
         "to": { "$ref": "./elements/properties/to.json" },
