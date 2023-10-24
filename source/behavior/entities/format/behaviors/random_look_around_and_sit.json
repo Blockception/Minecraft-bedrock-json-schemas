@@ -14,6 +14,12 @@
       "default": false,
       "description": "If the goal should continue to be used as long as the mob is leashed."
     },
+    "continue_sitting_on_reload": {
+      "title": "Continue Sitting On Reload",
+      "type": "boolean",
+      "default": false,
+      "description": "The mob will stay sitting on reload."
+    },
     "max_angle_of_view_horizontal": {
       "title": "Max Angle Of View Horizontal",
       "type": "number",

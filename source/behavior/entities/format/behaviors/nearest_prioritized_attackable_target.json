@@ -19,6 +19,12 @@
       "description": "Time in seconds before selecting a target.",
       "title": "Attack Interval"
     },
+    "cooldown": {
+      "title": "Cooldown",
+      "description": "The amount of time in seconds that the mob has to wait before selecting a target of the same type again",
+      "default": 0.0,
+      "type": "number"
+    },
     "must_reach": {
       "type": "boolean",
       "default": false,

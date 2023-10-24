@@ -1,0 +1,8 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.equipment_location",
+  "title": "Equipment Location",
+  "type": "string",
+  "description": "The equipment location to test.",
+  "default": "self",
+  "enum": ["any", "armor", "feet", "hand", "head", "inventory", "leg", "torse"]
+}

@@ -1,0 +1,32 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.taking_fire_damage",
+  "type": "object",
+  "title": "Taking Fire Damage",
+  "description": "Tests if the subject is taking fire damage. Requires the damage_sensor component",
+  "properties": {
+    "test": {
+      "type": "string",
+      "title": "Test",
+      "description": "Tests if the subject is taking fire damage. Requires the damage_sensor component"
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
+    "value": {
+      "description": "True or false.",
+      "type": "boolean",
+      "default": true,
+      "title": "Value"
+    }
+  },
+  "examples": [
+    {
+      "test": "taking_fire_damage",
+      "value": true
+    },
+    { "test": "taking_fire_damage" }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.is_sneak_held",
+  "type": "object",
+  "title": "Is Sneak Held",
+  "description": "Returns true if the subject entity has the sneak input held.",
+  "properties": {
+    "test": {
+      "type": "string",
+      "title": "Test Property",
+      "description": "The test property."
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
+    "value": {
+      "title": "Value",
+      "description": "True or false.",
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "examples": [
+    {
+      "test": "is_sneak_held",
+      "value": true
+    }
+  ]
+}

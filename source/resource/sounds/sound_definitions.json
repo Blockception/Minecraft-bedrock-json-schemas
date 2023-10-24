@@ -87,7 +87,13 @@
         "max_distance": {
           "title": "Max Distance",
           "description": "UNDOCUMENTED.",
-          "type": "number",
+          "type": ["number", "null"],
+          "minimum": 0
+        },
+        "min_distance": {
+          "title": "Min Distance",
+          "description": "UNDOCUMENTED.",
+          "type": ["number", "null"],
           "minimum": 0
         }
       }

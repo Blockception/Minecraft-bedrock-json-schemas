@@ -190,6 +190,11 @@
               "additionalProperties": { "oneOf": [{ "type": "string" }, { "type": "boolean" }, { "type": "number" }] }
             }
           },
+          "rebuild_animation_matrices": {
+            "type": "boolean",
+            "description": "Whenever or not to rebuild the animation matrices.",
+            "title": "Rebuild Animation Matrices"
+          },
           "textures": {
             "title": "Textures",
             "description": "The texture to apply, multiple texture can be used as to create an overlay effect, a specific material is required though.",

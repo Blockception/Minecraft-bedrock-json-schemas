@@ -7,16 +7,16 @@
   "required": [],
   "properties": {
     "height": {
+      "title": "Height",
       "type": "number",
-      "default": 1,
-      "description": "Height of the collision box in blocks. A negative value will be assumed to be 0",
-      "title": "Height"
+      "default": 1.0,
+      "description": "Height of the collision box in blocks. A negative value will be assumed to be 0."
     },
     "width": {
+      "title": "Width",
       "type": "number",
-      "default": 1,
-      "description": "Width and Depth of the collision box in blocks. A negative value will be assumed to be 0",
-      "title": "Width"
+      "default": 1.0,
+      "description": "Width of the collision box in blocks. A negative value will be assumed to be 0."
     }
   },
   "examples": [

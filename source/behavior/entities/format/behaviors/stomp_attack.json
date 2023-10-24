@@ -8,7 +8,6 @@
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
-
     "attack_once": {
       "title": "Attack Once",
       "type": "boolean",
@@ -20,6 +19,12 @@
       "type": "string",
       "default": "N/A",
       "description": "Defines the entity types this entity will attack."
+    },
+    "can_spread_on_fire": {
+      "title": "Can Spread On Fire",
+      "type": "boolean",
+      "default": false,
+      "description": "If the entity is on fire, this allows the entity's target to catch on fire after being hi"
     },
     "cooldown_time": {
       "title": "Cooldown Time",

@@ -1,0 +1,33 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.any_slots_empty",
+  "type": "object",
+  "title": "Any Slots Empty",
+  "description": "Returns true when the designated equipment location for the subject entity has any empty slot.",
+  "required": ["value"],
+  "examples": [{ "test": "any_slots_empty", "subject": "self", "operator": "equals", "value": "any" }, { "test": "Any_slots_empty" }],
+  "properties": {
+    "test": {
+      "type": "string",
+      "title": "Test Property",
+      "description": "Returns true when the designated equipment location for the subject entity has any empty slot."
+    },
+    "operator": {
+      "$ref": "./types/operator.json",
+      "description": "(Optional) The comparison to apply with `value`.",
+      "default": "equals",
+      "title": "Operator"
+    },
+    "subject": {
+      "$ref": "./types/subject.json",
+      "description": "(Optional) The subject of this filter test.",
+      "default": "self",
+      "title": "Subject"
+    },
+    "value": {
+      "title": "Value",
+      "description": "The equipment location to test.",
+      "type": "integer",
+      "$ref": "./types/equipment_location.json"
+    }
+  }
+}

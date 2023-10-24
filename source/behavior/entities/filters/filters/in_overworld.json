@@ -1,0 +1,32 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.in_overworld",
+  "type": "object",
+  "title": "In Overworld",
+  "description": "Returns true when the subject entity is in Overworld.",
+  "properties": {
+    "test": {
+      "type": "string",
+      "title": "Test",
+      "description": "The test property."
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
+    "value": {
+      "description": "True or false.",
+      "type": "boolean",
+      "default": true,
+      "title": "Value"
+    }
+  },
+  "examples": [
+    {
+      "test": "in_overworld",
+      "value": true
+    },
+    { "test": "in_overworld" }
+  ]
+}

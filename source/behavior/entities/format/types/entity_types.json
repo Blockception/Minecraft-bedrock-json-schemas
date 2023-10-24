@@ -9,6 +9,12 @@
       "additionalProperties": false,
       "properties": {
         "filters": { "$ref": "../../filters/filters.json" },
+        "cooldown": {
+          "title": "Cooldown",
+          "description": "The amount of time in seconds that the mob has to wait before selecting a target of the same type again",
+          "default": 0.0,
+          "type": "number"
+        },
         "max_dist": {
           "type": "number",
           "description": "Maximum distance this mob can be away to be a valid choice.",

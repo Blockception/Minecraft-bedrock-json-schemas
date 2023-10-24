@@ -1,0 +1,33 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.actor_health",
+  "type": "object",
+  "title": "Actor Health",
+  "description": "Tests the health of the subject.",
+  "required": ["value"],
+  "examples": [{ "test": "actor_health", "value": 10 }],
+  "properties": {
+    "test": {
+      "type": "string",
+      "title": "Test Property",
+      "description": "Tests the health of the subject."
+    },
+    "operator": {
+      "$ref": "./types/operator.json",
+      "description": "(Optional) The comparison to apply with `value`.",
+      "default": "equals",
+      "title": "Operator"
+    },
+    "subject": {
+      "$ref": "./types/subject.json",
+      "description": "(Optional) The subject of this filter test.",
+      "default": "self",
+      "title": "Subject"
+    },
+    "value": {
+      "type": "integer",
+      "description": "(Required) A integer value.",
+      "title": "Value",
+      "examples": [0, 1]
+    }
+  }
+}

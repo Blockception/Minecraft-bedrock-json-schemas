@@ -131,6 +131,19 @@
       "description": "Defines the behaviors that may execute on a projectile's hit, including impact damage, impact effect, and stuck in ground. See more on these parameters below.",
       "title": "On Hit",
       "properties": {
+        "arrow_effect": {
+          "title": "Arrow Effect",
+          "type": "object",
+          "description": "The target receives a mob effect. See the table below for all arrow_effect parameters.",
+          "additionalProperties": false,
+          "properties": {
+            "apply_effect_to_blocking_targets": {
+              "type": "boolean",
+              "title": "Apply Effect To Blocking Targets",
+              "description": "If true, the effect will be applied to blocking targets."
+            }
+          }
+        },
         "catch_fire": {
           "title": "Catch Fire",
           "type": "boolean",
