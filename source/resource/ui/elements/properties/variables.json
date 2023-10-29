@@ -1,26 +1,26 @@
 {
   "title": "Variables",
   "description": "The variables that are contained within this element.",
+  "definitions": {
+    "variables": {
+      "title": "Variable Definition",
+      "description": "A variable is a reference to a value that can be used in the UI."
+    }
+  },
   "anyOf": [
-    {
-      "$ref": "../../general/item_ref.json"
-    },
+    { "$ref": "../../general/item_ref.json" },
     {
       "type": "array",
       "items": {
         "type": "object",
         "title": "Variables",
-        "additionalProperties": {
-          "$ref": "#/definitions/variables"
-        }
+        "additionalProperties": { "$ref": "#/definitions/variables" }
       }
     },
     {
       "type": "object",
       "title": "Variables",
-      "additionalProperties": {
-        "$ref": "#/definitions/variables"
-      }
+      "additionalProperties": { "$ref": "#/definitions/variables" }
     }
   ]
 }
