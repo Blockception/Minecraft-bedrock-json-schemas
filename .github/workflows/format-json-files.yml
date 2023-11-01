@@ -28,7 +28,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: 🏗️ Setup Node.js Environment
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           cache: npm
           cache-dependency-path: package-lock.json
