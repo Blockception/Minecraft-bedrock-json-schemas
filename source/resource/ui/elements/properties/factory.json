@@ -1,6 +1,12 @@
 {
   "title": "Factory",
   "description": "The factory that will be used to create the element.",
+  "definitions": {
+    "variables": {
+      "title": "Variable Definition",
+      "description": "A variable is a reference to a value that can be used in the UI."
+    }
+  },
   "anyOf": [
     {
       "type": "object",
