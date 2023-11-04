@@ -7,7 +7,7 @@
       "items": {
         "additionalProperties": {
           "title": "Sub Element",
-          "$ref": "#/definitions/grouped"
+          "$ref": "../../grouped-ui.json"
         }
       }
     },
