@@ -106,7 +106,7 @@
               }
             },
             {
-              "$ref": "../../general/item_ref.json"
+              "$ref": "./general/item_ref.json"
             }
           ]
         },
