@@ -1,0 +1,5 @@
+{
+  "title": "Use Child Anchors",
+  "description": "If true, this element will stack its controlled element in respect to their anchor values.",
+  "$ref": "../../general/boolean.json"
+}

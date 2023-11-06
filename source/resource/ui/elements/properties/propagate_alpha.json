@@ -1,0 +1,5 @@
+{
+  "title": "Propagate Alpha",
+  "description": "If true, this element will apply the same alpha value to its controlled element(s).",
+  "$ref": "../../general/boolean.json"
+}
