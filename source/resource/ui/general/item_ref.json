@@ -2,17 +2,17 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "anyOf": [
     {
-      "title": "Item reference",
-      "description": "A reference to an item: using the following syntax: [element_name]@[namespace_reference].[element_name_reference]",
+      "title": "Element reference",
+      "description": "A reference to an element: using the following syntax: [element_name]@[namespace_reference].[element_name_reference]",
       "type": "string",
-      "examples": ["button@minecraft", "button@minecraft:ui"],
+      "examples": ["button@minecraft", "button@minecraft.ui"],
       "pattern": "^[a-zA-Z0-9_]*@[a-zA-Z0-9_]+(\\.[a-zA-Z0-9_]+)?$"
     },
     {
-      "title": "Item reference",
-      "description": "A reference to an item: using the following syntax: [namespace_reference].[element_name_reference]",
+      "title": "Element reference",
+      "description": "A reference to an element: using the following syntax: [namespace_reference].[element_name_reference]",
       "type": "string",
-      "examples": ["button@minecraft", "button@minecraft:ui"],
+      "examples": ["button@minecraft", "button@minecraft.ui"],
       "pattern": "[a-zA-Z0-9_]+(\\.[a-zA-Z0-9_]+)?$"
     },
     {

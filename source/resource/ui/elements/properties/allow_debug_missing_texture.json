@@ -1,0 +1,5 @@
+{
+  "title": "Allow Debug Missing Texture",
+  "description": "If true, the element will show the black and purple placeholder texture if the referenced image is not found.",
+  "$ref": "../../general/boolean.json"
+}
