@@ -219,14 +219,14 @@
           "description": "Whether or not to register this block to the creative inventory menu.",
           "title": "Register To Creative Menu"
         },
-        "properties": {
-          "title": "Properties",
-          "description": "UNDOCUMENTED.",
+        "states": {
+          "title": "States",
+          "description": "[HOLIDAY EXPERIMENTAL] UNDOCUMENTED.",
           "$comment": "UNDOCUMENTED",
           "propertyNames": { "pattern": "^([a-zA-Z0-9_]+:[a-zA-Z0-9_\\-]+)$" },
           "type": "object",
           "additionalProperties": {
-            "title": "Property",
+            "title": "State",
             "description": "A block property.",
             "oneOf": [
               {
