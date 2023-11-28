@@ -5,22 +5,6 @@
   "description": "The manifest file contains all the basic information about the pack that Minecraft needs to identify it. The tables below contain all the components of the manifest, their individual properties, and what they mean.",
   "required": ["format_version", "header"],
   "additionalProperties": false,
-  "definitions": {
-    "uuidv4": {
-      "type": "string",
-      "title": "An UUID V4",
-      "description": "A valid UUID v4.",
-      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$",
-      "format": "uuid",
-      "defaultSnippets": [
-        {
-          "label": "New UUID",
-          "body": "$UUID"
-        }
-      ]
-    },
-    "version": { "$ref": "../Version.json" }
-  },
   "properties": {
     "format_version": {
       "title": "Format Version",
@@ -79,7 +63,7 @@
             "properties": {
               "uuid": {
                 "type": "string",
-                "$ref": "#/definitions/uuidv4",
+                "$ref": "../UUIDV4.json",
                 "description": "This is the unique identifier of the pack that this pack depends on. It needs to be the exact same UUID that the pack has defined in the header section of it's manifest file",
                 "title": "Uuid"
               },
@@ -137,7 +121,7 @@
           "description": "This option is required for any world templates. This will allow the player to use a random seed when creating a new world from your template."
         },
         "base_game_version": {
-          "$ref": "#/definitions/version",
+          "$ref": "../Version.json",
           "title": "Base Game Version",
           "description": "This is the version of the base game your world template requires, specified as [majorVersion, minorVersion, revision]. We use this to determine what version of the base game resource and behavior packs to apply when your content is used."
         },
@@ -154,7 +138,7 @@
         },
         "min_engine_version": {
           "title": "Minimum Engine Version",
-          "$ref": "#/definitions/version",
+          "$ref": "../Version.json",
           "description": "This is the minimum version of the game that this pack was written for. This is a required field for resource and behavior packs. This helps the game identify whether any backwards compatibility is needed for your pack. You should always use the highest version currently available when creating packs"
         },
         "name": {
@@ -164,12 +148,12 @@
         },
         "uuid": {
           "title": "UUID",
-          "$ref": "#/definitions/uuidv4",
+          "$ref": "../UUIDV4.json",
           "description": "This is a special type of identifier that uniquely identifies this pack from any other pack. UUIDs are written in the format xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx where each x is a hexadecimal value (0-9 or a-f). We recommend using an online service to generate this and guarantee their uniqueness (just bing UUID Generator to find some)"
         },
         "version": {
           "title": "Version",
-          "$ref": "#/definitions/version",
+          "$ref": "../Version.json",
           "description": "This is the version of your pack in the format [majorVersion, minorVersion, revision]."
         }
       }
@@ -203,12 +187,12 @@
             "enum": ["javascript"]
           },
           "uuid": {
-            "$ref": "#/definitions/uuidv4",
+            "$ref": "../UUIDV4.json",
             "description": "This is a unique identifier for the module in the same format as the pack's UUID in the header. This should be different from the pack's UUID, and different for every module",
             "title": "Uuid"
           },
           "version": {
-            "$ref": "#/definitions/version",
+            "$ref": "../Version.json",
             "description": "This is the version of your pack in the format [majorVersion, minorVersion, revision]. The version number is used when importing a pack that has been imported before. The new pack will replace the old one if the version is higher, and ignored if it's the same or lower",
             "title": "Version"
           },

@@ -5,7 +5,6 @@
   "description": "The manifest file contains all the basic information about the pack that Minecraft needs to identify it. The tables below contain all the components of the manifest, their individual properties, and what they mean.",
   "additionalProperties": false,
   "required": ["format_version", "header"],
-  "definitions": { "uuidv4": { "$ref": "../UUIDV4.json" }, "version": { "$ref": "../Version.json" } },
   "properties": {
     "format_version": {
       "type": "number",
@@ -24,23 +23,23 @@
         },
         "uuid": {
           "type": "string",
-          "$ref": "#/definitions/uuidv4",
+          "$ref": "../UUIDV4.json",
           "description": "This is a special type of identifier that uniquely identifies this pack from any other pack. UUIDs are written in the format xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx where each x is a hexadecimal value (0-9 or a-f). We recommend using an online service to generate this and guarantee their uniqueness (just bing UUID Generator to find some)",
           "title": "UUID"
         },
         "version": {
-          "$ref": "#/definitions/version",
+          "$ref": "../Version.json",
           "description": "This is the version of your pack in the format [majorVersion, minorVersion, revision].",
           "title": "Version"
         },
         "min_engine_version": {
           "type": "string",
-          "$ref": "#/definitions/version",
+          "$ref": "../Version.json",
           "description": "This is the minimum version of the game that this pack was written for. This helps the game identify whether any backwards compatibility is needed for your pack. You should always use the highest version currently available when creating packs",
           "title": "Minimum Engine Version"
         },
         "lock_template_options": { "type": "boolean", "description": "UNDOCUMENTED: lock template options.", "title": "Lock Template Options" },
-        "base_game_version": { "$ref": "#/definitions/version", "description": "UNDOCUMENTED: base game version.", "title": "Base Game Version" }
+        "base_game_version": { "$ref": "../Version.json", "description": "UNDOCUMENTED: base game version.", "title": "Base Game Version" }
       },
       "description": "UNDOCUMENTED: header.",
       "title": "Header"
@@ -68,12 +67,12 @@
             "default": ""
           },
           "uuid": {
-            "$ref": "#/definitions/uuidv4",
+            "$ref": "../UUIDV4.json",
             "description": "This is a unique identifier for the module in the same format as the pack's UUID in the header. This should be different from the pack's UUID, and different for every module",
             "title": "UUID"
           },
           "version": {
-            "$ref": "#/definitions/version",
+            "$ref": "../Version.json",
             "description": "This is the version of the module in the same format as the pack's version in the header. This can be used to further identify changes in your pack",
             "title": "Version"
           }
@@ -90,12 +89,12 @@
         "properties": {
           "uuid": {
             "type": "string",
-            "$ref": "#/definitions/uuidv4",
+            "$ref": "../UUIDV4.json",
             "description": "This is the unique identifier of the pack that this pack depends on. It needs to be the exact same UUID that the pack has defined in the header section of it's manifest file",
             "title": "UUID"
           },
           "version": {
-            "$ref": "#/definitions/version",
+            "$ref": "../Version.json",
             "description": "This is the specific version of the pack that your pack depends on. Should match the version the other pack has in its manifest file",
             "title": "Version"
           }
