@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behavior.recipes",
   "examples": [
     {
-      "format_version": "1.20.0",
+      "format_version": "1.20.41",
       "minecraft:recipe_shaped": {
         "description": { "identifier": "minecraft:item" },
         "tags": ["crafting_table"],

@@ -49,7 +49,7 @@
       "title": "Format Version"
     },
     "minecraft:feature_rules": {
-      "title": "Feature rules",
+      "title": "Feature Rules",
       "description": "Each feature rule controls exactly one feature and serves as the root of a chain of feature data.",
       "type": "object",
       "additionalProperties": false,

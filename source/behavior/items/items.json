@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.items",
-  "description": "Minecraft items 1.16.200",
+  "description": "Minecraft items",
   "required": ["format_version", "minecraft:item"],
   "title": "Item",
   "type": "object",
