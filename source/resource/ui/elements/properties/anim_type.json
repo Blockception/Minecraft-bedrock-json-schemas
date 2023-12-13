@@ -1,9 +1,10 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema",
   "title": "Animation Type",
   "description": "The type of the animation.",
   "anyOf": [
     {
-      "enum": ["wait", "offset", "alpha", "flip_book"]
+      "enum": ["wait", "offset", "alpha", "flip_book", "aseprite_flip_book", "clip", "color", "size", "uv"]
     },
     {
       "$ref": "../../general/item_ref.json"
