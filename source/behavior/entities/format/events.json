@@ -143,6 +143,19 @@
             { "example:property": "one" },
             { "example:property": "math.random(0, 10)" }
           ]
+        },
+        "queue_command": {
+          "description": "Queues a command to be executed.",
+          "properties": {
+            "command": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "description": "The command to execute.",
+                "examples": ["/say Hello World"]
+              }
+            }
+          }
         }
       }
     }
