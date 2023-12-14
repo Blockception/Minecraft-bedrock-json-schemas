@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.resource.texture.ui_definition",
+  "additionalProperties": false,
+  "description": "The file that specifies either 9slice texture or Aseprite flipbook.",
+  "title": "UI Texture File",
+  "type": "object",
+  "oneOf": [
+    {
+      "$ref": "./nine_slice.json"
+    },
+    {
+      "$ref": "./aseprite_flipbook.json"
+    }
+  ]
+}

@@ -25,6 +25,7 @@
     { "Source": "./resource/sounds/sound_definitions.json", "Destination": "../resource/sounds/sound_definitions.json" },
     { "Source": "./resource/sounds.json", "Destination": "../resource/sounds.json" },
     { "Source": "./resource/textures/terrain_texture.json", "Destination": "../resource/textures/terrain_texture.json" },
+    { "Source": "./resource/textures/ui_texture_definition.json", "Destination": "../resource/textures/ui_texture_definition.json" },
     { "Source": "./resource/ui/ui.json", "Destination": "../resource/ui/ui.json" },
     { "Source": "./resource/ui/_ui_defs.json", "Destination": "../resource/ui/_ui_defs.json" },
     { "Source": "./resource/ui/_global_variables.json", "Destination": "../resource/ui/_global_variables.json" },
