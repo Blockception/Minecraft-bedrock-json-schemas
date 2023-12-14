@@ -148,12 +148,24 @@
           "description": "Queues a command to be executed.",
           "properties": {
             "command": {
-              "type": "array",
-              "items": {
-                "type": "string",
-                "description": "The command to execute.",
-                "examples": ["/say Hello World"]
-              }
+              "title": "Command",
+              "description": "The command to execute.",
+              "oneOf": [
+                {
+                  "type": "string",
+                  "pattern": "^[^/].*$",
+                  "examples": ["say Hello World"]
+                },
+                {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "description": "The command to execute.",
+                    "examples": ["say Hello World"],
+                    "pattern": "^[^/].*$"
+                  }
+                }
+              ]
             }
           }
         }
