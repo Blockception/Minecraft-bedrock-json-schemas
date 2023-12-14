@@ -58,6 +58,78 @@
         }
       },
       "properties": {
+        "controls": {
+          "title": "Controls",
+          "description": "The controls that are contained within this element.",
+          "anyOf": [
+            {
+              "type": "array",
+              "items": {
+                "additionalProperties": {
+                  "title": "Sub Element",
+                  "$ref": "#/definitions/grouped-ui"
+                }
+              }
+            },
+            {
+              "$ref": "./general/item_ref.json"
+            }
+          ]
+        },
+        "modifications": {
+          "$schema": "http://json-schema.org/draft-07/schema",
+          "title": "Modifications",
+          "description": "Modifications to the element.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "control_name": {
+                "title": "Control Name",
+                "type": "string"
+              },
+              "array_name": {
+                "title": "Array Name",
+                "type": "string",
+                "enum": ["bindings", "controls"]
+              },
+              "operation": {
+                "title": "Operation",
+                "type": "string",
+                "enum": ["insert_back", "insert_front", "insert_after", "insert_before", "move_back", "move_front", "move_after", "move_before", "swap", "remove", "replace"]
+              },
+              "where": { "$ref": "./elements/properties/bindings.json" },
+              "target": { "$ref": "./elements/properties/bindings.json" },
+              "target_control": {
+                "type": "string"
+              },
+              "value": {
+                "oneOf": [
+                  { "$ref": "./elements/properties/bindings.json" },
+                  {
+                    "title": "Controls",
+                    "description": "The controls to add.",
+                    "anyOf": [
+                      {
+                        "type": "array",
+                        "items": {
+                          "additionalProperties": {
+                            "title": "Sub Element",
+                            "$ref": "#/definitions/grouped-ui"
+                          }
+                        }
+                      },
+                      {
+                        "$ref": "./general/item_ref.json"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        },
+
         "allow_clipping": { "$ref": "./elements/properties/allow_clipping.json" },
         "allow_debug_missing_texture": { "$ref": "./elements/properties/allow_debug_missing_texture.json" },
         "allow_scroll_even_when_content_fits": { "$ref": "./elements/properties/allow_scroll_even_when_content_fits.json" },
@@ -90,24 +162,6 @@
         "consume_hover_events": { "$ref": "./elements/properties/consume_hover_events.json" },
         "contained": { "$ref": "./elements/properties/contained.json" },
         "control_name": { "$ref": "./elements/properties/control_name.json" },
-        "controls": {
-          "title": "Controls",
-          "description": "The controls that are contained within this element.",
-          "anyOf": [
-            {
-              "type": "array",
-              "items": {
-                "additionalProperties": {
-                  "title": "Sub Element",
-                  "$ref": "#/definitions/grouped-ui"
-                }
-              }
-            },
-            {
-              "$ref": "./general/item_ref.json"
-            }
-          ]
-        },
         "default_control": { "$ref": "./elements/properties/default_control.json" },
         "default_focus_precedence": { "$ref": "./elements/properties/default_focus_precedence.json" },
         "disable_anim_fast_forward": { "$ref": "./elements/properties/disable_anim_fast_forward.json" },
@@ -171,7 +225,6 @@
         "maximum_grid_items": { "$ref": "./elements/properties/maximum_grid_items.json" },
         "min_size": { "$ref": "./elements/properties/min_size.json" },
         "modal": { "$ref": "./elements/properties/modal.json" },
-        "modifications": { "$ref": "./elements/properties/modifications.json" },
         "offset": { "$ref": "./elements/properties/offset.json" },
         "orientation": { "$ref": "./elements/properties/orientation.json" },
         "place_holder_control": { "$ref": "./elements/properties/place_holder_control.json" },
