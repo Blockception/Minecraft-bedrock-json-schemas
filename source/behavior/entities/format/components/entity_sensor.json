@@ -37,6 +37,12 @@
           "title": "Event",
           "description": "event.",
           "type": "string"
+        },
+        "cooldown": {
+          "title": "Cooldown",
+          "description": "How many seconds should elapse before the subsensor can once again sense for entities. The cooldown is applied on top of the base 1 tick (0.05 seconds) delay. Negative values will result in no cooldown being used.",
+          "type": "number",
+          "default": -1
         }
       },
       "examples": [
