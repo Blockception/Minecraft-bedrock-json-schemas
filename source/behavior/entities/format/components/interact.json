@@ -154,6 +154,18 @@
           "type": "boolean",
           "$comment": "UNDOCUMENTED",
           "description": "UNDOCUMENTED Takes an item from the player."
+        },
+        "drop_item_slot": {
+          "title": "Drop Item Slot",
+          "type": "integer",
+          "default": -1,
+          "description": "The entity's equipment slot to remove and drop the item from, if any, upon successful interaction."
+        },
+        "equip_item_slot": {
+          "title": "Equip Item Slot",
+          "type": "integer",
+          "default": -1,
+          "description": "The entity's equipment slot to equip the item to, if any, upon successful interaction."
         }
       }
     }
