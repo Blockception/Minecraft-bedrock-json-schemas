@@ -5,7 +5,19 @@
   "title": "Set Damage",
   "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "set_damage", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Function" },
+    "add": {
+      "title": "Add",
+      "description": "UNDOCUMENTED.",
+      "$comment": "UNDOCUMENTED",
+      "type": "boolean"
+    },
+    "function": {
+      "type": "string",
+      "const": "set_damage",
+      "description": "UNDOCUMENTED.",
+      "$comment": "UNDOCUMENTED",
+      "title": "Function"
+    },
     "damage": {
       "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
