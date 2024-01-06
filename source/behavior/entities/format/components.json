@@ -259,6 +259,7 @@
     "minecraft:behavior.look_at_trading_player": { "$ref": "./behaviors/look_at_trading_player.json" },
     "minecraft:behavior.make_love": { "$ref": "./behaviors/make_love.json" },
     "minecraft:behavior.melee_attack": { "$ref": "./behaviors/melee_attack.json" },
+    "minecraft:behavior.melee_box_attack": { "$ref": "./behaviors/melee_box_attack.json" },
     "minecraft:behavior.mingle": { "$ref": "./behaviors/mingle.json" },
     "minecraft:behavior.mount_pathing": { "$ref": "./behaviors/mount_pathing.json" },
     "minecraft:behavior.move_indoors": { "$ref": "./behaviors/move_indoors.json" },
