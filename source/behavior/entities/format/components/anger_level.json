@@ -52,7 +52,24 @@
     },
     "on_increase_sounds": {
       "title": "On Increase Sounds",
-      "$ref": "../../filters/filters.json"
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["condition", "sound"],
+        "properties": {
+          "condition": {
+            "title": "Condition",
+            "type": "string",
+            "description": "The event that will trigger the sound"
+          },
+          "sound": {
+            "title": "Sound",
+            "type": "string",
+            "description": "The sound to play"
+          }
+        }
+      }
     },
     "remove_targets_below_angry_threshold": {
       "title": "Remove Targets Below Angry Threshold",
