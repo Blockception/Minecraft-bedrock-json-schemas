@@ -490,8 +490,7 @@
             },
             "particle": {
               "title": "Particle",
-              "type": "integer",
-              "default": 0,
+              "type": "string",
               "description": "The particle emitter."
             },
             "potion": {
