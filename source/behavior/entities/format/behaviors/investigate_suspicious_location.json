@@ -1,0 +1,27 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.investigate_suspicious_location",
+  "type": "object",
+  "title": "Inspect Bookshelf",
+  "additionalProperties": false,
+  "description": "Allows the mob to inspect bookshelves.",
+  "required": [],
+  "properties": {
+    "goal_radius": {
+      "title": "Goal Radius",
+      "type": "number",
+      "default": 1.5,
+      "description": "Distance in blocks within the entity considers it has reached its target position."
+    },
+    "priority": {
+      "title": "Priority",
+      "type": "integer",
+      "description": "The higher the priority, the sooner this behavior will be executed as a goal."
+    },
+    "speed_multiplier": {
+      "title": "Speed Multiplier",
+      "type": "number",
+      "default": 1,
+      "description": "Movement speed multiplier."
+    }
+  }
+}
