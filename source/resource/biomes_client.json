@@ -66,6 +66,7 @@
         "beach": { "$ref": "#/definitions/biomespec" },
         "birch_forest_hills": { "$ref": "#/definitions/biomespec" },
         "birch_forest": { "$ref": "#/definitions/biomespec" },
+        "cherry_grove": { "$ref": "#/definitions/biomespec" },
         "cold_beach": { "$ref": "#/definitions/biomespec" },
         "cold_ocean": { "$ref": "#/definitions/biomespec" },
         "cold_taiga_hills": { "$ref": "#/definitions/biomespec" },
