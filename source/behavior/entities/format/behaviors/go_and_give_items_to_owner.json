@@ -10,7 +10,6 @@
     },
     "on_item_throw": {
       "title": "On Item Throw",
-      "$ref": "../types/trigger.json",
       "description": "Event(s) to run when this mob throws items.",
       "oneOf": [
         { "$ref": "../types/trigger.json" },
