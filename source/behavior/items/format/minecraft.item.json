@@ -20,18 +20,38 @@
           "description": "The identifier for this item. The name must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla item.",
           "$ref": "../../../general/item/identifier.json"
         },
-        "category": {
-          "type": "string",
-          "default": "",
-          "description": "The category for this item. Categories are used to control high level properties of how the item is integrated into the bedrock engine, such as whether it can be used in slash commands.",
-          "title": "Category",
-          "examples": ["Nature", "Equipment", "Construction", "Items"]
-        },
         "is_experimental": {
           "type": "boolean",
           "default": false,
           "description": "If this item is experimental, it will only be registered if the world is marked as experimental.",
           "title": "Is Experimental"
+        },
+        "menu_category": {
+          "type": "object",
+          "title": "Menu Category",
+          "description": "The Creative Category that includes the specified item.",
+          "additionalProperties": false,
+          "properties": {
+            "group": {
+              "type": "string",
+              "title": "Group",
+              "maxLength": 256,
+              "description": "The Creative Group that that includes the specified item. The group name is limited to 256 characters.",
+              "examples": ["itemGroup.name.blaze"]
+            },
+            "category": {
+              "type": "string",
+              "title": "Category",
+              "description": "The Creative Category that includes the specified item.",
+              "examples": ["equipment"]
+            },
+            "is_hidden_in_commands": {
+              "type": "boolean",
+              "default": false,
+              "title": "Is Hidden In Commands",
+              "description": "Determines whether or not this item can be used with commands. Commands can use items by default"
+            }
+          }
         }
       }
     },
