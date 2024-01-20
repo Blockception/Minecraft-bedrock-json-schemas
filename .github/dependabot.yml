@@ -10,6 +10,9 @@ updates:
     schedule:
       interval: "monthly"
     groups:
+      internal:
+        patterns:
+          - "bc-minecraft-*"
       all:
         patterns:
           - "*"
