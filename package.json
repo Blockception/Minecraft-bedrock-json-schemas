@@ -38,8 +38,8 @@
   "devDependencies": {
     "@types/chai": "^4.3.11",
     "@types/mocha": "^10.0.6",
-    "@types/node": "^20.11.16",
-    "chai": "^5.0.3",
+    "@types/node": "^20.11.5",
+    "chai": "^5.0.0",
     "comment-json": "^4.2.3",
     "json-loader": "^0.5.7",
     "mocha": "^10.2.0",
@@ -50,6 +50,6 @@
   },
   "dependencies": {
     "fast-glob": "^3.3.2",
-    "vscode-json-languageservice": "^5.3.9"
+    "vscode-json-languageservice": "^5.3.7"
   }
 }
