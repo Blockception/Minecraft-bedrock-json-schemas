@@ -4,7 +4,7 @@
   "description": "Durability item component: how much damage can this item take before breaking.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["damage_chance"],
+  "required": ["max_durability"],
   "properties": {
     "damage_chance": {
       "type": "object",
@@ -20,7 +20,8 @@
     "max_durability": {
       "title": "Maximum Durability",
       "description": "Maximum durability is the amount of damage that this item can take before breaking.",
-      "type": "integer"
+      "type": "integer",
+      "minimum": 0
     }
   },
   "examples": [
