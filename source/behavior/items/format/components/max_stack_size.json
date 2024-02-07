@@ -1,9 +1,12 @@
 {
   "$id": "blockception.minecraft.behavior.items.minecraft:max_stack_size",
   "additionalProperties": false,
-  "required": ["texture"],
   "type": "integer",
   "title": "Max Stack Size",
-  "description": "Maximum stack size.",
-  "minimum": 0
+  "description": "The max stack size component determines how many of the item can be stacked together.",
+  "required": ["value"],
+  "properties": { "value": { "type": "number", "title": "Value", "description": "How many of the item that can be stacked.", "default": 64, "minimum": 1 } },
+  "examples": [
+    { "value": 1 }
+  ]
 }
