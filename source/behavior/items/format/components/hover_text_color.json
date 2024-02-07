@@ -1,0 +1,19 @@
+{
+  "$id": "blockception.minecraft.behavior.items.minecraft:hover_text_color",
+  "additionalProperties": false,
+  "type": "object",
+  "title": "Hover Text Color",
+  "description": "The hover text color component determines the color of the item name when hovering over it.",
+  "required": ["value"],
+  "properties": { 
+    "value": {
+      "description": "The color of the item's hover text.",
+      "type": "string",
+      "enum": ["black", "blue", "brown", "cyan", "gray", "green", "light_blue", "light_green", "magenta", "orange", "pink", "purple", "red", "silver", "white", "yellow"],
+      "title": "Value"
+    }
+   },
+  "examples": [
+    { "value": "light_blue" }
+  ]
+}
