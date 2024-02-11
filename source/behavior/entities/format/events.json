@@ -128,7 +128,7 @@
         },
         "emit_vibration": {
           "title": "Emit Vibration",
-          "description": "",
+          "description": "UNDOCUMENTED",
           "type": "object",
           "properties": {
             "vibration": {
