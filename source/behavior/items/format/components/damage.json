@@ -1,0 +1,12 @@
+{
+  "$id": "blockception.minecraft.behavior.items.minecraft:damage",
+  "additionalProperties": false,
+  "type": "object",
+  "title": "Damage",
+  "description": "The damage component determines how much extra damage the item does on attack.",
+  "required": ["value"],
+  "properties": { "value": { "type": "number", "title": "Value", "description": "How much extra damage the item does, must be a positive number.", "minimum": 1 } },
+  "examples": [
+    { "value": 7 }
+  ]
+}

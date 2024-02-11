@@ -6,12 +6,6 @@
   "additionalProperties": false,
   "required": ["texture"],
   "properties": {
-    "frame": {
-      "type": "string",
-      "title": "Frame",
-      "description": "An index or expression for which frame of the icon to display. Default resolves to 0.",
-      "default": 0
-    },
     "legacy_id": { "type": "string", "title": "Texture", "description": "Legacy texture id for older item icons." },
     "texture": {
       "type": "string",
