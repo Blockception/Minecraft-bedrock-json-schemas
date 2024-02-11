@@ -25,9 +25,9 @@
           "description": "Size of each side of the selection box. Size is specified as [x, y, z]. \"origin\" + \"size\" must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.",
           "type": "array",
           "items": [
-            { "title": "X", "type": "number" },
-            { "title": "Y", "type": "number" },
-            { "title": "Z", "type": "number" }
+            { "title": "X", "type": "number", "minimum": -8.0, "maximum": 8},
+            { "title": "Y", "type": "number", "minimum": 0, "maximum": 16 },
+            { "title": "Z", "type": "number", "minimum": -8.0, "maximum": 8}
           ]
         }
       }

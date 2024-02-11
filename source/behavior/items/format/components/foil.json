@@ -1,8 +1,0 @@
-{
-  "$id": "blockception.minecraft.behavior.items.minecraft:foil",
-  "additionalProperties": false,
-  "required": ["texture"],
-  "type": "boolean",
-  "title": "Foil",
-  "description": "Foil or glint."
-}

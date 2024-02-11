@@ -12,11 +12,17 @@
       "additionalProperties": false,
       "required": [],
       "properties": {
-        "seconds_to_destroy": {
-          "title": "Seconds To Destroy",
-          "description": "Sets the number of seconds it takes to destroy the block with base equipment. Greater numbers result in greater mining times.",
+        "catch_chance_modifier": {
+          "title": "Catch Chance Modifier",
+          "description": "A modifier affecting the chance that this block will catch flame when next to a fire. Values are greater than or equal to 0, with a higher number meaning more likely to catch on fire",
           "type": "number",
-          "default": 0.0
+          "default": 5
+        },
+        "destroy_chance_modifier": {
+          "title": "Destroy Chance Modifier",
+          "description": "A modifier affecting the chance that this block will be destroyed by flames when on fire.",
+          "type": "number",
+          "default":20
         }
       }
     }

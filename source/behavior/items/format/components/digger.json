@@ -22,8 +22,7 @@
         "type": "object",
         "additionalProperties": false,
         "properties": {
-          "speed": { "title": "Speed", "description": "Speed.", "type": "number" },
-          "on_dig": { "type": "string", "title": "On Dig", "description": "Trigger for when you dig a block that isn't listed in destroy_speeds." },
+          "speed": { "title": "Speed", "type": "number" },
           "block": {
             "title": "Block",
             "oneOf": [
@@ -45,7 +44,6 @@
           }
         }
       }
-    },
-    "on_dig": { "type": "string", "title": "On Dig", "description": "Trigger for when you dig a block that isn't listed in destroy_speeds." }
+    }
   }
 }

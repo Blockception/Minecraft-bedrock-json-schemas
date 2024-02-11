@@ -12,14 +12,13 @@
       "items": {
         "type": "object",
         "title": "Ammunition",
-        "description": "UNDOCUMENTED.",
-        "$comment": "UNDOCUMENTED",
+        "description": "Ammunition definition",
         "additionalProperties": false,
         "properties": {
-          "item": { "title": "Item", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "type": "string" },
-          "use_offhand": { "title": "Use Offhand", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "type": "boolean" },
-          "search_inventory": { "title": "Search Inventory", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "type": "boolean" },
-          "use_in_creative": { "title": "Use In Creative", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "type": "boolean" }
+          "item": { "title": "Item", "description": "Item identifier",  "type": "string" },
+          "use_offhand": { "title": "Use Offhand", "description": "If ammo can be in offhand",  "type": "boolean" },
+          "search_inventory": { "title": "Search Inventory", "description": "If ammo can be stored in the inventory",  "type": "boolean" },
+          "use_in_creative": { "title": "Use In Creative", "description": "If it needs ammo to be used in creative",  "type": "boolean" }
         }
       }
     },

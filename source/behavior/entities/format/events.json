@@ -126,6 +126,25 @@
             }
           }
         },
+        "emit_vibration": {
+          "title": "Emit Vibration",
+          "description": "UNDOCUMENTED",
+          "type": "object",
+          "properties": {
+            "vibration": {
+              "enum": [
+                "shear",
+                "entity_act",
+                "entity_interact"
+              ]
+            }
+          },
+          "examples": [
+            { "vibration": "shear"},
+            { "vibration": "entity_act"},
+            { "vibration": "entity_interact"}
+          ]
+        },
         "set_property": {
           "title": "Set Property",
           "description": "Sets a property on the entity.",
