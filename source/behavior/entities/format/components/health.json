@@ -6,6 +6,11 @@
   "additionalProperties": false,
   "required": [],
   "properties": {
+    "min": {
+      "type": "integer",
+      "description": "The minimum starting health an entity has.",
+      "title": "Minimum"
+    },
     "max": {
       "type": "integer",
       "description": "The maximum starting health an entity has.",
