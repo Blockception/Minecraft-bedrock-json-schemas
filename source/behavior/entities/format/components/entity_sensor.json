@@ -6,6 +6,20 @@
       "title": "Entity Sensor",
       "additionalProperties": false,
       "properties": {
+        "cooldown": {
+          "title": "Cooldown",
+          "description": "How many seconds should elapse before the subsensor can once again sense for entities. The cooldown is applied on top of the base 1 tick (0.05 seconds) delay. Negative values will result in no cooldown being used.",
+          "type": "number",
+          "default": -1
+        },
+        "event_filters": {
+          "$ref": "../../filters/filters.json"
+        },
+        "event": {
+          "title": "Event",
+          "description": "event.",
+          "type": "string"
+        },
         "maximum_count": {
           "type": "integer",
           "default": -1,
@@ -18,6 +32,12 @@
           "description": "The minimum number of entities that must pass the filter conditions for the event to send.",
           "title": "Minimum Count"
         },
+        "range": {
+          "type": "number",
+          "default": 10,
+          "description": "[UNDOCUMENTED] The maximum distance another entity can be from this and have the filters checked against it.",
+          "title": "Range"
+        },
         "require_all": {
           "type": "boolean",
           "default": false,
@@ -29,20 +49,6 @@
           "default": 10,
           "description": "The maximum distance another entity can be from this and have the filters checked against it.",
           "title": "Sensor Range"
-        },
-        "event_filters": {
-          "$ref": "../../filters/filters.json"
-        },
-        "event": {
-          "title": "Event",
-          "description": "event.",
-          "type": "string"
-        },
-        "cooldown": {
-          "title": "Cooldown",
-          "description": "How many seconds should elapse before the subsensor can once again sense for entities. The cooldown is applied on top of the base 1 tick (0.05 seconds) delay. Negative values will result in no cooldown being used.",
-          "type": "number",
-          "default": -1
         }
       },
       "examples": [

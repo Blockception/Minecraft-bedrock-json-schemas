@@ -5,6 +5,7 @@
   "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED",
   "enum": [
+    "",
     "add.chest",
     "admire",
     "agitated",
@@ -293,8 +294,10 @@
     "milk.screamer",
     "milk",
     "mob.armor_stand.place",
+    "mob.hoglin.converted_to_zombified",
     "mob.husk.convert_to_drowned",
     "mob.husk.convert_to_frog",
+    "mob.pig.death",
     "mob.husk.convert_to_stray",
     "mob.husk.convert_to_zombie",
     "mob.player.hurt_drown",

@@ -297,9 +297,17 @@
             },
             "damage": {
               "title": "Damage",
-              "type": "number",
-              "default": 1,
-              "description": "The damage dealt on impact."
+              "description": "The damage dealt on impact.",
+              "oneOf": [
+                { "type": "number", "default": 1 },
+                {
+                  "type": "array",
+                  "items": [
+                    { "type": "number", "title": "Min" },
+                    { "type": "number", "title": "Max" }
+                  ]
+                }
+              ]
             },
             "destroy_on_hit": {
               "title": "Destroy On Hit",
