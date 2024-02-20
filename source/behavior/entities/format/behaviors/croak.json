@@ -10,7 +10,7 @@
     "duration": {
       "title": "Duration",
       "description": "Random range in seconds after which the croaking stops. Can also be a constant.",
-      "$ref": "../../../../general/vectors/integer2OrValue.json"
+      "$ref": "../../../../general/vectors/number2OrValue.json"
     },
     "filters": {
       "title": "Filters",

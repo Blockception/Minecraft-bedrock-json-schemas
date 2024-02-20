@@ -37,7 +37,7 @@
           "title": "Priority"
         },
         "check_if_outnumbered": {
-          "type": "number",
+          "type": "boolean",
           "description": "UNDOCUMENTED.",
           "title": "Check If Outnumbered"
         },

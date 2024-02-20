@@ -4,39 +4,58 @@
   "description": "Unlock achievement",
   "type": "object",
   "required": ["context"],
+  "definitions": {
+    "item": {
+      "oneOf": [
+        {
+          "required": ["context"],
+          "properties": {
+            "context": {
+              "type": "string",
+              "title": "Context",
+              "description": "The context of the achievement to unlock"
+            }
+          }
+        },
+        {
+          "required": ["item"],
+          "properties": {
+            "item": {
+              "type": "string",
+              "title": "Item",
+              "examples": ["minecraft:stick"],
+              "description": "The item to unlock"
+            },
+            "data": {
+              "type": "integer",
+              "title": "Data",
+              "description": "The data of the item to unlock"
+            }
+          }
+        },
+        {
+          "required": ["tag"],
+          "properties": {
+            "tag": {
+              "type": "string",
+              "title": "Item Tag",
+              "description": "The item to unlock",
+              "examples": ["minecraft:planks", "minecraft:wooden_slabs"]
+            }
+          }
+        }
+      ]
+    }
+  },
   "oneOf": [
     {
-      "properties": {
-        "context": {
-          "type": "string",
-          "title": "Context",
-          "description": "The context of the achievement to unlock"
-        }
-      }
+      "type": "object",
+      "$ref": "#/definitions/item"
     },
     {
-      "properties": {
-        "item": {
-          "type": "string",
-          "title": "Item",
-          "examples": ["minecraft:stick"],
-          "description": "The item to unlock"
-        },
-        "data": {
-          "type": "integer",
-          "title": "Data",
-          "description": "The data of the item to unlock"
-        }
-      }
-    },
-    {
-      "properties": {
-        "tag": {
-          "type": "string",
-          "title": "Item Tag",
-          "description": "The item to unlock",
-          "examples": ["minecraft:planks", "minecraft:wooden_slabs"]
-        }
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/item"
       }
     }
   ]

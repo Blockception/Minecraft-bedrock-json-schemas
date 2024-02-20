@@ -76,6 +76,11 @@
       "$ref": "../types/trigger.json",
       "description": "Defines the event to trigger when this entity successfully attacks."
     },
+    "on_kill": {
+      "title": "On Kill",
+      "$ref": "../types/trigger.json",
+      "description": "[UNDOCUMENTED] Defines the event to trigger when this entity successfully kills a target."
+    },
     "outer_boundary_time_increase": {
       "title": "Outer Boundary Time Increase",
       "type": "number",
