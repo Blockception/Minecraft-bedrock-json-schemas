@@ -49,7 +49,7 @@
                 "additionalProperties": false,
                 "type": "object",
                 "required": ["name"],
-                "examples": [{ "load_on_low_memory": false, "name": "sounds/fx/example" }],
+                "examples": [{ "name": "sounds/fx/example" }],
                 "properties": {
                   "is3D": {
                     "description": "UNDOCUMENTED.",
@@ -59,11 +59,6 @@
                   },
                   "pitch": { "description": "The pitch of the audio, 1 is nomial.", "type": "number", "minimum": 0, "maximum": 2, "title": "Pitch" },
                   "volume": { "description": "The volume of the audio, 1 is nomial.", "type": "number", "minimum": 0, "title": "Volume" },
-                  "load_on_low_memory": {
-                    "type": "boolean",
-                    "description": "Marks if this audio should be loaded or not on low memory.",
-                    "title": "Load On Low Memory"
-                  },
                   "stream": { "description": "If marked true then minecraft will stream the audio.", "type": "boolean", "title": "Stream" },
                   "name": {
                     "$id": "#/Sound/sounds/stringItem",
