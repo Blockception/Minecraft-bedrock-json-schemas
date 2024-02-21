@@ -1,21 +1,20 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.can_fly",
-  "type": "object",
   "title": "Can Fly",
-  "additionalProperties": false,
   "description": "Marks the entity as being able to fly, the pathfinder won't be restricted to paths where a solid block is required underneath it.",
   "required": [],
-  "properties": {
-    "value": {
-      "type": "boolean",
-      "default": true,
-      "description": "Marks the entity as being able to fly, the pathfinder won't be restricted to paths where a solid block is required underneath it.",
-      "title": "Value"
-    }
-  },
-  "examples": [
+  "anyOf": [
     {
-      "value": true
+      "type":"object",
+      "additionalProperties": false
+    },
+    {
+      "type": "boolean",
+      "default": false
     }
+  ],
+  "examples": [
+    true,
+    false
   ]
 }
