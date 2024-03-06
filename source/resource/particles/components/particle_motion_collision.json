@@ -3,6 +3,7 @@
   "type": "object",
   "title": "Particle Motion Collision Component For 1.10.0",
   "additionalProperties": false,
+  "required": ["collision_radius"],
   "properties": {
     "collision_drag": { "type": "number", "description": "UNDOCUMENTED: collision drag.", "title": "Collision Drag" },
     "coefficient_of_restitution": {

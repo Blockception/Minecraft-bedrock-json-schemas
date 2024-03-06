@@ -14,6 +14,62 @@
       }
     }
   ],
+  "definitions": {
+    "event": {
+      "additionalProperties": false,
+      "title": "Particle event",
+      "description": "The particle event.",
+      "properties": {
+        "sequence": {
+          "title": "Event sequence",
+          "description": "A sequence of elements to execute.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/event"
+          }
+        },
+        "randomize": {
+          "title": "Event randomize",
+          "description": "A list of elements to execute one of.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/event"
+          }
+        },
+        "particle_effect": {
+          "title": "Particle Effect",
+          "description": "Particle effect action.",
+          "properties": {
+            "effect": { "type": "string", "description": "Identifier of the effect.", "title": "Effect" },
+            "type": { "type": "string", "description": "UNDOCUMENTED: type.", "title": "Type", "enum": ["emitter", "emitter_bound", "particle", "particle_with_velocity"] },
+            "pre_effect_expression": { "type": "string", "description": "Molang expression to run on the new emitter.", "title": "Pre Effect Expression" }
+          }
+        },
+        "sound_effect": {
+          "title": "Sound Effect",
+          "description": "Sound effect action.",
+          "properties": {
+            "event_name": { "type": "string", "description": "Name of the level sound event.", "title": "Event Name" }
+          }
+        },
+        "expression": {
+          "type": "string",
+          "description": "Molang expression to run on the event-firing emitter.",
+          "title": "Expression"
+        },
+        "log": {
+          "type": "string",
+          "description": "Message to log, along with the firing effect's name and event position.",
+          "title": "Log"
+        },
+        "weight": {
+          "type": "number",
+          "description": "The weight of the element.",
+          "title": "Weight"
+        }
+      }
+    }
+  },
   "type": "object",
   "additionalProperties": false,
   "description": "A particle definition file.",
@@ -45,7 +101,7 @@
               "properties": {
                 "material": {
                   "type": "string",
-                  "examples": ["particles_alpha", "particles_blend"],
+                  "examples": ["particles_alpha", "particles_blend", "particles_add"],
                   "description": " Minecraft material to use for emitter.",
                   "title": "Material"
                 },
@@ -137,30 +193,7 @@
           "description": "UNDOCUMENTED: events.",
           "title": "Events",
           "additionalProperties": {
-            "description": "UNDOCUMENTED.",
-            "$comment": "UNDOCUMENTED",
-            "title": "Event",
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-              "particle_effect": {
-                "title": "Particle Effect",
-                "description": "UNDOCUMENTED.",
-                "$comment": "UNDOCUMENTED",
-                "properties": {
-                  "effect": { "type": "string", "description": "UNDOCUMENTED: effect.", "title": "Effect" },
-                  "type": { "type": "string", "description": "UNDOCUMENTED: type.", "title": "Type" }
-                }
-              },
-              "sound_effect": {
-                "title": "Sound Effect",
-                "description": "UNDOCUMENTED.",
-                "$comment": "UNDOCUMENTED",
-                "properties": {
-                  "event_name": { "type": "string", "description": "UNDOCUMENTED: effect.", "title": "Event Name" }
-                }
-              }
-            }
+            "$ref": "#/definitions/event"
           }
         }
       }
