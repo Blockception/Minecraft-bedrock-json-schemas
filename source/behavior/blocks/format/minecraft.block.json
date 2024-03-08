@@ -225,7 +225,7 @@
           "type": "object",
           "additionalProperties": {
             "title": "State",
-            "description": "A block property.",
+            "description": "A block property. The name should be specified as `<namespace>:<block property>`",
             "oneOf": [
               {
                 "type": "array",
