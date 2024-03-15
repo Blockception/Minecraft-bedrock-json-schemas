@@ -3,17 +3,16 @@
   "title": "Icon",
   "description": "The icon item componenent determines the icon to represent the item in the UI and elsewhere.",
   "type": "object",
-  "additionalProperties": false,
-  "required": ["texture"],
+  "additionalProperties": true,
+  "required": ["default"],
   "properties": {
-    "legacy_id": { "type": "string", "title": "Texture", "description": "Legacy texture id for older item icons." },
-    "texture": {
+    "default": {
       "type": "string",
-      "title": "Texture",
+      "title": "Default Texture",
       "description": "The key from the resource_pack/textures/item_texture.json `texture_data` object associated with the texture file Example: blaze_powder."
     }
   },
   "examples": [
-    {"texture": "stick"}
+    {"default": "stick"}
   ]
 }
