@@ -6,6 +6,9 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
+    "filters": {
+      "$ref": "../../filters/filters.json"
+    },
     "event": { "type": "string", "pattern": "^[a-zA-Z0-9_\\-:]+$", "description": "The event to fire.", "title": "Event" },
     "target": {
       "type": "string",
