@@ -1,0 +1,86 @@
+{
+  "title": "Vegetation Patch Feature",
+  "description": "Feature type `minecraft:vegetation_patch_feature` has not yet been documented.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["description", "replaceable_blocks", "ground_block", "horizontal_radius", "vegetation_feature"],
+  "properties": {
+    "description": {
+      "$ref": "../types/description.json"
+    },
+    "replaceable_blocks": {
+      "title": "Replaceable Blocks",
+      "description": "Blocks that can be replaced by the ground blocks on the patch.",
+      "type": "array",
+      "items": {
+        "title": "Replace Block",
+        "type": "string",
+        "$ref": "../../../general/block/identifier.json"
+      }
+    },
+    "ground_block": {
+      "title": "Ground Block",
+      "description": "Block used to create a base for the vegetation patch.",
+      "type": "string",
+      "$ref": "../../../general/block/identifier.json"
+    },
+    "vegetation_feature": {
+      "title": "Vegetation Feature",
+      "description": "Feature that will be placed by the patch.",
+      "type": "string",
+      "$ref": "../../../general/feature/identifier.json",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "surface": {
+      "title": "Surface",
+      "description": "Determines if a vegetation patch will grow from the ceiling or the floor.",
+      "enum": ["floor", "ceiling"],
+      "default": "floor"
+    },
+    "depth": {
+      "title": "Depth",
+      "description": "Depth of the base covered by the ground blocks.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "extra_deep_block_chance": {
+      "title": "Extra Deep Block Chance",
+      "description": "Probability of putting the ground blocks one block deeper. Adds some randomness to the bottom of the patch.",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "vertical_range": {
+      "title": "Vertical Range",
+      "description": "Vertical range used to determine a suitable surface position for the patch.",
+      "type": "integer",
+      "minimum": 1
+    },
+    "vegetation_chance": {
+      "title": "Vegatation Chance",
+      "description": "Probability of spawning vegetation on the patch. Larger numbers create a denser vegetation patch.",
+      "type": "number",
+      "minimum": 0
+    },
+    "horizontal_radius": {
+      "title": "Horizontal Radius",
+      "description": "Horizontal area that the vegetation patch will cover.",
+      "type": "integer",
+      "minimum": 1
+    },
+    "extra_edge_column_chance": {
+      "title": "Extra Egde Column Chance",
+      "description": "Probability of spawning vegetation on the edge of the patch radius.",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "waterlogged": {
+      "title": "Waterlogged",
+      "description": "If true, waterlogs the positions occupied by the ground blocks.",
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

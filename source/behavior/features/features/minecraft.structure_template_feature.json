@@ -1,0 +1,81 @@
+{
+  "title": "Structure Template Feature",
+  "description": "`minecraft:structure_template_feature` places a structure in the world. The structure must be stored as a .mcstructure file in the `structures` subdirectory of a behavior pack. It is possible to reference structures that are part of other behavior packs, they do not need to come from the same behavior pack as this feature. Constraints can be defined to specify where the structure is allowed to be placed. During placement, the feature will search for a position within the 'adjustment_radius' that satisfies all constraints. If none are found, the structure will not be placed.\nSucceeds if: The structure is placed in the world.\nFails if: The structure fails to be placed within the world.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["description", "structure_name", "constraints"],
+  "properties": {
+    "description": {
+      "$ref": "../types/description.json"
+    },
+    "structure_name": {
+      "title": "Structure Name",
+      "description": "Reference to the structure to be placed.",
+      "type": "string"
+    },
+    "adjustment_radius": {
+      "title": "Adjustment Radius",
+      "description": "How far the structure is allowed to move when searching for a valid placement position. Search is radial, stopping when the nearest valid position is found. Defaults to 0 if omitted.",
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 16
+    },
+    "facing_direction": {
+      "title": "Facing Direction",
+      "description": "Direction the structure will face when placed in the world. Defaults to `random` if omitted.",
+      "type": "string",
+      "enum": ["north", "south", "east", "west", "random"]
+    },
+    "constraints": {
+      "title": "",
+      "description": "Specific constraints that must be satisfied when placing this structure.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "grounded": {
+          "title": "Grounded",
+          "description": "When specified, ensures the structure is on the ground.",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {}
+        },
+        "unburied": {
+          "title": "Unburied",
+          "description": "When specified, ensures the structure has air above it.",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {}
+        },
+        // When specified, ensures the structure only intersects with allowlisted blocks.
+        "block_intersection": {
+          "title": "Unburied",
+          "description": "When specified, ensures the structure has air above it.",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "block_allowlist": {
+              "title": "Block Allowlist",
+              "description": "List of blocks the owning structure is allowed to intersect with.",
+              "type": "array",
+              "items": {
+                "title": "Block",
+                "type": "string",
+                "$ref": "../../../general/block/identifier.json"
+              }
+            },
+            "block_whitelist": {
+              "title": "Block Whitelist",
+              "description": "List of blocks the owning structure is allowed to intersect with.",
+              "type": "array",
+              "items": {
+                "title": "Block",
+                "type": "string",
+                "$ref": "../../../general/block/identifier.json"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

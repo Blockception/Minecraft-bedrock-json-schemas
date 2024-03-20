@@ -1,0 +1,17 @@
+{
+    "$id": "blockception.minecraft.behavior.features.description",
+    "title": "Description",
+    "description": "Feature's description containing the identifier",
+    "type": "object",
+    "required": [
+        "identifier"
+    ],
+    "properties": {
+        "identifier": {
+            "title": "Identifier",
+            "description": "The name of this feature in the form `namespace_name:feature_name`. `feature_name` must match the filename.",
+            "type": "string",
+            "$ref": "../../../../general/feature/identifier.json"
+        }
+    }
+}
