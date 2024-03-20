@@ -563,17 +563,17 @@
             "lean_height": {
               "title": "Lean Height",
               "description": "Number of blocks below the tree height at which diagonal branches can be created.",
-              "$ref": "../../../entities/format/types/range_number_type.json"
+              "$ref": "../../entities/format/types/range_number_type.json"
             },
             "lean_steps": {
               "title": "Lean Steps",
               "description": "Number of steps taken in X/Z direction while creating a diagonal branch.",
-              "$ref": "../../../entities/format/types/range_number_type.json"
+              "$ref": "../../entities/format/types/range_number_type.json"
             },
             "lean_length": {
               "title": "Lean Length",
               "description": "Length for the diagonal branch in the Y axis.",
-              "$ref": "../../../entities/format/types/range_number_type.json"
+              "$ref": "../../entities/format/types/range_number_type.json"
             }
           }
         },
@@ -589,12 +589,12 @@
             "branch_length": {
               "title": "Branch Length",
               "description": "Length for the branch in the Y axis.",
-              "$ref": "../../../entities/format/types/range_number_type.json"
+              "$ref": "../../entities/format/types/range_number_type.json"
             },
             "branch_position": {
               "title": "Branch Position",
               "description": "Starting Y position for the branch.",
-              "$ref": "../../../entities/format/types/range_number_type.json"
+              "$ref": "../../entities/format/types/range_number_type.json"
             },
             "branch_chance": {
               "title": "Branch Chance",
@@ -679,17 +679,17 @@
             "branch_horizontal_length": {
               "title": "Branch Horizontal Length",
               "description": "Branch length in X/Z axis.",
-              "$ref": "../../../entities/format/types/range_number_type.json"
+              "$ref": "../../entities/format/types/range_number_type.json"
             },
             "branch_start_offset_from_top": {
               "title": "Branch Start Offset From Top",
               "description": "Branch starting position relative to the top of the tree",
-              "$ref": "../../../entities/format/types/range_number_type.json"
+              "$ref": "../../entities/format/types/range_number_type.json"
             },
             "branch_end_offset_from_top": {
               "title": "Branch End Offset From Top",
               "description": "Branch end position relative to the top of the tree",
-              "$ref": "../../../entities/format/types/range_number_type.json"
+              "$ref": "../../entities/format/types/range_number_type.json"
             },
             "branch_chance": {
               "title": "Branch Chance",
@@ -868,12 +868,12 @@
             "branch_length": {
               "title": "Branch Length",
               "description": "Length for the branch in the Y axis.",
-              "$ref": "../../../entities/format/types/range_number_type.json"
+              "$ref": "../../entities/format/types/range_number_type.json"
             },
             "branch_steps": {
               "title": "Branch Steps",
               "description": "Number of branches to place.",
-              "$ref": "../../../entities/format/types/range_number_type.json"
+              "$ref": "../../entities/format/types/range_number_type.json"
             },
             "branch_chance": {
               "title": "Branch Chance",
@@ -954,7 +954,7 @@
             "branch_interval": { 
               "title": "Branch Interval", 
               "description": "Randomized distance between branches.",
-              "$ref": "../../../entities/format/types/range_number_type.json"
+              "$ref": "../../entities/format/types/range_number_type.json"
             },
             "branch_altitude_factor": {
               "title": "Branch Altitude Factor",
@@ -994,12 +994,12 @@
         "trunk_height": {
           "title": "Trunk Height",
           "description": "Defines the height of the trunk.",
-          "$ref": "../../../entities/format/types/range_number_type.json"
+          "$ref": "../../entities/format/types/range_number_type.json"
         },
         "height_modifier": {
           "title": "Height Modifier",
           "description": "Modifier for the height of the trunk.",
-          "$ref": "../../../entities/format/types/range_number_type.json"
+          "$ref": "../../entities/format/types/range_number_type.json"
         },
         "can_be_submerged": {
           "title": "Can Be Submerged",
@@ -1486,7 +1486,7 @@
             "y_offset": {
               "title": "Y Offset",
               "description": "Root offset from the trunk",
-              "$ref": "../../../entities/format/types/range_number_type.json"
+              "$ref": "../../entities/format/types/range_number_type.json"
             },
             "roots_may_grow_through": {
               "title": "Roots May Grow Through",
