@@ -11,7 +11,7 @@
       "additionalProperties": false,
       "type": "object",
       "title": "Description",
-      "description": "UNDOCUMENTED.",
+      "description": "The description for this item",
       "$comment": "UNDOCUMENTED",
       "properties": {
         "identifier": {
@@ -33,17 +33,10 @@
           "additionalProperties": false,
           "properties": {
             "group": {
-              "type": "string",
-              "title": "Group",
-              "maxLength": 256,
-              "description": "The Creative Group that that includes the specified item. The group name is limited to 256 characters.",
-              "examples": ["itemGroup.name.blaze"]
+              "$ref": "../../../general/vanilla/item_group.json"
             },
             "category": {
-              "type": "string",
-              "title": "Category",
-              "description": "The Creative Category that includes the specified item.",
-              "examples": ["equipment"]
+              "$ref": "../../../general/vanilla/creative_category.json"
             },
             "is_hidden_in_commands": {
               "type": "boolean",

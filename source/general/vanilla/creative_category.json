@@ -1,0 +1,14 @@
+{
+    "$id": "blockception.minecraft.general.vanilla.creative_category",
+    "type": "string",
+    "title": "Category",
+    "description": "Determines which category this block/item will be placed under in the inventory and crafting table container screens.",
+    "enum": [
+        "nature",
+		"construction",
+		"items",
+		"equipment",
+		"none",
+		"commands"
+    ]
+}
