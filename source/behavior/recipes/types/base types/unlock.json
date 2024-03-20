@@ -1,22 +1,10 @@
 {
-  "title": "Item",
+  "title": "Unlock",
   "$id": "blockception.minecraft.behavior.recipe.unlock",
   "description": "Unlock achievement",
-  "type": "object",
-  "required": ["context"],
   "definitions": {
     "item": {
       "oneOf": [
-        {
-          "required": ["context"],
-          "properties": {
-            "context": {
-              "type": "string",
-              "title": "Context",
-              "description": "The context of the achievement to unlock"
-            }
-          }
-        },
         {
           "required": ["item"],
           "properties": {
@@ -50,7 +38,14 @@
   "oneOf": [
     {
       "type": "object",
-      "$ref": "#/definitions/item"
+      "required": ["context"],
+      "properties": {
+        "context": {
+          "type": "string",
+          "title": "Context",
+          "description": "The context of the achievement to unlock"
+        }
+      }
     },
     {
       "type": "array",
