@@ -1,17 +1,33 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.features",
-  "examples": [
-    {
-      "format_version": "1.20.41",
-      "minecraft:ore_feature": {
-        "description": { "identifier": "example:foo" },
-        "features": {}
-      }
-    }
-  ],
-  "allOf": [
-    { "if": { "properties": { "format_version": { "type": "string", "const": "1.13.0" } } }, "then": { "$ref": "./1.13.0/features.json" } },
-    { "properties": { "format_version": { "$ref": "../../general/format_version.json" } } }
-  ]
+  "type": "object",
+  "title": "Features",
+  "description": "Features are decorations scattered throughout the world. Things such as trees, plants, flowers, springs, ore, and coral are all features. Basically, if it isn't the terrain or a mob, it's probably a feature!",
+  "additionalProperties": false,
+  "required": ["format_version"],
+  "minProperties": 2,
+  "maxProperties": 2,
+  "properties": {
+    "format_version": { "$ref": "../../general/format_version.json" },
+    "minecraft:aggregate_feature": { "$ref": "./features/minecraft.aggregate_feature.json" },
+    "minecraft:cave_carver_feature": { "$ref": "./features/minecraft.cave_carver_feature.json" },
+    "minecraft:fossil_feature": { "$ref": "./features/minecraft.fossil_feature.json" },
+    "minecraft:geode_feature": { "$ref": "./features/minecraft.geode_feature.json" },
+    "minecraft:growing_plant_feature": { "$ref": "./features/minecraft.growing_plant_feature.json" },
+    "minecraft:multiface_feature": { "$ref": "./features/minecraft.multiface_feature.json" },
+    "minecraft:nether_cave_carver_feature": { "$ref": "./features/minecraft.nether_cave_carver_feature.json" },
+    "minecraft:ore_feature": { "$ref": "./features/minecraft.ore_feature.json" },
+    "minecraft:partially_exposed_blob_feature": { "$ref": "./features/minecraft.partially_exposed_blob_feature.json" },
+    "minecraft:scatter_feature": { "$ref": "./features/minecraft.scatter_feature.json" },
+    "minecraft:search_feature": { "$ref": "./features/minecraft.search_feature.json" },
+    "minecraft:sequence_feature": { "$ref": "./features/minecraft.sequence_feature.json" },
+    "minecraft:single_block_feature": { "$ref": "./features/minecraft.single_block_feature.json" },
+    "minecraft:snap_to_surface_feature": { "$ref": "./features/minecraft.snap_to_surface_feature.json" },
+    "minecraft:structure_template_feature": { "$ref": "./features/minecraft.structure_template_feature.json" },
+    "minecraft:surface_relative_threshold_feature": { "$ref": "./features/minecraft.surface_relative_threshold_feature.json" },
+    "minecraft:tree_feature": { "$ref": "./features/minecraft.tree_feature.json" },
+    "minecraft:underwater_cave_carver_feature": { "$ref": "./features/minecraft.underwater_cave_carver_feature.json" },
+    "minecraft:vegetation_patch_feature": { "$ref": "./features/minecraft.vegetation_patch_feature.json" },
+    "minecraft:weighted_random_feature": { "$ref": "./features/minecraft.weighted_random_feature.json" }
+  }
 }

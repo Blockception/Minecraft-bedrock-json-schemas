@@ -1,0 +1,74 @@
+{
+  "title": "Single Block Feature",
+  "description": "`minecraft:single_block_feature` places a single block in the world. The `may_place_on` and `may_replace` fields are allowlists which specify where the block can be placed. If these fields are omitted, the block can be placed anywhere. The block's internal survivability and placement rules can optionally be enforced with the `enforce_survivability_rules` and `enforce_placement_rules` fields. These rules are specified per-block and are typically designed to produce high quality gameplay or natural behavior. However, enabling this enforcement may make it harder to debug placement failures.\n Succeeds if: The block is successfully placed in the world.\n Fails if: The block fails to be placed.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["description", "places_block", "enforce_placement_rules", "enforce_survivability_rules"],
+  "definitions": {
+    "block_side": {
+      "oneOf": [
+        { "title": "Block", "description": "Reference to the block it may attach to.", "type": "string", "$ref": "../../../general/block/identifier.json" }, 
+        { "type": "array", "items": { "title": "Block", "description": "Reference to the block it may attach to.", "type": "string", "$ref": "../../../general/block/identifier.json" } }
+      ]
+    }
+  },
+  "properties": {
+    "description": {
+      "$ref": "../types/description.json"
+    },
+    "places_block": {
+      "title": "Places Block",
+      "description": "Reference to the block to be placed.",
+      "type": "string",
+      "$ref": "../../../general/block/identifier.json"
+    },
+    "enforce_placement_rules": {
+      "title": "Enforce Placement Rules",
+      "description": "If true, enforce the block's canPlace check.",
+      "type": "boolean"
+    },
+    "enforce_survivability_rules": {
+      "title": "Enforce Survivability Rules",
+      "description": "If true, enforce the block's canSurvive check.",
+      "type": "boolean"
+    },
+    "may_attach_to": {
+      "title": "May Attach To",
+      "description": "The list of valid block and block faces the given block may attach to when being placed.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "min_sides_must_attach": {
+          "title": "Minimum Sides Must Attach",
+          "description": "Minimum number of sides that must be attached when being placed.",
+          "minimum": 1,
+          "maximum": 4
+        },
+        "auto_rotate": {
+          "title": "Auto Rotate",
+          "description": "Automatically rotate the block to attach sensibly.",
+          "type": "boolean"
+        },
+        "top": { "title": "Top", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "bottom": { "title": "Bottom", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "north": { "title": "North", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "south": { "title": "South", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "east": { "title": "East", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "west": { "title": "West", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "all": { "title": "All", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "sides": { "title": "Sides", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" }
+      }
+    },
+    "may_replace": {
+      "title": "May Replace",
+      "description": "A list of blocks that may be replaced during placement. Omit this field to allow any block to be replaced.",
+      "type": "array",
+      "items": {
+        "title": "Block",
+        "description": "A block that may be replaced during placement. Omit this field to allow any block to be replaced.",
+        "type": "string",
+        "$ref": "../../../general/block/identifier.json"
+      }
+    }
+  }
+}

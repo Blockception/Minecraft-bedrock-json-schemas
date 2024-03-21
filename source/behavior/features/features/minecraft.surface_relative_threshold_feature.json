@@ -1,0 +1,24 @@
+{
+  "type": "object",
+  "title": "Surface Relative Threshold Feature",
+  "description": "'minecraft:surface_relative_threshold_feature' determines whether the provided position is below the estimated surface level of the world, and places a feature if so.If the provided position is above configured surface or the surface is not available, placement will fail.",
+  "additionalProperties": false,
+  "required": ["feature_to_place", "description"],
+  "properties": {
+    "description": {
+      "$ref": "../types/description.json"
+    },
+    "feature_to_place": {
+      "title": "Feature To Place",
+      "description": "Named reference of feature to be placed.",
+      "type": "string",
+      "$ref": "../../../general/feature/identifier.json"
+    },
+    "minimum_distance_below_surface": {
+      "title": "Minimum Distance Below Surface",
+      "description": "The minimum number of blocks required to be between the estimated surface level and a valid place for this feature.",
+      "type": "integer", 
+      "default": 0
+    }
+  }
+}
