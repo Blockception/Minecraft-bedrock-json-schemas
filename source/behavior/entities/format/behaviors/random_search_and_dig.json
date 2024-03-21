@@ -13,7 +13,15 @@
       "title": "Cooldown Range",
       "default": [0.0, 0.0],
       "description": "Goal cooldown range in seconds.",
-      "$ref": "../../../../general/vectors/number2.json"
+      "anyOf": [
+        {
+          "$ref": "../../../../general/vectors/number2.json"
+        },
+        {
+          "type": "number", 
+          "minimum": 0
+        }
+      ]
     },
     "digging_duration_range": {
       "title": "Digging Duration Range",

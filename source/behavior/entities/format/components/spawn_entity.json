@@ -73,6 +73,11 @@
           "default": "plop",
           "description": "Identifier of the sound effect to play when the entity is spawned.",
           "title": "Spawn Sound"
+        },
+        "spawn_item_event": {
+          "description": "Event to call on this entity when the item is spawned.",
+          "title": "Spawn Item Event",
+          "$ref": "../types/event_object.json"
         }
       }
     }

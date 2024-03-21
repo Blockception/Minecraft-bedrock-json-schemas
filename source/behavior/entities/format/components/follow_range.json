@@ -7,13 +7,13 @@
   "required": [],
   "properties": {
     "value": {
-      "type": "integer",
-      "description": "Range of the amount of damage the melee follow_range deals. A negative value can heal the entity instead of hurting it.",
+      "type": "number",
+      "description": "The distance this entity can be from the target when following it",
       "title": "Value"
     },
     "max": {
-      "type": "integer",
-      "description": "Duration, in seconds, of the status ailment applied to the damaged entity.",
+      "type": "number",
+      "description": "Maximum distance this entity can be from the target when following it",
       "title": "Max"
     }
   },

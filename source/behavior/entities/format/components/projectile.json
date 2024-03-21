@@ -195,9 +195,18 @@
         },
         "douse_fire": {
           "title": "Douse Fire",
-          "type": "boolean",
-          "default": false,
-          "description": "If the target is on fire, then douse hte fire."
+          "description": "If the target is on fire, then douse the fire.",
+          "anyOf": [
+            {
+              "type": "boolean",
+              "default": false
+            },
+            {
+              "type": "object", 
+              "additionalProperties": false,
+              "properties": {}
+            }
+          ]
         },
         "freeze_on_hit": {
           "title": "Freeze On Hit",
@@ -285,9 +294,17 @@
           "properties": {
             "catch_fire": {
               "title": "Catch Fire",
-              "type": "boolean",
-              "default": false,
-              "description": "Determines if the struck object is set on fire."
+              "description": "Determines if the struck object is set on fire.",
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "fire_affected_by_griefing": {
+                  "title": "Fire Affected By Griefing",
+                  "description": "If the griefting gamerule can affect if fire is spawned",
+                  "type": "boolean",
+                  "default": true
+                }
+              }
             },
             "channeling": {
               "title": "Channeling",
@@ -361,6 +378,12 @@
               "type": "boolean",
               "default": false,
               "description": "If true, then the hit must cause damage to update the last hurt property."
+            },
+            "should_bounce": {
+              "title": "Should Bounce",
+              "description": "If true, the projectile will bounce",
+              "type": "boolean",
+              "default": false
             }
           }
         },
@@ -585,9 +608,18 @@
         },
         "teleport_owner": {
           "title": "Teleport Owner",
-          "type": "boolean",
-          "default": false,
-          "description": "Determines if the owner is transported on hit."
+          "description": "Determines if the owner is transported on hit.",
+          "anyOf": [
+            {
+              "type": "boolean",
+              "default": false
+            },
+            {
+              "type": "object", 
+              "additionalProperties": false,
+              "properties": {}
+            }
+          ]
         },
         "thrown_potion_effect": {
           "title": "Thrown Potion Effect",
