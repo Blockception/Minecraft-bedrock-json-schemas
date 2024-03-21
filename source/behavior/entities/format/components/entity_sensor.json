@@ -33,10 +33,17 @@
           "title": "Minimum Count"
         },
         "range": {
-          "type": "number",
-          "default": 10,
-          "description": "[UNDOCUMENTED] The maximum distance another entity can be from this and have the filters checked against it.",
-          "title": "Range"
+          "description": "The maximum distance another entity can be from this and have the filters checked against it.",
+          "title": "Range",
+          "anyOf": [
+            {
+              "$ref": "../../../../resource/ui/general/vec2.json"
+            },
+            {
+              "default": 10,
+              "type": "number"
+            }
+          ]
         },
         "require_all": {
           "type": "boolean",
