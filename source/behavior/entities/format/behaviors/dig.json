@@ -46,7 +46,7 @@
     "on_start": {
       "title": "On Start",
       "$ref": "../types/trigger.json",
-      "description": "Allows this entity to dig into the ground before despawning."
+      "description": "The event to run when the goal start"
     }
   }
 }
