@@ -37,7 +37,7 @@
           "title": "Range",
           "anyOf": [
             {
-              "$ref": "../../../../resource/ui/general/vec2.json"
+              "$ref": "../../../../general/vectors/number2.json"
             },
             {
               "default": 10,
