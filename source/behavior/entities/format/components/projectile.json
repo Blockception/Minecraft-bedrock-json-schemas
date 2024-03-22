@@ -196,17 +196,8 @@
         "douse_fire": {
           "title": "Douse Fire",
           "description": "If the target is on fire, then douse the fire.",
-          "anyOf": [
-            {
-              "type": "boolean",
-              "default": false
-            },
-            {
-              "type": "object", 
-              "additionalProperties": false,
-              "properties": {}
-            }
-          ]
+          "type": "boolean",
+          "default": false
         },
         "freeze_on_hit": {
           "title": "Freeze On Hit",
@@ -295,16 +286,8 @@
             "catch_fire": {
               "title": "Catch Fire",
               "description": "Determines if the struck object is set on fire.",
-              "type": "object",
-              "additionalProperties": false,
-              "properties": {
-                "fire_affected_by_griefing": {
-                  "title": "Fire Affected By Griefing",
-                  "description": "If the griefting gamerule can affect if fire is spawned",
-                  "type": "boolean",
-                  "default": true
-                }
-              }
+              "type": "boolean",
+              "default": false
             },
             "channeling": {
               "title": "Channeling",
@@ -609,17 +592,8 @@
         "teleport_owner": {
           "title": "Teleport Owner",
           "description": "Determines if the owner is transported on hit.",
-          "anyOf": [
-            {
-              "type": "boolean",
-              "default": false
-            },
-            {
-              "type": "object", 
-              "additionalProperties": false,
-              "properties": {}
-            }
-          ]
+          "type": "boolean",
+          "default": false
         },
         "thrown_potion_effect": {
           "title": "Thrown Potion Effect",

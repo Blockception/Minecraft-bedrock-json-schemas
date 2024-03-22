@@ -7,12 +7,12 @@
   "required": [],
   "properties": {
     "value": {
-      "type": "number",
+      "type": "integer",
       "description": "The distance this entity can be from the target when following it",
       "title": "Value"
     },
     "max": {
-      "type": "number",
+      "type": "integer",
       "description": "Maximum distance this entity can be from the target when following it",
       "title": "Max"
     }
