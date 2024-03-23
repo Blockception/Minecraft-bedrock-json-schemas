@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.is_pregnant",
+  "description": "Sets that this entity is currently is_pregnant",
+  "type": "object",
+  "title": "Is Pregnant",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {}
+}

@@ -8,6 +8,12 @@
   "properties": {
     "priority": {
       "$ref": "./types/priority.json"
+    },
+    "sink_with_passengers": {
+      "title": "Sink With Passengers",
+      "description": "If true, the mob will keep sinking as long as it has passengers.",
+      "type": "boolean",
+      "default": false
     }
   }
 }
