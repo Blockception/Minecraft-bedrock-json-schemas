@@ -13,6 +13,17 @@
         "data": { "type": "integer", "minimum": 0, "title": "Item Data Value" },
         "count": { "type": "integer", "minimum": 1, "default": 1, "title": "Count" }
       }
+    },
+    {
+      "required": ["tag"],
+      "properties": {
+        "tag": {
+          "type": "string",
+          "title": "Item Tag",
+          "description": "The item to unlock",
+          "examples": ["minecraft:planks", "minecraft:wooden_slabs"]
+        }
+      }
     }
   ]
 }
