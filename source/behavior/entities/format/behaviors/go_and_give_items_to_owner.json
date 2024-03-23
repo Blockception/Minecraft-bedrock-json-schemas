@@ -11,13 +11,7 @@
     "on_item_throw": {
       "title": "On Item Throw",
       "description": "Event(s) to run when this mob throws items.",
-      "oneOf": [
-        { "$ref": "../types/trigger.json" },
-        {
-          "type": "array",
-          "items": { "$ref": "../types/trigger.json" }
-        }
-      ]
+      "$ref": "../types/trigger.json"
     },
     "reach_mob_distance": {
       "title": "Reach Mob Distance",

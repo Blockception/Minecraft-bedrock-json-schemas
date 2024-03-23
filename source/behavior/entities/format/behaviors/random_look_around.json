@@ -9,27 +9,47 @@
     "priority": {
       "$ref": "./types/priority.json"
     },
+    "angle_of_view_horizontal": {
+      "title": "Angle Of View Horizontal",
+      "type": "integer",
+      "default": 360,
+      "description": "The angle in degrees that an entity can see in the Y-axis (up-down)."
+    },
+    "angle_of_view_vertical": {
+      "title": "Angle Of View Vertical",
+      "type": "integer",
+      "default": 360,
+      "description": "The angle in degrees that an entity can see in the X-axis (left-right)."
+    },
+    "look_distance": {
+      "title": "Look Distance",
+      "type": "number",
+      "default": 8.0,
+      "description": "The distance in blocks from which the entity will look at."
+    },
     "look_time": {
       "title": "Look Time",
       "$ref": "../../../../general/vectors/number2.json",
       "description": "The range of time in seconds the mob will stay looking in a random direction before looking elsewhere"
     },
-    "max_angle_of_view_horizontal": {
-      "title": "Max Angle Of View Horizontal",
-      "type": "integer",
-      "default": 30,
-      "description": "The rightmost angle a mob can look at on the horizontal plane with respect to its initial facing direction."
-    },
-    "min_angle_of_view_horizontal": {
-      "title": "Min Angle Of View Horizontal",
-      "type": "integer",
-      "default": -30,
-      "description": "The leftmost angle a mob can look at on the horizontal plane with respect to its initial facing direction."
+    "probability": {
+      "title": "Probability",
+      "type": "number",
+      "default": 0.2,
+      "description": "The probability of looking at the target. A value of 1.00 is 100%."
     }
   },
   "examples": [
     {
       "look_distance": 0.0
+    },
+    {
+      "priority": 2,
+      "max_look_count": 4,
+      "min_look_count": 1,
+      "max_look_time": 60,
+      "min_look_time": 5,
+      "probability": 0.35
     }
   ]
 }

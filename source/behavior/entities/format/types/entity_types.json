@@ -36,6 +36,11 @@
           "description": "UNDOCUMENTED.",
           "title": "Priority"
         },
+        "within_default": {
+          "type": "number",
+          "description": "UNDOCUMENTED.",
+          "title": "Within Default"
+        },
         "check_if_outnumbered": {
           "type": "boolean",
           "description": "UNDOCUMENTED.",
