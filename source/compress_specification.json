@@ -11,6 +11,7 @@
     { "Source": "./resource/attachables/attachables.json", "Destination": "../resource/attachables/attachables.json" },
     { "Source": "./resource/biomes_client.json", "Destination": "../resource/biomes_client.json" },
     { "Source": "./resource/blocks.json", "Destination": "../resource/blocks.json" },
+    { "Source": "./resource//block_culling/block_culling.json", "Destination": "../resource/block_culling/block_culling.json" },
     { "Source": "./resource/entity/entity.json", "Destination": "../resource/entity/entity.json" },
     { "Source": "./resource/fog/fog.json", "Destination": "../resource/fog/fog.json" },
     { "Source": "./resource/textures/flipbook_textures.json", "Destination": "../resource/textures/flipbook_textures.json" },
