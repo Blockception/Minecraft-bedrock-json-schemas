@@ -53,6 +53,10 @@
       "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/resource/animations/actor_animation.json"
     },
     {
+      "fileMatch": ["block_culling/*.{json,jsonc,json5}", "block_culling/**/*.{json,jsonc,json5}", "*.{cull}.{json,jsonc,json5}"],
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/resource/block_culling/block_culling.json"
+    },
+    {
       "fileMatch": ["attachables/*.{json,jsonc,json5}", "attachables/**/*.{json,jsonc,json5}", "*.{attachable,attach,at}.{json,jsonc,json5}"],
       "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/resource/attachables/attachables.json"
     },
