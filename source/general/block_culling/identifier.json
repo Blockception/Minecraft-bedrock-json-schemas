@@ -1,0 +1,9 @@
+{
+    "$id": "blockception.minecraft.block_culling.identifier",
+    "description": "The minecraft block culling rule identifier.",
+    "examples": ["namespace:rule"],
+    "pattern": "^[0-9a-zA-Z:_\\.\\-]+$",
+    "title": "Block Culling Rule Identifier",
+    "type": "string",
+    "defaultSnippets": [{ "label": "New Identifier", "body": "$1:$2" }]
+} 
