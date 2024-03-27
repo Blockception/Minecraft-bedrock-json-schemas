@@ -84,6 +84,11 @@
                 { "type": "array", "title": "Collection Timelime Items", "items": { "$ref": "#/definitions/commands" } }
               ]
             }
+          },
+          "anim_time_update": {
+            "title": "Animation Time Update",
+            "description": "How does time pass when playing the animation. Defaults to `query.anim_time + query.delta_time` which means advance in seconds.",
+            "$ref": "../../molang/number.json"
           }
         }
       }
