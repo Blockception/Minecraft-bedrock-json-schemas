@@ -4,13 +4,14 @@
   "description": "The icon item componenent determines the icon to represent the item in the UI and elsewhere.",
   "type": "object",
   "additionalProperties": true,
-  "required": ["default"],
+  "required": ["textures"],
   "properties": {
     "textures": {
       "title": "Textures",
       "description": "Contains key-value pairs of textures used by the item",
       "type": "object", 
       "additionalProperties": true,
+      "required": ["default"],
       "properties": {
         "default": {
           "type": "string",
