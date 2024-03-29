@@ -11,15 +11,16 @@
       "properties": {
         "initial_event": {
           "title": "Initial Event",
-          "description": "UNDOCUMENTED.",
+          "description": "Runs an event on the first entities in a group.",
           "$comment": "UNDOCUMENTED",
           "type": "string"
         },
         "initial_event_count": {
           "title": "Initial Event Count",
-          "description": "UNDOCUMENTED.",
+          "description": "The number of entities that \"initial_event\" should trigger on.",
           "$comment": "UNDOCUMENTED",
-          "type": "integer"
+          "type": "integer",
+          "default": 0
         },
         "min_size": {
           "type": "integer",
@@ -29,7 +30,8 @@
         "max_size": {
           "type": "integer",
           "description": "This is the maximum number of mobs that spawn in a herd.",
-          "title": "Maximum Size"
+          "title": "Maximum Size",
+          "maximum": 8
         },
         "event": {
           "type": "string",
@@ -39,7 +41,8 @@
         "event_skip_count": {
           "type": "integer",
           "description": "This is the number of mobs spawned before the specified event is triggered.",
-          "title": "Event Skip Count"
+          "title": "Event Skip Count",
+          "default": 0
         }
       }
     }

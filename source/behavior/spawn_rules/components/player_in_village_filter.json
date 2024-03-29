@@ -5,12 +5,11 @@
   "title": "Player In Village Filter",
   "description": "This component lets players be filtered by whether they are in a village or not, using distance and the village border definitions.",
   "properties": {
-    "distance": { "type": "integer", "title": "Distance", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
+    "distance": { "type": "integer", "title": "Distance", "description": "This is the maximum mob_event level that an entity spawns." },
     "village_border_tolerance": {
       "type": "integer",
       "title": "Village Border Tolerance",
-      "description": "UNDOCUMENTED.",
-      "$comment": "UNDOCUMENTED"
+      "description": "This is the minimum mob_event level that an entity spawns."
     }
   }
 }

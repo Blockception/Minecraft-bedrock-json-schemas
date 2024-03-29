@@ -3,6 +3,5 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Disallow Spawns In Bubble",
-  "description": "UNDOCUMENTED.",
-  "$comment": "UNDOCUMENTED"
+  "description": "Allows creators to keep entities from spawning in bubbles."
 }
