@@ -6,18 +6,21 @@
   "description": "This component allows players to set mobs spawn with certain time delays before they will spawn.",
   "required": ["identifier"],
   "properties": {
-    "min": { "type": "integer", "description": "This is the minimum delay that a mob spawns.", "title": "Min" },
-    "max": { "type": "integer", "description": "This is the maximum delay that a mob spawns.", "title": "Max" },
+    "min": { "type": "integer", "description": "This is the minimum delay that a mob spawns.", "title": "Min", "default": 0 },
+    "max": { "type": "integer", "description": "This is the maximum delay that a mob spawns.", "title": "Max", "default": 0 },
     "identifier": {
       "type": "string",
       "description": "The identifier of the mob that will spawn.",
-      "title": "Identifier"
+      "title": "Identifier",
+      "$ref": "../../../general/entity/identifier.json"
     },
     "spawn_chance": {
       "title": "Spawn Chance",
       "description": "The percent chance that this entity will spawn.",
       "type": "number",
-      "default": 100
+      "default": 100,
+      "minimum": 0,
+      "maximum": 100
     }
   }
 }

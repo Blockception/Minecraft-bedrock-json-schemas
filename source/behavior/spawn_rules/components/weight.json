@@ -8,7 +8,8 @@
     "default": {
       "type": "integer",
       "description": "This is the priority of the mob spawning out of 100.",
-      "title": "Default"
+      "title": "Default",
+      "maximum": 100
     },
     "rarity": {
       "type": "integer",

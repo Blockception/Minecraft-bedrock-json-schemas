@@ -1,8 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.spawn_rules.minecraft.spawn_event",
   "title": "Spawn Event",
-  "description": "UNDOCUMENTED.",
-  "$comment": "UNDOCUMENTED",
+  "description": "Event related to the spawning of an entity.",
   "type": "object",
   "additionalProperties": false,
   "properties": {

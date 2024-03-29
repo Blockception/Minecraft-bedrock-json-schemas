@@ -3,7 +3,7 @@
   "$id": "blockception.behavior.spawn_rules",
   "examples": [
     {
-      "format_version": "1.20.41",
+      "format_version": "1.8.0",
       "minecraft:spawn_rules": { "description": { "identifier": "minecraft:entity", "population_control": "ambient" }, "conditions": [{}] }
     }
   ],
@@ -13,7 +13,11 @@
   "additionalProperties": false,
   "required": ["format_version", "minecraft:spawn_rules"],
   "properties": {
-    "format_version": { "$ref": "../../general/format_version.json" },
+    "format_version": { 
+      "title": "Format Version",
+      "description": "A version that tells minecraft what type of data format can be expected when reading this file.",
+      "enum": ["1.8.0", "1.10.0", "1.12.0"]
+     },
     "minecraft:spawn_rules": {
       "type": "object",
       "title": "Spawn Rules",
@@ -39,7 +43,7 @@
               "title": "Population Control",
               "description": "Setting an entity to a pool it will spawn as long as that pool hasn't reached the spawn limit.",
               "$comment": "UNDOCUMENTED",
-              "enum": ["ambient", "animal", "water_animal", "monster", "cat"]
+              "enum": ["ambient", "animal", "water_animal", "monster", "cat", "pillager"]
             }
           }
         },
@@ -63,7 +67,6 @@
               "minecraft:disallow_spawns_in_bubble": { "$ref": "./components/disallow_spawns_in_bubble.json" },
               "minecraft:distance_filter": { "$ref": "./components/distance_filter.json" },
               "minecraft:height_filter": { "$ref": "./components/height_filter.json" },
-              "minecraft:entity_types": { "$ref": "./components/entity_types.json" },
               "minecraft:herd": { "$ref": "./components/herd.json" },
               "minecraft:mob_event_filter": { "$ref": "./components/mob_event_filter.json" },
               "minecraft:permute_type": { "$ref": "./components/permute_type.json" },
