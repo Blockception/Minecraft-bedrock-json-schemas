@@ -23,8 +23,8 @@
           "description": "A list of bones that should be visible when rendering this block. If not specified, all bones will be visible.",
           "type": "object",
           "additionalProperties": {
-            "type": "boolean",
-            "description": "Whether or not the bone should be visible.",
+            "type": ["boolean", "string"],
+            "description": "Whether or not the bone should be visible. Can be defined as a boolean or a molang expression resulting in a boolean.",
             "title": "Bone Visibility"
           }
         },
