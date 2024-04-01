@@ -1,12 +1,25 @@
 {
   "$id": "blockception.minecraft.behavior.items.minecraft:foil",
-  "additionalProperties": false,
-  "type": "object",
   "title": "Glint",
   "description": "The glint component determines whether the item has the enchanted glint render effect on it",
-  "required": ["value"],
-  "properties": { "value": { "type": "boolean", "title": "Value", "description": "Whether the item has the glint effect." } },
-  "examples": [
-    { "value": true }
+  "default": false,
+  "examples": [true, { "value": true }],
+  "oneOf": [
+    {
+      "type": "boolean"
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value"],
+      "properties": {
+        "value": {
+          "title": "Value",
+          "description": "Whether the item has the glint effect.",
+          "type": "boolean",
+          "default": false
+        }
+      }
+    }
   ]
 }

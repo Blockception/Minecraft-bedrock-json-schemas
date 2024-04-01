@@ -2,11 +2,24 @@
   "$id": "blockception.minecraft.behavior.items.minecraft:stacked_by_data",
   "title": "Stacked By Data",
   "description": "The stacked by data component determines if the same item with different aux values can stack.",
-  "additionalProperties": false,
-  "type": "object",
-  "required": ["value"],
-  "properties": { "value": { "type": "boolean", "title": "Value", "description": "Also defines whether the item actors can merge while floating in the world." } },
-  "examples": [
-    { "value": true }
+  "default": false,
+  "examples": [true, { "value": true }],
+  "oneOf": [
+    {
+      "type": "boolean"
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value"],
+      "properties": {
+        "value": {
+          "title": "Value",
+          "description": "Also defines whether the item actors can merge while floating in the world.",
+          "type": "boolean",
+          "default": false
+        }
+      }
+    }
   ]
 }
