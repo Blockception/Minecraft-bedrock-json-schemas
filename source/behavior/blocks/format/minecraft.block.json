@@ -44,14 +44,30 @@
         "minecraft:random_ticking": { "$ref": "./triggers/random_ticking.json" }
       }
     },
-    "traits_ref": {
+    "states_ref": {
+      "title": "States",
+      "description": "Block states are variables that can be set to different values in order to change how your block looks or behaves.",
       "type": "object",
-      "title": "Trait",
+      "propertyNames": { "pattern": "^([a-zA-Z0-9_]+:[a-zA-Z0-9_\\-]+)$" },
+      "additionalProperties": {
+        "title": "State",
+        "description": "The key defines the name of a state, which must be properly namespaced. Each value is an array that contains all of the possible values of that state or an object defining a range of integers.",
+        "oneOf": [
+          // "my:state": [false, true]
+          { "$ref": "./states/enum.json" },
+          // "my:state": { "values": { "min": 0, "max": 15 } }
+          { "$ref": "./states/integer_range.json" }
+        ]
+      }
+    },
+    "traits_ref": {
+      "title": "Traits",
       "description": "A shortcut for creators to use Vanilla block states without needing to define and manage a series of events or triggers on custom blocks",
+      "type": "object",
       "additionalProperties": false,
       "properties": {
-        "minecraft:placement_position": { "$ref": "./traits/placement_position.json" },
-        "minecraft:placement_direction": { "$ref": "./traits/placement_direction.json" }
+        "minecraft:placement_direction": { "$ref": "./traits/placement_direction.json" },
+        "minecraft:placement_position": { "$ref": "./traits/placement_position.json" }
       }
     }
   },
@@ -63,12 +79,17 @@
       "additionalProperties": false,
       "required": ["identifier"],
       "properties": {
+        "identifier": {
+          "title": "Identifier",
+          "description": "The identifier for this block. The name must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla block.",
+          "type": "string",
+          "$ref": "../../../general/block/identifier.json"
+        },
         "menu_category": {
           "title": "Menu Category",
-          "$comment": "UNDOCUMENTED",
-          "description": "The category this block will be placed in the menu.",
+          "description": "Specifies the menu category and group for the block, which determine where this block is placed in the inventory and crafting table container screens. If this field is omitted, the block will not appear in the inventory or crafting table container screens.",
           "type": "object",
-          "default": "misc",
+          "examples": [{ "category": "construction" }],
           "additionalProperties": false,
           "required": ["category"],
           "properties": {
@@ -80,65 +101,18 @@
             },
             "is_hidden_in_commands": {
               "title": "Is Hidden In Commands",
-              "$comment": "UNDOCUMENTED",
-              "description": "If true, this item will not be shown in the /give command autocomplete list.",
-              "type": "boolean"
+              "description": "Determines whether or not this item can be used with commands such as /give and /setblock. Commands can use blocks by default",
+              "type": "boolean",
+              "default": false
             }
           }
         },
-        "identifier": {
-          "type": "string",
-          "description": "The identifier for this block. The name must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla block.",
-          "title": "Identifier",
-          "$ref": "../../../general/block/identifier.json"
-        },
-        "is_experimental": {
-          "type": "boolean",
-          "default": false,
-          "description": "If this block is experimental, it will only be registered if the world is marked as experimantal.",
-          "title": "Is Experimental"
-        },
-        "register_to_creative_menu": {
-          "type": "boolean",
-          "default": false,
-          "description": "Whether or not to register this block to the creative inventory menu.",
-          "title": "Register To Creative Menu"
-        },
-        "states": {
-          "title": "States",
-          "description": "[HOLIDAY EXPERIMENTAL] UNDOCUMENTED.",
-          "$comment": "UNDOCUMENTED",
-          "propertyNames": { "pattern": "^([a-zA-Z0-9_]+:[a-zA-Z0-9_\\-]+)$" },
-          "type": "object",
-          "additionalProperties": {
-            "title": "State",
-            "description": "A block property. The name should be specified as `<namespace>:<block property>`",
-            "oneOf": [
-              {
-                "type": "array",
-                "items": {
-                  "title": "Property Value",
-                  "description": "The value of this property.",
-                  "anyOf": [{ "type": "boolean" }, { "type": "number" }, { "type": "integer" }, { "type": "string" }]
-                }
-              },
-              { "type": "object" }
-            ]
-          }
-        },
-        "traits": {
-          "type": "object",
-          "title": "Trait",
-          "$ref": "#/definitions/traits_ref"
-        }
+        "states": { "$ref": "#/definitions/states_ref" },
+        "traits": { "$ref": "#/definitions/traits_ref" }
       }
     },
     "events": { "$ref": "./events.json" },
-    "components": {
-      "type": "object",
-      "title": "Component",
-      "$ref": "#/definitions/components_ref"
-    },
+    "components": { "$ref": "#/definitions/components_ref" },
     "permutations": {
       "type": "array",
       "title": "Permutations",
@@ -153,8 +127,8 @@
         "properties": {
           "condition": {
             "title": "Condition",
-            "description": "A Molang expression that evaluates to true or false to determine if this permutation should be used. For permutation conditions you are limited to using one Molang query: \"query.block_property()\"",
-            "$ref": "../../../molang/string.json"
+            "description": "A Molang expression that evaluates to true or false to determine if this permutation should be used. For permutation conditions you are limited to using one Molang query: \"query.block_state()\"",
+            "$ref": "../../../molang/boolean.json"
           },
           "components": {
             "type": "object",
