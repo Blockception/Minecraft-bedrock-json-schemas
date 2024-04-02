@@ -2,9 +2,8 @@
   "$id": "blockception.minecraft.general.sound_event",
   "type": "string",
   "title": "Sound Event",
-  "description": "UNDOCUMENTED.",
-  "$comment": "UNDOCUMENTED",
-  "enum": [
+  "description": "Reference to a sound definition in \"sound_definitions.json\".",
+  "examples": [
     "",
     "add.chest",
     "admire",
