@@ -42,6 +42,14 @@
         "minecraft:on_step_on": { "$ref": "./triggers/on_step_on.json" },
         "minecraft:queued_ticking": { "$ref": "./triggers/queued_ticking.json" },
         "minecraft:random_ticking": { "$ref": "./triggers/random_ticking.json" }
+      },
+      "patternProperties": {
+        "tag:.+": {
+          "title": "Tag",
+          "description": "Applies a tag to the block, using the key without the \"tag:\" prefix as the tag name.",
+          "type": "object",
+          "additionalProperties": false
+        }
       }
     },
     "states_ref": {
