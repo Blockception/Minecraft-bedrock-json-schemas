@@ -16,6 +16,8 @@
       "description": "This is the maximum light level value that allows the mob to spawn.",
       "title": "Max",
       "maximum": 15
+      "minimum": 0,
+      "default": 15
     },
     "adjust_for_weather": {
       "type": "boolean",
