@@ -9,7 +9,9 @@
       "type": "integer",
       "description": "This is the minimum light level value that allows the mob to spawn.",
       "title": "Min",
-      "minimum": 0
+      "minimum": 0,
+      "maximum": 15,
+      "default": 0
     },
     "max": {
       "type": "integer",
