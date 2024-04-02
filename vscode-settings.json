@@ -95,6 +95,10 @@
       "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/resource/textures/texture_list.json"
     },
     {
+      "fileMatch": ["*.texture_set.{json,jsonc,json5}"],
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/resource/textures/texture_set.json"
+    },
+    {
       "fileMatch": [
         "resource_packs/*/items/*.{json,jsonc,json5}",
         "*resource*pack*/items/*.{json,jsonc,json5}",
