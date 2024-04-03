@@ -91,8 +91,8 @@
       "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/resource/textures/item_texture.json"
     },
     {
-      "fileMatch": ["texture_list.{json,jsonc,json5}"],
-      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/resource/textures/texture_list.json"
+      "fileMatch": ["textures_list.{json,jsonc,json5}"],
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/resource/textures/textures_list.json"
     },
     {
       "fileMatch": ["*.texture_set.{json,jsonc,json5}"],
