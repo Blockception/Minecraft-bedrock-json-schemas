@@ -28,9 +28,9 @@
           "title": "UUID"
         },
         "version": {
-          "$ref": "../Version.json",
+          "title": "Version",
           "description": "This is the version of your pack in the format [majorVersion, minorVersion, revision].",
-          "title": "Version"
+          "oneOf": [{ "$ref": "../Version.json" }, { "$ref": "../semver.json" }]
         },
         "min_engine_version": {
           "type": "string",
@@ -72,9 +72,9 @@
             "title": "UUID"
           },
           "version": {
-            "$ref": "../Version.json",
+            "title": "Version",
             "description": "This is the version of the module in the same format as the pack's version in the header. This can be used to further identify changes in your pack",
-            "title": "Version"
+            "oneOf": [{ "$ref": "../Version.json" }, { "$ref": "../semver.json" }]
           }
         }
       },
@@ -94,9 +94,9 @@
             "title": "UUID"
           },
           "version": {
-            "$ref": "../Version.json",
+            "title": "Version",
             "description": "This is the specific version of the pack that your pack depends on. Should match the version the other pack has in its manifest file",
-            "title": "Version"
+            "oneOf": [{ "$ref": "../Version.json" }, { "$ref": "../semver.json" }]
           }
         },
         "description": "UNDOCUMENTED: dependencies.",
