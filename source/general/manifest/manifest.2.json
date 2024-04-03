@@ -94,25 +94,11 @@
                 ]
               },
               "version": {
-                "type": "string",
-                "description": "This is the specific version of the module that your pack depends on.",
                 "title": "Version",
+                "description": "This is the specific version of the module that your pack depends on.",
+                "$ref": "../semver.json",
                 "default": "1.9.0",
-                "examples": [
-                  "1.10.0-beta",
-                  "1.10.0",
-                  "1.9.0",
-                  "1.8.0",
-                  "1.7.0",
-                  "1.6.0",
-                  "1.5.0",
-                  "1.4.0",
-                  "1.3.0",
-                  "1.2.0",
-                  "1.2.0-beta",
-                  "1.1.0",
-                  "1.0.0"
-                ]
+                "examples": ["1.10.0-beta", "1.10.0", "1.9.0", "1.8.0", "1.7.0", "1.6.0", "1.5.0", "1.4.0", "1.3.0", "1.2.0", "1.2.0-beta", "1.1.0", "1.0.0"]
               }
             }
           }
@@ -168,8 +154,8 @@
         },
         "version": {
           "title": "Version",
-          "$ref": "../Version.json",
-          "description": "This is the version of your pack in the format [majorVersion, minorVersion, revision]."
+          "description": "This is the version of your pack in the format [majorVersion, minorVersion, revision].",
+          "oneOf": [{ "$ref": "../Version.json" }, { "$ref": "../semver.json" }]
         }
       }
     },
@@ -207,9 +193,9 @@
             "title": "Uuid"
           },
           "version": {
-            "$ref": "../Version.json",
+            "title": "Version",
             "description": "This is the version of your pack in the format [majorVersion, minorVersion, revision]. The version number is used when importing a pack that has been imported before. The new pack will replace the old one if the version is higher, and ignored if it's the same or lower",
-            "title": "Version"
+            "oneOf": [{ "$ref": "../Version.json" }, { "$ref": "../semver.json" }]
           },
           "entry": {
             "type": "string",
@@ -237,8 +223,7 @@
           "type": "object",
           "propertyNames": {
             "pattern": "^[a-zA-Z0-9\\_\\-]+$",
-            "maxLength": 32,
-            "maximum": 32
+            "maxLength": 32
           },
           "additionalProperties": {
             "type": "array",
@@ -246,10 +231,8 @@
             "title": "Tool",
             "description": "The tool and the version used to modified this pack.",
             "items": {
-              "type": "string",
               "title": "Version",
-              "examples": ["1.0.0"],
-              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+              "$ref": "../semver.json"
             }
           }
         },
