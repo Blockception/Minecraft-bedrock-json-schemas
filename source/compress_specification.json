@@ -16,7 +16,7 @@
     { "Source": "./resource/fog/fog.json", "Destination": "../resource/fog/fog.json" },
     { "Source": "./resource/textures/flipbook_textures.json", "Destination": "../resource/textures/flipbook_textures.json" },
     { "Source": "./resource/textures/item_texture.json", "Destination": "../resource/textures/item_texture.json" },
-    { "Source": "./resource/textures/texture_list.json", "Destination": "../resource/textures/texture_list.json" },
+    { "Source": "./resource/textures/textures_list.json", "Destination": "../resource/textures/textures_list.json" },
     { "Source": "./resource/textures/texture_set.json", "Destination": "../resource/textures/texture_set.json" },
     { "Source": "./resource/items/items.json", "Destination": "../resource/items/items.json" },
     { "Source": "./resource/models/entity/model_entity.json", "Destination": "../resource/models/entity/model_entity.json" },
