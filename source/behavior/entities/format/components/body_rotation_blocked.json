@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.body_rotation_blocked",
+  "type": "object",
+  "title": "Body Rotation Blocked",
+  "description": "When set, the entity will no longer visually rotate their body to match their facing direction.",
+  "additionalProperties": false,
+  "properties": {},
+  "examples": [{}]
+}
