@@ -188,7 +188,7 @@
         },
         "spawn_category": {
           "type": "string",
-          "enum": ["monster", "creature", "ambient", "axoltols", "underground_water_creature", "water_creature", "water_ambient", "misc"],
+          "enum": ["monster", "creature", "ambient", "axolotls", "underground_water_creature", "water_creature", "water_ambient", "misc"],
           "description": "At the moment, not fully implemented and does nothing. Recommended to leave it empty or set it to misc",
           "default": "misc"
         }
