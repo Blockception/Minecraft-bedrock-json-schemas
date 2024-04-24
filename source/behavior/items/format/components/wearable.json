@@ -12,8 +12,8 @@
       "description": "Which equipment slot the item can fit in",
       "type": "string",
       "enum": [
-        "slot.weapon.mainhand",
         "none",
+        "slot.weapon.mainhand",
         "slot.weapon.offhand",
         "slot.armor.head",
         "slot.armor.chest",

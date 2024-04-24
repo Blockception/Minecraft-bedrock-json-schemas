@@ -30,6 +30,12 @@
       "description": "When input items match the pattern then these items are the result.",
       "title": "Result",
       "oneOf": [{ "$ref": "./base types/item.json" }, { "type": "array", "items": { "$ref": "./base types/item.json" } }]
+    },
+    "assume_symmetry": {
+      "type": "boolean",
+      "title": "Assume Symmetry",
+      "description": "Used to automatically assume a symmetrical recipe should return the same resultUsed to automatically assume a symmetrical recipe should return the same result",
+      "default": true
     }
   }
 }
