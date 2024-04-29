@@ -1,0 +1,31 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.is_sitting",
+  "type": "object",
+  "title": "Is Sitting",
+  "description": "Returns true if the subject entity is sitting",
+  "properties": {
+    "test": {
+      "type": "string",
+      "title": "Test Property",
+      "description": "Returns true if the subject entity is sitting."
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
+    "value": {
+      "title": "Value",
+      "description": "True or false.",
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "examples": [
+    {
+      "test": "is_sitting",
+      "value": true
+    }
+  ]
+}
