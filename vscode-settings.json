@@ -296,6 +296,14 @@
       "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/feature_rules/feature_rules.json"
     },
     {
+      "fileMatch": ["lighting/global.json"],
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/lighting/global.json"
+    },
+    {
+      "fileMatch": ["lighting/atmospherics.json"],
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/lighting/atmospherics.json"
+    },
+    {
       "fileMatch": [
         "behavior_packs/*/items/*.{json,jsonc,json5}",
         "*behavior*pack*/items/*.{json,jsonc,json5}",
