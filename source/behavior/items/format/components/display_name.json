@@ -2,11 +2,10 @@
   "$id": "blockception.minecraft.behavior.items.minecraft:display_name",
   "title": "Display Name",
   "description": "Display Name item component. Display Names display the name of an item.",
+  "$comment": "Does not currently support single value parsing.",
   "type": "object",
   "additionalProperties": false,
   "required": ["value"],
   "properties": { "value": { "type": "string", "title": "Value", "description": "Set the display name for an item." } },
-  "examples": [
-    { "value": "secret_weapon"}
-  ]
+  "examples": [{ "value": "secret_weapon" }]
 }

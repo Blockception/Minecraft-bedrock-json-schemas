@@ -1,12 +1,25 @@
 {
   "$id": "blockception.minecraft.behavior.items.minecraft:liquid_clipped",
-  "additionalProperties": false,
-  "type": "object",
   "title": "Liquid Clipped",
   "description": "The liquid clipped component determines whether the item interacts with liquid blocks on use.",
-  "required": ["value"],
-  "properties": { "value": { "type": "boolean", "title": "Value", "description": "Whether the item interacts with liquid blocks on use." } },
-  "examples": [
-    { "value": true }
+  "default": false,
+  "examples": [true, { "value": true }],
+  "oneOf": [
+    {
+      "type": "boolean"
+    },
+    {
+      "additionalProperties": false,
+      "type": "object",
+      "required": ["value"],
+      "properties": {
+        "value": {
+          "title": "Value",
+          "description": "Whether the item interacts with liquid blocks on use.",
+          "type": "boolean",
+          "default": false
+        }
+      }
+    }
   ]
 }
