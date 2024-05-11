@@ -208,42 +208,6 @@
     },
     {
       "fileMatch": [
-        "behavior_packs/*/dialogue/*.{json,jsonc,json5}",
-        "*behavior*pack*/dialogue/*.{json,jsonc,json5}",
-        "*Behavior*Pack*/dialogue/*.{json,jsonc,json5}",
-        "*BP*/dialogue/*.{json,jsonc,json5}",
-        "*bp*/dialogue/*.{json,jsonc,json5}",
-        "behavior_packs/*/dialogue/**/*.{json,jsonc,json5}",
-        "*behavior*pack*/dialogue/**/*.{json,jsonc,json5}",
-        "*Behavior*Pack*/dialogue/**/*.{json,jsonc,json5}",
-        "*BP*/dialogue/**/*.{json,jsonc,json5}",
-        "*bp*/dialogue/**/*.{json,jsonc,json5}",
-        "*.{diag,dialogue,dialog,d}.{json,jsonc,json5}"
-      ],
-      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/dialogue/dialogue.json"
-    },
-    {
-      "fileMatch": ["functions/tick.{json,jsonc,json5}"],
-      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/functions/tick.json"
-    },
-    {
-      "fileMatch": [
-        "behavior_packs/*/loot_tables/*.{json,jsonc,json5}",
-        "*behavior*pack*/loot_tables/*.{json,jsonc,json5}",
-        "*Behavior*Pack*/loot_tables/*.{json,jsonc,json5}",
-        "*BP*/loot_tables/*.{json,jsonc,json5}",
-        "*bp*/loot_tables/*.{json,jsonc,json5}",
-        "behavior_packs/*/loot_tables/**/*.{json,jsonc,json5}",
-        "*behavior*pack*/loot_tables/**/*.{json,jsonc,json5}",
-        "*Behavior*Pack*/loot_tables/**/*.{json,jsonc,json5}",
-        "*BP*/loot_tables/**/*.{json,jsonc,json5}",
-        "*bp*/loot_tables/**/*.{json,jsonc,json5}",
-        "*.{loot,loot_table,lt}.{json,jsonc,json5}"
-      ],
-      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/loot_tables/loot_tables.json"
-    },
-    {
-      "fileMatch": [
         "behavior_packs/*/blocks/*.{json,jsonc,json5}",
         "*behavior*pack*/blocks/*.{json,jsonc,json5}",
         "*Behavior*Pack*/blocks/*.{json,jsonc,json5}",
@@ -257,6 +221,26 @@
         "*.{block,b}.{json,jsonc,json5}"
       ],
       "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/blocks/blocks.json"
+    },
+    {
+      "fileMatch": ["cameras/presets/*.{json,jsonc,json5}"],
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/cameras/presets/camera.json"
+    },
+    {
+      "fileMatch": [
+        "behavior_packs/*/dialogue/*.{json,jsonc,json5}",
+        "*behavior*pack*/dialogue/*.{json,jsonc,json5}",
+        "*Behavior*Pack*/dialogue/*.{json,jsonc,json5}",
+        "*BP*/dialogue/*.{json,jsonc,json5}",
+        "*bp*/dialogue/*.{json,jsonc,json5}",
+        "behavior_packs/*/dialogue/**/*.{json,jsonc,json5}",
+        "*behavior*pack*/dialogue/**/*.{json,jsonc,json5}",
+        "*Behavior*Pack*/dialogue/**/*.{json,jsonc,json5}",
+        "*BP*/dialogue/**/*.{json,jsonc,json5}",
+        "*bp*/dialogue/**/*.{json,jsonc,json5}",
+        "*.{diag,dialogue,dialog,d}.{json,jsonc,json5}"
+      ],
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/dialogue/dialogue.json"
     },
     {
       "fileMatch": [
@@ -274,6 +258,10 @@
         "!*loot_tables*"
       ],
       "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/entities/entities.json"
+    },
+    {
+      "fileMatch": ["functions/tick.{json,jsonc,json5}"],
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/functions/tick.json"
     },
     {
       "fileMatch": [
@@ -326,6 +314,22 @@
     {
       "fileMatch": ["recipes/*.{json,jsonc,json5}", "recipes/**/*.{json,jsonc,json5}", "*.{recipe,crafting_recipe,cr,r}.{json,jsonc,json5}"],
       "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/recipes/recipes.json"
+    },
+    {
+      "fileMatch": [
+        "behavior_packs/*/loot_tables/*.{json,jsonc,json5}",
+        "*behavior*pack*/loot_tables/*.{json,jsonc,json5}",
+        "*Behavior*Pack*/loot_tables/*.{json,jsonc,json5}",
+        "*BP*/loot_tables/*.{json,jsonc,json5}",
+        "*bp*/loot_tables/*.{json,jsonc,json5}",
+        "behavior_packs/*/loot_tables/**/*.{json,jsonc,json5}",
+        "*behavior*pack*/loot_tables/**/*.{json,jsonc,json5}",
+        "*Behavior*Pack*/loot_tables/**/*.{json,jsonc,json5}",
+        "*BP*/loot_tables/**/*.{json,jsonc,json5}",
+        "*bp*/loot_tables/**/*.{json,jsonc,json5}",
+        "*.{loot,loot_table,lt}.{json,jsonc,json5}"
+      ],
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/loot_tables/loot_tables.json"
     },
     {
       "fileMatch": ["spawn_rules/*.{json,jsonc,json5}", "spawn_rules/**/*.{json,jsonc,json5}", "*.{spawn,sr,spawn_rule}.{json,jsonc,json5}"],
