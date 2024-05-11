@@ -10,7 +10,7 @@
     "components": {
       "minecraft:can_destroy_in_creative": { "value": false },
       "minecraft:max_stack_size": { "value": 64 },
-      "minecraft:icon": { "value": "stick" },
+      "minecraft:icon": { "textures": { "default": "stick" } },
       "minecraft:glint": { "value": true },
       "minecraft:damage": { "value": 2 },
       "minecraft:stacked_by_data": { "value": true },
