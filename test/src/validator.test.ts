@@ -1,9 +1,9 @@
 import path = require("path");
-import { Files } from "./Utillity";
+import { Files } from "./utillity";
 import * as fs from "fs";
 import * as JSONC from "comment-json";
 import { expect } from "chai";
-import { ErrorAnnotation, Github } from "./Github";
+import { ErrorAnnotation, Github } from "./github";
 
 describe("Validate", function () {
   const folder = path.join(Files.TestFolder(), "..", "source");

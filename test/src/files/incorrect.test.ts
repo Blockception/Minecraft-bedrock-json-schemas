@@ -1,7 +1,7 @@
 import { expect } from "chai";
-import { Github } from "../Github";
-import { Schema } from "../SchemaTester";
-import { Files } from "../Utillity";
+import { Github } from "../github";
+import { Schema } from "../schema-tester";
+import { Files } from "../utillity";
 
 describe("test incorrect files", function () {
   const folder = Files.InCorrectFilesFolder().replace(/\\/gi, "/");

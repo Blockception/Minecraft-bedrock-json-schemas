@@ -1,6 +1,6 @@
 import { expect } from "chai";
 import { DummyFiles } from "../../src/main";
-import { Files } from "./Utillity";
+import { Files } from "./utillity";
 
 describe("Files", function () {
   it("Root", function () {

@@ -1,17 +1,8 @@
-import {
-  getLanguageService,
-  LanguageService,
-  LanguageSettings,
-  SchemaConfiguration,
-  TextDocument,
-  JSONDocument,
-  Diagnostic,
-  Thenable,
-} from "vscode-json-languageservice";
+import { getLanguageService, LanguageService, LanguageSettings, SchemaConfiguration, TextDocument, JSONDocument, Diagnostic, Thenable } from "vscode-json-languageservice";
 import * as url from "url";
 import * as data from "../../vscode-settings.json";
 import { readFileSync } from "fs";
-import { Files } from "./Utillity";
+import { Files } from "./utillity";
 
 export namespace Schema {
   const workspaceContext = {
