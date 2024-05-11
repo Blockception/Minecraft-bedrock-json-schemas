@@ -1,0 +1,20 @@
+{
+  "$id": "blockception.minecraft.behavior.lighting.color",
+  "title": "Lighting Color",
+  "description": "The color of the light emitted by the block, in RGB format or hex format.",
+  "oneOf": [
+    {
+      "type": "string",
+      "format": "color-hex",
+      "examples": ["#FFFFFF", "#000000"]
+    },
+    {
+      "type": "array",
+      "items": [
+        { "title": "Red", "type": "integer", "minimum": 0, "maximum": 255 },
+        { "title": "Blue", "type": "integer", "minimum": 0, "maximum": 255 },
+        { "title": "Green", "type": "integer", "minimum": 0, "maximum": 255 }
+      ]
+    }
+  ]
+}
