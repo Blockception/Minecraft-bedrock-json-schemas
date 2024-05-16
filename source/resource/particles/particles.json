@@ -101,7 +101,7 @@
               "properties": {
                 "material": {
                   "type": "string",
-                  "examples": ["particles_alpha", "particles_blend", "particles_add"],
+                  "examples": ["particles_alpha", "particles_blend", "particles_add", "particles_opaque"],
                   "description": " Minecraft material to use for emitter.",
                   "title": "Material"
                 },
