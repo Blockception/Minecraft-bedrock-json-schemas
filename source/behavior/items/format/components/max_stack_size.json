@@ -3,7 +3,7 @@
   "title": "Max Stack Size",
   "description": "The max stack size component determines how many of the item can be stacked together.",
   "default": 64,
-  "examples": [1, { "value": 1 }],
+  "examples": [1, { "value": 1 }, 16, { "value": 16 }],
   "oneOf": [
     {
       "type": "number",
