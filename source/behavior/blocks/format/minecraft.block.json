@@ -31,6 +31,7 @@
         "minecraft:placement_filter": { "$ref": "./components/placement_filter.json" },
         "minecraft:selection_box": { "$ref": "./components/selection_box.json" },
         "minecraft:transformation": { "$ref": "./components/transformation.json" },
+        "minecraft:custom_components": { "$ref": "./components/custom_components.json" },
 
         //Triggers
         "minecraft:on_fall_on": { "$ref": "./triggers/on_fall_on.json" },

@@ -57,6 +57,7 @@
         "minecraft:block_placer": { "$ref": "./components/block_placer.json" },
         "minecraft:can_destroy_in_creative": {"$ref": "./components/can_destroy_in_creative.json"},
         "minecraft:cooldown": { "$ref": "./components/cooldown.json" },
+        "minecraft:custom_components": { "$ref": "./components/custom_components.json" },
         "minecraft:damage": {"$ref": "./components/damage.json"},
         "minecraft:digger": { "$ref": "./components/digger.json" },
         "minecraft:display_name": { "$ref": "./components/display_name.json" },
