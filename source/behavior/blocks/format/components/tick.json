@@ -1,0 +1,15 @@
+{
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.tick",
+  "title": "Tick",
+  "description": "Describes the component that will trigger an even at a regular interval between two values.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "looping": { "type": "boolean", "default": true, "description": "Does the event loop.", "title": "Looping" },
+    "interval_range": {
+      "type": "array",
+      "description": "The Range between which the component will trigger his event.",
+      "title": "Interval Range"
+    }
+  }
+}

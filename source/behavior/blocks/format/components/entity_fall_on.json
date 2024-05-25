@@ -1,0 +1,15 @@
+{
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.entity_fall_on",
+  "title": "Entity Fall On",
+  "description": "Required component to use the custom component `onEntityFallOn`.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [ ],
+  "properties": {
+    "min_fall_distance": {
+      "title": "Min Fall Distance",
+      "description": "Sets the minimum fall distance required to trigger the custom component.",
+      "type": "number"
+    }
+  }
+}
