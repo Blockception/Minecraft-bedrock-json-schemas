@@ -6,7 +6,7 @@
   "description": "A collection of components.",
   "required": [],
   "properties": {
-    "minecraft:absorption:": { "$ref": "./components/attribute.json" },
+    "minecraft:absorption": { "$ref": "./components/attribute.json" },
     "minecraft:addrider": { "$ref": "./components/addrider.json" },
     "minecraft:admire_item": { "$ref": "./components/admire_item.json" },
     "minecraft:ageable": { "$ref": "./components/ageable.json" },
