@@ -171,6 +171,12 @@
           "title": "Version",
           "$ref": "#/definitions/version",
           "description": "This is the version of your pack in the format [majorVersion, minorVersion, revision]."
+        },
+        "pack_scope": {
+          "type": "string",
+          "enum": ["world"],
+          "description": "When defined, this pack can only be activated in the Add-Ons section of the world, and not the Global Resources options.",
+          "title": "Pack Scope"
         }
       }
     },
@@ -255,6 +261,12 @@
               "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
             }
           }
+        },
+        "product_type": {
+          "type": "string",
+          "enum": ["addon"],
+          "description": "This field defines the type of the pack. Currently, it is required for Marketplace Add-Ons.",
+          "title": "Product Type"
         }
       }
     },
