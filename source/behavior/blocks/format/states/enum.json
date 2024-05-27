@@ -1,0 +1,30 @@
+{
+  "$id": "blockception.minecraft.behavior.block.states.enum",
+  "type": "array",
+  "minItems": 1,
+  "maxItems": 16,
+  "uniqueItems": true,
+  "items": {
+    "description": "A valid value of this state. All valid values must be of the same type (boolean, integer or string)."
+  },
+  "oneOf": [
+    {
+      "items": {
+        "title": "Boolean State Value",
+        "type": "boolean"
+      }
+    },
+    {
+      "items": {
+        "title": "Integer State Value",
+        "type": "integer"
+      }
+    },
+    {
+      "items": {
+        "title": "String State Value",
+        "type": "string"
+      }
+    }
+  ]
+}

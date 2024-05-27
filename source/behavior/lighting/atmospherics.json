@@ -1,0 +1,67 @@
+{
+  "$id": "blockception.minecraft.behavior.lighting.atmospherics",
+  "type": "object",
+  "title": "Atmospherics",
+  "description": "The properties of the atmosphere",
+  "additionalProperties": false,
+  "properties": {
+    "horizon_blend_stops": {
+      "type": "object",
+      "title": "Horizon Blend Stops",
+      "description": "How the atmosphere is divided up",
+      "additionalProperties": false,
+      "properties": {
+        "min": {
+          "title": "Minimum Horizon Height",
+          "description": "The minimum horizon height",
+          "type": "number"
+        },
+        "start": {
+          "title": "Start",
+          "description": "The height relative to the horizon where the zenith contribution will take over",
+          "type": "number"
+        },
+        "mie_start": {
+          "title": "Mie Start",
+          "description": "The height relative to the horizon where mie scattering begins",
+          "type": "number"
+        },
+        "max": {
+          "title": "Maximum Horizon Height",
+          "description": "The maximum horizon height",
+          "type": "number"
+        }
+      }
+    },
+    "rayleigh_strength": {
+      "title": "Rayleigh Strength",
+      "description": "How strong the atmosphere's rayleigh scattering term is",
+      "type": "number"
+    },
+    "sun_mie_strength": {
+      "title": "Sun Mie Strength",
+      "description": "How strong the sun's mie scattering term is",
+      "type": "number"
+    },
+    "moon_mie_strength": {
+      "title": "Moon Mie Strength",
+      "description": "How strong the moon's mie scattering term is",
+      "type": "number"
+    },
+    "sun_glare_shape": {
+      "title": "Sun Glare Shape",
+      "description": "How the lobe of the mie scattering is shaped",
+      "type": "number"
+    },
+    "sky_zenith_color": {
+      "title": "Sky Zenith Color",
+      "description": "The RGB color of the zenith region of the atmosphere",
+      "$ref": "./color.json"
+    },
+    "sky_horizon_color": {
+      "title": "Sky Horizon Color",
+      "description": "The RGB color of the horizon region of the atmosphere",
+      "$ref": "./color.json"
+    }
+  }
+}

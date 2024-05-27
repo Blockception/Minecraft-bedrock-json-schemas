@@ -1,0 +1,25 @@
+{
+  "$id": "blockception.minecraft.behavior.items.minecraft:should_despawn",
+  "title": "Should Despawn",
+  "description": "Should despawn component determines if the item should eventually despawn while floating in the world",
+  "default": true,
+  "examples": [false, { "value": false }],
+  "oneOf": [
+    {
+      "type": "boolean"
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value"],
+      "properties": {
+        "value": {
+          "title": "Value",
+          "description": "Whether the item should eventually despawn while floating in the world",
+          "type": "boolean",
+          "default": true
+        }
+      }
+    }
+  ]
+}

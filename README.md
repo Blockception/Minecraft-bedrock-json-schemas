@@ -79,6 +79,7 @@ JSON validation can give snippets for sub items, as well as description, but thi
 - [Sounds](resource/sounds/sound_definitions.json)
 - [Terrain texture](resource/textures/terrain_texture.json)
 - [Terrain list](resource/textures/texture_list.json)
+- [Texture Set](resource/textures/texture_set.json)
 
 ## License
 

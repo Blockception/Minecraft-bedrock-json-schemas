@@ -1,6 +1,25 @@
 {
   "$id": "blockception.minecraft.behavior.items",
-  "description": "Minecraft items 1.16.200",
+  "defaultSnippets": [
+    {
+      "label": "New item",
+      "body": {
+        "format_version": "${1:1.20.41}",
+        "minecraft:item": {
+          "description": {
+            "identifier": "$2:${3:${TM_FILENAME/[\\.].*//}}",
+            "menu_category": {
+              "category": "${4:items}"
+            }
+          },
+          "components": {
+            "minecraft:icon": "$2.${3:${TM_FILENAME/[\\.].*//}}"
+          }
+        }
+      }
+    }
+  ],
+  "description": "Minecraft items",
   "required": ["format_version", "minecraft:item"],
   "title": "Item",
   "type": "object",

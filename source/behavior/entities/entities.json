@@ -1,9 +1,26 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.behavior.entities",
+  "defaultSnippets": [
+    {
+      "label": "New entity",
+      "body": {
+        "format_version": "${1:1.20.41}",
+        "minecraft:entity": {
+          "description": {
+            "identifier": "$2:${3:${TM_FILENAME/[\\.].*//}}",
+            "is_spawnable": "^{4:true}",
+            "is_summonable": "^{5:true}",
+            "is_experimental": "^{6:false}"
+          },
+          "components": "^{$7}"
+        }
+      }
+    }
+  ],
   "examples": [
     {
-      "format_version": "1.20.0",
+      "format_version": "1.20.41",
       "minecraft:entity": {
         "description": { "identifier": "namespace:entity", "is_spawnable": true, "is_summonable": true },
         "component_groups": {},

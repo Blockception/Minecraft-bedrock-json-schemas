@@ -1,6 +1,6 @@
 {
-  "$id": "blockception.minecraft.behavior.blocks.minecraft.random_ticking",
-  "title": "Random Ticking",
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.queued_ticking",
+  "title": "Queued Ticking",
   "description": "[Experimental] Describes the component that will trigger an even at a regular interval between two values.",
   "type": "object",
   "additionalProperties": false,

@@ -1,0 +1,168 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.melee_box_attack",
+  "type": "object",
+  "title": "Melee Box Attack",
+  "description": "Permits an entity to deal damage through a melee attack with reach calculations based on bounding boxes.",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": {
+      "$ref": "./types/priority.json"
+    },
+    "speed_multiplier": {
+      "$ref": "./types/speed_multiplier.json"
+    },
+    "attack_once": {
+      "title": "Attack Once",
+      "type": "boolean",
+      "default": false,
+      "description": "Allows the entity to use this attack behavior, only once EVER."
+    },
+    "attack_types": {
+      "title": "Attack Types",
+      "type": "string",
+      "default": "N/A",
+      "description": "Defines the entity types this entity will attack."
+    },
+    "can_spread_on_fire": {
+      "title": "Can Spread On Fire",
+      "type": "boolean",
+      "default": false,
+      "description": "If the entity is on fire, this allows the entity's target to catch on fire after being hi"
+    },
+    "cooldown_time": {
+      "title": "Cooldown Time",
+      "type": "number",
+      "default": 1,
+      "description": "Cooldown time (in seconds) between attacks."
+    },
+    "horizontal_reach": {
+      "title": "Horizontal Reach",
+      "type": "number",
+      "default": 0.8,
+      "description": "The attack reach of the entity will be a box with the size of the entity's bounds increased by this value in all horizontal directions."
+    },
+    "inner_boundary_time_increase": {
+      "title": "Inner Boundary Time Increase",
+      "type": "number",
+      "default": 0.25,
+      "description": "Time (in seconds) to add to attack path recalculation when the target is beyond the \"path_inner_boundary\"."
+    },
+    "max_dist": {
+      "title": "Max Dist",
+      "type": "number",
+      "description": "Unused. No effect on \"minecraft:behavior.melee_attack\"."
+    },
+    "max_path_time": {
+      "title": "Max Path Time",
+      "type": "number",
+      "default": 0.55,
+      "description": "Maximum base time (in seconds) to recalculate new attack path to target (before increases applied)."
+    },
+    "melee_fov": {
+      "title": "Melee Fov",
+      "type": "number",
+      "default": 90,
+      "description": "Field of view (in degrees) when using the sensing component to detect an attack target."
+    },
+    "min_path_time": {
+      "title": "Min Path Time",
+      "type": "number",
+      "default": 0.2,
+      "description": "Minimum base time (in seconds) to recalculate new attack path to target (before increases applied)."
+    },
+    "on_attack": {
+      "title": "On Attack",
+      "$ref": "../types/trigger.json",
+      "description": "Defines the event to trigger when this entity successfully attacks."
+    },
+    "on_kill": {
+      "title": "On Kill",
+      "$ref": "../types/trigger.json",
+      "description": "[UNDOCUMENTED] Defines the event to trigger when this entity successfully kills a target."
+    },
+    "outer_boundary_time_increase": {
+      "title": "Outer Boundary Time Increase",
+      "type": "number",
+      "default": 0.5,
+      "description": "Time (in seconds) to add to attack path recalculation when the target is beyond the \"path_outer_boundary\"."
+    },
+    "path_fail_time_increase": {
+      "title": "Path Fail Time Increase",
+      "type": "number",
+      "default": 0.75,
+      "description": "Time (in seconds) to add to attack path recalculation when this entity cannot move along the current path."
+    },
+    "path_inner_boundary": {
+      "title": "Path Inner Boundary",
+      "type": "number",
+      "default": 16,
+      "description": "Distance at which to increase attack path recalculation by \"inner_boundary_tick_increase\"."
+    },
+    "path_outer_boundary": {
+      "title": "Path Outer Boundary",
+      "type": "number",
+      "default": 32,
+      "description": "Distance at which to increase attack path recalculation by \"outer_boundary_tick_increase\"."
+    },
+    "random_stop_interval": {
+      "title": "Random Stop Interval",
+      "type": "integer",
+      "default": 0,
+      "description": "This entity will have a 1 in N chance to stop it's current attack, where N = \"random_stop_interval\"."
+    },
+    "reach_multiplier": {
+      "title": "Reach Multiplier",
+      "type": "number",
+      "default": 2,
+      "description": "Used with the base size of the entity to determine minimum target-distance before trying to deal attack damage."
+    },
+    "require_complete_path": {
+      "title": "Require Complete Path",
+      "type": "boolean",
+      "default": false,
+      "description": "Toggles (on/off) the need to have a full path from the entity to the target when using this melee attack behavior."
+    },
+    "set_persistent": {
+      "title": "Set Persistent",
+      "type": "boolean",
+      "default": false,
+      "description": "Allows the actor to be set to persist upon targeting a player."
+    },
+    "target_dist": {
+      "title": "Target Dist",
+      "type": "number",
+      "description": "Unused. No effect on \"minecraft:behavior.melee_attack\"."
+    },
+    "track_target": {
+      "title": "Track Target",
+      "type": "boolean",
+      "default": false,
+      "description": "Allows the entity to track the attack target, even if the entity has no sensing."
+    },
+    "x_max_rotation": {
+      "title": "X Max Rotation",
+      "type": "number",
+      "default": 30,
+      "description": "Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target."
+    },
+    "y_max_head_rotation": {
+      "title": "Y Max Head Rotation",
+      "type": "number",
+      "default": 30,
+      "description": "Maximum rotation (in degrees), on the Y-axis, this entity can rotate its head while trying to look at the target."
+    }
+  },
+  "examples": [
+    {
+      "melee_fov": 90.0,
+      "track_target": false,
+      "attack_types": "example",
+      "random_stop_interval": 0,
+      "reach_multiplier": 2.0,
+      "attack_once": false,
+      "require_complete_path": false,
+      "cooldown_time": 0.0
+    }
+  ]
+}

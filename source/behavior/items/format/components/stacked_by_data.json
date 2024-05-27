@@ -1,6 +1,25 @@
 {
   "$id": "blockception.minecraft.behavior.items.minecraft:stacked_by_data",
-  "title": "On Use",
-  "description": "The on_use item component allows you to receive an event when the item is used.",
-  "type": "boolean"
+  "title": "Stacked By Data",
+  "description": "The stacked by data component determines if the same item with different aux values can stack.",
+  "default": false,
+  "examples": [true, { "value": true }],
+  "oneOf": [
+    {
+      "type": "boolean"
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value"],
+      "properties": {
+        "value": {
+          "title": "Value",
+          "description": "Also defines whether the item actors can merge while floating in the world.",
+          "type": "boolean",
+          "default": false
+        }
+      }
+    }
+  ]
 }

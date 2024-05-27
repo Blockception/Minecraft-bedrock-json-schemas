@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.camera.identifier",
+  "description": "A minecraft camera identifier.",
+  "examples": ["namespace:camera"],
+  "pattern": "^[0-9a-zA-Z:_\\.\\-]+$",
+  "title": "Camera Identifier",
+  "type": "string",
+  "defaultSnippets": [{ "label": "New Identifier", "body": "$1:$2" }]
+}

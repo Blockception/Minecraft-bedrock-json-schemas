@@ -8,12 +8,18 @@
     "min": {
       "type": "integer",
       "description": "This is the minimum light level value that allows the mob to spawn.",
-      "title": "Min"
+      "title": "Min",
+      "minimum": 0,
+      "maximum": 15,
+      "default": 0
     },
     "max": {
       "type": "integer",
       "description": "This is the maximum light level value that allows the mob to spawn.",
-      "title": "Max"
+      "title": "Max",
+      "maximum": 15,
+      "minimum": 0,
+      "default": 15
     },
     "adjust_for_weather": {
       "type": "boolean",

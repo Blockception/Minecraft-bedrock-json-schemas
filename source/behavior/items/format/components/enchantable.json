@@ -1,0 +1,37 @@
+{
+  "$id": "blockception.minecraft.behavior.items.minecraft:enchantable",
+  "title": "Enchantable",
+  "description": "The enchantable component determines what enchantments can be applied to the item.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["slot"],
+  "properties": {
+    "slot": {
+      "title": "Slot",
+      "description": "If true you can always eat this item (even when not hungry), defaults to false.",
+      "enum": [
+        "axe",
+		    "bow",
+		    "armor_feet",
+		    "armor_torso",
+		    "armor_head",
+		    "armor_legs",
+		    "hoe",
+		    "pickaxe",
+		    "shovel",
+		    "elytra",
+		    "fishing_rod",
+		    "flintsteel",
+		    "sword",
+		    "shears",
+		    "cosmetic_head"
+      ]
+    },
+    "value": {
+      "title": "Value",
+      "description": "The value of the enchantment.",
+      "type": "number",
+      "minimum": 0
+    }
+  }
+}

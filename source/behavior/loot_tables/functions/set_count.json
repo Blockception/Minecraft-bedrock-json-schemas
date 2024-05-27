@@ -5,6 +5,12 @@
   "description": "The function set_count.",
   "title": "Set Count",
   "properties": {
+    "add": {
+      "title": "Add",
+      "description": "UNDOCUMENTED.",
+      "$comment": "UNDOCUMENTED",
+      "type": "boolean"
+    },
     "function": {
       "type": "string",
       "const": "set_count",

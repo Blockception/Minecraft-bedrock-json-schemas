@@ -5,14 +5,15 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
+    "protection": { "type": "integer", "description": "How much protection does the armor item have.", "title": "Protection", "minimum": 0 },
     "dispensable": { "title": "Dispensable", "description": "Sets if the item can be dropped by a dispenser block", "type": "boolean" },
     "slot": {
       "title": "Slot",
       "description": "Which equipment slot the item can fit in",
       "type": "string",
       "enum": [
-        "slot.weapon.mainhand",
         "none",
+        "slot.weapon.mainhand",
         "slot.weapon.offhand",
         "slot.armor.head",
         "slot.armor.chest",

@@ -22,18 +22,45 @@
       "title": "Magic",
       "type": "boolean",
       "default": false,
-      "description": "Sets whether the projectiles being used are flagged as magic. If set, the ranged attack goal will not be used at the same time as other magic goals, such as minecraft:behavior.drink_potion."    },
+      "description": "Sets whether the projectiles being used are flagged as magic. If set, the ranged attack goal will not be used at the same time as other magic goals, such as minecraft:behavior.drink_potion."
+    },
     "power": {
       "type": "number",
       "title": "Power",
-      "default": 0.00,
+      "default": 0.0,
       "description": "Velocity in which the projectiles will be shot. A power of 0 will be overwritten by the default projectile throw power."
     },
     "projectiles": {
       "title": "Projectiles",
       "description": "List of projectiles that can be used by the shooter. Projectiles are evaluated in the order of the list; after a projectile is chosen, the rest of the list is ignored.",
       "type": "array",
-      "items": { "type": "string", "description": "Projectiles that can be used by the shooter", "title": "Projectile"}
+      "items": {
+        "oneOf": [
+          { "type": "string", "description": "Projectiles that can be used by the shooter", "title": "Projectile" },
+          {
+            "type": "object",
+            "title": "Projectile",
+            "description": "A projectile defintion",
+            "properties": {
+              "aux_val": {
+                "type": "integer",
+                "title": "Aux Val",
+                "default": -1,
+                "description": "ID of the Potion effect to be applied on hit."
+              },
+              "def": {
+                "title": "Def",
+                "type": "string",
+                "examples": ["minecraft:arrow", "minecraft:small_fireball", "minecraft:thrown_trident"],
+                "description": "Actor definition to use as projectile for the ranged attack. The actor definition must have the projectile component to be able to be shot as a projectile"
+              },
+              "filters": {
+                "$ref": "../../filters/filters.json"
+              }
+            }
+          }
+        ]
+      }
     },
     "sound": {
       "title": "Sound",

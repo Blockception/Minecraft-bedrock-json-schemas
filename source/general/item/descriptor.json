@@ -25,6 +25,15 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
+        "item": {
+          "oneOf": [
+            { "type": "string", "$ref": "./identifier.json" },
+            {
+              "type": "object",
+              "$ref": "#/definitions/object_item_descriptor"
+            }
+          ]
+        },
         "tags": {
           "type": "string",
           "$ref": "../../molang/string.json",

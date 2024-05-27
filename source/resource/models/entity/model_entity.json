@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.resource.model",
   "examples": [
     {
-      "format_version": "1.20.0",
+      "format_version": "1.20.41",
       "minecraft:geometry": [
         {
           "description": {

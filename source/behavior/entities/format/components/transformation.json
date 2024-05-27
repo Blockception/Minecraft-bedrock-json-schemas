@@ -85,7 +85,8 @@
       "type": "string",
       "default": "",
       "description": "Entity Definition that this entity will transform into.",
-      "title": "Into"
+      "title": "Into",
+      "examples": ["minecraft:drowned<minecraft:as_baby>", "minecraft:drowned"]
     },
     "keep_level": {
       "type": "boolean",

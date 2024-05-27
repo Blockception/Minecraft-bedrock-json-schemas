@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.can_join_raid",
+  "title": "Can Join Raid",
+  "additionalProperties": false,
+  "description": "Sets that this entity can join a raid.",
+  "type": "object",
+  "required": [],
+  "properties": {}
+}

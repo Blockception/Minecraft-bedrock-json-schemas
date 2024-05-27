@@ -1,7 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.blocks.minecraft.placement_filter",
   "title": "Placement Filter",
-  "description": "[Experimental]",
   "type": "object",
   "properties": {
     "conditions": {
@@ -17,7 +16,6 @@
       "minItems": 1,
       "items": {
         "title": "Placement Filter",
-        "description": "[Experimental]",
         "type": "object",
         "additionalProperties": false,
         "properties": {

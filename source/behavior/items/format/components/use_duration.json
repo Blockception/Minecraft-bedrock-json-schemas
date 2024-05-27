@@ -1,8 +1,0 @@
-{
-  "$id": "blockception.minecraft.behavior.items.minecraft:use_duration",
-  "additionalProperties": false,
-  "required": ["texture"],
-  "type": "integer",
-  "title": "Use Duration",
-  "description": "How long to use before item is done being used."
-}

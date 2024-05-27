@@ -1,0 +1,31 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.is_panicking",
+  "type": "object",
+  "title": "Is Panicking",
+  "description": "Tests if the subject is executing \"behavior.panic\".",
+  "properties": {
+    "test": {
+      "type": "string",
+      "title": "Test",
+      "description": "The test property."
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
+    "value": {
+      "description": "True or false.",
+      "type": "boolean",
+      "default": true,
+      "title": "Value"
+    }
+  },
+  "examples": [
+    {
+      "test": "is_panicking",
+      "value": true
+    }
+  ]
+}

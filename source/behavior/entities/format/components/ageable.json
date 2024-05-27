@@ -67,6 +67,11 @@
       "$ref": "../../../../general/item/descriptor.json",
       "title": "Transform To Item",
       "description": "The feed item used will transform to this item upon successful interaction. Format: itemName:auxValue"
+    },
+    "interact_filters": {
+      "$ref": "../../filters/filters.json",
+      "title": "Interact Filters",
+      "description": "List of conditions to meet so that the entity can be fed."
     }
   },
   "examples": [

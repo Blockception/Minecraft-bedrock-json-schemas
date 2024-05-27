@@ -1,7 +1,18 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.resource.actor_animation",
-  "examples": [{ "format_version": "1.20.0", "animations": { "animation.annie.idle": { "loop": true, "animation_length": 2.12, "bones": {} } } }],
+  "defaultSnippets": [
+    {
+      "label": "New animation",
+      "body": {
+        "format_version": "${1:1.10.0}",
+        "animations": {
+          "animation.${2:${TM_FILENAME/[\\.].*//}}": "^{$3}"
+        }
+      }
+    }
+  ],
+  "examples": [{ "format_version": "1.20.41", "animations": { "animation.annie.idle": { "loop": true, "animation_length": 2.12, "bones": {} } } }],
   "additionalProperties": false,
   "type": "object",
   "title": "Actor Animation",
@@ -96,7 +107,7 @@
         "description": "The animation specification.",
         "properties": {
           "anim_time_update": {
-            "title": "Start Delay",
+            "title": "Animation Time Update",
             "description": "How does time pass when playing the animation. Defaults to `query.anim_time + query.delta_time` which means advance in seconds.",
             "$ref": "../../molang/number.json"
           },

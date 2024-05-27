@@ -1,0 +1,14 @@
+{
+  "format_version": "1.20.41",
+  "minecraft:npc_dialogue": {
+    "identifier": "example:custom",
+    "inherit_from": "minecraft:free",
+    "player_effects": true,
+    "listener": "player",
+    "pos_x": 30,
+    "pos_y": 90,
+    "pos_z": -20,
+    "rot_x": 10,
+    "rot_y": 40
+  }
+}

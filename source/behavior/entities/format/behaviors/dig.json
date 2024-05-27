@@ -42,6 +42,11 @@
       "type": "boolean",
       "default": false,
       "description": "If true, vibrations count as disturbances that may delay the start of this goal."
+    },
+    "on_start": {
+      "title": "On Start",
+      "$ref": "../types/trigger.json",
+      "description": "The event to run when the goal start"
     }
   }
 }

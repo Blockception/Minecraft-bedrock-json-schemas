@@ -5,7 +5,6 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "on_repaired": { "title": "On Repaired", "description": "Event that is called when this item has been repaired.", "type": "object" },
     "repair_items": {
       "title": "Repair Items",
       "description": "Repair item entries.",
@@ -13,21 +12,19 @@
       "items": {
         "type": "object",
         "title": "Repar Item",
-        "description": "UNDOCUMENTED.",
-        "$comment": "UNDOCUMENTED",
+        "description": "List of repair item entries.",
         "additionalProperties": false,
         "properties": {
           "items": {
             "title": "Items",
-            "description": "UNDOCUMENTED.",
-            "$comment": "UNDOCUMENTED",
+            "description": "Items that can be used to repeair it",
+            "$comment": "List of items",
             "type": "array",
-            "items": { "type": "string", "title": "Item", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" }
+            "items": { "type": "string", "title": "Item", "description": "Item identifier" }
           },
           "repair_amount": {
             "title": "Repair Amount",
-            "description": "UNDOCUMENTED.",
-            "$comment": "UNDOCUMENTED",
+            "description": "Amount that can be repaired",
             "$ref": "../../../../molang/number.json"
           }
         }

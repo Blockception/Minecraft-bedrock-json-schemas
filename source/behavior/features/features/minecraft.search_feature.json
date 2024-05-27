@@ -1,0 +1,59 @@
+{
+  "type": "object",
+  "title": "Search Feature",
+  "description": "`minecraft:search_feature` sweeps a volume searching for a valid placement location for its referenced feature. The `search_volume` field specifies the axis-aligned bounding box that defines the boundaries of the search. The search sweeps along the axis defined by the `search_axis` field, layer by layer. For example, if `search_axis` = '-x', blocks with greater x values will be checked before blocks with lower x values. Each layer is searched from the bottom-left to the top-right before moving to the next layer along the axis. By default, only one valid position must be found, but this can be altered by specifying the `required_successes` field. If fewer than the required successes are found, no placement will occur.\nSucceeds if: The number of valid positions is equal to the value specified by `required_successes`.\nFails if: The number of valid positions is less than the value specified by `required_successes`.",
+  "additionalProperties": false,
+  "required": ["description", "search_axis"],
+  "properties": {
+    "description": {
+      "$ref": "../types/description.json"
+    },
+    "places_feature": {
+      "title": "Places Feature",
+      "description": "Named reference of feature to be placed.",
+      "type": "string",
+      "$ref": "../../../general/feature/identifier.json"
+    },
+    "search_volume": {
+      "title": "Places Feature",
+      "description": "Axis-aligned bounding box that will be searched for valid placement positions. Expressed as offsets from the input position.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["min", "max"],
+      "properties": {
+        "max": {
+          "title": "Max",
+          "description": "Maximum extent of the bounding volume expressed as [ x, y, z ].",
+          "type": "array",
+          "items": [
+            { "title": "Maximum X", "type": "integer" },
+            { "title": "Maximum Y", "type": "integer" },
+            { "title": "Maximum Z", "type": "integer" }
+          ]
+        },
+        "min": {
+          "title": "Min",
+          "description": "Maxium extent of the bounding volume expressed as [ x, y, z ].",
+          "type": "array",
+          "items": [
+            { "title": "Minimum X", "type": "integer" },
+            { "title": "Minimum Y", "type": "integer" },
+            { "title": "Minimum Z", "type": "integer" }
+          ]
+        }
+      }
+    },
+    "search_axis": {
+      "title": "Search Axis",
+      "description": "Axis that the search will sweep along through the `search_volume`.",
+      "type": "string",
+      "enum": ["-x", "+x", "-y", "+y", "-z", "+z"]
+    },
+    "required_successes": {
+      "title": "Required Successes",
+      "description": "Number of valid positions the search must find in order to place the referenced feature.",
+      "type": "integer",
+      "minimum": 1
+    }
+  }
+}

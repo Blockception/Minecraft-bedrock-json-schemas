@@ -1,0 +1,28 @@
+{
+  "$id": "blockception.minecraft.behavior.block.states.integer_range",
+  "type": "object",
+  "required": ["values"],
+  "additionalProperties": false,
+  "properties": {
+    "values": {
+      "title": "State Integer Value Range",
+      "type": "object",
+      "required": ["min", "max"],
+      "additionalProperties": false,
+      "properties": {
+        "min": {
+          "title": "Minimum",
+          "description": "The lowest integer this state supports. This is also used as the default state value.",
+          "type": "integer",
+          "default": 0
+        },
+        "max": {
+          "title": "Maximum",
+          "description": "The highest integer this state supports. This cannot be more than 15 above the minimum.",
+          "type": "integer",
+          "default": 15
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$id": "blockception.minecraft.behavior.items.minecraft:use_animation",
+  "title": "Use Animation",
+  "description": "This component determines which animation plays when using the item.",
+  "definitions": {
+    "animation": {
+      "enum": ["bow", "brush", "camera", "crossbow", "drink", "eat", "none", "spear", "spyglass"]
+    }
+  },
+  "oneOf": [
+    { "$ref": "#/definitions/animation" },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value"],
+      "properties": {
+        "value": {
+          "title": "Value",
+          "description": "Which animation to play when using the item.",
+          "$ref": "#/definitions/animation"
+        }
+      }
+    }
+  ]
+}

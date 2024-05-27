@@ -1,0 +1,25 @@
+{
+  "$id": "blockception.minecraft.behavior.items.minecraft:allow_off_hand",
+  "title": "Allow Off Hand",
+  "description": "The allow off hand component determines whether the item can be placed in the off hand slot of the inventory.",
+  "default": false,
+  "examples": [true, { "value": true }],
+  "oneOf": [
+    {
+      "type": "boolean"
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value"],
+      "properties": {
+        "value": {
+          "title": "Value",
+          "description": "Whether the item can be placed in the off hand slot",
+          "type": "boolean",
+          "default": false
+        }
+      }
+    }
+  ]
+}

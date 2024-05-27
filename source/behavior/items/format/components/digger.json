@@ -22,8 +22,7 @@
         "type": "object",
         "additionalProperties": false,
         "properties": {
-          "speed": { "title": "Speed", "description": "Speed.", "type": "number" },
-          "on_dig": { "type": "string", "title": "On Dig", "description": "Trigger for when you dig a block that isn't listed in destroy_speeds." },
+          "speed": { "title": "Speed", "type": "number" },
           "block": {
             "title": "Block",
             "oneOf": [
@@ -31,13 +30,12 @@
               {
                 "type": "object",
                 "additionalProperties": false,
-                "description": "Block descriptor.",
                 "properties": {
-                  "any_tag": {
-                    "type": "array",
-                    "title": "Any Block Tag",
-                    "description": "The block tag.",
-                    "items": { "type": "string", "title": "Block Tag" }
+                  "tags": {
+                    "type": "string",
+                    "title": "Block Tags",
+                    "description": "The block tags.",
+                    "examples": ["query.any_tag( 'stone', 'metal' )"]
                   }
                 }
               }
@@ -45,7 +43,6 @@
           }
         }
       }
-    },
-    "on_dig": { "type": "string", "title": "On Dig", "description": "Trigger for when you dig a block that isn't listed in destroy_speeds." }
+    }
   }
 }

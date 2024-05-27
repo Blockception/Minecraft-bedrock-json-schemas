@@ -1,9 +1,24 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.render_controllers",
+  "defaultSnippets": [
+    {
+      "label": "New render controller",
+      "body": {
+        "format_version": "${1:1.10.0}",
+        "render_controllers": {
+          "controller.render.${2:${TM_FILENAME/[\\.].*//}}": {
+            "geometry": "Geometry.${3:default}",
+            "materials": [{ "*": "Material.${4:default}" }],
+            "textures": ["Texture.${5:default}"]
+          }
+        }
+      }
+    }
+  ],
   "examples": [
     {
-      "format_version": "1.20.0",
+      "format_version": "1.20.41",
       "render_controllers": {
         "controller.render.example": { "geometry": "Geometry.default", "materials": [{ "*": "Material.default" }], "textures": ["Texture.default"] }
       }

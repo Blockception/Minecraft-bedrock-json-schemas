@@ -1,0 +1,74 @@
+{
+  "type": "object",
+  "title": "Cave Carver Feature",
+  "description": "`minecraft:cave_carver_feature` carves a cave through the world in the current chunk, and in every chunk around the current chunk in an 8 radial pattern. This feature will also only work when placed specifically in the pass `pregeneration_pass`.",
+  "additionalProperties": false,
+  "required": ["description"],
+  "properties": {
+    "description": {
+      "$ref": "../types/description.json"
+    },
+    "fill_with": {
+      "title": "Fill With",
+      "description": "Reference to the block to fill the cave with.",
+      "$ref": "../../../general/block/identifier.json"
+    },
+    "width_modifier": {
+      "title": "Width Modifier",
+      "description": "How many blocks to increase the cave radius by, from the center point of the cave.",
+      "$ref": "../../../molang/number.json"
+    },
+    "skip_carve_chance": {
+      "title": "Skip Carve Chance",
+      "description": "The chance to skip doing the carve (1 / value).",
+      "type": "integer",
+      "minimum": 1
+    },
+    "height_limit": {
+      "title": "Height Limit",
+      "description": "The height limit where we attempt to carve",
+      "type": "integer"
+    },
+    "y_scale": {
+      "type": "array",
+      "title": "Y Scale",
+      "description": "The scaling in y",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": [
+        { "type": "number", "title": "Min" },
+        { "type": "number", "title": "Max" }
+      ]
+    },
+    "horizontal_radius_multiplier": {
+      "type": "array",
+      "title": "Horizontal Radius Multiplier",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": [
+        { "type": "number", "title": "Min" },
+        { "type": "number", "title": "Max" }
+      ]
+    },
+    "vertical_radius_multiplier": {
+      "type": "array",
+      "title": "Vertical Radius Multiplier",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": [
+        { "type": "number", "title": "Min" },
+        { "type": "number", "title": "Max" }
+      ]
+    },
+    "floor_level": {
+      "type": "array",
+      "title": "Floor Level",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": [
+        { "type": "number", "title": "Min" },
+        { "type": "number", "title": "Max" }
+      ]
+    }
+  }
+}

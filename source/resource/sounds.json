@@ -83,7 +83,31 @@
           "events": {
             "type": "object",
             "title": "Events",
-            "propertyNames": { "enum": ["default", "item.use.on", "break", "hit", "place", "power.on", "power.off"] },
+            "propertyNames": {
+              "enum": [
+                "break_pot",
+                "break",
+                "button.click_off",
+                "button.click_on",
+                "default",
+                "door.close",
+                "door.open",
+                "fall",
+                "fence_gate.close",
+                "fence_gate.open",
+                "hit",
+                "item.use.on",
+                "place",
+                "power.off",
+                "power.on",
+                "pressure_plate.click_off",
+                "pressure_plate.click_on",
+                "shatter_pot",
+                "step",
+                "trapdoor.close",
+                "trapdoor.open"
+              ]
+            },
             "additionalProperties": { "$ref": "#/definitions/sound_event" }
           }
         }

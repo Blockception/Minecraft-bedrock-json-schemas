@@ -28,11 +28,12 @@
         "minecraft:loot": { "$ref": "./components/loot.json" },
         "minecraft:map_color": { "$ref": "./components/map_color.json" },
         "minecraft:material_instances": { "$ref": "./components/material_instances.json" },
-        "minecraft:part_visibility": { "$ref": "./components/part_visibility.json" },
         "minecraft:placement_filter": { "$ref": "./components/placement_filter.json" },
         "minecraft:selection_box": { "$ref": "./components/selection_box.json" },
         "minecraft:transformation": { "$ref": "./components/transformation.json" },
-        "minecraft:unit_cube": { "$ref": "./components/unit_cube.json" },
+        "minecraft:custom_components": { "$ref": "./components/custom_components.json" },
+        "minecraft:tick": { "$ref": "./components/tick.json" },
+        "minecraft:entity_fall_on": { "$ref": "./components/entity_fall_on.json" },
 
         //Triggers
         "minecraft:on_fall_on": { "$ref": "./triggers/on_fall_on.json" },
@@ -44,6 +45,40 @@
         "minecraft:on_step_on": { "$ref": "./triggers/on_step_on.json" },
         "minecraft:queued_ticking": { "$ref": "./triggers/queued_ticking.json" },
         "minecraft:random_ticking": { "$ref": "./triggers/random_ticking.json" }
+      },
+      "patternProperties": {
+        "tag:.+": {
+          "title": "Tag",
+          "description": "Applies a tag to the block, using the key without the \"tag:\" prefix as the tag name.",
+          "type": "object",
+          "additionalProperties": false
+        }
+      }
+    },
+    "states_ref": {
+      "title": "States",
+      "description": "Block states are variables that can be set to different values in order to change how your block looks or behaves.",
+      "type": "object",
+      "propertyNames": { "pattern": "^([a-zA-Z0-9_]+:[a-zA-Z0-9_\\-]+)$" },
+      "additionalProperties": {
+        "title": "State",
+        "description": "The key defines the name of a state, which must be properly namespaced. Each value is an array that contains all of the possible values of that state or an object defining a range of integers.",
+        "oneOf": [
+          // "my:state": [false, true]
+          { "$ref": "./states/enum.json" },
+          // "my:state": { "values": { "min": 0, "max": 15 } }
+          { "$ref": "./states/integer_range.json" }
+        ]
+      }
+    },
+    "traits_ref": {
+      "title": "Traits",
+      "description": "A shortcut for creators to use Vanilla block states without needing to define and manage a series of events or triggers on custom blocks",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "minecraft:placement_direction": { "$ref": "./traits/placement_direction.json" },
+        "minecraft:placement_position": { "$ref": "./traits/placement_position.json" }
       }
     }
   },
@@ -55,200 +90,40 @@
       "additionalProperties": false,
       "required": ["identifier"],
       "properties": {
+        "identifier": {
+          "title": "Identifier",
+          "description": "The identifier for this block. The name must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla block.",
+          "type": "string",
+          "$ref": "../../../general/block/identifier.json"
+        },
         "menu_category": {
           "title": "Menu Category",
-          "$comment": "UNDOCUMENTED",
-          "description": "The category this block will be placed in the menu.",
+          "description": "Specifies the menu category and group for the block, which determine where this block is placed in the inventory and crafting table container screens. If this field is omitted, the block will not appear in the inventory or crafting table container screens.",
           "type": "object",
-          "default": "misc",
+          "examples": [{ "category": "construction" }],
           "additionalProperties": false,
           "required": ["category"],
           "properties": {
             "category": {
-              "title": "Category",
-              "description": "Determines which category this block will be placed under in the inventory and crafting table container screens. Options are \"construction\", \"nature\", \"equipment\", \"items\", and \"none\". If omitted or \"none\" is specified, the block will not appear in the inventory or crafting table container screens.",
-              "type": "string",
-              "enum": ["construction", "nature", "equipment", "items", "none"]
+              "$ref": "../../../general/vanilla/creative_category.json"
             },
             "group": {
-              "title": "Group",
-              "$comment": "UNDOCUMENTED",
-              "description": "A translation string of an existing group in minecraft to group this item under",
-              "type": "string",
-              "enum": [
-                "itemGroup.name.anvil",
-                "itemGroup.name.arrow",
-                "itemGroup.name.axe",
-                "itemGroup.name.banner_pattern",
-                "itemGroup.name.banner",
-                "itemGroup.name.beacon",
-                "itemGroup.name.bed",
-                "itemGroup.name.bell",
-                "itemGroup.name.boat",
-                "itemGroup.name.boots",
-                "itemGroup.name.brick",
-                "itemGroup.name.buttons",
-                "itemGroup.name.cactus",
-                "itemGroup.name.camera",
-                "itemGroup.name.candles",
-                "itemGroup.name.chemistrytable",
-                "itemGroup.name.chest",
-                "itemGroup.name.chestboat",
-                "itemGroup.name.chestplate",
-                "itemGroup.name.clay",
-                "itemGroup.name.climbing",
-                "itemGroup.name.cobblestone",
-                "itemGroup.name.composter",
-                "itemGroup.name.concrete",
-                "itemGroup.name.concretePowder",
-                "itemGroup.name.constructionMisc",
-                "itemGroup.name.cookedFood",
-                "itemGroup.name.copper",
-                "itemGroup.name.coral_decorations",
-                "itemGroup.name.coral",
-                "itemGroup.name.craftingTables",
-                "itemGroup.name.crop",
-                "itemGroup.name.dirt",
-                "itemGroup.name.door",
-                "itemGroup.name.dye",
-                "itemGroup.name.eggBlocks",
-                "itemGroup.name.element",
-                "itemGroup.name.enchantedBook",
-                "itemGroup.name.enchantingTable",
-                "itemGroup.name.endPortalFrame",
-                "itemGroup.name.endRod",
-                "itemGroup.name.fence",
-                "itemGroup.name.fenceGate",
-                "itemGroup.name.firework",
-                "itemGroup.name.fireworkStars",
-                "itemGroup.name.flower",
-                "itemGroup.name.furnaces",
-                "itemGroup.name.glass",
-                "itemGroup.name.glassPane",
-                "itemGroup.name.glazedTerracotta",
-                "itemGroup.name.glowstone",
-                "itemGroup.name.goatHorn",
-                "itemGroup.name.grass",
-                "itemGroup.name.gravel",
-                "itemGroup.name.greenery",
-                "itemGroup.name.grindStone",
-                "itemGroup.name.helmet",
-                "itemGroup.name.hoe",
-                "itemGroup.name.horseArmor",
-                "itemGroup.name.ice",
-                "itemGroup.name.ironFence",
-                "itemGroup.name.items",
-                "itemGroup.name.leaves",
-                "itemGroup.name.lectern",
-                "itemGroup.name.leggings",
-                "itemGroup.name.lights",
-                "itemGroup.name.lingeringPotion",
-                "itemGroup.name.log",
-                "itemGroup.name.minecart",
-                "itemGroup.name.miscFood",
-                "itemGroup.name.mobEgg",
-                "itemGroup.name.monsterStoneEgg",
-                "itemGroup.name.mushroom",
-                "itemGroup.name.musicBlocks",
-                "itemGroup.name.natureBuildingBlocks",
-                "itemGroup.name.natureMisc",
-                "itemGroup.name.ore",
-                "itemGroup.name.oreBlocks",
-                "itemGroup.name.permission",
-                "itemGroup.name.pickaxe",
-                "itemGroup.name.pistons",
-                "itemGroup.name.planks",
-                "itemGroup.name.potion",
-                "itemGroup.name.pressurePlate",
-                "itemGroup.name.pumpkins",
-                "itemGroup.name.purpur",
-                "itemGroup.name.rail",
-                "itemGroup.name.rawFood",
-                "itemGroup.name.record",
-                "itemGroup.name.redstone",
-                "itemGroup.name.redstoneContainers",
-                "itemGroup.name.redstoneProducers",
-                "itemGroup.name.sand",
-                "itemGroup.name.sandstone",
-                "itemGroup.name.sapling",
-                "itemGroup.name.sculk",
-                "itemGroup.name.seed",
-                "itemGroup.name.shovel",
-                "itemGroup.name.shulkerBox",
-                "itemGroup.name.sign",
-                "itemGroup.name.skull",
-                "itemGroup.name.slab",
-                "itemGroup.name.splashPotion",
-                "itemGroup.name.stainedClay",
-                "itemGroup.name.stairs",
-                "itemGroup.name.stone",
-                "itemGroup.name.stoneBrick",
-                "itemGroup.name.sword",
-                "itemGroup.name.tnt",
-                "itemGroup.name.torch",
-                "itemGroup.name.trapdoor",
-                "itemGroup.name.walls",
-                "itemGroup.name.wood",
-                "itemGroup.name.wool",
-                "itemGroup.name.woolCarpet"
-              ]
+              "$ref": "../../../general/vanilla/item_group.json"
             },
             "is_hidden_in_commands": {
               "title": "Is Hidden In Commands",
-              "$comment": "UNDOCUMENTED",
-              "description": "If true, this item will not be shown in the /give command autocomplete list.",
-              "type": "boolean"
+              "description": "Determines whether or not this item can be used with commands such as /give and /setblock. Commands can use blocks by default",
+              "type": "boolean",
+              "default": false
             }
           }
         },
-        "identifier": {
-          "type": "string",
-          "description": "The identifier for this block. The name must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla block.",
-          "title": "Identifier",
-          "$ref": "../../../general/block/identifier.json"
-        },
-        "is_experimental": {
-          "type": "boolean",
-          "default": false,
-          "description": "If this block is experimental, it will only be registered if the world is marked as experimantal.",
-          "title": "Is Experimental"
-        },
-        "register_to_creative_menu": {
-          "type": "boolean",
-          "default": false,
-          "description": "Whether or not to register this block to the creative inventory menu.",
-          "title": "Register To Creative Menu"
-        },
-        "states": {
-          "title": "States",
-          "description": "[HOLIDAY EXPERIMENTAL] UNDOCUMENTED.",
-          "$comment": "UNDOCUMENTED",
-          "propertyNames": { "pattern": "^([a-zA-Z0-9_]+:[a-zA-Z0-9_\\-]+)$" },
-          "type": "object",
-          "additionalProperties": {
-            "title": "State",
-            "description": "A block property.",
-            "oneOf": [
-              {
-                "type": "array",
-                "items": {
-                  "title": "Property Value",
-                  "description": "The value of this property.",
-                  "anyOf": [{ "type": "boolean" }, { "type": "number" }, { "type": "integer" }, { "type": "string" }]
-                }
-              },
-              { "type": "object" }
-            ]
-          }
-        }
+        "states": { "$ref": "#/definitions/states_ref" },
+        "traits": { "$ref": "#/definitions/traits_ref" }
       }
     },
     "events": { "$ref": "./events.json" },
-    "components": {
-      "type": "object",
-      "title": "Component",
-      "$ref": "#/definitions/components_ref"
-    },
+    "components": { "$ref": "#/definitions/components_ref" },
     "permutations": {
       "type": "array",
       "title": "Permutations",
@@ -263,8 +138,8 @@
         "properties": {
           "condition": {
             "title": "Condition",
-            "description": "A Molang expression that evaluates to true or false to determine if this permutation should be used. For permutation conditions you are limited to using one Molang query: \"query.block_property()\"",
-            "$ref": "../../../molang/string.json"
+            "description": "A Molang expression that evaluates to true or false to determine if this permutation should be used. For permutation conditions you are limited to using one Molang query: \"query.block_state()\"",
+            "$ref": "../../../molang/boolean.json"
           },
           "components": {
             "type": "object",

@@ -1,0 +1,25 @@
+{
+  "$id": "blockception.minecraft.behavior.1.12.0.recipe.shapeless",
+  "description": "Represents a shapeless crafting recipe..",
+  "title": "Shapeless Recipe 1.12.0",
+  "additionalProperties": false,
+  "required": ["description"],
+  "type": "object",
+  "properties": {
+    "description": { "$ref": "./base types/definition.json" },
+    "tags": { "$ref": "./base types/tags.json" },
+    "unlock": { "$ref": "./base types/unlock.json" },
+    "ingredients": {
+      "description": "Items used as input (without a shape) for the recipe.",
+      "title": "Ingredients",
+      "oneOf": [{ "$ref": "./base types/item.json" }, { "type": "array", "items": { "$ref": "./base types/item.json" } }]
+    },
+    "group": { "type": "string", "title": "Group", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
+    "priority": { "type": "integer", "description": "Item used as output for the furnace recipe.", "title": "Priority" },
+    "result": {
+      "description": "When input items match the pattern then these items are the result.",
+      "title": "Result",
+      "oneOf": [{ "$ref": "./base types/item.json" }, { "type": "array", "items": { "$ref": "./base types/item.json" } }]
+    }
+  }
+}

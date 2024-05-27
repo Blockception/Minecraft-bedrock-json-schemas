@@ -3,10 +3,11 @@
   "title": "World Age Filter",
   "description": "This component allows players to set mobs spawn after a certain amount of time has passed within a world.",
   "additionalProperties": false,
+  "type": "object",
   "properties": {
     "min": {
       "type": "integer",
-      "description": "This is the minimum world_age_filter level that a mob spawns.",
+      "description": "This is the minimum world_age_filter level that a mob spawns measured in seconds.",
       "title": "Min"
     }
   }

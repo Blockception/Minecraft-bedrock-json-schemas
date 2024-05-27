@@ -19,7 +19,7 @@
       "properties": {
         "title": {
           "type": "string",
-          "pattern": "^([A-Z0-9][a-z0-9\\.\\(\\)]*(| ))*$"
+          "pattern": "^([A-Z0-9][a-z0-9\\.\\\\\\(\\)]*(| ))*$"
         },
         "defaultSnippets": {
           "type": "array",

@@ -1,8 +1,25 @@
 {
   "$id": "blockception.minecraft.behavior.items.minecraft:hand_equipped",
-  "additionalProperties": false,
-  "required": ["texture"],
-  "type": "boolean",
   "title": "Hand Equipped",
-  "description": "Is this a hand equipped item."
+  "description": "This component determines if an item is rendered like a tool while in hand.",
+  "default": false,
+  "examples": [true, { "value": true }],
+  "oneOf": [
+    {
+      "type": "boolean"
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value"],
+      "properties": {
+        "value": {
+          "title": "Value",
+          "description": "If the item is rendered like a tool while in hand.",
+          "type": "boolean",
+          "default": false
+        }
+      }
+    }
+  ]
 }

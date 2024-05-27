@@ -1,0 +1,14 @@
+{
+  "oneOf": [
+    {
+      "type": "array",
+      "$ref": "./number2.json"
+    },
+    {
+      "title": "Value",
+      "type": "number"
+    }
+  ],
+  "examples": [0, [0, 10]],
+  "defaultSnippets": [{ "label": "New Array 2", "body": ["^$1", "^$2"] }]
+}

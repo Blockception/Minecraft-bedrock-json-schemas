@@ -1,0 +1,28 @@
+{
+  "$id": "blockception.minecraft.behavior.blocks.traits.minecraft.placement_direction",
+  "title": "Placement Direction",
+  "description": "Contains information about the player's rotation when the block was placed.",
+  "additionalProperties": false,
+  "type": "object",
+  "required": ["enabled_states"],
+  "properties": {
+    "enabled_states": {
+      "title": "Enabled States",
+      "description": "Block states you wish to enable",
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "items": {
+        "enum": ["minecraft:cardinal_direction", "minecraft:facing_direction"]
+      }
+    },
+    "y_rotation_offset": {
+      "title": "Y Rotation Offset",
+      "description": "This rotation offset only applies to the horizontal state values",
+      "type": "number",
+      "multipleOf": 90,
+      "default": 0,
+      "examples": [90, 180, 270, -90, -180, -270]
+    }
+  }
+}

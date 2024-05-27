@@ -20,10 +20,10 @@
       "body": { "event": "$1", "target": "self", "filters": [{ "test": "$2", "value": "$3" }] }
     }
   ],
-  "oneOf": [
-    { "type": "string" },
-    {
+  "definitions": {
+    "trigger": {
       "type": "object",
+      "title": "Trigger",
       "additionalProperties": false,
       "properties": {
         "event": { "type": "string", "description": "The event to run when the conditions for this trigger are met.", "title": "Event" },
@@ -32,6 +32,19 @@
           "description": "The list of conditions for this trigger to execute."
         },
         "target": { "$ref": "../../filters/filters/types/subject.json", "description": "The target of the event.", "title": "Target" }
+      }
+    }
+  },
+  "oneOf": [
+    { "type": "string" },
+    {
+      "type": "object",
+      "$ref": "#/definitions/trigger"
+    },
+    {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/trigger"
       }
     }
   ]
