@@ -39,10 +39,10 @@
           "title": "Minimum Engine Version"
         },
         "pack_scope": {
+          "title": "Pack Scope",
           "type": "string",
-          "enum": ["world"],
-          "description": "When defined, this pack can only be activated in the Add-Ons section of the world, and not the Global Resources options.",
-          "title": "Pack Scope"
+          "description": "This is the scope of the pack. This is only for resource packs",
+          "enum": ["global", "world", "any"]
         },
         "lock_template_options": { "type": "boolean", "description": "UNDOCUMENTED: lock template options.", "title": "Lock Template Options" },
         "base_game_version": { "$ref": "../Version.json", "description": "UNDOCUMENTED: base game version.", "title": "Base Game Version" }
@@ -135,9 +135,9 @@
       "description": "UNDOCUMENTED: metadata.",
       "product_type": {
         "type": "string",
-        "enum": ["addon"],
-        "description": "This field defines the type of the pack. Currently, it is required for Marketplace Add-Ons.",
-        "title": "Product Type"
+        "title": "Product Type",
+        "description": "The type of product this pack is. This is used to determine how the pack is displayed in the store.",
+        "enum": ["", "addon"]
       },
       "title": "Metadata"
     }

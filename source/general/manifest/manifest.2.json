@@ -156,12 +156,6 @@
           "title": "Version",
           "description": "This is the version of your pack in the format [majorVersion, minorVersion, revision].",
           "oneOf": [{ "$ref": "../Version.json" }, { "$ref": "../semver.json" }]
-        },
-        "pack_scope": {
-          "type": "string",
-          "enum": ["world"],
-          "description": "When defined, this pack can only be activated in the Add-Ons section of the world, and not the Global Resources options.",
-          "title": "Pack Scope"
         }
       }
     },
