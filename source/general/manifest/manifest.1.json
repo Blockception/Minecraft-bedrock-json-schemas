@@ -38,6 +38,12 @@
           "description": "This is the minimum version of the game that this pack was written for. This helps the game identify whether any backwards compatibility is needed for your pack. You should always use the highest version currently available when creating packs",
           "title": "Minimum Engine Version"
         },
+        "pack_scope": {
+          "title": "Pack Scope",
+          "type": "string",
+          "description": "This is the scope of the pack. This is only for resource packs",
+          "enum": ["global", "world", "any"]
+        },
         "lock_template_options": { "type": "boolean", "description": "UNDOCUMENTED: lock template options.", "title": "Lock Template Options" },
         "base_game_version": { "$ref": "../Version.json", "description": "UNDOCUMENTED: base game version.", "title": "Base Game Version" }
       },
@@ -127,6 +133,12 @@
       "license": { "type": "string", "description": "The license of the pack.", "title": "License" },
       "url": { "type": "string", "description": "The home website of your pack.", "title": "Url" },
       "description": "UNDOCUMENTED: metadata.",
+      "product_type": {
+        "type": "string",
+        "title": "Product Type",
+        "description": "The type of product this pack is. This is used to determine how the pack is displayed in the store.",
+        "enum": ["", "addon"]
+      },
       "title": "Metadata"
     }
   }

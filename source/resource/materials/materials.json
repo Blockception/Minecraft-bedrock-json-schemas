@@ -52,6 +52,7 @@
           "ENABLE_LIGHT",
           "ENABLE_VERTEX_TINT_MASK",
           "END_PORTAL",
+          "FANCY",
           "FLIP_OCCLUSION",
           "FOG",
           "FORCE_DEPTH_ZERO",
