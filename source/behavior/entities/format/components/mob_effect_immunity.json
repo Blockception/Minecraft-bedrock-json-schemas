@@ -1,0 +1,24 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.mob_effect_immunity",
+  "type": "object",
+  "title": "Mob Effect Immunity",
+  "description": "Entities with this component will have an immunity to the provided mob effects.",
+  "additionalProperties": false,
+  "properties": {
+    "mob_effects": {
+      "title": "Mob Effects",
+      "description": "List of names of effects the entity is immune to.",
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "examples": [
+    {
+      "mob_effects": [ "oozing" ]
+    }
+  ]
+}

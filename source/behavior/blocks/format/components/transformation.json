@@ -7,24 +7,21 @@
   "properties": {
     "rotation": {
       "title": "Rotation",
-      "description": "Rotation in xxx?",
+      "description": "Amount in degrees the block should be rotated on each axis. \"rotation\" is specified as [x, y, z] using floating point values and must be axis aligned, otherwise the value will be rounded to the nearest axis-aligned value.",
       "type": "array",
       "items": [
         {
           "title": "X",
-          "description": "Rotation in xxx?",
           "type": "number",
           "default": 0
         },
         {
           "title": "Y",
-          "description": "Rotation in xxx?",
           "type": "number",
           "default": 0
         },
         {
           "title": "Z",
-          "description": "Rotation in xxx?",
           "type": "number",
           "default": 0
         }
@@ -32,24 +29,21 @@
     },
     "scale": {
       "title": "Scale",
-      "description": "UNDOCUMENTED",
+      "description": "Amount the block should be scaled along each axis. \"scale\" is specified as [x, y, z] using floating point values.",
       "type": "array",
       "items": [
         {
           "title": "X",
-          "description": "UNDOCUMENTED",
           "type": "number",
           "default": 1
         },
         {
           "title": "Y",
-          "description": "UNDOCUMENTED",
           "type": "number",
           "default": 1
         },
         {
           "title": "Z",
-          "description": "UNDOCUMENTED",
           "type": "number",
           "default": 1
         }
@@ -57,24 +51,67 @@
     },
     "translation": {
       "title": "Translation",
-      "description": "UNDOCUMENTED",
+      "description": "Amount the block should be translated along each axis. \"translation\" is specified as [x, y, z] using floating point values.",
       "type": "array",
       "items": [
         {
           "title": "X",
-          "description": "UNDOCUMENTED",
           "type": "number",
           "default": 0
         },
         {
           "title": "Y",
-          "description": "UNDOCUMENTED",
           "type": "number",
           "default": 0
         },
         {
           "title": "Z",
-          "description": "UNDOCUMENTED",
+          "type": "number",
+          "default": 0
+        }
+      ]
+    },
+    "scale_pivot": {
+      "title": "Scale Pivot",
+      "description": "Offset to the pivot point around which to apply the scale. \"scale_pivot\" is specified as [x, y, z] using floating point values.",
+      "type": "array",
+      "default": [0, 0, 0],
+      "items": [
+        {
+          "title": "X",
+          "type": "number",
+          "default": 0
+        },
+        {
+          "title": "Y",
+          "type": "number",
+          "default": 0
+        },
+        {
+          "title": "Z",
+          "type": "number",
+          "default": 0
+        }
+      ]
+    },
+    "rotation_pivot": {
+      "title": "Rotation Pivot",
+      "description": "Offset to the pivot point around which to apply the rotation. \"rotation_pivot\" is specified as [x, y, z] using floating point values.",
+      "type": "array",
+      "default": [0, 0, 0],
+      "items": [
+        {
+          "title": "X",
+          "type": "number",
+          "default": 0
+        },
+        {
+          "title": "Y",
+          "type": "number",
+          "default": 0
+        },
+        {
+          "title": "Z",
           "type": "number",
           "default": 0
         }

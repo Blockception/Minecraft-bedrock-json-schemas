@@ -53,6 +53,21 @@
       "description": "The gravity applied to this entity when thrown. When this actor is not on the ground, subtracts this amount from the actors change in vertical position every tick. The higher the value, the faster the entity falls.",
       "title": "Gravity"
     },
+    "hit_nearest_passenger": {
+      "type": "boolean",
+      "default": false,
+      "title": "Hit Nearest Passenger",
+      "description": "If true, when hitting a vehicle, and there's at least one passenger in the vehicle, the damage will be dealt to the passenger closest to the projectile impact point. If there are no passengers, this setting does nothing."
+    },
+    "ignored_entities": {
+      "title": "Ignored Entities",
+      "description": "[EXPERIMENTAL] An array of strings defining the types of entities that this entity does not collide with.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
     "hit_ground_sound": {
       "$ref": "../../../../general/sound_event.json",
       "default": "",
