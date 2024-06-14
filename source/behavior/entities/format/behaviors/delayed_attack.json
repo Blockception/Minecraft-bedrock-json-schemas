@@ -110,7 +110,7 @@
     "reach_multiplier": {
       "title": "Reach Multiplier",
       "type": "number",
-      "default": 2,
+      "default": 1.5,
       "description": "Used with the base size of the entity to determine minimum target-distance before trying to deal attack damage."
     },
     "require_complete_path": {
@@ -133,7 +133,7 @@
     "track_target": {
       "title": "Track Target",
       "type": "boolean",
-      "default": false,
+      "default": true,
       "description": "Allows the entity to track the attack target, even if the entity has no sensing."
     },
     "x_max_rotation": {

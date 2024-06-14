@@ -18,13 +18,13 @@
     "probability": {
       "type": "number",
       "default": 0.02,
-      "description": "The probability of looking at the target. A value of 1.00 is 100%",
+      "description": "The probability of looking at the target. A value of 1.00 is 100%.",
       "title": "Probability"
     },
     "look_time": {
       "$ref": "../types/range_number_type.json",
       "default": [2, 4],
-      "description": "Time range to look at the entity.",
+      "description": "Time range to look at the nearest entity.",
       "title": "Look Time"
     },
     "angle_of_view_vertical": {

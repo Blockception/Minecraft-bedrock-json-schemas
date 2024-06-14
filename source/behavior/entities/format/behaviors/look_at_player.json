@@ -31,13 +31,13 @@
       "type": "number",
       "default": 0.02,
       "minimum": 0,
-      "description": "The probability of looking at the target. A value of 1.00 is 100%"
+      "description": "The probability of looking at the target. A value of 1.00 is 100%."
     },
     "look_time": {
       "title": "Look Time",
       "type": "array",
       "default": [2, 4],
-      "description": "Time range to look at the entity.",
+      "description": "Time range to look at the nearest player.",
       "items": [
         { "type": "number", "title": "Minimum", "description": "The minimum amount of time to look." },
         { "type": "number", "title": "Maximum", "description": "The maximum amount of time to look." }

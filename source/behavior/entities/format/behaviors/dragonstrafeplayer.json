@@ -11,7 +11,7 @@
     "active_speed": {
       "title": "Active Speed",
       "type": "number",
-      "default": 1,
+      "default": 3,
       "description": "The speed this entity moves when this behavior has started or while it's active."
     },
     "fireball_range": {

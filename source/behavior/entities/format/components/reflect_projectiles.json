@@ -1,0 +1,88 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.reflect_projectiles",
+  "type": "object",
+  "title": "Reflect Projectiles",
+  "description": "[EXPERIMENTAL] Allows an entity to reflect projectiles.",
+  "additionalProperties": false,
+  "properties": {
+    "azimuth_angle": {
+      "title": "Azimuth Angle",
+      "description": "A Molang expression defining the angle in degrees to add to the projectile's y axis rotation.",
+      "default": 0,
+      "anyOf": [
+        {
+          "type":"string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "elevation_angle": {
+      "title": "Elevation Angle",
+      "description": "A Molang expression defining the angle in degrees to add to the projectile's x axis rotation.",
+      "default": 0,
+      "anyOf": [
+        {
+          "type":"string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "reflected_projectiles": {
+      "title": "Reflected Projectiles",
+      "description": "An array of strings defining the types of projectiles that are reflected when they hit the entity.",
+      "type":"array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "reflection_scale": {
+      "title": "Refelction Scale",
+      "description": "A Molang expression defining the velocity scaling of the reflected projectile. Values below 1 decrease the projectile's velocity, and values above 1 increase it.",
+      "default": 1,
+      "anyOf": [
+        {
+          "type":"string"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "reflection_sound": {
+      "title": "Reflection Sound",
+      "description": "A string defining the name of the sound event to be played when a projectile is reflected. \"reflect\" unless specified.",
+      "default": "reflect",
+      "type": "string"
+    }
+  },
+  "examples": [
+    {
+      "reflected_projectiles": [
+          "xp_bottle",
+          "thrown_trident",
+          "shulker_bullet",
+          "dragon_fireball",
+          "arrow",
+          "snowball",
+          "egg",
+          "fireball",
+          "splash_potion",
+          "ender_pearl",
+          "wither_skull",
+          "wither_skull_dangerous",
+          "small_fireball",
+          "lingering_potion",
+          "llama_spit",
+          "fireworks_rocket",
+          "fishing_hook"
+        ],
+        "azimuth_angle": "180.0 + Math.random(-20.0, 20.0)",
+        "reflection_scale": "0.5"
+    }
+  ]
+}
