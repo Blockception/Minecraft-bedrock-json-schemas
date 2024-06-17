@@ -48,7 +48,6 @@
           "texture": {
             "title": "Texture",
             "type": "string",
-            "default": "",
             "description": "Texture name for the material."
           }
         }
