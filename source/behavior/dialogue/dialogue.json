@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behavior.dialogue",
   "defaultSnippets": [
     {
-      "format_version": "${1:1.20.41}",
+      "format_version": "${1:1.20.80}",
       "minecraft:npc_dialogue": {
         "scenes": [
           {
@@ -15,7 +15,7 @@
   ],
   "examples": [
     {
-      "format_version": "1.20.41",
+      "format_version": "1.20.80",
       "minecraft:npc_dialogue": {
         "scenes": [
           {
