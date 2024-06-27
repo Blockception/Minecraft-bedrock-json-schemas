@@ -46,7 +46,6 @@
         },
         "spawn_entity": {
           "type": "string",
-          "default": "",
           "description": "Identifier of the entity to spawn, leave empty to spawn the item defined above instead.",
           "title": "Spawn Entity"
         },

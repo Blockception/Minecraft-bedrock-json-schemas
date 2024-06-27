@@ -1,5 +1,5 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.break_blocks",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.break_blocks",
   "type": "object",
   "title": "Break Blocks",
   "additionalProperties": false,

@@ -92,7 +92,6 @@
     },
     "table": {
       "type": "string",
-      "default": "",
       "description": "File path relative to the resource pack root for this entity's trades.",
       "title": "Table"
     },

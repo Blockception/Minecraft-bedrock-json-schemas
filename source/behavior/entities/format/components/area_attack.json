@@ -12,7 +12,7 @@
       "description": "The type of damage that is applied to entities that enter the damage range."
     },
     "damage_cooldown": {
-      "title": "damage cooldown",
+      "title": "Damage Cooldown",
       "type": "number",
       "default": 0,
       "description": "Attack cooldown (in seconds) for how often this entity can attack a target."
@@ -35,7 +35,7 @@
       "title": "Entity Filter"
     },
     "play_attack_sound": {
-      "title": "play attack sound",
+      "title": "Play Attack Sound",
       "type": "boolean",
       "default": 4.94066e-324,
       "description": "If the entity should play their attack sound when attacking a target."

@@ -13,7 +13,6 @@
       "properties": {
         "name_filter": {
           "type": "string",
-          "default": "",
           "description": "List of special names that will cause the events defined in `on_named` to fire.",
           "title": "Name Filter"
         },

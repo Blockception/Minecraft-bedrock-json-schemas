@@ -11,23 +11,21 @@
       "properties": {
         "name": {
           "title": "Name",
-          "description": "UNDOCUMENTED.",
-          "$comment": "UNDOCUMENTED",
+          "description": "Effect name.",
+          "$ref": "../../../../general/vanilla/effect.json",
           "type": "string"
         },
         "duration": {
           "type": "integer",
           "default": 0,
           "minimum": 0,
-          "description": "The duration of the effect.",
-          "$comment": "UNDOCUMENTED"
+          "description": "The duration of the effect."
         },
         "amplifier": {
           "type": "integer",
           "default": 0,
           "minimum": 0,
-          "description": "The amplifier of the effect.",
-          "$comment": "UNDOCUMENTED"
+          "description": "The amplifier of the effect."
         }
       }
     }

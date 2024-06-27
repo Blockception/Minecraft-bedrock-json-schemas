@@ -25,7 +25,7 @@
       "type": "number",
       "default": 45,
       "description": "The Maximum time in seconds that the trader will be interested with showing it's trade items.",
-      "title": "Interest_time"
+      "title": "Interest Time"
     },
     "remove_item_time": {
       "type": "number",

@@ -65,7 +65,6 @@
         "interact_text": {
           "title": "Interact Text",
           "type": "string",
-          "default": "",
           "description": "Text to show when the player is able to interact in this way with this entity when playing with Touch-screen controls."
         },
         "on_interact": {
@@ -98,13 +97,11 @@
         "play_sounds": {
           "title": "Play Sounds",
           "$ref": "../../../../general/sound_event.json",
-          "default": "",
           "description": "List of sounds to play when the interaction occurs."
         },
         "spawn_entities": {
           "title": "Spawn Entities",
           "type": "string",
-          "default": "",
           "description": "List of entities to spawn when the interaction occurs."
         },
         "spawn_items": {

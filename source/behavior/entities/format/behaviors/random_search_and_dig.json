@@ -45,8 +45,7 @@
     "item_table": {
       "title": "Item Table",
       "type": "string",
-      "default": "",
-      "description": "File path relative to the resource pack root for items to spawn list (loot table format)."
+      "description": "File path relative to the behavior pack root for items to spawn list (loot table format)."
     },
     "on_digging_start": {
       "title": "On Digging Start",
