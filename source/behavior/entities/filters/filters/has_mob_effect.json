@@ -17,7 +17,7 @@
       "$ref": "./types/subject.json"
     },
     "value": {
-      "type": "string",
+      "$ref": "../../../../general/vanilla/effect.json",
       "description": "The specified mob effect.",
       "title": "Value"
     }
