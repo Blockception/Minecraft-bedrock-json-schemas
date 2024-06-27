@@ -4,7 +4,6 @@
   "title": "Sound Event",
   "description": "Reference to a sound definition in \"sound_definitions.json\".",
   "examples": [
-    "",
     "add.chest",
     "admire",
     "agitated",
