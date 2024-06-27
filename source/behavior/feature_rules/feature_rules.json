@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behavior.feature_rules",
   "examples": [
     {
-      "format_version": "1.20.41",
+      "format_version": "1.20.80",
       "minecraft:feature_rules": {
         "minecraft:ore_feature": {
           "description": {
@@ -15,8 +15,13 @@
       }
     }
   ],
-  "allOf": [
-    { "if": { "properties": { "format_version": { "type": "string", "const": "1.13.0" } } }, "then": { "$ref": "./1.13.0/feature_rules.json" } },
-    { "properties": { "format_version": { "$ref": "../../general/format_version.json" } } }
-  ]
+  "type": "object",
+  "title": "Feature Rules",
+  "description": "Each feature rule controls exactly one feature and serves as the root of a chain of feature data.",
+  "required": ["format_version", "minecraft:feature_rules"],
+  "additionalProperties": false,
+  "properties": {
+    "format_version": { "$ref": "../../general/format_version.json" },
+    "minecraft:feature_rules": { "$ref": "./format/minecraft.entity.json" }
+  }
 }

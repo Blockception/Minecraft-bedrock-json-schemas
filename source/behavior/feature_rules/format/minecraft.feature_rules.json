@@ -1,0 +1,149 @@
+{
+  "$id": "blockception.minecraft.behavior.feature_rules.minecraft.feature_rules",
+  "type": "object",
+  "title": "Feature Rules",
+  "additionalProperties": false,
+  "definitions": {
+    "coord_dist": {
+      "title": "",
+      "description": "UNDOCUMENTED.",
+      "$comment": "UNDOCUMENTED",
+      "oneOf": [
+        {
+          "$ref": "../../../molang/number.json",
+          "description": "Expression for the coordinate (evaluated each iteration).  Mutually exclusive with random distribution object below."
+        },
+        {
+          "type": "object",
+          "description": "Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.",
+          "additionalProperties": false,
+          "examples": [ { "numerator": 1, "denominator": 1 } ],
+          "properties": {
+            "numerator": {
+              "title": "Numerator",
+              "description": "UNDOCUMENTED.",
+              "$comment": "UNDOCUMENTED",
+              "type": "number",
+              "minimum": 1
+            },
+            "denominator": {
+              "title": "Denominator",
+              "description": "UNDOCUMENTED.",
+              "$comment": "UNDOCUMENTED",
+              "type": "number",
+              "minimum": 1
+            }
+          }
+        }
+      ]
+    }
+  },
+  "properties": {
+    "description": {
+      "title": "Description",
+      "description": "The description of this feature rule.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [ "identifier", "places_feature" ],
+      "properties": {
+        "identifier": {
+          "title": "Identifier",
+          "description": "The name of this feature in the form `namespace_name:feature_name`. `feature_name` must match the filename.",
+          "type": "string",
+          "$ref": "../../../general/feature/identifier.json"
+        },
+        "places_feature": {
+          "title": "Places Feature",
+          "description": "Named reference to the feature controlled by this rule.",
+          "type": "string"
+        }
+      }
+    },
+    "conditions": {
+      "title": "Conditions",
+      "description": "Parameters to control where and when the feature will be placed.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [ "placement_pass" ],
+      "properties": {
+        "placement_pass": {
+          "title": "Placement Pass",
+          "description": "When the feature should be placed relative to others. Earlier passes in the list are guaranteed to occur before later passes. Order is not guaranteed within each pass.",
+          "type": "string",
+          "enum": [
+            "pregeneration_pass",
+            "first_pass",
+            "before_underground_pass",
+            "underground_pass",
+            "after_underground_pass",
+            "before_surface_pass",
+            "surface_pass",
+            "after_surface_pass",
+            "before_sky_pass",
+            "sky_pass",
+            "after_sky_pass",
+            "final_pass"
+          ]
+        },
+        "minecraft:biome_filter": {
+          "title": "Biome Filter",
+          "description": "List of filter tests to determine which biomes this rule will attach to.",
+          "$ref": "../../entities/filters/filters.json"
+        }
+      }
+    },
+    "distribution": {
+      "title": "Distribution",
+      "description": "Parameters controlling the initial scatter of the feature.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [ "iterations" ],
+      "properties": {
+        "coordinate_eval_order": {
+          "title": "Coordinate Eval Order",
+          "description": "The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. If omitted, defaults to `xzy`.",
+          "type": "string",
+          "enum": [ "xyz", "xzy", "yxz", "yzx", "zxy", "zyx" ]
+        },
+        "iterations": {
+          "title": "Iterations",
+          "description": "Number of scattered positions to generate.",
+          "$ref": "../../../molang/number.json"
+        },
+        "scatter_chance": {
+          "title": "Scatter Chance",
+          "oneOf": [
+            {
+              "$ref": "../../../molang/number.json",
+              "description": "Probability (0-100] that this scatter will occur.  Not evaluated each iteration; either no iterations will run, or all will."
+            },
+            {
+              "type": "object",
+              "description": "Probability numerator / denominator that this scatter will occur.  Not evaluated each iteration; either no iterations will run, or all will.",
+              "additionalProperties": false,
+              "properties": {
+                "numerator": {
+                  "title": "Numerator",
+                  "description": "UNDOCUMENTED.",
+                  "$comment": "UNDOCUMENTED",
+                  "type": "number",
+                  "minimum": 1
+                },
+                "denominator": {
+                  "title": "Denominator",
+                  "description": "UNDOCUMENTED.",
+                  "$comment": "UNDOCUMENTED",
+                  "type": "number",
+                  "minimum": 1
+                }
+              }
+            }
+          ]
+        },
+        "x": { "title": "X", "$ref": "#/definitions/coord_dist" },
+        "z": { "title": "Y", "$ref": "#/definitions/coord_dist" },
+        "y": { "title": "Z", "$ref": "#/definitions/coord_dist" }
+      }
+    }
+  }
+}
