@@ -22,6 +22,6 @@
   "additionalProperties": false,
   "properties": {
     "format_version": { "$ref": "../../general/format_version.json" },
-    "minecraft:feature_rules": { "$ref": "./format/minecraft.entity.json" }
+    "minecraft:feature_rules": { "$ref": "./format/minecraft.feature_rules.json" }
   }
 }
