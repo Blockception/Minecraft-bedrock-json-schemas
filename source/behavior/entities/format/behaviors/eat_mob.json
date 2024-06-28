@@ -16,13 +16,11 @@
     "eat_mob_sound": {
       "title": "Eat Mob Sound",
       "$ref": "../../../../general/sound_event.json",
-      "default": "",
       "description": "Sets the sound that should play when eating a mob."
     },
     "loot_table": {
       "title": "Loot Table",
       "type": "string",
-      "default": "",
       "description": "The loot table for loot to be dropped when eating a mob."
     },
     "pull_in_force": {

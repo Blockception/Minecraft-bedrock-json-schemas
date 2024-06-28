@@ -18,7 +18,7 @@
   ],
   "examples": [
     {
-      "format_version": "1.20.41",
+      "format_version": "1.10.0",
       "animation_controllers": {
         "controller.animation.example": {
           "initial_state": "default",
@@ -92,7 +92,7 @@
   "required": ["format_version", "animation_controllers"],
   "additionalProperties": false,
   "properties": {
-    "format_version": { "$ref": "../../general/format_version.json" },
+    "format_version": { "type": "string", "const": "1.10.0" },
     "animation_controllers": {
       "type": "object",
       "title": "Animation Controllers",

@@ -3,7 +3,7 @@
   "type": "object",
   "title": "Has Biome Tag",
   "description": "Tests whether the biome the subject is in has the specified tag.",
-  "required": ["value"],
+  "required": [ "value" ],
   "properties": {
     "test": {
       "type": "string",
@@ -17,15 +17,16 @@
       "$ref": "./types/subject.json"
     },
     "value": {
-      "description": "(Required) The tag to look for.",
-      "type": "string",
-      "title": "Value"
+      "description": "The tag to look for.",
+      "title": "Value",
+      "anyOf": [
+        {
+          "$ref": "../../../../general/vanilla/biome_tag.json"
+        },
+        {
+          "$ref": "../../../../general/vanilla/biome.json"
+        }
+      ]
     }
-  },
-  "examples": [
-    {
-      "test": "has_biome_tag",
-      "value": "monster"
-    }
-  ]
+  }
 }

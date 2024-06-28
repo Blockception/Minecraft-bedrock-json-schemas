@@ -11,7 +11,7 @@
       "description": "List of effects to add to this entity after adding this component.",
       "items": {
         "oneOf": [
-          { "type": "string" },
+          { "$ref": "../../../../general/vanilla/effect.json" },
           {
             "type": "object",
             "additionalProperties": false,
@@ -41,7 +41,7 @@
                 "description": "Boolean value. When set to true, applying this effect displays an animated graphic on-screen similar to the totem of undying effect. Obviously, this only works for players. Defaults to false."
               },
               "effect": {
-                "type": "string",
+                "$ref": "../../../../general/vanilla/effect.json",
                 "title": "Effect",
                 "description": "The string identifier of the status effect to add. These are the same as used in the /effect command."
               },

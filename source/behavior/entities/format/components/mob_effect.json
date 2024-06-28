@@ -30,16 +30,8 @@
     },
     "mob_effect": {
       "title": "Mob Effect",
-      "type": "string",
-      "default": "",
+      "$ref": "../../../../general/vanilla/effect.json",
       "description": "The mob effect that is applied to entities that enter this entities effect range."
     }
-  },
-  "examples": [
-    {
-      "effect_range": 0.2,
-      "effect_time": 10,
-      "mob_effect": ""
-    }
-  ]
+  }
 }

@@ -17,35 +17,9 @@
       "$ref": "./types/subject.json"
     },
     "value": {
-      "description": "The Biome type to test.",
-      "type": "string",
-      "enum": [
-        "beach",
-        "desert",
-        "extreme_hills",
-        "flat",
-        "forest",
-        "ice",
-        "jungle",
-        "mesa",
-        "mushroom_island",
-        "ocean",
-        "plain",
-        "river",
-        "savanna",
-        "stone_beach",
-        "swamp",
-        "taiga",
-        "the_end",
-        "the_nether"
-      ],
+      "description": "The biome type to test.",
+      "$ref": "../../../../general/vanilla/biome.json",
       "title": "Value"
     }
-  },
-  "examples": [
-    {
-      "test": "is_biome",
-      "value": "beach"
-    }
-  ]
+  }
 }

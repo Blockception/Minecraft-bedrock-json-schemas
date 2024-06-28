@@ -1,7 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.shooter",
   "description": "Defines the entity's ranged attack behavior.",
-  "$comment": "As of 1.19.60 & out of exp 1.20.10",
   "type": "object",
   "title": "Shooter",
   "additionalProperties": false,
@@ -15,7 +14,6 @@
     "def": {
       "title": "Def",
       "type": "string",
-      "examples": ["minecraft:arrow", "minecraft:small_fireball", "minecraft:thrown_trident"],
       "description": "Actor definition to use as projectile for the ranged attack. The actor definition must have the projectile component to be able to be shot as a projectile"
     },
     "magic": {

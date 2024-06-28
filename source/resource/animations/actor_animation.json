@@ -12,7 +12,7 @@
       }
     }
   ],
-  "examples": [{ "format_version": "1.20.41", "animations": { "animation.annie.idle": { "loop": true, "animation_length": 2.12, "bones": {} } } }],
+  "examples": [{ "format_version": "1.10.0", "animations": { "animation.annie.idle": { "loop": true, "animation_length": 2.12, "bones": {} } } }],
   "additionalProperties": false,
   "type": "object",
   "title": "Actor Animation",
@@ -94,7 +94,7 @@
   },
   "required": ["format_version", "animations"],
   "properties": {
-    "format_version": { "$ref": "../../general/format_version.json" },
+    "format_version": { "type": "string", "const": "1.10.0" },
     "animations": {
       "title": "Animations Schema",
       "description": "The animation specification.",

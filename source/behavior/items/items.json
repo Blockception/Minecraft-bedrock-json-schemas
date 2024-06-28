@@ -4,7 +4,7 @@
     {
       "label": "New item",
       "body": {
-        "format_version": "${1:1.20.41}",
+        "format_version": "${1:1.20.80}",
         "minecraft:item": {
           "description": {
             "identifier": "$2:${3:${TM_FILENAME/[\\.].*//}}",

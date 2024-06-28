@@ -3,7 +3,7 @@
   "$id": "blockception.minecraft.behavior.cameras.preset",
   "defaultSnippets": [
     {
-      "format_version": "${1:1.20.41}",
+      "format_version": "${1:1.20.80}",
       "minecraft:npc_dialogue": {
         "identifier": "$2",
         "inherit_from": "$3",
@@ -17,7 +17,7 @@
   ],
   "examples": [
     {
-      "format_version": "1.20.41",
+      "format_version": "1.20.80",
       "minecraft:npc_dialogue": {
         "identifier": "example:custom",
         "inherit_from": "minecraft:free",

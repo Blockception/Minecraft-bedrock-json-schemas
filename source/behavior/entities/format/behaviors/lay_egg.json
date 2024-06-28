@@ -31,13 +31,13 @@
       "title": "Lay Egg Sound",
       "$ref": "../../../../general/sound_event.json",
       "default": "lay_egg",
-      "description": "[EXPERIMENTAL] Sound event name for laying egg. Defaulted to lay_egg which is used for Turtles."
+      "description": "Sound event name for laying egg. Defaulted to lay_egg which is used for Turtles."
     },
     "lay_seconds": {
       "title": "Lay Seconds",
       "type": "number",
       "default": 10.0,
-      "description": "[EXPERIMENTAL] Duration of the laying egg process in seconds."
+      "description": "Duration of the laying egg process in seconds."
     },
     "on_lay": {
       "title": "On Lay",
@@ -61,20 +61,20 @@
       "type": "array",
       "default": ["minecraft:sand"],
       "items": { "title": "Block ID", "$ref": "../../../../general/item/descriptor.json" },
-      "description": "[EXPERIMENTAL] Blocks that the mob can lay its eggs on top of."
+      "description": "Blocks that the mob can lay its eggs on top of."
     },
     "target_materials_above_block": {
       "title": "Target Materials Above Block",
       "type": "array",
       "default": ["Air"],
       "enum": ["Air", "Any", "Lava", "Water"],
-      "description": "[EXPERIMENTAL] Types of materials that can exist above the target block. Valid types are Air, Water, and Lava."
+      "description": "Types of materials that can exist above the target block. Valid types are Air, Water, and Lava."
     },
     "use_default_animation": {
       "title": "Use Default Animation",
       "type": "boolean",
       "default": true,
-      "description": "[EXPERIMENTAL] Specifies if the default lay-egg animation should be played when the egg is placed or not."
+      "description": "Specifies if the default lay-egg animation should be played when the egg is placed or not."
     }
   },
   "examples": [

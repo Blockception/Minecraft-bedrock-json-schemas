@@ -33,8 +33,7 @@
     "loot_table": {
       "title": "Loot Table",
       "type": "string",
-      "description": "The loot table that contains the possible loot the entity can drop with this goal.",
-      "examples": ["loot_tables/"]
+      "description": "The loot table that contains the possible loot the entity can drop with this goal."
     },
     "max_head_look_at_height": {
       "title": "Max Head Look At Height",

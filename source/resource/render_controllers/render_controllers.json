@@ -18,7 +18,7 @@
   ],
   "examples": [
     {
-      "format_version": "1.20.41",
+      "format_version": "1.10.0",
       "render_controllers": {
         "controller.render.example": { "geometry": "Geometry.default", "materials": [{ "*": "Material.default" }], "textures": ["Texture.default"] }
       }
@@ -37,7 +37,7 @@
     }
   },
   "properties": {
-    "format_version": { "$ref": "../../general/format_version.json" },
+    "format_version": { "type": "string", "const": "1.10.0" },
     "render_controllers": {
       "title": "Render Controllers",
       "description": "The collection of render controllers, each property is the identifier of a render controller.",

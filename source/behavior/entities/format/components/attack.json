@@ -13,8 +13,8 @@
     },
     "effect_name": {
       "type": "string",
+      "$ref": "../../../../general/vanilla/effect.json",
       "description": "Identifier of the status ailment to apply to an entity attacked by this entity's melee attack.",
-      "examples": ["wither", "hunger"],
       "title": "Effect Name"
     },
     "effect_duration": {

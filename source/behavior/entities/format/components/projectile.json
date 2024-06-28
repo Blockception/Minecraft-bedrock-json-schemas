@@ -37,7 +37,6 @@
     },
     "filter": {
       "type": "string",
-      "default": "",
       "description": "Entity Definitions defined here can't be hurt by the projectile.",
       "title": "Filter"
     },
@@ -129,7 +128,7 @@
     },
     "offset": {
       "type": "array",
-      "default": [0, 0.0, 0],
+      "default": [ 0, 0.0, 0 ],
       "description": "The offset from the entity's anchor where the projectile will spawn.",
       "title": "Offset",
       "$ref": "../../../../general/vectors/number3.json"
@@ -221,7 +220,7 @@
           "additionalProperties": false,
           "properties": {
             "shape": {
-              "enum": ["sphere", "cube"],
+              "enum": [ "sphere", "cube" ],
               "default": "sphere",
               "description": "The shape of the area that is frozen.",
               "title": "Shape"
@@ -429,8 +428,7 @@
             },
             "effect": {
               "title": "Effect",
-              "type": "string",
-              "default": "not set",
+              "$ref": "../../../../general/vanilla/effect.json",
               "description": "The identifier of the mob entity to affect."
             },
             "visible": {
@@ -490,7 +488,7 @@
           "type": "object",
           "description": "Removes the projectile.",
           "additionalProperties": true,
-          "properties": {}
+          "properties": { }
         },
         "spawn_aoe_cloud": {
           "title": "Spawn AOE Cloud",
@@ -696,7 +694,6 @@
     }
   },
   "examples": [
-    {},
     {
       "anchor": 0,
       "angle_offset": 0,
@@ -714,9 +711,9 @@
       "lightning": false,
       "liquid_inertia": 0.6,
       "multiple_targets": true,
-      "offset": [],
+      "offset": [ ],
       "on_fire_time": 5,
-      "on_hit": {},
+      "on_hit": { },
       "particle": "iconcrack",
       "potion_effect": -1,
       "power": 1.3,
