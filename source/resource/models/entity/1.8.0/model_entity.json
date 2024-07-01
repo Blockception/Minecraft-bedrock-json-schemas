@@ -14,7 +14,7 @@
       "description": "A version that tells minecraft what type of data format can be expected when reading this file."
     }
   },
-  "propertyNames": { "pattern": "(^geometry\\.[a-zA-Z0-9_.'\\-:]+|format_version)" },
+  "propertyNames": { "pattern": "(^geometry[\.:a-zA-Z0-9_\\-\\.]+|format_version)" },
   "additionalProperties": {
     "additionalProperties": false,
     "type": "object",
