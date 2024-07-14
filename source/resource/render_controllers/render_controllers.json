@@ -37,7 +37,7 @@
     }
   },
   "properties": {
-    "format_version": { "type": "string", "const": "1.10.0" },
+    "format_version": { "type": "string", "enum": ["1.8.0", "1.10.0"] },
     "render_controllers": {
       "title": "Render Controllers",
       "description": "The collection of render controllers, each property is the identifier of a render controller.",
