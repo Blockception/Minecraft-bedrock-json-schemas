@@ -1,9 +1,9 @@
 {
-  "$id": "blockception.minecraft.behavior.1.12.0.recipe.shaped",
+  "$id": "blockception.minecraft.behavior.recipe.shaped",
   "description": "Represents a shaped crafting recipe for a crafting table. The key used in the pattern may be any single character except the `space` character, which is reserved for empty slots in a recipe..",
-  "title": "Shaped Recipe 1.12.0",
+  "title": "Shaped Recipe",
   "additionalProperties": false,
-  "required": ["description"],
+  "required": ["description", "tags"],
   "type": "object",
   "properties": {
     "description": { "$ref": "./base types/definition.json" },
