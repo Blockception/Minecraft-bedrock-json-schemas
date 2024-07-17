@@ -1,7 +1,10 @@
 {
-  "$id": "blockception.minecraft.behavior.1.12.0.recipe.tags",
-  "description": "Recipe tags 1.12.0",
+  "$id": "blockception.minecraft.behavior.recipe.tags",
+  "description": "Recipe Tags",
   "title": "Tags",
   "type": "array",
-  "items": { "type": "string", "title": "Tag", "examples": ["smithing_table", "deprecated"] }
+  "items": { "type": "string", "title": "Tag", "examples": [
+    "crafting_table", "furnace", "smoker", "blast_furnace", "campfire", "soul_campfire", "brewing_stand", "smithing_table", "deprecated"
+    ] 
+  }
 }
