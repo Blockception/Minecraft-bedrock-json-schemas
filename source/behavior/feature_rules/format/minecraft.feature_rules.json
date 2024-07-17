@@ -34,6 +34,28 @@
               "minimum": 1
             }
           }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "distribution": {
+              "title": "Distribution",
+              "description": "Distribution type",
+              "type": "string",
+              "enum": ["uniform", "fixed_grid", "jittered_grid", "gaussian", "inverse_gaussian", "triangle"]
+            },
+            "extent": {
+              "title": "Extent", 
+              "description": "Represents the range of values on which that distribution operates, from minimum to maximum.",
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 2,
+              "items": {
+                "type": "number"
+              }
+            }
+          }
         }
       ]
     }
