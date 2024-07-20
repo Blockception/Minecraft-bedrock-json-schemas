@@ -72,9 +72,11 @@
             },
             "materials": {
               "type": "object",
-              "description": "UNDOCUMENTED: materials.",
               "title": "Materials",
-              "additionalProperties": { "type": "string", "description": "UNDOCUMENTED: additionalProperties.", "title": "Material" }
+              "additionalProperties": { 
+                "type": "string", "description": "Material Reference.", "title": "Material",
+                "$ref": "../../../general/vanilla/material.json"
+              }
             },
             "min_engine_version": {
               "type": "string",
