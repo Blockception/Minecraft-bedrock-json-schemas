@@ -3,6 +3,6 @@
   "title": "Molang Boolean",
   "description": "The minecraft molang definition that results in a boolean.",
   "anyOf": [{ "type": "string", "minLength": 0 }, { "type": "boolean" }],
-  "examples": [0, "query.variant", "(1.0)", "query.", "variable.=;"],
+  "examples": ["(1.0)", "(0.0)"],
   "defaultSnippets": [{ "label": "New Molang", "body": "$1" }]
 }
