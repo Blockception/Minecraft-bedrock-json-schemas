@@ -32,7 +32,7 @@
               "description": "UNDOCUMENTED.",
               "type": "array",
               "items": {
-                "$ref": "../../general/biome_item.json"
+                "$ref": "../../general/vanilla/biome.json"
               }
             },
             "quantity": {

@@ -155,8 +155,7 @@
         "runtime_identifier": {
           "type": "string",
           "title": "Runtime Identifier",
-          "description": "Sets the name for the Vanilla Minecraft identifier this entity will use to build itself from.",
-          "$ref": "../../../general/vanilla/entity.json"
+          "description": "Sets the name for the Vanilla Minecraft identifier this entity will use to build itself from."
         },
         "scripts": {
           "type": "object",
