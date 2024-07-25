@@ -9,6 +9,35 @@
     "test": { "type": "string", "title": "Test Property", "description": "Returns true when the subject entity receives the named damage type." },
     "operator": { "$ref": "./types/operator.json" },
     "subject": { "$ref": "./types/subject.json" },
-    "value": { "type": "string", "description": "The Damage type to test.", "$ref": "../../../../general/entity/damage_source.json", "title": "Value" }
+    "value": { "type": "string", "description": "The Damage type to test.", "title": "Value", "enum": [
+        "anvil",
+        "attack",
+        "block_explosion",
+        "contact",
+        "drowning",
+        "entity_explosion",
+        "fall",
+        "falling_block",
+        "fatal",
+        "fire",
+        "fire_tick",
+        "fly_into_wall",
+        "lava",
+        "magic",
+        "none",
+        "override",
+        "piston",
+        "projectile",
+        "self_destruct",
+        "sonic_boom",
+        "stalactite",
+        "stalagmite",
+        "starve",
+        "suffocation",
+        "thorns",
+        "void",
+        "wither"
+      ] 
+    }
   }
 }

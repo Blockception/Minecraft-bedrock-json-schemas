@@ -4,7 +4,7 @@
   "title": "Actor Entity 1.10.0",
   "description": "A client side entity definition.",
   "additionalProperties": false,
-  "required": ["format_version", "minecraft:client_entity"],
+  "required": [ "format_version", "minecraft:client_entity" ],
   "properties": {
     "format_version": { "$ref": "../../../general/format_version.json" },
     "minecraft:client_entity": {
@@ -12,26 +12,26 @@
       "additionalProperties": false,
       "title": "Client Entity",
       "description": "The entity description for clientside rendering, animations and models.",
-      "required": ["description"],
+      "required": [ "description" ],
       "properties": {
         "description": {
           "additionalProperties": false,
           "title": "Description",
           "description": "The entity description for clientside rendering, animations and models.",
           "type": "object",
-          "required": ["identifier"],
+          "required": [ "identifier" ],
           "properties": {
             "animations": {
               "title": "Animations",
               "description": "These names are used by the animation controller JSON. Players can reference animations from the vanilla Minecraft Resource Pack or create their own. Custom animations should be in the animation folder at the root of the Resource Pack.",
               "type": "object",
               "minProperties": 1,
-              "examples": [{ "basic": "controller.generic.basic" }],
+              "examples": [ { "basic": "controller.generic.basic" } ],
               "additionalProperties": {
                 "type": "string",
                 "description": "These names are used by the animation controller JSON. Players can reference animations from the vanilla Minecraft Resource Pack or create their own. Custom animations should be in the animation folder at the root of the Resource Pack.",
                 "title": "Animation Reference",
-                "examples": ["controller.", "animation."]
+                "examples": [ "controller.", "animation." ]
               }
             },
             "enable_attachables": { "type": "boolean", "description": "Whether or not attachables are enaboled.", "title": "Enable Attachables" },
@@ -71,7 +71,8 @@
               "additionalProperties": {
                 "type": "string",
                 "description": "Material reference.",
-                "title": "Material"
+                "title": "Material",
+                "$ref": "../../../general/vanilla/material.json"
               },
               "description": "A collection of material definitions.",
               "title": "Materials"
@@ -186,12 +187,12 @@
                 "should_update_bones_and_effects_offscreen": {
                   "title": "Should Update Bones And Effects Offscreen",
                   "description": "Bones and effects will still be updated if the entity is off screen if this expression returns anything other than 0.0.",
-                  "oneOf": [{ "type": "boolean" }, { "type": "string", "$ref": "../../../molang/string.json" }]
+                  "oneOf": [ { "type": "boolean" }, { "type": "string", "$ref": "../../../molang/string.json" } ]
                 },
                 "should_update_effects_offscreen": {
                   "title": "Should Update Effects Offscreen",
                   "description": "Effects will still be updated if the entity is off screen if this expression or `should_update_bones_and_effects_offscreen` returns anything other than 0.0.",
-                  "oneOf": [{ "type": "boolean" }, { "type": "string", "$ref": "../../../molang/string.json" }]
+                  "oneOf": [ { "type": "boolean" }, { "type": "string", "$ref": "../../../molang/string.json" } ]
                 },
                 "variables": {
                   "title": "Variables",
@@ -203,7 +204,7 @@
                     "title": "Variable",
                     "description": " If a variable is public, it can be read by other mobs. See the molang `->` operator for details.",
                     "type": "string",
-                    "enum": ["public"]
+                    "enum": [ "public" ]
                   }
                 }
               }
@@ -220,7 +221,7 @@
               "type": "object",
               "description": "The definition of how the spawn_egg icon looks like.",
               "title": "Spawn Egg",
-              "dependencies": { "texture_index": ["texture"], "base_colour": ["overlay_color"], "overlay_color": ["base_color"] },
+              "dependencies": { "texture_index": [ "texture" ], "base_colour": [ "overlay_color" ], "overlay_color": [ "base_color" ] },
               "examples": [
                 { "base_color": "#FFFFFF", "overlay_color": "#000000" },
                 { "texture": "example_egg", "texture_index": 0 }
@@ -231,14 +232,14 @@
                   "description": "The basic color of the egg.",
                   "title": "Base Color",
                   "format": "color-hex",
-                  "examples": ["#FFFFFF"]
+                  "examples": [ "#FFFFFF" ]
                 },
                 "overlay_color": {
                   "type": "string",
                   "description": "The colors of the dots on the egg.",
                   "title": "Overlay Color",
                   "format": "color-hex",
-                  "examples": ["#FFFFFF"]
+                  "examples": [ "#FFFFFF" ]
                 },
                 "texture": { "type": "string", "description": "The texture reference in item_texture.json", "title": "Texture" },
                 "texture_index": { "type": "integer", "description": "The index of the texture.", "title": "Texture Index", "default": 0 }
