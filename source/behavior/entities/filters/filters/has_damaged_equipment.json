@@ -3,18 +3,18 @@
   "type": "object",
   "title": "Has Damaged Equipment",
   "description": "Tests for the presence of a damaged named item in the designated slot of the subject entity.",
-  "required": [ "value" ],
+  "required": ["value"],
   "properties": {
     "test": {
       "type": "string",
-      "const": "has_equipment",
+      "const": "has_damaged_equipment",
       "description": "Tests for the presence of a damaged named item in the designated slot of the subject entity.",
       "title": "Test"
     },
     "domain": {
       "description": "The equipment location to test.",
       "default": "any",
-      "enum": [ "any", "inventory", "armor", "feet", "hand", "head", "leg", "torso" ],
+      "enum": ["any", "inventory", "armor", "feet", "hand", "head", "leg", "torso"],
       "title": "Domain"
     },
     "operator": {
