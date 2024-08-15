@@ -54,8 +54,8 @@
     }
   },
   "properties": {
-    "num_mip_levels": { "type": "integer", "title": "Num Mip Levels", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
-    "padding": { "type": "integer", "title": "Padding", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
+    "num_mip_levels": { "type": "integer", "title": "Num Mip Levels", "description": "Sets the number of mipmap levels for better texture quality at varying distances.", "$comment": "UNDOCUMENTED" },
+    "padding": { "type": "integer", "title": "Padding", "description": "Adds buffer space to prevent textures from bleeding into each other.", "$comment": "UNDOCUMENTED" },
     "resource_pack_name": { "type": "string", "title": "Resource Pack Name", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
     "texture_data": {
       "type": "object",
