@@ -23,7 +23,7 @@ describe("test incorrect files", function () {
           (succes) => {
             expect(succes.length, "Expected errors! but had none").to.greaterThan(0);
           },
-          (fail) => {
+          () => {
             Github.createError("No errors where found", { file: file });
             expect.fail("Failed to validate");
           }
@@ -32,7 +32,7 @@ describe("test incorrect files", function () {
           (success) => {
             expect(success.length, "Expected schemas to be returned").to.greaterThan(0);
           },
-          (fail) => {
+          () => {
             Github.createError("Found no schema", { file: file });
             expect.fail("failed on retrieving schemas");
           }

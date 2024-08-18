@@ -28,7 +28,7 @@ export namespace Files {
     cwd = cwd.replace("\\", "/");
 
     const options: FastGlob.Options = { onlyFiles: true, absolute: true, cwd: cwd };
-    let entries = FastGlob.sync(["*.json", "**/*.json"], options);
+    const entries = FastGlob.sync(["*.json", "**/*.json"], options);
 
     return entries;
   }
