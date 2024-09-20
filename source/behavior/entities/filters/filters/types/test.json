@@ -53,6 +53,7 @@
     "moon_intensity",
     "moon_phase",
     "on_ground",
-    "on_ladder"
+    "on_ladder",
+    "owner_distance"
   ]
 }

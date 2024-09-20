@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.filters",
   "title": "Filters",
   "$ref": "#/definitions/groups_spec",
-  "examples": [{ "test": "is_family", "subject": "other", "value": "example" }, { "test": "has_tag", "value": "example" }, []],
+  "examples": [ { "test": "is_family", "subject": "other", "value": "example" }, { "test": "has_tag", "value": "example" }, [ ] ],
   "definitions": {
     "filters_spec": {
       "defaultSnippets": [
@@ -38,10 +38,10 @@
           }
         }
       ],
-      "examples": [{ "all_of": [{}] }, { "any_of": [{}] }, { "none_of": [{}] }],
+      "examples": [ { "all_of": [ { } ] }, { "any_of": [ { } ] }, { "none_of": [ { } ] } ],
       "oneOf": [
         {
-          "propertyNames": { "enum": ["all_of", "any_of", "none_of"] },
+          "propertyNames": { "enum": [ "all_of", "any_of", "none_of" ] },
           "properties": {
             "all_of": {
               "title": "All Of",
@@ -61,7 +61,7 @@
           }
         },
         {
-          "required": ["test"],
+          "required": [ "test" ],
           "properties": {
             "all_of": {
               "title": "All Of",
@@ -161,6 +161,7 @@
             { "if": { "properties": { "test": { "const": "surface_mob" } } }, "then": { "$ref": "./filters/surface_mob.json" } },
             { "if": { "properties": { "test": { "const": "taking_fire_damage" } } }, "then": { "$ref": "./filters/taking_fire_damage.json" } },
             { "if": { "properties": { "test": { "const": "target_distance" } } }, "then": { "$ref": "./filters/target_distance.json" } },
+            { "if": { "properties": { "test": { "const": "owner_distance" } } }, "then": { "$ref": "./filters/owner_distance.json" } },
             { "if": { "properties": { "test": { "const": "trusts" } } }, "then": { "$ref": "./filters/trusts.json" } },
             { "if": { "properties": { "test": { "const": "weather_at_position" } } }, "then": { "$ref": "./filters/weather_at_position.json" } },
             { "if": { "properties": { "test": { "const": "weather" } } }, "then": { "$ref": "./filters/weather.json" } },
