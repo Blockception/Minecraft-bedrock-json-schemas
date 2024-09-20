@@ -19,9 +19,7 @@
       "minecraft:capped_surface": { "$ref": "./components/capped_surface.json" },
       "minecraft:climate": { "$ref": "./components/climate.json" },
       "minecraft:consolidated_features": { "$ref": "./components/consolidated_features.json" },
-      "minecraft:forced_features": { "$ref": "./components/forced_features.json" },
       "minecraft:frozen_ocean_surface": { "$ref": "./components/frozen_ocean_surface.json" },
-      "minecraft:ignore_automatic_features": { "$ref": "./components/ignore_automatic_features.json" },
       "minecraft:legacy_world_generation_rules": {
         "$ref": "./components/legacy_world_generation_rules.json"
       },
