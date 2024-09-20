@@ -356,7 +356,7 @@
     "minecraft:behavior.swoop_attack": { "$ref": "./behaviors/swoop_attack.json" },
     "minecraft:behavior.take_flower": { "$ref": "./behaviors/take_flower.json" },
     "minecraft:behavior.teleport_to_owner": { "$ref": "./behaviors/teleport_to_owner.json" },
-    "minecraft:behavior.move_around_target": { "$ref": "./behaviors/move_around_target" },
+    "minecraft:behavior.move_around_target": { "$ref": "./behaviors/move_around_target.json" },
     "minecraft:behavior.target_when_pushed": { "$ref": "./behaviors/target_when_pushed.json" },
     "minecraft:behavior.tempt": { "$ref": "./behaviors/tempt.json" },
     "minecraft:behavior.timer_flag_1": { "$ref": "./behaviors/timer_flag.json" },
