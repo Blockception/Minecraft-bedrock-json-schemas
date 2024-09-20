@@ -1,0 +1,90 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.fire_at_target",
+  "description": "Allows an entity to attack by firing a shot with a delay. Anchor and offset parameters of this component overrides the anchor and offset from projectile component.",
+  "type": "object",
+  "title": "Fire At Target",
+  "additionalProperties": false,
+  "required": [ ],
+  "properties": {
+    "priority": { "$ref": "types/priority.json" },
+    "attack_cooldown": {
+      "title": "Attack Cooldown",
+      "type": "number",
+      "default": 0.5,
+      "description": "The cooldown time in seconds before this goal can be used again."
+    },
+    "attack_range": {
+      "title": "Attack Range",
+      "$ref": "../../../../general/vectors/number3.json",
+      "description": "Target needs to be within this range for the attack to happen."
+    },
+    "owner_anchor": {
+      "title": "Owner Anchor",
+      "type": "integer",
+      "default": 2,
+      "description": "Entity anchor for the projectile spawn location."
+    },
+    "owner_offset": {
+      "title": "Owner Offset",
+      "description": "Offset vector from the owner_anchor.",
+      "$ref": "../../../../general/vectors/number3.json"
+    },
+    "target_anchor": {
+      "title": "Target Anchor",
+      "type": "integer",
+      "default": 2,
+      "description": "Entity anchor for projectile target."
+    },
+    "target_offset": {
+      "title": "Target Offset",
+      "description": "Offset vector from the target_anchor.",
+      "$ref": "../../../../general/vectors/number3.json"
+    },
+    "post_shoot_delay": {
+      "title": "Post Shoot Delay",
+      "type": "number",
+      "default": 0.2,
+      "description": "Time in seconds between firing the projectile and ending the goal."
+    },
+    "pre_shoot_delay": {
+      "title": "Pre Shoot Delay",
+      "type": "number",
+      "default": 0.75,
+      "description": "Time in seconds before firing the projectile."
+    },
+    "projectile_def": {
+      "title": "Projectile Definition",
+      "type": "string",
+      "description": "Actor definition to use as projectile for the ranged attack. The actor must be a projectile."
+    },
+    "ranged_fov": {
+      "title": "Ranged Fov",
+      "type": "number",
+      "default": 90,
+      "minimum": 0,
+      "maximum": 360,
+      "description": "Field of view (in degrees) when using sensing to detect a target for attack."
+    },
+    "max_head_rotation_x": {
+      "title": "Max Head Rotation X",
+      "type": "number",
+      "default": 30,
+      "minimum": 0,
+      "maximum": 360,
+      "description": "Maximum head rotation (in degrees), on the X-axis, that this entity can apply while trying to look at the target."
+    },
+    "max_head_rotation_y": {
+      "title": "Max Head Rotation Y",
+      "type": "number",
+      "default": 30,
+      "minimum": 0,
+      "maximum": 360,
+      "description": "Maximum head rotation (in degrees), on the Y-axis, that this entity can apply while trying to look at the target."
+    },
+    "filters": {
+      "title": "Filters",
+      "description": "Conditions that need to be met for the behavior to start.",
+      "$ref": "../../filters/filters.json"
+    }
+  }
+}
