@@ -38,6 +38,7 @@
     "is_leashed",
     "is_mark_variant",
     "is_moving",
+    "is_navigating",
     "is_owner",
     "is_riding",
     "is_skin_id",

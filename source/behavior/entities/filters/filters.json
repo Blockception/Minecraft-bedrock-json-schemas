@@ -134,6 +134,7 @@
             { "if": { "properties": { "test": { "const": "is_mark_variant" } } }, "then": { "$ref": "./filters/is_mark_variant.json" } },
             { "if": { "properties": { "test": { "const": "is_missing_health" } } }, "then": { "$ref": "./filters/is_missing_health.json" } },
             { "if": { "properties": { "test": { "const": "is_moving" } } }, "then": { "$ref": "./filters/is_moving.json" } },
+            { "if": { "properties": { "test": { "const": "is_navigating" } } }, "then": { "$ref": "./filters/is_moving.json" } },
             { "if": { "properties": { "test": { "const": "is_owner" } } }, "then": { "$ref": "./filters/is_owner.json" } },
             { "if": { "properties": { "test": { "const": "is_persistent" } } }, "then": { "$ref": "./filters/is_persistent.json" } },
             { "if": { "properties": { "test": { "const": "is_riding" } } }, "then": { "$ref": "./filters/is_riding.json" } },
