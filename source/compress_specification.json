@@ -18,7 +18,6 @@
     { "Source": "./behavior/recipes/recipes.json", "Destination": "../behavior/recipes/recipes.json" },
     { "Source": "./behavior/spawn_rules/spawn_rules.json", "Destination": "../behavior/spawn_rules/spawn_rules.json" },
     { "Source": "./behavior/trading/trading.json", "Destination": "../behavior/trading/trading.json" },
-    { "Source": "./behavior/volumes/volumes.json", "Destination": "../behavior/volumes/volumes.json" },
 
     { "Source": "./general/manifest.json", "Destination": "../general/manifest.json" },
     { "Source": "./general/world_x_packs.json", "Destination": "../general/world_x_packs.json" },
