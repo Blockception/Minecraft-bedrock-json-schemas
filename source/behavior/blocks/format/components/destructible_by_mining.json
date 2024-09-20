@@ -10,13 +10,54 @@
     {
       "type": "object",
       "additionalProperties": false,
-      "required": [],
+      "required": [ ],
       "properties": {
         "seconds_to_destroy": {
           "title": "Seconds To Destroy",
           "description": "Sets the number of seconds it takes to destroy the block with base equipment. Greater numbers result in greater mining times.",
           "type": "number",
           "default": 0.0
+        },
+        "item_specific_speeds": {
+          "type": "array",
+          "title": "Item Specific Destroy Speeds",
+          "description": "Optional array of objects to describe item-specific block destroy speeds.",
+          "minItems": 1,
+          "items": {
+            "title": "Item Specific Destroy Speed",
+            "type": "object",
+            "additionalProperties": false,
+            "required": [ "item", "destroy_speed" ],
+            "properties": {
+              "item": {
+                "anyOf": [
+                  {
+                    "title": "Item Identifer",
+                    "description": "ItemDescriptor filtering for the item used while mining.",
+                    "type": "string"
+                  },
+                  {
+                    "type": "object",
+                    "description": "ItemDescriptor filtering for the item used while mining.",
+                    "additionalProperties": false,
+                    "properties": {
+                      "tags": {
+                        "title": "Tags",
+                        "description": "Molang or tag",
+                        "type": "string"
+                      }
+                    }
+                  }
+                ]
+              },
+              "destroy_speed": {
+                "title": "Destroy Speed",
+                "type": "number",
+                "description": "Sets the number of seconds it takes to destroy the block with base equipment. Greater numbers result in greater mining times.",
+                "minimum": 0
+              }
+            }
+          }
         }
       }
     }
