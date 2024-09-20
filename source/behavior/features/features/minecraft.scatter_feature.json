@@ -5,7 +5,7 @@
   "additionalProperties": false,
   "required": ["description", "places_feature", "iterations"],
   "definitions": {
-    "coordinate": {
+    "coord_dist": {
       "title": "Coordinate",
       "oneOf": [
         {
@@ -73,56 +73,58 @@
       "description": "If true, snaps the y-value of the scattered position to the terrain heightmap. If false or unset, y-value is unmodified.",
       "type": "boolean"
     },
-    "iterations": {
-      "title": "Iterations",
-      "description": "Number of scattered positions to generate.",
-      "$ref": "../../../molang/number.json"
-    },
-    "scatter_chance": {
-      "title": "Scatter Chance",
-      "oneOf": [
-        {
-          "type": "object",
-          "additionalProperties": false,
-          "description": "Probability numerator / denominator that this scatter will occur.  Not evaluated each iteration; either no iterations will run, or all will.",
-          "properties": {
-            "numerator": {
-              "title": "Numerator",
-              "description": "UNDOCUMENTED.",
-              "type": "integer",
-              "minimum": 1
-            },
-            "denominator": {
-              "title": "Denominator",
-              "description": "UNDOCUMENTED.",
-              "type": "integer",
-              "minimum": 1
-            }
-          }
+    "distribution": {
+      "title": "Distribution",
+      "description": "Parameters controlling the initial scatter of the feature.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [ "iterations" ],
+      "properties": {
+        "coordinate_eval_order": {
+          "title": "Coordinate Eval Order",
+          "description": "The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. If omitted, defaults to `xzy`.",
+          "type": "string",
+          "enum": [ "xyz", "xzy", "yxz", "yzx", "zxy", "zyx" ]
         },
-        {
-          "$ref": "../../../molang/number.json",
-          "description": "Probability (0-100] that this scatter will occur. Not evaluated each iteration; either no iterations will run, or all will."
-        }
-      ]
-    },
-    "coordinate_eval_order": {
-      "title": "Coordinate Eval Order",
-      "description": "The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. If omitted, defaults to `xzy`.",
-      "type": "string",
-      "enum": ["xyz", "xzy", "yxz", "yzx", "zxy", "zyx"]
-    },
-    "x": {
-      "title": "X",
-      "$ref": "#/definitions/coordinate"
-    },
-    "y": {
-      "title": "X",
-      "$ref": "#/definitions/coordinate"
-    },
-    "z": {
-      "title": "X",
-      "$ref": "#/definitions/coordinate"
+        "iterations": {
+          "title": "Iterations",
+          "description": "Number of scattered positions to generate.",
+          "$ref": "../../../molang/number.json"
+        },
+        "scatter_chance": {
+          "title": "Scatter Chance",
+          "oneOf": [
+            {
+              "$ref": "../../../molang/number.json",
+              "description": "Probability (0-100] that this scatter will occur.  Not evaluated each iteration; either no iterations will run, or all will."
+            },
+            {
+              "type": "object",
+              "description": "Probability numerator / denominator that this scatter will occur.  Not evaluated each iteration; either no iterations will run, or all will.",
+              "additionalProperties": false,
+              "properties": {
+                "numerator": {
+                  "title": "Numerator",
+                  "description": "UNDOCUMENTED.",
+                  "$comment": "UNDOCUMENTED",
+                  "type": "number",
+                  "minimum": 1
+                },
+                "denominator": {
+                  "title": "Denominator",
+                  "description": "UNDOCUMENTED.",
+                  "$comment": "UNDOCUMENTED",
+                  "type": "number",
+                  "minimum": 1
+                }
+              }
+            }
+          ]
+        },
+        "x": { "title": "X", "$ref": "#/definitions/coord_dist" },
+        "z": { "title": "Y", "$ref": "#/definitions/coord_dist" },
+        "y": { "title": "Z", "$ref": "#/definitions/coord_dist" }
+      }
     }
   }
 }
