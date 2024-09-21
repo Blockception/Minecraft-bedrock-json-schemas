@@ -12,7 +12,8 @@
     "ingredients": {
       "description": "Items used as input (without a shape) for the recipe.",
       "title": "Ingredients",
-      "oneOf": [{ "$ref": "./base types/item.json" }, { "type": "array", "items": { "$ref": "./base types/item.json" } }]
+      "type": "array",
+      "items": { "$ref": "./base types/item.json" }
     },
     "group": { "type": "string", "title": "Group", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
     "priority": { "type": "integer", "description": "Item used as output for the furnace recipe.", "title": "Priority" },
