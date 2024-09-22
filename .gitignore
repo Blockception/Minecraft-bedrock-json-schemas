@@ -10,3 +10,4 @@ client/server
 lib
 lib/
 reports
+coverage

@@ -224,7 +224,7 @@
     },
     {
       "fileMatch": ["cameras/presets/*.{json,jsonc,json5}"],
-      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/cameras/presets/camera.json"
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/cameras/presets/cameras.json"
     },
     {
       "fileMatch": [
