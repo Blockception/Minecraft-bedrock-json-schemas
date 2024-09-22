@@ -1,8 +1,0 @@
-{
-  "$id": "blockception.minecraft.behavior.items.events.decrement_stack",
-  "title": "Decrement Stack",
-  "description": "UNDOCUMENTED.",
-  "$comment": "UNDOCUMENTED",
-  "type": "object",
-  "additionalProperties": false
-}

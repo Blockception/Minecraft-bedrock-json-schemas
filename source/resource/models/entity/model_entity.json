@@ -18,7 +18,11 @@
       ]
     }
   ],
-  "if": { "properties": { "format_version": { "type": "string", "const": "1.8.0" } } },
-  "then": { "$ref": "./1.8.0/model_entity.json" },
-  "else": { "$ref": "./1.16.0/model_entity.json" }
+  "if": { "properties": { "format_version": { "type": "string", "const": "1.21.0" } } },
+  "then": { "$ref": "./1.21.0/model_entity.json" },
+  "else": {
+    "if": { "properties": { "format_version": { "type": "string", "const": "1.8.0" } } },
+    "then": { "$ref": "./1.8.0/model_entity.json" },
+    "else": { "$ref": "./1.16.0/model_entity.json" }
+  }
 }

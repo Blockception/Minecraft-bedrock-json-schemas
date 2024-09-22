@@ -1,0 +1,23 @@
+{
+    "$id": "blockception.minecraft.behavior.items.minecraft:durability_sensor",
+    "$id": "764203503",
+    "title": "Durability Sensor",
+    "description": "Defines both the durability threshold, and the effects emitted when that threshold is met.",
+    "type": "object",
+    "properties": {
+        "durability": {
+            "description": "The effects are emitted when the item durability value is less than or equal to this value.",
+            "type": "integer"
+        },
+        "particle_type": {
+            "description": "Particle effect to emit when the threshold is met.",
+            "type": "string"
+        },
+        "sound_event": {
+            "title": "Sound Event",
+            "description": "Sound effect to emit when the threshold is met.",
+            "type": "string",
+            "$ref": "../../../../general/sound_event.json"
+        }
+    }
+}

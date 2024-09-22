@@ -1,0 +1,26 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.owner_distance",
+  "type": "object",
+  "title": "Owner Distance",
+  "description": "Tests the distance between the subject and its owner. Returns false if there is no owner.",
+  "required": ["value"],
+  "properties": {
+    "test": {
+      "type": "string",
+      "title": "Test",
+      "description": "The test property."
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
+    "value": {
+      "description": "(Required) A floating point value.",
+      "type": "number",
+      "default": true,
+      "title": "Value"
+    }
+  }
+}

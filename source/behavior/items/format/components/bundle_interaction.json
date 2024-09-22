@@ -1,0 +1,14 @@
+{
+    "$id": "blockception.minecraft.behavior.items.minecraft:bundle_interaction",
+    "title": "Bundle Interaction",
+    "description": "[EXPERIMENTAL] Adds bundle-specific interactions and tooltip to the item.",
+    "type": "object",
+    "properties": {
+        "num_viewable_slots": {
+            "description": "The maximum number of slots in the bundle viewable by the plater. Can be from 1 to 64. Default is 12.",
+            "type": "integer",
+            "minimum": 1.0,
+            "maximum": 64.0
+        }
+    }
+}
