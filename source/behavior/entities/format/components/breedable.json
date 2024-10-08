@@ -16,7 +16,7 @@
           "title": "Baby Type"
         },
         "breed_event": {
-          "$ref": "../types/event_object_filters.json",
+          "$ref": "../types/event_object.json",
           "description": "Event to run when this entity breeds.",
           "title": "Breed Event"
         },
