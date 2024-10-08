@@ -10,11 +10,11 @@
     }
   ],
   "oneOf": [
-    { "type": "string", "pattern": "^[a-zA-Z0-9_\\-:]+$", "description": "The event to fire." },
+    { "type": "string", "description": "The event to fire." },
     {
       "type": "object",
       "properties": {
-        "event": { "type": "string", "pattern": "^[a-zA-Z0-9_\\-:]+$", "description": "The event to fire.", "title": "Event" },
+        "event": { "type": "string", "description": "The event to fire.", "title": "Event" },
         "target": {
           "type": "string",
           "description": "The target of the event.",
