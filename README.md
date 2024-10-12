@@ -64,6 +64,7 @@ JSON validation can give snippets for sub items, as well as description, but thi
 - [Animations](resource/animations/animations.json)
 - [Animation Controllers](resource/animation_controllers/animation_controller.json)
 - [Attachables](resource/attachables/attachables.json)
+- [Biomes](resource/biomes/biomes.json)
 - [Biomes client](resource/biomes_client.json)
 - [Blocks](resource/blocks.json)
 - [Entity](resource/entity/entities.json)
