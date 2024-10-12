@@ -29,6 +29,7 @@
     { "Source": "./resource/animation_controllers/animation_controller.json", "Destination": "../resource/animation_controllers/animation_controller.json" },
     { "Source": "./resource/animations/actor_animation.json", "Destination": "../resource/animations/actor_animation.json" },
     { "Source": "./resource/attachables/attachables.json", "Destination": "../resource/attachables/attachables.json" },
+    { "Source": "./resource/biomes/biomes.json", "Destination": "../resource/biomes/biomes.json" },
     { "Source": "./resource/biomes_client.json", "Destination": "../resource/biomes_client.json" },
     { "Source": "./resource/blocks.json", "Destination": "../resource/blocks.json" },
     { "Source": "./resource/entity/entity.json", "Destination": "../resource/entity/entity.json" },
