@@ -61,6 +61,22 @@
       "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/resource/attachables/attachables.json"
     },
     {
+      "fileMatch": [
+        "resource_packs/*/biomes/*.{json,jsonc,json5}",
+        "*resource*pack*/biomes/*.{json,jsonc,json5}",
+        "*Resource*Pack*/biomes/*.{json,jsonc,json5}",
+        "*RP*/biomes/*.{json,jsonc,json5}",
+        "*rp*/biomes/*.{json,jsonc,json5}",
+        "resource_packs/*/biomes/**/*.{json,jsonc,json5}",
+        "*resource*pack*/biomes/**/*.{json,jsonc,json5}",
+        "*Resource*Pack*/biomes/**/*.{json,jsonc,json5}",
+        "*RP*/biomes/**/*.{json,jsonc,json5}",
+        "*rp*/biomes/**/*.{json,jsonc,json5}",
+        "*.{client_biome}.{json,jsonc,json5}"
+      ],
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/resource/biomes/biomes.json"
+    },
+    {
       "fileMatch": ["biomes_client.{json,jsonc,json5}"],
       "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/resource/biomes_client.json"
     },

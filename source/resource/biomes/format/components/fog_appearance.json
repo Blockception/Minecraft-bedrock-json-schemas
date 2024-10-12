@@ -1,0 +1,15 @@
+{
+  "$id": "blockception.minecraft.resource.biomes.minecraft.fog_appearance",
+  "title": "Fog Appearance",
+  "description": "Set the fog settings used during rendering. Biomes without this component will have default fog settings.",
+  "type": "object",
+  "required": ["fog_identifier"],
+  "additionalProperties": false,
+  "properties": {
+    "fog_identifier": {
+      "title": "Fog Identifier",
+      "description": "Identifier of fog definition to use.",
+      "type": "string"
+    }
+  }
+}

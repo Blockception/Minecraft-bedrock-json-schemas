@@ -1,0 +1,39 @@
+{
+  "$id": "blockception.minecraft.resource.biomes",
+  "title": "Client Biome Definitions",
+  "description": "A client biome definition.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["description", "components"],
+  "definitions": {
+    "components_ref": {
+      "type": "object",
+      "title": "Components",
+      "description": "Any components that this Client Biome uses.",
+      "additionalProperties": false,
+      "properties": {
+        // Components
+        "minecraft:fog_appearance": { "$ref": "./components/fog_appearance.json" },
+        "minecraft:sky_color": { "$ref": "./components/sky_color.json" },
+        "minecraft:water_appearance": { "$ref": "./components/water_appearance.json" }
+      }
+    }
+  },
+  "properties": {
+    "description": {
+      "title": "Client Biome Description",
+      "description": "Contains non-component settings for a Client Biome.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["identifier"],
+      "properties": {
+        "identifier": {
+          "title": "Identifier",
+          "description": "The name of the Client Biome, used by other features like the '/locate biome' command. Must match the name of a Biome defined by the game or a behavior pack.",
+          "type": "string"
+        }
+      }
+    },
+    "components": { "$ref": "#/definitions/components_ref" }
+  }
+}

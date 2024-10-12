@@ -1,0 +1,26 @@
+{
+  "$id": "blockception.minecraft.resource.biomes",
+  "title": "Client Biome",
+  "description": "Minecraft client_biome files define client-side settings for biomes in resource packs. This is the new preferred location for per-biome settings that used to be in biomes_client.json.",
+  "type": "object",
+  "required": ["format_version", "minecraft:client_biome"],
+  "additionalProperties": false,
+  "properties": {
+    "format_version": { "$ref": "../../general/format_version.json" },
+    "minecraft:client_biome": { "$ref": "./format/minecraft.client_biome.json" }
+  },
+  "defaultSnippets": [
+    {
+      "label": "New client biome",
+      "body": {
+        "format_version": "${1:1.21.40}",
+        "minecraft:client_biome": {
+          "description": {
+            "identifier": "${3:${TM_FILENAME/[\\.].*//}}"
+          },
+          "components": "^{$4}"
+        }
+      }
+    }
+  ]
+}

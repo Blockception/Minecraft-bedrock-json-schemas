@@ -1,0 +1,17 @@
+{
+  "$id": "blockception.minecraft.resource.biomes.minecraft.water_appearance",
+  "title": "Water Appearance",
+  "description": "Set the water surface color used during rendering. Biomes without this component will have default water surface color behavior.",
+  "type": "object",
+  "required": ["surface_color"],
+  "additionalProperties": false,
+  "properties": {
+    "surface_color": {
+      "title": "Surface Color",
+      "description": "RGB color of the water surface.",
+      "type": "string",
+      "format": "color-hex",
+      "examples": ["#FFFFFF"]
+    }
+  }
+}
