@@ -86,9 +86,17 @@
     },
     {
       "fileMatch": [
-        "entity/*.{json,jsonc,json5}",
-        "entity/**/*.{json,jsonc,json5}",
-        "*.{entity.rp,e.rp,ce,rpe,entity}.{json,jsonc,json5}",
+        "resource_packs/*/entity/*.{json,jsonc,json5}",
+        "*resource*pack*/entity/*.{json,jsonc,json5}",
+        "*Resource*Pack*/entity/*.{json,jsonc,json5}",
+        "*RP*/entity/*.{json,jsonc,json5}",
+        "*rp*/entity/*.{json,jsonc,json5}",
+        "resource_packs/*/entity/**/*.{json,jsonc,json5}",
+        "*resource*pack*/entity/**/*.{json,jsonc,json5}",
+        "*Resource*Pack*/entity/**/*.{json,jsonc,json5}",
+        "*RP*/entity/**/*.{json,jsonc,json5}",
+        "*rp*/entity/**/*.{json,jsonc,json5}",
+        "*.{entity.rp,e.rp,ce,rpe,actor,entity}.{json,jsonc,json5}",
         "!models/entity/**/*.{json,jsonc,json5}",
         "!models/entity/*.{json,jsonc,json5}"
       ],
