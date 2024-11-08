@@ -1,5 +1,5 @@
-import FastGlob = require("fast-glob");
-import path = require("path");
+import * as FastGlob from "fast-glob";
+import * as path from "path";
 
 export namespace Files {
   export function TestFolder(): string {

@@ -1,18 +1,24 @@
 {
   "tiers": [
     {
-      "trades": [
+      "total_exp_required": 5,
+      "groups": [
         {
-          "wants": [
+          "num_to_select": 2,
+          "trades": [
             {
-              "item": "minecraft:wheat",
-              "quantity": {
-                "min": 18,
-                "max": 22
-              }
+              "wants": [
+                {
+                  "item": "minecraft:wheat",
+                  "quantity": {
+                    "min": 18,
+                    "max": 22
+                  }
+                }
+              ],
+              "gives": [{ "item": "minecraft:emerald" }]
             }
-          ],
-          "gives": [{ "item": "minecraft:emerald" }]
+          ]
         }
       ]
     }

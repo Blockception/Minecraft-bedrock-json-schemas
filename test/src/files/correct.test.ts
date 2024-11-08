@@ -1,4 +1,3 @@
-import { Github } from "../github";
 import { Schema } from "../schema-tester";
 import { Files } from "../utillity";
 

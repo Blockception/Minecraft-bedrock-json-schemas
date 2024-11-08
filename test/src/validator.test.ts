@@ -1,8 +1,8 @@
-import path = require("path");
-import { Files } from "./utillity";
-import * as fs from "fs";
 import * as JSONC from "comment-json";
+import * as fs from "fs";
+import * as path from "path";
 import { ErrorAnnotation, Github } from "./github";
+import { Files } from "./utillity";
 
 describe("Validate", function () {
   const folder = path.join(Files.TestFolder(), "..", "source");
@@ -10,11 +10,8 @@ describe("Validate", function () {
   expect(files.length).toBeGreaterThan(0);
 
   test.each(files)("Validating schema parts: %s", (filepath) => {
-    let object: JsonSchema | undefined = undefined;
-    let data: string;
-
-    data = fs.readFileSync(filepath, "utf8");
-    object = JSONC.parse(data) as JsonSchema;
+    const data = fs.readFileSync(filepath, "utf8");
+    const object = JSONC.parse(data) as JsonSchema;
     expect(object).toBeDefined();
     if (!object) {
       return;

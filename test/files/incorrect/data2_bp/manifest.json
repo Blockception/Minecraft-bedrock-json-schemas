@@ -6,7 +6,7 @@
 
   "header": {
     "name": "Hell Cave Carver Features",
-    "uuid": "459909b9-fdb8-4eb3-9b8d-55d09545b89d",
+    "uuid": "459909b9-fdb8-4eb3-9b8d-55d09545b89h",
     "description": "Tests hell cave carver features",
     "version": [0, 0, 1],
     "min_engine_version": [1, 17, 0]
