@@ -10,6 +10,7 @@
   },
   "oneOf": [
     {
+      "type": "string",
       "$ref": "#/definitions/color"
     },
     {

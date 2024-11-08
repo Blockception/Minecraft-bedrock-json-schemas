@@ -6,7 +6,6 @@ import { ErrorAnnotation, Github } from "./github";
 
 describe("Validate", function () {
   const folder = path.join(Files.TestFolder(), "..", "source");
-  console.log(folder);
   const files = Files.GetFiles(folder);
   expect(files.length).toBeGreaterThan(0);
 

@@ -11,11 +11,7 @@
       "minecraft:equippable": {
         "slots": [
           {
-            "accepted_items": [
-              {
-                "tags": "query.any_tag('minecraft:is_tool')"
-              }
-            ],
+            "accepted_items": ["minecraft:tool"],
             "item": {
               "tags": "query.any_tag('minecraft:is_tool')"
             },

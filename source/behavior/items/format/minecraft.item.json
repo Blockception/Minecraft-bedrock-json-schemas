@@ -49,16 +49,15 @@
       }
     },
     "components": {
-      "additionalProperties": { "type": "object" },
       "type": "object",
       "description": "The components of this item.",
       "properties": {
-        "minecraft:allow_off_hand": {"$ref": "./components/allow_off_hand.json"},
+        "minecraft:allow_off_hand": { "$ref": "./components/allow_off_hand.json" },
         "minecraft:block_placer": { "$ref": "./components/block_placer.json" },
-        "minecraft:can_destroy_in_creative": {"$ref": "./components/can_destroy_in_creative.json"},
+        "minecraft:can_destroy_in_creative": { "$ref": "./components/can_destroy_in_creative.json" },
         "minecraft:cooldown": { "$ref": "./components/cooldown.json" },
         "minecraft:custom_components": { "$ref": "./components/custom_components.json" },
-        "minecraft:damage": {"$ref": "./components/damage.json"},
+        "minecraft:damage": { "$ref": "./components/damage.json" },
         "minecraft:digger": { "$ref": "./components/digger.json" },
         "minecraft:display_name": { "$ref": "./components/display_name.json" },
         "minecraft:durability": { "$ref": "./components/durability.json" },

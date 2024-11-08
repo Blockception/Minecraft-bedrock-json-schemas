@@ -15,7 +15,9 @@
       "minecraft:damage": 2,
       "minecraft:stacked_by_data": true,
       "minecraft:should_despawn": true,
-      "minecraft:hover_text_color": "aqua",
+      "minecraft:hover_text_color": {
+        
+      },
       "minecraft:use_animation": "brush",
       "minecraft:use_modifiers": {
         "use_duration": 2
