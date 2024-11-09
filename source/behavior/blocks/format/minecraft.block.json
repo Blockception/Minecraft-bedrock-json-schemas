@@ -5,7 +5,7 @@
   "description": "A custom block definition.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["description", "components"],
+  "required": [ "description", "components" ],
   "definitions": {
     "components_ref": {
       "type": "object",
@@ -29,22 +29,12 @@
         "minecraft:map_color": { "$ref": "./components/map_color.json" },
         "minecraft:material_instances": { "$ref": "./components/material_instances.json" },
         "minecraft:placement_filter": { "$ref": "./components/placement_filter.json" },
+        "minecraft:redstone_conductivity": { "$ref": "./components/redstone_conductivity.json" },
         "minecraft:selection_box": { "$ref": "./components/selection_box.json" },
         "minecraft:transformation": { "$ref": "./components/transformation.json" },
         "minecraft:custom_components": { "$ref": "./components/custom_components.json" },
         "minecraft:tick": { "$ref": "./components/tick.json" },
-        "minecraft:entity_fall_on": { "$ref": "./components/entity_fall_on.json" },
-
-        //Triggers
-        "minecraft:on_fall_on": { "$ref": "./triggers/on_fall_on.json" },
-        "minecraft:on_interact": { "$ref": "./triggers/on_interact.json" },
-        "minecraft:on_placed": { "$ref": "./triggers/on_placed.json" },
-        "minecraft:on_player_destroyed": { "$ref": "./triggers/on_player_destroyed.json" },
-        "minecraft:on_player_placing": { "$ref": "./triggers/on_player_placing.json" },
-        "minecraft:on_step_off": { "$ref": "./triggers/on_step_off.json" },
-        "minecraft:on_step_on": { "$ref": "./triggers/on_step_on.json" },
-        "minecraft:queued_ticking": { "$ref": "./triggers/queued_ticking.json" },
-        "minecraft:random_ticking": { "$ref": "./triggers/random_ticking.json" }
+        "minecraft:entity_fall_on": { "$ref": "./components/entity_fall_on.json" }
       },
       "patternProperties": {
         "tag:.+": {
@@ -88,7 +78,7 @@
       "description": "The description for this block.",
       "type": "object",
       "additionalProperties": false,
-      "required": ["identifier"],
+      "required": [ "identifier" ],
       "properties": {
         "identifier": {
           "title": "Identifier",
@@ -100,9 +90,9 @@
           "title": "Menu Category",
           "description": "Specifies the menu category and group for the block, which determine where this block is placed in the inventory and crafting table container screens. If this field is omitted, the block will not appear in the inventory or crafting table container screens.",
           "type": "object",
-          "examples": [{ "category": "construction" }],
+          "examples": [ { "category": "construction" } ],
           "additionalProperties": false,
-          "required": ["category"],
+          "required": [ "category" ],
           "properties": {
             "category": {
               "$ref": "../../../general/vanilla/creative_category.json"
@@ -122,7 +112,6 @@
         "traits": { "$ref": "#/definitions/traits_ref" }
       }
     },
-    "events": { "$ref": "./events.json" },
     "components": { "$ref": "#/definitions/components_ref" },
     "permutations": {
       "type": "array",

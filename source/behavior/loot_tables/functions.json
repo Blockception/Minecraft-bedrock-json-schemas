@@ -27,9 +27,9 @@
         "set_data",
         "set_lore",
         "set_name",
+        "set_potion",
         "specific_enchants",
         "trader_material_type",
-
         "minecraft:enchant_book_for_trading",
         "minecraft:enchant_random_gear",
         "minecraft:enchant_randomly",
@@ -50,6 +50,7 @@
         "minecraft:set_data",
         "minecraft:set_lore",
         "minecraft:set_name",
+        "minecraft:set_potion",
         "minecraft:specific_enchants",
         "minecraft:trader_material_type"
       ]
@@ -83,6 +84,7 @@
     { "if": { "properties": { "function": { "type": "string", "pattern": "^(minecraft:)*random_dye$" } } }, "then": { "$ref": "./functions/random_dye.json" } },
     { "if": { "properties": { "function": { "type": "string", "pattern": "^(minecraft:)*set_lore$" } } }, "then": { "$ref": "./functions/set_lore.json" } },
     { "if": { "properties": { "function": { "type": "string", "pattern": "^(minecraft:)*set_name$" } } }, "then": { "$ref": "./functions/set_name.json" } },
+    { "if": { "properties": { "function": { "type": "string", "pattern": "^(minecraft:)*set_potion$" } } }, "then": { "$ref": "./functions/set_potion.json" } },
     { "if": { "properties": { "function": { "type": "string", "pattern": "^(minecraft:)*specific_enchants$" } } }, "then": { "$ref": "./functions/specific_enchants.json" } }
   ]
 }

@@ -1,0 +1,24 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.teleport_to_owner",
+  "type": "object",
+  "title": "Teleport To Owner",
+  "description": "Allows an entity to teleport to its owner.",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": {
+      "$ref": "types/priority.json"
+    },
+    "cooldown": {
+      "title": "Cooldown",
+      "description": "The time in seconds that must pass for the entity to be able to try to teleport again.",
+      "type": "number", 
+      "minimum": 1.0
+    },
+    "filters": {
+      "title": "Filters",
+      "description": "Conditions to be satisfied for the entity to teleport to its owner.",
+      "$ref": "../../filters/filters.json"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+    "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.swim_up_for_breath",
+    "description": "Allows the mob to try to move to air once it is close to running out of its total breathable supply.",
+    "type": "object",
+    "title": "Swim Up For Breath",
+    "additionalProperties": false,
+    "properties": {
+      "priority": {
+        "$ref": "types/priority.json"
+      },
+      "material_type": {
+        "title": "Idle Time",
+        "enum": ["water", "lava","any"],
+        "description": "The material the mob is traveling in. An air block will only be considered valid to move to with a block of this material below it.",
+        "default": "water"
+      },
+      "search_height": {
+        "type": "integer",
+        "title": "Search Height",
+        "default": 16,
+        "description": "The height (in blocks) above the mob's current position that it will search for a valid air block to move to. If a valid block cannot be found, the mob will move to the position this many blocks above it."
+      },
+      "search_radius": {
+        "type": "integer",
+        "title": "Search Radius",
+        "default": 4,
+        "description": "The radius (in blocks) around the mob's current position that it will search for a valid air block to move to."
+      },
+      "speed_mod": {
+        "type": "number",
+        "title": "Speed Mod",
+        "default": 1.4,
+        "description": "Movement speed multiplier of the mob when using this Goal."
+      }
+    }
+}  

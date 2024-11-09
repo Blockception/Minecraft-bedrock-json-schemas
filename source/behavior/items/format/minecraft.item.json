@@ -54,13 +54,17 @@
       "properties": {
         "minecraft:allow_off_hand": { "$ref": "./components/allow_off_hand.json" },
         "minecraft:block_placer": { "$ref": "./components/block_placer.json" },
+        "minecraft:bundle_interaction": { "$ref": "./components/bundle_interaction.json" },
         "minecraft:can_destroy_in_creative": { "$ref": "./components/can_destroy_in_creative.json" },
         "minecraft:cooldown": { "$ref": "./components/cooldown.json" },
         "minecraft:custom_components": { "$ref": "./components/custom_components.json" },
         "minecraft:damage": { "$ref": "./components/damage.json" },
+        "minecraft:damage_absorption": { "$ref": "./components/damage_absorption.json" },
         "minecraft:digger": { "$ref": "./components/digger.json" },
         "minecraft:display_name": { "$ref": "./components/display_name.json" },
+        "minecraft:durability_sensor": { "$ref": "./components/durability_sensor.json" },
         "minecraft:durability": { "$ref": "./components/durability.json" },
+        "minecraft:dyeable": { "$ref": "./components/dyeable.json" },
         "minecraft:enchantable": { "$ref": "./components/enchantable.json" },
         "minecraft:entity_placer": { "$ref": "./components/entity_placer.json" },
         "minecraft:food": { "$ref": "./components/food.json" },
@@ -72,17 +76,18 @@
         "minecraft:max_stack_size": { "$ref": "./components/max_stack_size.json" },
         "minecraft:projectile": { "$ref": "./components/projectile.json" },
         "minecraft:record": { "$ref": "./components/record.json" },
+        "minecraft:rarity": { "$ref": "./components/rarity.json" },
         "minecraft:repairable": { "$ref": "./components/repairable.json" },
         "minecraft:shooter": { "$ref": "./components/shooter.json" },
         "minecraft:should_despawn": { "$ref": "./components/should_despawn.json" },
         "minecraft:stacked_by_data": { "$ref": "./components/stacked_by_data.json" },
+        "minecraft:storage_item": { "$ref": "./components/storage_item.json" },
         "minecraft:tags": { "$ref": "./components/tags.json" },
         "minecraft:throwable": { "$ref": "./components/throwable.json" },
         "minecraft:use_animation": { "$ref": "./components/use_animation.json" },
         "minecraft:use_modifiers": { "$ref": "./components/use_modifiers.json" },
         "minecraft:wearable": { "$ref": "./components/wearable.json" }
       }
-    },
-    "events": { "$ref": "./events.json" }
+    }
   }
 }
