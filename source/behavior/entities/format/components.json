@@ -48,6 +48,7 @@
     "minecraft:dash": { "$ref": "./components/dash.json" },
     "minecraft:default_look_angle": { "$ref": "./components/default_look_angle.json" },
     "minecraft:despawn": { "$ref": "./components/despawn.json" },
+    "minecraft:dimension_bound": { "$ref": "./components/dimension_bound.json" },
     "minecraft:drying_out_timer": { "$ref": "./components/drying_out_timer.json" },
     "minecraft:dweller": { "$ref": "./components/dweller.json" },
     "minecraft:economy_trade_table": { "$ref": "./components/economy_trade_table.json" },
