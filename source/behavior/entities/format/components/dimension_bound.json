@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.dimension_bound",
+  "type": "object",
+  "title": "Dimension Bound",
+  "additionalProperties": false,
+  "description": "Restricts entities from moving between dimensions when using Minecraft portals, keeping them bound to their current dimension.",
+  "required": [],
+  "properties": {}
+}
