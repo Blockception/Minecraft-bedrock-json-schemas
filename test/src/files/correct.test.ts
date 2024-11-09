@@ -1,45 +1,23 @@
-import { expect } from "chai";
-import { Github } from "../github";
 import { Schema } from "../schema-tester";
 import { Files } from "../utillity";
 
 describe("test correct files", function () {
   const folder = Files.CorrectFilesFolder().replace(/\\/gi, "/");
-  const files = Files.GetFiles(folder);
+  const files = Files.GetFiles(folder).filter((f) => f.endsWith(".json"));
   const validator = Schema.GetValidator();
 
-  expect(files.length, "No files were returned").to.greaterThan(0);
+  expect(files.length).toBeGreaterThan(0);
 
-  files
-    .filter((f) => f.endsWith(".json"))
-    .forEach((file) => {
-      const testfolder = file.replace(folder + "/", "");
+  test.each(files)("File should have a schema & validate correctly: %s", async (file) => {
+    const result = validator.ValidateFile(file);
+    const schemas = validator.ls.getMatchingSchemas(result.doc, result.jdoc);
 
-      it(`File should have a schema & validate correctly: ${testfolder}`, async function () {
-        const result = validator.ValidateFile(file);
-        const schemas = validator.ls.getMatchingSchemas(result.doc, result.jdoc);
+    const succes = await result.promise;
 
-        result.promise.then(
-          (succes) => {
-            expect(succes.length, "Expected no errors got: " + succes.length).to.equal(0);
-            succes.forEach((item) => console.log(item.message));
-          },
-          (fail) => {
-            Github.createError("Failed on validating", { file: file });
-            expect.fail("Failed to validate");
-          }
-        );
-        schemas.then(
-          (success) => {
-            expect(success.length, "Expected schemas to be returned").to.greaterThan(0);
-          },
-          (fail) => {
-            Github.createError("Failed on retrieving schemas", { file: file });
-            expect.fail("failed on retrieving schemas");
-          }
-        );
+    expect(succes).toHaveLength(0);
+    succes.forEach((item) => console.log(item.message));
 
-        return Promise.all([result.promise, schemas]);
-      });
-    });
+    const s = await schemas;
+    expect(s.length).toBeGreaterThan(0);
+  });
 });

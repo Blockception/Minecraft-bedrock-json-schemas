@@ -1,35 +1,24 @@
-import path = require("path");
-import { Files } from "./utillity";
-import * as fs from "fs";
 import * as JSONC from "comment-json";
-import { expect } from "chai";
+import * as fs from "fs";
+import * as path from "path";
 import { ErrorAnnotation, Github } from "./github";
+import { Files } from "./utillity";
 
 describe("Validate", function () {
   const folder = path.join(Files.TestFolder(), "..", "source");
-  console.log(folder);
   const files = Files.GetFiles(folder);
+  expect(files.length).toBeGreaterThan(0);
 
-  files.forEach((filepath) => {
-    const filename = filepath.slice(folder.length);
+  test.each(files)("Validating schema parts: %s", (filepath) => {
+    const data = fs.readFileSync(filepath, "utf8");
+    const object = JSONC.parse(data) as JsonSchema;
+    expect(object).toBeDefined();
+    if (!object) {
+      return;
+    }
 
-    it(`Validating schema parts: ${filename}`, function () {
-      let object: JsonSchema | undefined = undefined;
-      let data: string;
-
-      data = fs.readFileSync(filepath, "utf8");
-      object = <JsonSchema>JSONC.parse(data);
-      expect(object).to.not.be.undefined;
-      expect(object).to.not.be.null;
-
-      if (!object) {
-        this.skip();
-        return;
-      }
-
-      const explorer = new Explorer(data, filepath);
-      explorer.explore_refs(object, path.dirname(filepath));
-    });
+    const explorer = new Explorer(data, filepath);
+    explorer.explore_refs(object, path.dirname(filepath));
   });
 });
 
@@ -60,7 +49,7 @@ class Explorer {
           anno.file = this.filepath;
 
           Github.createError(`Ref not found: ${ref}`, anno);
-          expect.fail(`ref ${ref} does not exists`);
+          throw new Error(`ref ${ref} does not exists`);
         }
       }
     }

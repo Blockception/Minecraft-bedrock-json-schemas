@@ -1,10 +1,8 @@
 {
-  "format_version": "1.20.41",
-  "minecraft:npc_dialogue": {
+  "format_version": "1.19.50",
+  "minecraft:camera_preset": {
     "identifier": "example:custom",
     "inherit_from": "minecraft:free",
-    "player_effects": true,
-    "listener": "player",
     "pos_x": 30,
     "pos_y": 90,
     "pos_z": -20,
