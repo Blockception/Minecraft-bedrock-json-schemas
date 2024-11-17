@@ -1,7 +1,7 @@
 {
     "$id": "blockception.minecraft.behavior.items.minecraft:bundle_interaction",
     "title": "Bundle Interaction",
-    "description": "[EXPERIMENTAL] Adds bundle-specific interactions and tooltip to the item.",
+    "description": "Adds bundle-specific interactions and tooltip to the item.",
     "type": "object",
     "properties": {
         "num_viewable_slots": {

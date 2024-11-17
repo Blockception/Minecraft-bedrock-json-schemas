@@ -633,6 +633,12 @@
       "description": "Determines the velocity of the projectile.",
       "title": "Power"
     },
+    "reflect_immunity": {
+      "type": "number",
+      "default": 0,
+      "description": "During the specified time, in seconds, the projectile cannot be reflected by hitting it",
+      "title": "Reflect Immunity"
+    },
     "reflect_on_hurt": {
       "type": "boolean",
       "default": false,

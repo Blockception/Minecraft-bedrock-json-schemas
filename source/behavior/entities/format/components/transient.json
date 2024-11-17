@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.transient",
+  "type": "object",
+  "title": "Transient",
+  "additionalProperties": false,
+  "description": "An entity with this component will NEVER persist, and forever disappear when unloaded.",
+  "required": [ ],
+  "properties": { }
+}

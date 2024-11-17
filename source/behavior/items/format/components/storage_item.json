@@ -1,7 +1,7 @@
 {
     "$id": "blockception.minecraft.behavior.items.minecraft:storage_item",
     "title": "Storage Item",
-    "description": "[EXPERIMENTAL] Storage Items can be used by other components to store other items within this item.",
+    "description": "Storage Items can be used by other components to store other items within this item.",
     "type": "object",
     "properties": {
         "allow_nested_storage_items": {

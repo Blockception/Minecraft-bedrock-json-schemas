@@ -1,7 +1,7 @@
 {
   "speed_multiplier": {
     "prefix": "snippet.speed_multiplier",
-    "body": ["\"priority\": { \"$ref\": \"types/base_priority.json\" },", "\"speed_multiplier\": { \"$ref\": \"types/base_speed_multiplier.json\" },"]
+    "body": [ "\"priority\": { \"$ref\": \"types/base_priority.json\" },", "\"speed_multiplier\": { \"$ref\": \"types/base_speed_multiplier.json\" }," ]
   },
   "priority": {
     "prefix": "snippet.priority",
@@ -22,5 +22,9 @@
   "string": {
     "prefix": "json.string",
     "body": "\"title\": \"\",\n\"description\": \"\",\n\"type\": \"string\""
+  },
+  "boolean": {
+    "prefix": "json.boolean",
+    "body": "\"title\": \"\",\n\"description\": \"\",\n\"type\": \"boolean\",\n\"default\": false"
   }
 }
