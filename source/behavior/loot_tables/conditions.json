@@ -20,6 +20,10 @@
       "then": { "$ref": "./conditions/killed_by_player_or_pets.json" }
     },
     {
+      "if": { "properties": { "condition": { "type": "string", "const": "killed_by_entity" } } },
+      "then": { "$ref": "./conditions/killed_by_entity.json" }
+    },
+    {
       "if": { "properties": { "condition": { "type": "string", "const": "random_chance" } } },
       "then": { "$ref": "./conditions/random_chance.json" }
     },

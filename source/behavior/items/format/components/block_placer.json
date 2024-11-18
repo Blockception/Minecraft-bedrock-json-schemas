@@ -4,7 +4,7 @@
   "description": "Planter item component. planter items are items that can be planted.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["block"],
+  "required": [ "block" ],
   "definitions": {
     "use_on_item": {
       "type": "object",
@@ -20,6 +20,12 @@
       "title": "Use On",
       "type": "array",
       "items": { "$ref": "#/definitions/use_on_item" }
+    },
+    "replace_block_item": {
+      "title": "Replace Block Item",
+      "description": "Allows you to specify that this item should replace the default item created for the data-driven block it places.",
+      "type": "boolean",
+      "default": false
     }
   }
 }

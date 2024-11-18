@@ -1,0 +1,15 @@
+{
+  "$id": "blockception.minecraft.behavior.condition.killed_by_entity",
+  "type": "object",
+  "additionalProperties": false,
+  "description": "Returns the condition true if the actor of the loot table is killed by a specific entity type.",
+  "title": "Killed By Entity",
+  "properties": {
+    "condition": { "type": "string", "title": "Condition", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
+    "entity_type": {
+      "title": "Entity Type",
+      "description": "The entity type to match",
+      "type": "string"
+    }
+  }
+}

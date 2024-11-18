@@ -3,11 +3,11 @@
   "description": "`minecraft:single_block_feature` places a single block in the world. The `may_place_on` and `may_replace` fields are allowlists which specify where the block can be placed. If these fields are omitted, the block can be placed anywhere. The block's internal survivability and placement rules can optionally be enforced with the `enforce_survivability_rules` and `enforce_placement_rules` fields. These rules are specified per-block and are typically designed to produce high quality gameplay or natural behavior. However, enabling this enforcement may make it harder to debug placement failures.\n Succeeds if: The block is successfully placed in the world.\n Fails if: The block fails to be placed.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["description", "places_block", "enforce_placement_rules", "enforce_survivability_rules"],
+  "required": [ "description", "places_block", "enforce_placement_rules", "enforce_survivability_rules" ],
   "definitions": {
     "block_side": {
       "oneOf": [
-        { "title": "Block", "description": "Reference to the block it may attach to.", "type": "string", "$ref": "../../../general/block/identifier.json" }, 
+        { "title": "Block", "description": "Reference to the block it may attach to.", "type": "string", "$ref": "../../../general/block/identifier.json" },
         { "type": "array", "items": { "title": "Block", "description": "Reference to the block it may attach to.", "type": "string", "$ref": "../../../general/block/identifier.json" } }
       ]
     }
@@ -17,10 +17,33 @@
       "$ref": "../types/description.json"
     },
     "places_block": {
-      "title": "Places Block",
-      "description": "Reference to the block to be placed.",
-      "type": "string",
-      "$ref": "../../../general/block/identifier.json"
+      "anyOf": [
+        {
+          "title": "Places Block",
+          "description": "Reference to the block to be placed.",
+          "type": "string",
+          "$ref": "../../../general/block/identifier.json"
+        },
+        {
+          "title": "Places Block",
+          "description": " Collection of weighted block references that will be placed.",
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "title": "Block",
+            "description": "Reference to the block to be placed.",
+            "type": "array",
+            "items": [
+              { "title": "Block", "description": "Reference to the block to be placed.", "$ref": "../../../general/block/identifier.json" },
+              {
+                "title": "Weight",
+                "description": "Random weight of this block. A higher number will increase the probability of this block to be picked during placement.",
+                "type": "number"
+              }
+            ]
+          }
+        }
+      ]
     },
     "enforce_placement_rules": {
       "title": "Enforce Placement Rules",
@@ -30,6 +53,11 @@
     "enforce_survivability_rules": {
       "title": "Enforce Survivability Rules",
       "description": "If true, enforce the block's canSurvive check.",
+      "type": "boolean"
+    },
+    "randomize_rotation": {
+      "title": "Randomize Rotation",
+      "description": "If true, randomizes the block's cardinal orientation.",
       "type": "boolean"
     },
     "may_attach_to": {
@@ -56,7 +84,25 @@
         "east": { "title": "East", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
         "west": { "title": "West", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
         "all": { "title": "All", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
-        "sides": { "title": "Sides", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" }
+        "sides": { "title": "Sides", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "diagonal": { "title": "Diagonal", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" }
+      }
+    },
+    "may_not_attach_to": {
+      "title": "May Not Attach To",
+      "description": "Denylist which specifies where the block can't be placed.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "top": { "title": "Top", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "bottom": { "title": "Bottom", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "north": { "title": "North", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "south": { "title": "South", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "east": { "title": "East", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "west": { "title": "West", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "all": { "title": "All", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "sides": { "title": "Sides", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
+        "diagonal": { "title": "Diagonal", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" }
       }
     },
     "may_replace": {
