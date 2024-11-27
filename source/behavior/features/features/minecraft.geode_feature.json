@@ -44,7 +44,7 @@
 
       "outer_layer": "minecraft:obsidian",
 
-      "inner_placements": ["mincraft:glass"],
+      "inner_placements": ["minecraft:glass"],
       "placements_require_layer0_alternate": true,
       "use_potential_placements_chance": 0.125,
 
