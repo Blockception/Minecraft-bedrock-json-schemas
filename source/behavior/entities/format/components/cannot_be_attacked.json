@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.cannot_be_attacked",
+  "type": "object",
+  "title": "Cannot Be Attacked",
+  "additionalProperties": false,
+  "description": "When set, blocks entities from attacking the owner entity unless they have the \"minecraft:ignore_cannot_be_attacked\" component.",
+  "required": [ ],
+  "properties": { }
+}
