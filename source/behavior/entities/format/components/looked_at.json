@@ -8,7 +8,7 @@
     "field_of_view": {
       "type": "number",
       "default": 26,
-      "description": "[Beta] Defines, in degrees, the width of the field of view for entities looking at the owner entity. If 'scale_fov_by_distance' is set to true, this value corresponds to the field of view at a distance of one block between the entities.",
+      "description": "Defines, in degrees, the width of the field of view for entities looking at the owner entity. If 'scale_fov_by_distance' is set to true, this value corresponds to the field of view at a distance of one block between the entities.",
       "title": "Field Of View"
     },
     "filters": {
@@ -18,25 +18,40 @@
     },
     "find_players_only": {
       "title": "Find Players Only",
-      "description": "[Beta] Limits the search to only the nearest Player that meets the specified \"filters\" rather than all nearby entities.",
+      "description": "Limits the search to only the nearest Player that meets the specified \"filters\" rather than all nearby entities.",
       "type": "boolean",
       "default": false
     },
     "line_of_sight_obstruction_type": {
       "title": "Line Of Sight Obstruction Type",
-      "description": "[Beta] Defines the type of block shape used to check for line of sight obstructions.",
+      "description": "Defines the type of block shape used to check for line of sight obstructions.",
       "type": "string",
       "enum": [ "outline", "collision", "collision_for_camera" ],
       "default": "collision"
     },
     "look_at_locations": {
       "title": "Look At Locations",
-      "description": "[Beta] A list of locations on the owner entity towards which line of sight checks are performed. At least one location must be unobstructed for the entity to be considered as looked at.",
+      "description": "A list of locations on the owner entity towards which line of sight checks are performed. At least one location must be unobstructed for the entity to be considered as looked at.",
       "type": "array",
       "minItems": 1,
-      "uniqueItems": true,
       "items": {
-        "enum": [ "head", "body", "feet" ]
+        "title": "",
+        "description": "",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "location": {
+            "title": "Location",
+            "type": "string",
+            "description": "Location to be looked at",
+            "enum": [ "head", "body", "feet" ]
+          },
+          "vertical_offset": {
+            "title": "Vertical Offset",
+            "description": "Vertical offset from the set location",
+            "type": "number"
+          }
+        }
       }
     },
     "looked_at_cooldown": {
@@ -51,13 +66,13 @@
       "$ref": "../types/event_object.json"
     },
     "not_looked_at_event": {
-      "description": "[Beta] Defines the event to trigger when no entity is found looking at the owner entity.",
+      "description": "Defines the event to trigger when no entity is found looking at the owner entity.",
       "title": "Not Looked At Event",
       "$ref": "../types/event_object.json"
     },
     "scale_fov_by_distance": {
       "title": "Scale Fov By Distance",
-      "description": "[Beta] When true, the field of view narrows as the distance between the owner entity and the entity looking at it increases. This ensures that the width of the view cone remains somewhat constant towards the owner entity position, regardless of distance.",
+      "description": "When true, the field of view narrows as the distance between the owner entity and the entity looking at it increases. This ensures that the width of the view cone remains somewhat constant towards the owner entity position, regardless of distance.",
       "type": "boolean",
       "default": false
     },
@@ -69,7 +84,7 @@
     },
     "set_target": {
       "title": "Set Target",
-      "description": "Defines if and how the owner entity will set entities that are looking at it as its combat targets. Valid values:\n- \"never\", looking entities are never set as targets, but events are emitted.\n- \"once_and_stop_scanning\", the first detected looking entity is set as target. Scanning and event emission is suspended if and until the owner entity has a target.\n- [Beta] \"once_and_keep_scanning\", the first detected looking entity is set as target. Scanning and event emission continues.",
+      "description": "Defines if and how the owner entity will set entities that are looking at it as its combat targets. Valid values:\n- \"never\", looking entities are never set as targets, but events are emitted.\n- \"once_and_stop_scanning\", the first detected looking entity is set as target. Scanning and event emission is suspended if and until the owner entity has a target.\n- \"once_and_keep_scanning\", the first detected looking entity is set as target. Scanning and event emission continues.",
       "type": "string",
       "default": "once_and_stop_scanning",
       "enum": [ "never", "once_and_stop_scanning", "once_and_keep_scanning" ]
