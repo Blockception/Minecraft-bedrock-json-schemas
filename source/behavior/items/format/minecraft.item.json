@@ -56,6 +56,7 @@
         "minecraft:block_placer": { "$ref": "./components/block_placer.json" },
         "minecraft:bundle_interaction": { "$ref": "./components/bundle_interaction.json" },
         "minecraft:can_destroy_in_creative": { "$ref": "./components/can_destroy_in_creative.json" },
+        "minecraft:compostable": { "$ref": "./components/compostable.json" },
         "minecraft:cooldown": { "$ref": "./components/cooldown.json" },
         "minecraft:custom_components": { "$ref": "./components/custom_components.json" },
         "minecraft:damage": { "$ref": "./components/damage.json" },
