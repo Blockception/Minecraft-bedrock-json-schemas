@@ -164,6 +164,32 @@
               ]
             }
           }
+        },
+        "play_sound": {
+          "title": "Play Sound",
+          "description": "Allows the owner entity to emit sounds",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "sound": {
+              "title": "Sound",
+              "description": "Specifies the sound event to play",
+              "type": "string"
+            }
+          }
+        },
+        "emit_particle": {
+          "title": "Emit Particle",
+          "description": "Allowing particles to be emitted at the center of the entity's bounding box",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "particle": {
+              "title": "Particle",
+              "description": "Specifies the type of particle to emit",
+              "type": "string"
+            }
+          }
         }
       }
     },
