@@ -23,6 +23,7 @@
         "minecraft:flammable": { "$ref": "./components/flammable.json" },
         "minecraft:friction": { "$ref": "./components/friction.json" },
         "minecraft:geometry": { "$ref": "./components/geometry.json" },
+        "minecraft:item_visual": { "$ref": "./components/item_visual.json" },
         "minecraft:light_dampening": { "$ref": "./components/light_dampening.json" },
         "minecraft:light_emission": { "$ref": "./components/light_emission.json" },
         "minecraft:liquid_detection": { "$ref": "./components/liquid_detection.json" },
@@ -37,17 +38,17 @@
         "minecraft:tick": { "$ref": "./components/tick.json" },
         "minecraft:entity_fall_on": { "$ref": "./components/entity_fall_on.json" },
         // Tags
-        "tag:minecraft:diamond_tier_destructible": {},
-        "tag:minecraft:iron_tier_destructible": {},
-        "tag:minecraft:is_axe_item_destructible": {},
-        "tag:minecraft:is_hoe_item_destructible": {},
-        "tag:minecraft:is_mace_item_destructible": {},
-        "tag:minecraft:is_pickaxe_item_destructible": {},
-        "tag:minecraft:is_shears_item_destructible": {},
-        "tag:minecraft:is_shovel_item_destructible": {},
-        "tag:minecraft:is_sword_item_destructible": {},
-        "tag:minecraft:netherite_tier_destructible": {},
-        "tag:minecraft:stone_tier_destructible": {}
+        "tag:minecraft:diamond_tier_destructible": { },
+        "tag:minecraft:iron_tier_destructible": { },
+        "tag:minecraft:is_axe_item_destructible": { },
+        "tag:minecraft:is_hoe_item_destructible": { },
+        "tag:minecraft:is_mace_item_destructible": { },
+        "tag:minecraft:is_pickaxe_item_destructible": { },
+        "tag:minecraft:is_shears_item_destructible": { },
+        "tag:minecraft:is_shovel_item_destructible": { },
+        "tag:minecraft:is_sword_item_destructible": { },
+        "tag:minecraft:netherite_tier_destructible": { },
+        "tag:minecraft:stone_tier_destructible": { }
       },
       "patternProperties": {
         "tag:.+": {
