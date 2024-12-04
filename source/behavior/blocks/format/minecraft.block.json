@@ -34,7 +34,19 @@
         "minecraft:transformation": { "$ref": "./components/transformation.json" },
         "minecraft:custom_components": { "$ref": "./components/custom_components.json" },
         "minecraft:tick": { "$ref": "./components/tick.json" },
-        "minecraft:entity_fall_on": { "$ref": "./components/entity_fall_on.json" }
+        "minecraft:entity_fall_on": { "$ref": "./components/entity_fall_on.json" },
+        // Tags
+        "tag:minecraft:diamond_tier_destructible": {},
+        "tag:minecraft:iron_tier_destructible": {},
+        "tag:minecraft:is_axe_item_destructible": {},
+        "tag:minecraft:is_hoe_item_destructible": {},
+        "tag:minecraft:is_mace_item_destructible": {},
+        "tag:minecraft:is_pickaxe_item_destructible": {},
+        "tag:minecraft:is_shears_item_destructible": {},
+        "tag:minecraft:is_shovel_item_destructible": {},
+        "tag:minecraft:is_sword_item_destructible": {},
+        "tag:minecraft:netherite_tier_destructible": {},
+        "tag:minecraft:stone_tier_destructible": {}
       },
       "patternProperties": {
         "tag:.+": {
