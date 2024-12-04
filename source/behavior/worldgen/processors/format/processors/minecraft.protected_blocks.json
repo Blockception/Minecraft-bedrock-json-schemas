@@ -1,0 +1,18 @@
+{
+    "title": "Protected Blocks",
+    "type": "object",
+    "properties": {
+        "processor_type": {
+            "title": "Processor Type",
+            "type": "string",
+            "const": "minecraft:protected_blocks"
+        },
+        "value": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "processor_type",
+        "value"
+    ]
+}
