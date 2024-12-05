@@ -22,6 +22,7 @@
 			"description": "The description of this jigsaw.",
 			"type": "object",
 			"additionalProperties": false,
+			"required": ["identifier"],
 			"properties": {
 				"identifier": {
 					"title": "Identifier",
