@@ -58,6 +58,7 @@ JSON validation can give snippets for sub items, as well as description, but thi
 - [Recipes](behavior/recipes/recipes.json)
 - [Spawn rules](behavior/spawn_rules/spawn_rules.json)
 - [Trading](behavior/trading/trading.json)
+- [Jigsaws](behavior/worldgen)
 
 ## Resource files
 
