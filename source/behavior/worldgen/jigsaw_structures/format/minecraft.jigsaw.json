@@ -1,0 +1,93 @@
+{
+	"$id": "blockception.minecraft.behavior.worldgen.jigsaw_structures.minecraft.jigsaw",
+	"type": "object",
+	"title": "Jigsaw",
+	"additionalProperties": false,
+	"required": [
+		"description",
+		"heightmap_projection",
+		"max_depth",
+		"start_height",
+		"start_pool",
+		"step"
+	],
+	"properties": {
+		"biome_filters": {
+			"title": "Biome Filters",
+			"description": "Specifies the biomes in which the Jigsaw Structure can generate.",
+			"$ref": "../../../entities/filters/filters.json"
+		},
+		"description": {
+			"title": "Description",
+			"description": "The description of this jigsaw.",
+			"type": "object",
+			"additionalProperties": false,
+			"required": ["identifier"],
+			"properties": {
+				"identifier": {
+					"title": "Identifier",
+					"description": "Identifier of the Jigsaw Structure. This is used with commands such as /locate, as well as within Structure Set definitions to specify which Jigsaw Structures are included in a given set.",
+					"type": "string"
+				}
+			}
+		},
+		"heightmap_projection": {
+			"title": "Heightmap Projection",
+			"description": "Heightmap used to calculate the relative start height. For example, a heightmap_projection of ocean_floor and a start_height of 10 means the Jigsaw Structure will begin generating 10 blocks above the ocean floor.",
+			"type": "string",
+			"enum": [
+				"ocean_floor",
+				"world_surface"
+			]
+		},
+		"max_depth": {
+			"title": "Max Depth",
+			"type": "integer",
+			"description": " The maximum recursion depth for Jigsaw Structure Generation. For example, a Jigsaw Structure that builds a road with a max_depth of 5 will only have paths that are a maximum of 5 structures templates in length in any given direction from the origin.",
+			"minimum": 0.0,
+			"maximum": 20.0
+		},
+		"start_height": {
+			"title": "Start Height",
+			"description": "World height at which the Jigsaw Structure should begin generation.",
+			"type": "integer",
+			"maximum": 320,
+			"minimum": -64
+		},
+		"start_pool": {
+			"title": "Start Pool",
+			"type": "string",
+			"description": "The first Template Pool to use when generating the Jigsaw Structure."
+		},
+		"step": {
+			"title": "Step",
+			"description": "Specifies the world generation phase in which the structure is generated. This is used as a grouping concept to keep similar world-generation features generally bundled together.",
+			"type": "string",
+			"enum": [
+				"fluid_springs",
+				"lakes",
+				"local_modifications",
+				"raw_generation",
+				"strongholds",
+				"surface_structures",
+				"top_layer_modification",
+				"underground_decoration",
+				"underground_ores",
+				"underground_structures",
+				"vegetal_decoration"
+			]
+		},
+		"terrain_adaptation": {
+			"title": "Terrain Adaptation",
+			"description": "How the terrain should adapt relative to the generated Jigsaw Structure.",
+			"type": "string",
+			"enum": [
+				"beard_box",
+				"beard_thin",
+				"bury",
+				"encapsulate",
+				"none"
+			]
+		}
+	}
+}

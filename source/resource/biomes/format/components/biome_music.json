@@ -1,0 +1,16 @@
+{
+  "$id": "blockception.minecraft.resource.biomes.minecraft.biome_music",
+  "title": "Biome Music",
+  "description": "Affects how music plays within the biome.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "volume_multiplier": {
+      "title": "Volume Multiplier",
+      "description": "Multiplier temporarily and gradually applied to music volume when within this biome.",
+      "type": "number", 
+      "minimum": 0,
+      "maximum": 1
+    }
+  }
+}

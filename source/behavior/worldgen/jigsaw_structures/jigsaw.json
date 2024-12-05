@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "blockception.minecraft.behavior.worldgen.jigsaw_structures.jigsaw",
+    "type": "object",
+    "title": "Jigsaw",
+    "description": "A Jigsaw Structure is a group of Structure Templates that make up a larger structure. Jigsaw Structures are placed during world generation.",
+    "required": [ "format_version", "minecraft:jigsaw" ],
+    "additionalProperties": false,
+    "properties": {
+        "format_version": { "$ref": "../../../general/format_version.json" },
+        "minecraft:jigsaw": { "$ref": "./format/minecraft.jigsaw.json" }
+    }
+}

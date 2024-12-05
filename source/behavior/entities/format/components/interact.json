@@ -138,7 +138,9 @@
         "vibration": {
           "title": "Vibration",
           "type": "string",
-          "description": "Vibration to emit when the interaction occurs. Admitted values are entity_interact (used by default), shear, and none (no vibration emitted)."
+          "default": "entity_interact",
+          "description": "Vibration to emit when the interaction occurs. Admitted values are none (no vibration emitted), shear, entity_die, entity_act, entity_interact.",
+          "enum": ["none", "shear", "entity_die", "entity_act", "entity_interact"]
         },
         "give_item": {
           "title": "Give Item",

@@ -1,0 +1,83 @@
+{
+    "title": "Capped",
+    "type": "object",
+    "properties": {
+        "delegate": {
+            "oneOf": [
+                {
+                    "$ref": "./minecraft.rule.json"
+                },
+                {
+                    "$ref": "./minecraft.block_ignore.json"
+                },
+                {
+                    "$ref": "./minecraft.protected_blocks.json"
+                }
+            ]
+        },
+        "limit": {
+            "oneOf": [
+                {
+                    "type": "integer"
+                },
+                {
+                    "title": "Constant Integer",
+                    "description": "",
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "type": {
+                            "title": "Type",
+                            "description": "",
+                            "type": "string",
+                            "const": "constant"
+                        },
+                        "value": {
+                            "title": "Value",
+                            "description": "",
+                            "type": "integer"
+                        }
+                    },
+                    "required": [ "type", "value" ]
+                },
+                {
+                    "title": "Uniform Integer",
+                    "type": "object",
+                    "properties": {
+                        "max_inclusive": {
+                            "title": "Max Inclusive",
+                            "description": "",
+                            "type": "integer"
+                        },
+                        "min_inclusive": {
+                            "title": "Min Inclusive",
+                            "description": "",
+                            "type": "integer"
+                        },
+                        "type": {
+                            "title": "Type",
+                            "description": "",
+                            "type": "string",
+                            "const": "uniform"
+                        }
+                    },
+                    "required": [
+                        "max_inclusive",
+                        "min_inclusive",
+                        "type"
+                    ]
+                }
+            ]
+        },
+        "processor_type": {
+            "title": "Processor Type",
+            "type": "string",
+            "const": "minecraft:capped"
+        }
+    },
+    "required": [
+        "delegate",
+        "limit",
+        "processor_type"
+    ]
+}

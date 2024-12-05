@@ -61,6 +61,12 @@
       "description": "If true, other entities of the same entity definition within the broadcastRange will also become angry whenever this mob is attacked.",
       "title": "Broadcast Anger On Being Attacked"
     },
+    "broadcast_anger_when_dying": {
+      "type": "boolean",
+      "default": false,
+      "description": "If false, when this mob is killed it does not spread its anger to other entities of the same entity definition within the broadcastRange",
+      "title": "Broadcast Anger When Dying"
+    },
     "duration": {
       "title": "Duration",
       "type": "integer",

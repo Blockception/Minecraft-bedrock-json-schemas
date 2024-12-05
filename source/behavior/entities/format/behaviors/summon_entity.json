@@ -4,7 +4,7 @@
   "title": "Summon Entity",
   "type": "object",
   "additionalProperties": false,
-  "required": [],
+  "required": [ ],
   "properties": {
     "priority": {
       "$ref": "./types/priority.json"
@@ -111,7 +111,7 @@
                   "type": "string",
                   "default": "line",
                   "description": "The base shape of this step. Valid values are circle and line",
-                  "enum": ["line", "circle"],
+                  "enum": [ "line", "circle" ],
                   "title": "Shape"
                 },
                 "size": {
@@ -136,6 +136,11 @@
                   "default": 0,
                   "description": "Maximum radius where the summon entities can spawn.",
                   "title": "Summon Cap Radius"
+                },
+                "summon_event": {
+                  "title": "Summon Event",
+                  "default": "self",
+                  "description": "Event to invoke on each summoned entity on spawn."
                 },
                 "target": {
                   "type": "string",
@@ -163,7 +168,7 @@
   },
   "examples": [
     {
-      "summon_choices": []
+      "summon_choices": [ ]
     }
   ]
 }

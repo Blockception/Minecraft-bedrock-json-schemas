@@ -1,0 +1,25 @@
+{
+  "$id": "blockception.minecraft.resource.biomes.minecraft.ambient_sounds",
+  "title": "Ambient Sounds",
+  "description": "Sets the ambient sounds for the biome. These sounds must be in the 'individual_named_sounds' in a 'sounds.json' file.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "addition": {
+      "title": "Addition",
+      "description": "Named sound that occasionally plays at the listener position.",
+      "type": "string"
+    },
+    "loop": {
+      "title": "Loop",
+      "description": "Named sound that loops while the listener position is inside the biome.",
+      "type": "string"
+    },
+    "mood": {
+      "title": "Mood",
+      "description": "Named sound that rarely plays at a nearby air block position when the light level is low.",
+      "type": "string",
+      "default": "ambient.cave"
+    }
+  }
+}

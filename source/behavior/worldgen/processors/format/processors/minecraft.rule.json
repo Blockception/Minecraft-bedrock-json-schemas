@@ -1,0 +1,279 @@
+{
+    "title": "Rule",
+    "type": "object",
+    "definitions": {
+        "block_specifier": {
+            "anyOf": [
+                {
+                    "$ref": "../../../../../general/block/identifier.json"
+                },
+                {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "name": {
+                            "$ref": "../../../../../general/block/identifier.json"
+                        },
+                        "states": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "oneOf": [
+                                    {
+                                        "type": "boolean"
+                                    },
+                                    {
+                                        "type": "integer"
+                                    },
+                                    {
+                                        "type": "string"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "rule": {
+            "properties": {
+                "block_entity_modifier": {
+                    "oneOf": [
+                        {
+                            "$ref": "#/definitions/passthrough"
+                        },
+                        {
+                            "$ref": "#/definitions/append_loot"
+                        }
+                    ]
+                },
+                "input_predicate": {
+                    "oneOf": [
+                        {
+                            "$ref": "#/definitions/always_true"
+                        },
+                        {
+                            "$ref": "#/definitions/block_match"
+                        },
+                        {
+                            "$ref": "#/definitions/random_block_match"
+                        },
+                        {
+                            "$ref": "#/definitions/tag_match"
+                        }
+                    ]
+                },
+                "location_predicate": {
+                    "oneOf": [
+                        {
+                            "$ref": "#/definitions/always_true"
+                        },
+                        {
+                            "$ref": "#/definitions/block_match"
+                        },
+                        {
+                            "$ref": "#/definitions/random_block_match"
+                        },
+                        {
+                            "$ref": "#/definitions/tag_match"
+                        }
+                    ]
+                },
+                "output_state": {
+                    "$ref": "#/definitions/block_specifier"
+                },
+                "position_predicate": {
+                    "oneOf": [
+                        {
+                            "$ref": "#/definitions/always_true"
+                        },
+                        {
+                            "$ref": "#/definitions/axis_aligned_linear_pos"
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "output_state"
+            ]
+        },
+        "append_loot": {
+            "title": "Append Loot",
+            "description": "",
+            "type": "object",
+            "additionalProperties": false,
+            "required": [ "type", "loot_table" ],
+            "properties": {
+                "loot_table": {
+                    "title": "Loot Table",
+                    "description": "",
+                    "type": "string"
+                },
+                "type": {
+                    "title": "Type",
+                    "description": "",
+                    "type": "string",
+                    "const": "minecraft:append_loot"
+                }
+            }
+        },
+        "passthrough": {
+            "title": "Passthrough",
+            "description": "",
+            "type": "object",
+            "additionalProperties": false,
+            "required": [ "type" ],
+            "properties": {
+                "type": {
+                    "title": "Type",
+                    "description": "",
+                    "type": "string",
+                    "const": "minecraft:passthrough"
+                }
+            }
+        },
+        "always_true": {
+            "title": "Always True",
+            "description": "",
+            "type": "object",
+            "additionalProperties": false,
+            "required": [ "predicate_type" ],
+            "properties": {
+                "predicate_type": {
+                    "title": "Predicate Type",
+                    "type": "string",
+                    "const": "minecraft:always_true"
+                }
+            }
+        },
+        "block_match": {
+            "title": "Block Match",
+            "type": "object",
+            "properties": {
+                "block": {
+                    "type": "string"
+                },
+                "predicate_type": {
+                    "title": "Predicate Type",
+                    "type": "string",
+                    "const": "minecraft:block_match"
+                }
+            },
+            "required": [
+                "block",
+                "predicate_type"
+            ]
+        },
+        "random_block_match": {
+            "title": "Random Block Match",
+            "type": "object",
+            "properties": {
+                "block": {
+                    "type": "string"
+                },
+                "predicate_type": {
+                    "title": "Predicate Type",
+                    "type": "string",
+                    "const": "minecraft:random_block_match"
+                },
+                "probability": {
+                    "type": "number",
+                    "minimum": 0.0,
+                    "exclusiveMaximum": 1.0
+                }
+            },
+            "required": [
+                "block",
+                "predicate_type",
+                "probability"
+            ]
+        },
+        "tag_match": {
+            "title": "Tag Match",
+            "type": "object",
+            "properties": {
+                "predicate_type": {
+                    "title": "Predicate Type",
+                    "type": "string",
+                    "const": "minecraft:tag_match"
+                },
+                "tag": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "predicate_type",
+                "tag"
+            ]
+        },
+        "axis_aligned_linear_pos": {
+            "title": "Axis Aligned Linear",
+            "type": "object",
+            "properties": {
+                "axis": {
+                    "title": "Axis",
+                    "description": "",
+                    "type": "string",
+                    "enum": [
+                        "x",
+                        "y",
+                        "z"
+                    ]
+                },
+                "max_chance": {
+                    "title": "Max Chance",
+                    "description": "",
+                    "type": "number",
+                    "minimum": 0.0,
+                    "exclusiveMaximum": 1.0
+                },
+                "max_dist": {
+                    "title": "Max Dist",
+                    "description": "",
+                    "type": "integer",
+                    "minimum": 0.0
+                },
+                "min_chance": {
+                    "title": "Min Chance",
+                    "description": "",
+                    "type": "number",
+                    "minimum": 0.0,
+                    "exclusiveMaximum": 1.0
+                },
+                "min_dist": {
+                    "title": "Min Dist",
+                    "description": "",
+                    "type": "integer",
+                    "minimum": 0.0
+                },
+                "predicate_type": {
+                    "title": "Predicate Type",
+                    "description": "",
+                    "type": "string",
+                    "const": "minecraft:axis_aligned_linear_pos"
+                }
+            },
+            "required": [
+                "predicate_type"
+            ]
+        }
+    },
+    "additionalProperties": false,
+    "properties": {
+        "processor_type": {
+            "title": "Processor Type",
+            "type": "string",
+            "const": "minecraft:rule"
+        },
+        "rules": {
+            "title": "Rules",
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/rule"
+            }
+        }
+    },
+    "required": [
+        "processor_type",
+        "rules"
+    ]
+}

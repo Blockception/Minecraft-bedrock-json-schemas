@@ -13,6 +13,8 @@
       "additionalProperties": false,
       "properties": {
         // Components
+        "minecraft:ambient_sounds": {"$ref": "./components/ambient_sounds.json"},
+        "minecraft:biome_music": {"$ref": "./components/biome_music.json"},
         "minecraft:fog_appearance": { "$ref": "./components/fog_appearance.json" },
         "minecraft:sky_color": { "$ref": "./components/sky_color.json" },
         "minecraft:water_appearance": { "$ref": "./components/water_appearance.json" }
