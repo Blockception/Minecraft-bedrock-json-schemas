@@ -1,4 +1,5 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema",
   "$id": "blockception.minecraft.resource.biomes",
   "title": "Client Biome Definitions",
   "description": "A client biome definition.",
@@ -13,9 +14,11 @@
       "additionalProperties": false,
       "properties": {
         // Components
-        "minecraft:ambient_sounds": {"$ref": "./components/ambient_sounds.json"},
-        "minecraft:biome_music": {"$ref": "./components/biome_music.json"},
+        "minecraft:ambient_sounds": { "$ref": "./components/ambient_sounds.json" },
+        "minecraft:biome_music": { "$ref": "./components/biome_music.json" },
         "minecraft:fog_appearance": { "$ref": "./components/fog_appearance.json" },
+        "minecraft:foliage_appearance": { "$ref": "./components/foliage_appearance.json" },
+        "minecraft:grass_appearance": { "$ref": "./components/grass_appearance.json" },
         "minecraft:sky_color": { "$ref": "./components/sky_color.json" },
         "minecraft:water_appearance": { "$ref": "./components/water_appearance.json" }
       }

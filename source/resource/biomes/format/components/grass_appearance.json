@@ -1,0 +1,46 @@
+{
+  "$id": "blockception.minecraft.resource.biomes.minecraft.grass_appearance",
+  "title": "Grass Appearance",
+  "description": "Set the grass color or color map used during rendering. Biomes without this component will have default grass appearance.",
+  "type": "object",
+  "required": ["color"],
+  "additionalProperties": false,
+  "properties": {
+    "color": {
+      "title": "Color",
+      "description": "RGB color of grass, or a Grass Color Map object.",
+      "default": { "color_map": "grass" },
+      "examples": ["#FFFFFF", [255, 255, 255]],
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "color-hex"
+        },
+        {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "additionalItems": false,
+          "items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 255
+          }
+        },
+        {
+          "type": "object",
+          "required": ["color_map"],
+          "additionalProperties": false,
+          "properties": {
+            "color_map": {
+              "title": "Color Map",
+              "description": "Color map from textures/colormap to determine color of grass.",
+              "enum": ["grass", "swamp_grass"],
+              "default": "grass"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
