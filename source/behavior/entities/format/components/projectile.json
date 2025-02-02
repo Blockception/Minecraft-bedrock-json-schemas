@@ -128,7 +128,7 @@
     },
     "offset": {
       "type": "array",
-      "default": [ 0, 0.0, 0 ],
+      "default": [0, 0.0, 0],
       "description": "The offset from the entity's anchor where the projectile will spawn.",
       "title": "Offset",
       "$ref": "../../../../general/vectors/number3.json"
@@ -220,7 +220,7 @@
           "additionalProperties": false,
           "properties": {
             "shape": {
-              "enum": [ "sphere", "cube" ],
+              "enum": ["sphere", "cube"],
               "default": "sphere",
               "description": "The shape of the area that is frozen.",
               "title": "Shape"
@@ -488,7 +488,7 @@
           "type": "object",
           "description": "Removes the projectile.",
           "additionalProperties": true,
-          "properties": { }
+          "properties": {}
         },
         "spawn_aoe_cloud": {
           "title": "Spawn AOE Cloud",
@@ -599,7 +599,6 @@
         "stick_in_ground": {
           "title": "Stick In Ground",
           "type": "object",
-
           "description": "Decides if the object sticks in ground and contains shake_time integer parameter to determine how long it will shake."
         },
         "teleport_owner": {
@@ -717,9 +716,9 @@
       "lightning": false,
       "liquid_inertia": 0.6,
       "multiple_targets": true,
-      "offset": [ ],
+      "offset": [],
       "on_fire_time": 5,
-      "on_hit": { },
+      "on_hit": {},
       "particle": "iconcrack",
       "potion_effect": -1,
       "power": 1.3,

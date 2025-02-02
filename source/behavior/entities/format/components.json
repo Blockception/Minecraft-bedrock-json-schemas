@@ -4,7 +4,7 @@
   "type": "object",
   "title": "Components",
   "description": "A collection of components.",
-  "required": [ ],
+  "required": [],
   "properties": {
     "minecraft:absorption": { "$ref": "./components/attribute.json" },
     "minecraft:addrider": { "$ref": "./components/addrider.json" },
