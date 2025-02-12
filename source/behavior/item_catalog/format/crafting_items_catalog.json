@@ -12,6 +12,7 @@
 			"description": "You can add new items to the existing categories.",
 			"type": "object", 
 			"additionalProperties": false,
+			"required": ["category_name", "groups"],
 			"properties": {
 				"category_name": {
 					"title": "Category Name",
@@ -30,27 +31,28 @@
 		},
 		"group": {
 			"title": "Group",
-			"description": "Definition for the new group",
+			"description": "Represents a group of items. A group can be collapsible if it is provided with a group identifier, or added a set of loose items without an icon.",
 			"type": "object", 
 			"additionalProperties": false,
 			"required": ["items"],
 			"properties": {
 				"group_identifier": {
 					"title": "Group Identifier",
-					"description": "Identifier for your group. If there are two groups with the same name within a category, they will merge.",
+					"description": "Optional field to give an icon and name to a group. Otherwise the items are added as loose items. If there are two groups with the same name within a category, they will merge.",
 					"type": "object", 
 					"additionalProperties": false,
-					"required": ["icon", "name"],
+					"required": ["name"],
 					"properties": {
 						"icon": {
 							"title": "Icon",
-							"description": "Name of an existing item",
+							"description": "The item or block that represents the group.",
 							"type": "string"
 						},
 						"name": {
 							"title": "Name",
 							"description": "The localization string that is display when you hover over your group name. The localization string needs to include the namespace.",
-							"type": "string"
+							"type": "string",
+							"pattern": "^(?:.)+:(?:.)+$"
 						}
 					}
 				},
@@ -59,7 +61,27 @@
 					"description": "List of items to be added",
 					"type": "array",
 					"items": {
-						"type": "string"
+						"anyOf": [
+							{
+								"type": "string",
+								"description": "The name of an item or block. A namespace for the item is required",
+								"pattern": "^(?:.)+:(?:.)+$"
+							},
+							{
+								"type": "object",
+								"description": "The name of an item or block. A namespace for the item is required",
+								"properties": {
+									"name": {
+										"description": "You can optionally provide an aux value for items that use it at the end. Example: namespace:my_item:1",
+										"type": "string",
+										"pattern": "^(?:.)+:(?:.)+$"
+									}
+								},
+								"required": [
+									"name"
+								]
+							}
+						]
 					}
 				}
 			}
@@ -72,7 +94,7 @@
 			"type": "array",
 			"minItems": 1,
 			"items": {
-				"$ref": "#/definitions/catalog_item"
+				"$ref": "#/definitions/category"
 			}
 		}
 	}
