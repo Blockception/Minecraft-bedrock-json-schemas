@@ -8,6 +8,6 @@
     "additionalProperties": false,
     "properties": {
         "format_version": { "$ref": "../../general/format_version.json" },
-        "minecraft:crafting_items_catalog": { "$ref": "./format/minecraft.crafting_items_catalog.json" }
+        "minecraft:crafting_items_catalog": { "$ref": "./format/crafting_items_catalog.json" }
     }
 }
