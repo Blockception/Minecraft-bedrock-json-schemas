@@ -12,6 +12,10 @@
       "then": { "$ref": "./conditions/has_mark_variant.json" }
     },
     {
+      "if": { "properties": { "condition": { "type": "string", "const": "match_tool" } } },
+      "then": { "$ref": "./conditions/match_tool.json" }
+    },
+    {
       "if": { "properties": { "condition": { "type": "string", "const": "killed_by_player" } } },
       "then": { "$ref": "./conditions/killed_by_player.json" }
     },
