@@ -27,13 +27,13 @@
       "title": "Digging Duration Range",
 
       "$ref": "../../../../general/vectors/number2.json",
-      "default": [0.0, 0.0],
+      "default": [8.0, 10.0],
       "description": "Digging duration in seconds."
     },
     "find_valid_position_retries": {
       "title": "Find Valid Position Retries",
       "type": "number",
-      "default": 0.0,
+      "default": 5.0,
       "description": "Amount of retries to find a valid target position within search range."
     },
     "goal_radius": {
@@ -80,13 +80,13 @@
     "search_range_xz": {
       "title": "Search Range XZ",
       "type": "number",
-      "default": 0.0,
+      "default": 10.0,
       "description": "Width and length of the volume around the entity used to find a valid target position"
     },
     "search_range_y": {
       "title": "Search Range Y",
       "type": "number",
-      "default": 0.0,
+      "default": 7.0,
       "description": "Height of the volume around the entity used to find a valid target position"
     },
     "spawn_item_after_seconds": {

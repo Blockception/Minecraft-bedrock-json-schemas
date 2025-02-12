@@ -11,7 +11,7 @@
     "listen_time": {
       "title": "Listen Time",
       "type": "integer",
-      "default": 0.0,
+      "default": 30,
       "description": "Sets the time an entity should continue delivering items to a noteblock after hearing it."
     },
     "on_item_throw": {

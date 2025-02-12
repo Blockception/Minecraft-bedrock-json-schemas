@@ -194,7 +194,7 @@
           "default": 0,
           "minimum": 0.0,
           "maximum": 1.0,
-          "description": "The percentage chance of a mutation on the entity's color.",
+          "description": "The percentage chance of the offspring getting its color as if spawned rather than inheriting color from its parents.",
           "title": "Color"
         },
         "extra_variant": {
