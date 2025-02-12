@@ -1,0 +1,79 @@
+{
+	"$id": "blockception.minecraft.behavior.item_catalog.format.minecraft.crafting_items_catalog",
+	"type": "object",
+	"title": "Crafting Items Catalog",
+	"additionalProperties": false,
+	"required": [
+		"categories"
+	],
+	"definitions": {
+		"category": {
+			"title": "Category",
+			"description": "You can add new items to the existing categories.",
+			"type": "object", 
+			"additionalProperties": false,
+			"properties": {
+				"category_name": {
+					"title": "Category Name",
+					"description": "Determines which category this block/item will be placed under in the inventory and crafting table container screens.",
+  					"enum": ["construction", "equipment", "items", "nature"]
+				},
+				"groups": {
+					"title": "Groups",
+					"description": "Defines a new group which will be added to the category you specify at the end of all existing items/groups.",
+					"type": "array", 
+					"items": {
+						"$ref": "#/definitions/group"
+					}
+				}
+			}
+		},
+		"group": {
+			"title": "Group",
+			"description": "Definition for the new group",
+			"type": "object", 
+			"additionalProperties": false,
+			"required": ["items"],
+			"properties": {
+				"group_identifier": {
+					"title": "Group Identifier",
+					"description": "Identifier for your group. If there are two groups with the same name within a category, they will merge.",
+					"type": "object", 
+					"additionalProperties": false,
+					"required": ["icon", "name"],
+					"properties": {
+						"icon": {
+							"title": "Icon",
+							"description": "Name of an existing item",
+							"type": "string"
+						},
+						"name": {
+							"title": "Name",
+							"description": "The localization string that is display when you hover over your group name. The localization string needs to include the namespace.",
+							"type": "string"
+						}
+					}
+				},
+				"items": {
+					"title": "Items",
+					"description": "List of items to be added",
+					"type": "array",
+					"items": {
+						"type": "string"
+					}
+				}
+			}
+		}
+	},
+	"properties": {
+		"categories": {
+			"title": "Categories",
+			"description": "",
+			"type": "array",
+			"minItems": 1,
+			"items": {
+				"$ref": "#/definitions/catalog_item"
+			}
+		}
+	}
+}

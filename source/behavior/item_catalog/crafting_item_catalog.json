@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "blockception.minecraft.behavior.item_catalog.crafting_item_catalog",
+    "type": "object",
+    "title": "Crafting Item Catalog",
+    "description": "Used to define the creative inventory/recipe book",
+    "required": [ "format_version", "minecraft:crafting_items_catalog" ],
+    "additionalProperties": false,
+    "properties": {
+        "format_version": { "$ref": "../../../general/format_version.json" },
+        "minecraft:crafting_items_catalog": { "$ref": "./format/minecraft.crafting_items_catalog.json" }
+    }
+}

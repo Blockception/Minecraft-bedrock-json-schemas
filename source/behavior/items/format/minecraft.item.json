@@ -33,7 +33,10 @@
           "additionalProperties": false,
           "properties": {
             "group": {
-              "$ref": "../../../general/vanilla/item_group.json"
+              "title": "Group",
+              "description": "A translation string of an existing group in minecraft to group this block/item under",
+              "type": "string",
+              "pattern": "^[0-9a-zA-Z:_\\.\\-]+$"
             },
             "category": {
               "$ref": "../../../general/vanilla/creative_category.json"
