@@ -82,6 +82,12 @@
       "description": "Maximum distance this entity will look for another entity looking at it.",
       "title": "Search Radius"
     },
+    "min_looked_at_duration": {
+      "type": "number",
+      "default": 0,
+      "description": "Defines the minimum, continuous time the owner entity has to be looked at before being considered as such.",
+      "title": "Min Looked At Duration"
+    },
     "set_target": {
       "title": "Set Target",
       "description": "Defines if and how the owner entity will set entities that are looking at it as its combat targets. Valid values:\n- \"never\", looking entities are never set as targets, but events are emitted.\n- \"once_and_stop_scanning\", the first detected looking entity is set as target. Scanning and event emission is suspended if and until the owner entity has a target.\n- \"once_and_keep_scanning\", the first detected looking entity is set as target. Scanning and event emission continues.",
