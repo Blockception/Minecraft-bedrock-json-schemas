@@ -268,6 +268,12 @@
       "description": "If true, the babies will be automatically tamed if its parents are.",
       "title": "Inherit Tamed"
     },
+    "combine_parent_colors": {
+      "type": "boolean",
+      "default": true,
+      "description": "If true, the babies will have their color be mixed.",
+      "title": "Combine Parent Colors"
+    },
     "require_full_health": {
       "type": "boolean",
       "default": false,
