@@ -1,0 +1,16 @@
+{
+  "$id": "minecraft.behavior.biomes.components.minecraft.creature_spawn_probability",
+  "title": "Creature Spawn Probability",
+  "description": "Probability that creatures will spawn within the biome when a chunk is generated.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "probability": {
+      "type": "number",
+      "title": "Probability",
+      "description": "Probabiltity between [0.0, 0.75] of creatures spawning within the biome on chunk generation.",
+      "minimum": 0.0,
+      "maximum": 0.75
+    }
+  }
+}

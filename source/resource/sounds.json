@@ -78,6 +78,11 @@
         "description": "A single block sound definition.",
         "additionalProperties": false,
         "properties": {
+          "base": {
+            "title": "Base",
+            "description": "Specifying another block sound they should use sounds for if they do not define a sound themselves",
+            "type": "string"
+          },
           "volume": { "$ref": "#/definitions/volume" },
           "pitch": { "$ref": "#/definitions/pitch" },
           "events": {

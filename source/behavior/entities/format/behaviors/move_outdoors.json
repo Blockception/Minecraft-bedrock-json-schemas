@@ -17,19 +17,19 @@
     "search_count": {
       "title": "Search Count",
       "type": "integer",
-      "default": 0.0,
+      "default": 10,
       "description": "The amount of times to try finding a random outdoors position before failing."
     },
     "search_height": {
       "title": "Search Height",
       "type": "integer",
-      "default": 0.0,
+      "default": 5,
       "description": "The y range to search for an outdoors position for."
     },
     "search_range": {
       "title": "Search Range",
       "type": "integer",
-      "default": 0.0,
+      "default": 15,
       "description": "The x and z range to search for an outdoors position for."
     },
     "timeout_cooldown": {

@@ -36,7 +36,7 @@
     "min_ram_distance": {
       "title": "Min Ram Distance",
       "type": "number",
-      "default": 0.0,
+      "default": 4.0,
       "description": "The minimum distance at which the mob can start a ram attack."
     },
     "on_start": {
@@ -53,7 +53,7 @@
     "ram_distance": {
       "title": "Ram Distance",
       "type": "number",
-      "default": 0.0,
+      "default": 7.0,
       "description": "The distance at which the mob start to run with ram speed."
     },
     "ram_impact_sound": {

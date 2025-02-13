@@ -33,7 +33,10 @@
           "additionalProperties": false,
           "properties": {
             "group": {
-              "$ref": "../../../general/vanilla/item_group.json"
+              "title": "Group",
+              "description": "A translation string of an existing group in minecraft to group this block/item under",
+              "type": "string",
+              "pattern": "^[0-9a-zA-Z:_\\.\\-]+$"
             },
             "category": {
               "$ref": "../../../general/vanilla/creative_category.json"
@@ -83,6 +86,8 @@
         "minecraft:should_despawn": { "$ref": "./components/should_despawn.json" },
         "minecraft:stacked_by_data": { "$ref": "./components/stacked_by_data.json" },
         "minecraft:storage_item": { "$ref": "./components/storage_item.json" },
+        "minecraft:storage_weight_limit": { "$ref": "./components/storage_weight_limit.json" },
+        "minecraft:storage_weight_modifier": { "$ref": "./components/storage_weight_modifier.json" },
         "minecraft:tags": { "$ref": "./components/tags.json" },
         "minecraft:throwable": { "$ref": "./components/throwable.json" },
         "minecraft:use_animation": { "$ref": "./components/use_animation.json" },

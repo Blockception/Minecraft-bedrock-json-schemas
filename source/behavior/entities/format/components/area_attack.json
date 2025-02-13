@@ -37,7 +37,7 @@
     "play_attack_sound": {
       "title": "Play Attack Sound",
       "type": "boolean",
-      "default": 4.94066e-324,
+      "default": true,
       "description": "If the entity should play their attack sound when attacking a target."
     }
   },

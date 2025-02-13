@@ -1,0 +1,31 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.is_bound_to_creaking_heart",
+  "type": "object",
+  "title": "Is Bound To Creaking Heart",
+  "description": "Tests that the Creaking Heart that spawned the subject Creaking still exists.",
+  "properties": {
+    "test": {
+      "type": "string",
+      "title": "Test Property",
+      "description": "The test property."
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
+    "value": {
+      "title": "Value",
+      "description": "True or false.",
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "examples": [
+    {
+      "test": "is_bound_to_creaking_heart",
+      "value": false
+    }
+  ]
+}

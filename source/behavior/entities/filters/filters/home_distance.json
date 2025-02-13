@@ -1,0 +1,26 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.home_distance",
+  "type": "object",
+  "title": "Home Distance",
+  "description": "Tests the distance between the subject and its home. Returns false if the subject has no home or if their home is in a different dimension.",
+  "required": ["value"],
+  "properties": {
+    "test": {
+      "type": "string",
+      "title": "Test",
+      "description": "The test property."
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
+    "value": {
+      "description": "(Required) A floating point value.",
+      "type": "number",
+      "default": true,
+      "title": "Value"
+    }
+  }
+}

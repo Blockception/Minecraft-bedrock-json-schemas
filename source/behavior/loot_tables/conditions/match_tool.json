@@ -1,0 +1,60 @@
+{
+    "$id": "blockception.minecraft.behavior.condition.match_tool",
+    "type": "object",
+    "additionalProperties": false,
+    "description": "Returns the condition true if the block of the loot table was broken with a specific item.",
+    "title": "Killed By Player",
+  "required": ["condition", "item", "count"],
+    "properties": {
+      "condition": { "type": "string",  "const": "match_tool", "title": "Condition", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
+      "item": {
+        "title": "Item",
+        "description": "The item to match",
+        "type": "string"
+      },
+      "count": {
+        "title": "Count",
+        "description": "Minimum count to match of the given item",
+        "type": "integer",
+        "minimum": 0
+      },
+      "enchantments": {
+        "title": "Enchantments",
+        "description": "List of enchantments to check for",
+        "type": "array",
+        "items": {
+            "type": "object",
+            "patternProperties": {
+              "^[a-zA-Z]+$": {
+                "type": "object",
+                "properties": {
+                  "level": {
+                    "type": "integer"
+                  }
+                },
+                "required": ["level"]
+              }
+            },
+            "minProperties": 1,
+            "maxProperties": 1
+        },
+        "minItems": 1
+      },
+      "minecraft:match_tool_filter_all": {
+        "title": "Match Tool Filter All",
+        "description": "List of tags the item must have",
+        "type": "array",
+        "items": {
+            "type": "string"
+        }
+      },
+      "minecraft:match_tool_filter_none": {
+        "title": "Match Tool Filter None",
+        "description": "List of tags the item must NOT have",
+        "type": "array",
+        "items": {
+            "type": "string"
+        }
+      }
+    }
+}  

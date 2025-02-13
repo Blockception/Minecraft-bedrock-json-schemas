@@ -1,7 +1,7 @@
 {
     "$id": "blockception.minecraft.behavior.blocks.minecraft.item_visual",
     "title": "Item Visual",
-    "description": "The description identifier of the geometry and material used to render the item of this block.\nExperimental toggles required: Upcoming Creator Features",
+    "description": "The description identifier of the geometry and material used to render the item of this block.",
     "type": "object",
     "additionalProperties": false,
     "required": [ "geometry", "material_instances" ],

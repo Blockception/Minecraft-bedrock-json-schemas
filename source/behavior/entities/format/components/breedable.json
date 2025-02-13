@@ -194,7 +194,7 @@
           "default": 0,
           "minimum": 0.0,
           "maximum": 1.0,
-          "description": "The percentage chance of a mutation on the entity's color.",
+          "description": "The percentage chance of the offspring getting its color as if spawned rather than inheriting color from its parents.",
           "title": "Color"
         },
         "extra_variant": {
@@ -227,6 +227,29 @@
       "type": "array",
       "description": "[EXPERIMENTAL] List of attributes that should benefit from parent centric attribute blending. For example, horses blend their health, movement, and jump_strength in their offspring."
     },
+    "property_inheritance": {
+      "title": "Property Inheritance",
+      "description": "List of Entity Properties that should be inherited from the parent entities and potentially mutated.",
+      "type": "array",
+      "items": {
+        "type": "object", 
+        "additionalProperties": false,
+        "properties": {
+          "mutation_chance": {
+            "title": "Mutation Chance",
+            "description": "The chance it should not inherit from either parent",
+            "type": "number", 
+            "minimum": 0
+          },
+          "mutation_values": {
+            "title": "Mutation Values",
+            "description": "Array of values to select from if mutating and the component has random mutation set",
+            "type": "array",
+            "minItems": 1
+          }
+        }
+      }
+    },
     "random_extra_variant_mutation_interval": {
       "title": "Random Extra Variant Mutation Interval",
       "default": 0,
@@ -244,6 +267,12 @@
       "default": true,
       "description": "If true, the babies will be automatically tamed if its parents are.",
       "title": "Inherit Tamed"
+    },
+    "combine_parent_colors": {
+      "type": "boolean",
+      "default": true,
+      "description": "If true, the babies will have their color be mixed.",
+      "title": "Combine Parent Colors"
     },
     "require_full_health": {
       "type": "boolean",

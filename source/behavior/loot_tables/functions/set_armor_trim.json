@@ -1,0 +1,60 @@
+{
+  "$id": "blockception.minecraft.behavior.loot_tables.set_armor_trim",
+  "additionalProperties": false,
+  "type": "object",
+  "description": "The function set_armor_trim.",
+  "title": "Set Armor Trim",
+  "required": ["function", "material", "pattern"],
+  "properties": {
+    "function": {
+      "type": "string",
+      "const": "set_armor_trim",
+      "title": "Function",
+      "description": "UNDOCUMENTED.",
+      "$comment": "UNDOCUMENTED"
+    },
+    "material": {
+      "title": "Material",
+      "description": "Trim's material",
+      "type": "string",
+      "enum": [
+        "amethyst",
+        "copper",
+        "diamond",
+        "emerald",
+        "gold",
+        "iron",
+        "lapis",
+        "netherite",
+        "quartz",
+        "redstone",
+        "resin"
+      ]
+    },
+    "pattern": {
+      "title": "Pattern",
+      "description": "Trim pattern",
+      "type": "string",
+      "enum": [
+        "sentry",
+        "vex",
+        "wild",
+        "coast",
+        "dune",
+        "wayfinder",
+        "shaper",
+        "raiser",
+        "host",
+        "ward",
+        "silence",
+        "tide",
+        "snout",
+        "rib",
+        "eye",
+        "spire",
+        "flow",
+        "bolt"
+      ]
+    }
+  }
+}

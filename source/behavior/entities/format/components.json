@@ -165,6 +165,7 @@
     "minecraft:ravager_blocked": { "$ref": "./components/ravager_blocked.json" },
     "minecraft:rideable": { "$ref": "./components/rideable.json" },
     "minecraft:reflect_projectiles": { "$ref": "./components/reflect_projectiles.json" },
+    "minecraft:renders_when_invisible": { "$ref": "./components/renders_when_invisible.json" },
     "minecraft:scale_by_age": { "$ref": "./components/scale_by_age.json" },
     "minecraft:scale": { "$ref": "./components/scale.json" },
     "minecraft:scheduler": { "$ref": "./components/scheduler.json" },
