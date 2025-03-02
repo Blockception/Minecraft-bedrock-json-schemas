@@ -92,6 +92,7 @@
     "minecraft:is_baby": { "$ref": "./components/is_baby.json" },
     "minecraft:is_charged": { "$ref": "./components/is_charged.json" },
     "minecraft:is_chested": { "$ref": "./components/is_chested.json" },
+    "minecraft:is_collidable": { "$ref": "./components/is_collidable.json" },
     "minecraft:is_dyeable": { "$ref": "./components/is_dyeable.json" },
     "minecraft:is_hidden_when_invisible": { "$ref": "./components/is_hidden_when_invisible.json" },
     "minecraft:is_ignited": { "$ref": "./components/is_ignited.json" },
