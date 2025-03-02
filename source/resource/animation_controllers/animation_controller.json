@@ -164,6 +164,12 @@
                       "effect": {
                         "description": "Valid sound effect names should be listed in the entity's resource_definition json file.",
                         "type": "string"
+                      },
+                      "locator": { 
+                        "type": "string", 
+                        "title": "Locator", 
+                        "description": 
+                        "The name of a locator on the actor where the effect should be located." 
                       }
                     }
                   }
