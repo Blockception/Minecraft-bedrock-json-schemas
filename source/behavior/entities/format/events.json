@@ -15,8 +15,15 @@
         "component_groups": {
           "title": "Component Groups",
           "description": "The components groups to add or remove.",
-          "type": "array",
-          "items": { "type": "string", "description": "A reference to a component group.", "title": "Component Groups" }
+          "anyOf": [
+            {
+              "type": "array",
+              "items": { "type": "string", "description": "A reference to a component group.", "title": "Component Groups" }    
+            },
+            {
+              "type": "string", "description": "A reference to a component group.", "title": "Component Groups"    
+            }
+          ]
         }
       }
     },
