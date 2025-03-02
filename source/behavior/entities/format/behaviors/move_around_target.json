@@ -21,6 +21,13 @@
       "description": "The range of distances from the target entity within which the goal should look for a position to move the owner entity to.",
       "$ref": "../../../../general/vectors/number2.json"
     },
+    "destination_pos_spread_degrees": {
+      "title": "Desitnation Pos Spread Degrees",
+      "description": "UNDOCUMENTED",
+      "type": "number", 
+      "minimum": 0,
+      "maximum": 360
+    },
     "height_difference_limit": {
       "title": "Height Difference Limit",
       "type": "number",
