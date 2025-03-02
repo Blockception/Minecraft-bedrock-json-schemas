@@ -19,6 +19,7 @@
         "minecraft:crafting_table": { "$ref": "./components/crafting_table.json" },
         "minecraft:destructible_by_explosion": { "$ref": "./components/destructible_by_explosion.json" },
         "minecraft:destructible_by_mining": { "$ref": "./components/destructible_by_mining.json" },
+        "minecraft:destruction_particles": { "$ref": "./components/destruction_particles.json" },
         "minecraft:display_name": { "$ref": "./components/display_name.json" },
         "minecraft:flammable": { "$ref": "./components/flammable.json" },
         "minecraft:friction": { "$ref": "./components/friction.json" },
