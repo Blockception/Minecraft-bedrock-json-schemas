@@ -233,8 +233,7 @@
       "type": "array",
       "items": {
         "type": "object", 
-        "additionalProperties": false,
-        "properties": {
+        "additionalProperties": {
           "mutation_chance": {
             "title": "Mutation Chance",
             "description": "The chance it should not inherit from either parent",
@@ -247,6 +246,9 @@
             "type": "array",
             "minItems": 1
           }
+        },
+        "propertyNames": {
+          "pattern": "^[0-9a-zA-Z:_\\.\\-]+$"
         }
       }
     },
