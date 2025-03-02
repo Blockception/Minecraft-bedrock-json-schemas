@@ -7,12 +7,6 @@
   "minProperties": 0,
   "maxProperties": 3,
   "properties": {
-    "peaks_factor": {
-      "type": "number",
-      "title": "Peaks factor",
-      "description": "UNDOCUMENTED.",
-      "$comment": "UNDOCUMENTED"
-    },
     "steep_material_adjustment": {
       "type": "object",
       "title": "Steep material adjustment",
