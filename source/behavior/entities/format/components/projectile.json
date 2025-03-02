@@ -507,6 +507,14 @@
               "type": "string",
               "default": "not set",
               "description": "The id of the particle to spawn on hit."
+            },
+            "particle_item_name": {
+              "title": "Particle Item Name",
+              "description": "Maps an item name to an actor filter to determine what the name of the item used in the particle should be.",
+              "type": "object",
+              "additionalProperties": {
+                "$ref": "../../filters/filters.json"
+              }
             }
           }
         },
@@ -626,6 +634,14 @@
               "type": "string",
               "default": "not set",
               "description": "The entity that will spawn."
+            },
+            "on_spawn": {
+              "title": "On Spawn",
+              "description": "Triggered on the newly spawned entity with other set to the owning entity.",
+              "type": "array",
+              "items": {
+                "$ref": "../types/trigger.json"
+              }
             }
           }
         },
