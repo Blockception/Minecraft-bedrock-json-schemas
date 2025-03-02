@@ -2,37 +2,63 @@
   "$id": "blockception.minecraft.behavior.blocks.minecraft.map_color",
   "title": "Map Color",
   "description": "Sets the color of the block when rendered to a map. The color is represented as a hex value in the format \"#RRGGBB\". May also be expressed as an array of [R, G, B] from 0 to 255. If this component is omitted, the block will not show up on the map.",
-  "oneOf": [
+  "definitions": {
+    "color": {
+      "oneOf": [
+          {
+            "type": "string",
+            "format": "colox-hex",
+            "default": "#FFFFFF"
+          },
+          {
+            "type": "array",
+            "items": [
+              {
+                "title": "Red",
+                "type": "integer",
+                "default": 0,
+                "minimum": 0,
+                "maximum": 255
+              },
+              {
+                "title": "Green",
+                "type": "integer",
+                "default": 0,
+                "minimum": 0,
+                "maximum": 255
+              },
+              {
+                "title": "Blue",
+                "type": "integer",
+                "default": 0,
+                "minimum": 0,
+                "maximum": 255
+              }
+            ]
+          }
+        ]
+    }
+  },
+  "anyOf": [
     {
-      "type": "string",
-      "format": "colox-hex",
-      "default": "#FFFFFF"
+      "$ref": "#/definitions/color"
     },
     {
-      "type": "array",
-      "items": [
-        {
-          "title": "Red",
-          "type": "integer",
-          "default": 0,
-          "minimum": 0,
-          "maximum": 255
+      "type": "object", 
+      "additionalProperties": false,
+      "required": ["color"],
+      "properties": {
+        "color": {
+          "title": "Color",
+          "$ref": "#/definitions/color"
         },
-        {
-          "title": "Green",
-          "type": "integer",
-          "default": 0,
-          "minimum": 0,
-          "maximum": 255
-        },
-        {
-          "title": "Blue",
-          "type": "integer",
-          "default": 0,
-          "minimum": 0,
-          "maximum": 255
+        "tint_method": {
+          "title": "Tint Method",
+          "description": "Tint multiplied to the color. Tint method logic varies, but often refers to the \"rain\" and \"temperature\" of the biome the block is placed in to compute the tint.",
+          "type": "string",
+          "$ref": "../../../../general/vanilla/tint_methods.json"
         }
-      ]
+      }
     }
   ],
   "examples": ["#FFFFFF", [255, 255, 255]]

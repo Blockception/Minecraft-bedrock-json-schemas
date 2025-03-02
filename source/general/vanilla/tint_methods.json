@@ -1,0 +1,15 @@
+{
+    "$id": "blockception.minecraft.general.vanilla.tint_methods",
+    "type": "string",
+    "title": "Tint Method",
+    "description": "Tint multiplied to the color.",
+    "enum": [
+        "none",
+        "default_foliage",
+        "birch_foliage",
+        "evergreen_foliage",
+        "dry_foliage",
+        "grass",
+        "water"
+    ]
+}
