@@ -55,6 +55,14 @@
         "items": {
             "type": "string"
         }
+      },
+      "minecraft:match_tool_filter_any": {
+        "title": "Match Tool Filter Any",
+        "description": "List of tags the item must have at least one of",
+        "type": "array",
+        "items": {
+            "type": "string"
+        }
       }
     }
 }  
