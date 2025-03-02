@@ -39,6 +39,12 @@
       "description": "If true, the mob will randomly pick a new point while moving to the previously selected one.",
       "title": "Random Reselect"
     },
+    "use_home_position_restriction": {
+      "title": "Use Home Position Restriction",
+      "description": "If true, the mob will respect home position restrictions when choosing new target positions. If false, it will choose target position without considering home restrictions.",
+      "type": "boolean",
+      "default": false
+    },
     "float_duration": {
       "$ref": "../types/range_number_type.json",
       "default": [0.0, 0.0],
