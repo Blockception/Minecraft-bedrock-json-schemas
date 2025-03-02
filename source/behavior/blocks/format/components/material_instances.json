@@ -62,6 +62,12 @@
             "title": "Isotropic",
             "description": "[Experimental] Controls rotating the face UVs randomly based on BlockPos",
             "type": "boolean"
+          },
+          "tint_method": {
+            "title": "Tint Method",
+            "description": "Tint multiplied to the color. Tint method logic varies, but often refers to the \"rain\" and \"temperature\" of the biome the block is placed in to compute the tint.",
+            "type": "string",
+            "$ref": "../../../../general/vanilla/tint_methods.json"
           }
         }
       }
