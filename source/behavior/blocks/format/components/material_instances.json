@@ -57,6 +57,11 @@
             "title": "Texture",
             "type": "string",
             "description": "Texture name for the material."
+          },
+          "isotropic": {
+            "title": "Isotropic",
+            "description": "[Experimental] Controls rotating the face UVs randomly based on BlockPos",
+            "type": "boolean"
           }
         }
       }
