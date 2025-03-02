@@ -1,0 +1,15 @@
+{
+  "$id": "blockception.minecraft.resource.biomes.minecraft.lighting_identifier",
+  "title": "Lighting Identifier",
+  "description": "[INTERNAL - WORK IN PROGRESS] Set the lighting settings used during deferred rendering.\nBiomes without this component will have default lighting settings.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["lighting_identifier"],
+  "properties": {
+    "lighting_identifier": {
+      "title": "Lighting Identifier",
+      "description": "Identifier of lighting definition to use",
+      "type": "string"
+    }
+  }
+}

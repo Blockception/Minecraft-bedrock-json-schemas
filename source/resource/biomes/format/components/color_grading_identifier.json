@@ -1,0 +1,15 @@
+{
+  "$id": "blockception.minecraft.resource.biomes.minecraft.color_grading_identifier",
+  "title": "Color Grading Identifier",
+  "description": "[INTERNAL - WORK IN PROGRESS] Set the color_grading settings used during deferred rendering.\nBiomes without this component will have default color_grading settings.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["color_grading_identifier"],
+  "properties": {
+    "color_grading_identifier": {
+      "title": "Color Grading Identifier",
+      "description": "Identifier of color_grading definition to use",
+      "type": "string"
+    }
+  }
+}
