@@ -190,6 +190,40 @@
               "type": "string"
             }
           }
+        },
+        "stop_movement": {
+          "title": "Stop Movement",
+          "description": "Stops the entity's movement",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "stop_vertical_movement": {
+              "title": "Stop Vertical Movement",
+              "description": "Specifies whether vertical movement should be stopped",
+              "type": "boolean",
+              "default": false
+            },
+            "stop_horizontal_movement": {
+              "title": "Stop Horizontal Movement",
+              "description": "Specifies whether horizontal movement should be stopped",
+              "type": "boolean",
+              "default": false
+            }
+          }
+        },
+        "set_home_position": {
+          "title": "Set Home Position",
+          "description": "Sets the entity's home position to its current position",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": { }
+        },
+        "first_valid": {
+          "title": "First Valid",
+          "description": "Will evaluate every filter in order and execute the first valid one",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": { }
         }
       }
     },
