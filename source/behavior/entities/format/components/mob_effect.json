@@ -19,8 +19,16 @@
     },
     "effect_time": {
       "title": "Effect Time",
-      "type": "integer",
-      "default": 10,
+      "anyOf": [
+        {
+          "type": "integer",
+          "default": 10,
+          "minimum": 0
+        },
+        {
+          "const": "infinite"
+        }
+      ],
       "description": "How long the applied mob effect lasts in seconds."
     },
     "entity_filter": {

@@ -16,9 +16,17 @@
           "type": "string"
         },
         "duration": {
-          "type": "integer",
-          "default": 0,
-          "minimum": 0,
+          "title": "Duration",
+          "anyOf": [
+            {
+              "type": "integer",
+              "default": 1,
+              "minimum": 0
+           },
+           {
+             "const": "infinite"
+           }
+          ],
           "description": "The duration of the effect."
         },
         "amplifier": {

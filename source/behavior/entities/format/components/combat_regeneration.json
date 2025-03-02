@@ -18,8 +18,16 @@
       "title": "Apply To Self"
     },
     "regeneration_duration": {
-      "type": "integer",
-      "default": 5,
+      "anyOf": [
+        {
+          "type": "integer",
+          "default": 5,
+          "minimum": 0
+        },
+        {
+          "const": "infinite"
+        }
+      ],
       "description": "The duration in seconds of Regeneration I added to the mob.",
       "title": "Regeneration Duration"
     }
