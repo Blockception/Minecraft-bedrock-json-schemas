@@ -32,6 +32,7 @@
         "minecraft:material_instances": { "$ref": "./components/material_instances.json" },
         "minecraft:placement_filter": { "$ref": "./components/placement_filter.json" },
         "minecraft:redstone_conductivity": { "$ref": "./components/redstone_conductivity.json" },
+        "minecraft:replaceable": { "$ref": "./components/replaceable.json" },
         "minecraft:selection_box": { "$ref": "./components/selection_box.json" },
         "minecraft:transformation": { "$ref": "./components/transformation.json" },
         "minecraft:custom_components": { "$ref": "./components/custom_components.json" },
