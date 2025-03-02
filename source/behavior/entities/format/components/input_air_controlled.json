@@ -1,0 +1,21 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.input_air_controlled",
+  "description": "When configured as a rideable entity, the entity will be controlled using WASD controls and mouse to move in three dimensions.\nOnly available with `\"use_beta_features\": true` and likely to be drastically changed or removed.",
+  "type": "object",
+  "title": "Input Air Controlled",
+  "additionalProperties": false,
+  "properties": {
+    "backwards_movement_modifier": {
+      "title": "Backwards Movement Modifier",
+      "description": "Modifies speed going backwards.",
+      "type": "number", 
+      "minimum": 0
+    },
+    "strafe_speed_modifier": {
+      "title": "Strafe Speed Modifier",
+      "description": "Modifies the strafe speed.",
+      "type": "number", 
+      "minimum": 0
+    }
+  }
+}

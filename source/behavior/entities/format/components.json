@@ -84,6 +84,7 @@
     "minecraft:horse.jump_strength": { "$ref": "./components/horse.jump_strength.json" },
     "minecraft:hurt_on_condition": { "$ref": "./components/hurt_on_condition.json" },
     "minecraft:hurt_when_wet": { "$ref": "./components/hurt_when_wet.json" },
+    "minecraft:input_air_controlled": { "$ref": "./components/input_air_controlled.json" },
     "minecraft:input_ground_controlled": { "$ref": "./components/input_ground_controlled.json" },
     "minecraft:inside_block_notifier": { "$ref": "./components/inside_block_notifier.json" },
     "minecraft:insomnia": { "$ref": "./components/insomnia.json" },
