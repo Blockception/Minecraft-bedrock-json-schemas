@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.rideable",
-  "description": "Determines whether this entity can be ridden. Allows specifying the different seat positions and quantity.",
+  "description": "Determines whether this entity can be ridden. Allows specifying the different seat positions and amount.",
   "type": "object",
   "title": "Rideable",
   "additionalProperties": false,
@@ -45,7 +45,7 @@
     "controlling_seat": {
       "type": "integer",
       "default": 0,
-      "description": "The seat that designates the driver of the entity.",
+      "description": "The seat that designates the driver of the entity. Entities with the \"minecraft:behavior.controlled_by_player\" goal ignore this field and give control to any player in any seat.",
       "title": "Controlling Seat"
     },
     "crouching_skip_interact": {
@@ -71,7 +71,7 @@
     },
     "passenger_max_width": {
       "title": "Passenger Max Width",
-      "description": "The max width a mob can be to be a passenger. A value of 0 ignores this parameter.",
+      "description": "The max width a mob can have to be a rider. A value of 0 ignores this parameter.",
       "type": "number",
       "default": 0.0
     },
