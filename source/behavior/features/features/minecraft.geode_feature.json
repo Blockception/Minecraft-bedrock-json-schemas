@@ -70,31 +70,31 @@
       "title": "Filler",
       "type": "string",
       "description": "The block to fill the inside of the geode.",
-      "$ref": "../../../general/block/identifier.json"
+      "$ref": "../../../general/block/reference.json"
     },
     "inner_layer": {
       "title": "Inner Layer",
       "type": "string",
       "description": "The block that forms the inside layer of the geode shell.",
-      "$ref": "../../../general/block/identifier.json"
+      "$ref": "../../../general/block/reference.json"
     },
     "alternate_inner_layer": {
       "title": "Alternate Inner Layer",
       "type": "string",
       "description": "The block that has a chance of generating instead of inner_layer.",
-      "$ref": "../../../general/block/identifier.json"
+      "$ref": "../../../general/block/reference.json"
     },
     "middle_layer": {
       "title": "Middle Layer",
       "type": "string",
       "description": "The block that forms the middle layer of the geode shell.",
-      "$ref": "../../../general/block/identifier.json"
+      "$ref": "../../../general/block/reference.json"
     },
     "outer_layer": {
       "title": "Outer Layer",
       "type": "string",
       "description": "The block that forms the outer shell of the geode.",
-      "$ref": "../../../general/block/identifier.json"
+      "$ref": "../../../general/block/reference.json"
     },
     "inner_placements": {
       "title": "Inner Placements",
@@ -104,7 +104,7 @@
       "items": {
         "title": "Block Reference",
         "description": "A block that may be replaced during placement.",
-        "$ref": "../../../general/block/identifier.json"
+        "$ref": "../../../general/block/reference.json"
       }
     },
     "min_outer_wall_distance": {

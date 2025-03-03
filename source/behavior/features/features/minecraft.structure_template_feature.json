@@ -60,7 +60,7 @@
               "items": {
                 "title": "Block",
                 "type": "string",
-                "$ref": "../../../general/block/identifier.json"
+                "$ref": "../../../general/block/reference.json"
               }
             },
             "block_whitelist": {
@@ -70,7 +70,7 @@
               "items": {
                 "title": "Block",
                 "type": "string",
-                "$ref": "../../../general/block/identifier.json"
+                "$ref": "../../../general/block/reference.json"
               }
             }
           }

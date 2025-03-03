@@ -4,7 +4,7 @@
   "title": "Spell Effects",
   "additionalProperties": false,
   "description": "Defines what mob effects to add and remove to the entity when adding this component.",
-  "required": [],
+  "required": [ ],
   "properties": {
     "add_effects": {
       "type": "array",
@@ -32,8 +32,16 @@
               "duration": {
                 "title": "Duration",
                 "description": "The amount of time in seconds the effect should last. This allows for fractional numbers. For example, instant effects should be set to 0.05 seconds (one tick).",
-                "type": "number",
-                "minimum": 0
+                "anyOf": [
+                  {
+                    "type": "integer",
+                    "default": 1,
+                    "minimum": 0
+                  },
+                  {
+                    "const": "infinite"
+                  }
+                ]
               },
               "display_on_screen_animation": {
                 "type": "boolean",
@@ -63,7 +71,7 @@
         {
           "type": "array",
           "items": {
-            "type": ["string"],
+            "type": [ "string" ],
             "title": "Spell Effect ID",
             "description": "identifier of the effect to be removed from this entity after adding this component."
           }
@@ -76,7 +84,7 @@
   },
   "examples": [
     {
-      "add_effects": []
+      "add_effects": [ ]
     }
   ]
 }

@@ -4,7 +4,7 @@
   "additionalProperties": false,
   "title": "Attack",
   "description": "Defines an entity's melee attack and any additional effects on it.",
-  "required": ["damage"],
+  "required": [ "damage" ],
   "properties": {
     "damage": {
       "title": "Damage",
@@ -18,11 +18,19 @@
       "title": "Effect Name"
     },
     "effect_duration": {
-      "type": "number",
-      "default": 1,
+      "anyOf": [
+        {
+          "type": "integer",
+          "default": 1,
+          "minimum": 0
+        },
+        {
+          "const": "infinite"
+        }
+      ],
       "description": "Duration in seconds of the status ailment applied to the damaged entity.",
       "title": "Effect Duration"
     }
   },
-  "examples": [{ "damage": 1 }, { "damage": 1, "effect_name": "example", "effect_duration": 1 }]
+  "examples": [ { "damage": 1 }, { "damage": 1, "effect_name": "example", "effect_duration": 1 } ]
 }

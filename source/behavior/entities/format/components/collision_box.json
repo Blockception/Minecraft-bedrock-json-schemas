@@ -4,18 +4,22 @@
   "title": "Collision Box",
   "additionalProperties": false,
   "description": "Sets the width and height of the Entity's collision box.",
-  "required": [],
+  "required": [ ],
   "properties": {
     "height": {
       "title": "Height",
       "type": "number",
       "default": 1.0,
+      "minimum": -100000000,
+      "maximum": 100000000,
       "description": "Height of the collision box in blocks. A negative value will be assumed to be 0."
     },
     "width": {
       "title": "Width",
       "type": "number",
       "default": 1.0,
+      "minimum": -100000000,
+      "maximum": 100000000,
       "description": "Width of the collision box in blocks. A negative value will be assumed to be 0."
     }
   },

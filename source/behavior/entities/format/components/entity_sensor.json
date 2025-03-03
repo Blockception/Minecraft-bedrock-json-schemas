@@ -12,6 +12,12 @@
           "type": "number",
           "default": -1
         },
+        "y_offset": {
+          "title": "Y Offset",
+          "description": "Vertical offset applied to the entity's position when computing the distance from other entities.",
+          "type": "number",
+          "default": 0
+        },
         "event_filters": {
           "$ref": "../../filters/filters.json"
         },
@@ -105,6 +111,12 @@
           "default": true,
           "description": "If true the sensor range is additive on top of the entity's size.",
           "title": "Relative Range"
+        },
+        "find_players_only": {
+          "type": "boolean",
+          "default": true,
+          "description": "Limits the search to Players only for all subsensors.",
+          "title": "Find Players Only"
         }
       }
     }

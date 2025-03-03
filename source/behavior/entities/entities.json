@@ -35,6 +35,12 @@
   "required": ["format_version", "minecraft:entity"],
   "additionalProperties": false,
   "properties": {
+    "use_beta_features": {
+      "title": "Use Beta Features",
+      "description": "Allows an entity to use experimental features.",
+      "type": "boolean",
+      "default": false
+    },
     "format_version": { "$ref": "../../general/format_version.json" },
     "minecraft:entity": { "$ref": "./format/minecraft.entity.json" }
   }

@@ -1,0 +1,47 @@
+{
+  "$id": "blockception.minecraft.resource.biomes.minecraft.dry_foliage_color",
+  "title": "Dry Foliage Color",
+  "description": "Set the dry foliage color used during rendering. Biomes without this component will have default dry foliage color behavior.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["color"],
+  "properties": {
+    "color": {
+      "title": "Color",
+      "description": "RGB color of dry foliage",
+      "oneOf": [
+          {
+            "type": "string",
+            "format": "colox-hex",
+            "default": "#FFFFFF"
+          },
+          {
+            "type": "array",
+            "items": [
+              {
+                "title": "Red",
+                "type": "integer",
+                "default": 0,
+                "minimum": 0,
+                "maximum": 255
+              },
+              {
+                "title": "Green",
+                "type": "integer",
+                "default": 0,
+                "minimum": 0,
+                "maximum": 255
+              },
+              {
+                "title": "Blue",
+                "type": "integer",
+                "default": 0,
+                "minimum": 0,
+                "maximum": 255
+              }
+            ]
+          }
+        ]
+    }
+  }
+}

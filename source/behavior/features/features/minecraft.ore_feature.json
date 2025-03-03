@@ -28,7 +28,7 @@
           "places_block": {
             "title": "Places Block",
             "description": "Reference to the block to be placed.",
-            "$ref": "../../../general/block/identifier.json"
+            "$ref": "../../../general/block/reference.json"
           },
           "may_replace": {
             "title": "May Replace",
@@ -36,7 +36,7 @@
             "type": "array",
             "minItems": 1,
             "items": {
-              "$ref": "../../../general/block/identifier.json"
+              "$ref": "../../../general/block/reference.json"
             }
           }
         }

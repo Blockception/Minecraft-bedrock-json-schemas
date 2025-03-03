@@ -112,7 +112,7 @@
                   "title": "Decoration Block",
                   "description": "The block used for decorating the trunk.",
                   "type": "string",
-                  "$ref": "../../../general/block/identifier.json"
+                  "$ref": "../../../general/block/reference.json"
                 },
                 "num_steps": {
                   "title": "Num Steps",
@@ -228,7 +228,7 @@
             "hanging_block": {
               "title": "Hanging Block",
               "description": "The block to be used as a hanging block.",
-              "$ref": "../../../general/block/identifier.json"
+              "$ref": "../../../general/block/reference.json"
             },
             "hanging_block_placement_chance": {
               "title": "Hanging Block Placement Chance",
@@ -380,7 +380,7 @@
       "title": "Leaf Block",
       "description": "The block thata forms the canopy of the tree.",
       "type": "string",
-      "$ref": "../../../general/block/identifier.json"
+      "$ref": "../../../general/block/reference.json"
     },
     "trunk_width": {
       "title": "Trunk Width",
@@ -415,7 +415,7 @@
           "title": "Decoration Block",
           "description": "The block used for decorating the trunk.",
           "type": "string",
-          "$ref": "../../../general/block/identifier.json"
+          "$ref": "../../../general/block/reference.json"
         },
         "num_steps": {
           "title": "Num Steps",
@@ -440,7 +440,7 @@
       "title": "Trunk Block",
       "description": "The block that forms the tree trunk.",
       "type": "string",
-      "$ref": "../../../general/block/identifier.json"
+      "$ref": "../../../general/block/reference.json"
     }
   },
   "properties": {
@@ -450,10 +450,10 @@
     "base_block": {
       "title": "Base Block",
       "oneOf": [
-        { "$ref": "../../../general/block/identifier.json" },
+        { "$ref": "../../../general/block/reference.json" },
         {
           "type": "array",
-          "items": { "title": "Block", "$ref": "../../../general/block/identifier.json" }
+          "items": { "title": "Block", "$ref": "../../../general/block/reference.json" }
         }
       ]
     },
@@ -469,7 +469,7 @@
           "description": "List of blocks that the base cluster of a tree can replace.",
           "type": "array",
           "items": {
-            "$ref": "../../../general/block/identifier.json"
+            "$ref": "../../../general/block/reference.json"
           }
         },
         "num_clusters": {
@@ -491,7 +491,7 @@
       "description": "List of blocks where a tree can grow on.",
       "type": "array",
       "items": {
-        "$ref": "../../../general/block/identifier.json"
+        "$ref": "../../../general/block/reference.json"
       }
     },
     "may_replace": {
@@ -499,7 +499,7 @@
       "description": "List of blocks that a tree can replace.",
       "type": "array",
       "items": {
-        "$ref": "../../../general/block/identifier.json"
+        "$ref": "../../../general/block/reference.json"
       }
     },
     "may_grow_through": {
@@ -507,7 +507,7 @@
       "description": "List of blocks that a tree can grow through.",
       "type": "array",
       "items": {
-        "$ref": "../../../general/block/identifier.json"
+        "$ref": "../../../general/block/reference.json"
       }
     },
     "acacia_trunk": {
@@ -1131,7 +1131,7 @@
               "title": "Decoration Block",
               "description": "The block used for decorating the trunk.",
               "type": "string",
-              "$ref": "../../../general/block/identifier.json"
+              "$ref": "../../../general/block/reference.json"
             },
             "num_steps": {
               "title": "Num Steps",
@@ -1247,7 +1247,7 @@
         "hanging_block": {
           "title": "Hanging Block",
           "description": "The block to be used as a hanging block.",
-          "$ref": "../../../general/block/identifier.json"
+          "$ref": "../../../general/block/reference.json"
         },
         "hanging_block_placement_chance": {
           "title": "Hanging Block Placement Chance",
@@ -1452,7 +1452,7 @@
           "title": "Root Block",
           "description": "Block used for roots.",
           "type": "string",
-          "$ref": "../../../general/block/identifier.json"
+          "$ref": "../../../general/block/reference.json"
         },
         "above_root": {
           "title": "Above Root",
@@ -1469,19 +1469,19 @@
               "title": "Above Root Block",
               "description": "The block placed on the top of the roots.",
               "type": "string",
-              "$ref": "../../../general/block/identifier.json"
+              "$ref": "../../../general/block/reference.json"
             },
             "muddy_root_block": {
               "title": "Muddy Root Block",
               "description": "The block used for muddy roots.",
               "type": "string",
-              "$ref": "../../../general/block/identifier.json"
+              "$ref": "../../../general/block/reference.json"
             },
             "mud_block": {
               "title": "Mud Block",
               "description": "The block used to determine if a muddy root should be placed.",
               "type": "string",
-              "$ref": "../../../general/block/identifier.json"
+              "$ref": "../../../general/block/reference.json"
             },
             "y_offset": {
               "title": "Y Offset",
@@ -1493,7 +1493,7 @@
               "description": "List of blocks that a root can grow through.",
               "type": "array",
               "items": {
-                "$ref": "../../../general/block/identifier.json"
+                "$ref": "../../../general/block/reference.json"
               }
             },
             "root_decoration": {

@@ -15,12 +15,17 @@
       "properties": {
         // Components
         "minecraft:ambient_sounds": { "$ref": "./components/ambient_sounds.json" },
+        "minecraft:atmosphere_identifier": { "$ref": "./components/atmosphere_identifier.json" },
         "minecraft:biome_music": { "$ref": "./components/biome_music.json" },
+        "minecraft:color_grading_identifier": { "$ref": "./components/color_grading_identifier.json" },
+        "minecraft:dry_foliage_color": { "$ref": "./components/dry_foliage_color.json" },
         "minecraft:fog_appearance": { "$ref": "./components/fog_appearance.json" },
         "minecraft:foliage_appearance": { "$ref": "./components/foliage_appearance.json" },
         "minecraft:grass_appearance": { "$ref": "./components/grass_appearance.json" },
+        "minecraft:lighting_identifier": { "$ref": "./components/lighting_identifier.json" },
         "minecraft:sky_color": { "$ref": "./components/sky_color.json" },
-        "minecraft:water_appearance": { "$ref": "./components/water_appearance.json" }
+        "minecraft:water_appearance": { "$ref": "./components/water_appearance.json" },
+        "minecraft:water_identifier": { "$ref": "./components/water_identifier.json" }
       }
     }
   },

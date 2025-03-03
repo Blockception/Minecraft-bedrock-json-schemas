@@ -128,7 +128,7 @@
     },
     "offset": {
       "type": "array",
-      "default": [0, 0.0, 0],
+      "default": [ 0, 0.0, 0 ],
       "description": "The offset from the entity's anchor where the projectile will spawn.",
       "title": "Offset",
       "$ref": "../../../../general/vectors/number3.json"
@@ -220,7 +220,7 @@
           "additionalProperties": false,
           "properties": {
             "shape": {
-              "enum": ["sphere", "cube"],
+              "enum": [ "sphere", "cube" ],
               "default": "sphere",
               "description": "The shape of the area that is frozen.",
               "title": "Shape"
@@ -404,26 +404,59 @@
             },
             "duration": {
               "title": "Duration",
-              "type": "integer",
-              "default": 1,
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "default": 1,
+                  "minimum": 0
+                },
+                {
+                  "const": "infinite"
+                }
+              ],
               "description": "The effect's duration."
             },
             "durationeasy": {
               "title": "Duration Easy",
-              "type": "integer",
-              "default": 0,
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "default": 0,
+                  "minimum": 0
+                },
+                {
+                  "const": "infinite"
+                }
+              ],
               "description": "The effect's duration on easy mode."
             },
             "durationhard": {
               "title": "Duration Hard",
-              "type": "integer",
-              "default": 800,
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "default": 800,
+                  "minimum": 0
+                },
+                {
+                  "const": "infinite"
+                }
+              ],
               "description": "The effect's duration on hard mode."
             },
             "durationnormal": {
               "title": "Duration Normal",
               "type": "integer",
-              "default": 200,
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "default": 200,
+                  "minimum": 0
+                },
+                {
+                  "const": "infinite"
+                }
+              ],
               "description": "The effect's duration on normal mode."
             },
             "effect": {
@@ -474,6 +507,14 @@
               "type": "string",
               "default": "not set",
               "description": "The id of the particle to spawn on hit."
+            },
+            "particle_item_name": {
+              "title": "Particle Item Name",
+              "description": "Maps an item name to an actor filter to determine what the name of the item used in the particle should be.",
+              "type": "object",
+              "additionalProperties": {
+                "$ref": "../../filters/filters.json"
+              }
             }
           }
         },
@@ -488,7 +529,7 @@
           "type": "object",
           "description": "Removes the projectile.",
           "additionalProperties": true,
-          "properties": {}
+          "properties": { }
         },
         "spawn_aoe_cloud": {
           "title": "Spawn AOE Cloud",
@@ -593,6 +634,14 @@
               "type": "string",
               "default": "not set",
               "description": "The entity that will spawn."
+            },
+            "on_spawn": {
+              "title": "On Spawn",
+              "description": "Triggered on the newly spawned entity with other set to the owning entity.",
+              "type": "array",
+              "items": {
+                "$ref": "../types/trigger.json"
+              }
             }
           }
         },
@@ -716,9 +765,9 @@
       "lightning": false,
       "liquid_inertia": 0.6,
       "multiple_targets": true,
-      "offset": [],
+      "offset": [ ],
       "on_fire_time": 5,
-      "on_hit": {},
+      "on_hit": { },
       "particle": "iconcrack",
       "potion_effect": -1,
       "power": 1.3,

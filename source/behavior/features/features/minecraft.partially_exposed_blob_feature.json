@@ -11,7 +11,7 @@
     "places_block": {
       "title": "Places Block",
       "description": "Reference to the block to be placed.",
-      "$ref": "../../../general/block/identifier.json"
+      "$ref": "../../../general/block/reference.json"
     },
     "placement_radius_around_floor": {
       "title": "Placement Radius Around Floor",
