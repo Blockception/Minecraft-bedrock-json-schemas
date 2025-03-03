@@ -20,7 +20,7 @@
             "description": "Items that can be used to repeair it",
             "$comment": "List of items",
             "type": "array",
-            "items": { "type": "string", "title": "Item", "description": "Item identifier" }
+            "items": { "$ref": "../../../../general/item/descriptor.json" }
           },
           "repair_amount": {
             "title": "Repair Amount",
