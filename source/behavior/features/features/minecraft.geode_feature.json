@@ -104,7 +104,7 @@
       "items": {
         "title": "Block Reference",
         "description": "A block that may be replaced during placement.",
-        "$ref": "../../../general/block/reference.json.json"
+        "$ref": "../../../general/block/reference.json"
       }
     },
     "min_outer_wall_distance": {
