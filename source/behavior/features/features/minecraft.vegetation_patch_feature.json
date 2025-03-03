@@ -15,14 +15,14 @@
       "items": {
         "title": "Replace Block",
         "type": "string",
-        "$ref": "../../../general/block/identifier.json"
+        "$ref": "../../../general/block/reference.json"
       }
     },
     "ground_block": {
       "title": "Ground Block",
       "description": "Block used to create a base for the vegetation patch.",
       "type": "string",
-      "$ref": "../../../general/block/identifier.json"
+      "$ref": "../../../general/block/reference.json"
     },
     "vegetation_feature": {
       "title": "Vegetation Feature",

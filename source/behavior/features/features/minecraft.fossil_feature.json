@@ -11,7 +11,7 @@
     "ore_block": {
       "title": "Ore Block",
       "description": "Reference to the block to fill the cave with.",
-      "$ref": "../../../general/block/identifier.json"
+      "$ref": "../../../general/block/reference.json"
     },
     "max_empty_corners": {
       "title": "Max Empty Corners",

@@ -12,7 +12,7 @@
       "title": "Places Block",
       "description": "Reference to the block to be placed.",
       "type": "string",
-      "$ref": "../../../general/block/identifier.json"
+      "$ref": "../../../general/block/reference.json"
     },
     "search_range": {
       "title": "Search Range",
@@ -51,7 +51,7 @@
       "items": {
         "title": "Block",
         "description": " A list of blocks that the block in this feature can be placed on. Omit this field to allow any block to be placed on.",
-        "$ref": "../../../general/block/identifier.json"
+        "$ref": "../../../general/block/reference.json"
       }
     }
   }

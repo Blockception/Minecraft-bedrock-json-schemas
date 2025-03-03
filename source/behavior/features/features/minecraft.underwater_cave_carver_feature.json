@@ -11,7 +11,7 @@
     "fill_with": {
       "title": "Fill With",
       "description": "Reference to the block to fill the cave with.",
-      "$ref": "../../../general/block/identifier.json"
+      "$ref": "../../../general/block/reference.json"
     },
     "width_modifier": {
       "title": "Width Modifier",
@@ -73,7 +73,7 @@
     "replace_air_with": {
       "title": "Replace Air With",
       "description": "Reference to the block to replace air blocks with.",
-      "$ref": "../../../general/block/identifier.json"
+      "$ref": "../../../general/block/reference.json"
     }
   }
 }
