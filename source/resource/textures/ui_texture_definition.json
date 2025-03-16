@@ -5,7 +5,7 @@
   "description": "The file that specifies either 9slice texture or Aseprite flipbook.",
   "title": "UI Texture File",
   "type": "object",
-  "oneOf": [
+  "anyOf": [
     {
       "$ref": "./nine_slice.json"
     },
