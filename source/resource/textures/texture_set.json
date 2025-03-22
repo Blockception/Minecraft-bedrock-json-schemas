@@ -3,6 +3,7 @@
   "$id": "blockception.minecraft.resource.texture.texture_set",
   "type": "object",
   "additionalProperties": false,
+  "required": ["format_version", "minecraft:texture_set"],
   "properties": {
     "format_version": {
       "format_version": {
