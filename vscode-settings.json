@@ -560,16 +560,16 @@
     },
     {
       "fileMatch": [
-        "resource_packs/*/textures/*/*.{json,jsonc,json5}",
-        "*resource*pack*/textures/*/*.{json,jsonc,json5}",
-        "*Resource*Pack*/textures/*/*.{json,jsonc,json5}",
-        "*RP*/textures/*/*.{json,jsonc,json5}",
-        "*rp*/textures/*/*.{json,jsonc,json5}",
-        "resource_packs/*/textures/*/**/*.{json,jsonc,json5}",
-        "*resource*pack*/textures/*/**/*.{json,jsonc,json5}",
-        "*Resource*Pack*/textures/*/**/*.{json,jsonc,json5}",
-        "*RP*/textures/*/**/*.{json,jsonc,json5}",
-        "*rp*/textures/*/**/*.{json,jsonc,json5}"
+        "resource_packs/*/textures/*/!(*.texture_set).{json,jsonc,json5}",
+        "*resource*pack*/textures/*/!(*.texture_set).{json,jsonc,json5}",
+        "*Resource*Pack*/textures/*/!(*.texture_set).{json,jsonc,json5}",
+        "*RP*/textures/*/!(*.texture_set).{json,jsonc,json5}",
+        "*rp*/textures/*/!(*.texture_set).{json,jsonc,json5}",
+        "resource_packs/*/textures/*/**/!(*.texture_set).{json,jsonc,json5}",
+        "*resource*pack*/textures/*/**/!(*.texture_set).{json,jsonc,json5}",
+        "*Resource*Pack*/textures/*/**/!(*.texture_set).{json,jsonc,json5}",
+        "*RP*/textures/*/**/!(*.texture_set).{json,jsonc,json5}",
+        "*rp*/textures/*/**/!(*.texture_set).{json,jsonc,json5}"
       ],
       "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/resource/textures/ui_texture_definition.json"
     },
