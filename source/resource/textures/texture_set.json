@@ -15,6 +15,7 @@
         "color": { "$ref": "#/definitions/color" },
         "heightmap": { "$ref": "#/definitions/heightmap" },
         "metalness_emissive_roughness": { "$ref": "#/definitions/mer" },
+        "metalness_emissive_roughness_subsurface": { "$ref": "#/definitions/mers" },
         "normal": { "$ref": "#/definitions/normal" }
       }
     }
@@ -104,6 +105,24 @@
               "maximum": 255
             }
           ]
+        }
+      ]
+    },
+    "mers": {
+      "title": "Metalness Emissive Roughness Subsurface",
+      "description": "This is a 4-channel image or a 4-value array for a uniform MERS. RGBA images map Red to Metalness, Green to Emissive, Blue to Roughness and Alpha to Subsurface.",
+      "examples": [[255, 255, 255, 255]],
+      "oneOf": [
+        { "type": "string" },
+        {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 255
+          }
         }
       ]
     }
