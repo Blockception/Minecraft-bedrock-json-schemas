@@ -11,6 +11,16 @@
       "type": "object",
       "additionalProperties": false,
       "required": ["color"],
+      "not": {
+        "anyOf": [
+          {
+            "required": ["heightmap", "normal"]
+          },
+          {
+            "required": ["metalness_emissive_roughness", "metalness_emissive_roughness_subsurface"]
+          }
+        ]
+      },
       "properties": {
         "color": { "$ref": "#/definitions/color" },
         "heightmap": { "$ref": "#/definitions/heightmap" },
