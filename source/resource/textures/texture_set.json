@@ -4,7 +4,13 @@
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "format_version": { "$ref": "../../general/format_version.json" },
+    "format_version": {
+      "format_version": {
+        "title": "Format Version",
+        "description": "A version that tells minecraft what type of data format can be expected when reading this file.",
+        "enum": ["1.16.100", "1.21.30"]
+      }
+    },
     "minecraft:texture_set": {
       "title": "Texture Set",
       "description": "Texture Sets are used to define multiple PBR layers for a texture resource.",
