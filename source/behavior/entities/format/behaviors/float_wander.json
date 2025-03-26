@@ -33,6 +33,12 @@
       "description": "If true, the point has to be reachable to be a valid target.",
       "title": "Must Reach"
     },
+    "float_wander_has_move_control": {
+      "title": "Float Wander Has Move Control",
+      "description": "If true, the MoveControl flag will be added to the behavior which means that it can no longer be active at the same time as other behaviors with MoveControl.",
+      "type": "boolean",
+      "default": true
+    },
     "random_reselect": {
       "type": "boolean",
       "default": false,
