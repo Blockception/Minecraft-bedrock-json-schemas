@@ -10,7 +10,7 @@
       "title": "Add Or Remove",
       "description": "The components groups to add or remove.",
       "type": "object",
-      "examples": [ { "component_groups": [ "self:variant1" ] } ],
+      "examples": [{ "component_groups": ["self:variant1"] }],
       "properties": {
         "component_groups": {
           "title": "Component Groups",
@@ -18,10 +18,12 @@
           "anyOf": [
             {
               "type": "array",
-              "items": { "type": "string", "description": "A reference to a component group.", "title": "Component Groups" }    
+              "items": { "type": "string", "description": "A reference to a component group.", "title": "Component Groups" }
             },
             {
-              "type": "string", "description": "A reference to a component group.", "title": "Component Groups"    
+              "type": "string",
+              "description": "A reference to a component group.",
+              "title": "Component Groups"
             }
           ]
         }
@@ -30,23 +32,23 @@
     "event_base": {
       "additionalProperties": false,
       "type": "object",
-      "examples": [ { }, { "add": { "component_groups": [ ] } }, { "remove": { "component_groups": [ ] } } ],
+      "examples": [{}, { "add": { "component_groups": [] } }, { "remove": { "component_groups": [] } }],
       "defaultSnippets": [
-        { "label": "New Add Event", "body": { "add": { "component_groups": [ "$1" ] } } },
-        { "label": "New Remove Event", "body": { "remove": { "component_groups": [ "$1" ] } } },
+        { "label": "New Add Event", "body": { "add": { "component_groups": ["$1"] } } },
+        { "label": "New Remove Event", "body": { "remove": { "component_groups": ["$1"] } } },
         {
           "label": "New Random Event",
           "body": {
             "randomize": [
-              { "add": { "component_groups": [ "$1" ] }, "weight": 1 },
-              { "add": { "component_groups": [ "$2" ] }, "weight": 1 }
+              { "add": { "component_groups": ["$1"] }, "weight": 1 },
+              { "add": { "component_groups": ["$2"] }, "weight": 1 }
             ]
           }
         },
         {
           "label": "New Sequence Events",
           "body": {
-            "sequence": [ { "add": { "component_groups": [ "$1" ] } }, { "add": { "component_groups": [ "$2" ] } } ]
+            "sequence": [{ "add": { "component_groups": ["$1"] } }, { "add": { "component_groups": ["$2"] } }]
           }
         }
       ],
@@ -75,7 +77,7 @@
           "items": {
             "description": "Randomly selects one of the following items based upon their weight and the total weights.",
             "title": "Randomize",
-            "examples": [ { "add": { "component_groups": [ "foo:example" ] }, "weight": 1 } ],
+            "examples": [{ "add": { "component_groups": ["foo:example"] }, "weight": 1 }],
             "$ref": "#/definitions/weighted_event_base"
           }
         },
@@ -108,7 +110,7 @@
           "description": "Allows an entity to reset its target.",
           "type": "object",
           "additionalProperties": false,
-          "properties": { }
+          "properties": {}
         },
         "emit_vibration": {
           "title": "Emit Vibration",
@@ -116,18 +118,10 @@
           "type": "object",
           "properties": {
             "vibration": {
-              "enum": [
-                "shear",
-                "entity_act",
-                "entity_interact"
-              ]
+              "enum": ["shear", "entity_act", "entity_interact"]
             }
           },
-          "examples": [
-            { "vibration": "shear" },
-            { "vibration": "entity_act" },
-            { "vibration": "entity_interact" }
-          ]
+          "examples": [{ "vibration": "shear" }, { "vibration": "entity_act" }, { "vibration": "entity_interact" }]
         },
         "set_property": {
           "title": "Set Property",
@@ -135,9 +129,9 @@
           "type": "object",
           "additionalProperties": {
             "title": "Property",
-            "type": [ "string", "number", "integer", "boolean" ],
+            "type": ["string", "number", "integer", "boolean"],
             "description": "The value to set the property to.",
-            "examples": [ false, 0, 0.0, "math.random(0, 10)" ]
+            "examples": [false, 0, 0.0, "math.random(0, 10)"]
           },
           "examples": [
             { "example:property": false },
@@ -157,14 +151,14 @@
                 {
                   "type": "string",
                   "pattern": "^[^/].*$",
-                  "examples": [ "say Hello World" ]
+                  "examples": ["say Hello World"]
                 },
                 {
                   "type": "array",
                   "items": {
                     "type": "string",
                     "description": "The command to execute.",
-                    "examples": [ "say Hello World" ],
+                    "examples": ["say Hello World"],
                     "pattern": "^[^/].*$"
                   }
                 }
@@ -223,37 +217,38 @@
           "description": "Sets the entity's home position to its current position",
           "type": "object",
           "additionalProperties": false,
-          "properties": { }
+          "properties": {}
         },
         "first_valid": {
           "title": "First Valid",
           "description": "Will evaluate every filter in order and execute the first valid one",
-          "type": "object",
-          "additionalProperties": false,
-          "properties": { }
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/event_base"
+          }
         }
       }
     },
     "weighted_event_base": {
       "additionalProperties": false,
       "type": "object",
-      "examples": [ { }, { "add": { "component_groups": [ ] } }, { "remove": { "component_groups": [ ] } } ],
+      "examples": [{}, { "add": { "component_groups": [] } }, { "remove": { "component_groups": [] } }],
       "defaultSnippets": [
-        { "label": "New Add Event", "body": { "add": { "component_groups": [ "$1" ] } } },
-        { "label": "New Remove Event", "body": { "remove": { "component_groups": [ "$1" ] } } },
+        { "label": "New Add Event", "body": { "add": { "component_groups": ["$1"] } } },
+        { "label": "New Remove Event", "body": { "remove": { "component_groups": ["$1"] } } },
         {
           "label": "New Random Event",
           "body": {
             "randomize": [
-              { "add": { "component_groups": [ "$1" ] }, "weight": 1 },
-              { "add": { "component_groups": [ "$2" ] }, "weight": 1 }
+              { "add": { "component_groups": ["$1"] }, "weight": 1 },
+              { "add": { "component_groups": ["$2"] }, "weight": 1 }
             ]
           }
         },
         {
           "label": "New Sequence Events",
           "body": {
-            "sequence": [ { "add": { "component_groups": [ "$1" ] } }, { "add": { "component_groups": [ "$2" ] } } ]
+            "sequence": [{ "add": { "component_groups": ["$1"] } }, { "add": { "component_groups": ["$2"] } }]
           }
         }
       ],
@@ -282,7 +277,7 @@
           "items": {
             "description": "Randomly selects one of the following items based upon their weight and the total weights.",
             "title": "Randomize",
-            "examples": [ { "add": { "component_groups": [ "foo:example" ] }, "weight": 1 } ],
+            "examples": [{ "add": { "component_groups": ["foo:example"] }, "weight": 1 }],
             "$ref": "#/definitions/weighted_event_base"
           }
         },
@@ -303,18 +298,10 @@
           "type": "object",
           "properties": {
             "vibration": {
-              "enum": [
-                "shear",
-                "entity_act",
-                "entity_interact"
-              ]
+              "enum": ["shear", "entity_act", "entity_interact"]
             }
           },
-          "examples": [
-            { "vibration": "shear" },
-            { "vibration": "entity_act" },
-            { "vibration": "entity_interact" }
-          ]
+          "examples": [{ "vibration": "shear" }, { "vibration": "entity_act" }, { "vibration": "entity_interact" }]
         },
         "set_property": {
           "title": "Set Property",
@@ -322,9 +309,9 @@
           "type": "object",
           "additionalProperties": {
             "title": "Property",
-            "type": [ "string", "number", "integer", "boolean" ],
+            "type": ["string", "number", "integer", "boolean"],
             "description": "The value to set the property to.",
-            "examples": [ false, 0, 0.0, "math.random(0, 10)" ]
+            "examples": [false, 0, 0.0, "math.random(0, 10)"]
           },
           "examples": [
             { "example:property": false },
@@ -344,14 +331,14 @@
                 {
                   "type": "string",
                   "pattern": "^[^/].*$",
-                  "examples": [ "say Hello World" ]
+                  "examples": ["say Hello World"]
                 },
                 {
                   "type": "array",
                   "items": {
                     "type": "string",
                     "description": "The command to execute.",
-                    "examples": [ "say Hello World" ],
+                    "examples": ["say Hello World"],
                     "pattern": "^[^/].*$"
                   }
                 }
