@@ -9,9 +9,9 @@
         "minecraft:entity": {
           "description": {
             "identifier": "$2:${3:${TM_FILENAME/[\\.].*//}}",
-            "is_spawnable": "^{4:true}",
-            "is_summonable": "^{5:true}",
-            "is_experimental": "^{6:false}"
+            "is_spawnable": "${4:true}",
+            "is_summonable": "${5:true}",
+            "is_experimental": "${6:false}"
           },
           "components": "^{$7}"
         }
