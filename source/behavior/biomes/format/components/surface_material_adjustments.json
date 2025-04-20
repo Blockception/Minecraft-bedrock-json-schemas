@@ -1,5 +1,5 @@
 {
-  "$id": "minecraft.behavior.biomes.1.12.0.components.minecraft.surface_material_adjustments",
+  "$id": "blockception.minecraft.behavior.biomes.minecraft.surface_material_adjustments",
   "title": "Surface Material Adjustments",
   "description": "Specify fine-detail changes to blocks used in terrain generation (based on a noise function).",
   "type": "object",
@@ -10,8 +10,7 @@
       "description": "All adjustments that match the column's noise values will be applied in the order listed.",
       "items": {
         "title": "Adjustment",
-        "description": "UNDOCUMENTED.",
-        "$comment": "UNDOCUMENTED",
+        "description": "The specific blocks used for this surface adjustment.",
         "type": "object",
         "additionalProperties": false,
         "properties": {
@@ -32,35 +31,34 @@
           },
           "materials": {
             "title": "Materials",
-            "description": "UNDOCUMENTED.",
-            "$comment": "UNDOCUMENTED",
+            "description": "The specific blocks used for this surface adjustment.",
             "type": "object",
             "additionalProperties": false,
             "properties": {
               "top_material": {
                 "title": "Top Material",
                 "description": "Controls the block type used for the surface of this biome when this adjustment is active.",
-                "type": "string"
+                "$ref": "../../../../general/block/reference.json"
               },
               "mid_material": {
                 "title": "Mid Material",
                 "description": "Controls the block type used in a layer below the surface of this biome when this adjustment is active.",
-                "type": "string"
+                "$ref": "../../../../general/block/reference.json"
               },
               "sea_floor_material": {
                 "title": "Sea Floor Material",
                 "description": "Controls the block type used as a floor for bodies of water in this biome when this adjustment is active.",
-                "type": "string"
+                "$ref": "../../../../general/block/reference.json"
               },
               "foundation_material": {
                 "title": "Top Materials",
                 "description": "Controls the block type used deep underground in this biome when this adjustment is active.",
-                "type": "string"
+                "$ref": "../../../../general/block/reference.json"
               },
               "sea_material": {
                 "title": "Top Materials",
                 "description": "Controls the block type used in the bodies of water in this biome when this adjustment is active.",
-                "type": "string"
+                "$ref": "../../../../general/block/reference.json"
               }
             }
           },
@@ -80,6 +78,11 @@
                 "title": "Max"
               }
             ]
+          },
+          "noise_frequency_scale": {
+            "title": "Noise Frequency Scale",
+            "description": "The scale to multiply by the position when accessing the noise value for the material adjustments.",
+            "type": "number"
           }
         }
       }

@@ -1,5 +1,5 @@
 {
-  "$id": "minecraft.behavior.biomes.1.12.0.components.minecraft.nether_generation_rules",
+  "$id": "blockception.minecraft.behavior.biomes.minecraft.multinoise_generation_rules",
   "title": "Nether Generation Rules",
   "description": "Controls how this biome is instantiated (and then potentially modified) during world generation of the nether.",
   "type": "object",
@@ -25,6 +25,10 @@
       "description": "Weirdness with which this biome should selected, relative to other biomes.",
       "type": "number"
     },
-    "weight": { "title": "Weight", "description": "Weight with which this biome should selected, relative to other biomes.", "type": "number" }
+    "weight": {
+      "title": "Weight",
+      "description": "Weight with which this biome should selected, relative to other biomes.",
+      "type": "number"
+    }
   }
 }

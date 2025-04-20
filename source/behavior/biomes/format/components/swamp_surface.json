@@ -1,32 +1,35 @@
 {
-  "$id": "minecraft.behavior.biomes.1.12.0.components.minecraft.surface_parameters",
-  "title": "Surface Parameters",
-  "description": "Control the blocks used for the default Minecraft Overworld terrain generation.",
+  "$id": "blockception.minecraft.behavior.biomes.minecraft.swamp_surface",
+  "title": "Swamp Surface",
+  "description": "Similar to overworld_surface. Adds swamp surface details.",
   "type": "object",
-  "minProperties": 0,
-  "maxProperties": 6,
+  "required": ["foundation_material", "mid_material", "sea_floor_depth", "sea_floor_material", "sea_material", "top_material"],
   "additionalProperties": false,
   "properties": {
-    "top_material": { "title": "Top Material", "description": "Controls the block type used for the surface of this biome.", "string": "string" },
+    "top_material": {
+      "title": "Top Material",
+      "description": "Controls the block type used for the surface of this biome.",
+      "$ref": "../../../../general/block/reference.json"
+    },
     "mid_material": {
       "title": "Mid Material",
       "description": "Controls the block type used in a layer below the surface of this biome.",
-      "string": "string"
+      "$ref": "../../../../general/block/reference.json"
     },
     "sea_floor_material": {
       "title": "Sea Floor Material",
       "description": "Controls the block type used as a floor for bodies of water in this biome.",
-      "string": "boostringlean"
+      "$ref": "../../../../general/block/reference.json"
     },
     "foundation_material": {
       "title": "Foundation Material",
       "description": "Controls the block type used deep underground in this biome.",
-      "string": "string"
+      "$ref": "../../../../general/block/reference.json"
     },
     "sea_material": {
       "title": "Sea Material",
       "description": "Controls the block type used for the bodies of water in this biome.",
-      "string": "string"
+      "$ref": "../../../../general/block/reference.json"
     },
     "sea_floor_depth": {
       "title": "Sea Floor Depth",

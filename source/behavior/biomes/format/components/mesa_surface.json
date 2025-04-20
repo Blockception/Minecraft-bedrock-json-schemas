@@ -1,0 +1,71 @@
+{
+  "$id": "blockception.minecraft.behavior.biomes.minecraft.mesa_surface",
+  "title": "Mesa Surface",
+  "description": "Similar to overworld_surface. Adds colored strata and optional pillars.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "top_material",
+    "mid_material",
+    "bryce_pillars",
+    "clay_material",
+    "foundation_material",
+    "hard_clay_material",
+    "has_forest",
+    "sea_floor_depth",
+    "sea_floor_material",
+    "sea_material"
+  ],
+  "properties": {
+    "top_material": {
+      "title": "Top Material",
+      "description": "Controls the block type used for the surface of this biome.",
+      "$ref": "../../../../general/block/reference.json"
+    },
+    "mid_material": {
+      "title": "Mid Material",
+      "description": "Controls the block type used in a layer below the surface of this biome.",
+      "$ref": "../../../../general/block/reference.json"
+    },
+    "sea_floor_material": {
+      "title": "Sea Floor Material",
+      "description": "Controls the block type used as a floor for bodies of water in this biome.",
+      "$ref": "../../../../general/block/reference.json"
+    },
+    "foundation_material": {
+      "title": "Foundation Material",
+      "description": "Controls the block type used deep underground in this biome.",
+      "$ref": "../../../../general/block/reference.json"
+    },
+    "sea_material": {
+      "title": "Sea Material",
+      "description": "Controls the block type used for the bodies of water in this biome.",
+      "$ref": "../../../../general/block/reference.json"
+    },
+    "sea_floor_depth": {
+      "title": "Sea Floor Depth",
+      "description": "Controls how deep below the world water level the floor should occur.",
+      "type": "integer"
+    },
+    "clay_material": {
+      "title": "Clay Material",
+      "description": "Base clay block to use.",
+      "$ref": "../../../../general/block/reference.json"
+    },
+    "hard_clay_material": {
+      "title": "Hard Clay Material",
+      "description": "Hardened clay block to use.",
+      "$ref": "../../../../general/block/reference.json"
+    },
+    "bryce_pillars": {
+      "title": "Bryce Pillars",
+      "description": "Whether the mesa generates with pillars.",
+      "type": "boolean"
+    },
+    "has_forest": {
+      "title": "Has Forest",
+      "description": "Places coarse dirt and grass at high altitudes.",
+      "type": "boolean"
+    }
+  }
+}

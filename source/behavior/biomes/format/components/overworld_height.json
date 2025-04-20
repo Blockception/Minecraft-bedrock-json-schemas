@@ -1,0 +1,48 @@
+{
+  "$id": "blockception.minecraft.behavior.biomes.minecraft.overworld_height",
+  "title": "Overworld Height",
+  "description": "Noise parameters used to drive terrain height in the Overworld.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "noise_params": {
+      "title": "Noise Params",
+      "description": "Array of 2 Floats.",
+      "type": "array",
+      "items": [
+        {
+          "title": "Depth",
+          "type": "number",
+          "description": "More negative means deeper underwater, while more positive means higher."
+        },
+        {
+          "title": "Scale",
+          "type": "number",
+          "description": "Affects how much noise changes as it moves from the surface."
+        }
+      ]
+    },
+    "noise_type": {
+      "title": "Noise Type",
+      "description": "Specifies a preset based on a built-in setting rather than manually using noise_params.",
+      "type": "string",
+      "enum": [
+        "default",
+        "default_mutated",
+        "river",
+        "ocean",
+        "deep_ocean",
+        "lowlands",
+        "taiga",
+        "mountains",
+        "highlands",
+        "extreme",
+        "less_extreme",
+        "beach",
+        "stone_beach",
+        "mushroom",
+        "swamp"
+      ]
+    }
+  }
+}
