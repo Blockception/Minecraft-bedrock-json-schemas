@@ -22,17 +22,14 @@
       "default": 4,
       "description": "Distance in blocks at which the `spring` effect starts acting to keep this entity close to the entity that leashed it.",
       "title": "Soft Distance"
-    },
+    }
+  },
+  "properties": {
     "can_be_stolen": {
       "type": "boolean",
       "default": false,
       "description": "If true, players can leash this entity even if it is already leashed to another mob.",
       "title": "Can Be Stolen"
-    }
-  },
-  "properties": {
-    "can_be_stolen": {
-      "$ref": "#/definitions/can_be_stolen"
     },
     "on_unleash_interact_only": {
       "title": "On Unleash Interact Only",
@@ -79,9 +76,6 @@
           },
           "soft_distance": {
             "$ref": "#/definitions/soft_distance"
-          },
-          "can_be_stolen": {
-            "$ref": "#/definitions/can_be_stolen"
           }
         }
       }
