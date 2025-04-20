@@ -25,6 +25,22 @@
           "description": "Event to execute on the owner entity when an entity stops riding it.",
           "type": "string"
         },
+        "third_person_camera_radius": {
+          "title": "Third Person Camera Radius",
+          "description": "Can be used to set a different camera radius when in third person or third person front camera. Value 0.0 is ignored.",
+          "type": "number",
+          "default": 0.0,
+          "minimum": 0.0,
+          "maximum": 64.0
+        },
+        "camera_relax_distance_smoothing": {
+          "title": "Camera Relax Distance Smoothing",
+          "description": "Adds springiness to the camera movement when the camera moves back to its radius after being pushed closer to the player by and obstacle. A higher value means a stiffer spring. Value 0.0 is ignored.",
+          "type": "number",
+          "default": 0.0,
+          "minimum": 0.0,
+          "maximum": 32.0
+        },
         "lock_rider_rotation": {
           "type": "number",
           "default": 181,
