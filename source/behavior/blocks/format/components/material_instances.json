@@ -65,7 +65,7 @@
           },
           "tint_method": {
             "title": "Tint Method",
-            "description": "[Experimental] Tint multiplied to the color. Tint method logic varies, but often refers to the \"rain\" and \"temperature\" of the biome the block is placed in to compute the tint.",
+            "description": "Tint multiplied to the color. Tint method logic varies, but often refers to the \"rain\" and \"temperature\" of the biome the block is placed in to compute the tint.",
             "type": "string",
             "$ref": "../../../../general/vanilla/tint_methods.json"
           }
