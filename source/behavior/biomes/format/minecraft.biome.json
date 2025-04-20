@@ -24,6 +24,7 @@
         "minecraft:surface_material_adjustments": { "$ref": "./components/surface_material_adjustments.json" },
         "minecraft:surface_parameters": { "$ref": "./components/surface_parameters.json" },
         "minecraft:swamp_surface": { "$ref": "./components/swamp_surface.json" },
+        "minecraft:tags": { "$ref": "./components/tags.json" },
         "minecraft:the_end_surface": { "$ref": "./components/the_end_surface.json" }
       }
     }

@@ -1,0 +1,20 @@
+{
+  "$id": "blockception.minecraft.behavior.biomes.minecraft.tags",
+  "title": "Tags",
+  "description": "Attach arbitrary string tags to this biome.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["tags"],
+  "properties": {
+    "tags": {
+      "title": "Tags",
+      "description": "Array of string tags used by other systems such as entity spawning",
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
