@@ -9,6 +9,22 @@
       "additionalProperties": false,
       "type": "object",
       "properties": {
+        "dismount_mode": {
+          "title": "Dismount Mode",
+          "description": "Defines where riders are placed when dismounting this entity:\n- \"default\", riders are placed on a valid ground position around the entity, or at the center of the entity's collision box if none is found.\n- \"on_top_center\", riders are placed at the center of the top of the entity's collision box.",
+          "type": "string",
+          "enum": ["default", "on_top_center"]
+        },
+        "on_rider_enter_event": {
+          "title": "On Rider Enter Event",
+          "description": "Event to execute on the owner entity when an entity starts riding it.",
+          "type": "string"
+        },
+        "on_rider_exit_event": {
+          "title": "On Rider Exit Event",
+          "description": "Event to execute on the owner entity when an entity stops riding it.",
+          "type": "string"
+        },
         "lock_rider_rotation": {
           "type": "number",
           "default": 181,
