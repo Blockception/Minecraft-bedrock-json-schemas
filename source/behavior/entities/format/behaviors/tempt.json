@@ -49,6 +49,13 @@
         }
       ]
     },
+    "stop_distance": {
+      "title": "Stop Distance",
+      "description": "The distance at which the mob will stop following the player.",
+      "type": "number",
+      "default": 1.5,
+      "minimum": 0
+    },
     "tempt_sound": {
       "$ref": "../../../../general/sound_event.json",
       "description": "Sound to play while the mob is being tempted.",
@@ -59,6 +66,16 @@
       "default": 0,
       "description": "Distance in blocks this mob can get tempted by a player holding an item they like.",
       "title": "Within Radius"
+    },
+    "on_start": {
+      "title": "On Start",
+      "description": "Specifies the event to trigger when the goal starts",
+      "$ref": "../types/trigger.json"
+    },
+    "on_end": {
+      "title": "On End",
+      "description": "Specifies the event to trigger when the goal ends",
+      "$ref": "../types/trigger.json"
     }
   },
   "examples": [
