@@ -18,8 +18,8 @@
     },
     "value": {
       "description": "The biome type to test.",
-      "$ref": "../../../../general/vanilla/biome.json",
-      "title": "Value"
+      "title": "Value",
+      "type": "string"
     }
   }
 }
