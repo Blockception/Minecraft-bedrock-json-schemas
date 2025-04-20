@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.items",
   "additionalProperties": false,
-  "required": [ "description" ],
+  "required": ["description"],
   "type": "object",
   "description": "UNDOCUMENTED.",
   "$comment": "UNDOCUMENTED",
@@ -54,6 +54,7 @@
     "components": {
       "type": "object",
       "description": "The components of this item.",
+      "additionalProperties": true,
       "properties": {
         "minecraft:allow_off_hand": { "$ref": "./components/allow_off_hand.json" },
         "minecraft:block_placer": { "$ref": "./components/block_placer.json" },
