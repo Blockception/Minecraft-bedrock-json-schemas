@@ -1,0 +1,90 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.float_tempt",
+  "description": "Allows an entity to be tempted by a set item.",
+  "type": "object",
+  "title": "Float Tempt",
+  "additionalProperties": false,
+  "properties": {
+    "priority": { "$ref": "types/priority.json" },
+    "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "can_get_scared": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, the mob can stop being tempted if the player moves too fast while close to this mob.",
+      "title": "Can Get Scared"
+    },
+    "can_tempt_while_ridden": {
+      "type": "boolean",
+      "default": false,
+      "title": "Can Tempt While Ridden",
+      "description": "If true, the mob can be tempted even if it has a passenger (i.e. if being ridden)."
+    },
+    "can_tempt_vertically": {
+      "type": "boolean",
+      "default": false,
+      "title": "Can Tempt Vertically",
+      "description": "If true, vertical distance to the player will be considered when tempting."
+    },
+    "items": {
+      "type": "array",
+      "title": "Items",
+      "description": "List of items this mob is tempted by.",
+      "items": {
+        "$ref": "../../../../general/item/descriptor.json"
+      }
+    },
+    "sound_interval": {
+      "description": "Range of random ticks to wait between tempt sounds.",
+      "title": "Sound Interval",
+      "oneOf": [
+        {
+          "type": "number",
+          "minimum": 0
+        },
+        {
+          "items": [
+            { "type": "integer", "minimum": 0, "title": "Minimum" },
+            { "type": "integer", "minimum": 0, "title": "Maximum" }
+          ]
+        }
+      ]
+    },
+    "stop_distance": {
+      "title": "Stop Distance",
+      "description": "The distance at which the mob will stop following the player.",
+      "type": "number",
+      "default": 1.5,
+      "minimum": 0
+    },
+    "tempt_sound": {
+      "$ref": "../../../../general/sound_event.json",
+      "description": "Sound to play while the mob is being tempted.",
+      "title": "Tempt Sound"
+    },
+    "within_radius": {
+      "type": "number",
+      "default": 0,
+      "description": "Distance in blocks this mob can get tempted by a player holding an item they like.",
+      "title": "Within Radius"
+    },
+    "on_start": {
+      "title": "On Start",
+      "description": "Specifies the event to trigger when the goal starts",
+      "$ref": "../types/trigger.json"
+    },
+    "on_end": {
+      "title": "On End",
+      "description": "Specifies the event to trigger when the goal ends",
+      "$ref": "../types/trigger.json"
+    }
+  },
+  "examples": [
+    {
+      "can_get_scared": false,
+      "can_tempt_while_ridden": true,
+      "can_tempt_vertically": true,
+      "items": [],
+      "within_radius": 0
+    }
+  ]
+}

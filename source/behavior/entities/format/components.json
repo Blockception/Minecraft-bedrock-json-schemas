@@ -250,6 +250,7 @@
     "minecraft:behavior.flee_sun": { "$ref": "./behaviors/flee_sun.json" },
     "minecraft:behavior.float_wander": { "$ref": "./behaviors/float_wander.json" },
     "minecraft:behavior.float": { "$ref": "./behaviors/float.json" },
+    "minecraft:behavior.float_tempt": { "$ref": "./behaviors/float_tempt.json" },
     "minecraft:behavior.follow_caravan": { "$ref": "./behaviors/follow_caravan.json" },
     "minecraft:behavior.follow_mob": { "$ref": "./behaviors/follow_mob.json" },
     "minecraft:behavior.follow_owner": { "$ref": "./behaviors/follow_owner.json" },
