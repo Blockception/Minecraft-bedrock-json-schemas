@@ -4,13 +4,7 @@
   "title": "Leashable",
   "description": "Allows this entity to be leashed and defines the conditions and events for this entity when is leashed.",
   "additionalProperties": false,
-  "properties": {
-    "can_be_stolen": {
-      "type": "boolean",
-      "default": false,
-      "description": "If true, players can leash this entity even if it is already leashed to another mob.",
-      "title": "Can Be Stolen"
-    },
+  "definitions": {
     "hard_distance": {
       "type": "number",
       "default": 6,
@@ -23,6 +17,35 @@
       "description": "Distance in blocks at which the leash breaks.",
       "title": "Maximum Distance"
     },
+    "soft_distance": {
+      "type": "number",
+      "default": 4,
+      "description": "Distance in blocks at which the `spring` effect starts acting to keep this entity close to the entity that leashed it.",
+      "title": "Soft Distance"
+    },
+    "can_be_stolen": {
+      "type": "boolean",
+      "default": false,
+      "description": "If true, players can leash this entity even if it is already leashed to another mob.",
+      "title": "Can Be Stolen"
+    }
+  },
+  "properties": {
+    "can_be_stolen": {
+      "$ref": "#/definitions/can_be_stolen"
+    },
+    "on_unleash_interact_only": {
+      "title": "On Unleash Interact Only",
+      "description": "When set to true, \"on_unleash\" does not trigger when the entity gets unleashed for other reasons such as being stolen or the leash breaking.",
+      "type": "boolean",
+      "default": false
+    },
+    "hard_distance": {
+      "$ref": "#/definitions/hard_distance"
+    },
+    "max_distance": {
+      "$ref": "#/definitions/max_distance"
+    },
     "on_leash": {
       "$ref": "../types/event_object.json",
       "description": "Event to call when this entity is leashed.",
@@ -34,10 +57,34 @@
       "title": "On Unleash"
     },
     "soft_distance": {
-      "type": "number",
-      "default": 4,
-      "description": "Distance in blocks at which the `spring` effect starts acting to keep this entity close to the entity that leashed it.",
-      "title": "Soft Distance"
+      "$ref": "#/definitions/soft_distance"
+    },
+    "presets": {
+      "title": "Presets",
+      "description": "Defines how this entity behaves when leashed to another entity. A preset is selected upon leashing and remains until the entity is leashed to something else. The first preset whose \"filter\" conditions are met will be applied; if none match, a default configuration is used instead.",
+      "type": "array",
+      "items": {
+        "title": "Preset",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "filter": {
+            "$ref": "../../filters/filters.json"
+          },
+          "hard_distance": {
+            "$ref": "#/definitions/hard_distance"
+          },
+          "max_distance": {
+            "$ref": "#/definitions/max_distance"
+          },
+          "soft_distance": {
+            "$ref": "#/definitions/soft_distance"
+          },
+          "can_be_stolen": {
+            "$ref": "#/definitions/can_be_stolen"
+          }
+        }
+      }
     }
   },
   "examples": [
