@@ -11,6 +11,7 @@
     "has_component",
     "has_damage",
     "has_equipment",
+    "has_equipment_tag",
     "has_mob_effect",
     "has_tag",
     "has_trade_supply",
