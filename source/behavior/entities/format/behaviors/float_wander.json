@@ -9,6 +9,18 @@
     "priority": {
       "$ref": "./types/priority.json"
     },
+    "additional_collision_buffer": {
+      "title": "Additional Collision Buffer",
+      "description": "If true, the mob will have an additional buffer zone around it to avoid collisions with blocks when picking a position to wander to.",
+      "type": "boolean",
+      "default": false
+    },
+    "allow_navigating_through_liquids": {
+      "title": "Allow Navigating Through Liquids",
+      "description": "If true allows the mob to navigate through liquids on its way to the target position.",
+      "type": "boolean",
+      "default": false
+    },
     "xz_dist": {
       "type": "integer",
       "default": 10,
@@ -39,11 +51,31 @@
       "type": "boolean",
       "default": true
     },
+    "navigate_around_surface": {
+      "title": "Navigate Around Surface",
+      "description": "If true, will prioritize finding random positions in the vicinity of surfaces, i.e. blocks that are not Air or Liquid.",
+      "type": "boolean",
+      "default": false
+    },
     "random_reselect": {
       "type": "boolean",
       "default": false,
       "description": "If true, the mob will randomly pick a new point while moving to the previously selected one.",
       "title": "Random Reselect"
+    },
+    "surface_xz_dist": {
+      "title": "Surface XZ Dist",
+      "description": "The horizontal distance in blocks that the goal will check for a surface from a candidate position. Only valid when `navigate_around_surface` is true.",
+      "type": "integer",
+      "minimum": 0,
+      "default": 0
+    },
+    "surface_y_dist": {
+      "title": "Surface Y Dist",
+      "description": "The vertical distance in blocks that the goal will check for a surface from a candidate position. Only valid when `navigate_around_surface` is true.",
+      "type": "integer",
+      "minimum": 0,
+      "default": 0
     },
     "use_home_position_restriction": {
       "title": "Use Home Position Restriction",
