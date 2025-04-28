@@ -20,11 +20,11 @@
             "type": "array",
             "items": [
               {
-                "$ref": "../../../molang/number.json",
+                "$ref": "../../../../molang/number.json",
                 "title": "Min"
               },
               {
-                "$ref": "../../../molang/number.json",
+                "$ref": "../../../../molang/number.json",
                 "title": "Max"
               }
             ]

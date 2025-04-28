@@ -10,7 +10,7 @@
     {
       "tiers": [
         {
-          "trades": [ { "wants": [ { "item": "minecraft:coal:0", "quantity": { "min": 16, "max": 24 } } ], "gives": [ { "item": "minecraft:emerald" } ] } ]
+          "trades": [{ "wants": [{ "item": "minecraft:coal:0", "quantity": { "min": 16, "max": 24 } }], "gives": [{ "item": "minecraft:emerald" }] }]
         }
       ]
     }
@@ -32,7 +32,7 @@
               "description": "UNDOCUMENTED.",
               "type": "array",
               "items": {
-                "$ref": "../../general/vanilla/biome.json"
+                "type": "string"
               }
             },
             "quantity": {
@@ -42,7 +42,7 @@
                 {
                   "type": "object",
                   "additionalProperties": false,
-                  "required": [ "min", "max" ],
+                  "required": ["min", "max"],
                   "properties": {
                     "min": { "type": "integer", "minimum": 1, "title": "Minimum" },
                     "max": { "type": "integer", "minimum": 1, "title": "Maximum" }
@@ -57,7 +57,7 @@
     "Functions": {
       "title": "Functions",
       "type": "array",
-      "items": { "type": "object", "required": [ "function" ], "$ref": "../loot_tables/functions.json" }
+      "items": { "type": "object", "required": ["function"], "$ref": "../loot_tables/functions.json" }
     },
     "TradeArray": {
       "type": "array",
@@ -66,7 +66,7 @@
         "additionalProperties": false,
         "type": "object",
         "title": "Trade",
-        "required": [ "wants", "gives" ],
+        "required": ["wants", "gives"],
         "properties": {
           "gives": {
             "type": "array",
@@ -87,7 +87,7 @@
                         {
                           "type": "object",
                           "additionalProperties": false,
-                          "required": [ "min", "max" ],
+                          "required": ["min", "max"],
                           "properties": {
                             "min": { "type": "integer", "minimum": 1, "title": "Minimum" },
                             "max": { "type": "integer", "minimum": 1, "title": "Maximum" }
@@ -127,7 +127,7 @@
                         {
                           "type": "object",
                           "additionalProperties": false,
-                          "required": [ "min", "max" ],
+                          "required": ["min", "max"],
                           "properties": {
                             "min": { "type": "integer", "minimum": 1, "title": "Minimum" },
                             "max": { "type": "integer", "minimum": 1, "title": "Maximum" }
@@ -167,7 +167,7 @@
         "additionalProperties": false,
         "type": "object",
         "title": "Tier",
-        "required": [ "total_exp_required", "groups" ],
+        "required": ["total_exp_required", "groups"],
         "properties": {
           "trades": { "$ref": "#/definitions/TradeArray" },
           "total_exp_required": { "title": "Total Experience Required", "type": "integer" },
