@@ -1,5 +1,5 @@
 {
-  "$id": "minecraft.behavior.biomes.components.minecraft.creature_spawn_probability",
+  "$id": "blockception.minecraft.behavior.biomes.minecraft.creature_spawn_probability",
   "title": "Creature Spawn Probability",
   "description": "Probability that creatures will spawn within the biome when a chunk is generated.",
   "type": "object",

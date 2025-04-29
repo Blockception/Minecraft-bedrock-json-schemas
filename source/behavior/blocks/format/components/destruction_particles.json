@@ -1,21 +1,20 @@
 {
-    "$id": "blockception.minecraft.behavior.blocks.minecraft.destruction_particles",
-    "title": "Destruction Particles",
-    "description": "[Experimental] Sets the particles that will be used when block is destroyed. This component can be omitted.",
-    "type": "object",
-    "additionalProperties": false,
-    "required": ["texture"],
-    "properties": {
-        "texture": {
-            "title": "Texture",
-            "description": "The texture name used for the particle.",
-            "type": "string"
-        },
-        "tint_method": {
-          "title": "Tint Method",
-          "description": "Tint multiplied to the color. Tint method logic varies, but often refers to the \"rain\" and \"temperature\" of the biome the block is placed in to compute the tint.",
-          "type": "string",
-          "$ref": "../../../../general/vanilla/tint_methods.json"
-        }
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.destruction_particles",
+  "title": "Destruction Particles",
+  "description": "[Experimental] Sets the particles that will be used when block is destroyed. This component can be omitted.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "texture": {
+      "title": "Texture",
+      "description": "The texture name used for the particle.",
+      "type": "string"
+    },
+    "tint_method": {
+      "title": "Tint Method",
+      "description": "Tint multiplied to the color. Tint method logic varies, but often refers to the \"rain\" and \"temperature\" of the biome the block is placed in to compute the tint.",
+      "type": "string",
+      "$ref": "../../../../general/vanilla/tint_methods.json"
     }
+  }
 }

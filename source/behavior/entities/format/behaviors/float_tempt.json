@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.tempt",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.float_tempt",
   "description": "Allows an entity to be tempted by a set item.",
   "type": "object",
-  "title": "Tempt",
+  "title": "Float Tempt",
   "additionalProperties": false,
   "properties": {
     "priority": { "$ref": "types/priority.json" },

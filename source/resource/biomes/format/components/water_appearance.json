@@ -3,7 +3,6 @@
   "title": "Water Appearance",
   "description": "Set the water surface color used during rendering. Biomes without this component will have default water surface color behavior.",
   "type": "object",
-  "required": ["surface_color"],
   "additionalProperties": false,
   "properties": {
     "surface_color": {

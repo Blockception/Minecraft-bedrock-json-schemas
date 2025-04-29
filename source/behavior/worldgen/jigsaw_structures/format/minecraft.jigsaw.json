@@ -5,7 +5,6 @@
 	"additionalProperties": false,
 	"required": [
 		"description",
-		"heightmap_projection",
 		"max_depth",
 		"start_height",
 		"start_pool",

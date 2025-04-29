@@ -1,8 +1,0 @@
-{
-  "$id": "minecraft.behavior.biomes.components.minecraft.consolidated_features",
-  "title": "Consolidated Features",
-  "description": "UNDOCUMENTED",
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {}
-}

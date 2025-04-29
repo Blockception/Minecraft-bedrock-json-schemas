@@ -3,20 +3,20 @@
   "$id": "blockception.minecraft.resource.block_culling",
   "title": "Block Culling",
   "description": "A resource pack file that helps the system determine how to change the appearance of this block.",
-  "type": "object", 
+  "type": "object",
   "additionalProperties": false,
   "properties": {
     "format_version": { "$ref": "../../general/format_version.json" },
     "minecraft:block_culling_rules": {
       "title": "Block Culling Rules",
       "description": "JSON container used for descriptions, especially the identifier for the name of the culled version of the block.",
-      "type": "object", 
+      "type": "object",
       "additionalProperties": false,
       "properties": {
         "description": {
           "title": "Description",
           "description": "Contains the identifier used by minecraft:geometry block components to refer to this culling data",
-          "type": "object", 
+          "type": "object",
           "additionalProperties": false,
           "properties": {
             "identifier": {
@@ -42,15 +42,21 @@
     "rule": {
       "title": "Rule",
       "description": "The rules that specifies a \"geometry_part\" and \"direction\"",
-      "type": "object", 
+      "type": "object",
       "additionalProperties": false,
       "properties": {
         "geometry_part": {
           "title": "Geometry Part",
           "description": "Specifies the bone, cube, and face that the block will be culled. The cube and face fields are optional to allow culling a specific face. Omitting these fields will cull the whole bone.",
-          "type": "object", 
+          "type": "object",
           "additionalProperties": false,
           "properties": {
+            "condition": {
+              "title": "Condition",
+              "description": "It provides more control over which neighbor blocks will trigger a face or part to be culled.\n- \"default\" will pass the condition if the neighbor block is full and opaque. All conditions are an extension of \"default\", meaning a full and opaque neighbor will always be a passing condition, before the extended \"same_*\" condition is checked.\n- \"same_culling_layer\" will pass the condition if the neighbor block shares the same \"culling_layer\" as the block being occluded, defined in the geometry component. If either of the culling layers being compared is \"minecraft:culling_layer.undefined\", the condition will never pass.\n- \"same_block\" will pass the condition if the neighbor block has the same identifier.\n- \"same_block_permutation\" will pass the condition if the neighbor block has the same identifier and is the exact same permutation.",
+              "type": "string",
+              "enum": ["default", "same_culling_layer", "same_block", "same_block_permutation"]
+            },
             "bone": {
               "title": "Bone",
               "description": "The bone within the geometry part",
@@ -59,7 +65,7 @@
             "cube": {
               "title": "Cube",
               "description": "The cube within the geometry part",
-              "type": "integer", 
+              "type": "integer",
               "minimum": 0
             },
             "face": {

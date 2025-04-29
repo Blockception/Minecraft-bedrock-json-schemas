@@ -1,5 +1,5 @@
 {
-  "$id": "minecraft.behavior.biomes.1.12.0.components.minecraft.capped_surface",
+  "$id": "blockception.minecraft.behavior.biomes.minecraft.capped_surface",
   "title": "Capped Surface",
   "description": "Generates surface on blocks with non-solid blocks above or below.",
   "type": "object",
@@ -11,10 +11,7 @@
       "description": "Materials used for the surface ceiling.",
       "minItems": 1,
       "items": {
-        "title": "Block Reference",
-        "description": "A block reference.",
-        "$comment": "UNDOCUMENTED",
-        "type": "string"
+        "$ref": "../../../../general/block/reference.json"
       }
     },
     "floor_materials": {
@@ -22,18 +19,23 @@
       "description": "Materials used for the surface floor.",
       "minItems": 1,
       "items": {
-        "title": "Block Reference",
-        "description": "A block reference.",
-        "$comment": "UNDOCUMENTED",
-        "type": "string"
+        "$ref": "../../../../general/block/reference.json"
       }
     },
-    "sea_material": { "title": "Sea Material", "description": "Material used to replace air blocks below sea level.", "type": "string" },
+    "sea_material": {
+      "title": "Sea Material",
+      "description": "Material used to replace air blocks below sea level.",
+      "$ref": "../../../../general/block/reference.json"
+    },
     "foundation_material": {
       "title": "Foundation Material",
       "description": "Material used to repalce solid blocks that are not surface blocks.",
-      "type": "string"
+      "$ref": "../../../../general/block/reference.json"
     },
-    "beach_material": { "title": "Beach Material", "description": "Material used to decorate surface near sea level.", "type": "string" }
+    "beach_material": {
+      "title": "Beach Material",
+      "description": "Material used to decorate surface near sea level.",
+      "$ref": "../../../../general/block/reference.json"
+    }
   }
 }

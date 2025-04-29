@@ -1,5 +1,5 @@
 {
-  "$id": "minecraft.behavior.biomes.1.12.0.components.minecraft.overworld_generation_rules",
+  "$id": "blockception.minecraft.behavior.biomes.minecraft.overworld_generation_rules",
   "title": "Overworld Generation Rules",
   "description": "Control how this biome is instantiated (and then potentially modified) during world generation of the overworld.",
   "type": "object",
@@ -9,39 +9,32 @@
       "oneOf": [
         {
           "type": "string",
-          "title": "Block Reference",
-          "description": "UNDOCUMENTED.",
-          "$comment": "UNDOCUMENTED"
+          "title": "Biome",
+          "description": "String name of a Biome."
         },
         {
           "type": "array",
-          "description": "UNDOCUMENTED.",
-          "$comment": "UNDOCUMENTED",
+          "description": "Array of any size. If an array, each entry can be a Biome name string, or an array of size 2, where the first entry is a Biome name and the second entry is a positive integer representing how that Biome is weighted against other entries. If no weight is provided, a weight of 1 is used..",
           "title": "Block Reference",
           "minItems": 1,
           "items": {
             "oneOf": [
               {
                 "type": "string",
-                "description": "UNDOCUMENTED.",
-                "$comment": "UNDOCUMENTED",
-                "title": "Block Reference"
+                "title": "Biome",
+                "description": "String name of a Biome."
               },
               {
                 "type": "array",
-                "description": "UNDOCUMENTED.",
-                "$comment": "UNDOCUMENTED",
                 "items": [
                   {
-                    "title": "Biome Reference",
-                    "description": "UNDOCUMENTED.",
-                    "$comment": "UNDOCUMENTED",
-                    "type": "string"
+                    "type": "string",
+                    "title": "Biome",
+                    "description": "String name of a Biome."
                   },
                   {
-                    "title": "_",
-                    "description": "UNDOCUMENTED.",
-                    "$comment": "UNDOCUMENTED",
+                    "title": "Weight",
+                    "description": "A positive integer representing how that Biome is weighted against other entries..",
                     "type": "integer"
                   }
                 ]
@@ -55,36 +48,30 @@
   "properties": {
     "hills_transformation": {
       "title": "Hills Transformation",
-      "description": "UNDOCUMENTED.",
-      "$comment": "UNDOCUMENTED",
+      "description": "What biome to switch to when converting to a hilly biome.",
       "$ref": "#/definitions/transformation"
     },
     "mutate_transformation": {
       "title": "Mutate Transformation",
-      "description": "UNDOCUMENTED.",
-      "$comment": "UNDOCUMENTED",
+      "description": "What biome to switch to when converting to a mutated biome.",
       "$ref": "#/definitions/transformation"
     },
     "river_transformation": {
       "title": "River Transformation",
-      "description": "UNDOCUMENTED.",
-      "$comment": "UNDOCUMENTED",
+      "description": "What biome to switch to when converting to a river biome (if not the Vanilla 'river' biome).",
       "$ref": "#/definitions/transformation"
     },
     "shore_transformation": {
       "title": "Shore Transformation",
-      "description": "UNDOCUMENTED.",
-      "$comment": "UNDOCUMENTED",
+      "description": "What biome to switch to when adjacent to an ocean biome.",
       "$ref": "#/definitions/transformation"
     },
     "generate_for_climates": {
       "title": "Generate For Climates",
-      "description": "Controls the world generation climate categories that this biome can spawn for.  A single biome can be associated with multiple categories with different weightings.",
+      "description": "Controls the world generation climate categories that this biome can spawn for. A single biome can be associated with multiple categories with different weightings.",
       "type": "array",
       "items": {
-        "title": "_",
-        "description": "UNDOCUMENTED.",
-        "$comment": "UNDOCUMENTED",
+        "description": "An array of any size containing arrays of exactly two elements where the first entry is the climate category and the second is a positive integer.",
         "type": "array",
         "items": [
           {
@@ -96,7 +83,8 @@
           {
             "title": "Weight",
             "description": "Weight with which this biome should be selected, relative to other biomes in the same category.",
-            "type": "integer"
+            "type": "integer",
+            "minimum": 1
           }
         ]
       }

@@ -157,24 +157,20 @@
         "drop_item_slot": {
           "title": "Drop Item Slot",
           "type": "string",
-          "examples": [
-            "slot.armor.head",
-            "slot.armor.chest",
-            "slot.armor.legs",
-            "slot.armor.feet"
-          ],
+          "examples": ["slot.armor.head", "slot.armor.chest", "slot.armor.legs", "slot.armor.feet"],
           "description": "The entity's equipment slot to remove and drop the item from, if any, upon successful interaction."
+        },
+        "drop_item_y_offset": {
+          "title": "Drop Item Y Offset",
+          "description": "Will offset the item drop position this amount in the y direction. Requires \"drop_item_slot\" to be specified.",
+          "type": "number",
+          "default": 0
         },
         "equip_item_slot": {
           "title": "Equip Item Slot",
           "type": "string",
           "description": "The entity's equipment slot to equip the item to, if any, upon successful interaction.",
-          "examples": [
-            "slot.armor.head",
-            "slot.armor.chest",
-            "slot.armor.legs",
-            "slot.armor.feet"
-          ]
+          "examples": ["slot.armor.head", "slot.armor.chest", "slot.armor.legs", "slot.armor.feet"]
         },
         "repair_entity_item": {
           "title": "Repair Entity Item",
@@ -191,12 +187,7 @@
               "title": "Slot",
               "description": "The entity's slot containing the item to be repaired.",
               "type": "string",
-              "examples": [
-                "slot.armor.head",
-                "slot.armor.chest",
-                "slot.armor.legs",
-                "slot.armor.feet"
-              ]
+              "examples": ["slot.armor.head", "slot.armor.chest", "slot.armor.legs", "slot.armor.feet"]
             }
           }
         }

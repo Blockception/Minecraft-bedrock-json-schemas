@@ -1,0 +1,52 @@
+{
+  "$id": "blockception.minecraft.behavior.biomes.minecraft.climate",
+  "title": "Climate",
+  "description": "Describes temperature, humidity, precipitation, etc.  Biomes without this component will have default values.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "ash": {
+      "title": "Ash",
+      "description": "Density of ash precipitation visuals.",
+      "type": "number"
+    },
+    "blue_spores": {
+      "title": "Blue Spores",
+      "description": "Density of blue spore precipitation visuals.",
+      "type": "number"
+    },
+    "downfall": {
+      "title": "Downfall",
+      "description": "Amount that precipitation affects colors and block changes.",
+      "type": "number"
+    },
+    "red_spores": {
+      "title": "Red Spores",
+      "description": "Density of blue spore precipitation visuals.",
+      "type": "number"
+    },
+    "snow_accumulation": {
+      "title": "Snow Accumulation",
+      "description": "Minimum and maximum snow level, each multiple of 0.125 is another snow layer.",
+      "type": "array",
+      "items": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ]
+    },
+    "temperature": {
+      "title": "Temperature",
+      "description": "Temperature affects a variety of visual and behavioral things, including snow and ice placement, sponge drying, and sky color.",
+      "type": "number"
+    },
+    "white_ash": {
+      "title": "White Ash",
+      "description": "Density of white ash precipitation visuals.",
+      "type": "number"
+    }
+  }
+}

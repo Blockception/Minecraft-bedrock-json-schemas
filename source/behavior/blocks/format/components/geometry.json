@@ -32,6 +32,12 @@
           "title": "Block Culling Rule",
           "description": "The description identifer of the block culling rule used to cull this block. This identifier must match an existing geometry identifier in any of the currently loaded resource packs.",
           "type": "string"
+        },
+        "culling_layer": {
+          "title": "Culling Layer",
+          "description": "A string that allows culling rule to group multiple blocks together when comparing them.",
+          "type": "string",
+          "examples": ["minecraft:culling_layer.undefined", "minecraft:culling_layer.leaves"]
         }
       }
     }
