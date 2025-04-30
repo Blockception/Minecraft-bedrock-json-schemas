@@ -42,6 +42,15 @@
                     "type": "string",
                     "title": "Material Instance",
                     "description": "Specifies the UV's for the face that stretches."
+                },
+                "uv_rotation": {
+                    "title": "Uv Rotation",
+                    "description": "Specifies an optional rotation for the specified UV rect in 90-degree clockwise increments before applying it to a geometry cube face. If not specified, no rotation will be applied.",
+                    "enum": [
+                        90,
+                        180,
+                        270
+                    ]
                 }
             }
         },
