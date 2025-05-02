@@ -84,6 +84,6 @@
         }
       }
     },
-    "texture_name": { "title": "Texture Name", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "type": "string" }
+    "texture_name": { "const": "atlas.items" }
   }
 }

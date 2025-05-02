@@ -73,6 +73,6 @@
       "$comment": "UNDOCUMENTED",
       "title": "Texture Data"
     },
-    "texture_name": { "type": "string", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Texture Name" }
+    "texture_name": { "const": "atlas.terrain" }
   }
 }
