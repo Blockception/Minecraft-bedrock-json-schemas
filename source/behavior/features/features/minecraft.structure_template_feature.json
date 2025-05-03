@@ -12,7 +12,7 @@
       "title": "Structure Name",
       "description": "Reference to the structure to be placed.",
       "type": "string",
-      "pattern": "^mystructure:(\\w|\/)+"
+      "pattern": "^\\w+:(\\w|\/)+"
     },
     "adjustment_radius": {
       "title": "Adjustment Radius",
