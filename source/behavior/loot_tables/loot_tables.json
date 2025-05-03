@@ -16,6 +16,7 @@
         "additionalProperties": false,
         "title": "A Single Pool",
         "type": "object",
+        "required": ["rolls"],
         "properties": {
           "rolls": {
             "title": "Rolls",
@@ -72,7 +73,7 @@
                   "title": "Count",
                   "description": "The amount of the item."
                 },
-                "name": { "title": "Name", "type": "string", "description": "An item or loottable.", "pattern": "^([\\w]+:|loot_tables/)" },
+                "name": { "title": "Name", "type": "string", "description": "An item or loottable.", "pattern": "^(?:[\\w]+:|loot_tables\/)?[\\w]+(?:\/[\\w]+)*$" },
                 "weight": {
                   "title": "Weight",
                   "type": "integer",

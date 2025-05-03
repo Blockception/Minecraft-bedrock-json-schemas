@@ -4,7 +4,7 @@
     "additionalProperties": false,
     "description": "Returns the condition true if the block of the loot table was broken with a specific item.",
     "title": "Killed By Player",
-  "required": ["condition", "item", "count"],
+  "required": ["condition"],
     "properties": {
       "condition": { "type": "string",  "const": "match_tool", "title": "Condition", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
       "item": {

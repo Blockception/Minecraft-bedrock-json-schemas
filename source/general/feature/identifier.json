@@ -2,7 +2,7 @@
   "$id": "blockception.minecraft.feature.identifier",
   "description": "A minecraft feature identifier.",
   "examples": ["namespace:feature"],
-  "pattern": "^[0-9a-zA-Z:_\\.\\-]+$",
+  "pattern": "^[0-9a-zA-Z:_\\.\/-]+$",
   "title": "Feature Identifier",
   "type": "string",
   "defaultSnippets": [{ "label": "New Identifier", "body": "$1:$2" }]

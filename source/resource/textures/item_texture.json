@@ -70,7 +70,7 @@
       "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "type": "object",
-      "propertyNames": { "pattern": "^[a-z0-9_:\\-]*$" },
+      "propertyNames": { "pattern": "^[a-z0-9_:.\\-]*$" },
       "additionalProperties": {
         "title": "Texture Data",
         "description": "UNDOCUMENTED.",
@@ -84,6 +84,6 @@
         }
       }
     },
-    "texture_name": { "title": "Texture Name", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "type": "string" }
+    "texture_name": { "const": "atlas.items" }
   }
 }

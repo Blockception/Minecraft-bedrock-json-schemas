@@ -59,7 +59,7 @@
     "resource_pack_name": { "type": "string", "title": "Resource Pack Name", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
     "texture_data": {
       "type": "object",
-      "propertyNames": { "pattern": "^[a-z0-9_:\\-]*$" },
+      "propertyNames": { "pattern": "^[a-z0-9_:.\\-]*$" },
       "additionalProperties": {
         "type": "object",
         "title": "Texture Data",
@@ -73,6 +73,6 @@
       "$comment": "UNDOCUMENTED",
       "title": "Texture Data"
     },
-    "texture_name": { "type": "string", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Texture Name" }
+    "texture_name": { "const": "atlas.terrain" }
   }
 }
