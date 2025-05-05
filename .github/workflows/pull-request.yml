@@ -2,6 +2,7 @@
 # For more information see: https://help.github.com/actions/language-and-framework-guides/publishing-nodejs-packages
 
 name: PR
+
 on:
   push:
     branches:
@@ -9,6 +10,8 @@ on:
   pull_request:
     branches:
       - main
+  merge_group: {}
+  workflow_dispatch: {}
 
 jobs:
   build:
