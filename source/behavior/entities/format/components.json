@@ -23,6 +23,7 @@
     "minecraft:barter": { "$ref": "./components/barter.json" },
     "minecraft:block_climber": { "$ref": "./components/block_climber.json" },
     "minecraft:block_sensor": { "$ref": "./components/block_sensor.json" },
+    "minecraft:body_rotation_always_follows_head": { "$ref": "./components/body_rotation_always_follows_head.json" },
     "minecraft:body_rotation_axis_aligned": { "$ref": "./components/body_rotation_axis_aligned.json" },
     "minecraft:body_rotation_blocked": { "$ref": "./components/body_rotation_blocked.json" },
     "minecraft:boostable": { "$ref": "./components/boostable.json" },

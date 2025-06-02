@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.body_rotation_always_follows_head",
+  "type": "object",
+  "title": "Body Rotation Always Follows Head",
+  "description": "Causes the entity's body to always be automatically rotated to align with the entity's head. Does not override the \"minecraft:body_rotation_blocked\" component.",
+  "additionalProperties": false,
+  "properties": {},
+  "examples": [{}]
+}
