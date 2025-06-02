@@ -1,0 +1,55 @@
+{
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.random_offset",
+  "title": "Random Offset",
+  "description": "[Experimental] This allows for blocks to randomly offset like foliage does in the Vanilla game",
+  "type": "object",
+  "additionalProperties": false,
+  "definitions": {
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "range": {
+          "title": "Range",
+          "description": "This is the range of possible values we can pick from",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": { //TODO: Find out if -4 and 4 are the min and max values allowed
+            "min": {
+              "title": "Min",
+              "description": "Lower bound",
+              "type": "integer"
+            },
+            "max": {
+              "title": "Max",
+              "description": "Upper bound",
+              "type": "integer"
+            }
+          }
+        },
+        "steps": {
+          "title": "Steps",
+          "description": "This is the equally spaced steps across the given range. Provide 0 for all possible values in the range",
+          "type": "integer"
+        }
+      }
+    }
+  },
+  "properties": {
+    "x": {
+      "title": "X",
+      "description": "Random offset on the x-axis",
+      "$ref": "#/definitions/entry"
+    },
+    "y": {
+      "title": "Y",
+      "description": "Random offset on the y-axis",
+      "$ref": "#/definitions/entry"
+    },
+    "z": {
+      "title": "Z",
+      "description": "Random offset on the z-axis",
+      "$ref": "#/definitions/entry"
+    }
+  }
+}
