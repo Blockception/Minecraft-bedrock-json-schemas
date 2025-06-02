@@ -38,6 +38,25 @@
           "description": "A string that allows culling rule to group multiple blocks together when comparing them.",
           "type": "string",
           "examples": ["minecraft:culling_layer.undefined", "minecraft:culling_layer.leaves"]
+        },
+        "uv_lock": {
+          "anyOf": [
+            {
+              "title": "UV Lock",
+              "description": "A Boolean locking UV orientation of all bones in the geometry, or an array of strings locking UV orientation of specific bones in the geometry. For performance reasons it is recommended to use the Boolean. Note that for cubes using Box UVs, rather than Per-face UVs, 'uv_lock' is only supported if the cube faces are square.",
+              "type": "boolean",
+              "default": false
+            },
+            {
+              "title": "UV Lock",
+              "description": "A Boolean locking UV orientation of all bones in the geometry, or an array of strings locking UV orientation of specific bones in the geometry. For performance reasons it is recommended to use the Boolean. Note that for cubes using Box UVs, rather than Per-face UVs, 'uv_lock' is only supported if the cube faces are square.",
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string"
+              }
+            }
+          ]
         }
       }
     }
