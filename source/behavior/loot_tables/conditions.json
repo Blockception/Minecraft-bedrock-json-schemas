@@ -28,6 +28,10 @@
       "then": { "$ref": "./conditions/killed_by_entity.json" }
     },
     {
+      "if": { "properties": { "condition": { "type": "string", "const": "damaged_by_entity" } } },
+      "then": { "$ref": "./conditions/damaged_by_entity.json" }
+    },
+    {
       "if": { "properties": { "condition": { "type": "string", "const": "random_chance" } } },
       "then": { "$ref": "./conditions/random_chance.json" }
     },
