@@ -27,6 +27,12 @@
         "slot.chest",
         "slot.equippable"
       ]
+    },
+    "hides_player_location": {
+      "title": "Hides Player Location",
+      "description": "Defines whether Players are hidden on the Locator Bar and Locator Maps when eqipped in the appropriate wearable slot",
+      "type": "boolean",
+      "default": false
     }
   }
 }

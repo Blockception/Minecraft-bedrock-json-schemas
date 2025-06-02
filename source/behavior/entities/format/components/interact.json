@@ -115,6 +115,12 @@
               "$ref": "../../../../general/loot_table/identifier.json",
               "description": "File path, relative to the Behavior Pack's path, to the loot table file.",
               "title": "Table"
+            },
+            "y_offset": {
+              "title": "Y Offset",
+              "description": "Will offset the items spawn position this amount in the y direction.",
+              "type": "number", 
+              "minimum": 1
             }
           }
         },

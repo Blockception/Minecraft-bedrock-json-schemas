@@ -271,6 +271,40 @@
                   "$ref": "#/definitions/volumeMediaObject"
                 }
               }
+            },
+            "henyey_greenstein_g": {
+              "title": "Henyey Greenstein G",
+              "description": "UNDOCUMENTED",
+              "type": "object", 
+              "additionalProperties": false,
+              "properties": {
+                "air": {
+                  "title": "Air",
+                  "description": "UNDOCUMENTED",
+                  "type": "object", 
+                  "additionalProperties": false,
+                  "properties": {
+                    "henyey_greenstein_g": {
+                      "title": "Henyey Greenstein G",
+                      "description": "UNDOCUMENTED",
+                      "type": "number"
+                    }
+                  }
+                },
+                "water": {
+                  "title": "Water",
+                  "description": "UNDOCUMENTED",
+                  "type": "object", 
+                  "additionalProperties": false,
+                  "properties": {
+                    "henyey_greenstein_g": {
+                      "title": "Henyey Greenstein G",
+                      "description": "UNDOCUMENTED",
+                      "type": "number"
+                    }
+                  }
+                }
+              }
             }
           }
         }

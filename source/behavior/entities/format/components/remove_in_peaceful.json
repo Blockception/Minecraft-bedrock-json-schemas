@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.remove_in_peaceful",
+  "type": "object",
+  "title": "Remove In Peaceful",
+  "description": "Denotes entities that are not allowed to exist in \"Peaceful\" difficulty.",
+  "additionalProperties": false,
+  "properties": { },
+  "examples": [ { } ]
+}

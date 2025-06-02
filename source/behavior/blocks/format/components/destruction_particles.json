@@ -4,6 +4,7 @@
   "description": "[Experimental] Sets the particles that will be used when block is destroyed. This component can be omitted.",
   "type": "object",
   "additionalProperties": false,
+  "required": ["texture"],
   "properties": {
     "texture": {
       "title": "Texture",
@@ -15,6 +16,13 @@
       "description": "Tint multiplied to the color. Tint method logic varies, but often refers to the \"rain\" and \"temperature\" of the biome the block is placed in to compute the tint.",
       "type": "string",
       "$ref": "../../../../general/vanilla/tint_methods.json"
+    },
+    "particle_count": {
+      "title": "Particle Count",
+      "description": "Number of particles to spawn on destruction",
+      "type": "integer",
+      "default": 100, 
+      "maximum": 255
     }
   }
 }

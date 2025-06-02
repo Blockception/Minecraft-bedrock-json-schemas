@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.resource.biomes.minecraft.atmosphere_identifier",
   "title": "Atmosphere Identifier",
-  "description": "[INTERNAL - WORK IN PROGRESS] Set the atmosphere settings used during deferred rendering.\nBiomes without this component will have default atmosphere settings.",
+  "description": "Set the atmosphere settings used during deferred rendering.\nBiomes without this component will have default atmosphere settings.",
   "type": "object",
   "additionalProperties": false,
   "required": ["atmosphere_identifier"],

@@ -1,0 +1,15 @@
+{
+  "$id": "blockception.minecraft.behavior.condition.damaged_by_entity",
+  "type": "object",
+  "additionalProperties": false,
+  "description": "Allows checking which entity type applied damage to an entity that is dropping loot.",
+  "title": "Damaged By Entity",
+  "properties": {
+    "condition": { "type": "string", "title": "Condition", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
+    "entity_type": {
+      "title": "Entity Type",
+      "description": "The entity type to match",
+      "type": "string"
+    }
+  }
+}

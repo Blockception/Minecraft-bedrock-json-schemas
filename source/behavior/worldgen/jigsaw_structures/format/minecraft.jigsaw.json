@@ -21,7 +21,7 @@
 			"description": "The description of this jigsaw.",
 			"type": "object",
 			"additionalProperties": false,
-			"required": ["identifier"],
+			"required": [ "identifier" ],
 			"properties": {
 				"identifier": {
 					"title": "Identifier",
@@ -48,15 +48,66 @@
 		},
 		"start_height": {
 			"title": "Start Height",
-			"description": "World height at which the Jigsaw Structure should begin generation.",
-			"type": "integer",
-			"maximum": 320,
-			"minimum": -64
+			"description": "Height at which the Jigsaw Structure's start_pool should begin.",
+			"$ref": "./height_provider.json"
 		},
 		"start_pool": {
 			"title": "Start Pool",
 			"type": "string",
 			"description": "The first Template Pool to use when generating the Jigsaw Structure."
+		},
+		"start_jigsaw_name": {
+			"title": "Start Jigsaw Name",
+			"description": "The name of the Jigsaw Block from the start_pool to be placed first.",
+			"type": "string"
+		},
+		"max_distance_from_center": {
+			"title": "Max Distance From Center",
+			"description": "The max distance from the jigsaw pieces to the structure start.",
+			"type": "integer",
+			"minimum": 1,
+			"maximum": 128
+		},
+		"pool_aliases": {
+			"title": "Pool Aliases",
+			"description": "Pool Aliases are used to determine which Template Pool can be a substitute.",
+			"type": "array",
+			"items": {
+				"$ref": "./pool_aliases.json"
+			}
+		},
+		"dimension_padding": {
+			"anyOf": [
+				{
+					"title": "Dimension Padding",
+					"description": "Dimension padding prevents the structure from getting cut off at the top or bottom of the world.",
+					"type": "integer",
+					"minimum": 0,
+					"default": 0
+				},
+				{
+					"title": "Dimension Padding",
+					"description": "Dimension padding prevents the structure from getting cut off at the top or bottom of the world.",
+					"type": "object",
+					"additionalProperties": false,
+					"properties": {
+						"top": {
+							"title": "Top",
+							"description": "Distance in blocks from the top of the dimension that may not be used by the Jigsaw Structure.",
+							"type": "integer",
+							"minimum": 0,
+							"default": 0
+						},
+						"bottom": {
+							"title": "Bottom",
+							"description": "Distance in blocks from the bottom of the dimension that may not be used by the Jigsaw Structure.",
+							"type": "integer",
+							"minimum": 0,
+							"default": 0
+						}
+					}
+				}
+			]
 		},
 		"step": {
 			"title": "Step",
@@ -87,6 +138,12 @@
 				"encapsulate",
 				"none"
 			]
+		},
+		"liquid_settings": {
+			"title": "Liquid Settings",
+			"description": "How to handle waterloggable blocks overlapping with existing liquid.",
+			"type": "string",
+			"enum": [ "apply_waterlogging", "ignore_waterlogging" ]
 		}
 	}
 }

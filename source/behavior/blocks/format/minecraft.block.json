@@ -5,7 +5,7 @@
   "description": "A custom block definition.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["description", "components"],
+  "required": [ "description", "components" ],
   "definitions": {
     "components_ref": {
       "type": "object",
@@ -30,7 +30,9 @@
         "minecraft:loot": { "$ref": "./components/loot.json" },
         "minecraft:map_color": { "$ref": "./components/map_color.json" },
         "minecraft:material_instances": { "$ref": "./components/material_instances.json" },
+        "minecraft:movable": { "$ref": "./components/movable.json" },
         "minecraft:placement_filter": { "$ref": "./components/placement_filter.json" },
+        "minecraft:random_offset": { "$ref": "./components/random_offset.json" },
         "minecraft:redstone_conductivity": { "$ref": "./components/redstone_conductivity.json" },
         "minecraft:replaceable": { "$ref": "./components/replaceable.json" },
         "minecraft:selection_box": { "$ref": "./components/selection_box.json" },
@@ -39,17 +41,17 @@
         "minecraft:tick": { "$ref": "./components/tick.json" },
         "minecraft:entity_fall_on": { "$ref": "./components/entity_fall_on.json" },
         // Tags
-        "tag:minecraft:diamond_tier_destructible": {},
-        "tag:minecraft:iron_tier_destructible": {},
-        "tag:minecraft:is_axe_item_destructible": {},
-        "tag:minecraft:is_hoe_item_destructible": {},
-        "tag:minecraft:is_mace_item_destructible": {},
-        "tag:minecraft:is_pickaxe_item_destructible": {},
-        "tag:minecraft:is_shears_item_destructible": {},
-        "tag:minecraft:is_shovel_item_destructible": {},
-        "tag:minecraft:is_sword_item_destructible": {},
-        "tag:minecraft:netherite_tier_destructible": {},
-        "tag:minecraft:stone_tier_destructible": {}
+        "tag:minecraft:diamond_tier_destructible": { },
+        "tag:minecraft:iron_tier_destructible": { },
+        "tag:minecraft:is_axe_item_destructible": { },
+        "tag:minecraft:is_hoe_item_destructible": { },
+        "tag:minecraft:is_mace_item_destructible": { },
+        "tag:minecraft:is_pickaxe_item_destructible": { },
+        "tag:minecraft:is_shears_item_destructible": { },
+        "tag:minecraft:is_shovel_item_destructible": { },
+        "tag:minecraft:is_sword_item_destructible": { },
+        "tag:minecraft:netherite_tier_destructible": { },
+        "tag:minecraft:stone_tier_destructible": { }
       },
       "patternProperties": {
         "tag:.+": {
@@ -93,7 +95,7 @@
       "description": "The description for this block.",
       "type": "object",
       "additionalProperties": false,
-      "required": ["identifier"],
+      "required": [ "identifier" ],
       "properties": {
         "identifier": {
           "title": "Identifier",
@@ -105,9 +107,9 @@
           "title": "Menu Category",
           "description": "Specifies the menu category and group for the block, which determine where this block is placed in the inventory and crafting table container screens. If this field is omitted, the block will not appear in the inventory or crafting table container screens.",
           "type": "object",
-          "examples": [{ "category": "construction" }],
+          "examples": [ { "category": "construction" } ],
           "additionalProperties": false,
-          "required": ["category"],
+          "required": [ "category" ],
           "properties": {
             "category": {
               "$ref": "../../../general/vanilla/creative_category.json"
