@@ -110,6 +110,7 @@
     "minecraft:item_hopper": { "$ref": "./components/item_hopper.json" },
     "minecraft:jump.dynamic": { "$ref": "./components/jump.dynamic.json" },
     "minecraft:jump.static": { "$ref": "./components/jump.static.json" },
+    "minecraft:leashable_to": { "$ref": "./components/leashable_to.json" },
     "minecraft:knockback_resistance": { "$ref": "./components/attribute.json" },
     "minecraft:lava_movement": { "$ref": "./components/attribute.json" },
     "minecraft:leashable": { "$ref": "./components/leashable.json" },
