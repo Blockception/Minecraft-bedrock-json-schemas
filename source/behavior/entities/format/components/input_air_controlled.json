@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.input_air_controlled",
-  "description": "When configured as a rideable entity, the entity will be controlled using WASD controls and mouse to move in three dimensions.\nOnly available with `\"use_beta_features\": true` and likely to be drastically changed or removed.",
+  "description": "When configured as a rideable entity, the entity will be controlled using WASD controls and mouse to move in three dimensions.",
   "type": "object",
   "title": "Input Air Controlled",
   "additionalProperties": false,
