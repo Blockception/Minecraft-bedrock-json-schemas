@@ -30,6 +30,7 @@
         "minecraft:loot": { "$ref": "./components/loot.json" },
         "minecraft:map_color": { "$ref": "./components/map_color.json" },
         "minecraft:material_instances": { "$ref": "./components/material_instances.json" },
+        "minecraft:movable": { "$ref": "./components/movable.json" },
         "minecraft:placement_filter": { "$ref": "./components/placement_filter.json" },
         "minecraft:random_offset": { "$ref": "./components/random_offset.json" },
         "minecraft:redstone_conductivity": { "$ref": "./components/redstone_conductivity.json" },
