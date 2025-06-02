@@ -1,0 +1,30 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.is_riding_self",
+  "type": "object",
+  "title": "Is Riding Self",
+  "description": "Returns true if the subject entity is riding the calling entity.",
+  "properties": {
+    "test": {
+      "type": "string",
+      "title": "Test Property",
+      "description": "The test property."
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
+    "value": {
+      "title": "Value",
+      "description": "True or false.",
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "examples": [
+    {
+      "test": "is_riding_self"
+    }
+  ]
+}

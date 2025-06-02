@@ -140,6 +140,7 @@
             { "if": { "properties": { "test": { "const": "is_navigating" } } }, "then": { "$ref": "./filters/is_moving.json" } },
             { "if": { "properties": { "test": { "const": "is_owner" } } }, "then": { "$ref": "./filters/is_owner.json" } },
             { "if": { "properties": { "test": { "const": "is_persistent" } } }, "then": { "$ref": "./filters/is_persistent.json" } },
+            { "if": { "properties": { "test": { "const": "is_riding_self" } } }, "then": { "$ref": "./filters/is_riding_self.json" } },
             { "if": { "properties": { "test": { "const": "is_riding" } } }, "then": { "$ref": "./filters/is_riding.json" } },
             { "if": { "properties": { "test": { "const": "is_skin_id" } } }, "then": { "$ref": "./filters/is_skin_id.json" } },
             { "if": { "properties": { "test": { "const": "is_sleeping" } } }, "then": { "$ref": "./filters/is_sleeping.json" } },
