@@ -247,7 +247,7 @@
                 },
                 "temperature": {
                   "title": "Temperature",
-                  "description": "UNDOCUMENTED",
+                  "description": "Sets the temperature in kelvin",
                   "type": "number",
                   "minimum": 1000,
                   "maximum": 15000
