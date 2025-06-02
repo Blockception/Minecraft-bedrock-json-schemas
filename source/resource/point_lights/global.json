@@ -1,0 +1,31 @@
+{
+  "$id": "blockception.minecraft.behavior.point_lights.global",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "format_version": { "$ref": "../../general/format_version.json" },
+    "minecraft:point_light_settings": {
+      "title": "Point Light Settings",
+      "description": "UNDOCUMENTED",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [ "colors" ],
+      "properties": {
+        "colors": {
+          "title": "Colors",
+          "description": " List of key-value pairs where the key is a namespace-qualified block name and the value is a color",
+          "type": "object",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^[0-9a-zA-Z:_\\.\\-]+$": {
+              "$ref": "../lighting/format/color.json"
+            },
+            "tile.[\\w.]+.name": {
+              "$ref": "../lighting/format/color.json"
+            }
+          }
+        }
+      }
+    }
+  }
+}

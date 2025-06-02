@@ -57,6 +57,13 @@
     { "Source": "./resource/ui/_ui_defs.json", "Destination": "../resource/ui/_ui_defs.json" },
     { "Source": "./resource/ui/ui.json", "Destination": "../resource/ui/ui.json" },
     { "Source": "./resource/ui/ui.json", "Destination": "../resource/ui/ui.json" },
-    { "Source": "./skinpacks/skins.json", "Destination": "../skinpacks/skins.json" }
+    { "Source": "./skinpacks/skins.json", "Destination": "../skinpacks/skins.json" },
+    { "Source": "./resource/atmospherics/atmospherics.json", "Destination": "../resource/atmospherics/atmospherics.json" },
+    { "Source": "./resource/color_grading/color_grading.json", "Destination": "../resource/color_grading/color_grading.json" },
+    { "Source": "./resource/lighting/lighting.json", "Destination": "../resource/lighting/lighting.json" },
+    { "Source": "./resource/pbr/global.json", "Destination": "../resource/pbr/pbr.json" },
+    { "Source": "./resource/point_lights/global.json", "Destination": "../resource/point_lights/point_lights.json" },
+    { "Source": "./resource/shadows/global.json", "Destination": "../resource/shadows/shadows.json" },
+    { "Source": "./resource/water/water.json", "Destination": "../resource/water/water.json" }
   ]
 }
