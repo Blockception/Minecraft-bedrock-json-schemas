@@ -1,17 +1,59 @@
 {
-    "title": "Pool Alias",
-    "description": "Used to rewire jigsaw pool connections by redirecting pool references in an individual structure. Done by specifying aliases for Template Pools. This can allow for themes across a full structure.",
-    "type": "object",
-    "properties": {
+  "$ref": "#/definitions/pool_alias",
+  "definitions": {
+    "pool_alias": {
+      "title": "Pool Alias",
+      "description": "Used to rewire jigsaw pool connections by redirecting pool references in an individual structure. Done by specifying aliases for Template Pools. This can allow for themes across a full structure.",
+      "type": "object",
+      "properties": {
         "type": {
-            "title": "Type",
-            "type": "string",
-            "enum": [ "direct", "random", "random_group" ]
+          "title": "Type",
+          "type": "string",
+          "enum": ["direct", "random", "random_group"]
         }
-    },
-    "allOf": [
+      },
+      "allOf": [
         { "if": { "properties": { "processor_type": { "const": "direct" } } }, "then": { "$ref": "./pool_aliases/direct.json" } },
         { "if": { "properties": { "processor_type": { "const": "random" } } }, "then": { "$ref": "./pool_aliases/random.json" } },
-        { "if": { "properties": { "processor_type": { "const": "random_group" } } }, "then": { "$ref": "./pool_aliases/random_group.json" } }
-    ]
+        { "if": { "properties": { "processor_type": { "const": "random_group" } } }, "then": { "$ref": "#/definitions/random_group" } }
+      ]
+    },
+    // Inifite loop
+    "random_group": {
+      "title": "Random Group",
+      "type": "object",
+      "properties": {
+        "type": {
+          "title": "Type",
+          "type": "string",
+          "const": "random_group"
+        },
+        "groups": {
+          "title": "Groups",
+          "description": "A weighted random list containing items that contain pool alias items. The pool alias types can be any valid type except random_group.",
+          "type": "array",
+          "items": {
+            "title": "Weighted Random Item",
+            "description": "A used by Weighted Random Lists.",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "data": {
+                "title": "Data",
+                "description": "The data used when randomly selected.",
+                "$ref": "#/definitions/pool_alias"
+              },
+              "weight": {
+                "title": "Weight",
+                "description": "The weight of the item relative to the total weight of all items in the list.",
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          }
+        }
+      },
+      "required": ["groups", "type"]
+    }
+  }
 }
