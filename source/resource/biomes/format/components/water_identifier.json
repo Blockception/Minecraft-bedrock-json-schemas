@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.resource.biomes.minecraft.water_identifier",
   "title": "Water Identifier",
-  "description": "[INTERNAL - WORK IN PROGRESS] Set the water settings used during deferred rendering.\nBiomes without this component will have default water settings.",
+  "description": "Set the water settings used during deferred rendering.\nBiomes without this component will have default water settings.",
   "type": "object",
   "additionalProperties": false,
   "required": ["water_identifier"],
