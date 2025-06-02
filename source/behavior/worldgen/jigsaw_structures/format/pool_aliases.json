@@ -1,0 +1,17 @@
+{
+    "title": "Pool Alias",
+    "description": "Used to rewire jigsaw pool connections by redirecting pool references in an individual structure. Done by specifying aliases for Template Pools. This can allow for themes across a full structure.",
+    "type": "object",
+    "properties": {
+        "type": {
+            "title": "Type",
+            "type": "string",
+            "enum": [ "direct", "random", "random_group" ]
+        }
+    },
+    "allOf": [
+        { "if": { "properties": { "processor_type": { "const": "direct" } } }, "then": { "$ref": "./pool_aliases/direct.json" } },
+        { "if": { "properties": { "processor_type": { "const": "random" } } }, "then": { "$ref": "./pool_aliases/random.json" } },
+        { "if": { "properties": { "processor_type": { "const": "random_group" } } }, "then": { "$ref": "./pool_aliases/random_group.json" } }
+    ]
+}

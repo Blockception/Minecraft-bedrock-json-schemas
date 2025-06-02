@@ -1,0 +1,26 @@
+{
+    "title": "Direct",
+    "type": "object",
+    "properties": {
+        "type": {
+            "title": "Type",
+            "type": "string",
+            "const": "direct"
+        },
+        "alias": {
+            "title": "Alias",
+            "description": "The alias of the Template Pool to replace.",
+            "type": "string"
+        },
+        "target": {
+            "title": "Target",
+            "description": "The Template Pool to substitute when matched.",
+            "type": "string"
+        }
+    },
+    "required": [
+        "target",
+        "alias",
+        "type"
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "title": "Random",
+    "type": "object",
+    "properties": {
+        "type": {
+            "title": "Type",
+            "type": "string",
+            "const": "random"
+        },
+        "alias": {
+            "title": "Alias",
+            "description": "The alias of the Template Pool to replace.",
+            "type": "string"
+        },
+        "targets": {
+            "title": "Target",
+            "description": "The Template Pool to substitute when matched.",
+            "type": "array", 
+            "items": {
+              "title": "Weighted Random Item",
+              "description": "A used by Weighted Random Lists.",
+              "type": "object", 
+              "additionalProperties": false,
+              "properties": {
+                "data": {
+                    "title": "Data",
+                    "description": "The data used when randomly selected.",
+                    "type": "string"
+                },
+                "weight": {
+                    "title": "Weight",
+                    "description": "The weight of the item relative to the total weight of all items in the list.",
+                    "type": "integer", 
+                    "minimum": 1
+                }
+              }
+            },
+            "minItems": 2,
+            "maxItems": 2
+        }
+    },
+    "required": [
+        "targets",
+        "alias",
+        "type"
+    ]
+}
