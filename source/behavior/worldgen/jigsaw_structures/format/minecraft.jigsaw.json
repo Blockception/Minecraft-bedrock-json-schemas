@@ -87,6 +87,12 @@
 				"encapsulate",
 				"none"
 			]
+		},
+		"liquid_settings": {
+			"title": "Liquid Settings",
+			"description": "How to handle waterloggable blocks overlapping with existing liquid.",
+			"type": "string",
+			"enum": ["apply_waterlogging", "ignore_waterlogging"]
 		}
 	}
 }
