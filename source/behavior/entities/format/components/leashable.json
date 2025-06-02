@@ -25,6 +25,12 @@
     }
   },
   "properties": {
+    "can_be_cut": {
+      "title": "Can Be Cut",
+      "description": "If true, players can cut both incoming and outgoing leashes by using shears on the entity.",
+      "type": "boolean",
+      "default": true
+    },
     "can_be_stolen": {
       "type": "boolean",
       "default": false,
@@ -76,6 +82,19 @@
           },
           "soft_distance": {
             "$ref": "#/definitions/soft_distance"
+          },
+          "rotation_adjustment": {
+            "title": "Rotation Adjustment",
+            "description": "Adjusts the rotation at which the entity reaches equilibrium, when \"spring_type\" is set to \"dampened\" or \"quad_dampened\"",
+            "type": "number", 
+            "default": 0
+          },
+          "spring_type": {
+            "title": "Spring Type",
+            "description": "Defines the type of spring-like force that pulls the entity towards its leash holder:\n- \"bouncy\": Simulates a highly elastic spring that never reaches an equilibrium if the leashed entity is suspended mid-air.\n- \"dampened\": Simulates a dampened spring attached to the front of the leashed entity's collision. It reaches an equilibrium if the entity is suspended mid-air and aligns with the movement direction.\n- \"quad_dampened\": Simulates four dampened springs connected to the center of each side of the entities' collisions. It reaches an equilibrium if the entity is suspended mid-air and gradually aligns with the leash holder over time.",
+            "default": "dampened",
+            "type": "string",
+            "enum": ["bouncy", "dampened", "quad_dampened"]
           }
         }
       }
