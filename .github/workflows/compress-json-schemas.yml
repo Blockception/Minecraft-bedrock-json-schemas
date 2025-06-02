@@ -30,7 +30,7 @@ jobs:
           format: "YYYY-MM-DD"
 
       - name: 💾 Compress Json
-        uses: DaanV2/Json-Schema-Action-Compression@v3.5
+        uses: DaanV2/Json-Schema-Action-Compression@v3.6
         with:
           specificationFile: "source/compress_specification.json"
 
