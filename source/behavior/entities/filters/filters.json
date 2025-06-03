@@ -154,6 +154,7 @@
             { "if": { "properties": { "test": { "const": "is_underground" } } }, "then": { "$ref": "./filters/is_underground.json" } },
             { "if": { "properties": { "test": { "const": "is_underwater" } } }, "then": { "$ref": "./filters/is_underwater.json" } },
             { "if": { "properties": { "test": { "const": "is_variant" } } }, "then": { "$ref": "./filters/is_variant.json" } },
+            { "if": { "properties": { "test": { "const": "is_vehicle_family" } } }, "then": { "$ref": "./filters/is_vehicle_family.json" } },
             { "if": { "properties": { "test": { "const": "is_visible" } } }, "then": { "$ref": "./filters/is_visible.json" } },
             { "if": { "properties": { "test": { "const": "is_waterlogged" } } }, "then": { "$ref": "./filters/is_waterlogged.json" } },
             { "if": { "properties": { "test": { "const": "light_level" } } }, "then": { "$ref": "./filters/light_level.json" } },

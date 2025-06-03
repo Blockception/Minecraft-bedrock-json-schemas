@@ -1,0 +1,31 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.is_vehicle_family",
+  "type": "object",
+  "title": "Is Vehicle Family",
+  "description": "Returns true when the subject entity's vehicle is a member of the named family.",
+  "required": ["value"],
+  "properties": {
+    "test": {
+      "type": "string",
+      "title": "Test Property",
+      "description": "The test property."
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
+    "value": {
+      "title": "Value",
+      "description": "The Family name to look for.",
+      "type": "string"
+    }
+  },
+  "examples": [
+    {
+      "test": "is_vehicle_family",
+      "value": "player"
+    }
+  ]
+}
