@@ -11,7 +11,6 @@
     "fill_with": {
       "title": "Identifier",
       "description": "Reference to the block to fill the cave with.",
-      "type": "string",
       "$ref": "../../../general/block/reference.json"
     },
     "width_modifier": {

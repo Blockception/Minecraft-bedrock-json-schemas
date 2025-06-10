@@ -111,7 +111,6 @@
                 "decoration_block": {
                   "title": "Decoration Block",
                   "description": "The block used for decorating the trunk.",
-                  "type": "string",
                   "$ref": "../../../general/block/reference.json"
                 },
                 "num_steps": {
@@ -202,7 +201,7 @@
             "leaf_placement_attempts": {
               "title": "Leaf Placement Attempts",
               "description": "Max number of attempts to create leaf blocks.",
-              "type": "integer", 
+              "type": "integer",
               "minimum": 1
             },
             "leaf_blocks": {
@@ -210,16 +209,16 @@
               "description": "The blocks that form the canopy of the tree",
               "type": "array",
               "minItems": 1,
-              "items": [ 
-                  {
-                    "$ref": "#/definitions/leaf_block"
-                  }, 
-                  {
-                    "title": "Weight",
-                    "description": "Weight used in random selection. Value is relative to other weights in the collection.",
-                    "type": "number", 
-                    "minimum": 0
-                  }
+              "items": [
+                {
+                  "$ref": "#/definitions/leaf_block"
+                },
+                {
+                  "title": "Weight",
+                  "description": "Weight used in random selection. Value is relative to other weights in the collection.",
+                  "type": "number",
+                  "minimum": 0
+                }
               ]
             },
             "canopy_decoration": {
@@ -279,7 +278,7 @@
             "radius_step_modifier": {
               "title": "Radius Step Modifier",
               "description": "Modifier for the base radius of the canopy.",
-              "type": "number", 
+              "type": "number",
               "minimum": 0
             },
             "core_width": {
@@ -379,7 +378,6 @@
     "leaf_block": {
       "title": "Leaf Block",
       "description": "The block thata forms the canopy of the tree.",
-      "type": "string",
       "$ref": "../../../general/block/reference.json"
     },
     "trunk_width": {
@@ -391,13 +389,13 @@
     "height": {
       "title": "Height",
       "description": "Number of layers for the canopy.",
-      "type": "integer", 
+      "type": "integer",
       "minimum": 1
     },
     "radius": {
       "title": "Radius",
       "description": "The radius of the canopy.",
-      "type": "integer", 
+      "type": "integer",
       "minimum": 1
     },
     "decoration": {
@@ -414,7 +412,6 @@
         "decoration_block": {
           "title": "Decoration Block",
           "description": "The block used for decorating the trunk.",
-          "type": "string",
           "$ref": "../../../general/block/reference.json"
         },
         "num_steps": {
@@ -439,7 +436,6 @@
     "trunk_block": {
       "title": "Trunk Block",
       "description": "The block that forms the tree trunk.",
-      "type": "string",
       "$ref": "../../../general/block/reference.json"
     }
   },
@@ -552,7 +548,7 @@
         "trunk_lean": {
           "title": "Trunk Lean",
           "description": "Configuration object for diagonal branches.",
-          "type": "object", 
+          "type": "object",
           "additionalProperties": false,
           "properties": {
             "allow_diagonal_growth": {
@@ -614,7 +610,7 @@
     "cherry_trunk": {
       "title": "Cherry Trunk",
       "description": "Configutarion for the cherry trunk.",
-      "type": "object", 
+      "type": "object",
       "additionalProperties": false,
       "properties": {
         "trunk_block": {
@@ -653,25 +649,25 @@
             "tree_type_weights": {
               "title": "Tree Type Weights",
               "description": "Configuration object to pick a tree variant based on a weighted random number",
-              "type": "object", 
+              "type": "object",
               "additionalProperties": false,
               "properties": {
                 "one_branch": {
                   "title": "One Branch",
                   "description": "Tree variant with one branch.",
-                  "type": "integer", 
+                  "type": "integer",
                   "minimum": 0
                 },
                 "two_branches": {
                   "title": "Two Branches",
                   "description": "Tree variant with two branches.",
-                  "type": "integer", 
+                  "type": "integer",
                   "minimum": 0
                 },
                 "two_branches_and_trunk": {
                   "title": "Two Branches And Trunk",
                   "description": "Tree variant with three branch.",
-                  "type": "integer", 
+                  "type": "integer",
                   "minimum": 0
                 }
               }
@@ -824,7 +820,7 @@
     "mangrove_trunk": {
       "title": "Mangrove Trunk",
       "description": "Configutarion for the mangrove trunk.",
-      "type": "object", 
+      "type": "object",
       "additionalProperties": false,
       "properties": {
         "trunk_width": {
@@ -951,8 +947,8 @@
               "minimum": 0,
               "maximum": 1
             },
-            "branch_interval": { 
-              "title": "Branch Interval", 
+            "branch_interval": {
+              "title": "Branch Interval",
               "description": "Randomized distance between branches.",
               "$ref": "../../entities/format/types/range_number_type.json"
             },
@@ -1130,7 +1126,6 @@
             "decoration_block": {
               "title": "Decoration Block",
               "description": "The block used for decorating the trunk.",
-              "type": "string",
               "$ref": "../../../general/block/reference.json"
             },
             "num_steps": {
@@ -1221,7 +1216,7 @@
         "leaf_placement_attempts": {
           "title": "Leaf Placement Attempts",
           "description": "Max number of attempts to create leaf blocks.",
-          "type": "integer", 
+          "type": "integer",
           "minimum": 1
         },
         "leaf_blocks": {
@@ -1229,16 +1224,16 @@
           "description": "The blocks that form the canopy of the tree",
           "type": "array",
           "minItems": 1,
-          "items": [ 
-              {
-                "$ref": "#/definitions/leaf_block"
-              }, 
-              {
-                "title": "Weight",
-                "description": "Weight used in random selection. Value is relative to other weights in the collection.",
-                "type": "number", 
-                "minimum": 0
-              }
+          "items": [
+            {
+              "$ref": "#/definitions/leaf_block"
+            },
+            {
+              "title": "Weight",
+              "description": "Weight used in random selection. Value is relative to other weights in the collection.",
+              "type": "number",
+              "minimum": 0
+            }
           ]
         },
         "canopy_decoration": {
@@ -1298,7 +1293,7 @@
         "radius_step_modifier": {
           "title": "Radius Step Modifier",
           "description": "Modifier for the base radius of the canopy.",
-          "type": "number", 
+          "type": "number",
           "minimum": 0
         },
         "core_width": {
@@ -1416,16 +1411,16 @@
           "description": "The blocks that form the canopy of the tree",
           "type": "array",
           "minItems": 1,
-          "items": [ 
-              {
-                "$ref": "#/definitions/leaf_block"
-              }, 
-              {
-                "title": "Weight",
-                "description": "Weight used in random selection. Value is relative to other weights in the collection.",
-                "type": "number", 
-                "minimum": 0
-              }
+          "items": [
+            {
+              "$ref": "#/definitions/leaf_block"
+            },
+            {
+              "title": "Weight",
+              "description": "Weight used in random selection. Value is relative to other weights in the collection.",
+              "type": "number",
+              "minimum": 0
+            }
           ]
         }
       }
@@ -1433,31 +1428,30 @@
     "mangrove_roots": {
       "title": "Mangrove Roots",
       "description": "Configuration for mangrove roots",
-      "type": "object", 
+      "type": "object",
       "additionalProperties": false,
       "properties": {
         "max_root_width": {
           "title": "Max Root Width",
           "description": "Max width that the roots can occupy. The width increases up to the max width while moving downwards. When a max width is reached, roots will grow vertically",
-          "type": "integer", 
+          "type": "integer",
           "minimum": 1
         },
         "max_root_length": {
           "title": "Max Root Length",
           "description": "Max length that the roots can occupy.",
-          "type": "integer", 
+          "type": "integer",
           "minimum": 1
         },
         "root_block": {
           "title": "Root Block",
           "description": "Block used for roots.",
-          "type": "string",
           "$ref": "../../../general/block/reference.json"
         },
         "above_root": {
           "title": "Above Root",
           "description": "Configuration object for blocks decorating the top of the roots",
-          "type": "object", 
+          "type": "object",
           "additionalProperties": false,
           "properties": {
             "above_root_chance": {
@@ -1468,19 +1462,16 @@
             "above_root_block": {
               "title": "Above Root Block",
               "description": "The block placed on the top of the roots.",
-              "type": "string",
               "$ref": "../../../general/block/reference.json"
             },
             "muddy_root_block": {
               "title": "Muddy Root Block",
               "description": "The block used for muddy roots.",
-              "type": "string",
               "$ref": "../../../general/block/reference.json"
             },
             "mud_block": {
               "title": "Mud Block",
               "description": "The block used to determine if a muddy root should be placed.",
-              "type": "string",
               "$ref": "../../../general/block/reference.json"
             },
             "y_offset": {

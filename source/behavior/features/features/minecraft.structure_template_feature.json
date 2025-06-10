@@ -12,7 +12,7 @@
       "title": "Structure Name",
       "description": "Reference to the structure to be placed.",
       "type": "string",
-      "pattern": "^\\w+:(\\w|\/)+"
+      "pattern": "^\\w+:(\\w|/)+"
     },
     "adjustment_radius": {
       "title": "Adjustment Radius",
@@ -60,7 +60,6 @@
               "type": "array",
               "items": {
                 "title": "Block",
-                "type": "string",
                 "$ref": "../../../general/block/reference.json"
               }
             },
@@ -70,7 +69,6 @@
               "type": "array",
               "items": {
                 "title": "Block",
-                "type": "string",
                 "$ref": "../../../general/block/reference.json"
               }
             }
