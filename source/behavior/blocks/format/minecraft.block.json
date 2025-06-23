@@ -136,14 +136,15 @@
     "permutations": {
       "type": "array",
       "title": "Permutations",
-      "description": "UNDOCUMENTED.",
+      "description": "An array of different versions of a block, allowing you to specify which components you want the block to have under certain conditions.",
       "$comment": "UNDOCUMENTED",
       "items": {
         "title": "Permutation",
-        "description": "UNDOCUMENTED.",
+        "description": "A permutation of a block, which will be applied given the condition is met.",
         "$comment": "UNDOCUMENTED",
         "type": "object",
         "additionalProperties": false,
+        "required": [ "condition" ],
         "properties": {
           "condition": {
             "title": "Condition",
