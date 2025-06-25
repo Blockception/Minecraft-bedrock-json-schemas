@@ -12,29 +12,31 @@
     "type": "object",
     "properties": {
       "atlas_index": {
-        "description": "UNDOCUMENTED.",
+        "description": "The index of the texture array inside the definition of that shortname.",
         "$comment": "UNDOCUMENTED",
         "title": "Atlas Index",
         "type": "integer"
       },
       "atlas_tile": {
-        "description": "UNDOCUMENTED.",
+        "description": "The shortname defined in the terrain_texture JSON file.",
+        "markdownDescription": "The shortname defined in the terrain_texture.json file.",
         "$comment": "UNDOCUMENTED",
         "pattern": "^[a-z0-9_:\\-]*$",
-        "title": "Atlas Index",
+        "title": "Atlas Title",
         "type": "string"
       },
       "atlas_tile_variant": {
-        "description": "UNDOCUMENTED.",
+        "description": "The variant of the block's texture array inside the shortname's block variation.",
         "$comment": "UNDOCUMENTED",
-        "title": "Atlas Index",
+        "title": "Atlas Tile Variant",
         "type": "integer"
       },
       "blend_frames": {
-        "description": "UNDOCUMENTED.",
+        "description": "Whether or not Minecraft should interpolate between frames.",
         "$comment": "UNDOCUMENTED",
-        "title": "Atlas Index",
-        "type": "boolean"
+        "title": "Blend Frames",
+        "type": "boolean",
+        "default": true
       },
       "flipbook_texture": {
         "description": "A texture file.",
@@ -44,7 +46,7 @@
       },
       "frames": {
         "title": "Frames",
-        "description": "The collection of frame index to display.",
+        "description": "The order in which frame indices to display. Duplicate frames are allowed.",
         "items": {
           "description": "The index of the frame.",
           "minimum": 0,
@@ -54,10 +56,11 @@
         "type": "array"
       },
       "replicate": {
-        "description": "UNDOCUMENTED.",
+        "description": "Sets the size of pixels.",
         "$comment": "UNDOCUMENTED",
-        "title": "Atlas Index",
-        "type": "integer"
+        "title": "Replicate",
+        "type": "integer",
+        "default": 1
       },
       "ticks_per_frame": {
         "description": "The amount of ticks to wait between frames.",

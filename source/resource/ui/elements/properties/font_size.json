@@ -3,7 +3,7 @@
   "description": "The size of the font.",
   "anyOf": [
     {
-      "enum": ["normal"]
+      "enum": [ "small", "normal", "large", "extra_large" ]
     },
     {
       "$ref": "../../general/item_ref.json"

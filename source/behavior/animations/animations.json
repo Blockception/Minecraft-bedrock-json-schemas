@@ -61,7 +61,7 @@
   },
   "type": "object",
   "title": "Animation",
-  "description": "Animation for behavior for.",
+  "description": "An animation definition for an entity.",
   "required": ["format_version", "animations"],
   "additionalProperties": false,
   "properties": {
@@ -74,19 +74,19 @@
       "additionalProperties": {
         "title": "Animation",
         "type": "object",
-        "description": "A single animation definition for.",
+        "description": "A single animation definition for an entity.",
         "additionalProperties": false,
         "propertyNames": { "examples": ["animation.example.foo"] },
         "properties": {
           "animation_length": { "type": "number", "description": "The time in seconds this animation will last.", "title": "Animation Length" },
           "loop": {
             "type": "boolean",
-            "description": "Whenever this animation should loop once it reaches the end, will only happen if the animation is still active.",
+            "description": "If set to true, this animation will loop (as long as it remains active).",
             "title": "Loop"
           },
           "timeline": {
             "title": "Timeline",
-            "description": "A timeline specification, property names are timestamps.",
+            "description": "A timeline specification, where property names are timestamps.",
             "type": "object",
             "propertyNames": { "pattern": "^(\\d+\\.\\d+|\\d+)$", "examples": ["0.0", "1.0"] },
             "additionalProperties": {
@@ -98,7 +98,7 @@
           },
           "anim_time_update": {
             "title": "Animation Time Update",
-            "description": "How does time pass when playing the animation. Defaults to `query.anim_time + query.delta_time` which means advance in seconds.",
+            "description": "How time passes when playing the animation. Defaults to `query.anim_time + query.delta_time` which means advance in seconds.",
             "$ref": "../../molang/number.json"
           }
         }

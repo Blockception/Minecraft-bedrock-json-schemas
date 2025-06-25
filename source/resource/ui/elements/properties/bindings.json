@@ -47,10 +47,11 @@
           },
           "binding_type": {
             "title": "Binding Type",
-            "description": "The type of the binding.",
+            "description": "The type of the binding. The default is global.",
             "anyOf": [
               {
-                "enum": ["collection", "global", "collection_details", "none", "view"]
+                "enum": ["collection", "global", "collection_details", "none", "view"],
+                "default": "global"
               },
               {
                 "$ref": "../../general/variable.json"
