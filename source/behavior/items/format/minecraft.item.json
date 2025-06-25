@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "required": ["description"],
   "type": "object",
-  "description": "UNDOCUMENTED.",
+  "description": "An item definition.",
   "$comment": "UNDOCUMENTED",
   "title": "Item",
   "properties": {
@@ -11,7 +11,7 @@
       "additionalProperties": false,
       "type": "object",
       "title": "Description",
-      "description": "The description for this item",
+      "description": "The description for this item.",
       "$comment": "UNDOCUMENTED",
       "properties": {
         "identifier": {
