@@ -34,13 +34,11 @@
       "items": [
         {
           "title": "Width",
-          "type": "string",
           "description": "A variable",
           "$ref": "#/definitions/size_coord"
         },
         {
           "title": "Height",
-          "type": "string",
           "description": "A variable",
           "$ref": "#/definitions/size_coord"
         }
