@@ -69,7 +69,7 @@
           "textures": { "oneOf": [{ "$ref": "#/definitions/texture" }, { "type": "array", "items": { "$ref": "#/definitions/texture" } }] }
         }
       },
-      "description": "A JSON object with texture keys matching texture data.",
+      "description": "A JSON object with shortnames and texture data.",
       "$comment": "UNDOCUMENTED",
       "title": "Texture Data"
     },
