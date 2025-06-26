@@ -3,7 +3,7 @@
   "description": "Global variables that can be used in any JSON file.",
   "type": "object",
   "propertyNames": {
-    "pattern": "^\\$[a-zA-Z0-9_]+$"
+    "pattern": "^\\$[a-zA-Z0-9_-]+$"
   },
   "additionalProperties": {
     "title": "Global Variable",

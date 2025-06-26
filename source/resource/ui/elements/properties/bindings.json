@@ -79,6 +79,17 @@
             "description": "The name of the property that the binding is in.",
             "$ref": "../../general/string.json"
           }
+        },
+        "if": {
+          "required": ["binding_type"],
+          "properties": {
+            "binding_type": {
+              "const": "view"
+            }
+          }
+        },
+        "then": {
+          "required": ["source_property_name", "target_property_name"]
         }
       }
   },

@@ -82,15 +82,60 @@
           "description": "Modifications to the element.",
           "type": "array",
           "items": {
+            "title": "Modification",
             "type": "object",
+            "additionalProperties": false,
+            "oneOf": [
+              {
+                "title": "Control Modification",
+                "required": ["control_name", "operation"],
+                "properties": {
+                  "operation": {
+                    "enum": ["remove", "replace", "swap", "move_back", "move_front", "move_after", "move_before", "insert_before", "insert_after"]
+                  }
+                },
+                "oneOf": [
+                  {
+                    "properties": {
+                      "control_name": {},
+                      "operation": {
+                        "enum": ["remove", "move_back", "move_front"]
+                      }
+                    }
+                  },
+                  {
+                    "required": ["control_name", "operation", "value"],
+                    "properties": {
+                      "control_name": {},
+                      "operation": {
+                        "enum": ["replace", "swap", "move_after", "move_before", "insert_before", "insert_after"]
+                      },
+                      "value": {
+                        "$ref": "./general/controls.json"
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Array Modification",
+                "required": ["array_name", "operation", "value"],
+                "properties": {
+                  "operation": {
+                    "enum": ["insert_front", "insert_back"]
+                  }
+                }
+              }
+            ],
             "properties": {
               "control_name": {
                 "title": "Control Name",
+                "description": "The control to apply the operation to.",
                 "type": "string"
               },
               "array_name": {
                 "title": "Array Name",
-                "type": "string",
+                "description": "The array to apply the operation to.",
                 "enum": ["bindings", "controls"]
               },
               "operation": {
@@ -105,24 +150,11 @@
               },
               "value": {
                 "oneOf": [
-                  { "$ref": "./elements/properties/bindings.json" },
                   {
-                    "title": "Controls",
-                    "description": "The controls to add.",
-                    "anyOf": [
-                      {
-                        "type": "array",
-                        "items": {
-                          "additionalProperties": {
-                            "title": "Sub Element",
-                            "$ref": "#/definitions/grouped-ui"
-                          }
-                        }
-                      },
-                      {
-                        "$ref": "./general/item_ref.json"
-                      }
-                    ]
+                    "$ref": "./elements/properties/bindings.json"
+                  },
+                  {
+                    "$ref": "./general/controls.json"
                   }
                 ]
               }

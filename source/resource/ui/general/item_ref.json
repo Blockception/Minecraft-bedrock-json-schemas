@@ -2,21 +2,21 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "anyOf": [
     {
-      "title": "Element reference",
-      "description": "A reference to an element: using the following syntax: [element_name]@[namespace_reference].[element_name_reference]",
+      "title": "Element Reference",
+      "description": "A reference to an element using the following syntax: [element_name]@[namespace_reference].[element_name_reference]",
       "type": "string",
       "examples": ["button@minecraft", "button@minecraft.ui"],
       "pattern": "^[a-zA-Z0-9_]*@[a-zA-Z0-9_]+(\\.[a-zA-Z0-9_]+)?$"
     },
     {
-      "title": "Element reference",
-      "description": "A reference to an element: using the following syntax: [namespace_reference].[element_name_reference]",
+      "title": "Element Reference",
+      "description": "A reference to an element using the following syntax: [namespace_reference].[element_name_reference]",
       "type": "string",
       "examples": ["button@minecraft", "button@minecraft.ui"],
-      "pattern": "[a-zA-Z0-9_]+(\\.[a-zA-Z0-9_]+)?$"
+      "pattern": "^[a-zA-Z0-9_]+(\\.[a-zA-Z0-9_]+)?$"
     },
     {
-      "title": "Variable reference",
+      "title": "Variable Reference",
       "description": "A variable is a reference to a value that can be used in the UI.",
       "type": "string",
       "anyOf": [
