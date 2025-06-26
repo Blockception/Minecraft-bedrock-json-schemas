@@ -9,12 +9,22 @@
   "oneOf": [
     {
       "type": "string",
-      "description": "A variable",
-      "$ref": "./item_ref.json"
+      "description": "A color animation.",
+      "$ref": "./animation.json"
+    },
+    {
+      "type": "string",
+      "description": "A color variable.",
+      "$ref": "./variable.json"
+    },
+    {
+      "type": "string",
+      "description": "A predefined color name.",
+      "enum": [ "black", "white" ]
     },
     {
       "type": "array",
-      "description": "A size with width and height.",
+      "description": "An RGB color definition.",
       "items": [
         {
           "title": "Red",

@@ -192,6 +192,8 @@
         "collection_index": { "$ref": "./elements/properties/collection_index.json" },
         "collection_name": { "$ref": "./elements/properties/collection_name.json" },
         "color": { "$ref": "./elements/properties/color.json" },
+        "color1": { "$ref": "./elements/properties/color.json", "description": "The color to start the gradient with." },
+        "color2": { "$ref": "./elements/properties/color.json", "description": "The color to end the gradient with." },
         "constrain_to_rect": { "$ref": "./elements/properties/constrain_to_rect.json" },
         "consume_hover_events": { "$ref": "./elements/properties/consume_hover_events.json" },
         "contained": { "$ref": "./elements/properties/contained.json" },
@@ -269,6 +271,7 @@
         "pressed_control": { "$ref": "./elements/properties/pressed_control.json" },
         "prevent_touch_input": { "$ref": "./elements/properties/prevent_touch_input.json" },
         "primary_color": { "$ref": "./elements/properties/color.json" },
+        "priority": { "$ref": "./elements/properties/priority.json" },
         "progress_control": { "$ref": "./elements/properties/progress_control.json" },
         "progress_hover_control": { "$ref": "./elements/properties/progress_hover_control.json" },
         "propagate_alpha": { "$ref": "./elements/properties/propagate_alpha.json" },
@@ -357,7 +360,9 @@
         "zip_folder": { "$ref": "./elements/properties/zip_folder.json" }
       },
       "dependencies": {
-        "line_padding": { "properties": { "type": { "const": "label" } } }
+        "line_padding": { "properties": { "type": { "const": "label" } } },
+        "color1": { "properties": { "type": { "const": "custom" }, "renderer": { "const": "gradient_renderer" }, "color2": {} } },
+        "color2": { "properties": { "type": { "const": "custom" }, "renderer": { "const": "gradient_renderer" }, "color1": {} } }
       }
     },
     "control_factory": {

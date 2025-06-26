@@ -24,10 +24,10 @@
             "description": "The condition that must be met for the binding to be applied.",
             "anyOf": [
               {
-                "enum": ["once", "always", "always_when_visible", "visible"]
+                "enum": ["once", "always", "always_when_visible", "visible", "visibility_changed", "none"]
               },
               {
-                "$ref": "../../general/item_ref.json"
+                "$ref": "../../general/variable.json"
               }
             ]
           },
