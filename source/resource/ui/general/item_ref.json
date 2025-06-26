@@ -18,18 +18,7 @@
     {
       "title": "Variable Reference",
       "description": "A variable is a reference to a value that can be used in the UI.",
-      "type": "string",
-      "anyOf": [
-        {
-          "pattern": "^\\$[a-zA-Z0-9_]+$"
-        },
-        {
-          "pattern": "^#[a-zA-Z0-9_]+$"
-        },
-        {
-          "pattern": "^\\(.*\\)$"
-        }
-      ]
+      "$ref": "./variable.json"
     }
   ]
 }

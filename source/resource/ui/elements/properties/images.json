@@ -8,7 +8,21 @@
     {
       "type": "array",
       "items": {
-        "$ref": "../../general/item_ref.json"
+        "oneOf": [
+          {
+            "$ref": "../../general/item_ref.json"
+          },
+          {
+            "title": "Texture",
+            "type": "object",
+            "properties": {
+              "texture_path": {
+                "title": "Texture Path",
+                "$ref": "../../general/texture_file_path.json"
+              }
+            }
+          }
+        ]
       }
     }
   ]
