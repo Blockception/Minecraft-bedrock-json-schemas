@@ -4,15 +4,15 @@
       "oneOf": [
         {
           "type": "string",
-          "enum": ["default", "fill"]
+          "pattern": "^( *[+-]? *[0-9]+(\\.[0-9]+)?(px|%([cxy]|cm|sm)?))+$",
+          "$comment": "Equation with units"
         },
         {
           "type": "string",
-          "pattern": "^[0-9]+(px|%)$"
+          "enum": ["default", "fill"]
         },
         {
-          "type": "integer",
-          "minimum": 0
+          "type": "number"
         }
       ],
       "examples": ["default", "fill", "100px", "100%", "100% - 2px"]
@@ -30,14 +30,10 @@
       "items": [
         {
           "title": "Width",
-          "type": "string",
-          "description": "A variable",
           "$ref": "#/definitions/size_coord"
         },
         {
           "title": "Height",
-          "type": "string",
-          "description": "A variable",
           "$ref": "#/definitions/size_coord"
         }
       ]
