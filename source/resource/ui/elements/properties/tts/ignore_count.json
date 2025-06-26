@@ -1,7 +1,7 @@
 {
   "title": "TTS Ignore Count",
   "description": "The number of TTS ignores.",
-  "oneOf": [
+  "anyOf": [
     {
       "$ref": "../../../general/integer.json"
     },

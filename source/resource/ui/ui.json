@@ -15,7 +15,6 @@
       "title": "Animation",
       "description": "An animation is a set of keyframes that can be applied to an element.",
       "additionalProperties": false,
-      "required": ["anim_type"],
       "patternProperties": {
         "^\\$.*": {
           "$ref": "./general/variables.json"
@@ -181,6 +180,7 @@
         "bindings": { "$ref": "./elements/properties/bindings.json" },
         "button_mappings": { "$ref": "./elements/properties/button_mappings.json" },
         "cache_screen": { "$ref": "./elements/properties/cache_screen.json" },
+        "camera_tilt_degrees": { "$ref": "./elements/properties/camera_tilt_degrees.json" },
         "checked_control": { "$ref": "./elements/properties/checked_control.json" },
         "checked_hover_control": { "$ref": "./elements/properties/checked_hover_control.json" },
         "checked_locked_control": { "$ref": "./elements/properties/checked_locked_control.json" },
@@ -362,7 +362,8 @@
       "dependencies": {
         "line_padding": { "properties": { "type": { "const": "label" } } },
         "color1": { "properties": { "type": { "const": "custom" }, "renderer": { "const": "gradient_renderer" }, "color2": {} } },
-        "color2": { "properties": { "type": { "const": "custom" }, "renderer": { "const": "gradient_renderer" }, "color1": {} } }
+        "color2": { "properties": { "type": { "const": "custom" }, "renderer": { "const": "gradient_renderer" }, "color1": {} } },
+        "camera_tilt_degrees": { "properties": { "type": { "const": "custom" }, "renderer": { "const": "paper_doll_renderer" } } }
       }
     },
     "control_factory": {

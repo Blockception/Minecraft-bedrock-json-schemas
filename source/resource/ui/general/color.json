@@ -10,7 +10,7 @@
     {
       "type": "string",
       "description": "A color animation.",
-      "$ref": "./animation.json"
+      "$ref": "./animation_reference.json"
     },
     {
       "type": "string",
@@ -28,20 +28,14 @@
       "items": [
         {
           "title": "Red",
-          "type": "string",
-          "description": "A variable",
           "$ref": "#/definitions/color_item"
         },
         {
           "title": "Green",
-          "type": "string",
-          "description": "A variable",
           "$ref": "#/definitions/color_item"
         },
         {
           "title": "Blue",
-          "type": "string",
-          "description": "A variable",
           "$ref": "#/definitions/color_item"
         }
       ]

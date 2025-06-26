@@ -3,9 +3,7 @@
   "description": "The texture to display.",
   "anyOf": [
     {
-      "type": "string",
-      "pattern": "^textures/[a-zA-Z0-9/_-]+$",
-      "examples": ["textures/ui/file"]
+      "$ref": "../../general/texture_file_path.json"
     },
     {
       "$ref": "../../general/item_ref.json"
