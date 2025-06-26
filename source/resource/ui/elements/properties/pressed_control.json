@@ -3,7 +3,7 @@
   "description": "The control that will be pressed.",
   "anyOf": [
     {
-      "enum": ["hover", "pressed"]
+      "enum": ["hover", "pressed", ""]
     },
     {
       "$ref": "../../general/item_ref.json"

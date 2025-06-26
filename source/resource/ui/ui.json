@@ -141,6 +141,7 @@
         "anchor_from": { "$ref": "./elements/properties/anchor_from.json" },
         "anchor_to": { "$ref": "./elements/properties/anchor_to.json" },
         "anims": { "$ref": "./elements/properties/anims.json" },
+        "animation_reset_name": { "$ref": "./elements/properties/animation_reset_name.json" },
         "background_control": { "$ref": "./elements/properties/background_control.json" },
         "background_hover_control": { "$ref": "./elements/properties/background_hover_control.json" },
         "backup_font_type": { "$ref": "./elements/properties/backup_font_type.json" },
@@ -159,6 +160,7 @@
         "collection_index": { "$ref": "./elements/properties/collection_index.json" },
         "collection_name": { "$ref": "./elements/properties/collection_name.json" },
         "color": { "$ref": "./elements/properties/color.json" },
+        "constrain_to_rect": { "$ref": "./elements/properties/constrain_to_rect.json" },
         "consume_hover_events": { "$ref": "./elements/properties/consume_hover_events.json" },
         "contained": { "$ref": "./elements/properties/contained.json" },
         "control_name": { "$ref": "./elements/properties/control_name.json" },
@@ -183,6 +185,7 @@
         "focus_enabled": { "$ref": "./elements/properties/focus_enabled.json" },
         "focus_identifier": { "$ref": "./elements/properties/focus_identifier.json" },
         "focus_magnet_enabled": { "$ref": "./elements/properties/focus_magnet_enabled.json" },
+        "focus_mapping": { "$ref": "./elements/properties/focus_mapping.json" },
         "focus_navigation_mode_down": { "$ref": "./elements/properties/focus_navigation_mode_down.json" },
         "focus_navigation_mode_left": { "$ref": "./elements/properties/focus_navigation_mode_left.json" },
         "focus_navigation_mode_right": { "$ref": "./elements/properties/focus_navigation_mode_right.json" },
@@ -215,6 +218,7 @@
         "jump_to_bottom_on_update": { "$ref": "./elements/properties/jump_to_bottom_on_update.json" },
         "keep_ratio": { "$ref": "./elements/properties/keep_ratio.json" },
         "layer": { "$ref": "./elements/properties/layer.json" },
+        "line_padding": { "$ref": "./elements/properties/line_padding.json" },
         "localize": { "$ref": "./elements/properties/localize.json" },
         "locked_alpha": { "$ref": "./elements/properties/alpha.json" },
         "locked_color": { "$ref": "./elements/properties/color.json" },
@@ -311,6 +315,7 @@
         "unchecked_locked_hover_control": { "$ref": "./elements/properties/unchecked_locked_hover_control.json" },
         "use_anchored_offset": { "$ref": "./elements/properties/use_anchored_offset.json" },
         "use_child_anchors": { "$ref": "./elements/properties/use_child_anchors.json" },
+        "use_custom_pocket_toast": { "$ref": "./elements/properties/use_custom_pocket_toast.json" },
         "use_last_focus": { "$ref": "./elements/properties/use_last_focus.json" },
         "uv_size": { "$ref": "./elements/properties/uv_size.json" },
         "uv": { "$ref": "./elements/properties/uv.json" },
@@ -318,6 +323,9 @@
         "virtual_keyboard_buffer_control": { "$ref": "./elements/properties/virtual_keyboard_buffer_control.json" },
         "visible": { "$ref": "./elements/properties/visible.json" },
         "zip_folder": { "$ref": "./elements/properties/zip_folder.json" }
+      },
+      "dependencies": {
+        "line_padding": { "properties": { "type": { "const": "label" } } }
       }
     },
     "control_factory": {
