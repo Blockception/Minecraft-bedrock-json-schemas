@@ -110,7 +110,30 @@
                         "enum": ["replace", "swap", "move_after", "move_before", "insert_before", "insert_after"]
                       },
                       "value": {
-                        "$ref": "./general/controls.json"
+                        "anyOf": [
+                          {
+                            "type": "array",
+                            "description": "A control array.",
+                            "items": {
+                              "title": "Control",
+                              "type": "object",
+                              "additionalProperties": {
+                                "$ref": "#/definitions/grouped-ui"
+                              }
+                            }
+                          },
+                          {
+                            "title": "Control",
+                            "description": "A control.",
+                            "type": "object",
+                            "additionalProperties": {
+                              "$ref": "#/definitions/grouped-ui"
+                            }
+                          },
+                          {
+                            "$ref": "./general/item_ref.json"
+                          }
+                        ]
                       }
                     }
                   }
@@ -153,7 +176,30 @@
                     "$ref": "./elements/properties/bindings.json"
                   },
                   {
-                    "$ref": "./general/controls.json"
+                    "anyOf": [
+                      {
+                        "type": "array",
+                        "description": "A control array.",
+                        "items": {
+                          "title": "Control",
+                          "type": "object",
+                          "additionalProperties": {
+                            "$ref": "#/definitions/grouped-ui"
+                          }
+                        }
+                      },
+                      {
+                        "title": "Control",
+                        "description": "A control.",
+                        "type": "object",
+                        "additionalProperties": {
+                          "$ref": "#/definitions/grouped-ui"
+                        }
+                      },
+                      {
+                        "$ref": "./general/item_ref.json"
+                      }
+                    ]
                   }
                 ]
               }
