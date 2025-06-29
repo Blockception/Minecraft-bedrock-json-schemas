@@ -3,7 +3,7 @@
   "description": "The type of the font.",
   "anyOf": [
     {
-      "enum": ["smooth", "MinecraftTen", "MinecraftTenEmoticon"]
+      "enum": ["smooth", "MinecraftTen", "MinecraftTenEmoticon", "rune", "default"]
     },
     {
       "$ref": "../../general/variable.json"

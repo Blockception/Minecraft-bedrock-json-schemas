@@ -1,5 +1,8 @@
 {
   "title": "TTS Override Control Value",
   "description": "If true, the TTS will override the control value.",
-  "$ref": "../../../general/boolean.json"
+  "anyOf": [
+    { "$ref": "../../../general/boolean.json" },
+    { "$ref": "../../../general/string.json" }
+  ]
 }

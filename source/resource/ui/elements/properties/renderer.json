@@ -3,10 +3,34 @@
   "description": "The renderer that will be used by the element.",
   "anyOf": [
     {
-      "enum": ["ui_holo_cursor"]
+      "enum": [
+        "ui_holo_cursor",
+        "gradient_renderer", 
+        "inventory_item_renderer",
+        "equipment_preview_renderer",
+        "trial_time_renderer",
+        "3d_structure_renderer",
+        "splash_text_renderer",
+        "paper_doll_renderer",
+        "profile_image_renderer",
+        "qr_code_renderer",
+        "name_tag_renderer",
+        "progress_bar_renderer",
+        "actor_portrait_renderer",
+        "banner_pattern_renderer",
+        "live_horse_renderer",
+        "holographic_postrenderer",
+        "panorama_renderer",
+        "bundle_tooltip_renderer",
+        "credits_renderer",
+        "vignette_renderer",
+        "debug_screen_renderer",
+        "enchanting_book_renderer",
+        "web_view_renderer"
+      ]
     },
     {
-      "$ref": "../../general/item_ref.json"
+      "$ref": "../../general/variable.json"
     }
   ]
 }

@@ -1,0 +1,18 @@
+{
+  "title": "Focus Mapping",
+  "description": "If true, the element will be focus magnet enabled.",
+  "$comment": "The only place this is used in vanilla is in beacon_screen.json and it doesn't give much information",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+        "focus_identifier": {
+            "$ref": "../../general/string.json"
+        },
+        "focus_change_right": {
+            "$ref": "../../general/string.json",
+            "examples": ["FOCUS_OVERRIDE_STOP"]
+        }
+    }
+  }
+}

@@ -2,15 +2,11 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "title": "Bindings",
   "description": "The bindings that are contained within this element.",
-  "anyOf": [
-    {
-      "$ref": "../../general/item_ref.json"
-    },
-    {
-      "type": "array",
-      "items": {
+  "definitions": {
+    "binding": {
         "type": "object",
-        "title": "Bindings",
+        "title": "Binding",
+        "description": "A binding that is contained within this element.",
         "additionalProperties": false,
         "properties": {
           "binding_collection_name": {
@@ -28,10 +24,10 @@
             "description": "The condition that must be met for the binding to be applied.",
             "anyOf": [
               {
-                "enum": ["once", "always", "always_when_visible", "visible"]
+                "enum": ["once", "always", "always_when_visible", "visible", "visibility_changed", "none"]
               },
               {
-                "$ref": "../../general/item_ref.json"
+                "$ref": "../../general/variable.json"
               }
             ]
           },
@@ -83,8 +79,34 @@
             "description": "The name of the property that the binding is in.",
             "$ref": "../../general/string.json"
           }
+        },
+        "if": {
+          "required": ["binding_type"],
+          "properties": {
+            "binding_type": {
+              "const": "view"
+            }
+          }
+        },
+        "then": {
+          "required": ["source_property_name", "target_property_name"]
         }
       }
+  },
+  "anyOf": [
+    {
+      "$ref": "../../general/item_ref.json"
+    },
+    {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/binding"
+      }
+    },
+    {
+      "$ref": "#/definitions/binding",
+      "title": "Binding",
+      "description": "The binding that is contained within this element."
     }
   ]
 }

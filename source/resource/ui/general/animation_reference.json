@@ -1,0 +1,8 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "Animation Reference",
+  "description": "A reference to an animation element using the following syntax: [animation_name]@[namespace_reference].[animation_name_reference]",
+  "type": "string",
+  "examples": ["button@minecraft", "button@minecraft.ui"],
+  "pattern": "^[a-zA-Z0-9_]*@[a-zA-Z0-9_]+(\\.[a-zA-Z0-9_]+)?$"
+}

@@ -39,6 +39,10 @@
           "title": "Name",
           "description": "The name of the factory.",
           "type": "string"
+        },
+        "max_children_size": {
+          "title": "Max Children Size",
+          "$ref": "../../general/integer.json"
         }
       }
     },

@@ -1,0 +1,4 @@
+{
+    "title": "Priority",
+    "$ref": "../../general/integer.json"
+}
