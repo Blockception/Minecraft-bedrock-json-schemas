@@ -13,22 +13,24 @@
       "properties": {
         "origin": {
           "title": "Origin",
+          "default": [-8, 0, -8],
           "description": "Minimal position of the bounds of the collision box. origin is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.",
           "type": "array",
           "items": [
-            { "title": "X", "type": "number", "minimum": -8.0, "maximum": 8 },
+            { "title": "X", "type": "number", "minimum": -8, "maximum": 8 },
             { "title": "Y", "type": "number", "minimum": 0, "maximum": 16 },
-            { "title": "Z", "type": "number", "minimum": -8.0, "maximum": 8 }
+            { "title": "Z", "type": "number", "minimum": -8, "maximum": 8 }
           ]
         },
         "size": {
           "title": "Size",
+          "default": [16, 16, 16],
           "description": "Size of each side of the collision box. Size is specified as [x, y, z]. origin + size must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.",
           "type": "array",
           "items": [
-            { "title": "X", "type": "number", "minimum": -8.0, "maximum": 8 },
-            { "title": "Y", "type": "number","minimum": 0, "maximum": 16 },
-            { "title": "Z", "type": "number","minimum": -8.0, "maximum": 8 }
+            { "title": "X", "type": "number", "minimum": 0, "maximum": 16 },
+            { "title": "Y", "type": "number", "minimum": 0, "maximum": 16 },
+            { "title": "Z", "type": "number", "minimum": 0, "maximum": 16 }
           ]
         }
       }
