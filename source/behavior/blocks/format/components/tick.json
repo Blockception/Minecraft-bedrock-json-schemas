@@ -8,6 +8,18 @@
     "looping": { "type": "boolean", "default": true, "description": "Does the event loop.", "title": "Looping" },
     "interval_range": {
       "type": "array",
+      "items": [
+        {
+          "title": "Min",
+          "type": "number",
+          "default": 0
+        },
+        {
+          "title": "Max",
+          "type": "number",
+          "default": 0
+        }
+      ],
       "description": "The Range between which the component will trigger his event.",
       "title": "Interval Range"
     }
