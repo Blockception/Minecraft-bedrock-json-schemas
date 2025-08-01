@@ -19,7 +19,7 @@
           "type": "number",
           "default": 0
         }
-      ]
+      ],
       "description": "The Range between which the component will trigger his event.",
       "title": "Interval Range"
     }
