@@ -1,0 +1,52 @@
+{
+  "$id": "blockception.minecraft.behavior.biomes.minecraft.surface_builder",
+  "title": "Surface Builder",
+  "description": "Controls the materials used for terrain generation.",
+  "type": "object",
+  "required": ["builder"],
+  "additionalProperties": false,
+  "properties": {
+    "builder": {
+      "title": "Builder",
+      "description": "Controls the block types used for terrain generation.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "enum": ["minecraft:overworld", "minecraft:frozen_ocean", "minecraft:mesa", "minecraft:swamp", "minecraft:capped", "minecraft:the_end"]
+        },
+        "top_material": {
+          "title": "Top Material",
+          "description": "Controls the block type used for the surface of this biome.",
+          "$ref": "../../../../general/block/reference.json"
+        },
+        "mid_material": {
+          "title": "Mid Material",
+          "description": "Controls the block type used in a layer below the surface of this biome.",
+          "$ref": "../../../../general/block/reference.json"
+        },
+        "sea_floor_material": {
+          "title": "Sea Floor Material",
+          "description": "Controls the block type used as a floor for bodies of water in this biome.",
+          "$ref": "../../../../general/block/reference.json"
+        },
+        "foundation_material": {
+          "title": "Foundation Material",
+          "description": "Controls the block type used deep underground in this biome.",
+          "$ref": "../../../../general/block/reference.json"
+        },
+        "sea_material": {
+          "title": "Sea Material",
+          "description": "Controls the block type used for the bodies of water in this biome.",
+          "$ref": "../../../../general/block/reference.json"
+        },
+        "sea_floor_depth": {
+          "title": "Sea Floor Depth",
+          "description": "Controls how deep below the world water level the floor should occur.",
+          "type": "integer"
+        }
+      }
+    }
+  }
+}
