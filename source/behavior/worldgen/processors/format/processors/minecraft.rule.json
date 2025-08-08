@@ -59,6 +59,12 @@
                         },
                         {
                             "$ref": "#/definitions/tag_match"
+                        },
+                        {
+                            "$ref": "#/definitions/blockstate_match"
+                        },
+                        {
+                            "$ref": "#/definitions/random_blockstate_match"
                         }
                     ]
                 },
@@ -75,6 +81,12 @@
                         },
                         {
                             "$ref": "#/definitions/tag_match"
+                        },
+                        {
+                            "$ref": "#/definitions/blockstate_match"
+                        },
+                        {
+                            "$ref": "#/definitions/random_blockstate_match"
                         }
                     ]
                 },
@@ -201,6 +213,50 @@
             "required": [
                 "predicate_type",
                 "tag"
+            ]
+        },
+        "blockstate_match": {
+            "title": "BlockState Match",
+            "description": "Predicate that evaluates to true if the block at the specified location matches the specified block.",
+            "type": "object",
+            "properties": {
+                "block_state": {
+                    "$ref": "../../../../../general/block/reference.json"
+                },
+                "predicate_type": {
+                    "title": "Predicate Type",
+                    "type": "string",
+                    "const": "minecraft:blockstate_match"
+                }
+            },
+            "required": [
+                "block_state",
+                "predicate_type"
+            ]
+        },
+        "random_blockstate_match": {
+            "title": "Random BlockState Match",
+            "description": "Predicate that evaluates to true with a given probability if the block at the specified location matches the specified block.",
+            "type": "object",
+            "properties": {
+                "block_state": {
+                    "$ref": "../../../../../general/block/reference.json"
+                },
+                "predicate_type": {
+                    "title": "Predicate Type",
+                    "type": "string",
+                    "const": "minecraft:random_blockstate_match"
+                },
+                "probability": {
+                    "type": "number",
+                    "minimum": 0.0,
+                    "exclusiveMaximum": 1.0
+                }
+            },
+            "required": [
+                "block_state",
+                "predicate_type",
+                "probability"
             ]
         },
         "axis_aligned_linear_pos": {
