@@ -1,0 +1,114 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.transport_items",
+  "type": "object",
+  "title": "Transport Items",
+  "description": "Allows a mob to transport items from and to containers",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": {
+      "$ref": "./types/priority.json"
+    },
+    "source_container_types": {
+      "title": "Source Container Types",
+      "description": "A list of block descriptors that should be a container type to get items from. Default is any container",
+      "type": "array",
+      "items": {
+        "$ref": "../../../../general/block/reference.json"
+      }
+    },
+    "destination_container_types": {
+      "title": "Destination Container Types",
+      "description": "A list of block descriptors that should be a container type to put items in. Default is any container",
+      "type": "array",
+      "items": {
+        "$ref": "../../../../general/block/reference.json"
+      }
+    },
+    "max_stack_size": {
+      "title": "Max Stack Size",
+      "description": "The maximum stack size that the mob will try to take from a container.",
+      "type": "integer",
+      "minimum": 1,
+      "default": 16,
+      "maxItems": 64
+    },
+    "interaction_time": {
+      "title": "Interaction Time",
+      "description": "The amount of time spent interacting with the containers in seconds.",
+      "type": "number",
+      "minimum": 0,
+      "default": 3.0
+    },
+    "allow_simultaneous_interaction": {
+      "title": "Allow Simultaneous Interaction",
+      "description": "Whether the entity is allowed to simultaneously interact with a container that another non-player entity is already interacting with.",
+      "type": "boolean",
+      "default": false
+    },
+    "search_strategy": {
+      "title": "Search Strategy",
+      "description": "Whether to select the nearest valid container or a random valid container in range.",
+      "type": "string",
+      "enum": [
+        "nearest",
+        "random"
+      ]
+    },
+    "search_distance": {
+      "title": "Search Distance",
+      "description": "The maximum horizontal and vertical distance at which to find containers for taking or placing items.",
+      "$ref": "../types/range_number_type.json",
+      "default": [
+        62,
+        32
+      ]
+    },
+    "max_visited_containers": {
+      "title": "Max Visited Containers",
+      "description": "The maximum number of containers the mob will visit before resetting. 0 is unlimited.",
+      "type": "integer",
+      "minimum": 0,
+      "default": 16
+    },
+    "initial_cooldown": {
+      "title": "Initial Cooldwon",
+      "description": "ime, in seconds, the mob will wait after spawning or after its available goals have changed (e.g. due to a component group update).",
+      "type": "integer",
+      "minimum": 0,
+      "default": 0
+    },
+    "idle_cooldown": {
+      "title": "Idle Cooldown",
+      "description": "When the mob cannot find a valid container to interact with, the goal will be disabled for this amount of time in seconds.",
+      "type": "integer",
+      "minimum": 0,
+      "default": 20
+    },
+    "place_strategy": {
+      "title": "Place Strategy",
+      "description": "The strategy to use for placing the transported item.\nAny - always place if there is room,\nWith matching - place if there is a matching item in the container,\nWith matching or empty - like With matching but will also place in empty containers.",
+      "type": "string",
+      "default": "any",
+      "enum": [
+        "any",
+        "with_matching",
+        "with_matching_or_empty"
+      ]
+    },
+    "allowed_items": {
+      "description": "A list of item descriptors that are the only items the mob is allowed to transport. If this and \"disallowed_items\" are both empty, then all items are allowed. If non-empty \"disallowed_items\" must be empty. Default value: empty.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "disallowed_items": {
+      "description": "A list of item descriptors that are the mob is not allowed to transport. If non-empty \"allowed_items\" must be empty. Default value: emtpy.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
