@@ -5,7 +5,7 @@
   "description": "A custom biome definition.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["description", "components"],
+  "required": [ "description", "components" ],
   "definitions": {
     "components_ref": {
       "type": "object",
@@ -15,6 +15,7 @@
         "minecraft:climate": { "$ref": "./components/climate.json" },
         "minecraft:creature_spawn_probability": { "$ref": "./components/creature_spawn_probability.json" },
         "minecraft:humidity": { "$ref": "./components/humidity.json" },
+        "minecraft:map_tints": { "$ref": "./components/map_tints.json" },
         "minecraft:mountain_parameters": { "$ref": "./components/mountain_parameters.json" },
         "minecraft:multinoise_generation_rules": { "$ref": "./components/multinoise_generation_rules.json" },
         "minecraft:overworld_generation_rules": { "$ref": "./components/overworld_generation_rules.json" },
@@ -33,7 +34,7 @@
       "description": "The description for this biome.",
       "type": "object",
       "additionalProperties": false,
-      "required": ["identifier"],
+      "required": [ "identifier" ],
       "properties": {
         "identifier": {
           "title": "Identifier",
