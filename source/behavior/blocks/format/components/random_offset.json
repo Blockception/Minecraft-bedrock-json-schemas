@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.blocks.minecraft.random_offset",
   "title": "Random Offset",
-  "description": "[Experimental] This allows for blocks to randomly offset like foliage does in the Vanilla game",
+  "description": "This allows for blocks to randomly offset like foliage does in the Vanilla game",
   "type": "object",
   "additionalProperties": false,
   "definitions": {
