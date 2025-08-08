@@ -1,0 +1,16 @@
+{
+  "$id": "blockception.minecraft.behavior.biomes.minecraft.humidity",
+  "title": "Humidity",
+  "description": "Forces a biome to ether always be humid or never humid. Humidity effects the spread chance, and spread rate of fire in the biome",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["is_humid"],
+  "properties": {
+    "is_humid": {
+      "title": "Is Humid",
+      "description": "Whether or not the biome is humid.",
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

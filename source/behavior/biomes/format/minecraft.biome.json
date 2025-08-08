@@ -14,6 +14,7 @@
       "properties": {
         "minecraft:climate": { "$ref": "./components/climate.json" },
         "minecraft:creature_spawn_probability": { "$ref": "./components/creature_spawn_probability.json" },
+        "minecraft:humidity": { "$ref": "./components/humidity.json" },
         "minecraft:mountain_parameters": { "$ref": "./components/mountain_parameters.json" },
         "minecraft:multinoise_generation_rules": { "$ref": "./components/multinoise_generation_rules.json" },
         "minecraft:overworld_generation_rules": { "$ref": "./components/overworld_generation_rules.json" },
