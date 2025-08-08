@@ -2,38 +2,6 @@
     "title": "Rule",
     "type": "object",
     "definitions": {
-        "block_specifier": {
-            "anyOf": [
-                {
-                    "$ref": "../../../../../general/block/identifier.json"
-                },
-                {
-                    "type": "object",
-                    "additionalProperties": false,
-                    "properties": {
-                        "name": {
-                            "$ref": "../../../../../general/block/identifier.json"
-                        },
-                        "states": {
-                            "type": "object",
-                            "additionalProperties": {
-                                "oneOf": [
-                                    {
-                                        "type": "boolean"
-                                    },
-                                    {
-                                        "type": "integer"
-                                    },
-                                    {
-                                        "type": "string"
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                }
-            ]
-        },
         "rule": {
             "properties": {
                 "block_entity_modifier": {
@@ -91,7 +59,7 @@
                     ]
                 },
                 "output_state": {
-                    "$ref": "#/definitions/block_specifier"
+                    "$ref": "../../../../../general/block/reference.json"
                 },
                 "position_predicate": {
                     "oneOf": [
@@ -157,6 +125,7 @@
         },
         "block_match": {
             "title": "Block Match",
+            "description": "Predicate that evaluates to true if the block at the specified location matches the specified block.",
             "type": "object",
             "properties": {
                 "block": {
@@ -175,6 +144,7 @@
         },
         "random_block_match": {
             "title": "Random Block Match",
+            "description": "Predicate that evaluates to true with a given probability if the block at the specified location matches the specified block.",
             "type": "object",
             "properties": {
                 "block": {
@@ -187,6 +157,7 @@
                 },
                 "probability": {
                     "type": "number",
+                    "description": "Probability of the evaluating to true when the block matches.",
                     "minimum": 0.0,
                     "exclusiveMaximum": 1.0
                 }
@@ -199,6 +170,7 @@
         },
         "tag_match": {
             "title": "Tag Match",
+            "description": "Predicate that evaluates to true if the block at the specified location contains the tag.",
             "type": "object",
             "properties": {
                 "predicate_type": {
@@ -207,6 +179,8 @@
                     "const": "minecraft:tag_match"
                 },
                 "tag": {
+                    "title": "Tag",
+                    "description": "The tag to be matched.",
                     "type": "string"
                 }
             },
@@ -249,6 +223,7 @@
                 },
                 "probability": {
                     "type": "number",
+                    "description": "Probability of the evaluating to true when the block matches.",
                     "minimum": 0.0,
                     "exclusiveMaximum": 1.0
                 }
@@ -261,6 +236,7 @@
         },
         "axis_aligned_linear_pos": {
             "title": "Axis Aligned Linear",
+            "description": "Predicate that evalutes to true if the block is within the distance range along the provided axis and and random number is generated between chance range.",
             "type": "object",
             "properties": {
                 "axis": {
