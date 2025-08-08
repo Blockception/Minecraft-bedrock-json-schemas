@@ -14,30 +14,56 @@
                 "element": {
                     "title": "Element",
                     "description": "A grouping of a Structure Template, the Processor List to use when placing the structure, and its weight that determines the likelihood of the element being chosen.",
-                    "type": "object",
-                    "properties": {
-                        "element_type": {
-                            "title": "Element Type",
-                            "description": " The type of element.",
-                            "type": "string",
-                            "const": "minecraft:single_pool_element"
+                    "oneOf": [
+                        {
+                            "$ref": "#/definitions/empty_element"
                         },
-                        "location": {
-                            "title": "Location",
-                            "description": "The path of the structure file. This path is relative to the behavior pack's \"structures\" folder.",
-                            "type": "string"
-                        },
-                        "processors": {
-                            "title": "Processors",
-                            "description": "The identifier of the processor list to use when placing the structure.",
-                            "type": "string"
+                        {
+                            "$ref": "#/definitions/single_element"
                         }
-                    },
-                    "required": [
-                        "element_type",
-                        "location",
-                        "processors"
                     ]
+                },
+                "weight": {
+                    "title": "Weight",
+                    "description": "The weighted probability of choosing the element from the pool. For example, a template pool containing 2 structures with weights of 1 and 3 will have a 25% and 75% chance of being chosen respectively.",
+                    "type": "integer",
+                    "minimum": 1.0,
+                    "maximum": 200.0
+                }
+            }
+        },
+        "empty_element": {
+            "type": "object",
+            "properties": {
+                "element_type": {
+                    "title": "Element Type",
+                    "description": " The type of element.",
+                    "type": "string",
+                    "const": "minecraft:empty_pool_element"
+                }
+            },
+            "required": [
+                "element_type"
+            ]
+        },
+        "single_element": {
+            "type": "object",
+            "properties": {
+                "element_type": {
+                    "title": "Element Type",
+                    "description": " The type of element.",
+                    "type": "string",
+                    "const": "minecraft:single_pool_element"
+                },
+                "location": {
+                    "title": "Location",
+                    "description": "The path of the structure file. This path is relative to the behavior pack's \"structures\" folder.",
+                    "type": "string"
+                },
+                "processors": {
+                    "title": "Processors",
+                    "description": "The identifier of the processor list to use when placing the structure.",
+                    "type": "string"
                 },
                 "projection": {
                     "title": "Projection",
@@ -54,15 +80,12 @@
                             "description": "Structures are placed relative to the terrain height. Structure blocks will adjust along the Y axis to match the ground."
                         }
                     ]
-                },
-                "weight": {
-                    "title": "Weight",
-                    "description": "The weighted probability of choosing the element from the pool. For example, a template pool containing 2 structures with weights of 1 and 3 will have a 25% and 75% chance of being chosen respectively.",
-                    "type": "integer",
-                    "minimum": 1.0,
-                    "maximum": 200.0
                 }
-            }
+            },
+            "required": [
+                "element_type",
+                "location"
+            ]
         }
     },
     "required": [ "description", "elements" ],
@@ -87,7 +110,7 @@
             "type": "array",
             "minItems": 1,
             "items": {
-
+                "$ref": "#/definitions/template_pool_element"
             }
         },
         "fallback": {

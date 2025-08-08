@@ -28,7 +28,8 @@
       "title": "Heightmap Projection",
       "description": "Heightmap used to calculate the relative start height. For example, a heightmap_projection of ocean_floor and a start_height of 10 means the Jigsaw Structure will begin generating 10 blocks above the ocean floor.",
       "type": "string",
-      "enum": ["ocean_floor", "world_surface"]
+      "default": "none",
+      "enum": ["ocean_floor", "world_surface", "none"]
     },
     "max_depth": {
       "title": "Max Depth",

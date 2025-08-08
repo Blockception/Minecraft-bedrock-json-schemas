@@ -44,7 +44,14 @@
                 "required": ["path"],
                 "properties": {
                   "path": { "description": "A texture file.", "type": "string", "pattern": "^textures/.+$", "title": "Path" },
-                  "weight": { "type": "integer", "title": "Weight", "description": "The weight of the texture.", "$comment": "UNDOCUMENTED" }
+                  "weight": { 
+                    "type": "number", 
+                    "minimum": 0.05,
+                    "maximum": 1000000,
+                    "title": "Weight", 
+                    "description": "The weight of the texture.", 
+                    "$comment": "UNDOCUMENTED" 
+                  }
                 }
               }
             }

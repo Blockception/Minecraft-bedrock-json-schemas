@@ -1,0 +1,70 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.place_block",
+  "type": "object",
+  "title": "Place Block",
+  "additionalProperties": false,
+  "description": "Allows an entity to place blocks in the world",
+  "required": [],
+  "properties": {
+    "priority": {
+      "$ref": "./types/priority.json"
+    },
+    "affected_by_griefing_rule": {
+      "title": "Affected By Griefing Rule",
+      "description": "If true, whether the goal is affected by the mob griefing game rule.",
+      "type": "boolean"
+    },
+    "can_place": {
+      "title": "Can Place",
+      "description": "Filters for if the entity should try to place its block. Self and Target are set.",
+      "$ref": "../../filters/filters.json"
+    },
+    "chance": {
+      "title": "Chance",
+      "description": "Chance each tick for the entity to try and place a block.",
+      "type": "number",
+      "minimum": 0
+    },
+    "on_place": {
+      "title": "On Place",
+      "description": "Trigger ran if the entity does place its block. Self, Target, and Block are set.",
+      "$ref": "../types/event.json"
+    },
+    "placeable_carried_blocks": {
+      "title": "Placeable Carried Blocks",
+      "description": "Block descriptors for which blocks are valid to be placed from the entity's carried item, if empty all blocks are valid.",
+      "type": "array",
+      "items": {
+        "$ref": "../../../../general/block/reference.json"
+      }
+    },
+    "randomly_placeable_blocks": {
+      "title": "Randomly Placeable Blocks",
+      "description": "Weighted block descriptors for which blocks should be randomly placed, if empty the entity will try to place its carried block from placeable_carried_blocks.",
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": [
+          {
+            "$ref": "../../../../general/block/reference.json"
+          },
+          {
+            "title": "Weight",
+            "description": "Weight used in random selection. Value is relative to other weights in the collection.",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    "xz_range": {
+      "title": "XZ Range",
+      "description": "XZ range from which the entity will try and place blocks in.",
+      "$ref": "../types/range_number_type.json"
+    },
+    "y_range": {
+      "title": "Y Range",
+      "description": "Y range from which the entity will try and place blocks in.",
+      "$ref": "../types/range_number_type.json"
+    }
+  }
+}

@@ -14,6 +14,12 @@
         "description": "Item that the entity should not equip.",
         "title": "Excluded Items"
       }
+    },
+    "can_wear_armor": {
+      "title": "Can Wear Armor",
+      "description": "Specifies if equipped armor should be added to the armor slot or hand slot",
+      "type": "boolean",
+      "default": false
     }
   }
 }

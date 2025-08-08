@@ -1,0 +1,57 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.take_block",
+  "type": "object",
+  "title": "Take Block",
+  "description": "Allows an entity to take blocks from the world.",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "priority": {
+      "$ref": "./types/priority.json"
+    },
+    "affected_by_griefing_rule": {
+      "title": "Affected By Griefing Rule",
+      "description": "If true, whether the goal is affected by the mob griefing game rule.",
+      "type": "boolean"
+    },
+    "blocks": {
+      "title": "Blocks",
+      "description": "Block descriptors for which blocks are valid to be taken by the entity, if empty all blocks are valid.",
+      "type": "array",
+      "items": {
+        "$ref": "../../../../general/block/reference.json"
+      }
+    },
+    "can_take": {
+      "title": "Can Take",
+      "description": "Filters for if the entity should try to take a block. Self and Target are set.",
+      "$ref": "../../filters/filters.json"
+    },
+    "chance": {
+      "title": "Chance",
+      "description": "Chance each tick for the entity to try and take a block.",
+      "type": "number",
+      "minimum": 0
+    },
+    "on_take": {
+      "title": "On Take",
+      "description": "Trigger ran if the entity does take a block. Self, Target, and Block are set.",
+      "$ref": "../types/event.json"
+    },
+    "requires_line_of_sight": {
+      "title": "Requires Line Of Sight",
+      "description": "If true, whether the entity needs line of sight to the block they are trying to take.",
+      "type": "boolean"
+    },
+    "xz_range": {
+      "title": "XZ Range",
+      "description": "XZ range from which the entity will try and take blocks from.",
+      "$ref": "../types/range_number_type.json"
+    },
+    "y_range": {
+      "title": "Y Range",
+      "description": "Y range from which the entity will try and take blocks from.",
+      "$ref": "../types/range_number_type.json"
+    }
+  }
+}

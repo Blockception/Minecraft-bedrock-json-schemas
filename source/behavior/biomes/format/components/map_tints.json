@@ -1,0 +1,78 @@
+{
+  "$id": "blockception.minecraft.behavior.biomes.minecraft.map_tints",
+  "title": "Map Tints",
+  "description": "Sets the color grass and foliage will be tinted by in this biome on the map.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [ "grass" ],
+  "definitions": {
+    "color": {
+      "oneOf": [
+        {
+          "type": "string",
+          "pattern": "^#[a-fA-F0-9]{6}$"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 3,
+          "maxItems": 3
+        }
+      ]
+    },
+    "tint": {
+      "type": "object",
+      "properties": {
+        "tint": {
+          "description": "Tint color used in this biome on the map.",
+          "$ref": "#/definitions/color"
+        },
+        "type": {
+          "title": "GrassType",
+          "description": "Controls the type of grass tint to use.",
+          "type": "string",
+          "const": "tint"
+        }
+      },
+      "required": [
+        "tint",
+        "type"
+      ]
+    },
+    "noise": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "title": "GrassType",
+          "description": "Controls the type of grass tint to use.",
+          "type": "string",
+          "const": "noise"
+        }
+      },
+      "required": [
+        "type"
+      ]
+    }
+  },
+  "properties": {
+    "grass": {
+      "title": "Grass",
+      "description": "Controls whether the grass will use a custom tint color or a noise based tint color.",
+      "oneOf": [
+        {
+          "$ref": "#/definitions/tint"
+        },
+        {
+          "$ref": "#/definitions/noise"
+        }
+      ]
+    },
+    "foliage": {
+      "title": "Foliage",
+      "description": "Sets the color foliage will be tinted by in this biome on the map.",
+      "$ref": "#/definitions/color"
+    }
+  }
+}
