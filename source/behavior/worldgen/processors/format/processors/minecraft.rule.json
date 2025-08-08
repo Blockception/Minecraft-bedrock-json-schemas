@@ -98,19 +98,18 @@
         },
         "append_loot": {
             "title": "Append Loot",
-            "description": "",
+            "description": "Modifier will attempt to add loot to a block entity.",
             "type": "object",
             "additionalProperties": false,
             "required": [ "type", "loot_table" ],
             "properties": {
                 "loot_table": {
                     "title": "Loot Table",
-                    "description": "",
+                    "description": "The loot table to append",
                     "type": "string"
                 },
                 "type": {
                     "title": "Type",
-                    "description": "",
                     "type": "string",
                     "const": "minecraft:append_loot"
                 }
@@ -118,14 +117,13 @@
         },
         "passthrough": {
             "title": "Passthrough",
-            "description": "",
+            "description": "Modifier that leaves the state unchanged. This is the default block modifier if no other block modifier is specified.",
             "type": "object",
             "additionalProperties": false,
             "required": [ "type" ],
             "properties": {
                 "type": {
                     "title": "Type",
-                    "description": "",
                     "type": "string",
                     "const": "minecraft:passthrough"
                 }
@@ -133,7 +131,7 @@
         },
         "always_true": {
             "title": "Always True",
-            "description": "",
+            "description": "Predicate that always evaluates to true. This is the default predicate if no other predicate is specified.",
             "type": "object",
             "additionalProperties": false,
             "required": [ "predicate_type" ],
@@ -247,7 +245,6 @@
                 },
                 "predicate_type": {
                     "title": "Predicate Type",
-                    "description": "",
                     "type": "string",
                     "const": "minecraft:axis_aligned_linear_pos"
                 }
