@@ -19,6 +19,7 @@
         "minecraft:multinoise_generation_rules": { "$ref": "./components/multinoise_generation_rules.json" },
         "minecraft:overworld_generation_rules": { "$ref": "./components/overworld_generation_rules.json" },
         "minecraft:overworld_height": { "$ref": "./components/overworld_height.json" },
+        "minecraft:partially_frozen": { "$ref": "./components/partially_frozen.json" },
         "minecraft:replace_biomes": { "$ref": "./components/replace_biomes.json" },
         "minecraft:surface_material_adjustments": { "$ref": "./components/surface_material_adjustments.json" },
         "minecraft:surface_builder": { "$ref": "./components/surface_builder.json" },

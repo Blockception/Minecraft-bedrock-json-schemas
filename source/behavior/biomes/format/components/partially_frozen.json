@@ -1,0 +1,8 @@
+{
+  "$id": "blockception.minecraft.behavior.biomes.minecraft.partially_frozen",
+  "title": "Partially Frozen",
+  "description": "Component will impact the temperature in a frozen biome, causing some areas to not be frozen. Ex: patchy ice, patchy snow",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {}
+}
