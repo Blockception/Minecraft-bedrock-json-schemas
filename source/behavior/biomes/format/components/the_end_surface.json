@@ -1,8 +1,0 @@
-{
-  "$id": "blockception.minecraft.behavior.biomes.minecraft.the_end_surface",
-  "title": "End Surface",
-  "description": "Use default Minecraft End terrain generation.",
-  "type": "object",
-  "additionalProperties": false,
-  "properties": {}
-}

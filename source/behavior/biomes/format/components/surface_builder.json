@@ -3,7 +3,7 @@
   "title": "Surface Builder",
   "description": "Controls the materials used for terrain generation.",
   "type": "object",
-  "required": ["builder"],
+  "required": [ "builder" ],
   "additionalProperties": false,
   "properties": {
     "builder": {
@@ -11,42 +11,171 @@
       "description": "Controls the block types used for terrain generation.",
       "type": "object",
       "additionalProperties": false,
-      "required": ["type"],
+      "required": [ "type" ],
       "properties": {
         "type": {
-          "enum": ["minecraft:overworld", "minecraft:frozen_ocean", "minecraft:mesa", "minecraft:swamp", "minecraft:capped", "minecraft:the_end"]
-        },
-        "top_material": {
-          "title": "Top Material",
-          "description": "Controls the block type used for the surface of this biome.",
-          "$ref": "../../../../general/block/reference.json"
-        },
-        "mid_material": {
-          "title": "Mid Material",
-          "description": "Controls the block type used in a layer below the surface of this biome.",
-          "$ref": "../../../../general/block/reference.json"
-        },
-        "sea_floor_material": {
-          "title": "Sea Floor Material",
-          "description": "Controls the block type used as a floor for bodies of water in this biome.",
-          "$ref": "../../../../general/block/reference.json"
-        },
-        "foundation_material": {
-          "title": "Foundation Material",
-          "description": "Controls the block type used deep underground in this biome.",
-          "$ref": "../../../../general/block/reference.json"
-        },
-        "sea_material": {
-          "title": "Sea Material",
-          "description": "Controls the block type used for the bodies of water in this biome.",
-          "$ref": "../../../../general/block/reference.json"
-        },
-        "sea_floor_depth": {
-          "title": "Sea Floor Depth",
-          "description": "Controls how deep below the world water level the floor should occur.",
-          "type": "integer"
+          "enum": [ "minecraft:overworld", "minecraft:frozen_ocean", "minecraft:mesa", "minecraft:swamp", "minecraft:capped", "minecraft:the_end" ]
         }
-      }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "anyOf": [
+                  { "const": "minecraft:overworld" },
+                  { "const": "minecraft:frozen_ocean" },
+                  { "const": "minecraft:swamp" }
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [ "top_material", "mid_material", "sea_floor_material", "foundation_material", "sea_material", "sea_floor_depth" ],
+            "properties": {
+              "top_material": {
+                "title": "Top Material",
+                "description": "Controls the block type used for the surface of this biome.",
+                "$ref": "../../../../general/block/reference.json"
+              },
+              "mid_material": {
+                "title": "Mid Material",
+                "description": "Controls the block type used in a layer below the surface of this biome.",
+                "$ref": "../../../../general/block/reference.json"
+              },
+              "sea_floor_material": {
+                "title": "Sea Floor Material",
+                "description": "Controls the block type used as a floor for bodies of water in this biome.",
+                "$ref": "../../../../general/block/reference.json"
+              },
+              "foundation_material": {
+                "title": "Foundation Material",
+                "description": "Controls the block type used deep underground in this biome.",
+                "$ref": "../../../../general/block/reference.json"
+              },
+              "sea_material": {
+                "title": "Sea Material",
+                "description": "Controls the block type used for the bodies of water in this biome.",
+                "$ref": "../../../../general/block/reference.json"
+              },
+              "sea_floor_depth": {
+                "title": "Sea Floor Depth",
+                "description": "Controls how deep below the world water level the floor should occur.",
+                "type": "integer"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:mesa"
+              }
+            }
+          },
+          "then": {
+            "required": [ "top_material", "mid_material", "bryce_pillars", "clay_material", "foundation_material", "hard_clay_material", "has_forest", "sea_floor_depth", "sea_floor_material", "sea_material" ],
+            "properties": {
+              "top_material": {
+                "title": "Top Material",
+                "description": "Controls the block type used for the surface of this biome.",
+                "$ref": "../../../../general/block/reference.json"
+              },
+              "mid_material": {
+                "title": "Mid Material",
+                "description": "Controls the block type used in a layer below the surface of this biome.",
+                "$ref": "../../../../general/block/reference.json"
+              },
+              "sea_floor_material": {
+                "title": "Sea Floor Material",
+                "description": "Controls the block type used as a floor for bodies of water in this biome.",
+                "$ref": "../../../../general/block/reference.json"
+              },
+              "foundation_material": {
+                "title": "Foundation Material",
+                "description": "Controls the block type used deep underground in this biome.",
+                "$ref": "../../../../general/block/reference.json"
+              },
+              "sea_material": {
+                "title": "Sea Material",
+                "description": "Controls the block type used for the bodies of water in this biome.",
+                "$ref": "../../../../general/block/reference.json"
+              },
+              "sea_floor_depth": {
+                "title": "Sea Floor Depth",
+                "description": "Controls how deep below the world water level the floor should occur.",
+                "type": "integer"
+              },
+              "clay_material": {
+                "title": "Clay Material",
+                "description": "Base clay block to use.",
+                "$ref": "../../../../general/block/reference.json"
+              },
+              "hard_clay_material": {
+                "title": "Hard Clay Material",
+                "description": "Hardened clay block to use.",
+                "$ref": "../../../../general/block/reference.json"
+              },
+              "bryce_pillars": {
+                "title": "Bryce Pillars",
+                "description": "Whether the mesa generates with pillars.",
+                "type": "boolean"
+              },
+              "has_forest": {
+                "title": "Has Forest",
+                "description": "Places coarse dirt and grass at high altitudes.",
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "minecraft:capped"
+              }
+            }
+          },
+          "then": {
+            "required": [ "floor_materials", "ceiling_materials", "sea_material", "foundation_material" ],
+            "properties": {
+              "ceiling_materials": {
+                "title": "Ceiling Materials",
+                "description": "Materials used for the surface ceiling.",
+                "minItems": 1,
+                "items": {
+                  "$ref": "../../../../general/block/reference.json"
+                }
+              },
+              "floor_materials": {
+                "title": "Floor Materials",
+                "description": "Materials used for the surface floor.",
+                "minItems": 1,
+                "items": {
+                  "$ref": "../../../../general/block/reference.json"
+                }
+              },
+              "sea_material": {
+                "title": "Sea Material",
+                "description": "Material used to replace air blocks below sea level.",
+                "$ref": "../../../../general/block/reference.json"
+              },
+              "foundation_material": {
+                "title": "Foundation Material",
+                "description": "Material used to repalce solid blocks that are not surface blocks.",
+                "$ref": "../../../../general/block/reference.json"
+              },
+              "beach_material": {
+                "title": "Beach Material",
+                "description": "Material used to decorate surface near sea level.",
+                "$ref": "../../../../general/block/reference.json"
+              }
+            }
+          }
+        }
+      ]
     }
   }
 }
