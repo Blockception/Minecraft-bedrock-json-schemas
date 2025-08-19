@@ -6,7 +6,7 @@
   "minProperties": 2,
   "type": "object",
   "title": "Recipe",
-  "descreiption": "A recipe is a set of ingredients and a result that can be crafted using a crafting table, furnace, brewing stand, or stonecutter.",
+  "description": "A recipe is a set of ingredients and a result that can be crafted using a crafting table, furnace, brewing stand, or stonecutter.",
   "properties": {
     "format_version": {
       "type": "string",
@@ -21,3 +21,4 @@
     "minecraft:recipe_smithing_transform": { "$ref": "./types/recipe_smithing_transform.json" }
   }
 }
+
