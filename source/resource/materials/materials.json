@@ -235,7 +235,7 @@
         "title": "Variant",
         "description": "UNDOCUMENTED.",
         "$comment": "UNDOCUMENTED",
-        "propertyNames": { "enum": ["fading", "fog", "fog.underwater", "lit", "skinning", "skinning_color", "underlava", "underwater"] },
+        "propertyNames": { "enum": ["fading", "fog", "fog.underwater", "lit", "skinning", "skinning_color", "skinning_alphatest", "underlava", "underwater"] },
         "additionalProperties": {
           "title": "Variant Item",
           "description": "UNDOCUMENTED.",

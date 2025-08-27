@@ -1,68 +1,122 @@
 {
-    "$id": "blockception.minecraft.behavior.condition.match_tool",
-    "type": "object",
-    "additionalProperties": false,
-    "description": "Returns the condition true if the block of the loot table was broken with a specific item.",
-    "title": "Killed By Player",
+  "$id": "blockception.minecraft.behavior.condition.match_tool",
+  "type": "object",
+  "additionalProperties": false,
+  "description": "Returns the condition true if the block of the loot table was broken with a specific item.",
+  "title": "Match Tool",
   "required": ["condition"],
-    "properties": {
-      "condition": { "type": "string",  "const": "match_tool", "title": "Condition", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
-      "item": {
-        "title": "Item",
-        "description": "The item to match",
-        "type": "string"
-      },
-      "count": {
-        "title": "Count",
-        "description": "Minimum count to match of the given item",
-        "type": "integer",
-        "minimum": 0
-      },
-      "enchantments": {
-        "title": "Enchantments",
-        "description": "List of enchantments to check for",
-        "type": "array",
-        "items": {
+  "properties": {
+    "condition": { "type": "string", "const": "match_tool", "title": "Condition", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
+    "item": {
+      "title": "Item",
+      "description": "The item to match",
+      "type": "string"
+    },
+    "count": {
+      "title": "Count",
+      "description": "Minimum count to match of the given item",
+      "type": "integer",
+      "minimum": 0
+    },
+    "enchantments": {
+      "title": "Enchantments",
+      "description": "List of enchantments to check for",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["enchantment"],
+        "properties": {
+          "enchantment": {
+            "title": "Enchantment",
+            "description": "The enchantment ID to check for",
+            "type": "string",
+            "enum": [
+              "protection",
+              "fire_protection",
+              "feather_falling",
+              "blast_protection",
+              "projectile_protection",
+              "thorns",
+              "respiration",
+              "depth_strider",
+              "aqua_affinity",
+              "sharpness",
+              "smite",
+              "bane_of_arthropods",
+              "knockback",
+              "fire_aspect",
+              "looting",
+              "efficiency",
+              "silk_touch",
+              "unbreaking",
+              "fortune",
+              "power",
+              "punch",
+              "flame",
+              "infinity",
+              "luck_of_the_sea",
+              "lure",
+              "frost_walker",
+              "mending",
+              "binding",
+              "vanishing",
+              "impaling",
+              "riptide",
+              "loyalty",
+              "channeling",
+              "multishot",
+              "piercing",
+              "quick_charge",
+              "soul_speed",
+              "swift_sneak",
+              "wind_burst",
+              "density",
+              "breach"
+            ]
+          },
+          "levels": {
+            "title": "Levels",
+            "description": "The level of the enchantment",
             "type": "object",
-            "patternProperties": {
-              "^[a-zA-Z]+$": {
-                "type": "object",
-                "properties": {
-                  "level": {
-                    "type": "integer"
-                  }
-                },
-                "required": ["level"]
+            "properties": {
+              "range_min": {
+                "title": "Minimum",
+                "description": "The minimum level of the enchantment",
+                "type": "integer"
+              },
+              "range_max": {
+                "title": "Maximum",
+                "description": "The maximum level of the enchantment",
+                "type": "integer"
               }
-            },
-            "minProperties": 1,
-            "maxProperties": 1
-        },
-        "minItems": 1
-      },
-      "minecraft:match_tool_filter_all": {
-        "title": "Match Tool Filter All",
-        "description": "List of tags the item must have",
-        "type": "array",
-        "items": {
-            "type": "string"
-        }
-      },
-      "minecraft:match_tool_filter_none": {
-        "title": "Match Tool Filter None",
-        "description": "List of tags the item must NOT have",
-        "type": "array",
-        "items": {
-            "type": "string"
-        }
-      },
-      "minecraft:match_tool_filter_any": {
-        "title": "Match Tool Filter Any",
-        "description": "List of tags the item must have at least one of",
-        "type": "array",
-        "items": {
-            "type": "string"
+            }
+          }
         }
       }
+    },
+    "minecraft:match_tool_filter_all": {
+      "title": "Match Tool Filter All",
+      "description": "List of tags the item must have",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "minecraft:match_tool_filter_none": {
+      "title": "Match Tool Filter None",
+      "description": "List of tags the item must NOT have",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "minecraft:match_tool_filter_any": {
+      "title": "Match Tool Filter Any",
+      "description": "List of tags the item must have at least one of",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     }
-}  
+  }
+}
