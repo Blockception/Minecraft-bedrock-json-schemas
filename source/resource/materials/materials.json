@@ -358,7 +358,7 @@
             "title": "MSAA Support",
             "description": "UNDOCUMENTED.",
             "$comment": "UNDOCUMENTED",
-            "enum": ["Both", "MSAA"]
+            "enum": ["Both", "MSAA", "NonMSAA"]
           },
           "primitiveMode": {
             "type": "string",
