@@ -1,0 +1,8 @@
+{
+    "$id": "blockception.minecraft.behavior.blocks.minecraft.flower_pottable",
+    "title": "Flower Pottable",
+    "description": "Allows a player to interact with an empty flowerpot when holding the block in order to embed it.",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+}

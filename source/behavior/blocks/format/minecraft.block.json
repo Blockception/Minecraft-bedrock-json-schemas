@@ -21,6 +21,7 @@
         "minecraft:destruction_particles": { "$ref": "./components/destruction_particles.json" },
         "minecraft:display_name": { "$ref": "./components/display_name.json" },
         "minecraft:flammable": { "$ref": "./components/flammable.json" },
+        "minecraft:flower_pottable": { "$ref": "./components/flower_pottable.json" },
         "minecraft:friction": { "$ref": "./components/friction.json" },
         "minecraft:geometry": { "$ref": "./components/geometry.json" },
         "minecraft:item_visual": { "$ref": "./components/item_visual.json" },
