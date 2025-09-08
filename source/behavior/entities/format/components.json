@@ -201,6 +201,7 @@
     "minecraft:underwater_movement": { "$ref": "./components/attribute.json" },
     "minecraft:variable_max_auto_step": { "$ref": "./components/variable_max_auto_step.json" },
     "minecraft:variant": { "$ref": "./components/variant.json" },
+    "minecraft:vertical_movement_action": { "$ref": "./components/vertical_movement_action.json" },
     "minecraft:vibration_damper": { "$ref": "./components/vibration_damper.json" },
     "minecraft:vibration_listener": { "$ref": "./components/vibration_listener.json" },
     "minecraft:walk_animation_speed": { "$ref": "./components/walk_animation_speed.json" },

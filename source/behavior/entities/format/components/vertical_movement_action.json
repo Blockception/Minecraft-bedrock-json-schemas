@@ -1,0 +1,14 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.vertical_movement_action",
+  "description": "When configured as a rideable entity, the entity will move upwards or downwards when the player uses the jump action.",
+  "type": "object",
+  "title": "Vertical Movement Action",
+  "additionalProperties": false,
+  "properties": {
+    "vertical_velocity": {
+      "title": "Vertical Velocity",
+      "description": "Vertical velocity to apply when jump action is issued.",
+      "type": "number"
+    }
+  }
+}
