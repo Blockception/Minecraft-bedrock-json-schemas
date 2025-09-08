@@ -34,6 +34,7 @@
         "minecraft:placement_filter": { "$ref": "./components/placement_filter.json" },
         "minecraft:random_offset": { "$ref": "./components/random_offset.json" },
         "minecraft:redstone_conductivity": { "$ref": "./components/redstone_conductivity.json" },
+        "minecraft:redstone_producer": { "$ref": "./components/redstone_producer.json" },
         "minecraft:replaceable": { "$ref": "./components/replaceable.json" },
         "minecraft:selection_box": { "$ref": "./components/selection_box.json" },
         "minecraft:transformation": { "$ref": "./components/transformation.json" },
