@@ -7,6 +7,7 @@
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "control_flags": {"$ref": "./types/control_flags.json"},
     "attack_cooldown": {
       "title": "Attack Cooldown",
       "type": "number",
