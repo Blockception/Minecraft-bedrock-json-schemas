@@ -23,6 +23,13 @@
       "type": "number",
       "default": 1.0,
       "description": "Vertical momentum of the dash."
+    },
+    "direction": {
+      "title": "Direction",
+      "description": "Should the momentum be applied in the direction of the 'entity' or 'passenger'. When 'entity' is used the momentum is applied horizontally according to the direction the entity is looking, using only the entity's yaw. When 'passenger' is used the momentum will be applied in the direction the controlling passenger is looking, using the passenger's pitch and yaw.",
+      "type": "string",
+      "enum": ["entity", "passenger"],
+      "default": "entity"
     }
   },
   "examples": [
