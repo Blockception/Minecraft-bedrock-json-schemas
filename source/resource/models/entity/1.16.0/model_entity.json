@@ -497,7 +497,7 @@
                                 "texture_meshes": {
                                     "type": "array",
                                     "title": "Texture Meshes",
-                                    "description": "***EXPERIMENTAL*** Adds a mesh to the bone's geometry by converting texels in a texture into boxes.",
+                                    "description": "Adds a mesh to the bone's geometry by converting texels in a texture into boxes.",
                                     "items": {
                                         "type": "object",
                                         "additionalProperties": false,
