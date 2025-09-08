@@ -50,6 +50,10 @@
     {
       "if": { "properties": { "condition": { "type": "string", "const": "passenger_of_entity" } } },
       "then": { "$ref": "./conditions/passenger_of_entity.json" }
+    },
+    {
+      "if": { "properties": { "condition": { "type": "string", "const": "is_baby" } } },
+      "then": { "$ref": "./conditions/is_baby.json" }
     }
   ]
 }

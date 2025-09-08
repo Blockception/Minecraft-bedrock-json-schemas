@@ -1,0 +1,10 @@
+{
+  "$id": "blockception.minecraft.behavior.condition.is_baby",
+  "type": "object",
+  "additionalProperties": false,
+  "description": "Allows checking if the entity that is dropping loot is a baby",
+  "title": "Is Baby",
+  "properties": {
+    "condition": { "type": "string", "title": "Condition", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" }
+  }
+}
