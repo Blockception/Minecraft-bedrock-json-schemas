@@ -171,6 +171,7 @@
             { "if": { "properties": { "test": { "const": "trusts" } } }, "then": { "$ref": "./filters/trusts.json" } },
             { "if": { "properties": { "test": { "const": "weather_at_position" } } }, "then": { "$ref": "./filters/weather_at_position.json" } },
             { "if": { "properties": { "test": { "const": "weather" } } }, "then": { "$ref": "./filters/weather.json" } },
+            { "if": { "properties": { "test": { "const": "y_rotation" } } }, "then": { "$ref": "./filters/y_rotation.json" } },
             { "not": { "properties": { "test": { "const": "is_weather" } }, "$comment": "DEPRECATED" } }
           ]
         }

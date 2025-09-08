@@ -1,0 +1,26 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.y_rotation",
+  "type": "object",
+  "title": "Y Rotation",
+  "description": "Returns the Y rotation of this entity.",
+  "required": ["value"],
+  "properties": {
+    "test": {
+      "type": "string",
+      "title": "Test",
+      "description": "The test property."
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
+    "value": {
+      "description": "(Required) A floating point value.",
+      "type": "number",
+      "default": true,
+      "title": "Value"
+    }
+  }
+}
