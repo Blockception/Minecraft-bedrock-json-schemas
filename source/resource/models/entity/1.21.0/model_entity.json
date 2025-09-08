@@ -499,7 +499,7 @@
                                 "poly_mesh": {
                                     "additionalProperties": false,
                                     "type": "object",
-                                    "description": "***EXPERIMENTAL*** A triangle or quad mesh object. Can be used in conjunction with cubes and texture geometry.",
+                                    "description": "A triangle or quad mesh object. Can be used in conjunction with cubes and texture geometry.",
                                     "required": [
                                         "polys"
                                     ],
