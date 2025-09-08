@@ -323,6 +323,12 @@
                                                 "type": "number"
                                             }
                                         ]
+                                    },
+                                    "use_pixel_depth": {
+                                        "title": "Use Pixel Depth",
+                                        "description": "Controls how geometry depth relates to texture resolution",
+                                        "type": "boolean",
+                                        "default": false
                                     }
                                 }
                             }
