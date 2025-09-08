@@ -1,6 +1,5 @@
 {
   "$id": "blockception.minecraft.behavior.1.12.0.recipe",
-  "description": "Minecraft recipe",
   "required": ["format_version"],
   "additionalProperties": false,
   "minProperties": 2,
