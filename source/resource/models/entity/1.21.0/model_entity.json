@@ -718,6 +718,9 @@
                             },
                             "head": {
                                 "$ref": "#/definitions/display_transform"
+                            },
+                            "embedded": {
+                                "$ref": "#/definitions/display_transform"
                             }
                         }
                     }
