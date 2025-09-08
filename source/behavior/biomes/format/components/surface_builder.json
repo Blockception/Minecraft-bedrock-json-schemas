@@ -70,6 +70,57 @@
           "if": {
             "properties": {
               "type": {
+                "const": "minecraft:swamp"
+              }
+            }
+          },
+          "then": {
+            "required": [ "top_material", "mid_material", "sea_floor_material", "foundation_material", "sea_material", "sea_floor_depth", "max_puddle_depth_below_sea_level" ],
+            "properties": {
+              "top_material": {
+                "title": "Top Material",
+                "description": "Controls the block type used for the surface of this biome.",
+                "$ref": "../../../../general/block/reference.json"
+              },
+              "mid_material": {
+                "title": "Mid Material",
+                "description": "Controls the block type used in a layer below the surface of this biome.",
+                "$ref": "../../../../general/block/reference.json"
+              },
+              "sea_floor_material": {
+                "title": "Sea Floor Material",
+                "description": "Controls the block type used as a floor for bodies of water in this biome.",
+                "$ref": "../../../../general/block/reference.json"
+              },
+              "foundation_material": {
+                "title": "Foundation Material",
+                "description": "Controls the block type used deep underground in this biome.",
+                "$ref": "../../../../general/block/reference.json"
+              },
+              "sea_material": {
+                "title": "Sea Material",
+                "description": "Controls the block type used for the bodies of water in this biome.",
+                "$ref": "../../../../general/block/reference.json"
+              },
+              "sea_floor_depth": {
+                "title": "Sea Floor Depth",
+                "description": "Controls how deep below the world water level the floor should occur.",
+                "type": "integer"
+              },
+              "max_puddle_depth_below_sea_level": {
+                "title": "Max Puddle Depth Below Sea Level",
+                "description": "Controls the depth at which surface level blocks can be replaced with water for puddles. The number represents the number of blocks below sea level that we will go down to look for a surface block.",
+                "type": "integer", 
+                "minimum": 0,
+                "maximum": 127
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
                 "const": "minecraft:mesa"
               }
             }

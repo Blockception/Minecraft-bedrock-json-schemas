@@ -7,6 +7,12 @@
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "control_flags": {"$ref": "./types/control_flags.json"},
+    "grow_tired_cooldown_time": {
+      "title": "Grow Tired Cooldown Time",
+      "description": "UNDOCUMENTED",
+      "type": "number"
+  },
     "set_persistent": {
       "title": "Set Persistent",
       "type": "boolean",

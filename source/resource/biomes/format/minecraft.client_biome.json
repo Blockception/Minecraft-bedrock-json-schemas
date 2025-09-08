@@ -24,6 +24,7 @@
         "minecraft:grass_appearance": { "$ref": "./components/grass_appearance.json" },
         "minecraft:lighting_identifier": { "$ref": "./components/lighting_identifier.json" },
         "minecraft:sky_color": { "$ref": "./components/sky_color.json" },
+        "minecraft:precipitation": { "$ref": "./components/precipitation.json" },
         "minecraft:water_appearance": { "$ref": "./components/water_appearance.json" },
         "minecraft:water_identifier": { "$ref": "./components/water_identifier.json" }
       }

@@ -46,6 +46,14 @@
     {
       "if": { "properties": { "condition": { "type": "string", "const": "random_regional_difficulty_chance" } } },
       "then": { "$ref": "./conditions/random_regional_difficulty_chance.json" }
+    },
+    {
+      "if": { "properties": { "condition": { "type": "string", "const": "passenger_of_entity" } } },
+      "then": { "$ref": "./conditions/passenger_of_entity.json" }
+    },
+    {
+      "if": { "properties": { "condition": { "type": "string", "const": "is_baby" } } },
+      "then": { "$ref": "./conditions/is_baby.json" }
     }
   ]
 }

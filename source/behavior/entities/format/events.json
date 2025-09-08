@@ -123,6 +123,16 @@
           },
           "examples": [{ "vibration": "shear" }, { "vibration": "entity_act" }, { "vibration": "entity_interact" }]
         },
+        "drop_item": {
+          "title": "Drop Item",
+          "description": "Allows an entity to drop its item in a given slot",
+          "type": "object",
+          "properties": {
+            "slot": {
+              "enum": ["slot.armor.head", "slot.armor.chest", "slot.armor.legs", "slot.armor.feet", "slot.armor.body", "slot.weapon.offhand", "slot.weapon.mainhand"]
+            }
+          }
+        },
         "set_property": {
           "title": "Set Property",
           "description": "Sets a property on the entity.",

@@ -376,7 +376,7 @@
                                 "poly_mesh": {
                                     "additionalProperties": false,
                                     "type": "object",
-                                    "description": "***EXPERIMENTAL*** A triangle or quad mesh object. Can be used in conjunction with cubes and texture geometry.",
+                                    "description": "A triangle or quad mesh object. Can be used in conjunction with cubes and texture geometry.",
                                     "required": [
                                         "polys"
                                     ],
@@ -497,7 +497,7 @@
                                 "texture_meshes": {
                                     "type": "array",
                                     "title": "Texture Meshes",
-                                    "description": "***EXPERIMENTAL*** Adds a mesh to the bone's geometry by converting texels in a texture into boxes.",
+                                    "description": "Adds a mesh to the bone's geometry by converting texels in a texture into boxes.",
                                     "items": {
                                         "type": "object",
                                         "additionalProperties": false,
@@ -548,6 +548,12 @@
                                             "texture": {
                                                 "type": "string",
                                                 "description": "The friendly-named texture to use."
+                                            },
+                                            "use_pixel_depth": {
+                                                "title": "Use Pixel Depth",
+                                                "description": "Controls how geometry depth relates to texture resolution",
+                                                "type": "boolean",
+                                                "default": false
                                             }
                                         }
                                     }

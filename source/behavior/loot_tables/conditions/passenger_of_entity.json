@@ -1,0 +1,15 @@
+{
+  "$id": "blockception.minecraft.behavior.condition.passenger_of_entity",
+  "type": "object",
+  "additionalProperties": false,
+  "description": "Allows checking which vehicle entity type is being ridden by the damaged entity that is dropping loot",
+  "title": "Passenger Of Entity",
+  "properties": {
+    "condition": { "type": "string", "title": "Condition", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
+    "entity_type": {
+      "title": "Entity Type",
+      "description": "The entity type to match",
+      "type": "string"
+    }
+  }
+}

@@ -3,10 +3,13 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Roar",
-  "description": "[EXPERIMENTAL BEHAVIOR] Plays the provided sound and activates the `ROARING` actor flag during the specified duration",
+  "description": "Allows this entity to roar at another entity based on data in minecraft:anger_level. Once the anger threshold specified in minecraft:anger_level has been reached, this entity will roar for the specified amount of time, look at the other entity, apply anger boost towards it, and finally target it.",
   "properties": {
     "priority": {
       "$ref": "./types/priority.json"
+    },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
     },
     "duration": {
       "title": "Duration",

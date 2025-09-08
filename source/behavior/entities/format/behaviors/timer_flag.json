@@ -10,12 +10,12 @@
       "title": "Cooldown Range",
       "anyOf": [
         {
-          "type": "number", 
+          "type": "number",
           "minimum": 0
         },
         {
           "$ref": "../../../../general/vectors/number2.json",
-          "default": [10.0, 10.0]
+          "default": [ 10.0, 10.0 ]
         }
       ],
       "description": "Goal cooldown range in seconds."
@@ -24,26 +24,18 @@
       "title": "Duration Range",
       "anyOf": [
         {
-          "type": "number", 
+          "type": "number",
           "minimum": 0
         },
         {
           "$ref": "../../../../general/vectors/number2.json",
-          "default": [2.0, 2.0]
+          "default": [ 2.0, 2.0 ]
         }
       ],
       "description": "Goal duration range in seconds."
     },
     "control_flags": {
-      "type": "array",
-      "uniqueItems": true,
-      "minItems": 1,
-      "maxItems": 2,
-      "items": {
-        "enum": ["move", "look"]
-      },
-      "title": "Control Flags",
-      "description": "UNDOCUMENTED"
+      "$ref": "./types/control_flags.json"
     },
     "on_end": {
       "title": "On End",

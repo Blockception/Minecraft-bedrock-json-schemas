@@ -8,6 +8,7 @@
     "priority": {
       "$ref": "types/priority.json"
     },
+    "control_flags": {"$ref": "./types/control_flags.json"},
     "listen_time": {
       "title": "Listen Time",
       "type": "integer",

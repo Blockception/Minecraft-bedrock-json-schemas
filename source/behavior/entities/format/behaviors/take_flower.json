@@ -48,6 +48,11 @@
       "default": [6, 2, 6],
       "description": "The dimensions of the AABB used to search for a potential mob to take a flower from.",
       "$ref": "../../../../general/vectors/number3.json"
+    },
+    "on_take_flower": {
+      "title": "On Take Flower",
+      "$ref": "../types/trigger.json",
+      "description": "Event triggered when the entity takes a flower from another entity."
     }
   }
 }

@@ -1,0 +1,14 @@
+{
+    "$id": "blockception.minecraft.behavior.entities.control_flags",
+    "additionalProperties": false,
+    "title": "Control Flags",
+    "minimum": 0,
+    "description": "UNDOCUMENTED",
+    "type": "array",
+    "uniqueItems": true,
+    "minItems": 1,
+    "maxItems": 2,
+    "items": {
+        "enum": [ "move", "look", "jump" ]
+    }
+}

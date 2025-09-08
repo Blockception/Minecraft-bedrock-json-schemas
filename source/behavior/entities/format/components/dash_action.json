@@ -1,0 +1,40 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.dash_action",
+  "type": "object",
+  "title": "Dash Action",
+  "additionalProperties": false,
+  "description": "Ability for a ridable entity to dash.",
+  "required": [],
+  "properties": {
+    "cooldown_time": {
+      "title": "Cooldown Time",
+      "type": "number",
+      "default": 1.0,
+      "description": "The dash cooldown in seconds."
+    },
+    "horizontal_momentum": {
+      "title": "Horizoontal Momentum",
+      "type": "number",
+      "default": 1.0,
+      "description": "Horizontal momentum of the dash."
+    },
+    "vertical_momentum": {
+      "title": "Vertical Momentum",
+      "type": "number",
+      "default": 1.0,
+      "description": "Vertical momentum of the dash."
+    },
+    "direction": {
+      "title": "Direction",
+      "description": "Should the momentum be applied in the direction of the 'entity' or 'passenger'. When 'entity' is used the momentum is applied horizontally according to the direction the entity is looking, using only the entity's yaw. When 'passenger' is used the momentum will be applied in the direction the controlling passenger is looking, using the passenger's pitch and yaw.",
+      "type": "string",
+      "enum": ["entity", "passenger"],
+      "default": "entity"
+    }
+  },
+  "examples": [
+    {
+      "value": 0.0
+    }
+  ]
+}

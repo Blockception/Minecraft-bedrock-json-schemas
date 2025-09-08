@@ -1,0 +1,20 @@
+{
+    "$id": "blockception.minecraft.behavior.blocks.minecraft.embedded_visual",
+    "title": "Embedded Visual",
+    "description": "When the component is present on the block, it defines which geometry and material_instances to use when the block is embedded into another block, eg. into a Flowerpot",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [ "geometry", "material_instances" ],
+    "properties": {
+        "geometry": {
+            "title": "Geometry",
+            "description": "The \"minecraft:geometry\" component that will be used for the item.",
+            "$ref": "./geometry.json"
+        },
+        "material_instances": {
+            "title": "Geometry",
+            "description": "The \"minecraft:material_instances\" component that will be used for the item.",
+            "$ref": "./material_instances.json"
+        }
+    }
+}

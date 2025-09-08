@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.items",
   "additionalProperties": false,
-  "required": ["description"],
+  "required": [ "description" ],
   "type": "object",
   "description": "An item definition.",
   "$comment": "UNDOCUMENTED",
@@ -72,6 +72,7 @@
         "minecraft:dyeable": { "$ref": "./components/dyeable.json" },
         "minecraft:enchantable": { "$ref": "./components/enchantable.json" },
         "minecraft:entity_placer": { "$ref": "./components/entity_placer.json" },
+        "minecraft:fire_resistant": { "$ref": "./components/fire_resistant.json" },
         "minecraft:food": { "$ref": "./components/food.json" },
         "minecraft:fuel": { "$ref": "./components/fuel.json" },
         "minecraft:glint": { "$ref": "./components/glint.json" },

@@ -1,8 +1,8 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.minecraft.input_air_controlled",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.free_camera_controlled",
   "description": "When configured as a rideable entity, the entity will be controlled using WASD controls and mouse to move in three dimensions.",
   "type": "object",
-  "title": "Input Air Controlled",
+  "title": "Free Camera Controlled",
   "additionalProperties": false,
   "properties": {
     "backwards_movement_modifier": {

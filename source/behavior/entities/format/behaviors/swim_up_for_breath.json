@@ -8,6 +8,7 @@
       "priority": {
         "$ref": "types/priority.json"
       },
+      "control_flags": {"$ref": "./types/control_flags.json"},
       "material_type": {
         "title": "Idle Time",
         "enum": ["water", "lava","any"],

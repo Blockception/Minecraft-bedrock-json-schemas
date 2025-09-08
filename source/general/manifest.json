@@ -4,22 +4,22 @@
   "type": "object",
   "title": "Manifest Schema",
   "description": "The minecraft manifest schema.",
-  "required": ["format_version", "header"],
+  "required": [ "format_version", "header" ],
   "examples": [
     {
-      "format_version": 2,
+      "format_version": 3,
       "header": {
         "description": "pack.description",
         "name": "pack.name",
         "uuid": "UUID2",
-        "min_engine_version": [1, 20, 40],
-        "version": [1, 0, 0]
+        "min_engine_version": [ 1, 20, 40 ],
+        "version": [ 1, 0, 0 ]
       },
       "modules": [
         {
           "type": "data",
           "uuid": "UUID2",
-          "version": [1, 0, 0]
+          "version": [ 1, 0, 0 ]
         }
       ]
     }
@@ -28,19 +28,19 @@
     {
       "label": "New Manifest",
       "body": {
-        "format_version": 2,
+        "format_version": 3,
         "header": {
           "description": "pack.description",
           "name": "pack.name",
           "uuid": "$UUID",
-          "min_engine_version": [1, 20, 10],
-          "version": [1, 0, 0]
+          "min_engine_version": [ 1, 20, 10 ],
+          "version": [ 1, 0, 0 ]
         },
         "modules": [
           {
             "type": "data",
             "uuid": "$UUID",
-            "version": [1, 0, 0]
+            "version": [ 1, 0, 0 ]
           }
         ]
       }
@@ -70,6 +70,18 @@
         }
       },
       "then": { "$ref": "./manifest/manifest.2.json" }
+    },
+    {
+      "if": {
+        "properties": {
+          "format_version": {
+            "const": 3,
+            "type": "number",
+            "title": "Format Version"
+          }
+        }
+      },
+      "then": { "$ref": "./manifest/manifest.3.json" }
     }
   ]
 }
