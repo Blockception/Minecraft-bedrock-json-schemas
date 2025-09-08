@@ -20,6 +20,7 @@
         "minecraft:destructible_by_mining": { "$ref": "./components/destructible_by_mining.json" },
         "minecraft:destruction_particles": { "$ref": "./components/destruction_particles.json" },
         "minecraft:display_name": { "$ref": "./components/display_name.json" },
+        "minecraft:embedded_visual": { "$ref": "./components/embedded_visual.json" },
         "minecraft:flammable": { "$ref": "./components/flammable.json" },
         "minecraft:flower_pottable": { "$ref": "./components/flower_pottable.json" },
         "minecraft:friction": { "$ref": "./components/friction.json" },
