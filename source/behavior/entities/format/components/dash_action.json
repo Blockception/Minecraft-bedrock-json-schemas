@@ -1,25 +1,25 @@
 {
-  "$id": "blockception.minecraft.behavior.entities.minecraft.dash",
+  "$id": "blockception.minecraft.behavior.entities.minecraft.dash_action",
   "type": "object",
-  "title": "Dash",
+  "title": "Dash Action",
   "additionalProperties": false,
   "description": "Ability for a ridable entity to dash.",
   "required": [],
   "properties": {
     "cooldown_time": {
-      "title": "cooldown time",
+      "title": "Cooldown Time",
       "type": "number",
       "default": 1.0,
       "description": "The dash cooldown in seconds."
     },
     "horizontal_momentum": {
-      "title": "horizoontal momentum",
+      "title": "Horizoontal Momentum",
       "type": "number",
       "default": 1.0,
       "description": "Horizontal momentum of the dash."
     },
     "vertical_momentum": {
-      "title": "vertical momentum",
+      "title": "Vertical Momentum",
       "type": "number",
       "default": 1.0,
       "description": "Vertical momentum of the dash."

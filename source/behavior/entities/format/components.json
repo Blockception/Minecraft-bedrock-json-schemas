@@ -47,7 +47,7 @@
     "minecraft:custom_hit_test": { "$ref": "./components/custom_hit_test.json" },
     "minecraft:damage_over_time": { "$ref": "./components/damage_over_time.json" },
     "minecraft:damage_sensor": { "$ref": "./components/damage_sensor.json" },
-    "minecraft:dash": { "$ref": "./components/dash.json" },
+    "minecraft:dash_action": { "$ref": "./components/dash_action.json" },
     "minecraft:default_look_angle": { "$ref": "./components/default_look_angle.json" },
     "minecraft:despawn": { "$ref": "./components/despawn.json" },
     "minecraft:dimension_bound": { "$ref": "./components/dimension_bound.json" },
