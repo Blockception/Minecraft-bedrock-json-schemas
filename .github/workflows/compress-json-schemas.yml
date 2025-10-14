@@ -18,6 +18,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     name: 🖥️ Compress Schemas
+    permissions:
+      contents: write
     steps:
       - name: 📦 Checkout Repository
         uses: actions/checkout@v5
