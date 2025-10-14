@@ -36,12 +36,17 @@ jobs:
         with:
           specificationFile: "source/compress_specification.json"
 
-      - name: ✏️ Commit changes
-        continue-on-error: true
+      - name: ✏️ Commit and push changes (if any)
         run: |
-          cd ${{github.workspace}}
+          cd "${{ github.workspace }}"
           git config --global user.email "orbi@blockception.com"
           git config --global user.name "Orbi-bot"
           git add .
-          git commit -m "auto: generated json schemas ${{ steps.time.outputs.time }}"
-          git push
+          if ! git diff --cached --quiet; then
+            echo "📝 Changes detected, committing..."
+            git commit -m "auto: generated json schemas ${{ steps.time.outputs.time }}"
+            echo "🚀 Pushing changes..."
+            git push
+          else
+            echo "✅ No changes to commit."
+          fi
