@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     name: 🖥️ Compress Schemas
     permissions:
-      contents: write
+      pull-requests: write
     steps:
       - name: 📦 Checkout Repository
         uses: actions/checkout@v5
@@ -37,7 +37,7 @@ jobs:
           specificationFile: "source/compress_specification.json"
 
       - name: ✏️ Commit and Create PR
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v7
         with:
           branch: auto/update-schemas
           commit-message: "auto: generated json schemas ${{ steps.time.outputs.time }}"
