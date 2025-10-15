@@ -21,18 +21,7 @@
           "rolls": {
             "title": "Rolls",
             "description": "Determines how many items, will be selected.",
-            "$comment": "UNDOCUMENTED",
-            "oneOf": [
-              { "type": "integer", "minimum": 0 },
-              {
-                "type": "object",
-                "required": ["min", "max"],
-                "properties": {
-                  "min": { "title": "Minimum", "type": "number", "minimum": 0, "description": "The minimum amount." },
-                  "max": { "title": "Maximum", "type": "number", "minimum": 1, "description": "The maximum amount." }
-                }
-              }
-            ]
+            "$ref": "../../general/int_or_range.json"
           },
           "type": {
             "title": "Type",
@@ -73,7 +62,7 @@
                   "title": "Count",
                   "description": "The amount of the item."
                 },
-                "name": { "title": "Name", "type": "string", "description": "An item or loottable.", "pattern": "^(?:[\\w]+:|loot_tables\/)?[\\w]+(?:\/[\\w]+)*$" },
+                "name": { "title": "Name", "type": "string", "description": "An item or loottable.", "pattern": "^(?:[\\w]+:|loot_tables/)?[\\w]+(?:/[\\w]+)*$" },
                 "weight": {
                   "title": "Weight",
                   "type": "integer",
