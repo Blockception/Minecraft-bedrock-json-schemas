@@ -4,10 +4,6 @@
   "title": "Condition",
   "allOf": [
     {
-      "if": { "properties": { "condition": { "type": "string", "const": "entity_properties" } } },
-      "then": { "$ref": "./conditions/entity_properties.json" }
-    },
-    {
       "if": { "properties": { "condition": { "const": "has_mark_variant" } } },
       "then": { "$ref": "./conditions/has_mark_variant.json" }
     },
