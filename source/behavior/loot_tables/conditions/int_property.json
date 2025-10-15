@@ -1,0 +1,19 @@
+{
+  "$id": "blockception.minecraft.behavior.condition.int_property",
+  "type": "object",
+  "title": "Int Property",
+  "description": "Checks whether an integer property matches the requested value.",
+  "additionalProperties": false,
+  "required": ["condition", "domain", "value"],
+  "properties": {
+    "condition": { "const": "int_property" },
+    "domain": {
+      "type": "string",
+      "description": "Property domain identifier."
+    },
+    "value": {
+      "description": "Expected integer value.",
+      "type": "integer"
+    }
+  }
+}

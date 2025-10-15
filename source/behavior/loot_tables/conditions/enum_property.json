@@ -1,0 +1,19 @@
+{
+  "$id": "blockception.minecraft.behavior.condition.enum_property",
+  "type": "object",
+  "title": "Enum Property",
+  "description": "Checks whether an enum property matches the requested value.",
+  "additionalProperties": false,
+  "required": ["condition", "domain", "value"],
+  "properties": {
+    "condition": { "const": "enum_property" },
+    "domain": {
+      "type": "string",
+      "description": "Property domain identifier."
+    },
+    "value": {
+      "type": "string",
+      "description": "Expected enumeration value."
+    }
+  }
+}

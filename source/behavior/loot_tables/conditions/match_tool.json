@@ -8,15 +8,18 @@
   "properties": {
     "condition": { "type": "string", "const": "match_tool", "title": "Condition", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
     "item": {
-      "title": "Item",
       "description": "The item to match",
-      "type": "string"
+      "$ref": "../../../general/item/identifier.json"
     },
     "count": {
       "title": "Count",
       "description": "Minimum count to match of the given item",
-      "type": "integer",
-      "minimum": 0
+      "$ref": "../../../general/int_or_range.json"
+    },
+    "durability": {
+      "title": "Durability",
+      "description": "Minimum durability to match of the given item",
+      "$ref": "../../../general/int_or_range.json"
     },
     "enchantments": {
       "title": "Enchantments",

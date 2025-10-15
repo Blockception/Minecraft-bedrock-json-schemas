@@ -2,40 +2,17 @@
   "$id": "blockception.minecraft.behavior.condition.random_regional_difficulty_chance",
   "type": "object",
   "additionalProperties": false,
-  "description": "Sets a Maximum regional difficulty random chance of the specified value.",
+  "description": "Passes with a probability scaled by the world's regional difficulty multiplier. The regional difficulty is based on dimension, world difficulty and moon brightness.",
   "title": "Random Regional Difficulty Chance",
   "properties": {
-    "condition": { "type": "string", "title": "Condition", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
-    "default_chance": {
+    "condition": { "const": "random_regional_difficulty_chance" },
+    "max_chance": {
       "type": "number",
-      "default": 0,
-      "description": "The default random chance if the level difficulty is not assigned.",
-      "title": "Default Chance"
-    },
-    "max_chance": { "title": "Maximum Chance", "type": "number", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
-    "easy": {
-      "type": "number",
-      "default": 0,
-      "description": "The default random chance if the level difficulty is in easy. Omitting this field will set the value to `default_chance` field.",
-      "title": "Easy"
-    },
-    "hard": {
-      "type": "number",
-      "default": 0,
-      "description": "The default random chance if the level difficulty is in hard. Omitting this field will set the value to `default_chance` field.",
-      "title": "Hard"
-    },
-    "normal": {
-      "type": "number",
-      "default": 0,
-      "description": "The default random chance if the level difficulty is in normal. Omitting this field will set the value to `default_chance` field.",
-      "title": "Normal"
-    },
-    "peaceful": {
-      "type": "number",
-      "default": 0,
-      "description": "The default random chance if the level difficulty is in peaceful. Omitting this field will set the value to `default_chance` field.",
-      "title": "Peaceful"
+      "description": "Base probability (0-1) before scaling by the regional difficulty multiplier.",
+      "minimum": 0,
+      "maximum": 1,
+      "default": 0
     }
-  }
+  },
+  "required": ["condition"]
 }

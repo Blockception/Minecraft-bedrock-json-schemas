@@ -26,9 +26,11 @@
         "set_damage",
         "set_data_from_color_index",
         "set_data",
+        "set_ominous_bottle_amplifier",
         "set_lore",
         "set_name",
         "set_potion",
+        "set_stew_effect",
         "specific_enchants",
         "trader_material_type",
         "minecraft:enchant_book_for_trading",
@@ -50,9 +52,11 @@
         "minecraft:set_damage",
         "minecraft:set_data_from_color_index",
         "minecraft:set_data",
+        "minecraft:set_ominous_bottle_amplifier",
         "minecraft:set_lore",
         "minecraft:set_name",
         "minecraft:set_potion",
+        "minecraft:set_stew_effect",
         "minecraft:specific_enchants",
         "minecraft:trader_material_type"
       ]
@@ -66,7 +70,10 @@
   },
   "allOf": [
     { "if": { "properties": { "function": { "type": "string", "pattern": "^(minecraft:)*enchant_random_gear$" } } }, "then": { "$ref": "./functions/enchant_random_gear.json" } },
-    { "if": { "properties": { "function": { "type": "string", "pattern": "^(minecraft:)*enchant_book_for_trading$" } } }, "then": { "$ref": "./functions/enchant_book_for_trading.json" } },
+    {
+      "if": { "properties": { "function": { "type": "string", "pattern": "^(minecraft:)*enchant_book_for_trading$" } } },
+      "then": { "$ref": "./functions/enchant_book_for_trading.json" }
+    },
     { "if": { "properties": { "function": { "type": "string", "pattern": "^(minecraft:)*enchant_randomly$" } } }, "then": { "$ref": "./functions/enchant_randomly.json" } },
     { "if": { "properties": { "function": { "type": "string", "pattern": "^(minecraft:)*enchant_with_levels$" } } }, "then": { "$ref": "./functions/enchant_with_levels.json" } },
     { "if": { "properties": { "function": { "type": "string", "pattern": "^(minecraft:)*exploration_map$" } } }, "then": { "$ref": "./functions/exploration_map.json" } },
@@ -82,7 +89,15 @@
     { "if": { "properties": { "function": { "type": "string", "pattern": "^(minecraft:)*set_count$" } } }, "then": { "$ref": "./functions/set_count.json" } },
     { "if": { "properties": { "function": { "type": "string", "pattern": "^(minecraft:)*set_damage$" } } }, "then": { "$ref": "./functions/set_damage.json" } },
     { "if": { "properties": { "function": { "type": "string", "pattern": "^(minecraft:)*set_data$" } } }, "then": { "$ref": "./functions/set_data.json" } },
-    { "if": { "properties": { "function": { "type": "string", "pattern": "^(minecraft:)*set_data_from_color_index$" } } }, "then": { "$ref": "./functions/set_data_from_color_index.json" } },
+    {
+      "if": { "properties": { "function": { "type": "string", "pattern": "^(minecraft:)*set_data_from_color_index$" } } },
+      "then": { "$ref": "./functions/set_data_from_color_index.json" }
+    },
+    {
+      "if": { "properties": { "function": { "type": "string", "pattern": "^(minecraft:)*set_ominous_bottle_amplifier$" } } },
+      "then": { "$ref": "./functions/set_ominous_bottle_amplifier.json" }
+    },
+    { "if": { "properties": { "function": { "type": "string", "pattern": "^(minecraft:)*set_stew_effect$" } } }, "then": { "$ref": "./functions/set_stew_effect.json" } },
     { "if": { "properties": { "function": { "type": "string", "pattern": "^(minecraft:)*trader_material_type$" } } }, "then": { "$ref": "./functions/trader_material_type.json" } },
     { "if": { "properties": { "function": { "type": "string", "pattern": "^(minecraft:)*random_dye$" } } }, "then": { "$ref": "./functions/random_dye.json" } },
     { "if": { "properties": { "function": { "type": "string", "pattern": "^(minecraft:)*set_lore$" } } }, "then": { "$ref": "./functions/set_lore.json" } },

@@ -1,0 +1,19 @@
+{
+  "$id": "blockception.minecraft.behavior.condition.float_property",
+  "type": "object",
+  "title": "Float Property",
+  "description": "Checks whether a float property matches the requested value.",
+  "additionalProperties": false,
+  "required": ["condition", "domain", "value"],
+  "properties": {
+    "condition": { "const": "float_property" },
+    "domain": {
+      "type": "string",
+      "description": "Property domain identifier."
+    },
+    "value": {
+      "description": "Expected float value.",
+      "type": "number"
+    }
+  }
+}

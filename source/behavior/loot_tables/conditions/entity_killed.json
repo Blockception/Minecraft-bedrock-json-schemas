@@ -1,0 +1,15 @@
+{
+  "$id": "blockception.minecraft.behavior.condition.entity_killed",
+  "type": "object",
+  "title": "Entity Killed",
+  "description": "Checks whether the source entity matches the supplied identifier.",
+  "additionalProperties": false,
+  "required": ["condition", "entity_type"],
+  "properties": {
+    "condition": { "const": "entity_killed" },
+    "entity_type": {
+      "type": "string",
+      "description": "Entity identifier expected for the killer/victim."
+    }
+  }
+}
