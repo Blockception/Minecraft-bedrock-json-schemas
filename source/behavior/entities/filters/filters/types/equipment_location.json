@@ -4,5 +4,5 @@
   "type": "string",
   "description": "The equipment location to test.",
   "default": "self",
-  "enum": ["any", "armor", "feet", "hand", "head", "inventory", "leg", "torse"]
+  "enum": ["any", "armor", "feet", "main_hand", "hand", "head", "inventory", "leg", "torso"]
 }

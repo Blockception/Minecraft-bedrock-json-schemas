@@ -17,6 +17,12 @@
       "description": "How long the item takes to use in seconds.",
       "type": "number", 
       "minimum": 0
+    },
+    "emit_vibrations": {
+      "title": "Emit Vibrations",
+      "description": "Whether vibrations are emitted when the item starts or stops being used.",
+      "type": "boolean",
+      "default": true
     }
   }
 }

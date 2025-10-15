@@ -652,13 +652,13 @@
     },
     {
       "fileMatch": [
-        "resource_packs/*/point_lights/global.{json,jsonc,json5}",
-        "*resource*pack*/point_lights/global.{json,jsonc,json5}",
-        "*Resource*Pack*/point_lights/global.{json,jsonc,json5}",
-        "*RP*/point_lights/global.{json,jsonc,json5}",
-        "*rp*/point_lights/global.{json,jsonc,json5}"
+        "resource_packs/*/local_lighting/local_lighting.{json,jsonc,json5}",
+        "*resource*pack*/local_lighting/local_lighting.{json,jsonc,json5}",
+        "*Resource*Pack*/local_lighting/local_lighting.{json,jsonc,json5}",
+        "*RP*/local_lighting/local_lighting.{json,jsonc,json5}",
+        "*rp*/local_lighting/local_lighting.{json,jsonc,json5}"
       ],
-      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/resource/point_lights/point_lights.json"
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/resource/local_lighting/local_lighting.json"
     },
     {
       "fileMatch": [

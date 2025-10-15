@@ -1,0 +1,15 @@
+{
+  "$id": "blockception.minecraft.behavior.items.minecraft:swing_duration",
+  "title": "Swing Duration",
+  "description": "Duration, in seconds, of the item's swing animation played when mining or attacking. Affects visuals only and does not impact attack frequency or other gameplay mechanics.",
+  "type": "object", 
+  "additionalProperties": false,
+  "properties": {
+    "value": {
+      "description": "Duration, in seconds, of the item's swing animation played when mining or attacking. Affects visuals only and does not impact attack frequency or other gameplay mechanics.",
+      "minimum": 0,
+      "type": "number",
+      "default": 0.3
+    }
+  }
+}

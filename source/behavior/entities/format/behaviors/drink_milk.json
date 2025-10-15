@@ -6,6 +6,9 @@
   "additionalProperties": false,
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "cooldown_seconds": {
       "title": "Cooldown Seconds",
       "type": "number",
