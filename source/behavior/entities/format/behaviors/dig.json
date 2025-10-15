@@ -8,6 +8,9 @@
     "priority": {
       "$ref": "./types/priority.json"
     },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "allow_dig_when_named": {
       "title": "Allow Dig When Named",
       "type": "boolean",

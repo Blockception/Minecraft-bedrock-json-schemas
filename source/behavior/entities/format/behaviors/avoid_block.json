@@ -12,6 +12,9 @@
       "default": 1,
       "description": "Should start tick interval."
     },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "search_range": {
       "type": "integer",
       "title": "Search Range",
