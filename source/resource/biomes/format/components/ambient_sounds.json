@@ -4,11 +4,31 @@
   "description": "Sets the ambient sounds for the biome. These sounds must be in the 'individual_named_sounds' in a 'sounds.json' file.",
   "type": "object",
   "additionalProperties": false,
+  "definitions": {
+    "sound_addition": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "asset": {
+          "title": "Asset",
+          "description": "Name of the sound asset to play",
+          "type": "string"
+        },
+        "chance": {
+          "title": "Chance",
+          "description": "Probability of the sound playing each interval, between 0.0 and 1.0",
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    }
+  },
   "properties": {
     "addition": {
       "title": "Addition",
       "description": "Named sound that occasionally plays at the listener position.",
-      "type": "string"
+      "oneOf": [ { "type": "string" }, { "$ref": "#/definitions/sound_addition" } ] //TODO: Check if this is dependent on format version and flag through diagnoser accordingly
     },
     "loop": {
       "title": "Loop",
@@ -20,6 +40,22 @@
       "description": "Named sound that rarely plays at a nearby air block position when the light level is low.",
       "type": "string",
       "default": "ambient.cave"
+    },
+    "underwater_addition": {
+      "title": "Underwater Addition",
+      "description": "Named sound that occasionally plays at the listener position when underwater.",
+      "$ref": "#/definitions/sound_addition"
+    },
+    "underwater_loop": {
+      "title": "Underwater Loop",
+      "description": "Named sound that loops while the listener position is inside the biome and underwater.",
+      "type": "string"
+    },
+    "underwater_mood": {
+      "title": "Underwater Mood",
+      "description": "Named sound that rarely plays at a nearby water block position when the light level is low.",
+      "type": "string",
+      "default": "ambient.underwater.loop"
     }
   }
 }
