@@ -34,6 +34,7 @@
         "minecraft:material_instances": { "$ref": "./components/material_instances.json" },
         "minecraft:movable": { "$ref": "./components/movable.json" },
         "minecraft:placement_filter": { "$ref": "./components/placement_filter.json" },
+        "minecraft:precipitation_interactions": { "$ref": "./components/precipitation_interactions.json" },
         "minecraft:random_offset": { "$ref": "./components/random_offset.json" },
         "minecraft:redstone_conductivity": { "$ref": "./components/redstone_conductivity.json" },
         "minecraft:redstone_producer": { "$ref": "./components/redstone_producer.json" },

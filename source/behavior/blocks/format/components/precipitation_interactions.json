@@ -1,0 +1,16 @@
+{
+    "$id": "blockception.minecraft.behavior.blocks.minecraft.precipitation_interactions",
+    "title": "Precipitation Interactions",
+    "description": "Component that determines how the block will interact with rain and snow",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [ "precipitation_behavior" ],
+    "properties": {
+        "precipitation_behavior": {
+            "title": "Precipitation Behavior",
+            "description": "What behavior should the block have.",
+            "type": "string",
+            "enum": [ "obstruct_rain", "obstruct_rain_accumulate_snow", "none" ]
+        }
+    }
+}
