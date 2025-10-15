@@ -1,0 +1,19 @@
+{
+  "$id": "blockception.minecraft.behavior.condition.bool_property",
+  "type": "object",
+  "title": "Bool Property",
+  "description": "Checks whether a boolean property matches the requested value.",
+  "additionalProperties": false,
+  "required": ["condition", "domain", "value"],
+  "properties": {
+    "condition": { "const": "bool_property" },
+    "domain": {
+      "type": "string",
+      "description": "Property domain identifier."
+    },
+    "value": {
+      "type": "boolean",
+      "description": "Expected boolean value."
+    }
+  }
+}

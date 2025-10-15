@@ -1,0 +1,31 @@
+{
+  "$id": "blockception.minecraft.behavior.function.set_stew_effect",
+  "type": "object",
+  "title": "Set Stew Effect",
+  "description": "Configures suspicious stew status effects.",
+  "additionalProperties": false,
+  "required": ["function", "effects"],
+  "properties": {
+    "function": { "const": "set_stew_effect" },
+    "effects": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id"],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Numeric effect identifier."
+          },
+          "duration": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Optional duration in ticks for the effect."
+          }
+        }
+      }
+    }
+  }
+}

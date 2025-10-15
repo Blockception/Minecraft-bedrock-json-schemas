@@ -22,16 +22,7 @@
       "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
       "title": "Damage",
-      "oneOf": [
-        { "type": "number", "minimum": 0, "maximum": 1 },
-        {
-          "type": "object",
-          "properties": {
-            "min": { "type": "number", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Minimum", "minimum": 0, "maximum": 1 },
-            "max": { "type": "number", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Maximum", "minimum": 0, "maximum": 1 }
-          }
-        }
-      ]
+      "$ref": "../../../general/int_or_range.json"
     }
   }
 }

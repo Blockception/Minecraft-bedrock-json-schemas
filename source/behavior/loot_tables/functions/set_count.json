@@ -20,7 +20,7 @@
     },
     "count": {
       "title": "Count",
-      "oneOf": [{ "type": "integer" }, { "type": "object", "properties": { "min": { "type": "integer", "title": "Minimum" }, "max": { "type": "integer", "title": "Maximum" } } }],
+      "$ref": "../../../general/int_or_range.json",
       "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED"
     }

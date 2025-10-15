@@ -1,0 +1,15 @@
+{
+  "$id": "blockception.minecraft.behavior.function.set_ominous_bottle_amplifier",
+  "type": "object",
+  "title": "Set Ominous Bottle Amplifier",
+  "description": "Configures the amplifier value applied to the ominous bottle item.",
+  "additionalProperties": false,
+  "required": ["function", "amplifier"],
+  "properties": {
+    "function": { "const": "set_ominous_bottle_amplifier" },
+    "amplifier": {
+      "description": "Amplifier value or range to apply.",
+      "$ref": "../../../general/int_or_range.json"
+    }
+  }
+}

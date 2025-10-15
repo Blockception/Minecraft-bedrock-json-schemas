@@ -10,16 +10,7 @@
       "title": "Data",
       "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED",
-      "oneOf": [
-        { "type": "integer" },
-        {
-          "type": "object",
-          "properties": {
-            "min": { "type": "integer", "title": "Minimum", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
-            "max": { "type": "integer", "title": "Maximum", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" }
-          }
-        }
-      ]
+      "$ref": "../../../general/int_or_range.json"
     }
   }
 }

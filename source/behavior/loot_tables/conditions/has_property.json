@@ -1,0 +1,15 @@
+{
+  "$id": "blockception.minecraft.behavior.condition.has_property",
+  "type": "object",
+  "title": "Has Property",
+  "description": "Checks whether the current actor exposes a property in the given domain.",
+  "additionalProperties": false,
+  "required": ["condition", "domain"],
+  "properties": {
+    "condition": { "const": "has_property" },
+    "domain": {
+      "type": "string",
+      "description": "Property domain identifier."
+    }
+  }
+}

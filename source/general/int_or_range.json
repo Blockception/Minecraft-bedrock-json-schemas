@@ -1,0 +1,16 @@
+{
+  "$id": "Integer or Range",
+  "description": "An integer value or inclusive range.",
+  "oneOf": [
+    { "type": "integer" },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["min", "max"],
+      "properties": {
+        "min": { "type": "integer", "description": "Minimum value." },
+        "max": { "type": "integer", "description": "Maximum value." }
+      }
+    }
+  ]
+}

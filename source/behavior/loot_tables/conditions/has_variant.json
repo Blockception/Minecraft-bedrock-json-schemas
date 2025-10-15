@@ -1,0 +1,15 @@
+{
+  "$id": "blockception.minecraft.behavior.condition.has_variant",
+  "type": "object",
+  "title": "Has Variant",
+  "description": "Checks the variant value of the current actor.",
+  "additionalProperties": false,
+  "required": ["condition", "variant"],
+  "properties": {
+    "condition": { "const": "has_variant" },
+    "value": {
+      "type": "integer",
+      "description": "Expected variant identifier."
+    }
+  }
+}
