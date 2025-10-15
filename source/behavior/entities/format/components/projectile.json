@@ -297,6 +297,12 @@
           "description": "Defines the damage that an entity may receive on being hit by this projectile. See the table below for all impact_damage parameters.",
           "additionalProperties": false,
           "properties": {
+            "apply_knockback_to_blocking_targets": {
+              "title": "Apply Knockback To Blocking Targets",
+              "description": "UNDOCUMENTED",
+              "type": "boolean",
+              "default": false
+            },
             "catch_fire": {
               "title": "Catch Fire",
               "description": "Determines if the struck object is set on fire.",
