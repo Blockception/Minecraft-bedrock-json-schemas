@@ -8,7 +8,7 @@
   "properties": {
     "slot": {
       "title": "Slot",
-      "description": "If true you can always eat this item (even when not hungry), defaults to false.",
+      "description": "The slot type to be used to determine which enchantment types this item can be enchanted with.",
       "enum": [
         "all",
         "axe",
@@ -34,7 +34,7 @@
     },
     "value": {
       "title": "Value",
-      "description": "The value of the enchantment.",
+      "description": "The enchantability of the item.",
       "type": "number",
       "minimum": 0
     }
