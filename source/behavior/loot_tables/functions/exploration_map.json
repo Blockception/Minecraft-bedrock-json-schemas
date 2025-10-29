@@ -13,8 +13,29 @@
     },
     "destination": {
       "type": "string",
-      "description": "The destination value defines what type of treasure map they receive.",
-      "enum": ["endcity", "fortress", "mineshaft", "monument", "ruins", "stronghold", "temple", "village", "mansion", "shipwreck", "buriedtreasure", "pillageroutpost"],
+      "description": "The destination value defines what type of treasure map they receive. (Note: The following do not work, even though the docs say they do: endcity, fortress, mineshaft, ruins, stronghold, temple, village, shipwreck, and pillageroutpost.)",
+      "enum": [
+        "endcity",
+        "fortress",
+        "mineshaft",
+        "monument",
+        "ruins",
+        "stronghold",
+        "temple",
+        "village_desert",
+        "village_plains",
+        "village_savanna",
+        "village_snowy",
+        "village_taiga",
+        "village",
+        "mansion",
+        "shipwreck",
+        "buriedtreasure",
+        "pillageroutpost",
+        "jungle_temple",
+        "swamp_hut",
+        "trial_chambers"
+      ],
       "title": "Destination"
     }
   }
