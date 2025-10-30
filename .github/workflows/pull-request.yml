@@ -8,6 +8,11 @@ on:
     branches:
       - main
   pull_request:
+    types:
+      - synchronize
+      - ready_for_review
+      - review_requested
+      - auto_merge_enabled
     branches:
       - main
   merge_group: {}
