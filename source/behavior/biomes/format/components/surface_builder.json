@@ -10,7 +10,6 @@
       "title": "Builder",
       "description": "Controls the block types used for terrain generation.",
       "type": "object",
-      "additionalProperties": false,
       "required": [ "type" ],
       "properties": {
         "type": {
