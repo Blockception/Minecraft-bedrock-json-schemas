@@ -37,7 +37,6 @@
   "homepage": "https://github.com/Blockception/Minecraft-bedrock-json-schemas#readme",
   "devDependencies": {
     "@eslint/js": "^9.39.1",
-    "@types/eslint__js": "^9.14.0",
     "@types/jest": "^30.0.0",
     "@types/node": "^24.10.1",
     "comment-json": "^4.4.1",
