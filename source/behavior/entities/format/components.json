@@ -169,6 +169,7 @@
     "minecraft:ravager_blocked": { "$ref": "./components/ravager_blocked.json" },
     "minecraft:rideable": { "$ref": "./components/rideable.json" },
     "minecraft:rotation_axis_aligned": { "$ref": "./components/rotation_axis_aligned.json" },
+    "minecraft:rotation_locked_to_vehicle": { "$ref": "./components/rotation_locked_to_vehicle.json" },
     "minecraft:reflect_projectiles": { "$ref": "./components/reflect_projectiles.json" },
     "minecraft:remove_in_peaceful": { "$ref": "./components/remove_in_peaceful.json" },
     "minecraft:renders_when_invisible": { "$ref": "./components/renders_when_invisible.json" },
