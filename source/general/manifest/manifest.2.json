@@ -89,6 +89,7 @@
                   "@minecraft/server-editor",
                   "@minecraft/server-ui",
                   "@minecraft/server-gametest",
+                  "@minecraft/server-graphics",
                   "@minecraft/server-admin",
                   "@minecraft/server-net"
                 ]
