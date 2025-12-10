@@ -125,6 +125,7 @@
             { "if": { "properties": { "test": { "const": "is_brightness" } } }, "then": { "$ref": "./filters/is_brightness.json" } },
             { "if": { "properties": { "test": { "const": "is_climbing" } } }, "then": { "$ref": "./filters/is_climbing.json" } },
             { "if": { "properties": { "test": { "const": "is_color" } } }, "then": { "$ref": "./filters/is_color.json" } },
+            { "if": { "properties": { "test": { "const": "is_controlling_passenger_family" } } }, "then": { "$ref": "./filters/is_controlling_passenger_family.json" } },
             { "if": { "properties": { "test": { "const": "is_daytime" } } }, "then": { "$ref": "./filters/is_daytime.json" } },
             { "if": { "properties": { "test": { "const": "is_difficulty" } } }, "then": { "$ref": "./filters/is_difficulty.json" } },
             { "if": { "properties": { "test": { "const": "is_family" } } }, "then": { "$ref": "./filters/is_family.json" } },
