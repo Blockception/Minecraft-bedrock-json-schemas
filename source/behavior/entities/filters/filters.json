@@ -94,6 +94,7 @@
             { "if": { "properties": { "test": { "const": "has_container_open" } } }, "then": { "$ref": "./filters/has_container_open.json" } },
             { "if": { "properties": { "test": { "const": "has_damage" } } }, "then": { "$ref": "./filters/has_damage.json" } },
             { "if": { "properties": { "test": { "const": "has_equipment" } } }, "then": { "$ref": "./filters/has_equipment.json" } },
+            { "if": { "properties": { "test": { "const": "has_item_with_component" } } }, "then": { "$ref": "./filters/has_item_with_component.json" } },
             { "if": { "properties": { "test": { "const": "has_equipment_tag" } } }, "then": { "$ref": "./filters/has_equipment_tag.json" } },
             { "if": { "properties": { "test": { "const": "has_damaged_equipment" } } }, "then": { "$ref": "./filters/has_damaged_equipment.json" } },
             { "if": { "properties": { "test": { "const": "has_mob_effect" } } }, "then": { "$ref": "./filters/has_mob_effect.json" } },
