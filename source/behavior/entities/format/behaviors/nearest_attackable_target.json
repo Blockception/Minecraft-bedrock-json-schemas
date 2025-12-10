@@ -45,10 +45,17 @@
       "title": "Entity Types"
     },
     "attack_interval": {
-      "type": "integer",
-      "default": 0,
       "description": "Time range (in seconds) between searching for an attack target, range is in (0, `attack_interval`]. Only used if `attack_interval` is greater than 0, otherwise `scan_interval` is used.",
-      "title": "Attack Interval"
+      "title": "Attack Interval",
+      "anyOf": [
+        {
+          "$ref": "../types/range_number_type.json"
+        },
+        {
+          "type": "integer",
+          "default": 0
+        }
+      ]
     },
     "attack_interval_min": {
       "type": "number",
@@ -103,6 +110,14 @@
       "default": false,
       "description": "Allows the actor to be set to persist upon targeting a player.",
       "title": "Set Persistent"
+    },
+    "target_acquisition_probability": {
+      "title": "Target Acquisition Probability",
+      "description": "Probability (0.0 to 1.0) that this entity will accept a found target. Checked each time a valid target is found during scanning.",
+      "type": "number",
+      "default": 1.0,
+      "minimum": 0,
+      "maximum": 1
     },
     "target_invisible_multiplier": {
       "type": "number",
