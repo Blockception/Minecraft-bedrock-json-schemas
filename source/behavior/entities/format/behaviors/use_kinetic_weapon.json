@@ -1,0 +1,140 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.use_kinetic_weapon",
+  "type": "object",
+  "title": "Use Kinetic Weapon",
+  "description": "Allows a mob to make use of items with a \"minecraft:kinetic_weapon\" item component. The mob will approach the target before using the weapon and charging with it. If the target gets too close, the mob will retreat and reposition before charging again. Once all \"max_duration\"s in the item's \"minecraft:kinetic_weapon\" component have elapsed, the mob goes on cooldown and retreats before approaching again",
+  "additionalProperties": false,
+  "properties": {
+    //TODO: Revisit number properties after documentation outside of changelogs is availible for this component to include min/max limits
+    "priority": {
+      "$ref": "types/priority.json"
+    },
+    "speed_multiplier": {
+      "$ref": "./types/speed_multiplier.json"
+    },
+    "approach_distance": {
+      "title": "Approach Distance",
+      "description": "The distance to the target within which the mob begins using its kinetic weapon",
+      "type": "number"
+    },
+    "reposition_distance": {
+      "title": "Reposition Distance",
+      "description": "The distance the mob retreats to once the target is closer than the midpoint of the item's \"minecraft:kinetic_weapon\" component's minimum and maximum \"reach\"",
+      "type": "number"
+    },
+    "cooldown_distance": {
+      "title": "Cooldown Distance",
+      "description": "The distance the mob retreats to after all of the item's \"minecraft:kinetic_weapon\" component's \"max_duration\" values have elapsed",
+      "type": "number"
+    },
+    "reposition_speed_multiplier": {
+      "title": "Reposition Speed Multiplier",
+      "description": "Multiplier applied to the mob's movement speed while repositioning",
+      "type": "number"
+    },
+    "cooldown_speed_multiplier": {
+      "title": "Cooldown Speed Multiplier",
+      "description": "Multiplier applied to the mob's movement speed while on cooldown",
+      "type": "number"
+    },
+    "weapon_reach_multiplier": {
+      "title": "Weapon Reach Multiplier",
+      "description": "Multiplier applied to the item's \"minecraft:kinetic_weapon\" component's \"reach\"",
+      "type": "number"
+    },
+    "weapon_min_speed_multiplier": {
+      "title": "Weapon Min Speed Multiplier",
+      "description": "Multiplier applied to each \"min_speed\" and \"min_relative_speed\" condition in the item's \"minecraft:kinetic_weapon\" component",
+      "type": "number"
+    },
+    "max_path_time": {
+      "title": "Max Path Time",
+      "type": "number",
+      "default": 0.55,
+      "description": "Maximum base time (in seconds) to recalculate new attack path to target (before increases applied)."
+    },
+    "melee_fov": {
+      "title": "Melee Fov",
+      "type": "number",
+      "default": 90,
+      "description": "Field of view (in degrees) when using the sensing component to detect an attack target."
+    },
+    "min_path_time": {
+      "title": "Min Path Time",
+      "type": "number",
+      "default": 0.2,
+      "description": "Minimum base time (in seconds) to recalculate new attack path to target (before increases applied)."
+    },
+    "outer_boundary_time_increase": {
+      "title": "Outer Boundary Time Increase",
+      "type": "number",
+      "default": 0.5,
+      "description": "Time (in seconds) to add to attack path recalculation when the target is beyond the \"path_outer_boundary\"."
+    },
+    "path_fail_time_increase": {
+      "title": "Path Fail Time Increase",
+      "type": "number",
+      "default": 0.75,
+      "description": "Time (in seconds) to add to attack path recalculation when this entity cannot move along the current path."
+    },
+    "path_inner_boundary": {
+      "title": "Path Inner Boundary",
+      "type": "number",
+      "default": 16,
+      "description": "Distance at which to increase attack path recalculation by \"inner_boundary_tick_increase\"."
+    },
+    "path_outer_boundary": {
+      "title": "Path Outer Boundary",
+      "type": "number",
+      "default": 32,
+      "description": "Distance at which to increase attack path recalculation by \"outer_boundary_tick_increase\"."
+    },
+    "require_complete_path": {
+      "title": "Require Complete Path",
+      "type": "boolean",
+      "default": false,
+      "description": "Specifies whether a full navigation path from the mob to the target is required"
+    },
+    "track_target": {
+      "title": "Track Target",
+      "type": "boolean",
+      "default": false,
+      "description": "Allows the entity to track the attack target, even if the entity has no sensing."
+    },
+    "cooldown_time": {
+      "title": "Cooldown Time",
+      "type": "number",
+      "default": 1,
+      "description": "Cooldown time (in seconds) between attacks."
+    },
+    "x_max_rotation": {
+      "title": "X Max Rotation",
+      "type": "number",
+      "default": 30,
+      "description": "Maximum rotation (in degrees), on the X-axis, this entity can rotate while trying to look at the target."
+    },
+    "y_max_head_rotation": {
+      "title": "Y Max Head Rotation",
+      "type": "number",
+      "default": 30,
+      "description": "Maximum rotation (in degrees), on the Y-axis, this entity can rotate its head while trying to look at the target."
+    },
+    "random_stop_interval": {
+      "title": "Random Stop Interval",
+      "type": "integer",
+      "default": 0,
+      "description": "This entity will have a 1 in N chance to stop it's current attack, where N = \"random_stop_interval\"."
+    },
+    "attack_once": {
+      "title": "Attack Once",
+      "type": "boolean",
+      "default": false,
+      "description": "Allows the entity to use this attack behavior, only once EVER."
+    },
+    "hijack_mount_navigation": {
+      "title": "Hijack Mount Navigation",
+      "description": "Allows a mob to override its mount's navigation behavior with the one defined by this goal. Requires the mount to be running the \"minecraft:behavior.mount_pathing\" goal, whose default behavior will be ignored",
+      "type": "boolean"
+    }
+  }
+}
