@@ -3,7 +3,7 @@
   "type": "object",
   "title": "Tameable",
   "description": "Defines the rules for a mob to be tamed by the player.",
-  "required": [],
+  "required": [ ],
   "additionalProperties": false,
   "properties": {
     "probability": {
@@ -26,7 +26,24 @@
         {
           "type": "array",
           "items": {
-            "$ref": "../../../../general/item/identifier.json"
+            "oneOf": [
+              {
+                "$ref": "../../../../general/item/identifier.json"
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "item": {
+                    "$ref": "../../../../general/item/descriptor.json"
+                  },
+                  "result_item": {
+                    "$ref": "../../../../general/item/descriptor.json",
+                    "title": "Result Item",
+                    "description": "The item used will transform to this item upon successful interaction. Format: itemName:auxValue"
+                  }
+                }
+              }
+            ]
           }
         },
         {

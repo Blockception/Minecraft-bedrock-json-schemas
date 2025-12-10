@@ -93,10 +93,24 @@
         {
           "type": "array",
           "items": {
-            "type": "string",
-            "description": "An item that can be used to get the entity into the `love` state.",
-            "$ref": "../../../../general/item/descriptor.json",
-            "title": "Breed Item"
+            "oneOf": [
+              {
+                "$ref": "../../../../general/item/identifier.json"
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "item": {
+                    "$ref": "../../../../general/item/descriptor.json"
+                  },
+                  "result_item": {
+                    "$ref": "../../../../general/item/descriptor.json",
+                    "title": "Result Item",
+                    "description": "The item used will transform to this item upon successful interaction. Format: itemName:auxValue"
+                  }
+                }
+              }
+            ]
           }
         },
         {
@@ -232,12 +246,12 @@
       "description": "List of Entity Properties that should be inherited from the parent entities and potentially mutated.",
       "type": "array",
       "items": {
-        "type": "object", 
+        "type": "object",
         "additionalProperties": {
           "mutation_chance": {
             "title": "Mutation Chance",
             "description": "The chance it should not inherit from either parent",
-            "type": "number", 
+            "type": "number",
             "minimum": 0
           },
           "mutation_values": {
@@ -287,26 +301,21 @@
       "default": true,
       "description": "If true, the entities need to be tamed first before they can breed.",
       "title": "Require Tame"
-    },
-    "transform_to_item": {
-      "type": "string",
-      "title": "Transform To Item",
-      "description": "The feed item used will transform to this item upon successful interaction. Format: itemName:auxValue"
     }
+    // TODO: Figure out if result_item is valid here or restricted to within breed_items
   },
   "examples": [
     {
       "allow_sitting": false,
       "blend_attributes": true,
       "breed_cooldown": 60.0,
-      "deny_parents_variant": {},
+      "deny_parents_variant": { },
       "extra_baby_chance": 0.0,
-      "mutation_factor": {},
+      "mutation_factor": { },
       "causes_pregnancy": false,
       "inherit_tamed": true,
       "require_full_health": false,
-      "require_tame": true,
-      "transform_to_item": "example"
+      "require_tame": true
     }
   ]
 }

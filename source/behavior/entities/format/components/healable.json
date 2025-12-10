@@ -4,7 +4,7 @@
   "type": "object",
   "title": "Healable",
   "additionalProperties": false,
-  "required": [],
+  "required": [ ],
   "definitions": {
     "effect": {
       "type": "object",
@@ -22,10 +22,10 @@
               "type": "integer",
               "default": 1,
               "minimum": 0
-           },
-           {
-             "const": "infinite"
-           }
+            },
+            {
+              "const": "infinite"
+            }
           ],
           "description": "The duration of the effect."
         },
@@ -70,6 +70,11 @@
             "description": "Item that can be used to heal this entity.",
             "title": "Item"
           },
+          "result_item": {
+            "$ref": "../../../../general/item/descriptor.json",
+            "title": "Result Item",
+            "description": "The item used will transform to this item upon successful interaction. Format: itemName:auxValue"
+          },
           "effects": {
             "oneOf": [
               {
@@ -90,7 +95,7 @@
   "examples": [
     {
       "force_use": false,
-      "items": []
+      "items": [ ]
     }
   ]
 }
