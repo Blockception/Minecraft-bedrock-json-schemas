@@ -7,6 +7,9 @@
   "required": [],
   "properties": {
     "priority": { "$ref": "types/priority.json" },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
     "dist_from_boundary": {
       "title": "Dist From Boundary",
