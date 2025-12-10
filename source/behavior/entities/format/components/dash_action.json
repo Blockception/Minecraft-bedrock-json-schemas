@@ -6,6 +6,12 @@
   "description": "Ability for a ridable entity to dash.",
   "required": [],
   "properties": {
+    "can_dash_underwater": {
+      "title": "Can Dash Underwater",
+      "description": "Whether the entity can dash underwater.",
+      "type": "boolean",
+      "default": false
+    },
     "cooldown_time": {
       "title": "Cooldown Time",
       "type": "number",
