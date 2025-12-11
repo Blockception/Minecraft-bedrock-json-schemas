@@ -1,0 +1,20 @@
+{
+  "$id": "blockception.minecraft.behavior.blocks.traits.minecraft.connection",
+  "title": "Connection",
+  "description": "Contains information about whether the block connects to other blocks, and if so, on what faces. The values of the states will change when the block or neighboring blocks change or move.",
+  "additionalProperties": false,
+  "type": "object",
+  "required": ["enabled_states"],
+  "properties": {
+    "enabled_states": {
+      "title": "Enabled States",
+      "description": "Connection states you wish to enable",
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "items": {
+        "enum": ["minecraft:cardinal_connections"]
+      }
+    }
+  }
+}
