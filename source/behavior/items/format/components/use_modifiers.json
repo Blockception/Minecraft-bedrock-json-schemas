@@ -23,6 +23,11 @@
       "description": "Whether vibrations are emitted when the item starts or stops being used.",
       "type": "boolean",
       "default": true
+    },
+    "start_sound": {
+      "title": "Start Sound",
+      "description": "Sound played when the item starts being used.",
+      "type": "string"
     }
   }
 }
