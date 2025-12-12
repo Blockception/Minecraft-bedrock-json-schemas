@@ -82,6 +82,7 @@
         "minecraft:kinetic_weapon": { "$ref": "./components/kinetic_weapon.json" },
         "minecraft:liquid_clipped": { "$ref": "./components/liquid_clipped.json" },
         "minecraft:max_stack_size": { "$ref": "./components/max_stack_size.json" },
+        "minecraft:piercing_weapon": { "$ref": "./components/piercing_weapon.json" },
         "minecraft:projectile": { "$ref": "./components/projectile.json" },
         "minecraft:record": { "$ref": "./components/record.json" },
         "minecraft:rarity": { "$ref": "./components/rarity.json" },
