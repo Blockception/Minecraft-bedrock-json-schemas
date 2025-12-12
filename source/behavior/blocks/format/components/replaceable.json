@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.blocks.minecraft.replaceable",
   "title": "Replaceable",
-  "description": "A block with this component can be replaced when another block is placed in the same block position. Experimental toggles required: Upcoming Creator Features",
+  "description": "A block with this component can be replaced when another block is placed in the same block position.",
   "type": "object",
   "additionalProperties": false,
   "properties": {}
