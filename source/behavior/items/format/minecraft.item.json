@@ -78,6 +78,7 @@
         "minecraft:glint": { "$ref": "./components/glint.json" },
         "minecraft:hand_equipped": { "$ref": "./components/hand_equipped.json" },
         "minecraft:icon": { "$ref": "./components/icon.json" },
+        "minecraft:kinetic_weapon": { "$ref": "./components/kinetic_weapon.json" },
         "minecraft:liquid_clipped": { "$ref": "./components/liquid_clipped.json" },
         "minecraft:max_stack_size": { "$ref": "./components/max_stack_size.json" },
         "minecraft:projectile": { "$ref": "./components/projectile.json" },

@@ -1,0 +1,107 @@
+{
+    "$id": "blockception.minecraft.behavior.items.minecraft.kinetic_weapon",
+    "title": "Kinetic Weapon",
+    "description": "Allows an item to deal kinetic damage and its effects. This happens every tick while in use, in a straight line along the user's view vector, with damage computed based on both the user's and the target's velocity projected onto the view vector (via a dot product). The more the user and target move toward each other, and the more this movement is aligned with the user's view vector, the higher the damage. After \"damage_multiplier\" and \"damage_modifier\" are applied, the resulting damage is floored to the nearest lower integer.",
+    "type": "object",
+    "additionalProperties": false,
+    "definitions": {
+        "range": {
+            "additionalProperties": false,
+            "properties": {
+                "max": {
+                    "type": "number"
+                },
+                "min": {
+                    "type": "number"
+                }
+            },
+            "type": "object"
+        },
+        "conditions": {
+            "title": "Conditions",
+            "description": "Conditions that need to be satisfied for a specific effect of a kinetic weapon to be applied.",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "max_duration": {
+                    "default": -1,
+                    "description": "Time, in ticks, during which the effect can be applied after \"delay\" elapses. If negative, the effect is applied indefinitely.",
+                    "maximum": 32767,
+                    "minimum": -32768,
+                    "type": "integer"
+                },
+                "min_relative_speed": {
+                    "default": 0,
+                    "description": "Minimum relative speed of the user with respect to the target (projected onto the view vector via a dot product) required for the effect to be applied.",
+                    "maximum": 3.4028234663852886e+38,
+                    "minimum": 0,
+                    "type": "number"
+                },
+                "min_speed": {
+                    "default": 0,
+                    "description": "Minimum user's speed (projected onto the view vector via a dot product) required for the effect to be applied.",
+                    "maximum": 3.4028234663852886e+38,
+                    "minimum": 0,
+                    "type": "number"
+                }
+            }
+        }
+    },
+    "properties": {
+        "creative_reach": {
+            "title": "Creative Reach",
+            "$ref": "#/definitions/range",
+            "description": "Defines the reach used when the user is in Creative Mode. Defaults to \"reach\" if unspecified."
+        },
+        "damage_conditions": {
+            "title": "Damage Conditions",
+            "$ref": "#/definitions/conditions",
+            "description": "Conditions that need to be satisfied for damage to be applied. If not specified, damage is not applied."
+        },
+        "damage_modifier": {
+            "title": "Damage Modifier",
+            "default": 0,
+            "description": "Value added to the the scaled dot product (after applying \"damage_multiplier\").",
+            "type": "number"
+        },
+        "damage_multiplier": {
+            "title": "Damage Multiplier",
+            "default": 1,
+            "description": "Value multiplied to sum of the dot products of the user and target's velocity vectors projected onto the view vector.",
+            "type": "number"
+        },
+        "delay": {
+            "title": "Delay",
+            "default": 0,
+            "description": "Time, in ticks, after which kinetic damage and its effects start being applied.",
+            "maximum": 32767,
+            "minimum": -32768,
+            "type": "integer"
+        },
+        "dismount_conditions": {
+            "title": "Dismount Conditions",
+            "$ref": "#/definitions/conditions",
+            "description": "Conditions that need to be satisfied for riders to be dismounted. If not specified, riders cannot be dismounted."
+        },
+        "hitbox_margin": {
+            "title": "Hitbox Margin",
+            "default": 0,
+            "description": "Added tolerance to the view vector raycast for detecting entity collisions.",
+            "type": "number"
+        },
+        "knockback_conditions": {
+            "title": "Knockback Conditions",
+            "$ref": "#/definitions/conditions",
+            "description": "Conditions that need to be satisfied for knockback to be applied. If not specified, knockback is not applied."
+        },
+        "reach": {
+            "title": "Reach",
+            "$ref": "#/definitions/range",
+            "default": {
+                "max": 3,
+                "min": 0
+            },
+            "description": "Defines the range (in blocks) along the user's view vector where entities can be hit. Only targets within this distance are considered. Block collisions between the user and target block damage and its effects."
+        }
+    }
+}
