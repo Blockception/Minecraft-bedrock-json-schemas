@@ -37,6 +37,7 @@
         "minecraft:precipitation_interactions": { "$ref": "./components/precipitation_interactions.json" },
         "minecraft:random_offset": { "$ref": "./components/random_offset.json" },
         "minecraft:redstone_conductivity": { "$ref": "./components/redstone_conductivity.json" },
+        "minecraft:redstone_consumer": { "$ref": "./components/redstone_consumer.json" },
         "minecraft:redstone_producer": { "$ref": "./components/redstone_producer.json" },
         "minecraft:replaceable": { "$ref": "./components/replaceable.json" },
         "minecraft:selection_box": { "$ref": "./components/selection_box.json" },

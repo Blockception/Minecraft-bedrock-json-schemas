@@ -1,0 +1,23 @@
+{
+    "$id": "blockception.minecraft.behavior.blocks.minecraft.redstone_consumer",
+    "title": "Redstone Consumer",
+    "description": "[EXPERIMENTAL] Allows the block to react to redstone updates",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [ "min_power" ],
+    "properties": {
+        "min_power": {
+            "title": "Min Power",
+            "description": "Minimum power required to receive a redstone update.",
+            "type": "integer", 
+            "minimum": 0,
+            "maximum": 15
+        },
+        "propogates_power": {
+            "title": "Propogates Power",
+            "description": "Whether this block propagates power",
+            "type": "boolean",
+            "default": false
+        }
+    }
+}
