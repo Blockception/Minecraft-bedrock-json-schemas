@@ -43,7 +43,7 @@
         "minecraft:redstone_producer": { "$ref": "./components/redstone_producer.json" },
         "minecraft:replaceable": { "$ref": "./components/replaceable.json" },
         "minecraft:selection_box": { "$ref": "./components/selection_box.json" },
-        "minecraft:shape": { "$ref": "./components/shape.json" },
+        "minecraft:support": { "$ref": "./components/support.json" },
         "minecraft:transformation": { "$ref": "./components/transformation.json" },
         "minecraft:custom_components": { "$ref": "./components/custom_components.json" },
         "minecraft:tick": { "$ref": "./components/tick.json" },
