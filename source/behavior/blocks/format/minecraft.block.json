@@ -27,6 +27,7 @@
         "minecraft:friction": { "$ref": "./components/friction.json" },
         "minecraft:geometry": { "$ref": "./components/geometry.json" },
         "minecraft:item_visual": { "$ref": "./components/item_visual.json" },
+        "minecraft:leashable": { "$ref": "./components/leashable.json" },
         "minecraft:light_dampening": { "$ref": "./components/light_dampening.json" },
         "minecraft:light_emission": { "$ref": "./components/light_emission.json" },
         "minecraft:liquid_detection": { "$ref": "./components/liquid_detection.json" },
