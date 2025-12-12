@@ -29,6 +29,12 @@
       "default": 0.05,
       "description": "Amount of exhaustion applied when jumping."
     },
+    "lunge": {
+      "title": "Lunge",
+      "description": "Amount of exhaustion applied when triggering the lunge enchantment, multiplied by the enchantment level.",
+      "type": "number", 
+      "default": 4
+    },
     "mine": {
       "title": "Mine",
       "type": "number",
