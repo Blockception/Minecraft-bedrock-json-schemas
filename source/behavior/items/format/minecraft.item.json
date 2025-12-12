@@ -91,6 +91,7 @@
         "minecraft:storage_weight_limit": { "$ref": "./components/storage_weight_limit.json" },
         "minecraft:storage_weight_modifier": { "$ref": "./components/storage_weight_modifier.json" },
         "minecraft:swing_duration": { "$ref": "./components/swing_duration.json" },
+        "minecraft:swing_sounds": { "$ref": "./components/swing_sounds.json" },
         "minecraft:tags": { "$ref": "./components/tags.json" },
         "minecraft:throwable": { "$ref": "./components/throwable.json" },
         "minecraft:use_animation": { "$ref": "./components/use_animation.json" },

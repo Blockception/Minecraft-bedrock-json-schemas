@@ -1,0 +1,24 @@
+{
+  "$id": "blockception.minecraft.behavior.items.minecraft:swing_sounds",
+  "title": "Swing Sounds",
+  "description": "Overrides the swing sounds emitted by the user.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "attack_critical_hit": {
+      "title": "Attack Critical Hit",
+      "description": "Sound played when an attack hits and deals critical damage.",
+      "type": "string"
+    },
+    "attack_hit": {
+      "title": "Attack Hit",
+      "description": "Sound played when an attack hits.",
+      "type": "string"
+    },
+    "attack_miss": {
+      "title": "Attack Miss",
+      "description": "Sound played when an attack misses or deals no damage due to invulnerability.",
+      "type": "string"
+    }
+  }
+}
