@@ -11,6 +11,13 @@
       "description": "The duration of time this item will spend cooling down before becoming usable again.",
       "title": "Duration",
       "type": "number"
+    },
+    "type": {
+      "title": "Type",
+      "description": "Defines the action the cooldown applies to, in a mutually exclusive way, so cooldowns for one action type do not affect the other",
+      "type": "string",
+      "enum": ["use", "attack"],
+      "default": "use"
     }
   },
   "examples": [

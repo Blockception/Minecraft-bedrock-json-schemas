@@ -8,6 +8,12 @@
   "description": "The minecraft block behavior specification.",
   "additionalProperties": false,
   "properties": {
+    "use_beta_features": {
+      "title": "Use Beta Features",
+      "description": "Allows a block to use experimental features.",
+      "type": "boolean",
+      "default": false
+    },
     "format_version": { "$ref": "../../general/format_version.json" },
     "minecraft:block": { "$ref": "./format/minecraft.block.json" }
   },

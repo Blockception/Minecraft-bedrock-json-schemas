@@ -5,6 +5,12 @@
   "description": "A component that applies a mob effect to entities that get within range.",
   "additionalProperties": false,
   "properties": {
+    "ambient": {
+      "title": "Ambient",
+      "description": "If the effect is considered an ambient effect (like the ones applied by Beacons or Conduits).",
+      "type": "boolean",
+      "default": false
+    },
     "cooldown_time": {
       "title": "Cooldown Time",
       "type": "integer",

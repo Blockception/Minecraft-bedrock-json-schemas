@@ -22,6 +22,9 @@
       "type": "number",
       "default": 1,
       "description": "Movement speed multiplier."
+    },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
     }
   }
 }

@@ -45,6 +45,11 @@
                   },
                   "item": {
                     "$ref": "../../../../general/item/descriptor.json"
+                  },
+                  "result_item": {
+                    "$ref": "../../../../general/item/descriptor.json",
+                    "title": "Result Item",
+                    "description": "The feed item used will transform to this item upon successful interaction. Format: itemName:auxValue"
                   }
                 }
               }
@@ -63,11 +68,7 @@
       "description": "Event to run when this entity grows up.",
       "title": "Grow Up"
     },
-    "transform_to_item": {
-      "$ref": "../../../../general/item/descriptor.json",
-      "title": "Transform To Item",
-      "description": "The feed item used will transform to this item upon successful interaction. Format: itemName:auxValue"
-    },
+    // TODO: Figure out if result_item is valid here or restricted to within feed_items
     "interact_filters": {
       "$ref": "../../filters/filters.json",
       "title": "Interact Filters",
@@ -76,8 +77,7 @@
   },
   "examples": [
     {
-      "duration": 1200,
-      "transform_to_item": "example"
+      "duration": 1200
     }
   ]
 }

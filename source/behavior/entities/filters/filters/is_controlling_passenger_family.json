@@ -1,0 +1,31 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.is_controlling_passenger_family",
+  "type": "object",
+  "title": "Is Controlling Passenger Family",
+  "description": "Returns true when the subject entity's controlling passenger is a member of the named family.",
+  "required": ["value"],
+  "properties": {
+    "test": {
+      "type": "string",
+      "title": "Test Property",
+      "description": "Returns true when the subject entity's controlling passenger is a member of the named family."
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
+    "value": {
+      "description": "The Family name to look for.",
+      "type": "string",
+      "title": "Value"
+    }
+  },
+  "examples": [
+    {
+      "test": "is_controlling_passenger_family",
+      "value": "monster"
+    }
+  ]
+}

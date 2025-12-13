@@ -1,0 +1,32 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.has_item_with_component",
+  "type": "object",
+  "title": "Has Equipment Tag",
+  "description": "Returns true when the subject entity is holding a item with the specified component.",
+  "required": ["value"],
+  "properties": {
+    "test": {
+      "type": "string",
+      "const": "has_item_with_component",
+      "description": "Returns true when the subject entity is holding a item with the specified component.",
+      "title": "Test"
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
+    "value": {
+      "description": "The component name to look for.",
+      "type": "string",
+      "title": "Value"
+    }
+  },
+  "examples": [
+    {
+      "test": "has_item_with_component",
+      "value": "minecraft:kinetic_wepaon"
+    }
+  ]
+}

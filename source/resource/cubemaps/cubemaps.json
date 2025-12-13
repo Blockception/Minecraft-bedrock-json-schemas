@@ -1,0 +1,78 @@
+{
+  "$id": "blockception.minecraft.resource.cubemaps",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "format_version": { "$ref": "../../general/format_version.json" },
+    "minecraft:cubemap_settings": {
+      "title": "Cubemap Settings",
+      "description": "UNDOCUMENTED",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [ "description" ],
+      "properties": {
+        "description": {
+          "title": "Cubemap Settings Description",
+          "description": "Contains non-component settings for the cubemap settings.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": [ "identifier" ],
+          "properties": {
+            "identifier": {
+              "title": "Identifier",
+              "description": "The identifier for these cubemap settings.",
+              "type": "string"
+            }
+          }
+        },
+        "lighting": {
+          "title": "Lighting",
+          "description": "Lighting configuration for this cubemap",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "ambient_light_illuminance": { //TODO: Figure out if it supports "ambient_light_illuminance": 3.2 format instead of keyframe
+              "title": "Ambient Light Illuminance",
+              "description": "Contains pairs of numbers, where the first number should be between 0.0 and 1.0 (time of day) and the second number should be between 0.0 and 100000.0 (ambient light). Default value is 5.625 for all times of day.",
+              "type": "object",
+              "additionalProperties": false,
+              "patternProperties": {
+                "^\\d*\\.?\\d+$": {
+                  "type": "number"
+                }
+              }
+            },
+            "sky_light_contribution": {
+              "title": "Sky Light Contribution",
+              "description": "Contribution of the sky light.",
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1,
+              "default": 0
+            },
+            "directional_light_contribution": {
+              "title": "Directional Light Contribution",
+              "description": "Contribution of the directional light.",
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1,
+              "default": 0
+            },
+            "affected_by_atmospheric_scattering": {
+              "title": "Affected By Atmospheric Scattering",
+              "description": "If true, the cubemap will be affected by atmospheric scattering.",
+              "type": "boolean",
+              "default": false
+            },
+            "affected_by_volumetric_scattering": {
+              "title": "Affected By Volumetric Scattering",
+              "description": "If true, the cubemap will be affected by volumetric scattering.",
+              "type": "boolean",
+              "default": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -45,12 +45,6 @@
               }
             ]
           },
-          "emissive": {
-            "title": "Emissive",
-            "description": "[Experimental] Should this material be rendered as emissive",
-            "type": "boolean",
-            "default": false
-          },
           "face_dimming": {
             "title": "Face Dimming",
             "type": "boolean",

@@ -1,0 +1,31 @@
+{
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.leashable",
+  "title": "Leashable",
+  "description": "[EXPERIMENTAL] Allows custom blocks to receive a lead attachment, including an offset field to change the position of the leash knot.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "offset": {
+      "title": "Offset",
+      "description": "Changes the position of the leash knot",
+      "type": "array",
+      "items": [
+        {
+          "title": "X",
+          "type": "number",
+          "default": 0
+        },
+        {
+          "title": "Y",
+          "type": "number",
+          "default": 0
+        },
+        {
+          "title": "Z",
+          "type": "number",
+          "default": 0
+        }
+      ]
+    }
+  } 
+}

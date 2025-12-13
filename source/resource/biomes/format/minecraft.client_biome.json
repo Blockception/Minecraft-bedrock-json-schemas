@@ -18,6 +18,7 @@
         "minecraft:atmosphere_identifier": { "$ref": "./components/atmosphere_identifier.json" },
         "minecraft:biome_music": { "$ref": "./components/biome_music.json" },
         "minecraft:color_grading_identifier": { "$ref": "./components/color_grading_identifier.json" },
+        "minecraft:cubemap_identifier": { "$ref": "./components/cubemap_identifier.json" },
         "minecraft:dry_foliage_color": { "$ref": "./components/dry_foliage_color.json" },
         "minecraft:fog_appearance": { "$ref": "./components/fog_appearance.json" },
         "minecraft:foliage_appearance": { "$ref": "./components/foliage_appearance.json" },

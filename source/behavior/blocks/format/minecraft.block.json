@@ -15,6 +15,7 @@
       "properties": {
         //Components
         "minecraft:collision_box": { "$ref": "./components/collision_box.json" },
+        "minecraft:connection_rule": { "$ref": "./components/connection_rule.json" },
         "minecraft:crafting_table": { "$ref": "./components/crafting_table.json" },
         "minecraft:destructible_by_explosion": { "$ref": "./components/destructible_by_explosion.json" },
         "minecraft:destructible_by_mining": { "$ref": "./components/destructible_by_mining.json" },
@@ -26,6 +27,7 @@
         "minecraft:friction": { "$ref": "./components/friction.json" },
         "minecraft:geometry": { "$ref": "./components/geometry.json" },
         "minecraft:item_visual": { "$ref": "./components/item_visual.json" },
+        "minecraft:leashable": { "$ref": "./components/leashable.json" },
         "minecraft:light_dampening": { "$ref": "./components/light_dampening.json" },
         "minecraft:light_emission": { "$ref": "./components/light_emission.json" },
         "minecraft:liquid_detection": { "$ref": "./components/liquid_detection.json" },
@@ -37,9 +39,11 @@
         "minecraft:precipitation_interactions": { "$ref": "./components/precipitation_interactions.json" },
         "minecraft:random_offset": { "$ref": "./components/random_offset.json" },
         "minecraft:redstone_conductivity": { "$ref": "./components/redstone_conductivity.json" },
+        "minecraft:redstone_consumer": { "$ref": "./components/redstone_consumer.json" },
         "minecraft:redstone_producer": { "$ref": "./components/redstone_producer.json" },
         "minecraft:replaceable": { "$ref": "./components/replaceable.json" },
         "minecraft:selection_box": { "$ref": "./components/selection_box.json" },
+        "minecraft:support": { "$ref": "./components/support.json" },
         "minecraft:transformation": { "$ref": "./components/transformation.json" },
         "minecraft:custom_components": { "$ref": "./components/custom_components.json" },
         "minecraft:tick": { "$ref": "./components/tick.json" },
@@ -55,7 +59,9 @@
         "tag:minecraft:is_shovel_item_destructible": { },
         "tag:minecraft:is_sword_item_destructible": { },
         "tag:minecraft:netherite_tier_destructible": { },
-        "tag:minecraft:stone_tier_destructible": { }
+        "tag:minecraft:stone_tier_destructible": { },
+        "tag:minecraft:has_fence_connections": { },
+        "tag:minecraft:cornerable_stairs": { }
       },
       "patternProperties": {
         "tag:.+": {
@@ -88,6 +94,7 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
+        "minecraft:connection": { "$ref": "./traits/connection.json" },
         "minecraft:placement_direction": { "$ref": "./traits/placement_direction.json" },
         "minecraft:placement_position": { "$ref": "./traits/placement_position.json" }
       }

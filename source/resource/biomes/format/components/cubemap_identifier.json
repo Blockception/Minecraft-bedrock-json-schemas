@@ -1,0 +1,15 @@
+{
+  "$id": "blockception.minecraft.resource.biomes.minecraft.cubemap_identifier",
+  "title": "Cubemap Identifier",
+  "description": "Set the identifier used for cubemap in Vibrant Visuals mode. Identifiers must resolve to identifiers in valid Cubemap JSON schemas under the \"cubemaps\" directory. Biomes without this component will have default cubemap settings.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["cubemap_identifier"],
+  "properties": {
+    "cubemap_identifier": {
+      "title": "Cubemap Identifier",
+      "description": "Identifier of cubemap definition to use",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.rotation_locked_to_vehicle",
+  "type": "object",
+  "title": "Rotation Locked To Vehicle",
+  "description": "Aligns both the entity's body rotation and its overall rotation with that of its mounted vehicle",
+  "additionalProperties": false,
+  "properties": {},
+  "examples": [{}]
+}

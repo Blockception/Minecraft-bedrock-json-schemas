@@ -36,6 +36,12 @@
       "description": "If true, this entity can breathe in water.",
       "title": "Breathes Water"
     },
+    "can_dehydrate": {
+      "title": "Can Dehydrate",
+      "description": "If true, water-only breathers will take Dehydration damage when out of water.",
+      "type": "boolean",
+      "default": false
+    },
     "breathes_lava": {
       "type": "boolean",
       "default": false,
