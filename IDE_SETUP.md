@@ -440,11 +440,13 @@ Visual Studio Code is the primary supported editor for these schemas.
   ],
   "settings": {
     "json.schemas": [
-      // Paste the schemas array here
+      
     ]
   }
 }
 ```
+
+Note: Paste the contents of the `json.schemas` array from `vscode-settings.json` into the `json.schemas` array above.
 
 The schemas will automatically apply to matching files in your workspace.
 
@@ -510,7 +512,6 @@ Sublime Text supports JSON schemas through the LSP package.
               "fileMatch": ["behavior_packs/*/entities/*.json", "*.entity.bp.json"],
               "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/entities/entities.json"
             }
-            // Add more schemas as needed
           ]
         }
       }
@@ -518,6 +519,8 @@ Sublime Text supports JSON schemas through the LSP package.
   }
 }
 ```
+
+Note: Add more schema objects to the `schemas` array as needed, following the same pattern as the examples above.
 
 ---
 
