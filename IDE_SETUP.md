@@ -399,9 +399,11 @@ lspconfig.jsonls.setup({
 
 ### Tips for Neovim
 
-1. **Simplified Configuration**: If you only work with specific file types, you can reduce the schema list to only include the ones you need.
+1. **Simplified File Patterns**: The example configuration above shows simplified file patterns for readability. The patterns handle `.json` files. If you also need to match `.jsonc` or `.json5` files, you can add those extensions to the fileMatch arrays (e.g., `"manifest.jsonc"`, `"manifest.json5"`).
 
-2. **Using with lazy.nvim**: If you're using lazy.nvim, you can add this configuration in your LSP plugin setup:
+2. **Simplified Configuration**: If you only work with specific file types, you can reduce the schema list to only include the ones you need.
+
+3. **Using with lazy.nvim**: If you're using lazy.nvim, you can add this configuration in your LSP plugin setup:
 
 ```lua
 {
@@ -414,7 +416,7 @@ lspconfig.jsonls.setup({
 }
 ```
 
-3. **File Pattern Matching**: The `fileMatch` patterns support glob patterns. If your file naming conventions differ, adjust the patterns accordingly.
+4. **File Pattern Matching**: The `fileMatch` patterns support glob patterns. If your file naming conventions differ, adjust the patterns accordingly.
 
 ---
 
@@ -446,7 +448,7 @@ Visual Studio Code is the primary supported editor for these schemas.
 }
 ```
 
-Note: Paste the contents of the `json.schemas` array from `vscode-settings.json` into the `json.schemas` array above.
+**Note**: Replace the empty `json.schemas` array above with the complete array from the `vscode-settings.json` file. The array should contain all the schema definitions (each with `fileMatch` and `url` properties).
 
 The schemas will automatically apply to matching files in your workspace.
 
