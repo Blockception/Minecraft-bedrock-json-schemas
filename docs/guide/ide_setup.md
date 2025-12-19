@@ -429,6 +429,8 @@ Visual Studio Code is the primary supported editor for these schemas.
 1. Copy the `vscode-settings.json` file from the repository root into your project's `.vscode` folder
 2. Rename it to `settings.json`
 
+You can also use the [example file](vscode-settings.example.json) provided in this guide folder.
+
 **OR**
 
 1. Copy the contents of `vscode-settings.json` into your `.code-workspace` file under the `settings` property:
@@ -529,10 +531,11 @@ Note: Add more schema objects to the `schemas` array as needed, following the sa
 ## Additional Resources
 
 - [Main Repository](https://github.com/Blockception/Minecraft-bedrock-json-schemas)
-- [Contributing Guide](CONTRIBUTING.md)
-- [VS Code Settings Reference](vscode-settings.json)
+- [Contributing Guide](../../CONTRIBUTING.md)
+- [VS Code Settings Example](vscode-settings.example.json)
+- [VS Code Settings (Repository Root)](../../vscode-settings.json)
 
-For a complete list of all available schemas and their URLs, refer to the [vscode-settings.json](vscode-settings.json) file in the repository root.
+For a complete list of all available schemas and their URLs, refer to the [vscode-settings.json](../../vscode-settings.json) file in the repository root or the [example file](vscode-settings.example.json) in this folder.
 
 ---
 
