@@ -9,7 +9,8 @@ The JSON validation schema files for Minecraft bedrock
 - [Minecraft-bedrock-json-schemas](#minecraft-bedrock-json-schemas)
   - [Contributing](#contributing)
   - [Manual Usage](#manual-usage)
-    - [Vscode](#vscode)
+    - [Quick Start - Visual Studio Code](#quick-start---visual-studio-code)
+    - [Other Editors](#other-editors)
 - [Contents](#contents)
   - [behavior files](#behavior-files)
   - [Resource files](#resource-files)
@@ -26,7 +27,9 @@ JSON validation can give snippets for sub items, as well as description, but thi
 
 ## Manual Usage
 
-### Vscode
+For detailed setup instructions for various IDEs and editors, see the [IDE Setup Guide](docs/guide/ide_setup.md).
+
+### Quick Start - Visual Studio Code
 
 - Copy the `vscode-settings.json` file into the `.vscode` folder in your project and rename it to: `settings.json`  
   OR
@@ -42,6 +45,13 @@ JSON validation can give snippets for sub items, as well as description, but thi
   }
 }
 ```
+
+### Other Editors
+
+See the [IDE Setup Guide](docs/guide/ide_setup.md) for instructions on setting up schemas in:
+- **Neovim** with LSP
+- **JetBrains IDEs** (IntelliJ IDEA, WebStorm, PyCharm, etc.)
+- **Sublime Text**
 
 ---
 
