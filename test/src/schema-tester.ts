@@ -1,9 +1,18 @@
-import { existsSync, readFileSync } from "fs";
-import * as path from "path";
-import * as url from "url";
-import { Diagnostic, getLanguageService, JSONDocument, LanguageService, LanguageSettings, SchemaConfiguration, TextDocument, Thenable } from "vscode-json-languageservice";
-import * as data from "../../vscode-settings.json";
-import { Files } from "./utillity";
+import { existsSync, readFileSync } from 'fs';
+import * as path from 'path';
+import * as url from 'url';
+import {
+  Diagnostic,
+  getLanguageService,
+  JSONDocument,
+  LanguageService,
+  LanguageSettings,
+  SchemaConfiguration,
+  TextDocument,
+  Thenable,
+} from 'vscode-json-languageservice';
+import * as data from '../../vscode-settings.json';
+import { Files } from './utillity';
 
 export namespace Schema {
   const workspaceContext = {
@@ -30,7 +39,10 @@ export namespace Schema {
 
   export async function getSchema(uri: string): Promise<string> {
     const rootfolder = Files.RootFolder();
-    const filepath = uri.replace("https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main", rootfolder);
+    const filepath = uri.replace(
+      'https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main',
+      rootfolder,
+    );
 
     if (!existsSync(filepath)) {
       throw new Error("file doesn't exist: " + filepath);
@@ -46,13 +58,13 @@ export namespace Schema {
     };
     let rootfolder = Files.RootFolder();
 
-    if (!rootfolder.endsWith("/")) rootfolder += "/";
+    if (!rootfolder.endsWith('/')) rootfolder += '/';
     rootfolder = path.normalize(rootfolder);
 
-    data["json.schemas"].forEach((m) => {
+    data['json.schemas'].forEach((m) => {
       if (m) {
         let matches = m.fileMatch;
-        if (typeof matches === "string") {
+        if (typeof matches === 'string') {
           matches = [matches];
         }
 
@@ -73,18 +85,18 @@ export class Validator {
 
   ValidateFile(uri: string): Result {
     const content = readFileSync(uri).toString();
-    return this.ValidateContent(content, uri, "json");
+    return this.ValidateContent(content, uri, 'json');
   }
 
-  ValidateJson(data: any, fakeuri: string = "", langid: string = "json"): Result {
+  ValidateJson(data: any, fakeuri: string = '', langid: string = 'json'): Result {
     return this.ValidateContent(JSON.stringify(data), fakeuri, langid);
   }
 
-  ValidateContent(json: string, fakeuri: string = "", langid: string = "json"): Result {
+  ValidateContent(json: string, fakeuri: string = '', langid: string = 'json'): Result {
     const doc = TextDocument.create(fakeuri, langid, 0, json);
     const jdoc = this.ls.parseJSONDocument(doc);
 
-    const p = this.ls.doValidation(doc, jdoc, { comments: "ignore" });
+    const p = this.ls.doValidation(doc, jdoc, { comments: 'ignore' });
 
     return new Result(doc, jdoc, p);
   }

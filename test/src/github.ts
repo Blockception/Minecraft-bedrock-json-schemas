@@ -11,7 +11,7 @@ export namespace Github {
     const data = Object.entries(error)
       .filter(([, value]) => value !== undefined)
       .map(([key, value]) => `${key}=${value}`)
-      .join(",");
+      .join(',');
 
     console.log(`::error ${data}::${message}`);
   }

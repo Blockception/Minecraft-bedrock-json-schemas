@@ -1,16 +1,16 @@
-import * as JSONC from "comment-json";
-import * as fs from "fs";
-import * as path from "path";
-import { ErrorAnnotation, Github } from "./github";
-import { Files } from "./utillity";
+import * as JSONC from 'comment-json';
+import * as fs from 'fs';
+import * as path from 'path';
+import { ErrorAnnotation, Github } from './github';
+import { Files } from './utillity';
 
-describe("Validate", function () {
-  const folder = path.join(Files.TestFolder(), "..", "source");
+describe('Validate', function () {
+  const folder = path.join(Files.TestFolder(), '..', 'source');
   const files = Files.GetFiles(folder);
   expect(files.length).toBeGreaterThan(0);
 
-  test.each(files)("Validating schema parts: %s", (filepath) => {
-    const data = fs.readFileSync(filepath, "utf8");
+  test.each(files)('Validating schema parts: %s', (filepath) => {
+    const data = fs.readFileSync(filepath, 'utf8');
     const object = JSONC.parse(data) as JsonSchema;
     expect(object).toBeDefined();
     if (!object) {
@@ -40,12 +40,12 @@ class Explorer {
     if (data.$ref) {
       const ref = data.$ref;
 
-      if (!ref.startsWith("#")) {
+      if (!ref.startsWith('#')) {
         const filepath = path.isAbsolute(ref) ? ref : path.join(folder, ref);
 
         if (!fs.existsSync(filepath)) {
           const anno = this.find(ref);
-          anno.title = "Ref not found";
+          anno.title = 'Ref not found';
           anno.file = this.filepath;
 
           Github.createError(`Ref not found: ${ref}`, anno);
@@ -58,7 +58,7 @@ class Explorer {
       const element = data[key];
 
       switch (typeof element) {
-        case "object":
+        case 'object':
           this.explore_refs(element, folder);
           break;
       }
@@ -73,7 +73,7 @@ class Explorer {
     for (let i = lastindex; i < index; i++) {
       const char = this.text[i];
 
-      if (char === "\n") {
+      if (char === '\n') {
         lastindex = i;
         lines++;
       }
