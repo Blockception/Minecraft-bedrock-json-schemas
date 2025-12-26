@@ -49,6 +49,7 @@ For detailed setup instructions for various IDEs and editors, see the [IDE Setup
 ### Other Editors
 
 See the [IDE Setup Guide](docs/guide/ide_setup.md) for instructions on setting up schemas in:
+
 - **Neovim** with LSP
 - **JetBrains IDEs** (IntelliJ IDEA, WebStorm, PyCharm, etc.)
 - **Sublime Text**
