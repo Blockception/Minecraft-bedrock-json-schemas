@@ -4,7 +4,7 @@
   "title": "Move Towards Restriction",
   "additionalProperties": false,
   "description": "Allows Guardians, Iron Golems and Villagers to move within their pre-defined area that the mob should be restricted to. Other mobs don't have a restriction defined.",
-  "required": [ ],
+  "required": [],
   "properties": {
     "priority": {
       "$ref": "./types/priority.json"
@@ -18,7 +18,7 @@
   },
   "examples": [
     {
-      "control_flags": [ ]
+      "control_flags": []
     }
   ]
 }

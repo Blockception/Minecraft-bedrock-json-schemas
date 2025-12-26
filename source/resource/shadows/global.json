@@ -11,13 +11,13 @@
       "description": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
-      "required": [ "shadow_style" ],
+      "required": ["shadow_style"],
       "properties": {
         "shadow_style": {
           "title": "Shadow Style",
           "description": "The type of shadows to use.",
           "type": "string",
-          "enum": [ "blocky_shadows", "soft_shadows" ]
+          "enum": ["blocky_shadows", "soft_shadows"]
         },
         "texel_size": {
           "title": "Texel Size",

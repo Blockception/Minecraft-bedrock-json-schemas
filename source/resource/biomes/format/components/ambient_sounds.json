@@ -28,7 +28,7 @@
     "addition": {
       "title": "Addition",
       "description": "Named sound that occasionally plays at the listener position.",
-      "oneOf": [ { "type": "string" }, { "$ref": "#/definitions/sound_addition" } ] //TODO: Check if this is dependent on format version and flag through diagnoser accordingly
+      "oneOf": [{ "type": "string" }, { "$ref": "#/definitions/sound_addition" }] //TODO: Check if this is dependent on format version and flag through diagnoser accordingly
     },
     "loop": {
       "title": "Loop",

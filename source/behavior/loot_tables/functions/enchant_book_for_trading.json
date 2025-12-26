@@ -13,7 +13,12 @@
       "description": "UNDOCUMENTED.",
       "$comment": "UNDOCUMENTED"
     },
-    "base_cost": { "type": "integer", "title": "Base Cost", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
+    "base_cost": {
+      "type": "integer",
+      "title": "Base Cost",
+      "description": "UNDOCUMENTED.",
+      "$comment": "UNDOCUMENTED"
+    },
     "base_random_cost": {
       "type": "integer",
       "title": "Base Cost",

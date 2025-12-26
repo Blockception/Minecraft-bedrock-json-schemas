@@ -1,389 +1,383 @@
 {
-    "$id": "blockception.minecraft.resource.model.1.8.0",
+  "$id": "blockception.minecraft.resource.model.1.8.0",
+  "type": "object",
+  "title": "Model Schema For 1.8.0",
+  "description": "UNDOCUMENTED.",
+  "$comment": "UNDOCUMENTED",
+  "required": ["format_version"],
+  "properties": {
+    "debug": {
+      "type": "boolean",
+      "description": "UNDOCUMENTED.",
+      "$comment": "UNDOCUMENTED",
+      "title": "Debug"
+    },
+    "format_version": {
+      "title": "1.8.0 Format Version",
+      "type": "string",
+      "pattern": "^1.8.0$",
+      "description": "A version that tells minecraft what type of data format can be expected when reading this file."
+    }
+  },
+  "propertyNames": {
+    "pattern": "(^geometry.[\\:a-zA-Z0-9_\\-\\.]+|format_version)"
+  },
+  "additionalProperties": {
+    "additionalProperties": false,
     "type": "object",
-    "title": "Model Schema For 1.8.0",
-    "description": "UNDOCUMENTED.",
-    "$comment": "UNDOCUMENTED",
-    "required": [
-        "format_version"
-    ],
+    "description": "Geometry specification.",
+    "title": "Geometry",
     "properties": {
-        "debug": {
-            "type": "boolean",
-            "description": "UNDOCUMENTED.",
-            "$comment": "UNDOCUMENTED",
-            "title": "Debug"
-        },
-        "format_version": {
-            "title": "1.8.0 Format Version",
-            "type": "string",
-            "pattern": "^1.8.0$",
-            "description": "A version that tells minecraft what type of data format can be expected when reading this file."
-        }
-    },
-    "propertyNames": {
-        "pattern": "(^geometry.[\\:a-zA-Z0-9_\\-\\.]+|format_version)"
-    },
-    "additionalProperties": {
-        "additionalProperties": false,
-        "type": "object",
-        "description": "Geometry specification.",
-        "title": "Geometry",
-        "properties": {
-            "bones": {
-                "type": "array",
-                "description": "The bones definitions.",
-                "title": "Bones",
-                "items": {
-                    "additionalProperties": false,
-                    "type": "object",
-                    "description": "The bone definition.",
-                    "title": "Bone",
-                    "required": [
-                        "name"
-                    ],
-                    "properties": {
-                        "bind_pose_rotation": {
-                            "type": "array",
-                            "items": [
-                                {
-                                    "type": "number"
-                                },
-                                {
-                                    "type": "number"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
-                        },
-                        "cubes": {
-                            "type": "array",
-                            "items": {
-                                "additionalProperties": false,
-                                "type": "object",
-                                "properties": {
-                                    "inflate": {
-                                        "type": "number"
-                                    },
-                                    "mirror": {
-                                        "type": "boolean"
-                                    },
-                                    "origin": {
-                                        "type": "array",
-                                        "items": [
-                                            {
-                                                "type": "number"
-                                            },
-                                            {
-                                                "type": "number"
-                                            },
-                                            {
-                                                "type": "number"
-                                            }
-                                        ]
-                                    },
-                                    "size": {
-                                        "type": "array",
-                                        "items": [
-                                            {
-                                                "type": "number"
-                                            },
-                                            {
-                                                "type": "number"
-                                            },
-                                            {
-                                                "type": "number"
-                                            }
-                                        ]
-                                    },
-                                    "uv": {
-                                        "type": "array",
-                                        "items": [
-                                            {
-                                                "type": "number"
-                                            },
-                                            {
-                                                "type": "number"
-                                            }
-                                        ]
-                                    }
-                                }
-                            }
-                        },
-                        "debug": {
-                            "type": "boolean"
-                        },
-                        "inflate": {
-                            "type": "number"
-                        },
-                        "locators": {
-                            "type": "object",
-                            "additionalProperties": {
-                                "type": "array",
-                                "items": {
-                                    "type": "number"
-                                }
-                            }
-                        },
-                        "mirror": {
-                            "type": "boolean"
-                        },
-                        "name": {
-                            "type": "string"
-                        },
-                        "neverRender": {
-                            "type": "boolean"
-                        },
-                        "parent": {
-                            "type": "string"
-                        },
-                        "pivot": {
-                            "type": "array",
-                            "items": [
-                                {
-                                    "type": "number"
-                                },
-                                {
-                                    "type": "number"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
-                        },
-                        "poly_mesh": {
-                            "type": "object",
-                            "required": [
-                                "polys"
-                            ],
-                            "title": "Poly Mesh",
-                            "description": "UNDOCUMENTED.",
-                            "$comment": "UNDOCUMENTED",
-                            "additionalProperties": false,
-                            "properties": {
-                                "normalized_uvs": {
-                                    "title": "Normalized Uvs",
-                                    "description": "UNDOCUMENTED.",
-                                    "$comment": "UNDOCUMENTED",
-                                    "type": "boolean"
-                                },
-                                "positions": {
-                                    "title": "Positions",
-                                    "description": "UNDOCUMENTED.",
-                                    "$comment": "UNDOCUMENTED",
-                                    "type": "array",
-                                    "items": [
-                                        {
-                                            "type": "number"
-                                        },
-                                        {
-                                            "type": "number"
-                                        },
-                                        {
-                                            "type": "number"
-                                        }
-                                    ]
-                                },
-                                "normals": {
-                                    "title": "Normals",
-                                    "description": "UNDOCUMENTED.",
-                                    "$comment": "UNDOCUMENTED",
-                                    "type": "array",
-                                    "items": [
-                                        {
-                                            "type": "number"
-                                        },
-                                        {
-                                            "type": "number"
-                                        },
-                                        {
-                                            "type": "number"
-                                        }
-                                    ]
-                                },
-                                "polys": {
-                                    "title": "Polys",
-                                    "description": "UNDOCUMENTED.",
-                                    "$comment": "UNDOCUMENTED",
-                                    "type": "array",
-                                    "items": {
-                                        "type": "array",
-                                        "minItems": 3,
-                                        "maxItems": 4,
-                                        "items": [
-                                            {
-                                                "type": "number"
-                                            },
-                                            {
-                                                "type": "number"
-                                            },
-                                            {
-                                                "type": "number"
-                                            }
-                                        ]
-                                    }
-                                }
-                            }
-                        },
-                        "render_group_id": {
-                            "title": "Render Group Id",
-                            "description": "UNDOCUMENTED.",
-                            "$comment": "UNDOCUMENTED",
-                            "type": "integer",
-                            "minimum": 0
-                        },
-                        "reset": {
-                            "title": "Reset",
-                            "description": "UNDOCUMENTED.",
-                            "$comment": "UNDOCUMENTED",
-                            "type": "boolean"
-                        },
-                        "rotation": {
-                            "title": "Rotation",
-                            "description": "UNDOCUMENTED.",
-                            "$comment": "UNDOCUMENTED",
-                            "type": "array",
-                            "items": [
-                                {
-                                    "type": "number"
-                                },
-                                {
-                                    "type": "number"
-                                },
-                                {
-                                    "type": "number"
-                                }
-                            ]
-                        },
-                        "texture_meshes": {
-                            "type": "array",
-                            "title": "Texture Meshes",
-                            "description": "UNDOCUMENTED.",
-                            "$comment": "UNDOCUMENTED",
-                            "items": {
-                                "type": "object",
-                                "additionalProperties": false,
-                                "properties": {
-                                    "texture": {
-                                        "type": "string"
-                                    },
-                                    "local_pivot": {
-                                        "type": "array",
-                                        "items": [
-                                            {
-                                                "type": "number"
-                                            },
-                                            {
-                                                "type": "number"
-                                            },
-                                            {
-                                                "type": "number"
-                                            }
-                                        ]
-                                    },
-                                    "position": {
-                                        "type": "array",
-                                        "items": [
-                                            {
-                                                "type": "number"
-                                            },
-                                            {
-                                                "type": "number"
-                                            },
-                                            {
-                                                "type": "number"
-                                            }
-                                        ]
-                                    },
-                                    "rotation": {
-                                        "type": "array",
-                                        "items": [
-                                            {
-                                                "type": "number"
-                                            },
-                                            {
-                                                "type": "number"
-                                            },
-                                            {
-                                                "type": "number"
-                                            }
-                                        ]
-                                    },
-                                    "scale": {
-                                        "type": "array",
-                                        "items": [
-                                            {
-                                                "type": "number"
-                                            },
-                                            {
-                                                "type": "number"
-                                            },
-                                            {
-                                                "type": "number"
-                                            }
-                                        ]
-                                    },
-                                    "use_pixel_depth": {
-                                        "title": "Use Pixel Depth",
-                                        "description": "Controls how geometry depth relates to texture resolution",
-                                        "type": "boolean",
-                                        "default": false
-                                    }
-                                }
-                            }
-                        }
-                    }
+      "bones": {
+        "type": "array",
+        "description": "The bones definitions.",
+        "title": "Bones",
+        "items": {
+          "additionalProperties": false,
+          "type": "object",
+          "description": "The bone definition.",
+          "title": "Bone",
+          "required": ["name"],
+          "properties": {
+            "bind_pose_rotation": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
                 }
+              ]
             },
-            "cape": {
-                "title": "Cape",
-                "description": "UNDOCUMENTED.",
-                "$comment": "UNDOCUMENTED",
-                "type": "string"
+            "cubes": {
+              "type": "array",
+              "items": {
+                "additionalProperties": false,
+                "type": "object",
+                "properties": {
+                  "inflate": {
+                    "type": "number"
+                  },
+                  "mirror": {
+                    "type": "boolean"
+                  },
+                  "origin": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ]
+                  },
+                  "size": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ]
+                  },
+                  "uv": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ]
+                  }
+                }
+              }
             },
             "debug": {
-                "title": "Debug",
-                "description": "UNDOCUMENTED.",
-                "$comment": "UNDOCUMENTED",
-                "type": "boolean"
+              "type": "boolean"
             },
-            "texturewidth": {
-                "type": "integer",
-                "description": "UNDOCUMENTED: texturewidth.",
-                "title": "Texturewidth"
+            "inflate": {
+              "type": "number"
             },
-            "textureheight": {
-                "type": "integer",
-                "description": "UNDOCUMENTED: textureheight.",
-                "title": "Textureheight"
-            },
-            "visible_bounds_width": {
-                "type": "number",
-                "description": "UNDOCUMENTED: visible bounds width.",
-                "title": "Visible Bounds Width"
-            },
-            "visible_bounds_height": {
-                "type": "number",
-                "description": "UNDOCUMENTED: visible bounds height.",
-                "title": "Visible Bounds Height"
-            },
-            "visible_bounds_offset": {
+            "locators": {
+              "type": "object",
+              "additionalProperties": {
                 "type": "array",
-                "description": "UNDOCUMENTED: visible bounds offset.",
-                "title": "Visible Bounds Offset",
-                "items": [
+                "items": {
+                  "type": "number"
+                }
+              }
+            },
+            "mirror": {
+              "type": "boolean"
+            },
+            "name": {
+              "type": "string"
+            },
+            "neverRender": {
+              "type": "boolean"
+            },
+            "parent": {
+              "type": "string"
+            },
+            "pivot": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ]
+            },
+            "poly_mesh": {
+              "type": "object",
+              "required": ["polys"],
+              "title": "Poly Mesh",
+              "description": "UNDOCUMENTED.",
+              "$comment": "UNDOCUMENTED",
+              "additionalProperties": false,
+              "properties": {
+                "normalized_uvs": {
+                  "title": "Normalized Uvs",
+                  "description": "UNDOCUMENTED.",
+                  "$comment": "UNDOCUMENTED",
+                  "type": "boolean"
+                },
+                "positions": {
+                  "title": "Positions",
+                  "description": "UNDOCUMENTED.",
+                  "$comment": "UNDOCUMENTED",
+                  "type": "array",
+                  "items": [
                     {
-                        "type": "number"
+                      "type": "number"
                     },
                     {
-                        "type": "number"
+                      "type": "number"
                     },
                     {
-                        "type": "number"
+                      "type": "number"
                     }
-                ]
+                  ]
+                },
+                "normals": {
+                  "title": "Normals",
+                  "description": "UNDOCUMENTED.",
+                  "$comment": "UNDOCUMENTED",
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "number"
+                    }
+                  ]
+                },
+                "polys": {
+                  "title": "Polys",
+                  "description": "UNDOCUMENTED.",
+                  "$comment": "UNDOCUMENTED",
+                  "type": "array",
+                  "items": {
+                    "type": "array",
+                    "minItems": 3,
+                    "maxItems": 4,
+                    "items": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            "render_group_id": {
+              "title": "Render Group Id",
+              "description": "UNDOCUMENTED.",
+              "$comment": "UNDOCUMENTED",
+              "type": "integer",
+              "minimum": 0
+            },
+            "reset": {
+              "title": "Reset",
+              "description": "UNDOCUMENTED.",
+              "$comment": "UNDOCUMENTED",
+              "type": "boolean"
+            },
+            "rotation": {
+              "title": "Rotation",
+              "description": "UNDOCUMENTED.",
+              "$comment": "UNDOCUMENTED",
+              "type": "array",
+              "items": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "number"
+                }
+              ]
+            },
+            "texture_meshes": {
+              "type": "array",
+              "title": "Texture Meshes",
+              "description": "UNDOCUMENTED.",
+              "$comment": "UNDOCUMENTED",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "texture": {
+                    "type": "string"
+                  },
+                  "local_pivot": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ]
+                  },
+                  "position": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ]
+                  },
+                  "rotation": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ]
+                  },
+                  "scale": {
+                    "type": "array",
+                    "items": [
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      },
+                      {
+                        "type": "number"
+                      }
+                    ]
+                  },
+                  "use_pixel_depth": {
+                    "title": "Use Pixel Depth",
+                    "description": "Controls how geometry depth relates to texture resolution",
+                    "type": "boolean",
+                    "default": false
+                  }
+                }
+              }
             }
+          }
         }
+      },
+      "cape": {
+        "title": "Cape",
+        "description": "UNDOCUMENTED.",
+        "$comment": "UNDOCUMENTED",
+        "type": "string"
+      },
+      "debug": {
+        "title": "Debug",
+        "description": "UNDOCUMENTED.",
+        "$comment": "UNDOCUMENTED",
+        "type": "boolean"
+      },
+      "texturewidth": {
+        "type": "integer",
+        "description": "UNDOCUMENTED: texturewidth.",
+        "title": "Texturewidth"
+      },
+      "textureheight": {
+        "type": "integer",
+        "description": "UNDOCUMENTED: textureheight.",
+        "title": "Textureheight"
+      },
+      "visible_bounds_width": {
+        "type": "number",
+        "description": "UNDOCUMENTED: visible bounds width.",
+        "title": "Visible Bounds Width"
+      },
+      "visible_bounds_height": {
+        "type": "number",
+        "description": "UNDOCUMENTED: visible bounds height.",
+        "title": "Visible Bounds Height"
+      },
+      "visible_bounds_offset": {
+        "type": "array",
+        "description": "UNDOCUMENTED: visible bounds offset.",
+        "title": "Visible Bounds Offset",
+        "items": [
+          {
+            "type": "number"
+          },
+          {
+            "type": "number"
+          },
+          {
+            "type": "number"
+          }
+        ]
+      }
     }
+  }
 }

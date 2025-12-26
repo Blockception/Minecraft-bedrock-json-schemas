@@ -50,19 +50,13 @@
       "title": "Search Strategy",
       "description": "Whether to select the nearest valid container or a random valid container in range.",
       "type": "string",
-      "enum": [
-        "nearest",
-        "random"
-      ]
+      "enum": ["nearest", "random"]
     },
     "search_distance": {
       "title": "Search Distance",
       "description": "The maximum horizontal and vertical distance at which to find containers for taking or placing items.",
       "$ref": "../types/range_number_type.json",
-      "default": [
-        62,
-        32
-      ]
+      "default": [62, 32]
     },
     "max_visited_containers": {
       "title": "Max Visited Containers",
@@ -90,11 +84,7 @@
       "description": "The strategy to use for placing the transported item.\nAny - always place if there is room,\nWith matching - place if there is a matching item in the container,\nWith matching or empty - like With matching but will also place in empty containers.",
       "type": "string",
       "default": "any",
-      "enum": [
-        "any",
-        "with_matching",
-        "with_matching_or_empty"
-      ]
+      "enum": ["any", "with_matching", "with_matching_or_empty"]
     },
     "allowed_items": {
       "description": "A list of item descriptors that are the only items the mob is allowed to transport. If this and \"disallowed_items\" are both empty, then all items are allowed. If non-empty \"disallowed_items\" must be empty. Default value: empty.",

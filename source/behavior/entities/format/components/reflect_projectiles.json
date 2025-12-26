@@ -11,7 +11,7 @@
       "default": 0,
       "anyOf": [
         {
-          "type":"string"
+          "type": "string"
         },
         {
           "type": "number"
@@ -24,7 +24,7 @@
       "default": 0,
       "anyOf": [
         {
-          "type":"string"
+          "type": "string"
         },
         {
           "type": "number"
@@ -34,7 +34,7 @@
     "reflected_projectiles": {
       "title": "Reflected Projectiles",
       "description": "An array of strings defining the types of projectiles that are reflected when they hit the entity.",
-      "type":"array",
+      "type": "array",
       "uniqueItems": true,
       "items": {
         "type": "string"
@@ -46,7 +46,7 @@
       "default": 1,
       "anyOf": [
         {
-          "type":"string"
+          "type": "string"
         },
         {
           "type": "number"
@@ -63,26 +63,26 @@
   "examples": [
     {
       "reflected_projectiles": [
-          "xp_bottle",
-          "thrown_trident",
-          "shulker_bullet",
-          "dragon_fireball",
-          "arrow",
-          "snowball",
-          "egg",
-          "fireball",
-          "splash_potion",
-          "ender_pearl",
-          "wither_skull",
-          "wither_skull_dangerous",
-          "small_fireball",
-          "lingering_potion",
-          "llama_spit",
-          "fireworks_rocket",
-          "fishing_hook"
-        ],
-        "azimuth_angle": "180.0 + Math.random(-20.0, 20.0)",
-        "reflection_scale": "0.5"
+        "xp_bottle",
+        "thrown_trident",
+        "shulker_bullet",
+        "dragon_fireball",
+        "arrow",
+        "snowball",
+        "egg",
+        "fireball",
+        "splash_potion",
+        "ender_pearl",
+        "wither_skull",
+        "wither_skull_dangerous",
+        "small_fireball",
+        "lingering_potion",
+        "llama_spit",
+        "fireworks_rocket",
+        "fishing_hook"
+      ],
+      "azimuth_angle": "180.0 + Math.random(-20.0, 20.0)",
+      "reflection_scale": "0.5"
     }
   ]
 }

@@ -21,7 +21,7 @@
       "title": "Particle Count",
       "description": "Number of particles to spawn on destruction",
       "type": "integer",
-      "default": 100, 
+      "default": 100,
       "maximum": 255
     }
   }

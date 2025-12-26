@@ -10,38 +10,38 @@
       "title": "Color",
       "description": "RGB color of dry foliage",
       "oneOf": [
-          {
-            "type": "string",
-            "format": "colox-hex",
-            "default": "#FFFFFF"
-          },
-          {
-            "type": "array",
-            "items": [
-              {
-                "title": "Red",
-                "type": "integer",
-                "default": 0,
-                "minimum": 0,
-                "maximum": 255
-              },
-              {
-                "title": "Green",
-                "type": "integer",
-                "default": 0,
-                "minimum": 0,
-                "maximum": 255
-              },
-              {
-                "title": "Blue",
-                "type": "integer",
-                "default": 0,
-                "minimum": 0,
-                "maximum": 255
-              }
-            ]
-          }
-        ]
+        {
+          "type": "string",
+          "format": "colox-hex",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "array",
+          "items": [
+            {
+              "title": "Red",
+              "type": "integer",
+              "default": 0,
+              "minimum": 0,
+              "maximum": 255
+            },
+            {
+              "title": "Green",
+              "type": "integer",
+              "default": 0,
+              "minimum": 0,
+              "maximum": 255
+            },
+            {
+              "title": "Blue",
+              "type": "integer",
+              "default": 0,
+              "minimum": 0,
+              "maximum": 255
+            }
+          ]
+        }
+      ]
     }
   }
 }

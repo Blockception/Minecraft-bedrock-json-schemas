@@ -4,7 +4,7 @@
   "title": "Float",
   "description": "Allows the mob to stay afloat while swimming.",
   "additionalProperties": false,
-  "required": [ ],
+  "required": [],
   "properties": {
     "priority": {
       "$ref": "./types/priority.json"

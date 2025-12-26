@@ -7,12 +7,12 @@
   "required": [],
   "properties": {
     "value": {
-      "type": "integer",      
+      "type": "integer",
       "title": "Value",
       "description": "The initial value of player saturation."
     },
     "max": {
-      "type": "integer",      
+      "type": "integer",
       "title": "Maximum",
       "description": "The maximum player saturation value."
     }

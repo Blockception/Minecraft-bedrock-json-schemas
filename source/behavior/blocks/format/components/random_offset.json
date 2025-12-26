@@ -14,7 +14,8 @@
           "description": "This is the range of possible values we can pick from",
           "type": "object",
           "additionalProperties": false,
-          "properties": { //TODO: Find out if -4 and 4 are the min and max values allowed
+          "properties": {
+            //TODO: Find out if -4 and 4 are the min and max values allowed
             "min": {
               "title": "Min",
               "description": "Lower bound",

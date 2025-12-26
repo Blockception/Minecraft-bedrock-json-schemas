@@ -4,7 +4,7 @@
   "title": "Collision Box",
   "additionalProperties": false,
   "description": "Sets the width and height of the Entity's collision box.",
-  "required": [ ],
+  "required": [],
   "properties": {
     "height": {
       "title": "Height",

@@ -11,14 +11,14 @@
       "description": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
-      "required": [ "description" ],
+      "required": ["description"],
       "properties": {
         "description": {
           "title": "Color Grading Description",
           "description": "Contains non-component settings for the color grading settings.",
           "type": "object",
           "additionalProperties": false,
-          "required": [ "identifier" ],
+          "required": ["identifier"],
           "properties": {
             "identifier": {
               "title": "Identifier",
@@ -256,7 +256,7 @@
                   "title": "Type",
                   "description": "The type of temperature color grading to apply",
                   "type": "string",
-                  "enum": [ "white_balance", "color_temperature" ]
+                  "enum": ["white_balance", "color_temperature"]
                 }
               }
             }
@@ -272,7 +272,7 @@
               "title": "Operator",
               "description": "The operator for the tone mapping",
               "type": "string",
-              "enum": [ "reinhard", "reinhard_luma", "reinhard_luminance", "hable", "aces", "generic" ]
+              "enum": ["reinhard", "reinhard_luma", "reinhard_luminance", "hable", "aces", "generic"]
             }
           }
         }

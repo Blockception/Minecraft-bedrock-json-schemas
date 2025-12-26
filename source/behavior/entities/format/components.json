@@ -4,7 +4,7 @@
   "type": "object",
   "title": "Components",
   "description": "A collection of components.",
-  "required": [ ],
+  "required": [],
   "properties": {
     "minecraft:absorption": { "$ref": "./components/attribute.json" },
     "minecraft:addrider": { "$ref": "./components/addrider.json" },
@@ -268,7 +268,9 @@
     "minecraft:behavior.hold_ground": { "$ref": "./behaviors/hold_ground.json" },
     "minecraft:behavior.hurt_by_target": { "$ref": "./behaviors/hurt_by_target.json" },
     "minecraft:behavior.inspect_bookshelf": { "$ref": "./behaviors/inspect_bookshelf.json" },
-    "minecraft:behavior.investigate_suspicious_location": { "$ref": "./behaviors/investigate_suspicious_location.json" },
+    "minecraft:behavior.investigate_suspicious_location": {
+      "$ref": "./behaviors/investigate_suspicious_location.json"
+    },
     "minecraft:behavior.jump_around_target": { "$ref": "./behaviors/jump_around_target.json" },
     "minecraft:behavior.jump_to_block": { "$ref": "./behaviors/jump_to_block.json" },
     "minecraft:behavior.knockback_roar": { "$ref": "./behaviors/knockback_roar.json" },
@@ -295,13 +297,17 @@
     "minecraft:behavior.move_to_random_block": { "$ref": "./behaviors/move_to_random_block.json" },
     "minecraft:behavior.move_to_village": { "$ref": "./behaviors/move_to_village.json" },
     "minecraft:behavior.move_to_water": { "$ref": "./behaviors/move_to_water.json" },
-    "minecraft:behavior.move_towards_dwelling_restriction": { "$ref": "./behaviors/move_towards_dwelling_restriction.json" },
+    "minecraft:behavior.move_towards_dwelling_restriction": {
+      "$ref": "./behaviors/move_towards_dwelling_restriction.json"
+    },
     "minecraft:behavior.move_towards_home_restriction": { "$ref": "./behaviors/move_towards_home_restriction.json" },
     "minecraft:behavior.move_towards_restriction": { "$ref": "./behaviors/move_towards_restriction.json" },
     "minecraft:behavior.move_towards_target": { "$ref": "./behaviors/move_towards_target.json" },
     "minecraft:behavior.nap": { "$ref": "./behaviors/nap.json" },
     "minecraft:behavior.nearest_attackable_target": { "$ref": "./behaviors/nearest_attackable_target.json" },
-    "minecraft:behavior.nearest_prioritized_attackable_target": { "$ref": "./behaviors/nearest_prioritized_attackable_target.json" },
+    "minecraft:behavior.nearest_prioritized_attackable_target": {
+      "$ref": "./behaviors/nearest_prioritized_attackable_target.json"
+    },
     "minecraft:behavior.ocelot_sit_on_block": { "$ref": "./behaviors/ocelot_sit_on_block.json" },
     "minecraft:behavior.ocelotattack": { "$ref": "./behaviors/ocelotattack.json" },
     "minecraft:behavior.offer_flower": { "$ref": "./behaviors/offer_flower.json" },

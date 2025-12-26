@@ -9,14 +9,14 @@
       "description": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
-      "required": [ "description", "directional_lights" ],
+      "required": ["description", "directional_lights"],
       "properties": {
         "description": {
           "title": "Lighting Settings Description",
           "description": "Contains non-component settings for the lighting settings.",
           "type": "object",
           "additionalProperties": false,
-          "required": [ "identifier" ],
+          "required": ["identifier"],
           "properties": {
             "identifier": {
               "title": "Identifier",

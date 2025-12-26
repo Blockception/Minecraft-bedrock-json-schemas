@@ -25,7 +25,7 @@
       "description": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
-      "required": [ "colors" ],
+      "required": ["colors"],
       "properties": {
         "blocks": {
           "title": "Blocks",

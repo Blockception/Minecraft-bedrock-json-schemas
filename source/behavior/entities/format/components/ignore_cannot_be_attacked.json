@@ -4,7 +4,7 @@
   "title": "Ignore Cannot Be Attacked",
   "additionalProperties": false,
   "description": "When set, allows the entity to attack entities that have the \"minecraft:cannot_be_attacked\" component.",
-  "required": [ ],
+  "required": [],
   "properties": {
     "filters": {
       "title": "Filters",

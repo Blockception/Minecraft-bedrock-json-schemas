@@ -43,7 +43,12 @@
                 "$comment": "UNDOCUMENTED",
                 "required": ["path"],
                 "properties": {
-                  "path": { "description": "A texture file.", "type": "string", "pattern": "^textures/.+$", "title": "Path" },
+                  "path": {
+                    "description": "A texture file.",
+                    "type": "string",
+                    "pattern": "^textures/.+$",
+                    "title": "Path"
+                  },
                   "weight": {
                     "type": "integer",
                     "title": "Weight",
@@ -79,7 +84,15 @@
         "additionalProperties": false,
         "properties": {
           "textures": {
-            "oneOf": [{ "$ref": "#/definitions/texture" }, { "description": "A collection of textures.", "title": "Texture Data", "type": "array", "items": { "$ref": "#/definitions/texture" } }]
+            "oneOf": [
+              { "$ref": "#/definitions/texture" },
+              {
+                "description": "A collection of textures.",
+                "title": "Texture Data",
+                "type": "array",
+                "items": { "$ref": "#/definitions/texture" }
+              }
+            ]
           }
         }
       }

@@ -6,7 +6,13 @@
   "required": ["function", "author", "title", "pages"],
   "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "set_book_contents", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Function" },
+    "function": {
+      "type": "string",
+      "const": "set_book_contents",
+      "description": "UNDOCUMENTED.",
+      "$comment": "UNDOCUMENTED",
+      "title": "Function"
+    },
     "author": { "type": "string", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Author" },
     "title": { "type": "string", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Title" },
     "pages": {

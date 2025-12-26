@@ -86,7 +86,7 @@
           "rotation_adjustment": {
             "title": "Rotation Adjustment",
             "description": "Adjusts the rotation at which the entity reaches equilibrium, when \"spring_type\" is set to \"dampened\" or \"quad_dampened\"",
-            "type": "number", 
+            "type": "number",
             "default": 0
           },
           "spring_type": {

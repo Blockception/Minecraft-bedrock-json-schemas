@@ -36,7 +36,11 @@
   "definitions": {
     "animationspec": {
       "anyOf": [
-        { "title": "Animation Specification", "description": "A single string that specifies which animation there are.", "type": "string" },
+        {
+          "title": "Animation Specification",
+          "description": "A single string that specifies which animation there are.",
+          "type": "string"
+        },
         {
           "type": "object",
           "title": "Animation Specification",
@@ -63,8 +67,16 @@
           "description": "Set to false to have the effect spawned in the world without being bound to an actor (by default an effect is bound to the actor).",
           "const": false
         },
-        "effect": { "type": "string", "title": "Effect", "description": "The name of a particle effect that should be played." },
-        "locator": { "type": "string", "title": "Locator", "description": "The name of a locator on the actor where the effect should be located." },
+        "effect": {
+          "type": "string",
+          "title": "Effect",
+          "description": "The name of a particle effect that should be played."
+        },
+        "locator": {
+          "type": "string",
+          "title": "Locator",
+          "description": "The name of a locator on the actor where the effect should be located."
+        },
         "pre_effect_script": {
           "type": "string",
           "title": "Pre Effect Script",
@@ -165,11 +177,10 @@
                         "description": "Valid sound effect names should be listed in the entity's resource_definition json file.",
                         "type": "string"
                       },
-                      "locator": { 
-                        "type": "string", 
-                        "title": "Locator", 
-                        "description": 
-                        "The name of a locator on the actor where the effect should be located." 
+                      "locator": {
+                        "type": "string",
+                        "title": "Locator",
+                        "description": "The name of a locator on the actor where the effect should be located."
                       }
                     }
                   }
@@ -196,7 +207,10 @@
                       "remap_curve": {
                         "title": "Remap Curve",
                         "type": "object",
-                        "additionalProperties": { "propertyNames": { "pattern": "^([\\-\\+0-9]+|[\\-\\+0-9]+.[0-9]+)$" }, "type": "number" }
+                        "additionalProperties": {
+                          "propertyNames": { "pattern": "^([\\-\\+0-9]+|[\\-\\+0-9]+.[0-9]+)$" },
+                          "type": "number"
+                        }
                       }
                     }
                   }
@@ -206,14 +220,26 @@
                   "description": "Sets molang on data on entry.",
                   "$comment": "UNDOCUMENTED",
                   "type": "array",
-                  "items": { "pattern": "^.+=.+;$", "title": "Molang", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "type": "string" }
+                  "items": {
+                    "pattern": "^.+=.+;$",
+                    "title": "Molang",
+                    "description": "UNDOCUMENTED.",
+                    "$comment": "UNDOCUMENTED",
+                    "type": "string"
+                  }
                 },
                 "on_exit": {
                   "title": "On Exit",
                   "description": "Sets molang on data on exit.",
                   "$comment": "UNDOCUMENTED",
                   "type": "array",
-                  "items": { "pattern": "^.+=.+;$", "title": "Molang", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "type": "string" }
+                  "items": {
+                    "pattern": "^.+=.+;$",
+                    "title": "Molang",
+                    "description": "UNDOCUMENTED.",
+                    "$comment": "UNDOCUMENTED",
+                    "type": "string"
+                  }
                 }
               }
             }

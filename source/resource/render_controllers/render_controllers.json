@@ -20,7 +20,11 @@
     {
       "format_version": "1.10.0",
       "render_controllers": {
-        "controller.render.example": { "geometry": "Geometry.default", "materials": [{ "*": "Material.default" }], "textures": ["Texture.default"] }
+        "controller.render.example": {
+          "geometry": "Geometry.default",
+          "materials": [{ "*": "Material.default" }],
+          "textures": ["Texture.default"]
+        }
       }
     }
   ],
@@ -31,7 +35,13 @@
   "definitions": {
     "color": {
       "anyOf": [
-        { "type": "number", "description": "A color definition as number, between 0 and 1.", "minimum": 0, "maximum": 1, "title": "Color Number" },
+        {
+          "type": "number",
+          "description": "A color definition as number, between 0 and 1.",
+          "minimum": 0,
+          "maximum": 1,
+          "title": "Color Number"
+        },
         { "type": "string", "description": "A color definition in molang, between 0 and 1.", "title": "Molang Color" }
       ]
     }
@@ -115,9 +125,21 @@
             "type": "object",
             "properties": {
               "r": { "$ref": "#/definitions/color", "description": "The value of red, between 0 and 1.", "title": "R" },
-              "g": { "$ref": "#/definitions/color", "description": "The value of green, between 0 and 1.", "title": "G" },
-              "b": { "$ref": "#/definitions/color", "description": "The value of blue, between 0 and 1.", "title": "B" },
-              "a": { "$ref": "#/definitions/color", "description": "The value of alpha, between 0 and 1.", "title": "A" }
+              "g": {
+                "$ref": "#/definitions/color",
+                "description": "The value of green, between 0 and 1.",
+                "title": "G"
+              },
+              "b": {
+                "$ref": "#/definitions/color",
+                "description": "The value of blue, between 0 and 1.",
+                "title": "B"
+              },
+              "a": {
+                "$ref": "#/definitions/color",
+                "description": "The value of alpha, between 0 and 1.",
+                "title": "A"
+              }
             },
             "description": "The color to apply.",
             "title": "Color"
@@ -133,7 +155,11 @@
             "title": "Geometry",
             "examples": ["geometry.default"]
           },
-          "ignore_lighting": { "type": "boolean", "description": "Whenever or not to apply enviroment lighting to this object.", "title": "Ignore Lighting" },
+          "ignore_lighting": {
+            "type": "boolean",
+            "description": "Whenever or not to apply enviroment lighting to this object.",
+            "title": "Ignore Lighting"
+          },
           "is_hurt_color": {
             "additionalProperties": false,
             "type": "object",
@@ -141,9 +167,21 @@
             "title": "Is Hurt Color",
             "properties": {
               "r": { "$ref": "#/definitions/color", "description": "The value of red, between 0 and 1.", "title": "R" },
-              "g": { "$ref": "#/definitions/color", "description": "The value of green, between 0 and 1.", "title": "G" },
-              "b": { "$ref": "#/definitions/color", "description": "The value of blue, between 0 and 1.", "title": "B" },
-              "a": { "$ref": "#/definitions/color", "description": "The value of alpha, between 0 and 1.", "title": "A" }
+              "g": {
+                "$ref": "#/definitions/color",
+                "description": "The value of green, between 0 and 1.",
+                "title": "G"
+              },
+              "b": {
+                "$ref": "#/definitions/color",
+                "description": "The value of blue, between 0 and 1.",
+                "title": "B"
+              },
+              "a": {
+                "$ref": "#/definitions/color",
+                "description": "The value of alpha, between 0 and 1.",
+                "title": "A"
+              }
             }
           },
           "light_color_multiplier": {
@@ -175,10 +213,26 @@
             "additionalProperties": false,
             "type": "object",
             "properties": {
-              "r": { "$ref": "#/definitions/color", "description": "The value of red, must result in a float between 0 and 1.", "title": "R" },
-              "g": { "$ref": "#/definitions/color", "description": "The value of green, must result in a float between 0 and 1.", "title": "G" },
-              "b": { "$ref": "#/definitions/color", "description": "The value of blue, must result in a float between 0 and 1.", "title": "B" },
-              "a": { "$ref": "#/definitions/color", "description": "The value of alpha, must result in a float between 0 and 1.", "title": "A" }
+              "r": {
+                "$ref": "#/definitions/color",
+                "description": "The value of red, must result in a float between 0 and 1.",
+                "title": "R"
+              },
+              "g": {
+                "$ref": "#/definitions/color",
+                "description": "The value of green, must result in a float between 0 and 1.",
+                "title": "G"
+              },
+              "b": {
+                "$ref": "#/definitions/color",
+                "description": "The value of blue, must result in a float between 0 and 1.",
+                "title": "B"
+              },
+              "a": {
+                "$ref": "#/definitions/color",
+                "description": "The value of alpha, must result in a float between 0 and 1.",
+                "title": "A"
+              }
             }
           },
           "overlay_color": {
@@ -188,9 +242,21 @@
             "title": "Overlay Color",
             "properties": {
               "r": { "$ref": "#/definitions/color", "description": "The value of red, between 0 and 1.", "title": "R" },
-              "g": { "$ref": "#/definitions/color", "description": "The value of green, between 0 and 1.", "title": "G" },
-              "b": { "$ref": "#/definitions/color", "description": "The value of blue, between 0 and 1.", "title": "B" },
-              "a": { "$ref": "#/definitions/color", "description": "The value of alpha, between 0 and 1.", "title": "A" }
+              "g": {
+                "$ref": "#/definitions/color",
+                "description": "The value of green, between 0 and 1.",
+                "title": "G"
+              },
+              "b": {
+                "$ref": "#/definitions/color",
+                "description": "The value of blue, between 0 and 1.",
+                "title": "B"
+              },
+              "a": {
+                "$ref": "#/definitions/color",
+                "description": "The value of alpha, between 0 and 1.",
+                "title": "A"
+              }
             }
           },
           "part_visibility": {
@@ -235,7 +301,11 @@
                 "type": "array",
                 "minItems": 2,
                 "maxItems": 2,
-                "items": { "$ref": "../../molang/number.json", "description": "The offset to apply on the texture, can be molang.", "title": "Offset" }
+                "items": {
+                  "$ref": "../../molang/number.json",
+                  "description": "The offset to apply on the texture, can be molang.",
+                  "title": "Offset"
+                }
               },
               "scale": {
                 "type": "array",
@@ -243,7 +313,11 @@
                 "title": "Scale",
                 "minItems": 2,
                 "maxItems": 2,
-                "items": { "$ref": "../../molang/number.json", "description": "The scale to apply on the texture, can be molang.", "title": "Scale" }
+                "items": {
+                  "$ref": "../../molang/number.json",
+                  "description": "The scale to apply on the texture, can be molang.",
+                  "title": "Scale"
+                }
               }
             }
           }

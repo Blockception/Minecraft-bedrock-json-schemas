@@ -10,7 +10,7 @@
     {
       "type": "object",
       "additionalProperties": false,
-      "required": [ ],
+      "required": [],
       "properties": {
         "seconds_to_destroy": {
           "title": "Seconds To Destroy",
@@ -27,7 +27,7 @@
             "title": "Item Specific Destroy Speed",
             "type": "object",
             "additionalProperties": false,
-            "required": [ "item", "destroy_speed" ],
+            "required": ["item", "destroy_speed"],
             "properties": {
               "item": {
                 "anyOf": [

@@ -25,14 +25,14 @@
     "restriction_type": {
       "title": "Restriction Type",
       "description": "Defines how the the entity will be restricted to its home position. The possible values are:\n- 'none', which poses no restriction.\n- 'random_movement', which restricts randomized movement to be around the home position.\n- 'all_movement', which restricts any kind of movement to be around the home position. However, entities that somehow got too far away from their home will always be able to move closer to it, if prompted to do so.",
-      "enum": [ "none", "random_movement", "all_movement" ],
+      "enum": ["none", "random_movement", "all_movement"],
       "default": "none"
     }
   },
   "examples": [
     {
       "restriction_radius": -1,
-      "home_block_list": [ ]
+      "home_block_list": []
     }
   ]
 }

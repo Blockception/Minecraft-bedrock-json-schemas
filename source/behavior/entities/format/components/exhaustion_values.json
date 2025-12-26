@@ -32,7 +32,7 @@
     "lunge": {
       "title": "Lunge",
       "description": "Amount of exhaustion applied when triggering the lunge enchantment, multiplied by the enchantment level.",
-      "type": "number", 
+      "type": "number",
       "default": 4
     },
     "mine": {

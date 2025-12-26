@@ -1,4 +1,4 @@
 {
-    "title": "Priority",
-    "$ref": "../../general/integer.json"
+  "title": "Priority",
+  "$ref": "../../general/integer.json"
 }

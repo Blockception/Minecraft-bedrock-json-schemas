@@ -22,8 +22,8 @@
   },
   "examples": [
     {
-      "category" : "attack",
-      "duration" : 0.2
+      "category": "attack",
+      "duration": 0.2
     }
   ]
 }

@@ -6,13 +6,13 @@
   "items": {
     "type": "object",
     "properties": {
-        "focus_identifier": {
-            "$ref": "../../general/string.json"
-        },
-        "focus_change_right": {
-            "$ref": "../../general/string.json",
-            "examples": ["FOCUS_OVERRIDE_STOP"]
-        }
+      "focus_identifier": {
+        "$ref": "../../general/string.json"
+      },
+      "focus_change_right": {
+        "$ref": "../../general/string.json",
+        "examples": ["FOCUS_OVERRIDE_STOP"]
+      }
     }
   }
 }

@@ -22,7 +22,10 @@
           "type": "object",
           "additionalProperties": false,
           "required": ["min", "max"],
-          "properties": { "min": { "type": "integer", "title": "Minimum" }, "max": { "type": "integer", "title": "Maximum" } }
+          "properties": {
+            "min": { "type": "integer", "title": "Minimum" },
+            "max": { "type": "integer", "title": "Maximum" }
+          }
         }
       ]
     },

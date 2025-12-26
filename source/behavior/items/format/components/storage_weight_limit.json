@@ -1,15 +1,15 @@
 {
-    "$id": "blockception.minecraft.behavior.items.minecraft:storage_weight_limit",
-    "title": "Storage Weight Limit",
-    "description": "Specifies the maximum weight limit that a storage item can hold",
-    "type": "object",
-    "properties": {
-        "max_weight_limit": {
-            "title": "Max Weight Limit",
-            "description": "The maximum allowed weight of the sum of all contained items.",
-            "type": "integer",
-            "maximum": 64.0,
-            "default": 64
-        }
+  "$id": "blockception.minecraft.behavior.items.minecraft:storage_weight_limit",
+  "title": "Storage Weight Limit",
+  "description": "Specifies the maximum weight limit that a storage item can hold",
+  "type": "object",
+  "properties": {
+    "max_weight_limit": {
+      "title": "Max Weight Limit",
+      "description": "The maximum allowed weight of the sum of all contained items.",
+      "type": "integer",
+      "maximum": 64.0,
+      "default": 64
     }
+  }
 }

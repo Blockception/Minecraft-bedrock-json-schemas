@@ -38,7 +38,11 @@
           "description": "The components that describe this item.",
           "additionalProperties": false,
           "properties": {
-            "minecraft:icon": { "title": "Icon", "description": "The texture defined in `textures/item_texture.json`", "type": "string" },
+            "minecraft:icon": {
+              "title": "Icon",
+              "description": "The texture defined in `textures/item_texture.json`",
+              "type": "string"
+            },
             "minecraft:render_offsets": {
               "type": "string",
               "description": "The render offset used for the item.",

@@ -1,22 +1,19 @@
 {
-    "title": "Block Ignore",
-    "type": "object",
-    "properties": {
-        "blocks": {
-            "title": "Blocks",
-            "type": "array",
-            "items": {
-                "type": "string"
-            }
-        },
-        "processor_type": {
-            "title": "Processor Type",
-            "type": "string",
-            "const": "minecraft:block_ignore"
-        }
+  "title": "Block Ignore",
+  "type": "object",
+  "properties": {
+    "blocks": {
+      "title": "Blocks",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     },
-    "required": [
-        "blocks",
-        "processor_type"
-    ]
+    "processor_type": {
+      "title": "Processor Type",
+      "type": "string",
+      "const": "minecraft:block_ignore"
+    }
+  },
+  "required": ["blocks", "processor_type"]
 }

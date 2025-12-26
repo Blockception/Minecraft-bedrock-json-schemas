@@ -25,5 +25,5 @@
       "title": "Pushed Towards Closest Space"
     }
   },
-  "examples": [{}, { "has_collision": true, "has_gravity": true }, { "push_towards_closest_space": true}]
+  "examples": [{}, { "has_collision": true, "has_gravity": true }, { "push_towards_closest_space": true }]
 }

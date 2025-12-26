@@ -19,7 +19,10 @@
   "examples": [
     {
       "format_version": "1.8.0",
-      "minecraft:spawn_rules": { "description": { "identifier": "minecraft:entity", "population_control": "ambient" }, "conditions": [{}] }
+      "minecraft:spawn_rules": {
+        "description": { "identifier": "minecraft:entity", "population_control": "ambient" },
+        "conditions": [{}]
+      }
     }
   ],
   "type": "object",
@@ -90,7 +93,9 @@
               "minecraft:spawns_above_block_filter": { "$ref": "./components/spawns_above_block_filter.json" },
               "minecraft:spawns_lava": { "$ref": "./components/spawns_lava.json" },
               "minecraft:spawns_on_block_filter": { "$ref": "./components/spawns_on_block_filter.json" },
-              "minecraft:spawns_on_block_prevented_filter": { "$ref": "./components/spawns_on_block_prevented_filter.json" },
+              "minecraft:spawns_on_block_prevented_filter": {
+                "$ref": "./components/spawns_on_block_prevented_filter.json"
+              },
               "minecraft:spawns_on_surface": { "$ref": "./components/spawns_on_surface.json" },
               "minecraft:spawns_underground": { "$ref": "./components/spawns_underground.json" },
               "minecraft:spawns_underwater": { "$ref": "./components/spawns_underwater.json" },

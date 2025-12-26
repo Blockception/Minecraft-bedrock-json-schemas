@@ -135,7 +135,13 @@
           "$comment": "UNDOCUMENTED",
           "enum": ["Always", "Equal", "NotEqual"]
         },
-        "stencilPass": { "type": "string", "title": "Stencil Pass", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "enum": ["Replace"] },
+        "stencilPass": {
+          "type": "string",
+          "title": "Stencil Pass",
+          "description": "UNDOCUMENTED.",
+          "$comment": "UNDOCUMENTED",
+          "enum": ["Replace"]
+        },
         "stencilPassOp": {
           "type": "string",
           "title": "Stencil Depth Fail Operation",
@@ -235,7 +241,19 @@
         "title": "Variant",
         "description": "UNDOCUMENTED.",
         "$comment": "UNDOCUMENTED",
-        "propertyNames": { "enum": ["fading", "fog", "fog.underwater", "lit", "skinning", "skinning_color", "skinning_alphatest", "underlava", "underwater"] },
+        "propertyNames": {
+          "enum": [
+            "fading",
+            "fog",
+            "fog.underwater",
+            "lit",
+            "skinning",
+            "skinning_color",
+            "skinning_alphatest",
+            "underlava",
+            "underwater"
+          ]
+        },
         "additionalProperties": {
           "title": "Variant Item",
           "description": "UNDOCUMENTED.",
@@ -251,16 +269,32 @@
       "$comment": "UNDOCUMENTED",
       "additionalProperties": false,
       "properties": {
-        "+defines": { "title": "Defines", "description": "UNDOCUMENTED, Add definitions???.", "$ref": "#/definitions/DefinesSpecification" },
+        "+defines": {
+          "title": "Defines",
+          "description": "UNDOCUMENTED, Add definitions???.",
+          "$ref": "#/definitions/DefinesSpecification"
+        },
         "vertexFields": {
           "title": "Vertex Fields",
           "description": "UNDOCUMENTED.",
           "$comment": "UNDOCUMENTED",
           "$ref": "#/definitions/VertexFieldsSpecification"
         },
-        "states": { "title": "States", "description": "UNDOCUMENTED, start states???.", "$ref": "#/definitions/StatesSpecification" },
-        "+states": { "title": "States", "description": "UNDOCUMENTED, Add additional states???.", "$ref": "#/definitions/StatesSpecification" },
-        "-states": { "title": "States", "description": "UNDOCUMENTED, remove additional states???.", "$ref": "#/definitions/StatesSpecification" }
+        "states": {
+          "title": "States",
+          "description": "UNDOCUMENTED, start states???.",
+          "$ref": "#/definitions/StatesSpecification"
+        },
+        "+states": {
+          "title": "States",
+          "description": "UNDOCUMENTED, Add additional states???.",
+          "$ref": "#/definitions/StatesSpecification"
+        },
+        "-states": {
+          "title": "States",
+          "description": "UNDOCUMENTED, remove additional states???.",
+          "$ref": "#/definitions/StatesSpecification"
+        }
       }
     }
   },
@@ -294,7 +328,12 @@
             "$comment": "UNDOCUMENTED",
             "enum": ["DestColor", "OneMinusSrcAlpha"]
           },
-          "backFace": { "title": "Back Face", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/FaceSpecification" },
+          "backFace": {
+            "title": "Back Face",
+            "description": "UNDOCUMENTED.",
+            "$comment": "UNDOCUMENTED",
+            "$ref": "#/definitions/FaceSpecification"
+          },
           "blendDst": {
             "type": "string",
             "title": "Blend Distance",
@@ -314,8 +353,16 @@
             "description": "UNDOCUMENTED, sets or starts definitions???.",
             "$ref": "#/definitions/DefinesSpecification"
           },
-          "+defines": { "title": "Defines", "description": "UNDOCUMENTED, Add definitions???.", "$ref": "#/definitions/DefinesSpecification" },
-          "-defines": { "title": "Defines", "description": "UNDOCUMENTED, removes definitions???.", "$ref": "#/definitions/DefinesSpecification" },
+          "+defines": {
+            "title": "Defines",
+            "description": "UNDOCUMENTED, Add definitions???.",
+            "$ref": "#/definitions/DefinesSpecification"
+          },
+          "-defines": {
+            "title": "Defines",
+            "description": "UNDOCUMENTED, removes definitions???.",
+            "$ref": "#/definitions/DefinesSpecification"
+          },
           "depthBias": {
             "type": "number",
             "title": "Depth Bias",
@@ -389,9 +436,21 @@
             "description": "UNDOCUMENTED.",
             "$comment": "UNDOCUMENTED"
           },
-          "states": { "title": "States", "description": "UNDOCUMENTED, start states???.", "$ref": "#/definitions/StatesSpecification" },
-          "+states": { "title": "States", "description": "UNDOCUMENTED, Add additional states???.", "$ref": "#/definitions/StatesSpecification" },
-          "-states": { "title": "States", "description": "UNDOCUMENTED, remove additional states???.", "$ref": "#/definitions/StatesSpecification" },
+          "states": {
+            "title": "States",
+            "description": "UNDOCUMENTED, start states???.",
+            "$ref": "#/definitions/StatesSpecification"
+          },
+          "+states": {
+            "title": "States",
+            "description": "UNDOCUMENTED, Add additional states???.",
+            "$ref": "#/definitions/StatesSpecification"
+          },
+          "-states": {
+            "title": "States",
+            "description": "UNDOCUMENTED, remove additional states???.",
+            "$ref": "#/definitions/StatesSpecification"
+          },
           "stencilRef": {
             "type": "integer",
             "title": "Stencil Ref",
@@ -416,8 +475,16 @@
             "description": "UNDOCUMENTED.",
             "$comment": "UNDOCUMENTED"
           },
-          "variants": { "title": "Variants", "description": "UNDOCUMENTED, sets the variants?.", "$ref": "#/definitions/VariantSpecification" },
-          "+variants": { "title": "Variants", "description": "UNDOCUMENTED, adds variants?.", "$ref": "#/definitions/VariantSpecification" },
+          "variants": {
+            "title": "Variants",
+            "description": "UNDOCUMENTED, sets the variants?.",
+            "$ref": "#/definitions/VariantSpecification"
+          },
+          "+variants": {
+            "title": "Variants",
+            "description": "UNDOCUMENTED, adds variants?.",
+            "$ref": "#/definitions/VariantSpecification"
+          },
           "vertexFields": {
             "title": "Vertex Fields",
             "description": "UNDOCUMENTED.",

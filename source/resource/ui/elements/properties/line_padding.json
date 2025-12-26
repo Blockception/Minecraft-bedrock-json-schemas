@@ -1,4 +1,4 @@
 {
-    "title": "Line Padding",
-    "$ref": "../../general/number.json"
+  "title": "Line Padding",
+  "$ref": "../../general/number.json"
 }

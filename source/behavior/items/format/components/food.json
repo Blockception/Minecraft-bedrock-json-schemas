@@ -11,7 +11,12 @@
       "type": "boolean",
       "default": false
     },
-    "nutrition": { "title": "Nutrition", "description": "How much nutrition does this food item give the player when eaten.", "type": "integer", "default": 0 },
+    "nutrition": {
+      "title": "Nutrition",
+      "description": "How much nutrition does this food item give the player when eaten.",
+      "type": "integer",
+      "default": 0
+    },
     "saturation_modifier": {
       "title": "Saturation Modifier",
       "description": "Saturation Modifier is used in this formula: (nutrition * saturation_modifier * 2) when appling the saturation buff. Which happens when you eat the item.",

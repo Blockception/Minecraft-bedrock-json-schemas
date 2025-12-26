@@ -1,10 +1,10 @@
 {
-    "$id": "blockception.minecraft.behavior.items.minecraft.custom_components",
-    "title": "Custom Components",
-    "description": "Used to register custom components.",
-    "additionalProperties": false,
-    "type": "array",
-    "items": {
-        "type": "string"
-    }
+  "$id": "blockception.minecraft.behavior.items.minecraft.custom_components",
+  "title": "Custom Components",
+  "description": "Used to register custom components.",
+  "additionalProperties": false,
+  "type": "array",
+  "items": {
+    "type": "string"
+  }
 }

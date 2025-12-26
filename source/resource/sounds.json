@@ -42,10 +42,14 @@
         {
           "type": "object",
           "additionalProperties": false,
-          "required": [ "sound" ],
+          "required": ["sound"],
           "properties": {
             "volume": { "$ref": "#/definitions/volume" },
-            "sound": { "type": "string", "title": "Sound Event", "description": "The sound event described in sound_definitions.json" },
+            "sound": {
+              "type": "string",
+              "title": "Sound Event",
+              "description": "The sound event described in sound_definitions.json"
+            },
             "pitch": { "$ref": "#/definitions/pitch" }
           }
         }
@@ -171,7 +175,12 @@
       "description": "Individual event sounds definitions.",
       "additionalProperties": false,
       "properties": {
-        "events": { "type": "object", "title": "Events", "description": "Events.", "additionalProperties": { "$ref": "#/definitions/sound_event" } }
+        "events": {
+          "type": "object",
+          "title": "Events",
+          "description": "Events.",
+          "additionalProperties": { "$ref": "#/definitions/sound_event" }
+        }
       }
     },
     "interactive_sounds": {
@@ -195,7 +204,7 @@
               "events": {
                 "type": "object",
                 "title": "Events",
-                "propertyNames": { "enum": [ "default", "fall", "step", "hit", "jump", "land" ] },
+                "propertyNames": { "enum": ["default", "fall", "step", "hit", "jump", "land"] },
                 "additionalProperties": {
                   "title": "Sound Event",
                   "description": "A single sound event definition.",
@@ -207,7 +216,11 @@
                       "minProperties": 1,
                       "properties": {
                         "volume": { "$ref": "#/definitions/volume" },
-                        "sound": { "type": "string", "title": "Sound Event", "description": "The sound event described in sound_definitions.json" },
+                        "sound": {
+                          "type": "string",
+                          "title": "Sound Event",
+                          "description": "The sound event described in sound_definitions.json"
+                        },
                         "pitch": { "$ref": "#/definitions/pitch" }
                       }
                     }

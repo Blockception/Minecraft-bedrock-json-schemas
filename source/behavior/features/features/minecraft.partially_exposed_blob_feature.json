@@ -3,7 +3,12 @@
   "title": "Partially Exposed Blob Feature",
   "description": "'minecraft:partially_exposed_blob_feature' generates a blob of the specified block with the specified dimensions For the most part the blob is embedded in the specified surface, however a single side is allowed to be exposed.",
   "additionalProperties": false,
-  "required": ["places_block", "description", "placement_radius_around_floor", "placement_probability_per_valid_position"],
+  "required": [
+    "places_block",
+    "description",
+    "placement_radius_around_floor",
+    "placement_probability_per_valid_position"
+  ],
   "properties": {
     "description": {
       "$ref": "../types/description.json"
@@ -23,7 +28,7 @@
     "placement_probability_per_valid_position": {
       "title": "Placement Probability Per Valid Position",
       "description": "The probability of trying to place a block at each position within the placement bounds.",
-      "type": "number", 
+      "type": "number",
       "minimum": 0,
       "maximum": 1
     },
@@ -31,15 +36,7 @@
       "title": "Exposed Face",
       "description": "Defines a block face that is allowed to be exposed to air and/or water. Other faces need to be embedded for blocks to be placed by this feature. Defaults to upwards face",
       "default": "up",
-      "enum": [
-        "up",
-        "down",
-        "side",
-        "north",
-        "east",
-        "west",
-        "south"
-      ]
+      "enum": ["up", "down", "side", "north", "east", "west", "south"]
     }
   }
 }

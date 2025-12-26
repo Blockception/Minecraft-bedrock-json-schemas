@@ -20,7 +20,7 @@
     {
       "type": "string",
       "description": "A predefined color name.",
-      "enum": [ "black", "white" ]
+      "enum": ["black", "white"]
     },
     {
       "type": "array",

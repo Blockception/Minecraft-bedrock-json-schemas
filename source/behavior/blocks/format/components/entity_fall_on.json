@@ -4,7 +4,7 @@
   "description": "Required component to use the custom component `onEntityFallOn`.",
   "type": "object",
   "additionalProperties": false,
-  "required": [ ],
+  "required": [],
   "properties": {
     "min_fall_distance": {
       "title": "Min Fall Distance",

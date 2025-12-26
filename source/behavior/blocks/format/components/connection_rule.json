@@ -1,16 +1,16 @@
 {
-    "$id": "blockception.minecraft.behavior.blocks.minecraft.connection_rule",
-    "title": "Connection Rule",
-    "description": "Allows custom blocks to define whether other blocks with connection behavior - such as fences, walls, bars, and glass panes - can try to create a connection.",
-    "type": "object",
-    "additionalProperties": false,
-    "required": [ "shape" ],
-    "properties": {
-        "accepts_connections_from": {
-            "title": "Accepts Connections From",
-            "description": "Preset of blocks to accept connections from",
-            "type": "string",
-            "examples": [ "only_fences" ]
-        }
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.connection_rule",
+  "title": "Connection Rule",
+  "description": "Allows custom blocks to define whether other blocks with connection behavior - such as fences, walls, bars, and glass panes - can try to create a connection.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["shape"],
+  "properties": {
+    "accepts_connections_from": {
+      "title": "Accepts Connections From",
+      "description": "Preset of blocks to accept connections from",
+      "type": "string",
+      "examples": ["only_fences"]
     }
+  }
 }

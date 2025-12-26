@@ -22,7 +22,7 @@
           "title": "Destroy Chance Modifier",
           "description": "A modifier affecting the chance that this block will be destroyed by flames when on fire.",
           "type": "number",
-          "default":20
+          "default": 20
         }
       }
     }

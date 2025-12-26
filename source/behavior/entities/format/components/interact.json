@@ -119,7 +119,7 @@
             "y_offset": {
               "title": "Y Offset",
               "description": "Will offset the items spawn position this amount in the y direction.",
-              "type": "number", 
+              "type": "number",
               "minimum": 1
             }
           }
@@ -163,7 +163,15 @@
         "drop_item_slot": {
           "title": "Drop Item Slot",
           "type": "string",
-          "enum": ["slot.armor.head", "slot.armor.chest", "slot.armor.legs", "slot.armor.feet", "slot.armor.body", "slot.weapon.offhand", "slot.weapon.mainhand"],
+          "enum": [
+            "slot.armor.head",
+            "slot.armor.chest",
+            "slot.armor.legs",
+            "slot.armor.feet",
+            "slot.armor.body",
+            "slot.weapon.offhand",
+            "slot.weapon.mainhand"
+          ],
           "description": "The entity's equipment slot to remove and drop the item from, if any, upon successful interaction."
         },
         "drop_item_y_offset": {
@@ -176,7 +184,15 @@
           "title": "Equip Item Slot",
           "type": "string",
           "description": "The entity's equipment slot to equip the item to, if any, upon successful interaction.",
-          "enum": ["slot.armor.head", "slot.armor.chest", "slot.armor.legs", "slot.armor.feet", "slot.armor.body", "slot.weapon.offhand", "slot.weapon.mainhand"]
+          "enum": [
+            "slot.armor.head",
+            "slot.armor.chest",
+            "slot.armor.legs",
+            "slot.armor.feet",
+            "slot.armor.body",
+            "slot.weapon.offhand",
+            "slot.weapon.mainhand"
+          ]
         },
         "repair_entity_item": {
           "title": "Repair Entity Item",
@@ -193,7 +209,15 @@
               "title": "Slot",
               "description": "The entity's slot containing the item to be repaired.",
               "type": "string",
-              "enum": ["slot.armor.head", "slot.armor.chest", "slot.armor.legs", "slot.armor.feet", "slot.armor.body", "slot.weapon.offhand", "slot.weapon.mainhand"]
+              "enum": [
+                "slot.armor.head",
+                "slot.armor.chest",
+                "slot.armor.legs",
+                "slot.armor.feet",
+                "slot.armor.body",
+                "slot.weapon.offhand",
+                "slot.weapon.mainhand"
+              ]
             }
           }
         }

@@ -14,7 +14,15 @@
           "title": "Protection Slot",
           "description": "Allows specifying an equipment slot that should provide protection from burning in daylight",
           "type": "string",
-          "enum": [ "slot.armor.head", "slot.armor.chest", "slot.armor.legs", "slot.armor.feet", "slot.armor.body", "slot.weapon.offhand", "slot.weapon.mainhand" ]
+          "enum": [
+            "slot.armor.head",
+            "slot.armor.chest",
+            "slot.armor.legs",
+            "slot.armor.feet",
+            "slot.armor.body",
+            "slot.weapon.offhand",
+            "slot.weapon.mainhand"
+          ]
         }
       }
     }

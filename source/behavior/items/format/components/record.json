@@ -1,29 +1,28 @@
 {
-    "$id": "blockception.minecraft.behavior.items.minecraft:record",
-    "title": "Record",
-    "description": "Used by record items to play music.",
-    "type": "object",
-    "additionalProperties": false,
-    "required": ["sound_event"],
-    "properties": {
-      "comparator_signal": {
-        "title": "Comparator Signal",
-        "description": "Signal strength for comparator blocks to use, from 1 - 13",
-        "type": "number", 
-        "minimum": 1,
-        "maximum": 13
-      },
-      "duration": {
-        "title": "Duration",
-        "description": "Duration of sound event in seconds, float value.",
-        "type": "number",
-        "minimum": 0
-      },
-      "sound_event": {
-        "title": "Sound Event",
-        "description": "Sound event type: 13, cat, blocks, chirp, far, mall, mellohi, stal, strad, ward, 11, wait, pigstep, otherside, 5, relic.",
-        "type": "string"
-      }
+  "$id": "blockception.minecraft.behavior.items.minecraft:record",
+  "title": "Record",
+  "description": "Used by record items to play music.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["sound_event"],
+  "properties": {
+    "comparator_signal": {
+      "title": "Comparator Signal",
+      "description": "Signal strength for comparator blocks to use, from 1 - 13",
+      "type": "number",
+      "minimum": 1,
+      "maximum": 13
+    },
+    "duration": {
+      "title": "Duration",
+      "description": "Duration of sound event in seconds, float value.",
+      "type": "number",
+      "minimum": 0
+    },
+    "sound_event": {
+      "title": "Sound Event",
+      "description": "Sound event type: 13, cat, blocks, chirp, far, mall, mellohi, stal, strad, ward, 11, wait, pigstep, otherside, 5, relic.",
+      "type": "string"
     }
   }
-  
+}

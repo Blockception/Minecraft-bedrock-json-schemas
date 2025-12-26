@@ -4,7 +4,7 @@
   "type": "object",
   "title": "Healable",
   "additionalProperties": false,
-  "required": [ ],
+  "required": [],
   "definitions": {
     "effect": {
       "type": "object",
@@ -95,7 +95,7 @@
   "examples": [
     {
       "force_use": false,
-      "items": [ ]
+      "items": []
     }
   ]
 }

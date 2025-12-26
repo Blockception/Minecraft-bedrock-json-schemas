@@ -25,11 +25,18 @@
       "minItems": 1,
       "items": { "type": "string", "title": "Pattern" }
     },
-    "priority": { "type": "integer", "description": "Item used as output for the furnace recipe.", "title": "Priority" },
+    "priority": {
+      "type": "integer",
+      "description": "Item used as output for the furnace recipe.",
+      "title": "Priority"
+    },
     "result": {
       "description": "When input items match the pattern then these items are the result.",
       "title": "Result",
-      "oneOf": [{ "$ref": "./base types/item.json" }, { "type": "array", "items": { "$ref": "./base types/item.json" } }]
+      "oneOf": [
+        { "$ref": "./base types/item.json" },
+        { "type": "array", "items": { "$ref": "./base types/item.json" } }
+      ]
     },
     "assume_symmetry": {
       "type": "boolean",

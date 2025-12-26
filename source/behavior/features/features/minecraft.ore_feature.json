@@ -45,7 +45,7 @@
     "discard_chance_on_air_exposure": {
       "title": "Discard Chance On Air Exposure",
       "description": "Chance of discarding placement if neighboring block is Air.",
-      "type": "number", 
+      "type": "number",
       "minimum": 0,
       "maximum": 1
     }

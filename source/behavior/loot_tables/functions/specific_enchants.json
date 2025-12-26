@@ -71,7 +71,12 @@
     }
   },
   "properties": {
-    "function": { "type": "string", "const": "specific_enchants", "description": "Specific enchants.", "title": "Specific Enchants" },
+    "function": {
+      "type": "string",
+      "const": "specific_enchants",
+      "description": "Specific enchants.",
+      "title": "Specific Enchants"
+    },
     "enchants": {
       "title": "Enchants",
       "description": "A enchanting specification.",

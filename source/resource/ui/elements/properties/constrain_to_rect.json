@@ -1,4 +1,4 @@
 {
-    "title": "Constrain To Rect",
-    "$ref": "../../general/boolean.json"
+  "title": "Constrain To Rect",
+  "$ref": "../../general/boolean.json"
 }

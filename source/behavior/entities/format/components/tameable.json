@@ -3,7 +3,7 @@
   "type": "object",
   "title": "Tameable",
   "description": "Defines the rules for a mob to be tamed by the player.",
-  "required": [ ],
+  "required": [],
   "additionalProperties": false,
   "properties": {
     "probability": {

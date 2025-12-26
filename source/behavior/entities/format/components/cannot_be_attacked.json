@@ -4,6 +4,6 @@
   "title": "Cannot Be Attacked",
   "additionalProperties": false,
   "description": "When set, blocks entities from attacking the owner entity unless they have the \"minecraft:ignore_cannot_be_attacked\" component.",
-  "required": [ ],
-  "properties": { }
+  "required": [],
+  "properties": {}
 }

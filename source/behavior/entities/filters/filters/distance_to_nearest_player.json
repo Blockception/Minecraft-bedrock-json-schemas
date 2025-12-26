@@ -6,7 +6,11 @@
   "required": ["value"],
   "examples": [{ "test": "distance_to_nearest_player", "value": 5.7 }],
   "properties": {
-    "test": { "type": "string", "title": "Test Property", "description": "Compares the distance to the nearest Player with a float value." },
+    "test": {
+      "type": "string",
+      "title": "Test Property",
+      "description": "Compares the distance to the nearest Player with a float value."
+    },
     "operator": { "$ref": "./types/operator.json" },
     "subject": { "$ref": "./types/subject.json" },
     "value": { "type": "number", "description": "(Required) A floating point value.", "title": "Value" }

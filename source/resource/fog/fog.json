@@ -58,7 +58,7 @@
           "description": "Additional fog data which will slowly transition to the distance fog of current biome.",
           "type": "object",
           "default": false,
-          "required": ["init_fog","min_percent", "mid_seconds", "mid_percent", "max_seconds"],
+          "required": ["init_fog", "min_percent", "mid_seconds", "mid_percent", "max_seconds"],
           "properties": {
             "init_fog": {
               "title": "Initial Fog",
@@ -126,7 +126,10 @@
       "type": "object",
       "additionalProperties": false,
       "required": ["max_density"],
-      "examples": [{ "max_density": 0.25 }, { "max_density": 0.25, "max_density_height": 128, "zero_density_height": 20, "uniform": true }],
+      "examples": [
+        { "max_density": 0.25 },
+        { "max_density": 0.25, "max_density_height": 128, "zero_density_height": 20, "uniform": true }
+      ],
       "properties": {
         "max_density": {
           "title": "Maximum Density",
@@ -149,7 +152,11 @@
           "maximum": 128,
           "type": "number"
         },
-        "uniform": { "title": "Uniform", "description": "When set to true, the density will be uniform across all heights.", "type": "boolean" }
+        "uniform": {
+          "title": "Uniform",
+          "description": "When set to true, the density will be uniform across all heights.",
+          "type": "boolean"
+        }
       }
     },
     "volumeMediaObject": {
@@ -197,14 +204,26 @@
           "type": "object",
           "additionalProperties": false,
           "properties": {
-            "air": { "title": "Air", "description": "The fog settings when the camera is in the air.", "$ref": "#/definitions/defaultFogSettings" },
+            "air": {
+              "title": "Air",
+              "description": "The fog settings when the camera is in the air.",
+              "$ref": "#/definitions/defaultFogSettings"
+            },
             "weather": {
               "title": "Weather",
               "description": " The fog settings for when the camera is in the air with active weather (rain, snow, etc..).",
               "$ref": "#/definitions/defaultFogSettings"
             },
-            "water": { "title": "Water", "description": "The fog settings when the camera is in water.", "$ref": "#/definitions/defaultFogSettings" },
-            "lava": { "title": "Lava", "description": "The fog settings when the camera is in lava.", "$ref": "#/definitions/defaultFogSettings" },
+            "water": {
+              "title": "Water",
+              "description": "The fog settings when the camera is in water.",
+              "$ref": "#/definitions/defaultFogSettings"
+            },
+            "lava": {
+              "title": "Lava",
+              "description": "The fog settings when the camera is in lava.",
+              "$ref": "#/definitions/defaultFogSettings"
+            },
             "lava_resistance": {
               "title": "Lava Resistance",
               "description": "The fog settings when the camera is in lava and the player has the lava resistance effect active.",
@@ -277,13 +296,13 @@
             "henyey_greenstein_g": {
               "title": "Henyey Greenstein G",
               "description": "UNDOCUMENTED",
-              "type": "object", 
+              "type": "object",
               "additionalProperties": false,
               "properties": {
                 "air": {
                   "title": "Air",
                   "description": "UNDOCUMENTED",
-                  "type": "object", 
+                  "type": "object",
                   "additionalProperties": false,
                   "properties": {
                     "henyey_greenstein_g": {
@@ -296,7 +315,7 @@
                 "water": {
                   "title": "Water",
                   "description": "UNDOCUMENTED",
-                  "type": "object", 
+                  "type": "object",
                   "additionalProperties": false,
                   "properties": {
                     "henyey_greenstein_g": {

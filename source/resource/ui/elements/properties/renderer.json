@@ -5,7 +5,7 @@
     {
       "enum": [
         "ui_holo_cursor",
-        "gradient_renderer", 
+        "gradient_renderer",
         "inventory_item_renderer",
         "equipment_preview_renderer",
         "trial_time_renderer",

@@ -5,7 +5,7 @@
   "required": [],
   "anyOf": [
     {
-      "type":"object",
+      "type": "object",
       "additionalProperties": false
     },
     {
@@ -13,8 +13,5 @@
       "default": false
     }
   ],
-  "examples": [
-    true,
-    false
-  ]
+  "examples": [true, false]
 }

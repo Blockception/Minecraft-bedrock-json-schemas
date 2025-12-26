@@ -24,7 +24,9 @@
     "minecraft:single_block_feature": { "$ref": "./features/minecraft.single_block_feature.json" },
     "minecraft:snap_to_surface_feature": { "$ref": "./features/minecraft.snap_to_surface_feature.json" },
     "minecraft:structure_template_feature": { "$ref": "./features/minecraft.structure_template_feature.json" },
-    "minecraft:surface_relative_threshold_feature": { "$ref": "./features/minecraft.surface_relative_threshold_feature.json" },
+    "minecraft:surface_relative_threshold_feature": {
+      "$ref": "./features/minecraft.surface_relative_threshold_feature.json"
+    },
     "minecraft:tree_feature": { "$ref": "./features/minecraft.tree_feature.json" },
     "minecraft:underwater_cave_carver_feature": { "$ref": "./features/minecraft.underwater_cave_carver_feature.json" },
     "minecraft:vegetation_patch_feature": { "$ref": "./features/minecraft.vegetation_patch_feature.json" },

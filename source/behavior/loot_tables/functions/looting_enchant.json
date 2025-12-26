@@ -5,7 +5,13 @@
   "title": "Looting Enchant",
   "type": "object",
   "properties": {
-    "function": { "type": "string", "const": "looting_enchant", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Function" },
+    "function": {
+      "type": "string",
+      "const": "looting_enchant",
+      "description": "UNDOCUMENTED.",
+      "$comment": "UNDOCUMENTED",
+      "title": "Function"
+    },
     "count": {
       "type": "object",
       "properties": { "min": { "type": "integer" }, "max": { "type": "integer" } },

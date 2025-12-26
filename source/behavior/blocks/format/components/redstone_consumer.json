@@ -1,24 +1,24 @@
 {
-    "$id": "blockception.minecraft.behavior.blocks.minecraft.redstone_consumer",
-    "title": "Redstone Consumer",
-    "description": "[EXPERIMENTAL] A component describing how a block can consume and potentially propogate a redstone signal",
-    "type": "object",
-    "additionalProperties": false,
-    "required": [ "min_power" ],
-    "properties": {
-        "min_power": {
-            "title": "Min Power",
-            "description": "Defines the minimum value for incoming signal stregth. If signal strength is greater than or equal to this value then the onRedstoneUpdate event is sent to Scripts.",
-            "type": "integer", 
-            "default": 0,
-            "minimum": 0,
-            "maximum": 15
-        },
-        "propogates_power": {
-            "title": "Propogates Power",
-            "description": "Controls whether a signal can pass through this block or not, defaults to false",
-            "type": "boolean",
-            "default": false
-        }
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.redstone_consumer",
+  "title": "Redstone Consumer",
+  "description": "[EXPERIMENTAL] A component describing how a block can consume and potentially propogate a redstone signal",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["min_power"],
+  "properties": {
+    "min_power": {
+      "title": "Min Power",
+      "description": "Defines the minimum value for incoming signal stregth. If signal strength is greater than or equal to this value then the onRedstoneUpdate event is sent to Scripts.",
+      "type": "integer",
+      "default": 0,
+      "minimum": 0,
+      "maximum": 15
+    },
+    "propogates_power": {
+      "title": "Propogates Power",
+      "description": "Controls whether a signal can pass through this block or not, defaults to false",
+      "type": "boolean",
+      "default": false
     }
+  }
 }

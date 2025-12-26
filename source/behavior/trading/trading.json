@@ -10,7 +10,12 @@
     {
       "tiers": [
         {
-          "trades": [{ "wants": [{ "item": "minecraft:coal:0", "quantity": { "min": 16, "max": 24 } }], "gives": [{ "item": "minecraft:emerald" }] }]
+          "trades": [
+            {
+              "wants": [{ "item": "minecraft:coal:0", "quantity": { "min": 16, "max": 24 } }],
+              "gives": [{ "item": "minecraft:emerald" }]
+            }
+          ]
         }
       ]
     }
@@ -135,7 +140,12 @@
                         }
                       ]
                     },
-                    "price_multiplier": { "title": "Price Multiplier", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "type": "number" },
+                    "price_multiplier": {
+                      "title": "Price Multiplier",
+                      "description": "UNDOCUMENTED.",
+                      "$comment": "UNDOCUMENTED",
+                      "type": "number"
+                    },
                     "functions": { "$ref": "#/definitions/Functions" },
                     "choice": {
                       "title": "Choice",
@@ -179,7 +189,10 @@
               "type": "object",
               "title": "Group",
               "additionalProperties": false,
-              "properties": { "num_to_select": { "title": "Number To Select", "type": "integer" }, "trades": { "$ref": "#/definitions/TradeArray" } }
+              "properties": {
+                "num_to_select": { "title": "Number To Select", "type": "integer" },
+                "trades": { "$ref": "#/definitions/TradeArray" }
+              }
             }
           }
         }

@@ -13,9 +13,18 @@
         }
       },
       "allOf": [
-        { "if": { "properties": { "processor_type": { "const": "direct" } } }, "then": { "$ref": "./pool_aliases/direct.json" } },
-        { "if": { "properties": { "processor_type": { "const": "random" } } }, "then": { "$ref": "./pool_aliases/random.json" } },
-        { "if": { "properties": { "processor_type": { "const": "random_group" } } }, "then": { "$ref": "#/definitions/random_group" } }
+        {
+          "if": { "properties": { "processor_type": { "const": "direct" } } },
+          "then": { "$ref": "./pool_aliases/direct.json" }
+        },
+        {
+          "if": { "properties": { "processor_type": { "const": "random" } } },
+          "then": { "$ref": "./pool_aliases/random.json" }
+        },
+        {
+          "if": { "properties": { "processor_type": { "const": "random_group" } } },
+          "then": { "$ref": "#/definitions/random_group" }
+        }
       ]
     },
     // Inifite loop

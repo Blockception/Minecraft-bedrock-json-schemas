@@ -9,14 +9,14 @@
       "description": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
-      "required": [ "description" ],
+      "required": ["description"],
       "properties": {
         "description": {
           "title": "Cubemap Settings Description",
           "description": "Contains non-component settings for the cubemap settings.",
           "type": "object",
           "additionalProperties": false,
-          "required": [ "identifier" ],
+          "required": ["identifier"],
           "properties": {
             "identifier": {
               "title": "Identifier",
@@ -31,7 +31,8 @@
           "type": "object",
           "additionalProperties": false,
           "properties": {
-            "ambient_light_illuminance": { //TODO: Figure out if it supports "ambient_light_illuminance": 3.2 format instead of keyframe
+            "ambient_light_illuminance": {
+              //TODO: Figure out if it supports "ambient_light_illuminance": 3.2 format instead of keyframe
               "title": "Ambient Light Illuminance",
               "description": "Contains pairs of numbers, where the first number should be between 0.0 and 1.0 (time of day) and the second number should be between 0.0 and 100000.0 (ambient light). Default value is 5.625 for all times of day.",
               "type": "object",

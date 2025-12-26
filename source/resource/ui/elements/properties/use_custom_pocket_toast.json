@@ -1,4 +1,4 @@
 {
-    "title": "Use Custom Pocket Toast",
-    "$ref": "../../general/boolean.json"
+  "title": "Use Custom Pocket Toast",
+  "$ref": "../../general/boolean.json"
 }

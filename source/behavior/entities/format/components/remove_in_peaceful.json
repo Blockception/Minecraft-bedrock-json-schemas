@@ -4,6 +4,6 @@
   "title": "Remove In Peaceful",
   "description": "Denotes entities that are not allowed to exist in \"Peaceful\" difficulty.",
   "additionalProperties": false,
-  "properties": { },
-  "examples": [ { } ]
+  "properties": {},
+  "examples": [{}]
 }

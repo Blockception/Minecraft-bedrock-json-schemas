@@ -4,6 +4,6 @@
   "type": "object",
   "title": "Is Collidable",
   "additionalProperties": false,
-  "required": [ ],
-  "properties": { }
+  "required": [],
+  "properties": {}
 }

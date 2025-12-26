@@ -1,5 +1,5 @@
 {
-    "title": "Camera Tilt Degrees",
-    "description": "The degrees the camera is tilted for a paper doll renderer.",
-    "$ref": "../../general/integer.json"
+  "title": "Camera Tilt Degrees",
+  "description": "The degrees the camera is tilted for a paper doll renderer.",
+  "$ref": "../../general/integer.json"
 }

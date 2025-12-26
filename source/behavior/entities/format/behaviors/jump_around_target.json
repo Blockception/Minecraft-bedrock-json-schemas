@@ -4,7 +4,7 @@
   "title": "Jump Around Target",
   "additionalProperties": false,
   "description": "Allows an entity to jump around a target.",
-  "required": [ ],
+  "required": [],
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
     "check_collision": {
@@ -21,7 +21,7 @@
     "jump_angles": {
       "title": "Jump Angles",
       "type": "array",
-      "default": [ 40.0, 55.0, 60.0, 75.0, 80.0 ],
+      "default": [40.0, 55.0, 60.0, 75.0, 80.0],
       "items": {
         "type": "number"
       },

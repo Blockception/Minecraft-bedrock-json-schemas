@@ -5,7 +5,13 @@
   "description": "If the item to return has a smelted crafting recipe and the loot table is triggered by an entity killed with fire. the result will be the smelted version of the item",
   "title": "Furnace Smelt",
   "properties": {
-    "function": { "type": "string", "const": "furnace_smelt", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Function" },
+    "function": {
+      "type": "string",
+      "const": "furnace_smelt",
+      "description": "UNDOCUMENTED.",
+      "$comment": "UNDOCUMENTED",
+      "title": "Function"
+    },
     "conditions": {
       "title": "Conditions",
       "description": "UNDOCUMENTED.",

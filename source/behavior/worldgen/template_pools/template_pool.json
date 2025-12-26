@@ -1,13 +1,13 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "blockception.minecraft.behavior.worldgen.template_pools.template_pool",
-    "type": "object",
-    "title": "Template Pool",
-    "description": "Used to pair block rules with Structure Templates and to randomly place Structure Templates using a weighted list.",
-    "required": [ "format_version", "minecraft:template_pool" ],
-    "additionalProperties": false,
-    "properties": {
-        "format_version": { "$ref": "../../../general/format_version.json" },
-        "minecraft:template_pool": { "$ref": "./format/minecraft.template_pool.json" }
-    }
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.worldgen.template_pools.template_pool",
+  "type": "object",
+  "title": "Template Pool",
+  "description": "Used to pair block rules with Structure Templates and to randomly place Structure Templates using a weighted list.",
+  "required": ["format_version", "minecraft:template_pool"],
+  "additionalProperties": false,
+  "properties": {
+    "format_version": { "$ref": "../../../general/format_version.json" },
+    "minecraft:template_pool": { "$ref": "./format/minecraft.template_pool.json" }
+  }
 }

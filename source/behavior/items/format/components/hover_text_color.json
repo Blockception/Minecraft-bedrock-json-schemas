@@ -5,7 +5,24 @@
   "examples": ["light_blue", { "value": "light_blue" }],
   "definitions": {
     "color": {
-      "enum": ["black", "blue", "brown", "cyan", "gray", "green", "light_blue", "light_green", "magenta", "orange", "pink", "purple", "red", "silver", "white", "yellow"]
+      "enum": [
+        "black",
+        "blue",
+        "brown",
+        "cyan",
+        "gray",
+        "green",
+        "light_blue",
+        "light_green",
+        "magenta",
+        "orange",
+        "pink",
+        "purple",
+        "red",
+        "silver",
+        "white",
+        "yellow"
+      ]
     }
   },
   "oneOf": [

@@ -16,7 +16,11 @@
   "definitions": {
     "animationspec": {
       "anyOf": [
-        { "title": "Animation Specification", "description": "A single string that specifies which animation there are.", "type": "string" },
+        {
+          "title": "Animation Specification",
+          "description": "A single string that specifies which animation there are.",
+          "type": "string"
+        },
         {
           "type": "object",
           "title": "Animation Specification",
@@ -38,8 +42,16 @@
           "description": "Set to false to have the effect spawned in the world without being bound to an actor (by default an effect is bound to the actor).",
           "const": false
         },
-        "effect": { "type": "string", "description": "The name of a particle effect that should be played.", "title": "Effect" },
-        "locator": { "type": "string", "description": "The name of a locator on the actor where the effect should be located.", "title": "Locator" },
+        "effect": {
+          "type": "string",
+          "description": "The name of a particle effect that should be played.",
+          "title": "Effect"
+        },
+        "locator": {
+          "type": "string",
+          "description": "The name of a locator on the actor where the effect should be located.",
+          "title": "Locator"
+        },
         "pre_effect_script": {
           "type": "string",
           "description": "A molang script that will be run when the particle emitter is initialized.",
@@ -55,7 +67,11 @@
         { "pattern": "^.*=.*;$", "title": "Variable", "description": "Sets the value to a molang variable." },
         { "pattern": "^/[a-z].*$", "title": "Minecraft Command", "description": "Executes a minecraft command." },
         { "pattern": "[A-Za-z][a-z]*\\.[a-z_0-9]*", "title": "Molang" },
-        { "pattern": "^@s .*$", "title": "Event", "description": "An event to be called upon within the executing entity." }
+        {
+          "pattern": "^@s .*$",
+          "title": "Event",
+          "description": "An event to be called upon within the executing entity."
+        }
       ]
     }
   },
@@ -78,7 +94,11 @@
         "additionalProperties": false,
         "propertyNames": { "examples": ["animation.example.foo"] },
         "properties": {
-          "animation_length": { "type": "number", "description": "The time in seconds this animation will last.", "title": "Animation Length" },
+          "animation_length": {
+            "type": "number",
+            "description": "The time in seconds this animation will last.",
+            "title": "Animation Length"
+          },
           "loop": {
             "type": "boolean",
             "description": "If set to true, this animation will loop (as long as it remains active).",

@@ -41,7 +41,12 @@
         "title": "Distance Event",
         "additionalProperties": false,
         "properties": {
-          "distance": { "title": "Distance", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "type": "number" },
+          "distance": {
+            "title": "Distance",
+            "description": "UNDOCUMENTED.",
+            "$comment": "UNDOCUMENTED",
+            "type": "number"
+          },
           "effects": {
             "title": "Effects",
             "description": "UNDOCUMENTED.",

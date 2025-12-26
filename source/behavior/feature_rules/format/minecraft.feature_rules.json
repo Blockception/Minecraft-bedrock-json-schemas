@@ -17,7 +17,7 @@
           "type": "object",
           "description": "Distribution for the coordinate (evaluated each iteration).  Mutually exclusive with Molang expression above.",
           "additionalProperties": false,
-          "examples": [ { "numerator": 1, "denominator": 1 } ],
+          "examples": [{ "numerator": 1, "denominator": 1 }],
           "properties": {
             "numerator": {
               "title": "Numerator",
@@ -46,7 +46,7 @@
               "enum": ["uniform", "fixed_grid", "jittered_grid", "gaussian", "inverse_gaussian", "triangle"]
             },
             "extent": {
-              "title": "Extent", 
+              "title": "Extent",
               "description": "Represents the range of values on which that distribution operates, from minimum to maximum.",
               "type": "array",
               "minItems": 2,
@@ -66,7 +66,7 @@
       "description": "The description of this feature rule.",
       "type": "object",
       "additionalProperties": false,
-      "required": [ "identifier", "places_feature" ],
+      "required": ["identifier", "places_feature"],
       "properties": {
         "identifier": {
           "title": "Identifier",
@@ -86,7 +86,7 @@
       "description": "Parameters to control where and when the feature will be placed.",
       "type": "object",
       "additionalProperties": false,
-      "required": [ "placement_pass" ],
+      "required": ["placement_pass"],
       "properties": {
         "placement_pass": {
           "title": "Placement Pass",
@@ -119,13 +119,13 @@
       "description": "Parameters controlling the initial scatter of the feature.",
       "type": "object",
       "additionalProperties": false,
-      "required": [ "iterations" ],
+      "required": ["iterations"],
       "properties": {
         "coordinate_eval_order": {
           "title": "Coordinate Eval Order",
           "description": "The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. If omitted, defaults to `xzy`.",
           "type": "string",
-          "enum": [ "xyz", "xzy", "yxz", "yzx", "zxy", "zyx" ]
+          "enum": ["xyz", "xzy", "yxz", "yzx", "zxy", "zyx"]
         },
         "iterations": {
           "title": "Iterations",

@@ -79,5 +79,8 @@
       }
     }
   },
-  "oneOf": [{ "type": "array", "items": { "$ref": "#/definitions/entity_definition" } }, { "$ref": "#/definitions/entity_definition" }]
+  "oneOf": [
+    { "type": "array", "items": { "$ref": "#/definitions/entity_definition" } },
+    { "$ref": "#/definitions/entity_definition" }
+  ]
 }

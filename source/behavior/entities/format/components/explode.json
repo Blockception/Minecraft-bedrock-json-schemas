@@ -82,7 +82,7 @@
     "negates_fall_damage": {
       "title": "Negates Fall Damage",
       "description": "Defines whether the explosion should apply fall damage negation to Players above the point of collision.",
-      "type": "boolean", 
+      "type": "boolean",
       "default": false
     },
     "particle_effect": {
@@ -106,7 +106,7 @@
     "toggles_blocks": {
       "title": "Toggles Blocks",
       "description": "If true, the explosion will toggle blocks in the explosion radius.",
-      "type": "boolean", 
+      "type": "boolean",
       "default": false
     }
   },

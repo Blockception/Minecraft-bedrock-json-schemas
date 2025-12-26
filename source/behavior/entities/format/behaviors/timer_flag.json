@@ -15,7 +15,7 @@
         },
         {
           "$ref": "../../../../general/vectors/number2.json",
-          "default": [ 10.0, 10.0 ]
+          "default": [10.0, 10.0]
         }
       ],
       "description": "Goal cooldown range in seconds."
@@ -29,7 +29,7 @@
         },
         {
           "$ref": "../../../../general/vectors/number2.json",
-          "default": [ 2.0, 2.0 ]
+          "default": [2.0, 2.0]
         }
       ],
       "description": "Goal duration range in seconds."

@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.items",
   "additionalProperties": false,
-  "required": [ "description" ],
+  "required": ["description"],
   "type": "object",
   "description": "An item definition.",
   "$comment": "UNDOCUMENTED",

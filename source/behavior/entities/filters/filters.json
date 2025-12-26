@@ -2,7 +2,11 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.filters",
   "title": "Filters",
   "$ref": "#/definitions/groups_spec",
-  "examples": [{ "test": "is_family", "subject": "other", "value": "example" }, { "test": "has_tag", "value": "example" }, []],
+  "examples": [
+    { "test": "is_family", "subject": "other", "value": "example" },
+    { "test": "has_tag", "value": "example" },
+    []
+  ],
   "definitions": {
     "filters_spec": {
       "defaultSnippets": [
@@ -80,100 +84,379 @@
             }
           },
           "allOf": [
-            { "if": { "properties": { "test": { "const": "actor_health" } } }, "then": { "$ref": "./filters/actor_health.json" } },
-            { "if": { "properties": { "test": { "const": "all_slots_empty" } } }, "then": { "$ref": "./filters/all_slots_empty.json" } },
-            { "if": { "properties": { "test": { "const": "any_slots_empty" } } }, "then": { "$ref": "./filters/any_slots_empty.json" } },
-            { "if": { "properties": { "test": { "const": "bool_property" } } }, "then": { "$ref": "./filters/bool_property.json" } },
-            { "if": { "properties": { "test": { "const": "clock_time" } } }, "then": { "$ref": "./filters/clock_time.json" } },
-            { "if": { "properties": { "test": { "const": "distance_to_nearest_player" } } }, "then": { "$ref": "./filters/distance_to_nearest_player.json" } },
-            { "if": { "properties": { "test": { "const": "enum_property" } } }, "then": { "$ref": "./filters/enum_property.json" } },
-            { "if": { "properties": { "test": { "const": "float_property" } } }, "then": { "$ref": "./filters/float_property.json" } },
-            { "if": { "properties": { "test": { "const": "has_ability" } } }, "then": { "$ref": "./filters/has_ability.json" } },
-            { "if": { "properties": { "test": { "const": "has_biome_tag" } } }, "then": { "$ref": "./filters/has_biome_tag.json" } },
-            { "if": { "properties": { "test": { "const": "has_component" } } }, "then": { "$ref": "./filters/has_component.json" } },
-            { "if": { "properties": { "test": { "const": "has_container_open" } } }, "then": { "$ref": "./filters/has_container_open.json" } },
-            { "if": { "properties": { "test": { "const": "has_damage" } } }, "then": { "$ref": "./filters/has_damage.json" } },
-            { "if": { "properties": { "test": { "const": "has_equipment" } } }, "then": { "$ref": "./filters/has_equipment.json" } },
-            { "if": { "properties": { "test": { "const": "has_item_with_component" } } }, "then": { "$ref": "./filters/has_item_with_component.json" } },
-            { "if": { "properties": { "test": { "const": "has_equipment_tag" } } }, "then": { "$ref": "./filters/has_equipment_tag.json" } },
-            { "if": { "properties": { "test": { "const": "has_damaged_equipment" } } }, "then": { "$ref": "./filters/has_damaged_equipment.json" } },
-            { "if": { "properties": { "test": { "const": "has_mob_effect" } } }, "then": { "$ref": "./filters/has_mob_effect.json" } },
-            { "if": { "properties": { "test": { "const": "has_nametag" } } }, "then": { "$ref": "./filters/has_nametag.json" } },
-            { "if": { "properties": { "test": { "const": "has_property" } } }, "then": { "$ref": "./filters/has_property.json" } },
-            { "if": { "properties": { "test": { "const": "has_ranged_weapon" } } }, "then": { "$ref": "./filters/has_ranged_weapon.json" } },
-            { "if": { "properties": { "test": { "const": "has_silk_touch" } } }, "then": { "$ref": "./filters/has_silk_touch.json" } },
-            { "if": { "properties": { "test": { "const": "has_tag" } } }, "then": { "$ref": "./filters/has_tag.json" } },
-            { "if": { "properties": { "test": { "const": "has_target" } } }, "then": { "$ref": "./filters/has_target.json" } },
-            { "if": { "properties": { "test": { "const": "has_trade_supply" } } }, "then": { "$ref": "./filters/has_trade_supply.json" } },
-            { "if": { "properties": { "test": { "const": "home_distance" } } }, "then": { "$ref": "./filters/home_distance.json" } },
-            { "if": { "properties": { "test": { "const": "hourly_clock_time" } } }, "then": { "$ref": "./filters/hourly_clock_time.json" } },
-            { "if": { "properties": { "test": { "const": "in_block" } } }, "then": { "$ref": "./filters/in_block.json" } },
-            { "if": { "properties": { "test": { "const": "in_caravan" } } }, "then": { "$ref": "./filters/in_caravan.json" } },
-            { "if": { "properties": { "test": { "const": "in_clouds" } } }, "then": { "$ref": "./filters/in_clouds.json" } },
-            { "if": { "properties": { "test": { "const": "in_contact_with_water" } } }, "then": { "$ref": "./filters/in_contact_with_water.json" } },
-            { "if": { "properties": { "test": { "const": "in_lava" } } }, "then": { "$ref": "./filters/in_lava.json" } },
-            { "if": { "properties": { "test": { "const": "in_nether" } } }, "then": { "$ref": "./filters/in_nether.json" } },
-            { "if": { "properties": { "test": { "const": "in_overworld" } } }, "then": { "$ref": "./filters/in_overworld.json" } },
-            { "if": { "properties": { "test": { "const": "in_water_or_rain" } } }, "then": { "$ref": "./filters/in_water_or_rain.json" } },
-            { "if": { "properties": { "test": { "const": "in_water" } } }, "then": { "$ref": "./filters/in_water.json" } },
-            { "if": { "properties": { "test": { "const": "inactivity_timer" } } }, "then": { "$ref": "./filters/inactivity_timer.json" } },
-            { "if": { "properties": { "test": { "const": "int_property" } } }, "then": { "$ref": "./filters/int_property.json" } },
-            { "if": { "properties": { "test": { "const": "is_altitude" } } }, "then": { "$ref": "./filters/is_altitude.json" } },
-            { "if": { "properties": { "test": { "const": "is_avoiding_mobs" } } }, "then": { "$ref": "./filters/is_avoiding_mobs.json" } },
-            { "if": { "properties": { "test": { "const": "is_biome" } } }, "then": { "$ref": "./filters/is_biome.json" } },
-            { "if": { "properties": { "test": { "const": "is_block" } } }, "then": { "$ref": "./filters/is_block.json" } },
-            { "if": { "properties": { "test": { "const": "is_bound_to_creaking_heart" } } }, "then": { "$ref": "./filters/is_bound_to_creaking_heart.json" } },
-            { "if": { "properties": { "test": { "const": "is_brightness" } } }, "then": { "$ref": "./filters/is_brightness.json" } },
-            { "if": { "properties": { "test": { "const": "is_climbing" } } }, "then": { "$ref": "./filters/is_climbing.json" } },
-            { "if": { "properties": { "test": { "const": "is_color" } } }, "then": { "$ref": "./filters/is_color.json" } },
-            { "if": { "properties": { "test": { "const": "is_controlling_passenger_family" } } }, "then": { "$ref": "./filters/is_controlling_passenger_family.json" } },
-            { "if": { "properties": { "test": { "const": "is_daytime" } } }, "then": { "$ref": "./filters/is_daytime.json" } },
-            { "if": { "properties": { "test": { "const": "is_difficulty" } } }, "then": { "$ref": "./filters/is_difficulty.json" } },
-            { "if": { "properties": { "test": { "const": "is_family" } } }, "then": { "$ref": "./filters/is_family.json" } },
-            { "if": { "properties": { "test": { "const": "is_game_rule" } } }, "then": { "$ref": "./filters/is_game_rule.json" } },
-            { "if": { "properties": { "test": { "const": "is_humid" } } }, "then": { "$ref": "./filters/is_humid.json" } },
-            { "if": { "properties": { "test": { "const": "is_immobile" } } }, "then": { "$ref": "./filters/is_immobile.json" } },
-            { "if": { "properties": { "test": { "const": "is_in_village" } } }, "then": { "$ref": "./filters/is_in_village.json" } },
-            { "if": { "properties": { "test": { "const": "is_leashed_to" } } }, "then": { "$ref": "./filters/is_leashed_to.json" } },
-            { "if": { "properties": { "test": { "const": "is_leashed" } } }, "then": { "$ref": "./filters/is_leashed.json" } },
-            { "if": { "properties": { "test": { "const": "is_mark_variant" } } }, "then": { "$ref": "./filters/is_mark_variant.json" } },
-            { "if": { "properties": { "test": { "const": "is_missing_health" } } }, "then": { "$ref": "./filters/is_missing_health.json" } },
-            { "if": { "properties": { "test": { "const": "is_moving" } } }, "then": { "$ref": "./filters/is_moving.json" } },
-            { "if": { "properties": { "test": { "const": "is_navigating" } } }, "then": { "$ref": "./filters/is_moving.json" } },
-            { "if": { "properties": { "test": { "const": "is_owner" } } }, "then": { "$ref": "./filters/is_owner.json" } },
-            { "if": { "properties": { "test": { "const": "is_persistent" } } }, "then": { "$ref": "./filters/is_persistent.json" } },
-            { "if": { "properties": { "test": { "const": "is_riding_self" } } }, "then": { "$ref": "./filters/is_riding_self.json" } },
-            { "if": { "properties": { "test": { "const": "is_riding" } } }, "then": { "$ref": "./filters/is_riding.json" } },
-            { "if": { "properties": { "test": { "const": "is_skin_id" } } }, "then": { "$ref": "./filters/is_skin_id.json" } },
-            { "if": { "properties": { "test": { "const": "is_sleeping" } } }, "then": { "$ref": "./filters/is_sleeping.json" } },
-            { "if": { "properties": { "test": { "const": "is_sneak_held" } } }, "then": { "$ref": "./filters/is_sneak_held.json" } },
-            { "if": { "properties": { "test": { "const": "is_sneaking" } } }, "then": { "$ref": "./filters/is_sneaking.json" } },
-            { "if": { "properties": { "test": { "const": "is_snow_covered" } } }, "then": { "$ref": "./filters/is_snow_covered.json" } },
-            { "if": { "properties": { "test": { "const": "is_sitting" } } }, "then": { "$ref": "./filters/is_sitting.json" } },
-            { "if": { "properties": { "test": { "const": "is_target" } } }, "then": { "$ref": "./filters/is_target.json" } },
-            { "if": { "properties": { "test": { "const": "is_temperature_type" } } }, "then": { "$ref": "./filters/is_temperature_type.json" } },
-            { "if": { "properties": { "test": { "const": "is_temperature_value" } } }, "then": { "$ref": "./filters/is_temperature_value.json" } },
-            { "if": { "properties": { "test": { "const": "is_underground" } } }, "then": { "$ref": "./filters/is_underground.json" } },
-            { "if": { "properties": { "test": { "const": "is_underwater" } } }, "then": { "$ref": "./filters/is_underwater.json" } },
-            { "if": { "properties": { "test": { "const": "is_variant" } } }, "then": { "$ref": "./filters/is_variant.json" } },
-            { "if": { "properties": { "test": { "const": "is_vehicle_family" } } }, "then": { "$ref": "./filters/is_vehicle_family.json" } },
-            { "if": { "properties": { "test": { "const": "is_visible" } } }, "then": { "$ref": "./filters/is_visible.json" } },
-            { "if": { "properties": { "test": { "const": "is_waterlogged" } } }, "then": { "$ref": "./filters/is_waterlogged.json" } },
-            { "if": { "properties": { "test": { "const": "light_level" } } }, "then": { "$ref": "./filters/light_level.json" } },
-            { "if": { "properties": { "test": { "const": "moon_intensity" } } }, "then": { "$ref": "./filters/moon_intensity.json" } },
-            { "if": { "properties": { "test": { "const": "moon_phase" } } }, "then": { "$ref": "./filters/moon_phase.json" } },
-            { "if": { "properties": { "test": { "const": "on_ground" } } }, "then": { "$ref": "./filters/on_ground.json" } },
-            { "if": { "properties": { "test": { "const": "on_ladder" } } }, "then": { "$ref": "./filters/on_ladder.json" } },
-            { "if": { "properties": { "test": { "const": "random_chance" } } }, "then": { "$ref": "./filters/random_chance.json" } },
-            { "if": { "properties": { "test": { "const": "rider_count" } } }, "then": { "$ref": "./filters/rider_count.json" } },
-            { "if": { "properties": { "test": { "const": "surface_mob" } } }, "then": { "$ref": "./filters/surface_mob.json" } },
-            { "if": { "properties": { "test": { "const": "taking_fire_damage" } } }, "then": { "$ref": "./filters/taking_fire_damage.json" } },
-            { "if": { "properties": { "test": { "const": "target_distance" } } }, "then": { "$ref": "./filters/target_distance.json" } },
-            { "if": { "properties": { "test": { "const": "owner_distance" } } }, "then": { "$ref": "./filters/owner_distance.json" } },
+            {
+              "if": { "properties": { "test": { "const": "actor_health" } } },
+              "then": { "$ref": "./filters/actor_health.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "all_slots_empty" } } },
+              "then": { "$ref": "./filters/all_slots_empty.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "any_slots_empty" } } },
+              "then": { "$ref": "./filters/any_slots_empty.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "bool_property" } } },
+              "then": { "$ref": "./filters/bool_property.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "clock_time" } } },
+              "then": { "$ref": "./filters/clock_time.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "distance_to_nearest_player" } } },
+              "then": { "$ref": "./filters/distance_to_nearest_player.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "enum_property" } } },
+              "then": { "$ref": "./filters/enum_property.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "float_property" } } },
+              "then": { "$ref": "./filters/float_property.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "has_ability" } } },
+              "then": { "$ref": "./filters/has_ability.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "has_biome_tag" } } },
+              "then": { "$ref": "./filters/has_biome_tag.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "has_component" } } },
+              "then": { "$ref": "./filters/has_component.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "has_container_open" } } },
+              "then": { "$ref": "./filters/has_container_open.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "has_damage" } } },
+              "then": { "$ref": "./filters/has_damage.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "has_equipment" } } },
+              "then": { "$ref": "./filters/has_equipment.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "has_item_with_component" } } },
+              "then": { "$ref": "./filters/has_item_with_component.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "has_equipment_tag" } } },
+              "then": { "$ref": "./filters/has_equipment_tag.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "has_damaged_equipment" } } },
+              "then": { "$ref": "./filters/has_damaged_equipment.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "has_mob_effect" } } },
+              "then": { "$ref": "./filters/has_mob_effect.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "has_nametag" } } },
+              "then": { "$ref": "./filters/has_nametag.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "has_property" } } },
+              "then": { "$ref": "./filters/has_property.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "has_ranged_weapon" } } },
+              "then": { "$ref": "./filters/has_ranged_weapon.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "has_silk_touch" } } },
+              "then": { "$ref": "./filters/has_silk_touch.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "has_tag" } } },
+              "then": { "$ref": "./filters/has_tag.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "has_target" } } },
+              "then": { "$ref": "./filters/has_target.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "has_trade_supply" } } },
+              "then": { "$ref": "./filters/has_trade_supply.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "home_distance" } } },
+              "then": { "$ref": "./filters/home_distance.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "hourly_clock_time" } } },
+              "then": { "$ref": "./filters/hourly_clock_time.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "in_block" } } },
+              "then": { "$ref": "./filters/in_block.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "in_caravan" } } },
+              "then": { "$ref": "./filters/in_caravan.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "in_clouds" } } },
+              "then": { "$ref": "./filters/in_clouds.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "in_contact_with_water" } } },
+              "then": { "$ref": "./filters/in_contact_with_water.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "in_lava" } } },
+              "then": { "$ref": "./filters/in_lava.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "in_nether" } } },
+              "then": { "$ref": "./filters/in_nether.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "in_overworld" } } },
+              "then": { "$ref": "./filters/in_overworld.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "in_water_or_rain" } } },
+              "then": { "$ref": "./filters/in_water_or_rain.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "in_water" } } },
+              "then": { "$ref": "./filters/in_water.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "inactivity_timer" } } },
+              "then": { "$ref": "./filters/inactivity_timer.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "int_property" } } },
+              "then": { "$ref": "./filters/int_property.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_altitude" } } },
+              "then": { "$ref": "./filters/is_altitude.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_avoiding_mobs" } } },
+              "then": { "$ref": "./filters/is_avoiding_mobs.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_biome" } } },
+              "then": { "$ref": "./filters/is_biome.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_block" } } },
+              "then": { "$ref": "./filters/is_block.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_bound_to_creaking_heart" } } },
+              "then": { "$ref": "./filters/is_bound_to_creaking_heart.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_brightness" } } },
+              "then": { "$ref": "./filters/is_brightness.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_climbing" } } },
+              "then": { "$ref": "./filters/is_climbing.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_color" } } },
+              "then": { "$ref": "./filters/is_color.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_controlling_passenger_family" } } },
+              "then": { "$ref": "./filters/is_controlling_passenger_family.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_daytime" } } },
+              "then": { "$ref": "./filters/is_daytime.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_difficulty" } } },
+              "then": { "$ref": "./filters/is_difficulty.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_family" } } },
+              "then": { "$ref": "./filters/is_family.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_game_rule" } } },
+              "then": { "$ref": "./filters/is_game_rule.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_humid" } } },
+              "then": { "$ref": "./filters/is_humid.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_immobile" } } },
+              "then": { "$ref": "./filters/is_immobile.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_in_village" } } },
+              "then": { "$ref": "./filters/is_in_village.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_leashed_to" } } },
+              "then": { "$ref": "./filters/is_leashed_to.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_leashed" } } },
+              "then": { "$ref": "./filters/is_leashed.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_mark_variant" } } },
+              "then": { "$ref": "./filters/is_mark_variant.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_missing_health" } } },
+              "then": { "$ref": "./filters/is_missing_health.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_moving" } } },
+              "then": { "$ref": "./filters/is_moving.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_navigating" } } },
+              "then": { "$ref": "./filters/is_moving.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_owner" } } },
+              "then": { "$ref": "./filters/is_owner.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_persistent" } } },
+              "then": { "$ref": "./filters/is_persistent.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_riding_self" } } },
+              "then": { "$ref": "./filters/is_riding_self.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_riding" } } },
+              "then": { "$ref": "./filters/is_riding.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_skin_id" } } },
+              "then": { "$ref": "./filters/is_skin_id.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_sleeping" } } },
+              "then": { "$ref": "./filters/is_sleeping.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_sneak_held" } } },
+              "then": { "$ref": "./filters/is_sneak_held.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_sneaking" } } },
+              "then": { "$ref": "./filters/is_sneaking.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_snow_covered" } } },
+              "then": { "$ref": "./filters/is_snow_covered.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_sitting" } } },
+              "then": { "$ref": "./filters/is_sitting.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_target" } } },
+              "then": { "$ref": "./filters/is_target.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_temperature_type" } } },
+              "then": { "$ref": "./filters/is_temperature_type.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_temperature_value" } } },
+              "then": { "$ref": "./filters/is_temperature_value.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_underground" } } },
+              "then": { "$ref": "./filters/is_underground.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_underwater" } } },
+              "then": { "$ref": "./filters/is_underwater.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_variant" } } },
+              "then": { "$ref": "./filters/is_variant.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_vehicle_family" } } },
+              "then": { "$ref": "./filters/is_vehicle_family.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_visible" } } },
+              "then": { "$ref": "./filters/is_visible.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "is_waterlogged" } } },
+              "then": { "$ref": "./filters/is_waterlogged.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "light_level" } } },
+              "then": { "$ref": "./filters/light_level.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "moon_intensity" } } },
+              "then": { "$ref": "./filters/moon_intensity.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "moon_phase" } } },
+              "then": { "$ref": "./filters/moon_phase.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "on_ground" } } },
+              "then": { "$ref": "./filters/on_ground.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "on_ladder" } } },
+              "then": { "$ref": "./filters/on_ladder.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "random_chance" } } },
+              "then": { "$ref": "./filters/random_chance.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "rider_count" } } },
+              "then": { "$ref": "./filters/rider_count.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "surface_mob" } } },
+              "then": { "$ref": "./filters/surface_mob.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "taking_fire_damage" } } },
+              "then": { "$ref": "./filters/taking_fire_damage.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "target_distance" } } },
+              "then": { "$ref": "./filters/target_distance.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "owner_distance" } } },
+              "then": { "$ref": "./filters/owner_distance.json" }
+            },
             { "if": { "properties": { "test": { "const": "trusts" } } }, "then": { "$ref": "./filters/trusts.json" } },
-            { "if": { "properties": { "test": { "const": "weather_at_position" } } }, "then": { "$ref": "./filters/weather_at_position.json" } },
-            { "if": { "properties": { "test": { "const": "weather" } } }, "then": { "$ref": "./filters/weather.json" } },
-            { "if": { "properties": { "test": { "const": "y_rotation" } } }, "then": { "$ref": "./filters/y_rotation.json" } },
+            {
+              "if": { "properties": { "test": { "const": "weather_at_position" } } },
+              "then": { "$ref": "./filters/weather_at_position.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "weather" } } },
+              "then": { "$ref": "./filters/weather.json" }
+            },
+            {
+              "if": { "properties": { "test": { "const": "y_rotation" } } },
+              "then": { "$ref": "./filters/y_rotation.json" }
+            },
             { "not": { "properties": { "test": { "const": "is_weather" } }, "$comment": "DEPRECATED" } }
           ]
         }

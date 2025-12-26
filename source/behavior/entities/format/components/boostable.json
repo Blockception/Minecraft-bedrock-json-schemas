@@ -31,7 +31,7 @@
             "default": 1,
             "description": "This is the damage that the item will take each time it is used.",
             "title": "Damage"
-          },          
+          },
           "item": {
             "$ref": "../../../../general/item/descriptor.json",
             "default": "",

@@ -9,13 +9,13 @@
     "movement_modifier": {
       "title": "Movement Modifier",
       "description": "Modifier value to scale the players movement speed when item is in use.",
-      "type": "number", 
+      "type": "number",
       "minimum": 0
     },
     "use_duration": {
       "title": "Use Duration",
       "description": "How long the item takes to use in seconds.",
-      "type": "number", 
+      "type": "number",
       "minimum": 0
     },
     "emit_vibrations": {

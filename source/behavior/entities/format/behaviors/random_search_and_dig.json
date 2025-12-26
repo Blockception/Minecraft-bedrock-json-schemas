@@ -18,7 +18,7 @@
           "$ref": "../../../../general/vectors/number2.json"
         },
         {
-          "type": "number", 
+          "type": "number",
           "minimum": 0
         }
       ]

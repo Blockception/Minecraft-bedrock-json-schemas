@@ -1,308 +1,280 @@
 {
-    "title": "Rule",
-    "type": "object",
-    "definitions": {
-        "rule": {
-            "properties": {
-                "block_entity_modifier": {
-                    "oneOf": [
-                        {
-                            "$ref": "#/definitions/passthrough"
-                        },
-                        {
-                            "$ref": "#/definitions/append_loot"
-                        }
-                    ]
-                },
-                "input_predicate": {
-                    "oneOf": [
-                        {
-                            "$ref": "#/definitions/always_true"
-                        },
-                        {
-                            "$ref": "#/definitions/block_match"
-                        },
-                        {
-                            "$ref": "#/definitions/random_block_match"
-                        },
-                        {
-                            "$ref": "#/definitions/tag_match"
-                        },
-                        {
-                            "$ref": "#/definitions/blockstate_match"
-                        },
-                        {
-                            "$ref": "#/definitions/random_blockstate_match"
-                        }
-                    ]
-                },
-                "location_predicate": {
-                    "oneOf": [
-                        {
-                            "$ref": "#/definitions/always_true"
-                        },
-                        {
-                            "$ref": "#/definitions/block_match"
-                        },
-                        {
-                            "$ref": "#/definitions/random_block_match"
-                        },
-                        {
-                            "$ref": "#/definitions/tag_match"
-                        },
-                        {
-                            "$ref": "#/definitions/blockstate_match"
-                        },
-                        {
-                            "$ref": "#/definitions/random_blockstate_match"
-                        }
-                    ]
-                },
-                "output_state": {
-                    "$ref": "../../../../../general/block/reference.json"
-                },
-                "position_predicate": {
-                    "oneOf": [
-                        {
-                            "$ref": "#/definitions/always_true"
-                        },
-                        {
-                            "$ref": "#/definitions/axis_aligned_linear_pos"
-                        }
-                    ]
-                }
+  "title": "Rule",
+  "type": "object",
+  "definitions": {
+    "rule": {
+      "properties": {
+        "block_entity_modifier": {
+          "oneOf": [
+            {
+              "$ref": "#/definitions/passthrough"
             },
-            "required": [
-                "output_state"
-            ]
-        },
-        "append_loot": {
-            "title": "Append Loot",
-            "description": "Modifier will attempt to add loot to a block entity.",
-            "type": "object",
-            "additionalProperties": false,
-            "required": [ "type", "loot_table" ],
-            "properties": {
-                "loot_table": {
-                    "title": "Loot Table",
-                    "description": "The loot table to append",
-                    "type": "string"
-                },
-                "type": {
-                    "title": "Type",
-                    "type": "string",
-                    "const": "minecraft:append_loot"
-                }
+            {
+              "$ref": "#/definitions/append_loot"
             }
+          ]
         },
-        "passthrough": {
-            "title": "Passthrough",
-            "description": "Modifier that leaves the state unchanged. This is the default block modifier if no other block modifier is specified.",
-            "type": "object",
-            "additionalProperties": false,
-            "required": [ "type" ],
-            "properties": {
-                "type": {
-                    "title": "Type",
-                    "type": "string",
-                    "const": "minecraft:passthrough"
-                }
+        "input_predicate": {
+          "oneOf": [
+            {
+              "$ref": "#/definitions/always_true"
+            },
+            {
+              "$ref": "#/definitions/block_match"
+            },
+            {
+              "$ref": "#/definitions/random_block_match"
+            },
+            {
+              "$ref": "#/definitions/tag_match"
+            },
+            {
+              "$ref": "#/definitions/blockstate_match"
+            },
+            {
+              "$ref": "#/definitions/random_blockstate_match"
             }
+          ]
         },
-        "always_true": {
-            "title": "Always True",
-            "description": "Predicate that always evaluates to true. This is the default predicate if no other predicate is specified.",
-            "type": "object",
-            "additionalProperties": false,
-            "required": [ "predicate_type" ],
-            "properties": {
-                "predicate_type": {
-                    "title": "Predicate Type",
-                    "type": "string",
-                    "const": "minecraft:always_true"
-                }
+        "location_predicate": {
+          "oneOf": [
+            {
+              "$ref": "#/definitions/always_true"
+            },
+            {
+              "$ref": "#/definitions/block_match"
+            },
+            {
+              "$ref": "#/definitions/random_block_match"
+            },
+            {
+              "$ref": "#/definitions/tag_match"
+            },
+            {
+              "$ref": "#/definitions/blockstate_match"
+            },
+            {
+              "$ref": "#/definitions/random_blockstate_match"
             }
+          ]
         },
-        "block_match": {
-            "title": "Block Match",
-            "description": "Predicate that evaluates to true if the block at the specified location matches the specified block.",
-            "type": "object",
-            "properties": {
-                "block": {
-                    "type": "string"
-                },
-                "predicate_type": {
-                    "title": "Predicate Type",
-                    "type": "string",
-                    "const": "minecraft:block_match"
-                }
-            },
-            "required": [
-                "block",
-                "predicate_type"
-            ]
+        "output_state": {
+          "$ref": "../../../../../general/block/reference.json"
         },
-        "random_block_match": {
-            "title": "Random Block Match",
-            "description": "Predicate that evaluates to true with a given probability if the block at the specified location matches the specified block.",
-            "type": "object",
-            "properties": {
-                "block": {
-                    "type": "string"
-                },
-                "predicate_type": {
-                    "title": "Predicate Type",
-                    "type": "string",
-                    "const": "minecraft:random_block_match"
-                },
-                "probability": {
-                    "type": "number",
-                    "description": "Probability of the evaluating to true when the block matches.",
-                    "minimum": 0.0,
-                    "exclusiveMaximum": 1.0
-                }
+        "position_predicate": {
+          "oneOf": [
+            {
+              "$ref": "#/definitions/always_true"
             },
-            "required": [
-                "block",
-                "predicate_type",
-                "probability"
-            ]
-        },
-        "tag_match": {
-            "title": "Tag Match",
-            "description": "Predicate that evaluates to true if the block at the specified location contains the tag.",
-            "type": "object",
-            "properties": {
-                "predicate_type": {
-                    "title": "Predicate Type",
-                    "type": "string",
-                    "const": "minecraft:tag_match"
-                },
-                "tag": {
-                    "title": "Tag",
-                    "description": "The tag to be matched.",
-                    "type": "string"
-                }
-            },
-            "required": [
-                "predicate_type",
-                "tag"
-            ]
-        },
-        "blockstate_match": {
-            "title": "BlockState Match",
-            "description": "Predicate that evaluates to true if the block at the specified location matches the specified block.",
-            "type": "object",
-            "properties": {
-                "block_state": {
-                    "$ref": "../../../../../general/block/reference.json"
-                },
-                "predicate_type": {
-                    "title": "Predicate Type",
-                    "type": "string",
-                    "const": "minecraft:blockstate_match"
-                }
-            },
-            "required": [
-                "block_state",
-                "predicate_type"
-            ]
-        },
-        "random_blockstate_match": {
-            "title": "Random BlockState Match",
-            "description": "Predicate that evaluates to true with a given probability if the block at the specified location matches the specified block.",
-            "type": "object",
-            "properties": {
-                "block_state": {
-                    "$ref": "../../../../../general/block/reference.json"
-                },
-                "predicate_type": {
-                    "title": "Predicate Type",
-                    "type": "string",
-                    "const": "minecraft:random_blockstate_match"
-                },
-                "probability": {
-                    "type": "number",
-                    "description": "Probability of the evaluating to true when the block matches.",
-                    "minimum": 0.0,
-                    "exclusiveMaximum": 1.0
-                }
-            },
-            "required": [
-                "block_state",
-                "predicate_type",
-                "probability"
-            ]
-        },
-        "axis_aligned_linear_pos": {
-            "title": "Axis Aligned Linear",
-            "description": "Predicate that evalutes to true if the block is within the distance range along the provided axis and and random number is generated between chance range.",
-            "type": "object",
-            "properties": {
-                "axis": {
-                    "title": "Axis",
-                    "description": "",
-                    "type": "string",
-                    "enum": [
-                        "x",
-                        "y",
-                        "z"
-                    ]
-                },
-                "max_chance": {
-                    "title": "Max Chance",
-                    "description": "",
-                    "type": "number",
-                    "minimum": 0.0,
-                    "exclusiveMaximum": 1.0
-                },
-                "max_dist": {
-                    "title": "Max Dist",
-                    "description": "",
-                    "type": "integer",
-                    "minimum": 0.0
-                },
-                "min_chance": {
-                    "title": "Min Chance",
-                    "description": "",
-                    "type": "number",
-                    "minimum": 0.0,
-                    "exclusiveMaximum": 1.0
-                },
-                "min_dist": {
-                    "title": "Min Dist",
-                    "description": "",
-                    "type": "integer",
-                    "minimum": 0.0
-                },
-                "predicate_type": {
-                    "title": "Predicate Type",
-                    "type": "string",
-                    "const": "minecraft:axis_aligned_linear_pos"
-                }
-            },
-            "required": [
-                "predicate_type"
-            ]
+            {
+              "$ref": "#/definitions/axis_aligned_linear_pos"
+            }
+          ]
         }
+      },
+      "required": ["output_state"]
     },
-    "additionalProperties": false,
-    "properties": {
-        "processor_type": {
-            "title": "Processor Type",
-            "type": "string",
-            "const": "minecraft:rule"
+    "append_loot": {
+      "title": "Append Loot",
+      "description": "Modifier will attempt to add loot to a block entity.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "loot_table"],
+      "properties": {
+        "loot_table": {
+          "title": "Loot Table",
+          "description": "The loot table to append",
+          "type": "string"
         },
-        "rules": {
-            "title": "Rules",
-            "type": "array",
-            "items": {
-                "$ref": "#/definitions/rule"
-            }
+        "type": {
+          "title": "Type",
+          "type": "string",
+          "const": "minecraft:append_loot"
         }
+      }
     },
-    "required": [
-        "processor_type",
-        "rules"
-    ]
+    "passthrough": {
+      "title": "Passthrough",
+      "description": "Modifier that leaves the state unchanged. This is the default block modifier if no other block modifier is specified.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "title": "Type",
+          "type": "string",
+          "const": "minecraft:passthrough"
+        }
+      }
+    },
+    "always_true": {
+      "title": "Always True",
+      "description": "Predicate that always evaluates to true. This is the default predicate if no other predicate is specified.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["predicate_type"],
+      "properties": {
+        "predicate_type": {
+          "title": "Predicate Type",
+          "type": "string",
+          "const": "minecraft:always_true"
+        }
+      }
+    },
+    "block_match": {
+      "title": "Block Match",
+      "description": "Predicate that evaluates to true if the block at the specified location matches the specified block.",
+      "type": "object",
+      "properties": {
+        "block": {
+          "type": "string"
+        },
+        "predicate_type": {
+          "title": "Predicate Type",
+          "type": "string",
+          "const": "minecraft:block_match"
+        }
+      },
+      "required": ["block", "predicate_type"]
+    },
+    "random_block_match": {
+      "title": "Random Block Match",
+      "description": "Predicate that evaluates to true with a given probability if the block at the specified location matches the specified block.",
+      "type": "object",
+      "properties": {
+        "block": {
+          "type": "string"
+        },
+        "predicate_type": {
+          "title": "Predicate Type",
+          "type": "string",
+          "const": "minecraft:random_block_match"
+        },
+        "probability": {
+          "type": "number",
+          "description": "Probability of the evaluating to true when the block matches.",
+          "minimum": 0.0,
+          "exclusiveMaximum": 1.0
+        }
+      },
+      "required": ["block", "predicate_type", "probability"]
+    },
+    "tag_match": {
+      "title": "Tag Match",
+      "description": "Predicate that evaluates to true if the block at the specified location contains the tag.",
+      "type": "object",
+      "properties": {
+        "predicate_type": {
+          "title": "Predicate Type",
+          "type": "string",
+          "const": "minecraft:tag_match"
+        },
+        "tag": {
+          "title": "Tag",
+          "description": "The tag to be matched.",
+          "type": "string"
+        }
+      },
+      "required": ["predicate_type", "tag"]
+    },
+    "blockstate_match": {
+      "title": "BlockState Match",
+      "description": "Predicate that evaluates to true if the block at the specified location matches the specified block.",
+      "type": "object",
+      "properties": {
+        "block_state": {
+          "$ref": "../../../../../general/block/reference.json"
+        },
+        "predicate_type": {
+          "title": "Predicate Type",
+          "type": "string",
+          "const": "minecraft:blockstate_match"
+        }
+      },
+      "required": ["block_state", "predicate_type"]
+    },
+    "random_blockstate_match": {
+      "title": "Random BlockState Match",
+      "description": "Predicate that evaluates to true with a given probability if the block at the specified location matches the specified block.",
+      "type": "object",
+      "properties": {
+        "block_state": {
+          "$ref": "../../../../../general/block/reference.json"
+        },
+        "predicate_type": {
+          "title": "Predicate Type",
+          "type": "string",
+          "const": "minecraft:random_blockstate_match"
+        },
+        "probability": {
+          "type": "number",
+          "description": "Probability of the evaluating to true when the block matches.",
+          "minimum": 0.0,
+          "exclusiveMaximum": 1.0
+        }
+      },
+      "required": ["block_state", "predicate_type", "probability"]
+    },
+    "axis_aligned_linear_pos": {
+      "title": "Axis Aligned Linear",
+      "description": "Predicate that evalutes to true if the block is within the distance range along the provided axis and and random number is generated between chance range.",
+      "type": "object",
+      "properties": {
+        "axis": {
+          "title": "Axis",
+          "description": "",
+          "type": "string",
+          "enum": ["x", "y", "z"]
+        },
+        "max_chance": {
+          "title": "Max Chance",
+          "description": "",
+          "type": "number",
+          "minimum": 0.0,
+          "exclusiveMaximum": 1.0
+        },
+        "max_dist": {
+          "title": "Max Dist",
+          "description": "",
+          "type": "integer",
+          "minimum": 0.0
+        },
+        "min_chance": {
+          "title": "Min Chance",
+          "description": "",
+          "type": "number",
+          "minimum": 0.0,
+          "exclusiveMaximum": 1.0
+        },
+        "min_dist": {
+          "title": "Min Dist",
+          "description": "",
+          "type": "integer",
+          "minimum": 0.0
+        },
+        "predicate_type": {
+          "title": "Predicate Type",
+          "type": "string",
+          "const": "minecraft:axis_aligned_linear_pos"
+        }
+      },
+      "required": ["predicate_type"]
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "processor_type": {
+      "title": "Processor Type",
+      "type": "string",
+      "const": "minecraft:rule"
+    },
+    "rules": {
+      "title": "Rules",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/rule"
+      }
+    }
+  },
+  "required": ["processor_type", "rules"]
 }

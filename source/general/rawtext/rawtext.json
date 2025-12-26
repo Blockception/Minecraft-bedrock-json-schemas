@@ -15,7 +15,13 @@
       "default": [],
       "example": [[{ "translate": "example.language.key" }]],
       "items": {
-        "oneOf": [{ "type": "string" }, { "$ref": "#/definitions/translate" }, { "$ref": "#/definitions/text" }, { "$ref": "#/definitions/selector" }, { "$ref": "#/definitions/score" }]
+        "oneOf": [
+          { "type": "string" },
+          { "$ref": "#/definitions/translate" },
+          { "$ref": "#/definitions/text" },
+          { "$ref": "#/definitions/selector" },
+          { "$ref": "#/definitions/score" }
+        ]
       }
     },
     "selector": {
@@ -44,7 +50,10 @@
       "type": "object",
       "additionalProperties": false,
       "required": ["score"],
-      "examples": [{ "score": { "name": "*", "objective": "score" } }, { "score": { "name": "@p", "objective": "score" } }],
+      "examples": [
+        { "score": { "name": "*", "objective": "score" } },
+        { "score": { "name": "@p", "objective": "score" } }
+      ],
       "properties": {
         "score": {
           "title": "Score",
@@ -98,7 +107,10 @@
       "type": "object",
       "additionalProperties": false,
       "required": ["translate"],
-      "examples": [{ "translate": "example.translation.key" }, { "translate": "example.translation.key", "with": ["\n"] }],
+      "examples": [
+        { "translate": "example.translation.key" },
+        { "translate": "example.translation.key", "with": ["\n"] }
+      ],
       "properties": {
         "translate": {
           "title": "Translate",

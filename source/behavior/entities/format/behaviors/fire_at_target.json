@@ -4,7 +4,7 @@
   "type": "object",
   "title": "Fire At Target",
   "additionalProperties": false,
-  "required": [ ],
+  "required": [],
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "attack_cooldown": {

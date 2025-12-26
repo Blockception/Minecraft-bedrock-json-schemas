@@ -4,6 +4,6 @@
   "title": "Transient",
   "additionalProperties": false,
   "description": "An entity with this component will NEVER persist, and forever disappear when unloaded.",
-  "required": [ ],
-  "properties": { }
+  "required": [],
+  "properties": {}
 }

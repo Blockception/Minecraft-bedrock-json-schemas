@@ -4,7 +4,7 @@
   "additionalProperties": false,
   "title": "Attack",
   "description": "Defines an entity's melee attack and any additional effects on it.",
-  "required": [ "damage" ],
+  "required": ["damage"],
   "properties": {
     "damage": {
       "title": "Damage",
@@ -32,5 +32,5 @@
       "title": "Effect Duration"
     }
   },
-  "examples": [ { "damage": 1 }, { "damage": 1, "effect_name": "example", "effect_duration": 1 } ]
+  "examples": [{ "damage": 1 }, { "damage": 1, "effect_name": "example", "effect_duration": 1 }]
 }

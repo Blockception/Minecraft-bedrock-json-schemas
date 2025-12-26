@@ -6,10 +6,18 @@
   "required": ["value"],
   "examples": [{ "test": "has_damage", "value": "fatal" }],
   "properties": {
-    "test": { "type": "string", "title": "Test Property", "description": "Returns true when the subject entity receives the named damage type." },
+    "test": {
+      "type": "string",
+      "title": "Test Property",
+      "description": "Returns true when the subject entity receives the named damage type."
+    },
     "operator": { "$ref": "./types/operator.json" },
     "subject": { "$ref": "./types/subject.json" },
-    "value": { "type": "string", "description": "The Damage type to test.", "title": "Value", "enum": [
+    "value": {
+      "type": "string",
+      "description": "The Damage type to test.",
+      "title": "Value",
+      "enum": [
         "anvil",
         "attack",
         "block_explosion",
@@ -37,7 +45,7 @@
         "thorns",
         "void",
         "wither"
-      ] 
+      ]
     }
   }
 }

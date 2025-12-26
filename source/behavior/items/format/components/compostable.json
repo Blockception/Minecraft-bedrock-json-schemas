@@ -4,7 +4,7 @@
   "description": "Allows items to be compostable in the composter block.",
   "type": "object",
   "additionalProperties": false,
-  "required": [ ],
+  "required": [],
   "properties": {
     "composting_chance": {
       "description": "The chance of this item generating a compost layer when supplied to the composter block.",

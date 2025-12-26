@@ -8,16 +8,28 @@
       "type": "array",
       "minItems": 3,
       "maxItems": 3,
-      "items": { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED: relative position.", "title": "Relative Position" },
+      "items": {
+        "$ref": "../../../molang/number.json",
+        "description": "UNDOCUMENTED: relative position.",
+        "title": "Relative Position"
+      },
       "description": "UNDOCUMENTED: relative position.",
       "title": "Relative Position"
     },
-    "rotation": { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED: rotation.", "title": "Rotation" },
+    "rotation": {
+      "$ref": "../../../molang/number.json",
+      "description": "UNDOCUMENTED: rotation.",
+      "title": "Rotation"
+    },
     "direction": {
       "type": "array",
       "minItems": 3,
       "maxItems": 3,
-      "items": { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED: relative position.", "title": "Direction" },
+      "items": {
+        "$ref": "../../../molang/number.json",
+        "description": "UNDOCUMENTED: relative position.",
+        "title": "Direction"
+      },
       "description": "UNDOCUMENTED: relative position.",
       "title": "Direction"
     }

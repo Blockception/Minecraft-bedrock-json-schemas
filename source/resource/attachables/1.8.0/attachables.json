@@ -30,7 +30,11 @@
               "title": "Animations",
               "type": "object",
               "minProperties": 1,
-              "additionalProperties": { "type": "string", "description": "UNDOCUMENTED: additionalProperties.", "title": "Animation" }
+              "additionalProperties": {
+                "type": "string",
+                "description": "UNDOCUMENTED: additionalProperties.",
+                "title": "Animation"
+              }
             },
             "animation_controllers": {
               "type": "array",
@@ -39,17 +43,29 @@
               "title": "Animation Controllers",
               "items": {
                 "type": "object",
-                "additionalProperties": { "type": "string", "description": "UNDOCUMENTED: additionalProperties.", "title": "Animation Controller" },
+                "additionalProperties": {
+                  "type": "string",
+                  "description": "UNDOCUMENTED: additionalProperties.",
+                  "title": "Animation Controller"
+                },
                 "description": "UNDOCUMENTED: animation controllers.",
                 "title": "Animation Controllers"
               }
             },
-            "enable_attachables": { "type": "boolean", "description": "UNDOCUMENTED: enable attachables.", "title": "Enable Attachables" },
+            "enable_attachables": {
+              "type": "boolean",
+              "description": "UNDOCUMENTED: enable attachables.",
+              "title": "Enable Attachables"
+            },
             "geometry": {
               "title": "Geometry",
               "type": "object",
               "minProperties": 1,
-              "additionalProperties": { "type": "string", "description": "UNDOCUMENTED: additionalProperties.", "title": "Geometry" },
+              "additionalProperties": {
+                "type": "string",
+                "description": "UNDOCUMENTED: additionalProperties.",
+                "title": "Geometry"
+              },
               "description": "UNDOCUMENTED: geometry."
             },
             "identifier": {
@@ -73,8 +89,10 @@
             "materials": {
               "type": "object",
               "title": "Materials",
-              "additionalProperties": { 
-                "type": "string", "description": "Material Reference.", "title": "Material",
+              "additionalProperties": {
+                "type": "string",
+                "description": "Material Reference.",
+                "title": "Material",
                 "$ref": "../../../general/vanilla/material.json"
               }
             },
@@ -87,14 +105,22 @@
             "particle_effects": {
               "type": "object",
               "minProperties": 1,
-              "additionalProperties": { "type": "string", "description": "UNDOCUMENTED: additionalProperties.", "title": "Particle Effects" },
+              "additionalProperties": {
+                "type": "string",
+                "description": "UNDOCUMENTED: additionalProperties.",
+                "title": "Particle Effects"
+              },
               "description": "UNDOCUMENTED: particle effects.",
               "title": "Particle Effects"
             },
             "particle_emitters": {
               "type": "object",
               "minProperties": 1,
-              "additionalProperties": { "type": "string", "description": "UNDOCUMENTED: additionalProperties.", "title": "Particle Emitter" },
+              "additionalProperties": {
+                "type": "string",
+                "description": "UNDOCUMENTED: additionalProperties.",
+                "title": "Particle Emitter"
+              },
               "description": "UNDOCUMENTED: particle emitters.",
               "title": "Particle Emitters"
             },
@@ -103,7 +129,11 @@
               "description": "UNDOCUMENTED: render controllers.",
               "title": "Render Controllers",
               "minItems": 1,
-              "items": { "type": "string", "description": "UNDOCUMENTED: render controllers.", "title": "Render Controllers" }
+              "items": {
+                "type": "string",
+                "description": "UNDOCUMENTED: render controllers.",
+                "title": "Render Controllers"
+              }
             },
             "sound_effects": {
               "type": "array",
@@ -123,10 +153,22 @@
                 "overlay_color": ["base_colour"]
               },
               "properties": {
-                "base_colour": { "type": "string", "description": "UNDOCUMENTED: base colour.", "title": "Base Colour" },
-                "overlay_color": { "type": "string", "description": "UNDOCUMENTED: overlay color.", "title": "Overlay Color" },
+                "base_colour": {
+                  "type": "string",
+                  "description": "UNDOCUMENTED: base colour.",
+                  "title": "Base Colour"
+                },
+                "overlay_color": {
+                  "type": "string",
+                  "description": "UNDOCUMENTED: overlay color.",
+                  "title": "Overlay Color"
+                },
                 "texture": { "type": "string", "description": "UNDOCUMENTED: texture.", "title": "Texture" },
-                "texture_index": { "type": "integer", "description": "UNDOCUMENTED: texture index.", "title": "Texture Index" }
+                "texture_index": {
+                  "type": "integer",
+                  "description": "UNDOCUMENTED: texture index.",
+                  "title": "Texture Index"
+                }
               }
             },
             "scripts": {
@@ -155,7 +197,11 @@
                       {
                         "type": "object",
                         "minProperties": 1,
-                        "additionalProperties": { "type": "string", "description": "UNDOCUMENTED: additionalProperties.", "title": "Animate" },
+                        "additionalProperties": {
+                          "type": "string",
+                          "description": "UNDOCUMENTED: additionalProperties.",
+                          "title": "Animate"
+                        },
                         "description": "UNDOCUMENTED: oneOf[1].",
                         "title": "Animate"
                       }
@@ -170,7 +216,11 @@
             },
             "textures": {
               "type": "object",
-              "additionalProperties": { "type": "string", "description": "UNDOCUMENTED: additionalProperties.", "title": "Textures" },
+              "additionalProperties": {
+                "type": "string",
+                "description": "UNDOCUMENTED: additionalProperties.",
+                "title": "Textures"
+              },
               "description": "UNDOCUMENTED: textures.",
               "title": "Textures"
             }

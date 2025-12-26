@@ -11,14 +11,14 @@
       "description": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
-      "required": [ "description" ],
+      "required": ["description"],
       "properties": {
         "description": {
           "title": "Water Settings Description",
           "description": "Contains non-component settings for the water settings.",
           "type": "object",
           "additionalProperties": false,
-          "required": [ "identifier" ],
+          "required": ["identifier"],
           "properties": {
             "identifier": {
               "title": "Identifier",

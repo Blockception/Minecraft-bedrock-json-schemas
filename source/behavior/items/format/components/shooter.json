@@ -15,15 +15,33 @@
         "description": "Ammunition definition",
         "additionalProperties": false,
         "properties": {
-          "item": { "title": "Item", "description": "Item identifier",  "type": "string" },
-          "use_offhand": { "title": "Use Offhand", "description": "If ammo can be in offhand",  "type": "boolean" },
-          "search_inventory": { "title": "Search Inventory", "description": "If ammo can be stored in the inventory",  "type": "boolean" },
-          "use_in_creative": { "title": "Use In Creative", "description": "If it needs ammo to be used in creative",  "type": "boolean" }
+          "item": { "title": "Item", "description": "Item identifier", "type": "string" },
+          "use_offhand": { "title": "Use Offhand", "description": "If ammo can be in offhand", "type": "boolean" },
+          "search_inventory": {
+            "title": "Search Inventory",
+            "description": "If ammo can be stored in the inventory",
+            "type": "boolean"
+          },
+          "use_in_creative": {
+            "title": "Use In Creative",
+            "description": "If it needs ammo to be used in creative",
+            "type": "boolean"
+          }
         }
       }
     },
-    "charge_on_draw": { "title": "Charge On Draw", "description": "Charge on draw? Default is set to false.", "default": false, "type": "boolean" },
-    "max_draw_duration": { "title": "Maximum Draw Duration", "description": "Draw Duration. Default is set to 0.", "default": 0, "type": "number" },
+    "charge_on_draw": {
+      "title": "Charge On Draw",
+      "description": "Charge on draw? Default is set to false.",
+      "default": false,
+      "type": "boolean"
+    },
+    "max_draw_duration": {
+      "title": "Maximum Draw Duration",
+      "description": "Draw Duration. Default is set to 0.",
+      "default": 0,
+      "type": "number"
+    },
     "scale_power_by_draw_duration": {
       "title": "Scale Power By Draw Duration",
       "description": "Scale power by draw duration? Default is set to false.",
@@ -33,17 +51,17 @@
   },
   "examples": [
     {
-      "ammunition" :[
+      "ammunition": [
         {
-          "item" :"custom_projectile",
-          "use_offhand" :true,
-          "search_inventory" :true,
-          "use_in_creative" :true
+          "item": "custom_projectile",
+          "use_offhand": true,
+          "search_inventory": true,
+          "use_in_creative": true
         }
       ],
-      "max_draw_duration" :1.0,
-      "scale_power_by_draw_duration" :true,
-      "charge_on_draw" :false
+      "max_draw_duration": 1.0,
+      "scale_power_by_draw_duration": true,
+      "charge_on_draw": false
     }
   ]
 }

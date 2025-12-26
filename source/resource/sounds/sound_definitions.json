@@ -31,7 +31,19 @@
         "category": {
           "type": "string",
           "title": "Sound Category",
-          "enum": ["ambient", "block", "music", "weather", "ui", "bucket", "neutral", "player", "hostile", "record", "bottle"],
+          "enum": [
+            "ambient",
+            "block",
+            "music",
+            "weather",
+            "ui",
+            "bucket",
+            "neutral",
+            "player",
+            "hostile",
+            "record",
+            "bottle"
+          ],
           "description": "The category this sound belongs to, for the user to control the volume on."
         },
         "sounds": {
@@ -57,9 +69,24 @@
                     "title": "Is 3D",
                     "type": "boolean"
                   },
-                  "pitch": { "description": "The pitch of the audio, 1 is nomial.", "type": "number", "minimum": 0, "maximum": 2, "title": "Pitch" },
-                  "volume": { "description": "The volume of the audio, 1 is nomial.", "type": "number", "minimum": 0, "title": "Volume" },
-                  "stream": { "description": "If marked true then minecraft will stream the audio.", "type": "boolean", "title": "Stream" },
+                  "pitch": {
+                    "description": "The pitch of the audio, 1 is nomial.",
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 2,
+                    "title": "Pitch"
+                  },
+                  "volume": {
+                    "description": "The volume of the audio, 1 is nomial.",
+                    "type": "number",
+                    "minimum": 0,
+                    "title": "Volume"
+                  },
+                  "stream": {
+                    "description": "If marked true then minecraft will stream the audio.",
+                    "type": "boolean",
+                    "title": "Stream"
+                  },
                   "name": {
                     "$id": "#/Sound/sounds/stringItem",
                     "type": "string",

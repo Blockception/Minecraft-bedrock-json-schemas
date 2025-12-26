@@ -6,7 +6,13 @@
   "title": "Match Tool",
   "required": ["condition"],
   "properties": {
-    "condition": { "type": "string", "const": "match_tool", "title": "Condition", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED" },
+    "condition": {
+      "type": "string",
+      "const": "match_tool",
+      "title": "Condition",
+      "description": "UNDOCUMENTED.",
+      "$comment": "UNDOCUMENTED"
+    },
     "item": {
       "description": "The item to match",
       "$ref": "../../../general/item/identifier.json"

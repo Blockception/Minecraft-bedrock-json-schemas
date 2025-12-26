@@ -11,6 +11,11 @@
       "title": "Min",
       "minimum": 24
     },
-    "max": { "type": "integer", "description": "This is the maximum distance level that a mob spawns.", "title": "Max", "default": 128 }
+    "max": {
+      "type": "integer",
+      "description": "This is the maximum distance level that a mob spawns.",
+      "title": "Max",
+      "default": 128
+    }
   }
 }

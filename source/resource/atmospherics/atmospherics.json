@@ -11,14 +11,14 @@
       "description": "UNDOCUMENTED",
       "type": "object",
       "additionalProperties": false,
-      "required": [ "description" ],
+      "required": ["description"],
       "properties": {
         "description": {
           "title": "Atmosphere Description",
           "description": "Contains non-component settings for the atmosphere settings.",
           "type": "object",
           "additionalProperties": false,
-          "required": [ "identifier" ],
+          "required": ["identifier"],
           "properties": {
             "identifier": {
               "title": "Identifier",

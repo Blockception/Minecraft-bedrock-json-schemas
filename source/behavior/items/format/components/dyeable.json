@@ -1,45 +1,45 @@
 {
-    "$id": "blockception.minecraft.behavior.items.minecraft:dyeable",
-    "title": "Dyeable",
-    "description": "Enables custom items to be dyed in cauldrons.",
-    "type": "object",
-    "properties": {
-        "default_color": {
-            "title": "Default Color",
-            "description": "Color to use by default. If you do not want a default color you can leave the \"default_color\" off and the texture will be the same as if you did not have the component until it is dyed.",
-            "oneOf": [
-                {
-                    "type": "string",
-                    "format": "colox-hex",
-                    "default": "#FFFFFF"
-                },
-                {
-                    "type": "array",
-                    "items": [
-                        {
-                            "title": "Red",
-                            "type": "integer",
-                            "default": 0,
-                            "minimum": 0,
-                            "maximum": 255
-                        },
-                        {
-                            "title": "Green",
-                            "type": "integer",
-                            "default": 0,
-                            "minimum": 0,
-                            "maximum": 255
-                        },
-                        {
-                            "title": "Blue",
-                            "type": "integer",
-                            "default": 0,
-                            "minimum": 0,
-                            "maximum": 255
-                        }
-                    ]
-                }
-            ]
+  "$id": "blockception.minecraft.behavior.items.minecraft:dyeable",
+  "title": "Dyeable",
+  "description": "Enables custom items to be dyed in cauldrons.",
+  "type": "object",
+  "properties": {
+    "default_color": {
+      "title": "Default Color",
+      "description": "Color to use by default. If you do not want a default color you can leave the \"default_color\" off and the texture will be the same as if you did not have the component until it is dyed.",
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "colox-hex",
+          "default": "#FFFFFF"
+        },
+        {
+          "type": "array",
+          "items": [
+            {
+              "title": "Red",
+              "type": "integer",
+              "default": 0,
+              "minimum": 0,
+              "maximum": 255
+            },
+            {
+              "title": "Green",
+              "type": "integer",
+              "default": 0,
+              "minimum": 0,
+              "maximum": 255
+            },
+            {
+              "title": "Blue",
+              "type": "integer",
+              "default": 0,
+              "minimum": 0,
+              "maximum": 255
+            }
+          ]
         }
+      ]
     }
+  }
 }

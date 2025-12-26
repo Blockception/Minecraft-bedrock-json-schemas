@@ -13,7 +13,7 @@
         "^[0-9a-zA-Z:_\\.\\-]+$": {
           "title": "Block",
           "description": "Namespace-qualified block name",
-          "type": "object", 
+          "type": "object",
           "additionalProperties": false,
           "required": ["light_type"],
           "properties": {

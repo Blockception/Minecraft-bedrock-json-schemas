@@ -43,14 +43,19 @@
                 "$comment": "UNDOCUMENTED",
                 "required": ["path"],
                 "properties": {
-                  "path": { "description": "A texture file.", "type": "string", "pattern": "^textures/.+$", "title": "Path" },
-                  "weight": { 
-                    "type": "number", 
+                  "path": {
+                    "description": "A texture file.",
+                    "type": "string",
+                    "pattern": "^textures/.+$",
+                    "title": "Path"
+                  },
+                  "weight": {
+                    "type": "number",
                     "minimum": 0.05,
                     "maximum": 1000000,
-                    "title": "Weight", 
-                    "description": "The weight of the texture.", 
-                    "$comment": "UNDOCUMENTED" 
+                    "title": "Weight",
+                    "description": "The weight of the texture.",
+                    "$comment": "UNDOCUMENTED"
                   }
                 }
               }
@@ -61,9 +66,28 @@
     }
   },
   "properties": {
-    "num_mip_levels": { "minimum": 0, "maximum": 4, "default": 4, "type": "integer", "title": "Num Mip Levels", "description": "Sets the number of mipmap levels for reducing texture quality at varying distances. More mipmap levels means reduced texture quality at farther distances.", "$comment": "UNDOCUMENTED" },
-    "padding": { "type": "integer", "title": "Padding", "description": "Adds buffer space to prevent textures from bleeding into each other.", "$comment": "UNDOCUMENTED" },
-    "resource_pack_name": { "type": "string", "title": "Resource Pack Name", "description": "The name of your resource pack, which should match the name in this pack's manifest.", "markdownDescription": "The name of your resource pack, which should match the name in `manifest.json`.", "$comment": "UNDOCUMENTED" },
+    "num_mip_levels": {
+      "minimum": 0,
+      "maximum": 4,
+      "default": 4,
+      "type": "integer",
+      "title": "Num Mip Levels",
+      "description": "Sets the number of mipmap levels for reducing texture quality at varying distances. More mipmap levels means reduced texture quality at farther distances.",
+      "$comment": "UNDOCUMENTED"
+    },
+    "padding": {
+      "type": "integer",
+      "title": "Padding",
+      "description": "Adds buffer space to prevent textures from bleeding into each other.",
+      "$comment": "UNDOCUMENTED"
+    },
+    "resource_pack_name": {
+      "type": "string",
+      "title": "Resource Pack Name",
+      "description": "The name of your resource pack, which should match the name in this pack's manifest.",
+      "markdownDescription": "The name of your resource pack, which should match the name in `manifest.json`.",
+      "$comment": "UNDOCUMENTED"
+    },
     "texture_data": {
       "type": "object",
       "propertyNames": { "pattern": "^[a-z0-9_:.\\-]*$" },
@@ -73,7 +97,12 @@
         "description": "Describes the texture, including properties like the path to the texture.",
         "$comment": "UNDOCUMENTED",
         "properties": {
-          "textures": { "oneOf": [{ "$ref": "#/definitions/texture" }, { "type": "array", "items": { "$ref": "#/definitions/texture" } }] }
+          "textures": {
+            "oneOf": [
+              { "$ref": "#/definitions/texture" },
+              { "type": "array", "items": { "$ref": "#/definitions/texture" } }
+            ]
+          }
         }
       },
       "description": "A JSON object with shortnames and texture data.",

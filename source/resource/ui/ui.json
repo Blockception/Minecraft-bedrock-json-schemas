@@ -90,7 +90,17 @@
                 "required": ["control_name", "operation"],
                 "properties": {
                   "operation": {
-                    "enum": ["remove", "replace", "swap", "move_back", "move_front", "move_after", "move_before", "insert_before", "insert_after"]
+                    "enum": [
+                      "remove",
+                      "replace",
+                      "swap",
+                      "move_back",
+                      "move_front",
+                      "move_after",
+                      "move_before",
+                      "insert_before",
+                      "insert_after"
+                    ]
                   }
                 },
                 "oneOf": [
@@ -163,7 +173,19 @@
               "operation": {
                 "title": "Operation",
                 "type": "string",
-                "enum": ["insert_back", "insert_front", "insert_after", "insert_before", "move_back", "move_front", "move_after", "move_before", "swap", "remove", "replace"]
+                "enum": [
+                  "insert_back",
+                  "insert_front",
+                  "insert_after",
+                  "insert_before",
+                  "move_back",
+                  "move_front",
+                  "move_after",
+                  "move_before",
+                  "swap",
+                  "remove",
+                  "replace"
+                ]
               },
               "where": { "$ref": "./elements/properties/bindings.json" },
               "target": { "$ref": "./elements/properties/bindings.json" },
@@ -209,7 +231,9 @@
 
         "allow_clipping": { "$ref": "./elements/properties/allow_clipping.json" },
         "allow_debug_missing_texture": { "$ref": "./elements/properties/allow_debug_missing_texture.json" },
-        "allow_scroll_even_when_content_fits": { "$ref": "./elements/properties/allow_scroll_even_when_content_fits.json" },
+        "allow_scroll_even_when_content_fits": {
+          "$ref": "./elements/properties/allow_scroll_even_when_content_fits.json"
+        },
         "alpha": { "$ref": "./elements/properties/alpha.json" },
         "always_handle_pointer": { "$ref": "./elements/properties/always_handle_pointer.json" },
         "always_handle_scrolling": { "$ref": "./elements/properties/always_handle_scrolling.json" },
@@ -238,7 +262,10 @@
         "collection_index": { "$ref": "./elements/properties/collection_index.json" },
         "collection_name": { "$ref": "./elements/properties/collection_name.json" },
         "color": { "$ref": "./elements/properties/color.json" },
-        "color1": { "$ref": "./elements/properties/color.json", "description": "The color to start the gradient with." },
+        "color1": {
+          "$ref": "./elements/properties/color.json",
+          "description": "The color to start the gradient with."
+        },
         "color2": { "$ref": "./elements/properties/color.json", "description": "The color to end the gradient with." },
         "constrain_to_rect": { "$ref": "./elements/properties/constrain_to_rect.json" },
         "consume_hover_events": { "$ref": "./elements/properties/consume_hover_events.json" },
@@ -360,7 +387,9 @@
         "text_alignment": { "$ref": "./elements/properties/text_alignment.json" },
         "text_box_name": { "$ref": "./elements/properties/text_box_name.json" },
         "text_control": { "$ref": "./elements/properties/text_control.json" },
-        "text_edit_box_grid_collection_name": { "$ref": "./elements/properties/text_edit_box_grid_collection_name.json" },
+        "text_edit_box_grid_collection_name": {
+          "$ref": "./elements/properties/text_edit_box_grid_collection_name.json"
+        },
         "text_labels": { "$ref": "./elements/properties/text_labels.json" },
         "text_type": { "$ref": "./elements/properties/text_type.json" },
         "text": { "$ref": "./elements/properties/text.json" },
@@ -407,9 +436,15 @@
       },
       "dependencies": {
         "line_padding": { "properties": { "type": { "const": "label" } } },
-        "color1": { "properties": { "type": { "const": "custom" }, "renderer": { "const": "gradient_renderer" }, "color2": {} } },
-        "color2": { "properties": { "type": { "const": "custom" }, "renderer": { "const": "gradient_renderer" }, "color1": {} } },
-        "camera_tilt_degrees": { "properties": { "type": { "const": "custom" }, "renderer": { "const": "paper_doll_renderer" } } }
+        "color1": {
+          "properties": { "type": { "const": "custom" }, "renderer": { "const": "gradient_renderer" }, "color2": {} }
+        },
+        "color2": {
+          "properties": { "type": { "const": "custom" }, "renderer": { "const": "gradient_renderer" }, "color1": {} }
+        },
+        "camera_tilt_degrees": {
+          "properties": { "type": { "const": "custom" }, "renderer": { "const": "paper_doll_renderer" } }
+        }
       }
     },
     "control_factory": {
@@ -439,7 +474,11 @@
       "$schema": "http://json-schema.org/draft-07/schema",
       "title": "UI Definition",
       "type": "object",
-      "anyOf": [{ "$ref": "#/definitions/control" }, { "$ref": "#/definitions/animation" }, { "$ref": "#/definitions/control_factory" }]
+      "anyOf": [
+        { "$ref": "#/definitions/control" },
+        { "$ref": "#/definitions/animation" },
+        { "$ref": "#/definitions/control_factory" }
+      ]
     }
   },
   "additionalProperties": {

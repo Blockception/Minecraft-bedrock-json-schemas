@@ -11,9 +11,17 @@
       "description": "UNDOCUMENTED: coefficient of restitution.",
       "title": "Coefficient Of Restitution"
     },
-    "collision_radius": { "type": "number", "description": "UNDOCUMENTED: collision radius.", "title": "Collision Radius" },
+    "collision_radius": {
+      "type": "number",
+      "description": "UNDOCUMENTED: collision radius.",
+      "title": "Collision Radius"
+    },
     "enabled": { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED: enabled.", "title": "Enabled" },
-    "expire_on_contact": { "type": "boolean", "description": "UNDOCUMENTED: expire on contact.", "title": "Expire On Contact" },
+    "expire_on_contact": {
+      "type": "boolean",
+      "description": "UNDOCUMENTED: expire on contact.",
+      "title": "Expire On Contact"
+    },
     "events": {
       "type": "array",
       "items": {

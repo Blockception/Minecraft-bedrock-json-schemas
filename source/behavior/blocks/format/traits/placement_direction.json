@@ -13,7 +13,11 @@
       "uniqueItems": true,
       "minItems": 1,
       "items": {
-        "enum": ["minecraft:cardinal_direction", "minecraft:facing_direction", "minecraft:corner_and_cardinal_direction"]
+        "enum": [
+          "minecraft:cardinal_direction",
+          "minecraft:facing_direction",
+          "minecraft:corner_and_cardinal_direction"
+        ]
       }
     },
     "y_rotation_offset": {
@@ -27,7 +31,7 @@
     "blocks_to_corner_with": {
       "title": "Blocks To Corner With",
       "description": "Decides the criteria with an array of block descriptors to determine what blocks to form a corner with. The default behavior for this field is to corner with the same block name",
-      "type": "array", 
+      "type": "array",
       "items": {
         "$ref": "../../../../general/block/reference.json"
       }

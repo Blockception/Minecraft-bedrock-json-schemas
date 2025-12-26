@@ -87,9 +87,9 @@
           }
         ]
       },
-      "sound": { 
-        "type": "string", 
-        "title": "Sound", 
+      "sound": {
+        "type": "string",
+        "title": "Sound",
         "description": "The sound definition of this block."
       },
       "textures": { "$ref": "#/definitions/texture", "title": "Textures", "description": "Textures." }

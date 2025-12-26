@@ -28,13 +28,13 @@
     "allow_air_placement": {
       "title": "Allow Air Placement",
       "description": "Determines whether the feature can snap through air blocks",
-      "type":"boolean",
+      "type": "boolean",
       "default": true
     },
     "allow_underwater_placement": {
       "title": "Allow Underwater Placement",
       "description": "Determines whether the feature can snap through water blocks",
-      "type":"boolean",
+      "type": "boolean",
       "default": false
     }
   }

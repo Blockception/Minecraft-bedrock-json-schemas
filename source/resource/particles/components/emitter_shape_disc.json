@@ -26,9 +26,24 @@
       "$comment": "UNDOCUMENTED",
       "title": "Offset",
       "items": [
-        { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "X" },
-        { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Y" },
-        { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Z" }
+        {
+          "$ref": "../../../molang/number.json",
+          "description": "UNDOCUMENTED.",
+          "$comment": "UNDOCUMENTED",
+          "title": "X"
+        },
+        {
+          "$ref": "../../../molang/number.json",
+          "description": "UNDOCUMENTED.",
+          "$comment": "UNDOCUMENTED",
+          "title": "Y"
+        },
+        {
+          "$ref": "../../../molang/number.json",
+          "description": "UNDOCUMENTED.",
+          "$comment": "UNDOCUMENTED",
+          "title": "Z"
+        }
       ]
     },
     "plane_normal": {
@@ -40,9 +55,24 @@
         {
           "type": "array",
           "items": [
-            { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "X" },
-            { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Y" },
-            { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "title": "Z" }
+            {
+              "$ref": "../../../molang/number.json",
+              "description": "UNDOCUMENTED.",
+              "$comment": "UNDOCUMENTED",
+              "title": "X"
+            },
+            {
+              "$ref": "../../../molang/number.json",
+              "description": "UNDOCUMENTED.",
+              "$comment": "UNDOCUMENTED",
+              "title": "Y"
+            },
+            {
+              "$ref": "../../../molang/number.json",
+              "description": "UNDOCUMENTED.",
+              "$comment": "UNDOCUMENTED",
+              "title": "Z"
+            }
           ]
         }
       ]

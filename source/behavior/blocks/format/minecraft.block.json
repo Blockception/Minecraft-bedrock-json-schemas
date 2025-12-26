@@ -5,7 +5,7 @@
   "description": "A custom block definition.",
   "type": "object",
   "additionalProperties": false,
-  "required": [ "description", "components" ],
+  "required": ["description", "components"],
   "definitions": {
     "components_ref": {
       "type": "object",
@@ -49,19 +49,19 @@
         "minecraft:tick": { "$ref": "./components/tick.json" },
         "minecraft:entity_fall_on": { "$ref": "./components/entity_fall_on.json" },
         // Tags
-        "tag:minecraft:diamond_tier_destructible": { },
-        "tag:minecraft:iron_tier_destructible": { },
-        "tag:minecraft:is_axe_item_destructible": { },
-        "tag:minecraft:is_hoe_item_destructible": { },
-        "tag:minecraft:is_mace_item_destructible": { },
-        "tag:minecraft:is_pickaxe_item_destructible": { },
-        "tag:minecraft:is_shears_item_destructible": { },
-        "tag:minecraft:is_shovel_item_destructible": { },
-        "tag:minecraft:is_sword_item_destructible": { },
-        "tag:minecraft:netherite_tier_destructible": { },
-        "tag:minecraft:stone_tier_destructible": { },
-        "tag:minecraft:has_fence_connections": { },
-        "tag:minecraft:cornerable_stairs": { }
+        "tag:minecraft:diamond_tier_destructible": {},
+        "tag:minecraft:iron_tier_destructible": {},
+        "tag:minecraft:is_axe_item_destructible": {},
+        "tag:minecraft:is_hoe_item_destructible": {},
+        "tag:minecraft:is_mace_item_destructible": {},
+        "tag:minecraft:is_pickaxe_item_destructible": {},
+        "tag:minecraft:is_shears_item_destructible": {},
+        "tag:minecraft:is_shovel_item_destructible": {},
+        "tag:minecraft:is_sword_item_destructible": {},
+        "tag:minecraft:netherite_tier_destructible": {},
+        "tag:minecraft:stone_tier_destructible": {},
+        "tag:minecraft:has_fence_connections": {},
+        "tag:minecraft:cornerable_stairs": {}
       },
       "patternProperties": {
         "tag:.+": {
@@ -106,7 +106,7 @@
       "description": "The description for this block.",
       "type": "object",
       "additionalProperties": false,
-      "required": [ "identifier" ],
+      "required": ["identifier"],
       "properties": {
         "identifier": {
           "title": "Identifier",
@@ -118,9 +118,9 @@
           "title": "Menu Category",
           "description": "Specifies the menu category and group for the block, which determine where this block is placed in the inventory and crafting table container screens. If this field is omitted, the block will not appear in the inventory or crafting table container screens.",
           "type": "object",
-          "examples": [ { "category": "construction" } ],
+          "examples": [{ "category": "construction" }],
           "additionalProperties": false,
-          "required": [ "category" ],
+          "required": ["category"],
           "properties": {
             "category": {
               "$ref": "../../../general/vanilla/creative_category.json"
@@ -155,7 +155,7 @@
         "$comment": "UNDOCUMENTED",
         "type": "object",
         "additionalProperties": false,
-        "required": [ "condition" ],
+        "required": ["condition"],
         "properties": {
           "condition": {
             "title": "Condition",

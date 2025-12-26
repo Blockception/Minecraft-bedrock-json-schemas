@@ -1,23 +1,19 @@
 {
-    "title": "Uniform",
-    "description": "When the type is \"uniform\" it now also expects two vertical anchor points to use as the minimum and maximum heights over which to perform the uniform distribution.",
-    "type": "object",
-    "properties": {
-        "type": {
-            "title": "Type",
-            "type": "string",
-            "const": "uniform"
-        },
-        "min": {
-            "$ref": "../vertical_anchor.json"
-        },
-        "max": {
-            "$ref": "../vertical_anchor.json"
-        }
+  "title": "Uniform",
+  "description": "When the type is \"uniform\" it now also expects two vertical anchor points to use as the minimum and maximum heights over which to perform the uniform distribution.",
+  "type": "object",
+  "properties": {
+    "type": {
+      "title": "Type",
+      "type": "string",
+      "const": "uniform"
     },
-    "required": [
-        "min",
-        "max",
-        "type"
-    ]
+    "min": {
+      "$ref": "../vertical_anchor.json"
+    },
+    "max": {
+      "$ref": "../vertical_anchor.json"
+    }
+  },
+  "required": ["min", "max", "type"]
 }

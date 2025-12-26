@@ -4,7 +4,7 @@
   "description": "Sets the color grass and foliage will be tinted by in this biome on the map.",
   "type": "object",
   "additionalProperties": false,
-  "required": [ "grass" ],
+  "required": ["grass"],
   "definitions": {
     "color": {
       "oneOf": [
@@ -36,10 +36,7 @@
           "const": "tint"
         }
       },
-      "required": [
-        "tint",
-        "type"
-      ]
+      "required": ["tint", "type"]
     },
     "noise": {
       "type": "object",
@@ -51,9 +48,7 @@
           "const": "noise"
         }
       },
-      "required": [
-        "type"
-      ]
+      "required": ["type"]
     }
   },
   "properties": {

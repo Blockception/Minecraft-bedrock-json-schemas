@@ -1,6 +1,6 @@
 {
-    "title": "Texture File Path",
-    "type": "string",
-    "pattern": "^textures\/[a-zA-Z0-9/_.-]+$",
-    "examples": ["textures/ui/file"]
+  "title": "Texture File Path",
+  "type": "string",
+  "pattern": "^textures\/[a-zA-Z0-9/_.-]+$",
+  "examples": ["textures/ui/file"]
 }

@@ -1,18 +1,30 @@
 {
-    "title": "Processors",
-    "description": "",
-    "type": "object",
-    "properties": {
-        "processor_type": {
-            "title": "Processor Type",
-            "type": "string",
-            "enum": [ "minecraft:rule", "minecraft:capped", "minecraft:block_ignore", "minecraft:protected_blocks" ]
-        }
+  "title": "Processors",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "processor_type": {
+      "title": "Processor Type",
+      "type": "string",
+      "enum": ["minecraft:rule", "minecraft:capped", "minecraft:block_ignore", "minecraft:protected_blocks"]
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "processor_type": { "const": "minecraft:rule" } } },
+      "then": { "$ref": "./processors/minecraft.rule.json" }
     },
-    "allOf": [
-        { "if": { "properties": { "processor_type": { "const": "minecraft:rule" } } }, "then": { "$ref": "./processors/minecraft.rule.json" } },
-        { "if": { "properties": { "processor_type": { "const": "minecraft:capped" } } }, "then": { "$ref": "./processors/minecraft.capped.json" } },
-        { "if": { "properties": { "processor_type": { "const": "minecraft:block_ignore" } } }, "then": { "$ref": "./processors/minecraft.block_ignore.json" } },
-        { "if": { "properties": { "processor_type": { "const": "minecraft:protected_blocks" } } }, "then": { "$ref": "./processors/minecraft.protected_blocks.json" } }
-    ]
+    {
+      "if": { "properties": { "processor_type": { "const": "minecraft:capped" } } },
+      "then": { "$ref": "./processors/minecraft.capped.json" }
+    },
+    {
+      "if": { "properties": { "processor_type": { "const": "minecraft:block_ignore" } } },
+      "then": { "$ref": "./processors/minecraft.block_ignore.json" }
+    },
+    {
+      "if": { "properties": { "processor_type": { "const": "minecraft:protected_blocks" } } },
+      "then": { "$ref": "./processors/minecraft.protected_blocks.json" }
+    }
+  ]
 }

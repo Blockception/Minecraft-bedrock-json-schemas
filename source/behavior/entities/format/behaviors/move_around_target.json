@@ -24,7 +24,7 @@
     "destination_pos_spread_degrees": {
       "title": "Desitnation Pos Spread Degrees",
       "description": "UNDOCUMENTED",
-      "type": "number", 
+      "type": "number",
       "minimum": 0,
       "maximum": 360
     },

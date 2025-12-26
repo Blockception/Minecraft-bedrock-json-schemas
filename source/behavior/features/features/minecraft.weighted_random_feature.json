@@ -18,7 +18,11 @@
         "description": "Named reference to a feature.",
         "type": "array",
         "items": [
-          { "title": "Feature", "description": "Named reference to a feature.", "$ref": "../../../general/feature/identifier.json" },
+          {
+            "title": "Feature",
+            "description": "Named reference to a feature.",
+            "$ref": "../../../general/feature/identifier.json"
+          },
           {
             "title": "Weight",
             "description": "Weight used in random selection. Value is relative to other weights in the collection.",

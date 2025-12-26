@@ -7,10 +7,18 @@
   "definitions": {
     "block_side": {
       "oneOf": [
-        { "title": "Block", "description": "Reference to the block it may attach to.", "$ref": "../../../general/block/reference.json" },
+        {
+          "title": "Block",
+          "description": "Reference to the block it may attach to.",
+          "$ref": "../../../general/block/reference.json"
+        },
         {
           "type": "array",
-          "items": { "title": "Block", "description": "Reference to the blocks it may attach to.", "$ref": "../../../general/block/reference.json" }
+          "items": {
+            "title": "Block",
+            "description": "Reference to the blocks it may attach to.",
+            "$ref": "../../../general/block/reference.json"
+          }
         }
       ]
     },
@@ -87,15 +95,60 @@
           "description": "Automatically rotate the block to attach sensibly.",
           "type": "boolean"
         },
-        "top": { "title": "Top", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
-        "bottom": { "title": "Bottom", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
-        "north": { "title": "North", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
-        "south": { "title": "South", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
-        "east": { "title": "East", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
-        "west": { "title": "West", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
-        "all": { "title": "All", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
-        "sides": { "title": "Sides", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
-        "diagonal": { "title": "Diagonal", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" }
+        "top": {
+          "title": "Top",
+          "description": "UNDOCUMENTED.",
+          "$comment": "UNDOCUMENTED",
+          "$ref": "#/definitions/block_side"
+        },
+        "bottom": {
+          "title": "Bottom",
+          "description": "UNDOCUMENTED.",
+          "$comment": "UNDOCUMENTED",
+          "$ref": "#/definitions/block_side"
+        },
+        "north": {
+          "title": "North",
+          "description": "UNDOCUMENTED.",
+          "$comment": "UNDOCUMENTED",
+          "$ref": "#/definitions/block_side"
+        },
+        "south": {
+          "title": "South",
+          "description": "UNDOCUMENTED.",
+          "$comment": "UNDOCUMENTED",
+          "$ref": "#/definitions/block_side"
+        },
+        "east": {
+          "title": "East",
+          "description": "UNDOCUMENTED.",
+          "$comment": "UNDOCUMENTED",
+          "$ref": "#/definitions/block_side"
+        },
+        "west": {
+          "title": "West",
+          "description": "UNDOCUMENTED.",
+          "$comment": "UNDOCUMENTED",
+          "$ref": "#/definitions/block_side"
+        },
+        "all": {
+          "title": "All",
+          "description": "UNDOCUMENTED.",
+          "$comment": "UNDOCUMENTED",
+          "$ref": "#/definitions/block_side"
+        },
+        "sides": {
+          "title": "Sides",
+          "description": "UNDOCUMENTED.",
+          "$comment": "UNDOCUMENTED",
+          "$ref": "#/definitions/block_side"
+        },
+        "diagonal": {
+          "title": "Diagonal",
+          "description": "UNDOCUMENTED.",
+          "$comment": "UNDOCUMENTED",
+          "$ref": "#/definitions/block_side"
+        }
       }
     },
     "may_not_attach_to": {
@@ -104,15 +157,60 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "top": { "title": "Top", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
-        "bottom": { "title": "Bottom", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
-        "north": { "title": "North", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
-        "south": { "title": "South", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
-        "east": { "title": "East", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
-        "west": { "title": "West", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
-        "all": { "title": "All", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
-        "sides": { "title": "Sides", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" },
-        "diagonal": { "title": "Diagonal", "description": "UNDOCUMENTED.", "$comment": "UNDOCUMENTED", "$ref": "#/definitions/block_side" }
+        "top": {
+          "title": "Top",
+          "description": "UNDOCUMENTED.",
+          "$comment": "UNDOCUMENTED",
+          "$ref": "#/definitions/block_side"
+        },
+        "bottom": {
+          "title": "Bottom",
+          "description": "UNDOCUMENTED.",
+          "$comment": "UNDOCUMENTED",
+          "$ref": "#/definitions/block_side"
+        },
+        "north": {
+          "title": "North",
+          "description": "UNDOCUMENTED.",
+          "$comment": "UNDOCUMENTED",
+          "$ref": "#/definitions/block_side"
+        },
+        "south": {
+          "title": "South",
+          "description": "UNDOCUMENTED.",
+          "$comment": "UNDOCUMENTED",
+          "$ref": "#/definitions/block_side"
+        },
+        "east": {
+          "title": "East",
+          "description": "UNDOCUMENTED.",
+          "$comment": "UNDOCUMENTED",
+          "$ref": "#/definitions/block_side"
+        },
+        "west": {
+          "title": "West",
+          "description": "UNDOCUMENTED.",
+          "$comment": "UNDOCUMENTED",
+          "$ref": "#/definitions/block_side"
+        },
+        "all": {
+          "title": "All",
+          "description": "UNDOCUMENTED.",
+          "$comment": "UNDOCUMENTED",
+          "$ref": "#/definitions/block_side"
+        },
+        "sides": {
+          "title": "Sides",
+          "description": "UNDOCUMENTED.",
+          "$comment": "UNDOCUMENTED",
+          "$ref": "#/definitions/block_side"
+        },
+        "diagonal": {
+          "title": "Diagonal",
+          "description": "UNDOCUMENTED.",
+          "$comment": "UNDOCUMENTED",
+          "$ref": "#/definitions/block_side"
+        }
       }
     },
     "may_replace": {

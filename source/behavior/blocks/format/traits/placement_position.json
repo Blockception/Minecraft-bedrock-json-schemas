@@ -1,25 +1,20 @@
 {
-    "$id": "blockception.minecraft.behavior.blocks.traits.minecraft.placement_position",
-    "title": "Placement Position",
-    "description": "Contains information about where the player placed the block.",
-    "additionalProperties": false,
-    "type": "object",
-    "required": [
-        "enabled_states"
-    ],
-    "properties": {
-        "enabled_states": {
-            "title": "Enabled States",
-            "description": "Block states you wish to enable",
-            "type": "array",
-            "maxItems": 2,
-            "minItems": 1,
-            "items": {
-                "enum": [
-                    "minecraft:block_face",
-                    "minecraft:vertical_half"
-                ]
-            }
-        }
+  "$id": "blockception.minecraft.behavior.blocks.traits.minecraft.placement_position",
+  "title": "Placement Position",
+  "description": "Contains information about where the player placed the block.",
+  "additionalProperties": false,
+  "type": "object",
+  "required": ["enabled_states"],
+  "properties": {
+    "enabled_states": {
+      "title": "Enabled States",
+      "description": "Block states you wish to enable",
+      "type": "array",
+      "maxItems": 2,
+      "minItems": 1,
+      "items": {
+        "enum": ["minecraft:block_face", "minecraft:vertical_half"]
+      }
     }
+  }
 }

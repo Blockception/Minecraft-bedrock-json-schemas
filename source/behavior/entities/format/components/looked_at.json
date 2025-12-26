@@ -26,7 +26,7 @@
       "title": "Line Of Sight Obstruction Type",
       "description": "Defines the type of block shape used to check for line of sight obstructions.",
       "type": "string",
-      "enum": [ "outline", "collision", "collision_for_camera" ],
+      "enum": ["outline", "collision", "collision_for_camera"],
       "default": "collision"
     },
     "look_at_locations": {
@@ -44,7 +44,7 @@
             "title": "Location",
             "type": "string",
             "description": "Location to be looked at",
-            "enum": [ "head", "body", "feet" ]
+            "enum": ["head", "body", "feet"]
           },
           "vertical_offset": {
             "title": "Vertical Offset",
@@ -56,7 +56,7 @@
     },
     "looked_at_cooldown": {
       "$ref": "../types/range_number_type.json",
-      "default": [ 0.0, 0.0 ],
+      "default": [0.0, 0.0],
       "description": "The range for the random amount of time during which the entity is `cooling down` and won't get angered or look for a target.",
       "title": "Look Cooldown"
     },
@@ -93,7 +93,7 @@
       "description": "Defines if and how the owner entity will set entities that are looking at it as its combat targets. Valid values:\n- \"never\", looking entities are never set as targets, but events are emitted.\n- \"once_and_stop_scanning\", the first detected looking entity is set as target. Scanning and event emission is suspended if and until the owner entity has a target.\n- \"once_and_keep_scanning\", the first detected looking entity is set as target. Scanning and event emission continues.",
       "type": "string",
       "default": "once_and_stop_scanning",
-      "enum": [ "never", "once_and_stop_scanning", "once_and_keep_scanning" ]
+      "enum": ["never", "once_and_stop_scanning", "once_and_keep_scanning"]
     }
   },
   "examples": [

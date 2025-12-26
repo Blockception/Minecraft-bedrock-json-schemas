@@ -4,5 +4,5 @@
   "description": "When set, the entity will render even when invisible. Appropriate rendering behavior can then be specified in the corresponding \"minecraft:client_entity\".",
   "type": "object",
   "additionalProperties": false,
-  "properties": { }
+  "properties": {}
 }

@@ -6,7 +6,9 @@
   "title": "Music File",
   "description": "The definition file of music of the resourcepack.",
   "definitions": { "music": {} },
-  "propertyNames": { "examples": ["creative", "credits", "end", "endboss", "game", "hell", "menu", "nether", "soulsand_valley", "water"] },
+  "propertyNames": {
+    "examples": ["creative", "credits", "end", "endboss", "game", "hell", "menu", "nether", "soulsand_valley", "water"]
+  },
   "additionalProperties": {
     "additionalProperties": false,
     "type": "object",

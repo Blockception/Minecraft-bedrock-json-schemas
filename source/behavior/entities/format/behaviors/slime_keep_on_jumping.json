@@ -12,6 +12,6 @@
     "speed_multiplier": {
       "$ref": "types/speed_multiplier.json"
     },
-    "control_flags": {"$ref": "./types/control_flags.json"}
+    "control_flags": { "$ref": "./types/control_flags.json" }
   }
 }

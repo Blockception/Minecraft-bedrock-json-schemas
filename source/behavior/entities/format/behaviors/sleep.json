@@ -47,7 +47,7 @@
     "goal_radius": {
       "title": "Goal Radius",
       "description": "Distance in blocks within the mob considers it has reached the goal. This is the \"wiggle room\" to stop the AI from bouncing back and forth trying to reach a specific spot",
-      "default":  0.5,
+      "default": 0.5,
       "type": "number"
     }
   },

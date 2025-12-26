@@ -20,4 +20,3 @@
     "minecraft:recipe_smithing_transform": { "$ref": "./types/recipe_smithing_transform.json" }
   }
 }
-

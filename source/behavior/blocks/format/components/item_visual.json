@@ -1,20 +1,20 @@
 {
-    "$id": "blockception.minecraft.behavior.blocks.minecraft.item_visual",
-    "title": "Item Visual",
-    "description": "The description identifier of the geometry and material used to render the item of this block.",
-    "type": "object",
-    "additionalProperties": false,
-    "required": [ "geometry", "material_instances" ],
-    "properties": {
-        "geometry": {
-            "title": "Geometry",
-            "description": "The \"minecraft:geometry\" component that will be used for the item.",
-            "$ref": "./geometry.json"
-        },
-        "material_instances": {
-            "title": "Geometry",
-            "description": "The \"minecraft:material_instances\" component that will be used for the item.",
-            "$ref": "./material_instances.json"
-        }
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.item_visual",
+  "title": "Item Visual",
+  "description": "The description identifier of the geometry and material used to render the item of this block.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["geometry", "material_instances"],
+  "properties": {
+    "geometry": {
+      "title": "Geometry",
+      "description": "The \"minecraft:geometry\" component that will be used for the item.",
+      "$ref": "./geometry.json"
+    },
+    "material_instances": {
+      "title": "Geometry",
+      "description": "The \"minecraft:material_instances\" component that will be used for the item.",
+      "$ref": "./material_instances.json"
     }
+  }
 }

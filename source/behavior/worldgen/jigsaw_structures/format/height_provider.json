@@ -1,16 +1,22 @@
 {
-    "title": "Height Provider",
-    "description": "The type of the the height provider. These values determine the format of the start_height JSON Object.",
-    "type": "object",
-    "properties": {
-        "type": {
-            "title": "Type",
-            "type": "string",
-            "enum": [ "constant", "uniform" ]
-        }
+  "title": "Height Provider",
+  "description": "The type of the the height provider. These values determine the format of the start_height JSON Object.",
+  "type": "object",
+  "properties": {
+    "type": {
+      "title": "Type",
+      "type": "string",
+      "enum": ["constant", "uniform"]
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "processor_type": { "const": "constant" } } },
+      "then": { "$ref": "./height_provider/constant.json" }
     },
-    "allOf": [
-        { "if": { "properties": { "processor_type": { "const": "constant" } } }, "then": { "$ref": "./height_provider/constant.json" } },
-        { "if": { "properties": { "processor_type": { "const": "uniform" } } }, "then": { "$ref": "./height_provider/uniform.json" } }
-    ]
+    {
+      "if": { "properties": { "processor_type": { "const": "uniform" } } },
+      "then": { "$ref": "./height_provider/uniform.json" }
+    }
+  ]
 }

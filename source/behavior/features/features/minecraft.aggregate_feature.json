@@ -3,34 +3,27 @@
   "description": "'minecraft:aggregate_feature` places a collection of features in an arbitary order. All features in the collection use the same input position. Features should not depend on each other, as there is no guarantee on the order the features will be placed.\n Succeeds if: At lease one feature is placed successfully.\n Fails if: All features fail to be placed.",
   "type": "object",
   "additionalProperties": false,
-  "required": [
-      "description",
-      "features"
-  ],
+  "required": ["description", "features"],
   "properties": {
-      "description": {
-          "$ref": "../types/description.json"
-      },
-      "features": {
-          "title": "Features",
-          "description": "Collection of features to be placed one by one. No guarantee of order. All features use the same input position.",
-          "type": "array",
-          "minItems": 1,
-          "items": {
-              "title": "Feature",
-              "description": "Feature identifer",
-              "type": "string"
-          }
-      },
-      "early_out": {
-          "type": "string",
-          "title": "Early Out",
-          "description": "Do not continue placing features once either the first success or first failure has occurred.",
-          "enum": [
-              "none",
-              "first_failure",
-              "first_success"
-          ]
+    "description": {
+      "$ref": "../types/description.json"
+    },
+    "features": {
+      "title": "Features",
+      "description": "Collection of features to be placed one by one. No guarantee of order. All features use the same input position.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "title": "Feature",
+        "description": "Feature identifer",
+        "type": "string"
       }
+    },
+    "early_out": {
+      "type": "string",
+      "title": "Early Out",
+      "description": "Do not continue placing features once either the first success or first failure has occurred.",
+      "enum": ["none", "first_failure", "first_success"]
+    }
   }
 }

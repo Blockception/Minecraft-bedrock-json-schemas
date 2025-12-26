@@ -1,19 +1,16 @@
 {
-    "title": "Constant",
-    "description": "Constant anchor point.",
-    "type": "object",
-    "properties": {
-        "type": {
-            "title": "Type",
-            "type": "string",
-            "const": "constant"
-        },
-        "value": {
-            "$ref": "../vertical_anchor.json"
-        }
+  "title": "Constant",
+  "description": "Constant anchor point.",
+  "type": "object",
+  "properties": {
+    "type": {
+      "title": "Type",
+      "type": "string",
+      "const": "constant"
     },
-    "required": [
-        "value",
-        "type"
-    ]
+    "value": {
+      "$ref": "../vertical_anchor.json"
+    }
+  },
+  "required": ["value", "type"]
 }

@@ -4,7 +4,7 @@
   "description": "The tags component determines which tags an item has on it.",
   "type": "object",
   "additionalProperties": false,
-  "required": [ "tags" ],
+  "required": ["tags"],
   "properties": {
     "tags": {
       "title": "Tags",
@@ -14,7 +14,8 @@
       "minItems": 1,
       "items": {
         "anyOf": [
-          { "enum": [
+          {
+            "enum": [
               "minecraft:arrow",
               "minecraft:banner",
               "minecraft:boat",

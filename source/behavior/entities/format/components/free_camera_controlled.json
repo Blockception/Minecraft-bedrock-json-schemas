@@ -8,13 +8,13 @@
     "backwards_movement_modifier": {
       "title": "Backwards Movement Modifier",
       "description": "Modifies speed going backwards.",
-      "type": "number", 
+      "type": "number",
       "minimum": 0
     },
     "strafe_speed_modifier": {
       "title": "Strafe Speed Modifier",
       "description": "Modifies the strafe speed.",
-      "type": "number", 
+      "type": "number",
       "minimum": 0
     }
   }

@@ -3,6 +3,6 @@
   "title": "Molang Number",
   "description": "The minecraft molang definition that results in a float.",
   "anyOf": [{ "type": "string", "minLength": 0 }, { "type": "number" }],
-  "examples": ["(1.0)","(0.0)"],
+  "examples": ["(1.0)", "(0.0)"],
   "defaultSnippets": [{ "label": "New Molang", "body": "$1" }]
 }

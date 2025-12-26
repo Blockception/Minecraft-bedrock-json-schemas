@@ -5,7 +5,7 @@
   "description": "A custom biome definition.",
   "type": "object",
   "additionalProperties": false,
-  "required": [ "description", "components" ],
+  "required": ["description", "components"],
   "definitions": {
     "components_ref": {
       "type": "object",
@@ -34,7 +34,7 @@
       "description": "The description for this biome.",
       "type": "object",
       "additionalProperties": false,
-      "required": [ "identifier" ],
+      "required": ["identifier"],
       "properties": {
         "identifier": {
           "title": "Identifier",

@@ -13,7 +13,7 @@
       "uniqueItems": true,
       "minItems": 1,
       "items": {
-        "enum": ["minecraft:cardinal_connections" ]
+        "enum": ["minecraft:cardinal_connections"]
       }
     }
   }

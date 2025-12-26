@@ -17,7 +17,7 @@
     "minimum_distance_below_surface": {
       "title": "Minimum Distance Below Surface",
       "description": "The minimum number of blocks required to be between the estimated surface level and a valid place for this feature.",
-      "type": "integer", 
+      "type": "integer",
       "default": 0
     }
   }

@@ -3,7 +3,7 @@
   "additionalProperties": false,
   "type": "object",
   "title": "Player.experience",
-  "description": "Defines how much experience each player action should take.",  
+  "description": "Defines how much experience each player action should take.",
   "required": [],
   "properties": {
     "value": {

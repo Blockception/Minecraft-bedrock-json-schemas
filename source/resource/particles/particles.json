@@ -41,8 +41,17 @@
           "description": "Particle effect action.",
           "properties": {
             "effect": { "type": "string", "description": "Identifier of the effect.", "title": "Effect" },
-            "type": { "type": "string", "description": "UNDOCUMENTED: type.", "title": "Type", "enum": ["emitter", "emitter_bound", "particle", "particle_with_velocity"] },
-            "pre_effect_expression": { "type": "string", "description": "Molang expression to run on the new emitter.", "title": "Pre Effect Expression" }
+            "type": {
+              "type": "string",
+              "description": "UNDOCUMENTED: type.",
+              "title": "Type",
+              "enum": ["emitter", "emitter_bound", "particle", "particle_with_velocity"]
+            },
+            "pre_effect_expression": {
+              "type": "string",
+              "description": "Molang expression to run on the new emitter.",
+              "title": "Pre Effect Expression"
+            }
           }
         },
         "sound_effect": {
@@ -105,7 +114,12 @@
                   "description": " Minecraft material to use for emitter.",
                   "title": "Material"
                 },
-                "texture": { "type": "string", "pattern": "^.+$", "description": "Minecraft texture to use for emitter.", "title": "Texture" }
+                "texture": {
+                  "type": "string",
+                  "pattern": "^.+$",
+                  "description": "Minecraft texture to use for emitter.",
+                  "title": "Texture"
+                }
               }
             }
           },
@@ -124,7 +138,11 @@
             "description": "The curve definitions, conists out of a couple of nodes.",
             "$comment": "UNDOCUMENTED",
             "properties": {
-              "input": { "$ref": "../../molang/number.json", "title": "Input", "description": "What is the input value to use." },
+              "input": {
+                "$ref": "../../molang/number.json",
+                "title": "Input",
+                "description": "What is the input value to use."
+              },
               "nodes": {
                 "description": "Control nodes for curve.  These are assumed to be equally, used Object for bezier_chain",
                 "title": "Nodes",
@@ -175,7 +193,9 @@
             "minecraft:particle_appearance_billboard": { "$ref": "./components/particle_appearance_billboard.json" },
             "minecraft:particle_appearance_tinting": { "$ref": "./components/particle_appearance_tinting.json" },
             "minecraft:particle_appearance_lighting": { "$ref": "./components/particle_appearance_lighting.json" },
-            "minecraft:particle_expire_if_not_in_blocks": { "$ref": "./components/particle_expire_if_not_in_blocks.json" },
+            "minecraft:particle_expire_if_not_in_blocks": {
+              "$ref": "./components/particle_expire_if_not_in_blocks.json"
+            },
             "minecraft:particle_expire_if_in_blocks": { "$ref": "./components/particle_expire_if_in_blocks.json" },
             "minecraft:particle_initialization": { "$ref": "./components/particle_initialization.json" },
             "minecraft:particle_initial_speed": { "$ref": "./components/particle_initial_speed.json" },

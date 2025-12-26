@@ -18,7 +18,11 @@
           "anyOf": [
             {
               "type": "array",
-              "items": { "type": "string", "description": "A reference to a component group.", "title": "Component Groups" }
+              "items": {
+                "type": "string",
+                "description": "A reference to a component group.",
+                "title": "Component Groups"
+              }
             },
             {
               "type": "string",
@@ -129,7 +133,15 @@
           "type": "object",
           "properties": {
             "slot": {
-              "enum": ["slot.armor.head", "slot.armor.chest", "slot.armor.legs", "slot.armor.feet", "slot.armor.body", "slot.weapon.offhand", "slot.weapon.mainhand"]
+              "enum": [
+                "slot.armor.head",
+                "slot.armor.chest",
+                "slot.armor.legs",
+                "slot.armor.feet",
+                "slot.armor.body",
+                "slot.weapon.offhand",
+                "slot.weapon.mainhand"
+              ]
             }
           }
         },

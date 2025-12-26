@@ -1,43 +1,43 @@
 {
-    "$id": "blockception.minecraft.behavior.items.minecraft.piercing_weapon",
-    "title": "Piercing Weapon",
-    "description": "Allows an item to deal damage to all entities detected in a straight line along the user's view vector. Items with this component cannot destroy blocks, as the attack action always takes priority, regardless of what the user is looking at.",
-    "type": "object",
-    "additionalProperties": false,
-    "definitions": {
-        "range": {
-            "additionalProperties": false,
-            "properties": {
-                "max": {
-                    "type": "number"
-                },
-                "min": {
-                    "type": "number"
-                }
-            },
-            "type": "object"
-        }
-    },
-    "properties": {
-        "creative_reach": {
-            "title": "Creative Reach",
-            "$ref": "#/definitions/range",
-            "description": "Defines the reach used when the user is in Creative Mode. Defaults to \"reach\" if unspecified."
+  "$id": "blockception.minecraft.behavior.items.minecraft.piercing_weapon",
+  "title": "Piercing Weapon",
+  "description": "Allows an item to deal damage to all entities detected in a straight line along the user's view vector. Items with this component cannot destroy blocks, as the attack action always takes priority, regardless of what the user is looking at.",
+  "type": "object",
+  "additionalProperties": false,
+  "definitions": {
+    "range": {
+      "additionalProperties": false,
+      "properties": {
+        "max": {
+          "type": "number"
         },
-        "hitbox_margin": {
-            "title": "Hitbox Margin",
-            "default": 0,
-            "description": "Added tolerance to the view vector raycast for detecting entity collisions.",
-            "type": "number"
-        },
-        "reach": {
-            "title": "Reach",
-            "$ref": "#/definitions/range",
-            "default": {
-                "max": 3,
-                "min": 0
-            },
-            "description": "Defines the range (in blocks) along the user's view vector where entities can be hit. Only targets within this distance are considered. Block collisions between the user and target block damage and its effects."
+        "min": {
+          "type": "number"
         }
+      },
+      "type": "object"
     }
+  },
+  "properties": {
+    "creative_reach": {
+      "title": "Creative Reach",
+      "$ref": "#/definitions/range",
+      "description": "Defines the reach used when the user is in Creative Mode. Defaults to \"reach\" if unspecified."
+    },
+    "hitbox_margin": {
+      "title": "Hitbox Margin",
+      "default": 0,
+      "description": "Added tolerance to the view vector raycast for detecting entity collisions.",
+      "type": "number"
+    },
+    "reach": {
+      "title": "Reach",
+      "$ref": "#/definitions/range",
+      "default": {
+        "max": 3,
+        "min": 0
+      },
+      "description": "Defines the range (in blocks) along the user's view vector where entities can be hit. Only targets within this distance are considered. Block collisions between the user and target block damage and its effects."
+    }
+  }
 }

@@ -12,17 +12,26 @@
     "base": {
       "description": "Item used as base for the smithing recipe.",
       "title": "Base",
-      "oneOf": [{ "$ref": "./base types/item.json" }, { "type": "array", "items": { "$ref": "./base types/item.json" } }]
+      "oneOf": [
+        { "$ref": "./base types/item.json" },
+        { "type": "array", "items": { "$ref": "./base types/item.json" } }
+      ]
     },
     "addition": {
       "description": "Item used as addition for the smithing recipe.",
       "title": "Addition",
-      "oneOf": [{ "$ref": "./base types/item.json" }, { "type": "array", "items": { "$ref": "./base types/item.json" } }]
+      "oneOf": [
+        { "$ref": "./base types/item.json" },
+        { "type": "array", "items": { "$ref": "./base types/item.json" } }
+      ]
     },
     "result": {
       "description": "When input items match the pattern then these items are the result.",
       "title": "Result",
-      "oneOf": [{ "$ref": "./base types/item.json" }, { "type": "array", "items": { "$ref": "./base types/item.json" } }]
+      "oneOf": [
+        { "$ref": "./base types/item.json" },
+        { "type": "array", "items": { "$ref": "./base types/item.json" } }
+      ]
     }
   }
 }

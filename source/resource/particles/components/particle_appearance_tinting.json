@@ -23,13 +23,24 @@
                 {
                   "description": "An array of colors.",
                   "type": "array",
-                  "items": { "type": "string", "description": "Color.", "title": "Color", "format": "color-hex", "examples": ["#FFFFFF"] }
+                  "items": {
+                    "type": "string",
+                    "description": "Color.",
+                    "title": "Color",
+                    "format": "color-hex",
+                    "examples": ["#FFFFFF"]
+                  }
                 },
                 {
                   "description": "An object of colors.",
                   "type": "object",
                   "propertyNames": { "pattern": "(^[\\-0-9]+$|^[\\-0-9]+\\.[\\-0-9]+$)" },
-                  "additionalProperties": { "type": "string", "description": "Color.", "format": "color-hex", "examples": ["#FFFFFF"] }
+                  "additionalProperties": {
+                    "type": "string",
+                    "description": "Color.",
+                    "format": "color-hex",
+                    "examples": ["#FFFFFF"]
+                  }
                 },
                 {
                   "description": "An array of colors.",
@@ -47,7 +58,11 @@
                 }
               ]
             },
-            "interpolant": { "$ref": "../../../molang/number.json", "description": "UNDOCUMENTED: interpolant.", "title": "Interpolant" }
+            "interpolant": {
+              "$ref": "../../../molang/number.json",
+              "description": "UNDOCUMENTED: interpolant.",
+              "title": "Interpolant"
+            }
           }
         }
       ]

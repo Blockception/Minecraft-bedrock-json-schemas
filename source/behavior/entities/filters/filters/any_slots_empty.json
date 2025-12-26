@@ -4,7 +4,10 @@
   "title": "Any Slots Empty",
   "description": "Returns true when the designated equipment location for the subject entity has any empty slot.",
   "required": ["value"],
-  "examples": [{ "test": "any_slots_empty", "subject": "self", "operator": "equals", "value": "any" }, { "test": "Any_slots_empty" }],
+  "examples": [
+    { "test": "any_slots_empty", "subject": "self", "operator": "equals", "value": "any" },
+    { "test": "Any_slots_empty" }
+  ],
   "properties": {
     "test": {
       "type": "string",

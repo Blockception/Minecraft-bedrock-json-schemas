@@ -12,7 +12,7 @@
     "post_teleport_distance": {
       "title": "Post Teleport Distance",
       "description": "Defines how far (in blocks) the entity will be from its owner after teleporting. If not specified, it defaults to \"stop_distance\" + 1, allowing the entity to seamlessly resume navigation.",
-      "type": "number", 
+      "type": "number",
       "minimum": 3
     },
     "speed_multiplier": {

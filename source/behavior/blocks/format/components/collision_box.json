@@ -41,7 +41,7 @@
       "$ref": "#/definitions/entry"
     },
     {
-      "type": "array", 
+      "type": "array",
       "items": {
         "$ref": "#/definitions/entry"
       }

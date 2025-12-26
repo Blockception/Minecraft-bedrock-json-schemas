@@ -12,7 +12,7 @@
     "cooldown": {
       "title": "Cooldown",
       "description": "The time in seconds that must pass for the entity to be able to try to teleport again.",
-      "type": "number", 
+      "type": "number",
       "minimum": 1.0
     },
     "filters": {

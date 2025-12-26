@@ -93,8 +93,10 @@
             },
             "materials": {
               "type": "object",
-              "additionalProperties": { 
-                "type": "string", "description": "Material reference.", "title": "Material",
+              "additionalProperties": {
+                "type": "string",
+                "description": "Material reference.",
+                "title": "Material",
                 "$ref": "../../../general/vanilla/material.json"
               },
               "description": "A collection of material definitions.",
