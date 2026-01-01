@@ -35,7 +35,7 @@ jobs:
           specificationFile: "source/compress_specification.json"
 
       - name: ✏️ Commit and Create PR
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           branch: auto/update-schemas
           commit-message: "auto: generated json schemas ${{ steps.time.outputs.time }}"
