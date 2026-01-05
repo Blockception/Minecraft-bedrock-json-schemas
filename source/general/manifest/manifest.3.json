@@ -233,7 +233,7 @@
           "entry": {
             "type": "string",
             "title": "Entry",
-            "description": "The javascript entry point for tests, only works if types has been set to `javascript`."
+            "description": "The entry file for the pack's scripts. Requires `type` to be set to `script`."
           }
         }
       }
