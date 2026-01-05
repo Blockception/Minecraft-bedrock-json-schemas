@@ -217,7 +217,7 @@
           "language": {
             "type": "string",
             "title": "Language",
-            "description": "The programming language to use.",
+            "description": "Only present if `type` is `script`. This indicates the language in which scripts are written in the pack. The only supported value is `javascript`.",
             "enum": ["javascript", "Javascript"]
           },
           "uuid": {
@@ -233,7 +233,7 @@
           "entry": {
             "type": "string",
             "title": "Entry",
-            "description": "The javascript entry point for tests, only works if types has been set to `javascript`."
+            "description": "The entry file for the pack's scripts. Requires `type` to be set to `script`."
           }
         }
       }
