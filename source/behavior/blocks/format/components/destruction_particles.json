@@ -1,10 +1,9 @@
 {
   "$id": "blockception.minecraft.behavior.blocks.minecraft.destruction_particles",
   "title": "Destruction Particles",
-  "description": "[Experimental] Sets the particles that will be used when block is destroyed. This component can be omitted.",
+  "description": "Sets the particles that will be used when block is destroyed. This component can be omitted.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["texture"],
   "properties": {
     "texture": {
       "title": "Texture",
@@ -20,9 +19,10 @@
     "particle_count": {
       "title": "Particle Count",
       "description": "Number of particles to spawn on destruction",
-      "type": "integer",
+      "type": "number",
       "default": 100,
-      "maximum": 255
+      "maximum": 255,
+      "minimum": 0
     }
   }
 }
