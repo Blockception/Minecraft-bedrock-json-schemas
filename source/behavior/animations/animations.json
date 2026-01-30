@@ -81,7 +81,7 @@
   "required": ["format_version", "animations"],
   "additionalProperties": false,
   "properties": {
-    "format_version": { "type": "string", "enum": ["1.8.0", "1.10.0"] },
+    "format_version": { "$ref": "../../general/format_version.json" },
     "animations": {
       "title": "Animations Schema",
       "description": "The animation specification.",

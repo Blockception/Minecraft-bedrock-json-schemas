@@ -92,7 +92,7 @@
   "required": ["format_version", "animation_controllers"],
   "additionalProperties": false,
   "properties": {
-    "format_version": { "type": "string", "const": "1.10.0" },
+    "format_version": { "$ref": "../../general/format_version.json" },
     "animation_controllers": {
       "type": "object",
       "title": "Animation Controllers",
