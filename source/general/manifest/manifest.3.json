@@ -166,8 +166,8 @@
         },
         "min_engine_version": {
           "title": "Minimum Engine Version",
-          "$ref": "../Version.json",
-          "description": "This is the minimum version of the game that this pack was written for. This is a required field for resource and behavior packs. This helps the game identify whether any backwards compatibility is needed for your pack. You should always use the highest version currently available when creating packs"
+          "$ref": "../semver.json",
+          "description": "This is the minimum version of the game that this pack was written for. This is a required field for resource and behavior packs. This helps the game identify whether any backwards compatibility is needed for your pack. You should always use the highest version currently available when creating packs. In version 3, currently in preview, you must use a string for version."
         },
         "name": {
           "title": "Name",
