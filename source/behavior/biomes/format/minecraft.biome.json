@@ -24,7 +24,8 @@
         "minecraft:replace_biomes": { "$ref": "./components/replace_biomes.json" },
         "minecraft:surface_material_adjustments": { "$ref": "./components/surface_material_adjustments.json" },
         "minecraft:surface_builder": { "$ref": "./components/surface_builder.json" },
-        "minecraft:tags": { "$ref": "./components/tags.json" }
+        "minecraft:tags": { "$ref": "./components/tags.json" },
+        "minecraft:village_type": { "$ref": "./components/village_type.json" }
       }
     }
   },
