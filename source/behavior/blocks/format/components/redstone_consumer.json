@@ -14,8 +14,8 @@
       "minimum": 0,
       "maximum": 15
     },
-    "propogates_power": {
-      "title": "Propogates Power",
+    "propagates_power": {
+      "title": "Propagates Power",
       "description": "Controls whether a signal can pass through this block or not, defaults to false",
       "type": "boolean",
       "default": false
