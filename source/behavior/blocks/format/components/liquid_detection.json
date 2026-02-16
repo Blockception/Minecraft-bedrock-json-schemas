@@ -41,6 +41,12 @@
             "type": "string",
             "enum": ["up", "down", "north", "south", "east", "west", "side", "all"]
           }
+        },
+        "use_liquid_clipping": {
+          "title": "Use Liquid Clipping",
+          "description": "true means the block will use the \"collision_box\" to visually clip the water & false ignores liquid clipping, which will render water across the whole block",
+          "type": "boolean",
+          "default": true
         }
       }
     }
