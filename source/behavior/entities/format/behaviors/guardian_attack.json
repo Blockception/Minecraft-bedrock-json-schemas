@@ -9,6 +9,9 @@
     "priority": {
       "$ref": "./types/priority.json"
     },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "elder_extra_magic_damage": {
       "title": "Elder Extra Magic Damage",
       "type": "integer",

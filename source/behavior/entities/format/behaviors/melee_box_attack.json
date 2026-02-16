@@ -4,13 +4,16 @@
   "title": "Melee Box Attack",
   "description": "Permits an entity to deal damage through a melee attack with reach calculations based on bounding boxes.",
   "additionalProperties": false,
-  "required": [],
+  "required": [ ],
   "properties": {
     "priority": {
       "$ref": "./types/priority.json"
     },
     "speed_multiplier": {
       "$ref": "./types/speed_multiplier.json"
+    },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
     },
     "attack_once": {
       "title": "Attack Once",
@@ -79,7 +82,7 @@
     "on_kill": {
       "title": "On Kill",
       "$ref": "../types/trigger.json",
-      "description": "[UNDOCUMENTED] Defines the event to trigger when this entity successfully kills a target."
+      "description": "Defines the event to trigger when this entity successfully kills a target."
     },
     "outer_boundary_time_increase": {
       "title": "Outer Boundary Time Increase",

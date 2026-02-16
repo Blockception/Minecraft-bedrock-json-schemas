@@ -4,10 +4,13 @@
   "type": "object",
   "title": "Stomp Attack",
   "additionalProperties": false,
-  "required": [],
+  "required": [ ],
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "attack_once": {
       "title": "Attack Once",
       "type": "boolean",
@@ -38,11 +41,6 @@
       "default": 0.25,
       "description": "Time (in seconds) to add to attack path recalculation when the target is beyond the \"path_inner_boundary\"."
     },
-    "max_dist": {
-      "title": "Max Dist",
-      "type": "number",
-      "description": "Unused. No effect on \"minecraft:behavior.melee_attack\"."
-    },
     "max_path_time": {
       "title": "Max Path Time",
       "type": "number",
@@ -71,6 +69,11 @@
       "title": "On Attack",
       "$ref": "../types/trigger.json",
       "description": "Defines the event to trigger when this entity successfully attacks."
+    },
+    "on_kill": {
+      "title": "On Kill",
+      "$ref": "../types/trigger.json",
+      "description": "Defines the event to trigger when this entity successfully kills a target."
     },
     "outer_boundary_time_increase": {
       "title": "Outer Boundary Time Increase",
