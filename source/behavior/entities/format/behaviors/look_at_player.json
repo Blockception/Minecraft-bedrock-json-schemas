@@ -35,13 +35,9 @@
     },
     "look_time": {
       "title": "Look Time",
-      "type": "array",
       "default": [2, 4],
       "description": "Time range to look at the nearest player.",
-      "items": [
-        { "type": "number", "title": "Minimum", "description": "The minimum amount of time to look." },
-        { "type": "number", "title": "Maximum", "description": "The maximum amount of time to look." }
-      ]
+      "$ref": "../types/range_number_type.json"
     },
     "target_distance": {
       "title": "Target Distance",
