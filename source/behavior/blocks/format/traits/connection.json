@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.blocks.traits.minecraft.connection",
   "title": "Connection",
-  "description": "[EXPERIMENTAL] Exposes behavior like Fences or Glass Panes from Vanilla where blocks connect to other blocks around them. Using this trait with the example below adds the bool states minecraft:connection_north, minecraft:connection_east, minecraft:connection_south, and minecraft:connection_west.",
+  "description": "Exposes behavior like Fences or Glass Panes from Vanilla where blocks connect to other blocks around them. Using this trait with the example below adds the bool states minecraft:connection_north, minecraft:connection_east, minecraft:connection_south, and minecraft:connection_west.",
   "additionalProperties": false,
   "type": "object",
   "required": ["enabled_states"],
