@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.blocks.minecraft.redstone_consumer",
   "title": "Redstone Consumer",
-  "description": "[EXPERIMENTAL] A component describing how a block can consume and potentially propogate a redstone signal",
+  "description": "A component describing how a block can consume and potentially propogate a redstone signal",
   "type": "object",
   "additionalProperties": false,
   "required": ["min_power"],
