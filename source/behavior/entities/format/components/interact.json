@@ -127,7 +127,7 @@
         "swing": {
           "title": "Swing",
           "type": "boolean",
-          "default": false,
+          "default": true,
           "description": "If true, the player will do the \"swing\" animation when interacting with this entity."
         },
         "transform_to_item": {
