@@ -1,0 +1,216 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.offspring",
+  "type": "object",
+  "title": "Offspring",
+  "additionalProperties": false,
+  "description": "Defines how an offspring of an entity is born",
+  "definitions": {
+    "breeds_with_spec": {
+      "type": "object",
+      "description": "An entity definitions that this entity can breed with.",
+      "additionalItems": false,
+      "properties": {
+        "baby_type": {
+          "type": "string",
+          "description": "The entity definition of this entity's babies.",
+          "title": "Baby Type"
+        },
+        "breed_event": {
+          "$ref": "../types/event_object.json",
+          "description": "Event to run when this entity breeds.",
+          "title": "Breed Event"
+        },
+        "mate_type": {
+          "type": "string",
+          "description": "The entity definition of this entity's mate.",
+          "title": "Mate Type"
+        }
+      }
+    },
+    "enviroment_requirements": {
+      "type": "object",
+      "description": "A nearby block requirements to get the entity into the `love` state.",
+      "properties": {
+        "blocks": {
+          "description": "The block types required nearby for the entity to breed.",
+          "title": "Blocks",
+          "oneOf": [
+            {
+              "type": "array",
+              "items": {
+                "description": "A block type required nearby for the entity to breed.",
+                "type": "string",
+                "$ref": "../../../../general/block/reference.json",
+                "title": "Blocks"
+              }
+            },
+            {
+              "description": "A block type required nearby for the entity to breed.",
+              "type": "string",
+              "$ref": "../../../../general/block/reference.json",
+              "title": "Blocks"
+            }
+          ]
+        },
+        "count": {
+          "type": "number",
+          "description": "The number of the required block types nearby for the entity to breed.",
+          "title": "Count"
+        },
+        "radius": {
+          "type": "number",
+          "description": "How many blocks radius from the mob's center to search in for the required blocks. Bounded between 0 and 16.",
+          "minimum": 0,
+          "title": "Radius"
+        }
+      },
+      "title": "Environment Requirements"
+    }
+  },
+  "properties": {
+    "blend_attributes": {
+      "description": "If true, the entities will blend their attributes in the offspring after they breed.",
+      "type": "boolean",
+      "default": true,
+      "title": "Blend Attributes"
+    },
+    "deny_parents_variant": {
+      "type": "object",
+      "description": "Determines how likely the baby of parents with the same variant will deny that variant and take a random variant within the given range instead.",
+      "additionalProperties": false,
+      "properties": {
+        "chance": {
+          "type": "number",
+          "default": 0,
+          "description": "The percentage chance of denying the parents` variant.",
+          "title": "Chance"
+        },
+        "max_variant": {
+          "type": "integer",
+          "default": 0,
+          "description": "The inclusive maximum of the variant range.",
+          "title": "Maximum Variant"
+        },
+        "min_variant": {
+          "type": "integer",
+          "default": 0,
+          "description": "The inclusive minimum of the variant range.",
+          "title": "Minimum Variant"
+        }
+      },
+      "title": "Deny Parents Variant"
+    },
+    "mutation_factor": {
+      "type": "object",
+      "description": "Determines how likely the babies are to NOT inherit one of their parent's variances. Values are between 0.0 and 1.0, with a higher number meaning more likely to mutate.",
+      "additionalProperties": false,
+      "properties": {
+        "color": {
+          "type": "number",
+          "default": 0,
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "The percentage chance of the offspring getting its color as if spawned rather than inheriting color from its parents.",
+          "title": "Color"
+        },
+        "extra_variant": {
+          "type": "number",
+          "default": 0,
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "The percentage chance of a mutation on the entity's extra variant type.",
+          "title": "Extra Variant"
+        },
+        "variant": {
+          "type": "number",
+          "default": 0,
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "description": "The percentage chance of a mutation on the entity's variant type.",
+          "title": "Variant"
+        }
+      },
+      "title": "Mutation Factor"
+    },
+    "mutation_strategy": {
+      "title": "Mutation Strategy",
+      "type": "string",
+      "default": "none",
+      "description": "Strategy used for mutating variants and extra variants for offspring. Current valid alternatives are 'random' and 'none'."
+    },
+    "parent_centric_attribute_blending": {
+      "title": "Parent Centric Attribute Blending",
+      "type": "array",
+      "description": "[EXPERIMENTAL] List of attributes that should benefit from parent centric attribute blending. For example, horses blend their health, movement, and jump_strength in their offspring."
+    },
+    "property_inheritance": {
+      "title": "Property Inheritance",
+      "description": "List of Entity Properties that should be inherited from the parent entities and potentially mutated.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": {
+          "mutation_chance": {
+            "title": "Mutation Chance",
+            "description": "The chance it should not inherit from either parent",
+            "type": "number",
+            "minimum": 0
+          },
+          "mutation_values": {
+            "title": "Mutation Values",
+            "description": "Array of values to select from if mutating and the component has random mutation set",
+            "type": "array",
+            "minItems": 1
+          }
+        },
+        "propertyNames": {
+          "pattern": "^[0-9a-zA-Z:_\\.\\-]+$"
+        }
+      }
+    },
+    "random_extra_variant_mutation_interval": {
+      "title": "Random Extra Variant Mutation Interval",
+      "default": 0,
+      "$ref": "../../../../general/vectors/number2.json",
+      "description": "Range used to determine random extra variant."
+    },
+    "random_variant_mutation_interval": {
+      "title": "Random Variant Mutation Interval",
+      "default": 0,
+      "$ref": "../../../../general/vectors/number2.json",
+      "description": "Range used to determine random variant."
+    },
+    "inherit_tamed": {
+      "type": "boolean",
+      "default": true,
+      "description": "If true, the babies will be automatically tamed if its parents are.",
+      "title": "Inherit Tamed"
+    },
+    "combine_parent_colors": {
+      "type": "boolean",
+      "default": true,
+      "description": "If true, the babies will have their color be mixed.",
+      "title": "Combine Parent Colors"
+    },
+    "offspring_pairs": {
+      "title": "Offspring Pairs",
+      "description": "Key-Value Pair of the other entity and the offspring to spawn",
+      "type": "object",
+      "patternProperties": {
+        "^[0-9a-zA-Z:_\\.\\-]+$": {
+          "title": "Offspring Identifier",
+          "description": "",
+          "type": "string",
+          "pattern": "^[0-9a-zA-Z:_\\.\\-]+$"
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "offspring_pairs": {
+        "": ""
+      }
+    }
+  ]
+}

@@ -5,5 +5,44 @@
   "title": "Jump Dynamic",
   "additionalProperties": false,
   "required": [],
-  "properties": {}
+  "definitions": {
+    "skip_data": {
+      "type": "object", 
+      "additionalProperties": false,
+      "properties": {
+        "distance_scale": {
+          "title": "Distance Scale",
+          "description": "The multiplier applied to horizontal velocity when jumping.",
+          "type": "number"
+        },
+        "height": {
+          "title": "Height",
+          "description": "The force applied vertically when jumping.",
+          "type": "number"
+        },
+        "jump_delay": {
+          "title": "Jump Delay",
+          "description": "Amount of ticks between sequential jumps.",
+          "type": "number"
+        },
+        "animation_duration": {
+          "title": "Animation Duration",
+          "description": "Duration of the jump animation.",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "properties": {
+    "regular_skip_data": {
+      "title": "Regular Skip Data",
+      "description": "Used during normal skip movement",
+      "$ref": "#/definitions/skip_data"
+    },
+    "fast_skip_data": {
+      "title": "Fast Skip Data",
+      "description": "Used when travelling quickly with skip movement",
+      "$ref": "#/definitions/skip_data"
+    }
+  }
 }

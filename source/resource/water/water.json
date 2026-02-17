@@ -184,6 +184,13 @@
               "type": "string"
             }
           }
+        },
+        "biome_water_color_contribution": {
+          "title": "Biome Water Color Concentration",
+          "description": "Controls the contribution of per-biome water colors provided by *.client_biome.json files.",
+          "type": "number", 
+          "minimum": 0,
+          "maximum": 1
         }
       }
     }

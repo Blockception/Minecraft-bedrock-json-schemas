@@ -16,7 +16,7 @@
           "dimension": {
             "description": "Dimension in which this replacement can happen.",
             "type": "string",
-            "const": "minecraft:overworld"
+            "enum": ["minecraft:overworld", "minecraft:nether"]
           },
           "amount": {
             "description": "Noise value used to determine whether or not the replacement is attempted, similar to a percentage. Must be in the range (0.0, 1.0].",

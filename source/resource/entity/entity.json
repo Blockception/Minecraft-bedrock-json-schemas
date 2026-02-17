@@ -5,7 +5,7 @@
     {
       "label": "New entity",
       "body": {
-        "format_version": "${1:1.10.0}",
+        "format_version": "${1:1.26.0}",
         "minecraft:client_entity": {
           "description": {
             "identifier": "$2:${3:${TM_FILENAME/[\\.].*//}}",
@@ -26,7 +26,7 @@
   ],
   "examples": [
     {
-      "format_version": "1.10.0",
+      "format_version": "1.26.0",
       "minecraft:client_entity": {
         "description": {
           "identifier": "minecraft:entity",

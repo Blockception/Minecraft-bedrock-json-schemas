@@ -1,0 +1,23 @@
+{
+  "$id": "blockception.minecraft.behavior.biomes.minecraft.village_type",
+  "title": "Village Type",
+  "description": "Determines the type of village for the biome.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["type"],
+  "properties": {
+    "type": {
+      "title": "Type",
+      "description": "Village type",
+      "default": "default",
+      "type": "string",
+      "enum": [
+        "desert",
+        "ice",
+        "savanna",
+        "taiga",
+        "default"
+      ]
+    }
+  }
+}

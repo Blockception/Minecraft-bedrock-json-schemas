@@ -141,6 +141,7 @@
     "minecraft:navigation.swim": { "$ref": "./components/navigation.swim.json" },
     "minecraft:navigation.walk": { "$ref": "./components/navigation.walk.json" },
     "minecraft:npc": { "$ref": "./components/npc.json" },
+    "minecraft:offspring": { "$ref": "./components/offspring.json" },
     "minecraft:on_death": { "$ref": "./components/on_death.json" },
     "minecraft:on_friendly_anger": { "$ref": "./components/on_friendly_anger.json" },
     "minecraft:on_hurt_by_player": { "$ref": "./components/on_hurt_by_player.json" },

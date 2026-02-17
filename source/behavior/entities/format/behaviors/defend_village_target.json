@@ -6,15 +6,18 @@
   "description": "Allows the entity to stay in a village and defend the village from aggressors. If a player is in bad standing with the village this goal will cause the entity to attack the player regardless of filter conditions.",
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "entity_types": {
       "title": "Entity Types",
       "$ref": "../types/entity_types.json",
       "description": "List of entity types this mob considers a threat to the village.",
       "$comment": "UNDOCUMENTED"
     },
-    "must_reach": {
-      "title": "Must Reach",
-      "description": "The entity must be able to reach attacker.",
+    "attack_owner": {
+      "default": false,
+      "description": "If true, this entity can attack its owner.",
       "type": "boolean"
     },
     "attack_chance": {
@@ -22,6 +25,34 @@
       "description": "The percentage chance that the entity has to attack aggressors of its village, where 1.0 = 100%.",
       "type": "number",
       "default": 0.05
+    },
+    "must_reach": {
+      "default": false,
+      "description": "If true, this entity requires a path to the target.",
+      "type": "boolean"
+    },
+    "must_see": {
+      "default": false,
+      "description": "Determines if target-validity requires this entity to be in range only, or both in range and in sight.",
+      "type": "boolean"
+    },
+    "must_see_forget_duration": {
+      "default": 3,
+      "description": "Time (in seconds) the target must not be seen by this entity to become invalid. Used only if \"must_see\" is true.",
+      "minimum": 0,
+      "type": "number"
+    },
+    "persist_time": {
+      "default": 0,
+      "description": "Time (in seconds) this entity can continue attacking the target after the target is no longer valid.",
+      "minimum": 0,
+      "type": "number"
+    },
+    "within_radius": {
+      "default": 0,
+      "description": "Maximum distance this entity can be from the target when following it, otherwise the target becomes invalid. This value is only used if the entity doesn't declare \"minecraft:follow_range\".",
+      "minimum": 0,
+      "type": "number"
     }
   },
   "examples": [

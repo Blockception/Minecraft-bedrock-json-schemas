@@ -7,6 +7,9 @@
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
     "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "attack_duration": {
       "title": "Attack Duration",
       "type": "number",
@@ -30,12 +33,6 @@
       "type": "boolean",
       "default": false,
       "description": "If the entity is on fire, this allows the entity's target to catch on fire after being hi"
-    },
-    "cooldown_time": {
-      "title": "Cooldown Time",
-      "type": "number",
-      "default": 1,
-      "description": "Cooldown time (in seconds) between attacks."
     },
     "hit_delay_pct": {
       "title": "Hit Delay Pct",
@@ -75,6 +72,11 @@
     "on_attack": {
       "title": "On Attack",
       "description": "Defines the event to trigger when this entity successfully attacks.",
+      "$ref": "../types/trigger.json"
+    },
+    "on_kill": {
+      "title": "On Kill",
+      "description": "Defines the event to trigger when this entity kills the target.",
       "$ref": "../types/trigger.json"
     },
     "outer_boundary_time_increase": {
@@ -147,6 +149,11 @@
       "type": "number",
       "default": 30,
       "description": "Maximum rotation (in degrees), on the Y-axis, this entity can rotate its head while trying to look at the target."
+    },
+    "sound_event": {
+      "$ref": "../../../../general/sound_event.json",
+      "description": "The sound event",
+      "title": "Sound Event"
     }
   },
   "examples": [

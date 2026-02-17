@@ -39,6 +39,9 @@
     "priority": {
       "$ref": "./types/priority.json"
     },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "entity_types": {
       "$ref": "../types/entity_types.json",
       "description": "Filters which types of targets are valid for this entity",

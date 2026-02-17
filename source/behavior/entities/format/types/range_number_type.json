@@ -27,6 +27,22 @@
           "description": "The maximum value of the range."
         }
       }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "min": {
+          "type": "number",
+          "title": "Min",
+          "description": "The minimum value of the range."
+        },
+        "max": {
+          "type": "number",
+          "title": "Max",
+          "description": "The maximum value of the range."
+        }
+      }
     }
   ]
 }
