@@ -34,7 +34,7 @@
                 "description": "The amount of time in seconds the effect should last. This allows for fractional numbers. For example, instant effects should be set to 0.05 seconds (one tick).",
                 "anyOf": [
                   {
-                    "type": "integer",
+                    "type": "number",
                     "default": 1,
                     "minimum": 0
                   },
