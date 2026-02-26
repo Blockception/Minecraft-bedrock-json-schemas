@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "test:multi_collision"
+    },
+    "components": {
+      "minecraft:collision_box": [
+        {
+          "origin": [-8, 0, -8],
+          "size": [16, 8, 16]
+        },
+        {
+          "origin": [-8, 10, -8],
+          "size": [16, 6, 16]
+        }
+      ]
+    }
+  }
+}
