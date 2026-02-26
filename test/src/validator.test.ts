@@ -41,7 +41,8 @@ class Explorer {
       const ref = data.$ref;
 
       if (!ref.startsWith('#')) {
-        const filepath = path.isAbsolute(ref) ? ref : path.join(folder, ref);
+        const refPath = ref.includes('#') ? ref.split('#')[0] : ref;
+        const filepath = path.isAbsolute(refPath) ? refPath : path.join(folder, refPath);
 
         if (!fs.existsSync(filepath)) {
           const anno = this.find(ref);
