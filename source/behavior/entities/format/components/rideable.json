@@ -95,12 +95,12 @@
     "on_rider_enter_event": {
       "title": "On Rider Enter Event",
       "description": "Event to execute on the owner entity when an entity starts riding it.",
-      "$ref": "../../../../../general/event.json"
+      "$ref": "../types/event.json"
     },
     "on_rider_exit_event": {
       "title": "On Rider Exit Event",
       "description": "Event to execute on the owner entity when an entity stops riding it.",
-      "$ref": "../../../../../general/event.json"
+      "$ref": "../types/event.json"
     },
     "passenger_max_width": {
       "title": "Passenger Max Width",
