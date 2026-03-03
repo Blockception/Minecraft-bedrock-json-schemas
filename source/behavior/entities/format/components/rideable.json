@@ -9,22 +9,6 @@
       "additionalProperties": false,
       "type": "object",
       "properties": {
-        "dismount_mode": {
-          "title": "Dismount Mode",
-          "description": "Defines where riders are placed when dismounting this entity:\n- \"default\", riders are placed on a valid ground position around the entity, or at the center of the entity's collision box if none is found.\n- \"on_top_center\", riders are placed at the center of the top of the entity's collision box.",
-          "type": "string",
-          "enum": ["default", "on_top_center"]
-        },
-        "on_rider_enter_event": {
-          "title": "On Rider Enter Event",
-          "description": "Event to execute on the owner entity when an entity starts riding it.",
-          "type": "string"
-        },
-        "on_rider_exit_event": {
-          "title": "On Rider Exit Event",
-          "description": "Event to execute on the owner entity when an entity stops riding it.",
-          "type": "string"
-        },
         "third_person_camera_radius": {
           "title": "Third Person Camera Radius",
           "description": "Can be used to set a different camera radius when in third person or third person front camera. Value 0.0 is ignored.",
@@ -100,6 +84,23 @@
       "default": "",
       "description": "The text to display when the player can interact with the entity when playing with Touch-screen controls.",
       "title": "Interact Text"
+    },
+    "dismount_mode": {
+      "title": "Dismount Mode",
+      "description": "Defines where riders are placed when dismounting this entity:\n- \"default\", riders are placed on a valid ground position around the entity, or at the center of the entity's collision box if none is found.\n- \"on_top_center\", riders are placed at the center of the top of the entity's collision box.",
+      "type": "string",
+      "default": "default",
+      "enum": ["default", "on_top_center"]
+    },
+    "on_rider_enter_event": {
+      "title": "On Rider Enter Event",
+      "description": "Event to execute on the owner entity when an entity starts riding it.",
+      "$ref": "../types/event.json"
+    },
+    "on_rider_exit_event": {
+      "title": "On Rider Exit Event",
+      "description": "Event to execute on the owner entity when an entity stops riding it.",
+      "$ref": "../types/event.json"
     },
     "passenger_max_width": {
       "title": "Passenger Max Width",
