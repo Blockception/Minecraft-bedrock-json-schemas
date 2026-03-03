@@ -38,8 +38,8 @@
   "devDependencies": {
     "@eslint/js": "^9.39.2",
     "@types/jest": "^30.0.0",
-    "@types/node": "^25.3.0",
-    "comment-json": "^4.5.1",
+    "@types/node": "^25.3.3",
+    "comment-json": "^4.6.1",
     "eslint": "^9.39.2",
     "eslint-plugin-jest": "^29.12.1",
     "ts-jest": "^29.4.6",
@@ -51,6 +51,6 @@
   },
   "dependencies": {
     "fast-glob": "^3.3.2",
-    "vscode-json-languageservice": "^5.7.1"
+    "vscode-json-languageservice": "^5.7.2"
   }
 }
