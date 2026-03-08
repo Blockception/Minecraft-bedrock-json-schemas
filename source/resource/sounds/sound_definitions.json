@@ -24,7 +24,8 @@
       "required": ["sounds"],
       "properties": {
         "__use_legacy_max_distance": {
-          "type": "boolean",
+          "type": "string",
+          "enum": ["true", "false"],
           "title": "Use Legacy Max Distance",
           "description": "Whenever or not use legacy distance checking."
         },
@@ -117,6 +118,11 @@
           "description": "UNDOCUMENTED.",
           "type": ["number", "null"],
           "minimum": 0
+        },
+        "subtitle": {
+          "title": "Subtitle",
+          "description": "UNDOCUMENTED.",
+          "type": "string"
         }
       }
     }
@@ -137,3 +143,4 @@
     }
   }
 }
+
