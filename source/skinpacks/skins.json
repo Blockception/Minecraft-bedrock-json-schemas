@@ -36,7 +36,7 @@
         "type": "object",
         "properties": {
           "localization_name": {
-            "title": "Locatlization Name",
+            "title": "Localization Name",
             "description": "The key in the language file to use to display text.",
             "type": "string"
           },
@@ -54,3 +54,4 @@
     }
   }
 }
+
