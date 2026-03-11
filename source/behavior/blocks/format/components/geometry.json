@@ -30,7 +30,7 @@
         },
         "culling": {
           "title": "Block Culling Rule",
-          "description": "The description identifer of the block culling rule used to cull this block. This identifier must match an existing geometry identifier in any of the currently loaded resource packs.",
+          "description": "The description identifier of the block culling rule or voxel shape used to cull this block. This identifier must match an existing block culling rule or voxel shape identifier in any of the currently loaded resource or behavior packs.",
           "type": "string"
         },
         "culling_layer": {
