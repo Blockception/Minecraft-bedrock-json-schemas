@@ -25,6 +25,7 @@
     { "Source": "./behavior/recipes/recipes.json", "Destination": "../behavior/recipes/recipes.json" },
     { "Source": "./behavior/spawn_rules/spawn_rules.json", "Destination": "../behavior/spawn_rules/spawn_rules.json" },
     { "Source": "./behavior/trading/trading.json", "Destination": "../behavior/trading/trading.json" },
+    { "Source": "./behavior/voxel_shapes/voxel_shape.json", "Destination": "../behavior/voxel_shapes/voxel_shape.json" },
     { "Source": "./behavior/worldgen/jigsaw_structures/jigsaw.json", "Destination": "../behavior/worldgen/jigsaw_structures/jigsaw.json" },
     { "Source": "./behavior/worldgen/processors/processor_list.json", "Destination": "../behavior/worldgen/processors/processor_list.json" },
     { "Source": "./behavior/worldgen/structure_sets/structure_set.json", "Destination": "../behavior/worldgen/structure_sets/structure_set.json" },

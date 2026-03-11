@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.voxel_shape.identifier",
+  "description": "The minecraft voxel shape identifier.",
+  "examples": ["namespace:shape_name"],
+  "pattern": "^[0-9a-zA-Z:_\\.\\-]+$",
+  "title": "Voxel Shape Identifier",
+  "type": "string",
+  "defaultSnippets": [{ "label": "New Identifier", "body": "$1:$2" }]
+}
