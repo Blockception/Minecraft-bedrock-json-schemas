@@ -1,0 +1,14 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "test:connection_rule"
+    },
+    "components": {
+      "minecraft:connection_rule": {
+        "accepts_connections_from": "only_fences",
+        "enabled_directions": ["north", "south"]
+      }
+    }
+  }
+}
