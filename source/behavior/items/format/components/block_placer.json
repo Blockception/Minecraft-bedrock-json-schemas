@@ -14,6 +14,11 @@
     }
   },
   "properties": {
+    "aligned_placement": {
+      "default": false,
+      "description": "If true, block placement through this item will be aligned while holding the interaction button down. Defaults to false.",
+      "type": "boolean"
+    },
     "block": {
       "type": "string",
       "description": "Set the placement block name for the planter item.",
