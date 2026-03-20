@@ -208,10 +208,6 @@
     {
       "Source": "./resource/ui/ui.json",
       "Destination": "../resource/ui/ui.json"
-    },
-    {
-      "Source": "./resource/ui/screens.json",
-      "Destination": "../resource/ui/screens.json"
     }
   ]
 }
