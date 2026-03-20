@@ -1,0 +1,1 @@
+{"$schema":"http://json-schema.org/draft-07/schema","title":"Minecraft JSON UI - Chest Screen","description":"Schema for the Minecraft Bedrock chest screen UI file.","allOf":[{"$ref":"../ui.json"}],"properties":{"namespace":{"title":"Namespace","type":"string","const":"chest_screen"}},"definitions":{}}

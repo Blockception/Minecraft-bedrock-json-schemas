@@ -1,0 +1,1 @@
+{"$schema":"http://json-schema.org/draft-07/schema","title":"Minecraft JSON UI - Trade Screen","description":"Schema for the Minecraft Bedrock villager trading screen UI file.","allOf":[{"$ref":"../ui.json"}],"properties":{"namespace":{"title":"Namespace","type":"string","const":"trade_screen"}},"definitions":{}}

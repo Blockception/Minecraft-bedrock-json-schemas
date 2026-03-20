@@ -1,0 +1,19 @@
+{
+  "namespace": "chest_screen",
+
+  "common_chest_panel": {
+    "type": "panel",
+    "size": ["100%", "100%"],
+    "controls": [
+      { "chest_panel@chest_screen.chest_panel_template": {} }
+    ]
+  },
+
+  "chest_panel_template": {
+    "type": "image",
+    "texture": "textures/ui/small_chest",
+    "size": [176, 222],
+    "anchor_from": "center",
+    "anchor_to": "center"
+  }
+}

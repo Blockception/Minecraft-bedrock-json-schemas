@@ -1,0 +1,8 @@
+{
+  "namespace": "wrong_namespace",
+
+  "common_chest_panel": {
+    "type": "panel",
+    "size": ["100%", "100%"]
+  }
+}
