@@ -22,6 +22,10 @@ export namespace Files {
     return path.join(FilesFolder(), 'incorrect');
   }
 
+  export function BedrockSamplesFolder(): string {
+    return path.join(RootFolder(), 'bedrock-samples');
+  }
+
   export function GetFiles(cwd: string): string[] {
     if (!cwd.endsWith('/') && !cwd.endsWith('\\')) cwd += '/';
 

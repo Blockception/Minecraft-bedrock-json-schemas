@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: 📦 Checkout Repository
         uses: actions/checkout@v6
+        with:
+          submodules: recursive
 
       - name: 🏗️ Setup Node.js Environment
         uses: actions/setup-node@v6
@@ -49,6 +51,8 @@ jobs:
     steps:
       - name: 📦 Checkout Repository
         uses: actions/checkout@v6
+        with:
+          submodules: recursive
 
       - name: 🏗️ Setup Node.js Environment
         uses: actions/setup-node@v6
