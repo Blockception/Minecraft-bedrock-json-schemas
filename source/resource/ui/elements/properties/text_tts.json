@@ -1,0 +1,5 @@
+{
+  "title": "Text TTS",
+  "description": "The text-to-speech override text for the element.",
+  "$ref": "../../general/string.json"
+}

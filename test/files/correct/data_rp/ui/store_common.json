@@ -1,0 +1,141 @@
+{
+  "namespace": "common_store",
+
+  "label": {
+    "type": "label",
+    "color": "$body_text_color",
+    "size": [ "100%", "14px" ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left"
+  },
+
+  "offer_image_panel": {
+    "type": "image",
+    "layer": 6,
+    "$offer_image_collection_details|default": "none",
+    "$offer_image_binding_collection_name|default": "",
+    "$offer_image_binding_type|default": "none",
+    "bindings": [
+      {
+        "binding_type": "$offer_image_collection_details",
+        "binding_collection_name": "$offer_image_binding_collection_name"
+      },
+      {
+        "binding_type": "$offer_image_binding_type",
+        "binding_name": "$offer_image_binding_name",
+        "binding_name_override": "#visible",
+        "binding_collection_name": "$offer_image_binding_collection_name"
+      }
+    ]
+  },
+
+  "banner_fill": {
+    "type": "image",
+    "texture": "textures/ui/Banners",
+    "$banner_fill_alpha|default": 1.0,
+    "alpha": "$banner_fill_alpha"
+  },
+
+  "store_description_background_dark": {
+    "type": "image",
+    "size": [ "100%", "100%" ],
+    "texture": "textures/ui/white_background",
+    "$description_background_alpha|default": 1.0,
+    "color": "$sidebar_bg_color",
+    "alpha": "$description_background_alpha",
+    "fill": true,
+    "keep_ratio": false
+  },
+
+  "text_style_label": {
+    "type": "panel",
+    "size": [ "100%", "100%c" ],
+    "$text_style_label_bindings|default": [],
+    "$text_style_label|default": "",
+    "$tts_text_override_value": "",
+    "$text_style_alignment|default": "left",
+    "$text_style_font_type|default": "default",
+    "$text_style_font_color|default": [ 1, 1, 1 ],
+    "controls": [
+      {
+        "text_label": {
+          "type": "label",
+          "size": [ "100%", "default" ],
+          "text": "$text_style_label",
+          "tts_override_control_value": "$tts_text_override_value",
+          "text_alignment": "$text_style_alignment",
+          "font_type": "$text_style_font_type",
+          "color": "$text_style_font_color",
+          "bindings": "$text_style_label_bindings"
+        }
+      }
+    ]
+  },
+
+  "sdl_texture": {
+    "type": "image",
+    "layer": 2,
+    "alpha": 1.0,
+    "texture": "#sdl_texture_component_image_path",
+    "$ignore_texture_related_binds|default": false,
+    "$ignore_texture_visiblity_bind|default": false,
+    "$store_factory_collection_details|default": "none",
+    "$store_factory_collection_name|default": "",
+    "$store_factory_binding_type|default": "global",
+    "bindings": [
+      {
+        "binding_type": "$store_factory_collection_details",
+        "binding_collection_name": "$store_factory_collection_name"
+      },
+      {
+        "ignored": "$ignore_texture_related_binds",
+        "binding_type": "$store_factory_binding_type",
+        "binding_collection_name": "$store_factory_collection_name",
+        "binding_name": "#sdl_texture_component_image_path",
+        "binding_name_override": "#texture"
+      },
+      {
+        "ignored": "$ignore_texture_visiblity_bind",
+        "binding_type": "$store_factory_binding_type",
+        "binding_collection_name": "$store_factory_collection_name",
+        "binding_name": "#sdl_texture_component_image_visible",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  "store_offer_grid_button@common.button": {
+    "layer": 4,
+    "default_control": "",
+    "focus_identifier": "offer_button",
+    "$ignore_cycle_buttons|default": false,
+    "$pressed_button_name|default": "button.select_offer",
+    "tts_inherit_siblings": true,
+    "bindings": [
+      {
+        "binding_type": "$offer_collection_details",
+        "binding_collection_name": "$offer_collection_name"
+      }
+    ],
+    "$offer_button_mappings|default": [
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "$pressed_button_name",
+        "mapping_type": "pressed"
+      }
+    ],
+    "variables": [
+      {
+        "requires": "$ignore_cycle_buttons",
+        "$offer_button_mappings": [
+          {
+            "from_button_id": "button.menu_select",
+            "to_button_id": "$pressed_button_name",
+            "mapping_type": "pressed"
+          }
+        ]
+      }
+    ],
+    "button_mappings": "$offer_button_mappings"
+  }
+}

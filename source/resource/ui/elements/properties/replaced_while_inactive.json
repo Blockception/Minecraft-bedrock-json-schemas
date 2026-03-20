@@ -1,0 +1,5 @@
+{
+  "title": "Replaced While Inactive",
+  "description": "If true, the control will be replaced while inactive.",
+  "$ref": "../../general/boolean.json"
+}

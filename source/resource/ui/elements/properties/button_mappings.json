@@ -8,14 +8,70 @@
     {
       "type": "array",
       "items": {
-        "type": "object",
-        "title": "Button Mappings",
-        "additionalProperties": {
-          "type": ["string", "boolean"],
-          "title": "Button Mapping",
-          "examples": ["button.menu", "button.back", "global"]
+        "$ref": "#/definitions/button_mapping"
+      }
+    }
+  ],
+  "definitions": {
+    "button_mapping": {
+      "type": "object",
+      "title": "Button Mapping",
+      "description": "A button mapping entry that maps an input button action to a UI button event.",
+      "properties": {
+        "from_button_id": {
+          "title": "From Button ID",
+          "description": "The button ID to map from.",
+          "$ref": "../../general/string.json"
+        },
+        "to_button_id": {
+          "title": "To Button ID",
+          "description": "The button ID to map to.",
+          "$ref": "../../general/string.json"
+        },
+        "mapping_type": {
+          "title": "Mapping Type",
+          "description": "The type of button mapping.",
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": ["pressed", "focused", "global", "double_pressed"]
+            },
+            {
+              "$ref": "../../general/variable.json"
+            }
+          ]
+        },
+        "ignored": {
+          "title": "Ignored",
+          "description": "If true, this button mapping is ignored.",
+          "$ref": "../../general/boolean.json"
+        },
+        "scope": {
+          "title": "Scope",
+          "description": "The scope for the button mapping (e.g., 'view').",
+          "$ref": "../../general/string.json"
+        },
+        "input_mode_condition": {
+          "title": "Input Mode Condition",
+          "description": "The input mode condition for this mapping (e.g., 'gamepad', 'touch').",
+          "$ref": "../../general/string.json"
+        },
+        "handle_select": {
+          "title": "Handle Select",
+          "description": "If true, this mapping handles the select event.",
+          "$ref": "../../general/boolean.json"
+        },
+        "handle_deselect": {
+          "title": "Handle Deselect",
+          "description": "If true, this mapping handles the deselect event.",
+          "$ref": "../../general/boolean.json"
+        },
+        "consume_event": {
+          "title": "Consume Event",
+          "description": "If true, the input event is consumed and not propagated further.",
+          "$ref": "../../general/boolean.json"
         }
       }
     }
-  ]
+  }
 }
