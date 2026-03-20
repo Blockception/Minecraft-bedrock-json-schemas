@@ -1,4 +1,17 @@
 {
   "$generic_button_text_color": [1.0, 1.0, 1.0],
-  "$_mark_color": [1, 1, 1]
+  "$light_button_default_text_color": [0.3, 0.3, 0.3],
+  "$light_button_hover_text_color": [1.0, 1.0, 1.0],
+  "$dark_button_default_text_color": [1.0, 1.0, 1.0],
+  "$dark_button_locked_text_color": [0.7, 0.7, 0.7],
+  "$title_text_color": [0.3, 0.3, 0.3],
+  "$body_text_color": [1.0, 1.0, 1.0],
+  "$warning_text_color": [0.8, 0.7, 0.0],
+  "$error_text_color": [1.0, 0.0, 0.0],
+  "$transition_time_push": 0.4,
+  "$transition_time_pop": 0.25,
+  "$loading_bar_transition": 3.0,
+  "$dark_panel_color": [0.5, 0.5, 0.5, 1.0],
+  "$0_color_format": [0.0, 0.0, 0.0],
+  "$f_color_format": [1.0, 1.0, 1.0]
 }

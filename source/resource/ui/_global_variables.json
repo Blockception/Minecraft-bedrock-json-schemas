@@ -1,6 +1,8 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.resource.ui.global_variables",
   "title": "Global Variables",
-  "description": "Global variables that can be used in any JSON file.",
+  "description": "Global variables that can be used in any JSON UI file.",
   "type": "object",
   "propertyNames": {
     "pattern": "^\\$[a-zA-Z0-9_-]+$"

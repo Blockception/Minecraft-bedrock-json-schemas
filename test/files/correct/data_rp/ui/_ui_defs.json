@@ -1,3 +1,9 @@
 {
-  "ui_defs": ["ui/some_file_path.json", "ui/some_other_file_path.json"]
+  "ui_defs": [
+    "ui/hud_screen.json",
+    "ui/inventory_screen.json",
+    "ui/pause_screen.json",
+    "ui/start_screen.json",
+    "ui/ui_common.json"
+  ]
 }
