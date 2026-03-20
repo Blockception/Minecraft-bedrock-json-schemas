@@ -1,0 +1,113 @@
+{
+  "namespace": "hud",
+
+  "hud_player_panel": {
+    "type": "panel",
+    "size": [ 15, 15 ],
+    "controls": [
+      {
+        "hud_player": {
+          "type": "custom",
+          "renderer": "hud_player_renderer",
+          "layer": 1,
+          "animation_reset_name": "screen_animation_reset",
+          "bindings": [
+            {
+              "binding_name": "#paper_doll_visible",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "hotbar_element": {
+    "type": "custom",
+    "$hotbar_renderer_size|default": [ 20, 22 ],
+    "renderer": "hotbar_renderer",
+    "size": "$hotbar_renderer_size",
+    "layer": 1,
+    "bindings": [
+      {
+        "binding_collection_name": "$hotbar_collection_name",
+        "binding_type": "collection_details"
+      },
+      {
+        "binding_name": "#hotbar_visible",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  "cooldown_element": {
+    "type": "custom",
+    "renderer": "hotbar_cooldown_renderer",
+    "size": [ 20, 22 ],
+    "layer": 1
+  },
+
+  "heart_element": {
+    "type": "custom",
+    "size": [ 1, 1 ],
+    "renderer": "heart_renderer",
+    "layer": 1
+  },
+
+  "armor_element": {
+    "type": "custom",
+    "size": [ 1, 1 ],
+    "renderer": "armor_renderer",
+    "layer": 1,
+    "bindings": [
+      {
+        "binding_name": "#is_armor_visible",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  "debug_panel": {
+    "type": "panel",
+    "debug": "red",
+    "size": [ "100%", "100%" ]
+  },
+
+  "replaced_while_inactive_panel": {
+    "type": "panel",
+    "size": [ "100%sm", 5 ],
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "replaced_while_inactive": true
+  },
+
+  "chat_bubble_label": {
+    "type": "label",
+    "text": "#chat_message",
+    "text_tts": "#chat_message_tts",
+    "color": [ 1.0, 1.0, 1.0 ],
+    "shadow": true
+  },
+
+  "text_edit_element": {
+    "type": "edit_box",
+    "always_listening": true,
+    "max_length": 256,
+    "text_box_name": "#message_box",
+    "enabled": true
+  },
+
+  "button_with_consume_event@common.button": {
+    "$pressed_button_name": "button.menu_cancel",
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "$pressed_button_name",
+        "mapping_type": "pressed",
+        "handle_select": true,
+        "handle_deselect": false,
+        "consume_event": false
+      }
+    ]
+  }
+}

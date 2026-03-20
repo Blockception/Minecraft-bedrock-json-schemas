@@ -1,0 +1,5 @@
+{
+  "title": "Always Listening",
+  "description": "If true, the element will always listen for input events even when not focused.",
+  "$ref": "../../general/boolean.json"
+}

@@ -26,7 +26,26 @@
         "vignette_renderer",
         "debug_screen_renderer",
         "enchanting_book_renderer",
-        "web_view_renderer"
+        "web_view_renderer",
+        "armor_renderer",
+        "bubbles_renderer",
+        "camera_renderer",
+        "cursor_renderer",
+        "dash_renderer",
+        "editor_compass_renderer",
+        "editor_gizmo_renderer",
+        "editor_volume_highlight_renderer",
+        "heart_renderer",
+        "horse_heart_renderer",
+        "horse_jump_renderer",
+        "hotbar_cooldown_renderer",
+        "hotbar_renderer",
+        "hud_player_renderer",
+        "hunger_renderer",
+        "live_player_renderer",
+        "locator_bar",
+        "mob_effects_renderer",
+        "progress_indicator_renderer"
       ]
     },
     {

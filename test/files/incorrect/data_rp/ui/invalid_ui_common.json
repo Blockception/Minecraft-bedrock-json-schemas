@@ -1,0 +1,14 @@
+{
+  "namespace": "test_invalid_common",
+
+  "bad_button_mapping": {
+    "type": "button",
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "button.menu_select",
+        "mapping_type": "not_a_valid_mapping_type"
+      }
+    ]
+  }
+}

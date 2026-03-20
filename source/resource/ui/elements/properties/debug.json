@@ -1,0 +1,5 @@
+{
+  "title": "Debug",
+  "description": "A debug color overlay for the element. Used for layout debugging purposes.",
+  "$ref": "../../general/string.json"
+}
