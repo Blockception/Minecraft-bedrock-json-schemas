@@ -1,0 +1,82 @@
+{
+  "namespace": "test_ui",
+
+  "root_panel": {
+    "type": "panel",
+    "size": ["100%", "100%"],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "offset": [0, 0],
+    "visible": true,
+    "layer": 1,
+    "controls": [
+      { "title_label@test_ui.title_label": {} },
+      { "icon_image@test_ui.icon_image": {} },
+      { "progress_bar@test_ui.progress_bar": {} }
+    ]
+  },
+
+  "title_label": {
+    "type": "label",
+    "text": "Hello World",
+    "size": ["100%", "10px"],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "offset": [0, 5],
+    "color": [1, 1, 1],
+    "font_size": "large",
+    "font_type": "default",
+    "shadow": false,
+    "visible": true,
+    "enabled": true,
+    "alpha": 1.0
+  },
+
+  "icon_image": {
+    "type": "image",
+    "texture": "textures/ui/icon",
+    "size": [16, 16],
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "offset": [-4, 4],
+    "bilinear": false,
+    "keep_ratio": true,
+    "nineslice_size": 4,
+    "tiled": false
+  },
+
+  "progress_bar": {
+    "type": "image",
+    "texture": "textures/ui/progress_bar",
+    "size": ["100%", 4],
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "offset": [0, -4],
+    "clip_direction": "left",
+    "clip_ratio": 0.75,
+    "clips_children": false
+  },
+
+  "scrollable_panel": {
+    "type": "scroll_view",
+    "size": ["100%", "100%"],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "offset": [0, 0],
+    "scroll_speed": 8,
+    "scroll_view_port": "@test_ui.root_panel"
+  },
+
+  "variable_element": {
+    "type": "panel",
+    "size": "$panel_size",
+    "anchor_from": "$anchor",
+    "anchor_to": "$anchor",
+    "offset": "$offset",
+    "visible": "$is_visible",
+    "$panel_size": ["100%", "100%"],
+    "$anchor": "center",
+    "$offset": [0, 0],
+    "$is_visible": true
+  }
+}

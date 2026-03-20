@@ -1,0 +1,19 @@
+{
+  "title": "Tiled Scale",
+  "description": "The scale factor used when tiling a texture. Specified as [x_scale, y_scale].",
+  "anyOf": [
+    {
+      "type": "array",
+      "description": "Scale as [x_scale, y_scale].",
+      "items": [
+        { "title": "X Scale", "type": "number" },
+        { "title": "Y Scale", "type": "number" }
+      ],
+      "minItems": 2,
+      "maxItems": 2
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

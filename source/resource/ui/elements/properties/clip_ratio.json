@@ -1,0 +1,14 @@
+{
+  "title": "Clip Ratio",
+  "description": "A value between 0.0 and 1.0 that controls how much of the element is clipped, used together with clip_direction.",
+  "anyOf": [
+    {
+      "type": "number",
+      "minimum": 0.0,
+      "maximum": 1.0
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}

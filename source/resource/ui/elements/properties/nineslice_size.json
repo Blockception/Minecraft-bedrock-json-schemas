@@ -1,0 +1,26 @@
+{
+  "title": "Nine Slice Size",
+  "description": "Specifies the pixel margins used for 9-slice rendering. Can be a single integer applied to all four sides, or an array [left, top, right, bottom].",
+  "anyOf": [
+    {
+      "type": "integer",
+      "minimum": 0,
+      "examples": [4]
+    },
+    {
+      "type": "array",
+      "description": "Margins as [left, top, right, bottom].",
+      "items": [
+        { "title": "Left", "type": "integer", "minimum": 0 },
+        { "title": "Top", "type": "integer", "minimum": 0 },
+        { "title": "Right", "type": "integer", "minimum": 0 },
+        { "title": "Bottom", "type": "integer", "minimum": 0 }
+      ],
+      "minItems": 4,
+      "maxItems": 4
+    },
+    {
+      "$ref": "../../general/item_ref.json"
+    }
+  ]
+}
