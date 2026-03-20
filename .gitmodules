@@ -1,0 +1,3 @@
+[submodule "bedrock-samples"]
+	path = bedrock-samples
+	url = https://github.com/Mojang/bedrock-samples
