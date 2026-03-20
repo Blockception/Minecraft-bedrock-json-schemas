@@ -3,7 +3,6 @@
   "description": "The orientation of the element.",
   "anyOf": [
     {
-      "type": "string",
       "enum": ["horizontal", "vertical"]
     },
     {
