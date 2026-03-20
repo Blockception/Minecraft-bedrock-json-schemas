@@ -1,8 +1,9 @@
 {
-  "namespace": "wrong_namespace",
+  "namespace": "chest_screen",
 
   "common_chest_panel": {
-    "type": "panel",
-    "size": ["100%", "100%"]
+    "type": "not_a_valid_type",
+    "size": ["100%", "100%"],
+    "not_a_real_property": true
   }
 }

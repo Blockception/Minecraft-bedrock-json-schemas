@@ -1,0 +1,1 @@
+{"$schema":"http://json-schema.org/draft-07/schema","title":"Minecraft JSON UI Screen","description":"A JSON UI screen file in a Minecraft Bedrock resource pack.","allOf":[{"$ref":"./ui.json"}],"definitions":{}}
