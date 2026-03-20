@@ -2,6 +2,9 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "title": "Minecraft JSON UI",
   "type": "object",
+  "propertyNames": {
+    "$ref": "#/definitions/element-key"
+  },
   "properties": {
     "namespace": {
       "title": "Namespace",
@@ -16,7 +19,7 @@
       "description": "An animation is a set of keyframes that can be applied to an element.",
       "additionalProperties": false,
       "patternProperties": {
-        "^\\$.*": {
+        "^\\$[a-zA-Z0-9_-]+(\\|.*)?$": {
           "$ref": "./general/variables.json"
         }
       },
@@ -48,11 +51,19 @@
       "description": "An element is a control that can be added to a screen. It can be a button, a label, an image, etc.",
       "type": "object",
       "propertyNames": {
-        "examples": ["$variable"]
+        "anyOf": [
+          {
+            "title": "Property Name",
+            "description": "A known UI element property name.",
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_]+$"
+          },
+          { "$ref": "#/definitions/variable-key" }
+        ]
       },
       "additionalProperties": false,
       "patternProperties": {
-        "^\\$.*": {
+        "^\\$[a-zA-Z0-9_-]+(\\|.*)?$": {
           "$ref": "./general/variables.json"
         }
       },
@@ -64,6 +75,10 @@
             {
               "type": "array",
               "items": {
+                "type": "object",
+                "propertyNames": {
+                  "$ref": "#/definitions/element-key"
+                },
                 "additionalProperties": {
                   "title": "Sub Element",
                   "$ref": "#/definitions/grouped-ui"
@@ -127,6 +142,9 @@
                             "items": {
                               "title": "Control",
                               "type": "object",
+                              "propertyNames": {
+                                "$ref": "#/definitions/element-key"
+                              },
                               "additionalProperties": {
                                 "$ref": "#/definitions/grouped-ui"
                               }
@@ -136,6 +154,9 @@
                             "title": "Control",
                             "description": "A control.",
                             "type": "object",
+                            "propertyNames": {
+                              "$ref": "#/definitions/element-key"
+                            },
                             "additionalProperties": {
                               "$ref": "#/definitions/grouped-ui"
                             }
@@ -205,6 +226,9 @@
                         "items": {
                           "title": "Control",
                           "type": "object",
+                          "propertyNames": {
+                            "$ref": "#/definitions/element-key"
+                          },
                           "additionalProperties": {
                             "$ref": "#/definitions/grouped-ui"
                           }
@@ -214,6 +238,9 @@
                         "title": "Control",
                         "description": "A control.",
                         "type": "object",
+                        "propertyNames": {
+                          "$ref": "#/definitions/element-key"
+                        },
                         "additionalProperties": {
                           "$ref": "#/definitions/grouped-ui"
                         }
@@ -455,11 +482,19 @@
       "title": "Control Factory",
       "type": "object",
       "propertyNames": {
-        "examples": ["$variable"]
+        "anyOf": [
+          {
+            "title": "Property Name",
+            "description": "A known UI element property name.",
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9_]+$"
+          },
+          { "$ref": "#/definitions/variable-key" }
+        ]
       },
       "additionalProperties": false,
       "patternProperties": {
-        "^\\$.*": {
+        "^\\$[a-zA-Z0-9_-]+(\\|.*)?$": {
           "$ref": "./general/variables.json"
         }
       },
@@ -473,6 +508,16 @@
         "control_ids": { "$ref": "./elements/properties/control_ids.json" },
         "control_name": { "$ref": "./elements/properties/control_name.json" }
       }
+    },
+    "element-key": {
+      "$ref": "./general/element_name.json"
+    },
+    "variable-key": {
+      "title": "Variable Name",
+      "description": "A variable definition key using the $ prefix, optionally with a default value after |.",
+      "type": "string",
+      "pattern": "^\\$[a-zA-Z0-9_-]+(\\|.*)?$",
+      "examples": ["$variable", "$my_var|default"]
     },
     "grouped-ui": {
       "$schema": "http://json-schema.org/draft-07/schema",
