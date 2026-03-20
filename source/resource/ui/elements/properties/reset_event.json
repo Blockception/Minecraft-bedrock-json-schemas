@@ -1,5 +1,5 @@
 {
   "title": "Reset Event",
-  "description": "The event that will be reset.",
+  "description": "The event that will reset the animation.",
   "$ref": "../../general/string.json"
 }

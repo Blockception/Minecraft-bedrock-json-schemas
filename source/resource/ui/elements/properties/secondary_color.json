@@ -1,0 +1,5 @@
+{
+  "title": "Secondary Color",
+  "description": "The secondary color of the element.",
+  "$ref": "../../general/color.json"
+}

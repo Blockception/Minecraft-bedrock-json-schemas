@@ -1,0 +1,5 @@
+{
+  "title": "Start Event",
+  "description": "The event that will start the animation.",
+  "$ref": "../../general/string.json"
+}

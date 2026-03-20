@@ -1,0 +1,5 @@
+{
+  "title": "Tooltip Top Content Control",
+  "description": "The control to use for the top content of the tooltip.",
+  "$ref": "../../general/string.json"
+}

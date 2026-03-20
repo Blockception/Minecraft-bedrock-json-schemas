@@ -1,0 +1,5 @@
+{
+  "title": "Resettable",
+  "description": "If true, the animation can be reset.",
+  "$ref": "../../general/boolean.json"
+}

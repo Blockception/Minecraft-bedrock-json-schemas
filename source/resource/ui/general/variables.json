@@ -1,11 +1,12 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "title": "Variable Definition",
-  "description": "A variable value assignment used in the UI. Can be a boolean, number, string, array, or another variable reference.",
+  "description": "A variable value assignment used in the UI. Can be a boolean, number, string, array, or object.",
   "anyOf": [
     { "type": "boolean" },
     { "type": "number" },
     { "type": "string" },
-    { "type": "array" }
+    { "type": "array" },
+    { "type": "object" }
   ]
 }

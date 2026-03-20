@@ -1,0 +1,5 @@
+{
+  "title": "Placeholder Text Hover Color",
+  "description": "The color of the placeholder text when hovered.",
+  "$ref": "../../general/color.json"
+}

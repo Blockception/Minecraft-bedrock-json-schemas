@@ -3,10 +3,11 @@
   "description": "The orientation of the element.",
   "anyOf": [
     {
+      "type": "string",
       "enum": ["horizontal", "vertical"]
     },
     {
-      "$ref": "../../general/item_ref.json"
+      "$ref": "../../general/variable.json"
     }
   ]
 }

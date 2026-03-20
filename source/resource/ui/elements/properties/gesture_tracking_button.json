@@ -1,0 +1,5 @@
+{
+  "title": "Gesture Tracking Button",
+  "description": "The button used for gesture tracking on input panel elements.",
+  "$ref": "../../general/string.json"
+}

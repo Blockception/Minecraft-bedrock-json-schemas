@@ -1,0 +1,132 @@
+{
+  "namespace": "new_elements_test",
+
+  "tooltip_trigger_element": {
+    "type": "tooltip_trigger",
+    "tooltip_name": "my_tooltip",
+    "tooltip_top_content_control": "tooltip_top_panel",
+    "tooltip_bottom_content_control": "tooltip_bottom_panel",
+    "tooltip_area": "tooltip_area_control",
+    "tooltip_tts_value": "#tooltip_text",
+    "size": [ 1, 1 ],
+    "layer": 3,
+    "focus_enabled": true,
+    "tts_skip_message": false,
+    "consume_hover_events": true
+  },
+
+  "hover_text_element": {
+    "type": "custom",
+    "renderer": "hover_text_renderer",
+    "hover_text_max_width": 100,
+    "layer": 5,
+    "allow_clipping": false
+  },
+
+  "flying_item_element": {
+    "type": "custom",
+    "renderer": "flying_item_renderer",
+    "layer": 40,
+    "property_bag": {
+      "#flying_item_renderer": true
+    }
+  },
+
+  "animated_gif_element": {
+    "type": "custom",
+    "renderer": "animated_gif_renderer",
+    "size": [ "100%", "100%" ]
+  },
+
+  "input_panel_with_gesture": {
+    "type": "input_panel",
+    "gesture_tracking_button": "button.menu_exit",
+    "always_handle_controller_direction": true,
+    "always_accepts_input": false
+  },
+
+  "panel_with_colors": {
+    "type": "panel",
+    "secondary_color": [ 0.5, 0.5, 0.5 ],
+    "full_storage_color": [ 1.0, 0.0, 0.0 ]
+  },
+
+  "edit_box_with_placeholder": {
+    "type": "edit_box",
+    "place_holder_text_hover_color": [ 0.6, 0.6, 0.6 ]
+  },
+
+  "scroll_view_with_always_visible": {
+    "type": "scroll_view",
+    "scrollbar_always_visible": true
+  },
+
+  "tts_panel": {
+    "type": "panel",
+    "tts_skip_message": true
+  },
+
+  "cursor_panel": {
+    "type": "panel",
+    "follows_cursor": true,
+    "gamepad_cursor": false
+  },
+
+  "paged_panel": {
+    "type": "panel",
+    "next_sub_page_button_name": "button.next_page",
+    "prev_sub_page_button_name": "button.prev_page"
+  },
+
+  "anim_with_reset": {
+    "anim_type": "alpha",
+    "play_event": "scrollbar.released",
+    "reset_event": "scrollbar.active",
+    "easing": "in_sine",
+    "duration": 1.5,
+    "from": 1,
+    "to": 0
+  },
+
+  "anim_resettable": {
+    "anim_type": "size",
+    "easing": "out_back",
+    "duration": 0.5,
+    "from": [ 0, 0 ],
+    "to": [ "100%", "100%" ],
+    "resettable": true
+  },
+
+  "anim_with_start_event": {
+    "anim_type": "size",
+    "easing": "in_sine",
+    "start_event": "button.menu_achievements",
+    "from": [ 16, 16 ],
+    "to": [ 64, 32 ],
+    "duration": 1.5
+  },
+
+  "anim_with_activated": {
+    "anim_type": "offset",
+    "activated": "#active",
+    "easing": "out_expo",
+    "from": [ 10, -10 ],
+    "to": [ 240, -10 ],
+    "duration": 5
+  },
+
+  "anim_flipbook_vertical": {
+    "anim_type": "flip_book",
+    "initial_uv": [ 0, 0 ],
+    "frame_count": 30,
+    "frame_step": 1,
+    "fps": 10,
+    "reversible": false,
+    "orientation": "vertical"
+  },
+
+  "ignored_string_expression": {
+    "type": "panel",
+    "ignored": "($nx_os or $is_ps4)"
+  }
+}

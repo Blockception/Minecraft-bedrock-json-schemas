@@ -1,0 +1,5 @@
+{
+  "title": "Full Storage Color",
+  "description": "The color used when storage is full.",
+  "$ref": "../../general/color.json"
+}

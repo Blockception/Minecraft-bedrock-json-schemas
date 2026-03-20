@@ -26,6 +26,7 @@
     "slider_box",
     "slider",
     "stack_panel",
-    "toggle"
+    "toggle",
+    "tooltip_trigger"
   ]
 }
