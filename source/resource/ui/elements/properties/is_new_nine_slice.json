@@ -1,0 +1,5 @@
+{
+  "title": "Is New Nine Slice",
+  "description": "If true, the element will use the newer 9-slice rendering system.",
+  "$ref": "../../general/boolean.json"
+}
