@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "Element Name",
+  "description": "The name of a UI element definition key. Can be a simple identifier or use @-style inheritance to extend another element.",
+  "type": "string",
+  "anyOf": [
+    {
+      "title": "Simple Element Name",
+      "description": "A simple element name without inheritance.",
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_]+$",
+      "examples": ["my_button", "panel_root", "label_text"]
+    },
+    {
+      "title": "Inherited Element Name",
+      "description": "An element name with @-style inheritance syntax. The part before @ is the new name (may be empty), and the part after @ is the parent element to inherit from, optionally prefixed with a namespace.",
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_]*@[a-zA-Z0-9_]+(\\.[a-zA-Z0-9_]+)?$",
+      "examples": ["my_button@common.button", "@common.panel", "root_panel@hud_screen.base"]
+    }
+  ]
+}
