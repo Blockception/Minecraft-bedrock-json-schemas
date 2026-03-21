@@ -1,0 +1,5 @@
+{
+  "title": "Always Handle Controller Direction",
+  "description": "If true, the element will always handle controller direction input.",
+  "$ref": "../../general/boolean.json"
+}

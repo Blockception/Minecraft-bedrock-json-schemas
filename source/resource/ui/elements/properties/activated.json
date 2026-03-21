@@ -1,0 +1,5 @@
+{
+  "title": "Activated",
+  "description": "A binding name that controls whether the animation is active.",
+  "$ref": "../../general/string.json"
+}

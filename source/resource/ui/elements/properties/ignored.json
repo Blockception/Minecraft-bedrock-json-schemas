@@ -1,5 +1,12 @@
 {
   "title": "Ignored",
-  "description": "If true, the element will be ignored.",
-  "$ref": "../../general/boolean.json"
+  "description": "If true, the element will be ignored. Can be a boolean or a string expression.",
+  "anyOf": [
+    {
+      "$ref": "../../general/boolean.json"
+    },
+    {
+      "type": "string"
+    }
+  ]
 }

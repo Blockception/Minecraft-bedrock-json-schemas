@@ -1,0 +1,5 @@
+{
+  "title": "Follows Cursor",
+  "description": "If true, the element will follow the cursor position.",
+  "$ref": "../../general/boolean.json"
+}

@@ -1,0 +1,5 @@
+{
+  "title": "Consume Event",
+  "description": "If true, the event will be consumed and not propagated.",
+  "$ref": "../../general/boolean.json"
+}

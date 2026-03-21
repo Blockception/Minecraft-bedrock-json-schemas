@@ -1,0 +1,5 @@
+{
+  "title": "Scrollbar Always Visible",
+  "description": "If true, the scrollbar will always be visible even when content fits.",
+  "$ref": "../../general/boolean.json"
+}

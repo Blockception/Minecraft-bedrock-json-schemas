@@ -1,0 +1,5 @@
+{
+  "title": "TTS Skip Message",
+  "description": "If true, text-to-speech will skip the message for this element.",
+  "$ref": "../../general/boolean.json"
+}

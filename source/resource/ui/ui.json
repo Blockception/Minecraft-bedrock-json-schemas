@@ -19,7 +19,7 @@
       "description": "An animation is a set of keyframes that can be applied to an element.",
       "additionalProperties": false,
       "patternProperties": {
-        "^\\$[a-zA-Z0-9_-]+(\\|.*)?$": {
+        "^\\$[a-zA-Z0-9_.-]+(\\|.*)?$": {
           "$ref": "./general/variables.json"
         }
       },
@@ -43,7 +43,12 @@
         "scale_from_starting_alpha": { "$ref": "./elements/properties/scale_from_starting_alpha.json" },
         "to": { "$ref": "./elements/properties/to.json" },
         "uv": { "$ref": "./elements/properties/uv.json" },
-        "uv_size": { "$ref": "./elements/properties/uv_size.json" }
+        "uv_size": { "$ref": "./elements/properties/uv_size.json" },
+        "reset_event": { "$ref": "./elements/properties/reset_event.json" },
+        "resettable": { "$ref": "./elements/properties/resettable.json" },
+        "activated": { "$ref": "./elements/properties/activated.json" },
+        "start_event": { "$ref": "./elements/properties/start_event.json" },
+        "orientation": { "$ref": "./elements/properties/orientation.json" }
       }
     },
     "control": {
@@ -63,7 +68,7 @@
       },
       "additionalProperties": false,
       "patternProperties": {
-        "^\\$[a-zA-Z0-9_-]+(\\|.*)?$": {
+        "^\\$[a-zA-Z0-9_.-]+(\\|.*)?$": {
           "$ref": "./general/variables.json"
         }
       },
@@ -467,7 +472,26 @@
         "variables": { "$ref": "./elements/properties/variables.json" },
         "virtual_keyboard_buffer_control": { "$ref": "./elements/properties/virtual_keyboard_buffer_control.json" },
         "visible": { "$ref": "./elements/properties/visible.json" },
-        "zip_folder": { "$ref": "./elements/properties/zip_folder.json" }
+        "zip_folder": { "$ref": "./elements/properties/zip_folder.json" },
+        "gesture_tracking_button": { "$ref": "./elements/properties/gesture_tracking_button.json" },
+        "always_handle_controller_direction": { "$ref": "./elements/properties/always_handle_controller_direction.json" },
+        "secondary_color": { "$ref": "./elements/properties/secondary_color.json" },
+        "always_accepts_input": { "$ref": "./elements/properties/always_accepts_input.json" },
+        "place_holder_text_hover_color": { "$ref": "./elements/properties/place_holder_text_hover_color.json" },
+        "hover_text_max_width": { "$ref": "./elements/properties/hover_text_max_width.json" },
+        "full_storage_color": { "$ref": "./elements/properties/full_storage_color.json" },
+        "scrollbar_always_visible": { "$ref": "./elements/properties/scrollbar_always_visible.json" },
+        "tts_skip_message": { "$ref": "./elements/properties/tts_skip_message.json" },
+        "follows_cursor": { "$ref": "./elements/properties/follows_cursor.json" },
+        "gamepad_cursor": { "$ref": "./elements/properties/gamepad_cursor.json" },
+        "next_sub_page_button_name": { "$ref": "./elements/properties/next_sub_page_button_name.json" },
+        "prev_sub_page_button_name": { "$ref": "./elements/properties/prev_sub_page_button_name.json" },
+        "tooltip_name": { "$ref": "./elements/properties/tooltip_name.json" },
+        "tooltip_top_content_control": { "$ref": "./elements/properties/tooltip_top_content_control.json" },
+        "tooltip_bottom_content_control": { "$ref": "./elements/properties/tooltip_bottom_content_control.json" },
+        "tooltip_area": { "$ref": "./elements/properties/tooltip_area.json" },
+        "tooltip_tts_value": { "$ref": "./elements/properties/tooltip_tts_value.json" },
+        "consume_event": { "$ref": "./elements/properties/consume_event.json" }
       },
       "dependencies": {
         "line_padding": { "properties": { "type": { "const": "label" } } },
@@ -498,7 +522,7 @@
       },
       "additionalProperties": false,
       "patternProperties": {
-        "^\\$[a-zA-Z0-9_-]+(\\|.*)?$": {
+        "^\\$[a-zA-Z0-9_.-]+(\\|.*)?$": {
           "$ref": "./general/variables.json"
         }
       },
@@ -510,7 +534,8 @@
           "enum": ["factory"]
         },
         "control_ids": { "$ref": "./elements/properties/control_ids.json" },
-        "control_name": { "$ref": "./elements/properties/control_name.json" }
+        "control_name": { "$ref": "./elements/properties/control_name.json" },
+        "size": { "$ref": "./elements/properties/size.json" }
       }
     },
     "element-key": {
@@ -520,8 +545,8 @@
       "title": "Variable Name",
       "description": "A variable definition key using the $ prefix, optionally with a default value after |.",
       "type": "string",
-      "pattern": "^\\$[a-zA-Z0-9_-]+(\\|.*)?$",
-      "examples": ["$variable", "$my_var|default"]
+      "pattern": "^\\$[a-zA-Z0-9_.\\-]+(\\|.*)?$",
+      "examples": ["$variable", "$my_var|default", "$button.action"]
     },
     "grouped-ui": {
       "$schema": "http://json-schema.org/draft-07/schema",

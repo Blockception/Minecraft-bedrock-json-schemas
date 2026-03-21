@@ -1,0 +1,5 @@
+{
+  "title": "Gamepad Cursor",
+  "description": "If true, the element acts as a gamepad cursor.",
+  "$ref": "../../general/boolean.json"
+}

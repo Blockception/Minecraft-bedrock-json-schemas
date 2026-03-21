@@ -8,15 +8,36 @@
       "title": "Simple Element Name",
       "description": "A simple element name without inheritance.",
       "type": "string",
-      "pattern": "^[a-zA-Z0-9_]+$",
-      "examples": ["my_button", "panel_root", "label_text"]
+      "pattern": "^[a-zA-Z0-9_.]+$",
+      "examples": ["my_button", "panel_root", "label_text", "spacer_1.5"]
     },
     {
       "title": "Inherited Element Name",
-      "description": "An element name with @-style inheritance syntax. The part before @ is the new name (may be empty), and the part after @ is the parent element to inherit from, optionally prefixed with a namespace.",
+      "description": "An element name with @-style inheritance syntax from a static namespace.",
       "type": "string",
       "pattern": "^[a-zA-Z0-9_]*@[a-zA-Z0-9_]+(\\.[a-zA-Z0-9_]+)?$",
       "examples": ["my_button@common.button", "@common.panel", "root_panel@hud_screen.base"]
+    },
+    {
+      "title": "Variable-inherited Element Name",
+      "description": "An element name that inherits from a variable reference.",
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_]*@\\$[a-zA-Z0-9_.\\-]+$",
+      "examples": ["button@$button_control", "@$my_panel"]
+    },
+    {
+      "title": "Variable Element Name",
+      "description": "A variable used as an element name, optionally with @-style inheritance.",
+      "type": "string",
+      "pattern": "^\\$[a-zA-Z0-9_.\\-]+(@[a-zA-Z0-9_]+(\\.[a-zA-Z0-9_]+)?)?$",
+      "examples": ["$my_control", "$factory_name@namespace.factory"]
+    },
+    {
+      "title": "Variable-to-Variable Element Name",
+      "description": "A variable element name inheriting from another variable.",
+      "type": "string",
+      "pattern": "^\\$[a-zA-Z0-9_.\\-]+@\\$[a-zA-Z0-9_.\\-]+$",
+      "examples": ["$control_name@$control_name"]
     }
   ]
 }
