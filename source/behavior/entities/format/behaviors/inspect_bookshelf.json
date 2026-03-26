@@ -8,29 +8,36 @@
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "goal_radius": {
       "type": "number",
       "default": 0.5,
       "description": "Distance in blocks within the mob considers it has reached the goal. This is the `wiggle room` to stop the AI from bouncing back and forth trying to reach a specific spot",
-      "title": "Goal Radius"
+      "title": "Goal Radius",
+      "exclusiveMinimum": 0
     },
     "search_count": {
       "type": "integer",
       "default": 10,
       "description": "The number of blocks each tick that the mob will check within it's search range and height for a valid block to move to. A value of 0 will have the mob check every block within range in one tick",
-      "title": "Search Count"
+      "title": "Search Count",
+      "minimum": 0
     },
     "search_height": {
       "type": "integer",
       "default": 1,
       "description": "The height that the mob will search for bookshelves.",
-      "title": "Search Height"
+      "title": "Search Height",
+      "exclusiveMinimum": 0
     },
     "search_range": {
       "type": "integer",
       "default": 0,
       "description": "Distance in blocks the mob will look for books to inspect.",
-      "title": "Search Range"
+      "title": "Search Range",
+      "exclusiveMinimum": 0
     }
   },
   "examples": [
