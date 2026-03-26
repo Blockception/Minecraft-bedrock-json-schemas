@@ -37,6 +37,7 @@
       "title": "Lay Seconds",
       "type": "number",
       "default": 10.0,
+      "minimum": 0,
       "description": "Duration of the laying egg process in seconds."
     },
     "on_lay": {
