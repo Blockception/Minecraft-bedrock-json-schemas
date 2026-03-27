@@ -1,0 +1,16 @@
+{
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.chest_obstruction",
+  "title": "Chest Obstruction",
+  "description": "[EXPERIMENTAL] Defines how a block placed above a chest or ender_chest should obstruct their opening",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {
+    "obstruction_rule": {
+      "title": "Obstruction Rule",
+      "description": "How the block should be evaluated by a chest during chest opening.",
+      "type": "string",
+      "enum": ["always", "never", "shape"]
+    }
+  }
+}

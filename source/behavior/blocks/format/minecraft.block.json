@@ -14,6 +14,7 @@
       "additionalProperties": true,
       "properties": {
         //Components
+        "minecraft:chest_obstruction": { "$ref": "./components/chest_obstruction.json" },
         "minecraft:collision_box": { "$ref": "./components/collision_box.json" },
         "minecraft:connection_rule": { "$ref": "./components/connection_rule.json" },
         "minecraft:crafting_table": { "$ref": "./components/crafting_table.json" },
