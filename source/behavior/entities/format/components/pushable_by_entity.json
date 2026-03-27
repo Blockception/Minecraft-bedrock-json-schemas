@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.pushable_by_entity",
+  "title": "Pushable By Entity",
+  "additionalProperties": false,
+  "description": "Allows an entity to be pushed by other entities.",
+  "type": "object",
+  "required": [],
+  "properties": {}
+}
