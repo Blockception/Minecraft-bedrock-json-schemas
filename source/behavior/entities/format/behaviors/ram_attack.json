@@ -9,10 +9,13 @@
     "priority": {
       "$ref": "types/priority.json"
     },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "baby_knockback_modifier": {
       "title": "Baby Knockback Modifier",
       "type": "number",
-      "default": 0.333333,
+      "default": 0.3333333432674408,
       "description": "The modifier to knockback that babies have."
     },
     "cooldown_range": {
@@ -74,7 +77,7 @@
       "default": 1.0,
       "description": "Sets the entity's speed when running toward the target."
     },
-    "trigger": {
+    "trigger": { //TODO: Figure out where this is from and if it works
       "description": "The event to trigger when attacking.",
       "title": "Trigger",
       "$ref": "../types/trigger.json"
