@@ -8,7 +8,9 @@
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
-
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "cooldown_range": {
       "title": "Cooldown Range",
       "default": [0.0, 0.0],
@@ -93,12 +95,14 @@
       "title": "Spawn Item After Seconds",
       "type": "number",
       "default": 0.0,
+      "minimum": 0,
       "description": "Digging duration before spawning item in seconds."
     },
     "spawn_item_pos_offset": {
       "title": "Spawn Item Pos Offset",
       "type": "number",
       "default": 0.0,
+      "minimum": 0,
       "description": "Distance to offset the item's spawn location in the direction the mob is facing."
     },
     "target_blocks": {
