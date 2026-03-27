@@ -68,6 +68,13 @@
               "title": "Held Item Ignores Lighting",
               "description": "This determines if the item held by an entity should render fully lit up (if true), or depending on surrounding lighting."
             },
+            "held_item_scale": {
+              "title": "Held Item Scale",
+              "description": "Allows items held by mobs to be scaled by a factor greater than zero",
+              "type": "number", 
+              "default": 1.0,
+              "minimum": 0
+            },
             "identifier": {
               "type": "string",
               "description": "The entity indentifier.",
