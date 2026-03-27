@@ -361,6 +361,10 @@
               "then": { "$ref": "./filters/is_snow_covered.json" }
             },
             {
+              "if": { "properties": { "test": { "const": "is_sprinting" } } },
+              "then": { "$ref": "./filters/is_sprinting.json" }
+            },
+            {
               "if": { "properties": { "test": { "const": "is_tamed" } } },
               "then": { "$ref": "./filters/is_tamed.json" }
             },
