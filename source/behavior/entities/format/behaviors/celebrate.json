@@ -6,6 +6,9 @@
   "additionalProperties": false,
   "properties": {
     "priority": { "$ref": "types/priority.json" },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "celebration_sound": {
       "description": "The sound event to trigger during the celebration.",
       "title": "Celebration Sound",
@@ -21,36 +24,7 @@
       "default": [1, 3.5],
       "description": "Minimum and maximum time between jumping (positive, in seconds).",
       "title": "Jump Interval",
-      "oneOf": [
-        {
-          "type": "array",
-          "items": [
-            {
-              "type": "number",
-              "title": "Maximum"
-            },
-            {
-              "type": "number",
-              "title": "Maximum"
-            }
-          ]
-        },
-        {
-          "type": "number"
-        },
-        {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "range_min": {
-              "type": "number"
-            },
-            "range_max": {
-              "type": "number"
-            }
-          }
-        }
-      ]
+      "$ref": "../../../../general/vectors/number2.json"
     },
     "on_celebration_end_event": {
       "$ref": "../types/trigger.json",
