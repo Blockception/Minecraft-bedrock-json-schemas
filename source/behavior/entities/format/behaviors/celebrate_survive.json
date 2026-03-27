@@ -7,6 +7,9 @@
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "fireworks_interval": {
       "title": "Fireworks Interval",
       "$ref": "../types/range_number_type.json",
