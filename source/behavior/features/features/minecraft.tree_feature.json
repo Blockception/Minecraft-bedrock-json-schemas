@@ -103,6 +103,28 @@
               "type": "object",
               "additionalProperties": false,
               "properties": {
+                "decoration_blocks_sequence": {
+                  "title": "Decoration Blocks Sequence",
+                  "description": "A list of blocks and a count per block to be placed. This aims to replace decoration_block and num_steps.",
+                  "type": "array", 
+                  "items": {
+                    "title": "",
+                    "description": "",
+                    "type": "object", 
+                    "additionalProperties": false,
+                    "properties": {
+                      "block": {
+                        "title": "Block",
+                        "$ref": "../../../general/block/reference.json"
+                      },
+                      "count": {
+                        "title": "Num Steps",
+                        "description": "Number of decoration blocks to place.",
+                        "$ref": "../../../general/vectors/integer2.json"
+                      }
+                    }
+                  }
+                },
                 "decoration_chance": {
                   "title": "Decoration Chance",
                   "description": "Probability of decorating the trunk.",
