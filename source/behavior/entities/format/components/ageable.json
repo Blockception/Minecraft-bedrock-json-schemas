@@ -21,6 +21,38 @@
       ],
       "title": "Drop Items"
     },
+    "pause_growth_items": {
+      "description": "List of items that can be fed to the entity to pause growth for baby entities.",
+      "oneOf": [
+        {
+          "type": "array",
+          "items": {
+            "$ref": "../../../../general/item/descriptor.json"
+          }
+        },
+        {
+          "type": "string",
+          "$ref": "../../../../general/item/descriptor.json"
+        }
+      ],
+      "title": "Pause Growth Items"
+    },
+    "reset_growth_items": {
+      "description": "List of items that can be used to reset growth for baby entities.",
+      "oneOf": [
+        {
+          "type": "array",
+          "items": {
+            "$ref": "../../../../general/item/descriptor.json"
+          }
+        },
+        {
+          "type": "string",
+          "$ref": "../../../../general/item/descriptor.json"
+        }
+      ],
+      "title": "Reset Growth Items"
+    },
     "duration": {
       "type": "number",
       "default": 1200,
@@ -67,6 +99,16 @@
       "$ref": "../types/event_object.json",
       "description": "Event to run when this entity grows up.",
       "title": "Grow Up"
+    },
+    "reset_growth": {
+      "$ref": "../types/event_object.json",
+      "description": "Event to run when aging is reset for baby entities",
+      "title": "Reset Growth"
+    },
+    "pause_growth": {
+      "$ref": "../types/event_object.json",
+      "description": "Event to run when aging is paused for baby entities",
+      "title": "Pause Growth"
     },
     // TODO: Figure out if result_item is valid here or restricted to within feed_items
     "interact_filters": {
