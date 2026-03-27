@@ -1,0 +1,33 @@
+{
+  "$id": "blockception.minecraft.behavior.blocks.traits.minecraft.multi_block",
+  "title": "Multi Block",
+  "description": "Used to define a block composed of multiple block parts. A multi block treats all individual parts as a single block, like Door blocks",
+  "additionalProperties": false,
+  "type": "object",
+  "required": ["enabled_states", "direction"],
+  "properties": {
+    "enabled_states": {
+      "title": "Enabled States",
+      "description": "Block states you wish to enable",
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "items": {
+        "enum": ["minecraft:multi_block_part"]
+      }
+    },
+    "parts": {
+      "title": "Parts",
+      "description": "Optionally used to initialize state 'minecraft:multi_block_part'",
+      "type": "integer", 
+      "minimum": 2,
+      "maximum": 4
+    },
+    "direction": {
+      "title": "Direction",
+      "description": "Property used to define which direction the block parts are placed from 0 to N",
+      "type": "string",
+      "enum": ["up", "down"]
+    }
+  }
+}

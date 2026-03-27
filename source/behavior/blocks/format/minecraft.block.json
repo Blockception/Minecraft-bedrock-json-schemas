@@ -96,7 +96,8 @@
       "properties": {
         "minecraft:connection": { "$ref": "./traits/connection.json" },
         "minecraft:placement_direction": { "$ref": "./traits/placement_direction.json" },
-        "minecraft:placement_position": { "$ref": "./traits/placement_position.json" }
+        "minecraft:placement_position": { "$ref": "./traits/placement_position.json" },
+        "minecraft:multi_block": { "$ref": "./traits/multi_block.json" }
       }
     }
   },
