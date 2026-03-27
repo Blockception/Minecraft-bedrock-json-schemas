@@ -50,11 +50,17 @@
         "$ref": "../../../../general/block/reference.json"
       }
     },
-    "simulate_waves": {
+    "movement_type": {
+      "title": "Movement Type",
+      "description": "Type of vertical movement applied to the entity",
+      "type": "string",
+      "enum": ["waves", "bobbing", "none"]
+    },
+    "can_auto_step_from_liquid": {
+      "title": "Can Auto Step From Liquid",
+      "description": "Defines whether the entity can move out of a liquid block to a neighboring solid block if pushed against it",
       "type": "boolean",
-      "default": true,
-      "description": "Should the movement simulate waves going through.",
-      "title": "Simulate Waves"
+      "default": false
     }
   },
   "examples": [
