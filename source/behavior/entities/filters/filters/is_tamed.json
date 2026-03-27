@@ -1,0 +1,31 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.is_tamed",
+  "type": "object",
+  "title": "Is Tamed",
+  "description": "Tests whether the Subject is tamed.",
+  "properties": {
+    "test": {
+      "type": "string",
+      "title": "Test Property",
+      "description": "The test property."
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
+    "value": {
+      "title": "Value",
+      "description": "True or false.",
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "examples": [
+    {
+      "test": "is_tamed",
+      "value": true
+    }
+  ]
+}
