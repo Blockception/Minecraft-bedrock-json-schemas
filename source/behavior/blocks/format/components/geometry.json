@@ -39,6 +39,12 @@
           "type": "string",
           "examples": ["minecraft:culling_layer.undefined", "minecraft:culling_layer.leaves"]
         },
+        "culling_shape": {
+          "title": "Culling Shape",
+          "description": "The voxel shape used for culling adjacent block faces.",
+          "type": "string",
+          "examples": ["minecraft:empty", "minecraft:unit_cube"]
+        },
         "uv_lock": {
           "anyOf": [
             {
