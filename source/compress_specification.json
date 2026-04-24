@@ -146,6 +146,10 @@
       "Destination": "../resource/items/items.json"
     },
     {
+      "Source": "./resource/local_lighting/local_lighting.json",
+      "Destination": "../resource/local_lighting/local_lighting.json"
+    },
+    {
       "Source": "./resource/materials/materials.json",
       "Destination": "../resource/materials/materials.json"
     },
