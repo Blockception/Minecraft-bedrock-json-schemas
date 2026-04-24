@@ -34,6 +34,9 @@ jobs:
         with:
           specificationFile: "source/compress_specification.json"
 
+      - name: 🔑 Fix file permissions
+        run: sudo chown -R "$USER:$USER" .
+
       - name: ✏️ Commit and Create PR
         uses: peter-evans/create-pull-request@v8
         with:
