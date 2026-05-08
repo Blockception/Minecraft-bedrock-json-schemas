@@ -71,6 +71,16 @@
       "default": false,
       "description": "If true, this mob will chase after the target as long as it's a valid target.",
       "title": "Track Target"
+    },
+    "on_pickup_item_start": {
+      "title": "On Pickup Item Start",
+      "$ref": "../types/trigger.json",
+      "description": "The event to run when the goal starts"
+    },
+    "on_pickup_item_end": {
+      "title": "On Pickuo Item End",
+      "$ref": "../types/trigger.json",
+      "description": "The event to run when the goal ends"
     }
   },
   "examples": [
