@@ -12,6 +12,9 @@
     "speed_multiplier": {
       "$ref": "./types/speed_multiplier.json"
     },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "poi_type": {
       "type": "string",
       "description": "Tells the goal what POI type it should be looking for.",

@@ -9,6 +9,9 @@
     "priority": {
       "$ref": "./types/priority.json"
     },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "cooldown_range": {
       "title": "Cooldown Range",
       "$ref": "../../../../general/vectors/number2.json",
@@ -65,13 +68,17 @@
       "title": "Search Height",
       "type": "integer",
       "default": 10,
-      "description": "The height (in blocks, in range [2, 15]) of the search box, centered around the mob."
+      "maximum": 15,
+      "minimum": 1,
+      "description": "The height (in blocks, in range [1, 15]) of the search box, centered around the mob."
     },
     "search_width": {
       "title": "Search Width",
       "type": "integer",
       "default": 8,
-      "description": "The width (in blocks, in range [2, 15]) of the search box, centered around the mob."
+      "maximum": 15,
+      "minimum": 1,
+      "description": "The width (in blocks, in range [1, 15]) of the search box, centered around the mob."
     }
   },
   "examples": [

@@ -7,6 +7,9 @@
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "can_pickup_any_item": {
       "type": "boolean",
       "default": false,
@@ -21,7 +24,7 @@
     },
     "cooldown_after_being_attacked": {
       "type": "number",
-      "default": 20.0,
+      "default": 0,
       "description": "Amount of time an offended entity needs before being willing to pick up items.",
       "title": "Cooldown After Being Attacked"
     },
@@ -49,9 +52,8 @@
     "search_height": {
       "title": "Search Height",
       "type": "number",
-      "default": 0,
-      "description": "Height in blocks the mob will look for items to pick up.",
-      "$comment": "UNDOCUMENTED"
+      "default": 1,
+      "description": "Height in blocks the mob will search for items"
     },
     "pickup_based_on_chance": {
       "type": "boolean",
@@ -62,9 +64,8 @@
     "pickup_same_items_as_in_hand": {
       "type": "boolean",
       "default": false,
-      "description": "If true, the mob will pickup the same item as the item in its hand.",
-      "title": "Pickup Same Items As In Hand",
-      "$comment": "UNDOCUMENTED"
+      "description": "If true, the mob will only pick up items that match what's in their hand",
+      "title": "Pickup Same Items As In Hand"
     },
     "track_target": {
       "type": "boolean",

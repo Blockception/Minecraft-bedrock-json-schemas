@@ -1,6 +1,6 @@
 {
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.move_indoors",
-  "description": "Can only be used by Villagers. Allows them to seek shelter indoors.",
+  "description": "Allows this entity to move indoors.",
   "type": "object",
   "title": "Move Indoors",
   "additionalProperties": false,
@@ -11,6 +11,9 @@
     },
     "speed_multiplier": {
       "$ref": "./types/speed_multiplier.json"
+    },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
     },
     "timeout_cooldown": {
       "type": "number",

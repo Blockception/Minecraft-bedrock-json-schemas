@@ -7,6 +7,9 @@
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "goal_radius": {
       "title": "Goal Radius",
       "type": "number",
@@ -19,7 +22,7 @@
       "default": 1,
       "description": "Height in blocks from the owner the pet can be to sleep with owner."
     },
-    "search_radius": {
+    "search_radius": { // Exists in VP but not in MS schemas
       "title": "Search Radius",
       "type": "integer",
       "default": 10,

@@ -2,11 +2,14 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.go_and_give_items_to_owner",
   "type": "object",
   "title": "Go And Give Items To Owner",
-  "description": "[EXPERIMENTAL BEHAVIOR] The entity will attempt to toss the items from its inventory to its owner.",
+  "description": "The entity will attempt to toss the items from its inventory to its owner.",
   "additionalProperties": false,
   "properties": {
     "priority": {
       "$ref": "types/priority.json"
+    },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
     },
     "on_item_throw": {
       "title": "On Item Throw",

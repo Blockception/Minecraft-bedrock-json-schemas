@@ -8,15 +8,20 @@
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "cooldown_time": {
       "type": "number",
       "default": 0,
       "description": "Time in seconds the mob has to wait before using the goal again.",
+      "minimum": 0,
       "title": "Cooldown Time"
     },
     "duration": {
       "type": "number",
       "default": 1,
+      "minimum": 0,
       "description": "Amount of time in seconds that the entity will chat with another entity.",
       "title": "Duration"
     },
@@ -24,6 +29,7 @@
       "type": "number",
       "default": 2.0,
       "description": "The distance from its partner that this entity will mingle. If the entity type is not the same as the entity, this value needs to be identical on both entities.",
+      "minimum": 0,
       "title": "Mingle Distance"
     },
     "mingle_partner_type": {

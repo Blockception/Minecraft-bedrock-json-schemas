@@ -8,10 +8,13 @@
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "./types/speed_multiplier.json" },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "goal_radius": {
       "title": "Goal Radius",
       "type": "number",
-      "default": 0.5,
+      "default": 2,
       "description": "The radius away from the target block to count as reaching the goal."
     },
     "search_count": {
@@ -35,7 +38,7 @@
     "timeout_cooldown": {
       "title": "Timeout Cooldown",
       "type": "number",
-      "default": 8000000,
+      "default": 8,
       "description": "The cooldown time in seconds before the goal can be reused after pathfinding fails."
     }
   }

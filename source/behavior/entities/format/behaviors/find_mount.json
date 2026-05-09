@@ -8,6 +8,9 @@
     "priority": {
       "$ref": "types/priority.json"
     },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "avoid_water": {
       "title": "Avoid Water",
       "type": "boolean",
@@ -41,8 +44,7 @@
     "max_failed_attempts": {
       "title": "Maximum Failed Attempts",
       "type": "integer",
-      "description": "The number of failed attempts to make before this goal is no longer used.",
-      "$comment": "UNDOCUMENTED"
+      "description": "The number of failed attempts to make before this goal is no longer used."
     }
   },
   "examples": [

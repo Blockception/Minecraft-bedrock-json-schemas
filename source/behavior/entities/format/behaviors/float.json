@@ -9,6 +9,9 @@
     "priority": {
       "$ref": "./types/priority.json"
     },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "sink_with_passengers": {
       "title": "Sink With Passengers",
       "description": "If true, the mob will keep sinking as long as it has passengers.",

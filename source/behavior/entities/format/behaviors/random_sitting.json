@@ -8,17 +8,14 @@
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "cooldown": {
       "type": "number",
-      "default": 0,
+      "default": 100,
       "description": "Time in seconds the mob has to wait before using the goal again.",
       "title": "Cooldown"
-    },
-    "cooldown_time": {
-      "type": "number",
-      "default": 0,
-      "description": "Time in seconds the mob has to wait before using the goal again.",
-      "title": "Cooldown Time"
     },
     "min_sit_time": {
       "type": "number",
@@ -42,7 +39,6 @@
   "examples": [
     {
       "cooldown": 0,
-      "cooldown_time": 0,
       "min_sit_time": 10,
       "start_chance": 0.1,
       "stop_chance": 0.3

@@ -8,18 +8,21 @@
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "duration": {
       "type": "number",
       "default": 1,
+      "minimum": 0,
       "description": "Amount of time in seconds that the mob reacts.",
       "title": "Duration"
     },
     "poi_type": {
       "type": "string",
-      "default": "",
       "description": "Defines what POI type to hide at.",
       "title": "Point Of Interest Type",
-      "examples": ["bed"]
+      "enum": ["bed", "meeting_area", "jobsite"]
     },
     "timeout_cooldown": {
       "type": "number",

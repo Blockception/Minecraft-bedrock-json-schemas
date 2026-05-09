@@ -7,6 +7,9 @@
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "destination_pos_search_spread_degrees": {
       "title": "Desitnation Pos Search Spread Degrees",
       "type": "number",
@@ -23,7 +26,7 @@
     },
     "destination_pos_spread_degrees": {
       "title": "Desitnation Pos Spread Degrees",
-      "description": "UNDOCUMENTED",
+      "description": "This angle (in degrees) is used for controlling the spread when picking a destination position behind the target. A zero spread angle means the destination position will be straight behind the target with no variance. A 90 degree spread angle means the destination position can be up to 45 degrees to the left and to the right of the position straight behind the target's view direction.",
       "type": "number",
       "minimum": 0,
       "maximum": 360
@@ -32,12 +35,14 @@
       "title": "Height Difference Limit",
       "type": "number",
       "default": 10.0,
+      "minimum": 0,
       "description": "Distance in height (in blocks) between the owner entity and the target has to be less than this value when owner checks if it is too close and should move away from the target. This value needs to be bigger than zero for the move away logic to trigger."
     },
     "horizontal_search_distance": {
       "title": "Horizontal Search Distance",
       "type": "integer",
       "default": 5,
+      "minimum": 0,
       "description": "Horizontal search distance (in blocks) when searching for a position to move away from target."
     },
     "movement_speed": {
@@ -50,6 +55,7 @@
       "title": "Vertical Search Distance",
       "type": "integer",
       "default": 5,
+      "minimum": 0,
       "description": "Number of ticks needed to complete a stay at the block."
     },
     "filters": {

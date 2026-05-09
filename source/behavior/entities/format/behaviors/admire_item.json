@@ -8,6 +8,9 @@
     "priority": {
       "$ref": "types/priority.json"
     },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "admire_item_sound": {
       "title": "Admire Item Sound",
       "$ref": "../../../../general/sound_event.json",
