@@ -37,6 +37,11 @@
             "description": "Defines whether the target should be fully immersed in water for the knockback rules to apply",
             "type": "boolean",
             "default": false
+          },
+          "filter": {
+            "title": "Filter",
+            "description": "Conditions that need to be met for the behavior to start.",
+            "$ref": "../../filters/filters.json"
           }
         }
       }
