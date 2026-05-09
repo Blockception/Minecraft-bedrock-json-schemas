@@ -10,7 +10,7 @@
       "title": "Precipitation Behavior",
       "description": "What behavior should the block have.",
       "type": "string",
-      "enum": ["obstruct_rain", "obstruct_rain_accumulate_snow", "none"]
+      "enum": ["obstruct_rain", "obstruct_rain_accumulate_snow", "none", "snow_log_no_collision"]
     }
   }
 }
