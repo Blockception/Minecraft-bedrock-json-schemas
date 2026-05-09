@@ -267,7 +267,7 @@
     "minecraft:behavior.follow_mob": { "$ref": "./behaviors/follow_mob.json" },
     "minecraft:behavior.follow_owner": { "$ref": "./behaviors/follow_owner.json" },
     "minecraft:behavior.follow_parent": { "$ref": "./behaviors/follow_parent.json" },
-    "minecraft:behavior.follow_target_captain": { "$ref": "./behaviors/follow_target_captain.json" },
+    "minecraft:behavior.follow_target_leader": { "$ref": "./behaviors/follow_target_leader.json" },
     "minecraft:behavior.go_and_give_items_to_noteblock": { "$ref": "./behaviors/go_and_give_items_to_noteblock.json" },
     "minecraft:behavior.go_and_give_items_to_owner": { "$ref": "./behaviors/go_and_give_items_to_owner.json" },
     "minecraft:behavior.go_home": { "$ref": "./behaviors/go_home.json" },
