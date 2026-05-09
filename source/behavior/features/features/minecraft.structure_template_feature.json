@@ -27,6 +27,12 @@
       "type": "string",
       "enum": ["north", "south", "east", "west", "random"]
     },
+    "rotate_around_center": {
+      "title": "Rotate Around Center",
+      "description": "If true, tries to rotate the structure around its center when placed in the world.",
+      "type": "boolean",
+      "default": false
+    },
     "constraints": {
       "title": "",
       "description": "Specific constraints that must be satisfied when placing this structure.",
