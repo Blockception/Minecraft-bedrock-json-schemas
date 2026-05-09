@@ -20,6 +20,9 @@
             },
             {
               "$ref": "#/definitions/single_element"
+            },
+            {
+              "$ref": "#/definitions/feature_pool_element"
             }
           ]
         },
@@ -81,6 +84,23 @@
         }
       },
       "required": ["element_type", "location"]
+    },
+    "feature_pool_element": {
+      "title": "",
+      "description": "",
+      "type": "object", 
+      "additionalProperties": false,
+      "properties": {
+        "element_type": {
+          "const": "minecraft:feature_pool_element"
+        },
+        "feature": {
+          "title": "Feature",
+          "description": "The identifier of the feature to place.",
+          "type": "string"
+        }
+      },
+      "required": ["element_type", "feature"]
     }
   },
   "required": ["description", "elements"],
