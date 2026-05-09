@@ -1,0 +1,39 @@
+{
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.tags",
+  "title": "Tags",
+  "description": "Attach arbitrary string tags to this block.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [ "tags" ],
+  "properties": {
+    "tags": {
+      "title": "Tags",
+      "description": "An array that can contain multiple block tags.",
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "items": {
+        "anyOf": [
+          {
+            "enum": [
+              "minecraft:diamond_tier_destructible",
+              "minecraft:iron_tier_destructible",
+              "minecraft:is_axe_item_destructible",
+              "minecraft:is_hoe_item_destructible",
+              "minecraft:is_mace_item_destructible",
+              "minecraft:is_pickaxe_item_destructible",
+              "minecraft:is_shears_item_destructible",
+              "minecraft:is_shovel_item_destructible",
+              "minecraft:is_sword_item_destructible",
+              "minecraft:netherite_tier_destructible",
+              "minecraft:stone_tier_destructible",
+              "minecraft:has_fence_connections",
+              "minecraft:cornerable_stairs"
+            ]
+          },
+          { "type": "string" }
+        ]
+      }
+    }
+  }
+}

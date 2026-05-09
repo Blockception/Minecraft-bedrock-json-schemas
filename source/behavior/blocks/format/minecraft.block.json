@@ -11,7 +11,7 @@
       "type": "object",
       "title": "Component",
       "description": "The components of this block.",
-      "additionalProperties": true,
+      "additionalProperties": false,
       "properties": {
         //Components
         "minecraft:chest_obstruction": { "$ref": "./components/chest_obstruction.json" },
@@ -45,32 +45,11 @@
         "minecraft:replaceable": { "$ref": "./components/replaceable.json" },
         "minecraft:selection_box": { "$ref": "./components/selection_box.json" },
         "minecraft:support": { "$ref": "./components/support.json" },
+        "minecraft:tags": { "$ref": "./components/tags.json" },
         "minecraft:transformation": { "$ref": "./components/transformation.json" },
         "minecraft:custom_components": { "$ref": "./components/custom_components.json" },
         "minecraft:tick": { "$ref": "./components/tick.json" },
-        "minecraft:entity_fall_on": { "$ref": "./components/entity_fall_on.json" },
-        // Tags
-        "tag:minecraft:diamond_tier_destructible": {},
-        "tag:minecraft:iron_tier_destructible": {},
-        "tag:minecraft:is_axe_item_destructible": {},
-        "tag:minecraft:is_hoe_item_destructible": {},
-        "tag:minecraft:is_mace_item_destructible": {},
-        "tag:minecraft:is_pickaxe_item_destructible": {},
-        "tag:minecraft:is_shears_item_destructible": {},
-        "tag:minecraft:is_shovel_item_destructible": {},
-        "tag:minecraft:is_sword_item_destructible": {},
-        "tag:minecraft:netherite_tier_destructible": {},
-        "tag:minecraft:stone_tier_destructible": {},
-        "tag:minecraft:has_fence_connections": {},
-        "tag:minecraft:cornerable_stairs": {}
-      },
-      "patternProperties": {
-        "tag:.+": {
-          "title": "Tag",
-          "description": "Applies a tag to the block, using the key without the \"tag:\" prefix as the tag name.",
-          "type": "object",
-          "additionalProperties": false
-        }
+        "minecraft:entity_fall_on": { "$ref": "./components/entity_fall_on.json" }
       }
     },
     "states_ref": {
