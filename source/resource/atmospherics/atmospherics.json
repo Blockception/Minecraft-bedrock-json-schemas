@@ -4,6 +4,7 @@
   "title": "Atmospherics",
   "description": "The properties of the atmosphere",
   "additionalProperties": false,
+  "required": [ "minecraft:atmosphere_settings" ],
   "properties": {
     "format_version": { "$ref": "../../general/format_version.json" },
     "minecraft:atmosphere_settings": {
