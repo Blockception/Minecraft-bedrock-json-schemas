@@ -198,6 +198,36 @@
           ],
           "description": "At the moment, not fully implemented and does nothing. Recommended to leave it empty or set it to misc",
           "default": "misc"
+        },
+        "entity_version": {
+          "title": "Entity Version",
+          "description": "Enables per-entity versioning and upgrade handling",
+          "type": "object", 
+          "additionalProperties": false,
+          "properties": {
+            "upgrades": {
+              "title": "Upgrades",
+              "description": "Each entry specifies an integer upgrade_to version and a name string referencing an upgrade handler defined in a new top-level upgrades section of the entity definition.",
+              "type": "array", 
+              "items": {
+                "type": "object", 
+                "additionalProperties": false,
+                "properties": {
+                  "upgrade_to": {
+                    "title": "Upgrade To",
+                    "description": "Version to upgrade to",
+                    "type": "integer", 
+                    "exclusiveMinimum": 0
+                  },
+                  "name": {
+                    "title": "Name",
+                    "description": "Name of the upgrade. Must match the name of a respective upgrade",
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -225,6 +255,12 @@
       "uniqueItems": true,
       "description": "The events that the entity can run, these add or remove components_groups.",
       "title": "Events"
+    },
+    "upgrades": {
+      "$ref": "./events.json",
+      "uniqueItems": true,
+      "description": "The upgrades that the entity can run, these add or remove components_groups.",
+      "title": "Upgrades"
     }
   }
 }
