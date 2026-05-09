@@ -26,7 +26,7 @@
       "type": "number",
       "multipleOf": 90,
       "default": 0,
-      "examples": [90, 180, 270, -90, -180, -270]
+      "enum": [0, 90, 180, 270, 360]
     },
     "blocks_to_corner_with": {
       "title": "Blocks To Corner With",
