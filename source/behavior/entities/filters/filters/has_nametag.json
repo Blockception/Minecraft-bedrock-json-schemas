@@ -11,12 +11,6 @@
       "description": "Tests for the presence of a named item in the designated slot of the subject entity.",
       "title": "Test"
     },
-    "domain": {
-      "description": "The equipment location to test.",
-      "default": "any",
-      "enum": ["any", "armor", "feet", "hand", "head", "leg", "torso"],
-      "title": "Domain"
-    },
     "operator": {
       "$ref": "./types/operator.json"
     },
