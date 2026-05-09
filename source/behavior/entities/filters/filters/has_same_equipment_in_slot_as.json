@@ -1,0 +1,39 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.has_same_equipment_in_slot_as",
+  "type": "object",
+  "title": "Has Same Equipment In Slot As",
+  "description": "Returns whether the subject entity has the same item equipped in the specified slot as calling entity.",
+  "required": ["value"],
+  "properties": {
+    "test": {
+      "type": "string",
+      "const": "has_same_equipment_in_slot_as",
+      "description": "Returns whether the subject entity has the same item equipped in the specified slot as calling entity.",
+      "title": "Test"
+    },
+    "domain": {
+      "description": "The equipment location to test.",
+      "default": "any",
+      "enum": ["any", "inventory", "armor", "feet", "hand", "head", "leg", "torso"],
+      "title": "Domain"
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
+    "value": {
+      "description": "(Optional) true or false.",
+      "title": "Value",
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "examples": [
+    {
+      "test": "has_same_equipment_in_slot_as",
+      "value": true
+    }
+  ]
+}

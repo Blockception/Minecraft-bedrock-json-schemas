@@ -169,6 +169,10 @@
               "then": { "$ref": "./filters/has_ranged_weapon.json" }
             },
             {
+              "if": { "properties": { "test": { "const": "has_same_equipment_in_slot_as" } } },
+              "then": { "$ref": "./filters/has_same_equipment_in_slot_as.json" }
+            },
+            {
               "if": { "properties": { "test": { "const": "has_silk_touch" } } },
               "then": { "$ref": "./filters/has_silk_touch.json" }
             },
