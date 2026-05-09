@@ -143,6 +143,7 @@
     "minecraft:npc": { "$ref": "./components/npc.json" },
     "minecraft:offspring": { "$ref": "./components/offspring.json" },
     "minecraft:on_death": { "$ref": "./components/on_death.json" },
+    "minecraft:on_equipment_changed": { "$ref": "./components/on_equipment_changed.json" },
     "minecraft:on_friendly_anger": { "$ref": "./components/on_friendly_anger.json" },
     "minecraft:on_hurt_by_player": { "$ref": "./components/on_hurt_by_player.json" },
     "minecraft:on_hurt": { "$ref": "./components/on_hurt.json" },

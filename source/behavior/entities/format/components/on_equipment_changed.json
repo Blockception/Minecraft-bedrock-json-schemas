@@ -1,0 +1,42 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.on_equipment_changed",
+  "type": "object",
+  "title": "On Equipment Changed",
+  "additionalProperties": false,
+  "description": "Allows to specify events to execute when equipment is set in the entity's default equipment slots.",
+  "properties": {
+    "slots": {
+      "description": "A list of slot-specific events to execute when the entity's equipment changes in those slots.",
+      "type": "array",
+      "title": "Slots",
+      "items": {
+        "description": "A slot and the item that can be equipped.",
+        "title": "Slots",
+        "type": "object",
+        "properties": {
+          "slot": {
+            "type": "integer",
+            "default": 0,
+            "description": "The slot number of this slot.",
+            "title": "Slot"
+          },
+          "on_equip": {
+            "$ref": "../types/event_object.json",
+            "description": "Event to execute when the slot is changed to a non-empty item.",
+            "title": "On Equip"
+          },
+          "on_unequip": {
+            "$ref": "../types/event_object.json",
+            "description": "Event to execute when the slot is changed to an empty item.",
+            "title": "On Unequip"
+          }
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "slots": []
+    }
+  ]
+}
