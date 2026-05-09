@@ -201,6 +201,7 @@
     "minecraft:trust": { "$ref": "./components/trust.json" },
     "minecraft:trusting": { "$ref": "./components/trusting.json" },
     "minecraft:type_family": { "$ref": "./components/type_family.json" },
+    "minecraft:uses_legacy_friction": { "$ref": "./components/uses_legacy_friction.json" },
     "minecraft:underwater_movement": { "$ref": "./components/attribute.json" },
     "minecraft:variable_max_auto_step": { "$ref": "./components/variable_max_auto_step.json" },
     "minecraft:variant": { "$ref": "./components/variant.json" },
