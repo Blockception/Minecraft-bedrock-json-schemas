@@ -15,6 +15,7 @@
     "minecraft:angry": { "$ref": "./components/angry.json" },
     "minecraft:annotation.break_door": { "$ref": "./components/annotation.break_door.json" },
     "minecraft:annotation.open_door": { "$ref": "./components/annotation.open_door.json" },
+    "minecraft:apply_knockback_rules": { "$ref": "./components/apply_knockback_rules.json" },
     "minecraft:area_attack": { "$ref": "./components/area_attack.json" },
     "minecraft:attack_cooldown": { "$ref": "./components/attack_cooldown.json" },
     "minecraft:attack_damage": { "$ref": "./components/attribute.json" },

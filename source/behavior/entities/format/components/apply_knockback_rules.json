@@ -1,0 +1,57 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.apply_knockback_rules",
+  "type": "object",
+  "title": "Apply Knockback Rules",
+  "description": "Controls how an entity applies knockback to a target",
+  "additionalProperties": false,
+  "properties": {
+    "presets": {
+      "title": "Presets",
+      "description": "Defines how this entity behaves when leashed to another entity. A preset is selected upon leashing and remains until the entity is leashed to something else. The first preset whose \"filter\" conditions are met will be applied; if none match, a default configuration is used instead.",
+      "type": "array",
+      "items": {
+        "title": "Preset",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "horizontal_power": {
+            "title": "Horizontal Power",
+            "description": "Defines how much the target is hit backwards",
+            "type": "number",
+            "default": 1
+          },
+          "vertical_power": {
+            "title": "Vertical Power",
+            "description": "Defines how much the target is hit upwards",
+            "type": "number",
+            "default": 0.4
+          },
+          "vertical_velocity_cap": {
+            "title": "Vertical Velocity Cap",
+            "description": "Defines the target's maximum vertical upwards velocity after the target's knockback rules have been evaluated",
+            "type": "number",
+            "minimum": 0.4
+          },
+          "check_if_target_is_immersed_in_water": {
+            "title": "Check If Target Is Immersed In Water",
+            "description": "Defines whether the target should be fully immersed in water for the knockback rules to apply",
+            "type": "boolean",
+            "default": false
+          }
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "presets": [
+        {
+          "horizontal_power": 1.5,
+          "vertical_power": -0.6,
+          "vertical_velocity_cap": -0.4,
+          "check_if_target_is_immersed_in_water": true
+        }
+      ]
+    }
+  ]
+}
