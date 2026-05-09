@@ -27,6 +27,7 @@
     "minecraft:body_rotation_blocked": { "$ref": "./components/body_rotation_blocked.json" },
     "minecraft:boostable": { "$ref": "./components/boostable.json" },
     "minecraft:boss": { "$ref": "./components/boss.json" },
+    "minecraft:bounciness": { "$ref": "./components/bounciness.json" },
     "minecraft:break_blocks": { "$ref": "./components/break_blocks.json" },
     "minecraft:breathable": { "$ref": "./components/breathable.json" },
     "minecraft:breedable": { "$ref": "./components/breedable.json" },

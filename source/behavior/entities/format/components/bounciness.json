@@ -1,0 +1,21 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.bounciness",
+  "type": "object",
+  "title": "Bounciness",
+  "additionalProperties": false,
+  "description": "Controls how an entity bounces when colliding with surfaces",
+  "required": [ "value" ],
+  "properties": {
+    "value": {
+      "type": "integer",
+      "default": 0,
+      "description": "Defines the bounce strength. 0 results in no bounce while 1 results in a perfectly elastic collision with full energy preservation.",
+      "title": "Value"
+    }
+  },
+  "examples": [
+    {
+      "value": 0
+    }
+  ]
+}
