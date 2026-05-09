@@ -42,6 +42,32 @@
             "title": "Filter",
             "description": "Conditions that need to be met for the behavior to start.",
             "$ref": "../../filters/filters.json"
+          },
+          "scale_previous_velocity": {
+            "title": "Scale Previous Velocity",
+            "description": "Scales the previous velocity of the target when hit",
+            "type": "number"
+          },
+          "horizontal_hit_angle_scale": {
+            "title": "Horizontal Hit Angle Scale",
+            "description": "Scales the horizontal angle response of the target when hit based on the attacker's aim direction",
+            "type": "number"
+          },
+          "vertical_hit_angle_scale": {
+            "title": "Vertical Hit Angle Scale",
+            "description": "Scales the vertical angle response of the target when hit based on the attacker's aim direction",
+            "type": "number"
+          },
+          "vertical_position_angle_scale": {
+            "title": "Verticla Position Angle Scale",
+            "description": "Scales the vertical angle response of the target when hit based on the attacker's relative feet position",
+            "type": "number"
+          },
+          "scale_with_damage": {
+            "title": "Scale With Damage",
+            "description": "Enables scaling the magnitude of knocback based on the inverse square of the damage",
+            "type": "boolean",
+            "default": false
           }
         }
       }
