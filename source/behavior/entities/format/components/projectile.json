@@ -97,6 +97,12 @@
       "description": "If true, the projectile will be treated as dangerous to the players.",
       "title": "Is Dangerous"
     },
+    "isolated_physics": {
+      "title": "Isolated Physics",
+      "description": "[EXPERIMENTAL] If true, this projectile will not be affected by outside forces such as friction and drag.",
+      "type": "boolean",
+      "default": false
+    },
     "knockback": {
       "type": "boolean",
       "default": true,
