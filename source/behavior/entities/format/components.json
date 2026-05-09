@@ -10,6 +10,7 @@
     "minecraft:addrider": { "$ref": "./components/addrider.json" },
     "minecraft:admire_item": { "$ref": "./components/admire_item.json" },
     "minecraft:ageable": { "$ref": "./components/ageable.json" },
+    "minecraft:air_drag_modifier": { "$ref": "./components/air_drag_modifier.json" },
     "minecraft:ambient_sound_interval": { "$ref": "./components/ambient_sound_interval.json" },
     "minecraft:anger_level": { "$ref": "./components/anger_level.json" },
     "minecraft:angry": { "$ref": "./components/angry.json" },

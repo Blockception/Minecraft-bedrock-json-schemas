@@ -1,0 +1,21 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.air_drag_modifier",
+  "type": "object",
+  "title": "Air Drag Modifier",
+  "additionalProperties": false,
+  "description": "Defines how much does air drag affects this entity.",
+  "required": [ "value" ],
+  "properties": {
+    "value": {
+      "type": "number",
+      "default": 1.0,
+      "description": "The higher the number, the more air drag affects this entity. A value of 1.0 means regular air drag, while 2.0 means twice as much",
+      "title": "Value"
+    }
+  },
+  "examples": [
+    {
+      "value": 1.0
+    }
+  ]
+}
