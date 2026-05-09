@@ -1,0 +1,48 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.spawn_on_death",
+  "description": "Component for spawning entities when an entity perishes.",
+  "title": "Spawn On Death",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "additional_spawn_range": {
+      "title": "Additional Spawn Range",
+      "description": "Additional random range of entities to spawn",
+      "default": {
+        "max": 0,
+        "min": 0
+      },
+      "$ref": "../../../../general/vectors/integer2.json"
+    },
+    "entity_to_spawn": {
+      "title": "Entity To Spawn",
+      "description": "What entity to spawn, defaults to owning entity when not set",
+      "type": "string"
+    },
+    "filters": {
+      "title": "Filters",
+      "description": "Conditions that need to be met for the behavior to start.",
+      "$ref": "../../filters/filters.json"
+    },
+    "inherit_parent_name": {
+      "title": "Inherit Parent Name",
+      "default": true,
+      "description": "If true, the entity will inherit the name of the parent entity, defaults to true when not set",
+      "type": "boolean"
+    },
+    "spawn_amount": {
+      "title": "Spawn Amount",
+      "default": 1,
+      "description": "How many entities to spawn, defaults to 1 when not set",
+      "exclusiveMinimum": 0,
+      "type": "integer"
+    },
+    "spawn_method": {
+      "title": "Spawn Method",
+      "default": "spawned",
+      "description": "Spawn method",
+      "type": "string",
+      "enum": [ "born", "spawned", "summoned" ]
+    }
+  }
+}
