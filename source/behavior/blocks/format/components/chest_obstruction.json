@@ -1,7 +1,7 @@
 {
   "$id": "blockception.minecraft.behavior.blocks.minecraft.chest_obstruction",
   "title": "Chest Obstruction",
-  "description": "[EXPERIMENTAL] Defines how a block placed above a chest or ender_chest should obstruct their opening",
+  "description": "Defines how a block placed above a chest or ender_chest should obstruct their opening",
   "type": "object",
   "additionalProperties": false,
   "required": [],
