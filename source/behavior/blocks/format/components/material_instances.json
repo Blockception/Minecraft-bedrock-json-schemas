@@ -41,7 +41,8 @@
               },
               {
                 "type": "number",
-                "minimum": 0 //TODO: Check if there's a maximum value
+                "minimum": 0,
+                "maximum": 1
               }
             ]
           },
