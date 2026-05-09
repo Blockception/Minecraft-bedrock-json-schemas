@@ -36,6 +36,20 @@
       "description": "Determines whether the feature can snap through water blocks",
       "type": "boolean",
       "default": false
+    },
+    "allowed_surface_blocks": {
+      "title": "Allowed Surface Blocks",
+      "description": "A list of blocks that the feature is permitted to snap to. Leaving this empty results in the feature snapping to blocks that can provide support for the given face (up/down/horizontal)",
+      "type": "array", 
+      "items": {
+        "$ref": "../../../general/block/reference.json"
+      }
+    },
+    "embed_in_surface": {
+      "title": "Embed In Surface",
+      "description": "Determines whether the placed feature should be embedded in the found surface.",
+      "type": "boolean",
+      "default": false
     }
   }
 }
