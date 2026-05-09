@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.uses_uniform_air_drag",
+  "description": "When present, air drag is applied uniformly on both the vertical and horizontal axes, instead of being biased toward horizontal movement.",
+  "type": "object",
+  "title": "Uses Uniform Air Drag",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {}
+}
