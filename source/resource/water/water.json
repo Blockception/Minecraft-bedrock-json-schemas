@@ -4,6 +4,7 @@
   "title": "Water",
   "description": "The properties of the water",
   "additionalProperties": false,
+  "required": [ "minecraft:water_settings" ],
   "properties": {
     "format_version": { "$ref": "../../general/format_version.json" },
     "minecraft:water_settings": {
