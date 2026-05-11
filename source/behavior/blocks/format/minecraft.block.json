@@ -11,7 +11,7 @@
       "type": "object",
       "title": "Component",
       "description": "The components of this block.",
-      "additionalProperties": false,
+      "additionalProperties": true,
       "properties": {
         //Components
         "minecraft:chest_obstruction": { "$ref": "./components/chest_obstruction.json" },
