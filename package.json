@@ -38,7 +38,7 @@
   "devDependencies": {
     "@eslint/js": "^9.39.2",
     "@types/jest": "^30.0.0",
-    "@types/node": "^25.8.0",
+    "@types/node": "^25.9.1",
     "comment-json": "^5.0.0",
     "eslint": "^9.39.2",
     "eslint-plugin-jest": "^29.12.1",
