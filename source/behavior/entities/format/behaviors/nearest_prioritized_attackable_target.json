@@ -8,10 +8,18 @@
     "priority": {
       "$ref": "./types/priority.json"
     },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "entity_types": {
       "$ref": "../types/entity_types.json",
       "description": "List of entity types that this mob considers valid targets",
       "title": "Entity Types"
+    },
+    "hurt_owner": {
+      "default": false,
+      "description": "If true, this mob will also attack mobs that hurt its owner.",
+      "type": "boolean"
     },
     "attack_interval": {
       "type": "integer",
@@ -54,12 +62,6 @@
       "default": false,
       "description": "If true, the target will change to the current closest entity whenever a different entity is closer.",
       "title": "Reselect Targets"
-    },
-    "reevaluate_description": {
-      "title": "Reevaluate Description",
-      "type": "boolean",
-      "default": false,
-      "description": "If true, the mob will stop being targeted if it stops meeting any conditions."
     },
     "scan_interval": {
       "type": "integer",

@@ -9,23 +9,20 @@
     "priority": {
       "$ref": "./types/priority.json"
     },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "angle_of_view_horizontal": {
       "title": "Angle Of View Horizontal",
       "type": "integer",
-      "default": 360,
+      "default": 180,
       "description": "The angle in degrees that an entity can see in the Y-axis (up-down)."
     },
     "angle_of_view_vertical": {
       "title": "Angle Of View Vertical",
       "type": "integer",
-      "default": 360,
+      "default": 180,
       "description": "The angle in degrees that an entity can see in the X-axis (left-right)."
-    },
-    "look_distance": {
-      "title": "Look Distance",
-      "type": "number",
-      "default": 8.0,
-      "description": "The distance in blocks from which the entity will look at."
     },
     "look_time": {
       "title": "Look Time",
@@ -35,8 +32,10 @@
     "probability": {
       "title": "Probability",
       "type": "number",
-      "default": 0.2,
-      "description": "The probability of looking at the target. A value of 1.00 is 100%."
+      "default": 0.02,
+      "minimum": 0,
+      "maximum": 1,
+      "description": "The probability of looking at the target."
     }
   },
   "examples": [

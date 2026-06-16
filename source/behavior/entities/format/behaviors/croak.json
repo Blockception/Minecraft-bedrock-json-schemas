@@ -2,11 +2,14 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.behavior.croak",
   "type": "object",
   "title": "Croak",
-  "description": "[EXPERIMENTAL BEHAVIOR] Allows the entity to croak at a random time interval with configurable conditions.",
+  "description": "Allows the entity to croak at a random time interval with configurable conditions.",
   "additionalProperties": false,
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "duration": {
       "title": "Duration",
       "description": "Random range in seconds after which the croaking stops. Can also be a constant.",
