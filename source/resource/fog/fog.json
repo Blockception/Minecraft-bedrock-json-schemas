@@ -5,8 +5,7 @@
   "type": "object",
   "additionalProperties": false,
   "title": "Fog",
-  "description": "UNDOCUMENTED.",
-  "$comment": "UNDOCUMENTED",
+  "description": "A rendering feature intended for obscuring the player's view distance, usually for colored atmospherics or for seamlessly occluding sharp boundaries such as unloaded chunks..",
   "definitions": {
     "colorHexOrArray": {
       "examples": ["#056bd1"],
