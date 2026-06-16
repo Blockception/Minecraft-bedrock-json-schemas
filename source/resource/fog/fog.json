@@ -173,6 +173,13 @@
           "$ref": "#/definitions/colorHexOrArray"
         }
       }
+    },
+    "henyeyGreenstein": {
+      "title": "Heyney GreenStein G",
+      "description": "Controls the distribution of scattered light.",
+      "type": "number", 
+      "minimum": -1,
+      "maximum": 1
     }
   },
   "properties": {
@@ -294,33 +301,29 @@
             },
             "henyey_greenstein_g": {
               "title": "Henyey Greenstein G",
-              "description": "UNDOCUMENTED",
+              "description": "These are used to determine the distribution of scattered light in different mediums.",
               "type": "object",
               "additionalProperties": false,
               "properties": {
                 "air": {
                   "title": "Air",
-                  "description": "UNDOCUMENTED",
+                  "description": "Used when light is passing through air.",
                   "type": "object",
                   "additionalProperties": false,
                   "properties": {
                     "henyey_greenstein_g": {
-                      "title": "Henyey Greenstein G",
-                      "description": "UNDOCUMENTED",
-                      "type": "number"
+                      "$ref": "#/definitions/henyeyGreenstein"
                     }
                   }
                 },
                 "water": {
                   "title": "Water",
-                  "description": "UNDOCUMENTED",
+                  "description": "Used when light is passing through water.",
                   "type": "object",
                   "additionalProperties": false,
                   "properties": {
                     "henyey_greenstein_g": {
-                      "title": "Henyey Greenstein G",
-                      "description": "UNDOCUMENTED",
-                      "type": "number"
+                      "$ref": "#/definitions/henyeyGreenstein"
                     }
                   }
                 }
