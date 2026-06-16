@@ -196,6 +196,11 @@
                     "title": "Pre Animation"
                   }
                 },
+                "hide_held_items": {
+                  "title": "Hide Held Items",
+                  "description": "Hides held items when it evaluates to a non-zero value",
+                  "$ref": "../../../molang/boolean.json"
+                },
                 "parent_setup": {
                   "type": "string",
                   "description": "UNDOCUMENTED: parent setup.",
