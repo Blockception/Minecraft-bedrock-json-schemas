@@ -33,6 +33,13 @@
       "type": "boolean",
       "default": false
     },
+    "ground_level": {
+      "title": "Ground Level",
+      "description": "Specifies which Y coordinate of the structure is considered its ground level. This value determines which layer of the structure is checked by the \"grounded\" and \"leveled\" constraints and is used as a downward vertical offset during placement. If the value exceeds the structure's height, it is clamped to the maximum valid value and a content warning is emitted.",
+      "type": "integer", 
+      "minimum": 0,
+      "default": 0
+    },
     "constraints": {
       "title": "",
       "description": "Specific constraints that must be satisfied when placing this structure.",
@@ -45,6 +52,22 @@
           "type": "object",
           "additionalProperties": false,
           "properties": {}
+        },
+        "leveled": {
+          "title": "Leveled",
+          "description": "When specified, ensures the structure's ground level is placed on mostly flat terrain.",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "max_steepness": {
+              "title": "Max Steepness",
+              "description": "Maximum allowed height difference between the placement position and terrain samples taken halfway along each side of the structure. A valid terrain sample consists of a solid block with a non‑solid block above it.",
+              "type": "integer", 
+              "minimum": 0,
+              "maximum": 8,
+              "default": 2
+            }
+          }
         },
         "unburied": {
           "title": "Unburied",
@@ -60,6 +83,12 @@
           "type": "object",
           "additionalProperties": false,
           "properties": {
+            "only_check_intersection_for_motion_blocking_blocks": {
+              "title": "Only Check Intersection For Motion Blocking Blocks",
+              "description": "If true, only motion-blocking blocks within the structure are checked for intersections with blocks in \"block_allowlist|block_whitelist\". If false, all blocks in the structure except empty ones are checked for intersections, including air.",
+              "type": "boolean",
+              "default": false
+            },
             "block_allowlist": {
               "title": "Block Allowlist",
               "description": "List of blocks the owning structure is allowed to intersect with.",
