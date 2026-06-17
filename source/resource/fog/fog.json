@@ -154,12 +154,12 @@
           "additionalProperties": false,
           "patternProperties": {
             "^\\d*\\.?\\d+$": {
-              "$ref": "./lighting/format/color.json"
+              "$ref": "../lighting/format/color.json"
             }
           }
         },
         {
-          "$ref": "./lighting/format/color.json"
+          "$ref": "../lighting/format/color.json"
         }
       ]
     },
