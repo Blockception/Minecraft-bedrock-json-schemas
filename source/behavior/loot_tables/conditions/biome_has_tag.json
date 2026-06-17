@@ -1,0 +1,19 @@
+{
+  "$id": "blockception.minecraft.behavior.condition.biome_has_tag",
+  "type": "object",
+  "additionalProperties": false,
+  "description": "Returns true if the biome present at the location of the entity that is dropping loot matches the value.",
+  "title": "Has Mark Variant",
+  "properties": {
+    "condition": {
+      "type": "string",
+      "title": "Condition",
+      "description": "Returns true if the biome present at the location of the entity that is dropping loot matches the value."
+    },
+    "tag": {
+      "type": "string",
+      "description": "Biome tag to check.",
+      "title": "Tag"
+    }
+  }
+}

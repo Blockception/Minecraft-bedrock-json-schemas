@@ -28,6 +28,15 @@
       "title": "Start Sound",
       "description": "Sound played when the item starts being used.",
       "type": "string"
+    },
+    "start_using": {
+      "title": "Start Using",
+      "description": "Controls how using the item triggers start using behavior. \"if_first\" only starts if no other component has started using yet; \"always\" always restarts using. Defaults to \"if_first\".",
+      "enum": [
+        "if_first",
+        "always"
+      ],
+      "default": "if_first"
     }
   }
 }

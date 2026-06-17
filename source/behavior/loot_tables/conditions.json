@@ -4,8 +4,8 @@
   "title": "Condition",
   "allOf": [
     {
-      "if": { "properties": { "condition": { "const": "has_mark_variant" } } },
-      "then": { "$ref": "./conditions/has_mark_variant.json" }
+      "if": { "properties": { "condition": { "const": "biome_has_tag" } } },
+      "then": { "$ref": "./conditions/biome_has_tag.json" }
     },
     {
       "if": { "properties": { "condition": { "const": "has_variant" } } },

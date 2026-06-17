@@ -46,8 +46,8 @@
           "default": false
         },
         "properties": {
-          "title": "Experimental",
-          "description": "Experimental",
+          "title": "Properties",
+          "description": "List of entity property definitions.",
           "type": "object",
           "additionalProperties": {
             "type": "object",

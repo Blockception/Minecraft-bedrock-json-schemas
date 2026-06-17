@@ -30,6 +30,13 @@
       ],
       "description": "Duration in seconds of the status ailment applied to the damaged entity.",
       "title": "Effect Duration"
+    },
+    "effect_amplifier": {
+      "title": "Effect Amplifier",
+      "description": "Amplifier level (potion tier) of the status ailment applied to the damaged entity. Higher values increase the strength of the effect.",
+      "type": "integer", 
+      "minimum": 0,
+      "default": 0
     }
   },
   "examples": [{ "damage": 1 }, { "damage": 1, "effect_name": "example", "effect_duration": 1 }]

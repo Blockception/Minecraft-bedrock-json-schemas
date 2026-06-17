@@ -7,7 +7,10 @@
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
-    "avoid_damage_blocks": {
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
+    "avoid_damage_blocks": { //? Doesn't exist in the official schemas but is used by parrot
       "type": "boolean",
       "description": "If true, the mob will avoid blocks that cause damage.",
       "$comment": "UNDOCUMENTED",
@@ -31,7 +34,7 @@
       "description": "Distance in blocks that the mob will look up or down for a new spot to move to. Must be at least 1",
       "title": "Y Dist"
     },
-    "y_offset": {
+    "y_offset": { //? Doesn't exist in the official schemas but is used by parrot
       "type": "integer",
       "description": "Height in blocks to add to the selected target position.",
       "$comment": "UNDOCUMENTED",

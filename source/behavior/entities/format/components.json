@@ -187,6 +187,7 @@
     "minecraft:sittable": { "$ref": "./components/sittable.json" },
     "minecraft:skin_id": { "$ref": "./components/skin_id.json" },
     "minecraft:sound_volume": { "$ref": "./components/sound_volume.json" },
+    "minecraft:spawn_egg_interaction": { "$ref": "./components/spawn_egg_interaction.json" },
     "minecraft:spawn_entity": { "$ref": "./components/spawn_entity.json" },
     "minecraft:spawn_on_death": { "$ref": "./components/spawn_on_death.json" },
     "minecraft:spell_effects": { "$ref": "./components/spell_effects.json" },

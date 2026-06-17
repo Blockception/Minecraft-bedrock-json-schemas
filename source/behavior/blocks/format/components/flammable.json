@@ -23,6 +23,16 @@
           "description": "A modifier affecting the chance that this block will be destroyed by flames when on fire.",
           "type": "number",
           "default": 20
+        },
+        "lava_flammable": {
+          "default": "never",
+          "description": "Determines lava fire consideration. \"always\" includes this block when lava attempts to spread fire (triggered by adjacent block changes), but normal fire-placement rules still apply.\n\"never\" excludes this block from that check.",
+          "enum": [
+            "always",
+            "never"
+          ],
+          "title": "Lava Flammable",
+          "type": "string"
         }
       }
     }

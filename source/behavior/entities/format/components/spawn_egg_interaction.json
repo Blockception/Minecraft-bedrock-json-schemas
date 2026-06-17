@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.spawn_egg_interaction",
+  "title": "Spawn Egg Interaction",
+  "additionalProperties": false,
+  "description": "Enables interacting with this entity using its own spawn egg to spawn a born child. Runs the \"minecraft:entity_born\" event on the created entity as well as the defined \"on_spawn\" event.",
+  "type": "object",
+  "required": [],
+  "properties": {}
+}

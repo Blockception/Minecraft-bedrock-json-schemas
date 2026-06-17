@@ -9,6 +9,9 @@
     "priority": {
       "$ref": "./types/priority.json"
     },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "affected_by_griefing_rule": {
       "title": "Affected By Griefing Rule",
       "description": "If true, whether the goal is affected by the mob griefing game rule.",
@@ -31,7 +34,8 @@
       "title": "Chance",
       "description": "Chance each tick for the entity to try and take a block.",
       "type": "number",
-      "minimum": 0
+      "minimum": 0,
+      "maximum": 1
     },
     "on_take": {
       "title": "On Take",

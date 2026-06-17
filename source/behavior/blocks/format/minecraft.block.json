@@ -14,6 +14,7 @@
       "additionalProperties": true,
       "properties": {
         //Components
+        "minecraft:block_entity": { "$ref": "./components/block_entity.json" },
         "minecraft:chest_obstruction": { "$ref": "./components/chest_obstruction.json" },
         "minecraft:collision_box": { "$ref": "./components/collision_box.json" },
         "minecraft:connection_rule": { "$ref": "./components/connection_rule.json" },
@@ -27,6 +28,7 @@
         "minecraft:flower_pottable": { "$ref": "./components/flower_pottable.json" },
         "minecraft:friction": { "$ref": "./components/friction.json" },
         "minecraft:geometry": { "$ref": "./components/geometry.json" },
+        "minecraft:instrument_sound": { "$ref": "./components/instrument_sound.json" },
         "minecraft:item_visual": { "$ref": "./components/item_visual.json" },
         "minecraft:leashable": { "$ref": "./components/leashable.json" },
         "minecraft:light_dampening": { "$ref": "./components/light_dampening.json" },

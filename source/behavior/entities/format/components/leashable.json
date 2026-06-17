@@ -43,12 +43,6 @@
       "type": "boolean",
       "default": false
     },
-    "hard_distance": {
-      "$ref": "#/definitions/hard_distance"
-    },
-    "max_distance": {
-      "$ref": "#/definitions/max_distance"
-    },
     "on_leash": {
       "$ref": "../types/event_object.json",
       "description": "Event to call when this entity is leashed.",
@@ -58,9 +52,6 @@
       "$ref": "../types/event_object.json",
       "description": "Event to call when this entity is unleashed.",
       "title": "On Unleash"
-    },
-    "soft_distance": {
-      "$ref": "#/definitions/soft_distance"
     },
     "presets": {
       "title": "Presets",
@@ -98,6 +89,12 @@
           }
         }
       }
+    },
+    "unleash_on_removal": {
+      "title": "Unleash On Removal",
+      "description": "If true, the entity is unleashed when the component is removed.",
+      "type": "boolean",
+      "default": true
     }
   },
   "examples": [

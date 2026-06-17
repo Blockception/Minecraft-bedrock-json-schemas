@@ -68,6 +68,12 @@
             "description": "Enables scaling the magnitude of knocback based on the inverse square of the damage",
             "type": "boolean",
             "default": false
+          },
+          "extra_knockback_approach": {
+            "title": "EXtra Knockback Approach",
+            "description": "Handles extra knockback from enchantments, sprinting and swimming",
+            "type": "string",
+            "enum": ["reapply_default", "multiply", "multiply_reduced"]
           }
         }
       }

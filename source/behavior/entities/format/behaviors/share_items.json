@@ -8,6 +8,9 @@
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "entity_types": {
       "$ref": "../types/entity_types.json",
       "description": "List of entities this mob will share items with.",
@@ -21,7 +24,7 @@
     },
     "max_dist": {
       "type": "number",
-      "default": 0,
+      "default": 1,
       "description": "Maximum distance in blocks this mob will look for entities to share items with.",
       "title": "Maximum Distance"
     }

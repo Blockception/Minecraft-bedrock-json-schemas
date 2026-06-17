@@ -1,0 +1,27 @@
+{
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.instrument_sound",
+  "title": "Instrument Sound",
+  "description": "It can be used to assign an instrument to \"up\" and \"down\" faces of a block and it's permutations",
+  "type": "object",
+  "additionalProperties": false,
+  "minProperties": 1,
+  "definitions": {
+    "face": {
+      "description": "The instrument sound to be played",
+      "type": "string",
+      "pattern": "^note."
+    }
+  },
+  "properties": {
+    "up": {
+      "title": "Up",
+      "$ref": "#/definitions/face",
+      "default": "note.harp"
+    },
+    "down": {
+      "title": "Down",
+      "$ref": "#/definitions/face",
+      "default": "note.none"
+    }
+  }
+}

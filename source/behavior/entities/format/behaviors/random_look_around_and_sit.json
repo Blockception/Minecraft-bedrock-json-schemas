@@ -8,6 +8,9 @@
     "priority": {
       "$ref": "types/priority.json"
     },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "continue_if_leashed": {
       "title": "Continue If Leashed",
       "type": "boolean",
@@ -23,7 +26,7 @@
     "max_angle_of_view_horizontal": {
       "title": "Max Angle Of View Horizontal",
       "type": "number",
-      "default": 30.0,
+      "default": 180,
       "description": "The rightmost angle a mob can look at on the horizontal plane with respect to its initial facing direction."
     },
     "max_look_count": {
@@ -41,7 +44,7 @@
     "min_angle_of_view_horizontal": {
       "title": "Min Angle Of View Horizontal",
       "type": "number",
-      "default": -30.0,
+      "default": -180,
       "description": "The leftmost angle a mob can look at on the horizontal plane with respect to its initial facing direction."
     },
     "min_look_count": {

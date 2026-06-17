@@ -99,7 +99,7 @@
     },
     "isolated_physics": {
       "title": "Isolated Physics",
-      "description": "[EXPERIMENTAL] If true, this projectile will not be affected by outside forces such as friction and drag.",
+      "description": "If true, this projectile will not be affected by outside forces such as friction and drag.",
       "type": "boolean",
       "default": false
     },
@@ -144,6 +144,12 @@
       "default": 5,
       "description": "Time in seconds that the entity hit will be on fire for.",
       "title": "On Fire Time"
+    },
+    "owner_launch_immunity_ticks": {
+      "title": "Owner Launch Immunity Ticks",
+      "description": "Number of ticks after launch during which the projectile cannot hit its owner",
+      "type": "integer", 
+      "default": 5
     },
     "on_hit": {
       "additionalProperties": false,

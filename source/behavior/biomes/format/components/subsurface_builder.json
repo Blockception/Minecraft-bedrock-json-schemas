@@ -29,41 +29,85 @@
           },
           "then": {
             "required": [
-              "amplitudes",
-              "first_octave",
-              "gradient_blocks",
-              "noise_seed_string",
-              "non_replaceable_blocks"
+              "noise_descriptor",
+              "noise_block_specifiers"
             ],
-            "properties": { //? Is this right because it matches MS schemas but it's different to the VP
-              "amplitudes": {
-                "title": "Amplitudes",
-                "description": "Governs the attenuation of the first n octaves in the generated noise.",
+            "properties": {
+              "noise_descriptor": {
+                "title": "Noise Descriptor",
+                "description": "The specification for the noise used by the surface builder.",
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "amplitudes", "first_octave", "name"
+                ],
+                "properties": {
+                  "amplitudes": {
+                    "title": "Amplitudes",
+                    "description": "Governs the attenuation of the first n octaves in the generated noise.",
+                    "items": {
+                      "type": "number"
+                    },
+                    "minItems": 1,
+                    "maxItems": 100,
+                    "type": "array"
+                  },
+                  "first_octave": {
+                    "title": "First Octave",
+                    "description": "Governs the general frequency characteristics of the generated noise. Lower value results in noise with lower frequency content.",
+                    "type": "integer"
+                  },
+                  "name": {
+                    "title": "Name",
+                    "description": "The string used to initialize the noise. Has no impact on the qualitative aspects of the generated values.",
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                }
+              },
+              "noise_block_specifiers": {
+                "title": "Noise Block Specifiers",
+                "description": "The noise block specifiers defining which ranges of noise are associated with which blocks. The ranges provided are valid on the interval [-1, 1], and may overlap at their endpoints.",
                 "items": {
-                  "type": "number"
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "block": {
+                      "$ref": "../../../../general/block/reference.json",
+                      "description": "The block to place if the noise sample satisfies the provided threshold/range"
+                    },
+                    "noise": {
+                      "default": "Noise",
+                      "description": "The string identifier of the noise associated with this NoiseBlockSpecifier.",
+                      "pattern": "^\\S+$",
+                      "type": "string"
+                    },
+                    "range": {
+                      "title": "Range",
+                      "default": {
+                        "max": 0,
+                        "min": 0
+                      },
+                      "description": "The range of sampled noise value associated with the provided Block.",
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [ "min", "max" ],
+                      "properties": {
+                        "min": { "type": "number", "description": "Minimum value." },
+                        "max": { "type": "number", "description": "Maximum value." }
+                      }
+
+                    },
+                    "threshold": {
+                      "title": "Threshold",
+                      "default": 0,
+                      "description": "The minimum sampled noise value associated with the provided Block.",
+                      "type": "number"
+                    }
+                  }
                 },
                 "minItems": 1,
                 "type": "array"
-              },
-              "first_octave": {
-                "title": "First Octave",
-                "description": "Governs the general frequency characteristics of the generated noise. Lower value results in noise with lower frequency content.",
-                "type": "integer"
-              },
-              "gradient_blocks": {
-                "title": "Gradient Blocks",
-                "description": "A list of block names that will be sampled according to a Perlin noise distribution. Specifying `minecraft:air`-blocks is permitted, and will result in the original block not being replaced, meaning it is possible to adjust the density/intensity of block replacement in the biome using this surface builder type.",
-                "items": {
-                  "$ref": "../../../../general/block/reference.json"
-                },
-                "minItems": 1,
-                "type": "array"
-              },
-              "noise_seed_string": {
-                "title": "Noise Seed String",
-                "description": "The string used to initialize the noise. Has no impact on the qualitative aspects of the generated values.",
-                "minLength": 1,
-                "type": "string"
               },
               "non_replaceable_blocks": {
                 "description": "A list of blocks that the surface builder is not allowed to replace. Leaving this list empty or unspecified will allow the replacement of any (non-air) block type.",

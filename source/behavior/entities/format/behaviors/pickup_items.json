@@ -55,6 +55,12 @@
       "default": 1,
       "description": "Height in blocks the mob will search for items"
     },
+    "stop_if_holding_item": {
+      "title": "Stop If Holding Item",
+      "description": "If true, the mob will not pick up another item if the item's preferred slot matches",
+      "type": "boolean",
+      "default": false
+    },
     "pickup_based_on_chance": {
       "type": "boolean",
       "default": false,

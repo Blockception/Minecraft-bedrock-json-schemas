@@ -5,23 +5,8 @@
   "type": "object",
   "additionalProperties": false,
   "title": "Fog",
-  "description": "UNDOCUMENTED.",
-  "$comment": "UNDOCUMENTED",
+  "description": "A rendering feature intended for obscuring the player's view distance, usually for colored atmospherics or for seamlessly occluding sharp boundaries such as unloaded chunks..",
   "definitions": {
-    "colorHexOrArray": {
-      "examples": ["#056bd1"],
-      "oneOf": [
-        {
-          "type": "array",
-          "items": [
-            { "type": "number", "minimum": 0, "maximum": 1, "title": "Red" },
-            { "type": "number", "minimum": 0, "maximum": 1, "title": "Green" },
-            { "type": "number", "minimum": 0, "maximum": 1, "title": "Blue" }
-          ]
-        },
-        { "type": "string", "format": "color-hex", "pattern": "^\\#[0-9a-fA-F]{6}$" }
-      ]
-    },
     "defaultFogSettings": {
       "type": "object",
       "additionalProperties": false,
@@ -122,6 +107,62 @@
         }
       }
     },
+    "unit_interval_or_keyframe": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^\\d*\\.?\\d+$": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          }
+        },
+        {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      ]
+    },
+    "height_or_keyframe": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^\\d*\\.?\\d+$": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 128
+            }
+          }
+        },
+        {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 128
+        }
+      ]
+    },
+    "color_or_keyframe": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^\\d*\\.?\\d+$": {
+              "$ref": "../lighting/format/color.json"
+            }
+          }
+        },
+        {
+          "$ref": "../lighting/format/color.json"
+        }
+      ]
+    },
     "volumeDensityObject": {
       "type": "object",
       "additionalProperties": false,
@@ -134,23 +175,17 @@
         "max_density": {
           "title": "Maximum Density",
           "description": "The maximum amount of opaqueness that the ground fog will take on. A value from [0.0, 1.0].",
-          "minimum": 0,
-          "maximum": 1,
-          "type": "number"
-        },
+          "$ref": "#/definitions/unit_interval_or_keyframe"
+        },  
         "max_density_height": {
           "title": "Maximum Density Height",
           "description": "The height in blocks that the ground fog will become it's maximum density.",
-          "minimum": 0,
-          "maximum": 128,
-          "type": "number"
+          "$ref": "#/definitions/height_or_keyframe"
         },
         "zero_density_height": {
           "title": "Zero Density Height",
           "description": "The height in blocks that the ground fog will be completely transparent and begin to appear. This value needs to be at least 1 higher than `max_density_height`.",
-          "minimum": 0,
-          "maximum": 128,
-          "type": "number"
+          "$ref": "#/definitions/height_or_keyframe"
         },
         "uniform": {
           "title": "Uniform",
@@ -166,14 +201,37 @@
         "absorption": {
           "title": "Absorption",
           "description": "Proportion of light that is absorbed (lost) per block.",
-          "$ref": "#/definitions/colorHexOrArray"
+          "$ref": "#/definitions/color_or_keyframe"
         },
         "scattering": {
           "title": "Scattering",
           "description": "Proportion of light that is scattered per block.",
-          "$ref": "#/definitions/colorHexOrArray"
+          "$ref": "#/definitions/color_or_keyframe"
         }
       }
+    },
+    "henyeyGreenstein": {
+      "title": "Heyney GreenStein G",
+      "description": "Controls the distribution of scattered light.",
+      "type": "number", 
+      "minimum": -1,
+      "maximum": 1
+    },
+    "heyney_or_keyframe": {
+      "anyOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "patternProperties": {
+            "^\\d*\\.?\\d+$": {
+              "$ref": "#/definitions/henyeyGreenstein"
+            }
+          }
+        },
+        {
+          "$ref": "#/definitions/henyeyGreenstein"
+        }
+      ]
     }
   },
   "properties": {
@@ -295,33 +353,29 @@
             },
             "henyey_greenstein_g": {
               "title": "Henyey Greenstein G",
-              "description": "UNDOCUMENTED",
+              "description": "These are used to determine the distribution of scattered light in different mediums.",
               "type": "object",
               "additionalProperties": false,
               "properties": {
                 "air": {
                   "title": "Air",
-                  "description": "UNDOCUMENTED",
+                  "description": "Used when light is passing through air.",
                   "type": "object",
                   "additionalProperties": false,
                   "properties": {
                     "henyey_greenstein_g": {
-                      "title": "Henyey Greenstein G",
-                      "description": "UNDOCUMENTED",
-                      "type": "number"
+                      "$ref": "#/definitions/heyney_or_keyframe"
                     }
                   }
                 },
                 "water": {
                   "title": "Water",
-                  "description": "UNDOCUMENTED",
+                  "description": "Used when light is passing through water.",
                   "type": "object",
                   "additionalProperties": false,
                   "properties": {
                     "henyey_greenstein_g": {
-                      "title": "Henyey Greenstein G",
-                      "description": "UNDOCUMENTED",
-                      "type": "number"
+                      "$ref": "#/definitions/heyney_or_keyframe"
                     }
                   }
                 }
