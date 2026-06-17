@@ -437,6 +437,10 @@
               "then": { "$ref": "./filters/random_chance.json" }
             },
             {
+              "if": { "properties": { "test": { "const": "redstone_strength_at_position" } } },
+              "then": { "$ref": "./filters/redstone_strength_at_position.json" }
+            },
+            {
               "if": { "properties": { "test": { "const": "rider_count" } } },
               "then": { "$ref": "./filters/rider_count.json" }
             },

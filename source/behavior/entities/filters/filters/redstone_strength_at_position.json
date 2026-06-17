@@ -1,0 +1,33 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.filters.redstone_strength_at_position",
+  "type": "object",
+  "title": "Redstone Strength At Position",
+  "description": "Tests the redstone strength at the subject's position.",
+  "required": ["value"],
+  "properties": {
+    "test": {
+      "type": "string",
+      "title": "Test",
+      "description": "The test property."
+    },
+    "operator": {
+      "$ref": "./types/operator.json"
+    },
+    "subject": {
+      "$ref": "./types/subject.json"
+    },
+    "value": {
+      "description": "An integer value.",
+      "type": "integer",
+      "title": "Value",
+      "minimum": 0,
+      "maximum": 16
+    }
+  },
+  "examples": [
+    {
+      "test": "redstone_strength_at_position",
+      "value": 0
+    }
+  ]
+}
