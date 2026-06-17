@@ -28,6 +28,7 @@
         "minecraft:flower_pottable": { "$ref": "./components/flower_pottable.json" },
         "minecraft:friction": { "$ref": "./components/friction.json" },
         "minecraft:geometry": { "$ref": "./components/geometry.json" },
+        "minecraft:instrument_sound": { "$ref": "./components/instrument_sound.json" },
         "minecraft:item_visual": { "$ref": "./components/item_visual.json" },
         "minecraft:leashable": { "$ref": "./components/leashable.json" },
         "minecraft:light_dampening": { "$ref": "./components/light_dampening.json" },
