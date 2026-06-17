@@ -14,6 +14,7 @@
     "minecraft:fossil_feature": { "$ref": "./features/minecraft.fossil_feature.json" },
     "minecraft:geode_feature": { "$ref": "./features/minecraft.geode_feature.json" },
     "minecraft:growing_plant_feature": { "$ref": "./features/minecraft.growing_plant_feature.json" },
+    "minecraft:height_difference_filter_feature": { "$ref": "./features/minecraft.height_difference_filter_feature.json" },
     "minecraft:multiface_feature": { "$ref": "./features/minecraft.multiface_feature.json" },
     "minecraft:nether_cave_carver_feature": { "$ref": "./features/minecraft.nether_cave_carver_feature.json" },
     "minecraft:ore_feature": { "$ref": "./features/minecraft.ore_feature.json" },
