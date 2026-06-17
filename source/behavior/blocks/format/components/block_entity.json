@@ -1,0 +1,15 @@
+{
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.block_entity",
+  "title": "Block Entity",
+  "description": "[EXPERIMETNAL] An associated block-entity will be placed with the intent to provide persistent local metadata, akin to chests, spawners, signs, etc...",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "dynamic_properties": {
+      "title": "Dynamic Properties",
+      "description": "Enables or disables the storing of DynamicProperties",
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
