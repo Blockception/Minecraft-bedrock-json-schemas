@@ -45,6 +45,11 @@
       "description": "If the entity should use itself as the damage source when attacking a target.",
       "type": "boolean",
       "default": false
+    },
+    "death_message_override": {
+      "title": "Death Message Override",
+      "description": "A localization key to use as the death message when the area attack kills an entity. If empty, the default death message for the damage cause is used.",
+      "type": "string"
     }
   },
   "examples": [
