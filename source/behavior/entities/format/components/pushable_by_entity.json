@@ -5,5 +5,70 @@
   "description": "Allows an entity to be pushed by other entities.",
   "type": "object",
   "required": [],
-  "properties": {}
+  "properties": {
+    "presets": {
+      "title": "Presets",
+      "description": "Allows customization of push behavior per entity type",
+      "type": "array",
+      "items": {
+        "type": "object", 
+        "additionalProperties": false,
+        "properties": {
+          "filter": {
+            "title": "Filters",
+            "description": "Conditions that must be met for the preset to be applied",
+            "$ref": "../../filters/filters.json"
+          },
+          "push_mode": {
+            "title": "Push Mode",
+            "description": "The type of push calculation",
+            "type": "string",
+            "enum": ["none", "default", "legacy_boat", "legacy_minecart"],
+            "default": "default"
+          },
+          "strength_multiplier": {
+            "title": "Strength Multiplier",
+            "description": "Scales the push force applied to the entity",
+            "type": "number"
+          },
+          "min_distance": {
+            "title": "Min Distance",
+            "description": "Minimum distance between entities for push forces to be applied",
+            "type": "number"
+          },
+          "max_distance": {
+            "title": "Max Distance",
+            "description": "Controls the maximum range at which push interactions can occur for all push_mode values",
+            "type": "number"
+          },
+          "push_scale_self": {
+            "title": "Push Scale Self",
+            "description": "Scales how much push force this entity applies to itself away on collision",
+            "type": "number"
+          },
+          "push_scale_other": {
+            "title": "Push Scale Other",
+            "description": "Scales how much push force this entity applies to the other entity on collision",
+            "type": "number"
+          },
+          "play_sound": {
+            "title": "Play Sound",
+            "description": "Control whether the pushed_by_player sound is played",
+            "type": "boolean",
+            "default": false
+          },
+          "play_sound_cooldown_in_seconds": {
+            "title": "Play Sound Cooldown In Seconds",
+            "description": "Cooldown in seconds between sounds, a lower number results in more sounds",
+            "type": "number"
+          },
+          "play_sound_impulse_threshold": {
+            "title": "Play Sound Impulse Threshold",
+            "description": "Minimum change of velocity needed to trigger the push sound, a lower value means higher sensitivity",
+            "type": "number"
+          }
+        }
+      }
+    }
+  }
 }
