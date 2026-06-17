@@ -248,6 +248,26 @@
           "items": {
             "$ref": "#/definitions/event_base"
           }
+        },
+        "unleash": {
+          "title": "Unleash",
+          "description": "Determine how to unleash itself and/or attached entities",
+          "type": "object", 
+          "additionalProperties": false,
+          "properties": {
+            "unleash_self": {
+              "title": "Unleash Self",
+              "description": "If true, it unleashes the entity from the entity it is leashed to",
+              "type": "boolean",
+              "default": false
+            },
+            "unleash_others": {
+              "title": "Unleash Others",
+              "description": "If true, it unleashes all entities that are leashed to the entity",
+              "type": "boolean",
+              "default": false
+            }
+          }
         }
       }
     },
