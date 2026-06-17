@@ -146,10 +146,8 @@
     "property_inheritance": {
       "title": "Property Inheritance",
       "description": "List of Entity Properties that should be inherited from the parent entities and potentially mutated.",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "additionalProperties": {
+      "type": "object",
+      "properties": {
           "mutation_chance": {
             "title": "Mutation Chance",
             "description": "The chance it should not inherit from either parent",
@@ -166,7 +164,6 @@
         "propertyNames": {
           "pattern": "^[0-9a-zA-Z:_\\.\\-]+$"
         }
-      }
     },
     "random_extra_variant_mutation_interval": {
       "title": "Random Extra Variant Mutation Interval",
