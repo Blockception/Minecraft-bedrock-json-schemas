@@ -24,8 +24,8 @@
   },
   "examples": [
     {
-      "test": "light_level",
-      "value": 0
+      "test": "is_waterlogged",
+      "value": false
     }
   ]
 }
