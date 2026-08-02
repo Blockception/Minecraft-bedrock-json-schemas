@@ -96,36 +96,13 @@
     },
     "sound_interval": {
       "title": "Sound Interval",
-      "default": [3.0, 8.0],
       "description": "The range of time in seconds to randomly wait before playing the sound again.",
       "oneOf": [
         {
-          "type": "array",
-          "items": [
-            {
-              "type": "number",
-              "title": "Maximum"
-            },
-            {
-              "type": "number",
-              "title": "Maximum"
-            }
-          ]
+          "$ref": "../../../../general/min_max_float.json"
         },
         {
           "type": "number"
-        },
-        {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "range_min": {
-              "type": "number"
-            },
-            "range_max": {
-              "type": "number"
-            }
-          }
         }
       ]
     }

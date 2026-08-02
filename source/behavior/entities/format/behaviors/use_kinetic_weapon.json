@@ -20,12 +20,12 @@
     "reposition_distance": {
       "title": "Reposition Distance",
       "description": "The distance the mob retreats to once the target is closer than the midpoint of the item's \"minecraft:kinetic_weapon\" component's minimum and maximum \"reach\"",
-      "type": "number"
+      "$ref": "../../../../general/min_max_float.json"
     },
     "cooldown_distance": {
       "title": "Cooldown Distance",
       "description": "The distance the mob retreats to after all of the item's \"minecraft:kinetic_weapon\" component's \"max_duration\" values have elapsed",
-      "type": "number"
+      "$ref": "../../../../general/min_max_float.json"
     },
     "reposition_speed_multiplier": {
       "title": "Reposition Speed Multiplier",

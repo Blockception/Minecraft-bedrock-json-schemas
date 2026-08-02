@@ -18,7 +18,7 @@
     },
     "attack_range": {
       "title": "Attack Range",
-      "$ref": "../../../../general/vectors/number3.json",
+      "$ref": "../../../../general/min_max_float.json",
       "description": "Target needs to be within this range for the attack to happen."
     },
     "owner_anchor": {

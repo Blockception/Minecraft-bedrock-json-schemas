@@ -13,7 +13,7 @@
     "duration": {
       "title": "Duration",
       "description": "Random range in seconds after which the croaking stops. Can also be a constant.",
-      "$ref": "../../../../general/vectors/number2OrValue.json"
+      "$ref": "../../../../general/min_max_float.json"
     },
     "filters": {
       "title": "Filters",
@@ -23,7 +23,7 @@
     "interval": {
       "title": "Interval",
       "description": "Random range in seconds between runs of this behavior. Can also be a constant.",
-      "$ref": "../../../../general/vectors/integer2OrValue.json"
+      "$ref": "../../../../general/min_max_float.json"
     }
   }
 }

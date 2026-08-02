@@ -22,8 +22,7 @@
       "title": "Probability"
     },
     "look_time": {
-      "$ref": "../types/range_number_type.json",
-      "default": [2, 4],
+      "$ref": "../../../../general/min_max_float.json",
       "description": "Time range to look at the nearest entity.",
       "title": "Look Time"
     },
