@@ -9,6 +9,7 @@
     "minecraft:absorption": { "$ref": "./components/attribute.json" },
     "minecraft:addrider": { "$ref": "./components/addrider.json" },
     "minecraft:admire_item": { "$ref": "./components/admire_item.json" },
+    "minecraft:aquatic_charge_attack": { "$ref": "./components/aquatic_charge_attack.json" },
     "minecraft:ageable": { "$ref": "./components/ageable.json" },
     "minecraft:air_drag_modifier": { "$ref": "./components/air_drag_modifier.json" },
     "minecraft:ambient_sound_interval": { "$ref": "./components/ambient_sound_interval.json" },
