@@ -9,20 +9,37 @@
       "description": "A template pool item used to define the element and its weight.",
       "type": "object",
       "additionalProperties": false,
-      "required": ["element"],
+      "required": [ "element" ],
       "properties": {
         "element": {
           "title": "Element",
           "description": "A grouping of a Structure Template, the Processor List to use when placing the structure, and its weight that determines the likelihood of the element being chosen.",
-          "oneOf": [
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "element_type": {
+              "title": "Element Type",
+              "type": "string",
+              "enum": [
+                "minecraft:empty_pool_element",
+                "minecraft:single_pool_element",
+                "minecraft:feature_pool_element"
+              ]
+            }
+          },
+          "required": [ "element_type" ],
+          "allOf": [
             {
-              "$ref": "#/definitions/empty_element"
+              "if": { "properties": { "element_type": { "const": "minecraft:empty_pool_element" } } },
+              "then": { "$ref": "#/definitions/empty_element" }
             },
             {
-              "$ref": "#/definitions/single_element"
+              "if": { "properties": { "element_type": { "const": "minecraft:single_pool_element" } } },
+              "then": { "$ref": "#/definitions/single_element" }
             },
             {
-              "$ref": "#/definitions/feature_pool_element"
+              "if": { "properties": { "element_type": { "const": "minecraft:feature_pool_element" } } },
+              "then": { "$ref": "#/definitions/feature_pool_element" }
             }
           ]
         },
@@ -45,7 +62,7 @@
           "const": "minecraft:empty_pool_element"
         }
       },
-      "required": ["element_type"]
+      "required": [ "element_type" ]
     },
     "single_element": {
       "type": "object",
@@ -83,12 +100,12 @@
           ]
         }
       },
-      "required": ["element_type", "location"]
+      "required": [ "element_type", "location" ]
     },
     "feature_pool_element": {
       "title": "",
       "description": "",
-      "type": "object", 
+      "type": "object",
       "additionalProperties": false,
       "properties": {
         "element_type": {
@@ -100,17 +117,17 @@
           "type": "string"
         }
       },
-      "required": ["element_type", "feature"]
+      "required": [ "element_type", "feature" ]
     }
   },
-  "required": ["description", "elements"],
+  "required": [ "description", "elements" ],
   "properties": {
     "description": {
       "title": "Description",
       "description": "The description of this template pool.",
       "type": "object",
       "additionalProperties": false,
-      "required": ["identifier"],
+      "required": [ "identifier" ],
       "properties": {
         "identifier": {
           "title": "Identifier",
