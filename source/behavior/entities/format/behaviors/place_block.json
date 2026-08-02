@@ -64,12 +64,12 @@
     "xz_range": {
       "title": "XZ Range",
       "description": "XZ range from which the entity will try and place blocks in.",
-      "$ref": "../types/range_number_type.json"
+      "$ref": "../../../../general/min_max_int.json"
     },
     "y_range": {
       "title": "Y Range",
       "description": "Y range from which the entity will try and place blocks in.",
-      "$ref": "../types/range_number_type.json"
+      "$ref": "../../../../general/min_max_int.json"
     }
   }
 }

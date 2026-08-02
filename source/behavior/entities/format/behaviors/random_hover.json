@@ -14,14 +14,7 @@
       "title": "Hover Height",
       "type": "array",
       "description": "The height above the surface which the mob will try to maintain.",
-      "items": [
-        {
-          "type": "number"
-        },
-        {
-          "type": "number"
-        }
-      ]
+      "$ref": "../../../../general/min_max_int.json"
     },
     "interval": {
       "type": "integer",

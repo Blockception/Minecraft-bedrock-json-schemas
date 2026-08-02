@@ -26,8 +26,8 @@
     },
     "look_time": {
       "title": "Look Time",
-      "$ref": "../../../../general/vectors/number2.json",
-      "description": "The range of time in seconds the mob will stay looking in a random direction before looking elsewhere"
+      "description": "The range of time in seconds the mob will stay looking in a random direction before looking elsewhere",
+      "$ref": "../../../../general/min_max_int.json"
     },
     "probability": {
       "title": "Probability",
