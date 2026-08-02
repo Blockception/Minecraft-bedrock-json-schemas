@@ -9,6 +9,7 @@
   ],
   "definitions": {
     "filters_spec": {
+      "type": "object",
       "defaultSnippets": [
         {
           "label": "New Test",
