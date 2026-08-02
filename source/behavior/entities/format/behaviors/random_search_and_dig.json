@@ -17,7 +17,7 @@
       "description": "Goal cooldown range in seconds.",
       "anyOf": [
         {
-          "$ref": "../../../../general/vectors/number2.json"
+          "$ref": "../../../../general/min_max_float.json"
         },
         {
           "type": "number",
@@ -27,9 +27,7 @@
     },
     "digging_duration_range": {
       "title": "Digging Duration Range",
-
-      "$ref": "../../../../general/vectors/number2.json",
-      "default": [8.0, 10.0],
+      "$ref": "../../../../general/min_max_float.json",
       "description": "Digging duration in seconds."
     },
     "find_valid_position_retries": {

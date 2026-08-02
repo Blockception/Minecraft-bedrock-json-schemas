@@ -14,8 +14,7 @@
     },
     "cooldown_range": {
       "title": "Cooldown Range",
-      "$ref": "../../../../general/vectors/number2.json",
-      "default": [10, 20],
+      "$ref": "../../../../general/min_max_float.json",
       "description": "Minimum and maximum cooldown time-range (positive, in seconds) between each attempted jump."
     },
     "forbidden_blocks": {

@@ -220,6 +220,7 @@
     "minecraft:water_movement": { "$ref": "./components/water_movement.json" },
 
     "minecraft:behavior.admire_item": { "$ref": "./behaviors/admire_item.json" },
+    "minecraft:behavior.aquatic_charge_attack": { "$ref": "./behaviors/aquatic_charge_attack.json" },
     "minecraft:behavior.avoid_block": { "$ref": "./behaviors/avoid_block.json" },
     "minecraft:behavior.avoid_mob_type": { "$ref": "./behaviors/avoid_mob_type.json" },
     "minecraft:behavior.barter": { "$ref": "./behaviors/barter.json" },

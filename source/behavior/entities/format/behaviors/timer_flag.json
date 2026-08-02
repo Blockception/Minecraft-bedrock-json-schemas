@@ -14,8 +14,7 @@
           "minimum": 0
         },
         {
-          "$ref": "../../../../general/vectors/number2.json",
-          "default": [10.0, 10.0]
+          "$ref": "../../../../general/min_max_float.json"
         }
       ],
       "description": "Goal cooldown range in seconds."
@@ -28,8 +27,7 @@
           "minimum": 0
         },
         {
-          "$ref": "../../../../general/vectors/number2.json",
-          "default": [2.0, 2.0]
+          "$ref": "../../../../general/min_max_float.json"
         }
       ],
       "description": "Goal duration range in seconds."

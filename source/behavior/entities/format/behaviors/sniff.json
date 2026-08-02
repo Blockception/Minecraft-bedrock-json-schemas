@@ -11,8 +11,7 @@
     "control_flags": { "$ref": "./types/control_flags.json" },
     "cooldown_range": {
       "title": "Cooldown Range",
-      "$ref": "../../../../general/vectors/number2.json",
-      "default": [3.0, 10.0],
+      "$ref": "../../../../general/min_max_float.json",
       "description": "Cooldown range between sniffs in seconds."
     },
     "duration": {

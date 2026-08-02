@@ -45,7 +45,7 @@
     "landing_distance_from_target": {
       "title": "Vertical Search Distance",
       "description": "The range deciding how close to and how far away from the target the landing position can be when jumping.",
-      "$ref": "../../../../general/vectors/number2.json"
+      "$ref": "../../../../general/min_max_float.json"
     },
     "landing_position_spread_degrees": {
       "title": "Landing Position Spread Degrees",
@@ -94,7 +94,7 @@
     "valid_distance_to_target": {
       "title": "Valid Distance To Target",
       "description": "Target needs to be within this range for the jump to happen.",
-      "$ref": "../../../../general/vectors/number2.json"
+      "$ref": "../../../../general/min_max_float.json"
     },
     "filters": {
       "title": "Filters",

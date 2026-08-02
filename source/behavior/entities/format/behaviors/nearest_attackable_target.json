@@ -52,7 +52,7 @@
       "title": "Attack Interval",
       "anyOf": [
         {
-          "$ref": "../types/range_number_type.json"
+          "$ref": "../../../../general/min_max_float.json"
         },
         {
           "type": "integer",

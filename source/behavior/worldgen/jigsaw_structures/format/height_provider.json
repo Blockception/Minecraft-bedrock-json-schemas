@@ -11,11 +11,11 @@
   },
   "allOf": [
     {
-      "if": { "properties": { "processor_type": { "const": "constant" } } },
+      "if": { "properties": { "type": { "const": "constant" } } },
       "then": { "$ref": "./height_provider/constant.json" }
     },
     {
-      "if": { "properties": { "processor_type": { "const": "uniform" } } },
+      "if": { "properties": { "type": { "const": "uniform" } } },
       "then": { "$ref": "./height_provider/uniform.json" }
     }
   ]

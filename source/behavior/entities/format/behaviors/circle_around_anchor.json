@@ -9,8 +9,7 @@
     "priority": { "$ref": "./types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
     "radius_range": {
-      "$ref": "../types/range_number_type.json",
-      "default": [5.0, 15.0],
+      "$ref": "../../../../general/min_max_float.json",
       "description": "Horizontal distance from the anchor point this entity must stay within upon a successful radius adjustment.",
       "title": "Radius Range"
     },
@@ -21,14 +20,12 @@
       "title": "Radius Change Chance"
     },
     "height_above_target_range": {
-      "$ref": "../types/range_number_type.json",
-      "default": [0.0, 0.0],
+      "$ref": "../../../../general/min_max_float.json",
       "description": "The number of blocks above the target that the next anchor point can be set. This value is used only when the entity is tracking a target.",
       "title": "Height Above Target Range"
     },
     "height_offset_range": {
-      "$ref": "../types/range_number_type.json",
-      "default": [0.0, 0.0],
+      "$ref": "../../../../general/min_max_float.json",
       "description": "The range of height in blocks offset the mob can have from it's anchor point.",
       "title": "Height Offset Range"
     },

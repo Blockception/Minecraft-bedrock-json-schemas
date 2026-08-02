@@ -1,0 +1,9 @@
+{
+  "type": "object", 
+  "additionalProperties": false,
+  "properties": {
+    "min": { "type": "integer", "description": "The X component.", "title": "X", "default": 0 },
+    "max": { "type": "integer", "description": "The Y component.", "title": "Y", "default": 0 }
+  },
+  "examples": [{"min": 0, "max": 0}]
+}

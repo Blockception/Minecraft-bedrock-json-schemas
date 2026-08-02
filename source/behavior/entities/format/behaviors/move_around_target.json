@@ -20,9 +20,8 @@
     },
     "destination_position_range": {
       "title": "Desitnation Position Range",
-      "default": [4.0, 8.0],
       "description": "The range of distances from the target entity within which the goal should look for a position to move the owner entity to.",
-      "$ref": "../../../../general/vectors/number2.json"
+      "$ref": "../../../../general/min_max_float.json"
     },
     "destination_pos_spread_degrees": {
       "title": "Desitnation Pos Spread Degrees",

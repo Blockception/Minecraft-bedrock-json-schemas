@@ -12,7 +12,7 @@
         "max": 0,
         "min": 0
       },
-      "$ref": "../../../../general/vectors/integer2.json"
+      "$ref": "../../../../general/min_max_int.json"
     },
     "entity_to_spawn": {
       "title": "Entity To Spawn",

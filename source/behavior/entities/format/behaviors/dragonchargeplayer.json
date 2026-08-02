@@ -31,8 +31,7 @@
     },
     "target_zone": {
       "title": "Target Zone",
-      "$ref": "../types/range_number_type.json",
-      "default": [10, 150],
+      "$ref": "../../../../general/min_max_float.json",
       "description": "Minimum and maximum distance, from the target, this entity can use this behavior."
     },
     "turn_speed": {

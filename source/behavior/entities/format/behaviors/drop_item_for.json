@@ -109,8 +109,7 @@
     },
     "time_of_day_range": {
       "title": "Time Of Day Range",
-      "$ref": "../types/range_number_type.json",
-      "default": [0, 1],
+      "$ref": "../../../../general/min_max_float.json",
       "description": "The valid times of day that this goal can be used. For reference: noon is 0.0, sunset is 0.25, midnight is 0.5, and sunrise is 0.75, and back to noon for 1.0."
     }
   },

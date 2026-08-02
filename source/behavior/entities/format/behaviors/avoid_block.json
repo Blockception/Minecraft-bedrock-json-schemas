@@ -71,22 +71,9 @@
       "title": "Sound Interval",
       "oneOf": [
         {
-          "type": "array",
-          "items": [
-            { "type": "number", "title": "Maximum" },
-            { "type": "number", "title": "Maximum" }
-          ],
-          "default": [3.0, 8.0]
+          "$ref": "../../../../general/min_max_float.json"
         },
-        { "type": "number" },
-        {
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "range_min": { "type": "number" },
-            "range_max": { "type": "number" }
-          }
-        }
+        { "type": "number" }
       ]
     }
   },

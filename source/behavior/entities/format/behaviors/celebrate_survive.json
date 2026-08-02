@@ -12,9 +12,8 @@
     },
     "fireworks_interval": {
       "title": "Fireworks Interval",
-      "$ref": "../types/range_number_type.json",
-      "description": "Minimum and maximum time between firework (positive, in seconds).",
-      "default": [10, 20]
+      "$ref": "../../../../general/min_max_float.json",
+      "description": "Minimum and maximum time between firework (positive, in seconds)."
     },
     "duration": {
       "title": "Duration",

@@ -47,28 +47,29 @@
       "description": "Weighted block descriptors for which blocks should be randomly placed, if empty the entity will try to place its carried block from placeable_carried_blocks.",
       "type": "array",
       "items": {
-        "type": "array",
-        "items": [
-          {
+        "type": "object", 
+        "additionalProperties": false,
+        "properties": {
+          "block": {
             "$ref": "../../../../general/block/reference.json"
           },
-          {
+          "weight": {
             "title": "Weight",
             "description": "Weight used in random selection. Value is relative to other weights in the collection.",
             "type": "number"
           }
-        ]
+        }
       }
     },
     "xz_range": {
       "title": "XZ Range",
       "description": "XZ range from which the entity will try and place blocks in.",
-      "$ref": "../types/range_number_type.json"
+      "$ref": "../../../../general/min_max_int.json"
     },
     "y_range": {
       "title": "Y Range",
       "description": "Y range from which the entity will try and place blocks in.",
-      "$ref": "../types/range_number_type.json"
+      "$ref": "../../../../general/min_max_int.json"
     }
   }
 }
