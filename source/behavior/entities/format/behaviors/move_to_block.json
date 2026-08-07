@@ -7,7 +7,9 @@
   "required": [],
   "properties": {
     "priority": { "$ref": "./types/priority.json" },
-
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "goal_radius": {
       "title": "Goal Radius",
       "type": "number",
@@ -76,8 +78,7 @@
     },
     "target_block_filters": {
       "title": "Target Block Filters",
-      "description": "Filters to apply on the target blocks. Target blocks are only valid if the filters are true.",
-      "$comment": "UNDOCUMENTED",
+      "description": "Conditions that need to be met for a block to be a valid target.",
       "$ref": "../../filters/filters.json"
     },
     "tick_interval": {

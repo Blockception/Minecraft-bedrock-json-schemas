@@ -7,6 +7,9 @@
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "cooldown_max": {
       "title": "Cooldown Max",
       "type": "number",
@@ -34,14 +37,12 @@
     "can_nap_filters": {
       "title": "Can Nap Filters",
       "$ref": "../../filters/filters.json",
-      "description": "The filters that need to be met for the nap to take place.",
-      "$comment": "UNDOCUMENTED"
+      "description": "Conditions that need to be met for the entity to nap"
     },
     "wake_mob_exceptions": {
       "title": "Wake Mob Exceptions",
       "$ref": "../../filters/filters.json",
-      "description": "Filters that can trigger the entity to wake up from it nap.",
-      "$comment": "UNDOCUMENTED"
+      "description": "Filters for mobs that will not wake this entity from napping"
     }
   },
   "examples": [
