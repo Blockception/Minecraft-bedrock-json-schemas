@@ -27,7 +27,7 @@
       "title": "Direction",
       "description": "Property used to define which direction the block parts are placed from 0 to N",
       "type": "string",
-      "enum": ["up", "down"]
+      "enum": ["up", "down", "north", "east", "south", "west"]
     }
   }
 }
