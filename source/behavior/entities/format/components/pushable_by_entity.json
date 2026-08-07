@@ -14,7 +14,7 @@
         "type": "object", 
         "additionalProperties": false,
         "properties": {
-          "filter": {
+          "filters": {
             "title": "Filters",
             "description": "Conditions that must be met for the preset to be applied",
             "$ref": "../../filters/filters.json"
@@ -23,8 +23,14 @@
             "title": "Push Mode",
             "description": "The type of push calculation",
             "type": "string",
-            "enum": ["none", "default", "legacy_boat", "legacy_minecart"],
+            "enum": ["none", "default", "legacy_boat", "legacy_minecart", "ball"],
             "default": "default"
+          },
+          "require_collision_overlap": {
+            "title": "Require Collision Overlap",
+            "description": "Determines whether the collision boxes of two entities must overlap for pushing to occur",
+            "type": "boolean",
+            "default": true
           },
           "strength_multiplier": {
             "title": "Strength Multiplier",
@@ -45,6 +51,29 @@
             "title": "Push Scale Self",
             "description": "Scales how much push force this entity applies to itself away on collision",
             "type": "number"
+          },
+          "kick_speed_scale": {
+            "title": "Kick Speed Scale",
+            "description": "Multiplier applied to the pushing entity's movement speed to determine kick force. Only used when push_mode is \"ball\"",
+            "type": "number"
+          },
+          "max_kick_speed": {
+            "title": "Max Kick Speed",
+            "description": "Maximum speed the entity can be pushed back at, regardless of how fast the pushing entity is moving. Only used when push_mode is \"ball\".",
+            "type": "number", 
+            "default": 0.5
+          },
+          "min_kick_speed": {
+            "title": "Min Kick Speed",
+            "description": "Minimum speed the the entity will be pushed back at, regardless of how slowly the pushing entity is moving. Only used when push_mode is \"ball\".",
+            "type": "number", 
+            "default": 0
+          },
+          "vertical_kick_multiplier": {
+            "title": "Vertical Kick Multiplier",
+            "description": "Multiplier for the upward force applied when the entity is pushed while on the ground. A value of 0 keeps the entity flat. Only used when push_mode is \"ball\"",
+            "type": "number", 
+            "default": 0.3
           },
           "push_scale_other": {
             "title": "Push Scale Other",
