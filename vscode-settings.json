@@ -259,7 +259,16 @@
     },
     {
       "fileMatch": [
-        "sound_definitions.{json,jsonc,json5}"
+          "resource_packs/*/sounds/sound_definitions.{json,jsonc,json5}",
+          "*resource*pack*/sounds/sound_definitions.{json,jsonc,json5}",
+          "*Resource*Pack*/sounds/sound_definitions.{json,jsonc,json5}",
+          "*RP*/sounds/sound_definitions.{json,jsonc,json5}",
+          "*rp*/sounds/sound_definitions.{json,jsonc,json5}",
+          "resource_packs/*/*/sounds/sound_definitions.{json,jsonc,json5}",
+          "*resource*pack*/*/sounds/sound_definitions.{json,jsonc,json5}",
+          "*Resource*Pack*/*/sounds/sound_definitions.{json,jsonc,json5}",
+          "*RP*/*/sounds/sound_definitions.{json,jsonc,json5}",
+          "*rp*/*/sounds/sound_definitions.{json,jsonc,json5}"
       ],
       "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/resource/sounds/sound_definitions.json"
     },
@@ -500,6 +509,21 @@
         "*.{recipe,crafting_recipe,cr,r}.{json,jsonc,json5}"
       ],
       "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/recipes/recipes.json"
+    },
+    {
+      "fileMatch": [
+          "behavior_packs/*/sounds/sound_definitions.{json,jsonc,json5}",
+          "*behavior*pack*/sounds/sound_definitions.{json,jsonc,json5}",
+          "*Behavior*Pack*/sounds/sound_definitions.{json,jsonc,json5}",
+          "*BP*/sounds/sound_definitions.{json,jsonc,json5}",
+          "*bp*/sounds/sound_definitions.{json,jsonc,json5}", 
+          "behavior_packs/*/*/sounds/sound_definitions.{json,jsonc,json5}",
+          "*behavior*pack*/*/sounds/sound_definitions.{json,jsonc,json5}",
+          "*Behavior*Pack*/*/sounds/sound_definitions.{json,jsonc,json5}",
+          "*BP*/*/sounds/sound_definitions.{json,jsonc,json5}",
+          "*bp*/*/sounds/sound_definitions.{json,jsonc,json5}"
+      ],
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/sounds/server_sound_definitions.json"
     },
     {
       "fileMatch": [

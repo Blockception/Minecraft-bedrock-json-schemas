@@ -78,6 +78,10 @@
       "Destination": "../behavior/recipes/recipes.json"
     },
     {
+      "Source": "./behavior/sounds/server_sound_definitions.json",
+      "Destination": "../behavior/sounds/server_sound_definitions.json"
+    },
+    {
       "Source": "./behavior/spawn_rules/spawn_rules.json",
       "Destination": "../behavior/spawn_rules/spawn_rules.json"
     },
