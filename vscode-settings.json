@@ -527,17 +527,17 @@
     },
     {
       "fileMatch": [
-        "behavior_packs/*/loot_tables/*.{json,jsonc,json5}",
-        "*behavior*pack*/loot_tables/*.{json,jsonc,json5}",
-        "*Behavior*Pack*/loot_tables/*.{json,jsonc,json5}",
-        "*BP*/loot_tables/*.{json,jsonc,json5}",
-        "*bp*/loot_tables/*.{json,jsonc,json5}",
-        "behavior_packs/*/loot_tables/**/*.{json,jsonc,json5}",
-        "*behavior*pack*/loot_tables/**/*.{json,jsonc,json5}",
-        "*Behavior*Pack*/loot_tables/**/*.{json,jsonc,json5}",
-        "*BP*/loot_tables/**/*.{json,jsonc,json5}",
-        "*bp*/loot_tables/**/*.{json,jsonc,json5}",
-        "*.{loot,loot_table,lt}.{json,jsonc,json5}"
+        "behavior_packs/*/loot_tables/*.{json,jsonc,json5,templ,modl,jsonte}",
+        "*behavior*pack*/loot_tables/*.{json,jsonc,json5,templ,modl,jsonte}",
+        "*Behavior*Pack*/loot_tables/*.{json,jsonc,json5,templ,modl,jsonte}",
+        "*BP*/loot_tables/*.{json,jsonc,json5,templ,modl,jsonte}",
+        "*bp*/loot_tables/*.{json,jsonc,json5,templ,modl,jsonte}",
+        "behavior_packs/*/loot_tables/**/*.{json,jsonc,json5,templ,modl,jsonte}",
+        "*behavior*pack*/loot_tables/**/*.{json,jsonc,json5,templ,modl,jsonte}",
+        "*Behavior*Pack*/loot_tables/**/*.{json,jsonc,json5,templ,modl,jsonte}",
+        "*BP*/loot_tables/**/*.{json,jsonc,json5,templ,modl,jsonte}",
+        "*bp*/loot_tables/**/*.{json,jsonc,json5,templ,modl,jsonte}",
+        "*.{loot,loot_table,lt}.{json,jsonc,json5,templ,modl,jsonte}"
       ],
       "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/loot_tables/loot_tables.json"
     },
