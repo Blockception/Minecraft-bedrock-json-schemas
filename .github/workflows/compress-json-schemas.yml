@@ -34,6 +34,13 @@ jobs:
         with:
           specificationFile: "source/compress_specification.json"
 
+      # The compression action runs in a Docker container as root, so files it
+      # creates/modifies are owned by root. peter-evans/create-pull-request runs
+      # as the runner user and can't unlink root-owned files (breaks on new,
+      # untracked files). Re-take ownership before creating the PR.
+      - name: 🔧 Fix file ownership
+        run: sudo chown -R "$USER:$USER" .
+
       - name: ✏️ Commit and Create PR
         uses: peter-evans/create-pull-request@v8
         with:
