@@ -219,6 +219,12 @@
             }
           }
         },
+        "difficulty_randomization": {
+          "title": "Difficulty Randomization",
+          "description": "Controls how world difficulty contributes to the rolled damage. `none` ignores difficulty, `additive` adds a difficulty-driven term on top of the base damage, and `multiplicative` folds the difficulty term into `power_multiplier` before scaling by velocity.",
+          "type": "string",
+          "enum": ["none", "additive", "multiplicative"]
+        },
         "douse_fire": {
           "title": "Douse Fire",
           "description": "If the target is on fire, then douse the fire.",
@@ -397,6 +403,11 @@
             "should_bounce": {
               "title": "Should Bounce",
               "description": "If true, the projectile will bounce",
+              "enum": ["no", "if_invulnerable", "if_no_damage_dealt"]
+            },
+            "ceil_pre_critical_damage": {
+              "title": "Ceil Pre Critical Damage",
+              "description": "If `true`, rounds the projectile's damage up to the next integer before the critical-hit multiplier is applied.",
               "type": "boolean",
               "default": false
             }
@@ -710,12 +721,6 @@
       "default": false,
       "description": "If true, this entity will be reflected back when hit.",
       "title": "Reflect On Hurt"
-    },
-    "semi_random_diff_damage": {
-      "type": "boolean",
-      "default": false,
-      "description": "If true, damage will be randomized based on damage and speed.",
-      "title": "Semi Random Diff Damage"
     },
     "shoot_sound": {
       "$ref": "../../../../general/sound_event.json",

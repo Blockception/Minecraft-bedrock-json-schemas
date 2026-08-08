@@ -4,7 +4,7 @@
   "title": "Features",
   "description": "Features are decorations scattered throughout the world. Things such as trees, plants, flowers, springs, ore, and coral are all features. Basically, if it isn't the terrain or a mob, it's probably a feature!",
   "additionalProperties": false,
-  "required": ["format_version"],
+  "required": [ "format_version" ],
   "minProperties": 2,
   "maxProperties": 2,
   "properties": {
@@ -31,6 +31,7 @@
     "minecraft:tree_feature": { "$ref": "./features/minecraft.tree_feature.json" },
     "minecraft:underwater_cave_carver_feature": { "$ref": "./features/minecraft.underwater_cave_carver_feature.json" },
     "minecraft:vegetation_patch_feature": { "$ref": "./features/minecraft.vegetation_patch_feature.json" },
-    "minecraft:weighted_random_feature": { "$ref": "./features/minecraft.weighted_random_feature.json" }
+    "minecraft:weighted_random_feature": { "$ref": "./features/minecraft.weighted_random_feature.json" },
+    "minecraft:multi_block_feature": { "$ref": "./features/minecraft.multi_block_feature.json" }
   }
 }

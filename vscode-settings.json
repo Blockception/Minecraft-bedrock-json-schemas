@@ -259,7 +259,16 @@
     },
     {
       "fileMatch": [
-        "sound_definitions.{json,jsonc,json5,templ,modl,jsonte}"
+          "resource_packs/*/sounds/sound_definitions.{json,jsonc,json5,templ,modl,jsonte}",
+          "*resource*pack*/sounds/sound_definitions.{json,jsonc,json5,templ,modl,jsonte}",
+          "*Resource*Pack*/sounds/sound_definitions.{json,jsonc,json5,templ,modl,jsonte}",
+          "*RP*/sounds/sound_definitions.{json,jsonc,json5,templ,modl,jsonte}",
+          "*rp*/sounds/sound_definitions.{json,jsonc,json5,templ,modl,jsonte}",
+          "resource_packs/*/*/sounds/sound_definitions.{json,jsonc,json5,templ,modl,jsonte}",
+          "*resource*pack*/*/sounds/sound_definitions.{json,jsonc,json5,templ,modl,jsonte}",
+          "*Resource*Pack*/*/sounds/sound_definitions.{json,jsonc,json5,templ,modl,jsonte}",
+          "*RP*/*/sounds/sound_definitions.{json,jsonc,json5,templ,modl,jsonte}",
+          "*rp*/*/sounds/sound_definitions.{json,jsonc,json5,templ,modl,jsonte}"
       ],
       "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/resource/sounds/sound_definitions.json"
     },
@@ -500,6 +509,21 @@
         "*.{recipe,crafting_recipe,cr,r}.{json,jsonc,json5,templ,modl,jsonte}"
       ],
       "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/recipes/recipes.json"
+    },
+    {
+      "fileMatch": [
+          "behavior_packs/*/sounds/sound_definitions.{json,jsonc,json5,templ,modl,jsonte}",
+          "*behavior*pack*/sounds/sound_definitions.{json,jsonc,json5,templ,modl,jsonte}",
+          "*Behavior*Pack*/sounds/sound_definitions.{json,jsonc,json5,templ,modl,jsonte}",
+          "*BP*/sounds/sound_definitions.{json,jsonc,json5,templ,modl,jsonte}",
+          "*bp*/sounds/sound_definitions.{json,jsonc,json5,templ,modl,jsonte}", 
+          "behavior_packs/*/*/sounds/sound_definitions.{json,jsonc,json5,templ,modl,jsonte}",
+          "*behavior*pack*/*/sounds/sound_definitions.{json,jsonc,json5,templ,modl,jsonte}",
+          "*Behavior*Pack*/*/sounds/sound_definitions.{json,jsonc,json5,templ,modl,jsonte}",
+          "*BP*/*/sounds/sound_definitions.{json,jsonc,json5,templ,modl,jsonte}",
+          "*bp*/*/sounds/sound_definitions.{json,jsonc,json5,templ,modl,jsonte}"
+      ],
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/sounds/server_sound_definitions.json"
     },
     {
       "fileMatch": [

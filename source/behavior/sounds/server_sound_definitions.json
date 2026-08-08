@@ -1,0 +1,104 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.server_sound_definitions",
+  "type": "object",
+  "additionalProperties": false,
+  "description": "Lets behavior packs declare server-side sound definitions for sounds played from script.",
+  "title": "Server Sound Definitions",
+  "definitions": {
+    "definition": {
+      "title": "Definition",
+      "description": "Server Sound Definition",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [ "sound_event_name" ],
+      "properties": {
+        "sound_event_name": {
+          "title": "Sound Event Name",
+          "description": "Unique identifier",
+          "$ref": "../../general/identifier.json"
+        },
+        "duration_info": {
+          "title": "Duration Info",
+          "description": "",
+          "type": "object",
+          "additionalProperties": false,
+          "required": [ "mode", "seconds" ],
+          "properties": {
+            "mode": {
+              "title": "Mode",
+              "description": "Controls how playback time is tracked. A mode of `game_time` means the duration is tracked by ticks\nA mode of `real_time` means the duration is tracked by wall-clock time",
+              "type": "string",
+              "enum": [ "game_time", "real_time" ]
+            },
+            "seconds": {
+              "title": "Seconds",
+              "description": "Duration of the sound event",
+              "type": "number",
+              "minimum": 0
+            }
+          }
+        },
+        "music_info": {
+          "title": "Music Info",
+          "description": "Describes the music content of the sound",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "genres": {
+              "title": "Genres",
+              "description": "Musical genres applicable to the sound event",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "moods": {
+              "title": "Moods",
+              "description": "Moods applicable to the sound event",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "artist": {
+              "title": "Artist",
+              "description": "The artist behind the sound event",
+              "type": "string"
+            },
+            "title": {
+              "title": "Title",
+              "description": "The title of the sound event",
+              "type": "string"
+            }
+          }
+        },
+        "tags": {
+          "title": "Tags",
+          "description": "An optional map where each entry is a tag name mapped to either a single string value or an array of string values, letting behavior packs attach arbitrary metadata to a server sound definition",
+          "type": "object",
+          "additionalProperties": {
+            "oneOf": [
+              { "type": "string" },
+              {
+                "type": "array",
+                "items": { "type": "string" }
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "properties": {
+    "format_version": { "$ref": "../../general/format_version.json" },
+    "minecraft:server_sound_definitions": {
+      "title": "Server Sound Definitions",
+      "description": "Lets behavior packs declare server-side sound definitions for sounds played from script.",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/definition"
+      }
+    }
+  }
+}

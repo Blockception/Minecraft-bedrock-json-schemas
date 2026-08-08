@@ -13,22 +13,26 @@
         "distance_scale": {
           "title": "Distance Scale",
           "description": "The multiplier applied to horizontal velocity when jumping.",
-          "type": "number"
+          "type": "number",
+          "default": 1
         },
         "height": {
           "title": "Height",
           "description": "The force applied vertically when jumping.",
-          "type": "number"
+          "type": "number",
+          "default": 0.1
         },
         "jump_delay": {
           "title": "Jump Delay",
           "description": "Amount of ticks between sequential jumps.",
-          "type": "number"
+          "type": "integer",
+          "default": 30
         },
         "animation_duration": {
           "title": "Animation Duration",
           "description": "Duration of the jump animation.",
-          "type": "number"
+          "type": "integer",
+          "default": 1
         }
       }
     }

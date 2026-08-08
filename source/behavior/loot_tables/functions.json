@@ -7,6 +7,7 @@
     "function": {
       "type": "string",
       "enum": [
+        "carry_over_block_entity_data",
         "enchant_book_for_trading",
         "enchant_random_gear",
         "enchant_randomly",
@@ -33,6 +34,7 @@
         "set_stew_effect",
         "specific_enchants",
         "trader_material_type",
+        "minecraft:carry_over_block_entity_data",
         "minecraft:enchant_book_for_trading",
         "minecraft:enchant_random_gear",
         "minecraft:enchant_randomly",
@@ -69,6 +71,10 @@
     }
   },
   "allOf": [
+    {
+      "if": { "properties": { "function": { "type": "string", "pattern": "^(minecraft:)*carry_over_block_entity_data$" } } },
+      "then": { "$ref": "./functions/carry_over_block_entity_data.json" }
+    },
     {
       "if": { "properties": { "function": { "type": "string", "pattern": "^(minecraft:)*enchant_random_gear$" } } },
       "then": { "$ref": "./functions/enchant_random_gear.json" }

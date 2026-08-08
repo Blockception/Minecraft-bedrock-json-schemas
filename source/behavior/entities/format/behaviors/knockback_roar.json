@@ -8,6 +8,9 @@
     "priority": {
       "$ref": "./types/priority.json"
     },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "attack_time": {
       "title": "Attack Time",
       "type": "number",
@@ -17,7 +20,7 @@
     "cooldown_time": {
       "title": "Cooldown Time",
       "type": "number",
-      "default": 0,
+      "default": 0.1,
       "description": "Time in seconds the mob has to wait before using the goal again."
     },
     "damage_filters": {

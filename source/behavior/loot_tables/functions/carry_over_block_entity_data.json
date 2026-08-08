@@ -1,0 +1,21 @@
+{
+  "$id": "blockception.minecraft.behavior.loot_tables.carry_over_block_entity_data",
+  "additionalProperties": false,
+  "description": "The function carry_over_block_entity_data.",
+  "title": "Carry Over Block Entity Data",
+  "type": "object",
+  "properties": {
+    "function": {
+      "type": "string",
+      "const": "carry_over_block_entity_data",
+      "description": "UNDOCUMENTED.",
+      "title": "Function"
+    },
+    "dynamic_properties": {
+      "title": "Dynamic Properties",
+      "description": "When looting a block with a block-entity and dynamic-properties, it will try to carry its dynamic-properties over to the created item-stack",
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

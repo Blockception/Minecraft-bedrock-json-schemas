@@ -9,6 +9,9 @@
     "priority": {
       "$ref": "./types/priority.json"
     },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "summon_choices": {
       "type": "array",
       "description": "List of spells for the mob to use to summon entities.",
@@ -20,7 +23,8 @@
           "cast_duration": {
             "type": "number",
             "description": "Time in seconds the spell casting will take.",
-            "title": "Cast Duration"
+            "title": "Cast Duration",
+            "default": -1
           },
           "cooldown_time": {
             "type": "number",
@@ -39,13 +43,15 @@
           },
           "max_activation_range": {
             "type": "number",
-            "default": -1,
+            "default": 32,
+            "minimum": 0,
             "description": "Upper bound of the activation distance in blocks for this spell.",
             "title": "Maximum Activation Range"
           },
           "min_activation_range": {
             "type": "number",
             "default": 1,
+            "minimum": 0,
             "description": "Lower bound of the activation distance in blocks for this spell.",
             "title": "Minimum Activation Range"
           },

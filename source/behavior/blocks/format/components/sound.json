@@ -1,0 +1,14 @@
+{
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.sound",
+  "title": "Sound",
+  "description": "[EXPERIMENTAL] It can be used to assign a set of sounds to block and its permutations similar to sound field in blocks.json",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "sound": {
+      "title": "Sound",
+      "description": "Sound key",
+      "type": "string"
+    }
+  }
+}

@@ -698,6 +698,9 @@
               },
               "embedded": {
                 "$ref": "#/definitions/display_transform"
+              },
+              "shelf": {
+                "$ref": "#/definitions/display_transform"
               }
             }
           }
