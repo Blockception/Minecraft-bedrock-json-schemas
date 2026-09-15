@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:tree_feature": {
+    "description": {
+      "identifier": "example:fallen_tree"
+    },
+    "base_block": ["minecraft:dirt"],
+    "may_grow_on": ["minecraft:dirt", "minecraft:grass_block"],
+    "may_replace": ["minecraft:air"],
+    "fallen_trunk": {
+      "log_length": {
+        "range_min": 4,
+        "range_max": 7
+      },
+      "stump_height": 1,
+      "height_modifier": [0, 2],
+      "trunk_block": "minecraft:birch_log",
+      "log_decoration_feature": "example:fallen_log_decoration",
+      "trunk_decoration": {
+        "decoration_chance": 0.5,
+        "decoration_block": "minecraft:brown_mushroom",
+        "step_direction": "up"
+      }
+    }
+  }
+}

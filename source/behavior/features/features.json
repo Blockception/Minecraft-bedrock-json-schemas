@@ -33,5 +33,138 @@
     "minecraft:vegetation_patch_feature": { "$ref": "./features/minecraft.vegetation_patch_feature.json" },
     "minecraft:weighted_random_feature": { "$ref": "./features/minecraft.weighted_random_feature.json" },
     "minecraft:multi_block_feature": { "$ref": "./features/minecraft.multi_block_feature.json" }
-  }
+  },
+  "allOf": [
+    {
+      "$comment": "From format version 1.21.10 scatter_feature takes its parameters in a nested `distribution` object, and the flat spelling is not part of the schema.",
+      "if": {
+        "required": ["format_version", "minecraft:scatter_feature"],
+        "properties": {
+          "format_version": {
+            "type": "string",
+            "pattern": "^(?:[2-9]|[1-9][0-9]+)\\.|^1\\.(?:2[2-9]|[3-9][0-9]|[1-9][0-9]{2,})\\.|^1\\.21\\.[1-9][0-9]"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "minecraft:scatter_feature": {
+            "required": ["distribution"],
+            "properties": {
+              "iterations": { "not": {}, "errorMessage": "From format version 1.21.10 `iterations` belongs inside `distribution`." },
+              "scatter_chance": { "not": {}, "errorMessage": "From format version 1.21.10 `scatter_chance` belongs inside `distribution`." },
+              "coordinate_eval_order": { "not": {}, "errorMessage": "From format version 1.21.10 `coordinate_eval_order` belongs inside `distribution`." },
+              "x": { "not": {}, "errorMessage": "From format version 1.21.10 `x` belongs inside `distribution`." },
+              "y": { "not": {}, "errorMessage": "From format version 1.21.10 `y` belongs inside `distribution`." },
+              "z": { "not": {}, "errorMessage": "From format version 1.21.10 `z` belongs inside `distribution`." }
+            }
+          }
+        }
+      }
+    },
+    {
+      "$comment": "Before format version 1.21.10 scatter_feature takes its parameters directly on the feature, and `distribution` is not part of the schema. A `beta` version matches neither branch, so neither shape is enforced for it.",
+      "if": {
+        "required": ["format_version", "minecraft:scatter_feature"],
+        "properties": {
+          "format_version": {
+            "type": "string",
+            "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+            "not": { "pattern": "^(?:[2-9]|[1-9][0-9]+)\\.|^1\\.(?:2[2-9]|[3-9][0-9]|[1-9][0-9]{2,})\\.|^1\\.21\\.[1-9][0-9]" }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "minecraft:scatter_feature": {
+            "required": ["iterations"],
+            "properties": {
+              "distribution": {
+                "not": {},
+                "errorMessage": "`distribution` requires format version 1.21.10 or later. Older format versions write the scatter parameters directly on the feature."
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "$comment": "Before format version 1.21.40 single_block_feature takes a single block reference in `places_block` rather than a weighted list, and `randomize_rotation`, `may_not_attach_to` and `may_attach_to.diagonal` are not part of the schema.",
+      "if": {
+        "required": ["format_version", "minecraft:single_block_feature"],
+        "properties": {
+          "format_version": {
+            "type": "string",
+            "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+            "not": { "pattern": "^(?:[2-9]|[1-9][0-9]+)\\.|^1\\.(?:2[2-9]|[3-9][0-9]|[1-9][0-9]{2,})\\.|^1\\.21\\.(?:[4-9][0-9]|[1-9][0-9]{2,})" }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "minecraft:single_block_feature": {
+            "properties": {
+              "places_block": {
+                "not": { "type": "array" },
+                "errorMessage": "A list of blocks in `places_block` requires format version 1.21.40 or later."
+              },
+              "randomize_rotation": { "not": {}, "errorMessage": "`randomize_rotation` requires format version 1.21.40 or later." },
+              "may_not_attach_to": { "not": {}, "errorMessage": "`may_not_attach_to` requires format version 1.21.40 or later." },
+              "may_attach_to": {
+                "properties": { "diagonal": { "not": {}, "errorMessage": "`diagonal` requires format version 1.21.40 or later." } }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "$comment": "From format version 1.26.50 snap_to_surface_feature names its search range `search_range`, and `vertical_search_range` is not part of the schema.",
+      "if": {
+        "required": ["format_version", "minecraft:snap_to_surface_feature"],
+        "properties": {
+          "format_version": {
+            "type": "string",
+            "pattern": "^(?:[2-9]|[1-9][0-9]+)\\.|^1\\.(?:2[7-9]|[3-9][0-9]|[1-9][0-9]{2,})\\.|^1\\.26\\.(?:[5-9][0-9]|[1-9][0-9]{2,})"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "minecraft:snap_to_surface_feature": {
+            "required": ["search_range"],
+            "properties": {
+              "vertical_search_range": { "not": {}, "errorMessage": "From format version 1.26.50 `vertical_search_range` is named `search_range`." }
+            }
+          }
+        }
+      }
+    },
+    {
+      "$comment": "Before format version 1.26.50 snap_to_surface_feature names its search range `vertical_search_range`, and `search_range` is not part of the schema. A `beta` version matches neither branch, so neither name is enforced for it.",
+      "if": {
+        "required": ["format_version", "minecraft:snap_to_surface_feature"],
+        "properties": {
+          "format_version": {
+            "type": "string",
+            "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+            "not": { "pattern": "^(?:[2-9]|[1-9][0-9]+)\\.|^1\\.(?:2[7-9]|[3-9][0-9]|[1-9][0-9]{2,})\\.|^1\\.26\\.(?:[5-9][0-9]|[1-9][0-9]{2,})" }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "minecraft:snap_to_surface_feature": {
+            "required": ["vertical_search_range"],
+            "properties": {
+              "search_range": {
+                "not": {},
+                "errorMessage": "`search_range` requires format version 1.26.50 or later. Older format versions name it `vertical_search_range`."
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
 }

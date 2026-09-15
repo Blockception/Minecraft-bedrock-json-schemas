@@ -5,31 +5,6 @@
   "additionalProperties": false,
   "required": ["description", "height_distribution", "growth_direction", "body_blocks", "head_blocks"],
   "definitions": {
-    "range": {
-      "title": "Range",
-      "description": "A range.",
-      "type": "object",
-      "required": ["range_min", "range_max"],
-      "examples": [{ "range_min": 8, "range_max": 9 }],
-      "properties": {
-        "range_max": {
-          "title": "Range Max",
-          "type": "integer",
-          "description": "The maximum plant height."
-        },
-        "range_min": {
-          "title": "Range Min",
-          "type": "integer",
-          "description": "The minimum plant height."
-        }
-      }
-    },
-    "rangeOrInt": {
-      "oneOf": [
-        { "type": "integer", "minimum": 0 },
-        { "type": "object", "$ref": "#/definitions/range" }
-      ]
-    },
     "blocks_array": {
       "type": "array",
       "minItems": 1,
@@ -46,8 +21,9 @@
             "$ref": "../../../general/block/reference.json"
           },
           {
-            "title": "Age",
-            "$ref": "../../entities/format/types/range_number_type.json"
+            "title": "Weight",
+            "description": "Weight used in random selection. Value is relative to other weights in the collection.",
+            "type": "number"
           }
         ]
       }
@@ -60,7 +36,7 @@
     "age": {
       "title": "Age",
       "description": "Age of the head of the plant.",
-      "$ref": "#/definitions/rangeOrInt"
+      "$ref": "../types/int_range.json"
     },
     "height_distribution": {
       "title": "Height Distribution",
@@ -83,7 +59,7 @@
           {
             "title": "Plant Height",
             "description": "Plant height.",
-            "$ref": "#/definitions/rangeOrInt"
+            "$ref": "../types/int_range.json"
           },
           {
             "type": "number",

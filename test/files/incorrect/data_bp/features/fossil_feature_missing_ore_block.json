@@ -1,0 +1,9 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:fossil_feature": {
+    "description": {
+      "identifier": "example:fossil_missing_ore_block"
+    },
+    "max_empty_corners": 4
+  }
+}

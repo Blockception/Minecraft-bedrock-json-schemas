@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:tree_feature": {
+    "description": {
+      "identifier": "example:mangrove_tree_roots_nested"
+    },
+    "mangrove_trunk": {
+      "trunk_height": {
+        "base": 2,
+        "height_rand_a": 1,
+        "height_rand_b": 4
+      },
+      "trunk_block": "minecraft:mangrove_log"
+    },
+    "mangrove_roots": {
+      "max_root_width": 8,
+      "max_root_length": 15,
+      "root_block": "minecraft:mangrove_roots",
+      "above_root": {
+        "above_root_chance": 50,
+        "above_root_block": "minecraft:moss_carpet",
+        "mud_block": "minecraft:mud"
+      }
+    }
+  }
+}

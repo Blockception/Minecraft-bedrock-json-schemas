@@ -30,45 +30,21 @@
       "type": "integer"
     },
     "y_scale": {
-      "type": "array",
       "title": "Y Scale",
       "description": "The scaling in y",
-      "minItems": 2,
-      "maxItems": 2,
-      "items": [
-        { "type": "number", "title": "Min" },
-        { "type": "number", "title": "Max" }
-      ]
+      "$ref": "../types/range.json"
     },
     "horizontal_radius_multiplier": {
-      "type": "array",
       "title": "Horizontal Radius Multiplier",
-      "minItems": 2,
-      "maxItems": 2,
-      "items": [
-        { "type": "number", "title": "Min" },
-        { "type": "number", "title": "Max" }
-      ]
+      "$ref": "../types/range.json"
     },
     "vertical_radius_multiplier": {
-      "type": "array",
       "title": "Vertical Radius Multiplier",
-      "minItems": 2,
-      "maxItems": 2,
-      "items": [
-        { "type": "number", "title": "Min" },
-        { "type": "number", "title": "Max" }
-      ]
+      "$ref": "../types/range.json"
     },
     "floor_level": {
-      "type": "array",
       "title": "Floor Level",
-      "minItems": 2,
-      "maxItems": 2,
-      "items": [
-        { "type": "number", "title": "Min" },
-        { "type": "number", "title": "Max" }
-      ]
+      "$ref": "../types/range.json"
     },
     "replace_air_with": {
       "title": "Replace Air With",

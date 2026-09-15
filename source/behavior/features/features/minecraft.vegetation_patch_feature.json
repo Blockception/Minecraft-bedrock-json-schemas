@@ -3,7 +3,7 @@
   "description": "Feature type `minecraft:vegetation_patch_feature` has not yet been documented.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["description", "replaceable_blocks", "ground_block", "horizontal_radius", "vegetation_feature"],
+  "required": ["description", "replaceable_blocks", "ground_block", "depth", "horizontal_radius", "vertical_range", "vegetation_feature"],
   "properties": {
     "description": {
       "$ref": "../types/description.json"
@@ -39,8 +39,7 @@
     "depth": {
       "title": "Depth",
       "description": "Depth of the base covered by the ground blocks.",
-      "type": "integer",
-      "minimum": 0
+      "$ref": "../types/int_range.json"
     },
     "extra_deep_block_chance": {
       "title": "Extra Deep Block Chance",
@@ -64,8 +63,7 @@
     "horizontal_radius": {
       "title": "Horizontal Radius",
       "description": "Horizontal area that the vegetation patch will cover.",
-      "type": "integer",
-      "minimum": 1
+      "$ref": "../types/int_range.json"
     },
     "extra_edge_column_chance": {
       "title": "Extra Egde Column Chance",

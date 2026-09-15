@@ -76,18 +76,18 @@
           "additionalProperties": false,
           "properties": {}
         },
-        // When specified, ensures the structure only intersects with allowlisted blocks.
         "block_intersection": {
-          "title": "Unburied",
-          "description": "When specified, ensures the structure has air above it.",
+          "title": "Block Intersection",
+          "description": "When specified, ensures the structure only intersects with allowlisted blocks. One of `block_allowlist` or `block_whitelist` is required.",
           "type": "object",
           "additionalProperties": false,
+          "anyOf": [{ "required": ["block_allowlist"] }, { "required": ["block_whitelist"] }],
           "properties": {
             "only_check_intersection_for_motion_blocking_blocks": {
               "title": "Only Check Intersection For Motion Blocking Blocks",
               "description": "If true, only motion-blocking blocks within the structure are checked for intersections with blocks in \"block_allowlist|block_whitelist\". If false, all blocks in the structure except empty ones are checked for intersections, including air.",
               "type": "boolean",
-              "default": false
+              "default": true
             },
             "block_allowlist": {
               "title": "Block Allowlist",

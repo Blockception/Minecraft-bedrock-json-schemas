@@ -1,0 +1,22 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:cave_carver_feature": {
+    "description": {
+      "identifier": "example:cave_carver_ranges"
+    },
+    "fill_with": "minecraft:air",
+    "width_modifier": "0.0",
+    "skip_carve_chance": 15,
+    "height_limit": 120,
+    "y_scale": 1.0,
+    "horizontal_radius_multiplier": [1.0, 2.0],
+    "vertical_radius_multiplier": {
+      "range_min": 0.5,
+      "range_max": 1.5
+    },
+    "floor_level": {
+      "range_min": -1.0,
+      "range_max": 1.0
+    }
+  }
+}

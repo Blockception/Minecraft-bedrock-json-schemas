@@ -1,0 +1,56 @@
+{
+  "$id": "blockception.minecraft.behavior.features.coordinate",
+  "title": "Coordinate",
+  "description": "A per-coordinate offset from the input position. May be a single value, a Molang expression that resolves to a number, or a random distribution.",
+  "oneOf": [
+    {
+      "$ref": "../../../molang/number.json",
+      "description": "Expression for the coordinate (evaluated each iteration). Mutually exclusive with the distribution object."
+    },
+    {
+      "type": "object",
+      "description": "Distribution for the coordinate (evaluated each iteration). Mutually exclusive with a Molang expression.",
+      "additionalProperties": false,
+      "required": ["distribution", "extent"],
+      "properties": {
+        "distribution": {
+          "title": "Distribution",
+          "description": "Type of distribution - uniform random, gaussian (centered in the range), triangle (centered in the range), or grid (either fixed-step or jittered).",
+          "type": "string",
+          "enum": ["uniform", "gaussian", "inverse_gaussian", "triangle", "fixed_grid", "jittered_grid"]
+        },
+        "extent": {
+          "title": "Extent",
+          "description": "The lower and upper bound as an offset from the input position.",
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": [
+            {
+              "title": "Lower Bound",
+              "$ref": "../../../molang/number.json",
+              "description": "Lower bound (inclusive) of the scatter range, as an offset from the input point to scatter around."
+            },
+            {
+              "title": "Upper Bound",
+              "$ref": "../../../molang/number.json",
+              "description": "Upper bound (inclusive) of the scatter range, as an offset from the input point to scatter around."
+            }
+          ]
+        },
+        "step_size": {
+          "title": "Step Size",
+          "description": "When the distribution type is grid, defines the distance between steps along this axis.",
+          "type": "integer",
+          "minimum": 1
+        },
+        "grid_offset": {
+          "title": "Grid Offset",
+          "description": "When the distribution type is grid, defines the offset along this axis.",
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  ]
+}

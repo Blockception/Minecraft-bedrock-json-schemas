@@ -1,0 +1,31 @@
+{
+  "$id": "blockception.minecraft.behavior.features.scatter_chance",
+  "title": "Scatter Chance",
+  "oneOf": [
+    {
+      "$ref": "../../../molang/number.json",
+      "description": "Probability (0-100] that this scatter will occur. Not evaluated each iteration; either no iterations will run, or all will."
+    },
+    {
+      "type": "object",
+      "description": "Probability numerator / denominator that this scatter will occur. Not evaluated each iteration; either no iterations will run, or all will.",
+      "additionalProperties": false,
+      "properties": {
+        "numerator": {
+          "title": "Numerator",
+          "description": "UNDOCUMENTED.",
+          "$comment": "UNDOCUMENTED",
+          "type": "number",
+          "minimum": 1
+        },
+        "denominator": {
+          "title": "Denominator",
+          "description": "UNDOCUMENTED.",
+          "$comment": "UNDOCUMENTED",
+          "type": "number",
+          "minimum": 1
+        }
+      }
+    }
+  ]
+}

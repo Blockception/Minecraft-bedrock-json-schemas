@@ -1,0 +1,13 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:vegetation_patch_feature": {
+    "description": {
+      "identifier": "example:vegetation_patch_missing_depth"
+    },
+    "replaceable_blocks": ["minecraft:stone"],
+    "ground_block": "minecraft:moss_block",
+    "vegetation_feature": "example:placed",
+    "vertical_range": 5,
+    "horizontal_radius": 4
+  }
+}

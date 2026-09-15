@@ -1,0 +1,10 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:height_difference_filter_feature": {
+    "description": {
+      "identifier": "example:height_difference_filter_missing_search_radius"
+    },
+    "places_feature": "example:placed",
+    "min_required_upward_height_diff": 2
+  }
+}

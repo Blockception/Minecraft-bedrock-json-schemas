@@ -1,0 +1,75 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:tree_feature": {
+    "description": {
+      "identifier": "example:acacia_tree"
+    },
+    "base_block": ["minecraft:dirt", "minecraft:grass_block"],
+    "may_grow_on": ["minecraft:dirt", "minecraft:grass_block"],
+    "may_replace": ["minecraft:air", "minecraft:acacia_leaves"],
+    "acacia_trunk": {
+      "trunk_width": 1,
+      "trunk_height": {
+        "base": 5,
+        "intervals": [2, 2],
+        "min_height_for_canopy": 3
+      },
+      "trunk_block": "minecraft:acacia_log",
+      "trunk_lean": {
+        "allow_diagonal_growth": true,
+        "lean_height": {
+          "range_min": 2,
+          "range_max": 3
+        },
+        "lean_steps": {
+          "range_min": 3,
+          "range_max": 4
+        },
+        "lean_length": {
+          "range_min": 1,
+          "range_max": 2
+        }
+      },
+      "branches": {
+        "branch_length": {
+          "range_min": 1,
+          "range_max": 3
+        },
+        "branch_position": {
+          "range_min": -2,
+          "range_max": 0
+        },
+        "branch_chance": {
+          "numerator": 1,
+          "denominator": 2
+        },
+        "branch_canopy": {
+          "random_spread_canopy": {
+            "canopy_height": 2,
+            "canopy_radius": [1, 2],
+            "leaf_placement_attempts": 20,
+            "leaf_blocks": [
+              ["minecraft:acacia_leaves", 3],
+              ["minecraft:azalea_leaves", 1]
+            ]
+          }
+        }
+      },
+      "trunk_decoration": {
+        "decoration_chance": {
+          "numerator": 1,
+          "denominator": 4
+        },
+        "decoration_blocks_sequence": [
+          { "block": "minecraft:vine", "count": [1, 2] }
+        ],
+        "step_direction": "down"
+      }
+    },
+    "acacia_canopy": {
+      "canopy_size": 2,
+      "leaf_block": "minecraft:acacia_leaves",
+      "simplify_canopy": false
+    }
+  }
+}

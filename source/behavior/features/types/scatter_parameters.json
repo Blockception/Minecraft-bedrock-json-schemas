@@ -1,0 +1,35 @@
+{
+  "$id": "blockception.minecraft.behavior.features.scatter_parameters",
+  "type": "object",
+  "title": "Distribution",
+  "description": "Parameters controlling the scatter of a feature: how many positions are generated, how likely the scatter is to run, and where each position lands relative to the input position.",
+  "additionalProperties": false,
+  "required": ["iterations"],
+  "properties": {
+    "iterations": {
+      "title": "Iterations",
+      "description": "Number of scattered positions to generate.",
+      "$ref": "../../../molang/number.json"
+    },
+    "scatter_chance": {
+      "title": "Scatter Chance",
+      "$ref": "./scatter_chance.json"
+    },
+    "coordinate_eval_order": {
+      "title": "Coordinate Eval Order",
+      "$ref": "./coordinate_eval_order.json"
+    },
+    "x": {
+      "title": "X",
+      "$ref": "./coordinate.json"
+    },
+    "y": {
+      "title": "Y",
+      "$ref": "./coordinate.json"
+    },
+    "z": {
+      "title": "Z",
+      "$ref": "./coordinate.json"
+    }
+  }
+}

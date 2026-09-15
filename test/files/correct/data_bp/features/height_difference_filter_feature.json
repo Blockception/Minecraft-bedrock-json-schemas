@@ -1,0 +1,14 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:height_difference_filter_feature": {
+    "description": {
+      "identifier": "example:height_difference_filter"
+    },
+    "places_feature": "example:placed",
+    "search_radius": 4,
+    "min_required_upward_height_diff": 2,
+    "min_required_downward_height_diff": 1,
+    "max_allowed_upward_height_diff": 6,
+    "max_allowed_downward_height_diff": 3
+  }
+}

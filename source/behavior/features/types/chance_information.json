@@ -1,12 +1,12 @@
 {
   "$id": "blockception.minecraft.behavior.features.chance_information",
-  "additionalProperties": false,
-  "type": "object",
   "title": "Chance Information",
   "description": "Chance of something happening represented either as a fraction or a percentage.",
   "anyOf": [
     {
       "type": "object",
+      "additionalProperties": false,
+      "required": ["numerator", "denominator"],
       "properties": {
         "numerator": {
           "type": "number",

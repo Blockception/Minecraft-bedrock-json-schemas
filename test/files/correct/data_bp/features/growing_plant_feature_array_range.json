@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:growing_plant_feature": {
+    "description": {
+      "identifier": "example:growing_plant_array_range"
+    },
+    "height_distribution": [
+      [[3, 5], 2],
+      [{ "range_min": 6, "range_max": 9 }, 1],
+      [2, 1]
+    ],
+    "growth_direction": "down",
+    "age": [0, 3],
+    "body_blocks": [["minecraft:cave_vines", 1]],
+    "head_blocks": [
+      ["minecraft:cave_vines_head_with_berries", 1],
+      ["minecraft:cave_vines", 3]
+    ],
+    "allow_water": true
+  }
+}

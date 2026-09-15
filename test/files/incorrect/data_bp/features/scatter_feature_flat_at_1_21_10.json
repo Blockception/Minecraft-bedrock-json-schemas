@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.110",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "example:scatter"
+    },
+    "places_feature": "example:placed",
+    "iterations": 4,
+    "scatter_chance": {
+      "numerator": 1,
+      "denominator": 2
+    },
+    "coordinate_eval_order": "xzy",
+    "x": {
+      "distribution": "uniform",
+      "extent": [0, 15]
+    },
+    "y": "query.heightmap(variable.worldx, variable.worldz)",
+    "z": {
+      "distribution": "fixed_grid",
+      "extent": [0, 15],
+      "step_size": 1,
+      "grid_offset": 0
+    }
+  }
+}

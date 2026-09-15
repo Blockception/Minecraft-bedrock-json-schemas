@@ -26,7 +26,7 @@
       "title": "Weighted Block Reference",
       "description": "Reference to the block to be placed.",
       "type": "object",
-      "required": ["block"],
+      "required": ["block", "weight"],
       "properties": {
         "block": {
           "title": "Block",

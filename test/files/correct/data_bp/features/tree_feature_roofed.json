@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:tree_feature": {
+    "description": {
+      "identifier": "example:roofed_tree"
+    },
+    "base_block": ["minecraft:dirt"],
+    "may_grow_on": ["minecraft:dirt", "minecraft:grass_block"],
+    "may_replace": ["minecraft:air", "minecraft:dark_oak_leaves"],
+    "trunk": {
+      "trunk_height": 6,
+      "trunk_block": "minecraft:dark_oak_log"
+    },
+    "pine_canopy": {
+      "canopy_height": [4, 6],
+      "base_radius": 3,
+      "leaf_block": "minecraft:spruce_leaves"
+    }
+  }
+}

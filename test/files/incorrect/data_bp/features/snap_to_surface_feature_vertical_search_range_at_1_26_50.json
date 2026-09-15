@@ -1,0 +1,11 @@
+{
+  "format_version": "1.26.50",
+  "minecraft:snap_to_surface_feature": {
+    "description": {
+      "identifier": "example:snap_to_surface_vertical_search_range_at_1_26_50"
+    },
+    "feature_to_snap": "example:placed",
+    "vertical_search_range": 12,
+    "surface": "floor"
+  }
+}

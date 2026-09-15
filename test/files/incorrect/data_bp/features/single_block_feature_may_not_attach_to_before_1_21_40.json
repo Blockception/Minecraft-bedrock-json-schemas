@@ -1,0 +1,14 @@
+{
+  "format_version": "1.21.30",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "example:single_block_may_not_attach_to_before_1_21_40"
+    },
+    "places_block": "minecraft:torch",
+    "enforce_placement_rules": true,
+    "enforce_survivability_rules": true,
+    "may_not_attach_to": {
+      "sides": ["minecraft:water"]
+    }
+  }
+}

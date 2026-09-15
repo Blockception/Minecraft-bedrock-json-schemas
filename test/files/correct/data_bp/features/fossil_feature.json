@@ -1,0 +1,10 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:fossil_feature": {
+    "description": {
+      "identifier": "example:fossil"
+    },
+    "ore_block": "minecraft:deepslate_diamond_ore",
+    "max_empty_corners": 4
+  }
+}

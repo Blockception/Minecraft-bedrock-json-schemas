@@ -1,9 +1,9 @@
 {
   "title": "Snap To Surface Feature",
-  "description": "`minecraft:snap_to_surface_feature` snaps the y-value of a feature placement pos to the floor or the ceiling within the provided `vertical_search_range`. The placement biome is preserved. \nIf the snap position goes outside of the placement biome, placement will fail.",
+  "description": "`minecraft:snap_to_surface_feature` snaps the y-value of a feature placement pos to the floor or the ceiling within the provided search range. The placement biome is preserved. \nIf the snap position goes outside of the placement biome, placement will fail.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["description", "feature_to_snap", "vertical_search_range"],
+  "required": ["description", "feature_to_snap"],
   "properties": {
     "description": {
       "$ref": "../types/description.json"
@@ -16,14 +16,19 @@
     },
     "vertical_search_range": {
       "title": "Vertical Search Range",
-      "description": "Range to search for a floor or ceiling for snaping the feature.",
+      "description": "Range to search for a floor or ceiling for snapping the feature.",
+      "type": "number"
+    },
+    "search_range": {
+      "title": "Search Range",
+      "description": "Range to search for a surface for snapping the feature.",
       "type": "number"
     },
     "surface": {
       "title": "Surface",
       "description": "Defines the surface that the y-value of the placement position will be snapped to. Valid values: `ceiling` and `floor'",
       "type": "string",
-      "enum": ["ceiling", "floor", "random_horizontal"]
+      "enum": ["ceiling", "floor", "wall", "random_horizontal"]
     },
     "allow_air_placement": {
       "title": "Allow Air Placement",
@@ -34,6 +39,12 @@
     "allow_underwater_placement": {
       "title": "Allow Underwater Placement",
       "description": "Determines whether the feature can snap through water blocks",
+      "type": "boolean",
+      "default": false
+    },
+    "allow_non_air_placement": {
+      "title": "Allow Non Air Placement",
+      "description": "Determines whether a placement position that starts inside a non-air block may be moved outwards to the nearest open position instead of failing.",
       "type": "boolean",
       "default": false
     },

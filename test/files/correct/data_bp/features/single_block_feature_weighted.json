@@ -1,0 +1,22 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "example:single_block_weighted"
+    },
+    "places_block": [
+      { "block": "minecraft:pink_petals", "weight": 3 },
+      { "block": { "name": "minecraft:pink_petals", "states": { "growth": 2 } }, "weight": 1 }
+    ],
+    "enforce_placement_rules": true,
+    "enforce_survivability_rules": true,
+    "randomize_rotation": true,
+    "may_attach_to": {
+      "bottom": ["minecraft:grass_block", "minecraft:dirt"],
+      "diagonal": ["minecraft:air"]
+    },
+    "may_not_attach_to": {
+      "sides": ["minecraft:water"]
+    }
+  }
+}
