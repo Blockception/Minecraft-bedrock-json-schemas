@@ -1,0 +1,31 @@
+{
+  "$id": "blockception.minecraft.behavior.features.int_range",
+  "title": "Integer Range",
+  "description": "A range of whole numbers. May be written as a single number, as a two-element array of the lower and upper bound, or as an object with `range_min` and `range_max`.",
+  "examples": [4, [4, 6], { "range_min": 4, "range_max": 6 }],
+  "oneOf": [
+    { "type": "integer", "title": "Value", "description": "A single whole number, used as both the lower and the upper bound." },
+    {
+      "type": "array",
+      "title": "Range Array",
+      "description": "The lower and upper bound of the range.",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": [
+        { "type": "integer", "title": "Min", "description": "The lower bound of the range." },
+        { "type": "integer", "title": "Max", "description": "The upper bound of the range." }
+      ]
+    },
+    {
+      "type": "object",
+      "title": "Range",
+      "description": "The lower and upper bound of the range.",
+      "additionalProperties": false,
+      "required": ["range_min", "range_max"],
+      "properties": {
+        "range_min": { "type": "integer", "title": "Range Min", "description": "The lower bound of the range." },
+        "range_max": { "type": "integer", "title": "Range Max", "description": "The upper bound of the range." }
+      }
+    }
+  ]
+}

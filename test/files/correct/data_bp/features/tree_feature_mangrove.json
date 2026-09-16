@@ -1,0 +1,92 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:tree_feature": {
+    "description": {
+      "identifier": "example:mangrove_tree"
+    },
+    "base_block": ["minecraft:mud", "minecraft:dirt"],
+    "may_grow_on": ["minecraft:mud", "minecraft:dirt", "minecraft:grass_block"],
+    "may_replace": ["minecraft:air", "minecraft:water", "minecraft:mangrove_leaves", "minecraft:mangrove_propagule"],
+    "may_grow_through": ["minecraft:water", "minecraft:mangrove_roots"],
+    "mangrove_trunk": {
+      "trunk_width": 1,
+      "trunk_height": {
+        "base": 2,
+        "height_rand_a": 0,
+        "height_rand_b": 4
+      },
+      "trunk_block": "minecraft:mangrove_log",
+      "branches": {
+        "branch_length": {
+          "range_min": 2,
+          "range_max": 4
+        },
+        "branch_steps": [1, 3],
+        "branch_chance": {
+          "numerator": 1,
+          "denominator": 2
+        }
+      },
+      "trunk_decoration": {
+        "decoration_chance": {
+          "numerator": 1,
+          "denominator": 4
+        },
+        "decoration_block": "minecraft:vine",
+        "step_direction": "down"
+      }
+    },
+    "mangrove_canopy": {
+      "canopy_height": {
+        "range_min": 2,
+        "range_max": 3
+      },
+      "canopy_radius": 3,
+      "leaf_placement_attempts": 70,
+      "leaf_blocks": [["minecraft:mangrove_leaves", 1]],
+      "hanging_block": "minecraft:mangrove_propagule",
+      "hanging_block_placement_chance": {
+        "numerator": 1,
+        "denominator": 3
+      },
+      "canopy_decoration": {
+        "decoration_chance": {
+          "numerator": 1,
+          "denominator": 3
+        },
+        "decoration_blocks_sequence": [
+          { "block": "minecraft:moss_carpet", "count": 1 },
+          { "block": "minecraft:vine", "count": { "range_min": 1, "range_max": 3 } }
+        ],
+        "step_direction": "down"
+      }
+    },
+    "mangrove_roots": {
+      "max_root_width": 8,
+      "max_root_length": 15,
+      "root_block": "minecraft:mangrove_roots",
+      "above_root": {
+        "above_root_chance": {
+          "numerator": 1,
+          "denominator": 2
+        },
+        "above_root_block": "minecraft:moss_carpet"
+      },
+      "muddy_root_block": "minecraft:muddy_mangrove_roots",
+      "mud_block": "minecraft:mud",
+      "y_offset": {
+        "range_min": 1,
+        "range_max": 3
+      },
+      "roots_may_grow_through": ["minecraft:mud", "minecraft:water", "minecraft:mangrove_roots"],
+      "root_decoration": {
+        "decoration_chance": {
+          "numerator": 1,
+          "denominator": 2
+        },
+        "decoration_block": "minecraft:vine",
+        "step_direction": "down"
+      }
+    }
+  }
+}

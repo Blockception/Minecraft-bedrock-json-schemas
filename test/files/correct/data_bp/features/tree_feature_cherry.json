@@ -1,0 +1,64 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:tree_feature": {
+    "description": {
+      "identifier": "example:cherry_tree"
+    },
+    "base_block": ["minecraft:dirt"],
+    "may_grow_on": ["minecraft:dirt", "minecraft:grass_block"],
+    "may_replace": ["minecraft:air", "minecraft:cherry_leaves"],
+    "cherry_trunk": {
+      "trunk_block": "minecraft:cherry_log",
+      "trunk_height": {
+        "base": 4,
+        "intervals": [2, 1]
+      },
+      "branches": {
+        "tree_type_weights": {
+          "one_branch": 1,
+          "two_branches": 1,
+          "two_branches_and_trunk": 1
+        },
+        "branch_horizontal_length": {
+          "range_min": 2,
+          "range_max": 4
+        },
+        "branch_start_offset_from_top": {
+          "range_min": -4,
+          "range_max": -3
+        },
+        "branch_end_offset_from_top": {
+          "range_min": -1,
+          "range_max": 0
+        },
+        "branch_canopy": {
+          "cherry_canopy": {
+            "leaf_block": "minecraft:cherry_leaves",
+            "height": {
+              "range_min": 4,
+              "range_max": 5
+            },
+            "radius": [4, 5],
+            "trunk_width": 1,
+            "wide_bottom_layer_hole_chance": {
+              "numerator": 1,
+              "denominator": 4
+            },
+            "corner_hole_chance": {
+              "numerator": 1,
+              "denominator": 3
+            },
+            "hanging_leaves_chance": {
+              "numerator": 1,
+              "denominator": 6
+            },
+            "hanging_leaves_extension_chance": {
+              "numerator": 1,
+              "denominator": 2
+            }
+          }
+        }
+      }
+    }
+  }
+}

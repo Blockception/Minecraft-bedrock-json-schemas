@@ -1,20 +1,19 @@
 {
   "format_version": "1.13.0",
-
   "minecraft:feature_rules": {
     "description": {
-      "identifier": "ore_features:ore_feature_placement",
+      "identifier": "incorrect:fraction_coordinate",
       "places_feature": "ore_features:ore_feature"
     },
-
     "conditions": {
       "placement_pass": "final_pass"
     },
-
     "distribution": {
       "iterations": 1,
-
-      "x": { "distribution": "uniform", "extent": [0, 15] },
+      "x": {
+        "numerator": 1,
+        "denominator": 1
+      },
       "z": 0,
       "y": "query.heightmap(v.worldx, v.worldz)"
     }

@@ -1,0 +1,14 @@
+{
+  "format_version": "1.21.30",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "example:single_block_weighted_before_1_21_40"
+    },
+    "places_block": [
+      { "block": "minecraft:pink_petals", "weight": 3 },
+      { "block": "minecraft:short_grass", "weight": 1 }
+    ],
+    "enforce_placement_rules": true,
+    "enforce_survivability_rules": true
+  }
+}

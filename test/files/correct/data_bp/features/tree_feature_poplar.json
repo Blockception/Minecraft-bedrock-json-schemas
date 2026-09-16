@@ -1,0 +1,39 @@
+{
+  "format_version": "1.26.50",
+  "minecraft:tree_feature": {
+    "description": {
+      "identifier": "example:poplar_tree"
+    },
+    "base_block": ["minecraft:dirt"],
+    "may_grow_on": ["minecraft:dirt", "minecraft:grass_block"],
+    "may_replace": ["minecraft:air", "minecraft:leaves"],
+    "poplar_trunk": {
+      "trunk_height": {
+        "range_min": 8,
+        "range_max": 12
+      },
+      "remaining_trunk_height_above_branches": 4,
+      "amount_of_foliage_support_branches": [1, 4],
+      "trunk_block": "minecraft:oak_log",
+      "trunk_decoration": {
+        "decoration_chance": 0,
+        "decoration_block": "minecraft:vine",
+        "step_direction": "down"
+      }
+    },
+    "poplar_canopy": {
+      "leaf_block": "minecraft:oak_leaves",
+      "branch_block": "minecraft:oak_log",
+      "radius": [
+        { "value": 5, "weight": 3 },
+        { "value": 6 }
+      ],
+      "height": {
+        "range_min": 6,
+        "range_max": 8
+      },
+      "side_hole_chance": 0.25,
+      "trunk_width": 1
+    }
+  }
+}

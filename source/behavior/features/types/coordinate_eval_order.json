@@ -1,0 +1,7 @@
+{
+  "$id": "blockception.minecraft.behavior.features.coordinate_eval_order",
+  "title": "Coordinate Eval Order",
+  "description": "The order in which coordinates will be evaluated. Should be used when a coordinate depends on another. If omitted, defaults to `xzy`.",
+  "type": "string",
+  "enum": ["xyz", "xzy", "yxz", "yzx", "zxy", "zyx"]
+}

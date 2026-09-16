@@ -1,0 +1,14 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:structure_template_feature": {
+    "description": {
+      "identifier": "example:structure_block_intersection_no_allowlist"
+    },
+    "structure_name": "example:my_structure",
+    "constraints": {
+      "block_intersection": {
+        "only_check_intersection_for_motion_blocking_blocks": true
+      }
+    }
+  }
+}

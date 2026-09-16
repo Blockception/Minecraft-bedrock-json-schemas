@@ -1,0 +1,34 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:tree_feature": {
+    "description": {
+      "identifier": "example:pine_tree"
+    },
+    "base_block": ["minecraft:dirt"],
+    "may_grow_on": ["minecraft:dirt", "minecraft:grass_block", "minecraft:podzol"],
+    "may_replace": ["minecraft:air", "minecraft:spruce_leaves"],
+    "mega_trunk": {
+      "trunk_width": 2,
+      "trunk_height": {
+        "base": 13,
+        "intervals": [2, 14]
+      },
+      "trunk_block": "minecraft:spruce_log",
+      "trunk_decoration": {
+        "decoration_chance": 0,
+        "decoration_block": "minecraft:vine",
+        "step_direction": "down"
+      }
+    },
+    "mega_pine_canopy": {
+      "canopy_height": {
+        "range_min": 3,
+        "range_max": 6
+      },
+      "base_radius": 0,
+      "radius_step_modifier": 0.75,
+      "core_width": 2,
+      "leaf_block": "minecraft:spruce_leaves"
+    }
+  }
+}

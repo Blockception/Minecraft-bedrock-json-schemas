@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:structure_template_feature": {
+    "description": {
+      "identifier": "example:structure_block_whitelist"
+    },
+    "structure_name": "example:my_structure",
+    "adjustment_radius": 4,
+    "facing_direction": "random",
+    "constraints": {
+      "grounded": {},
+      "block_intersection": {
+        "block_whitelist": ["minecraft:air", "minecraft:water"],
+        "only_check_intersection_for_motion_blocking_blocks": true
+      }
+    }
+  }
+}

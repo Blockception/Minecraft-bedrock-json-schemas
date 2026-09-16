@@ -12,388 +12,40 @@
       "additionalProperties": false,
       "properties": {
         "acacia_canopy": {
-          "title": "Acacia Canopy",
-          "description": "Configuration object for the acacia canopy.",
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "canopy_size": {
-              "title": "Canopy Size",
-              "description": "The size of the canopy.",
-              "type": "integer",
-              "minimum": 1
-            },
-            "leaf_block": {
-              "$ref": "#/definitions/leaf_block"
-            },
-            "simplify_canopy": {
-              "$ref": "#/definitions/simplify_canopy"
-            }
-          }
+          "$ref": "#/definitions/acacia_canopy"
         },
         "canopy": {
-          "title": "Canopy",
-          "description": "Configuration object for the normal canopy.",
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "canopy_offset": {
-              "title": "Canopy Offset",
-              "description": "Canopy position offset relative to the block above the trunk.",
-              "type": "object",
-              "additionalProperties": false,
-              "properties": {
-                "min": {
-                  "title": "Min",
-                  "description": "Min canopy position offset.",
-                  "type": "integer"
-                },
-                "max": {
-                  "title": "Max",
-                  "description": "Max canopy position offset.",
-                  "type": "integer"
-                }
-              }
-            },
-            "min_width": {
-              "title": "Min Width",
-              "description": "Min width for the canopy.",
-              "type": "integer",
-              "minimum": 0
-            },
-            "canopy_slope": {
-              "title": "Canopy Slope",
-              "description": "Configuration object for the canopy slope.",
-              "type": "object",
-              "additionalProperties": false,
-              "properties": {
-                "rise": {
-                  "title": "Rise",
-                  "description": "The numerator for the slope fraction.",
-                  "type": "integer",
-                  "minimum": 1
-                },
-                "run": {
-                  "title": "Run",
-                  "description": "The denominator for the slope fraction.",
-                  "type": "integer",
-                  "minimum": 1
-                }
-              }
-            },
-            "variation_chance": {
-              "title": "Variation Chance",
-              "description": "Determines the chance of creating leaf blocks for every layer of the canopy. Larger numbers create a denser tree.",
-              "oneOf": [
-                { "$ref": "../types/chance_information.json" },
-                {
-                  "type": "array",
-                  "items": {
-                    "$ref": "../types/chance_information.json"
-                  }
-                }
-              ]
-            },
-            "leaf_block": {
-              "$ref": "#/definitions/leaf_block"
-            },
-            "canopy_decoration": {
-              "title": "Canopy Decoration",
-              "description": "Configuration object for the canopy decoration.",
-              "type": "object",
-              "additionalProperties": false,
-              "properties": {
-                "decoration_blocks_sequence": {
-                  "title": "Decoration Blocks Sequence",
-                  "description": "A list of blocks and a count per block to be placed. This aims to replace decoration_block and num_steps.",
-                  "type": "array", 
-                  "items": {
-                    "title": "",
-                    "description": "",
-                    "type": "object", 
-                    "additionalProperties": false,
-                    "properties": {
-                      "block": {
-                        "title": "Block",
-                        "$ref": "../../../general/block/reference.json"
-                      },
-                      "count": {
-                        "title": "Num Steps",
-                        "description": "Number of decoration blocks to place.",
-                        "$ref": "../../../general/vectors/integer2.json"
-                      }
-                    }
-                  }
-                },
-                "decoration_chance": {
-                  "title": "Decoration Chance",
-                  "description": "Probability of decorating the trunk.",
-                  "$ref": "../types/chance_information.json"
-                },
-                "decoration_block": {
-                  "title": "Decoration Block",
-                  "description": "The block used for decorating the trunk.",
-                  "$ref": "../../../general/block/reference.json"
-                },
-                "num_steps": {
-                  "title": "Num Steps",
-                  "description": "Number of decoration blocks to place.",
-                  "type": "integer",
-                  "minimum": 0
-                },
-                "step_direction": {
-                  "title": "Step Direction",
-                  "description": "Directions to spread decoration blocks.",
-                  "type": "string",
-                  "enum": ["down", "up", "out", "away"]
-                }
-              }
-            }
-          }
+          "$ref": "#/definitions/canopy"
         },
         "cherry_canopy": {
-          "title": "Cherry Canopy",
-          "description": "Configuration object for the cherry canopy.",
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "leaf_block": {
-              "$ref": "#/definitions/leaf_block"
-            },
-            "height": {
-              "$ref": "#/definitions/height"
-            },
-            "radius": {
-              "$ref": "#/definitions/radius"
-            },
-            "trunk_width": {
-              "$ref": "#/definitions/trunk_width"
-            },
-            "wide_bottom_layer_hole_chance": {
-              "title": "Wide Bottom Layer Hole Chance",
-              "description": "Probability of the canopy having a hole in the bottom layer.",
-              "$ref": "../types/chance_information.json"
-            },
-            "corner_hole_chance": {
-              "title": "Corner Hole Chance",
-              "description": "Probability of the canopy having a hole in the corner.",
-              "$ref": "../types/chance_information.json"
-            },
-            "hanging_leaves_chance": {
-              "title": "Hanging Leaves Chance",
-              "description": "Probability of the canopy having hanging leaves",
-              "$ref": "../types/chance_information.json"
-            },
-            "hanging_leaves_extension_chance": {
-              "title": "Hanging Leaves Extension Chance",
-              "description": "Probability of hanging leaves extending further down",
-              "$ref": "../types/chance_information.json"
-            }
-          }
+          "$ref": "#/definitions/cherry_canopy"
         },
         "fancy_canopy": {
-          "title": "Fancy Canopy",
-          "description": "Configuration object for the fancy canopy.",
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "height": {
-              "$ref": "#/definitions/height"
-            },
-            "radius": {
-              "$ref": "#/definitions/radius"
-            },
-            "leaf_block": {
-              "$ref": "#/definitions/leaf_block"
-            }
-          }
+          "$ref": "#/definitions/fancy_canopy"
         },
         "mangrove_canopy": {
-          "title": "Mangrove Canopy",
-          "description": "Configuration object for the mangrove canopy.",
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "canopy_height": {
-              "$ref": "#/definitions/height"
-            },
-            "canopy_radius": {
-              "$ref": "#/definitions/radius"
-            },
-            "leaf_placement_attempts": {
-              "title": "Leaf Placement Attempts",
-              "description": "Max number of attempts to create leaf blocks.",
-              "type": "integer",
-              "minimum": 1
-            },
-            "leaf_blocks": {
-              "title": "Leaf Blocks",
-              "description": "The blocks that form the canopy of the tree",
-              "type": "array",
-              "minItems": 1,
-              "items": [
-                {
-                  "$ref": "#/definitions/leaf_block"
-                },
-                {
-                  "title": "Weight",
-                  "description": "Weight used in random selection. Value is relative to other weights in the collection.",
-                  "type": "number",
-                  "minimum": 0
-                }
-              ]
-            },
-            "canopy_decoration": {
-              "$ref": "#/definitions/decoration"
-            },
-            "hanging_block": {
-              "title": "Hanging Block",
-              "description": "The block to be used as a hanging block.",
-              "$ref": "../../../general/block/reference.json"
-            },
-            "hanging_block_placement_chance": {
-              "title": "Hanging Block Placement Chance",
-              "description": "Probability of creating a hanging leaf block.",
-              "$ref": "../types/chance_information.json"
-            }
-          }
+          "$ref": "#/definitions/mangrove_canopy"
         },
         "mega_canopy": {
-          "title": "Mega Canopy",
-          "description": "Configuration object for the mega canopy.",
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "canopy_height": {
-              "$ref": "#/definitions/height"
-            },
-            "base_radius": {
-              "$ref": "#/definitions/radius"
-            },
-            "core_width": {
-              "title": "Core Width",
-              "description": "Width of the tree trunk.",
-              "type": "number",
-              "minimum": 1
-            },
-            "simplify_canopy": {
-              "$ref": "#/definitions/simplify_canopy"
-            },
-            "leaf_block": {
-              "$ref": "#/definitions/leaf_block"
-            }
-          }
+          "$ref": "#/definitions/mega_canopy"
         },
         "mega_pine_canopy": {
-          "title": "Mega Pine Canopy",
-          "description": "Configuration object for the mega pine canopy.",
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "canopy_height": {
-              "$ref": "#/definitions/height"
-            },
-            "base_radius": {
-              "$ref": "#/definitions/radius",
-              "minimum": 0
-            },
-            "radius_step_modifier": {
-              "title": "Radius Step Modifier",
-              "description": "Modifier for the base radius of the canopy.",
-              "type": "number",
-              "minimum": 0
-            },
-            "core_width": {
-              "title": "Core Width",
-              "description": "Width of the tree trunk.",
-              "type": "number",
-              "minimum": 1
-            },
-            "leaf_block": {
-              "$ref": "#/definitions/leaf_block"
-            }
-          }
+          "$ref": "#/definitions/mega_pine_canopy"
         },
         "pine_canopy": {
-          "title": "Pine Canopy",
-          "description": "Configuration object for the pine canopy.",
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "height": {
-              "$ref": "#/definitions/height"
-            },
-            "radius": {
-              "$ref": "#/definitions/radius"
-            },
-            "leaf_block": {
-              "$ref": "#/definitions/leaf_block"
-            }
-          }
+          "$ref": "#/definitions/pine_canopy"
+        },
+        "poplar_canopy": {
+          "$ref": "#/definitions/poplar_canopy"
         },
         "roofed_canopy": {
-          "title": "Roofed Canopy",
-          "description": "Configuration object for the roofed canopy.",
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "canopy_height": {
-              "title": "Canopy Height",
-              "description": "Roofed canopies feature a base and a top layer, and an extra cap layer on some occasions, this value controls the number of layers in the middle.",
-              "type": "integer",
-              "minimum": 3
-            },
-            "core_width": {
-              "title": "Core Width",
-              "description": "Width of the tree trunk.",
-              "type": "integer",
-              "minimum": 1
-            },
-            "outer_radius": {
-              "title": "Outer Radius",
-              "description": "Radius used for the base and top layers.",
-              "type": "integer",
-              "minimum": 0
-            },
-            "inner_radius": {
-              "title": "Inner Radius",
-              "description": "Radius used for the middle layers.",
-              "type": "integer",
-              "minimum": 0
-            },
-            "leaf_block": {
-              "$ref": "#/definitions/leaf_block"
-            }
-          }
+          "$ref": "#/definitions/roofed_canopy"
         },
         "spruce_canopy": {
-          "title": "Spruce Canopy",
-          "description": "Configuration object for the spruce canopy.",
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "lower_offset": {
-              "title": "Lower Offset",
-              "description": "Min canopy position offset.",
-              "type": "integer",
-              "minimum": 0
-            },
-            "upper_offset": {
-              "title": "Upper Offset",
-              "description": "Max canopy position offset.",
-              "type": "integer",
-              "minimum": 0
-            },
-            "max_radius": {
-              "title": "Max Radius",
-              "description": "Max radius of the canopy.",
-              "type": "integer",
-              "minimum": 0
-            },
-            "leaf_block": {
-              "$ref": "#/definitions/leaf_block"
-            }
-          }
+          "$ref": "#/definitions/spruce_canopy"
+        },
+        "random_spread_canopy": {
+          "$ref": "#/definitions/random_spread_canopy"
         }
       }
     },
@@ -401,6 +53,30 @@
       "title": "Leaf Block",
       "description": "The block thata forms the canopy of the tree.",
       "$ref": "../../../general/block/reference.json"
+    },
+    "leaf_blocks": {
+      "title": "Leaf Blocks",
+      "description": "The blocks that form the canopy of the tree, as a collection of weighted block references.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "title": "Weighted Leaf Block",
+        "description": "A leaf block and its weight, written as a two-element array.",
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": [
+          {
+            "$ref": "#/definitions/leaf_block"
+          },
+          {
+            "title": "Weight",
+            "description": "Weight used in random selection. Value is relative to other weights in the collection.",
+            "type": "number",
+            "minimum": 0
+          }
+        ]
+      }
     },
     "trunk_width": {
       "title": "Trunk Width",
@@ -426,6 +102,31 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
+        "decoration_blocks_sequence": {
+          "title": "Decoration Blocks Sequence",
+          "description": "A list of blocks and a count per block to be placed. This aims to replace decoration_block and num_steps.",
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "title": "Decoration Block Entry",
+            "description": "A block to be placed, and how many of it.",
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["block"],
+            "properties": {
+              "block": {
+                "title": "Block",
+                "description": "The block used for decorating.",
+                "$ref": "../../../general/block/reference.json"
+              },
+              "count": {
+                "title": "Count",
+                "description": "Number of blocks to place for this entry.",
+                "$ref": "../types/int_range.json"
+              }
+            }
+          }
+        },
         "decoration_chance": {
           "title": "Decoration Chance",
           "description": "Probability of decorating the trunk.",
@@ -459,6 +160,454 @@
       "title": "Trunk Block",
       "description": "The block that forms the tree trunk.",
       "$ref": "../../../general/block/reference.json"
+    },
+    "acacia_canopy": {
+      "title": "Acacia Canopy",
+      "description": "Configuration object for the acacia canopy.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "canopy_size": {
+          "title": "Canopy Size",
+          "description": "The size of the canopy.",
+          "type": "integer",
+          "minimum": 1
+        },
+        "leaf_block": {
+          "$ref": "#/definitions/leaf_block"
+        },
+        "simplify_canopy": {
+          "$ref": "#/definitions/simplify_canopy"
+        }
+      }
+    },
+    "canopy": {
+      "title": "Canopy",
+      "description": "Configuration object for the normal canopy.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "canopy_offset": {
+          "title": "Canopy Offset",
+          "description": "Canopy position offset relative to the block above the trunk.",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "min": {
+              "title": "Min",
+              "description": "Min canopy position offset.",
+              "type": "integer"
+            },
+            "max": {
+              "title": "Max",
+              "description": "Max canopy position offset.",
+              "type": "integer"
+            }
+          }
+        },
+        "min_width": {
+          "title": "Min Width",
+          "description": "Min width for the canopy.",
+          "type": "integer",
+          "minimum": 0
+        },
+        "canopy_slope": {
+          "title": "Canopy Slope",
+          "description": "Configuration object for the canopy slope.",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "rise": {
+              "title": "Rise",
+              "description": "The numerator for the slope fraction.",
+              "type": "integer",
+              "minimum": 1
+            },
+            "run": {
+              "title": "Run",
+              "description": "The denominator for the slope fraction.",
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "variation_chance": {
+          "title": "Variation Chance",
+          "description": "Determines the chance of creating leaf blocks for every layer of the canopy. Larger numbers create a denser tree.",
+          "oneOf": [
+            {
+              "$ref": "../types/chance_information.json"
+            },
+            {
+              "type": "array",
+              "items": {
+                "$ref": "../types/chance_information.json"
+              }
+            }
+          ]
+        },
+        "leaf_block": {
+          "$ref": "#/definitions/leaf_block"
+        },
+        "canopy_decoration": {
+          "title": "Canopy Decoration",
+          "description": "Configuration object for the canopy decoration.",
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "decoration_chance": {
+              "title": "Decoration Chance",
+              "description": "Probability of decorating the trunk.",
+              "$ref": "../types/chance_information.json"
+            },
+            "decoration_block": {
+              "title": "Decoration Block",
+              "description": "The block used for decorating the trunk.",
+              "$ref": "../../../general/block/reference.json"
+            },
+            "num_steps": {
+              "title": "Num Steps",
+              "description": "Number of decoration blocks to place.",
+              "$ref": "../types/int_range.json"
+            },
+            "step_direction": {
+              "title": "Step Direction",
+              "description": "Directions to spread decoration blocks.",
+              "type": "string",
+              "enum": ["down", "up", "out", "away"]
+            }
+          }
+        }
+      }
+    },
+    "cherry_canopy": {
+      "title": "Cherry Canopy",
+      "description": "Configuration object for the cherry canopy.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "leaf_block": {
+          "$ref": "#/definitions/leaf_block"
+        },
+        "height": {
+          "title": "Height",
+          "description": "Number of layers for the canopy.",
+          "$ref": "../types/int_range.json"
+        },
+        "radius": {
+          "title": "Radius",
+          "description": "The radius of the canopy.",
+          "$ref": "../types/int_range.json"
+        },
+        "trunk_width": {
+          "$ref": "#/definitions/trunk_width"
+        },
+        "wide_bottom_layer_hole_chance": {
+          "title": "Wide Bottom Layer Hole Chance",
+          "description": "Probability of the canopy having a hole in the bottom layer.",
+          "$ref": "../types/chance_information.json"
+        },
+        "corner_hole_chance": {
+          "title": "Corner Hole Chance",
+          "description": "Probability of the canopy having a hole in the corner.",
+          "$ref": "../types/chance_information.json"
+        },
+        "hanging_leaves_chance": {
+          "title": "Hanging Leaves Chance",
+          "description": "Probability of the canopy having hanging leaves",
+          "$ref": "../types/chance_information.json"
+        },
+        "hanging_leaves_extension_chance": {
+          "title": "Hanging Leaves Extension Chance",
+          "description": "Probability of hanging leaves extending further down",
+          "$ref": "../types/chance_information.json"
+        }
+      }
+    },
+    "fancy_canopy": {
+      "title": "Fancy Canopy",
+      "description": "Configuration object for the fancy canopy.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "height": {
+          "$ref": "#/definitions/height"
+        },
+        "radius": {
+          "$ref": "#/definitions/radius"
+        },
+        "leaf_block": {
+          "$ref": "#/definitions/leaf_block"
+        }
+      }
+    },
+    "mangrove_canopy": {
+      "title": "Mangrove Canopy",
+      "description": "Configuration object for the mangrove canopy.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "canopy_height": {
+          "title": "Canopy Height",
+          "description": "Number of layers for the canopy.",
+          "$ref": "../types/int_range.json"
+        },
+        "canopy_radius": {
+          "title": "Canopy Radius",
+          "description": "The radius of the canopy.",
+          "$ref": "../types/int_range.json"
+        },
+        "leaf_placement_attempts": {
+          "title": "Leaf Placement Attempts",
+          "description": "Max number of attempts to create leaf blocks.",
+          "type": "integer",
+          "minimum": 1
+        },
+        "leaf_blocks": {
+          "$ref": "#/definitions/leaf_blocks"
+        },
+        "canopy_decoration": {
+          "$ref": "#/definitions/decoration"
+        },
+        "hanging_block": {
+          "title": "Hanging Block",
+          "description": "The block to be used as a hanging block.",
+          "$ref": "../../../general/block/reference.json"
+        },
+        "hanging_block_placement_chance": {
+          "title": "Hanging Block Placement Chance",
+          "description": "Probability of creating a hanging leaf block.",
+          "$ref": "../types/chance_information.json"
+        }
+      }
+    },
+    "mega_canopy": {
+      "title": "Mega Canopy",
+      "description": "Configuration object for the mega canopy.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "canopy_height": {
+          "title": "Canopy Height",
+          "description": "Number of layers for the canopy.",
+          "$ref": "../types/int_range.json"
+        },
+        "base_radius": {
+          "title": "Base Radius",
+          "description": "The radius of the canopy.",
+          "type": "integer",
+          "minimum": 0
+        },
+        "core_width": {
+          "title": "Core Width",
+          "description": "Width of the tree trunk.",
+          "type": "number",
+          "minimum": 1
+        },
+        "simplify_canopy": {
+          "$ref": "#/definitions/simplify_canopy"
+        },
+        "leaf_block": {
+          "$ref": "#/definitions/leaf_block"
+        }
+      }
+    },
+    "mega_pine_canopy": {
+      "title": "Mega Pine Canopy",
+      "description": "Configuration object for the mega pine canopy.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "canopy_height": {
+          "title": "Canopy Height",
+          "description": "Number of layers for the canopy.",
+          "$ref": "../types/int_range.json"
+        },
+        "base_radius": {
+          "title": "Base Radius",
+          "description": "The radius of the canopy.",
+          "type": "integer",
+          "minimum": 0
+        },
+        "radius_step_modifier": {
+          "title": "Radius Step Modifier",
+          "description": "Modifier for the base radius of the canopy.",
+          "type": "number",
+          "minimum": 0
+        },
+        "core_width": {
+          "title": "Core Width",
+          "description": "Width of the tree trunk.",
+          "type": "number",
+          "minimum": 1
+        },
+        "leaf_block": {
+          "$ref": "#/definitions/leaf_block"
+        }
+      }
+    },
+    "pine_canopy": {
+      "title": "Pine Canopy",
+      "description": "Configuration object for the pine canopy.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "canopy_height": {
+          "title": "Canopy Height",
+          "description": "Number of layers for the canopy.",
+          "$ref": "../types/int_range.json"
+        },
+        "base_radius": {
+          "title": "Base Radius",
+          "description": "The radius of the canopy.",
+          "type": "integer"
+        },
+        "leaf_block": {
+          "$ref": "#/definitions/leaf_block"
+        }
+      }
+    },
+    "poplar_canopy": {
+      "title": "Poplar Canopy",
+      "description": "Configuration object for the poplar canopy.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "leaf_block": {
+          "$ref": "#/definitions/leaf_block"
+        },
+        "branch_block": {
+          "title": "Branch Block",
+          "description": "The block used for the branches placed within the canopy.",
+          "$ref": "../../../general/block/reference.json"
+        },
+        "radius": {
+          "title": "Radius",
+          "description": "Collection of weighted canopy radii that placement will select from.",
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "title": "Weighted Radius",
+            "description": "A canopy radius and its weight.",
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["value"],
+            "properties": {
+              "value": {
+                "title": "Value",
+                "description": "The radius of the canopy.",
+                "type": "integer"
+              },
+              "weight": {
+                "title": "Weight",
+                "description": "Weight used in random selection. Value is relative to other weights in the collection.",
+                "type": "number"
+              }
+            }
+          }
+        },
+        "height": {
+          "title": "Height",
+          "description": "Number of layers for the canopy.",
+          "$ref": "../types/int_range.json"
+        },
+        "side_hole_chance": {
+          "title": "Side Hole Chance",
+          "description": "Probability of leaving a hole in the side of the canopy.",
+          "type": "number"
+        },
+        "trunk_width": {
+          "$ref": "#/definitions/trunk_width"
+        }
+      }
+    },
+    "roofed_canopy": {
+      "title": "Roofed Canopy",
+      "description": "Configuration object for the roofed canopy.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "canopy_height": {
+          "title": "Canopy Height",
+          "description": "Roofed canopies feature a base and a top layer, and an extra cap layer on some occasions, this value controls the number of layers in the middle.",
+          "type": "integer",
+          "minimum": 0
+        },
+        "core_width": {
+          "title": "Core Width",
+          "description": "Width of the tree trunk.",
+          "type": "integer",
+          "minimum": 1
+        },
+        "outer_radius": {
+          "title": "Outer Radius",
+          "description": "Radius used for the base and top layers.",
+          "type": "integer",
+          "minimum": -1
+        },
+        "inner_radius": {
+          "title": "Inner Radius",
+          "description": "Radius used for the middle layers.",
+          "type": "integer",
+          "minimum": 0
+        },
+        "leaf_block": {
+          "$ref": "#/definitions/leaf_block"
+        }
+      }
+    },
+    "spruce_canopy": {
+      "title": "Spruce Canopy",
+      "description": "Configuration object for the spruce canopy.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "lower_offset": {
+          "title": "Lower Offset",
+          "description": "Min canopy position offset.",
+          "$ref": "../types/int_range.json"
+        },
+        "upper_offset": {
+          "title": "Upper Offset",
+          "description": "Max canopy position offset.",
+          "$ref": "../types/int_range.json"
+        },
+        "max_radius": {
+          "title": "Max Radius",
+          "description": "Max radius of the canopy.",
+          "$ref": "../types/int_range.json"
+        },
+        "leaf_block": {
+          "$ref": "#/definitions/leaf_block"
+        }
+      }
+    },
+    "random_spread_canopy": {
+      "title": "Random Spread Canopy",
+      "description": "Configuration object for the random spread canopy.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "canopy_height": {
+          "title": "Canopy Height",
+          "description": "Number of layers for the canopy.",
+          "$ref": "../types/int_range.json"
+        },
+        "canopy_radius": {
+          "title": "Canopy Radius",
+          "description": "The radius of the canopy.",
+          "$ref": "../types/int_range.json"
+        },
+        "leaf_placement_attempts": {
+          "title": "Leaf Placement Attempts",
+          "description": "Max number of attempts to create leaf blocks.",
+          "type": "integer",
+          "minimum": 1
+        },
+        "leaf_blocks": {
+          "$ref": "#/definitions/leaf_blocks"
+        }
+      }
     }
   },
   "properties": {
@@ -468,10 +617,15 @@
     "base_block": {
       "title": "Base Block",
       "oneOf": [
-        { "$ref": "../../../general/block/reference.json" },
+        {
+          "$ref": "../../../general/block/reference.json"
+        },
         {
           "type": "array",
-          "items": { "title": "Block", "$ref": "../../../general/block/reference.json" }
+          "items": {
+            "title": "Block",
+            "$ref": "../../../general/block/reference.json"
+          }
         }
       ]
     },
@@ -581,17 +735,17 @@
             "lean_height": {
               "title": "Lean Height",
               "description": "Number of blocks below the tree height at which diagonal branches can be created.",
-              "$ref": "../../entities/format/types/range_number_type.json"
+              "$ref": "../types/int_range.json"
             },
             "lean_steps": {
               "title": "Lean Steps",
               "description": "Number of steps taken in X/Z direction while creating a diagonal branch.",
-              "$ref": "../../entities/format/types/range_number_type.json"
+              "$ref": "../types/int_range.json"
             },
             "lean_length": {
               "title": "Lean Length",
               "description": "Length for the diagonal branch in the Y axis.",
-              "$ref": "../../entities/format/types/range_number_type.json"
+              "$ref": "../types/int_range.json"
             }
           }
         },
@@ -607,12 +761,12 @@
             "branch_length": {
               "title": "Branch Length",
               "description": "Length for the branch in the Y axis.",
-              "$ref": "../../entities/format/types/range_number_type.json"
+              "$ref": "../types/int_range.json"
             },
             "branch_position": {
               "title": "Branch Position",
               "description": "Starting Y position for the branch.",
-              "$ref": "../../entities/format/types/range_number_type.json"
+              "$ref": "../types/int_range.json"
             },
             "branch_chance": {
               "title": "Branch Chance",
@@ -621,11 +775,11 @@
             },
             "branch_canopy": {
               "$ref": "#/definitions/branch_canopy"
-            },
-            "trunk_decoration": {
-              "$ref": "#/definitions/decoration"
             }
           }
+        },
+        "trunk_decoration": {
+          "$ref": "#/definitions/decoration"
         }
       }
     },
@@ -697,17 +851,17 @@
             "branch_horizontal_length": {
               "title": "Branch Horizontal Length",
               "description": "Branch length in X/Z axis.",
-              "$ref": "../../entities/format/types/range_number_type.json"
+              "$ref": "../types/int_range.json"
             },
             "branch_start_offset_from_top": {
               "title": "Branch Start Offset From Top",
               "description": "Branch starting position relative to the top of the tree",
-              "$ref": "../../entities/format/types/range_number_type.json"
+              "$ref": "../types/int_range.json"
             },
             "branch_end_offset_from_top": {
               "title": "Branch End Offset From Top",
               "description": "Branch end position relative to the top of the tree",
-              "$ref": "../../entities/format/types/range_number_type.json"
+              "$ref": "../types/int_range.json"
             },
             "branch_chance": {
               "title": "Branch Chance",
@@ -730,20 +884,17 @@
         "log_length": {
           "title": "Log Length",
           "description": "Length of the fallen log.",
-          "type": "integer",
-          "minimum": 0
+          "$ref": "../types/int_range.json"
         },
         "stump_height": {
           "title": "Stump Height",
           "description": "height of the stump.",
-          "type": "integer",
-          "minimum": 0
+          "$ref": "../types/int_range.json"
         },
         "height_modifier": {
           "title": "Height Modifier",
           "description": "Modifier for the length of the fallen log.",
-          "type": "integer",
-          "minimum": 0
+          "$ref": "../types/int_range.json"
         },
         "trunk_block": {
           "$ref": "#/definitions/trunk_block"
@@ -864,13 +1015,13 @@
               "title": "Height Rand A",
               "description": "Tree height modifier A.",
               "type": "integer",
-              "minimum": 1
+              "minimum": 0
             },
             "height_rand_b": {
               "title": "Height Rand B",
               "description": "Tree height modifier B.",
               "type": "integer",
-              "minimum": 1
+              "minimum": 0
             }
           }
         },
@@ -886,12 +1037,12 @@
             "branch_length": {
               "title": "Branch Length",
               "description": "Length for the branch in the Y axis.",
-              "$ref": "../../entities/format/types/range_number_type.json"
+              "$ref": "../types/int_range.json"
             },
             "branch_steps": {
               "title": "Branch Steps",
               "description": "Number of branches to place.",
-              "$ref": "../../entities/format/types/range_number_type.json"
+              "$ref": "../types/int_range.json"
             },
             "branch_chance": {
               "title": "Branch Chance",
@@ -972,7 +1123,7 @@
             "branch_interval": {
               "title": "Branch Interval",
               "description": "Randomized distance between branches.",
-              "$ref": "../../entities/format/types/range_number_type.json"
+              "$ref": "../types/int_range.json"
             },
             "branch_altitude_factor": {
               "title": "Branch Altitude Factor",
@@ -1012,12 +1163,12 @@
         "trunk_height": {
           "title": "Trunk Height",
           "description": "Defines the height of the trunk.",
-          "$ref": "../../entities/format/types/range_number_type.json"
+          "$ref": "../types/int_range.json"
         },
         "height_modifier": {
           "title": "Height Modifier",
           "description": "Modifier for the height of the trunk.",
-          "$ref": "../../entities/format/types/range_number_type.json"
+          "$ref": "../types/int_range.json"
         },
         "can_be_submerged": {
           "title": "Can Be Submerged",
@@ -1048,404 +1199,76 @@
         }
       }
     },
-    "acacia_canopy": {
-      "title": "Acacia Canopy",
-      "description": "Configuration object for the acacia canopy.",
+    "poplar_trunk": {
+      "title": "Poplar Trunk",
+      "description": "Configuration for the poplar trunk.",
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "canopy_size": {
-          "title": "Canopy Size",
-          "description": "The size of the canopy.",
-          "type": "integer",
-          "minimum": 1
+        "trunk_height": {
+          "title": "Trunk Height",
+          "description": "Defines the height of the trunk.",
+          "$ref": "../types/int_range.json"
         },
-        "leaf_block": {
-          "$ref": "#/definitions/leaf_block"
+        "remaining_trunk_height_above_branches": {
+          "title": "Remaining Trunk Height Above Branches",
+          "description": "Number of trunk blocks that remain above the branches.",
+          "$ref": "../types/int_range.json"
         },
-        "simplify_canopy": {
-          "$ref": "#/definitions/simplify_canopy"
+        "amount_of_foliage_support_branches": {
+          "title": "Amount Of Foliage Support Branches",
+          "description": "Number of branches placed to support the foliage.",
+          "$ref": "../types/int_range.json"
+        },
+        "trunk_block": {
+          "$ref": "#/definitions/trunk_block"
+        },
+        "log_decoration_feature": {
+          "title": "Log Decoration Feature",
+          "description": "Feature that can be used to decorate the trunk.",
+          "type": "string",
+          "$ref": "../../../general/feature/identifier.json"
+        },
+        "trunk_decoration": {
+          "$ref": "#/definitions/decoration"
         }
       }
+    },
+    "acacia_canopy": {
+      "$ref": "#/definitions/acacia_canopy"
     },
     "canopy": {
-      "title": "Canopy",
-      "description": "Configuration object for the normal canopy.",
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "canopy_offset": {
-          "title": "Canopy Offset",
-          "description": "Canopy position offset relative to the block above the trunk.",
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "min": {
-              "title": "Min",
-              "description": "Min canopy position offset.",
-              "type": "integer"
-            },
-            "max": {
-              "title": "Max",
-              "description": "Max canopy position offset.",
-              "type": "integer"
-            }
-          }
-        },
-        "min_width": {
-          "title": "Min Width",
-          "description": "Min width for the canopy.",
-          "type": "integer",
-          "minimum": 0
-        },
-        "canopy_slope": {
-          "title": "Canopy Slope",
-          "description": "Configuration object for the canopy slope.",
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "rise": {
-              "title": "Rise",
-              "description": "The numerator for the slope fraction.",
-              "type": "integer",
-              "minimum": 1
-            },
-            "run": {
-              "title": "Run",
-              "description": "The denominator for the slope fraction.",
-              "type": "integer",
-              "minimum": 1
-            }
-          }
-        },
-        "variation_chance": {
-          "title": "Variation Chance",
-          "description": "Determines the chance of creating leaf blocks for every layer of the canopy. Larger numbers create a denser tree.",
-          "oneOf": [
-            { "$ref": "../types/chance_information.json" },
-            {
-              "type": "array",
-              "items": {
-                "$ref": "../types/chance_information.json"
-              }
-            }
-          ]
-        },
-        "leaf_block": {
-          "$ref": "#/definitions/leaf_block"
-        },
-        "canopy_decoration": {
-          "title": "Canopy Decoration",
-          "description": "Configuration object for the canopy decoration.",
-          "type": "object",
-          "additionalProperties": false,
-          "properties": {
-            "decoration_chance": {
-              "title": "Decoration Chance",
-              "description": "Probability of decorating the trunk.",
-              "$ref": "../types/chance_information.json"
-            },
-            "decoration_block": {
-              "title": "Decoration Block",
-              "description": "The block used for decorating the trunk.",
-              "$ref": "../../../general/block/reference.json"
-            },
-            "num_steps": {
-              "title": "Num Steps",
-              "description": "Number of decoration blocks to place.",
-              "type": "integer",
-              "minimum": 0
-            },
-            "step_direction": {
-              "title": "Step Direction",
-              "description": "Directions to spread decoration blocks.",
-              "type": "string",
-              "enum": ["down", "up", "out", "away"]
-            }
-          }
-        }
-      }
+      "$ref": "#/definitions/canopy"
     },
     "cherry_canopy": {
-      "title": "Cherry Canopy",
-      "description": "Configuration object for the cherry canopy.",
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "leaf_block": {
-          "$ref": "#/definitions/leaf_block"
-        },
-        "height": {
-          "$ref": "#/definitions/height"
-        },
-        "radius": {
-          "$ref": "#/definitions/radius"
-        },
-        "trunk_width": {
-          "$ref": "#/definitions/trunk_width"
-        },
-        "wide_bottom_layer_hole_chance": {
-          "title": "Wide Bottom Layer Hole Chance",
-          "description": "Probability of the canopy having a hole in the bottom layer.",
-          "$ref": "../types/chance_information.json"
-        },
-        "corner_hole_chance": {
-          "title": "Corner Hole Chance",
-          "description": "Probability of the canopy having a hole in the corner.",
-          "$ref": "../types/chance_information.json"
-        },
-        "hanging_leaves_chance": {
-          "title": "Hanging Leaves Chance",
-          "description": "Probability of the canopy having hanging leaves",
-          "$ref": "../types/chance_information.json"
-        },
-        "hanging_leaves_extension_chance": {
-          "title": "Hanging Leaves Extension Chance",
-          "description": "Probability of hanging leaves extending further down",
-          "$ref": "../types/chance_information.json"
-        }
-      }
+      "$ref": "#/definitions/cherry_canopy"
     },
     "fancy_canopy": {
-      "title": "Fancy Canopy",
-      "description": "Configuration object for the fancy canopy.",
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "height": {
-          "$ref": "#/definitions/height"
-        },
-        "radius": {
-          "$ref": "#/definitions/radius"
-        },
-        "leaf_block": {
-          "$ref": "#/definitions/leaf_block"
-        }
-      }
+      "$ref": "#/definitions/fancy_canopy"
     },
     "mangrove_canopy": {
-      "title": "Mangrove Canopy",
-      "description": "Configuration object for the mangrove canopy.",
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "canopy_height": {
-          "$ref": "#/definitions/height"
-        },
-        "canopy_radius": {
-          "$ref": "#/definitions/radius"
-        },
-        "leaf_placement_attempts": {
-          "title": "Leaf Placement Attempts",
-          "description": "Max number of attempts to create leaf blocks.",
-          "type": "integer",
-          "minimum": 1
-        },
-        "leaf_blocks": {
-          "title": "Leaf Blocks",
-          "description": "The blocks that form the canopy of the tree",
-          "type": "array",
-          "minItems": 1,
-          "items": [
-            {
-              "$ref": "#/definitions/leaf_block"
-            },
-            {
-              "title": "Weight",
-              "description": "Weight used in random selection. Value is relative to other weights in the collection.",
-              "type": "number",
-              "minimum": 0
-            }
-          ]
-        },
-        "canopy_decoration": {
-          "$ref": "#/definitions/decoration"
-        },
-        "hanging_block": {
-          "title": "Hanging Block",
-          "description": "The block to be used as a hanging block.",
-          "$ref": "../../../general/block/reference.json"
-        },
-        "hanging_block_placement_chance": {
-          "title": "Hanging Block Placement Chance",
-          "description": "Probability of creating a hanging leaf block.",
-          "$ref": "../types/chance_information.json"
-        }
-      }
+      "$ref": "#/definitions/mangrove_canopy"
     },
     "mega_canopy": {
-      "title": "Mega Canopy",
-      "description": "Configuration object for the mega canopy.",
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "canopy_height": {
-          "$ref": "#/definitions/height"
-        },
-        "base_radius": {
-          "$ref": "#/definitions/radius"
-        },
-        "core_width": {
-          "title": "Core Width",
-          "description": "Width of the tree trunk.",
-          "type": "number",
-          "minimum": 1
-        },
-        "simplify_canopy": {
-          "$ref": "#/definitions/simplify_canopy"
-        },
-        "leaf_block": {
-          "$ref": "#/definitions/leaf_block"
-        }
-      }
+      "$ref": "#/definitions/mega_canopy"
     },
     "mega_pine_canopy": {
-      "title": "Mega Pine Canopy",
-      "description": "Configuration object for the mega pine canopy.",
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "canopy_height": {
-          "$ref": "#/definitions/height"
-        },
-        "base_radius": {
-          "$ref": "#/definitions/radius",
-          "minimum": 0
-        },
-        "radius_step_modifier": {
-          "title": "Radius Step Modifier",
-          "description": "Modifier for the base radius of the canopy.",
-          "type": "number",
-          "minimum": 0
-        },
-        "core_width": {
-          "title": "Core Width",
-          "description": "Width of the tree trunk.",
-          "type": "number",
-          "minimum": 1
-        },
-        "leaf_block": {
-          "$ref": "#/definitions/leaf_block"
-        }
-      }
+      "$ref": "#/definitions/mega_pine_canopy"
     },
     "pine_canopy": {
-      "title": "Pine Canopy",
-      "description": "Configuration object for the pine canopy.",
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "height": {
-          "$ref": "#/definitions/height"
-        },
-        "radius": {
-          "$ref": "#/definitions/radius"
-        },
-        "leaf_block": {
-          "$ref": "#/definitions/leaf_block"
-        }
-      }
+      "$ref": "#/definitions/pine_canopy"
     },
     "roofed_canopy": {
-      "title": "Roofed Canopy",
-      "description": "Configuration object for the roofed canopy.",
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "canopy_height": {
-          "title": "Canopy Height",
-          "description": "Roofed canopies feature a base and a top layer, and an extra cap layer on some occasions, this value controls the number of layers in the middle.",
-          "type": "integer",
-          "minimum": 3
-        },
-        "core_width": {
-          "title": "Core Width",
-          "description": "Width of the tree trunk.",
-          "type": "integer",
-          "minimum": 1
-        },
-        "outer_radius": {
-          "title": "Outer Radius",
-          "description": "Radius used for the base and top layers.",
-          "type": "integer",
-          "minimum": 0
-        },
-        "inner_radius": {
-          "title": "Inner Radius",
-          "description": "Radius used for the middle layers.",
-          "type": "integer",
-          "minimum": 0
-        },
-        "leaf_block": {
-          "$ref": "#/definitions/leaf_block"
-        }
-      }
+      "$ref": "#/definitions/roofed_canopy"
     },
     "spruce_canopy": {
-      "title": "Spruce Canopy",
-      "description": "Configuration object for the spruce canopy.",
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "lower_offset": {
-          "title": "Lower Offset",
-          "description": "Min canopy position offset.",
-          "type": "integer",
-          "minimum": 0
-        },
-        "upper_offset": {
-          "title": "Upper Offset",
-          "description": "Max canopy position offset.",
-          "type": "integer",
-          "minimum": 0
-        },
-        "max_radius": {
-          "title": "Max Radius",
-          "description": "Max radius of the canopy.",
-          "type": "integer",
-          "minimum": 0
-        },
-        "leaf_block": {
-          "$ref": "#/definitions/leaf_block"
-        }
-      }
+      "$ref": "#/definitions/spruce_canopy"
+    },
+    "poplar_canopy": {
+      "$ref": "#/definitions/poplar_canopy"
     },
     "random_spread_canopy": {
-      "title": "Random Spread Canopy",
-      "description": "Configuration object for the random spread canopy.",
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "canopy_height": {
-          "$ref": "#/definitions/height"
-        },
-        "canopy_radius": {
-          "$ref": "#/definitions/radius"
-        },
-        "leaf_placement_attempts": {
-          "title": "Leaf Placement Attempts",
-          "description": "Max number of attempts to create leaf blocks.",
-          "type": "integer",
-          "minimum": 1
-        },
-        "leaf_blocks": {
-          "title": "Leaf Blocks",
-          "description": "The blocks that form the canopy of the tree",
-          "type": "array",
-          "minItems": 1,
-          "items": [
-            {
-              "$ref": "#/definitions/leaf_block"
-            },
-            {
-              "title": "Weight",
-              "description": "Weight used in random selection. Value is relative to other weights in the collection.",
-              "type": "number",
-              "minimum": 0
-            }
-          ]
-        }
-      }
+      "$ref": "#/definitions/random_spread_canopy"
     },
     "mangrove_roots": {
       "title": "Mangrove Roots",
@@ -1485,34 +1308,34 @@
               "title": "Above Root Block",
               "description": "The block placed on the top of the roots.",
               "$ref": "../../../general/block/reference.json"
-            },
-            "muddy_root_block": {
-              "title": "Muddy Root Block",
-              "description": "The block used for muddy roots.",
-              "$ref": "../../../general/block/reference.json"
-            },
-            "mud_block": {
-              "title": "Mud Block",
-              "description": "The block used to determine if a muddy root should be placed.",
-              "$ref": "../../../general/block/reference.json"
-            },
-            "y_offset": {
-              "title": "Y Offset",
-              "description": "Root offset from the trunk",
-              "$ref": "../../entities/format/types/range_number_type.json"
-            },
-            "roots_may_grow_through": {
-              "title": "Roots May Grow Through",
-              "description": "List of blocks that a root can grow through.",
-              "type": "array",
-              "items": {
-                "$ref": "../../../general/block/reference.json"
-              }
-            },
-            "root_decoration": {
-              "$ref": "#/definitions/decoration"
             }
           }
+        },
+        "muddy_root_block": {
+          "title": "Muddy Root Block",
+          "description": "The block used for muddy roots.",
+          "$ref": "../../../general/block/reference.json"
+        },
+        "mud_block": {
+          "title": "Mud Block",
+          "description": "The block used to determine if a muddy root should be placed.",
+          "$ref": "../../../general/block/reference.json"
+        },
+        "y_offset": {
+          "title": "Y Offset",
+          "description": "Root offset from the trunk",
+          "$ref": "../types/int_range.json"
+        },
+        "roots_may_grow_through": {
+          "title": "Roots May Grow Through",
+          "description": "List of blocks that a root can grow through.",
+          "type": "array",
+          "items": {
+            "$ref": "../../../general/block/reference.json"
+          }
+        },
+        "root_decoration": {
+          "$ref": "#/definitions/decoration"
         }
       }
     }

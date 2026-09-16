@@ -1,0 +1,16 @@
+{
+  "format_version": "1.26.50",
+  "minecraft:snap_to_surface_feature": {
+    "description": {
+      "identifier": "example:snap_to_surface_search_range"
+    },
+    "feature_to_snap": "example:placed",
+    "search_range": 12,
+    "surface": "wall",
+    "allow_air_placement": true,
+    "allow_underwater_placement": false,
+    "allow_non_air_placement": true,
+    "allowed_surface_blocks": ["minecraft:stone", "minecraft:deepslate"],
+    "embed_in_surface": false
+  }
+}

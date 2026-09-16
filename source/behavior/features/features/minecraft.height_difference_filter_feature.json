@@ -3,7 +3,7 @@
   "title": "Height Difference Filter Feature",
   "description": "'minecraft:height_difference_filter_feature' filters away positions based on the heightmap around the placement position. The filter will check for surface blocks in each cardinal direction within the `search_radius`. Each block will be checked against all given conditions.",
   "additionalProperties": false,
-  "required": ["description", "search_axis"],
+  "required": ["description", "places_feature", "search_radius"],
   "properties": {
     "description": {
       "$ref": "../types/description.json"
@@ -20,15 +20,15 @@
       "type": "integer", 
       "minimum": 0
     },
-    "max_required_downward_height_diff": {
-      "title": "Max Required Downward Height Diff",
-      "description": "Specifies the maximum height difference required downwards.",
+    "min_required_downward_height_diff": {
+      "title": "Min Required Downward Height Diff",
+      "description": "Specifies the minimum height difference required downwards.",
       "type": "integer", 
       "minimum": 0
     },
-    "min_allowed_upward_height_diff": {
-      "title": "Min Allowed Upward Height Diff",
-      "description": "Specifies the minimum height difference allowed upwards.",
+    "max_allowed_upward_height_diff": {
+      "title": "Max Allowed Upward Height Diff",
+      "description": "Specifies the maximum height difference allowed upwards.",
       "type": "integer", 
       "minimum": 0
     },

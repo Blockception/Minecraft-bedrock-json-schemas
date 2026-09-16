@@ -1,0 +1,11 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:search_feature": {
+    "description": {
+      "identifier": "example:search_missing_search_volume"
+    },
+    "places_feature": "example:placed",
+    "search_axis": "-y",
+    "required_successes": 1
+  }
+}

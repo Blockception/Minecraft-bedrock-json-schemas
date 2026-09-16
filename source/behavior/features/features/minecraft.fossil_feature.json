@@ -3,14 +3,14 @@
   "title": "Fossil Feature",
   "description": "'minecraft:fossil_feature' generates a skeletal structure composed of bone blocks and parametric ore blocks.",
   "additionalProperties": false,
-  "required": ["description"],
+  "required": ["description", "ore_block", "max_empty_corners"],
   "properties": {
     "description": {
       "$ref": "../types/description.json"
     },
     "ore_block": {
       "title": "Ore Block",
-      "description": "Reference to the block to fill the cave with.",
+      "description": "Reference to the block placed as the ore within the skeletal structure.",
       "$ref": "../../../general/block/reference.json"
     },
     "max_empty_corners": {
