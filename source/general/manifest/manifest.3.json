@@ -70,7 +70,7 @@
               "version": {
                 "title": "Version",
                 "description": "This is the specific version of the pack that your pack depends on. Should match the version the other pack has in its manifest file",
-                "oneOf": [{ "$ref": "../Version.json" }, { "$ref": "../format_version.json" }]
+                "oneOf": [{ "$ref": "../Version.json" }, { "$ref": "../format_version.json" }, { "$ref": "../semver.json" }]
               }
             }
           },
