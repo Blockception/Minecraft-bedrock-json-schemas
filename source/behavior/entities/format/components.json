@@ -88,6 +88,7 @@
     "minecraft:hurt_on_condition": { "$ref": "./components/hurt_on_condition.json" },
     "minecraft:hurt_when_wet": { "$ref": "./components/hurt_when_wet.json" },
     "minecraft:free_camera_controlled": { "$ref": "./components/free_camera_controlled.json" },
+    "minecraft:freezing_immune": { "$ref": "./components/freezing_immune.json" },
     "minecraft:input_ground_controlled": { "$ref": "./components/input_ground_controlled.json" },
     "minecraft:inside_block_notifier": { "$ref": "./components/inside_block_notifier.json" },
     "minecraft:insomnia": { "$ref": "./components/insomnia.json" },
