@@ -40,6 +40,7 @@
     "minecraft:can_fly": { "$ref": "./components/can_fly.json" },
     "minecraft:can_join_raid": { "$ref": "./components/can_join_raid.json" },
     "minecraft:can_power_jump": { "$ref": "./components/can_power_jump.json" },
+    "minecraft:can_stand_on_powder_snow": { "$ref": "./components/can_stand_on_powder_snow.json" },
     "minecraft:cannot_be_attacked": { "$ref": "./components/cannot_be_attacked.json" },
     "minecraft:celebrate_hunt": { "$ref": "./components/celebrate_hunt.json" },
     "minecraft:collision_box": { "$ref": "./components/collision_box.json" },
