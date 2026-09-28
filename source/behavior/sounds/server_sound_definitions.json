@@ -86,6 +86,11 @@
               }
             ]
           }
+        },
+        "broadcast_range": {
+          "title": "Broadcast Range",
+          "description": "Specifies an XZ range in blocks. When set, a broadcast play sound is delivered to players within this range of the sound",
+          "type": "number"
         }
       }
     }
