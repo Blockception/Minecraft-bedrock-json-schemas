@@ -114,7 +114,7 @@
       "title": "Isolated Physics",
       "description": "If `true`, the projectile uses a dedicated ballistic physics path and ignores generic actor movement systems (friction, drag, etc.). Recommended for custom projectiles.",
       "type": "boolean",
-      "default": false
+      "default": true
     },
     "lightning": {
       "type": "boolean",
