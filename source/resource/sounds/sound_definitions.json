@@ -101,6 +101,12 @@
                     "title": "Weight",
                     "type": "integer",
                     "minimum": 0
+                  },
+                  "allow_concurrent_streaming": {
+                    "title": "Allow Concurrent Streaming",
+                    "description": "Allows streamed ordinary sound events to play independent simultaneous instances.",
+                    "type": "boolean",
+                    "default": false
                   }
                 }
               }
