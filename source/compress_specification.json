@@ -42,6 +42,10 @@
       "Destination": "../behavior/cameras/presets/cameras.json"
     },
     {
+      "Source": "./behavior/dimensions/dimensions.json",
+      "Destination": "../behavior/dimensions/dimensions.json"
+    },
+    {
       "Source": "./behavior/dialogue/dialogue.json",
       "Destination": "../behavior/dialogue/dialogue.json"
     },

@@ -1,0 +1,16 @@
+{
+  "$id": "blockception.minecraft.behavior.dimensions.minecraft.generation",
+  "title": "Generation",
+  "description": "Specifies the generator type used for world generation in the dimension.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["generator_type"],
+  "properties": {
+    "generator_type": {
+        "title": "Generator Type",
+        "description": "The generator to use.",
+        "type": "string",
+        "enum": ["void"]
+    }
+  }
+}

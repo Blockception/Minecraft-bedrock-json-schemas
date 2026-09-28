@@ -1,0 +1,15 @@
+{
+  "$id": "blockception.minecraft.behavior.dimensions.minecraft.default_biome",
+  "title": "Default Biome",
+  "description": "The biome that fills the dimension.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["biome"],
+  "properties": {
+    "biome": {
+        "title": "Biome",
+        "description": "The biome Identifier",
+        "type": "string"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.dimension",
+  "title": "Dimension Definitions",
+  "description": "A custom dimension definition.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["description", "components"],
+  "definitions": {
+    "components_ref": {
+      "type": "object",
+      "title": "Component",
+      "description": "The components of this dimension.",
+      "additionalProperties": true,
+      "properties": {
+        "minecraft:default_biome": { "$ref": "./components/default_biome.json" },
+        "minecraft:dimension_height": { "$ref": "./components/dimension_height.json" },
+        "minecraft:generation": { "$ref": "./components/generation.json" }
+      }
+    }
+  },
+  "properties": {
+    "description": {
+      "title": "Dimension Description",
+      "description": "The description for this dimension.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["identifier"],
+      "properties": {
+        "identifier": {
+          "title": "Identifier",
+          "description": "The identifier for this dimension. The name must include a namespace and must not use the Minecraft namespace unless overriding a Vanilla dimension.",
+          "type": "string",
+          "pattern": "^[0-9a-zA-Z:_\\.\\-]+$"
+        }
+      }
+    },
+    "components": { "$ref": "#/definitions/components_ref" }
+  }
+}
