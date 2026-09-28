@@ -10,7 +10,7 @@
     },
     "features": {
       "title": "Features",
-      "description": " Collection of weighted features that placement will select from.",
+      "description": "Collection of weighted features that placement will select from.",
       "type": "array",
       "minItems": 1,
       "items": {
