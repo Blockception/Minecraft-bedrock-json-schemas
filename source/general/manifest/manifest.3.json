@@ -463,6 +463,66 @@
               }
             },
             "required": ["default", "name", "options", "text", "type"]
+          },
+          {
+            "title": "MultiSelect Setting",
+            "type": "object",
+            "properties": {
+              "defaults": {
+                "title": "Defaults",
+                "description": "UNDOCUMENTED",
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 20,
+                "items": {
+                  "type": "string"
+                }
+              },
+              "name": {
+                "title": "Name",
+                "description": "UNDOCUMENTED",
+                "type": "string",
+                "pattern": "^(?:(?!^(minecraft):).)+:(?:.)+$"
+              },
+              "options": {
+                "title": "Options",
+                "description": "UNDOCUMENTED",
+                "type": "array",
+                "items": {
+                  "title": "MultiSelect Option",
+                  "description": "UNDOCUMENTED",
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "title": "Name",
+                      "description": "UNDOCUMENTED",
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "text": {
+                      "title": "Text",
+                      "description": "UNDOCUMENTED",
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "required": ["name", "text"]
+                },
+                "minItems": 2
+              },
+              "text": {
+                "title": "Text",
+                "description": "UNDOCUMENTED",
+                "type": "string"
+              },
+              "type": {
+                "title": "Setting Type",
+                "description": "UNDOCUMENTED",
+                "type": "string",
+                "const": "multiselect"
+              }
+            },
+            "required": ["default", "name", "options", "text", "type"]
           }
         ]
       },
