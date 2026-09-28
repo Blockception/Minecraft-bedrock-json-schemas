@@ -10,6 +10,21 @@
       "description": "Enables or disables the storing of DynamicProperties",
       "type": "boolean",
       "default": false
+    },
+    "container": {
+      "title": "Container",
+      "description": "[EXPERIMENTAL] Adds a container to this block.",
+      "type": "object", 
+      "additionalProperties": false,
+      "properties": {
+        "slot_count": {
+          "title": "Slot Count",
+          "description": "Sets the number of slots in the container.",
+          "maximum": 54,
+          "minimum": 1,
+          "type": "integer"
+        }
+      }
     }
   }
 }
