@@ -24,6 +24,7 @@
     "minecraft:balloonable": { "$ref": "./components/balloonable.json" },
     "minecraft:barter": { "$ref": "./components/barter.json" },
     "minecraft:block_climber": { "$ref": "./components/block_climber.json" },
+    "minecraft:block_movement_slowdown_immunity": { "$ref": "./components/block_movement_slowdown_immunity.json" },
     "minecraft:block_sensor": { "$ref": "./components/block_sensor.json" },
     "minecraft:body_rotation_always_follows_head": { "$ref": "./components/body_rotation_always_follows_head.json" },
     "minecraft:body_rotation_blocked": { "$ref": "./components/body_rotation_blocked.json" },
