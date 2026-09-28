@@ -11,6 +11,7 @@
     "format_version": { "$ref": "../../general/format_version.json" },
     "minecraft:aggregate_feature": { "$ref": "./features/minecraft.aggregate_feature.json" },
     "minecraft:cave_carver_feature": { "$ref": "./features/minecraft.cave_carver_feature.json" },
+    "minecraft:conditional_list": { "$ref": "./features/minecraft.conditional_list.json" },
     "minecraft:fossil_feature": { "$ref": "./features/minecraft.fossil_feature.json" },
     "minecraft:geode_feature": { "$ref": "./features/minecraft.geode_feature.json" },
     "minecraft:growing_plant_feature": { "$ref": "./features/minecraft.growing_plant_feature.json" },
