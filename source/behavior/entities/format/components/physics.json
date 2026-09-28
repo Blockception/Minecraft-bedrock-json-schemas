@@ -20,7 +20,7 @@
     },
     "push_towards_closest_space": {
       "type": "boolean",
-      "default": true,
+      "default": false,
       "description": "Whether or not the entity is pushed to the closest space.",
       "title": "Pushed Towards Closest Space"
     }

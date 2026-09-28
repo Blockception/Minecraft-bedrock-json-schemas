@@ -6,19 +6,19 @@
   "title": "Game Event Movement Tracking",
   "properties": {
     "emit_flap": {
-      "title": "emit flap",
+      "title": "Emit Flap",
       "type": "boolean",
       "default": false,
       "description": "If true, the `flap` game event will be emitted when the entity moves through air."
     },
     "emit_move": {
-      "title": "emit move",
+      "title": "Emit Move",
       "type": "boolean",
       "default": true,
       "description": "If true, the `entityMove` game event will be emitted when the entity moves on ground or through a solid."
     },
     "emit_swim": {
-      "title": "emit swim",
+      "title": "Emit Swim",
       "type": "boolean",
       "default": true,
       "description": "If true, the `swim` game event will be emitted when the entity moves through a liquid."
