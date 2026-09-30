@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.freezing_vulnerable",
+  "description": "Defines whether an entity should take increased damage from freezing.",
+  "type": "object",
+  "title": "Freezing Vulnerable",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {}
+}

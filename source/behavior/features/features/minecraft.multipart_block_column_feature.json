@@ -1,0 +1,85 @@
+{
+  "title": "Multipart Block Column Feature",
+  "description": "`minecraft:multipart_block_column_feature` places blocks in an ordered column consisting of 1-4 parts. When the column consists of one block, only the 'tip_block' is placed. When the column consists of two blocks, a 'frustum_block' is placed with a 'tip_block' above it. For a three block column, a 'base_block' is placed at the bottom, and followed by a 'frustum_block' and a 'tip_block'. For columns larger than three blocks, the 'middle_block' is used as padding between the 'base_block' and the 'frustum_block'. 'height_range' specifies the range of blocks the column can be in any direction. 'weighted_heights' specifies a list of possible weighted lengths the column can be in any direction. Exactly one of 'height_range' or 'weighted_heights' has to be specified. 'direction' specifies the direction of the column. This can be any direction. 'may_place_on' can be used to limit what blocks a column can be placed upon. If omitted a column can be placed anywhere",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [ "description", "tip_block", "frustum_block", "middle_block", "base_block" ],
+  "properties": {
+    "description": {
+      "$ref": "../types/description.json"
+    },
+    "tip_block": {
+      "title": "Tip Block",
+      "description": "The topmost block of the column.",
+      "$ref": "../../../general/block/reference.json"
+    },
+    "frustum_block": {
+      "title": "Frustum Block",
+      "description": "The second topmost block below the tip if the column is at least two blocks",
+      "$ref": "../../../general/block/reference.json"
+    },
+    "middle_block": {
+      "title": "Middle",
+      "description": "The block that is placed between the base and frustum blocks when the column is at least four blocks",
+      "$ref": "../../../general/block/reference.json"
+    },
+    "base_block": {
+      "title": "Base Block",
+      "description": "The bottom-most block when the column is at least three blocks",
+      "$ref": "../../../general/block/reference.json"
+    },
+    "height_range": {
+      "title": "Height Range",
+      "description": "The range of blocks the column can be high",
+      "additionalProperties": false,
+      "required": ["range_min", "range_max"],
+      "properties": {
+        "range_min": { "type": "number", "title": "Range Min", "description": "The lower bound of the range." },
+        "range_max": { "type": "number", "title": "Range Max", "description": "The upper bound of the range." }
+      }
+    },
+    "weighted_heights": {
+      "title": "Weighted Heights",
+      "description": "Collection of weighted heights that placement will select from.",
+      "type": "array", 
+      "items": {
+        "type": "array",
+        "items": [
+          {
+            "title": "Height",
+            "type": "integer"
+          },
+          {
+            "title": "Weight",
+            "description": "Weight used in random selection. Value is relative to other weights in the collection.",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    "direction": {
+      "title": "Direction",
+      "description": "The direction of the column.",
+      "type": "string",
+      "default": "UP",
+      "enum": ["UP", "DOWN"]
+    },
+    "may_place_on": {
+      "title": "May Place On",
+      "description": "A list of blocks that may be replaced during placement. Omit this field to allow any block to be replaced.",
+      "type": "array",
+      "items": {
+        "title": "Block",
+        "$ref": "../../../general/block/reference.json"
+      }
+    },
+    "may_replace": {
+      "title": "May Replace",
+      "description": "A list of blocks that may be replaced during placement. Omit this field to allow any block to be replaced.",
+      "type": "array",
+      "items": {
+        "$ref": "../../../general/block/reference.json"
+      }
+    }
+  }
+}

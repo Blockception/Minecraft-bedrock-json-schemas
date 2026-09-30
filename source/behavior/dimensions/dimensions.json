@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "blockception.minecraft.behavior.dimensions",
+  "$comment": "UNDOCUMENTED",
+  "required": ["format_version", "minecraft:dimension"],
+  "type": "object",
+  "title": "Dimension Behavior",
+  "description": "The minecraft dimension behavior specification.",
+  "additionalProperties": false,
+  "properties": {
+    "format_version": { "$ref": "../../general/format_version.json" },
+    "minecraft:dimension": { "$ref": "./format/minecraft.dimension.json" }
+  },
+  "defaultSnippets": [
+    {
+      "label": "New Dimension",
+      "body": {
+        "format_version": "${1:1.26.50}",
+        "minecraft:dimension": {
+          "description": {
+            "identifier": "$2:${3:${TM_FILENAME/[\\.].*//}}"
+          },
+          "components": {}
+        }
+      }
+    }
+  ]
+}

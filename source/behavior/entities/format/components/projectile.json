@@ -4,74 +4,72 @@
   "title": "Projectile",
   "description": "Allows the entity to be a thrown entity.",
   "additionalProperties": false,
+  "definitions": {
+    "duration": {
+      "type": "integer",
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 0
+        },
+        {
+          "const": "infinite"
+        }
+      ]
+    }
+  },
   "properties": {
     "anchor": {
-      "type": "integer",
-      "description": "Allows you to choose an anchor point for where the projectile is fired from. 0 = Original point, 1 = EyeHeight, and 2 = Middle or body height.",
+      "description": "Allows you to choose an anchor point for where the projectile is fired from.",
       "title": "Anchor",
-      "default": 0
+      "default": "origin",
+      "enum": [
+        "origin",
+        "eye_height",
+        "middle"
+      ]
     },
     "angle_offset": {
       "type": "number",
       "default": 0,
-      "description": "Alters the angle at which a projectile is vertically shot. Many splash potions in the game use this to offset their angles by -20 degrees.",
+      "description": "Additional upwards pitch (in degrees) applied to the shooter's aim direction at launch. Negative values aim downward.",
       "title": "Angle Offset"
     },
     "catch_fire": {
       "type": "boolean",
       "default": false,
-      "description": "If true, the entity hit will be set on fire.",
+      "description": "Legacy default for whether the projectile sets the entity hit on fire. Prefer the `catch_fire` on-hit subcomponent.",
       "title": "Catch Fire"
     },
     "crit_particle_on_hurt": {
       "type": "boolean",
       "default": false,
-      "description": "If true, when a projectile deals damage, whether or not to spawn in the critical damage particles.",
+      "description": "If `true`, critical-hit particles are spawned on the projectile when it is struck.",
       "title": "Crit Particle On Hurt"
     },
     "destroy_on_hurt": {
       "type": "boolean",
       "default": false,
-      "description": "When this projectile deals damage, whether or not to immediately destroy this projectile.",
+      "description": "If `true`, the projectile is removed from the world when struck.",
       "title": "Destroy On Hurt"
-    },
-    "filter": {
-      "type": "string",
-      "description": "Entity Definitions defined here can't be hurt by the projectile.",
-      "title": "Filter"
-    },
-    "fire_affected_by_griefing": {
-      "type": "boolean",
-      "default": false,
-      "description": "If true, whether the projectile causes fire is affected by the mob griefing game rule.",
-      "title": "Fire Affected By Griefing"
     },
     "gravity": {
       "type": "number",
       "default": 0.05,
-      "description": "The gravity applied to this entity when thrown. When this actor is not on the ground, subtracts this amount from the actors change in vertical position every tick. The higher the value, the faster the entity falls.",
+      "description": "Downward acceleration (blocks per tick squared) applied each tick while in flight. Higher values make the projectile fall faster.",
       "title": "Gravity"
+    },
+    "hit_ground_sound": {
+      "$ref": "../../../../general/sound_event.json",
+      "default": "hit_sound",
+      "description": "Identifier of the sound to play when the projectile hits a block. Defaults to `hit_sound` when empty.",
+      "title": "Hit Ground Sound"
     },
     "hit_nearest_passenger": {
       "type": "boolean",
       "default": false,
       "title": "Hit Nearest Passenger",
-      "description": "If true, when hitting a vehicle, and there's at least one passenger in the vehicle, the damage will be dealt to the passenger closest to the projectile impact point. If there are no passengers, this setting does nothing."
-    },
-    "ignored_entities": {
-      "title": "Ignored Entities",
-      "description": "[EXPERIMENTAL] An array of strings defining the types of entities that this entity does not collide with.",
-      "type": "array",
-      "minItems": 1,
-      "items": {
-        "type": "string"
-      }
-    },
-    "hit_ground_sound": {
-      "$ref": "../../../../general/sound_event.json",
-      "default": "",
-      "description": "The sound that plays when the projectile hits the ground.",
-      "title": "Hit Ground Sound"
+      "description": "If `true`, when the projectile hits a vehicle with at least one passenger, the on-hit behavior is applied to the passenger closest to the impact point instead of the vehicle itself."
     },
     "hit_sound": {
       "$ref": "../../../../general/sound_event.json",
@@ -79,180 +77,194 @@
       "description": "The sound that plays when the projectile hits something.",
       "title": "Hit Sound"
     },
+    "hit_water": {
+      "default": false,
+      "description": "If `true`, the projectile treats water as a hit surface and stops on contact.",
+      "type": "boolean",
+      "title": "Hit Water"
+    },
     "homing": {
       "type": "boolean",
       "default": false,
-      "description": "If true, the projectile homes in to the nearest entity.",
+      "description": "If `true`, the projectile steers towards an active target while in flight.",
       "title": "Homing"
+    },
+    "ignored_entities": {
+      "title": "Ignored Entities",
+      "description": "Array of entity identifiers that the projectile will pass through without registering a hit.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
     },
     "inertia": {
       "type": "number",
       "default": 0.99,
-      "description": "The fraction of the projectile's speed maintained every frame while traveling in air.",
+      "description": "Fraction of the projectile's velocity preserved each tick while traveling through air. Values below `1.0` cause it to slow down over time.",
       "title": "Inertia"
     },
     "is_dangerous": {
       "type": "boolean",
       "default": false,
-      "description": "If true, the projectile will be treated as dangerous to the players.",
+      "description": "If `true`, the projectile is flagged as dangerous, affecting AI reactions and certain client-side behaviors.",
       "title": "Is Dangerous"
     },
     "isolated_physics": {
       "title": "Isolated Physics",
-      "description": "If true, this projectile will not be affected by outside forces such as friction and drag.",
+      "description": "If `true`, the projectile uses a dedicated ballistic physics path and ignores generic actor movement systems (friction, drag, etc.). Recommended for custom projectiles.",
       "type": "boolean",
-      "default": false
-    },
-    "knockback": {
-      "type": "boolean",
-      "default": true,
-      "description": "If true, the projectile will knock back the entity it hits.",
-      "title": "Knockback"
+      "default": true
     },
     "lightning": {
       "type": "boolean",
       "default": false,
-      "description": "If true, the entity hit will be struck by lightning.",
+      "description": "If `true`, the projectile can channel a lightning bolt when it hits an entity during a thunderstorm.",
       "title": "Lightning"
     },
     "liquid_inertia": {
       "type": "number",
       "default": 0.6,
-      "description": "The fraction of the projectile's speed maintained every frame while traveling in water.",
+      "description": "Fraction of the projectile's velocity preserved each tick while traveling through a fluid.",
       "title": "Liquid Inertia"
     },
     "multiple_targets": {
       "type": "boolean",
       "default": true,
-      "description": "If true, the projectile can hit multiple entities per flight.",
+      "description": "If `true`, the projectile can hit more than one entity over the course of its flight; if `false`, it stops at the first entity it hits. Projectiles launched with the Piercing enchantment have this value set to `true`.",
       "title": "Multiple Targets"
-    },
-    "mob_effect": {
-      "title": "Mob Effect",
-      "$comment": "Deprecated",
-      "description": "SEE on_hit/mob_effect."
     },
     "offset": {
       "type": "array",
-      "default": [0, 0.0, 0],
-      "description": "The offset from the entity's anchor where the projectile will spawn.",
+      "default": [0, 0, 0],
+      "description": "Offset, relative to the `anchor`, at which the projectile is spawned when fired by the shooter.",
       "title": "Offset",
       "$ref": "../../../../general/vectors/number3.json"
     },
     "on_fire_time": {
       "type": "number",
       "default": 5,
-      "description": "Time in seconds that the entity hit will be on fire for.",
+      "description": "Duration in seconds for which an entity set on fire by this projectile remains burning. Applied both by the legacy top-level `catch_fire` flag and by the `catch_fire` on-hit subcomponent.",
       "title": "On Fire Time"
-    },
-    "owner_launch_immunity_ticks": {
-      "title": "Owner Launch Immunity Ticks",
-      "description": "Number of ticks after launch during which the projectile cannot hit its owner",
-      "type": "integer", 
-      "default": 5
     },
     "on_hit": {
       "additionalProperties": false,
       "type": "object",
-      "description": "Defines the behaviors that may execute on a projectile's hit, including impact damage, impact effect, and stuck in ground. See more on these parameters below.",
+      "description": "Defines the behaviors that may execute on a projectile's hit, including impact damage, impact effect, and stuck in ground.",
       "title": "On Hit",
       "properties": {
         "arrow_effect": {
           "title": "Arrow Effect",
           "type": "object",
-          "description": "The target receives a mob effect. See the table below for all arrow_effect parameters.",
+          "description": "Variant of `mob_effect` that derives the effects from the arrow's tipped-potion data and splits durations across the standard eight-arrow stack.",
           "additionalProperties": false,
           "properties": {
             "apply_effect_to_blocking_targets": {
               "type": "boolean",
               "title": "Apply Effect To Blocking Targets",
-              "description": "If true, the effect will be applied to blocking targets."
+              "description": "If `true`, effects are still applied to targets that blocked the projectile."
             }
           }
         },
         "catch_fire": {
           "title": "Catch Fire",
-          "type": "boolean",
-          "default": false,
-          "description": "Determines if the struck object is set on fire."
+          "description": "Determines if the struck object is set on fire.",
+          "oneOf": [
+            {
+              "type": "boolean",
+              "default": false
+            },
+            {
+              "type": "object", 
+              "additionalProperties": false,
+              "properties": {
+                "fire_affected_by_griefing": {
+                  "default": false,
+                  "description": "If `true`, the block-ignition behavior is suppressed when the shooter is a mob and the `mobGriefing` game rule is off.",
+                  "type": "boolean",
+                  "title": "Fire Affected By Griefing"
+                },
+                "on_fire_time": {
+                  "default": 0,
+                  "description": "Duration in seconds for which entity remains on fire",
+                  "type": "number",
+                  "title": "On Fire Time"
+                }
+              }
+            }
+          ]
         },
         "definition_event": {
           "title": "Definition Event",
           "type": "object",
-          "description": "The event that is triggered on a hit. See the table below for all definition event parameters.",
+          "description": "Fires an entity event on the shooter, the projectile, the entity hit, and/or all entities in a splash radius.",
           "additionalProperties": false,
           "properties": {
             "affect_projectile": {
               "title": "Affect Projectile",
               "type": "boolean",
               "default": false,
-              "description": "The projectile that will be affected by this event."
+              "description": "If `true`, the event is fired on the projectile entity itself."
             },
             "affect_shooter": {
               "title": "Affect Shooter",
               "type": "boolean",
               "default": false,
-              "description": "The shooter that will be affected by this event."
+              "description": "If `true`, the event is fired on the projectile's shooter."
             },
             "affect_splash_area": {
               "title": "Affect Splash Area",
               "type": "boolean",
               "default": false,
-              "description": "All entities in the splash area will be affected by this event."
+              "description": "If `true`, the event is fired on every entity within `splash_area` blocks of the impact."
             },
             "affect_target": {
               "title": "Affect Target",
               "type": "boolean",
               "default": false,
-              "description": "The target will be affected by this event."
+              "description": "If `true`, the event is fired on the entity hit by the projectile."
             },
             "event_trigger": {
               "title": "Event Trigger",
-              "description": "The event triggered. Also has an option filters parameter to limit affected targets.",
+              "description": "Event trigger to fire on the selected target(s).",
               "$ref": "../types/event.json"
             },
             "splash_area": {
               "title": "Splash Area",
               "type": "number",
               "default": 0.0,
-              "description": "The splash area that will be affected."
+              "description": "Radius (in blocks) used by `affect_splash_area`."
             }
           }
         },
-        "difficulty_randomization": {
-          "title": "Difficulty Randomization",
-          "description": "Controls how world difficulty contributes to the rolled damage. `none` ignores difficulty, `additive` adds a difficulty-driven term on top of the base damage, and `multiplicative` folds the difficulty term into `power_multiplier` before scaling by velocity.",
-          "type": "string",
-          "enum": ["none", "additive", "multiplicative"]
-        },
         "douse_fire": {
           "title": "Douse Fire",
-          "description": "If the target is on fire, then douse the fire.",
+          "description": "When the projectile is a water-effect potion, extinguishes fires and campfires at and around the hit block.",
           "type": "boolean",
           "default": false
         },
         "freeze_on_hit": {
           "title": "Freeze On Hit",
           "type": "object",
-          "description": "An area of entities that is frozen to block on hits. Has shape of either sphere or cube, snap_to_block boolean ,and size decimal properties.",
+          "description": "Freezes nearby water blocks to ice in a configurable volume around the impact.",
           "additionalProperties": false,
           "properties": {
             "shape": {
               "enum": ["sphere", "cube"],
-              "default": "sphere",
-              "description": "The shape of the area that is frozen.",
+              "default": "cube",
+              "description": "Shape of the freezing volume.",
               "title": "Shape"
             },
             "snap_to_block": {
               "type": "boolean",
               "default": false,
-              "description": "If true, the area will snap to the nearest block.",
+              "description": "If `true`, the freezing volume is centered on the hit block's center instead of the precise impact point.",
               "title": "Snap To Block"
             },
             "size": {
               "type": "number",
               "default": 0.0,
-              "description": "The size of the area that is frozen.",
+              "description": "Half-extent of the freezing volume (in blocks).",
               "title": "Size"
             }
           }
@@ -260,70 +272,77 @@
         "grant_xp": {
           "title": "Grant XP",
           "type": "object",
-          "description": "Grants XP on hit. Has minXP for minimum XP granted, maxXp for maximum, or simply flat xp properties.",
+          "description": "Drops experience orbs at the impact location.",
           "additionalProperties": false,
           "properties": {
             "minXP": {
               "title": "Min XP",
               "type": "number",
               "default": 0,
-              "description": "The minimum XP granted."
+              "description": "Minimum amount of experience to drop."
             },
             "maxXP": {
               "title": "Max XP",
               "type": "number",
               "default": 0,
-              "description": "The maximum XP granted."
+              "description": "Maximum amount of experience to drop."
             }
           }
         },
         "hurt_owner": {
           "title": "Hurt Owner",
           "type": "object",
-          "description": "Determines if the owner of the entity is hurt on hit. Contains decimal owner_damage, knockback boolean, and ignite boolean.",
+          "description": "Damages the projectile's owner when the projectile lands.",
           "additionalProperties": false,
           "properties": {
             "owner_damage": {
               "title": "Owner Damage",
               "type": "number",
               "default": 0,
-              "description": "The amount of damage the owner will take."
+              "description": "Amount of damage to deal to the owner."
             },
             "knockback": {
               "title": "Knockback",
               "type": "boolean",
               "default": false,
-              "description": "If true, the owner will be knocked back."
+              "description": "If `true`, the damage applies knockback to the owner."
             },
             "ignite": {
               "title": "Ignite",
               "type": "boolean",
               "default": false,
-              "description": "If true, the owner will be set on fire."
+              "description": "If `true`, the damage sets the owner on fire."
             }
           }
         },
         "ignite": {
           "title": "Ignite",
-          "type": "boolean",
-          "default": false,
-          "description": "Determines if a fire may be started on a flammable target."
+          "type": "object",
+          "additionalProperties": false,
+          "default": {},
+          "description": "Triggers the entity's `on_ignite` definition when the projectile hits."
         },
         "impact_damage": {
           "title": "Impact Damage",
           "type": "object",
-          "description": "Defines the damage that an entity may receive on being hit by this projectile. See the table below for all impact_damage parameters.",
+          "description": "Deals damage to the entity that was hit and optionally applies knockback, fire, channeling, and critical-hit scaling.",
           "additionalProperties": false,
           "properties": {
             "apply_knockback_to_blocking_targets": {
               "title": "Apply Knockback To Blocking Targets",
-              "description": "UNDOCUMENTED",
+              "description": "If `true`, knockback is still applied to targets that successfully blocked the hit.",
               "type": "boolean",
               "default": false
             },
             "catch_fire": {
               "title": "Catch Fire",
-              "description": "Determines if the struck object is set on fire.",
+              "description": "If `true`, the entity hit is set on fire (uses the projectile's `on_fire_time`).",
+              "type": "boolean",
+              "default": false
+            },
+            "ceil_pre_critical_damage": {
+              "title": "Ceil Pre Critical Damage",
+              "description": "If `true`, rounds the projectile's damage up to the next integer before the critical-hit multiplier is applied.",
               "type": "boolean",
               "default": false
             },
@@ -331,215 +350,139 @@
               "title": "Channeling",
               "type": "boolean",
               "default": true,
-              "description": "Whether lightning can be channeled through hte weapon."
+              "description": "If `true`, the projectile can call down a lightning bolt on the entity hit during a thunderstorm."
             },
             "damage": {
               "title": "Damage",
-              "description": "The damage dealt on impact.",
-              "oneOf": [
-                { "type": "number", "default": 1 },
-                {
-                  "type": "array",
-                  "items": [
-                    { "type": "number", "title": "Min" },
-                    { "type": "number", "title": "Max" }
-                  ]
-                }
-              ]
+              "description": "Range of damage to apply on impact. A random value in `[min, max]` is rolled per hit and the velocity-scaled `power_multiplier` term is added to it to define the projectile's base damage.",
+              "$ref": "../../../../general/min_max_float.json"
             },
             "destroy_on_hit": {
               "title": "Destroy On Hit",
               "type": "boolean",
               "default": false,
-              "description": "Projectile is removed on hit."
+              "description": "If `true`, the projectile is removed when it deals damage to an entity."
             },
             "destroy_on_hit_requires_damage": {
               "title": "Destroy On Hit Requires Damage",
               "type": "boolean",
               "default": true,
-              "description": "If true, then the hit must cause damage to destroy the projectile."
+              "description": "If `true`, `destroy_on_hit` only triggers when at least one point of damage is actually dealt (targets that fully absorb damage will not destroy the projectile)."
+            },
+            "difficulty_randomization": {
+              "enum": ["none", "additive", "multiplicative"],
+              "default": "none",
+              "description": "Controls how world difficulty contributes to the rolled damage. `none` ignores difficulty, `additive` adds a difficulty-driven term on top of the base damage, and `multiplicative` folds the difficulty term into `power_multiplier` before scaling by velocity.",
+              "title": "Difficulty Randomization"
             },
             "filter": {
               "title": "Filter",
               "type": "string",
-              "default": "not set",
-              "description": "The identifier of an entity that can be hit."
+              "default": "",
+              "description": "Entity family or type that the projectile is restricted to damaging. Entities outside the filter are not damaged."
             },
             "knockback": {
               "title": "Knockback",
               "type": "boolean",
               "default": true,
-              "description": "If true, the projectile will knock back the entity it hits."
+              "description": "If `true`, the entity hit is knocked back away from the projectile."
             },
             "max_critical_damage": {
               "title": "Max Critical Damage",
               "type": "integer",
-              "description": "Maximum critical damage."
+              "description": "If specified, sets the maximum damage after critical damage has been applied. Enchantments have already been applied at this point, so this clamps the final damage value of critical hits.",
+              "default": 2147483647
             },
             "min_critical_damage": {
               "title": "Min Critical Damage",
               "type": "integer",
               "default": 0,
-              "description": "Minimum critical damage."
+              "description": "If specified, sets the minimum damage after critical damage has been applied. Enchantments have already been applied at this point, so this clamps the final damage value of critical hits."
             },
             "power_multiplier": {
               "title": "Power Multiplier",
               "type": "number",
-              "default": 2.0,
-              "description": "How much the base damage is multiplied."
-            },
-            "semi_random_diff_damage": {
-              "title": "Semi Random Diff Damage",
-              "type": "boolean",
-              "default": false,
-              "description": "If true, damage will be randomized based on damage and speed."
+              "default": 0,
+              "description": "Multiplied by the projectile's velocity and added to the rolled `damage` to define the projectile's base damage, so it can be used on its own to scale damage by the projectile's velocity."
             },
             "set_last_hurt_requires_damage": {
               "title": "Set Last Hurt Requires Damage",
               "type": "boolean",
-              "default": false,
-              "description": "If true, then the hit must cause damage to update the last hurt property."
-            },
-            "should_bounce": {
-              "title": "Should Bounce",
-              "description": "If true, the projectile will bounce",
-              "enum": ["no", "if_invulnerable", "if_no_damage_dealt"]
-            },
-            "ceil_pre_critical_damage": {
-              "title": "Ceil Pre Critical Damage",
-              "description": "If `true`, rounds the projectile's damage up to the next integer before the critical-hit multiplier is applied.",
-              "type": "boolean",
-              "default": false
+              "default": true,
+              "description": "If `true`, the projectile only registers as the last hurt-by source on the target when at least one point of damage is actually dealt."
             }
           }
         },
         "mob_effect": {
           "title": "Mob Effect",
-          "type": "object",
-          "description": "The target receives a mob effect. See the table below for all mob_effect parameters.",
-          "additionalProperties": false,
-          "properties": {
-            "ambient": {
-              "title": "Ambient",
-              "type": "boolean",
-              "default": false,
-              "description": "If true, a mob will spawn that is not hostile, like the bat entity in Minecraft."
-            },
-            "amplifier": {
-              "title": "Amplifier",
-              "type": "integer",
-              "default": 1,
-              "description": "The multiplier of the amplification of this effect."
-            },
-            "duration": {
-              "title": "Duration",
-              "anyOf": [
-                {
-                  "type": "integer",
-                  "default": 1,
-                  "minimum": 0
-                },
-                {
-                  "const": "infinite"
-                }
-              ],
-              "description": "The effect's duration."
-            },
-            "durationeasy": {
-              "title": "Duration Easy",
-              "anyOf": [
-                {
-                  "type": "integer",
-                  "default": 0,
-                  "minimum": 0
-                },
-                {
-                  "const": "infinite"
-                }
-              ],
-              "description": "The effect's duration on easy mode."
-            },
-            "durationhard": {
-              "title": "Duration Hard",
-              "anyOf": [
-                {
-                  "type": "integer",
-                  "default": 800,
-                  "minimum": 0
-                },
-                {
-                  "const": "infinite"
-                }
-              ],
-              "description": "The effect's duration on hard mode."
-            },
-            "durationnormal": {
-              "title": "Duration Normal",
-              "type": "integer",
-              "anyOf": [
-                {
-                  "type": "integer",
-                  "default": 200,
-                  "minimum": 0
-                },
-                {
-                  "const": "infinite"
-                }
-              ],
-              "description": "The effect's duration on normal mode."
-            },
-            "effect": {
-              "title": "Effect",
-              "$ref": "../../../../general/vanilla/effect.json",
-              "description": "The identifier of the mob entity to affect."
-            },
-            "visible": {
-              "title": "Visible",
-              "type": "boolean",
-              "default": false,
-              "description": "Does the entity's look change."
+          "description": "Applies one or more mob effects to the entity hit.",
+          "type": "array", 
+          "items": {
+            "description": "Array of effect objects.",
+            "type": "object", 
+            "additionalProperties": false,
+            "properties": {
+              "amplifier": {
+                "title": "Amplifier",
+                "type": "integer",
+                "default": 1,
+                "description": "The multiplier of the amplification of this effect."
+              },
+              "durationeasy": {
+                "title": "Duration Easy",
+                "description": "The effect's duration on easy mode.",
+                "$ref": "#/definitions/duration"
+              },
+              "durationhard": {
+                "title": "Duration Hard",
+                "description": "The effect's duration on hard mode.",
+                "$ref": "#/definitions/duration"
+              },
+              "durationnormal": {
+                "title": "Duration Normal",
+                "description": "The effect's duration on normal mode.",
+                "$ref": "#/definitions/duration"
+              },
+              "effect": {
+                "title": "Effect",
+                "$ref": "../../../../general/vanilla/effect.json",
+                "description": "The identifier of the mob entity to affect."
+              } 
             }
           }
-        },
-        "on_fire_time": {
-          "title": "On Fire Time",
-          "type": "number",
-          "default": 0.0,
-          "description": "The amount of time a target will remain on fire."
         },
         "particle_on_hit": {
           "title": "Particle On Hit",
           "type": "object",
-          "description": "The particles that spawn on hit. See the table below for all particle_on_hit parameters.",
+          "description": "Emits a particle effect at the impact location, optionally only for entity hits or only for non-entity hits.",
           "additionalProperties": false,
           "properties": {
             "num_particles": {
               "title": "Num Particles",
               "type": "number",
-              "default": 6,
-              "description": "The number of particles to spawn."
+              "default": 1,
+              "description": "Number of particles to spawn per hit."
             },
             "on_entity_hit": {
               "title": "On Entity Hit",
               "type": "boolean",
               "default": false,
-              "description": "If true, spawns particles on an entity hit."
+              "description": "If `true`, particles are spawned when the projectile hits an entity."
             },
             "on_other_hit": {
               "title": "On Other Hit",
               "type": "boolean",
               "default": false,
-              "description": "If true, spawns particles on any other hit."
+              "description": "If `true`, particles are spawned when the projectile hits something that is not an entity."
             },
             "particle_type": {
               "title": "Particle Type",
               "type": "string",
-              "default": "not set",
-              "description": "The id of the particle to spawn on hit."
+              "$ref": "../../../../general/legacy_particle_types.json"
             },
             "particle_item_name": {
               "title": "Particle Item Name",
-              "description": "Maps an item name to an actor filter to determine what the name of the item used in the particle should be.",
+              "description": "Map from item identifier to a filter group, used to select an item icon for `iconcrack`-style particles based on context (e.g. the projectile's owner).",
               "type": "object",
               "additionalProperties": {
                 "$ref": "../../filters/filters.json"
@@ -547,16 +490,10 @@
             }
           }
         },
-        "potion_effect": {
-          "title": "Potion Effect",
-          "type": "integer",
-          "default": -1,
-          "description": "Defines the effect the arrow will apply to the entity it hits."
-        },
         "remove_on_hit": {
           "title": "Remove On Hit",
           "type": "object",
-          "description": "Removes the projectile.",
+          "description": "Removes the projectile from the world when it hits a block, entity, or (if `hit_water` is set) water.",
           "additionalProperties": true,
           "properties": {}
         },
@@ -564,245 +501,224 @@
           "title": "Spawn AOE Cloud",
           "type": "object",
           "default": false,
-          "description": "Potion spawns an area of effect cloud. See the table below for all spawn_aoe_cloud parameters.",
+          "description": "Spawns an area effect cloud at the impact point that applies potion effects to entities inside it over time",
           "additionalProperties": false,
           "properties": {
             "affect_owner": {
               "title": "Affect Owner",
               "type": "boolean",
               "default": true,
-              "description": "Determines if the projectile shooter is affected."
-            },
-            "color": {
-              "title": "Color",
-              "type": "array",
-              "description": "Particle color defined by three rgb values.",
-              "$ref": "../../../../general/vectors/number3.json"
+              "description": "If `true`, the projectile's owner can be affected by the cloud."
             },
             "duration": {
               "title": "Duration",
-              "type": "integer",
-              "default": 0,
-              "description": "How long the particle emits."
+              "description": "How long, in seconds, the cloud persists before disappearing.",
+              "$ref": "#/definitions/duration"
             },
             "particle": {
               "title": "Particle",
-              "type": "string",
-              "description": "The particle emitter."
+              "description": "Particle effect emitted by the cloud.",
+              "default": "mobspellambient",
+              "$ref": "../../../../general/legacy_particle_types.json"
             },
             "potion": {
               "title": "Potion",
               "type": "integer",
               "default": -1,
-              "description": "The id of the potion."
+              "description": "Aux value of the potion whose effects the cloud applies. When `-1`, the potion is taken from the projectile entity itself."
             },
             "radius": {
               "title": "Radius",
               "type": "number",
               "default": 0,
-              "description": "Defines the affected area."
+              "description": "Initial radius (in blocks) of the cloud."
             },
             "radius_on_use": {
               "title": "Radius On Use",
               "type": "number",
               "default": -1,
-              "description": "Defines the affected area when potion is used."
+              "description": "Amount the radius shrinks (or grows) each time the cloud applies its effects. `-1` keeps the radius unchanged."
             },
             "reapplication_delay": {
               "title": "Reapplication Delay",
               "type": "integer",
               "default": 0,
-              "description": "Delay before the potion can affect the area again."
+              "description": "Number of ticks the cloud waits before re-applying its effects to the same entity."
             }
           }
         },
         "spawn_chance": {
           "title": "Spawn Chance",
           "type": "object",
-          "description": "Contains information on the chance of spawning an entity on hit. See parameters below.",
+          "description": "Conditionally spawns one or two groups of entities at the impact location and optionally fires events on each spawned entity.",
           "additionalProperties": false,
           "properties": {
+            "first_spawn_chance": {
+              "title": "First Spawn Chance",
+              "type": "number",
+              "default": 0,
+              "minimum": 0,
+              "maximum": 1,
+              "description": "Percent chance (0-1.0) that the first group spawns."
+            },
             "first_spawn_count": {
               "title": "First Spawn Count",
               "type": "integer",
               "default": 0,
-              "description": "The amount of new entities spawned."
+              "description": "Number of entities spawned when the first roll succeeds."
             },
-            "first_spawn_percent_chance": {
-              "title": "First Spawn Percent Chance",
-              "type": "number",
-              "default": 0,
-              "description": "The chance that a spawn occurs when a projectile hits the entity."
-            },
-            "first_spawn_chance": {
-              "title": "First Spawn Chance",
-              "type": "number",
-              "default": 8,
-              "description": "The chance that a first spawn occurs when a projectile hits the entity."
+            "on_spawn": {
+              "title": "On Spawn",
+              "description": "Array of entity event triggers to fire on each spawned entity.",
+              "type": "array",
+              "items": {
+                "$ref": "../types/trigger.json"
+              }
             },
             "second_spawn_chance": {
-              "title": "Second Spawn Chance",
+              "title": "First Spawn Chance",
               "type": "number",
-              "default": 32,
-              "description": "The chance that a second spawn occurs when a projectile hits the entity."
+              "default": 0,
+              "minimum": 0,
+              "maximum": 1,
+              "description": "Percent chance (0-1.0) that the first group spawns."
             },
             "second_spawn_count": {
-              "title": "Second Spawn Count",
+              "title": "First Spawn Count",
               "type": "integer",
               "default": 0,
-              "description": "The amount of new entities spawned in teh second spawn."
+              "description": "Number of entities spawned when the first roll succeeds."
             },
             "spawn_baby": {
               "title": "Spawn Baby",
               "type": "boolean",
               "default": false,
-              "description": "Determines if a baby spawns."
+              "description": "If `true`, spawned entities start as babies (where applicable)."
             },
             "spawn_definition": {
               "title": "Spawn Definition",
               "type": "string",
-              "default": "not set",
-              "description": "The entity that will spawn."
-            },
-            "on_spawn": {
-              "title": "On Spawn",
-              "description": "Triggered on the newly spawned entity with other set to the owning entity.",
-              "type": "array",
-              "items": {
-                "$ref": "../types/trigger.json"
-              }
+              "description": "Identifier of the entity definition to spawn."
             }
           }
         },
         "stick_in_ground": {
           "title": "Stick In Ground",
           "type": "object",
-          "description": "Decides if the object sticks in ground and contains shake_time integer parameter to determine how long it will shake."
+          "description": "Causes the projectile to embed itself in the block it hits.",
+          "additionalProperties": false,
+          "properties": {
+            "shake_time": {
+              "title": "Shake Time",
+              "description": "Duration in seconds for which the projectile visually shakes after sticking.",
+              "type": "number", 
+              "default": 0
+            }
+          }
         },
         "teleport_owner": {
           "title": "Teleport Owner",
-          "description": "Determines if the owner is transported on hit.",
-          "type": "boolean",
-          "default": false
+          "description": "Teleports the projectile's owner to the impact location.",
+          "type": "object", 
+          "additionalProperties": false,
+          "properties": {}
         },
         "thrown_potion_effect": {
           "title": "Thrown Potion Effect",
+          "description": "Applies the splash-potion effects of a thrown potion to nearby entities at the impact point.",
           "type": "object",
-          "description": "Creates a splash area for effects caused by a thrown potion."
+          "additionalProperties": false,
+          "properties": {
+            "effect": {
+              "title": "Effect",
+              "description": "Aux value of the potion to apply.",
+              "type": "integer", 
+              "default": -1
+            }
+          }
+        },
+        "wind_burst_on_hit": {
+          "title": "Wind Burst On Hit",
+          "description": "Releases an outward wind burst at the impact point that pushes nearby entities away.",
+          "type": "object", 
+          "additionalProperties": false,
+          "properties": {}
         }
       }
     },
     "particle": {
       "type": "string",
       "default": "iconcrack",
-      "description": "Particle to use upon collision.",
+      "$ref": "../../../../general/legacy_particle_types.json",
+      "description": "Particle effect emitted at the impact location when the projectile hits something.",
       "title": "Particle"
     },
     "potion_effect": {
       "type": "integer",
       "default": -1,
-      "description": "Defines the effect the arrow will apply to the entity it hits.",
+      "description": "Default potion aux value associated with the projectile. Normally set programmatically by potion items; rarely useful at authoring time. A value matching the water potion is required for the `douse_fire` on-hit subcomponent to extinguish fires.",
       "title": "Potion Effect"
     },
     "power": {
       "type": "number",
       "default": 1.3,
-      "description": "Determines the velocity of the projectile.",
+      "description": "Initial speed (in blocks per tick) at which the projectile is launched.",
       "title": "Power"
     },
     "reflect_immunity": {
       "type": "number",
       "default": 0,
-      "description": "During the specified time, in seconds, the projectile cannot be reflected by hitting it",
+      "description": "Duration in seconds after launch during which the projectile cannot be reflected by being struck.",
       "title": "Reflect Immunity"
     },
     "reflect_on_hurt": {
       "type": "boolean",
       "default": false,
-      "description": "If true, this entity will be reflected back when hit.",
+      "description": "If `true`, the projectile reverses direction when struck, reflecting back towards the attacker.",
       "title": "Reflect On Hurt"
     },
     "shoot_sound": {
       "$ref": "../../../../general/sound_event.json",
       "default": "",
-      "description": "The sound that plays when the projectile is shot.",
+      "description": "Identifier of the sound to play when the projectile is fired.",
       "title": "Shoot Sound"
     },
     "shoot_target": {
       "type": "boolean",
       "default": true,
-      "description": "If true, the projectile will be shot towards the target of the entity firing it.",
+      "description": "If `true`, the projectile is aimed at the shooter's current target (when one exists) rather than straight ahead.",
       "title": "Shoot Target"
     },
     "should_bounce": {
-      "type": "boolean",
-      "default": false,
-      "description": "If true, the projectile will bounce upon hit.",
-      "title": "Should Bounce"
-    },
-    "splash_potion": {
-      "type": "boolean",
-      "default": false,
-      "description": "If true, the projectile will be treated like a splash potion.",
-      "title": "Splash Potion"
+      "description": "Controls whether the projectile bounces off entities on impact.",
+      "title": "Should Bounce",
+      "enum": ["no", "if_invulnerable", "if_no_damage_dealt"]
     },
     "splash_range": {
       "type": "number",
       "default": 4,
-      "description": "Radius in blocks of the 'splash' effect.",
+      "description": "Splash radius (in blocks) used when applying potion effects via the splash/lingering potion code path.",
       "title": "Splash Range"
     },
     "stop_on_hurt": {
       "title": "Stop On Hurt",
       "type": "boolean",
-      "description": "Determines if the projectile stops when the target is hurt."
+      "description": "If `true`, the projectile has its velocity zeroed out when struck."
     },
     "uncertainty_base": {
       "type": "number",
       "default": 0,
-      "description": "The base accuracy. Accuracy is determined by the formula uncertaintyBase - difficultyLevel * uncertaintyMultiplier.",
+      "description": "Base inaccuracy added to the launch direction. The total inaccuracy is `uncertainty_base - difficultyLevel * uncertainty_multiplier`.",
       "title": "Uncertainty Base"
     },
     "uncertainty_multiplier": {
       "type": "number",
       "default": 0,
-      "description": "Determines how much difficulty affects accuracy. Accuracy is determined by the formula uncertaintyBase - difficultyLevel * uncertaintyMultiplier.",
+      "description": "Per-difficulty-level reduction in inaccuracy. The total inaccuracy is `uncertainty_base - difficultyLevel * uncertainty_multiplier`.",
       "title": "Uncertainty Multiplier"
     }
   },
   "examples": [
-    {
-      "anchor": 0,
-      "angle_offset": 0,
-      "catch_fire": false,
-      "crit_particle_on_hurt": false,
-      "destroy_on_hurt": false,
-      "filter": "",
-      "fire_affected_by_griefing": false,
-      "gravity": 0.05,
-      "hit_sound": "",
-      "homing": false,
-      "inertia": 0.99,
-      "is_dangerous": false,
-      "knockback": true,
-      "lightning": false,
-      "liquid_inertia": 0.6,
-      "multiple_targets": true,
-      "offset": [],
-      "on_fire_time": 5,
-      "on_hit": {},
-      "particle": "iconcrack",
-      "potion_effect": -1,
-      "power": 1.3,
-      "reflect_on_hurt": false,
-      "semi_random_diff_damage": false,
-      "shoot_sound": "",
-      "shoot_target": true,
-      "should_bounce": false,
-      "splash_potion": false,
-      "splash_range": 4,
-      "uncertainty_base": 0,
-      "uncertainty_multiplier": 0
-    }
+    {}
   ]
 }

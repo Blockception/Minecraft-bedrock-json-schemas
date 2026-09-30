@@ -11,24 +11,20 @@
     "control_flags": {
       "$ref": "./types/control_flags.json"
     },
+    "in_range_movement_mode": {
+      "title": "In Range Movement Mode",
+      "description": "Controls how the entity moves while its target is within the configured attack range. \"hold_position\" makes the entity stop and hold its position while facing and attacking the target. \"follow_target\" makes the entity continue moving toward the target while attacking, stopping just outside the minimum attack range.",
+      "enum": ["hold_position", "follow_target"]
+    },
     "attack_interval": {
       "title": "Attack Interval",
       "$ref": "../../../../general/min_max_float.json",
       "description": "Reload-time (in seconds), when not using a charged shot. Does not scale with target-distance."
     },
-    "attack_radius": {
-      "title": "Attack Radius",
-      "type": "number",
-      "default": 0,
-      "exclusiveMinimum": 0,
-      "description": "Minimum distance to target before this entity will attempt to shoot."
-    },
-    "attack_radius_min": {
-      "title": "Attack Radius Min",
-      "type": "number",
-      "default": 0,
-      "exclusiveMinimum": 0,
-      "description": "Minimum distance the target can be for this mob to fire. If the target is closer, this mob will move first before firing"
+    "attack_range": {
+      "title": "Attack Range",
+      "$ref": "../../../../general/min_max_float.json",
+      "description": "Range of distances from the target within which the entity can perform a ranged attack."
     },
     "burst_interval": {
       "title": "Burst Interval",
@@ -102,14 +98,12 @@
       "attack_interval": 0,
       "attack_interval_max": 0,
       "attack_interval_min": 0,
-      "attack_radius": 0,
       "burst_interval": 0,
       "burst_shots": 1,
       "charge_charged_trigger": 0,
       "charge_shoot_trigger": 0,
       "ranged_fov": 90,
       "target_in_sight_time": 0.0,
-      "attack_radius_min": 0.0
     }
   ]
 }

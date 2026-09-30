@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.can_stand_on_powder_snow",
+  "description": "Defines whether an entity can stand on powder snow without sinking",
+  "type": "object",
+  "title": "Can Stand On Powder Snow",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {}
+}

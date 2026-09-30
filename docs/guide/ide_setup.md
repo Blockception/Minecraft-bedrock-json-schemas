@@ -274,6 +274,17 @@ lspconfig.jsonls.setup({
           url = "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/dialogue/dialogue.json"
         },
         {
+          description = "Minecraft Bedrock Loot Tables",
+          fileMatch = {
+            "behavior_packs/*/dimensions/*.json",
+            "*behavior*pack*/dimensions/*.json",
+            "*BP*/dimensions/*.json",
+            "*.dimensions.json",
+            "*.dim.json"
+          },
+          url = "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/dimensions/dimensions.json"
+        },
+        {
           description = "Minecraft Bedrock Function Tick",
           fileMatch = { "functions/tick.json", "functions/tick.jsonc", "functions/tick.json5" },
           url = "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/functions/tick.json"
@@ -416,7 +427,7 @@ lspconfig.jsonls.setup({
 }
 ```
 
-4. **File Pattern Matching**: The `fileMatch` patterns support glob patterns. If your file naming conventions differ, adjust the patterns accordingly.
+1. **File Pattern Matching**: The `fileMatch` patterns support glob patterns. If your file naming conventions differ, adjust the patterns accordingly.
 
 ---
 

@@ -1,0 +1,25 @@
+{
+  "$id": "blockception.minecraft.behavior.dimensions.minecraft.dimension_height",
+  "title": "Dimension Height",
+  "description": "Sets the vertical bounds of the dimension.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["min_y", "height_range"],
+  "properties": {
+    "height_range": {
+      "title": "Height Range",
+      "description": "The number of blocks between the bottom and the top of the dimension.",
+      "type": "integer",
+      "minimum": 16,
+      "maximum": 1024,
+      "multipleOf": 16
+    },
+    "min_y": {
+      "title": "Min Y",
+      "description": "The lowest Y level of the dimension.",
+      "type": "integer",
+      "minimum": -512,
+      "maximum": 512
+    }
+  }
+}

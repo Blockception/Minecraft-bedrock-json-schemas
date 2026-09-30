@@ -2,6 +2,15 @@
   "$id": "blockception.minecraft.behavior.loot_tables.conditions",
   "description": "A minecraft loot table condition.",
   "title": "Condition",
+  "type": "object",
+  "properties": {
+    "operator": {
+      "title": "Operator",
+      "description": "Allows control of whether the condition's result is used directly or negated",
+      "type": "string",
+      "enum": ["==", "!=", "not"]
+    }
+  },
   "allOf": [
     {
       "if": { "properties": { "condition": { "const": "biome_has_tag" } } },

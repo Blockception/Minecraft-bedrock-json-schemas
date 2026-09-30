@@ -421,6 +421,22 @@
     },
     {
       "fileMatch": [
+        "behavior_packs/*/dimensions/*.{json,jsonc,json5,templ,modl,jsonte}",
+        "*behavior*pack*/dimensions/*.{json,jsonc,json5,templ,modl,jsonte}",
+        "*Behavior*Pack*/dimensions/*.{json,jsonc,json5,templ,modl,jsonte}",
+        "*BP*/dimensions/*.{json,jsonc,json5,templ,modl,jsonte}",
+        "*bp*/dimensions/*.{json,jsonc,json5,templ,modl,jsonte}",
+        "behavior_packs/*/dimensions/**/*.{json,jsonc,json5,templ,modl,jsonte}",
+        "*behavior*pack*/dimensions/**/*.{json,jsonc,json5,templ,modl,jsonte}",
+        "*Behavior*Pack*/dimensions/**/*.{json,jsonc,json5,templ,modl,jsonte}",
+        "*BP*/dimensions/**/*.{json,jsonc,json5,templ,modl,jsonte}",
+        "*bp*/dimensions/**/*.{json,jsonc,json5,templ,modl,jsonte}",
+        "*.{dim,dimension}.{json,jsonc,json5,templ,modl,jsonte}"
+      ],
+      "url": "https://raw.githubusercontent.com/Blockception/Minecraft-bedrock-json-schemas/main/behavior/dimensions/dimensions.json"
+    },
+    {
+      "fileMatch": [
         "behavior_packs/*/entities/*.{json,jsonc,json5,templ,modl,jsonte}",
         "*behavior*pack*/entities/*.{json,jsonc,json5,templ,modl,jsonte}",
         "*Behavior*Pack*/entities/*.{json,jsonc,json5,templ,modl,jsonte}",

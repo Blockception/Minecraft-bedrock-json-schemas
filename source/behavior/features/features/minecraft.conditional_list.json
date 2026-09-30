@@ -1,0 +1,41 @@
+{
+  "type": "object",
+  "title": "Conditional List Feature",
+  "description": "'minecraft:conditional_list' places the first suitable feature within a collection. These conditional features will be evaluated in order.",
+  "additionalProperties": false,
+  "required": ["description"],
+  "properties": {
+    "description": {
+      "$ref": "../types/description.json"
+    },
+    "conditional_features": {
+      "title": "Conditional Features",
+      "description": "Array of features, and their associated conditions, for attempted placement. These features will be evaluated as ordered.",
+      "type": "array", 
+      "minItems": 1,
+      "items": {
+        "type": "object", 
+        "additionalProperties": false,
+        "properties": {
+          "feature": {
+            "title": "Feature",
+            "description": "Feature to be placed.",
+            "type": "string"
+          },
+          "condition": {
+            "title": "Condition",
+            "description": "Condition for placing associated Feature. If omitted, always places.",
+            "$ref": "../../../molang/string.json"
+          }
+        }
+      }
+    },
+    "early_out_scheme": {
+      "title": "Early Out Scheme",
+      "description": "Denote whether placement should end on first successful placement ('placement_success'), first passed condition ('condition_success'), or evaluate all features ('none'). Defaults to 'none'.",
+      "type": "string",
+      "default": "none",
+      "enum": ["condition_success", "placement_success", "none"]
+    }
+  }
+}

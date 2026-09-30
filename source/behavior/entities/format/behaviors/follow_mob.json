@@ -8,6 +8,9 @@
     "priority": {
       "$ref": "types/priority.json"
     },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "filters": {
       "title": "Filters",
       "description": "If non-empty, provides criteria for filtering which nearby Mobs can be followed. If empty default criteria will be used, which will exclude Players, Squid variants, Fish variants, Tadpoles, Dolphins, and mobs of the same type as the owner of the Goal.",
@@ -29,7 +32,6 @@
     },
     "stop_distance": {
       "type": "number",
-      "default": 2,
       "description": "The distance in blocks this mob stops from the mob it is following.",
       "title": "Stop Distance"
     },

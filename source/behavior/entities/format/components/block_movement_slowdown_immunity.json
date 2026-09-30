@@ -1,0 +1,17 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.block_movement_slowdown_immunity",
+  "type": "object",
+  "title": "Block Movement Slowdown Immunity",
+  "description": "Prevents specified blocks from contributing to this entity's block movement slowdown. It does not cause other blocks to apply slowdown",
+  "additionalProperties": false,
+  "properties": {
+    "blocks": {
+      "type": "array",
+      "title": "Blocks",
+      "description": "List of block descriptors whose existing movement slowdown contribution should be ignored. If omitted or empty, no contributions are ignored.",
+      "items": {
+        "$ref": "../../../../general/block/reference.json"
+      }
+    }
+  }
+}

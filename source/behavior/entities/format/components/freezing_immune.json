@@ -1,0 +1,9 @@
+{
+  "$id": "blockception.minecraft.behavior.entities.minecraft.freezing_immune",
+  "description": "Defines whether an entity should be affected by freezing.",
+  "type": "object",
+  "title": "Freezing Immune",
+  "additionalProperties": false,
+  "required": [],
+  "properties": {}
+}

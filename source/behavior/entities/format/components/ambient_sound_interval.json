@@ -20,7 +20,8 @@
           "condition": {
             "type": "string",
             "description": "The condition that must be satisfied to select the given ambient sound.",
-            "title": "Condition"
+            "title": "Condition",
+            "$ref": "../../../../molang/string.json"
           },
           "event_name": {
             "type": "string",

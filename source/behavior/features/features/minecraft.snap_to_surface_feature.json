@@ -14,11 +14,6 @@
       "type": "string",
       "$ref": "../../../general/feature/identifier.json"
     },
-    "vertical_search_range": {
-      "title": "Vertical Search Range",
-      "description": "Range to search for a floor or ceiling for snapping the feature.",
-      "type": "number"
-    },
     "search_range": {
       "title": "Search Range",
       "description": "Range to search for a surface for snapping the feature.",

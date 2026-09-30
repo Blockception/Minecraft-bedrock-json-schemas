@@ -69,6 +69,17 @@
       "title": "Target Teleport Chance",
       "minimum": 0.0,
       "maximum": 1.0
+    },
+    "teleports_on_projectile_hit": {
+      "title": "Teleports On Projectile Hit",
+      "description": "If true, the entity will attempt to teleport away from projectiles about to hit it",
+      "type": "boolean",
+      "default": false
+    },
+    "projectile_filter": {
+      "title": "Projectile Filter",
+      "$ref": "../../filters/filters.json",
+      "description": "Filter that an incoming projectile must meet to trigger a teleport attempt"
     }
   },
   "examples": [
