@@ -54,7 +54,60 @@
     "components": {
       "type": "object",
       "description": "The components of this item.",
-      "additionalProperties": true,
+      "additionalProperties": {
+        "title": "Item Custom Component",
+        "description": "An item custom component instance.",
+        "$comment": "UNDOCUMENTED",
+        "anyOf": [
+          {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "not": { "type": ["array", "object"] }
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": {
+                    "not": { "type": ["array", "object"] }
+                  }
+                },
+                {
+                  "not": { "type": ["array", "object"] }
+                }
+              ]
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": {
+              "anyOf": [
+                {
+                  "type": "array",
+                  "items": {
+                    "not": { "type": ["array", "object"] }
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": {
+                    "not": { "type": ["array", "object"] }
+                  }
+                },
+                {
+                  "not": { "type": ["array", "object"] }
+                }
+              ]
+            }
+          },
+          {
+            "not": { "type": ["array", "object"] }
+          }
+        ]
+      },
       "properties": {
         "minecraft:allow_off_hand": { "$ref": "./components/allow_off_hand.json" },
         "minecraft:block_placer": { "$ref": "./components/block_placer.json" },
