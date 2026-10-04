@@ -17,7 +17,7 @@
         "interactions": [
           {
             "add_items": { "table": "loot_tables/entities/vending.machine.json" },
-            "play_sounds": "random.levelup",
+            "play_sounds": ["random.levelup"],
             "use_item": true,
             "swing": true,
             "on_interact": {

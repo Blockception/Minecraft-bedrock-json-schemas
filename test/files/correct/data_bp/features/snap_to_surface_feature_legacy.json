@@ -5,7 +5,6 @@
       "identifier": "example:snap_to_surface_legacy"
     },
     "feature_to_snap": "example:placed",
-    "vertical_search_range": 12,
     "surface": "floor"
   }
 }
