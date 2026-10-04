@@ -157,7 +157,6 @@
       "then": {
         "properties": {
           "minecraft:snap_to_surface_feature": {
-            "required": ["vertical_search_range"],
             "properties": {
               "search_range": {
                 "not": {},
