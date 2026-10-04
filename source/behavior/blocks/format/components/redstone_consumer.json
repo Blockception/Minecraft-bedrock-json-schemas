@@ -4,7 +4,6 @@
   "description": "A component describing how a block can consume and potentially propogate a redstone signal",
   "type": "object",
   "additionalProperties": false,
-  "required": ["min_power"],
   "properties": {
     "min_power": {
       "title": "Min Power",
