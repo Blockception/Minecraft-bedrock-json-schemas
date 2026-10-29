@@ -139,6 +139,7 @@
     }
   },
   "properties": {
+    "format_version": { "$ref": "../../general/format_version.json" },
     "pools": {
       "$ref": "#/definitions/pools_spec",
       "description": "UNDOCUMENTED.",
