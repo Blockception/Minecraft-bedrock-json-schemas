@@ -33,22 +33,8 @@
     "random_teleport_cube": {
       "title": "Random Teleport Cube",
       "description": "Entity will teleport to a random position within the area defined by this cube.",
-      "type": "array",
-      "default": [32.0, 16.0, 32.0],
-      "items": [
-        {
-          "type": "number",
-          "title": "A"
-        },
-        {
-          "type": "number",
-          "title": "B"
-        },
-        {
-          "type": "number",
-          "title": "C"
-        }
-      ]
+      "$ref": "../../../../general/vectors/number3.json",
+      "default": [32.0, 16.0, 32.0]
     },
     "random_teleports": {
       "type": "boolean",
@@ -88,7 +74,7 @@
       "light_teleport_chance": 0.01,
       "max_random_teleport_time": 20,
       "min_random_teleport_time": 0,
-      "random_teleport_cube": [],
+      "random_teleport_cube": [32, 16, 32],
       "random_teleports": true,
       "target_distance": 16,
       "target_teleport_chance": 1

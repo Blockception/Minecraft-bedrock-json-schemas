@@ -8,7 +8,10 @@
   "properties": {
     "damage": {
       "title": "Damage",
-      "$ref": "../types/range_number_type.json",
+      "oneOf": [
+        { "type": "number" },
+        { "$ref": "../../../../general/min_max_float.json" }
+      ],
       "description": "Range of the random amount of damage the melee attack deals. A negative value can heal the entity instead of hurting it."
     },
     "effect_name": {
