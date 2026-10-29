@@ -90,7 +90,7 @@
       "description": "Defines where riders are placed when dismounting this entity:\n- \"default\", riders are placed on a valid ground position around the entity, or at the center of the entity's collision box if none is found.\n- \"on_top_center\", riders are placed at the center of the top of the entity's collision box.",
       "type": "string",
       "default": "default",
-      "enum": ["default", "on_top_center"]
+      "enum": ["default", "on_top_center", "looking"]
     },
     "on_rider_enter_event": {
       "title": "On Rider Enter Event",
