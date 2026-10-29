@@ -1,0 +1,6 @@
+{
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.enchantment_power_transmitter",
+  "title": "Enchantment Power Transmitter",
+  "description": "Describes the enchantment power transmission properties of this block.",
+  "type": "boolean"
+}

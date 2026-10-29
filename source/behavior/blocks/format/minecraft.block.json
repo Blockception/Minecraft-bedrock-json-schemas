@@ -77,6 +77,7 @@
         "minecraft:destruction_particles": { "$ref": "./components/destruction_particles.json" },
         "minecraft:display_name": { "$ref": "./components/display_name.json" },
         "minecraft:embedded_visual": { "$ref": "./components/embedded_visual.json" },
+        "minecraft:enchantment_power_transmitter": { "$ref": "./components/enchantment_power_transmitter.json" },
         "minecraft:flammable": { "$ref": "./components/flammable.json" },
         "minecraft:flower_pottable": { "$ref": "./components/flower_pottable.json" },
         "minecraft:friction": { "$ref": "./components/friction.json" },
