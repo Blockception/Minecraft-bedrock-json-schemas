@@ -82,7 +82,7 @@
       "title": "Trunk Width",
       "description": "The width of the tree trunk.",
       "type": "integer",
-      "minimum": 1
+      "$ref": "../types/int_range.json"
     },
     "height": {
       "title": "Height",
