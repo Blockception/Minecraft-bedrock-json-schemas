@@ -129,18 +129,10 @@
     "seats": {
       "description": "The list of positions and number of riders for each position for entities riding this entity.",
       "title": "Seats",
-      "oneOf": [
-        {
-          "type": "object",
-          "$ref": "#/definitions/seats_spec"
-        },
-        {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/seats_spec"
-          }
-        }
-      ]
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/seats_spec"
+      }
     }
   },
   "examples": [

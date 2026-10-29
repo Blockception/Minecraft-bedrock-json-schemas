@@ -12,6 +12,9 @@
     "speed_multiplier": {
       "$ref": "./types/speed_multiplier.json"
     },
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "damage_sources": {
       "title": "Damage Sources",
       "type": "array",
@@ -64,21 +67,8 @@
     },
     "sound_interval": {
       "title": "Sound Interval",
-      "type": "object",
-      "description": "The range of time in seconds to randomly wait before playing the sound again.",
-      "properties": {
-        "range_min": {
-          "type": "number",
-          "description": "The minimum time in seconds before the `panic_sound` plays.",
-          "title": "Range Minimum"
-        },
-        "range_max": {
-          "type": "number",
-          "description": "The maximum time in seconds before the `panic_sound` plays.",
-          "title": "Range Maximum"
-        }
-      },
-      "additionalProperties": false
+      "$ref": "../../../../general/min_max_float.json",
+      "description": "The range of time in seconds to randomly wait before playing the sound again."
     }
   },
   "examples": [
