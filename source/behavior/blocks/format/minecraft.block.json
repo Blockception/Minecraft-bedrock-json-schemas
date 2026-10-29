@@ -92,6 +92,7 @@
         "minecraft:map_color": { "$ref": "./components/map_color.json" },
         "minecraft:material_instances": { "$ref": "./components/material_instances.json" },
         "minecraft:movable": { "$ref": "./components/movable.json" },
+        "minecraft:neighbor_change": { "$ref": "./components/neighbor_change.json" },
         "minecraft:placement_filter": { "$ref": "./components/placement_filter.json" },
         "minecraft:precipitation_interactions": { "$ref": "./components/precipitation_interactions.json" },
         "minecraft:random_offset": { "$ref": "./components/random_offset.json" },
