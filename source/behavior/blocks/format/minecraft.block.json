@@ -105,6 +105,7 @@
         "minecraft:support": { "$ref": "./components/support.json" },
         "minecraft:tags": { "$ref": "./components/tags.json" },
         "minecraft:transformation": { "$ref": "./components/transformation.json" },
+        "minecraft:vibration_properties": { "$ref": "./components/vibration_properties.json" },
         "minecraft:custom_components": { "$ref": "./components/custom_components.json" },
         "minecraft:tick": { "$ref": "./components/tick.json" },
         "minecraft:entity_fall_on": { "$ref": "./components/entity_fall_on.json" }
