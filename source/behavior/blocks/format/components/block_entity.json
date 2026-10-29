@@ -23,6 +23,13 @@
           "maximum": 54,
           "minimum": 1,
           "type": "integer"
+        },
+        "title": {
+          "title": "Title",
+          "description": "Optional container title, stored as a language file key or raw text.",
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
         }
       }
     },
