@@ -23,8 +23,21 @@
           "maximum": 54,
           "minimum": 1,
           "type": "integer"
+        },
+        "title": {
+          "title": "Title",
+          "description": "Optional container title, stored as a language file key or raw text.",
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
         }
       }
+    },
+    "entity_storage": {
+      "title": "Entity Storage",
+      "description": "[EXPERIMENTAL] Stores serialized entities in this block via scripting.",
+      "type": "boolean",
+      "default": false
     }
   }
 }

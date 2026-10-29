@@ -2,12 +2,13 @@
   "$id": "blockception.minecraft.behavior.entities.minecraft.healable",
   "description": "Defines the interactions with this entity for healing it.",
   "type": "object",
-  "title": "Healable",
   "additionalProperties": false,
+  "title": "Healable",
   "required": [],
   "definitions": {
     "effect": {
       "type": "object",
+      "additionalProperties": false,
       "properties": {
         "name": {
           "title": "Name",
@@ -34,6 +35,13 @@
           "default": 0,
           "minimum": 0,
           "description": "The amplifier of the effect."
+        },
+        "chance": {
+          "type": "number",
+          "default": 1,
+          "minimum": 0,
+          "maximum": 1,
+          "description": "The chance that the effect is applied."
         }
       }
     }
@@ -54,6 +62,7 @@
       "type": "array",
       "items": {
         "type": "object",
+        "additionalProperties": false,
         "properties": {
           "filters": {
             "$ref": "../../filters/filters.json",
@@ -76,17 +85,10 @@
             "description": "The item used will transform to this item upon successful interaction. Format: itemName:auxValue"
           },
           "effects": {
-            "oneOf": [
-              {
-                "$ref": "#/definitions/effect"
-              },
-              {
-                "type": "array",
-                "items": {
-                  "$ref": "#/definitions/effect"
-                }
-              }
-            ]
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/effect"
+            }
           }
         }
       }

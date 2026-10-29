@@ -7,6 +7,7 @@
   "properties": {
     "priority": { "$ref": "types/priority.json" },
     "speed_multiplier": { "$ref": "types/speed_multiplier.json" },
+    "control_flags": { "$ref": "types/control_flags.json" },
     "can_get_scared": {
       "type": "boolean",
       "default": false,
@@ -34,20 +35,9 @@
       }
     },
     "sound_interval": {
-      "description": "Range of random ticks to wait between tempt sounds.",
+      "$ref": "../../../../general/min_max_float.json",
       "title": "Sound Interval",
-      "oneOf": [
-        {
-          "type": "number",
-          "minimum": 0
-        },
-        {
-          "items": [
-            { "type": "integer", "minimum": 0, "title": "Minimum" },
-            { "type": "integer", "minimum": 0, "title": "Maximum" }
-          ]
-        }
-      ]
+      "description": "Range of random ticks to wait between tempt sounds."
     },
     "stop_distance": {
       "title": "Stop Distance",
@@ -67,12 +57,12 @@
       "description": "Distance in blocks this mob can get tempted by a player holding an item they like.",
       "title": "Within Radius"
     },
-    "on_start": {
+    "on_tempt_start": {
       "title": "On Start",
       "description": "Specifies the event to trigger when the goal starts",
       "$ref": "../types/trigger.json"
     },
-    "on_end": {
+    "on_tempt_end": {
       "title": "On End",
       "description": "Specifies the event to trigger when the goal ends",
       "$ref": "../types/trigger.json"

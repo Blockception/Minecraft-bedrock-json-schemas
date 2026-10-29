@@ -1,6 +1,5 @@
 {
   "$id": "blockception.minecraft.behavior.items.minecraft:durability_sensor",
-  "$id": "764203503",
   "title": "Durability Sensor",
   "description": "Defines both the durability threshold, and the effects emitted when that threshold is met.",
   "type": "object",

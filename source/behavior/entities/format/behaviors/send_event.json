@@ -32,19 +32,11 @@
     }
   },
   "properties": {
+    "control_flags": {
+      "$ref": "./types/control_flags.json"
+    },
     "priority": {
       "$ref": "./types/priority.json"
-    },
-    "cast_duration": {
-      "type": "number",
-      "description": "Time in seconds for the entire event sending process.",
-      "title": "Cast Duration"
-    },
-    "look_at_target": {
-      "title": "Look At Target",
-      "type": "boolean",
-      "default": true,
-      "description": "If true, the mob will face the entity it sends an event to."
     },
     "event_choices": {
       "type": "array",
@@ -111,17 +103,10 @@
           }
         }
       }
-    },
-    "sequence": {
-      "$ref": "#/definitions/sequence",
-      "description": "List of steps for the spell.",
-      "$comment": "UNDOCUMENTED",
-      "title": "Sequence"
     }
   },
   "examples": [
     {
-      "cast_duration": 0.0,
       "event_choices": []
     }
   ]

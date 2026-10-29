@@ -21,53 +21,59 @@
       }
     },
     "begin_transform_sound": {
-      "$ref": "../../../../general/sound_event.json",
+      "type": "array",
+      "items": {
+        "$ref": "../../../../general/sound_event.json"
+      },
       "description": "Sound to play when the transformation starts.",
       "title": "Begin Transform Sound"
     },
     "delay": {
       "description": "Defines the properties of the delay for the transformation.",
       "title": "Delay",
-      "oneOf": [
-        { "type": "number" },
-        {
-          "type": "object",
-          "properties": {
-            "block_assist_chance": {
-              "type": "number",
-              "default": 0,
-              "description": "Chance that the entity will look for nearby blocks that can speed up the transformation. Value must be between 0.0 and 1.0"
-            },
-            "block_chance": {
-              "type": "number",
-              "default": 0,
-              "description": "Chance that, once a block is found, will help speed up the transformation."
-            },
-            "block_max": {
-              "type": "integer",
-              "default": 0,
-              "description": "Maximum number of blocks the entity will look for to aid in the transformation. If not defined or set to 0, it will be set to the block radius"
-            },
-            "block_radius": {
-              "type": "integer",
-              "default": 0,
-              "description": "Distance in Blocks that the entity will search for blocks that can help the transformation."
-            },
-            "block_types": {
-              "type": "array",
-              "description": "List of blocks that can help the transformation of this entity.",
-              "items": {
-                "$ref": "../../../../general/block/identifier.json"
-              }
-            },
-            "value": {
-              "type": "number",
-              "default": 0,
-              "description": "Time in seconds before the entity transforms."
-            }
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "block_assist_chance": {
+          "type": "number",
+          "default": 0,
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Chance that the entity will look for nearby blocks that can speed up the transformation. Value must be between 0.0 and 1.0"
+        },
+        "block_chance": {
+          "type": "number",
+          "default": 0,
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Chance that, once a block is found, will help speed up the transformation."
+        },
+        "block_max": {
+          "type": "integer",
+          "default": 0,
+          "minimum": 0,
+          "description": "Maximum number of blocks the entity will look for to aid in the transformation. If not defined or set to 0, it will be set to the block radius"
+        },
+        "block_radius": {
+          "type": "integer",
+          "default": 0,
+          "minimum": 0,
+          "description": "Distance in Blocks that the entity will search for blocks that can help the transformation."
+        },
+        "block_types": {
+          "type": "array",
+          "description": "List of blocks that can help the transformation of this entity.",
+          "items": {
+            "$ref": "../../../../general/block/identifier.json"
           }
+        },
+        "value": {
+          "type": "number",
+          "default": 0,
+          "minimum": 0,
+          "description": "Time in seconds before the entity transforms."
         }
-      ]
+      }
     },
     "drop_equipment": {
       "type": "boolean",
@@ -107,8 +113,11 @@
       "title": "Preserve Equipment"
     },
     "transformation_sound": {
-      "$ref": "../../../../general/sound_event.json",
-      "default": "",
+      "type": "array",
+      "items": {
+        "$ref": "../../../../general/sound_event.json"
+      },
+      "default": [],
       "description": "Sound to play when the entity is done transforming.",
       "title": "Transformation Sound"
     }
@@ -116,14 +125,14 @@
   "examples": [
     {
       "add": {},
-      "begin_transform_sound": "example",
+      "begin_transform_sound": ["example"],
       "drop_equipment": false,
       "drop_inventory": false,
       "into": "",
       "keep_level": false,
       "keep_owner": false,
       "preserve_equipment": false,
-      "transformation_sound": ""
+      "transformation_sound": []
     }
   ]
 }

@@ -77,6 +77,7 @@
         "minecraft:destruction_particles": { "$ref": "./components/destruction_particles.json" },
         "minecraft:display_name": { "$ref": "./components/display_name.json" },
         "minecraft:embedded_visual": { "$ref": "./components/embedded_visual.json" },
+        "minecraft:enchantment_power_transmitter": { "$ref": "./components/enchantment_power_transmitter.json" },
         "minecraft:flammable": { "$ref": "./components/flammable.json" },
         "minecraft:flower_pottable": { "$ref": "./components/flower_pottable.json" },
         "minecraft:friction": { "$ref": "./components/friction.json" },
@@ -91,6 +92,7 @@
         "minecraft:map_color": { "$ref": "./components/map_color.json" },
         "minecraft:material_instances": { "$ref": "./components/material_instances.json" },
         "minecraft:movable": { "$ref": "./components/movable.json" },
+        "minecraft:neighbor_change": { "$ref": "./components/neighbor_change.json" },
         "minecraft:placement_filter": { "$ref": "./components/placement_filter.json" },
         "minecraft:precipitation_interactions": { "$ref": "./components/precipitation_interactions.json" },
         "minecraft:random_offset": { "$ref": "./components/random_offset.json" },
@@ -103,6 +105,7 @@
         "minecraft:support": { "$ref": "./components/support.json" },
         "minecraft:tags": { "$ref": "./components/tags.json" },
         "minecraft:transformation": { "$ref": "./components/transformation.json" },
+        "minecraft:vibration_properties": { "$ref": "./components/vibration_properties.json" },
         "minecraft:custom_components": { "$ref": "./components/custom_components.json" },
         "minecraft:tick": { "$ref": "./components/tick.json" },
         "minecraft:entity_fall_on": { "$ref": "./components/entity_fall_on.json" }

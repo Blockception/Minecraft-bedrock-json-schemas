@@ -46,7 +46,6 @@
       "description": "List of blocks this entity can float on. Must be a liquid block.",
       "title": "Liquid Blocks",
       "items": {
-        "title": "Block",
         "$ref": "../../../../general/block/reference.json"
       }
     },

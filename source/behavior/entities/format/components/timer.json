@@ -19,20 +19,13 @@
       "title": "Random Interval"
     },
     "time": {
-      "description": "Amount of time in seconds for the timer. Can be specified as a number or a pair of numbers (Minimum and max). Incompatible with random_time_choices.",
+      "$ref": "../../../../general/min_max_float.json",
+      "description": "Amount of time in seconds for the timer. Specified as a pair of numbers (Minimum and max). Incompatible with random_time_choices.",
       "title": "Time",
-      "examples": [1, [1.0, 5.0]],
-      "oneOf": [
-        {
-          "type": "array",
-          "default": [0.0, 0.0],
-          "items": [
-            { "type": "number", "title": "Minimum" },
-            { "type": "number", "title": "Maximum" }
-          ]
-        },
-        { "type": "number", "default": 0 }
-      ]
+      "default": {
+        "min": 0.0,
+        "max": 0.0
+      }
     },
     "time_down_event": {
       "description": "Event to fire when the time on the timer runs out.",

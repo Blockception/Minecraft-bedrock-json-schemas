@@ -4,32 +4,64 @@
   "description": "This component can be specified as a Boolean. If this component is omitted, the default value for this component is true, which will give your block the default values for its parameters (a collision box the size/shape of a regular block).",
   "definitions": {
     "entry": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "origin": {
-          "title": "Origin",
-          "default": [-8, 0, -8],
-          "description": "Minimal position of the bounds of the collision box. origin is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.",
-          "type": "array",
-          "items": [
-            { "title": "X", "type": "number", "minimum": -8, "maximum": 8 },
-            { "title": "Y", "type": "number", "minimum": 0, "maximum": 16 },
-            { "title": "Z", "type": "number", "minimum": -8, "maximum": 8 }
-          ]
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["origin", "size"],
+          "properties": {
+            "origin": {
+              "title": "Origin",
+              "default": [-8, 0, -8],
+              "description": "Minimal position of the bounds of the collision box. origin is specified as [x, y, z] and must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.",
+              "type": "array",
+              "items": [
+                { "title": "X", "type": "number", "minimum": -8, "maximum": 8 },
+                { "title": "Y", "type": "number", "minimum": 0, "maximum": 16 },
+                { "title": "Z", "type": "number", "minimum": -8, "maximum": 8 }
+              ]
+            },
+            "size": {
+              "title": "Size",
+              "default": [16, 16, 16],
+              "description": "Size of each side of the collision box. Size is specified as [x, y, z]. origin + size must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.",
+              "type": "array",
+              "items": [
+                { "title": "X", "type": "number", "minimum": 0, "maximum": 16 },
+                { "title": "Y", "type": "number", "minimum": 0, "maximum": 24 },
+                { "title": "Z", "type": "number", "minimum": 0, "maximum": 16 }
+              ]
+            }
+          }
         },
-        "size": {
-          "title": "Size",
-          "default": [16, 16, 16],
-          "description": "Size of each side of the collision box. Size is specified as [x, y, z]. origin + size must be in the range (-8, 0, -8) to (8, 16, 8), inclusive.",
-          "type": "array",
-          "items": [
-            { "title": "X", "type": "number", "minimum": 0, "maximum": 16 },
-            { "title": "Y", "type": "number", "minimum": 0, "maximum": 24 },
-            { "title": "Z", "type": "number", "minimum": 0, "maximum": 16 }
-          ]
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["min", "max"],
+          "properties": {
+            "min": {
+              "title": "Min",
+              "description": "Minimal position of the bounds of the collision box. [0, 0, 0] is the bottom-left of the cube.",
+              "type": "array",
+              "items": [
+                { "title": "X", "type": "number", "minimum": 0, "maximum": 16 },
+                { "title": "Y", "type": "number", "minimum": 0, "maximum": 24 },
+                { "title": "Z", "type": "number", "minimum": 0, "maximum": 16 }
+              ]
+            },
+            "max": {
+              "title": "Max",
+              "description": "Maximum position of the bounds of the collision box. [16, 16, 16] is the top-right of the cube.",
+              "type": "array",
+              "items": [
+                { "title": "X", "type": "number", "minimum": 0, "maximum": 16 },
+                { "title": "Y", "type": "number", "minimum": 0, "maximum": 24 },
+                { "title": "Z", "type": "number", "minimum": 0, "maximum": 16 }
+              ]
+            }
+          }
         }
-      }
+      ]
     }
   },
   "oneOf": [

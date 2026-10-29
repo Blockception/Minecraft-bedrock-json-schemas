@@ -10,12 +10,9 @@
       "type": "array",
       "description": "List of effects to add to this entity after adding this component.",
       "items": {
-        "oneOf": [
-          { "$ref": "../../../../general/vanilla/effect.json" },
-          {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
               "amplifier": {
                 "type": "integer",
                 "title": "Amplifier",
@@ -58,28 +55,19 @@
                 "title": "Visible",
                 "description": "Boolean value. When set to true, the effect will be visible to the player. Defaults to true."
               }
-            }
-          }
-        ]
+        }
       },
       "title": "Add Effects"
     },
     "remove_effects": {
       "title": "Remove Effects",
       "description": "List of identifiers of effects to be removed from this entity after adding this component.",
-      "oneOf": [
-        {
-          "type": "array",
-          "items": {
-            "type": ["string"],
-            "title": "Spell Effect ID",
-            "description": "identifier of the effect to be removed from this entity after adding this component."
-          }
-        },
-        {
-          "type": "string"
-        }
-      ]
+      "type": "array",
+      "items": {
+        "type": "string",
+        "title": "Spell Effect ID",
+        "description": "identifier of the effect to be removed from this entity after adding this component."
+      }
     }
   },
   "examples": [

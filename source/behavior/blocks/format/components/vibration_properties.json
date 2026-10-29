@@ -1,0 +1,21 @@
+{
+  "$id": "blockception.minecraft.behavior.blocks.minecraft.vibration_properties",
+  "title": "Vibration Properties",
+  "description": "Defines whether a block dampens or occludes vibrations.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "dampen_vibrations": {
+      "title": "Dampen Vibrations",
+      "description": "Whether this block dampens vibrations.",
+      "type": "boolean",
+      "default": false
+    },
+    "occlude_vibrations": {
+      "title": "Occlude Vibrations",
+      "description": "Whether this block occludes vibrations.",
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

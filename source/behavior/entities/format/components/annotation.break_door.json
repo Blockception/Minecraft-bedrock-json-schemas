@@ -17,7 +17,8 @@
       "type": "string",
       "default": "hard",
       "description": "The minimum difficulty that the world must be on for this entity to break doors.",
-      "title": "Minimum Difficulty"
+      "title": "Minimum Difficulty",
+      "enum": ["peaceful", "easy", "normal", "hard"]
     }
   },
   "examples": [

@@ -13,6 +13,7 @@
       "description": "The components of this dimension.",
       "additionalProperties": true,
       "properties": {
+        "minecraft:clouds": { "$ref": "./components/clouds.json" },
         "minecraft:default_biome": { "$ref": "./components/default_biome.json" },
         "minecraft:dimension_height": { "$ref": "./components/dimension_height.json" },
         "minecraft:generation": { "$ref": "./components/generation.json" }

@@ -60,6 +60,11 @@
       "minimum": 1,
       "maximum": 128
     },
+    "on_placed": {
+      "title": "On Placed",
+      "description": "Name of callback used after this structure is placed in the world",
+      "type": "string"
+    },
     "pool_aliases": {
       "title": "Pool Aliases",
       "description": "Pool Aliases are used to determine which Template Pool can be a substitute.",

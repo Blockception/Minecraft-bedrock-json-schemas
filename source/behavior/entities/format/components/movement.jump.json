@@ -6,20 +6,13 @@
   "additionalProperties": false,
   "properties": {
     "jump_delay": {
-      "type": "array",
-      "default": [0.0, 0.0],
+      "$ref": "../../../../general/min_max_float.json",
+      "default": {
+        "min": 0.0,
+        "max": 0.0
+      },
       "description": "Delay after landing when using the slime move control.",
-      "title": "Jump Delay",
-      "items": [
-        {
-          "type": "number",
-          "title": "Minimum"
-        },
-        {
-          "type": "number",
-          "title": "Maximum"
-        }
-      ]
+      "title": "Jump Delay"
     },
     "max_turn": {
       "type": "number",
@@ -30,7 +23,10 @@
   },
   "examples": [
     {
-      "jump_delay": [],
+      "jump_delay": {
+        "min": 0.0,
+        "max": 0.0
+      },
       "max_turn": 30
     }
   ]
