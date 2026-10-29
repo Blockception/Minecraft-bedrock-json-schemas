@@ -25,6 +25,12 @@
           "type": "integer"
         }
       }
+    },
+    "entity_storage": {
+      "title": "Entity Storage",
+      "description": "[EXPERIMENTAL] Stores serialized entities in this block via scripting.",
+      "type": "boolean",
+      "default": false
     }
   }
 }
