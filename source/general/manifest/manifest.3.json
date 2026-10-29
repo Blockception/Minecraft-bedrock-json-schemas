@@ -515,6 +515,11 @@
                 "description": "UNDOCUMENTED",
                 "type": "string"
               },
+              "selection_text": {
+                "title": "Selection Text",
+                "description": "When set will display the text in the selection dropdown of the multiselect in the pack settings UI. When not set, the currently selected items will be shown instead.",
+                "type": "string"
+              },
               "type": {
                 "title": "Setting Type",
                 "description": "UNDOCUMENTED",
