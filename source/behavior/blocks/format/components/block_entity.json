@@ -16,6 +16,7 @@
       "description": "[EXPERIMENTAL] Adds a container to this block.",
       "type": "object", 
       "additionalProperties": false,
+      "required": ["slot_count"],
       "properties": {
         "slot_count": {
           "title": "Slot Count",
