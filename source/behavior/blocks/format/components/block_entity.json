@@ -16,6 +16,7 @@
       "description": "[EXPERIMENTAL] Adds a container to this block.",
       "type": "object", 
       "additionalProperties": false,
+      "required": ["slot_count"],
       "properties": {
         "show_ui_on_interaction": {
           "description": "Determines whether interacting with this block opens its container UI. Defaults to true. When false, normal block interaction events can run instead.",
